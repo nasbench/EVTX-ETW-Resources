@@ -1,0 +1,382 @@
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events">
+ <instrumentation xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events">
+  <events>
+   <provider name="Microsoft-Windows-VHDMP" guid="{e2816346-87f4-4f85-95c3-0c79409aa89d}" resourceFileName="Microsoft-Windows-VHDMP" messageFileName="Microsoft-Windows-VHDMP" symbol="MicrosoftWindowsVHDMP" source="Xml" >
+    <keywords>
+     <keyword name="Activity" message="$(string.keyword_Activity)" mask="0x1"/>
+     <keyword name="IO" message="$(string.keyword_IO)" mask="0x2"/>
+    </keywords>
+    <tasks>
+     <task name="task_0" message="$(string.task_task_0)" value="0"/>
+     <task name="IOrequest" message="$(string.task_IOrequest)" value="1101">
+>
+      <opcodes>
+       <opcode name="StartinganIO." message="$(string.opcode_IOrequestStartinganIO.)" value="200"/>
+       <opcode name="CompletinganIO." message="$(string.opcode_IOrequestCompletinganIO.)" value="201"/>
+      </opcodes>
+     </task>
+     <task name="VirtualDiskHandleCreate" message="$(string.task_VirtualDiskHandleCreate)" value="1201"/>
+     <task name="VirtualDiskHandleClose" message="$(string.task_VirtualDiskHandleClose)" value="1202"/>
+     <task name="FilewrapperHandleCreate" message="$(string.task_FilewrapperHandleCreate)" value="1203"/>
+     <task name="FilewrapperHandleCreate_1204" message="$(string.task_FilewrapperHandleCreate_1204)" value="1204"/>
+     <task name="SurfaceVirtualDisk" message="$(string.task_SurfaceVirtualDisk)" value="1205"/>
+     <task name="UnsurfaceVirtualDisk" message="$(string.task_UnsurfaceVirtualDisk)" value="1206"/>
+     <task name="CleanupBackingStore" message="$(string.task_CleanupBackingStore)" value="1207"/>
+     <task name="CleanupBackingStoreFlush" message="$(string.task_CleanupBackingStoreFlush)" value="1208"/>
+    </tasks>
+    <maps>
+     <valueMap name="IoTypeMap">
+      <map value="0x1" message="$(string.map_IoTypeMapWrite)"/>
+      <map value="0x2" message="$(string.map_IoTypeMapRead)"/>
+      <map value="0x3" message="$(string.map_IoTypeMapFlush)"/>
+      <map value="0x4" message="$(string.map_IoTypeMapOffload write)"/>
+      <map value="0x5" message="$(string.map_IoTypeMapOffload read)"/>
+      <map value="0x6" message="$(string.map_IoTypeMapProject read)"/>
+      <map value="0x7" message="$(string.map_IoTypeMapProject write)"/>
+      <map value="0x8" message="$(string.map_IoTypeMapUnmap)"/>
+      <map value="0x9" message="$(string.map_IoTypeMapGet LBA status)"/>
+      <map value="0xa" message="$(string.map_IoTypeMapFile wrapper access check)"/>
+     </valueMap>
+     <valueMap name="VirtualDiskType">
+      <map value="0x0" message="$(string.map_VirtualDiskTypeUndefined)"/>
+      <map value="0x1" message="$(string.map_VirtualDiskTypeVHD)"/>
+      <map value="0x2" message="$(string.map_VirtualDiskTypeVHDX)"/>
+      <map value="0x3" message="$(string.map_VirtualDiskTypeISO)"/>
+      <map value="0x4" message="$(string.map_VirtualDiskTypeVHDSET)"/>
+     </valueMap>
+     <valueMap name="FileRefTypeMap">
+      <map value="0x0" message="$(string.map_FileRefTypeMapShared Reference)"/>
+      <map value="0x1" message="$(string.map_FileRefTypeMapExclusive Reference)"/>
+      <map value="0x2" message="$(string.map_FileRefTypeMapQoS Reference)"/>
+     </valueMap>
+     <valueMap name="FileModeMap">
+      <map value="0x1" message="$(string.map_FileModeMapRead-only, shared)"/>
+      <map value="0x2" message="$(string.map_FileModeMapRead-only, exclusive)"/>
+      <map value="0x3" message="$(string.map_FileModeMapRead-write, exclusive)"/>
+      <map value="0x4" message="$(string.map_FileModeMapInvalid)"/>
+     </valueMap>
+     <valueMap name="SrbTypeMap">
+      <map value="0x0" message="$(string.map_SrbTypeMapStorport)"/>
+      <map value="0x1" message="$(string.map_SrbTypeMapPrivate)"/>
+      <map value="0x2" message="$(string.map_SrbTypeMapInternal)"/>
+      <map value="0x3" message="$(string.map_SrbTypeMapMirror)"/>
+     </valueMap>
+    </maps>
+    <events>
+     <event value="1" symbol="SurfaceVirtualDiskStop" version="0" task="SurfaceVirtualDisk" opcode="win:Stop" level="win:Informational" keywords="Activity" template="SurfaceVirtualDiskStopArgs"/>
+     <event value="2" symbol="UnsurfaceVirtualDiskStop" version="0" task="UnsurfaceVirtualDisk" opcode="win:Stop" level="win:Informational" keywords="Activity" template="SurfaceVirtualDiskStopArgs"/>
+     <event value="3" symbol="SurfaceVirtualDiskStop3" version="0" task="SurfaceVirtualDisk" opcode="win:Stop" level="win:Error" keywords="Activity" template="SurfaceVirtualDiskStop3Args"/>
+     <event value="4" symbol="SurfaceVirtualDiskStop4" version="0" task="SurfaceVirtualDisk" opcode="win:Stop" level="win:Error" keywords="Activity" template="SurfaceVirtualDiskStop4Args"/>
+     <event value="5" symbol="task_0" version="0" task="task_0" level="win:Error" template="task_0Args"/>
+     <event value="6" symbol="task_06" version="0" task="task_0" level="win:Error" template="task_06Args"/>
+     <event value="7" symbol="task_07" version="0" task="task_0" level="win:Error" template="task_07Args"/>
+     <event value="8" symbol="task_08" version="0" task="task_0" level="win:Error" template="task_08Args"/>
+     <event value="9" symbol="task_09" version="0" task="task_0" level="win:Error" template="task_09Args"/>
+     <event value="10" symbol="task_010" version="0" task="task_0" level="win:Error" template="task_010Args"/>
+     <event value="11" symbol="task_011" version="0" task="task_0" level="win:Error" template="task_011Args"/>
+     <event value="12" symbol="VirtualDiskHandleCreateStop" version="0" task="VirtualDiskHandleCreate" opcode="win:Stop" level="win:Informational" keywords="Activity" template="VirtualDiskHandleCreateStopArgs"/>
+     <event value="13" symbol="VirtualDiskHandleCreateStop13" version="0" task="VirtualDiskHandleCreate" opcode="win:Stop" level="win:Error" keywords="Activity" template="VirtualDiskHandleCreateStop13Args"/>
+     <event value="14" symbol="VirtualDiskHandleCloseStop" version="0" task="VirtualDiskHandleClose" opcode="win:Stop" level="win:Informational" template="VirtualDiskHandleCloseStopArgs"/>
+     <event value="15" symbol="task_015" version="0" task="task_0" level="win:Informational" template="task_015Args"/>
+     <event value="16" symbol="task_016" version="0" task="task_0" level="win:Informational" template="task_015Args"/>
+     <event value="17" symbol="SurfaceVirtualDiskStop17" version="0" task="SurfaceVirtualDisk" opcode="win:Stop" level="win:Informational" keywords="Activity" template="SurfaceVirtualDiskStopArgs"/>
+     <event value="18" symbol="UnsurfaceVirtualDiskStop18" version="0" task="UnsurfaceVirtualDisk" opcode="win:Stop" level="win:Informational" keywords="Activity" template="SurfaceVirtualDiskStopArgs"/>
+     <event value="19" symbol="SurfaceVirtualDiskStop19" version="0" task="SurfaceVirtualDisk" opcode="win:Stop" level="win:Informational" keywords="Activity" template="SurfaceVirtualDiskStop19Args"/>
+     <event value="20" symbol="UnsurfaceVirtualDiskStop20" version="0" task="UnsurfaceVirtualDisk" opcode="win:Stop" level="win:Informational" keywords="Activity" template="SurfaceVirtualDiskStop19Args"/>
+     <event value="21" symbol="VirtualDiskHandleCreateStart" version="0" task="VirtualDiskHandleCreate" opcode="win:Start" level="win:Informational" keywords="Activity" template="VirtualDiskHandleCreateStartArgs"/>
+     <event value="22" symbol="FilewrapperHandleCreateStart" version="0" task="FilewrapperHandleCreate" opcode="win:Start" level="win:Informational" keywords="Activity" template="FilewrapperHandleCreateStartArgs"/>
+     <event value="23" symbol="FilewrapperHandleCreateStop" version="0" task="FilewrapperHandleCreate" opcode="win:Stop" level="win:Informational" keywords="Activity" template="task_010Args"/>
+     <event value="24" symbol="FilewrapperHandleCreateStop24" version="0" task="FilewrapperHandleCreate" opcode="win:Stop" level="win:Informational" keywords="Activity" template="task_010Args"/>
+     <event value="25" symbol="SurfaceVirtualDiskStart" version="0" task="SurfaceVirtualDisk" opcode="win:Start" level="win:Informational" keywords="Activity" template="SurfaceVirtualDiskStop4Args"/>
+     <event value="26" symbol="UnsurfaceVirtualDiskStart" version="0" task="UnsurfaceVirtualDisk" opcode="win:Start" level="win:Informational" keywords="Activity" template="task_015Args"/>
+     <event value="27" symbol="FilewrapperHandleCreate_1204Start" version="0" task="FilewrapperHandleCreate_1204" opcode="win:Start" level="win:Informational" keywords="Activity" template="FilewrapperHandleCreateStartArgs"/>
+     <event value="28" symbol="FilewrapperHandleCreate_1204Stop" version="0" task="FilewrapperHandleCreate_1204" opcode="win:Stop" level="win:Informational" keywords="Activity" template="task_010Args"/>
+     <event value="29" symbol="task_029" version="0" task="task_0" level="win:Informational" template="task_011Args"/>
+     <event value="30" symbol="VirtualDiskHandleCloseStop30" version="0" task="VirtualDiskHandleClose" opcode="win:Stop" level="win:Informational" keywords="Activity" template="VirtualDiskHandleCloseStopArgs"/>
+     <event value="31" symbol="CleanupBackingStoreStart" version="0" task="CleanupBackingStore" opcode="win:Start" level="win:Informational" keywords="Activity" template="task_09Args"/>
+     <event value="32" symbol="CleanupBackingStoreStop" version="0" task="CleanupBackingStore" opcode="win:Stop" level="win:Informational" keywords="Activity" template="task_09Args"/>
+     <event value="33" symbol="CleanupBackingStoreFlushStart" version="0" task="CleanupBackingStoreFlush" opcode="win:Start" level="win:Informational" keywords="Activity" template="task_09Args"/>
+     <event value="34" symbol="CleanupBackingStoreFlushStop" version="0" task="CleanupBackingStoreFlush" opcode="win:Stop" level="win:Informational" keywords="Activity" template="task_09Args"/>
+     <event value="50" symbol="task_050" version="0" task="task_0" level="win:Informational" template="task_050Args"/>
+     <event value="51" symbol="task_051" version="0" task="task_0" level="win:Informational" template="task_0Args"/>
+     <event value="100" symbol="task_0100" version="0" task="task_0" level="win:Informational" template="task_0100Args"/>
+     <event value="101" symbol="task_0101" version="0" task="task_0" level="win:Informational" template="task_0101Args"/>
+     <event value="102" symbol="task_0102" version="0" task="task_0" level="win:Error" template="task_0102Args"/>
+     <event value="110" symbol="task_0110" version="0" task="task_0" level="win:Informational" template="task_0102Args"/>
+     <event value="111" symbol="task_0111" version="0" task="task_0" level="win:Informational" template="task_0101Args"/>
+     <event value="112" symbol="task_0112" version="0" task="task_0" level="win:Error" template="task_0102Args"/>
+     <event value="113" symbol="task_0113" version="0" task="task_0" level="win:Error" template="task_0113Args"/>
+     <event value="114" symbol="task_0114" version="0" task="task_0" level="win:Informational" template="task_0114Args"/>
+     <event value="115" symbol="task_0115" version="0" task="task_0" level="win:Informational" template="task_0115Args"/>
+     <event value="116" symbol="task_0116" version="0" task="task_0" level="win:Informational" template="task_0116Args"/>
+     <event value="117" symbol="task_0117" version="0" task="task_0" level="win:Error" template="task_0117Args"/>
+     <event value="118" symbol="task_0118" version="0" task="task_0" level="win:Warning" template="task_0102Args"/>
+     <event value="119" symbol="task_0119" version="0" task="task_0" level="win:Warning" template="task_0113Args"/>
+     <event value="120" symbol="task_0120" version="0" task="task_0" level="win:Informational" template="task_0102Args"/>
+     <event value="121" symbol="task_0121" version="0" task="task_0" level="win:Informational" template="task_0102Args"/>
+     <event value="122" symbol="task_0122" version="0" task="task_0" level="win:Error" template="task_0102Args"/>
+     <event value="123" symbol="task_0123" version="0" task="task_0" level="win:Informational" template="task_0102Args"/>
+     <event value="124" symbol="task_0124" version="0" task="task_0" level="win:Informational" template="task_0102Args"/>
+     <event value="125" symbol="task_0125" version="0" task="task_0" level="win:Informational" template="task_0102Args"/>
+     <event value="126" symbol="task_0126" version="0" task="task_0" level="win:Error" template="task_0102Args"/>
+     <event value="208" symbol="task_0208" version="0" task="task_0" level="win:Informational" template="task_0208Args"/>
+     <event value="209" symbol="task_0209" version="0" task="task_0" level="win:Informational" template="task_0209Args"/>
+     <event value="210" symbol="task_0210" version="0" task="task_0" level="win:Error" template="task_0210Args"/>
+     <event value="211" symbol="task_0211" version="0" task="task_0" level="win:Error" template="task_0211Args"/>
+     <event value="212" symbol="task_0212" version="0" task="task_0" level="win:Error" template="task_0211Args"/>
+     <event value="213" symbol="task_0213" version="0" task="task_0" level="win:Error" template="task_0211Args"/>
+     <event value="214" symbol="task_0214" version="0" task="task_0" level="win:Error" template="task_0214Args"/>
+     <event value="1001" symbol="IOrequestStartinganIO." version="0" task="IOrequest" opcode="StartinganIO." level="win:Verbose" keywords="IO" template="IOrequestStartinganIO.Args"/>
+     <event value="1002" symbol="IOrequestCompletinganIO." version="0" task="IOrequest" opcode="CompletinganIO." level="win:Verbose" keywords="IO" template="IOrequestCompletinganIO.Args"/>
+     <event value="1010" symbol="task_01010" version="0" task="task_0" level="win:Verbose" keywords="IO" template="task_01010Args"/>
+     <event value="1011" symbol="task_01011" version="0" task="task_0" level="win:Verbose" keywords="IO" template="task_01010Args"/>
+    </events>
+    <templates>
+     <template tid="SurfaceVirtualDiskStopArgs">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="VhdDiskNumber" inType="win:UInt32"/>
+      <data name="VirtualDisk" inType="win:Pointer"/>
+     </template>
+     <template tid="SurfaceVirtualDiskStop3Args">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+      <data name="VirtualDisk" inType="win:Pointer"/>
+     </template>
+     <template tid="SurfaceVirtualDiskStop4Args">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="VirtualDisk" inType="win:Pointer"/>
+     </template>
+     <template tid="task_0Args">
+      <data name="VhdMetaOps" inType="win:AnsiString"/>
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_06Args">
+      <data name="VhdIoType" inType="win:UInt32" map="IoTypeMap"/>
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_07Args">
+      <data name="ParentLastWriteGUID" inType="win:GUID"/>
+      <data name="ExpectedParentLastWriteGUID1" inType="win:GUID"/>
+      <data name="ExpectedParentLastWriteGUID2" inType="win:GUID"/>
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_08Args">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="CorruptionReason" inType="win:UInt32"/>
+     </template>
+     <template tid="task_09Args">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_010Args">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_011Args">
+      <data name="VhdIoType" inType="win:UInt32"/>
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="VirtualDiskHandleCreateStopArgs">
+      <data name="Status" inType="win:UInt32"/>
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="VhdType" inType="win:UInt32" map="VirtualDiskType"/>
+      <data name="Version" inType="win:UInt32"/>
+      <data name="Flags" inType="win:UInt32"/>
+      <data name="AccessMask" inType="win:UInt32"/>
+      <data name="WriteDepth" inType="win:UInt32"/>
+      <data name="GetInfoOnly" inType="win:Boolean"/>
+      <data name="ReadOnly" inType="win:Boolean"/>
+      <data name="HandleContext" inType="win:Pointer"/>
+      <data name="VirtualDisk" inType="win:Pointer"/>
+      <data name="FileObject" inType="win:Pointer"/>
+     </template>
+     <template tid="VirtualDiskHandleCreateStop13Args">
+      <data name="Status" inType="win:UInt32"/>
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="VhdType" inType="win:UInt32"/>
+      <data name="Version" inType="win:UInt32"/>
+      <data name="Flags" inType="win:UInt32"/>
+      <data name="AccessMask" inType="win:UInt32"/>
+      <data name="WriteDepth" inType="win:UInt32"/>
+      <data name="GetInfoOnly" inType="win:Boolean"/>
+      <data name="ReadOnly" inType="win:Boolean"/>
+      <data name="HandleContext" inType="win:Pointer"/>
+      <data name="VirtualDisk" inType="win:Pointer"/>
+      <data name="FileObject" inType="win:Pointer"/>
+     </template>
+     <template tid="VirtualDiskHandleCloseStopArgs">
+      <data name="HandleContext" inType="win:Pointer"/>
+      <data name="VirtualDisk" inType="win:Pointer"/>
+     </template>
+     <template tid="task_015Args">
+      <data name="VirtualDisk" inType="win:Pointer"/>
+     </template>
+     <template tid="SurfaceVirtualDiskStop19Args">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="VhdInstanceId" inType="win:GUID"/>
+     </template>
+     <template tid="VirtualDiskHandleCreateStartArgs">
+      <data name="FileObject" inType="win:Pointer"/>
+     </template>
+     <template tid="FilewrapperHandleCreateStartArgs">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="DesiredAccess" inType="win:UInt32"/>
+     </template>
+     <template tid="task_050Args">
+      <data name="VhdMetaOps" inType="win:AnsiString"/>
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="TargetVhdFileName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_0100Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="VhdIoType" inType="win:UInt32"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0101Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+     </template>
+     <template tid="task_0102Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0113Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="Mode" inType="win:UInt32"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0114Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="Status" inType="win:UInt32"/>
+      <data name="RefType" inType="win:UInt32" map="FileRefTypeMap"/>
+      <data name="Mode" inType="win:UInt32"/>
+      <data name="PendingRecoveryCount" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0115Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="Status" inType="win:UInt32"/>
+      <data name="RefType" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0116Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="RefType" inType="win:UInt32"/>
+      <data name="Mode" inType="win:UInt32" map="FileModeMap"/>
+      <data name="PendingRecoveryCount" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0117Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="Status" inType="win:UInt32"/>
+      <data name="RefType" inType="win:UInt32"/>
+      <data name="Mode" inType="win:UInt32"/>
+      <data name="PendingRecoveryCount" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0208Args">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="VirtualDisk" inType="win:UInt64"/>
+      <data name="LogFileName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_0209Args">
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="VirtualDisk" inType="win:UInt64"/>
+     </template>
+     <template tid="task_0210Args">
+      <data name="VirtualDisk" inType="win:UInt64"/>
+      <data name="LogFileName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0211Args">
+      <data name="LogFileName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_0214Args">
+      <data name="LogFileName" inType="win:UnicodeString"/>
+      <data name="VhdFileName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+      <data name="VHDFileTime" inType="win:UInt64"/>
+      <data name="LogFileTime" inType="win:UInt64"/>
+     </template>
+     <template tid="IOrequestStartinganIO.Args">
+      <data name="VhdId" inType="win:UnicodeString"/>
+      <data name="VhdIoType" inType="win:UInt32"/>
+      <data name="VhdSrbType" inType="win:UInt32" map="SrbTypeMap"/>
+      <data name="Offset" inType="win:UInt64"/>
+      <data name="Length" inType="win:UInt32"/>
+     </template>
+     <template tid="IOrequestCompletinganIO.Args">
+      <data name="VhdId" inType="win:UnicodeString"/>
+      <data name="VhdIoType" inType="win:UInt32"/>
+      <data name="VhdSrbType" inType="win:UInt32"/>
+      <data name="Offset" inType="win:UInt64"/>
+      <data name="Length" inType="win:UInt32"/>
+     </template>
+     <template tid="task_01010Args">
+      <data name="VhdFile" inType="win:UnicodeString"/>
+      <data name="VmId" inType="win:GUID"/>
+      <data name="VhdIoType" inType="win:UInt32"/>
+      <data name="VhdSrbType" inType="win:UInt32"/>
+      <data name="Offset" inType="win:UInt64"/>
+      <data name="Length" inType="win:UInt32"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+    </templates>
+   </provider>
+  </events>
+ </instrumentation>
+ <localization>
+  <resources culture="en-GB">
+   <stringTable>
+    <string id="keyword_Activity" value="Activity"/>
+    <string id="keyword_IO" value="IO"/>
+    <string id="task_task_0" value="task_0"/>
+    <string id="task_IOrequest" value="IOrequest"/>
+    <string id="opcode_IOrequestStartinganIO." value="StartinganIO."/>
+    <string id="opcode_IOrequestCompletinganIO." value="CompletinganIO."/>
+    <string id="task_VirtualDiskHandleCreate" value="VirtualDiskHandleCreate"/>
+    <string id="task_VirtualDiskHandleClose" value="VirtualDiskHandleClose"/>
+    <string id="task_FilewrapperHandleCreate" value="FilewrapperHandleCreate"/>
+    <string id="task_FilewrapperHandleCreate_1204" value="FilewrapperHandleCreate_1204"/>
+    <string id="task_SurfaceVirtualDisk" value="SurfaceVirtualDisk"/>
+    <string id="task_UnsurfaceVirtualDisk" value="UnsurfaceVirtualDisk"/>
+    <string id="task_CleanupBackingStore" value="CleanupBackingStore"/>
+    <string id="task_CleanupBackingStoreFlush" value="CleanupBackingStoreFlush"/>
+    <string id="map_IoTypeMapWrite" value="Write"/>
+    <string id="map_IoTypeMapRead" value="Read"/>
+    <string id="map_IoTypeMapFlush" value="Flush"/>
+    <string id="map_IoTypeMapOffload write" value="Offload write"/>
+    <string id="map_IoTypeMapOffload read" value="Offload read"/>
+    <string id="map_IoTypeMapProject read" value="Project read"/>
+    <string id="map_IoTypeMapProject write" value="Project write"/>
+    <string id="map_IoTypeMapUnmap" value="Unmap"/>
+    <string id="map_IoTypeMapGet LBA status" value="Get LBA status"/>
+    <string id="map_IoTypeMapFile wrapper access check" value="File wrapper access check"/>
+    <string id="map_VirtualDiskTypeUndefined" value="Undefined"/>
+    <string id="map_VirtualDiskTypeVHD" value="VHD"/>
+    <string id="map_VirtualDiskTypeVHDX" value="VHDX"/>
+    <string id="map_VirtualDiskTypeISO" value="ISO"/>
+    <string id="map_VirtualDiskTypeVHDSET" value="VHDSET"/>
+    <string id="map_FileRefTypeMapShared Reference" value="Shared Reference"/>
+    <string id="map_FileRefTypeMapExclusive Reference" value="Exclusive Reference"/>
+    <string id="map_FileRefTypeMapQoS Reference" value="QoS Reference"/>
+    <string id="map_FileModeMapRead-only, shared" value="Read-only, shared"/>
+    <string id="map_FileModeMapRead-only, exclusive" value="Read-only, exclusive"/>
+    <string id="map_FileModeMapRead-write, exclusive" value="Read-write, exclusive"/>
+    <string id="map_FileModeMapInvalid" value="Invalid"/>
+    <string id="map_SrbTypeMapStorport" value="Storport"/>
+    <string id="map_SrbTypeMapPrivate" value="Private"/>
+    <string id="map_SrbTypeMapInternal" value="Internal"/>
+    <string id="map_SrbTypeMapMirror" value="Mirror"/>
+   </stringTable>
+  </resources>
+ </localization>
+</instrumentationManifest>

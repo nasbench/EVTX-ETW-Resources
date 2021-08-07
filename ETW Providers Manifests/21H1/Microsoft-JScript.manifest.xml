@@ -1,0 +1,1077 @@
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events">
+ <instrumentation xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events">
+  <events>
+   <provider name="Microsoft-JScript" guid="{57277741-3638-4a4b-bdba-0ac6e45da56c}" resourceFileName="Microsoft-JScript" messageFileName="Microsoft-JScript" symbol="MicrosoftJScript" source="Xml" >
+    <keywords>
+     <keyword name="JScriptRuntime" message="$(string.keyword_JScriptRuntime)" mask="0x1"/>
+     <keyword name="JScriptStartRundown" message="$(string.keyword_JScriptStartRundown)" mask="0x2"/>
+     <keyword name="JScriptEndRundown" message="$(string.keyword_JScriptEndRundown)" mask="0x4"/>
+     <keyword name="JScriptGCBucketStats" message="$(string.keyword_JScriptGCBucketStats)" mask="0x8"/>
+     <keyword name="JScriptProjection" message="$(string.keyword_JScriptProjection)" mask="0x10"/>
+     <keyword name="JScriptFrontend" message="$(string.keyword_JScriptFrontend)" mask="0x20"/>
+     <keyword name="JScriptGarbageCollection" message="$(string.keyword_JScriptGarbageCollection)" mask="0x40"/>
+     <keyword name="JScriptProfile" message="$(string.keyword_JScriptProfile)" mask="0x80"/>
+     <keyword name="JscriptBackend" message="$(string.keyword_JscriptBackend)" mask="0x100"/>
+     <keyword name="JscriptJit" message="$(string.keyword_JscriptJit)" mask="0x200"/>
+     <keyword name="JScriptMemoryTracing" message="$(string.keyword_JScriptMemoryTracing)" mask="0x400"/>
+     <keyword name="JScriptObjectAllocation" message="$(string.keyword_JScriptObjectAllocation)" mask="0x800"/>
+     <keyword name="JScriptExternalReferenceAddRef" message="$(string.keyword_JScriptExternalReferenceAddRef)" mask="0x1000"/>
+     <keyword name="JScriptObjectCleanup" message="$(string.keyword_JScriptObjectCleanup)" mask="0x2000"/>
+     <keyword name="JScriptExternalReferenceRelease" message="$(string.keyword_JScriptExternalReferenceRelease)" mask="0x4000"/>
+     <keyword name="JScriptAsyncCausality" message="$(string.keyword_JScriptAsyncCausality)" mask="0x8000"/>
+     <keyword name="JScriptByteCode" message="$(string.keyword_JScriptByteCode)" mask="0x10000"/>
+     <keyword name="JScriptHosting" message="$(string.keyword_JScriptHosting)" mask="0x20000"/>
+     <keyword name="JScriptStackTrace" message="$(string.keyword_JScriptStackTrace)" mask="0x40000"/>
+     <keyword name="JScriptAsyncCausality_V2" message="$(string.keyword_JScriptAsyncCausality_V2)" mask="0x80000"/>
+     <keyword name="JScriptSourceMapping" message="$(string.keyword_JScriptSourceMapping)" mask="0x100000"/>
+     <keyword name="MemProtectGarbageCollection" message="$(string.keyword_MemProtectGarbageCollection)" mask="0x200000"/>
+     <keyword name="MemProtectObjectAllocation" message="$(string.keyword_MemProtectObjectAllocation)" mask="0x400000"/>
+     <keyword name="MemProtectHeapSize" message="$(string.keyword_MemProtectHeapSize)" mask="0x800000"/>
+     <keyword name="Internal" message="$(string.keyword_Internal)" mask="0x1000000"/>
+     <keyword name="MemProtectGCBucketStats" message="$(string.keyword_MemProtectGCBucketStats)" mask="0x2000000"/>
+    </keywords>
+    <tasks>
+     <task name="MethodRuntime" message="$(string.task_MethodRuntime)" value="1">
+>
+      <opcodes>
+       <opcode name="MethodLoad" message="$(string.opcode_MethodRuntimeMethodLoad)" value="10"/>
+       <opcode name="MethodUnload" message="$(string.opcode_MethodRuntimeMethodUnload)" value="11"/>
+      </opcodes>
+     </task>
+     <task name="ScriptContextRuntime" message="$(string.task_ScriptContextRuntime)" value="2">
+>
+      <opcodes>
+       <opcode name="ScriptContextLoad" message="$(string.opcode_ScriptContextRuntimeScriptContextLoad)" value="10"/>
+       <opcode name="ScriptContextUnload" message="$(string.opcode_ScriptContextRuntimeScriptContextUnload)" value="11"/>
+       <opcode name="SourceLoad" message="$(string.opcode_ScriptContextRuntimeSourceLoad)" value="12"/>
+       <opcode name="SourceUnload" message="$(string.opcode_ScriptContextRuntimeSourceUnload)" value="13"/>
+       <opcode name="ScriptContextOnStartupComplete" message="$(string.opcode_ScriptContextRuntimeScriptContextOnStartupComplete)" value="14"/>
+      </opcodes>
+     </task>
+     <task name="MethodRundown" message="$(string.task_MethodRundown)" value="3">
+>
+      <opcodes>
+       <opcode name="MethodDCStart" message="$(string.opcode_MethodRundownMethodDCStart)" value="10"/>
+       <opcode name="MethodDCEnd" message="$(string.opcode_MethodRundownMethodDCEnd)" value="11"/>
+       <opcode name="DCStartComplete" message="$(string.opcode_MethodRundownDCStartComplete)" value="12"/>
+       <opcode name="DCEndComplete" message="$(string.opcode_MethodRundownDCEndComplete)" value="13"/>
+       <opcode name="DCStartInit" message="$(string.opcode_MethodRundownDCStartInit)" value="14"/>
+       <opcode name="DCEndInit" message="$(string.opcode_MethodRundownDCEndInit)" value="15"/>
+      </opcodes>
+     </task>
+     <task name="ScriptContextRundown" message="$(string.task_ScriptContextRundown)" value="4">
+>
+      <opcodes>
+       <opcode name="ScriptContextDCStart" message="$(string.opcode_ScriptContextRundownScriptContextDCStart)" value="10"/>
+       <opcode name="ScriptContextDCEnd" message="$(string.opcode_ScriptContextRundownScriptContextDCEnd)" value="11"/>
+       <opcode name="SourceDCStart" message="$(string.opcode_ScriptContextRundownSourceDCStart)" value="12"/>
+       <opcode name="SourceDCEnd" message="$(string.opcode_ScriptContextRundownSourceDCEnd)" value="13"/>
+      </opcodes>
+     </task>
+     <task name="Jscript_Projection_ResolveType" message="$(string.task_Jscript_Projection_ResolveType)" value="5"/>
+     <task name="Jscript_Projection_ConstructRuntimeClass" message="$(string.task_Jscript_Projection_ConstructRuntimeClass)" value="6"/>
+     <task name="Jscript_Projection_MethodCall" message="$(string.task_Jscript_Projection_MethodCall)" value="7"/>
+     <task name="Jscript_Projection_RawMethodCall" message="$(string.task_Jscript_Projection_RawMethodCall)" value="8"/>
+     <task name="Jscript_Projection_InvokesJsDelegate" message="$(string.task_Jscript_Projection_InvokesJsDelegate)" value="9"/>
+     <task name="Jscript_Projection_InvokeNativeDelegate" message="$(string.task_Jscript_Projection_InvokeNativeDelegate)" value="10"/>
+     <task name="Jscript_Projection_AddEventListener" message="$(string.task_Jscript_Projection_AddEventListener)" value="11"/>
+     <task name="Jscript_Projection_RemoveEventListener" message="$(string.task_Jscript_Projection_RemoveEventListener)" value="12"/>
+     <task name="Jscript_Projection_GetTypeMetaDataInformation" message="$(string.task_Jscript_Projection_GetTypeMetaDataInformation)" value="13"/>
+     <task name="Jscript_Projection_SetEventHandler" message="$(string.task_Jscript_Projection_SetEventHandler)" value="14"/>
+     <task name="Jscript_Projection_RemoveAllEventsAndEventHandlers" message="$(string.task_Jscript_Projection_RemoveAllEventsAndEventHandlers)" value="15"/>
+     <task name="Jscript_Projection_InvokeEvent" message="$(string.task_Jscript_Projection_InvokeEvent)" value="16"/>
+     <task name="Jscript_Projection_InvokeEventEvParamPrep" message="$(string.task_Jscript_Projection_InvokeEventEvParamPrep)" value="17"/>
+     <task name="Jscript_Projection_GetExprFromConcreteTypeName" message="$(string.task_Jscript_Projection_GetExprFromConcreteTypeName)" value="18"/>
+     <task name="Jscript_Projection_GetTypeFromTypeNameParts" message="$(string.task_Jscript_Projection_GetTypeFromTypeNameParts)" value="19"/>
+     <task name="Jscript_Projection_ReferenceOrArrayGetValue" message="$(string.task_Jscript_Projection_ReferenceOrArrayGetValue)" value="20"/>
+     <task name="Jscript_Projection_PropertyValueVarFromGRCN" message="$(string.task_Jscript_Projection_PropertyValueVarFromGRCN)" value="21"/>
+     <task name="Jscript_Projection_VarFromGRCN" message="$(string.task_Jscript_Projection_VarFromGRCN)" value="22"/>
+     <task name="Jscript_Projection_WriteIReference" message="$(string.task_Jscript_Projection_WriteIReference)" value="23"/>
+     <task name="Jscript_Projection_WriteInspectable" message="$(string.task_Jscript_Projection_WriteInspectable)" value="24"/>
+     <task name="Jscript_Projection_GetNonArrayTypeAsPropertyValue" message="$(string.task_Jscript_Projection_GetNonArrayTypeAsPropertyValue)" value="25"/>
+     <task name="Jscript_Projection_GetNonArrayBasicTypeAsPropertyValue" message="$(string.task_Jscript_Projection_GetNonArrayBasicTypeAsPropertyValue)" value="26"/>
+     <task name="Jscript_Projection_GetTypedArrayAsPropertyValue" message="$(string.task_Jscript_Projection_GetTypedArrayAsPropertyValue)" value="27"/>
+     <task name="Jscript_Projection_GetBasicTypedArrayAsPropertyValue" message="$(string.task_Jscript_Projection_GetBasicTypedArrayAsPropertyValue)" value="28"/>
+     <task name="GenerateBytecodeMethod" message="$(string.task_GenerateBytecodeMethod)" value="29"/>
+     <task name="ParseMethod" message="$(string.task_ParseMethod)" value="30"/>
+     <task name="Jscript_GC_ResetMarks" message="$(string.task_Jscript_GC_ResetMarks)" value="31"/>
+     <task name="Jscript_GC_ScanRoots" message="$(string.task_Jscript_GC_ScanRoots)" value="32"/>
+     <task name="Jscript_GC_ScanStack" message="$(string.task_Jscript_GC_ScanStack)" value="33"/>
+     <task name="Jscript_GC_Mark" message="$(string.task_Jscript_GC_Mark)" value="34"/>
+     <task name="Jscript_GC_Rescan" message="$(string.task_Jscript_GC_Rescan)" value="35"/>
+     <task name="Jscript_GC_Sweep" message="$(string.task_Jscript_GC_Sweep)" value="36"/>
+     <task name="Jscript_GC_SetupBackgroundSweep" message="$(string.task_Jscript_GC_SetupBackgroundSweep)" value="37"/>
+     <task name="Jscript_GC_BackgroundSweep" message="$(string.task_Jscript_GC_BackgroundSweep)" value="38"/>
+     <task name="Jscript_GC_TransferSweptObjects" message="$(string.task_Jscript_GC_TransferSweptObjects)" value="39"/>
+     <task name="Jscript_GC_Dispose" message="$(string.task_Jscript_GC_Dispose)" value="40"/>
+     <task name="Jscript_GC_BackgroundMark" message="$(string.task_Jscript_GC_BackgroundMark)" value="41"/>
+     <task name="Jscript_GC_ResetWriteWatch" message="$(string.task_Jscript_GC_ResetWriteWatch)" value="42"/>
+     <task name="Jscript_Profile_Persistence" message="$(string.task_Jscript_Profile_Persistence)" value="43">
+>
+      <opcodes>
+       <opcode name="Load" message="$(string.opcode_Jscript_Profile_PersistenceLoad)" value="15"/>
+       <opcode name="Save" message="$(string.opcode_Jscript_Profile_PersistenceSave)" value="16"/>
+      </opcodes>
+     </task>
+     <task name="Jscript_Backend_Inline" message="$(string.task_Jscript_Backend_Inline)" value="44"/>
+     <task name="Jscript_Method_Jit" message="$(string.task_Jscript_Method_Jit)" value="45">
+>
+      <opcodes>
+       <opcode name="Start_45_17" message="$(string.opcode_Jscript_Method_JitStart_45_17)" value="17"/>
+       <opcode name="Stop_45_18" message="$(string.opcode_Jscript_Method_JitStop_45_18)" value="18"/>
+       <opcode name="Queue" message="$(string.opcode_Jscript_Method_JitQueue)" value="19"/>
+       <opcode name="Dequeue" message="$(string.opcode_Jscript_Method_JitDequeue)" value="20"/>
+      </opcodes>
+     </task>
+     <task name="Jscript_GC_IdleCollect" message="$(string.task_Jscript_GC_IdleCollect)" value="46"/>
+     <task name="Jscript_Page_Allocator_Size" message="$(string.task_Jscript_Page_Allocator_Size)" value="47">
+>
+      <opcodes>
+       <opcode name="UsedPageSize" message="$(string.opcode_Jscript_Page_Allocator_SizeUsedPageSize)" value="10"/>
+      </opcodes>
+     </task>
+     <task name="Jscript_Recycler_Allocation" message="$(string.task_Jscript_Recycler_Allocation)" value="48">
+>
+      <opcodes>
+       <opcode name="Free_Memory" message="$(string.opcode_Jscript_Recycler_AllocationFree_Memory)" value="10"/>
+       <opcode name="Free_Memory_Block" message="$(string.opcode_Jscript_Recycler_AllocationFree_Memory_Block)" value="11"/>
+       <opcode name="Allocate_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_Object)" value="12"/>
+       <opcode name="Allocate_Array" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_Array)" value="13"/>
+       <opcode name="Allocate_Function" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_Function)" value="14"/>
+       <opcode name="Allocate_DOM_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_DOM_Object)" value="15"/>
+       <opcode name="Allocate_WinRT_JSProxy_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_Object)" value="16"/>
+       <opcode name="Allocate_PixelArray" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_PixelArray)" value="17"/>
+       <opcode name="External_AddRef" message="$(string.opcode_Jscript_Recycler_AllocationExternal_AddRef)" value="18"/>
+       <opcode name="External_Release" message="$(string.opcode_Jscript_Recycler_AllocationExternal_Release)" value="19"/>
+       <opcode name="Allocate_WinRT_RuntimeClass_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_RuntimeClass_Object)" value="20"/>
+       <opcode name="Allocate_WinRT_Namespace_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_Namespace_Object)" value="21"/>
+       <opcode name="Allocate_WinRT_Struct_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_Struct_Object)" value="22"/>
+       <opcode name="Allocate_WinRT_Enum_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_Enum_Object)" value="23"/>
+       <opcode name="Allocate_WinRT_TypedArray_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_TypedArray_Object)" value="24"/>
+       <opcode name="Allocate_WinRT_Delegate_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_Delegate_Object)" value="25"/>
+       <opcode name="Allocate_WinRT_EventHandler_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_EventHandler_Object)" value="26"/>
+       <opcode name="Allocate_WinRT_Collections_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_Collections_Object)" value="27"/>
+       <opcode name="Allocate_WinRT_PropertyValue_Object" message="$(string.opcode_Jscript_Recycler_AllocationAllocate_WinRT_PropertyValue_Object)" value="28"/>
+       <opcode name="Free_WinRT_Delegate_Object" message="$(string.opcode_Jscript_Recycler_AllocationFree_WinRT_Delegate_Object)" value="29"/>
+       <opcode name="Free_WinRT_EventHandler_Object" message="$(string.opcode_Jscript_Recycler_AllocationFree_WinRT_EventHandler_Object)" value="30"/>
+       <opcode name="Free_WinRT_Collections_Object" message="$(string.opcode_Jscript_Recycler_AllocationFree_WinRT_Collections_Object)" value="31"/>
+       <opcode name="Free_WinRT_PropertyValue_Object" message="$(string.opcode_Jscript_Recycler_AllocationFree_WinRT_PropertyValue_Object)" value="32"/>
+      </opcodes>
+     </task>
+     <task name="Jscript_GC_SweepWeakRef" message="$(string.task_Jscript_GC_SweepWeakRef)" value="49"/>
+     <task name="Jscript_GC_ProcessTrackedObject" message="$(string.task_Jscript_GC_ProcessTrackedObject)" value="50"/>
+     <task name="Jscript_GC_ProcessClientTrackedObject" message="$(string.task_Jscript_GC_ProcessClientTrackedObject)" value="51"/>
+     <task name="Jscript_GC_BackgroundZeroPage" message="$(string.task_Jscript_GC_BackgroundZeroPage)" value="52"/>
+     <task name="Jscript_GC_FlushZeroPage" message="$(string.task_Jscript_GC_FlushZeroPage)" value="53"/>
+     <task name="Jscript_GC_DecommitConcurrentCollectPageAllocator" message="$(string.task_Jscript_GC_DecommitConcurrentCollectPageAllocator)" value="54"/>
+     <task name="Jscript_GC_SweepPartialReusePage" message="$(string.task_Jscript_GC_SweepPartialReusePage)" value="55"/>
+     <task name="Jscript_GC_BackgroundRescan" message="$(string.task_Jscript_GC_BackgroundRescan)" value="56"/>
+     <task name="Jscript_GC_BackgroundResetWriteWatch" message="$(string.task_Jscript_GC_BackgroundResetWriteWatch)" value="57"/>
+     <task name="Jscript_GC_BackgroundScanRoots" message="$(string.task_Jscript_GC_BackgroundScanRoots)" value="58"/>
+     <task name="Jscript_GC_BackgroundResetMarks" message="$(string.task_Jscript_GC_BackgroundResetMarks)" value="59"/>
+     <task name="Jscript_GC_RescanMarkWait" message="$(string.task_Jscript_GC_RescanMarkWait)" value="60"/>
+     <task name="Jscript_GC_SynchronousMarkWait" message="$(string.task_Jscript_GC_SynchronousMarkWait)" value="61"/>
+     <task name="Jscript_GC_FinishConcurrentWait" message="$(string.task_Jscript_GC_FinishConcurrentWait)" value="62"/>
+     <task name="Jscript_GC_EndMarkOnLowMemory" message="$(string.task_Jscript_GC_EndMarkOnLowMemory)" value="63"/>
+     <task name="Jscript_AsyncCausality_StackTrace" message="$(string.task_Jscript_AsyncCausality_StackTrace)" value="64"/>
+     <task name="JScript_ByteCodeDeserialize" message="$(string.task_JScript_ByteCodeDeserialize)" value="65"/>
+     <task name="Jscript_Hosting_BinaryInconsistency" message="$(string.task_Jscript_Hosting_BinaryInconsistency)" value="66"/>
+     <task name="Jscript_Hosting_BinaryConsistencyInfo" message="$(string.task_Jscript_Hosting_BinaryConsistencyInfo)" value="67"/>
+     <task name="Jscript_StackTrace" message="$(string.task_Jscript_StackTrace)" value="68"/>
+     <task name="Jscript_Host_Native" message="$(string.task_Jscript_Host_Native)" value="69"/>
+     <task name="Jscript_SourceMapping" message="$(string.task_Jscript_SourceMapping)" value="70"/>
+     <task name="Jscript_GC_ParallelMark" message="$(string.task_Jscript_GC_ParallelMark)" value="71"/>
+     <task name="Jscript_GC_BackgroundParallelMark" message="$(string.task_Jscript_GC_BackgroundParallelMark)" value="72"/>
+     <task name="Memprotect_GC_ResetMarks" message="$(string.task_Memprotect_GC_ResetMarks)" value="73"/>
+     <task name="Memprotect_GC_ScanRoots" message="$(string.task_Memprotect_GC_ScanRoots)" value="74"/>
+     <task name="Memprotect_GC_ScanStack" message="$(string.task_Memprotect_GC_ScanStack)" value="75"/>
+     <task name="Memprotect_GC_Mark" message="$(string.task_Memprotect_GC_Mark)" value="76"/>
+     <task name="Memprotect_GC_Rescan" message="$(string.task_Memprotect_GC_Rescan)" value="77"/>
+     <task name="Memprotect_GC_Sweep" message="$(string.task_Memprotect_GC_Sweep)" value="78"/>
+     <task name="Memprotect_GC_SetupBackgroundSweep" message="$(string.task_Memprotect_GC_SetupBackgroundSweep)" value="79"/>
+     <task name="Memprotect_GC_BackgroundSweep" message="$(string.task_Memprotect_GC_BackgroundSweep)" value="80"/>
+     <task name="Memprotect_GC_TransferSweptObjects" message="$(string.task_Memprotect_GC_TransferSweptObjects)" value="81"/>
+     <task name="Memprotect_GC_Dispose" message="$(string.task_Memprotect_GC_Dispose)" value="82"/>
+     <task name="Memprotect_GC_BackgroundMark" message="$(string.task_Memprotect_GC_BackgroundMark)" value="83"/>
+     <task name="Memprotect_GC_ResetWriteWatch" message="$(string.task_Memprotect_GC_ResetWriteWatch)" value="84"/>
+     <task name="Memprotect_GC_IdleCollect" message="$(string.task_Memprotect_GC_IdleCollect)" value="85"/>
+     <task name="Memprotect_GC_SweepWeakRef" message="$(string.task_Memprotect_GC_SweepWeakRef)" value="86"/>
+     <task name="Memprotect_GC_ProcessTrackedObject" message="$(string.task_Memprotect_GC_ProcessTrackedObject)" value="87"/>
+     <task name="Memprotect_GC_ProcessClientTrackedObject" message="$(string.task_Memprotect_GC_ProcessClientTrackedObject)" value="88"/>
+     <task name="Memprotect_GC_BackgroundZeroPage" message="$(string.task_Memprotect_GC_BackgroundZeroPage)" value="89"/>
+     <task name="Memprotect_GC_FlushZeroPage" message="$(string.task_Memprotect_GC_FlushZeroPage)" value="90"/>
+     <task name="Memprotect_GC_DecommitConcurrentCollectPageAllocator" message="$(string.task_Memprotect_GC_DecommitConcurrentCollectPageAllocator)" value="91"/>
+     <task name="Memprotect_GC_SweepPartialReusePage" message="$(string.task_Memprotect_GC_SweepPartialReusePage)" value="92"/>
+     <task name="Memprotect_GC_BackgroundRescan" message="$(string.task_Memprotect_GC_BackgroundRescan)" value="93"/>
+     <task name="Memprotect_GC_BackgroundResetWriteWatch" message="$(string.task_Memprotect_GC_BackgroundResetWriteWatch)" value="94"/>
+     <task name="Memprotect_GC_BackgroundScanRoots" message="$(string.task_Memprotect_GC_BackgroundScanRoots)" value="95"/>
+     <task name="Memprotect_GC_BackgroundResetMarks" message="$(string.task_Memprotect_GC_BackgroundResetMarks)" value="96"/>
+     <task name="Memprotect_GC_RescanMarkWait" message="$(string.task_Memprotect_GC_RescanMarkWait)" value="97"/>
+     <task name="Memprotect_GC_SynchronousMarkWait" message="$(string.task_Memprotect_GC_SynchronousMarkWait)" value="98"/>
+     <task name="Memprotect_GC_FinishConcurrentWait" message="$(string.task_Memprotect_GC_FinishConcurrentWait)" value="99"/>
+     <task name="Memprotect_GC_EndMarkOnLowMemory" message="$(string.task_Memprotect_GC_EndMarkOnLowMemory)" value="100"/>
+     <task name="Memprotect_GC_ParallelMark" message="$(string.task_Memprotect_GC_ParallelMark)" value="101"/>
+     <task name="Memprotect_GC_BackgroundParallelMark" message="$(string.task_Memprotect_GC_BackgroundParallelMark)" value="102"/>
+     <task name="Memprotect_GC" message="$(string.task_Memprotect_GC)" value="103"/>
+     <task name="Memprotect_GC_Allocation" message="$(string.task_Memprotect_GC_Allocation)" value="104"/>
+     <task name="Memprotect_GC_Unroot" message="$(string.task_Memprotect_GC_Unroot)" value="105"/>
+     <task name="Jscript_GC_Init" message="$(string.task_Jscript_GC_Init)" value="106"/>
+     <task name="Memprotect_GC_Heap_Size" message="$(string.task_Memprotect_GC_Heap_Size)" value="107"/>
+     <task name="Jscript_Internal_Generic_Event" message="$(string.task_Jscript_Internal_Generic_Event)" value="108"/>
+     <task name="Jscript_GC_Bucket_Stats" message="$(string.task_Jscript_GC_Bucket_Stats)" value="109"/>
+     <task name="Memprotect_GC_Bucket_Stats" message="$(string.task_Memprotect_GC_Bucket_Stats)" value="110"/>
+     <task name="Jscript_Backend_Bailout" message="$(string.task_Jscript_Backend_Bailout)" value="111"/>
+     <task name="Jscript_Backend_Bailout_LoopBody" message="$(string.task_Jscript_Backend_Bailout_LoopBody)" value="112"/>
+     <task name="Jscript_GC_Clear_InlineCache" message="$(string.task_Jscript_GC_Clear_InlineCache)" value="113"/>
+     <task name="Jscript_GC_PreSweepCallback" message="$(string.task_Jscript_GC_PreSweepCallback)" value="114"/>
+     <task name="Memprotect_GC_PreSweepCallback" message="$(string.task_Memprotect_GC_PreSweepCallback)" value="115"/>
+     <task name="Jscript_GC2" message="$(string.task_Jscript_GC2)" value="116"/>
+     <task name="Memprotect_GC2" message="$(string.task_Memprotect_GC2)" value="117"/>
+    </tasks>
+    <maps>
+     <valueMap name="MethodAddressRangeMap">
+      <map value="0x1" message="$(string.map_MethodAddressRangeMapInterpreted)"/>
+      <map value="0x2" message="$(string.map_MethodAddressRangeMapJIT)"/>
+      <map value="0x3" message="$(string.map_MethodAddressRangeMapJITLoopBody)"/>
+      <map value="0x4" message="$(string.map_MethodAddressRangeMapJITLoopBody)"/>
+      <map value="0x5" message="$(string.map_MethodAddressRangeMapJITLoopBody)"/>
+      <map value="0x6" message="$(string.map_MethodAddressRangeMapJITLoopBody)"/>
+      <map value="0x7" message="$(string.map_MethodAddressRangeMapJITLoopBody)"/>
+      <map value="0x8" message="$(string.map_MethodAddressRangeMapJITLoopBody)"/>
+      <map value="0x9" message="$(string.map_MethodAddressRangeMapJITLoopBody)"/>
+      <map value="0xa" message="$(string.map_MethodAddressRangeMapJITLoopBody)"/>
+     </valueMap>
+     <valueMap name="JitLevelMap">
+      <map value="0x1" message="$(string.map_JitLevelMapSimpleJit)"/>
+      <map value="0x2" message="$(string.map_JitLevelMapFullJit)"/>
+     </valueMap>
+     <valueMap name="GCBucketNames">
+      <map value="0x0" message="$(string.map_GCBucketNamesNormal (S))"/>
+      <map value="0x1" message="$(string.map_GCBucketNamesLeaf (S))"/>
+      <map value="0x2" message="$(string.map_GCBucketNamesFin (S))"/>
+      <map value="0x3" message="$(string.map_GCBucketNamesNormWB (S))"/>
+      <map value="0x4" message="$(string.map_GCBucketNamesFinWB (S))"/>
+      <map value="0x5" message="$(string.map_GCBucketNamesVisited (S))"/>
+      <map value="0x100" message="$(string.map_GCBucketNamesNormal (M))"/>
+      <map value="0x101" message="$(string.map_GCBucketNamesLeaf (M))"/>
+      <map value="0x102" message="$(string.map_GCBucketNamesFin (M))"/>
+      <map value="0x103" message="$(string.map_GCBucketNamesNormWB (M))"/>
+      <map value="0x104" message="$(string.map_GCBucketNamesFinWB (M))"/>
+      <map value="0x105" message="$(string.map_GCBucketNamesVisited (M))"/>
+      <map value="0x200" message="$(string.map_GCBucketNamesLarge)"/>
+      <map value="0x300" message="$(string.map_GCBucketNamesTotal)"/>
+     </valueMap>
+    </maps>
+    <events>
+     <event value="1" symbol="MethodRundownDCStartInit" version="0" task="MethodRundown" opcode="DCStartInit" level="win:Informational" keywords="JScriptStartRundown"/>
+     <event value="2" symbol="MethodRundownDCStartComplete" version="0" task="MethodRundown" opcode="DCStartComplete" level="win:Informational" keywords="JScriptStartRundown"/>
+     <event value="3" symbol="MethodRundownDCEndInit" version="0" task="MethodRundown" opcode="DCEndInit" level="win:Informational" keywords="JScriptEndRundown"/>
+     <event value="4" symbol="MethodRundownDCEndComplete" version="0" task="MethodRundown" opcode="DCEndComplete" level="win:Informational" keywords="JScriptEndRundown"/>
+     <event value="5" symbol="MethodRundownMethodDCStart" version="0" task="MethodRundown" opcode="MethodDCStart" level="win:Informational" keywords="JScriptStartRundown" template="MethodRundownMethodDCStartArgs"/>
+     <event value="6" symbol="MethodRundownMethodDCEnd" version="0" task="MethodRundown" opcode="MethodDCEnd" level="win:Informational" keywords="JScriptEndRundown" template="MethodRundownMethodDCEndArgs"/>
+     <event value="7" symbol="ScriptContextRundownScriptContextDCStart" version="0" task="ScriptContextRundown" opcode="ScriptContextDCStart" level="win:Informational" keywords="JScriptStartRundown" template="ScriptContextRundownScriptContextDCStartArgs"/>
+     <event value="8" symbol="ScriptContextRundownScriptContextDCEnd" version="0" task="ScriptContextRundown" opcode="ScriptContextDCEnd" level="win:Informational" keywords="JScriptEndRundown" template="ScriptContextRundownScriptContextDCStartArgs"/>
+     <event value="9" symbol="MethodRuntimeMethodLoad" version="0" task="MethodRuntime" opcode="MethodLoad" level="win:Informational" keywords="JScriptRuntime" template="MethodRundownMethodDCEndArgs"/>
+     <event value="10" symbol="MethodRuntimeMethodUnload" version="0" task="MethodRuntime" opcode="MethodUnload" level="win:Informational" keywords="JScriptRuntime" template="MethodRundownMethodDCEndArgs"/>
+     <event value="11" symbol="ScriptContextRuntimeScriptContextLoad" version="0" task="ScriptContextRuntime" opcode="ScriptContextLoad" level="win:Informational" keywords="JScriptRuntime" template="ScriptContextRundownScriptContextDCStartArgs"/>
+     <event value="12" symbol="ScriptContextRuntimeScriptContextUnload" version="0" task="ScriptContextRuntime" opcode="ScriptContextUnload" level="win:Informational" keywords="JScriptRuntime" template="ScriptContextRundownScriptContextDCStartArgs"/>
+     <event value="13" symbol="Jscript_Projection_ResolveTypeStart" version="0" task="Jscript_Projection_ResolveType" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="14" symbol="Jscript_Projection_ResolveTypeStop" version="0" task="Jscript_Projection_ResolveType" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="15" symbol="Jscript_Projection_ConstructRuntimeClassStart" version="0" task="Jscript_Projection_ConstructRuntimeClass" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="16" symbol="Jscript_Projection_ConstructRuntimeClassStop" version="0" task="Jscript_Projection_ConstructRuntimeClass" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="17" symbol="Jscript_Projection_MethodCallStart" version="0" task="Jscript_Projection_MethodCall" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="18" symbol="Jscript_Projection_MethodCallStop" version="0" task="Jscript_Projection_MethodCall" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="19" symbol="Jscript_Projection_RawMethodCallStart" version="0" task="Jscript_Projection_RawMethodCall" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="20" symbol="Jscript_Projection_RawMethodCallStop" version="0" task="Jscript_Projection_RawMethodCall" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="21" symbol="Jscript_Projection_InvokesJsDelegateStart" version="0" task="Jscript_Projection_InvokesJsDelegate" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="22" symbol="Jscript_Projection_InvokesJsDelegateStop" version="0" task="Jscript_Projection_InvokesJsDelegate" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="23" symbol="Jscript_Projection_InvokeNativeDelegateStart" version="0" task="Jscript_Projection_InvokeNativeDelegate" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="24" symbol="Jscript_Projection_InvokeNativeDelegateStop" version="0" task="Jscript_Projection_InvokeNativeDelegate" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="25" symbol="Jscript_Projection_AddEventListenerStart" version="0" task="Jscript_Projection_AddEventListener" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="26" symbol="Jscript_Projection_AddEventListenerStop" version="0" task="Jscript_Projection_AddEventListener" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="27" symbol="Jscript_Projection_RemoveEventListenerStart" version="0" task="Jscript_Projection_RemoveEventListener" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="28" symbol="Jscript_Projection_RemoveEventListenerStop" version="0" task="Jscript_Projection_RemoveEventListener" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_MethodCallStartArgs"/>
+     <event value="29" symbol="Jscript_Projection_GetTypeMetaDataInformationStart" version="0" task="Jscript_Projection_GetTypeMetaDataInformation" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="30" symbol="Jscript_Projection_GetTypeMetaDataInformationStop" version="0" task="Jscript_Projection_GetTypeMetaDataInformation" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="31" symbol="Jscript_Projection_SetEventHandlerStart" version="0" task="Jscript_Projection_SetEventHandler" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_SetEventHandlerStartArgs"/>
+     <event value="32" symbol="Jscript_Projection_SetEventHandlerStop" version="0" task="Jscript_Projection_SetEventHandler" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_SetEventHandlerStartArgs"/>
+     <event value="33" symbol="Jscript_Projection_RemoveAllEventsAndEventHandlersStart" version="0" task="Jscript_Projection_RemoveAllEventsAndEventHandlers" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="34" symbol="Jscript_Projection_RemoveAllEventsAndEventHandlersStop" version="0" task="Jscript_Projection_RemoveAllEventsAndEventHandlers" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="35" symbol="Jscript_Projection_InvokeEventStart" version="0" task="Jscript_Projection_InvokeEvent" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_SetEventHandlerStartArgs"/>
+     <event value="36" symbol="Jscript_Projection_InvokeEventStop" version="0" task="Jscript_Projection_InvokeEvent" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_SetEventHandlerStartArgs"/>
+     <event value="37" symbol="Jscript_Projection_InvokeEventEvParamPrepStart" version="0" task="Jscript_Projection_InvokeEventEvParamPrep" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_SetEventHandlerStartArgs"/>
+     <event value="38" symbol="Jscript_Projection_InvokeEventEvParamPrepStop" version="0" task="Jscript_Projection_InvokeEventEvParamPrep" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_SetEventHandlerStartArgs"/>
+     <event value="39" symbol="ScriptContextRundownSourceDCStart" version="0" task="ScriptContextRundown" opcode="SourceDCStart" level="win:Informational" keywords="JScriptStartRundown" template="ScriptContextRundownSourceDCStartArgs"/>
+     <event value="40" symbol="ScriptContextRundownSourceDCEnd" version="0" task="ScriptContextRundown" opcode="SourceDCEnd" level="win:Informational" keywords="JScriptEndRundown" template="ScriptContextRundownSourceDCStartArgs"/>
+     <event value="41" symbol="ScriptContextRuntimeSourceLoad" version="0" task="ScriptContextRuntime" opcode="SourceLoad" level="win:Informational" keywords="JScriptRuntime" template="ScriptContextRundownSourceDCStartArgs"/>
+     <event value="42" symbol="ScriptContextRuntimeSourceUnload" version="0" task="ScriptContextRuntime" opcode="SourceUnload" level="win:Informational" keywords="JScriptRuntime" template="ScriptContextRundownSourceDCStartArgs"/>
+     <event value="43" symbol="Jscript_Projection_GetExprFromConcreteTypeNameStart" version="0" task="Jscript_Projection_GetExprFromConcreteTypeName" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="44" symbol="Jscript_Projection_GetExprFromConcreteTypeNameStop" version="0" task="Jscript_Projection_GetExprFromConcreteTypeName" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="45" symbol="Jscript_Projection_GetTypeFromTypeNamePartsStart" version="0" task="Jscript_Projection_GetTypeFromTypeNameParts" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="46" symbol="Jscript_Projection_GetTypeFromTypeNamePartsStop" version="0" task="Jscript_Projection_GetTypeFromTypeNameParts" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="47" symbol="Jscript_Projection_ReferenceOrArrayGetValueStart" version="0" task="Jscript_Projection_ReferenceOrArrayGetValue" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="48" symbol="Jscript_Projection_ReferenceOrArrayGetValueStop" version="0" task="Jscript_Projection_ReferenceOrArrayGetValue" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="49" symbol="Jscript_Projection_PropertyValueVarFromGRCNStart" version="0" task="Jscript_Projection_PropertyValueVarFromGRCN" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="50" symbol="Jscript_Projection_PropertyValueVarFromGRCNStop" version="0" task="Jscript_Projection_PropertyValueVarFromGRCN" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="51" symbol="Jscript_Projection_VarFromGRCNStart" version="0" task="Jscript_Projection_VarFromGRCN" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="52" symbol="Jscript_Projection_VarFromGRCNStop" version="0" task="Jscript_Projection_VarFromGRCN" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="53" symbol="Jscript_Projection_WriteIReferenceStart" version="0" task="Jscript_Projection_WriteIReference" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="54" symbol="Jscript_Projection_WriteIReferenceStop" version="0" task="Jscript_Projection_WriteIReference" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="55" symbol="Jscript_Projection_WriteInspectableStart" version="0" task="Jscript_Projection_WriteInspectable" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_WriteInspectableStartArgs"/>
+     <event value="56" symbol="Jscript_Projection_WriteInspectableStop" version="0" task="Jscript_Projection_WriteInspectable" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_WriteInspectableStartArgs"/>
+     <event value="57" symbol="Jscript_Projection_GetNonArrayTypeAsPropertyValueStart" version="0" task="Jscript_Projection_GetNonArrayTypeAsPropertyValue" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="58" symbol="Jscript_Projection_GetNonArrayTypeAsPropertyValueStop" version="0" task="Jscript_Projection_GetNonArrayTypeAsPropertyValue" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="59" symbol="Jscript_Projection_GetNonArrayBasicTypeAsPropertyValueStart" version="0" task="Jscript_Projection_GetNonArrayBasicTypeAsPropertyValue" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="60" symbol="Jscript_Projection_GetNonArrayBasicTypeAsPropertyValueStop" version="0" task="Jscript_Projection_GetNonArrayBasicTypeAsPropertyValue" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="61" symbol="Jscript_Projection_GetTypedArrayAsPropertyValueStart" version="0" task="Jscript_Projection_GetTypedArrayAsPropertyValue" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="62" symbol="Jscript_Projection_GetTypedArrayAsPropertyValueStop" version="0" task="Jscript_Projection_GetTypedArrayAsPropertyValue" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="63" symbol="Jscript_Projection_GetBasicTypedArrayAsPropertyValueStart" version="0" task="Jscript_Projection_GetBasicTypedArrayAsPropertyValue" opcode="win:Start" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="64" symbol="Jscript_Projection_GetBasicTypedArrayAsPropertyValueStop" version="0" task="Jscript_Projection_GetBasicTypedArrayAsPropertyValue" opcode="win:Stop" level="win:Always" keywords="JScriptProjection" template="Jscript_Projection_ResolveTypeStartArgs"/>
+     <event value="65" symbol="ParseMethodStart" version="0" task="ParseMethod" opcode="win:Start" level="win:Always" keywords="JScriptFrontend" template="ParseMethodStartArgs"/>
+     <event value="66" symbol="ParseMethodStop" version="0" task="ParseMethod" opcode="win:Stop" level="win:Always" keywords="JScriptFrontend" template="ParseMethodStartArgs"/>
+     <event value="67" symbol="GenerateBytecodeMethod" version="0" task="GenerateBytecodeMethod" level="win:Always" keywords="JScriptFrontend" template="GenerateBytecodeMethodArgs"/>
+     <event value="68" symbol="Jscript_GC_ResetMarksStart" version="0" task="Jscript_GC_ResetMarks" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="69" symbol="Jscript_GC_ResetMarksStop" version="0" task="Jscript_GC_ResetMarks" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="70" symbol="Jscript_GC_ScanRootsStart" version="0" task="Jscript_GC_ScanRoots" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="71" symbol="Jscript_GC_ScanRootsStop" version="0" task="Jscript_GC_ScanRoots" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="72" symbol="Jscript_GC_ScanStackStart" version="0" task="Jscript_GC_ScanStack" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="73" symbol="Jscript_GC_ScanStackStop" version="0" task="Jscript_GC_ScanStack" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="74" symbol="Jscript_GC_MarkStart" version="0" task="Jscript_GC_Mark" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="75" symbol="Jscript_GC_MarkStop" version="0" task="Jscript_GC_Mark" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="76" symbol="Jscript_GC_RescanStart" version="0" task="Jscript_GC_Rescan" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="77" symbol="Jscript_GC_RescanStop" version="0" task="Jscript_GC_Rescan" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="78" symbol="Jscript_GC_SweepStart" version="0" task="Jscript_GC_Sweep" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="79" symbol="Jscript_GC_SweepStop" version="0" task="Jscript_GC_Sweep" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_SweepStopArgs"/>
+     <event value="80" symbol="Jscript_GC_SetupBackgroundSweepStart" version="0" task="Jscript_GC_SetupBackgroundSweep" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="81" symbol="Jscript_GC_SetupBackgroundSweepStop" version="0" task="Jscript_GC_SetupBackgroundSweep" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="82" symbol="Jscript_GC_BackgroundSweepStart" version="0" task="Jscript_GC_BackgroundSweep" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="83" symbol="Jscript_GC_BackgroundSweepStop" version="0" task="Jscript_GC_BackgroundSweep" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_SweepStopArgs"/>
+     <event value="84" symbol="Jscript_GC_TransferSweptObjectsStart" version="0" task="Jscript_GC_TransferSweptObjects" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="85" symbol="Jscript_GC_TransferSweptObjectsStop" version="0" task="Jscript_GC_TransferSweptObjects" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="86" symbol="Jscript_GC_DisposeStart" version="0" task="Jscript_GC_Dispose" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="87" symbol="Jscript_GC_DisposeStop" version="0" task="Jscript_GC_Dispose" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_SweepStopArgs"/>
+     <event value="88" symbol="Jscript_GC_BackgroundMarkStart" version="0" task="Jscript_GC_BackgroundMark" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="89" symbol="Jscript_GC_BackgroundMarkStop" version="0" task="Jscript_GC_BackgroundMark" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="90" symbol="Jscript_GC_ResetWriteWatchStart" version="0" task="Jscript_GC_ResetWriteWatch" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="91" symbol="Jscript_GC_ResetWriteWatchStop" version="0" task="Jscript_GC_ResetWriteWatch" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="92" symbol="Jscript_Profile_PersistenceSave" version="0" task="Jscript_Profile_Persistence" opcode="Save" level="win:Always" keywords="JScriptProfile" template="Jscript_Profile_PersistenceSaveArgs"/>
+     <event value="93" symbol="ScriptContextRuntimeScriptContextOnStartupComplete" version="0" task="ScriptContextRuntime" opcode="ScriptContextOnStartupComplete" level="win:Always" keywords="JScriptProfile" template="ScriptContextRundownScriptContextDCStartArgs"/>
+     <event value="94" symbol="Jscript_Profile_PersistenceLoad" version="0" task="Jscript_Profile_Persistence" opcode="Load" level="win:Always" keywords="JScriptProfile" template="Jscript_Profile_PersistenceLoadArgs"/>
+     <event value="95" symbol="Jscript_Backend_Inline" version="0" task="Jscript_Backend_Inline" level="win:Always" keywords="JscriptBackend" template="Jscript_Backend_InlineArgs"/>
+     <event value="96" symbol="Jscript_Method_JitStart_45_17" version="0" task="Jscript_Method_Jit" opcode="Start_45_17" level="win:Always" keywords="JscriptJit" template="Jscript_Method_JitStart_45_17Args"/>
+     <event value="97" symbol="Jscript_Method_JitStop_45_18" version="0" task="Jscript_Method_Jit" opcode="Stop_45_18" level="win:Always" keywords="JscriptJit" template="Jscript_Method_JitStop_45_18Args"/>
+     <event value="98" symbol="Jscript_Method_JitQueue" version="0" task="Jscript_Method_Jit" opcode="Queue" level="win:Always" keywords="JscriptJit" template="Jscript_Method_JitQueueArgs"/>
+     <event value="99" symbol="Jscript_Method_JitDequeue" version="0" task="Jscript_Method_Jit" opcode="Dequeue" level="win:Always" keywords="JscriptJit" template="Jscript_Method_JitQueueArgs"/>
+     <event value="100" symbol="Jscript_GC_IdleCollectStart" version="0" task="Jscript_GC_IdleCollect" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="101" symbol="Jscript_GC_IdleCollect" version="0" task="Jscript_GC_IdleCollect" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="102" symbol="Jscript_GC_IdleCollect102" version="0" task="Jscript_GC_IdleCollect" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="103" symbol="Jscript_GC_IdleCollect103" version="0" task="Jscript_GC_IdleCollect" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="104" symbol="Jscript_GC_IdleCollectStop" version="0" task="Jscript_GC_IdleCollect" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="105" symbol="Jscript_Page_Allocator_SizeUsedPageSize" version="0" task="Jscript_Page_Allocator_Size" opcode="UsedPageSize" level="win:Always" keywords="JScriptMemoryTracing" template="Jscript_Page_Allocator_SizeUsedPageSizeArgs"/>
+     <event value="106" symbol="Jscript_Recycler_AllocationFree_Memory" version="0" task="Jscript_Recycler_Allocation" opcode="Free_Memory" level="win:Informational" keywords="JScriptObjectCleanup" template="Jscript_Recycler_AllocationFree_MemoryArgs"/>
+     <event value="107" symbol="Jscript_Recycler_AllocationFree_Memory_Block" version="0" task="Jscript_Recycler_Allocation" opcode="Free_Memory_Block" level="win:Informational" keywords="JScriptObjectCleanup" template="Jscript_Recycler_AllocationFree_Memory_BlockArgs"/>
+     <event value="108" symbol="Jscript_Recycler_AllocationAllocate_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_Object" level="win:Informational" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="109" symbol="Jscript_Recycler_AllocationAllocate_Array" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_Array" level="win:Informational" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="110" symbol="Jscript_Recycler_AllocationAllocate_Function" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_Function" level="win:Informational" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_FunctionArgs"/>
+     <event value="111" symbol="Jscript_Recycler_AllocationAllocate_DOM_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_DOM_Object" level="win:Informational" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_DOM_ObjectArgs"/>
+     <event value="112" symbol="Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_JSProxy_Object" level="win:Informational" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_ObjectArgs"/>
+     <event value="113" symbol="Jscript_Recycler_AllocationAllocate_PixelArray" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_PixelArray" level="win:Informational" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="114" symbol="Jscript_Recycler_AllocationExternal_AddRef" version="0" task="Jscript_Recycler_Allocation" opcode="External_AddRef" level="win:Informational" keywords="JScriptExternalReferenceAddRef" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="115" symbol="Jscript_Recycler_AllocationExternal_Release" version="0" task="Jscript_Recycler_Allocation" opcode="External_Release" level="win:Informational" keywords="JScriptExternalReferenceRelease" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="116" symbol="Jscript_Recycler_AllocationAllocate_WinRT_RuntimeClass_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_RuntimeClass_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_ObjectArgs"/>
+     <event value="117" symbol="Jscript_Recycler_AllocationAllocate_WinRT_Namespace_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_Namespace_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_ObjectArgs"/>
+     <event value="118" symbol="Jscript_Recycler_AllocationAllocate_WinRT_Struct_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_Struct_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_ObjectArgs"/>
+     <event value="119" symbol="Jscript_Recycler_AllocationAllocate_WinRT_Enum_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_Enum_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_ObjectArgs"/>
+     <event value="120" symbol="Jscript_Recycler_AllocationAllocate_WinRT_TypedArray_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_TypedArray_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_ObjectArgs"/>
+     <event value="121" symbol="Jscript_Recycler_AllocationAllocate_WinRT_Delegate_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_Delegate_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_Delegate_ObjectArgs"/>
+     <event value="122" symbol="Jscript_Recycler_AllocationAllocate_WinRT_EventHandler_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_EventHandler_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_EventHandler_ObjectArgs"/>
+     <event value="123" symbol="Jscript_Recycler_AllocationAllocate_WinRT_Collections_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_Collections_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_Delegate_ObjectArgs"/>
+     <event value="124" symbol="Jscript_Recycler_AllocationAllocate_WinRT_PropertyValue_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Allocate_WinRT_PropertyValue_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_WinRT_PropertyValue_ObjectArgs"/>
+     <event value="125" symbol="Jscript_Recycler_AllocationFree_WinRT_Delegate_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Free_WinRT_Delegate_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="126" symbol="Jscript_Recycler_AllocationFree_WinRT_EventHandler_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Free_WinRT_EventHandler_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="127" symbol="Jscript_Recycler_AllocationFree_WinRT_Collections_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Free_WinRT_Collections_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="128" symbol="Jscript_Recycler_AllocationFree_WinRT_PropertyValue_Object" version="0" task="Jscript_Recycler_Allocation" opcode="Free_WinRT_PropertyValue_Object" level="win:Always" keywords="JScriptObjectAllocation" template="Jscript_Recycler_AllocationAllocate_ObjectArgs"/>
+     <event value="129" symbol="Jscript_GC_SweepWeakRefStart" version="0" task="Jscript_GC_SweepWeakRef" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="130" symbol="Jscript_GC_SweepWeakRefStop" version="0" task="Jscript_GC_SweepWeakRef" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="131" symbol="Jscript_GC_ProcessTrackedObjectStart" version="0" task="Jscript_GC_ProcessTrackedObject" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="132" symbol="Jscript_GC_ProcessTrackedObjectStop" version="0" task="Jscript_GC_ProcessTrackedObject" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="133" symbol="Jscript_GC_ProcessClientTrackedObjectStart" version="0" task="Jscript_GC_ProcessClientTrackedObject" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="134" symbol="Jscript_GC_ProcessClientTrackedObjectStop" version="0" task="Jscript_GC_ProcessClientTrackedObject" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="135" symbol="Jscript_GC_BackgroundZeroPageStart" version="0" task="Jscript_GC_BackgroundZeroPage" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="136" symbol="Jscript_GC_BackgroundZeroPageStop" version="0" task="Jscript_GC_BackgroundZeroPage" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="137" symbol="Jscript_GC_FlushZeroPageStart" version="0" task="Jscript_GC_FlushZeroPage" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="138" symbol="Jscript_GC_FlushZeroPageStop" version="0" task="Jscript_GC_FlushZeroPage" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="139" symbol="Jscript_GC_DecommitConcurrentCollectPageAllocatorStart" version="0" task="Jscript_GC_DecommitConcurrentCollectPageAllocator" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="140" symbol="Jscript_GC_DecommitConcurrentCollectPageAllocatorStop" version="0" task="Jscript_GC_DecommitConcurrentCollectPageAllocator" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="141" symbol="Jscript_GC_SweepPartialReusePageStart" version="0" task="Jscript_GC_SweepPartialReusePage" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="142" symbol="Jscript_GC_SweepPartialReusePageStop" version="0" task="Jscript_GC_SweepPartialReusePage" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="143" symbol="Jscript_GC_BackgroundRescanStart" version="0" task="Jscript_GC_BackgroundRescan" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="144" symbol="Jscript_GC_BackgroundRescanStop" version="0" task="Jscript_GC_BackgroundRescan" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="145" symbol="Jscript_GC_BackgroundResetWriteWatchStart" version="0" task="Jscript_GC_BackgroundResetWriteWatch" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="146" symbol="Jscript_GC_BackgroundResetWriteWatchStop" version="0" task="Jscript_GC_BackgroundResetWriteWatch" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="147" symbol="Jscript_GC_BackgroundScanRootsStart" version="0" task="Jscript_GC_BackgroundScanRoots" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="148" symbol="Jscript_GC_BackgroundScanRootsStop" version="0" task="Jscript_GC_BackgroundScanRoots" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="149" symbol="Jscript_GC_BackgroundResetMarksStart" version="0" task="Jscript_GC_BackgroundResetMarks" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="150" symbol="Jscript_GC_BackgroundResetMarksStop" version="0" task="Jscript_GC_BackgroundResetMarks" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="151" symbol="Jscript_GC_RescanMarkWaitStart" version="0" task="Jscript_GC_RescanMarkWait" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_RescanMarkWaitStartArgs"/>
+     <event value="152" symbol="Jscript_GC_RescanMarkWaitStop" version="0" task="Jscript_GC_RescanMarkWait" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_RescanMarkWaitStopArgs"/>
+     <event value="153" symbol="Jscript_GC_SynchronousMarkWaitStart" version="0" task="Jscript_GC_SynchronousMarkWait" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_RescanMarkWaitStartArgs"/>
+     <event value="154" symbol="Jscript_GC_SynchronousMarkWaitStop" version="0" task="Jscript_GC_SynchronousMarkWait" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_RescanMarkWaitStopArgs"/>
+     <event value="155" symbol="Jscript_GC_FinishConcurrentWaitStart" version="0" task="Jscript_GC_FinishConcurrentWait" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_RescanMarkWaitStartArgs"/>
+     <event value="156" symbol="Jscript_GC_FinishConcurrentWaitStop" version="0" task="Jscript_GC_FinishConcurrentWait" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_RescanMarkWaitStopArgs"/>
+     <event value="157" symbol="Jscript_GC_EndMarkOnLowMemoryStart" version="0" task="Jscript_GC_EndMarkOnLowMemory" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="158" symbol="Jscript_GC_EndMarkOnLowMemoryStop" version="0" task="Jscript_GC_EndMarkOnLowMemory" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="159" symbol="Jscript_AsyncCausality_StackTrace" version="0" task="Jscript_AsyncCausality_StackTrace" level="win:Always" keywords="JScriptAsyncCausality" template="Jscript_AsyncCausality_StackTraceArgs"/>
+     <event value="160" symbol="JScript_ByteCodeDeserializeStart" version="0" task="JScript_ByteCodeDeserialize" opcode="win:Start" level="win:Always" keywords="JScriptByteCode" template="JScript_ByteCodeDeserializeStartArgs"/>
+     <event value="161" symbol="JScript_ByteCodeDeserializeStop" version="0" task="JScript_ByteCodeDeserialize" opcode="win:Stop" level="win:Always" keywords="JScriptByteCode" template="JScript_ByteCodeDeserializeStartArgs"/>
+     <event value="162" symbol="Jscript_Hosting_BinaryInconsistency" version="0" task="Jscript_Hosting_BinaryInconsistency" level="win:Always" keywords="JScriptHosting" template="Jscript_Hosting_BinaryInconsistencyArgs"/>
+     <event value="163" symbol="Jscript_Hosting_BinaryConsistencyInfo" version="0" task="Jscript_Hosting_BinaryConsistencyInfo" level="win:Always" keywords="JScriptHosting" template="Jscript_Hosting_BinaryConsistencyInfoArgs"/>
+     <event value="164" symbol="Jscript_StackTrace" version="0" task="Jscript_StackTrace" level="win:Always" keywords="JScriptStackTrace" template="Jscript_StackTraceArgs"/>
+     <event value="165" symbol="Jscript_AsyncCausality_StackTrace165" version="0" task="Jscript_AsyncCausality_StackTrace" level="win:Always" keywords="JScriptAsyncCausality_V2" template="Jscript_StackTraceArgs"/>
+     <event value="166" symbol="Jscript_Host_Native" version="0" task="Jscript_Host_Native" level="win:Always" keywords="JscriptJit" template="Jscript_Host_NativeArgs"/>
+     <event value="167" symbol="Jscript_Host_Native167" version="0" task="Jscript_Host_Native" level="win:Always" keywords="JscriptJit" template="Jscript_Host_Native167Args"/>
+     <event value="168" symbol="Jscript_SourceMapping" version="0" task="Jscript_SourceMapping" level="win:Always" keywords="JScriptSourceMapping" template="Jscript_SourceMappingArgs"/>
+     <event value="169" symbol="Jscript_GC_ParallelMarkStart" version="0" task="Jscript_GC_ParallelMark" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="170" symbol="Jscript_GC_ParallelMarkStop" version="0" task="Jscript_GC_ParallelMark" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="171" symbol="Jscript_GC_BackgroundParallelMarkStart" version="0" task="Jscript_GC_BackgroundParallelMark" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="172" symbol="Jscript_GC_BackgroundParallelMarkStop" version="0" task="Jscript_GC_BackgroundParallelMark" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="173" symbol="Memprotect_GC_ResetMarksStart" version="0" task="Memprotect_GC_ResetMarks" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="174" symbol="Memprotect_GC_ResetMarksStop" version="0" task="Memprotect_GC_ResetMarks" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="175" symbol="Memprotect_GC_ScanRootsStart" version="0" task="Memprotect_GC_ScanRoots" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="176" symbol="Memprotect_GC_ScanRootsStop" version="0" task="Memprotect_GC_ScanRoots" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="177" symbol="Memprotect_GC_ScanStackStart" version="0" task="Memprotect_GC_ScanStack" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="178" symbol="Memprotect_GC_ScanStackStop" version="0" task="Memprotect_GC_ScanStack" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="179" symbol="Memprotect_GC_MarkStart" version="0" task="Memprotect_GC_Mark" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="180" symbol="Memprotect_GC_MarkStop" version="0" task="Memprotect_GC_Mark" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="181" symbol="Memprotect_GC_RescanStart" version="0" task="Memprotect_GC_Rescan" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="182" symbol="Memprotect_GC_RescanStop" version="0" task="Memprotect_GC_Rescan" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="183" symbol="Memprotect_GC_SweepStart" version="0" task="Memprotect_GC_Sweep" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="184" symbol="Memprotect_GC_SweepStop" version="0" task="Memprotect_GC_Sweep" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_SweepStopArgs"/>
+     <event value="185" symbol="Memprotect_GC_SetupBackgroundSweepStart" version="0" task="Memprotect_GC_SetupBackgroundSweep" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="186" symbol="Memprotect_GC_SetupBackgroundSweepStop" version="0" task="Memprotect_GC_SetupBackgroundSweep" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="187" symbol="Memprotect_GC_BackgroundSweepStart" version="0" task="Memprotect_GC_BackgroundSweep" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="188" symbol="Memprotect_GC_BackgroundSweepStop" version="0" task="Memprotect_GC_BackgroundSweep" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_SweepStopArgs"/>
+     <event value="189" symbol="Memprotect_GC_TransferSweptObjectsStart" version="0" task="Memprotect_GC_TransferSweptObjects" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="190" symbol="Memprotect_GC_TransferSweptObjectsStop" version="0" task="Memprotect_GC_TransferSweptObjects" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="191" symbol="Memprotect_GC_DisposeStart" version="0" task="Memprotect_GC_Dispose" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="192" symbol="Memprotect_GC_DisposeStop" version="0" task="Memprotect_GC_Dispose" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_SweepStopArgs"/>
+     <event value="193" symbol="Memprotect_GC_BackgroundMarkStart" version="0" task="Memprotect_GC_BackgroundMark" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="194" symbol="Memprotect_GC_BackgroundMarkStop" version="0" task="Memprotect_GC_BackgroundMark" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="195" symbol="Memprotect_GC_ResetWriteWatchStart" version="0" task="Memprotect_GC_ResetWriteWatch" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="196" symbol="Memprotect_GC_ResetWriteWatchStop" version="0" task="Memprotect_GC_ResetWriteWatch" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="197" symbol="Memprotect_GC_IdleCollectStart" version="0" task="Memprotect_GC_IdleCollect" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="198" symbol="Memprotect_GC_IdleCollect" version="0" task="Memprotect_GC_IdleCollect" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="199" symbol="Memprotect_GC_IdleCollect199" version="0" task="Memprotect_GC_IdleCollect" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="200" symbol="Memprotect_GC_IdleCollect200" version="0" task="Memprotect_GC_IdleCollect" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="201" symbol="Memprotect_GC_IdleCollectStop" version="0" task="Memprotect_GC_IdleCollect" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="202" symbol="Memprotect_GC_SweepWeakRefStart" version="0" task="Memprotect_GC_SweepWeakRef" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="203" symbol="Memprotect_GC_SweepWeakRefStop" version="0" task="Memprotect_GC_SweepWeakRef" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="204" symbol="Memprotect_GC_ProcessTrackedObjectStart" version="0" task="Memprotect_GC_ProcessTrackedObject" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="205" symbol="Memprotect_GC_ProcessTrackedObjectStop" version="0" task="Memprotect_GC_ProcessTrackedObject" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="206" symbol="Memprotect_GC_ProcessClientTrackedObjectStart" version="0" task="Memprotect_GC_ProcessClientTrackedObject" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="207" symbol="Memprotect_GC_ProcessClientTrackedObjectStop" version="0" task="Memprotect_GC_ProcessClientTrackedObject" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="208" symbol="Memprotect_GC_BackgroundZeroPageStart" version="0" task="Memprotect_GC_BackgroundZeroPage" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="209" symbol="Memprotect_GC_BackgroundZeroPageStop" version="0" task="Memprotect_GC_BackgroundZeroPage" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="210" symbol="Memprotect_GC_FlushZeroPageStart" version="0" task="Memprotect_GC_FlushZeroPage" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="211" symbol="Memprotect_GC_FlushZeroPageStop" version="0" task="Memprotect_GC_FlushZeroPage" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="212" symbol="Memprotect_GC_DecommitConcurrentCollectPageAllocatorStart" version="0" task="Memprotect_GC_DecommitConcurrentCollectPageAllocator" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="213" symbol="Memprotect_GC_DecommitConcurrentCollectPageAllocatorStop" version="0" task="Memprotect_GC_DecommitConcurrentCollectPageAllocator" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="214" symbol="Memprotect_GC_SweepPartialReusePageStart" version="0" task="Memprotect_GC_SweepPartialReusePage" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="215" symbol="Memprotect_GC_SweepPartialReusePageStop" version="0" task="Memprotect_GC_SweepPartialReusePage" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="216" symbol="Memprotect_GC_BackgroundRescanStart" version="0" task="Memprotect_GC_BackgroundRescan" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="217" symbol="Memprotect_GC_BackgroundRescanStop" version="0" task="Memprotect_GC_BackgroundRescan" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="218" symbol="Memprotect_GC_BackgroundResetWriteWatchStart" version="0" task="Memprotect_GC_BackgroundResetWriteWatch" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="219" symbol="Memprotect_GC_BackgroundResetWriteWatchStop" version="0" task="Memprotect_GC_BackgroundResetWriteWatch" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="220" symbol="Memprotect_GC_BackgroundScanRootsStart" version="0" task="Memprotect_GC_BackgroundScanRoots" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="221" symbol="Memprotect_GC_BackgroundScanRootsStop" version="0" task="Memprotect_GC_BackgroundScanRoots" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="222" symbol="Memprotect_GC_BackgroundResetMarksStart" version="0" task="Memprotect_GC_BackgroundResetMarks" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="223" symbol="Memprotect_GC_BackgroundResetMarksStop" version="0" task="Memprotect_GC_BackgroundResetMarks" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="224" symbol="Memprotect_GC_RescanMarkWaitStart" version="0" task="Memprotect_GC_RescanMarkWait" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_RescanMarkWaitStartArgs"/>
+     <event value="225" symbol="Memprotect_GC_RescanMarkWaitStop" version="0" task="Memprotect_GC_RescanMarkWait" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_RescanMarkWaitStopArgs"/>
+     <event value="226" symbol="Memprotect_GC_SynchronousMarkWaitStart" version="0" task="Memprotect_GC_SynchronousMarkWait" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_RescanMarkWaitStartArgs"/>
+     <event value="227" symbol="Memprotect_GC_SynchronousMarkWaitStop" version="0" task="Memprotect_GC_SynchronousMarkWait" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_RescanMarkWaitStopArgs"/>
+     <event value="228" symbol="Memprotect_GC_FinishConcurrentWaitStart" version="0" task="Memprotect_GC_FinishConcurrentWait" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_RescanMarkWaitStartArgs"/>
+     <event value="229" symbol="Memprotect_GC_FinishConcurrentWaitStop" version="0" task="Memprotect_GC_FinishConcurrentWait" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_RescanMarkWaitStopArgs"/>
+     <event value="230" symbol="Memprotect_GC_EndMarkOnLowMemoryStart" version="0" task="Memprotect_GC_EndMarkOnLowMemory" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="231" symbol="Memprotect_GC_EndMarkOnLowMemoryStop" version="0" task="Memprotect_GC_EndMarkOnLowMemory" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="232" symbol="Memprotect_GC_ParallelMarkStart" version="0" task="Memprotect_GC_ParallelMark" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="233" symbol="Memprotect_GC_ParallelMarkStop" version="0" task="Memprotect_GC_ParallelMark" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="234" symbol="Memprotect_GC_BackgroundParallelMarkStart" version="0" task="Memprotect_GC_BackgroundParallelMark" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="235" symbol="Memprotect_GC_BackgroundParallelMarkStop" version="0" task="Memprotect_GC_BackgroundParallelMark" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_BackgroundMarkStartArgs"/>
+     <event value="236" symbol="Memprotect_GCStart" version="0" task="Memprotect_GC" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="JScript_ByteCodeDeserializeStartArgs"/>
+     <event value="237" symbol="Memprotect_GCStop" version="0" task="Memprotect_GC" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="JScript_ByteCodeDeserializeStartArgs"/>
+     <event value="238" symbol="Memprotect_GC_Allocation" version="0" task="Memprotect_GC_Allocation" level="win:Always" keywords="MemProtectObjectAllocation" template="Memprotect_GC_AllocationArgs"/>
+     <event value="239" symbol="Memprotect_GC_Unroot" version="0" task="Memprotect_GC_Unroot" level="win:Always" keywords="MemProtectObjectAllocation" template="Memprotect_GC_UnrootArgs"/>
+     <event value="240" symbol="Jscript_GC_Init" version="0" task="Jscript_GC_Init" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_InitArgs"/>
+     <event value="241" symbol="Memprotect_GC_Heap_Size" version="0" task="Memprotect_GC_Heap_Size" level="win:Always" keywords="MemProtectHeapSize" template="Memprotect_GC_Heap_SizeArgs"/>
+     <event value="242" symbol="Jscript_Internal_Generic_Event" version="0" task="Jscript_Internal_Generic_Event" level="win:Always" keywords="Internal" template="Jscript_Internal_Generic_EventArgs"/>
+     <event value="243" symbol="Jscript_GC_Bucket_Stats" version="0" task="Jscript_GC_Bucket_Stats" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_Bucket_StatsArgs"/>
+     <event value="244" symbol="Memprotect_GC_Bucket_Stats" version="0" task="Memprotect_GC_Bucket_Stats" level="win:Always" keywords="MemProtectGarbageCollection" template="Memprotect_GC_Bucket_StatsArgs"/>
+     <event value="245" symbol="Jscript_Backend_Bailout" version="0" task="Jscript_Backend_Bailout" level="win:Always" keywords="JscriptBackend" template="Jscript_Backend_BailoutArgs"/>
+     <event value="246" symbol="Jscript_Backend_Bailout_LoopBody" version="0" task="Jscript_Backend_Bailout_LoopBody" level="win:Always" keywords="JscriptBackend" template="Jscript_Backend_Bailout_LoopBodyArgs"/>
+     <event value="247" symbol="Jscript_GC_Clear_InlineCacheStart" version="0" task="Jscript_GC_Clear_InlineCache" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection"/>
+     <event value="248" symbol="Jscript_GC_Clear_InlineCacheStop" version="0" task="Jscript_GC_Clear_InlineCache" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_Clear_InlineCacheStopArgs"/>
+     <event value="249" symbol="Jscript_GC_PreSweepCallbackStart" version="0" task="Jscript_GC_PreSweepCallback" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="250" symbol="Jscript_GC_PreSweepCallbackStop" version="0" task="Jscript_GC_PreSweepCallback" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="251" symbol="Memprotect_GC_PreSweepCallbackStart" version="0" task="Memprotect_GC_PreSweepCallback" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="252" symbol="Memprotect_GC_PreSweepCallbackStop" version="0" task="Memprotect_GC_PreSweepCallback" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_ResetMarksStartArgs"/>
+     <event value="253" symbol="Jscript_GC_SweepWeakRefStop253" version="0" task="Jscript_GC_SweepWeakRef" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC_SweepWeakRefStop253Args"/>
+     <event value="254" symbol="Memprotect_GC_SweepWeakRefStop254" version="0" task="Memprotect_GC_SweepWeakRef" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC_SweepWeakRefStop253Args"/>
+     <event value="255" symbol="Jscript_GC2Start" version="0" task="Jscript_GC2" opcode="win:Start" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC2StartArgs"/>
+     <event value="256" symbol="Jscript_GC2Stop" version="0" task="Jscript_GC2" opcode="win:Stop" level="win:Always" keywords="JScriptGarbageCollection" template="Jscript_GC2StartArgs"/>
+     <event value="257" symbol="Memprotect_GC2Start" version="0" task="Memprotect_GC2" opcode="win:Start" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC2StartArgs"/>
+     <event value="258" symbol="Memprotect_GC2Stop" version="0" task="Memprotect_GC2" opcode="win:Stop" level="win:Always" keywords="MemProtectGarbageCollection" template="Jscript_GC2StartArgs"/>
+    </events>
+    <templates>
+     <template tid="MethodRundownMethodDCStartArgs">
+      <data name="ScriptContextID" inType="win:Pointer"/>
+      <data name="MethodStartAddress" inType="win:Pointer"/>
+      <data name="MethodSize" inType="win:UInt64"/>
+      <data name="MethodID" inType="win:UInt32"/>
+      <data name="MethodFlags" inType="win:UInt16"/>
+      <data name="MethodAddressRangeID" inType="win:UInt16" map="MethodAddressRangeMap"/>
+      <data name="SourceID" inType="win:UInt64"/>
+      <data name="Line" inType="win:UInt32"/>
+      <data name="Column" inType="win:UInt32"/>
+      <data name="MethodName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="MethodRundownMethodDCEndArgs">
+      <data name="ScriptContextID" inType="win:Pointer"/>
+      <data name="MethodStartAddress" inType="win:Pointer"/>
+      <data name="MethodSize" inType="win:UInt64"/>
+      <data name="MethodID" inType="win:UInt32"/>
+      <data name="MethodFlags" inType="win:UInt16"/>
+      <data name="MethodAddressRangeID" inType="win:UInt16"/>
+      <data name="SourceID" inType="win:UInt64"/>
+      <data name="Line" inType="win:UInt32"/>
+      <data name="Column" inType="win:UInt32"/>
+      <data name="MethodName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ScriptContextRundownScriptContextDCStartArgs">
+      <data name="ScriptContextID" inType="win:Pointer"/>
+     </template>
+     <template tid="Jscript_Projection_ResolveTypeStartArgs">
+      <data name="TypeName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Jscript_Projection_MethodCallStartArgs">
+      <data name="TypeName" inType="win:UnicodeString"/>
+      <data name="MethodName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Jscript_Projection_SetEventHandlerStartArgs">
+      <data name="TypeName" inType="win:UnicodeString"/>
+      <data name="EventName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ScriptContextRundownSourceDCStartArgs">
+      <data name="SourceID" inType="win:UInt64"/>
+      <data name="ScriptContextID" inType="win:Pointer"/>
+      <data name="SourceFlags" inType="win:UInt32"/>
+      <data name="Url" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Jscript_Projection_WriteInspectableStartArgs">
+      <data name="IsBoxed" inType="win:Boolean"/>
+     </template>
+     <template tid="ParseMethodStartArgs">
+      <data name="SourceID" inType="win:UInt64"/>
+      <data name="ScriptContextID" inType="win:Pointer"/>
+      <data name="MethodID" inType="win:UInt32"/>
+      <data name="ASTSize" inType="win:UInt32"/>
+      <data name="IsDeferred" inType="win:Boolean"/>
+      <data name="MethodName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="GenerateBytecodeMethodArgs">
+      <data name="SourceID" inType="win:UInt64"/>
+      <data name="ScriptContextID" inType="win:Pointer"/>
+      <data name="MethodID" inType="win:UInt32"/>
+      <data name="BytecodeCount" inType="win:UInt32"/>
+      <data name="BytecodeSize" inType="win:UInt32"/>
+      <data name="MethodName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Jscript_GC_ResetMarksStartArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+     </template>
+     <template tid="Jscript_GC_SweepStopArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="SweptBytes" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_GC_BackgroundMarkStartArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="BackgroundMarkRescanCount" inType="win:Int8"/>
+     </template>
+     <template tid="Jscript_Profile_PersistenceSaveArgs">
+      <data name="SourceID" inType="win:UInt64"/>
+      <data name="ScriptContextID" inType="win:Pointer"/>
+      <data name="Size" inType="win:UInt32"/>
+      <data name="IsSaveOnClose" inType="win:Boolean"/>
+     </template>
+     <template tid="Jscript_Profile_PersistenceLoadArgs">
+      <data name="SourceID" inType="win:UInt64"/>
+      <data name="ScriptContextID" inType="win:Pointer"/>
+     </template>
+     <template tid="Jscript_Backend_InlineArgs">
+      <data name="CallerMethodID" inType="win:UInt32"/>
+      <data name="InlineeMethodID" inType="win:UInt32"/>
+      <data name="Caller" inType="win:UnicodeString"/>
+      <data name="Inlinee" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Jscript_Method_JitStart_45_17Args">
+      <data name="MethodID" inType="win:UInt32"/>
+      <data name="MethodName" inType="win:UnicodeString"/>
+      <data name="ScriptContext" inType="win:Pointer"/>
+      <data name="InterpretedCount" inType="win:UInt32"/>
+      <data name="SourceCodeSize" inType="win:UInt32"/>
+      <data name="ByteCodeSize" inType="win:UInt32"/>
+      <data name="ByteCodeInLoopSize" inType="win:UInt32"/>
+      <data name="JitLevel" inType="win:UInt16" map="JitLevelMap"/>
+     </template>
+     <template tid="Jscript_Method_JitStop_45_18Args">
+      <data name="MethodID" inType="win:UInt32"/>
+      <data name="MethodName" inType="win:UnicodeString"/>
+      <data name="ScriptContext" inType="win:Pointer"/>
+      <data name="InterpretedCount" inType="win:UInt32"/>
+      <data name="MethodStartAddress" inType="win:Pointer"/>
+      <data name="MethodSize" inType="win:UInt64"/>
+     </template>
+     <template tid="Jscript_Method_JitQueueArgs">
+      <data name="MethodID" inType="win:UInt32"/>
+      <data name="MethodName" inType="win:UnicodeString"/>
+      <data name="ScriptContext" inType="win:Pointer"/>
+      <data name="InterpretedCount" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_Page_Allocator_SizeUsedPageSizeArgs">
+      <data name="SizeInBytes" inType="win:UInt64"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationFree_MemoryArgs">
+      <data name="Count" inType="win:UInt32"/>
+      <data name="Values" inType="win:AnsiString" count="Count"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationFree_Memory_BlockArgs">
+      <data name="MemoryAddress" inType="win:Pointer"/>
+      <data name="BlockSize" inType="win:UInt32"/>
+      <data name="ObjectSize" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationAllocate_ObjectArgs">
+      <data name="MemoryAddress" inType="win:Pointer"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationAllocate_FunctionArgs">
+      <data name="MemoryAddress" inType="win:Pointer"/>
+      <data name="MethodID" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationAllocate_DOM_ObjectArgs">
+      <data name="MemoryAddress" inType="win:Pointer"/>
+      <data name="TypeId" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_ObjectArgs">
+      <data name="MemoryAddress" inType="win:Pointer"/>
+      <data name="TypeName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationAllocate_WinRT_Delegate_ObjectArgs">
+      <data name="MemoryAddress" inType="win:Pointer"/>
+      <data name="TypeName" inType="win:UnicodeString"/>
+      <data name="jsVar" inType="win:Pointer"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationAllocate_WinRT_EventHandler_ObjectArgs">
+      <data name="MemoryAddress" inType="win:Pointer"/>
+      <data name="TypeName" inType="win:UnicodeString"/>
+      <data name="callback" inType="win:Pointer"/>
+      <data name="EventName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Jscript_Recycler_AllocationAllocate_WinRT_PropertyValue_ObjectArgs">
+      <data name="MemoryAddress" inType="win:Pointer"/>
+      <data name="TypeName" inType="win:UnicodeString"/>
+      <data name="IsArray" inType="win:Boolean"/>
+     </template>
+     <template tid="Jscript_GC_RescanMarkWaitStartArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="Timeout" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_GC_RescanMarkWaitStopArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="HasTimedout" inType="win:Boolean"/>
+     </template>
+     <template tid="Jscript_AsyncCausality_StackTraceArgs">
+      <data name="AsyncOperationId" inType="win:UInt64"/>
+      <data name="FrameCount" inType="win:UInt16"/>
+      <data name="NameBufferCount" inType="win:UInt16"/>
+      <data name="NameBuffer" inType="win:UnicodeString" length="NameBufferCount"/>
+      <data name="Frames" inType="win:Int16" count="FrameCount"/>
+     </template>
+     <template tid="JScript_ByteCodeDeserializeStartArgs">
+      <data name="Element" inType="win:Pointer"/>
+      <data name="Zero" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_Hosting_BinaryInconsistencyArgs">
+      <data name="Jscript9EngineSize" inType="win:UInt32"/>
+      <data name="MshtmlEngineSize" inType="win:UInt32"/>
+      <data name="Jscript9ContextSize" inType="win:UInt32"/>
+      <data name="MshtmlContextSize" inType="win:UInt32"/>
+      <data name="Jscript9LibrarySize" inType="win:UInt32"/>
+      <data name="MshtmlLibrarySize" inType="win:UInt32"/>
+      <data name="Jscript9CEOSize" inType="win:UInt32"/>
+      <data name="MshtmlCEOSize" inType="win:UInt32"/>
+      <data name="Jscript9ScriptEngineOffset" inType="win:UInt32"/>
+      <data name="MshtmlScriptEngineOffset" inType="win:UInt32"/>
+      <data name="Jscript9ScriptContextOffset" inType="win:UInt32"/>
+      <data name="MshtmlScriptContextOffset" inType="win:UInt32"/>
+      <data name="Jscript9LibraryOffset" inType="win:UInt32"/>
+      <data name="MshtmlLibraryOffset" inType="win:UInt32"/>
+      <data name="Jscript9TypeOffset" inType="win:UInt32"/>
+      <data name="MshtmlTypeOffset" inType="win:UInt32"/>
+      <data name="Jscript9TypeIdOffset" inType="win:UInt32"/>
+      <data name="MshtmlTypeIdOffset" inType="win:UInt32"/>
+      <data name="Jscript9TaggedIntSize" inType="win:UInt32"/>
+      <data name="MshtmlTaggIntSize" inType="win:UInt32"/>
+      <data name="Jscript9NumberSize" inType="win:UInt32"/>
+      <data name="MshtmlNumberSize" inType="win:UInt32"/>
+      <data name="Jscript9TypeIdLimit" inType="win:UInt32"/>
+      <data name="MshtmlTypeIdLimit" inType="win:UInt32"/>
+      <data name="JScript9NumberUtilitiesSize" inType="win:UInt32"/>
+      <data name="MsHtmlNumberUtilitiesSize" inType="win:UInt32"/>
+      <data name="JScript9NumberUtilitiesOffset" inType="win:UInt32"/>
+      <data name="MsHtmlNumberUtilitiesOffset" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_Hosting_BinaryConsistencyInfoArgs">
+      <data name="MshtmlEngineSize" inType="win:UInt32"/>
+      <data name="MshtmlContextSize" inType="win:UInt32"/>
+      <data name="MshtmlLibrarySize" inType="win:UInt32"/>
+      <data name="MshtmlCEOSize" inType="win:UInt32"/>
+      <data name="MshtmlScriptEngineOffset" inType="win:UInt32"/>
+      <data name="MshtmlScriptContextOffset" inType="win:UInt32"/>
+      <data name="MshtmlLibraryOffset" inType="win:UInt32"/>
+      <data name="MshtmlTypeOffset" inType="win:UInt32"/>
+      <data name="MshtmlTypeIdOffset" inType="win:UInt32"/>
+      <data name="MshtmlTaggIntSize" inType="win:UInt32"/>
+      <data name="MshtmlNumberSize" inType="win:UInt32"/>
+      <data name="MshtmlTypeIdLimit" inType="win:UInt32"/>
+      <data name="MsHtmlNumberUtilitiesSize" inType="win:UInt32"/>
+      <data name="MsHtmlNumberUtilitiesOffset" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_StackTraceArgs">
+      <data name="OperationId" inType="win:UInt64"/>
+      <data name="FrameCount" inType="win:UInt16"/>
+      <data name="FrameNameBufferCount" inType="win:UInt32"/>
+      <data name="FrameNameBuffer" inType="win:UnicodeString" length="FrameNameBufferCount"/>
+      <data name="Frames" inType="win:Int16" count="FrameCount"/>
+     </template>
+     <template tid="Jscript_Host_NativeArgs">
+      <data name="ModuleID" inType="win:Pointer"/>
+      <data name="SHA1Hash" inType="win:Binary"/>
+      <data name="Url" inType="win:UnicodeString"/>
+      <data name="ModuleSize" inType="win:HexInt32"/>
+     </template>
+     <template tid="Jscript_Host_Native167Args">
+      <data name="ModuleID" inType="win:Pointer"/>
+      <data name="SerializationIndex" inType="win:HexInt32"/>
+      <data name="Name" inType="win:UnicodeString"/>
+      <data name="FunctionOffset" inType="win:HexInt32"/>
+      <data name="FunctionSize" inType="win:HexInt32"/>
+     </template>
+     <template tid="Jscript_SourceMappingArgs">
+      <data name="ReasonBuffer" inType="win:UnicodeString"/>
+      <data name="SourceRequestFor" inType="win:UInt16"/>
+     </template>
+     <template tid="Memprotect_GC_AllocationArgs">
+      <data name="HeapHandle" inType="win:Pointer"/>
+      <data name="Size" inType="win:UInt64"/>
+      <data name="Address" inType="win:Pointer"/>
+      <data name="Source" inType="win:UInt32"/>
+     </template>
+     <template tid="Memprotect_GC_UnrootArgs">
+      <data name="HeapHandle" inType="win:Pointer"/>
+      <data name="Address" inType="win:Pointer"/>
+      <data name="Source" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_GC_InitArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="Timestamp" inType="win:Double"/>
+     </template>
+     <template tid="Memprotect_GC_Heap_SizeArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="UsedBytes" inType="win:UInt64"/>
+      <data name="ReservedBytes" inType="win:UInt64"/>
+      <data name="CommittedBytes" inType="win:UInt64"/>
+      <data name="NumberOfSegments" inType="win:UInt64"/>
+      <data name="FromGC" inType="win:Boolean"/>
+     </template>
+     <template tid="Jscript_Internal_Generic_EventArgs">
+      <data name="eventData" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Jscript_GC_Bucket_StatsArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="Type" inType="win:UInt16"/>
+      <data name="SizeCat" inType="win:UInt16"/>
+      <data name="UsedBytes" inType="win:UInt64"/>
+      <data name="TotalBytes" inType="win:UInt64"/>
+     </template>
+     <template tid="Memprotect_GC_Bucket_StatsArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="Type" inType="win:UInt16" map="GCBucketNames"/>
+      <data name="SizeCat" inType="win:UInt16"/>
+      <data name="UsedBytes" inType="win:UInt64"/>
+      <data name="TotalBytes" inType="win:UInt64"/>
+     </template>
+     <template tid="Jscript_Backend_BailoutArgs">
+      <data name="FunctionMethodID" inType="win:UInt32"/>
+      <data name="FunctionSourceID" inType="win:UInt32"/>
+      <data name="FunctionDisplayName" inType="win:UnicodeString"/>
+      <data name="BailoutKind" inType="win:UInt32"/>
+      <data name="BailoutCount" inType="win:UInt32"/>
+      <data name="CallCount" inType="win:UInt32"/>
+      <data name="RejitReason" inType="win:AnsiString"/>
+      <data name="Rethunk" inType="win:Boolean"/>
+     </template>
+     <template tid="Jscript_Backend_Bailout_LoopBodyArgs">
+      <data name="FunctionMethodID" inType="win:UInt32"/>
+      <data name="FunctionSourceID" inType="win:UInt32"/>
+      <data name="FunctionDisplayName" inType="win:UnicodeString"/>
+      <data name="LoopNumber" inType="win:UInt32"/>
+      <data name="BailoutKind" inType="win:UInt32"/>
+      <data name="RejitReason" inType="win:AnsiString"/>
+     </template>
+     <template tid="Jscript_GC_Clear_InlineCacheStopArgs">
+      <data name="ThreadContextID" inType="win:Pointer"/>
+      <data name="ScriptContextCount" inType="win:UInt32"/>
+      <data name="AllocatedSize" inType="win:UInt32"/>
+      <data name="PreClearFreeSize" inType="win:UInt32"/>
+      <data name="FreeSize" inType="win:UInt32"/>
+      <data name="PolyInlineCacheSize" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_GC_SweepWeakRefStop253Args">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="ScannedCount" inType="win:UInt32"/>
+      <data name="ClearedCount" inType="win:UInt32"/>
+      <data name="RegionScannedCount" inType="win:UInt32"/>
+      <data name="RegionClearedCount" inType="win:UInt32"/>
+     </template>
+     <template tid="Jscript_GC2StartArgs">
+      <data name="RecyclerID" inType="win:Pointer"/>
+      <data name="Phase" inType="win:UInt32"/>
+      <data name="CollectionTrigger" inType="win:UInt32"/>
+      <data name="CollectionStartFlags" inType="win:UInt32"/>
+     </template>
+    </templates>
+   </provider>
+  </events>
+ </instrumentation>
+ <localization>
+  <resources culture="en-GB">
+   <stringTable>
+    <string id="keyword_JScriptRuntime" value="JScriptRuntime"/>
+    <string id="keyword_JScriptStartRundown" value="JScriptStartRundown"/>
+    <string id="keyword_JScriptEndRundown" value="JScriptEndRundown"/>
+    <string id="keyword_JScriptGCBucketStats" value="JScriptGCBucketStats"/>
+    <string id="keyword_JScriptProjection" value="JScriptProjection"/>
+    <string id="keyword_JScriptFrontend" value="JScriptFrontend"/>
+    <string id="keyword_JScriptGarbageCollection" value="JScriptGarbageCollection"/>
+    <string id="keyword_JScriptProfile" value="JScriptProfile"/>
+    <string id="keyword_JscriptBackend" value="JscriptBackend"/>
+    <string id="keyword_JscriptJit" value="JscriptJit"/>
+    <string id="keyword_JScriptMemoryTracing" value="JScriptMemoryTracing"/>
+    <string id="keyword_JScriptObjectAllocation" value="JScriptObjectAllocation"/>
+    <string id="keyword_JScriptExternalReferenceAddRef" value="JScriptExternalReferenceAddRef"/>
+    <string id="keyword_JScriptObjectCleanup" value="JScriptObjectCleanup"/>
+    <string id="keyword_JScriptExternalReferenceRelease" value="JScriptExternalReferenceRelease"/>
+    <string id="keyword_JScriptAsyncCausality" value="JScriptAsyncCausality"/>
+    <string id="keyword_JScriptByteCode" value="JScriptByteCode"/>
+    <string id="keyword_JScriptHosting" value="JScriptHosting"/>
+    <string id="keyword_JScriptStackTrace" value="JScriptStackTrace"/>
+    <string id="keyword_JScriptAsyncCausality_V2" value="JScriptAsyncCausality_V2"/>
+    <string id="keyword_JScriptSourceMapping" value="JScriptSourceMapping"/>
+    <string id="keyword_MemProtectGarbageCollection" value="MemProtectGarbageCollection"/>
+    <string id="keyword_MemProtectObjectAllocation" value="MemProtectObjectAllocation"/>
+    <string id="keyword_MemProtectHeapSize" value="MemProtectHeapSize"/>
+    <string id="keyword_Internal" value="Internal"/>
+    <string id="keyword_MemProtectGCBucketStats" value="MemProtectGCBucketStats"/>
+    <string id="task_MethodRuntime" value="MethodRuntime"/>
+    <string id="opcode_MethodRuntimeMethodLoad" value="MethodLoad"/>
+    <string id="opcode_MethodRuntimeMethodUnload" value="MethodUnload"/>
+    <string id="task_ScriptContextRuntime" value="ScriptContextRuntime"/>
+    <string id="opcode_ScriptContextRuntimeScriptContextLoad" value="ScriptContextLoad"/>
+    <string id="opcode_ScriptContextRuntimeScriptContextUnload" value="ScriptContextUnload"/>
+    <string id="opcode_ScriptContextRuntimeSourceLoad" value="SourceLoad"/>
+    <string id="opcode_ScriptContextRuntimeSourceUnload" value="SourceUnload"/>
+    <string id="opcode_ScriptContextRuntimeScriptContextOnStartupComplete" value="ScriptContextOnStartupComplete"/>
+    <string id="task_MethodRundown" value="MethodRundown"/>
+    <string id="opcode_MethodRundownMethodDCStart" value="MethodDCStart"/>
+    <string id="opcode_MethodRundownMethodDCEnd" value="MethodDCEnd"/>
+    <string id="opcode_MethodRundownDCStartComplete" value="DCStartComplete"/>
+    <string id="opcode_MethodRundownDCEndComplete" value="DCEndComplete"/>
+    <string id="opcode_MethodRundownDCStartInit" value="DCStartInit"/>
+    <string id="opcode_MethodRundownDCEndInit" value="DCEndInit"/>
+    <string id="task_ScriptContextRundown" value="ScriptContextRundown"/>
+    <string id="opcode_ScriptContextRundownScriptContextDCStart" value="ScriptContextDCStart"/>
+    <string id="opcode_ScriptContextRundownScriptContextDCEnd" value="ScriptContextDCEnd"/>
+    <string id="opcode_ScriptContextRundownSourceDCStart" value="SourceDCStart"/>
+    <string id="opcode_ScriptContextRundownSourceDCEnd" value="SourceDCEnd"/>
+    <string id="task_Jscript_Projection_ResolveType" value="Jscript_Projection_ResolveType"/>
+    <string id="task_Jscript_Projection_ConstructRuntimeClass" value="Jscript_Projection_ConstructRuntimeClass"/>
+    <string id="task_Jscript_Projection_MethodCall" value="Jscript_Projection_MethodCall"/>
+    <string id="task_Jscript_Projection_RawMethodCall" value="Jscript_Projection_RawMethodCall"/>
+    <string id="task_Jscript_Projection_InvokesJsDelegate" value="Jscript_Projection_InvokesJsDelegate"/>
+    <string id="task_Jscript_Projection_InvokeNativeDelegate" value="Jscript_Projection_InvokeNativeDelegate"/>
+    <string id="task_Jscript_Projection_AddEventListener" value="Jscript_Projection_AddEventListener"/>
+    <string id="task_Jscript_Projection_RemoveEventListener" value="Jscript_Projection_RemoveEventListener"/>
+    <string id="task_Jscript_Projection_GetTypeMetaDataInformation" value="Jscript_Projection_GetTypeMetaDataInformation"/>
+    <string id="task_Jscript_Projection_SetEventHandler" value="Jscript_Projection_SetEventHandler"/>
+    <string id="task_Jscript_Projection_RemoveAllEventsAndEventHandlers" value="Jscript_Projection_RemoveAllEventsAndEventHandlers"/>
+    <string id="task_Jscript_Projection_InvokeEvent" value="Jscript_Projection_InvokeEvent"/>
+    <string id="task_Jscript_Projection_InvokeEventEvParamPrep" value="Jscript_Projection_InvokeEventEvParamPrep"/>
+    <string id="task_Jscript_Projection_GetExprFromConcreteTypeName" value="Jscript_Projection_GetExprFromConcreteTypeName"/>
+    <string id="task_Jscript_Projection_GetTypeFromTypeNameParts" value="Jscript_Projection_GetTypeFromTypeNameParts"/>
+    <string id="task_Jscript_Projection_ReferenceOrArrayGetValue" value="Jscript_Projection_ReferenceOrArrayGetValue"/>
+    <string id="task_Jscript_Projection_PropertyValueVarFromGRCN" value="Jscript_Projection_PropertyValueVarFromGRCN"/>
+    <string id="task_Jscript_Projection_VarFromGRCN" value="Jscript_Projection_VarFromGRCN"/>
+    <string id="task_Jscript_Projection_WriteIReference" value="Jscript_Projection_WriteIReference"/>
+    <string id="task_Jscript_Projection_WriteInspectable" value="Jscript_Projection_WriteInspectable"/>
+    <string id="task_Jscript_Projection_GetNonArrayTypeAsPropertyValue" value="Jscript_Projection_GetNonArrayTypeAsPropertyValue"/>
+    <string id="task_Jscript_Projection_GetNonArrayBasicTypeAsPropertyValue" value="Jscript_Projection_GetNonArrayBasicTypeAsPropertyValue"/>
+    <string id="task_Jscript_Projection_GetTypedArrayAsPropertyValue" value="Jscript_Projection_GetTypedArrayAsPropertyValue"/>
+    <string id="task_Jscript_Projection_GetBasicTypedArrayAsPropertyValue" value="Jscript_Projection_GetBasicTypedArrayAsPropertyValue"/>
+    <string id="task_GenerateBytecodeMethod" value="GenerateBytecodeMethod"/>
+    <string id="task_ParseMethod" value="ParseMethod"/>
+    <string id="task_Jscript_GC_ResetMarks" value="Jscript_GC_ResetMarks"/>
+    <string id="task_Jscript_GC_ScanRoots" value="Jscript_GC_ScanRoots"/>
+    <string id="task_Jscript_GC_ScanStack" value="Jscript_GC_ScanStack"/>
+    <string id="task_Jscript_GC_Mark" value="Jscript_GC_Mark"/>
+    <string id="task_Jscript_GC_Rescan" value="Jscript_GC_Rescan"/>
+    <string id="task_Jscript_GC_Sweep" value="Jscript_GC_Sweep"/>
+    <string id="task_Jscript_GC_SetupBackgroundSweep" value="Jscript_GC_SetupBackgroundSweep"/>
+    <string id="task_Jscript_GC_BackgroundSweep" value="Jscript_GC_BackgroundSweep"/>
+    <string id="task_Jscript_GC_TransferSweptObjects" value="Jscript_GC_TransferSweptObjects"/>
+    <string id="task_Jscript_GC_Dispose" value="Jscript_GC_Dispose"/>
+    <string id="task_Jscript_GC_BackgroundMark" value="Jscript_GC_BackgroundMark"/>
+    <string id="task_Jscript_GC_ResetWriteWatch" value="Jscript_GC_ResetWriteWatch"/>
+    <string id="task_Jscript_Profile_Persistence" value="Jscript_Profile_Persistence"/>
+    <string id="opcode_Jscript_Profile_PersistenceLoad" value="Load"/>
+    <string id="opcode_Jscript_Profile_PersistenceSave" value="Save"/>
+    <string id="task_Jscript_Backend_Inline" value="Jscript_Backend_Inline"/>
+    <string id="task_Jscript_Method_Jit" value="Jscript_Method_Jit"/>
+    <string id="opcode_Jscript_Method_JitStart_45_17" value="Start_45_17"/>
+    <string id="opcode_Jscript_Method_JitStop_45_18" value="Stop_45_18"/>
+    <string id="opcode_Jscript_Method_JitQueue" value="Queue"/>
+    <string id="opcode_Jscript_Method_JitDequeue" value="Dequeue"/>
+    <string id="task_Jscript_GC_IdleCollect" value="Jscript_GC_IdleCollect"/>
+    <string id="task_Jscript_Page_Allocator_Size" value="Jscript_Page_Allocator_Size"/>
+    <string id="opcode_Jscript_Page_Allocator_SizeUsedPageSize" value="UsedPageSize"/>
+    <string id="task_Jscript_Recycler_Allocation" value="Jscript_Recycler_Allocation"/>
+    <string id="opcode_Jscript_Recycler_AllocationFree_Memory" value="Free_Memory"/>
+    <string id="opcode_Jscript_Recycler_AllocationFree_Memory_Block" value="Free_Memory_Block"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_Object" value="Allocate_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_Array" value="Allocate_Array"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_Function" value="Allocate_Function"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_DOM_Object" value="Allocate_DOM_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_JSProxy_Object" value="Allocate_WinRT_JSProxy_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_PixelArray" value="Allocate_PixelArray"/>
+    <string id="opcode_Jscript_Recycler_AllocationExternal_AddRef" value="External_AddRef"/>
+    <string id="opcode_Jscript_Recycler_AllocationExternal_Release" value="External_Release"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_RuntimeClass_Object" value="Allocate_WinRT_RuntimeClass_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_Namespace_Object" value="Allocate_WinRT_Namespace_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_Struct_Object" value="Allocate_WinRT_Struct_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_Enum_Object" value="Allocate_WinRT_Enum_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_TypedArray_Object" value="Allocate_WinRT_TypedArray_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_Delegate_Object" value="Allocate_WinRT_Delegate_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_EventHandler_Object" value="Allocate_WinRT_EventHandler_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_Collections_Object" value="Allocate_WinRT_Collections_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationAllocate_WinRT_PropertyValue_Object" value="Allocate_WinRT_PropertyValue_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationFree_WinRT_Delegate_Object" value="Free_WinRT_Delegate_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationFree_WinRT_EventHandler_Object" value="Free_WinRT_EventHandler_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationFree_WinRT_Collections_Object" value="Free_WinRT_Collections_Object"/>
+    <string id="opcode_Jscript_Recycler_AllocationFree_WinRT_PropertyValue_Object" value="Free_WinRT_PropertyValue_Object"/>
+    <string id="task_Jscript_GC_SweepWeakRef" value="Jscript_GC_SweepWeakRef"/>
+    <string id="task_Jscript_GC_ProcessTrackedObject" value="Jscript_GC_ProcessTrackedObject"/>
+    <string id="task_Jscript_GC_ProcessClientTrackedObject" value="Jscript_GC_ProcessClientTrackedObject"/>
+    <string id="task_Jscript_GC_BackgroundZeroPage" value="Jscript_GC_BackgroundZeroPage"/>
+    <string id="task_Jscript_GC_FlushZeroPage" value="Jscript_GC_FlushZeroPage"/>
+    <string id="task_Jscript_GC_DecommitConcurrentCollectPageAllocator" value="Jscript_GC_DecommitConcurrentCollectPageAllocator"/>
+    <string id="task_Jscript_GC_SweepPartialReusePage" value="Jscript_GC_SweepPartialReusePage"/>
+    <string id="task_Jscript_GC_BackgroundRescan" value="Jscript_GC_BackgroundRescan"/>
+    <string id="task_Jscript_GC_BackgroundResetWriteWatch" value="Jscript_GC_BackgroundResetWriteWatch"/>
+    <string id="task_Jscript_GC_BackgroundScanRoots" value="Jscript_GC_BackgroundScanRoots"/>
+    <string id="task_Jscript_GC_BackgroundResetMarks" value="Jscript_GC_BackgroundResetMarks"/>
+    <string id="task_Jscript_GC_RescanMarkWait" value="Jscript_GC_RescanMarkWait"/>
+    <string id="task_Jscript_GC_SynchronousMarkWait" value="Jscript_GC_SynchronousMarkWait"/>
+    <string id="task_Jscript_GC_FinishConcurrentWait" value="Jscript_GC_FinishConcurrentWait"/>
+    <string id="task_Jscript_GC_EndMarkOnLowMemory" value="Jscript_GC_EndMarkOnLowMemory"/>
+    <string id="task_Jscript_AsyncCausality_StackTrace" value="Jscript_AsyncCausality_StackTrace"/>
+    <string id="task_JScript_ByteCodeDeserialize" value="JScript_ByteCodeDeserialize"/>
+    <string id="task_Jscript_Hosting_BinaryInconsistency" value="Jscript_Hosting_BinaryInconsistency"/>
+    <string id="task_Jscript_Hosting_BinaryConsistencyInfo" value="Jscript_Hosting_BinaryConsistencyInfo"/>
+    <string id="task_Jscript_StackTrace" value="Jscript_StackTrace"/>
+    <string id="task_Jscript_Host_Native" value="Jscript_Host_Native"/>
+    <string id="task_Jscript_SourceMapping" value="Jscript_SourceMapping"/>
+    <string id="task_Jscript_GC_ParallelMark" value="Jscript_GC_ParallelMark"/>
+    <string id="task_Jscript_GC_BackgroundParallelMark" value="Jscript_GC_BackgroundParallelMark"/>
+    <string id="task_Memprotect_GC_ResetMarks" value="Memprotect_GC_ResetMarks"/>
+    <string id="task_Memprotect_GC_ScanRoots" value="Memprotect_GC_ScanRoots"/>
+    <string id="task_Memprotect_GC_ScanStack" value="Memprotect_GC_ScanStack"/>
+    <string id="task_Memprotect_GC_Mark" value="Memprotect_GC_Mark"/>
+    <string id="task_Memprotect_GC_Rescan" value="Memprotect_GC_Rescan"/>
+    <string id="task_Memprotect_GC_Sweep" value="Memprotect_GC_Sweep"/>
+    <string id="task_Memprotect_GC_SetupBackgroundSweep" value="Memprotect_GC_SetupBackgroundSweep"/>
+    <string id="task_Memprotect_GC_BackgroundSweep" value="Memprotect_GC_BackgroundSweep"/>
+    <string id="task_Memprotect_GC_TransferSweptObjects" value="Memprotect_GC_TransferSweptObjects"/>
+    <string id="task_Memprotect_GC_Dispose" value="Memprotect_GC_Dispose"/>
+    <string id="task_Memprotect_GC_BackgroundMark" value="Memprotect_GC_BackgroundMark"/>
+    <string id="task_Memprotect_GC_ResetWriteWatch" value="Memprotect_GC_ResetWriteWatch"/>
+    <string id="task_Memprotect_GC_IdleCollect" value="Memprotect_GC_IdleCollect"/>
+    <string id="task_Memprotect_GC_SweepWeakRef" value="Memprotect_GC_SweepWeakRef"/>
+    <string id="task_Memprotect_GC_ProcessTrackedObject" value="Memprotect_GC_ProcessTrackedObject"/>
+    <string id="task_Memprotect_GC_ProcessClientTrackedObject" value="Memprotect_GC_ProcessClientTrackedObject"/>
+    <string id="task_Memprotect_GC_BackgroundZeroPage" value="Memprotect_GC_BackgroundZeroPage"/>
+    <string id="task_Memprotect_GC_FlushZeroPage" value="Memprotect_GC_FlushZeroPage"/>
+    <string id="task_Memprotect_GC_DecommitConcurrentCollectPageAllocator" value="Memprotect_GC_DecommitConcurrentCollectPageAllocator"/>
+    <string id="task_Memprotect_GC_SweepPartialReusePage" value="Memprotect_GC_SweepPartialReusePage"/>
+    <string id="task_Memprotect_GC_BackgroundRescan" value="Memprotect_GC_BackgroundRescan"/>
+    <string id="task_Memprotect_GC_BackgroundResetWriteWatch" value="Memprotect_GC_BackgroundResetWriteWatch"/>
+    <string id="task_Memprotect_GC_BackgroundScanRoots" value="Memprotect_GC_BackgroundScanRoots"/>
+    <string id="task_Memprotect_GC_BackgroundResetMarks" value="Memprotect_GC_BackgroundResetMarks"/>
+    <string id="task_Memprotect_GC_RescanMarkWait" value="Memprotect_GC_RescanMarkWait"/>
+    <string id="task_Memprotect_GC_SynchronousMarkWait" value="Memprotect_GC_SynchronousMarkWait"/>
+    <string id="task_Memprotect_GC_FinishConcurrentWait" value="Memprotect_GC_FinishConcurrentWait"/>
+    <string id="task_Memprotect_GC_EndMarkOnLowMemory" value="Memprotect_GC_EndMarkOnLowMemory"/>
+    <string id="task_Memprotect_GC_ParallelMark" value="Memprotect_GC_ParallelMark"/>
+    <string id="task_Memprotect_GC_BackgroundParallelMark" value="Memprotect_GC_BackgroundParallelMark"/>
+    <string id="task_Memprotect_GC" value="Memprotect_GC"/>
+    <string id="task_Memprotect_GC_Allocation" value="Memprotect_GC_Allocation"/>
+    <string id="task_Memprotect_GC_Unroot" value="Memprotect_GC_Unroot"/>
+    <string id="task_Jscript_GC_Init" value="Jscript_GC_Init"/>
+    <string id="task_Memprotect_GC_Heap_Size" value="Memprotect_GC_Heap_Size"/>
+    <string id="task_Jscript_Internal_Generic_Event" value="Jscript_Internal_Generic_Event"/>
+    <string id="task_Jscript_GC_Bucket_Stats" value="Jscript_GC_Bucket_Stats"/>
+    <string id="task_Memprotect_GC_Bucket_Stats" value="Memprotect_GC_Bucket_Stats"/>
+    <string id="task_Jscript_Backend_Bailout" value="Jscript_Backend_Bailout"/>
+    <string id="task_Jscript_Backend_Bailout_LoopBody" value="Jscript_Backend_Bailout_LoopBody"/>
+    <string id="task_Jscript_GC_Clear_InlineCache" value="Jscript_GC_Clear_InlineCache"/>
+    <string id="task_Jscript_GC_PreSweepCallback" value="Jscript_GC_PreSweepCallback"/>
+    <string id="task_Memprotect_GC_PreSweepCallback" value="Memprotect_GC_PreSweepCallback"/>
+    <string id="task_Jscript_GC2" value="Jscript_GC2"/>
+    <string id="task_Memprotect_GC2" value="Memprotect_GC2"/>
+    <string id="map_MethodAddressRangeMapInterpreted" value="Interpreted"/>
+    <string id="map_MethodAddressRangeMapJIT" value="JIT"/>
+    <string id="map_MethodAddressRangeMapJITLoopBody" value="JITLoopBody"/>
+    <string id="map_MethodAddressRangeMapJITLoopBody" value="JITLoopBody"/>
+    <string id="map_MethodAddressRangeMapJITLoopBody" value="JITLoopBody"/>
+    <string id="map_MethodAddressRangeMapJITLoopBody" value="JITLoopBody"/>
+    <string id="map_MethodAddressRangeMapJITLoopBody" value="JITLoopBody"/>
+    <string id="map_MethodAddressRangeMapJITLoopBody" value="JITLoopBody"/>
+    <string id="map_MethodAddressRangeMapJITLoopBody" value="JITLoopBody"/>
+    <string id="map_MethodAddressRangeMapJITLoopBody" value="JITLoopBody"/>
+    <string id="map_JitLevelMapSimpleJit" value="SimpleJit"/>
+    <string id="map_JitLevelMapFullJit" value="FullJit"/>
+    <string id="map_GCBucketNamesNormal (S)" value="Normal (S)"/>
+    <string id="map_GCBucketNamesLeaf (S)" value="Leaf (S)"/>
+    <string id="map_GCBucketNamesFin (S)" value="Fin (S)"/>
+    <string id="map_GCBucketNamesNormWB (S)" value="NormWB (S)"/>
+    <string id="map_GCBucketNamesFinWB (S)" value="FinWB (S)"/>
+    <string id="map_GCBucketNamesVisited (S)" value="Visited (S)"/>
+    <string id="map_GCBucketNamesNormal (M)" value="Normal (M)"/>
+    <string id="map_GCBucketNamesLeaf (M)" value="Leaf (M)"/>
+    <string id="map_GCBucketNamesFin (M)" value="Fin (M)"/>
+    <string id="map_GCBucketNamesNormWB (M)" value="NormWB (M)"/>
+    <string id="map_GCBucketNamesFinWB (M)" value="FinWB (M)"/>
+    <string id="map_GCBucketNamesVisited (M)" value="Visited (M)"/>
+    <string id="map_GCBucketNamesLarge" value="Large"/>
+    <string id="map_GCBucketNamesTotal" value="Total"/>
+   </stringTable>
+  </resources>
+ </localization>
+</instrumentationManifest>

@@ -1,0 +1,380 @@
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events">
+ <instrumentation xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events">
+  <events>
+   <provider name="Microsoft-Windows-Sysmon" guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}" resourceFileName="Microsoft-Windows-Sysmon" messageFileName="Microsoft-Windows-Sysmon" symbol="MicrosoftWindowsSysmon" source="Xml" >
+    <keywords>
+    </keywords>
+    <tasks>
+     <task name="ProcessCreate(rule:ProcessCreate)" message="$(string.task_ProcessCreate(rule:ProcessCreate))" value="1"/>
+     <task name="Filecreationtimechanged(rule:FileCreateTime)" message="$(string.task_Filecreationtimechanged(rule:FileCreateTime))" value="2"/>
+     <task name="Networkconnectiondetected(rule:NetworkConnect)" message="$(string.task_Networkconnectiondetected(rule:NetworkConnect))" value="3"/>
+     <task name="Sysmonservicestatechanged" message="$(string.task_Sysmonservicestatechanged)" value="4"/>
+     <task name="Processterminated(rule:ProcessTerminate)" message="$(string.task_Processterminated(rule:ProcessTerminate))" value="5"/>
+     <task name="Driverloaded(rule:DriverLoad)" message="$(string.task_Driverloaded(rule:DriverLoad))" value="6"/>
+     <task name="Imageloaded(rule:ImageLoad)" message="$(string.task_Imageloaded(rule:ImageLoad))" value="7"/>
+     <task name="CreateRemoteThreaddetected(rule:CreateRemoteThread)" message="$(string.task_CreateRemoteThreaddetected(rule:CreateRemoteThread))" value="8"/>
+     <task name="RawAccessReaddetected(rule:RawAccessRead)" message="$(string.task_RawAccessReaddetected(rule:RawAccessRead))" value="9"/>
+     <task name="Processaccessed(rule:ProcessAccess)" message="$(string.task_Processaccessed(rule:ProcessAccess))" value="10"/>
+     <task name="Filecreated(rule:FileCreate)" message="$(string.task_Filecreated(rule:FileCreate))" value="11"/>
+     <task name="Registryobjectaddedordeleted(rule:RegistryEvent)" message="$(string.task_Registryobjectaddedordeleted(rule:RegistryEvent))" value="12"/>
+     <task name="Registryvalueset(rule:RegistryEvent)" message="$(string.task_Registryvalueset(rule:RegistryEvent))" value="13"/>
+     <task name="Registryobjectrenamed(rule:RegistryEvent)" message="$(string.task_Registryobjectrenamed(rule:RegistryEvent))" value="14"/>
+     <task name="Filestreamcreated(rule:FileCreateStreamHash)" message="$(string.task_Filestreamcreated(rule:FileCreateStreamHash))" value="15"/>
+     <task name="Sysmonconfigstatechanged" message="$(string.task_Sysmonconfigstatechanged)" value="16"/>
+     <task name="PipeCreated(rule:PipeEvent)" message="$(string.task_PipeCreated(rule:PipeEvent))" value="17"/>
+     <task name="PipeConnected(rule:PipeEvent)" message="$(string.task_PipeConnected(rule:PipeEvent))" value="18"/>
+     <task name="WmiEventFilteractivitydetected(rule:WmiEvent)" message="$(string.task_WmiEventFilteractivitydetected(rule:WmiEvent))" value="19"/>
+     <task name="WmiEventConsumeractivitydetected(rule:WmiEvent)" message="$(string.task_WmiEventConsumeractivitydetected(rule:WmiEvent))" value="20"/>
+     <task name="WmiEventConsumerToFilteractivitydetected(rule:WmiEvent)" message="$(string.task_WmiEventConsumerToFilteractivitydetected(rule:WmiEvent))" value="21"/>
+     <task name="Dnsquery(rule:DnsQuery)" message="$(string.task_Dnsquery(rule:DnsQuery))" value="22"/>
+     <task name="FileDeletearchived(rule:FileDelete)" message="$(string.task_FileDeletearchived(rule:FileDelete))" value="23"/>
+     <task name="Clipboardchanged(rule:ClipboardChange)" message="$(string.task_Clipboardchanged(rule:ClipboardChange))" value="24"/>
+     <task name="ProcessTampering(rule:ProcessTampering)" message="$(string.task_ProcessTampering(rule:ProcessTampering))" value="25"/>
+     <task name="FileDeletelogged(rule:FileDeleteDetected)" message="$(string.task_FileDeletelogged(rule:FileDeleteDetected))" value="26"/>
+     <task name="Errorreport" message="$(string.task_Errorreport)" value="255"/>
+    </tasks>
+    <events>
+     <event value="1" symbol="ProcessCreate(rule:ProcessCreate)_V5" version="5" task="ProcessCreate(rule:ProcessCreate)" level="win:Informational" template="ProcessCreate(rule:ProcessCreate)Args_V5"/>
+     <event value="2" symbol="Filecreationtimechanged(rule:FileCreateTime)_V5" version="5" task="Filecreationtimechanged(rule:FileCreateTime)" level="win:Informational" template="Filecreationtimechanged(rule:FileCreateTime)Args_V5"/>
+     <event value="3" symbol="Networkconnectiondetected(rule:NetworkConnect)_V5" version="5" task="Networkconnectiondetected(rule:NetworkConnect)" level="win:Informational" template="Networkconnectiondetected(rule:NetworkConnect)Args_V5"/>
+     <event value="4" symbol="Sysmonservicestatechanged_V3" version="3" task="Sysmonservicestatechanged" level="win:Informational" template="SysmonservicestatechangedArgs_V3"/>
+     <event value="5" symbol="Processterminated(rule:ProcessTerminate)_V3" version="3" task="Processterminated(rule:ProcessTerminate)" level="win:Informational" template="Processterminated(rule:ProcessTerminate)Args_V3"/>
+     <event value="6" symbol="Driverloaded(rule:DriverLoad)_V4" version="4" task="Driverloaded(rule:DriverLoad)" level="win:Informational" template="Driverloaded(rule:DriverLoad)Args_V4"/>
+     <event value="7" symbol="Imageloaded(rule:ImageLoad)_V3" version="3" task="Imageloaded(rule:ImageLoad)" level="win:Informational" template="Imageloaded(rule:ImageLoad)Args_V3"/>
+     <event value="8" symbol="CreateRemoteThreaddetected(rule:CreateRemoteThread)_V2" version="2" task="CreateRemoteThreaddetected(rule:CreateRemoteThread)" level="win:Informational" template="CreateRemoteThreaddetected(rule:CreateRemoteThread)Args_V2"/>
+     <event value="9" symbol="RawAccessReaddetected(rule:RawAccessRead)_V2" version="2" task="RawAccessReaddetected(rule:RawAccessRead)" level="win:Informational" template="RawAccessReaddetected(rule:RawAccessRead)Args_V2"/>
+     <event value="10" symbol="Processaccessed(rule:ProcessAccess)_V3" version="3" task="Processaccessed(rule:ProcessAccess)" level="win:Informational" template="Processaccessed(rule:ProcessAccess)Args_V3"/>
+     <event value="11" symbol="Filecreated(rule:FileCreate)_V2" version="2" task="Filecreated(rule:FileCreate)" level="win:Informational" template="Filecreated(rule:FileCreate)Args_V2"/>
+     <event value="12" symbol="Registryobjectaddedordeleted(rule:RegistryEvent)_V2" version="2" task="Registryobjectaddedordeleted(rule:RegistryEvent)" level="win:Informational" template="Registryobjectaddedordeleted(rule:RegistryEvent)Args_V2"/>
+     <event value="13" symbol="Registryvalueset(rule:RegistryEvent)_V2" version="2" task="Registryvalueset(rule:RegistryEvent)" level="win:Informational" template="Registryvalueset(rule:RegistryEvent)Args_V2"/>
+     <event value="14" symbol="Registryobjectrenamed(rule:RegistryEvent)_V2" version="2" task="Registryobjectrenamed(rule:RegistryEvent)" level="win:Informational" template="Registryobjectrenamed(rule:RegistryEvent)Args_V2"/>
+     <event value="15" symbol="Filestreamcreated(rule:FileCreateStreamHash)_V2" version="2" task="Filestreamcreated(rule:FileCreateStreamHash)" level="win:Informational" template="Filestreamcreated(rule:FileCreateStreamHash)Args_V2"/>
+     <event value="16" symbol="Sysmonconfigstatechanged_V3" version="3" task="Sysmonconfigstatechanged" level="win:Informational" template="SysmonconfigstatechangedArgs_V3"/>
+     <event value="17" symbol="PipeCreated(rule:PipeEvent)_V1" version="1" task="PipeCreated(rule:PipeEvent)" level="win:Informational" template="PipeCreated(rule:PipeEvent)Args_V1"/>
+     <event value="18" symbol="PipeConnected(rule:PipeEvent)_V1" version="1" task="PipeConnected(rule:PipeEvent)" level="win:Informational" template="PipeCreated(rule:PipeEvent)Args_V1"/>
+     <event value="19" symbol="WmiEventFilteractivitydetected(rule:WmiEvent)_V3" version="3" task="WmiEventFilteractivitydetected(rule:WmiEvent)" level="win:Informational" template="WmiEventFilteractivitydetected(rule:WmiEvent)Args_V3"/>
+     <event value="20" symbol="WmiEventConsumeractivitydetected(rule:WmiEvent)_V3" version="3" task="WmiEventConsumeractivitydetected(rule:WmiEvent)" level="win:Informational" template="WmiEventConsumeractivitydetected(rule:WmiEvent)Args_V3"/>
+     <event value="21" symbol="WmiEventConsumerToFilteractivitydetected(rule:WmiEvent)_V3" version="3" task="WmiEventConsumerToFilteractivitydetected(rule:WmiEvent)" level="win:Informational" template="WmiEventConsumerToFilteractivitydetected(rule:WmiEvent)Args_V3"/>
+     <event value="22" symbol="Dnsquery(rule:DnsQuery)_V5" version="5" task="Dnsquery(rule:DnsQuery)" level="win:Informational" template="Dnsquery(rule:DnsQuery)Args_V5"/>
+     <event value="23" symbol="FileDeletearchived(rule:FileDelete)_V5" version="5" task="FileDeletearchived(rule:FileDelete)" level="win:Informational" template="FileDeletearchived(rule:FileDelete)Args_V5"/>
+     <event value="24" symbol="Clipboardchanged(rule:ClipboardChange)_V5" version="5" task="Clipboardchanged(rule:ClipboardChange)" level="win:Informational" template="Clipboardchanged(rule:ClipboardChange)Args_V5"/>
+     <event value="25" symbol="ProcessTampering(rule:ProcessTampering)_V5" version="5" task="ProcessTampering(rule:ProcessTampering)" level="win:Informational" template="ProcessTampering(rule:ProcessTampering)Args_V5"/>
+     <event value="26" symbol="FileDeletelogged(rule:FileDeleteDetected)_V5" version="5" task="FileDeletelogged(rule:FileDeleteDetected)" level="win:Informational" template="FileDeletelogged(rule:FileDeleteDetected)Args_V5"/>
+     <event value="255" symbol="Errorreport_V3" version="3" task="Errorreport" level="win:Error" template="ErrorreportArgs_V3"/>
+    </events>
+    <templates>
+     <template tid="PipeCreated(rule:PipeEvent)Args_V1">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="EventType" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="PipeName" inType="win:UnicodeString"/>
+      <data name="Image" inType="win:UnicodeString"/>
+     </template>
+     <template tid="CreateRemoteThreaddetected(rule:CreateRemoteThread)Args_V2">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="SourceProcessGuid" inType="win:GUID"/>
+      <data name="SourceProcessId" inType="win:UInt32"/>
+      <data name="SourceImage" inType="win:UnicodeString"/>
+      <data name="TargetProcessGuid" inType="win:GUID"/>
+      <data name="TargetProcessId" inType="win:UInt32"/>
+      <data name="TargetImage" inType="win:UnicodeString"/>
+      <data name="NewThreadId" inType="win:UInt32"/>
+      <data name="StartAddress" inType="win:UnicodeString"/>
+      <data name="StartModule" inType="win:UnicodeString"/>
+      <data name="StartFunction" inType="win:UnicodeString"/>
+     </template>
+     <template tid="RawAccessReaddetected(rule:RawAccessRead)Args_V2">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="Device" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Filecreated(rule:FileCreate)Args_V2">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="TargetFilename" inType="win:UnicodeString"/>
+      <data name="CreationUtcTime" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Registryobjectaddedordeleted(rule:RegistryEvent)Args_V2">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="EventType" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="TargetObject" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Registryvalueset(rule:RegistryEvent)Args_V2">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="EventType" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="TargetObject" inType="win:UnicodeString"/>
+      <data name="Details" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Registryobjectrenamed(rule:RegistryEvent)Args_V2">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="EventType" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="TargetObject" inType="win:UnicodeString"/>
+      <data name="NewName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Filestreamcreated(rule:FileCreateStreamHash)Args_V2">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="TargetFilename" inType="win:UnicodeString"/>
+      <data name="CreationUtcTime" inType="win:UnicodeString"/>
+      <data name="Hash" inType="win:UnicodeString"/>
+      <data name="Contents" inType="win:UnicodeString"/>
+     </template>
+     <template tid="SysmonservicestatechangedArgs_V3">
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="State" inType="win:UnicodeString"/>
+      <data name="Version" inType="win:UnicodeString"/>
+      <data name="SchemaVersion" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Processterminated(rule:ProcessTerminate)Args_V3">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Imageloaded(rule:ImageLoad)Args_V3">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="ImageLoaded" inType="win:UnicodeString"/>
+      <data name="FileVersion" inType="win:UnicodeString"/>
+      <data name="Description" inType="win:UnicodeString"/>
+      <data name="Product" inType="win:UnicodeString"/>
+      <data name="Company" inType="win:UnicodeString"/>
+      <data name="OriginalFileName" inType="win:UnicodeString"/>
+      <data name="Hashes" inType="win:UnicodeString"/>
+      <data name="Signed" inType="win:UnicodeString"/>
+      <data name="Signature" inType="win:UnicodeString"/>
+      <data name="SignatureStatus" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Processaccessed(rule:ProcessAccess)Args_V3">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="SourceProcessGUID" inType="win:GUID"/>
+      <data name="SourceProcessId" inType="win:UInt32"/>
+      <data name="SourceThreadId" inType="win:UInt32"/>
+      <data name="SourceImage" inType="win:UnicodeString"/>
+      <data name="TargetProcessGUID" inType="win:GUID"/>
+      <data name="TargetProcessId" inType="win:UInt32"/>
+      <data name="TargetImage" inType="win:UnicodeString"/>
+      <data name="GrantedAccess" inType="win:HexInt32"/>
+      <data name="CallTrace" inType="win:UnicodeString"/>
+     </template>
+     <template tid="SysmonconfigstatechangedArgs_V3">
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="Configuration" inType="win:UnicodeString"/>
+      <data name="ConfigurationFileHash" inType="win:UnicodeString"/>
+     </template>
+     <template tid="WmiEventFilteractivitydetected(rule:WmiEvent)Args_V3">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="EventType" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="Operation" inType="win:UnicodeString"/>
+      <data name="User" inType="win:UnicodeString"/>
+      <data name="EventNamespace" inType="win:UnicodeString"/>
+      <data name="Name" inType="win:UnicodeString"/>
+      <data name="Query" inType="win:UnicodeString"/>
+     </template>
+     <template tid="WmiEventConsumeractivitydetected(rule:WmiEvent)Args_V3">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="EventType" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="Operation" inType="win:UnicodeString"/>
+      <data name="User" inType="win:UnicodeString"/>
+      <data name="Name" inType="win:UnicodeString"/>
+      <data name="Type" inType="win:UnicodeString"/>
+      <data name="Destination" inType="win:UnicodeString"/>
+     </template>
+     <template tid="WmiEventConsumerToFilteractivitydetected(rule:WmiEvent)Args_V3">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="EventType" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="Operation" inType="win:UnicodeString"/>
+      <data name="User" inType="win:UnicodeString"/>
+      <data name="Consumer" inType="win:UnicodeString"/>
+      <data name="Filter" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ErrorreportArgs_V3">
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ID" inType="win:UnicodeString"/>
+      <data name="Description" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Driverloaded(rule:DriverLoad)Args_V4">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ImageLoaded" inType="win:UnicodeString"/>
+      <data name="Hashes" inType="win:UnicodeString"/>
+      <data name="Signed" inType="win:UnicodeString"/>
+      <data name="Signature" inType="win:UnicodeString"/>
+      <data name="SignatureStatus" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ProcessCreate(rule:ProcessCreate)Args_V5">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="FileVersion" inType="win:UnicodeString"/>
+      <data name="Description" inType="win:UnicodeString"/>
+      <data name="Product" inType="win:UnicodeString"/>
+      <data name="Company" inType="win:UnicodeString"/>
+      <data name="OriginalFileName" inType="win:UnicodeString"/>
+      <data name="CommandLine" inType="win:UnicodeString"/>
+      <data name="CurrentDirectory" inType="win:UnicodeString"/>
+      <data name="User" inType="win:UnicodeString"/>
+      <data name="LogonGuid" inType="win:GUID"/>
+      <data name="LogonId" inType="win:HexInt64"/>
+      <data name="TerminalSessionId" inType="win:UInt32"/>
+      <data name="IntegrityLevel" inType="win:UnicodeString"/>
+      <data name="Hashes" inType="win:UnicodeString"/>
+      <data name="ParentProcessGuid" inType="win:GUID"/>
+      <data name="ParentProcessId" inType="win:UInt32"/>
+      <data name="ParentImage" inType="win:UnicodeString"/>
+      <data name="ParentCommandLine" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Filecreationtimechanged(rule:FileCreateTime)Args_V5">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="TargetFilename" inType="win:UnicodeString"/>
+      <data name="CreationUtcTime" inType="win:UnicodeString"/>
+      <data name="PreviousCreationUtcTime" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Networkconnectiondetected(rule:NetworkConnect)Args_V5">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="User" inType="win:UnicodeString"/>
+      <data name="Protocol" inType="win:UnicodeString"/>
+      <data name="Initiated" inType="win:Boolean"/>
+      <data name="SourceIsIpv6" inType="win:Boolean"/>
+      <data name="SourceIp" inType="win:UnicodeString"/>
+      <data name="SourceHostname" inType="win:UnicodeString"/>
+      <data name="SourcePort" inType="win:UInt16"/>
+      <data name="SourcePortName" inType="win:UnicodeString"/>
+      <data name="DestinationIsIpv6" inType="win:Boolean"/>
+      <data name="DestinationIp" inType="win:UnicodeString"/>
+      <data name="DestinationHostname" inType="win:UnicodeString"/>
+      <data name="DestinationPort" inType="win:UInt16"/>
+      <data name="DestinationPortName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Dnsquery(rule:DnsQuery)Args_V5">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryStatus" inType="win:UnicodeString"/>
+      <data name="QueryResults" inType="win:UnicodeString"/>
+      <data name="Image" inType="win:UnicodeString"/>
+     </template>
+     <template tid="FileDeletearchived(rule:FileDelete)Args_V5">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="User" inType="win:UnicodeString"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="TargetFilename" inType="win:UnicodeString"/>
+      <data name="Hashes" inType="win:UnicodeString"/>
+      <data name="IsExecutable" inType="win:Boolean"/>
+      <data name="Archived" inType="win:UnicodeString"/>
+     </template>
+     <template tid="Clipboardchanged(rule:ClipboardChange)Args_V5">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="Session" inType="win:UInt32"/>
+      <data name="ClientInfo" inType="win:UnicodeString"/>
+      <data name="Hashes" inType="win:UnicodeString"/>
+      <data name="Archived" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ProcessTampering(rule:ProcessTampering)Args_V5">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="Type" inType="win:UnicodeString"/>
+     </template>
+     <template tid="FileDeletelogged(rule:FileDeleteDetected)Args_V5">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="UtcTime" inType="win:UnicodeString"/>
+      <data name="ProcessGuid" inType="win:GUID"/>
+      <data name="ProcessId" inType="win:UInt32"/>
+      <data name="User" inType="win:UnicodeString"/>
+      <data name="Image" inType="win:UnicodeString"/>
+      <data name="TargetFilename" inType="win:UnicodeString"/>
+      <data name="Hashes" inType="win:UnicodeString"/>
+      <data name="IsExecutable" inType="win:Boolean"/>
+     </template>
+    </templates>
+   </provider>
+  </events>
+ </instrumentation>
+ <localization>
+  <resources culture="en-GB">
+   <stringTable>
+    <string id="task_ProcessCreate(rule:ProcessCreate)" value="ProcessCreate(rule:ProcessCreate)"/>
+    <string id="task_Filecreationtimechanged(rule:FileCreateTime)" value="Filecreationtimechanged(rule:FileCreateTime)"/>
+    <string id="task_Networkconnectiondetected(rule:NetworkConnect)" value="Networkconnectiondetected(rule:NetworkConnect)"/>
+    <string id="task_Sysmonservicestatechanged" value="Sysmonservicestatechanged"/>
+    <string id="task_Processterminated(rule:ProcessTerminate)" value="Processterminated(rule:ProcessTerminate)"/>
+    <string id="task_Driverloaded(rule:DriverLoad)" value="Driverloaded(rule:DriverLoad)"/>
+    <string id="task_Imageloaded(rule:ImageLoad)" value="Imageloaded(rule:ImageLoad)"/>
+    <string id="task_CreateRemoteThreaddetected(rule:CreateRemoteThread)" value="CreateRemoteThreaddetected(rule:CreateRemoteThread)"/>
+    <string id="task_RawAccessReaddetected(rule:RawAccessRead)" value="RawAccessReaddetected(rule:RawAccessRead)"/>
+    <string id="task_Processaccessed(rule:ProcessAccess)" value="Processaccessed(rule:ProcessAccess)"/>
+    <string id="task_Filecreated(rule:FileCreate)" value="Filecreated(rule:FileCreate)"/>
+    <string id="task_Registryobjectaddedordeleted(rule:RegistryEvent)" value="Registryobjectaddedordeleted(rule:RegistryEvent)"/>
+    <string id="task_Registryvalueset(rule:RegistryEvent)" value="Registryvalueset(rule:RegistryEvent)"/>
+    <string id="task_Registryobjectrenamed(rule:RegistryEvent)" value="Registryobjectrenamed(rule:RegistryEvent)"/>
+    <string id="task_Filestreamcreated(rule:FileCreateStreamHash)" value="Filestreamcreated(rule:FileCreateStreamHash)"/>
+    <string id="task_Sysmonconfigstatechanged" value="Sysmonconfigstatechanged"/>
+    <string id="task_PipeCreated(rule:PipeEvent)" value="PipeCreated(rule:PipeEvent)"/>
+    <string id="task_PipeConnected(rule:PipeEvent)" value="PipeConnected(rule:PipeEvent)"/>
+    <string id="task_WmiEventFilteractivitydetected(rule:WmiEvent)" value="WmiEventFilteractivitydetected(rule:WmiEvent)"/>
+    <string id="task_WmiEventConsumeractivitydetected(rule:WmiEvent)" value="WmiEventConsumeractivitydetected(rule:WmiEvent)"/>
+    <string id="task_WmiEventConsumerToFilteractivitydetected(rule:WmiEvent)" value="WmiEventConsumerToFilteractivitydetected(rule:WmiEvent)"/>
+    <string id="task_Dnsquery(rule:DnsQuery)" value="Dnsquery(rule:DnsQuery)"/>
+    <string id="task_FileDeletearchived(rule:FileDelete)" value="FileDeletearchived(rule:FileDelete)"/>
+    <string id="task_Clipboardchanged(rule:ClipboardChange)" value="Clipboardchanged(rule:ClipboardChange)"/>
+    <string id="task_ProcessTampering(rule:ProcessTampering)" value="ProcessTampering(rule:ProcessTampering)"/>
+    <string id="task_FileDeletelogged(rule:FileDeleteDetected)" value="FileDeletelogged(rule:FileDeleteDetected)"/>
+    <string id="task_Errorreport" value="Errorreport"/>
+   </stringTable>
+  </resources>
+ </localization>
+</instrumentationManifest>

@@ -1,0 +1,445 @@
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events">
+ <instrumentation xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events">
+  <events>
+   <provider name="Microsoft-Windows-DNS-Client" guid="{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}" resourceFileName="Microsoft-Windows-DNS-Client" messageFileName="Microsoft-Windows-DNS-Client" symbol="MicrosoftWindowsDNSClient" source="Xml" >
+    <keywords>
+     <keyword name="ut:GenericEvent" message="$(string.keyword_ut:GenericEvent)" mask="0x100"/>
+     <keyword name="ut:DnsAutoLogKeyword" message="$(string.keyword_ut:DnsAutoLogKeyword)" mask="0x10000000"/>
+     <keyword name="ut:PolicyTable" message="$(string.keyword_ut:PolicyTable)" mask="0x20000000"/>
+     <keyword name="ut:PerfCheckPoints" message="$(string.keyword_ut:PerfCheckPoints)" mask="0x40000000"/>
+     <keyword name="ut:RegistrationEvent" message="$(string.keyword_ut:RegistrationEvent)" mask="0x80000000"/>
+     <keyword name="ut:SendPath" message="$(string.keyword_ut:SendPath)" mask="0x100000000"/>
+     <keyword name="ut:ReceivePath" message="$(string.keyword_ut:ReceivePath)" mask="0x200000000"/>
+     <keyword name="ut:L3ConnectPath" message="$(string.keyword_ut:L3ConnectPath)" mask="0x400000000"/>
+     <keyword name="ut:L2ConnectPath" message="$(string.keyword_ut:L2ConnectPath)" mask="0x800000000"/>
+     <keyword name="ut:ClosePath" message="$(string.keyword_ut:ClosePath)" mask="0x1000000000"/>
+     <keyword name="ut:Authentication" message="$(string.keyword_ut:Authentication)" mask="0x2000000000"/>
+     <keyword name="ut:Configuration" message="$(string.keyword_ut:Configuration)" mask="0x4000000000"/>
+     <keyword name="ut:Global" message="$(string.keyword_ut:Global)" mask="0x8000000000"/>
+    </keywords>
+    <tasks>
+     <task name="task_0" message="$(string.task_task_0)" value="0"/>
+     <task name="DnsNoServerConfigV4" message="$(string.task_DnsNoServerConfigV4)" value="1000"/>
+     <task name="DnsServerForInterface" message="$(string.task_DnsServerForInterface)" value="1001"/>
+     <task name="DnsServerQueryChange" message="$(string.task_DnsServerQueryChange)" value="1002"/>
+     <task name="DnsServerValidationSuccess" message="$(string.task_DnsServerValidationSuccess)" value="1003"/>
+     <task name="DnsServerValidationFailure" message="$(string.task_DnsServerValidationFailure)" value="1005"/>
+     <task name="DnsMissingPrimarySuffix" message="$(string.task_DnsMissingPrimarySuffix)" value="1007"/>
+     <task name="DnsMissingPrimarySuffixSystem" message="$(string.task_DnsMissingPrimarySuffixSystem)" value="1008"/>
+     <task name="DnsNonMatchingSuffix" message="$(string.task_DnsNonMatchingSuffix)" value="1009"/>
+     <task name="DnsNonMatchingSuffixSystem" message="$(string.task_DnsNonMatchingSuffixSystem)" value="1010"/>
+     <task name="DnsHostFileError" message="$(string.task_DnsHostFileError)" value="1011"/>
+     <task name="DnsHostFileErrorSystem" message="$(string.task_DnsHostFileErrorSystem)" value="1012"/>
+     <task name="DnsAllServersTimeout" message="$(string.task_DnsAllServersTimeout)" value="1013"/>
+     <task name="DnsAllServersTimeoutSystem" message="$(string.task_DnsAllServersTimeoutSystem)" value="1014"/>
+     <task name="DnsServerTimeout" message="$(string.task_DnsServerTimeout)" value="1015"/>
+     <task name="DnsNameError" message="$(string.task_DnsNameError)" value="1016"/>
+     <task name="DnsAuthoritativeResponse" message="$(string.task_DnsAuthoritativeResponse)" value="1017"/>
+     <task name="DnsLinkLocal" message="$(string.task_DnsLinkLocal)" value="1018"/>
+     <task name="DnsNoServerConfigV6" message="$(string.task_DnsNoServerConfigV6)" value="1019"/>
+     <task name="DnsReadPolicyTable" message="$(string.task_DnsReadPolicyTable)" value="1020"/>
+     <task name="DnsMatchPolicyInfo" message="$(string.task_DnsMatchPolicyInfo)" value="1021"/>
+     <task name="DnsSecureNoFallback" message="$(string.task_DnsSecureNoFallback)" value="1022"/>
+     <task name="DnsPolicySystemReadError" message="$(string.task_DnsPolicySystemReadError)" value="1023"/>
+     <task name="DnsQueryBadXid" message="$(string.task_DnsQueryBadXid)" value="1024"/>
+     <task name="DnsQueryInvalidServerIp" message="$(string.task_DnsQueryInvalidServerIp)" value="1025"/>
+     <task name="DnsQueryInvalidQuestion" message="$(string.task_DnsQueryInvalidQuestion)" value="1026"/>
+     <task name="DnsRegistration" message="$(string.task_DnsRegistration)" value="1028"/>
+     <task name="DnsGenericError" message="$(string.task_DnsGenericError)" value="1029"/>
+     <task name="DnsNetError" message="$(string.task_DnsNetError)" value="60004"/>
+     <task name="DnsNetWarning" message="$(string.task_DnsNetWarning)" value="60005"/>
+     <task name="DnsStateTransition" message="$(string.task_DnsStateTransition)" value="60006"/>
+     <task name="DnsContextUpdate" message="$(string.task_DnsContextUpdate)" value="60007"/>
+     <task name="DnsPolicyReadError" message="$(string.task_DnsPolicyReadError)" value="60008"/>
+     <task name="DnsV4Tuple" message="$(string.task_DnsV4Tuple)" value="60101"/>
+     <task name="DnsV6Tuple" message="$(string.task_DnsV6Tuple)" value="60102"/>
+     <task name="DnsInterfaceInfo" message="$(string.task_DnsInterfaceInfo)" value="60103"/>
+    </tasks>
+    <maps>
+     <valueMap name="DnsIpTypeMap">
+      <map value="0x0" message="$(string.map_DnsIpTypeMapstatic)"/>
+      <map value="0x1" message="$(string.map_DnsIpTypeMapdynamic)"/>
+     </valueMap>
+    </maps>
+    <events>
+     <event value="1000" symbol="DnsNoServerConfigV4" version="0" task="DnsNoServerConfigV4" level="win:Informational" template="DnsNoServerConfigV4Args"/>
+     <event value="1001" symbol="DnsServerForInterface" version="0" task="DnsServerForInterface" level="win:Informational" template="DnsServerForInterfaceArgs"/>
+     <event value="1002" symbol="DnsServerQueryChange" version="0" task="DnsServerQueryChange" level="win:Informational" template="DnsServerQueryChangeArgs"/>
+     <event value="1003" symbol="DnsServerValidationSuccess" version="0" task="DnsServerValidationSuccess" level="win:Informational" template="DnsServerValidationSuccessArgs"/>
+     <event value="1005" symbol="DnsServerValidationFailure" version="0" task="DnsServerValidationFailure" level="win:Error" template="DnsServerValidationSuccessArgs"/>
+     <event value="1007" symbol="DnsMissingPrimarySuffix" version="0" task="DnsMissingPrimarySuffix" level="win:Error" template="DnsMissingPrimarySuffixArgs"/>
+     <event value="1008" symbol="DnsMissingPrimarySuffixSystem" version="0" task="DnsMissingPrimarySuffixSystem" level="win:Warning" keywords="ut:DnsAutoLogKeyword" template="DnsMissingPrimarySuffixArgs"/>
+     <event value="1009" symbol="DnsNonMatchingSuffix" version="0" task="DnsNonMatchingSuffix" level="win:Error" template="DnsNonMatchingSuffixArgs"/>
+     <event value="1010" symbol="DnsNonMatchingSuffixSystem" version="0" task="DnsNonMatchingSuffixSystem" level="win:Warning" keywords="ut:DnsAutoLogKeyword" template="DnsNonMatchingSuffixArgs"/>
+     <event value="1011" symbol="DnsHostFileError" version="0" task="DnsHostFileError" level="win:Error" template="DnsMissingPrimarySuffixArgs"/>
+     <event value="1012" symbol="DnsHostFileErrorSystem" version="0" task="DnsHostFileErrorSystem" level="win:Error" keywords="ut:DnsAutoLogKeyword" template="DnsMissingPrimarySuffixArgs"/>
+     <event value="1013" symbol="DnsAllServersTimeout" version="0" task="DnsAllServersTimeout" level="win:Error" template="DnsAllServersTimeoutArgs"/>
+     <event value="1014" symbol="DnsAllServersTimeoutSystem" version="0" task="DnsAllServersTimeoutSystem" level="win:Warning" keywords="ut:DnsAutoLogKeyword" template="DnsAllServersTimeoutArgs"/>
+     <event value="1015" symbol="DnsServerTimeout" version="0" task="DnsServerTimeout" level="win:Informational" template="DnsAllServersTimeoutArgs"/>
+     <event value="1016" symbol="DnsNameError" version="0" task="DnsNameError" level="win:Informational" template="DnsAllServersTimeoutArgs"/>
+     <event value="1017" symbol="DnsAuthoritativeResponse" version="0" task="DnsAuthoritativeResponse" level="win:Informational" template="DnsAllServersTimeoutArgs"/>
+     <event value="1018" symbol="DnsLinkLocal" version="0" task="DnsLinkLocal" level="win:Informational" template="DnsLinkLocalArgs"/>
+     <event value="1019" symbol="DnsNoServerConfigV6" version="0" task="DnsNoServerConfigV6" level="win:Informational" template="DnsNoServerConfigV4Args"/>
+     <event value="1020" symbol="DnsReadPolicyTable" version="0" task="DnsReadPolicyTable" level="win:Informational" keywords="ut:PolicyTable" template="DnsReadPolicyTableArgs"/>
+     <event value="1021" symbol="DnsMatchPolicyInfo" version="0" task="DnsMatchPolicyInfo" level="win:Informational" keywords="ut:PolicyTable" template="DnsMatchPolicyInfoArgs"/>
+     <event value="1022" symbol="DnsSecureNoFallback" version="0" task="DnsSecureNoFallback" level="win:Informational" keywords="ut:PolicyTable" template="DnsSecureNoFallbackArgs"/>
+     <event value="1023" symbol="DnsPolicySystemReadError" version="0" task="DnsPolicySystemReadError" level="win:Error" keywords="ut:DnsAutoLogKeyword" template="DnsPolicySystemReadErrorArgs"/>
+     <event value="1024" symbol="DnsQueryBadXid" version="0" task="DnsQueryBadXid" level="win:Informational" template="DnsAllServersTimeoutArgs"/>
+     <event value="1025" symbol="DnsQueryInvalidServerIp" version="0" task="DnsQueryInvalidServerIp" level="win:Informational" template="DnsAllServersTimeoutArgs"/>
+     <event value="1026" symbol="DnsQueryInvalidQuestion" version="0" task="DnsQueryInvalidQuestion" level="win:Informational" template="DnsQueryInvalidQuestionArgs"/>
+     <event value="1027" symbol="task_0" version="0" task="task_0" level="win:Informational" keywords="ut:PolicyTable" template="DnsSecureNoFallbackArgs"/>
+     <event value="1028" symbol="DnsMatchPolicyInfo1028" version="0" task="DnsMatchPolicyInfo" level="win:Informational" keywords="ut:PolicyTable" template="DnsMatchPolicyInfo1028Args"/>
+     <event value="3000" symbol="task_03000" version="0" task="task_0" level="win:Informational" keywords="ut:PerfCheckPoints" template="task_03000Args"/>
+     <event value="3001" symbol="task_03001" version="0" task="task_0" level="win:Informational" keywords="ut:PerfCheckPoints" template="task_03001Args"/>
+     <event value="3002" symbol="task_03002" version="0" task="task_0" level="win:Informational" keywords="ut:PerfCheckPoints" template="task_03000Args"/>
+     <event value="3003" symbol="task_03003" version="0" task="task_0" level="win:Informational" keywords="ut:PerfCheckPoints" template="task_03003Args"/>
+     <event value="3004" symbol="task_03004" version="0" task="task_0" level="win:Informational" keywords="ut:PerfCheckPoints" template="task_03000Args"/>
+     <event value="3005" symbol="task_03005" version="0" task="task_0" level="win:Informational" keywords="ut:PerfCheckPoints" template="task_03003Args"/>
+     <event value="3006" symbol="task_03006" version="0" task="task_0" level="win:Informational" template="task_03006Args"/>
+     <event value="3007" symbol="task_03007" version="0" task="task_0" level="win:Informational" template="DnsSecureNoFallbackArgs"/>
+     <event value="3008" symbol="task_03008" version="0" task="task_0" level="win:Informational" template="task_03008Args"/>
+     <event value="3009" symbol="task_03009" version="0" task="task_0" level="win:Informational" template="task_03009Args"/>
+     <event value="3010" symbol="task_03010" version="0" task="task_0" level="win:Informational" template="task_03010Args"/>
+     <event value="3011" symbol="task_03011" version="0" task="task_0" level="win:Informational" template="task_03011Args"/>
+     <event value="3012" symbol="task_03012" version="0" task="task_0" level="win:Informational" template="task_03012Args"/>
+     <event value="3013" symbol="task_03013" version="0" task="task_0" level="win:Informational" template="task_03013Args"/>
+     <event value="3014" symbol="task_03014" version="0" task="task_0" level="win:Informational" template="DnsSecureNoFallbackArgs"/>
+     <event value="3015" symbol="task_03015" version="0" task="task_0" level="win:Informational" template="DnsSecureNoFallbackArgs"/>
+     <event value="3016" symbol="task_03016" version="0" task="task_0" level="win:Informational" template="task_03016Args"/>
+     <event value="3018" symbol="task_03018" version="0" task="task_0" level="win:Informational" template="task_03018Args"/>
+     <event value="3019" symbol="task_03019" version="0" task="task_0" level="win:Informational" template="task_03019Args"/>
+     <event value="3020" symbol="task_03020" version="0" task="task_0" level="win:Informational" template="task_03020Args"/>
+     <event value="8001" symbol="DnsGenericError" version="0" task="DnsGenericError" level="win:Error" keywords="ut:DnsAutoLogKeyword" template="DnsGenericErrorArgs"/>
+     <event value="8002" symbol="DnsGenericError8002" version="0" task="DnsGenericError" level="win:Error" keywords="ut:DnsAutoLogKeyword" template="DnsGenericErrorArgs"/>
+     <event value="8003" symbol="DnsRegistration" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8004" symbol="DnsRegistration8004" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8005" symbol="DnsRegistration8005" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8006" symbol="DnsRegistration8006" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8007" symbol="DnsRegistration8007" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8008" symbol="DnsRegistration8008" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8009" symbol="DnsRegistration8009" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8010" symbol="DnsRegistration8010" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8011" symbol="DnsRegistration8011" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8012" symbol="DnsRegistration8012" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8013" symbol="DnsRegistration8013" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8014" symbol="DnsRegistration8014" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8015" symbol="DnsRegistration8015" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8016" symbol="DnsRegistration8016" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8017" symbol="DnsRegistration8017" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8018" symbol="DnsRegistration8018" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8019" symbol="DnsRegistration8019" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8020" symbol="DnsRegistration8020" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8021" symbol="DnsRegistration8021" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8022" symbol="DnsRegistration8022" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8023" symbol="DnsRegistration8023" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8024" symbol="DnsRegistration8024" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8025" symbol="DnsRegistration8025" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8026" symbol="DnsRegistration8026" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8027" symbol="DnsRegistration8027" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8028" symbol="DnsRegistration8028" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8029" symbol="DnsRegistration8029" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8030" symbol="DnsRegistration8030" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8031" symbol="DnsRegistration8031" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8032" symbol="DnsRegistration8032" version="0" task="DnsRegistration" level="win:Informational" template="DnsRegistrationArgs"/>
+     <event value="8033" symbol="DnsRegistration8033" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8034" symbol="DnsRegistration8034" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8035" symbol="DnsRegistration8035" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8036" symbol="DnsRegistration8036" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8037" symbol="DnsRegistration8037" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="8038" symbol="DnsRegistration8038" version="0" task="DnsRegistration" level="win:Warning" template="DnsRegistrationArgs"/>
+     <event value="60004" symbol="DnsNetError" version="0" task="DnsNetError" level="win:Error" template="DnsMissingPrimarySuffixArgs"/>
+     <event value="60005" symbol="DnsNetWarning" version="0" task="DnsNetWarning" level="win:Warning" template="DnsNetWarningArgs"/>
+     <event value="60006" symbol="DnsStateTransition" version="0" task="DnsStateTransition" level="win:Informational" template="DnsStateTransitionArgs"/>
+     <event value="60007" symbol="DnsContextUpdate" version="0" task="DnsContextUpdate" level="win:Informational" template="DnsContextUpdateArgs"/>
+     <event value="60008" symbol="DnsPolicyReadError" version="0" task="DnsPolicyReadError" level="win:Error" template="DnsPolicySystemReadErrorArgs"/>
+     <event value="60101" symbol="DnsV4Tuple" version="0" task="DnsV4Tuple" level="win:Informational" template="DnsV4TupleArgs"/>
+     <event value="60102" symbol="DnsV6Tuple" version="0" task="DnsV6Tuple" level="win:Informational" template="DnsV6TupleArgs"/>
+     <event value="60103" symbol="DnsInterfaceInfo" version="0" task="DnsInterfaceInfo" level="win:Informational" template="DnsInterfaceInfoArgs"/>
+    </events>
+    <templates>
+     <template tid="DnsNoServerConfigV4Args">
+      <data name="Location" inType="win:UInt32"/>
+      <data name="Context" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsServerForInterfaceArgs">
+      <data name="Interface" inType="win:UnicodeString"/>
+      <data name="TotalServerCount" inType="win:UInt32"/>
+      <data name="Index" inType="win:UInt32"/>
+      <data name="DynamicAddress" inType="win:UInt8" map="DnsIpTypeMap"/>
+      <data name="AddressLength" inType="win:UInt32"/>
+      <data name="Address" inType="win:Binary" length="AddressLength"/>
+     </template>
+     <template tid="DnsServerQueryChangeArgs">
+      <data name="Interface" inType="win:UnicodeString"/>
+      <data name="AddressLength" inType="win:UInt32"/>
+      <data name="Address" inType="win:Binary" length="AddressLength"/>
+     </template>
+     <template tid="DnsServerValidationSuccessArgs">
+      <data name="AddressLength" inType="win:UInt32"/>
+      <data name="Address" inType="win:Binary" length="AddressLength"/>
+     </template>
+     <template tid="DnsMissingPrimarySuffixArgs">
+      <data name="ErrorCode" inType="win:UInt32"/>
+      <data name="Location" inType="win:UInt32"/>
+      <data name="Context" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsNonMatchingSuffixArgs">
+      <data name="DnsSuffix" inType="win:UnicodeString"/>
+      <data name="AdSuffix" inType="win:UnicodeString"/>
+     </template>
+     <template tid="DnsAllServersTimeoutArgs">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="AddressLength" inType="win:UInt32"/>
+      <data name="Address" inType="win:Binary" length="AddressLength"/>
+     </template>
+     <template tid="DnsLinkLocalArgs">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="AddressLength" inType="win:UInt32"/>
+      <data name="Address" inType="win:Binary" length="AddressLength"/>
+      <data name="DnsAddressLength" inType="win:UInt32"/>
+      <data name="DnsAddress" inType="win:Binary" length="DnsAddressLength"/>
+     </template>
+     <template tid="DnsReadPolicyTableArgs">
+      <data name="KeyName" inType="win:UnicodeString"/>
+      <data name="DnsSecValidationRequired" inType="win:UInt32"/>
+      <data name="DnsQueryOverIPSec" inType="win:UInt32"/>
+      <data name="DnsEncryption" inType="win:UInt32"/>
+      <data name="DirectAccessServerList" inType="win:UnicodeString"/>
+      <data name="RemoteIPSEC" inType="win:UInt32"/>
+      <data name="RemoteEncryption" inType="win:UInt32"/>
+      <data name="ProxyType" inType="win:UInt32"/>
+      <data name="ProxyName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="DnsMatchPolicyInfoArgs">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="KeyName" inType="win:UnicodeString"/>
+      <data name="DnsSecValidationRequired" inType="win:UInt32"/>
+      <data name="DnsQueryOverIPSec" inType="win:UInt32"/>
+      <data name="DnsEncryption" inType="win:UInt32"/>
+      <data name="DirectAccessServerList" inType="win:UnicodeString"/>
+      <data name="ProxyType" inType="win:UInt32"/>
+      <data name="ProxyName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="DnsSecureNoFallbackArgs">
+      <data name="QueryName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="DnsPolicySystemReadErrorArgs">
+      <data name="RuleName" inType="win:UnicodeString"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsQueryInvalidQuestionArgs">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="ResponseQuestion" inType="win:UnicodeString"/>
+      <data name="AddressLength" inType="win:UInt32"/>
+      <data name="Address" inType="win:Binary" length="AddressLength"/>
+     </template>
+     <template tid="DnsMatchPolicyInfo1028Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="KeyName" inType="win:UnicodeString"/>
+      <data name="DnsSecValidationRequired" inType="win:UInt32"/>
+      <data name="DnsQueryOverIPSec" inType="win:UInt32"/>
+      <data name="DnsEncryption" inType="win:UInt32"/>
+      <data name="DirectAccessServerList" inType="win:UnicodeString"/>
+      <data name="ProxyType" inType="win:UInt32"/>
+      <data name="ProxyName" inType="win:UnicodeString"/>
+      <data name="GenericServerList" inType="win:UnicodeString"/>
+      <data name="IdnConfig" inType="win:UInt32"/>
+     </template>
+     <template tid="task_03000Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="QueryOptions" inType="win:UInt64"/>
+     </template>
+     <template tid="task_03001Args">
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_03003Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="Status" inType="win:UInt32"/>
+     </template>
+     <template tid="task_03006Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="QueryOptions" inType="win:UInt64"/>
+      <data name="ServerList" inType="win:UnicodeString"/>
+      <data name="IsNetworkQuery" inType="win:UInt32"/>
+      <data name="NetworkQueryIndex" inType="win:UInt32"/>
+      <data name="InterfaceIndex" inType="win:UInt32"/>
+      <data name="IsAsyncQuery" inType="win:UInt32"/>
+     </template>
+     <template tid="task_03008Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="QueryOptions" inType="win:UInt64"/>
+      <data name="QueryStatus" inType="win:UInt32"/>
+      <data name="QueryResults" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_03009Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="IsParallelNetworkQuery" inType="win:UInt32"/>
+      <data name="NetworkIndex" inType="win:UInt32"/>
+      <data name="InterfaceCount" inType="win:UInt32"/>
+      <data name="AdapterName" inType="win:UnicodeString"/>
+      <data name="LocalAddress" inType="win:UnicodeString"/>
+      <data name="DNSServerAddress" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_03010Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="DnsServerIpAddress" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_03011Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="DnsServerIpAddress" inType="win:UnicodeString"/>
+      <data name="ResponseStatus" inType="win:UInt32"/>
+     </template>
+     <template tid="task_03012Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="NetworkIndex" inType="win:UInt32"/>
+      <data name="InterfaceCount" inType="win:UInt32"/>
+      <data name="AdapterName" inType="win:UnicodeString"/>
+      <data name="LocalAddress" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_03013Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="Status" inType="win:UInt32"/>
+      <data name="QueryResults" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_03016Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="QueryOptions" inType="win:UInt64"/>
+      <data name="InterfaceIndex" inType="win:UInt32"/>
+     </template>
+     <template tid="task_03018Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="QueryOptions" inType="win:UInt64"/>
+      <data name="Status" inType="win:UInt32"/>
+      <data name="QueryResults" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_03019Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="InterfaceIndex" inType="win:UInt32"/>
+      <data name="NetworkIndex" inType="win:UInt32"/>
+     </template>
+     <template tid="task_03020Args">
+      <data name="QueryName" inType="win:UnicodeString"/>
+      <data name="QueryType" inType="win:UInt32"/>
+      <data name="NetworkIndex" inType="win:UInt32"/>
+      <data name="InterfaceIndex" inType="win:UInt32"/>
+      <data name="Status" inType="win:UInt32"/>
+      <data name="QueryResults" inType="win:UnicodeString"/>
+     </template>
+     <template tid="DnsGenericErrorArgs">
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsRegistrationArgs">
+      <data name="AdapterName" inType="win:UnicodeString"/>
+      <data name="HostName" inType="win:UnicodeString"/>
+      <data name="AdapterSuffixName" inType="win:UnicodeString"/>
+      <data name="DnsServerList" inType="win:UnicodeString"/>
+      <data name="SentUpdateServer" inType="win:UnicodeString"/>
+      <data name="Ipaddress" inType="win:UnicodeString"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsNetWarningArgs">
+      <data name="WarningCode" inType="win:UInt32"/>
+      <data name="Location" inType="win:UInt32"/>
+      <data name="Context" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsStateTransitionArgs">
+      <data name="NextState" inType="win:UInt8"/>
+      <data name="Context" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsContextUpdateArgs">
+      <data name="Context" inType="win:UInt32"/>
+      <data name="UpdateReasonCode" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsV4TupleArgs">
+      <data name="SourceAddress" inType="win:UInt32"/>
+      <data name="SourcePort" inType="win:UInt32"/>
+      <data name="DestinationAddress" inType="win:UInt32"/>
+      <data name="DestinationPort" inType="win:UInt32"/>
+      <data name="Protocol" inType="win:UInt32"/>
+      <data name="ReferenceContext" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsV6TupleArgs">
+      <data name="SourceAddress" inType="win:Binary"/>
+      <data name="SourcePort" inType="win:UInt32"/>
+      <data name="DestinationAddress" inType="win:Binary"/>
+      <data name="DestinationPort" inType="win:UInt32"/>
+      <data name="Protocol" inType="win:UInt32"/>
+      <data name="ReferenceContext" inType="win:UInt32"/>
+     </template>
+     <template tid="DnsInterfaceInfoArgs">
+      <data name="IfGuid" inType="win:GUID"/>
+      <data name="IfIndex" inType="win:UInt32"/>
+      <data name="IfLuid" inType="win:UInt64"/>
+      <data name="ReferenceContext" inType="win:UInt32"/>
+     </template>
+    </templates>
+   </provider>
+  </events>
+ </instrumentation>
+ <localization>
+  <resources culture="en-GB">
+   <stringTable>
+    <string id="keyword_ut:GenericEvent" value="ut:GenericEvent"/>
+    <string id="keyword_ut:DnsAutoLogKeyword" value="ut:DnsAutoLogKeyword"/>
+    <string id="keyword_ut:PolicyTable" value="ut:PolicyTable"/>
+    <string id="keyword_ut:PerfCheckPoints" value="ut:PerfCheckPoints"/>
+    <string id="keyword_ut:RegistrationEvent" value="ut:RegistrationEvent"/>
+    <string id="keyword_ut:SendPath" value="ut:SendPath"/>
+    <string id="keyword_ut:ReceivePath" value="ut:ReceivePath"/>
+    <string id="keyword_ut:L3ConnectPath" value="ut:L3ConnectPath"/>
+    <string id="keyword_ut:L2ConnectPath" value="ut:L2ConnectPath"/>
+    <string id="keyword_ut:ClosePath" value="ut:ClosePath"/>
+    <string id="keyword_ut:Authentication" value="ut:Authentication"/>
+    <string id="keyword_ut:Configuration" value="ut:Configuration"/>
+    <string id="keyword_ut:Global" value="ut:Global"/>
+    <string id="task_task_0" value="task_0"/>
+    <string id="task_DnsNoServerConfigV4" value="DnsNoServerConfigV4"/>
+    <string id="task_DnsServerForInterface" value="DnsServerForInterface"/>
+    <string id="task_DnsServerQueryChange" value="DnsServerQueryChange"/>
+    <string id="task_DnsServerValidationSuccess" value="DnsServerValidationSuccess"/>
+    <string id="task_DnsServerValidationFailure" value="DnsServerValidationFailure"/>
+    <string id="task_DnsMissingPrimarySuffix" value="DnsMissingPrimarySuffix"/>
+    <string id="task_DnsMissingPrimarySuffixSystem" value="DnsMissingPrimarySuffixSystem"/>
+    <string id="task_DnsNonMatchingSuffix" value="DnsNonMatchingSuffix"/>
+    <string id="task_DnsNonMatchingSuffixSystem" value="DnsNonMatchingSuffixSystem"/>
+    <string id="task_DnsHostFileError" value="DnsHostFileError"/>
+    <string id="task_DnsHostFileErrorSystem" value="DnsHostFileErrorSystem"/>
+    <string id="task_DnsAllServersTimeout" value="DnsAllServersTimeout"/>
+    <string id="task_DnsAllServersTimeoutSystem" value="DnsAllServersTimeoutSystem"/>
+    <string id="task_DnsServerTimeout" value="DnsServerTimeout"/>
+    <string id="task_DnsNameError" value="DnsNameError"/>
+    <string id="task_DnsAuthoritativeResponse" value="DnsAuthoritativeResponse"/>
+    <string id="task_DnsLinkLocal" value="DnsLinkLocal"/>
+    <string id="task_DnsNoServerConfigV6" value="DnsNoServerConfigV6"/>
+    <string id="task_DnsReadPolicyTable" value="DnsReadPolicyTable"/>
+    <string id="task_DnsMatchPolicyInfo" value="DnsMatchPolicyInfo"/>
+    <string id="task_DnsSecureNoFallback" value="DnsSecureNoFallback"/>
+    <string id="task_DnsPolicySystemReadError" value="DnsPolicySystemReadError"/>
+    <string id="task_DnsQueryBadXid" value="DnsQueryBadXid"/>
+    <string id="task_DnsQueryInvalidServerIp" value="DnsQueryInvalidServerIp"/>
+    <string id="task_DnsQueryInvalidQuestion" value="DnsQueryInvalidQuestion"/>
+    <string id="task_DnsRegistration" value="DnsRegistration"/>
+    <string id="task_DnsGenericError" value="DnsGenericError"/>
+    <string id="task_DnsNetError" value="DnsNetError"/>
+    <string id="task_DnsNetWarning" value="DnsNetWarning"/>
+    <string id="task_DnsStateTransition" value="DnsStateTransition"/>
+    <string id="task_DnsContextUpdate" value="DnsContextUpdate"/>
+    <string id="task_DnsPolicyReadError" value="DnsPolicyReadError"/>
+    <string id="task_DnsV4Tuple" value="DnsV4Tuple"/>
+    <string id="task_DnsV6Tuple" value="DnsV6Tuple"/>
+    <string id="task_DnsInterfaceInfo" value="DnsInterfaceInfo"/>
+    <string id="map_DnsIpTypeMapstatic" value="static"/>
+    <string id="map_DnsIpTypeMapdynamic" value="dynamic"/>
+   </stringTable>
+  </resources>
+ </localization>
+</instrumentationManifest>
