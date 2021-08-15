@@ -4,7 +4,7 @@ This is a repository that contains a bunch of resources to learn and understand 
 
 ## Blogs / Research (https://nasbench.medium.com/)
 
-* A Primer On Event Tracing For Windows (ETW) - [Coming Soon]
+* [A Primer On Event Tracing For Windows (ETW)](https://nasbench.medium.com/a-primer-on-event-tracing-for-windows-etw-997725c082bf)
 
 ## Tools
 
