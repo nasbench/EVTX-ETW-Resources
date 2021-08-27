@@ -1,0 +1,43 @@
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events">
+ <instrumentation xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events">
+  <events>
+   <provider name="Microsoft-Windows-Kernel-Disk" guid="{c7bde69a-e1e0-4177-b6ef-283ad1525271}" resourceFileName="Microsoft-Windows-Kernel-Disk" messageFileName="Microsoft-Windows-Kernel-Disk" symbol="MicrosoftWindowsKernelDisk" source="Xml" >
+    <keywords>
+    </keywords>
+    <tasks>
+     <task name="task_0" message="$(string.task_task_0)" value="0"/>
+    </tasks>
+    <events>
+     <event value="10" symbol="task_0" version="0" task="task_0" level="win:Informational" template="task_0Args"/>
+     <event value="11" symbol="task_011" version="0" task="task_0" level="win:Informational" template="task_0Args"/>
+     <event value="14" symbol="task_014" version="0" task="task_0" level="win:Informational" template="task_014Args"/>
+    </events>
+    <templates>
+     <template tid="task_0Args">
+      <data name="DiskNumber" inType="win:UInt32"/>
+      <data name="IrpFlags" inType="win:HexInt32"/>
+      <data name="TransferSize" inType="win:UInt32"/>
+      <data name="Reserved" inType="win:UInt32"/>
+      <data name="ByteOffset" inType="win:UInt64"/>
+      <data name="FileObject" inType="win:Pointer"/>
+      <data name="IORequestPacket" inType="win:Pointer"/>
+      <data name="HighResResponseTime" inType="win:UInt64"/>
+     </template>
+     <template tid="task_014Args">
+      <data name="DiskNumber" inType="win:UInt32"/>
+      <data name="IrpFlags" inType="win:HexInt32"/>
+      <data name="HighResResponseTime" inType="win:UInt64"/>
+      <data name="IORequestPacket" inType="win:Pointer"/>
+     </template>
+    </templates>
+   </provider>
+  </events>
+ </instrumentation>
+ <localization>
+  <resources culture="en-GB">
+   <stringTable>
+    <string id="task_task_0" value="task_0"/>
+   </stringTable>
+  </resources>
+ </localization>
+</instrumentationManifest>

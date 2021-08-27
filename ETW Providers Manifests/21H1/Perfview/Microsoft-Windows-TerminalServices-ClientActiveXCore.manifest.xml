@@ -1,0 +1,368 @@
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events">
+ <instrumentation xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events">
+  <events>
+   <provider name="Microsoft-Windows-TerminalServices-ClientActiveXCore" guid="{28aa95bb-d444-4719-a36f-40462168127e}" resourceFileName="Microsoft-Windows-TerminalServices-ClientActiveXCore" messageFileName="Microsoft-Windows-TerminalServices-ClientActiveXCore" symbol="MicrosoftWindowsTerminalServicesClientActiveXCore" source="Xml" >
+    <keywords>
+     <keyword name="AccessDenied" message="$(string.keyword_AccessDenied)" mask="0x100"/>
+     <keyword name="Disconnected" message="$(string.keyword_Disconnected)" mask="0x200"/>
+     <keyword name="AuthFailed" message="$(string.keyword_AuthFailed)" mask="0x400"/>
+     <keyword name="LicenseError" message="$(string.keyword_LicenseError)" mask="0x800"/>
+     <keyword name="TimedOut" message="$(string.keyword_TimedOut)" mask="0x1000"/>
+     <keyword name="InvalidState" message="$(string.keyword_InvalidState)" mask="0x2000"/>
+     <keyword name="GatewayConnectFailed" message="$(string.keyword_GatewayConnectFailed)" mask="0x4000"/>
+     <keyword name="NetworkUnAvailable" message="$(string.keyword_NetworkUnAvailable)" mask="0x8000"/>
+     <keyword name="DnsResolutionFailure" message="$(string.keyword_DnsResolutionFailure)" mask="0x10000"/>
+     <keyword name="SignVerifFailed" message="$(string.keyword_SignVerifFailed)" mask="0x20000"/>
+     <keyword name="ResourceFailure" message="$(string.keyword_ResourceFailure)" mask="0x40000"/>
+     <keyword name="LogonFailed" message="$(string.keyword_LogonFailed)" mask="0x80000"/>
+    </keywords>
+    <tasks>
+     <task name="task_0" message="$(string.task_task_0)" value="0"/>
+     <task name="General" message="$(string.task_General)" value="100">
+>
+      <opcodes>
+       <opcode name="Thiseventisraisedduringthedisconnectionprocess" message="$(string.opcode_GeneralThiseventisraisedduringthedisconnectionprocess)" value="11"/>
+       <opcode name="Thisisagenericeventthatmayberaisedbytheclient." message="$(string.opcode_GeneralThisisagenericeventthatmayberaisedbytheclient.)" value="47"/>
+       <opcode name="Thisisagenericerrorthatmaybesignaledbytheclient." message="$(string.opcode_GeneralThisisagenericerrorthatmaybesignaledbytheclient.)" value="48"/>
+      </opcodes>
+     </task>
+     <task name="ConnectionSequence" message="$(string.task_ConnectionSequence)" value="101">
+>
+      <opcodes>
+       <opcode name="Thiseventisraisedduringtheconnectionprocess" message="$(string.opcode_ConnectionSequenceThiseventisraisedduringtheconnectionprocess)" value="10"/>
+       <opcode name="Thiseventisraisedduringthedisconnectionprocess" message="$(string.opcode_ConnectionSequenceThiseventisraisedduringthedisconnectionprocess)" value="11"/>
+       <opcode name="Thiseventisraisedduringtheauthenticationprocess" message="$(string.opcode_ConnectionSequenceThiseventisraisedduringtheauthenticationprocess)" value="12"/>
+       <opcode name="Thiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" message="$(string.opcode_ConnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver)" value="13"/>
+       <opcode name="Thiseventisraisedduringresolvingtheservername" message="$(string.opcode_ConnectionSequenceThiseventisraisedduringresolvingtheservername)" value="14"/>
+       <opcode name="Thiseventisraisedwhiletryingtogetavalidlicense" message="$(string.opcode_ConnectionSequenceThiseventisraisedwhiletryingtogetavalidlicense)" value="15"/>
+       <opcode name="Thiseventisraisedwhenthereisacloseoperationwhichwillteardowntheconnection." message="$(string.opcode_ConnectionSequenceThiseventisraisedwhenthereisacloseoperationwhichwillteardowntheconnection.)" value="35"/>
+      </opcodes>
+     </task>
+     <task name="AutomaticReconnectionSequence" message="$(string.task_AutomaticReconnectionSequence)" value="102">
+>
+      <opcodes>
+       <opcode name="Thiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" message="$(string.opcode_AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver)" value="13"/>
+      </opcodes>
+     </task>
+     <task name="GatewayConnectionSequence" message="$(string.task_GatewayConnectionSequence)" value="103">
+>
+      <opcodes>
+       <opcode name="Thiseventisraisedinthegatewaytransport" message="$(string.opcode_GatewayConnectionSequenceThiseventisraisedinthegatewaytransport)" value="16"/>
+      </opcodes>
+     </task>
+     <task name="RDPStateTransition" message="$(string.task_RDPStateTransition)" value="104">
+>
+      <opcodes>
+       <opcode name="Thiseventisraisedduringastatetransition." message="$(string.opcode_RDPStateTransitionThiseventisraisedduringastatetransition.)" value="19"/>
+      </opcodes>
+     </task>
+     <task name="RdClientRADCworkspace" message="$(string.task_RdClientRADCworkspace)" value="105">
+>
+      <opcodes>
+       <opcode name="Thiseventisraisedduringastatetransition." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedduringastatetransition.)" value="19"/>
+       <opcode name="Thiseventisraisedwhentheclienthasnotbeenshutdowncleanly." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhentheclienthasnotbeenshutdowncleanly.)" value="20"/>
+       <opcode name="ThiseventisraisedwhentheusertriestosignoutfromtheOOBclient." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhentheusertriestosignoutfromtheOOBclient.)" value="21"/>
+       <opcode name="Thiseventisraisedwhentheusermanuallytriestodofeedrefresh." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhentheusermanuallytriestodofeedrefresh.)" value="22"/>
+       <opcode name="ThiseventisraisedwhentheusertriestologininADALpageusingdifferentusername." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhentheusertriestologininADALpageusingdifferentusername.)" value="23"/>
+       <opcode name="Thiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded.)" value="24"/>
+       <opcode name="Thiseventisraisedwhenaworkspaceeventlikesubscribe/updatefailed!" message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatefailed!)" value="25"/>
+       <opcode name="Thiseventisraisedwhenfeeddiscoverysucceeds" message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoverysucceeds)" value="26"/>
+       <opcode name="Thiseventisraisedwhenfeeddiscoveryfailed!" message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoveryfailed!)" value="27"/>
+       <opcode name="ThiseventisraisedwhenthefeedcacheontheclientlocalmachineismissingiconsorRdpfilesduetocachecorruption!" message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenthefeedcacheontheclientlocalmachineismissingiconsorRdpfilesduetocachecorruption!)" value="28"/>
+       <opcode name="Thiseventisraisedwhenuserhassuccessfullyupdatedtheconsentstatusonserverside" message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenuserhassuccessfullyupdatedtheconsentstatusonserverside)" value="29"/>
+       <opcode name="Thiseventisraisedwhenuserisunabletoupdatetheconsentstatusonserver!" message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenuserisunabletoupdatetheconsentstatusonserver!)" value="30"/>
+       <opcode name="Thiseventisraisedwhentheusermanuallyclickstheviewinvitationsbutton." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhentheusermanuallyclickstheviewinvitationsbutton.)" value="32"/>
+       <opcode name="Thiseventisraisedwhentheuserstartsanewcycleoffeeddiscovery.WelogthehashedUPNandtimezoneinformationhere" message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhentheuserstartsanewcycleoffeeddiscovery.WelogthehashedUPNandtimezoneinformationhere)" value="33"/>
+       <opcode name="Thiseventisraisedwhenallthefeedsoftheuserhavebeensubscribedorupdatedcompletely.Welogtheoveralltimeittooktodownloadallfeedsinparallel." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenallthefeedsoftheuserhavebeensubscribedorupdatedcompletely.Welogtheoveralltimeittooktodownloadallfeedsinparallel.)" value="34"/>
+       <opcode name="ThiseventisraisedwhenthereiserrorinacquiringADALtoken." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenthereiserrorinacquiringADALtoken.)" value="39"/>
+       <opcode name="ThiseventisraisedwhenADALauthenticationtokenissuccessfullycreated." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenADALauthenticationtokenissuccessfullycreated.)" value="40"/>
+       <opcode name="ThiseventisraisedwhenADALauthenticationiscancelled." message="$(string.opcode_RdClientRADCworkspaceThiseventisraisedwhenADALauthenticationiscancelled.)" value="41"/>
+      </opcodes>
+     </task>
+     <task name="RdClientPipelineworkspace" message="$(string.task_RdClientPipelineworkspace)" value="106">
+>
+      <opcodes>
+       <opcode name="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogtheversionselected,andtheclientmodeandAVCcapability." message="$(string.opcode_RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogtheversionselected,andtheclientmodeandAVCcapability.)" value="36"/>
+       <opcode name="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarebeingused." message="$(string.opcode_RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarebeingused.)" value="37"/>
+       <opcode name="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarenotbeingused." message="$(string.opcode_RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarenotbeingused.)" value="38"/>
+       <opcode name="Thiseventisraisedifapipelineerrorisencounteredduringexecution.Welogthefaultingcomponent,function,anderrorcode." message="$(string.opcode_RdClientPipelineworkspaceThiseventisraisedifapipelineerrorisencounteredduringexecution.Welogthefaultingcomponent,function,anderrorcode.)" value="44"/>
+      </opcodes>
+     </task>
+    </tasks>
+    <events>
+     <event value="225" symbol="RDPStateTransitionThiseventisraisedduringastatetransition." version="0" task="RDPStateTransition" opcode="Thiseventisraisedduringastatetransition." level="win:Informational" template="RDPStateTransitionThiseventisraisedduringastatetransition.Args"/>
+     <event value="226" symbol="RDPStateTransitionThiseventisraisedduringastatetransition.226" version="0" task="RDPStateTransition" opcode="Thiseventisraisedduringastatetransition." level="win:Warning" template="RDPStateTransitionThiseventisraisedduringastatetransition.226Args"/>
+     <event value="227" symbol="RDPStateTransitionThiseventisraisedduringastatetransition.227" version="0" task="RDPStateTransition" opcode="Thiseventisraisedduringastatetransition." level="win:Informational" template="RDPStateTransitionThiseventisraisedduringastatetransition.227Args"/>
+     <event value="1000" symbol="task_0" version="0" task="task_0" level="win:Verbose" template="task_0Args"/>
+     <event value="1001" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Verbose" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs"/>
+     <event value="1002" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1002" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational"/>
+     <event value="1003" symbol="ConnectionSequenceThiseventisraisedduringthedisconnectionprocess" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringthedisconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringthedisconnectionprocessArgs"/>
+     <event value="1004" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1004" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringthedisconnectionprocessArgs"/>
+     <event value="1005" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Error" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1006" symbol="ConnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" version="0" task="ConnectionSequence" opcode="Thiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" level="win:Warning" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1007" symbol="ConnectionSequenceThiseventisraisedduringresolvingtheservername" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringresolvingtheservername" level="win:Error" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1008" symbol="ConnectionSequenceThiseventisraisedduringtheauthenticationprocess" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheauthenticationprocess" level="win:Verbose" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1009" symbol="ConnectionSequenceThiseventisraisedduringtheauthenticationprocess1009" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheauthenticationprocess" level="win:Warning" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1010" symbol="GatewayConnectionSequenceThiseventisraisedinthegatewaytransport" version="0" task="GatewayConnectionSequence" opcode="Thiseventisraisedinthegatewaytransport" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs"/>
+     <event value="1011" symbol="GatewayConnectionSequenceThiseventisraisedinthegatewaytransport1011" version="0" task="GatewayConnectionSequence" opcode="Thiseventisraisedinthegatewaytransport" level="win:Informational"/>
+     <event value="1012" symbol="GatewayConnectionSequenceThiseventisraisedinthegatewaytransport1012" version="0" task="GatewayConnectionSequence" opcode="Thiseventisraisedinthegatewaytransport" level="win:Error" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1013" symbol="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" version="0" task="AutomaticReconnectionSequence" opcode="Thiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringthedisconnectionprocessArgs"/>
+     <event value="1014" symbol="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014" version="0" task="AutomaticReconnectionSequence" opcode="Thiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" level="win:Informational" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1015" symbol="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1015" version="0" task="AutomaticReconnectionSequence" opcode="Thiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" level="win:Error" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1016" symbol="ConnectionSequenceThiseventisraisedwhiletryingtogetavalidlicense" version="0" task="ConnectionSequence" opcode="Thiseventisraisedwhiletryingtogetavalidlicense" level="win:Verbose" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs"/>
+     <event value="1017" symbol="ConnectionSequenceThiseventisraisedwhiletryingtogetavalidlicense1017" version="0" task="ConnectionSequence" opcode="Thiseventisraisedwhiletryingtogetavalidlicense" level="win:Warning" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1018" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1018" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Error" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1019" symbol="General" version="0" task="General" level="win:Informational" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1020" symbol="General1020" version="0" task="General" level="win:Error" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args"/>
+     <event value="1021" symbol="GatewayConnectionSequenceThiseventisraisedinthegatewaytransport1021" version="0" task="GatewayConnectionSequence" opcode="Thiseventisraisedinthegatewaytransport" level="win:Warning" template="ConnectionSequenceThiseventisraisedduringthedisconnectionprocessArgs"/>
+     <event value="1022" symbol="GatewayConnectionSequenceThiseventisraisedinthegatewaytransport1022" version="0" task="GatewayConnectionSequence" opcode="Thiseventisraisedinthegatewaytransport" level="win:Informational" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1023" symbol="ConnectionSequence" version="0" task="ConnectionSequence" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs"/>
+     <event value="1024" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1024" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs"/>
+     <event value="1025" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1025" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational"/>
+     <event value="1026" symbol="ConnectionSequenceThiseventisraisedduringthedisconnectionprocess1026" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringthedisconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringthedisconnectionprocessArgs"/>
+     <event value="1027" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1027" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1027Args"/>
+     <event value="1028" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1028" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1029" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1029" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1030" symbol="ConnectionSequence1030" version="0" task="ConnectionSequence" level="win:Informational" template="ConnectionSequence1030Args"/>
+     <event value="1031" symbol="ConnectionSequenceThiseventisraisedduringthedisconnectionprocess1031" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringthedisconnectionprocess" level="win:Error" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1032" symbol="GeneralThisisagenericeventthatmayberaisedbytheclient." version="0" task="General" opcode="Thisisagenericeventthatmayberaisedbytheclient." level="win:Informational" template="GeneralThisisagenericeventthatmayberaisedbytheclient.Args"/>
+     <event value="1033" symbol="GeneralThisisagenericerrorthatmaybesignaledbytheclient." version="0" task="General" opcode="Thisisagenericerrorthatmaybesignaledbytheclient." level="win:Error" template="GeneralThisisagenericerrorthatmaybesignaledbytheclient.Args"/>
+     <event value="1034" symbol="GeneralThisisagenericeventthatmayberaisedbytheclient.1034" version="0" task="General" opcode="Thisisagenericeventthatmayberaisedbytheclient." level="win:Informational" template="GeneralThisisagenericeventthatmayberaisedbytheclient.Args"/>
+     <event value="1100" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1100" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs"/>
+     <event value="1101" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1101" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs"/>
+     <event value="1102" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1102" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs"/>
+     <event value="1103" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1103" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational"/>
+     <event value="1104" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1104" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational" template="ConnectionSequenceThiseventisraisedduringthedisconnectionprocessArgs"/>
+     <event value="1105" symbol="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1105" version="0" task="ConnectionSequence" opcode="Thiseventisraisedduringtheconnectionprocess" level="win:Informational"/>
+     <event value="1106" symbol="ConnectionSequenceThiseventisraisedwhenthereisacloseoperationwhichwillteardowntheconnection." version="0" task="ConnectionSequence" opcode="Thiseventisraisedwhenthereisacloseoperationwhichwillteardowntheconnection." level="win:Informational" template="ConnectionSequenceThiseventisraisedwhenthereisacloseoperationwhichwillteardowntheconnection.Args"/>
+     <event value="1107" symbol="GeneralThiseventisraisedduringthedisconnectionprocess" version="0" task="General" opcode="Thiseventisraisedduringthedisconnectionprocess" level="win:Informational" template="GeneralThiseventisraisedduringthedisconnectionprocessArgs"/>
+     <event value="1201" symbol="RdClientRADCworkspaceThiseventisraisedwhentheclienthasnotbeenshutdowncleanly." version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhentheclienthasnotbeenshutdowncleanly." level="win:Informational"/>
+     <event value="1202" symbol="RdClientRADCworkspaceThiseventisraisedwhentheusertriestosignoutfromtheOOBclient." version="0" task="RdClientRADCworkspace" opcode="ThiseventisraisedwhentheusertriestosignoutfromtheOOBclient." level="win:Informational"/>
+     <event value="1203" symbol="RdClientRADCworkspaceThiseventisraisedwhentheusermanuallytriestodofeedrefresh." version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhentheusermanuallytriestodofeedrefresh." level="win:Informational"/>
+     <event value="1204" symbol="RdClientRADCworkspaceThiseventisraisedwhentheusertriestologininADALpageusingdifferentusername." version="0" task="RdClientRADCworkspace" opcode="ThiseventisraisedwhentheusertriestologininADALpageusingdifferentusername." level="win:Informational"/>
+     <event value="1205" symbol="RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded." version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded." level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded.Args"/>
+     <event value="1206" symbol="RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatefailed!" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhenaworkspaceeventlikesubscribe/updatefailed!" level="win:Error" template="RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded.Args"/>
+     <event value="1207" symbol="RdClientRADCworkspace" version="0" task="RdClientRADCworkspace" level="win:Informational" template="ConnectionSequence1030Args"/>
+     <event value="1208" symbol="RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoverysucceeds" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhenfeeddiscoverysucceeds" level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoverysucceedsArgs"/>
+     <event value="1209" symbol="RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoveryfailed!" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhenfeeddiscoveryfailed!" level="win:Error" template="RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoveryfailed!Args"/>
+     <event value="1210" symbol="RdClientRADCworkspaceThiseventisraisedwhenthefeedcacheontheclientlocalmachineismissingiconsorRdpfilesduetocachecorruption!" version="0" task="RdClientRADCworkspace" opcode="ThiseventisraisedwhenthefeedcacheontheclientlocalmachineismissingiconsorRdpfilesduetocachecorruption!" level="win:Error" template="RdClientRADCworkspaceThiseventisraisedwhenthefeedcacheontheclientlocalmachineismissingiconsorRdpfilesduetocachecorruption!Args"/>
+     <event value="1211" symbol="RdClientRADCworkspaceThiseventisraisedwhenuserhassuccessfullyupdatedtheconsentstatusonserverside" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhenuserhassuccessfullyupdatedtheconsentstatusonserverside" level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedwhenuserhassuccessfullyupdatedtheconsentstatusonserversideArgs"/>
+     <event value="1212" symbol="RdClientRADCworkspaceThiseventisraisedwhenuserisunabletoupdatetheconsentstatusonserver!" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhenuserisunabletoupdatetheconsentstatusonserver!" level="win:Error" template="RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoveryfailed!Args"/>
+     <event value="1213" symbol="RdClientRADCworkspaceThiseventisraisedwhentheusermanuallyclickstheviewinvitationsbutton." version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhentheusermanuallyclickstheviewinvitationsbutton." level="win:Informational"/>
+     <event value="1214" symbol="RdClientRADCworkspaceThiseventisraisedwhentheuserstartsanewcycleoffeeddiscovery.WelogthehashedUPNandtimezoneinformationhere" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhentheuserstartsanewcycleoffeeddiscovery.WelogthehashedUPNandtimezoneinformationhere" level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedwhentheuserstartsanewcycleoffeeddiscovery.WelogthehashedUPNandtimezoneinformationhereArgs"/>
+     <event value="1215" symbol="RdClientRADCworkspaceThiseventisraisedwhenallthefeedsoftheuserhavebeensubscribedorupdatedcompletely.Welogtheoveralltimeittooktodownloadallfeedsinparallel." version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedwhenallthefeedsoftheuserhavebeensubscribedorupdatedcompletely.Welogtheoveralltimeittooktodownloadallfeedsinparallel." level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedwhenallthefeedsoftheuserhavebeensubscribedorupdatedcompletely.Welogtheoveralltimeittooktodownloadallfeedsinparallel.Args"/>
+     <event value="1216" symbol="RdClientRADCworkspaceThiseventisraisedwhenthereiserrorinacquiringADALtoken." version="0" task="RdClientRADCworkspace" opcode="ThiseventisraisedwhenthereiserrorinacquiringADALtoken." level="win:Error" template="GeneralThisisagenericeventthatmayberaisedbytheclient.Args"/>
+     <event value="1217" symbol="RdClientRADCworkspaceThiseventisraisedwhenADALauthenticationtokenissuccessfullycreated." version="0" task="RdClientRADCworkspace" opcode="ThiseventisraisedwhenADALauthenticationtokenissuccessfullycreated." level="win:Error"/>
+     <event value="1218" symbol="RdClientRADCworkspaceThiseventisraisedwhenADALauthenticationiscancelled." version="0" task="RdClientRADCworkspace" opcode="ThiseventisraisedwhenADALauthenticationiscancelled." level="win:Error"/>
+     <event value="1227" symbol="RdClientRADCworkspaceThiseventisraisedduringastatetransition." version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedduringastatetransition." level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedduringastatetransition.Args"/>
+     <event value="1228" symbol="RdClientRADCworkspaceThiseventisraisedduringastatetransition.1228" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedduringastatetransition." level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedduringastatetransition.1228Args"/>
+     <event value="1229" symbol="RdClientRADCworkspaceThiseventisraisedduringastatetransition.1229" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedduringastatetransition." level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedduringastatetransition.1229Args"/>
+     <event value="1230" symbol="RdClientRADCworkspaceThiseventisraisedduringastatetransition.1230" version="0" task="RdClientRADCworkspace" opcode="Thiseventisraisedduringastatetransition." level="win:Informational" template="RdClientRADCworkspaceThiseventisraisedduringastatetransition.1229Args"/>
+     <event value="1401" symbol="RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogtheversionselected,andtheclientmodeandAVCcapability." version="0" task="RdClientPipelineworkspace" opcode="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogtheversionselected,andtheclientmodeandAVCcapability." level="win:Informational" template="RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogtheversionselected,andtheclientmodeandAVCcapability.Args"/>
+     <event value="1402" symbol="RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarebeingused." version="0" task="RdClientPipelineworkspace" opcode="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarebeingused." level="win:Informational"/>
+     <event value="1403" symbol="RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarenotbeingused." version="0" task="RdClientPipelineworkspace" opcode="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarenotbeingused." level="win:Informational"/>
+     <event value="1404" symbol="RdClientPipelineworkspaceThiseventisraisedifapipelineerrorisencounteredduringexecution.Welogthefaultingcomponent,function,anderrorcode." version="0" task="RdClientPipelineworkspace" opcode="Thiseventisraisedifapipelineerrorisencounteredduringexecution.Welogthefaultingcomponent,function,anderrorcode." level="win:Error" template="RdClientPipelineworkspaceThiseventisraisedifapipelineerrorisencounteredduringexecution.Welogthefaultingcomponent,function,anderrorcode.Args"/>
+     <event value="1501" symbol="General1501" version="0" task="General" level="win:Informational" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1502" symbol="General1502" version="0" task="General" level="win:Informational" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+     <event value="1503" symbol="General1503" version="0" task="General" level="win:Informational" template="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args"/>
+    </events>
+    <templates>
+     <template tid="RDPStateTransitionThiseventisraisedduringastatetransition.Args">
+      <data name="StateTransitionName" inType="win:UnicodeString"/>
+      <data name="PreviousState" inType="win:UInt32"/>
+      <data name="PreviousStateName" inType="win:UnicodeString"/>
+      <data name="NewState" inType="win:UInt32"/>
+      <data name="NewStateName" inType="win:UnicodeString"/>
+      <data name="Event" inType="win:UInt32"/>
+      <data name="EventName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="RDPStateTransitionThiseventisraisedduringastatetransition.226Args">
+      <data name="StateTransitionName" inType="win:UnicodeString"/>
+      <data name="PreviousState" inType="win:UInt32"/>
+      <data name="PreviousStateName" inType="win:UnicodeString"/>
+      <data name="NewState" inType="win:UInt32"/>
+      <data name="NewStateName" inType="win:UnicodeString"/>
+      <data name="Event" inType="win:UInt32"/>
+      <data name="EventName" inType="win:UnicodeString"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="RDPStateTransitionThiseventisraisedduringastatetransition.227Args">
+      <data name="StateTransitionName" inType="win:UnicodeString"/>
+      <data name="ChannelID" inType="win:UInt32"/>
+      <data name="ChannelName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="task_0Args">
+      <data name="Function" inType="win:UnicodeString"/>
+      <data name="Line" inType="win:UnicodeString"/>
+      <data name="DebugMessage" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ConnectionSequenceThiseventisraisedduringtheconnectionprocessArgs">
+      <data name="Name" inType="win:UnicodeString"/>
+      <data name="Value" inType="win:UnicodeString"/>
+      <data name="CustomLevel" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ConnectionSequenceThiseventisraisedduringthedisconnectionprocessArgs">
+      <data name="Name" inType="win:UnicodeString"/>
+      <data name="Value" inType="win:UInt32"/>
+      <data name="CustomLevel" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1005Args">
+      <data name="TraceMessage" inType="win:UnicodeString"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver1014Args">
+      <data name="TraceMessage" inType="win:UnicodeString"/>
+     </template>
+     <template tid="ConnectionSequenceThiseventisraisedduringtheconnectionprocess1027Args">
+      <data name="DomainName" inType="win:UnicodeString"/>
+      <data name="SessionId" inType="win:UInt32"/>
+     </template>
+     <template tid="ConnectionSequence1030Args">
+      <data name="BuildBranch" inType="win:UnicodeString"/>
+      <data name="BuildDate" inType="win:UnicodeString"/>
+      <data name="BuildTime" inType="win:UnicodeString"/>
+      <data name="BuildVersion" inType="win:UnicodeString"/>
+      <data name="ArchAndFlavour" inType="win:UnicodeString"/>
+     </template>
+     <template tid="GeneralThisisagenericeventthatmayberaisedbytheclient.Args">
+      <data name="ErrorCode" inType="win:UnicodeString"/>
+      <data name="ErrorDescription" inType="win:UnicodeString"/>
+     </template>
+     <template tid="GeneralThisisagenericerrorthatmaybesignaledbytheclient.Args">
+      <data name="Name" inType="win:UnicodeString"/>
+      <data name="CustomLevel" inType="win:UnicodeString"/>
+      <data name="Value" inType="win:HexInt32"/>
+     </template>
+     <template tid="ConnectionSequenceThiseventisraisedwhenthereisacloseoperationwhichwillteardowntheconnection.Args">
+      <data name="Code" inType="win:UInt32"/>
+     </template>
+     <template tid="GeneralThiseventisraisedduringthedisconnectionprocessArgs">
+      <data name="ComponentName" inType="win:UnicodeString"/>
+      <data name="Message" inType="win:UnicodeString"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded.Args">
+      <data name="Event" inType="win:UnicodeString"/>
+      <data name="TenantId" inType="win:UnicodeString"/>
+      <data name="TotalTimeWithoutAdal" inType="win:UInt32"/>
+      <data name="AdalTime" inType="win:UInt32"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoverysucceedsArgs">
+      <data name="TotalTimeWithoutAdal" inType="win:UInt32"/>
+      <data name="AdalTime" inType="win:UInt32"/>
+      <data name="NumberOfFeeds" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoveryfailed!Args">
+      <data name="TotalTimeWithoutAdal" inType="win:UInt32"/>
+      <data name="AdalTime" inType="win:UInt32"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedwhenthefeedcacheontheclientlocalmachineismissingiconsorRdpfilesduetocachecorruption!Args">
+      <data name="TenantId" inType="win:UnicodeString"/>
+      <data name="ResourceIndex" inType="win:UInt32"/>
+      <data name="ResourceType" inType="win:UnicodeString"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedwhenuserhassuccessfullyupdatedtheconsentstatusonserversideArgs">
+      <data name="TotalTimeWithoutAdal" inType="win:UInt32"/>
+      <data name="AdalTime" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedwhentheuserstartsanewcycleoffeeddiscovery.WelogthehashedUPNandtimezoneinformationhereArgs">
+      <data name="UserNameHash" inType="win:UnicodeString"/>
+      <data name="TimeZoneBias" inType="win:Int32"/>
+      <data name="TimeZoneName" inType="win:UnicodeString"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedwhenallthefeedsoftheuserhavebeensubscribedorupdatedcompletely.Welogtheoveralltimeittooktodownloadallfeedsinparallel.Args">
+      <data name="refreshTime" inType="win:UInt32"/>
+      <data name="numberOfFeeds" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedduringastatetransition.Args">
+      <data name="RadcClientType" inType="win:UnicodeString"/>
+      <data name="RadcClientStage" inType="win:UnicodeString"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedduringastatetransition.1228Args">
+      <data name="RadcClientStage" inType="win:UnicodeString"/>
+      <data name="RadcHttpEvent" inType="win:UnicodeString"/>
+     </template>
+     <template tid="RdClientRADCworkspaceThiseventisraisedduringastatetransition.1229Args">
+      <data name="RadcClientStage" inType="win:UnicodeString"/>
+      <data name="RadcHttpEvent" inType="win:UnicodeString"/>
+      <data name="Code" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogtheversionselected,andtheclientmodeandAVCcapability.Args">
+      <data name="Version" inType="win:HexInt32"/>
+      <data name="ClientMode" inType="win:UInt32"/>
+      <data name="AvcEnabled" inType="win:UInt32"/>
+     </template>
+     <template tid="RdClientPipelineworkspaceThiseventisraisedifapipelineerrorisencounteredduringexecution.Welogthefaultingcomponent,function,anderrorcode.Args">
+      <data name="Component" inType="win:UnicodeString"/>
+      <data name="Function" inType="win:UInt32"/>
+      <data name="ErrorCode" inType="win:UInt32"/>
+     </template>
+    </templates>
+   </provider>
+  </events>
+ </instrumentation>
+ <localization>
+  <resources culture="en-GB">
+   <stringTable>
+    <string id="keyword_AccessDenied" value="AccessDenied"/>
+    <string id="keyword_Disconnected" value="Disconnected"/>
+    <string id="keyword_AuthFailed" value="AuthFailed"/>
+    <string id="keyword_LicenseError" value="LicenseError"/>
+    <string id="keyword_TimedOut" value="TimedOut"/>
+    <string id="keyword_InvalidState" value="InvalidState"/>
+    <string id="keyword_GatewayConnectFailed" value="GatewayConnectFailed"/>
+    <string id="keyword_NetworkUnAvailable" value="NetworkUnAvailable"/>
+    <string id="keyword_DnsResolutionFailure" value="DnsResolutionFailure"/>
+    <string id="keyword_SignVerifFailed" value="SignVerifFailed"/>
+    <string id="keyword_ResourceFailure" value="ResourceFailure"/>
+    <string id="keyword_LogonFailed" value="LogonFailed"/>
+    <string id="task_task_0" value="task_0"/>
+    <string id="task_General" value="General"/>
+    <string id="opcode_GeneralThiseventisraisedduringthedisconnectionprocess" value="Thiseventisraisedduringthedisconnectionprocess"/>
+    <string id="opcode_GeneralThisisagenericeventthatmayberaisedbytheclient." value="Thisisagenericeventthatmayberaisedbytheclient."/>
+    <string id="opcode_GeneralThisisagenericerrorthatmaybesignaledbytheclient." value="Thisisagenericerrorthatmaybesignaledbytheclient."/>
+    <string id="task_ConnectionSequence" value="ConnectionSequence"/>
+    <string id="opcode_ConnectionSequenceThiseventisraisedduringtheconnectionprocess" value="Thiseventisraisedduringtheconnectionprocess"/>
+    <string id="opcode_ConnectionSequenceThiseventisraisedduringthedisconnectionprocess" value="Thiseventisraisedduringthedisconnectionprocess"/>
+    <string id="opcode_ConnectionSequenceThiseventisraisedduringtheauthenticationprocess" value="Thiseventisraisedduringtheauthenticationprocess"/>
+    <string id="opcode_ConnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" value="Thiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver"/>
+    <string id="opcode_ConnectionSequenceThiseventisraisedduringresolvingtheservername" value="Thiseventisraisedduringresolvingtheservername"/>
+    <string id="opcode_ConnectionSequenceThiseventisraisedwhiletryingtogetavalidlicense" value="Thiseventisraisedwhiletryingtogetavalidlicense"/>
+    <string id="opcode_ConnectionSequenceThiseventisraisedwhenthereisacloseoperationwhichwillteardowntheconnection." value="Thiseventisraisedwhenthereisacloseoperationwhichwillteardowntheconnection."/>
+    <string id="task_AutomaticReconnectionSequence" value="AutomaticReconnectionSequence"/>
+    <string id="opcode_AutomaticReconnectionSequenceThiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver" value="Thiseventisraisedwhiletryingtoautomaticallyreconnecttotheserver"/>
+    <string id="task_GatewayConnectionSequence" value="GatewayConnectionSequence"/>
+    <string id="opcode_GatewayConnectionSequenceThiseventisraisedinthegatewaytransport" value="Thiseventisraisedinthegatewaytransport"/>
+    <string id="task_RDPStateTransition" value="RDPStateTransition"/>
+    <string id="opcode_RDPStateTransitionThiseventisraisedduringastatetransition." value="Thiseventisraisedduringastatetransition."/>
+    <string id="task_RdClientRADCworkspace" value="RdClientRADCworkspace"/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedduringastatetransition." value="Thiseventisraisedduringastatetransition."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhentheclienthasnotbeenshutdowncleanly." value="Thiseventisraisedwhentheclienthasnotbeenshutdowncleanly."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhentheusertriestosignoutfromtheOOBclient." value="ThiseventisraisedwhentheusertriestosignoutfromtheOOBclient."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhentheusermanuallytriestodofeedrefresh." value="Thiseventisraisedwhentheusermanuallytriestodofeedrefresh."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhentheusertriestologininADALpageusingdifferentusername." value="ThiseventisraisedwhentheusertriestologininADALpageusingdifferentusername."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded." value="Thiseventisraisedwhenaworkspaceeventlikesubscribe/updatesucceeded."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenaworkspaceeventlikesubscribe/updatefailed!" value="Thiseventisraisedwhenaworkspaceeventlikesubscribe/updatefailed!"/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoverysucceeds" value="Thiseventisraisedwhenfeeddiscoverysucceeds"/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenfeeddiscoveryfailed!" value="Thiseventisraisedwhenfeeddiscoveryfailed!"/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenthefeedcacheontheclientlocalmachineismissingiconsorRdpfilesduetocachecorruption!" value="ThiseventisraisedwhenthefeedcacheontheclientlocalmachineismissingiconsorRdpfilesduetocachecorruption!"/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenuserhassuccessfullyupdatedtheconsentstatusonserverside" value="Thiseventisraisedwhenuserhassuccessfullyupdatedtheconsentstatusonserverside"/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenuserisunabletoupdatetheconsentstatusonserver!" value="Thiseventisraisedwhenuserisunabletoupdatetheconsentstatusonserver!"/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhentheusermanuallyclickstheviewinvitationsbutton." value="Thiseventisraisedwhentheusermanuallyclickstheviewinvitationsbutton."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhentheuserstartsanewcycleoffeeddiscovery.WelogthehashedUPNandtimezoneinformationhere" value="Thiseventisraisedwhentheuserstartsanewcycleoffeeddiscovery.WelogthehashedUPNandtimezoneinformationhere"/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenallthefeedsoftheuserhavebeensubscribedorupdatedcompletely.Welogtheoveralltimeittooktodownloadallfeedsinparallel." value="Thiseventisraisedwhenallthefeedsoftheuserhavebeensubscribedorupdatedcompletely.Welogtheoveralltimeittooktodownloadallfeedsinparallel."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenthereiserrorinacquiringADALtoken." value="ThiseventisraisedwhenthereiserrorinacquiringADALtoken."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenADALauthenticationtokenissuccessfullycreated." value="ThiseventisraisedwhenADALauthenticationtokenissuccessfullycreated."/>
+    <string id="opcode_RdClientRADCworkspaceThiseventisraisedwhenADALauthenticationiscancelled." value="ThiseventisraisedwhenADALauthenticationiscancelled."/>
+    <string id="task_RdClientPipelineworkspace" value="RdClientPipelineworkspace"/>
+    <string id="opcode_RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogtheversionselected,andtheclientmodeandAVCcapability." value="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogtheversionselected,andtheclientmodeandAVCcapability."/>
+    <string id="opcode_RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarebeingused." value="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarebeingused."/>
+    <string id="opcode_RdClientPipelineworkspaceThiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarenotbeingused." value="Thiseventisraisedwhenprotocolcapsarereceivedfromtheserver.Welogthathardwareresourcesarenotbeingused."/>
+    <string id="opcode_RdClientPipelineworkspaceThiseventisraisedifapipelineerrorisencounteredduringexecution.Welogthefaultingcomponent,function,anderrorcode." value="Thiseventisraisedifapipelineerrorisencounteredduringexecution.Welogthefaultingcomponent,function,anderrorcode."/>
+   </stringTable>
+  </resources>
+ </localization>
+</instrumentationManifest>
