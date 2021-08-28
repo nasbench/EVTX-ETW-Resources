@@ -38,16 +38,14 @@ def raw(x):
     print(f"\tSearchFilter: {SearchFilter}")
     print(f"\tDistinguishedName: {DistinguishedName}")
     print(f"\tAttributeList: {AttributeList}\n\n")
-    
-        
 
 def main():
     # "{099614A5-5DD7-4788-8BC9-E29F43DB28FC}" "Microsoft-Windows-LDAP-Client"
     name = "Microsoft-Windows-LDAP-Client"
     guid = "{099614A5-5DD7-4788-8BC9-E29F43DB28FC}"
     providers = [etw.ProviderInfo(name, etw.GUID(guid))]
-    #  event_id_filters=[30]
-    with etw.ETW(providers=providers, event_callback=lambda x: raw(x)):
+
+    with etw.ETW(providers=providers, event_callback=lambda x: raw(x), event_id_filters=[30]):
         etw.run('etw')
 
 if __name__ == '__main__':

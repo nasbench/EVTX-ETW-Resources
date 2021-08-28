@@ -35,7 +35,7 @@ def raw(x):
         #Server RPC Call Started
         Description = "Server RPC call started"
     elif eid == 6:
-        #Server RPC Call Started
+        #Client RPC Call Started
         Description = "Client RPC call started"
 
     print(f"TimeStamp: {time}\nTask: {task}\nEID: {eid}\nProcessId: {pid}\nProcessName: {org_process_name}\nProcess Commandline: {org_process_name_cmdline}\nThreadId: {tid}\nEvent Description:")
