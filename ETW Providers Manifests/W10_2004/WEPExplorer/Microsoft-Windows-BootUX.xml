@@ -1,0 +1,163 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BootUX</Name>
+        <Metadata>
+            <Guid>{67D781BD-CBD2-4BD2-AD1F-6152FB891246}</Guid>
+            <ResourceFilePath>C:\Windows\system32\bootux.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\bootux.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=bootux.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Boot User Interface</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>LaunchUX</Name>
+                    <Value>1000</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SwapPage</Name>
+                    <Value>1002</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UserInteraction</Name>
+                    <Value>1006</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PageConstruction</Name>
+                    <Value>1008</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>LaunchUX</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>LaunchUX</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SwapPage</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SwapPage</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UsingUSB" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="success" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="resultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="programCounter" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="exceptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UserInteraction</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UserInteraction</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PageConstruction</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PageConstruction</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
