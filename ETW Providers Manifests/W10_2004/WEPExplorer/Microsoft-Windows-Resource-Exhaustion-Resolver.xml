@@ -1,0 +1,441 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Resource-Exhaustion-Resolver</Name>
+        <Metadata>
+            <Guid>{91F5FB12-FDEA-4095-85D5-614B495CD9DE}</Guid>
+            <ResourceFilePath>C:\Windows\system32\radarrs.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\radarrs.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=radarrs.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Resource-Exhaustion-Resolver</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Message>
+                    <Path>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Lifecycle Events</Message>
+                    <Name>RDR_RES_TASK_LIFECYCLE</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Resolution Events</Message>
+                    <Name>RDR_RES_TASK_RESOLUTION</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>UI Events</Message>
+                    <Name>RDR_RES_TASK_UI</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Leak Diagnosis Events</Message>
+                    <Name>RDR_RES_TASK_LEAK_DIAGNOSIS</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Events logged when the resource exhaustion resolver is started.</Message>
+                    <Name>RDR_RES_OPCODE_LIFECYCLE_START</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when the resource exhaustion resolver is stopped.</Message>
+                    <Name>RDR_RES_OPCODE_LIFECYCLE_STOP</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after a memory allocation.</Message>
+                    <Name>RDR_RES_OPCODE_LIFECYCLE_ALLOC</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when diagnosis is started.</Message>
+                    <Name>RDR_RES_OPCODE_RESOLUTION_START</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when diagnosis is stopped.</Message>
+                    <Name>RDR_RES_OPCODE_RESOLUTION_STOP</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged during resolution.</Message>
+                    <Name>RDR_RES_OPCODE_RESOLUTION_PROCESSING</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after performing the resolution actions</Message>
+                    <Name>RDR_RES_OPCODE_RESOLUTION_RESULT</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged before UI is launched.</Message>
+                    <Name>RDR_RES_OPCODE_UI_START</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after UI is launched or after an attempt to launch the UI is made.</Message>
+                    <Name>RDR_RES_OPCODE_UI_DISPLAY</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after an attempt to launch the leak diagnoser is made.</Message>
+                    <Name>RDR_RES_OPCODE_LEAK_DIAGNOSIS_START</Name>
+                    <Value>41</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Lifecycle</Message>
+                    <Name>RDR_RES_KEYWORD_LIFECYCLE</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>System Commit Limit (Virtual Memory) Exhaustion</Message>
+                    <Name>RDR_RES_KEYWORD_MEMORY_EXHAUSTION</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Memory leak diagnosis</Message>
+                    <Name>RDR_RES_KEYWORD_LEAK_DIAGNOSIS</Name>
+                    <Value>16384</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the resource exhaustion resolver is started.</Opcode>
+                <Keyword>Lifecycle</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the resource exhaustion resolver is stopped.</Opcode>
+                <Keyword>Lifecycle</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Resolution Events</Task>
+                <Opcode>Events logged after performing the resolution actions</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver received a notification that the computer is low on virtual memory. This notification was ignored as it is no longer valid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeSinceLastUI" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventGenerationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DropReasonCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TimesUIShown" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MaxCommit" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>UI Events</Task>
+                <Opcode>Events logged before UI is launched.</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver close programs UI was launched.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process_1_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_1_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_1_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_1_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_2_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_2_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_2_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_2_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_3_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_3_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_3_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_3_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResolverID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventGenerationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the resource exhaustion resolver is started.</Opcode>
+                <Keyword>Lifecycle</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver failed to start due to an error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the resource exhaustion resolver is stopped.</Opcode>
+                <Keyword>Lifecycle</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver failed to stop due to an error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged after a memory allocation.</Opcode>
+                <Keyword>Lifecycle</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver experienced a memory allocation failure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UI Events</Task>
+                <Opcode>Events logged after UI is launched or after an attempt to launch the UI is made.</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver failed to launch the close programs UI.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>UI Events</Task>
+                <Opcode>Events logged after UI is launched or after an attempt to launch the UI is made.</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver close programs UI was closed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UIDisplayTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserAction" inType="win:Int32" outType="xs:int"/>
+  <data name="MaxCommit" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Resolution Events</Task>
+                <Opcode>Events logged after performing the resolution actions</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+Windows could not restore the computer's virtual memory. To prevent information loss, save your files and close your programs.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserAction" inType="win:Int32" outType="xs:int"/>
+  <data name="MaxCommit" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Resolution Events</Task>
+                <Opcode>Events logged after performing the resolution actions</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+Windows could not restore the computer's virtual memory because some programs could not be closed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserAction" inType="win:Int32" outType="xs:int"/>
+  <data name="MaxCommit" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Resolution Events</Task>
+                <Opcode>Events logged after performing the resolution actions</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+Windows successfully restored your computer's virtual memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimesUIShown" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="UserAction" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Resolution Events</Task>
+                <Opcode>Events logged after performing the resolution actions</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+Windows successfully restored your computer's virtual memory without closing any programs.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimesUIShown" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="UserAction" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Leak Diagnosis Events</Task>
+                <Opcode>Events logged after an attempt to launch the leak diagnoser is made.</Opcode>
+                <Keyword>Memory leak diagnosis</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver received a notification to perform memory leak diagnosis. This notification was processed and dropped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DropReasonCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Resolution Events</Task>
+                <Opcode>Events logged when diagnosis is started.</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver received an event from the Windows Resource Exhaustion Detector.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Resolution Events</Task>
+                <Opcode>Events logged after performing the resolution actions</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+Windows could not restore the computer's virtual memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ResolutionAttempted" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Resolution Events</Task>
+                <Opcode>Events logged after performing the resolution actions</Opcode>
+                <Keyword>System Commit Limit (Virtual Memory) Exhaustion</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Resolver resolution failure notification UI was closed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UIDisplayTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserAction" inType="win:Int32" outType="xs:int"/>
+  <data name="MaxCommit" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
