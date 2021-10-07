@@ -1,0 +1,105 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ApplicationExperience-SwitchBack</Name>
+        <Metadata>
+            <Guid>{17D6E590-F5FE-11DC-95FF-0800200C9A66}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.488&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.19041.488</HelpLink>
+            <PublisherMessage>Microsoft-Windows-AeSwitchBack</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>AeSbCall</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AeSbImpl</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AeSbContextUpdate</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AeSbContextReadRetry</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AeSbCall</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwitchBranchGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SwitchBranchNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SwitchBranchName" inType="win:UnicodeString" outType="xs:string" length="SwitchBranchNameLength"/>
+  <data name="SwitchBranchDescriptionLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SwitchBranchDescription" inType="win:UnicodeString" outType="xs:string" length="SwitchBranchDescriptionLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AeSbImpl</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwitchBranchImplGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SwitchBranchImplNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SwitchBranchImplName" inType="win:UnicodeString" outType="xs:string" length="SwitchBranchImplNameLength"/>
+  <data name="SwitchBranchImplDescriptionLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SwitchBranchImplDescription" inType="win:UnicodeString" outType="xs:string" length="SwitchBranchImplDescriptionLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AeSbContextUpdate</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetContextGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TargetContextType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ModuleNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string" length="ModuleNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AeSbContextReadRetry</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextUpdateCounter" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

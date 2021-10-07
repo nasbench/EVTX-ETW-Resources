@@ -1,0 +1,310 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-Scheduled</Name>
+        <Metadata>
+            <Guid>{40AB57C2-1C53-4DF9-9324-FF7CF898A02C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\sdiagschd.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\sdiagschd.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=sdiagschd.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnosis-Scheduled/Operational</Message>
+                    <Path>Microsoft-Windows-Diagnosis-Scheduled/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>WHC Notification Keyword</Message>
+                    <Name>notification</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Lifecycle Keyword</Message>
+                    <Name>lifecycle</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has detected a change in state for a check registered in Security and Maintenance.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scheduled diagnostics have started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scheduled diagnostics have been completed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scheduled diagnostics have been disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has started initializing a diagnostic package.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackagePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has completed initialization of a diagnostic package.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has started troubleshooting a diagnostic package.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has completed troubleshooting a diagnostic package.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootCauseCount" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has detected a root cause.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCauseID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootCauseName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootCauseDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has started resolving a detected root cause.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCauseID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResolutionID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has completed resolving a detected root cause.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCauseID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResolutionID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has started verifying the fix applied for a detected root cause.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCauseID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has determined that the root cause no longer exists.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCauseID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has determined that the root cause continues to exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCauseID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The scheduled diagnostic task has encountered an error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>96</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+TEST: One or more rootcauses were detected and a package wide notification was raised.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+TEST: No rootcauses were detected and a package wide reset notification was raised.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+TEST: A rootcause was detected and a rootcause wide notification was raised.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+TEST: A root cause does not exist and a root cause reset notification was raised.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Scheduled/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+System maintenance detected issues requiring your attention. A notification was sent to Security and Maintenance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,209 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Install-Agent</Name>
+        <Metadata>
+            <Guid>{E0C6F6DE-258A-50E0-AC1A-103482D118BC}</Guid>
+            <ResourceFilePath>C:\Windows\System32\StoreAgent.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\StoreAgent.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=StoreAgent.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Install-Agent</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Store/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Install Agent Module Loaded</Message>
+                    <Name>ModuleLoaded</Name>
+                    <Value>2000</Value>
+                </Task>
+                <Task>
+                    <Message>Agent</Message>
+                    <Name>LogMessage</Name>
+                    <Value>2001</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Error</Message>
+                    <Name>Error</Name>
+                    <Value>12</Value>
+                    <Task>2001</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Warning</Message>
+                    <Name>Warning</Name>
+                    <Value>13</Value>
+                    <Task>2001</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>Info</Name>
+                    <Value>14</Value>
+                    <Task>2001</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Verbose</Message>
+                    <Name>Verbose</Name>
+                    <Value>15</Value>
+                    <Task>2001</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Messages</Name>
+                    <Value>268435456</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Install Agent Module Loaded</Task>
+                <Keyword>Messages</Keyword>
+                <Message><![CDATA[
+Process Name: %1
+Module Name: %2
+Build: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Module Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Build Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Agent</Task>
+                <Opcode>Verbose</Opcode>
+                <Keyword>Messages</Keyword>
+                <Message><![CDATA[
+%1
+Error: %3
+Function: %2
+Source: %4 (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Code" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Agent</Task>
+                <Opcode>Info</Opcode>
+                <Keyword>Messages</Keyword>
+                <Message><![CDATA[
+%1
+Error: %3
+Function: %2
+Source: %4 (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Code" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Agent</Task>
+                <Opcode>Warning</Opcode>
+                <Keyword>Messages</Keyword>
+                <Message><![CDATA[
+%1
+Error: %3
+Function: %2
+Source: %4 (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Code" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Agent</Task>
+                <Opcode>Error</Opcode>
+                <Keyword>Messages</Keyword>
+                <Message><![CDATA[
+%1
+Error: %3
+Function: %2
+Source: %4 (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Code" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

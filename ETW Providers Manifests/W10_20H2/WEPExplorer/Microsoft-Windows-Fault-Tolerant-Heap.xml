@@ -1,0 +1,108 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Fault-Tolerant-Heap</Name>
+        <Metadata>
+            <Guid>{6B93BF66-A922-4C11-A617-CF60D95C133D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\fthsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\fthsvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=fthsvc.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Fault-Tolerant-Heap</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Fault-Tolerant-Heap/Operational</Message>
+                    <Path>Microsoft-Windows-Fault-Tolerant-Heap/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Lifecycle Events</Message>
+                    <Name>FTH_EVENT_TASK_LIFECYCLE</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Events logged when the FTH (fault tolerant heap) service is started.</Message>
+                    <Name>FTH_EVENT_OPCODE_LIFECYCLE_START</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when the FTH (fault tolerant heap) service is stopped.</Message>
+                    <Name>FTH_EVENT_OPCODE_LIFECYCLE_STOP</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Events related to lifecycle of FTH (Fault tolerant heap) service.</Message>
+                    <Name>FTH_EVENT_KEYWORD_LIFECYCLE</Name>
+                    <Value>268435456</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Fault-Tolerant-Heap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the FTH (fault tolerant heap) service is started.</Opcode>
+                <Keyword>Events related to lifecycle of FTH (Fault tolerant heap) service.</Keyword>
+                <Message><![CDATA[
+The Fault Tolerant Heap service started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Fault-Tolerant-Heap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the FTH (fault tolerant heap) service is stopped.</Opcode>
+                <Keyword>Events related to lifecycle of FTH (Fault tolerant heap) service.</Keyword>
+                <Message><![CDATA[
+The Fault Tolerant Heap service stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Fault-Tolerant-Heap/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Events related to lifecycle of FTH (Fault tolerant heap) service.</Keyword>
+                <Message><![CDATA[
+FaultTolerantHeap Enabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FthEnabledPID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FthEnabledProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FthEnabledProcessStartup" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

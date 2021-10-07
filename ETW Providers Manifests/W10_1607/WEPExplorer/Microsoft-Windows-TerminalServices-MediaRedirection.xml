@@ -1,0 +1,332 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TerminalServices-MediaRedirection</Name>
+        <Metadata>
+            <Guid>{3F7B2F99-B863-4045-AD05-F6AFB62E7AF1}</Guid>
+            <ResourceFilePath>C:\Windows\System32\tsmf.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\tsmf.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\tsmf.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=tsmf.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>TS MF</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Format Check</Message>
+                    <Name>TsmfTaskFormatCheck</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Settings Check</Message>
+                    <Name>TsmfTaskSettingsCheck</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Stream Setup</Message>
+                    <Name>TsmfTaskStreamSetup</Name>
+                    <Value>102</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Audio and video playback redirection cannot occur on the client computer because the Remote Desktop Connection version is too low.
+
+Server version: %1 
+Client version: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt32_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UInt32_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UInt32_3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UInt32_4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Server version: %1 
+Client version: %2 
+Server supported platforms: %3 
+Client supported platforms: %4 
+
+For platforms, the value is a bitmask where MF=0x01, and DShow=0x02.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt32_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UInt32_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UInt32_3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UInt32_4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Format Check</Task>
+                <Message><![CDATA[
+The client computer supports the format being proposed by the server.
+
+Major Type:
+%2
+%1
+Sub-Type:
+%4
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Guid1" inType="win:GUID" outType="xs:GUID"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Guid2" inType="win:GUID" outType="xs:GUID"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>Format Check</Task>
+                <Message><![CDATA[
+The client computer does not support the format being proposed by the server.
+
+Major Type:
+%2
+%1
+Sub-Type:
+%4
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Guid1" inType="win:GUID" outType="xs:GUID"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Guid2" inType="win:GUID" outType="xs:GUID"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Stream Setup</Task>
+                <Message><![CDATA[
+A format was successfully applied for stream ID %5.
+
+Major Type:
+%2
+%1
+Sub-Type:
+%4
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Guid1" inType="win:GUID" outType="xs:GUID"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Guid2" inType="win:GUID" outType="xs:GUID"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+An application with process name %1 tried to redirect media but did not meet the requirements to redirect media.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+An application with process name %1 meets all conditions to redirect media.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Audio and video playback redirection is allowed by both the client and server computers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Audio and video playback redirection was disabled because of a licensing issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32Parameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Audio and video playback redirection was disabled by using Group Policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32Parameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Audio and video playback redirection was disabled on the client computer by using Remote Desktop Connection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32Parameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Audio and video playback redirection was disabled.
+
+	Reason: %1 (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32Parameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Desktop Window Manager is enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32Parameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Settings Check</Task>
+                <Message><![CDATA[
+Desktop Window Manager is disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32Parameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
