@@ -1,0 +1,920 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Telephony-PhoneUtil</Name>
+        <Metadata>
+            <Guid>{04A490D4-84C6-4920-9C22-51C80825FF2C}</Guid>
+            <ResourceFilePath>PhoneUtil.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>PhoneUtil.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10240.16384&amp;FileName=PhoneUtil.dll&amp;FileVer=10.0.10240.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>AssistedDial</Name>
+                    <Value>25</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>MISC</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SIMOM</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Warning</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>StateTransition</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+Error: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error Propagated: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>600</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+Invalid branding rule indices: sim state %1, registration state %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Int32_1" inType="win:Int32" outType="xs:int"/>
+  <data name="Prop_Int32_2" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>607</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+Get branding for area = %1, simState = %2, registrationState = %3, brandingFlags = %4, stringId = %5, brandingText = %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="brandingArea" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="simState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="registrationState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="brandingFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ids" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="brandingText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>608</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+Enable AudioHardwareHelper, PlaceholderStream created? %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Bool1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>609</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+Disable AudioHardwareHelper, PlaceholderStream created? %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Bool1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>AssistedDial</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>AssistedDial</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1200</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+OperationWatchdog: "%1" timed out.  Context: %2.  Timeout value: %3ms.  Still waiting after: %4ms.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OperationContext" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OperationTimeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ElapsedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1201</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+OperationWatchdog: "%1" completed.  Context: %2.  Actual time: %3ms]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OperationContext" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OperationActualTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>SIMOM</Keyword>
+                <Message><![CDATA[
+SIMOM %1 starting up; ICellular %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>SIMOM</Keyword>
+                <Message><![CDATA[
+SIMOM %1 shutting down; ICellular %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>SIMOM</Keyword>
+                <Message><![CDATA[
+SIMOM %1 Advise; client callbacks %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>SIMOM</Keyword>
+                <Message><![CDATA[
+SIMOM %1 Unadvise; client callbacks %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 notifying client %2 of event '%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientCallbacks" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnModemAdded; pModem %2 / %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnModemRemoved; pModem %2 / %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnModemExistenceDone]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnCanAdded; pCan %2 / %3; parent modem %4 / %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModemGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnCanRemoved; pCan %2 / %3; parent modem %4 / %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModemGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnCanDone; parent modem %2 / %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnSlotAdded; pSlot %2 / index %3; parent modem %4 / %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SlotPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SlotIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModemGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnSlotRemoved; pSlot %2 / index %3; parent modem %4 / %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SlotPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SlotIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModemGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5013</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnSlotExistenceDone; parent modem %2 / %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5014</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got slot on can; hr %2; can %3; pSlot %4 / index %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SlotPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SlotIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5015</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 discovery state changed to %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnSlotStateChanged; pSlot %2 / index %3; state %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SlotPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SlotIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SlotState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnUICCAdded; pSlot %2 / index %3; pUICC %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SlotPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SlotIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UICCPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5018</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnUICCRemoved; pSlot %2 / index %3; pUICC %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SlotPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SlotIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UICCPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5019</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnFirstSnapshotDone; pSlot %2 / index %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HexInt" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5020</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got UICCIccID; pUICC %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5021</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 friendly name change; pUICC %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5022</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SIMOM %1: UICC %2 already has an ID]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5023</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnConfiguredLinesChange; pCan %2 / %3; line count %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5024</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnUICCAppAdded; pUiccApp %2, type %3, pUicc %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AppType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5025</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnUICCAppRemoved; pUiccApp %2, pUicc %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Pointer2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5026</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnUICCAppFetchDone; pUicc %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5027</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnUICCPinLockStateChange; pUiccApp %2; lock state params %3, HUICCAPP %4, KeyRef %5, state %6, verify count %7, unblock count %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UiccPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Params" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Huiccapp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyRef" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VerifyCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UnblockCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5028</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnRegistrationStatusChanged; pCan %2 / %3; status count %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5029</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 notifying client %2 of discovery state change to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientCallbacks" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5031</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1: Can %2 configured line #%3: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LineIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LinePointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5032</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1: Can %2 registered line #%3: %4, system type %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LineIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LinePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SystemType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5033</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1: Can %2 is now associated with slot #%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Int" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5034</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got OnRegistrationPreferencesChanged; pCan %2 / %3; system selection prefs params %4; roaming mode %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Params" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RoamingMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5035</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 got UICCIccID; %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5036</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1: for can %2 / %3, registering for pinlock changes on pUiccApp %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AppPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5037</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1: for can %2 / %3, unregistering from pinlock changes on pUiccApp %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AppPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5038</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 applying pinlock state to pUiccApp %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5039</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1: for can %2 / %3, there are no configured lines; applying null pinlock state to pUiccApp %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CanPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CanGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AppPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5040</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 ignored OnUICCPinLockStateChange for pUiccApp %2; app no longer registered for those notifications]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5041</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SIMOM %1 service provider name change; pUICC %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ordinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6000</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Dial assist] Rule %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_HexInt64" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Prop_String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Dial assist] Condition: %5, %1 %2 %3, param: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Lhs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Operator" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Rhs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Rhs2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Dial assist] Action: %1 %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Rhs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6003</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Dial assist] Home CC: %1, Current CC: %2, Plus code supported: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_Bool" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6004</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Dial assist] Modified number with rule: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Int64_1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6005</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Dial assist] User GEOID: %1 mapped to home CC: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Int32_1" inType="win:Int32" outType="xs:int"/>
+  <data name="Prop_Int32_2" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6006</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Dial assist] User LCID: %1 mapped to home CC: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Int32_1" inType="win:Int32" outType="xs:int"/>
+  <data name="Prop_Int32_2" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

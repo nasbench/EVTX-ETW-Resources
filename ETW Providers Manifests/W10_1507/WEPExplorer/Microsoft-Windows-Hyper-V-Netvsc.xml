@@ -1,0 +1,705 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-Netvsc</Name>
+        <Metadata>
+            <Guid>{152FBE4B-C7AD-4F68-BADA-A4FCC1464F6C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\netvsc.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\netvsc.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10240.16384&amp;FileName=netvsc.sys&amp;FileVer=10.0.10240.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ProtocolNegotiate</Name>
+                    <Value>1001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RndisMPInit</Name>
+                    <Value>1002</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RndisStatusChange</Name>
+                    <Value>1003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MicroportInit</Name>
+                    <Value>1004</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SfaApi</Name>
+                    <Value>1005</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PdApi</Name>
+                    <Value>1006</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>ProtocolNegotiate</Task>
+                <Message><![CDATA[
+The VM and host networking components successfully negotiated protocol version '%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VersionLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string" length="VersionLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ProtocolNegotiate</Task>
+                <Message><![CDATA[
+The VM and host networking components failed to negotiate protocol version '%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VersionLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string" length="VersionLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisMPInit</Task>
+                <Message><![CDATA[
+The miniport '%2' was successfully initialized]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>RndisMPInit</Task>
+                <Message><![CDATA[
+Failed to initialize miniport '%2', Status = '%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>RndisMPInit</Task>
+                <Message><![CDATA[
+Failed to set config parameters on miniport NIC '%2', Status = '%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+  <data name="SubkeyNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SubkeyName" inType="win:UnicodeString" outType="xs:string" length="SubkeyNameLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' is halting]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' reset]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' hung]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' halted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' paused]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' restarted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' connected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' disconnected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' network has changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>MicroportInit</Task>
+                <Message><![CDATA[
+Microport initialization failed, reason = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NBL %2 miniport NIC '%5' is dropped. Reason: %3. Status - %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Operation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to send packet at the microport. Reason: %2. Status - %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA client registration succeeded. ClientContext: %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA client registration failed. ClientContext: %1 Reason: %6. Status: %7. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsgStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA client deregistration succeeded. ClientContext: %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA cleanup succeeded. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA GetMeterData succeeded. ClientContext: %1 ContextId: %2 RuleId: %3 Flags: %5. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA RemoveRule succeeded. ClientContext: %1 ContextId: %2 RuleId: %3. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA AddRule succeeded. ClientContext: %1 ContextId: %2 RuleId: %3 ForwardToPortId: %4. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA DeleteContext succeeded. ClientContext: %1 ContextId: %2 LastContext: %6. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA CreateContext succeeded. ClientContext: %1 ContextId: %2. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA StatusChangedNotification SfaEnabled: %1 ClientContext: %2. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SfaEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA register optional handler succeeded. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA GetMeterData failed. ClientContext: %1 ContextId: %2 RuleId: %3 Flags: %5 FailureReason: %6 MsgStatus: %7. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsgStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA RemoveRule failed. ClientContext: %1 ContextId: %2 RuleId: FailureReason: %6 MsgStatus: %7. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsgStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA AddRule failed. ClientContext: %1 ContextId: %2 RuleId: %3 ForwardToPortId: %4 FailureReason: %6 MsgStatus: %7. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsgStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA DeleteContext failed. ClientContext: %1 ContextId: %2 LastContext: %8 FailureReason: %6 MsgStatus: %7. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsgStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>SfaApi</Task>
+                <Message><![CDATA[
+SFA CreateContext failed. ClientContext: %1  ContextId: %2 FailureReason: %6 MsgStatus: %7. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForwardToPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsgStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastContext" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>PdApi</Task>
+                <Message><![CDATA[
+PD initialization succeeded. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>PdApi</Task>
+                <Message><![CDATA[
+PD initialization failed. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>PdApi</Task>
+                <Message><![CDATA[
+PD cleanup succeeded. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

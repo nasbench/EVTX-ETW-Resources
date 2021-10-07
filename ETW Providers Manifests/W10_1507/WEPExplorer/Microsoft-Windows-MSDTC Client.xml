@@ -1,0 +1,1014 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MSDTC Client</Name>
+        <Metadata>
+            <Guid>{7A67066E-193F-4D3A-82D3-322FEE5259DE}</Guid>
+            <ResourceFilePath>C:\Windows\system32\comres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\comres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10240.16384&amp;FileName=comres.dll&amp;FileVer=2001.12.10941.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MSDTC Client</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>SVC</Message>
+                    <Name>ID_CAT_SERVICE_CLIENT</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>TM</Message>
+                    <Name>ID_CAT_TM_CLIENT</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>CM</Message>
+                    <Name>ID_CAT_CM_CLIENT</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>LOG</Message>
+                    <Name>ID_CAT_LOG_CLIENT</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>XATM</Message>
+                    <Name>ID_CAT_XATM_CLIENT</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>MTXOCI</Message>
+                    <Name>ID_CAT_MTXOCI_CLIENT</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>ASC Runtime</Message>
+                    <Name>ID_CAT_ASC_CLIENT</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Unknown</Message>
+                    <Name>ID_CAT_UNKNOWN_CLIENT</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>XOleHlp</Message>
+                    <Name>ID_CAT_XOLEHLP_CLIENT</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>MSDTC Proxy</Message>
+                    <Name>ID_CAT_MSDTCPRX_CLIENT</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>TIP Gateway</Message>
+                    <Name>ID_CAT_TIPGW_CLIENT</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>TCP Connection Manager</Message>
+                    <Name>ID_CAT_TCPCM_CLIENT</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Tracing Infrastructure</Message>
+                    <Name>ID_CAT_TRACE_CLIENT</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>Cluster</Message>
+                    <Name>ID_CAT_DTC_CLUSTER_CLIENT</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>MSDTC User Interface</Message>
+                    <Name>ID_CAT_DTC_UI_CLIENT</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>KTMRM</Message>
+                    <Name>ID_CAT_KTMRM_CLIENT</Name>
+                    <Value>41</Value>
+                </Task>
+                <Task>
+                    <Message>MSDTC Setup</Message>
+                    <Name>ID_CAT_DTC_SETUP_CLIENT</Name>
+                    <Value>42</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1073745922</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to translate the MS DTC error code to the appropriate MS DTC error message. The MS DTC error code was: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745923</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+You do not have permissions to manage the MS DTC on this system. MS DTC administrative functionality will be disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229573</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The local MS DTC detected that the MS DTC on %1 has the same unique identity as the local MS DTC. This means that the two MS DTC will not be able to communicate with each other. This problem typically occurs if one of the systems were cloned using unsupported cloning tools. MS DTC requires that the systems be cloned using supported cloning tools such as SYSPREP. Running 'msdtc -uninstall' and then 'msdtc -install' from the command prompt will fix the problem. Note: Running 'msdtc -uninstall' will result in the system losing all MS DTC configuration information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229585</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC log path not found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229609</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not force transaction outcome.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229621</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Transaction not found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229622</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The transaction is not a child transaction.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147487799</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC TM could not determine if an incoming connection request is from a remote machine. For security reasons, it will treat this connection request as a remote connection request. If the NetworkClients security option is not enabled, this can cause it to reject this connection attempt. This can cause applications to report that the TM is not available. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229623</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The transaction cannot be forced to abort or commit because the transaction's state is not "In Doubt".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229624</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Either the transaction is not committed or there are resource managers or subordinate MS DTC Transaction Managers still connected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229625</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not resolve the transaction due to an unknown error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229627</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC encountered an internal error and is terminating.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745980</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+String message: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229681</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A critical error occurred in an MS DTC component therefore the process is terminating. The category field identifies the component that encountered the error. Please contact Microsoft Product Support. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229683</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to convert the caller provided TIP Transaction URL into a valid MS DTC Transaction Id. This error is unexpected because the TIP Transaction URL indicates that the transaction originated on this system. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229684</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to get the file name for the OLE Transactions Proxy DLL. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229685</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to dynamically load the OLE Transactions Proxy DLL. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229686</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "DllGetTransactionManagerCore" function is missing from the OLE Transactions Proxy DLL. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229687</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to connection to the registry on the remote MS DTC Transaction Manager's system. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229688</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to open the registry key containing the list of transaction managers. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229689</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to read the name of the default transaction manager from the registry. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229696</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to open the registry key containing the name of the OLE Transactions Proxy DLL. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229697</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to read the name of the OLE Transactions Proxy DLL from the registry. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229698</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to start MS DTC via the MS DTC Proxy DLL. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229699</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to start MS DTC because initialization of cluster support failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229705</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An MS DTC component was unable to allocate memory for a critical operation. That component is terminating. The category field identifies the component that failed. Please restart MS DTC if it does not restart automatically. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229828</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to initialize the MS DTC Communication Manager.  Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC is unable to communicate with MS DTC on a remote system. No common RPC protocol is supported between the two systems. Please ensure that one or more of the following RPC protocols are common to both systems: TCP/IP, SPX, or NetBEUI.  Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229830</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MS DTC Connection Manager is unable to register with RPC to use one of LRPC, TCP/IP, or UDP/IP. Please ensure that RPC is configured properly. If "ServerTcpPort" registry key is configured(DWORD value under the HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC for local DTC instance or under cluster hive for clustered DTC instance), please verify if the configured port is valid and the port is not already in use by a different component. Error Specifics:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229831</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC is unable to communicate with MS DTC on a remote system. MS DTC on the primary system established an RPC binding with MS DTC on the secondary system. However, the secondary system did not create the reverse RPC binding to the primary MS DTC system before the timeout period expired. Please ensure that there is network connectivity between the two systems.  Error Specifics:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229871</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not establish connection to trace transaction.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229872</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+No transaction is selected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229873</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Transaction not found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229874</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The version of the transaction manager is not compatible for this feature.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229875</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The attempt to dump the transaction to a trace file failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229876</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the initialization of the tracing infrastructure failed. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229877</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the attempt to create a new trace session failed. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229878</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the attempt to stop the existing trace session failed. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229879</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the attempt to flush the existing trace data failed. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229880</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the attempt to update the maximum buffer count of the existing trace session failed. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229881</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the infrastructure has reported that the number of trace events that have been lost until now is equal to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229882</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the thread launched to update the trace settings has failed. Any changes to the trace settings made using the "Tracing Options" dialog box might not take the desired effect. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229883</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the attempt to set the trace specific registry settings failed. Any tracing specific functionality will be disabled. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229884</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to create a new trace session.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229885</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to stop the existing trace session.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229886</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to flush the existing trace data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229887</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to update the maximum buffer count of the existing trace session.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229888</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to update all the trace settings in the registry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229889</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to load all the trace settings from the registry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229896</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the attempt to create the trace directory failed. Any tracing specific functionality will be disabled. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229897</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC Tracing infrastructure : the infrastructure has reported that an attempt to trace an event has failed cause of lack of enough buffer space. The tracing infrastructure will retry tracing this event. The total number of times this has happened so far is equal to %1. Increasing the max number of memory buffers might rectify the situation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229898</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to read the needed name objects from the registry. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229899</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to initialize the needed name objects. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229900</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to stop MSDTC service or one of its dependent services. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229901</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to set the security attributes on the MS DTC service. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229903</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to stop the MS DTC service. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229904</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to restart the MS DTC service. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229913</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A MS DTC component has encountered an internal error. The process is being terminated. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229914</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC was unable to start because this version of dtc is less than the least valid version allowable specified in the cluster database. This can happen if a higher incompatible version of MS DTC was installed on another node of the cluster. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229915</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC was unable to start because this version of dtc is not compatible with the version of MS DTC installed on another node of the cluster. This can happen if an incompatible version of MS DTC was installed on another node of the cluster. Error Specifics: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229926</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to prepare MSDTC for imaging. Sysprep phase: "%1" failed with error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229927</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unexpected error (0x%1!%08x!) when connecting to the Kernel Transaction Manager.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229928</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to create a communication channel to the Kernel Transaction Manager.  The attempt failed with error: 0x%1!%08x!]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229929</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MSDTC was unable to migrate its log during Windows upgrade. The attempt failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229930</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MSDTC encountered an error during migration of contact identifiers. The attempt failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229931</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MSDTC encountered an error during Windows upgrade. Error specifics: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073795108</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+During the MS DTC installation, the attempt to delete the dtclog directory failed. This was done since the location of the log directory has been changed to msdtc. This can happen if the dtclog directory is not empty. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536968</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+During MS DTC installation, the attempt to preserve the old log file failed. The MS DTC installation will continue, however any information present in the old log file will get lost. Internal Information : %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536970</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The connection manager in a MS DTC component has received an invalid message. Event specific Information: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param_bin1" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
