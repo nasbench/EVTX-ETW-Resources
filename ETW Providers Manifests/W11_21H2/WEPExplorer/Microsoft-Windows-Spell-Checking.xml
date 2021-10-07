@@ -1,0 +1,530 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Spell-Checking</Name>
+        <Metadata>
+            <Guid>{D0E22EFC-AC66-4B25-A72D-382736B5E940}</Guid>
+            <ResourceFilePath>%systemroot%\System32\MsSpellCheckingFacility.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\System32\MsSpellCheckingFacility.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=MsSpellCheckingFacility.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft Windows Spell Checking Facility Analytic Channel</Message>
+                    <Path>Microsoft-Windows-Spell-Checking/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>2</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Spell checking</Message>
+                    <Name>CheckSpelling</Name>
+                    <Guid>{B6BEF42B-28A1-4D65-AE0D-58AA8F9ADF9A}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Get Suggestions</Message>
+                    <Name>GetSuggestions</Name>
+                    <Guid>{90F63E96-7E9C-465E-B006-9822383B726E}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Modify Wordlist</Message>
+                    <Name>ModifyWordlist</Name>
+                    <Guid>{5B8B3F07-13E4-49F3-8658-11A0DE63CC01}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Options</Message>
+                    <Name>Options</Name>
+                    <Guid>{FC405B36-C615-4E55-9C85-063A8990B18D}</Guid>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Send</Message>
+                    <Name>win:Send</Name>
+                    <Value>9</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Receive</Message>
+                    <Name>win:Receive</Name>
+                    <Value>240</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Re-initialise Provider]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+Initialise wordlist request sent to provider ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WordlistType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+Initialise wordlist request returned from provider ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WordlistType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+Check request sent to provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+Check request returned from provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Get Suggestions</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+CreateSpellChecker request sent to provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Get Suggestions</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+CreateSpellChecker request received from provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Get Suggestions</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+Suggest request sent to provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Get Suggestions</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+Suggest request receive from provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+EnumSpellingErrorDecorator Next Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+EnumSpellingErrorDecorator Next Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+SupportedLanguages request sent to provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+SupportedLanguages request received from provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+Initialise Provider start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+Initialise Provider complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+File %1 is not Unicode (UTF-16LE). It has been moved to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Second" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+File %1 is not Unicode (UTF-16LE). Unable to rename it. This will block spell checkers from using wordlists in this directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1 is not a directory. Please remove or rename it.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to create directory %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Attempt to initialise %1 wordlist in %2 spell checker failed. This could be due to a bug with the spell checker. The spell checker will remain available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="wordlist" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="languageTag" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Options</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+Get option value request sent to provider]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Options</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+Get option value request received from provider]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+Initialise wordlist from files request sent to provider ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WordlistType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+Initialise wordlist from files request returned from provider ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WordlistType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+Initiated URI Check]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+Finished URI Check]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to launch the watcher thread for changes in user wordlists and spell checking options: %1. Spell checking will remain available, but no changes will be reported.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to watch for user wordlist changes: %1. Spell checking will remain available, but no changes will be reported.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to watch for spell checking option changes: %1. Spell checking will remain available, but no changes will be reported.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Spell checking provider returned error indexes out of the string boundaries. This indicates that the provider either has a bug or that it is malicious.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to update %1 user custom wordlist: %2. Spell checking will remain available, but this user wordlist will not be updated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="wordlist" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+ComprehensiveCheck request sent to provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spell Checking Facility Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Spell checking</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+ComprehensiveCheck request returned from provider ]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to add "%1" to the text prediction language model. Language tag - %2, HRESULT - %3. The word has still been added to the spell checker custom dictionary.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Second" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

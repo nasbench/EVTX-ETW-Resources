@@ -1,0 +1,1845 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-Worker</Name>
+        <Metadata>
+            <Guid>{51DDFA29-D5C8-4803-BE4B-2ECB715570FE}</Guid>
+            <ResourceFilePath>%systemroot%\system32\vmwpevents.dll</ResourceFilePath>
+            <ParameterFilePath>%systemroot%\system32\wbem\wmiutils.dll;%systemroot%\system32\ntdll.dll</ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\vmwpevents.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=vmwpevents.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Hyper-V-Worker</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Hyper-V-Worker-VDev-Analytic</Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-VDev-Analytic</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Initialize Virtual Machine</Message>
+                    <Name>VMT_WORKER_INITIALIZE</Name>
+                    <Value>256</Value>
+                </Task>
+                <Task>
+                    <Message>Start Virtual Machine</Message>
+                    <Name>VMT_WORKER_START</Name>
+                    <Value>257</Value>
+                </Task>
+                <Task>
+                    <Message>Shutdown Virtual Machine</Message>
+                    <Name>VMT_WORKER_SHUTDOWN</Name>
+                    <Value>258</Value>
+                </Task>
+                <Task>
+                    <Message>Save Virtual Machine</Message>
+                    <Name>VMT_WORKER_SAVE</Name>
+                    <Value>259</Value>
+                </Task>
+                <Task>
+                    <Message>Restore Virtual Machine</Message>
+                    <Name>VMT_WORKER_RESTORE</Name>
+                    <Value>260</Value>
+                </Task>
+                <Task>
+                    <Message>Pause Virtual Machine</Message>
+                    <Name>VMT_WORKER_PAUSE</Name>
+                    <Value>261</Value>
+                </Task>
+                <Task>
+                    <Message>Resume Virtual Machine</Message>
+                    <Name>VMT_WORKER_RESUME</Name>
+                    <Value>262</Value>
+                </Task>
+                <Task>
+                    <Message>Checkpoint Virtual Machine</Message>
+                    <Name>VMT_WORKER_SNAPSHOT</Name>
+                    <Value>263</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine</Message>
+                    <Name>VMT_WORKER_MIGRATE</Name>
+                    <Value>264</Value>
+                </Task>
+                <Task>
+                    <Message>Reset Virtual Machine</Message>
+                    <Name>VMT_WORKER_RESET</Name>
+                    <Value>265</Value>
+                </Task>
+                <Task>
+                    <Message>Enumerate Virtual Machine Devices</Message>
+                    <Name>VMT_WORKER_ENUMERATE_DEVICES</Name>
+                    <Value>266</Value>
+                </Task>
+                <Task>
+                    <Message>Get Virtual Machine Device</Message>
+                    <Name>VMT_WORKER_GET_DEVICE</Name>
+                    <Value>267</Value>
+                </Task>
+                <Task>
+                    <Message>Remove Virtual Machine Device</Message>
+                    <Name>VMT_WORKER_REMOVE_DEVICE</Name>
+                    <Value>268</Value>
+                </Task>
+                <Task>
+                    <Message>Get Virtual Machine Property</Message>
+                    <Name>VMT_WORKER_GET_PROPERTY</Name>
+                    <Value>269</Value>
+                </Task>
+                <Task>
+                    <Message>Set Virtual Machine Property</Message>
+                    <Name>VMT_WORKER_SET_PROPERTY</Name>
+                    <Value>270</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE</Name>
+                    <Value>512</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Setup phase (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_SETUP</Name>
+                    <Value>513</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Save preflight information (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_SETUP_SAVE_PREFLIGHT</Name>
+                    <Value>514</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Memory transfer phase (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MEM_TRANSFER</Name>
+                    <Value>515</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Memory transfer pass (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MEM_TRANSFER_PASS</Name>
+                    <Value>516</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Virtual Machine move phase (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE</Name>
+                    <Value>517</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Save Virtual Machine state (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_SAVE_STATE</Name>
+                    <Value>518</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Power off devices (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_POWER_OFF</Name>
+                    <Value>519</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Transfer Virtual Machine state (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_SEND_STATE</Name>
+                    <Value>520</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Final memory transfer pass (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_SEND_MEM</Name>
+                    <Value>521</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Wait for target restore (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_TARGET_RESTORE</Name>
+                    <Value>522</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Disable device optimizations (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_DISABLE_OPTIMIZATIONS</Name>
+                    <Value>523</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Pause VM (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_PAUSE_VM</Name>
+                    <Value>524</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Verify checksums (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_CHECKSUM</Name>
+                    <Value>525</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Wait for target setup (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_TARGET_SETUP</Name>
+                    <Value>526</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Notifying devices of imminent blackout (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_VDEV_NOTIFY_BLACKOUT</Name>
+                    <Value>527</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET</Name>
+                    <Value>768</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Setup phase (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_SETUP</Name>
+                    <Value>769</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Memory transfer phase (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MEM_TRANSFER</Name>
+                    <Value>770</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Virtual Machine move phase (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE</Name>
+                    <Value>771</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Receive Virtual Machine state (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_RECEIVE_STATE</Name>
+                    <Value>772</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Receive Virtual Machine memory (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_RECEIVE_MEM</Name>
+                    <Value>773</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Wait for Virtual Machine ownership (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_WAIT_OWNER</Name>
+                    <Value>774</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Restore VMB (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_RESTORE_VMB</Name>
+                    <Value>775</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Restore partition state (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_RESTORE_PARTITION</Name>
+                    <Value>776</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Prepare VM restore (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_PREPARE_RESTORE</Name>
+                    <Value>777</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Resume VM (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_RESUME_VM</Name>
+                    <Value>778</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Receive preflight state (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_SETUP_RECEIVE_PREFLIGHT</Name>
+                    <Value>779</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Construct guest memory (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_SETUP_CONSTRUCT_RAM</Name>
+                    <Value>780</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Reserve device resources (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_SETUP_RESERVE_RESOURCES</Name>
+                    <Value>781</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Verify Checksums (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_CHECKSUMS</Name>
+                    <Value>782</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Restore metrics (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_MOVE_RESTORE_METRICS</Name>
+                    <Value>783</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Restore VMB (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_RESTORE_VMB</Name>
+                    <Value>784</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Resume VM (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_RESUME_VM</Name>
+                    <Value>785</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Waiting for final state transition</Message>
+                    <Name>VMT_MIGRATION_FINAL_STATE_TRANSITION</Name>
+                    <Value>786</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Restore configuration (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_RESTORE_CONFIG</Name>
+                    <Value>787</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Restore runtime state (source node)</Message>
+                    <Name>VMT_MIGRATION_SOURCE_MOVE_RESTORE_RUNTIME_STATE</Name>
+                    <Value>788</Value>
+                </Task>
+                <Task>
+                    <Message>Device power on</Message>
+                    <Name>VMT_VDEV_POWER_ON_COLD</Name>
+                    <Value>1024</Value>
+                </Task>
+                <Task>
+                    <Message>Device restore</Message>
+                    <Name>VMT_VDEV_POWER_ON_RESTORE</Name>
+                    <Value>1025</Value>
+                </Task>
+                <Task>
+                    <Message>Device power off</Message>
+                    <Name>VMT_VDEV_POWER_OFF</Name>
+                    <Value>1026</Value>
+                </Task>
+                <Task>
+                    <Message>Device save state</Message>
+                    <Name>VMT_VDEV_SAVE</Name>
+                    <Value>1027</Value>
+                </Task>
+                <Task>
+                    <Message>Device pause</Message>
+                    <Name>VMT_VDEV_PAUSE</Name>
+                    <Value>1028</Value>
+                </Task>
+                <Task>
+                    <Message>Device resume</Message>
+                    <Name>VMT_VDEV_RESUME</Name>
+                    <Value>1029</Value>
+                </Task>
+                <Task>
+                    <Message>Device start reserving resources</Message>
+                    <Name>VMT_VDEV_START_RESERVING_RESOURCES</Name>
+                    <Value>1030</Value>
+                </Task>
+                <Task>
+                    <Message>Device finish reserving resources</Message>
+                    <Name>VMT_VDEV_FINISH_RESERVING_RESOURCES</Name>
+                    <Value>1031</Value>
+                </Task>
+                <Task>
+                    <Message>Device free reserved resources</Message>
+                    <Name>VMT_VDEV_FREE_RESERVED_RESOURCES</Name>
+                    <Value>1039</Value>
+                </Task>
+                <Task>
+                    <Message>Device save reserved resources</Message>
+                    <Name>VMT_VDEV_SAVE_RESERVED_RESOURCES</Name>
+                    <Value>1040</Value>
+                </Task>
+                <Task>
+                    <Message>Device enable optimizations</Message>
+                    <Name>VMT_VDEV_ENABLE_OPTIMIZATIONS</Name>
+                    <Value>1041</Value>
+                </Task>
+                <Task>
+                    <Message>Device start disable optimizations</Message>
+                    <Name>VMT_VDEV_START_DISABLE_OPTIMIZATIONS</Name>
+                    <Value>1042</Value>
+                </Task>
+                <Task>
+                    <Message>Device finish disable optimizations</Message>
+                    <Name>VMT_VDEV_FINISH_DISABLE_OPTIMIZATIONS</Name>
+                    <Value>1043</Value>
+                </Task>
+                <Task>
+                    <Message>Device teardown</Message>
+                    <Name>VMT_VDEV_TEARDOWN</Name>
+                    <Value>1044</Value>
+                </Task>
+                <Task>
+                    <Message>Device save compatibility info</Message>
+                    <Name>VMT_VDEV_SAVE_COMPATIBILITY_INFO</Name>
+                    <Value>1045</Value>
+                </Task>
+                <Task>
+                    <Message>Device reconnect to resource pools</Message>
+                    <Name>VMT_VDEV_RECONNECT_TO_RESOURCE_POOLS</Name>
+                    <Value>1046</Value>
+                </Task>
+                <Task>
+                    <Message>Device notify migration progress</Message>
+                    <Name>VMT_VDEV_NOTIFY_MIGRATION_PROGRESS</Name>
+                    <Value>1047</Value>
+                </Task>
+                <Task>
+                    <Message>Device query migration status</Message>
+                    <Name>VMT_VDEV_QUERY_MIGRATION_STATUS</Name>
+                    <Value>1048</Value>
+                </Task>
+                <Task>
+                    <Message>Device post reset</Message>
+                    <Name>VMT_VDEV_POST_RESET</Name>
+                    <Value>1052</Value>
+                </Task>
+                <Task>
+                    <Message>Device reset</Message>
+                    <Name>VMT_VDEV_RESET</Name>
+                    <Value>1053</Value>
+                </Task>
+                <Task>
+                    <Message>Migrate Virtual Machine - Restore worker process (target node)</Message>
+                    <Name>VMT_MIGRATION_TARGET_RESTORE_WORKER</Name>
+                    <Value>1054</Value>
+                </Task>
+                <Task>
+                    <Message>Device prepare for migration memory transfer</Message>
+                    <Name>VMT_VDEV_PREPARE_FOR_MIGRATION_MEMORY_TRANSFER</Name>
+                    <Value>1055</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Hyper-V performance traces (outer operations)</Message>
+                    <Name>VMK_HYPERV_PERF_OUTER</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces (inner operations)</Message>
+                    <Name>VMK_HYPERV_PERF_INNER</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces (verbose)</Message>
+                    <Name>VMK_HYPERV_PERF_VERBOSE</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces</Message>
+                    <Name>VMK_HYPERV_PERF</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1530</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1540</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1550</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1560</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1570</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1580</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1590</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1600</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1610</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1620</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1630</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1640</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1650</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1660</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1670</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1680</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1690</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1700</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1710</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1720</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1730</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1740</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1750</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1760</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1770</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1780</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1790</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1800</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1810</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1820</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1830</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1840</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1850</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2080</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-VDev-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' failed a save operation: %3 (%4). (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' failed a save operation: %3 (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A save operation was cancelled for the virtual machine '%1'. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A save operation was cancelled for the virtual machine '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' is unable to allocate %3 MB of RAM: %4 (%5). (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RamSizeInMb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to allocate %3 MB of RAM: %4 (%5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RamSizeInMb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not initialize. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not initialize.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not reinitialize. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not reinitialize.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' Smart Paging was enabled. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3049</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' Smart Paging was disabled. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not initialize memory: %3 (%4). (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Could not initialize memory: %3 (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not setup Smart Paging: %3 (%4). (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to setup Smart Paging: %3 (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' successfully allocated memory, but a subset of the physical pages was allocated on a remote non-uniform memory architecture (NUMA) node. This configuration is not recommended because it will reduce performance. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Successfully allocated memory, but a subset of the physical pages was allocated on a remote non-uniform memory architecture (NUMA) node. This configuration is not recommended because it will reduce performance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3056</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' is configured to have a different non-uniform memory architecture (NUMA) topology to that of the physical machine. Some virtual processors are accessing memory on a remote NUMA node. This configuration is not recommended because it will reduce performance. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3058</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Virtual machine '%1' failed to recommit poisoned page: %3 (%4). (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3059</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to recommit poisoned page: %3 (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3062</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Virtual Machine Worker Process initialization has timed out, and will terminate.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3063</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Virtual Machine Worker Process initialization has timed out, and will terminate.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3064</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The requested operation has failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The requested operation has failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3070</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not read or update virtual machine configuration: %3 (%4). (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3071</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to read or update virtual machine configuration failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3072</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not read or update the virtual machine configuration because access was denied: %3 (%4). Check the security settings on the folder in which the virtual machine is stored. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3073</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to read or update the virtual machine configuration failed because access was denied.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3074</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' does not support this version of the configuration data. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3075</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The version of the configuration data is not supported.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not create or access saved state file %3. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemoryFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to initialize VM saved state failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

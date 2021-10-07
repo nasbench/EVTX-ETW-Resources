@@ -1,0 +1,180 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WDAG-PolicyEvaluator-CSP</Name>
+        <Metadata>
+            <Guid>{64A98C25-9E00-404E-84AD-6700DFE02529}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\hvsievaluator.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\hvsievaluator.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=hvsievaluator.exe&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>WDAG Policy Evaluator CSP Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-WDAG-PolicyEvaluator-CSP/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Microsoft Defender Application Guard CSP: Failed to set one or more settings : %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Microsoft Defender Application Guard CSP: delete value failed:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Microsoft Defender Application Guard CSP: Feature Installation action failed because of missing dependency]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>350</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to start container service when Hvsi is turned on: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>351</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to merge policy to CSP current hive: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>352</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+At least one mandatory network isolation policy must be set, please configure: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MissingPolicy" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>353</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to send alert message back to MDM server: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>354</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to update WDAG status]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>355</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The system does not meet the minimal requirement: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MissingPolicy" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>356</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ %1 %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SecondMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>357</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to update WDAG Platform status]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

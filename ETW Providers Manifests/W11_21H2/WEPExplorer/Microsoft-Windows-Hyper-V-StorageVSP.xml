@@ -1,0 +1,288 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-StorageVSP</Name>
+        <Metadata>
+            <Guid>{10B3D268-9782-49A4-AACC-A93C5482CB6F}</Guid>
+            <ResourceFilePath>%systemroot%\system32\drivers\storvsp.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\drivers\storvsp.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=storvsp.sys&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Hyper-V-StorageVSP</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Message>
+                    <Path>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-StorageVSP-Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>StorVSP SCSI operation trace.</Message>
+                    <Name>SCSI_OP</Name>
+                    <Guid>{86F7CD15-7728-4189-AB5F-97F02B218C34}</Guid>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>SCSI operation completed.</Message>
+                    <Name>SCSI_OP_COMPLETED</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>QoS limit hit.</Message>
+                    <Name>QOS_LIMIT_HIT</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>SCSI operation completed.</Message>
+                    <Name>SCSI_OP_COMPLETED</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>QoS limit hit.</Message>
+                    <Name>QOS_LIMIT_HIT</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>MulticastTrace</Message>
+                    <Name>MULTICAST_TRACE</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Cannot load storage device in '%1' because the version is incompatible with the version expected by the server.  Server version %3 Client version %4 (Virtual machine ID %2). To fix this problem, you must upgrade the integration services.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdapterId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Storage device '%1' received a recovery status notification. Current device state = %2, Last status = %3, New status = %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Storage device '%1' changed recovery state. Previous state = %2, New state = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Storage device '%1' received an IO failure with error = %2. Current device state = %3, New state = %4, Current status = %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to map guest I/O buffer for read access with status %2. Device name = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to map guest I/O buffer for write access with status %2. Device name = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+An I/O request for device '%1' took %5 milliseconds to complete. Operation code = %2, Data transfer length = %3, Status = %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Command" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataTransferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>StorVSP SCSI operation trace.</Task>
+                <Opcode>SCSI operation completed.</Opcode>
+                <Keyword>SCSI operation completed.</Keyword>
+                <Message><![CDATA[
+Completing a SCSI operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Command" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataTransferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueTimeUSec" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ServiceTimeUSec" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ChannelUniqueId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LunSrbQueueTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>StorVSP SCSI operation trace.</Task>
+                <Opcode>QoS limit hit.</Opcode>
+                <Keyword>QoS limit hit.</Keyword>
+                <Message><![CDATA[
+QoS limit reached while initiating a SCSI operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>MulticastTrace</Keyword>
+                <Message><![CDATA[
+[%1:%2] %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Analytic</Channel>
+                <Level>Warning</Level>
+                <Keyword>MulticastTrace</Keyword>
+                <Message><![CDATA[
+[%1:%2] %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-StorageVSP-Analytic</Channel>
+                <Level>Error</Level>
+                <Keyword>MulticastTrace</Keyword>
+                <Message><![CDATA[
+[%1:%2] %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,710 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-DynMem</Name>
+        <Metadata>
+            <Guid>{B1D080A6-F3A5-42F6-B6F1-B9FD86C088DA}</Guid>
+            <ResourceFilePath>%systemroot%\system32\vmdynmem.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\vmdynmem.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=vmdynmem.dll&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Hyper-V-DynMem</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Dynamic memory - reserve memory</Message>
+                    <Name>VMT_DM_OPERATION_MEMORY_RESERVE</Name>
+                    <Value>1032</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - commit memory</Message>
+                    <Name>VMT_DM_OPERATION_MEMORY_COMMIT</Name>
+                    <Value>1033</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - de-commit memory</Message>
+                    <Name>VMT_DM_OPERATION_MEMORY_DECOMMIT</Name>
+                    <Value>1034</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - hot add</Message>
+                    <Name>VMT_DM_OPERATION_GUEST_HOTADD</Name>
+                    <Value>1035</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - un-balloon</Message>
+                    <Name>VMT_DM_OPERATION_GUEST_UNBALLOON</Name>
+                    <Value>1036</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - balloon</Message>
+                    <Name>VMT_DM_OPERATION_GUEST_BALLOON</Name>
+                    <Value>1037</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - hot add undo</Message>
+                    <Name>VMT_DM_OPERATION_HOTADDUNDO</Name>
+                    <Value>1038</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - release</Message>
+                    <Name>VMT_DM_OPERATION_MEMORY_RELEASE</Name>
+                    <Value>1049</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - back pages</Message>
+                    <Name>VMT_DM_OPERATION_BACK_PAGES</Name>
+                    <Value>1050</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic memory - greedy balloooning</Message>
+                    <Name>VMT_DM_OPERATION_GUEST_GREEDY_BALLOON</Name>
+                    <Value>1051</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Hyper-V performance traces (outer operations)</Message>
+                    <Name>VMK_HYPERV_PERF_OUTER</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces (inner operations)</Message>
+                    <Name>VMK_HYPERV_PERF_INNER</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces (verbose)</Message>
+                    <Name>VMK_HYPERV_PERF_VERBOSE</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces</Message>
+                    <Name>VMK_HYPERV_PERF</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1530</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12540</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+'%1' device %3 experienced a protocol error indicative of a deep system problem. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12541</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+Device %3 experienced a protocol error indicative of a deep system problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12542</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+VM '%1' (Virtual machine ID %2) is misconfigured with more physical RAM pages than it can access. Numer of inaccessible pages: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InaccessiblePages" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12543</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+VM '%1' (Virtual machine ID %2) is misconfigured.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InaccessiblePages" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12544</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+'%1' device %3 found bad data on restoring. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12545</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+Device %3 found bad data on restoring.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12546</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+VM '%1' (Virtual machine ID %2) is misconfigured to allow guest hibernation along with dynamic memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12547</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+VM '%1' (Virtual machine ID %2) is misconfigured to allow guest hibernation along with dynamic memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - reserve memory</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started reserving memory. Reserving %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - reserve memory</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation reserve memory completed, %3 pages were reserved, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - commit memory</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started committing memory. Committing %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - commit memory</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation committing memory completed, %3 pages were committed, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - de-commit memory</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started de-committing memory. De-committing %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - de-commit memory</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation de-committing memory completed, %3 pages were de-committed, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - hot add</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started hot adding memory (GUEST). Hot adding %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - hot add</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation hot adding memory completed (GUEST), %3 pages were hot added, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - un-balloon</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started un-ballooning memory (GUEST). Un-ballooning %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - un-balloon</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation un-ballooning memory completed (GUEST), %3 pages were un-ballooned, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - balloon</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started ballooning memory (GUEST). Ballooning %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - balloon</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation ballooning memory completed (GUEST), %3 pages were ballooned, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - hot add undo</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started hot add undo memory. Undoing %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - hot add undo</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation hot add undo memory completed, %3 pages were processed, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - release</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started releasing memory. Releasing %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - release</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation release memory completed, %3 pages were released, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - back pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started backing pages. Backing %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - back pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation backing pages completed, %3 pages were backed, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - greedy balloooning</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started greedy ballooning memory (GUEST). Ballooning %2 pages. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Dynamic memory - greedy balloooning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Operation greedy ballooning memory completed (GUEST), %3 pages were ballooned, time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

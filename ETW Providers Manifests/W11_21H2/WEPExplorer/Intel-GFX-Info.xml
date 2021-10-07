@@ -1,0 +1,119 @@
+<Providers>
+    <Provider>
+        <Name>Intel-GFX-Info</Name>
+        <Metadata>
+            <Guid>{F70D4BE7-78E4-4EDF-91A9-0C1341D500DB}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_62c6fb4131da3aee\igdinfo64.dll</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_62c6fb4131da3aee\igdinfo64.dll</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_62c6fb4131da3aee\igdinfo64.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Intel-GFX-Info/Application</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Intel-GFX-Info/System</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8086</Id>
+                <Version>0</Version>
+                <Channel>Intel-GFX-Info/Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Graphics UMD Driver info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ver" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Info" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8087</Id>
+                <Version>0</Version>
+                <Channel>Intel-GFX-Info/Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Graphics UMD Driver info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ver" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="IId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Info" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8088</Id>
+                <Version>0</Version>
+                <Channel>Intel-GFX-Info/System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Graphics KMD Driver info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ver" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Info" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8089</Id>
+                <Version>0</Version>
+                <Channel>Intel-GFX-Info/System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Graphics KMD Driver info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ver" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="IId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Info" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

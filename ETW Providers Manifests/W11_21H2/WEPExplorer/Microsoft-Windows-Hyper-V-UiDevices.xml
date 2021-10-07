@@ -1,0 +1,623 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-UiDevices</Name>
+        <Metadata>
+            <Guid>{339AAD0A-4124-4968-8147-4CBBB1F8B3D5}</Guid>
+            <ResourceFilePath>%systemroot%\system32\VmUiDevices.dll</ResourceFilePath>
+            <ParameterFilePath>%systemroot%\system32\wbem\wmiutils.dll</ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\VmUiDevices.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=VmUiDevices.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Hyper-V-Ui-Devices</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1530</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[Virtual machine %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12460</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' could not initialize machine remoting system. Error: '%3'(%4). (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12461</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Could not initialize machine remoting system. Error: '%3' (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12480</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' failure in machine remoting system. Error: '%3' (%4). (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12481</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failure in machine remoting system. Error: '%3' (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12530</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+'%1' device %3 could not allocate guest physical address space. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12531</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+Device %3 could not allocate guest physical address space.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12540</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+'%1' device %3 experienced a protocol error indicative of a deep system problem. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12541</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+Device %3 experienced a protocol error indicative of a deep system problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12550</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+'%1' device %3 found bad data on restoring. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12551</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Device %3 found bad data on restoring.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32700</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %3 device on %1 virtual machine experienced an error %5 when sending a VMBus message. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContextParam1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32701</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %3 device on %1 virtual machine experienced an error %5 when processing an incoming message. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContextParam1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32702</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %3 device on %1 virtual machine experienced an error %5 when completing an outgoing message. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContextParam1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32703</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %3 device on %1 virtual machine experienced a VMBus pipe error %5. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContextParam1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32704</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %3 device on %1 virtual machine experienced an error %5 when processing a cursor shape update message. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContextParam1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32705</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %3 device on %1 virtual machine experienced an error %5 when processing a dirty region message. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContextParam1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32706</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The horizontal resolution is below the minimum value of 100.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32707</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The horizontal resolution is above the maximum value of 7680.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32708</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The horizontal resolution must be an even number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32709</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The vertical resolution is below the minimum value of 100.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32710</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The vertical resolution is above the maximum value of 7680.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32711</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The vertical resolution must be an even number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32712</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+At least one of horizontal and vertical resolutions must be equal to or larger than 640.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32713</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+At least one of horizontal and vertical resolutions must be equal to or smaller than 4320.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32714</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The resolution type must be Maximum (2), Single (3) or Default (4). Please run 'Get-Help Set-VMVideo -Detailed' for details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32715</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %1 virtual machine must be turned off when setting resolution type, horizontal resolution or vertical resolution. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32716</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The configuration version of %1 virtual machine does not support setting resolution type, horizontal resolution or vertical resolution. (Virtual machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32717</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The configuration version of the virtual machine does not support setting the property LockOnDisconnect to non-default value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32718</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+HorizontalResolution or VerticalResolution cannot be set when ResolutionType is Default.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32719</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The virtual machine %1 cannot load device %3 because there are no mutually supported protocol versions. The server version is %4 and the client version is %5 (Virtual machine ID %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32720</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The device %3 cannot be loaded because there are no mutually support protocol versions between the server and client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,204 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RPC-Events</Name>
+        <Metadata>
+            <Guid>{F4AED7C7-A898-4627-B053-44A7CAA12FCD}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\rpcrt4.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\rpcrt4.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=rpcrt4.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RPC</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>RPC Error</Message>
+                    <Name>RPC_EVENTLOG_ERROR_CATEGORY</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this: "An RPC method using synchronous pipes has been called on on protocol sequence %3 interface with unique identifier %4. Usage and support of synchronous pipes on this protocol sequence has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415."  User Action Contact the application vendor for updated version of the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RPC ProtocolSequence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this: "An RPC method using synchronous pipes has been called on on protocol sequence %3 interface with unique identifier %4. Usage and support of synchronous pipes has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415."  User Action Contact the application vendor for updated version of the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RPC ProtocolSequence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this: "An RPC method using the name service has been called. Usage and support for the RPC name service has been deprecated for this release of Windows.  For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415."  User Action Contact the application vendor for updated version of the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this: "An RPC method using pipes has been called on on protocol sequence %3 interface with unique identifier %4. Usage and support of pipes on this protocol sequence has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415."  User Action Contact the application vendor for updated version of the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RPC ProtocolSequence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this:  "An RPC method has been called on a connectionless protocol sequence %3. Usage and support of this protocol sequence has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415."  User Action Contact the application vendor for updated version of the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RPC ProtocolSequence" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) is using Windows functionality that is not present in this release of Windows. For obtaining an updated version of the application, please, contact the application vendor. The technical information that needs to be conveyed to the application vendor is this:  "An RPC method has been called on a connectionless protocol sequence %3 and interface with unique identifier %4. Usage and support of this protocol sequence has been deprecated for this release of Windows. For information on the deprecation process, please, see http://go.microsoft.com/fwlink/?LinkId=36415."  User Action Contact the application vendor for updated version of the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RPC ProtocolSequence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) has failed to add endpoint %3:%4 for interface with unique identifier %5 with error %6.  User Action Verify that the machine has sufficient memory.  Verify that no other process is listening on the endpoint.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RPC ProtocolSequence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RPC Endpoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RPC Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) has failed to complete a COM/RPC call because of an invalid message from server.  User Action Try the operation again. If the problem persists, contact your system administrator.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Application (%1) (PID: %2) has failed to complete a COM call because an incorrect interface ID was passed as a parameter.  The expected Interface ID was %3, and the Interface ID returned was %4.  User Action Contact the application vendor for updated version of the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExpectedInterfaceID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReceivedInterfaceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Possible Memory Leak.  Application (%1) (PID: %2) has passed a non-NULL pointer to RPC for an [out] parameter marked [allocate(all_nodes)].  [allocate(all_nodes)] parameters are always reallocated; if the original pointer contained the address of valid memory, that memory will be leaked.  The call originated on the interface with UUID (%3), Method number (%4).  User Action: Contact your application vendor for an updated version of the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Method" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

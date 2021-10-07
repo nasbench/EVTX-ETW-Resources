@@ -1,0 +1,654 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ParentalControls</Name>
+        <Metadata>
+            <Guid>{01090065-B467-4503-9B28-533766761087}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wpc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\wpc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=wpc.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-ParentalControls</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-ParentalControls/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>SettingChange</Message>
+                    <Name>SettingChange</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>GameStart</Message>
+                    <Name>GameStart</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>UrlVisit</Message>
+                    <Name>UrlVisit</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>EmailReceived</Message>
+                    <Name>EmailReceived</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>EmailSent</Message>
+                    <Name>EmailSent</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>MediaPlayback</Message>
+                    <Name>MediaPlayback</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>IMInvitation</Message>
+                    <Name>IMInvitation</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>IMJoin</Message>
+                    <Name>IMJoin</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>IMLeave</Message>
+                    <Name>IMLeave</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>FileDownload</Message>
+                    <Name>FileDownload</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>IMFeature</Message>
+                    <Name>IMFeature</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Custom</Message>
+                    <Name>Custom</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>EmailContact</Message>
+                    <Name>EmailContact</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>IMContact</Message>
+                    <Name>IMContact</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Application Blocked</Message>
+                    <Name>AppBlocked</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Application Override</Message>
+                    <Name>AppOverride</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>WebOverride</Message>
+                    <Name>WebOverride</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>WebsiteVisit</Message>
+                    <Name>WebsiteVisit</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>Application</Message>
+                    <Name>Application</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>ComputerUsage</Message>
+                    <Name>ComputerUsage</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>ContentUsage</Message>
+                    <Name>ContentUsage</Name>
+                    <Value>22</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Locate</Message>
+                    <Name>locate</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Modify</Message>
+                    <Name>modify</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Launch</Message>
+                    <Name>apprun</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>System</Message>
+                    <Name>system</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Web</Message>
+                    <Name>web</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>WPC</Message>
+                    <Name>WPC</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>ThirdParty</Message>
+                    <Name>ThirdParty</Name>
+                    <Value>32</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>SettingChange</Task>
+                <Opcode>Modify</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+A Setting changed inside the parental controls settings]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Setting" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AccountOwner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Optional" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>GameStart</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when a game is run]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Rating" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RatingsSystem" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DescriptorCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Descriptor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>UrlVisit</Task>
+                <Opcode>Web</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+Generated when a URL is visited]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RatingSystemID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CategoryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Category" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>EmailReceived</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when an email is received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Sender" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Subject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecipientCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Recipient" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AttachmentCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AttachmentName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReceivedTime" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+  <data name="EmailAccount" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>EmailSent</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when an email is sent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Sender" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Subject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecipientCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Recipient" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AttachmentCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AttachmentName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EmailAccount" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MediaPlayback</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when some media is played]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PML" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Album" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExplicitContent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>IMInvitation</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when an IM invitiation is sent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConversationID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestingIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Sender" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecipientCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Recipient" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>IMJoin</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when a user joins an IM conversation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConversationID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="JoiningIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="JoiningUser" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemberCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Sender" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>IMLeave</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when a user leaves an IM conversation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConversationID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LeavingIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LeavingUser" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemberCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>FileDownload</Task>
+                <Opcode>Web</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when a user downloads a file]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>IMFeature</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when one of the IM features is used, like web chat, audio]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConversationID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecipientCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Recipient" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Sender" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SenderIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Custom</Task>
+                <Opcode>System</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated by external applications that want to log parental control information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Publisher" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Blocked" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>EmailContact</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when an email contact is changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EmailAccount" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>IMContact</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC ThirdParty</Keyword>
+                <Message><![CDATA[
+Generated when an IM contact is changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Application Blocked</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+Generated when an application is blocked from running]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+  <data name="UserID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RuleID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Application Override</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+Generated when an application override is requested]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WebOverride</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+Generated when a URL override is requested]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WebsiteVisit</Task>
+                <Opcode>Web</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+Generated when a website is visited]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Decision" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Categories" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BlockedCategories" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerializedApplication" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Referrer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Telemetry" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Application</Task>
+                <Opcode>Launch</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+Generated when an application is started, stopped or blocked]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SerializedApplication" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="TimeUsed" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>ComputerUsage</Task>
+                <Opcode>System</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+Generated when the computer is used]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TimeUsed" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ParentalControls/Operational</Channel>
+                <Level>Information</Level>
+                <Task>ContentUsage</Task>
+                <Opcode>System</Opcode>
+                <Keyword>WPC</Keyword>
+                <Message><![CDATA[
+Generated when content is used or blocked]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContentProviderId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentProviderTitle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Ratings" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Decision" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

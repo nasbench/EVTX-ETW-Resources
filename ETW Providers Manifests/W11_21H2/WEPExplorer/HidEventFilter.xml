@@ -1,0 +1,316 @@
+<Providers>
+    <Provider>
+        <Name>HidEventFilter</Name>
+        <Metadata>
+            <Guid>{DDE50426-FA77-4088-8E0C-F2F553FB6843}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\DriverStore\FileRepository\hideventfilter.inf_amd64_33c465cf6f5e81fb\HidEventFilter.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\DriverStore\FileRepository\hideventfilter.inf_amd64_33c465cf6f5e81fb\HidEventFilter.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Default</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IRP</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Power</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PlugnPlay</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ApiTrace</Name>
+                    <Value>16</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+INFO: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>1</Version>
+                <Level>Warning</Level>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+WARNING: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>1</Version>
+                <Level>Error</Level>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+ERROR: %1. Status=%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>1</Version>
+                <Level>Verbose</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Default ApiTrace</Keyword>
+                <Message><![CDATA[
+Entering function %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>1</Version>
+                <Level>Verbose</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Default ApiTrace</Keyword>
+                <Message><![CDATA[
+Leaving function %1 with Status=%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Default PlugnPlay</Keyword>
+                <Message><![CDATA[
+Processing CreateDevice with Device=0x%1, DeviceInit=0x%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceInit" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Default PlugnPlay</Keyword>
+                <Message><![CDATA[
+End processing DeviceAdd with Status=0x%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Default Power</Keyword>
+                <Message><![CDATA[
+Start processing D0Entry with Device=0x%1, PreviousState=%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PreviousState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Default Power</Keyword>
+                <Message><![CDATA[
+End processing D0Entry with Status=0x%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Default Power</Keyword>
+                <Message><![CDATA[
+Start processing D0Exit with Device=0x%1, TargetState=%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Default Power</Keyword>
+                <Message><![CDATA[
+End processing D0Exit with Status=0x%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+Feature Data Message=0x%1 Value=0x%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeatureDataValue" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+Acpi Notification Message=0x%1 AcpiNotifyvalue=0x%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AcpiNotificationValue" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+Indicator Status Message=0x%1 IndicatorStatus=0x%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IndicatorsStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>127</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Default IRP</Keyword>
+                <Message><![CDATA[
+Start processing Internal IO request with Request=0x%1, Queue=0x%2, OutputBufferLength=%3, InputBufferLength=%4, IOCTL=0x%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Request" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Queue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OutputBufferLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="InputBufferLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IOCTL" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>128</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Default IRP</Keyword>
+                <Message><![CDATA[
+End processing Internal IO request with Request=0x%1, Status=0x%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Request" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

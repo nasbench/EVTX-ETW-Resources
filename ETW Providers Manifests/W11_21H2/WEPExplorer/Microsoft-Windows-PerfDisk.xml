@@ -1,0 +1,154 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PerfDisk</Name>
+        <Metadata>
+            <Guid>{7F9D83DE-8ABB-457F-98E8-4AD161449ECC}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\perfdisk.dll</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\system32\perfdisk.dll</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\perfdisk.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=perfdisk.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PerfDisk</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2147484648</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to open the Disk performance object. The first four bytes (DWORD) of the Data section of the event viewer contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to open the Disk performance object (Win32 error code %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The attempt to collect Disk Performance data failed because the DLL did not open successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to allocate a dynamic memory buffer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to allocate a dynamic memory buffer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Only one thread at a time can call the performance data collection function. A second thread attempted to call the collection function while it was in use by another thread.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Only one thread at a time can call the performance data collection function. A second thread attempted to call the collection function while it was in use by another thread.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485648</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to read the Logical Volume information. The first four bytes (DWORD) of the Data section of the event viewer contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to read the Logical Volume information (Win32 error code %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485649</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to read performance data for the Disk performance counters.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to read performance data for the Disk performance counters (Win32 error code %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

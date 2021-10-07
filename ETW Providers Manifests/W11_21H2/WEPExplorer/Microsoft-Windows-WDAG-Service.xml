@@ -1,0 +1,163 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WDAG-Service</Name>
+        <Metadata>
+            <Guid>{728B02D9-BF21-49F6-BE3F-91BC06F7467E}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\hvsicontainerservice.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\hvsicontainerservice.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=hvsicontainerservice.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>WDAG Service Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-WDAG-Service/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-WDAG-Service/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Container service failed to start hr:%1 Msg: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Container service failed to create the base image: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Container service failed to create the container: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Container service failed to start the container: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Container service failed to stop the container: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A Failure has occurred: HResult = %1, File = %2, LineNumber = %3, Function = %4, Message = %5, CallingContext = %6, Module = %7, Code = %8,]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallContext" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Module" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Code" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A Failure has occurred: HResult = %1, msg = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%2. Result is [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

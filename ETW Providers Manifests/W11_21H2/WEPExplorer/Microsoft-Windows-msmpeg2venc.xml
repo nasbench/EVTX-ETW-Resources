@@ -1,0 +1,307 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-msmpeg2venc</Name>
+        <Metadata>
+            <Guid>{D17B213A-C505-49C9-98CC-734253EF65D4}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\msmpeg2enc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\msmpeg2enc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=msmpeg2enc.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Events from the MPEG-2 Video Encoder MFT</Message>
+                    <Path>Microsoft-Windows-MPEG2-Video-Encoder-MFT_Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Configuration of the encoder</Message>
+                    <Name>EncoderConfig</Name>
+                    <Guid>{BA95B879-1377-4B6C-AC6B-578B70A6BE22}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Task done by the video encoder</Message>
+                    <Name>EncoderTask</Name>
+                    <Guid>{D94290DF-9A83-4393-BA3C-D434ABCEC890}</Guid>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Send</Message>
+                    <Name>win:Send</Name>
+                    <Value>9</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Receive</Message>
+                    <Name>win:Receive</Name>
+                    <Value>240</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Events dealing with the control of the encoder.</Message>
+                    <Name>Encoder_Control</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Events that deal with the processing of samples</Message>
+                    <Name>Sample_Processing</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SQM</Message>
+                    <Name>win:SQM</Name>
+                    <Value>2251799813685248</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Verbose</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Input sample (%2) to stream #%1 submitted to MPEG-2 Video Encoder through the MFT. Flags: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InputStreamID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="pSample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Verbose</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished submission of sample to encoder. HR=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Verbose</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Process event method called on MFT for Input Stream #%1 with event %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InputStreamID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="pEvent" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration of the encoder</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Processing of Event by the MFT has finished. HR=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Verbose</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Message %1 recieved by MFT through ProcessMessage with parameter %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Verbose</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished processing message given to MPEG-2 Video Encoder MFT. HR=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Information</Level>
+                <Task>Configuration of the encoder</Task>
+                <Message><![CDATA[
+Bitrate has been changed from %1 bps to %2 bps during the encoding process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OldBitrate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NewBitrate" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Verbose</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start of producing an output sample on the MPEG-2 Video Encoder MFT. Output Buffer Count: %2   Start of Output Buffer Array: %3   Pointer to Output Buffer Status Flag: %4   Output Buffer Flags passed in: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutputBufferCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="pOutputSamples" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pdwStatus" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Verbose</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished creating sample for output on the MPEG-2 Video Encoder MFT. HR=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Information</Level>
+                <Task>Task done by the video encoder</Task>
+                <Message><![CDATA[
+Mpeg-2 Video Encoder MFT is Signaling that an output sample (Location: %1, Length: %2) is ready]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pSample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cSampleLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Information</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+MPEG-2 Video Encoder is requesting for more input samples]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Information</Level>
+                <Task>Task done by the video encoder</Task>
+                <Opcode>Receive</Opcode>
+                <Message><![CDATA[
+The MPEG-2 Video Encoder MFT has received the input from the application and is passing it into the encoder. Sample: %1  Sample Byte Length: %2  Stop Encoding: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pSample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cSampleLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bEndOfEncoding" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Events from the MPEG-2 Video Encoder MFT</Channel>
+                <Level>Information</Level>
+                <Task>Configuration of the encoder</Task>
+                <Message><![CDATA[
+Encoder is being created with these settings:  Coding Mode: %1  Bitrate: %2 bps  Complexity: %3  Encoder Instance: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CodingMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Bitrate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Complexity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="pEncoder" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

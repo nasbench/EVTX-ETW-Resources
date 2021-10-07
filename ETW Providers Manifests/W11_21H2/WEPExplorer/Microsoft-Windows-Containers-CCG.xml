@@ -1,0 +1,205 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Containers-CCG</Name>
+        <Metadata>
+            <Guid>{45E7DBC5-E130-5CEF-9353-CC5EBF05E6C8}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\ccg.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\ccg.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=ccg.exe&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Containers-CCG</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Containers-CCG/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>CCG</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Plugin</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Success</Name>
+                    <Value>100</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Failed</Name>
+                    <Value>101</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Plugin</Task>
+                <Opcode>Success</Opcode>
+                <Message><![CDATA[
+Container Credential Guard instantiated the plugin: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Information</Level>
+                <Task>CCG</Task>
+                <Opcode>Success</Opcode>
+                <Message><![CDATA[
+Container Credential Guard fetched gmsa credentials for %1 using plugin: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Second" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Error</Level>
+                <Task>CCG</Task>
+                <Opcode>Failed</Opcode>
+                <Message><![CDATA[
+Container Credential Guard failed to parse the credential spec. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Plugin</Task>
+                <Opcode>Failed</Opcode>
+                <Message><![CDATA[
+Container Credential Guard failed to instantiate the plugin: %1. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Second" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Plugin</Task>
+                <Opcode>Failed</Opcode>
+                <Message><![CDATA[
+Container Credential Guard failed to initialize the plugin: %1. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Second" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Plugin</Task>
+                <Opcode>Failed</Opcode>
+                <Message><![CDATA[
+Container Credential Guard failed to fetch credentials from the plugin: %1. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Second" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Plugin</Task>
+                <Opcode>Success</Opcode>
+                <Message><![CDATA[
+Container Credential Guard is refetching the credentials using the plugin: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Error</Level>
+                <Task>CCG</Task>
+                <Opcode>Failed</Opcode>
+                <Message><![CDATA[
+Container Credential Guard failed to fetch gmsa credentials for %1 using plugin %2. Error reason: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Second" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Third" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-CCG/Admin</Channel>
+                <Level>Error</Level>
+                <Task>CCG</Task>
+                <Opcode>Failed</Opcode>
+                <Message><![CDATA[
+Container Credential Guard failed to parse the plugin GUID in the credential spec. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

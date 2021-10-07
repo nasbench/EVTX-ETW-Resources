@@ -1,0 +1,1098 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-SynthNic</Name>
+        <Metadata>
+            <Guid>{C29C4FB7-B60E-4FFF-9AF9-CF21F9B09A34}</Guid>
+            <ResourceFilePath>%systemroot%\system32\VmSynthNic.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\VmSynthNic.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=VmSynthNic.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Hyper-V-SynthNic</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-Worker-Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Virtual Function - Allocate</Message>
+                    <Name>VMT_VF_OPERATION_ALLOCATE</Name>
+                    <Value>1047</Value>
+                </Task>
+                <Task>
+                    <Message>Virtual Function - Free</Message>
+                    <Name>VMT_VF_OPERATION_FREE</Name>
+                    <Value>1048</Value>
+                </Task>
+                <Task>
+                    <Message>Virtual Function - Assign</Message>
+                    <Name>VMT_VF_OPERATION_ASSIGN</Name>
+                    <Value>1049</Value>
+                </Task>
+                <Task>
+                    <Message>Virtual Function - Unassign</Message>
+                    <Name>VMT_VF_OPERATION_UNASSIGN</Name>
+                    <Value>1050</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Hyper-V performance traces (outer operations)</Message>
+                    <Name>VMK_HYPERV_PERF_OUTER</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces (inner operations)</Message>
+                    <Name>VMK_HYPERV_PERF_INNER</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces (verbose)</Message>
+                    <Name>VMK_HYPERV_PERF_VERBOSE</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces</Message>
+                    <Name>VMK_HYPERV_PERF</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[VMID %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[VMID %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[VMID %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+[VMID %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12560</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' Static MAC address %5 for "%4" (%3) is invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MacAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12562</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' Static MAC address %5 for "%4" (%3) conflicts with another adapter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MacAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12564</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' No available MAC address for "%4".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12572</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' Dynamic MAC address for "%4" (%3) was not assigned.  The virtual machine will not have network connectivity until this problem is resolved. To assign a new MAC address, restart the virtual machine.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MacAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12580</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' Dynamic MAC address %5 for %4 (%3) is invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MacAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12581</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Dynamic MAC address %5 for %4 (%3) is invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MacAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12582</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) started successfully. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12583</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) started successfully. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12584</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) allocated a virtual function. (Virtual Function ID %5 LUID %6 Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12585</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) failed to allocate a virtual function: %7 (%8): IOV networking might be incompatible with other configured networking features. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12586</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) freed a virtual function. (Virtual Function ID %5 Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12587</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) failed to free a virtual function: %7 (%8) (Virtual Function ID %5 Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12588</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) assigned a virtual function. (Virtual Function ID %5 LUID %6) (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12589</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) failed to assign a virtual function: %7 (%8) (Virtual Function ID %5 LUID %6) (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12590</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) unassigned a virtual function. (Virtual Function ID %5 Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12597</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) Connected to virtual network. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12598</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) Disconnected from virtual network. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12603</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) Smart Paging now inactive. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12604</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) Smart Paging now active. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12605</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) is configured to use SR-IOV but that capability is not supported on this version of Windows. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12606</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) is configured to use SR-IOV but this system does not have an IOMMU or the IOMMU is currently disabled. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12607</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) is configured to use SR-IOV but that capability is disabled by policy on this machine. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12608</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) failed to allocate a virtual function because the switch to which the virtual NIC is connected to is not in SR-IOV mode. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12609</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) failed to allocate a virtual function because the physical NIC does not support SR-IOV. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12612</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) unassigning a virtual function because of an invalid DMA operation by the guest operating system. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12613</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) The number of queue pairs allocated to the virtual function (%5) were less than requested (%6). (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12614</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) The number of queue pairs to be allocated (%5) were limited because of the number of virtual processors (%6) for the VM. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VfId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PfLuid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12615</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The device naming setting only applies to synthetic network adapters on Generation 2 virtual machines with configuration version 6.2 or above. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12670</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' failed to allocate resources while connecting to a virtual network: %4 (%5) (Virtual Machine ID %2). The Ethernet switch may not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12671</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to allocate resources while connecting to a virtual network. The Ethernet switch may not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12680</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' The VirtualSystemIdentifier %2 for "%4" (%3) conflicts with another adapter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12692</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Bytes sent or received by '%1' is larger than what can fit inside of a 64-bit integer. Record and then reset the metric value in order to continue measuring the number of bytes send or received. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12693</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Bytes send or received is larger than what can fit inside of an unsigned 64-bit integer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12694</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) Pause failed. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12695</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) ShutDown failed. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12696</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) VMPhu Zero start sequence failed. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12697</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) VMPhu Zero start sequence succeeded. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12698</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) Save failed. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12699</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) PowerOn failed. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12700</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) Restore failed. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12701</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) Resume failed. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12702</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) VMPhu Zero complete sequence failed. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12703</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+'%1' %4 (%3) VMPhu Zero complete sequence succeeded. (Virtual Machine ID %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NicName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25400</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Virtual Function - Allocate</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started Allocating VF on Nic (Name: %2). (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25401</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Virtual Function - Allocate</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished Allocating VF (VFID: %4) on Nic (Name: %3), time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25402</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Virtual Function - Free</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started Deallocating VF (VFID: %3) on Nic (Name: %2). (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25403</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Virtual Function - Free</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished Deallocating VF (VFID: %4) on Nic (Name: %3), time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25410</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Virtual Function - Assign</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started Assigning VF (VFID: %3) on Nic (Name: %2). (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25411</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Virtual Function - Assign</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished Assigning VF (VFID: %4) on Nic (Name: %3), time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25412</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Virtual Function - Unassign</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started Unassigning VF (VFID: %3) on Nic (Name: %2). (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25413</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Virtual Function - Unassign</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished Unassigning VF (VFID: %4) on Nic (Name: %3), time %2 s. (Virtual machine ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-Worker-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Could not find an Ethernet connection resource pool with ID '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

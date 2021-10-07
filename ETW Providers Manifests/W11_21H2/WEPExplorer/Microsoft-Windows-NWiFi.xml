@@ -1,0 +1,2251 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NWiFi</Name>
+        <Metadata>
+            <Guid>{0BD3506A-9030-4F76-9B88-3E8FE1F7CFB6}</Guid>
+            <ResourceFilePath>%windir%\system32\drivers\nwifi.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\drivers\nwifi.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=nwifi.sys&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-NWiFi</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-NWiFi/Diagnostic</Message>
+                    <Path>Microsoft-Windows-NWiFi/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Init</Message>
+                    <Name>Init</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Ioctls</Message>
+                    <Name>Ioctls</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>RSNA</Message>
+                    <Name>RSNA</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>AuthUpcall</Message>
+                    <Name>AuthUpcall</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>IODisp</Message>
+                    <Name>IODisp</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>NDISReq</Message>
+                    <Name>NDISReq</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>TKIPSec</Message>
+                    <Name>TKIPSec</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Reset</Message>
+                    <Name>Reset</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>AssocMgr</Message>
+                    <Name>AssocMgr</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>LWF</Message>
+                    <Name>LWF</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Connect to same network on resume</Message>
+                    <Name>Perftrack-RoamOnResume</Name>
+                    <Value>24000</Value>
+                </Task>
+                <Task>
+                    <Message>Connect to network on resume after intervening disconnect</Message>
+                    <Name>Perftrack-ReconnectOnResume</Name>
+                    <Value>24001</Value>
+                </Task>
+                <Task>
+                    <Message>EnterLowPowerState</Message>
+                    <Name>EnterLowPowerState</Name>
+                    <Value>24002</Value>
+                </Task>
+                <Task>
+                    <Message>LeaveLowPowerState</Message>
+                    <Name>LeaveLowPowerState</Name>
+                    <Value>24003</Value>
+                </Task>
+                <Task>
+                    <Message>Starting device network at IM driver</Message>
+                    <Name>Perftrack-IMSoftAPStart</Name>
+                    <Value>24004</Value>
+                </Task>
+                <Task>
+                    <Message>Stopping device network at IM driver</Message>
+                    <Name>Perftrack-IMSoftAPStop</Name>
+                    <Value>24005</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start State</Message>
+                    <Name>ut:Start</Name>
+                    <Value>180</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>End State</Message>
+                    <Name>ut:End</Name>
+                    <Value>181</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Closed State</Message>
+                    <Name>ut:Closed</Name>
+                    <Value>182</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Open State</Message>
+                    <Name>ut:Open</Name>
+                    <Value>183</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Connect State</Message>
+                    <Name>ut:Connect</Name>
+                    <Value>184</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Listen State</Message>
+                    <Name>ut:Listen</Name>
+                    <Value>185</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Association State</Message>
+                    <Name>ut:Association</Name>
+                    <Value>186</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Authentication State</Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>187</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Established State</Message>
+                    <Name>ut:Established</Name>
+                    <Value>188</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Init</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Ioctls</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RSNA</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AuthUpcall</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IODisp</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>NDISReq</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>TKIPSec</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Reset</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AssocMgr</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>LWF</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SOFTAP</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PowerMgmt</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SleepResume</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>LwtDiagnostic</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DisconnectedStandby</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>TelemetryReserved28</Name>
+                    <Value>268435456</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Telemetry</Name>
+                    <Value>536870912</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Measures</Name>
+                    <Value>1073741824</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CriticalData</Name>
+                    <Value>2147483648</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:SendPath</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ReceivePath</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L3ConnectPath</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L2ConnectPath</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ClosePath</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Global</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Dropped</Name>
+                    <Value>1099511627776</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:PiiPresent</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Packet</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Address</Name>
+                    <Value>8796093022208</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StdTemplateHint</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StateTransition</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Init</Keyword>
+                <Message><![CDATA[
+OID_DOT11_RESET_REQUEST Complete %3 ResetConfirmStatus=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ResetStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+IOCTL function=%3 Status=%4 Length=%5 bytes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Function" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Reject Scan Request: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+IOCTL_DOT11_WEP_DEFAULT_KEY_VALUE: There is no association]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>Ioctls Telemetry</Keyword>
+                <Message><![CDATA[
+Unsupported Mcast cipher algorithm %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AlgorithmId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Desired SSID List %3 entries]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SSIDCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SSIDList" count="SSIDCount">
+    <data name="SSIDLen" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="SSID" inType="win:AnsiString" outType="xs:string" length="SSIDLen"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+SetDesiredSSIDList failed, status = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Set DesiredBSSType: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BSSType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Desired BSSID List %3 entries]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BSSIDCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BSSIDList" inType="win:Binary" outType="xs:hexBinary" count="BSSIDCount" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Enabled AuthList %3 entries]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AuthCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthAlgorithm" inType="win:UInt32" outType="xs:unsignedInt" count="AuthCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Set ExcludeUnencrypted (%3): %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Value" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Set HiddenNetworkEnabled (%3): %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Value" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Drop cached M1: there is a pending 802.1x exchange]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>RSNA</Keyword>
+                <Message><![CDATA[
+Replay detected (our counter %3, received %4), dropping the packet]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExpectedCounter" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ReceivedCounter" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Version number %3 not supported, Expecting %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExpectedVer" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ReceivedVer" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Receive 1X packet G1: FrameSeq# %3: %4 ==> %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FrameSequence" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Receive 1X packet M1 (4 way handshake rekey - secure bit set): FrameSeq# %3: %4 ==> %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FrameSequence" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Receive 1X packet M1: FrameSeq# %3: %4 ==> %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FrameSequence" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Receive 1X packet M3: FrameSeq# %3: %4 ==> %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FrameSequence" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Send 1X packet G2: %3 ==> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Dot11ReceiveM1: aborted since the connection has changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Send 1X packet M2: %3 ==> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Dot11ReceiveM1 failed with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Dot11ReceiveM3 failed with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Dot11ReceiveM3: aborted since the connection has changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Send 1X packet M4: %3 ==> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>RSNA LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Reject request of setting PMK since the caller is not current security endpoint]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AuthUpcall</Keyword>
+                <Message><![CDATA[
+Receive 1X packet: FrameSeq#%1: %2 ==> %3, Status %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FrameSequence" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>IODisp</Keyword>
+                <Message><![CDATA[
+Send 1X packet: %3 ==> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SrcMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DestMAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>NDISReq</Keyword>
+                <Message><![CDATA[
+Abort OID request %2 (low power state): PowerState=%3, bBlockOidsDueToLowPowerState=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bBlockOidsDueToLowPowerState" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>NDISReq</Keyword>
+                <Message><![CDATA[
+QueryAdapterSync Error: %3 OID %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>NDISReq</Keyword>
+                <Message><![CDATA[
+RequestAdapterSync Error: %3 OID %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>NDISReq</Keyword>
+                <Message><![CDATA[
+CallAdapterSync Error: %3 OID %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>TKIPSec LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+All MIC failure reports are sent. Notify miniport to disassociate from %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Security endpoint type = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EndPointType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10035</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+IHV Serialization Enabled: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Enabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10036</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Ioctls</Keyword>
+                <Message><![CDATA[
+Safe mode = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Enabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10037</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Reset</Keyword>
+                <Message><![CDATA[
+Reset %3 New MAC address %4 SetDefaultMIB=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ResetType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DefaultMIB" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10038</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Reset</Keyword>
+                <Message><![CDATA[
+Reset %3 SetDefaultMIB=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ResetType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="DefaultMIB" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10039</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>Reset</Keyword>
+                <Message><![CDATA[
+Reject Reset Request: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Association Start: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Association Completion: %3 AssocStatus=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+DisAssoc: %3 Reason: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="Reason" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Defer roaming timer until system wakeup]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Mismatched session ID]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+PortState: Auth Failed: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10046</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+SetPortState: %4: Controlled=%5 Authorized=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="Controlled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Authorized" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10047</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Post Virtual PortDown Notification (MAC=%4) to Security Module]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Unable to set OID_DOT11_PRIVACY_EXEMPTION_LIST Status = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10049</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Cancel IOCTL_DOT11_CONNECT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+OID_DOT11_CONNECT_REQUEST completes %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Fail Connect Request: Radio is off]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Fail Connect Request in low power state: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+IOCTL_DOT11_CONNECT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+IOCTL_DOT11_DISCONNECT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+OID_DOT11_DISCONNECT_REQUEST Status = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10056</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+OID_DOT11_NIC_POWER_STATE Status = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10057</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>LWF</Keyword>
+                <Message><![CDATA[
+Old PowerState=%3, New PowerState=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldPowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewPowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Halting" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10058</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Keyword>LWF</Keyword>
+                <Message><![CDATA[
+Change OpMode Failed: Capability is not supported (Configured = %3, IM supported = %4, MiniPort supported = %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ConfiguredOpMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IMSupportedOpModes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MiniPortSupportedOpModes" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10059</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>TKIPSec</Keyword>
+                <Message><![CDATA[
+Terminate the connection: too many TKIP-MIC countermeasures.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Pairwise Key (%1): Algo %2, Direction= %3, Len %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Addr" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="CipherAlgoId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Direction" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Len" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10061</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Default Key: Idx %1, Algo %2, Direction= %3, Len %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CipherAlgoId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Direction" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Len" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10062</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Connection Started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10063</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Connection Completion Status=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10064</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+OID_DOT11_NIC_POWER_STATE Request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Starting device network at IM driver</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>SOFTAP</Keyword>
+                <Message><![CDATA[
+802.11 IM driver has begun to start the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MAC" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SSID" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10067</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Starting device network at IM driver</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>SOFTAP</Keyword>
+                <Message><![CDATA[
+802.11 IM driver has finished starting the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MAC" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SSID" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10068</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Task>Starting device network at IM driver</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>SOFTAP</Keyword>
+                <Message><![CDATA[
+802.11 IM driver has failed to start the device network, error code = %2, adapter guid = %1, Local MAC addr = %4, SSID = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MAC" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SSID" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10069</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Stopping device network at IM driver</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>SOFTAP</Keyword>
+                <Message><![CDATA[
+802.11 IM driver has begun to stop the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MAC" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SSID" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10070</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Stopping device network at IM driver</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>SOFTAP</Keyword>
+                <Message><![CDATA[
+802.11 IM driver has finished stopping the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MAC" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SSID" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10071</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Stopping device network at IM driver</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>SOFTAP</Keyword>
+                <Message><![CDATA[
+802.11 IM driver has failed to stop the device network, error code = %2, adapter guid = %1, local MAC addr = %4, SSID = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MAC" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SSID" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10072</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>PowerMgmt</Keyword>
+                <Message><![CDATA[
+Results of querying power management mode: current power management mode = %1, power management mode supported by AP = %2, adapter guid = %3, AP MAC addr = %4, AP SSID = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PowerMgmtMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PowerMgmtModeSupported" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MAC" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="SSID" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10073</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>EnterLowPowerState</Task>
+                <Keyword>SleepResume</Keyword>
+                <Message><![CDATA[
+Adapter going to sleep, adapter guid = %1, new PowerState=%3, halted = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Halted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NewPowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10074</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>LeaveLowPowerState</Task>
+                <Keyword>SleepResume</Keyword>
+                <Message><![CDATA[
+Adapter resumed from sleep, adapter guid = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10075</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Direct OID Request Pending: Request=%1 Adapter=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10076</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Pending Direct OID Request Complete: Request=%1 Adapter=%2 Status=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10077</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+Diagnostic Statistics Difference Adapter Guid %1 TxUnicastCount: %2 RxUnicastCount: %3 TxBroadcastCount: %4 RxBroadcastCount: %5 TxMulticastCount: %6 RxMulticastCount: %7 TimeDiffMs: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TxUnicastCount" inType="win:Int32" outType="xs:int"/>
+  <data name="RxUnicastCount" inType="win:Int32" outType="xs:int"/>
+  <data name="TxBroadcastCount" inType="win:Int32" outType="xs:int"/>
+  <data name="RxBroadcastCount" inType="win:Int32" outType="xs:int"/>
+  <data name="TxMulticastCount" inType="win:Int32" outType="xs:int"/>
+  <data name="RxMulticastCount" inType="win:Int32" outType="xs:int"/>
+  <data name="TimeDiffMs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10078</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>DisconnectedStandby</Keyword>
+                <Message><![CDATA[
+[WiFiDs] Deferred PortDown Notification: Adapter Guid: %1, SessionId: %2, Reason: %3, StatusCode: %4, SecurityEndpoint: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:Int32" outType="xs:int"/>
+  <data name="Reason" inType="win:Int32" outType="xs:int"/>
+  <data name="StatusCode" inType="win:Int32" outType="xs:int"/>
+  <data name="SecurityEndpoint" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10079</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>DisconnectedStandby</Keyword>
+                <Message><![CDATA[
+[WiFiDs] Disconnected standby is enabled: Adapter Guid: %1, DisconnectInStandby: %2, EnforceDs: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DisconnectInStandby" inType="win:Int32" outType="xs:int"/>
+  <data name="EnforceDs" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10080</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>DisconnectedStandby</Keyword>
+                <Message><![CDATA[
+[WiFiDs] Creating deferred PortDown notification: Adapter Guid: %1, SessionId: %2, Reason: %3, StatusCode: %4, SecurityEndpoint: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:Int32" outType="xs:int"/>
+  <data name="Reason" inType="win:Int32" outType="xs:int"/>
+  <data name="StatusCode" inType="win:Int32" outType="xs:int"/>
+  <data name="SecurityEndpoint" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10081</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>DisconnectedStandby</Keyword>
+                <Message><![CDATA[
+[WiFiDs] Indicating MediaDisconnect on sleep: Adapter Guid: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10082</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>DisconnectedStandby</Keyword>
+                <Message><![CDATA[
+[WiFiDs] Waking from DisconnectedStandby: Adapter Guid: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10083</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>DisconnectedStandby</Keyword>
+                <Message><![CDATA[
+[WiFiDs] Terminating connection since diassoc didn't occur on sleep: Adapter Guid: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10084</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+[Nwf] [Status]: %1: Status = %2 , Context1 = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusAnnotation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10085</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+[SAE] FinalState: SAEStatus=%1, bInitialized=%2, AuthState=%3, bCounter=%4, LocalSendConfirm=%5, PeerSendConfirm=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Initialized" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalSendConfirm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeerSendConfirm" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10086</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+[SAE] %1 (%2 bytes):]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BufferAnnotation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10087</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogLine" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10088</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+[SAE] %1: Size=%2 ? %3, AlgorithmNumber= %4 ? %5, TransactionId=%6, ExpectedTransactionId=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommitFrameError" inType="win:AnsiString" outType="xs:string"/>
+  <data name="CommitFrameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinCommitFrameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlgorithmNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExpectedAlgorithmNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExpectedTransactionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10089</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+[SAE] [SAE-Fail]: Status = %1 , Context1 = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10090</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Keyword>AssocMgr</Keyword>
+                <Message><![CDATA[
+[WorkerRequestHandler]: %1 Context1 = %2, Context2 = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusAnnotation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Context1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resume from low power 1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resume from low power 2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Port authorized 1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Port authorized 2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Resume from low power (End trailing scenario) 1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Resume from low power (End trailing scenario) 2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resume from low power 3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resume from low power 4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Port authorized 3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Resume from low power (End trailing scenario) 3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Resume from low power (End trailing scenario) 4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resume from low power 5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resume from low power 6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Resume from low power (End trailing scenario) 5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Resume from low power (End trailing scenario) 6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to network on resume after intervening disconnect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Port authorized 4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resume Reconnect to Same/Different netwkr scenario]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Connect to same network on resume</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error: %1 Location: %2 Context: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Warning: %1 Location: %2 Context: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WarningCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Transitioned to State: %1 Context: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Updated Context: %1 Update Reason: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UpdateReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="SourcePort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestinationAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="DestinationPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="SourcePort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestinationAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="DestinationPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NWiFi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Interface Guid: %1 IfIndex: %2 Interface Luid: %3 ReferenceContext: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

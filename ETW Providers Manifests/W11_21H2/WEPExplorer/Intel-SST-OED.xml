@@ -1,0 +1,604 @@
+<Providers>
+    <Provider>
+        <Name>Intel-SST-OED</Name>
+        <Metadata>
+            <Guid>{6F789161-D86F-4063-9E66-41F26B5DA238}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\DriverStore\FileRepository\intcoed.inf_amd64_e5855ce1805681c2\IntcOED.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\DriverStore\FileRepository\intcoed.inf_amd64_e5855ce1805681c2\IntcOED.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug Information for Intel Offload Engine Driver</Message>
+                    <Path>Intel-SST-OED/IntcOED_ETW_Debug</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>This task provides information on the State Changes</Message>
+                    <Name>Task_IntcOED_State_Change</Name>
+                    <Guid>{C0A5C085-9F9B-4020-AB3F-60F2EBE4E693}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>This task provides information on the IPCs</Message>
+                    <Name>Task_IntcOED_IPC_Information</Name>
+                    <Guid>{64E4765F-D671-4011-A0D7-363215751D66}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>This task provides information on the FW</Message>
+                    <Name>Task_IntcOED_FW_Info</Name>
+                    <Guid>{C6AB573D-472C-453B-A26A-909FA300791B}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>This task provides information on the interrupt callback from the HD-A driver</Message>
+                    <Name>Task_IntcOED_Interrupt_Callback</Name>
+                    <Guid>{A75B5F05-AD11-43F9-BA32-D117ECFC0B82}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Tasks connected with loading modules.</Message>
+                    <Name>Task_IntcOED_Module</Name>
+                    <Guid>{1E2AF4A8-C0EA-4398-9D9D-17115A2A5812}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>This task logs error codes to system event log.</Message>
+                    <Name>Task_IntcOED_Log_Error</Name>
+                    <Guid>{5D1A62A2-0F7B-4B60-AC59-422B0D6BAB55}</Guid>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>This task provides information on EVAD SW state</Message>
+                    <Name>Task_IntcOED_Log_EVAD</Name>
+                    <Guid>{5D1A62A2-0F7B-4B60-AC59-422B0D6BAB56}</Guid>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>This task provides information on WOV detection.</Message>
+                    <Name>Task_IntcOED_Log_WoV_Detect</Name>
+                    <Guid>{5D1A62A2-0F7B-4B60-AC59-422B0D6BAB57}</Guid>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>This task provides information on SdW data port configuration.</Message>
+                    <Name>Task_IntcOED_Log_DP_Cfg</Name>
+                    <Guid>{5D1A62A2-0F7B-4B60-AC59-422B0D6BAB58}</Guid>
+                    <Value>9</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Opcode for IntcOED Driver State</Message>
+                    <Name>Opcode_IntcOED_Driver_State</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for OED Power State</Message>
+                    <Name>Opcode_IntcOED_Power_State</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for OED DSP State</Message>
+                    <Name>Opcode_IntcOED_DSP_State</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for OED FW State</Message>
+                    <Name>Opcode_IntcOED_FW_State</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode_IntcOED_FW_Purge</Message>
+                    <Name>Opcode_IntcOED_FW_Purge</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for OED FW Code Load</Message>
+                    <Name>Opcode_IntcOED_FW_Code_Load</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode_IntcOED_IPC_Receive</Message>
+                    <Name>Opcode_IntcOED_IPC_Receive</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode_IntcOED_IPC_Send</Message>
+                    <Name>Opcode_IntcOED_IPC_Send</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode_IntcOED_Interrupt_Callback</Message>
+                    <Name>Opcode_IntcOED_Interrupt_Callback</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for OED FW Stream Info</Message>
+                    <Name>Opcode_IntcOED_FW_Stream_Info</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for FW and Driver errors.</Message>
+                    <Name>Opcode_IntcOED_Driver_FW_Errors</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for SDW EVAD State</Message>
+                    <Name>Opcode_IntcOED_Log_EVAD</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for WoV detection.</Message>
+                    <Name>Opcode_IntcOED_Log_WoV_Detect</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Opcode for SDW data port configuration</Message>
+                    <Name>Opcode_IntcOED_Log_DP_Cfg</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the State Changes</Task>
+                <Opcode>Opcode for IntcOED Driver State</Opcode>
+                <Message><![CDATA[
+PNP state of the offload engine driver changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OldDriverState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewDriverState" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the State Changes</Task>
+                <Opcode>Opcode for OED Power State</Opcode>
+                <Message><![CDATA[
+There is a transition in the Power State of the OED Driver OED Driver is either starting to transition to new power state or already transition to new power state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Old Power State" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="New Power State" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the State Changes</Task>
+                <Opcode>Opcode for OED DSP State</Opcode>
+                <Message><![CDATA[
+DSP Cores are transitioning to new state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="New DSP State" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Cores" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CoresStateValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Location" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the State Changes</Task>
+                <Opcode>Opcode for OED FW State</Opcode>
+                <Message><![CDATA[
+State of the Firmware]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Old Fw State" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="New Fw State" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the FW</Task>
+                <Opcode>Opcode_IntcOED_FW_Purge</Opcode>
+                <Message><![CDATA[
+Firmware purge generated by either IMR or FW Context]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the IPCs</Task>
+                <Opcode>Opcode_IntcOED_IPC_Send</Opcode>
+                <Message><![CDATA[
+IPC is initiated by the OED Driver]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HIPCI" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HIPCIE" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Location" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OffsetCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OffsetElements" inType="win:UInt32" outType="win:HexInt32" count="OffsetCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the IPCs</Task>
+                <Opcode>Opcode_IntcOED_IPC_Receive</Opcode>
+                <Message><![CDATA[
+OED Driver received an IPC from the DSP.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HIPCT" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HIPCTE" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Location" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OffsetCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OffsetElements" inType="win:UInt32" outType="win:HexInt32" count="OffsetCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the interrupt callback from the HD-A driver</Task>
+                <Opcode>Opcode_IntcOED_Interrupt_Callback</Opcode>
+                <Message><![CDATA[
+Received an Interrupt Callback from HD-Audio Bus]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the FW</Task>
+                <Opcode>Opcode for OED FW Code Load</Opcode>
+                <Message><![CDATA[
+Transferring either FW Base Image or Library]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Location" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>Tasks connected with loading modules.</Task>
+                <Message><![CDATA[
+Load base FW, "%1 - STATUS=%2" ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>Tasks connected with loading modules.</Task>
+                <Message><![CDATA[
+Load modules. %1 - STATUS=%2" ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>Tasks connected with loading modules.</Task>
+                <Message><![CDATA[
+Get module info. GUID %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleTypeCode" inType="win:Int32" outType="xs:int"/>
+  <data name="MaxInQueues" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxOutQueues" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FreqCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplingFrequencies" inType="win:UInt32" outType="xs:unsignedInt" count="FreqCount"/>
+  <data name="BitDepthCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BitDepths" inType="win:UInt16" outType="xs:unsignedShort" count="BitDepthCount"/>
+  <data name="ContainerSizeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContainerSizes" inType="win:UInt16" outType="xs:unsignedShort" count="ContainerSizeCount"/>
+  <data name="ChannelConfigCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ChannelConfigs" inType="win:UInt16" outType="xs:unsignedShort" count="ChannelConfigCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Error</Level>
+                <Task>This task provides information on the IPCs</Task>
+                <Message><![CDATA[
+Error while IPC. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>Tasks connected with loading modules.</Task>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on the FW</Task>
+                <Opcode>Opcode for OED FW Stream Info</Opcode>
+                <Message><![CDATA[
+FW creating a stream: mode = %1 pin =%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Mode" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Pin" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>This task logs error codes to system event log.</Task>
+                <Opcode>Opcode for FW and Driver errors.</Opcode>
+                <Message><![CDATA[
+Initialize DSP Firmware. %1, STATUS = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>This task logs error codes to system event log.</Task>
+                <Opcode>Opcode for FW and Driver errors.</Opcode>
+                <Message><![CDATA[
+Initialize DSP task. %1, STATUS = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>This task logs error codes to system event log.</Task>
+                <Opcode>Opcode for FW and Driver errors.</Opcode>
+                <Message><![CDATA[
+Check the remaining resource budget. %1, STATUS = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>This task logs error codes to system event log.</Task>
+                <Opcode>Opcode for FW and Driver errors.</Opcode>
+                <Message><![CDATA[
+Launch task scheduler. %1, STATUS = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>This task logs error codes to system event log.</Task>
+                <Opcode>Opcode for FW and Driver errors.</Opcode>
+                <Message><![CDATA[
+Change driver state. %1, STATUS = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>This task logs error codes to system event log.</Task>
+                <Opcode>Opcode for FW and Driver errors.</Opcode>
+                <Message><![CDATA[
+Set DSP state. %1, STATUS = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>This task logs error codes to system event log.</Task>
+                <Opcode>Opcode for FW and Driver errors.</Opcode>
+                <Message><![CDATA[
+Initialize OED driver. %1, STATUS = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on EVAD SW state</Task>
+                <Opcode>Opcode for SDW EVAD State</Opcode>
+                <Message><![CDATA[
+SDW ownership passed to: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on WOV detection.</Task>
+                <Opcode>Opcode for WoV detection.</Opcode>
+                <Message><![CDATA[
+Keyphrase detected. Stage: %1. Keyphrase ID: %2. Score: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stage" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="KeyPhraseId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Score" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Debug Information for Intel Offload Engine Driver</Channel>
+                <Level>Information</Level>
+                <Task>This task provides information on SdW data port configuration.</Task>
+                <Opcode>Opcode for SDW data port configuration</Opcode>
+                <Message><![CDATA[
+Configuration for %1 port number: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Side" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Port number" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Block packing" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SampleInterval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SampleLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Suboffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HStart" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HStop" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ChannelEn" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

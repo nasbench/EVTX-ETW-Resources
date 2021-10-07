@@ -1,0 +1,470 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-USBVideo</Name>
+        <Metadata>
+            <Guid>{DA1D1DBD-3186-4FA2-BC2D-075EFD9E43E2}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\usbvideo.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\usbvideo.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.176&amp;FileName=usbvideo.sys&amp;FileVer=10.0.22000.176</HelpLink>
+            <PublisherMessage>Microsoft_Windows_USBVideo</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-USBVideo/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_Power</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_StartUSBVideoDevice</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_StopUSBVideoDevice</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_FillUserBuffer</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_UserBufferStarvation</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_USBPayloadError</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_USBBufferOverrun</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_RestoreDefaults</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USBVideo_FillSecureUserBuffer</Name>
+                    <Value>110</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Resume</Message>
+                    <Name>win:Resume</Name>
+                    <Value>7</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Suspend</Message>
+                    <Name>win:Suspend</Name>
+                    <Value>8</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_StartUSBVideoDevice</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_StartUSBVideoDevice</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_StopUSBVideoDevice</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_StopUSBVideoDevice</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_FillUserBuffer</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pBuf" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_FillUserBuffer</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pBuf" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ulBytesCopied" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>USBVideo_UserBufferStarvation</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>USBVideo_USBPayloadError</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>USBVideo_USBBufferOverrun</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FilterInstanceCount" inType="win:Int32" outType="xs:int"/>
+  <data name="ActiveStreamCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectedStandbyState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ntStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FilterInstanceCount" inType="win:Int32" outType="xs:int"/>
+  <data name="ActiveStreamCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectedStandbyState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ntStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SystemState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeviceState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DevicePowerStage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ntStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Suspend</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Opcode>Resume</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ntStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>USBVideo_Power</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>USBVideo_Power</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>222</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_RestoreDefaults</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>223</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_RestoreDefaults</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>224</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_FillSecureUserBuffer</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_FillSecureUserBuffer</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ulBytesCopied" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USBVideo/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>USBVideo_Power</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
