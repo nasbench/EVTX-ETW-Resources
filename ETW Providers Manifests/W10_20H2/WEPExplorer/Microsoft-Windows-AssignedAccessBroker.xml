@@ -1,0 +1,285 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AssignedAccessBroker</Name>
+        <Metadata>
+            <Guid>{F2311B48-32BE-4902-A22A-7240371DBB2C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\IoTAssignedAccessLockFramework.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\IoTAssignedAccessLockFramework.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=IoTAssignedAccessLockFramework.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-AssignedAccessBroker/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-AssignedAccessBroker/Admin</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ActivateAssignedAccessApplication</Name>
+                    <Guid>{2C7310A7-4F13-4476-A498-EA65B52E3A89}</Guid>
+                    <Value>3000</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WaitForAssignedAccessApplicationToDie</Name>
+                    <Guid>{C24D664F-C8EF-4A43-B9B5-B245E5F62FA3}</Guid>
+                    <Value>3001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CustomTask</Name>
+                    <Guid>{C1E052C6-CBB1-40B1-9618-98DE4220AB3C}</Guid>
+                    <Value>3002</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LockFrameworkQueryTask</Name>
+                    <Guid>{558AAB81-F5B4-4FF7-BDDB-96631F61664B}</Guid>
+                    <Value>3003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UnlockTask</Name>
+                    <Guid>{01D1FFE7-6BD8-460F-85D5-5FD343847889}</Guid>
+                    <Value>3004</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LockAppPidTask</Name>
+                    <Guid>{FD3F5507-0E62-480F-BA95-E6A2E5B4FC4C}</Guid>
+                    <Value>3005</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AbovelockToastTask</Name>
+                    <Guid>{D42CE10D-F15F-4F42-9502-3EAD1841B7FD}</Guid>
+                    <Value>3006</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SetPowerManagerStatusTask</Name>
+                    <Guid>{EAF07F81-BE42-4122-BA0B-B69213C95A44}</Guid>
+                    <Value>3007</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ClosePowerRequestHandleTask</Name>
+                    <Guid>{633FF652-A7B5-4978-916D-69E6FDE8EFF7}</Guid>
+                    <Value>3008</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ReportUnresponsiveAssignedAccessApplication</Name>
+                    <Guid>{A60CCDC6-BF55-447E-AB1C-3F3A9F638D23}</Guid>
+                    <Value>3009</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AppSpecificSettingsTask</Name>
+                    <Guid>{20D2B000-CB98-4C2E-B839-0F610AA88F1D}</Guid>
+                    <Value>3010</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>30000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>ActivateAssignedAccessApplication</Task>
+                <Message><![CDATA[
+Activated above lock app %1 using interface %2 with return code %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AboveLockAppAUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>WaitForAssignedAccessApplicationToDie</Task>
+                <Message><![CDATA[
+Could not find any application running above lock]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>WaitForAssignedAccessApplicationToDie</Task>
+                <Message><![CDATA[
+Above lock app exited with result code %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>CustomTask</Task>
+                <Message><![CDATA[
+This is a custom event, see details for more information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CustomMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Error</Level>
+                <Task>LockFrameworkQueryTask</Task>
+                <Message><![CDATA[
+Failed to get %1 with return code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>UnlockTask</Task>
+                <Message><![CDATA[
+Detected unlocking event (user pressed Ctrl+Alt+Del), terminating above lock app, and exiting lock app]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>LockAppPidTask</Task>
+                <Message><![CDATA[
+%1 failed with return code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>AbovelockToastTask</Task>
+                <Message><![CDATA[
+Abovelock toast operation %1 failed with return code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>SetPowerManagerStatusTask</Task>
+                <Message><![CDATA[
+Set PowerRequestActiveLockScreenInternal request action %1, returns code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestAction" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>ClosePowerRequestHandleTask</Task>
+                <Message><![CDATA[
+Close power request handle returns %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Error</Level>
+                <Task>ReportUnresponsiveAssignedAccessApplication</Task>
+                <Message><![CDATA[
+Above lock app is unresponsive]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AssignedAccessBroker/Admin</Channel>
+                <Level>Information</Level>
+                <Task>AppSpecificSettingsTask</Task>
+                <Message><![CDATA[
+Edge downloads path has been redirected]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
