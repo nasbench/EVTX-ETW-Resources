@@ -1,0 +1,4079 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WiFiNetworkManager</Name>
+        <Metadata>
+            <Guid>{E5C16D49-2464-4382-BB20-97A4B5465DB9}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wifinetworkmanager.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wifinetworkmanager.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=wifinetworkmanager.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>WiFiConnSvc tracing</Message>
+                    <Path>Microsoft-WindowsPhone-Connectivity-WiFiConnSvc-Channel</Path>
+                    <Index>0</Index>
+                    <Id>105</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ScnEvt</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PwrEvt</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SvcEvt</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>NtfEvt</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ConEvt</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PrfEvt</Name>
+                    <Value>32</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NotifMgr - Failed to create event for client notification registration, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+NotifMgr - Client successfully registered for notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+NotifMgr - Client successfully unregistered for notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NotifMgr - Finished initializing.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NotifMgr - Uninitialized.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NotifMgr - Publishing new WNF connection state, type = %1, state = %2, ntStatus = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="state" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NotifMgr - Received policy state update notifiction. New state = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NotifMgr - Failed to register for policy notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NotifMgr - Received hint to encourage usage.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to query power state for indicating state change, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Received radio state change notification from WlanSvc, PhyIndex = %1, state = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to register for Wlan Notifications, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to query initial prompting state from registry, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to save prompting state to registry, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Finished initializing Wlan.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Uninitialized Wlan, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Finished initializing Power.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Uninitialized Power.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Received roaming start notification.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Received roaming end notification.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Sending power state changed notification to clients, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Setting current cached Phy count to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Querying current radio state of interface.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to get current radio state, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Successfully got current radio state = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Setting new power state = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to set current power state, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Successfully set current power state.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Got an invalid call to set power, newState = %1, curState = %2, isChanging = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Got an async set power call with one currently pending.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Setting new power state (async) = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>222</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to set current power state (async), %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>223</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Successfully set current power state (async).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>224</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Publishing new power status, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to register for AC WNF notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to register for Monitor WNF notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>227</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to register for USer Presence WNF notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>228</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to register for Activity WNF notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>229</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to register for Battery Saver WNF notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>230</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Failed to register for AOAC WNF notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>231</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Background scan timer fired.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>232</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Background scan timer fired.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Received a scan failed notification from WlanSvc. WLAN_REASON_CODE: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Received a scan complete notification from WlanSvc (%1 valid networks).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Clearing cached scan list because of multiple scan failures in a row.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Scan mode changed to ACTIVE.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Scan mode changed to PASSIVE.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Failed to start scan for hidden network, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Failed to start scan for active scan, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ScanMgr - Failed to get wlan interface at start of service, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Finished initializing.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Uninitialized.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Successfully got the STA mode interface GUID from Wlan.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ScanMgr - Failed to get the STA mode interface GUID from Wlan, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Cached Wlan interface GUID cleared.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>313</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Cached Wlan available network list cleared.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>314</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Client initiating a scan for a hidden network: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ssidLen" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ssid" inType="win:Binary" outType="xs:hexBinary" length="ssidLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>315</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Client requested available network list when there currently was none.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>316</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ScanMgr - Failed to get the available network list from Wlan, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>317</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ScanMgr - Failed to convert SSID to string while building available network list: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ssidLen" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ssid" inType="win:Binary" outType="xs:hexBinary" length="ssidLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>318</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Setting scan mode to PASSIVE on background scan disable.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>319</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Subscribing for WNF notifications for Media UI Requests, ntstatus=%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>320</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Unsubscribing for WNF notifications for Media UI Requests, ntstatus=%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>321</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ScanMgr - Failed to find the current network in the cached network list while setting the connection statistics.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>322</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Failed to start scan, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>323</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Found cache for current connection. Auth = %1, Cipher = %2, Secure = %3, Signal Strength = %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="algo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cipher" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="secure" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="signal" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>324</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Setting Current Connection, %1, as Action Required because of UI Request Timeout.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szConnName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>325</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Setting Current Connection, %1, as Action Required because of Auth Fail for Auto Connect.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szConnName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>326</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Returning Network Item in Scan as Action Required, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ssidLen" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ssid" inType="win:Binary" outType="xs:hexBinary" length="ssidLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>327</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Returning Connection Name %1 as Action Required on request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szConnName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>328</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Issuing an active scan request to Wlan.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>329</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Issuing an normal scan request to Wlan.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>330</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Client requested bss list when there currently was none.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>331</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ScanMgr - Ignoring duplicate action required failure for %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szConnName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>332</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Updated the cached Bss List.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>333</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Found %1 valid SSIDs to update cache with.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>334</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Updated the cached Ssid List.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>335</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Passing network list to AutoConnect.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>336</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+ScanMgr - Found a Mixed Mode AP currently configured as WPA. Possibly candidate for conversion to WPA2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Initializing host modules.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Finished initializing host modules, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Uninitializing host modules.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Finished uninitializing host modules, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>404</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Failed to enable provider for WPP Logging for provider %1 with hr = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>405</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Failed to stop WPP session with dwError = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>406</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Failed to query WPP session state with dwError = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>407</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserHost - Failed to load DataCollection.dll, GetLastError() = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>408</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserHost - Failed to GetProcAddress '%1', GetLastError() = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>409</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Started DataCollection.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>410</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserHost - Stopped DataCollection]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>600</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Failed call RpcServerUseProtseqEp, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>601</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Failed call RpcServerInqBindings, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>602</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Failed call RpcEpRegister, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>603</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Registration complete, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>604</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Failed call RpcEpUnregister, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>605</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Unregistration complete, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>606</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Call to QueryTransientObjectSecurityDescriptor for TransportSecurityDescriptor failed, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>607</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Call to QueryTransientObjectSecurityDescriptor for InterfaceSecurityDescriptor failed, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>608</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Call to RpcImpersonateClient failed, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>609</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Call to OpenThreadToken failed, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>610</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WiFiUserRpc - Call to CapabilityCheck failed, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Initialized.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Uninitialized.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received UI Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received NULL Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received NULL L2 Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received NULL Wlan Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received unsupported Wlan Request Type, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received NULL MSM Sec Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received WEP UI Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received PSK UI Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received OneX UI Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received NULL OneX Request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received unsupported MSM Sec Request Type, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Failed call to WlanIsUIRequestPending, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Current request is no longer pending.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Reached Max Number of pending requests.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Sending UI Request to clients, handle[%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Request timed out, handle[%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received invalid response, handle[%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received valid response, handle[%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Sending PSK UI response to Wlan, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Failed to convert WEP passphrase, %1, reason %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Failed to convert PSK passphrase, %1, reason %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Failed to convert Key passphrase, %1, reason %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Encountered Eap Error: Port(%1): Eap error info contains winError=%2, reasonCode=%3, EapMethod(Type=%4), rootCauseString=%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="winerror" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="reasoncode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="eaptype" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received unsupported OneX Request Type, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received unsupported EAP Request Type, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received unsupported EAP Field Type, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Call to query EAP blob failed, %1, ignoring...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Call to Create OneX response failed, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Sending OneX UI response to Wlan, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Failed to convert SSID '%3' while caching username, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ssidLen" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ssid" inType="win:Binary" outType="xs:hexBinary" length="ssidLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Failed to cache username in CM Config, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received credentials for an invalid handle, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received credentials for the correct handle (%1), %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Cleaning request for %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received invalid credential data from plugin. Sending to clients.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received credentials from plugin.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received direct request for UI, flags = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received IHV UI request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received unknown IHV UI request type, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received invalid IHV UI request type.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Sending PSK IHV UI response to Wlan, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Sending Cert IHV UI response to Wlan, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received OneX Discovery UI Request. Sending request for either PEAP or SIM credentials.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received cancel response, handle[%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1046</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received command to cancel all pending requests.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1047</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UiRequestMgr - Received OneX UI request type %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1400</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Turn off failed (async = %1) failed, error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1401</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PowerMgr - Turn on failed failed, error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1402</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Activating trigger(s) %1 - Prev State: Active %2, Delayed %3, Time Left %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="trigger" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="active" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="delayed" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="timer" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1403</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Releasing trigger(s) %1 - Prev State: Active %2, Delayed %3, Time Left %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="trigger" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="active" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="delayed" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="timer" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1404</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - Releasing delayed trigger(s) - Prev State: Active %2, Delayed %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="trigger" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="active" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="delayed" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="timer" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1405</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - New AOAC state, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1406</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - New Power State: Active %1, Delayed %2, Time Left %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="active" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="delayed" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="timer" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1407</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - New Battery Saver state, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1408</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PowerMgr - User power preference at boot, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+RadioMgr - Create event failed, error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RadioMgr - Waiting on previous set power thread.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+RadioMgr - Timed out while wait for previous thread.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - Failed to create set power thread, error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1504</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - Timeout out while waiting for intial set power stability.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1505</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - Timeout out while waiting for second set power stability.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1506</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - SetPowerState failed to set the power async.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1507</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+RadioMgr - Ignoring scan complete because power is not on.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1508</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - Bringing power back on, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - Setting bring power back on option: %1, timer: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RadioMgr - Ignoring scan complete because soft ap is on.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1511</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - Bring power back on option at boot: %1, timer - %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1512</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - Called Cortana to Create Rule: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1513</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>PwrEvt</Keyword>
+                <Message><![CDATA[
+RadioMgr - Received hint to turn power back on.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1600</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoConnect - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1601</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1602</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - QueryAutoConnectParameters: SUCCESSfully read %1 - Default=%2, Read=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1603</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - CheckAndUpdateAutoConnectState: State updated: QueryScm=[%1-->%2], CredSharing=[%3-->%4], CP=[%5-->%6], ACEnabled=[%7-->%8], ServiceInit=[%9], StateFlags=[%10]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue6" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue7" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue8" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue9" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1604</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - New%1NotificationInternal [%2]: +++ [%3:%4] [%5:%6] +++]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="wsSource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="wsConnName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="szNotifType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szNotifState" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1605</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureAutoConnectNetworksInternal: Result=NOT connecting .. UserConfiguredNetworks=[%1+%2], AutoConnectable:Stationary=[%3:%4], State=[%5], Network=[%6]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Ssid" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1606</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - CheckAndAddAuthCipherPair: Secure Ssid entry for [%1:%2:%3] already exists]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1607</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - CheckAndAddAuthCipherPair: NOT adding [%1:%2:%3] - Overflow + AuthCipher too weak]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1608</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect -     [%1] TM SSID=[%2:%3:%4], LinkQ=[%5], Flags:Score=[%6:%7], CP=[%8-%9], Cr=[%10-%11]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwQuality" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwCPSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCPOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCredSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCredOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1609</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect - TileMgrQueryNetworks: Type:Sources=[%1:%2]: returned [%3/%4] NetInfos, Flags=[%5], ACEnabled:ConfScanTO:MinLinkQ:MinScore=[%6:%7:%8:%9], ScoreWt:SignalWt:OverlapP:Retries=[%10:%11:%12:%13]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QueryType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QuerySources" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwNetworkOut" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwNetworksIn" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwACEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfScanTO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinLinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinScore" inType="win:Float" outType="xs:float"/>
+  <data name="dwScoreWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwSignalWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OverlapP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwRetries" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1610</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect - ApplyConfigurationAndSetPolicies: NumNetworks=[%1], AutoConnectableNetworks=[%2], GlobalFlags=[%3], Managed:User:WPS=[%4:%5:%6]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AllNetworks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnNetworks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwGblFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwMngFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwUserFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwWPSFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1611</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect - AutoConnect is DISABLEd, StateFlags=[%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1612</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], NO CM name, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1613</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], DO-NOT-CONNECT, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1614</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], UNKNOWN network, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1615</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], COSTED network, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1616</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ScnEvt</Keyword>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], NOT CredShared, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1617</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - RefreshAllProfiles: Network [%1] is now out of backoff state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1618</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] ++ [%3:%4:%5] [%6:%7]: LinkQuality=[%8], Score=[%9], CfgWt:CalcWt=[%10:%11], ConfigFlags:ProfFlags=[%12:%13], CPLength=[%14], CredsLength=[%15]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="szType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szState" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwCfgWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCalcWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCfgFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwProfFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCPLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCredLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1619</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureCMProfiles: Updating Profile Weights ...]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1620</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1] Updating Profile [%2:%3], Weight = [%4 to %5], ProfileFlags=[%6]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="wsConnection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwCfgWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCalcWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwProfFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1621</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureCMProfiles: Deleting profiles ...]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1622</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     %1: Deleting Profile [%2:%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString1" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szString2" inType="win:AnsiString" outType="xs:string"/>
+  <data name="wszString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1623</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureCMProfiles: Adding profiles ...]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1624</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1] Creating CM profile for [%2:%3], Weight = [%4 to %5], ProfileFlags=[%6]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="wsConnection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwCfgWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCalcWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwProfFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1625</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - GetConnectableNetwork: Found! ScanIndex=[%1] Network=[%2:%3], Weight = [%4 to %5], ProfileFlags=[%6]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="wsConnection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwCfgWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCalcWt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwProfFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1626</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - DeleteAllHotspotNetworks: Deleting %1 Connections]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1627</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1] Deleting Connection [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="szString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1628</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - HandleNewConnectionToNetworkInternal: Status=[%1], Network=[%2], IsUserNetwork=[%3], bACProfileExists=[%4], ProfileFlags=[%5]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="wszStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Ssid" inType="win:AnsiString" outType="xs:string"/>
+  <data name="bUserNetwork" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bACProfile" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="dwProfFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1629</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - HandleUserConnectionToNetworkInternal: Successfully changed [%1:%2] to User-configured]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString1" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1630</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - HandleConnectionDisconnected: Network [%1] has retries left, Have currently used [%2 / %3] retries]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1631</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - HandleConnectionDisconnected: BLOCKed network [%1] for [%2], Retries=[%3], BackoffTimeSecs=[%4+%5]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szState" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwRetries" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwBackoffMin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwBackoffRng" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1632</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - HandleConnectionStateChange: Unknown network - Did NOT find profile for [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1633</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - HandleConnectionStateChange: Dup state notification, State=[%1], Profile=[%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString1" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1634</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - SetAutoConnectStatusInternal: New State=[%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1635</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - SetDisconnectReasonInternal: Disconnect Reason = [%1], Connection=[%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString1" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1636</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - UpdateNetworksList: TotalNetworks=[%1], New=[%2+%3+%4], Common=[%5+%6+%7+%8], Cached=[%9], Dropped=[%10] - AutoConnectable=[%11+%12], StationaryNetworks=[%13]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue6" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue7" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue8" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue9" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue10" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue11" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue12" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue13" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1637</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureAutoConnectNetworksInternal: Confirmation Timer - TimeLeft = [%1] msecs]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1638</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureAutoConnectNetworksInternal: Result=Scheduling Confirmation Scan in [%1] secs]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1639</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureAutoConnectNetworksInternal: Stopping Confirmation timer - TimeLeft=[%1], less than [%2] msecs]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1640</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfirmationScanTimerCallbackInternal: --- Confirmation Scan Timer fired!]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1641</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - OpenAutoConnectFile: Disposition=[%1], File=[%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="szString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1642</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - InitializeACBlackList: Read [%1] bytes, [%2-%3] Ssids]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1643</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - AddNewEntryToBlackList: Added SSID:BSSID=[%1:%2]- NumBssids=[%3] to BlackList, Ssids Used:Alloc=[%4-%5]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="BSSID" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1644</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], USER-Configured network, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1645</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] ** [%3:%4:%5], Hotspot OFFLOAD network, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1646</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], USER-BLOCKED network, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1647</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], In BACKOFF State, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1648</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], Below LINK Quality, LinkQuality=[%6], Score=[%7], MinLinkQuality=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1649</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     FindEntryInBlackList: Found SSID:BSSID=[%1:%2], Index=[%3/%4], bDelete=[%5]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="BSSID" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1650</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - FindEntryInBlackList: Removing SSID=[%1], NumBssidsIn=[%2], NumSsidsLeft=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1651</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - AddNewEntryToBlackList: Adding new entry SSID:BSSID=[%1:%2], Ssid:Bssid Index=[%3:%4], Previous NumBssids=[%5]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="BSSID" inType="win:Binary" outType="xs:hexBinary" length="6"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1652</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - GetNewBlackListIndex -- Created NEW list - Previous SsidsAllocated=[%1] New SsidsAllocated=[%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1653</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - HandleNewConnectionToNetworkInternal: Successfully removed Ssid=[%1:%2:%3] from BlackList]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1654</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - SetAutoConnectNetworkStateInternal[ACTIVE]: Successfully removed Ssid=[%1:%2:%3] from BlackList]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1655</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], Transient Network, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1656</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - GetConnectionInfoInternal: Inconsistent Connection State Internal=[%1], Actual=[%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1657</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - SendConnectionUpdateNotification: Network=[%1], Context=[%2], QueryTileManagerForNetwork returned=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1658</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - SendConnectionUpdateNotification [%1 : %2]: Network=[%3], Score=[%4], flightId=[%5], networkId=[%6], DataNeeded=[%7]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="flightId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="networkId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="DataNeeded" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1659</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - SetAutoConnectPCDValueInternal: ConnectionContext=[%1], PCD=[%2], current ConnectionContext=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PCD" inType="win:Float" outType="xs:float"/>
+  <data name="Context2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1660</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], Below MIN Score, LinkQuality=[%6], Score=[%7], MinScoreNormalized=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1661</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], Hotspot Offload Network from Tile, but not marked locally, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1662</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%3:%4:%5], AutoConnect DISABLED, LinkQuality=[%6], Score=[%7], CfgFlags=[%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1663</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - AddAutoConnectProfile: SUCCESSfully added CM profile for [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1664</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureAutoConnectNetworksInternal: Result=Ignoring as AutoConnect is Disabled, StateFlags=[%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1666</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect -     [%1.%2] -- [%4:%5:%6], %3, LinkQuality=[%7], Score=[%8], CfgFlags=[%9]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="szReason" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szNetwork" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwAuth" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCipher" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LinkQ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Score" inType="win:Float" outType="xs:float"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1667</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - FlushNetworkList: Context=[%1], SSIDs=[%2], BssEntries=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1668</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - FirewallBlockWiFiPrivateNet Set=[%1]: Result=[%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1670</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - [CREDSHARING] MarkProfilesForDeletion: Credentials Cache timed out for [%1], Context=[%2], CredSharing handle=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1671</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - [CREDSHARING] CheckIsNetworkConnectable: NOT Requesting creds as request is currently outstanding for [%1], Context=[%2], CredSharing handle=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1672</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - [CREDSHARING] CheckIsNetworkConnectable: Requesting creds for [%1], Context=[%2], CredSharing handle=[%3] ...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1673</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - [CREDSHARING] --> CredentialAvailableCallbackInternal: SUCCESS -- Using credentials for [%1], Context=[%2], CredSharing handle=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1674</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - [CREDSHARING] ConnectToAvailableNetwork: Using creds for [%1], Context=[%2], CredsLength=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1675</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - [CREDSHARING] CheckAndUpdateAutoConnectState: Credential sharing State updated - %1 --> %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1676</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - [NLO] SetNetworkMostRecentlyUsedHintInternal: Network=[%1], Request=[%2], CurrentFlags=[%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1677</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoConnect - ConfigureAutoConnectNetworksInternal: UserTMSettings=[QueryTM=%1, SCM=%2, CRED=%3, CP=%4], TMFlags=[%5, Enabled=%6]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="bQueryTM" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bScmEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bCredEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bCPEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="dwTMFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bCloudEnabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1700</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - Recieved wlan notif: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="notif" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1701</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - Recieved wlan notif: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="notif" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1702</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - Queried for Bss List and got %1 items back]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1703</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - Set new Nic State = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="state" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1704</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - AOAC Support Level = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="level" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1705</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WlanMgr - Failed to register for Nic state change notifications, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1706</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - Received Nic state change: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="state" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1707</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - Setting Nic state steady event.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1708</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - Starting scan in response to scan low power bring up.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1709</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WlanMgr - Timed out while waiting for the Nic state steady event.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1710</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+WlanMgr - Ignoring duplicate state set to, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="state" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1711</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WlanMgr - Timed out while waiting for the set Nic state to complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1712</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - Sending Nlo to WlanSvc.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1713</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr -   Nlo[%1] : %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="szString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1714</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WlanMgr - WlanSetProfileListForOffload result: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1900</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Roaming Tethering Settings - Failed to register Bluetooth Change notifications, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1901</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Roaming Tethering Settings - Failed to update bluetooth change registry key, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1902</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Roaming Tethering Settings - Got bluetooth change notification]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing - Unable to write to the Credential Sharing Pending registry key, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing - Unable to read the Credential Sharing Pending registry key, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing - Unable to verify user sign in, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing - Bad Alloc]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing - MSA token request failed, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2100</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Callback Failure. HTTP Status = %1, Reponse Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwValue2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2101</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Failed to query MCC code, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2102</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Tried to close NULL Cred Sharing handle]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2103</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Get Opt In Status requested]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2104</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Get Opt In Status already requested]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2105</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Set Opt In Status requested]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2106</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - SendSocialProfileRequestAsync completed, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2107</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - BuildCredSharingRequest completed, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2108</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - WinJsonResponse Callback called]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2109</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - SendSocialProfileRequestAsync called]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2110</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - BuildCredSharingRequest called]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2111</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Received password response for %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ssid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="bssid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2112</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Received Get Opt in Status response]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2113</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Received Set Opt in Status response]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2114</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Set Opt In Status Request failed to be made, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2115</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Get Opt In Status failed, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2116</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Social Networks are out of sync]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2117</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Put Network Data requested]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2118</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Received Put NetworkData response]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2119</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Received password response]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2120</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Credential Sharing Manager - Sync connected shared network failed, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2200</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Set Network Exchange State to %2 for %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szConnName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2201</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Invalid password passed to set network exchange state]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2202</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Set Network Exchange State failed, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2203</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Failed to set the registry for %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2204</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Set Cred Sharing Opt In State to %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2205</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Set Cred Sharing Opt In State failed, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2206</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Get Cred Sharing Opt In State called]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2207</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Get Cred Sharing Opt In State failed, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2208</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Get Cred Sharing Opt In State succeeded. State, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2209</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Manager - Set social network %2 in registry failed. State, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="szString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2300</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - User is not opted in. Bailing on profile upload.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2301</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - # of uploaded networks, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2302</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Uploading to WCS]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2303</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Uploading to File]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2304</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Upload failed, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2305</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Building Json payload for %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szConnName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2306</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Empty BSSID list. Skipping network.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2307</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Building Json payload completed with result %1, shared = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2308</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Network not shared]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2309</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Send Shared Networks ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2310</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Building Shared networks Json payload]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2311</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Building Shared networks Json payload completed with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2312</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Failed to disable exchange state by location, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2313</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Failed to subscribe to location notifications.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2314</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Profile Sharing Upload Manager - Failed to set opt in status on location WNF change, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2400</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+FeatureManager - Reporting cred sharing as not allowed due to location]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2401</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+FeatureManager - Reporting autoconnect not allowed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2402</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - Failed to subscribe to location notifications with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2403</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - Failed to start social network sync schedule with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2404</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - Failed to start sqm schedule with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2405</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - Failed to subscribe to policy changed notifications with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2406</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - EnableFeatureInternal failed with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2407</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - DisableFeatureInternal failed with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2408</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - Notifying NetworkManager of feature state change #%1 failed with result %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2409</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - SetFeatureRegValue failed with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2410</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+FeatureManager - GetFeatureRegValue failed with result %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

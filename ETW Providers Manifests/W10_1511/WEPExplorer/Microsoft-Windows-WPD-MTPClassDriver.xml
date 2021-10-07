@@ -1,0 +1,1203 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WPD-MTPClassDriver</Name>
+        <Metadata>
+            <Guid>{21B7C16E-C5AF-4A69-A74A-7245481C1B97}</Guid>
+            <ResourceFilePath>C:\Windows\System32\wpd_ci.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\wpd_ci.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=wpd_ci.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WPD-MTPClassDriver</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-WPD-MTPClassDriver/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-WPD-MTPClassDriver/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Driver Initialization</Message>
+                    <Name>DriverInitialization</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Driver Operation</Message>
+                    <Name>DriverOperation</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Driver Failure</Message>
+                    <Name>DriverFailure</Name>
+                    <Value>48</Value>
+                </Task>
+                <Task>
+                    <Message>Device Error</Message>
+                    <Name>DeviceError</Name>
+                    <Value>64</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Driver Initialization</Task>
+                <Message><![CDATA[
+MTP Driver started successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Driver Initialization</Task>
+                <Message><![CDATA[
+Device will enter the suspend state if idle for %1 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Seconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Driver Operation</Task>
+                <Message><![CDATA[
+Device is entering the idle state (Idle state: %1; Return code: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Driver Operation</Task>
+                <Message><![CDATA[
+Device is resuming operation from idle state (Idle state: %1; Return code: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Driver Operation</Task>
+                <Message><![CDATA[
+Driver has cancelled the operation %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Driver Initialization</Task>
+                <Message><![CDATA[
+Customizing for '%1, %2, %3' (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Manufacturer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Model" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HackModel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>Driver Initialization</Task>
+                <Message><![CDATA[
+Driver has failed to start, HRESULT %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>Driver Operation</Task>
+                <Message><![CDATA[
+Device has failed to respond to the operation %1 in 5 minutes, attempted to cancel the operationm HRESULT %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>Driver Operation</Task>
+                <Message><![CDATA[
+Device has failed to communicate its status when processing operation %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>Driver Operation</Task>
+                <Message><![CDATA[
+Bluetooth transport driver has detected a data discontinuity error: (expected sequence ID %1, but recevied %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExpectedValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ActualValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>Driver Operation</Task>
+                <Message><![CDATA[
+Bluetooth transport driver has detected a data integrity error in a bulk data transfer operation: (expected CRC-32 value %1, but received %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExpectedValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ActualValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ServicePropList Dataset: Service ID %1, Property ID %2, DataSet Offset %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+FixedArray form flag used with non-array type]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+ByteArray form flag used with non-AUINT8 type]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+LongString form flag used with non-AUINT16 type]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ObjectPropDesc Dataset: Format ID %1, Property ID %2, DataSet Offset %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in InterdependentPropDesc Dataset: Format ID %1, DataSet Offset %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ServiceCapabilities Dataset: Service ID %1, Format ID %2, DataSet Offset %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+FixedArray form flag used with non-array type]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+ByteArray form flag used with non-AUINT8 type]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+LongString form flag used with non-AUINT16 type]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Dataset not large enough for expected data]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in DeviceInfo Dataset: DataSet Offset %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in StorageInfo Dataset: Storage ID %1, DataSet Offset %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ServiceInfo Dataset: Service ID %1, DataSet Offset %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ObjectInfo Dataset: Object ID %1, DataSet Offset %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in DevicePropDesc Dataset: Property ID %1, DataSet Offset %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Invalid string specification]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Unable to parse value for MTP DataType %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ServiceIDs: declared %1 elements, but only space to hold %2 elements]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Actual" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Warning in ServiceIDs: declared %1 elements, but space to hold %2 elements]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Actual" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ServiceIDs: count of %1 exceeds system limits]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in StorageIDs: declared %1 elements, but only space to hold %2 elements]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Actual" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Warning in StorageIDs: declared %1 elements, but space to hold %2 elements]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Actual" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in StorageIDs: count of %1 exceeds system limits]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ObjectHandles: declared %1 elements, but only space to hold %2 elements]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Actual" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Warning in ObjectHandles: declared %1 elements, but space to hold %2 elements]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Actual" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ObjectHandles: count of %1 exceeds system limits]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ObjectReferences: declared %1 elements, but only space to hold %2 elements]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Actual" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Warning in ObjectReferences: declared %1 elements, but space to hold %2 elements]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Actual" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in ObjectReferences: count of %1 exceeds system limits]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Duplicate Namespace and ID %1.%2 (ignored)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PKeyId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Duplicate Format ID %1 (ignored)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Guid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Duplicate Method ID %1 (ignored)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Guid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Duplicate Event ID %1 (ignored)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Guid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Duplicate PropCode ID %2 for Service Format %1 (ignored)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1046</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Ambiguous mapping of Namespace and ID %1.%2 to both PropCodes %3 and %4 (ignored)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PKeyId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OriginalCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1047</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Empty Hints Service data block]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1048</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Hints Service data block is of invalid size]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1049</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Unrecognized MTP DataType %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+MaxLength of %1 is too large for associated MTP DataType]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Unrecognized MTP FormFlag %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Abstract property %1.%2 redefined by service %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PKeyId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1053</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Abstract format %1 redefined by service %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1054</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Abstract method %1 redefined by service %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1055</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Abstract event %1 redefined by service %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1056</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Warning in ServiceInfo Dataset: Service ID %1, left-over bytes ignored at end of dataset]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1057</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Ignoring reference by Service ID %2 to concrete service %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1058</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Service ID %2 referencing unknown service %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1059</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Service ID %1 specifies unknown service flag %2 (expecting Standard or Abstract)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1060</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in Dataset: count of %1 exceeds system limits]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1061</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Device does not support bulk version of GetServiceCapabilities]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1062</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Device does not support bulk version of GetServiceProperties]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1063</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Method ID %1 referencing unknown association format %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PKeyGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1064</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Device does not support bulk version of GetFormatCapabilities]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1065</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in FormatCapabilities Dataset: Format ID %1, DataSet Offset %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1066</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>Driver Operation</Task>
+                <Message><![CDATA[
+Bluetooth transport driver has terminated an MTP Bluetooth connection due to failure to recover from a transport error (MTP OpCode %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1067</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in GetObjectPropsSupported Dataset: DataSet Offset %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1068</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Error</Task>
+                <Message><![CDATA[
+Error in GetObjectPropList Dataset: DataSet Offset %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP Request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Opcode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Command_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Command_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Command_Param_count"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP Data(in) and Response]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Opcode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Command_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Command_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Command_Param_count"/>
+  <data name="MTP_Response_Retrieval_HR_From_Transport" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Response_Code" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Response_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Response_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Response_Param_count"/>
+  <data name="MTP_Data_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Data_Buffer" inType="win:Binary" outType="xs:hexBinary" length="MTP_Data_Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP Data(in) and Response for GetDevice/ObjectPropValue]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Opcode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Command_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Command_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Command_Param_count"/>
+  <data name="MTP_Response_Code" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Response_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Response_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Response_Param_count"/>
+  <data name="MTP_DatatypeOfPropValue" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Data_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Data_Buffer" inType="win:Binary" outType="xs:hexBinary" length="MTP_Data_Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP Response]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Response_Retrieval_HR_From_Transport" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Response_Code" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Response_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Response_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Response_Param_count"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP Event received from device]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Event_Retrieval_HR_From_Transport" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Event_Code" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Event_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Event_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Event_Param_count"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP Bulk GetObjectProperties by Object Format]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBulkGetObjProps_size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBulkGetObjProps_buffer" inType="win:Binary" outType="xs:hexBinary" length="MTPBulkGetObjProps_size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP Request and Data(out)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Opcode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Command_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Command_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Command_Param_count"/>
+  <data name="MTP_Data_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Data_Buffer" inType="win:Binary" outType="xs:hexBinary" length="MTP_Data_Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP Request and Data(out) for SetDevice/ObjectPropValue]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Opcode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Command_Param_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Command_Params" inType="win:UInt32" outType="xs:unsignedInt" count="MTP_Command_Param_count"/>
+  <data name="MTP_DatatypeOfPropValue" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTP_Data_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTP_Data_Buffer" inType="win:Binary" outType="xs:hexBinary" length="MTP_Data_Length"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

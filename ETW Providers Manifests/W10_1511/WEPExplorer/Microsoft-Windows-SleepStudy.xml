@@ -1,0 +1,123 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SleepStudy</Name>
+        <Metadata>
+            <Guid>{D37687E7-8BF0-4D11-B589-A7ABE080756A}</Guid>
+            <ResourceFilePath>C:\Windows\system32\microsoft-windows-sleepstudy-events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\microsoft-windows-sleepstudy-events.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=microsoft-windows-sleepstudy-events.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SleepStudy/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ScenarioBlocker</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ScenarioBlockerData</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>TopOffendersPerfTrack</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>sleepstudy</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SleepStudy/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ScenarioBlocker</Task>
+                <Keyword>sleepstudy</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioInstanceId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ParentGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BlockerNameLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BlockerName" inType="win:UnicodeString" outType="xs:string" length="BlockerNameLength"/>
+  <data name="BlockerGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ActiveTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SleepStudy/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ScenarioBlockerData</Task>
+                <Keyword>sleepstudy</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioInstanceId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DataCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <struct name="Data" count="DataCount">
+    <data name="BlockerGuid" inType="win:GUID" outType="xs:GUID"/>
+    <data name="KeyLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="Key" inType="win:UnicodeString" outType="xs:string" length="KeyLength"/>
+    <data name="ValueLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="Value" inType="win:UnicodeString" outType="xs:string" length="ValueLength"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SleepStudy/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>TopOffendersPerfTrack</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActiveTimeAndCommonData" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TopLevelActiveTime" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BlockerHierarchyLevel1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BlockerHierarchyLevel2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BlockerHierarchyLevel3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
