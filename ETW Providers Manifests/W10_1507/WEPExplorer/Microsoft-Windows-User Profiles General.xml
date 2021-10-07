@@ -1,0 +1,181 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-User Profiles General</Name>
+        <Metadata>
+            <Guid>{DB00DFB6-29F9-4A9C-9B3B-1F4F9E7D9770}</Guid>
+            <ResourceFilePath>C:\Windows\System32\userenv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\userenv.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10240.16384&amp;FileName=userenv.dll&amp;FileVer=10.0.10240.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-User Profile General</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-User Profile Service/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-User Profile Service/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%1 which has timestamp %2 was not copied to %3 which has timestamp %4 since it is older than the file it would be overwriting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceTimestamp" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationTimestamp" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EffectiveSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Code" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+File %1 of size %2 kilobytes copied from %3 to %4 in %5 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileSizeInKb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SourceLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CopyTimeInSec" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%1 which has timestamp %2 was not copied to %3 which has timestamp %4 since it is older than the file it would be overwriting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceTimestamp" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationTimestamp" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows cannot copy file %1 to location %2. This error may be caused by network problems or insufficient security rights. 
+
+ DETAIL - %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1534</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+There are too many profile copy errors. Refer to the previous events for details. Windows will not log any additional copy errors for this copy process. 
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1600</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows cannot copy profile from %1 to %2, you do not have enough disk space.
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1601</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows cannot copy profile from %1 to %2, you have exceeded the profile quota.
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

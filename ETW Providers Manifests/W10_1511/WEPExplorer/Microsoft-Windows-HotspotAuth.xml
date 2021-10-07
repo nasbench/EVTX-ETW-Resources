@@ -1,0 +1,339 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-HotspotAuth</Name>
+        <Metadata>
+            <Guid>{DE095DBE-8667-4168-94C2-48CA61665ACA}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wifinetworkmanager.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wifinetworkmanager.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=wifinetworkmanager.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-HotspotAuth</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-HotspotAuth/Analytic</Message>
+                    <Path>Microsoft-Windows-HotspotAuth/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-HotspotAuth/Operational</Message>
+                    <Path>Microsoft-Windows-HotspotAuth/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Hotspot Authentication</Message>
+                    <Name>HotspotAuthentication</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>WISPr Detection</Message>
+                    <Name>WisprDetection</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Hotspot Detection</Message>
+                    <Name>HotspotDetection</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:WISPrDetection</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:HotspotDetection</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Hotspot Authentication</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>ut:Authentication</Keyword>
+                <Message><![CDATA[
+Hotspot authentication started for interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Hotspot Authentication</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:Authentication</Keyword>
+                <Message><![CDATA[
+Hotspot authentication successfully completed for interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Hotspot Authentication</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:Authentication</Keyword>
+                <Message><![CDATA[
+Hotspot authentication failed for interface %1 with status (%2) and response code (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ResponseCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Hotspot Authentication</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:Authentication</Keyword>
+                <Message><![CDATA[
+Hotspot authentication has cancelled for interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Hotspot Authentication</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:Authentication</Keyword>
+                <Message><![CDATA[
+Hotspot authentication has completed for interface %1 with status (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AuthenticationScenarioType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ResponseCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Hotspot Authentication</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:Authentication</Keyword>
+                <Message><![CDATA[
+Hotspot authentication scenario has cancelled for interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WISPr Detection</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>ut:WISPrDetection</Keyword>
+                <Message><![CDATA[
+Discovering WISPr has started for interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WISPr Detection</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:WISPrDetection</Keyword>
+                <Message><![CDATA[
+The hotspot on interface %1 supports WISPr]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WISPr Detection</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:WISPrDetection</Keyword>
+                <Message><![CDATA[
+WISPr detection failed for interface %1 with error (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WISPr Detection</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:WISPrDetection</Keyword>
+                <Message><![CDATA[
+WISPr detection completed for interface %1 with status (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="WisprScenarioType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WISPr Detection</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:WISPrDetection</Keyword>
+                <Message><![CDATA[
+WISPr detection scenario has cancelled for interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WISPr Detection</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:WISPrDetection</Keyword>
+                <Message><![CDATA[
+The hotspot on interface %1 does not support WISPr]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WISPr Detection</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:WISPrDetection</Keyword>
+                <Message><![CDATA[
+No WISPr discovery performed for the hotspot on interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Hotspot Detection</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:HotspotDetection</Keyword>
+                <Message><![CDATA[
+No hotspot detected on interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HotspotAuth/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Hotspot Detection</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ut:HotspotDetection</Keyword>
+                <Message><![CDATA[
+Interface %1 disconnected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

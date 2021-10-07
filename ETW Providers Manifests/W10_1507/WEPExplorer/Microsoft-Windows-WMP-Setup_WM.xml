@@ -1,0 +1,151 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WMP-Setup_WM</Name>
+        <Metadata>
+            <Guid>{0D759F0F-CFF9-4902-8867-EB9E29D7A98B}</Guid>
+            <ResourceFilePath>C:\Program Files\Windows Media Player\setup_wm.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Program Files\Windows Media Player\setup_wm.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.10240.16384&amp;FileName=setup_wm.exe&amp;FileVer=12.0.10240.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>WMPSetup</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>FUE_CONFIGURATION</Name>
+                    <Value>1001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FUE_INTERNAL_CONFIGURATION</Name>
+                    <Value>1002</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FUE_PATH_SELECTION</Name>
+                    <Value>1003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FUE_PATH_TAKEN</Name>
+                    <Value>1004</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Channel>WMPSetup</Channel>
+                <Level>Information</Level>
+                <Task>FUE_CONFIGURATION</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WMPSetupID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Channel>WMPSetup</Channel>
+                <Level>Information</Level>
+                <Task>FUE_CONFIGURATION</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WMPSetupID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>803</Id>
+                <Version>0</Version>
+                <Channel>WMPSetup</Channel>
+                <Level>Information</Level>
+                <Task>FUE_INTERNAL_CONFIGURATION</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WMPSetupID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>804</Id>
+                <Version>0</Version>
+                <Channel>WMPSetup</Channel>
+                <Level>Information</Level>
+                <Task>FUE_INTERNAL_CONFIGURATION</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WMPSetupID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>805</Id>
+                <Version>0</Version>
+                <Channel>WMPSetup</Channel>
+                <Level>Information</Level>
+                <Task>FUE_PATH_SELECTION</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WMPSetupID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>806</Id>
+                <Version>0</Version>
+                <Channel>WMPSetup</Channel>
+                <Level>Information</Level>
+                <Task>FUE_PATH_TAKEN</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WMPSetupID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

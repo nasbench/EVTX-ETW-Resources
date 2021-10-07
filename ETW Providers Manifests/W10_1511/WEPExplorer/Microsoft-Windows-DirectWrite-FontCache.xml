@@ -1,0 +1,280 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DirectWrite-FontCache</Name>
+        <Metadata>
+            <Guid>{E856C26A-E105-4683-A948-6920DCC42E45}</Guid>
+            <ResourceFilePath>C:\Windows\system32\FntCache.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\FntCache.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\FntCache.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=FntCache.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DirectWrite-FontCache</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DirectWrite-FontCache/Tracing</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Event originating from the FontCache service.</Message>
+                    <Name>core</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service has started adding a cache element.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HashCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyData" inType="win:Binary" outType="xs:hexBinary" length="KeySize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service has stopped adding a cache element.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+Could not construct a font cache element due to a malformed key.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HashCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyData" inType="win:Binary" outType="xs:hexBinary" length="KeySize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+ALPC message has been received.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MessageSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MessageData" inType="win:Binary" outType="xs:hexBinary" length="MessageSize"/>
+  <data name="MessageAttributesSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MessageAttributesData" inType="win:Binary" outType="xs:hexBinary" length="MessageAttributesSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+Prefetch file has been created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+Prefetch file has been opened.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The prefetch file is corrupt and will be recreated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service has started creating a cache context.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service has stopped creating a cache context.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service has started updating the system font collection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service has stopped updating the system font collection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service opened a font file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service closed a font file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from the FontCache service.</Keyword>
+                <Message><![CDATA[
+The font cache service performed an access check on a font file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite-FontCache/Tracing</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An error occurred in the FontCache service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

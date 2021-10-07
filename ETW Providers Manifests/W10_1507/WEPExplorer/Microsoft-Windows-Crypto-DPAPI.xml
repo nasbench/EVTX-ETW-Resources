@@ -1,0 +1,258 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Crypto-DPAPI</Name>
+        <Metadata>
+            <Guid>{89FE8F40-CDCE-464E-8217-15EF97D4C7C3}</Guid>
+            <ResourceFilePath>C:\Windows\System32\dpapisrv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\dpapisrv.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10240.16384&amp;FileName=dpapisrv.dll&amp;FileVer=10.0.10240.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Crypto-DPAPI</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Crypto-DPAPI/Operational</Message>
+                    <Path>Microsoft-Windows-Crypto-DPAPI/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Crypto-DPAPI/BackUpKeySvc</Message>
+                    <Path>Microsoft-Windows-Crypto-DPAPI/BackUpKeySvc</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Crypto-DPAPI/Debug</Message>
+                    <Path>Microsoft-Windows-Crypto-DPAPI/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>BackUp Service Operation</Message>
+                    <Name>BackUpServiceOperation</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Master Key Operation</Message>
+                    <Name>MasterKeyOperation</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Data Protection Operation</Message>
+                    <Name>DataProtectionOperation</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>BackUp Service Operation</Message>
+                    <Name>ETW_TASK_BACKUPSERVICE_OPERATION</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Master Key Operation</Message>
+                    <Name>ETW_TASK_MASTERKEY_OPERATION</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Data Protection Operation</Message>
+                    <Name>ETW_TASK_DATAPROTECTION_OPERATION</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Master Key Operation</Task>
+                <Keyword>Master Key Operation</Keyword>
+                <Message><![CDATA[
+DPAPI created Master key.
+
+ 	GUID:	%1
+ 	User Storage Area:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MasterKeyGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="UserStorage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Master Key Operation</Task>
+                <Keyword>Master Key Operation</Keyword>
+                <Message><![CDATA[
+DPAPI deleted Master key.
+
+ 	GUID:	%1
+ 	User Storage Area:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MasterKeyGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserStorage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4097</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/BackUpKeySvc</Channel>
+                <Level>Information</Level>
+                <Task>BackUp Service Operation</Task>
+                <Keyword>BackUp Service Operation</Keyword>
+                <Message><![CDATA[
+DPAPI BackUp service started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4098</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/BackUpKeySvc</Channel>
+                <Level>Information</Level>
+                <Task>BackUp Service Operation</Task>
+                <Keyword>BackUp Service Operation</Keyword>
+                <Message><![CDATA[
+DPAPI BackUp service stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8193</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Master Key Operation</Task>
+                <Keyword>Master Key Operation</Keyword>
+                <Message><![CDATA[
+System credentials creation in LSASS failed. 
+
+ 	Status:	%1
+ ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8194</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Master Key Operation</Task>
+                <Keyword>Master Key Operation</Keyword>
+                <Message><![CDATA[
+DPAPI Master key file open failed.
+
+ 	FileName:	%1
+ 	Access:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Access" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8195</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Master Key Operation</Task>
+                <Keyword>Master Key Operation</Keyword>
+                <Message><![CDATA[
+Master key encryption in memory failed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8196</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Master Key Operation</Task>
+                <Keyword>Master Key Operation</Keyword>
+                <Message><![CDATA[
+Master key decryption in memory failed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8197</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Data Protection Operation</Task>
+                <Keyword>Data Protection Operation</Keyword>
+                <Message><![CDATA[
+DPAPI Protect failed .
+
+ 	Status:	%1
+ 	ReasonForFailure:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="ReasonForFailure" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8198</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-DPAPI/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Data Protection Operation</Task>
+                <Keyword>Data Protection Operation</Keyword>
+                <Message><![CDATA[
+DPAPI Unprotect failed .
+
+ 	Status:	%1
+ 	ReasonForFailure:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="ReasonForFailure" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

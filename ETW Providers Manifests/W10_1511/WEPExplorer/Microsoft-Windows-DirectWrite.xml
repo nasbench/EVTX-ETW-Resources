@@ -1,0 +1,314 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DirectWrite</Name>
+        <Metadata>
+            <Guid>{D775F388-5A4A-474D-8726-7B255544285F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\DWrite.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\DWrite.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\DWrite.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=DWrite.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DirectWrite</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DirectWrite/Tracing</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Event originating from DirectWrite.</Message>
+                    <Name>core</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has started creating a factory object.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has stopped creating a factory object.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has started connecting to the font cache service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has stopped connecting to the font cache service]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has started getting the shared font cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has stopped getting the shared font cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FactoryID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheGenerationNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has added an element to the client-side font cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HashCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyData" inType="win:Binary" outType="xs:hexBinary" length="KeySize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has started creating a client-side font cache instance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has stopped creating a client-side font cache instance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FactoryID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheGenerationNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has released a shared font cache instance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FactoryID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheGenerationNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has deleted a client-side font cache instance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FactoryID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheGenerationNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has opened a font file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Information</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite has closed a font file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite found an existing element in the shared font cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hashCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="elementType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite found an existing element in the client-side font cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hashCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="elementType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite did not find an existing cache element.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hashCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="elementType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectWrite/Tracing</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Event originating from DirectWrite.</Keyword>
+                <Message><![CDATA[
+DirectWrite looked up glyph data in the font cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="elementType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="glyphCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="newCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
