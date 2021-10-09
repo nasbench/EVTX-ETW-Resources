@@ -1,0 +1,159 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Bluetooth-Policy</Name>
+        <Metadata>
+            <Guid>{0602ECEF-6381-4BC0-AEDA-EB9BB919B276}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\bthport.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\bthport.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.950&amp;FileName=bthport.sys&amp;FileVer=10.0.17134.950</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Bluetooth-Policy/Operational</Path>
+                    <Index>0</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Bluetooth policy has changed.  Policy %1\%2 has value of: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Bluetooth radio enablement has been %3 due to policy %1\%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyState" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Bluetooth radio has %3 advertising due to policy %1\%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyState" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Bluetooth radio has %3 discoverability due to policy %1\%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyState" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Bluetooth radio has %3 radio name as %4 due to policy %1\%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RadioName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Process %2 has attempted to pair to radio %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BtAddr" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Service" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Bluetooth has %1 service %2 on remote device %3 due to policy %4\%5...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Accepted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BtAddr" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Bluetooth has %1 PSM %2 on remote device %3 due to policy %4\%5...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Accepted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Psm" inType="win:Int16" outType="xs:short"/>
+  <data name="BtAddr" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

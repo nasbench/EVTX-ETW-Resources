@@ -1,0 +1,1377 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PushNotifications-Developer</Name>
+        <Metadata>
+            <Guid>{5CAD3597-5FEC-4C62-9CE1-9D7ABC723D3A}</Guid>
+            <ResourceFilePath>C:\Windows\System32\wpnapps.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\wpnapps.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=wpnapps.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PushNotifications-Developer</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-PushNotifications-Developer/Debug</Message>
+                    <Path>Microsoft-Windows-PushNotification-Developer/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>CloudNotificationDelivery</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ToastDismissed</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ToastCanceled</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ToastTimedOut</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ToastActivated</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ToastError</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ConnectionStatusDelivery</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SecondaryTileCreateAsyncLambda</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SecondaryTileDeleteAsync</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SecondaryTileUpdateAsync</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SecondaryTileStaticsExists</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SecondaryTileStaticsFindAllAsync</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SecondaryTileStaticsFindAllAsyncForApplication</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SecondaryTileStaticsFindAllAsyncForPackage</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SecondaryTileFactoryEnumerateTiles</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DualSimTileCreateAsync</Name>
+                    <Value>201</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DualSimTileDeleteAsync</Name>
+                    <Value>202</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DualSimTileUpdateAsync</Name>
+                    <Value>203</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Windows Push Notification Developer APIs have encountered an error in file %1, function %2, line %3: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Push Notification Developer APIs have been loaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Push Notification Developer APIs have been unloaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A channel request has been started with the following parameters: %1 [AppID].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A channel request has completed: %1 [AppID] %2 [ChannelUri].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following channel has been closed: %1 [ChannelUri].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>CloudNotificationDelivery</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A cloud notification is about to be delivered: %1 [NotificationType].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>CloudNotificationDelivery</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A cloud notification has been delivered: %1 [NotificationType].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A cloud notification has been canceled and will not be delivered to the presentation layer: %1 [NotificationType].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A cloud notification has been delivered to the presentation layer: %1 [NotificationType].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A notification has been delivered to the presentation layer: %1 [AppId] %2 [NotificationType].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A clear tile message has been delivered to the presentation layer: %1 [AppId].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A clear badge message has been delivered to the presentation layer: %1 [AppId].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A cancel toast message has been delivered to the presentation layer: %1 [AppId].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastDismissed</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A toast user dismissal event is about to be set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastDismissed</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A toast user dismissal event has been set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastCanceled</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A toast canceled dismissal event is about to be set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastCanceled</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A toast canceled dismissal event has been set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastTimedOut</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A toast timed-out dismissal event is about to be set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastTimedOut</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A toast timed-out dismissal event has been set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastActivated</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A toast activation event is about to be set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastActivated</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A toast activation event has been set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastError</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A toast error event is about to be set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ToastError</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A toast error event has been set.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1118</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A clear all toast event has been set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1119</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A remove toast event has been set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A remove toast w/ tag event has been set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A remove toast w/ tag and group event has been set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ConnectionStatusDelivery</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A connection status update is about to be delivered: %1 [AppId] %2 [IsConnected].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsConnected" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1123</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>ConnectionStatusDelivery</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A connection status update has been delivered: %1 [AppId] %2 [IsConnected].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsConnected" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1124</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A clear flyout message has been delivered to the presentation layer: %1 [AppId].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Error</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileCreateAsyncLambda</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileCreateAsyncLambda</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileDeleteAsync</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileDeleteAsync</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileUpdateAsync</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileUpdateAsync</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileStaticsExists</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileStaticsExists</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileStaticsFindAllAsync</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileStaticsFindAllAsync</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileStaticsFindAllAsyncForApplication</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileStaticsFindAllAsyncForApplication</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileStaticsFindAllAsyncForPackage</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileStaticsFindAllAsyncForPackage</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileFactoryEnumerateTiles</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>SecondaryTileFactoryEnumerateTiles</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2035</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2036</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2037</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2038</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2039</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2046</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2047</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2049</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2056</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2057</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2058</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2059</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2061</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2062</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2063</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2064</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2067</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>DualSimTileCreateAsync</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>DualSimTileCreateAsync</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>DualSimTileDeleteAsync</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>DualSimTileDeleteAsync</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>DualSimTileUpdateAsync</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PushNotifications-Developer/Debug</Channel>
+                <Level>Information</Level>
+                <Task>DualSimTileUpdateAsync</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
