@@ -1,0 +1,653 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OfflineFiles</Name>
+        <Metadata>
+            <Guid>{95353826-4FBE-41D4-9C42-F521C6E86360}</Guid>
+            <ResourceFilePath>C:\Windows\system32\cscsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\cscsvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=cscsvc.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-OfflineFiles</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-OfflineFiles/Operational</Message>
+                    <Path>Microsoft-Windows-OfflineFiles/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-OfflineFiles/Analytic</Message>
+                    <Path>Microsoft-Windows-OfflineFiles/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-OfflineFiles/Debug</Message>
+                    <Path>Microsoft-Windows-OfflineFiles/Debug</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-OfflineFiles/SyncLog</Message>
+                    <Path>Microsoft-Windows-OfflineFiles/SyncLog</Path>
+                    <Index>4</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Background agent</Message>
+                    <Name>CscEvtKeywd_Agent</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Online/offline transitions</Message>
+                    <Name>CscEvtKeywd_Transition</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Cached item state changes</Message>
+                    <Name>CscEvtKeywd_ItemStateChange</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>User logon/logoff</Message>
+                    <Name>CscEvtKeywd_UserSessionChange</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Service startup/shutdown</Message>
+                    <Name>CscEvtKeywd_StartupShutdown</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Settings activity</Message>
+                    <Name>CscEvtKeywd_Setting</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Cache item sync</Message>
+                    <Name>CscEvtKeywd_Sync</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Cache item sync conflicts</Message>
+                    <Name>CscEvtKeywd_SyncConflict</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Encryption/unencryption of cache</Message>
+                    <Name>CscEvtKeywd_Encrypt</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Background sync</Message>
+                    <Name>CscEvtKeywd_BGSync</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Blocked excluded file extensions</Message>
+                    <Name>CscEvtKeywd_ExcludedFileType</Name>
+                    <Value>1024</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Service startup/shutdown</Keyword>
+                <Message><![CDATA[
+The Offline Files service started successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Service startup/shutdown</Keyword>
+                <Message><![CDATA[
+The Offline Files service is terminating.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Service startup/shutdown</Keyword>
+                <Message><![CDATA[
+The Offline Files service is waiting for all running tasks to complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Service startup/shutdown</Keyword>
+                <Message><![CDATA[
+The Offline Files service has terminated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Service startup/shutdown</Keyword>
+                <Message><![CDATA[
+The Offline Files service received a STOP or SHUTDOWN control from the Service Control Manager.  The service will now stop.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Offline Files driver (csc.sys) is not running.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>User logon/logoff</Keyword>
+                <Message><![CDATA[
+User logon detected
+Account: %1
+Session: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Account" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>User logon/logoff</Keyword>
+                <Message><![CDATA[
+User logoff detected
+Account: %1
+Session: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Account" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Online/offline transitions</Keyword>
+                <Message><![CDATA[
+Path disconnected.
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Online/offline transitions</Keyword>
+                <Message><![CDATA[
+Path reconnected.
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Settings activity</Keyword>
+                <Message><![CDATA[
+Offline Files configuration is being controlled by Group Policy.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Settings activity</Keyword>
+                <Message><![CDATA[
+Offline Files configuration is being controlled by WMI configuration classes Win32_OfflineFilesUserConfiguration and Win32_OfflineFilesMachineConfiguration.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Background agent</Keyword>
+                <Message><![CDATA[
+Background agent failed startup, error = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Text" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Background sync</Keyword>
+                <Message><![CDATA[
+Background Synchronization failed on 
+
+%1
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Background sync</Keyword>
+                <Message><![CDATA[
+Background Synchronization executed successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Warning</Level>
+                <Keyword>Background sync</Keyword>
+                <Message><![CDATA[
+Background Synchronization has started on 
+
+%1
+
+ as client has not synced for %2 minutes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MinutesSinceLastSync" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Online/offline transitions</Keyword>
+                <Message><![CDATA[
+Path %1 transitioned to slow link with latency = %2 and bandwidth = %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Latency" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Bandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Online/offline transitions</Keyword>
+                <Message><![CDATA[
+Path %1 transitioned to online with latency = %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Latency" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Background sync</Keyword>
+                <Message><![CDATA[
+Background Synchronization failed for %2 files on 
+
+%1
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FailedFileCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Online/offline transitions</Keyword>
+                <Message><![CDATA[
+Path %1 transitioned to slow link mode so the user will work offline with background synchronization of the data to the file server. The administrator has configured this path to work offline regardless of the network performance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Warning</Level>
+                <Keyword>Online/offline transitions</Keyword>
+                <Message><![CDATA[
+Path %1 failed to transition to slow link mode due to an open handle on %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Warning</Level>
+                <Keyword>Online/offline transitions</Keyword>
+                <Message><![CDATA[
+Path %1 failed to transition to slow link mode due to an open handle.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/SyncLog</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sync info for %1
+Only the server copy exists.
+%10
+See details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerIsDir" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientDeleted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerLastWriteTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ServerChangeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ServerAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ServerSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SyncState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SyncStateText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/SyncLog</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sync info for %1
+Only the client copy exists.
+%12
+See details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIsDir" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientIsSparse" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientCreatedOffline" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientDeletedOffline" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientLastWriteTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ClientChangeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ClientAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ClientSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ServerDeleted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SyncState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SyncStateText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/SyncLog</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sync info for %1
+Both client and server copies exist.
+%17
+See details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIsDir" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientIsSparse" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientCreatedOffline" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientLastWriteTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ClientChangeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ClientAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ClientSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ServerIsDir" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerLastWriteTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ServerChangeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ServerAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ServerSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SyncState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SyncStateText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/SyncLog</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sync info for %1
+Server copy exists, client copy deleted.
+%13
+See details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIsDir" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientIsSparse" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ClientCreatedOffline" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerIsDir" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerLastWriteTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ServerChangeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ServerAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ServerSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SyncState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SyncStateText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/SyncLog</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sync info for %1
+Server copy exists, client copy replaced then deleted.
+%10\
+See details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIsDir" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerIsDir" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ServerLastWriteTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ServerChangeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ServerAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ServerSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SyncState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SyncStateText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/SyncLog</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sync succeeded.
+
+%1
+
+Operation: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/SyncLog</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Sync failed.
+
+%1
+
+Operation: %2
+Result: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Blocked excluded file extensions</Keyword>
+                <Message><![CDATA[
+Creation of new excluded file type 
+%1 was blocked.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OfflineFiles/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Blocked excluded file extensions</Keyword>
+                <Message><![CDATA[
+Rename of file %1 to file %2 was blocked. The source and/or target file name is an excluded file type.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourcePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

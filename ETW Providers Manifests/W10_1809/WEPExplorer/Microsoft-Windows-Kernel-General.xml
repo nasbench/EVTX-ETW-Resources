@@ -1,0 +1,401 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-General</Name>
+        <Metadata>
+            <Guid>{A68CA8B7-004F-D7B6-A698-07E2DE0F1F5D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-General</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemStart</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemStop</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SoftBootInfo</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BootPerformanceData</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemTimeChange</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Time</Message>
+                    <Name>KERNEL_GENERAL_KEYWORD_TIME</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>KERNEL_GENERAL_SECURITY_ACCESSCHECK</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>KERNEL_GENERAL_TOKEN_SID_MANAGEMENT</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>BootPerformance</Name>
+                    <Value>128</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Keyword>Time</Keyword>
+                <Message><![CDATA[
+The system time has changed to %1 from %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="OldTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SystemTimeChange</Task>
+                <Keyword>Time</Keyword>
+                <Message><![CDATA[
+The system time has changed to %1 from %2.
+
+Change Reason: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="OldTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+License policy-cache corruption detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+License policy-cache corruption has been fixed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+License policy-cache has expired because it was not updated within expected duration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+{Registry Hive Recovered} Registry hive (file): '%3' was corrupted and it has been recovered. Some data might have been lost.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FinalStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ExtraStringLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ExtraString" inType="win:UnicodeString" outType="xs:string" length="ExtraStringLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An I/O operation initiated by the Registry failed unrecoverably.The Registry could not flush hive (file): '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FinalStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ExtraStringLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ExtraString" inType="win:UnicodeString" outType="xs:string" length="ExtraStringLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+TxR init phase for hive %2 (TM: %3, RM: %4) finished with result=%5 (Internal code=%6).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExtraStringLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ExtraString" inType="win:UnicodeString" outType="xs:string" length="ExtraStringLength"/>
+  <data name="TmId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RmId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="InternalCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SystemStart</Task>
+                <Keyword>BootPerformance</Keyword>
+                <Message><![CDATA[
+The operating system started at system time %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MajorVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinorVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuildVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QfeVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BootMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SystemStop</Task>
+                <Keyword>BootPerformance</Keyword>
+                <Message><![CDATA[
+The operating system is shutting down at system time %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StopTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>KERNEL_GENERAL_SECURITY_ACCESSCHECK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Mode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectCreatorProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccessMask" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TokenType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImpersonationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowBoxNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TokenGroupsCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="TokenGroups" count="TokenGroupsCount">
+    <data name="GroupAttributes" inType="win:HexInt32" outType="win:HexInt32"/>
+    <data name="GroupSid" inType="win:SID" outType="xs:string"/>
+  </struct>
+  <data name="TokenPackageCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="TokenPackage" count="TokenPackageCount">
+    <data name="PackageSid" inType="win:SID" outType="xs:string"/>
+  </struct>
+  <data name="TokenCapabilityCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="TokenCapabilities" count="TokenCapabilityCount">
+    <data name="CapabilityAttributes" inType="win:HexInt32" outType="win:HexInt32"/>
+    <data name="CapabilitySid" inType="win:SID" outType="xs:string"/>
+  </struct>
+  <data name="TokenTrustLevelCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="TokenTrustLevel" count="TokenTrustLevelCount">
+    <data name="TrustLevelSid" inType="win:SID" outType="xs:string"/>
+  </struct>
+  <data name="SecurityDescriptorRevision" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="SecurityDescriptorControl" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="SecurityDescriptorOwner" inType="win:SID" outType="xs:string"/>
+  <data name="SecurityDescriptorGroup" inType="win:SID" outType="xs:string"/>
+  <data name="DaclRevision" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DaclAceCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <struct name="DaclAce" count="DaclAceCount">
+    <data name="AceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="AceFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+    <data name="AccessMask" inType="win:HexInt32" outType="win:HexInt32"/>
+    <data name="Sid" inType="win:SID" outType="xs:string"/>
+  </struct>
+  <data name="SaclRevision" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="SaclAceCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <struct name="SaclAce" count="SaclAceCount">
+    <data name="AceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="AceFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+    <data name="AccessMask" inType="win:HexInt32" outType="win:HexInt32"/>
+    <data name="Sid" inType="win:SID" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Hive %2 was reorganized with a starting size of %3 bytes and an ending size of %4 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HiveNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HiveName" inType="win:UnicodeString" outType="xs:string" length="HiveNameLength"/>
+  <data name="OriginalSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The access history in hive %2 was cleared updating %3 keys and creating %4 modified pages.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HiveNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HiveName" inType="win:UnicodeString" outType="xs:string" length="HiveNameLength"/>
+  <data name="KeysUpdated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DirtyPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>KERNEL_GENERAL_TOKEN_SID_MANAGEMENT</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthorityName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TokenId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="AuthenticationId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TokenType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImpersonationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TokenFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SidValuesReferenceCount" inType="win:Int64" outType="xs:long"/>
+  <data name="SidValuesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SidValues" count="SidValuesCount">
+    <data name="Sid" inType="win:SID" outType="xs:string"/>
+  </struct>
+  <data name="SharedSidValuesReferenceCount" inType="win:Int64" outType="xs:long"/>
+  <data name="SharedSidValuesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SharedSidValues" count="SharedSidValuesCount">
+    <data name="Sid" inType="win:SID" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>SoftBootInfo</Task>
+                <Keyword>BootPerformance</Keyword>
+                <Message><![CDATA[
+The operating system is starting after soft restart.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransitionStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CurrentTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SoftRestartCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>BootPerformanceData</Task>
+                <Keyword>BootPerformance</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MmPhase0Start" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MmPhase0Stop" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Phase1Start" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="KsrExtensionStart" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="KsrExtensionStop" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StartProcessorsStart" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StartProcessorsStop" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
