@@ -1,0 +1,255 @@
+<Providers>
+    <Provider>
+        <Name>TPM</Name>
+        <Metadata>
+            <Guid>{1B6B0772-251B-4D42-917D-FACA166BC059}</Guid>
+            <ResourceFilePath>C:\Windows\System32\drivers\tpm.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\drivers\tpm.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=tpm.sys&amp;FileVer=10.0.15063.0</HelpLink>
+            <PublisherMessage>TPM</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The TPM self test command failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The device driver for the Trusted Platform Module (TPM) encountered an error in the TPM hardware, which might prevent some applications using TPM services from operating correctly.  Please restart your computer to reset the TPM hardware.  For further assistance on this hardware issue, please contact the computer manufacturer for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The device driver for the Trusted Platform Module (TPM) encountered a non-recoverable error in the TPM hardware, which prevents TPM services (such as data encryption) from being used. For further help, please contact the computer manufacturer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The device driver for the Trusted Platform Module (TPM) encountered a non-recoverable error in the TPM hardware, which prevents TPM services (such as data encryption) from being used. For further help, please contact the computer manufacturer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A compatible TPM is not found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Trusted Platform Module (TPM) hardware failed to execute a TPM command.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TpmCommandOrdinal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TpmResponseCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This event triggers the Trusted Platform Module (TPM) provisioning/status check to run.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The system firmware failed to enable overwriting of system memory on restart. The ACPI request could not be interpreted by the firmware. The firmware should be upgraded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A command was sent to the Trusted Platform Module (TPM) successfully resetting the TPM lockout logic. This event is generated when a successful command sent to the TPM resets the TPM lockout logic.  With this event, all prior standard user TPM authorization failures are ignored; allowing standard users to use the TPM normally again immediately.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A standard user issued Trusted Platform Module (TPM) command returned an authorization failure. This event is generated when a command sent to the TPM by a standard user returns a response indicating an authorization failure.  If too many authorization failures occur, standard users may be temporarily prevented from sending TPM commands requiring authorization.  This helps prevent the TPM from entering a hardware lockout because of too many authorization failures. 
+User Security ID:%1. 
+Process Path %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+TPM Base Services (TBS) has been configured in a test mode until the next full restart. The TBS will not perform TPM resource virtualization or TPM command blocking until the next full restart.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A standard user Trusted Platform Module (TPM) command was blocked because the standard user has exceeded the maximum authorization failures permitted. This event is generated when too many recent TPM commands sent to the TPM by a standard user returned a response indicating an authorization failure.  The standard user is currently temporarily prevented from sending TPM commands requiring authorization.  This helps prevent the TPM from entering a hardware lockout because of too many authorization failures. 
+User Security ID:%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Trusted Platform Module (TPM) status: %1 and %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="statusEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="statusActive" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Creation of the Windows AIK directory failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Creation of provisioning event has failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="locationCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

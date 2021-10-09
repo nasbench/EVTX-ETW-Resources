@@ -1,0 +1,418 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Perflib</Name>
+        <Metadata>
+            <Guid>{13B197BD-7CEE-4B4E-8DD0-59314CE374CE}</Guid>
+            <ResourceFilePath>C:\Windows\system32\prflbmsg.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\prflbmsg.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=prflbmsg.dll&amp;FileVer=10.0.15063.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Perflib</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221226472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Access to performance data was denied to %1 as attempted from %2. %1 is the value from GetUserName(), which is the user account that the thread runs. %2 is the value from GetModuleFileName(), which is the binary module name that issues the query.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The buffer size returned by a collect procedure in Extensible Counter DLL "%1" for the "%2" service was larger than the space available. The performance data returned by the counter DLL will not be returned in the Perf Data Block. The first four bytes (DWORD) of the Data section contains the returned buffer size.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A Guard Page was modified by a collect procedure in Extensible Counter DLL "%1" for the "%2" service. The performance data returned by the counter DLL will not be returned in the Perf Data Block.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The object length of an object returned by Extensible Counter DLL "%1" for the "%2" service was not correct. The sum of the object lengths returned did not match the size of the buffer returned.  The performance data returned by the counter DLL will not be returned in the Perf Data Block. The first four bytes (DWORD) of the Data section contains the count of objects.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The instance length of an object returned by Extensible Counter DLL "%1" for the "%2" service was not correct. The sum of the instance lengths plus the object definition structures did not match the size of the object. The performance data returned by the counter DLL will not be returned in the Perf Data Block. The first four bytes (DWORD) of the Data section contains the object title index of the bad object.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226477</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to locate the open procedure "%1" in DLL "%2" for the "%3" service. Performance data for this service will not be available. The first four bytes (DWORD) of the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to locate the collect procedure "%1" in DLL "%2" for the "%3" service. Performance data for this service will not be available. The first four bytes (DWORD) of the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226479</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to locate the close procedure "%1" in DLL "%2" for the "%3" service. Performance data for this service will not be available. The first four bytes (DWORD) of the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Open Procedure for service "%1" in DLL "%2" failed. Performance data for this service will not be available. The first four bytes (DWORD) of the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226481</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Open Procedure for service "%1" in DLL "%2" generated an exception. Performance data for this service will not be available. The first four bytes (DWORD) of the Data section contains the exception code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Collect Procedure for the "%1" service in DLL "%2" generated an exception or returned an invalid status. The performance data returned by the counter DLL will not be returned in the Perf Data Block. The first four bytes (DWORD) of the Data section contains the exception code or status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226483</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Close Procedure for the "%1" service in DLL "%2" generated an exception or returned an invalid status. The performance data returned by the counter DLL will not be returned in the Perf Data Block. The first four bytes (DWORD) of the Data section contains the exception code or status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226485</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The collect procedure in Extensible Counter DLL "%1" for the "%2" service returned a buffer that was larger than the space allocated and may have corrupted the application's heap. This DLL should be disabled or removed from the system until the problem has been corrected to prevent further corruption. The application accessing this performance data should be restarted. The performance data returned by the counter DLL will not be returned in the Perf Data Block. The first four bytes (DWORD) of the Data section contains the overflow size.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226487</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The performance data collection function "%1" in the "%2" library did not complete in the allowed time. There may be a problem with this extensible counter, the service from which the counter is collecting data, or the system may have been very busy when this call was attempted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484664</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The data buffer created for the "%1" service in the "%2" library is not aligned on an 8-byte boundary. This may cause problems for applications that are trying to read the performance data buffer. Contact the manufacturer of this library or service to have this problem corrected or to get a newer version of this library.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226489</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Disabled performance counter data collection from the "%1" service because the performance counter library for that service has generated one or more errors. The errors that forced this action have been written to the application event log. Correct the errors before enabling the performance counters for this service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226490</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Disabled performance counter data collection for this session from the "%1" service because the performance counter library for that service has generated one or more errors. The errors that forced this action have been written to the application event log.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226491</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A definition field in an object returned by Extensible Counter DLL "%1" for the "%2" service was not correct. The sum of the definitions block lengths in the object definition structures did not match the size specified in the object definition header. The performance data returned by this counter DLL will not be returned in the Perf Data Block. The first four bytes (DWORD) of the Data section contains the object title index of the unsupported object.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226492</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The required buffer size is greater than the buffer size passed to the collect function of the "%1" Extensible Counter DLL for the "%2" service. The first four bytes (DWORD) of the Data section contains the given buffer size and the second four bytes (DWORD) contains the required size.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226493</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows cannot open the 32-bit extensible counter DLL %1 in a 64-bit environment. Contact the file vendor to obtain a 64-bit version. Alternatively, you can open the 32-bit extensible counter DLL by using the 32-bit version of Performance Monitor. To use this tool, open the Windows folder, open the Syswow64 folder, and then start Perfmon.exe.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226494</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows cannot open the 64-bit extensible counter DLL %1 in a 32-bit environment. Contact the file vendor to obtain a 32-bit version. Alternatively if you are running a 64-bit native environment, you can open the 64-bit extensible counter DLL by using the 64-bit version of Performance Monitor. To use this tool, open the Windows folder, open the System32 folder, and then start Perfmon.exe.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226495</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows cannot load the extensible counter DLL %1. The first four bytes (DWORD) of the Data section contains the Windows error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485648</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The returned pointer did not match the buffer length returned by the Collect procedure for the "%1" service in Extensible Counter DLL "%2". The length will be adjusted to match the buffer length and the performance data will appear in the Perf Data Block. The first four bytes (DWORD) of the Data section contains the returned length and the second four bytes (DWORD) the new length.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485649</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1" service does not have a Performance subkey or the key could not be opened. No performance counters will be collected for this service. The Win32 error code is returned in the first DWORD in the attached data in the data section.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485650</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The open procedure for service "%1" in DLL "%2" did not complete in the allowed time. There may be a problem with this extensible counter, the service from which the counter is collecting data, or the system may have been very busy when this call was attempted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485651</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The configuration information of the performance library "%1" for the "%2" service does not match the trusted performance library information stored in the registry. The functions in this library will not be treated as trusted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The number of objects allowed in a performance library has exceeded the maximum supported.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to find the %1 Procedure name in the registry for service "%2". Check the application event log to make sure there were no problems encountered during installation of the "%2" service and reinstall its performance counter DLL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to find valid registry value "%1" in the registry for service "%2". Check the application event log to make sure there were no problems encountered during installation of the "%2" service and reinstall its performance counter DLL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

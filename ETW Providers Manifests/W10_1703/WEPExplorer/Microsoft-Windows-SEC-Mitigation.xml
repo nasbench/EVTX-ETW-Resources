@@ -1,0 +1,98 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SEC-Mitigation</Name>
+        <Metadata>
+            <Guid>{1983015D-CD13-4408-B9EC-F3EE31E181BB}</Guid>
+            <ResourceFilePath>C:\Windows\System32\Drivers\mssecflt.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\Drivers\mssecflt.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=mssecflt.sys&amp;FileVer=10.0.15063.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SEC-Mitigation</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Mitigation_Event1</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Mitigation_Event2</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Mitigation_Event1</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Module" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModuleAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemModule" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InputFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InputFileMD5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InputFileSHA1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Mitigation_Event2</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReturnAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CalledAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnAddressModule" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HookedAPI" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InputFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InputFileMD5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InputFileSHA1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
