@@ -1,0 +1,511 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Wallet</Name>
+        <Metadata>
+            <Guid>{6ED11B00-C1B5-48CB-AECC-FF72EBEFBAE8}</Guid>
+            <ResourceFilePath>C:\Windows\system32\WalletService.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\WalletService.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=WalletService.dll&amp;FileVer=10.0.15063.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>4294967295</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Launch</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Item_Create</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Item_Get</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Item_Delete</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Item_Save</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>List_Get</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>List_Get_Search</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Core_OpenDatabase</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Core_GetList</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Core_GetListWithParams</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Core_GetProperty</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Core_SetProperty</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Core_ProcessPackage</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Core_ProcessGeofencing</Name>
+                    <Value>14</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Launch</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Launch Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Launch</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Launch Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Item_Create</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Start: Create Item]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Item_Create</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Stop : Create Item]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Item_Get</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Start: Get Item %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ItemId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Item_Get</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Stop : Get Item %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ItemId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Item_Delete</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Start: Delete Item]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Item_Delete</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Stop : Delete Item]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Item_Save</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Start: Save Item]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Item_Save</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Stop : Save Item]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>List_Get</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Start: Get List %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>List_Get</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Stop : Get List %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>List_Get_Search</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Start: Get Search List %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>List_Get_Search</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+UI: Stop : Get Search List %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_OpenDatabase</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Start: OpenDatabase]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_OpenDatabase</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Stop : OpenDatabase]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_GetList</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Start: GetList %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_GetList</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Stop : GetList %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_GetListWithParams</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Start: GetListWithParams %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_GetListWithParams</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Stop : GetListWithParams %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_GetProperty</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Start: GetProperty Item %1 Property %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ItemId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="WalletItemPropertyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_GetProperty</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Stop : GetProperty Item %1 Property %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ItemId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="WalletItemPropertyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_SetProperty</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Start: SetProperty Item %1 Property %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ItemId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="WalletItemPropertyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_SetProperty</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Stop : SetProperty Item %1 Property %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ItemId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="WalletItemPropertyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>313</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_ProcessPackage</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Start: ProcessPackage]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>314</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_ProcessPackage</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Stop : ProcessPackage]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>315</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_ProcessGeofencing</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Start: ProcessGeofencing]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>316</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Core_ProcessGeofencing</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Core: Stop : ProcessGeofencing]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

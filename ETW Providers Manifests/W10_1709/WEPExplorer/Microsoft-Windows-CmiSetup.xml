@@ -1,0 +1,166 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CmiSetup</Name>
+        <Metadata>
+            <Guid>{75EBC33E-0CC6-49DA-8CD9-8903A5222AA0}</Guid>
+            <ResourceFilePath>C:\Windows\system32\oobe\CmiSetup.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\oobe\CmiSetup.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=CmiSetup.dll&amp;FileVer=10.0.15063.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-CmiSetup</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-CmiSetup/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Setup</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>CMI Configuration</Message>
+                    <Name>tskCmiConfigInstall</Name>
+                    <Guid>{C719CE52-9545-4C08-ACA8-0F3C42B6B9DE}</Guid>
+                    <Value>1000</Value>
+                </Task>
+                <Task>
+                    <Message>CMI Execute Changes</Message>
+                    <Name>tskCmiConfigInstallWork</Name>
+                    <Guid>{6FA8AEBF-3323-4231-BFFD-DC0B54D6A73F}</Guid>
+                    <Value>2000</Value>
+                </Task>
+                <Task>
+                    <Message>CBS Online Install</Message>
+                    <Name>tskCbsDoOnlineInstall</Name>
+                    <Guid>{CD5F25F1-1717-4C21-8818-8DB698303259}</Guid>
+                    <Value>3000</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>keyPerformance</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CmiSetup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>CMI Configuration</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CMI Configuration Started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CmiSetup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>CMI Configuration</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CMI Configuration completed with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CmiSetup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>CMI Execute Changes</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Executing CMI changes.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CmiSetup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>CMI Execute Changes</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CMI changes completed with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CmiSetup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>CBS Online Install</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Performing CBS Online Install.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CmiSetup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>CBS Online Install</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CBS Online Install completed with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

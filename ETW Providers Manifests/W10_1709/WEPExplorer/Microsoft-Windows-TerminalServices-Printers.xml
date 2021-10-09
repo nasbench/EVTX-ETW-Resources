@@ -1,0 +1,263 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TerminalServices-Printers</Name>
+        <Metadata>
+            <Guid>{952773BF-C2B7-49BC-88F4-920744B82C43}</Guid>
+            <ResourceFilePath>C:\Windows\system32\umrdp.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\umrdp.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=umrdp.dll&amp;FileVer=10.0.15063.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-TerminalServices-Printers</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Admin</Message>
+                    <Path>Microsoft-Windows-TerminalServices-Printers/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-TerminalServices-Printers/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-TerminalServices-Printers/Operational</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-TerminalServices-Printers/Debug</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+TS RDPDR Device Redirection failed to initialize for a single user session %1.  Serial, Parallel, Printer, and File System Redirection will be disabled.  Look in the System event log for other related errors.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Driver %1 required for printer %2 is not installed on the server. Contact the administrator to install the driver before you log in again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An internal communication error occurred.  Redirected printing will no longer function for a single user session.  Check the status of the Remote Desktop Device Redirector in the System folder of Device Manager.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Printer security information for the printer %1 could not be set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The printer %1 could not be deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Configuration information for the %1 printer could not be restored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %1 printer could not be set as the default printer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An error occurred during processing of %1. The file might be corrupted. Run Setup again to reinstall the file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Driver %1 required for printer %2 is unknown. Contact the administrator to install the driver before you log in again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1112</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to register for user printing preferences change notification.  Open the Services snap-in and confirm that the Printer Spooler service is running]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+There is not enough memory to complete the operation. Save your work, close other programs, and then try again.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1114</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error communicating with the Spooler system service.  Open the Services snap-in and confirm that the Print Spooler service is running.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1115</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unexpected internal error in TS RDP device redirection.  Contact technical support.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1116</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The printer %1 cannot be redirected by using Remote Desktop Easy Print. The client computer may not have a version of the Remote Desktop Connection client or Microsoft .NET Framework installed that supports this driver.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1123</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Print Spooler failed to add the printer %1, port %2 because of a port error. The Print Spooler will not try again to add the printer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1124</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The number of printers per session limit was reached. The following print queue was not created: 
+
+Printer = %1
+Port = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
