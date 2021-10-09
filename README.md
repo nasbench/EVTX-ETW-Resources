@@ -6,6 +6,7 @@ This is a repository that contains a bunch of resources to learn and understand 
 
 * [A Primer On Event Tracing For Windows (ETW)](https://nasbench.medium.com/a-primer-on-event-tracing-for-windows-etw-997725c082bf)
 * [Finding Detection and Forensic Goodness In ETW Providers](https://nasbench.medium.com/finding-detection-and-forensic-goodness-in-etw-providers-7c7a2b5b5f4f)
+* [Windows 11 “New” ETW Providers — Overview](https://nasbench.medium.com/windows-11-new-etw-providers-overview-a2a5fbc85775)
 
 ## Tools
 
