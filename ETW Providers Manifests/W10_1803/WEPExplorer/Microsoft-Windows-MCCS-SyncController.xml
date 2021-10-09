@@ -1,0 +1,1158 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MCCS-SyncController</Name>
+        <Metadata>
+            <Guid>{7FCB9791-F481-46D1-846E-2EB6F003C4D3}</Guid>
+            <ResourceFilePath>SyncController.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>SyncController.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=SyncController.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>SPERF_TAG_SYNC_INIT_PROVIDER</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SPERF_TAG_SYNC_SERVICE_LOADED</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SPERF_TAG_SYNC_SERVICE_UNLOAD</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SPERF_TAG_BOOKKEEPER_SERVICE_LOADED</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SPERF_TAG_BOOKKEEPER_BOOTSTRAP_ACCOUNTS</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SPERF_TAG_BOOKKEEPER_ADD_CONTROLLER</Name>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Error</Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>State</Message>
+                    <Name>State</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>CommsService</Message>
+                    <Name>CommsService</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Warning</Message>
+                    <Name>Warning</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>StateTransition</Message>
+                    <Name>StateTransition</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+Error: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error Propagated: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SyncController:[Consistency] [%1] Registry key for this partner is being deleted because it's invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SyncController:[Consistency] Default Store is invalid, but will not be deleted. There were '%1' stores found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SyncController:[Consistency] [%1:%2:%3] Store being deleted because it's invalid. There were '%4' stores found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SyncController:[Consistency] [%1] Registry key for this partner is invalid, the reason is '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SyncController:[Consistency] [%1:%2:%3] Store is invalid, the reason is '%4'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>191</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sync WNF event: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P2_UnicodeString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>193</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sync WNF event: %1 - %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_Guid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="P2_UnicodeString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>194</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Sync WNF event: %1 - %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_Guid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="P2_UnicodeString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>195</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Sync WNF event %1 not found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P2_UnicodeString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>196</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Notified golden account existence: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_Boolean" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Receive WNF event; current mode: %1, current value: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SyncMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_SYNC_INIT_PROVIDER</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_SYNC_INIT_PROVIDER</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_SYNC_SERVICE_LOADED</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>404</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_SYNC_SERVICE_LOADED</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>405</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_SYNC_SERVICE_UNLOAD</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>406</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_SYNC_SERVICE_UNLOAD</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>407</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_BOOKKEEPER_SERVICE_LOADED</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>408</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_BOOKKEEPER_SERVICE_LOADED</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>409</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_BOOKKEEPER_BOOTSTRAP_ACCOUNTS</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>410</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_BOOKKEEPER_BOOTSTRAP_ACCOUNTS</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>411</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_BOOKKEEPER_ADD_CONTROLLER</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>412</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SPERF_TAG_BOOKKEEPER_ADD_CONTROLLER</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Starting scheduled SyncExecutor for account %1, engine %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Starting interactive SyncExecutor for account %1, engine %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>502</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Starting AUTDExecutor for account %1, engine %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>503</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Finished SyncExecutor work for account %1 with hr=%2, retry level %3, can start AUTD %4, queue empty %5, saver mode %6, engine %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SaverMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>504</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Finished AUTDExecutor work for account %1 with hr %2, can start AUTD %3, queue empty %4, saver mode %5, engine %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SaverMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>505</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Adding new controller with id %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>506</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Deleting sync controller with id %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>507</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Handle schedule period changed from %2 min to %3 min for account %1 and engine %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>508</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Handle content/filter change for account %1 and engine %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>509</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Added new AccountSyncController for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>510</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started DownloadEmailBodyWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>511</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished DownloadEmailBodyWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>512</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started AddMeetingResponseWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished AddMeetingResponseWork for account %1 with HRESULT %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_HResult_2" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>516</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started DownloadEmailAttachmentWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>517</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished DownloadEmailAttachmentWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>518</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started DownloadSharePointDocumentWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>519</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished DownloadSharePointDocumentWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>522</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started GalSearchWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>523</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished GalSearchWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>524</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started GetOofWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>525</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished GetOofWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>526</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started MailboxSearchWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>527</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished MailboxSearchWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>528</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started PurgeDeletedAccountsWork.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>529</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished PurgeDeletedAccountsWork.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>530</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started SetFolderSyncStateWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>531</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished SetFolderSyncStateWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>534</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started UpdateContentTypesWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>535</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished UpdateContentTypesWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>536</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started SetOofWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>537</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished SetOofWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>538</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started AddMeetingResponseWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>539</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished AddMeetingResponseWork for account %1 with HRESULT %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_HResult_2" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>540</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started FlushAccountSettingsWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>541</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished FlushAccountSettingsWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>542</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Started PurgeDeletedAccountWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>543</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished PurgeDeletedAccountWork for account %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>544</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Adding new child sync controller with id %1 and engine id %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>545</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Delete Account %1: Unknown Store Type %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_Guid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="P2_UInt" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>550</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccountSyncController: Starting ScheduleManager work for account %1, engine %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>551</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Upgrading account %1 from version %2 to the current version %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>552</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Ignoring account %1 because its version (%2) doesn't match the current version (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>553</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Detected a previous failure in Execute Activity Step for account %1, delaying next run.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>555</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Account %1 setting schedule trigger requirement %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_ScheduleTriggerRequirementFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>556</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Account %1 exiting delay and resetting successive empty sync count to zero.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>561</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Aggregate controller has new merged result: engine %1, result %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_HResult_2" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>562</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Handle server change for account %1 and engine %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>563</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Handle login info change for account %1 and engine %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>570</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Executing ScheduleManager work of type %3 for account %1, engine %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WorkType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>701</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Cred Vault: DeletePwd Called. Caller: _PurgeActiveSyncAccount, Partner %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>702</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Cred Vault: DeletePwd Called. Caller: ActiveSyncServer_DeletePassword, Partner %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Setting delayed value of conversation sync enabled to %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Setting the value of conversation sync if changed - Desired = %1, Current = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>809</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Schedule for account %1 triggered when the screen was on and the schedule was set to trigger for screen on.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>810</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Schedule %1 for account %2 triggered with period %3, base period %4, failure count %5, trigger flags %6, engine %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Guid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Dword_4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_ScheduleTriggerRequirementFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineGuid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>811</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+TokenBucket: Account %1 is throttling for %2 minutes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_0" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Prop_Dword_1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>812</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+TokenBucket: Account %1 successfully retrieved a token.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>813</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+TokenBucket: Account %1 was not throttled because the screen was on.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Dword_1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>900</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NotificationUtils: Initializing notification utils. IsOobeDone = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_Boolean" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
