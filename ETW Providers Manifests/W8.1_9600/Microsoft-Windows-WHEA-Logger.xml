@@ -1,0 +1,834 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WHEA-Logger</Name>
+        <Metadata>
+            <Guid>{C26C4F3C-3F66-4E99-8F8A-39405CFED220}</Guid>
+            <ResourceFilePath>C:\Windows\system32\whealogr.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\whealogr.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=whealogr.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WHEA-Logger</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>WHEA Logging Service Initialization</Message>
+                    <Name>Init</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>WHEA Error Event Logs</Message>
+                    <Name>Errlog</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Keyword>WHEA Error Event Logs</Keyword>
+                <Message><![CDATA[
+A fatal hardware error has occurred. A record describing the condition is contained in the data section of this event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Keyword>WHEA Error Event Logs</Keyword>
+                <Message><![CDATA[
+A corrected hardware error has occurred. A record describing the condition is contained in the data section of this event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Keyword>WHEA Error Event Logs</Keyword>
+                <Message><![CDATA[
+A hardware event has occurred. An informational record describing the condition is contained in the data section of this event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: %5
+Error Source: %1
+
+Bus:Device:Function: %9:%10:%11
+Vendor ID:Device ID: %15:%16
+Class Code: %17
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PortType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Command" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Segment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SecondaryBus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Slot" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceSerialNumber" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BridgeControl" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BridgeStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UncorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HeaderLog" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: %5
+Error Source: %1
+
+Bus:Device:Function: %9:%10:%11
+Vendor ID:Device ID: %15:%16
+Class Code: %17
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PortType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Command" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Segment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SecondaryBus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Slot" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceSerialNumber" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BridgeControl" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BridgeStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UncorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HeaderLog" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Reported by component: Processor Core
+Error Source: %1
+Error Type: %7
+Processor APIC ID: %2
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Reported by component: Processor Core
+Error Source: %1
+Error Type: %7
+Processor APIC ID: %2
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: AMD Northbridge
+Error Source: %1
+Error Type: %7
+Processor APIC ID: %2
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: AMD Northbridge
+Error Source: %1
+Error Type: %7
+Processor APIC ID: %2
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: Memory
+Error Source: %1
+Error Type: %19
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorStatus" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddressMask" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Node" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Card" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Module" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bank" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Row" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Column" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BitPosition" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: Memory
+Error Source: %1
+Error Type: %19
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorStatus" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddressMask" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Node" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Card" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Module" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bank" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Row" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Column" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BitPosition" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: PCI/PCI-X Bus
+Error Source: %1
+Error Type: %5
+Segment:Bus: %7:%6
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusSegment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BusData" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Command" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PCIXCommand" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CompleterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: PCI/PCI-X Bus
+Error Source: %1
+Error Type: %5
+Segment:Bus: %7:%6
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusSegment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BusData" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Command" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PCIXCommand" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CompleterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: PCI/PCI-X Device
+Error Source: %1
+Error Type: %5
+
+Segment:Bus:Device:Function: %12:%11:%10:%9
+Vendor ID:Device ID: %6:%7
+Class Code: %8
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FunctionNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SegmentNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: PCI/PCI-X Device
+Error Source: %1
+Error Type: %5
+
+Segment:Bus:Device:Function: %12:%11:%10:%9
+Vendor ID:Device ID: %6:%7
+Class Code: %8
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FunctionNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SegmentNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: %5
+Error Source: %1
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PortType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Command" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Segment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SecondaryBus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Slot" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceSerialNumber" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BridgeControl" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BridgeStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UncorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HeaderLog" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: %5
+Error Source: %1
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PortType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Command" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Segment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SecondaryBus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Slot" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceSerialNumber" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BridgeControl" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BridgeStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UncorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HeaderLog" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: PCI/PCI-X Bus
+Error Source: %1
+Error Type: %5
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusSegment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BusData" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Command" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PCIXCommand" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CompleterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: PCI/PCI-X Bus
+Error Source: %1
+Error Type: %5
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusSegment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BusData" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Command" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PCIXCommand" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CompleterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: PCI/PCI-X Device
+Error Source: %1
+Error Type: %5
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FunctionNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SegmentNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: PCI/PCI-X Device
+Error Source: %1
+Error Type: %5
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FunctionNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SegmentNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A fatal hardware error has occurred.
+
+Component: Memory
+Error Source: %1
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorStatus" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddressMask" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Node" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Card" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Module" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bank" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Row" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Column" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BitPosition" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error has occurred.
+
+Component: Memory
+Error Source: %1
+
+The details view of this entry contains further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorStatus" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddressMask" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Node" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Card" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Module" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bank" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Row" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Column" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BitPosition" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

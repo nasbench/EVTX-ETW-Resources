@@ -1,0 +1,195 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ProcessStateManager</Name>
+        <Metadata>
+            <Guid>{D49918CF-9489-4BF1-9D7B-014D864CF71F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\psmsrv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\psmsrv.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=psmsrv.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-ProcessStateManager</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-ProcessStateManager/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>StateChange</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PolicySuspend</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PolicyResume</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PriorityChange</Name>
+                    <Value>103</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>DCStop</Message>
+                    <Name>win:DC_Stop</Name>
+                    <Value>4</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>StateChange</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Policy</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PriorityChange</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ProcessStateManager/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>StateChange</Task>
+                <Keyword>StateChange</Keyword>
+                <Message><![CDATA[
+Application %8 state changed from %3 to %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CycleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkTokens" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PolicySuspend</Task>
+                <Keyword>Policy</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CycleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkTokens" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PolicyResume</Task>
+                <Keyword>Policy</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CycleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkTokens" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ProcessStateManager/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PriorityChange</Task>
+                <Keyword>PriorityChange</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PlmRequestedPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EffectivePriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateChange</Task>
+                <Opcode>DCStop</Opcode>
+                <Keyword>StateChange</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CycleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkTokens" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ProcessStateManager/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PriorityChange</Task>
+                <Opcode>DCStop</Opcode>
+                <Keyword>PriorityChange</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PlmRequestedPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EffectivePriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

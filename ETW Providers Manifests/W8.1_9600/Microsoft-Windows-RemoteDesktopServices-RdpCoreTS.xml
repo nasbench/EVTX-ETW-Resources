@@ -1,0 +1,948 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS</Name>
+        <Metadata>
+            <Guid>{1139C61B-B549-4251-8ED3-27250A1EDEC8}</Guid>
+            <ResourceFilePath>C:\Windows\system32\RdpCoreTS.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\RdpCoreTS.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.17335&amp;FileName=RdpCoreTS.dll&amp;FileVer=6.3.9600.17335</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Message>
+                    <Path>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Message>
+                    <Path>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Debug</Message>
+                    <Path>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>RDP Stack</Message>
+                    <Name>UMRDP</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>RDP Graphics module</Message>
+                    <Name>WAPlugin</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>RemoteFX module</Message>
+                    <Name>CAPlugin</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>RemoteFX module</Message>
+                    <Name>RemoteFX</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Initialize</Message>
+                    <Name>Initialize</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Terminate</Message>
+                    <Name>Terminate</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>RCMProtocolImpl</Message>
+                    <Name>RCMProtocolImpl</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ProtocolExchange</Message>
+                    <Name>ProtocolExchange</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>EstablishConnection</Message>
+                    <Name>EstablishConnection</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NetworkDetect</Message>
+                    <Name>NetworkDetect</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>CloseConnection</Message>
+                    <Name>CloseConnection</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NetworkBinding</Message>
+                    <Name>NetworkBinding</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Runtime</Message>
+                    <Name>Runtime</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>AdvancedRemoteAppEnabled</Message>
+                    <Name>AdvancedRemoteAppEnabled</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>AdvancedRemoteAppNotEnabled</Message>
+                    <Name>AdvancedRemoteAppNotEnabled</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>RDP Stack</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The RDP Graphics module failed to initialize. Verify that the server is correctly configured. A restart of the system may be needed. The relevant status error code was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HresultCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Information</Level>
+                <Task>RDP Stack</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+Remote Desktop Protocol will use the RDP Graphics module to connect to the client computer. The RDP Graphics module is being used based on the server configuration, client configuration, and network connection.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The RemoteFX module failed to initialize. Verify that the server is correctly configured. A restart of the system may be needed. The relevant status code was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Critical</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The RemoteFX module failed to initialize. Verify that the server is correctly configured. A restart of the system may be needed. The relevant status code was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The client computer does not support RemoteFX. The connection will be made with the RDP Graphics. The relevant status code was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The resolution requested by the remote client is not supported by RemoteFX. The connection will be made with RemoteFX using a supported resolution. Resolution requested by the client: Monitors %1: %2. Resolution applied: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NumMonitors" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestedMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppliedMode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Critical</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The resolution requested by the remote client could not be set. The default resolution will be set for the RemoteFX session. The server may be experiencing high load or require a restart.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Terminate</Opcode>
+                <Message><![CDATA[
+Module terminated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+Remote Desktop Protocol will use the RemoteFX guest mode module to connect to the client computer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+Remote Desktop Protocol will use the RemoteFX host mode module to connect to the client computer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Critical</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+Unable to initialize the RemoteFX host mode module. Restart the computer to resolve the issue. If the issue is not resolved, verify the computer configuration.. The error code is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HresultCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Critical</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+Unable to initialize the RemoteFX host mode module. Restart the computer to resolve the issue. If the issue is not resolved, verify the computer configuration.. The error code is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The display resolution requested by the remote client is not supported by RemoteFX host mode module. The resolution requested by the client: Monitors %1: %2. Resolution applied: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NumMonitors" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestedMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppliedMode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The display resolution requested by the remote client could not be enabled. The default resolution will be enabled for the RemoteFX session. The server may be experiencing high load]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>RCMProtocolImpl</Opcode>
+                <Message><![CDATA[
+Connection %1 created ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>RCMProtocolImpl</Opcode>
+                <Message><![CDATA[
+The connection %1 was assigned to session %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>RCMProtocolImpl</Opcode>
+                <Message><![CDATA[
+The RemoteFX protocol connection %1 encountered an error (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>RCMProtocolImpl</Opcode>
+                <Message><![CDATA[
+TMT: ConnectionName=%1, PromptForCredentials=%2, PromptForCredentialsDone=%3, GfxChannelOpened=%4, FirstGraphicsReceived=%5 [ms]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PromptForCredentials" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PromptForCredentialsDone" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GfxChannelOpened" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstGraphicsReceived" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>ProtocolExchange</Opcode>
+                <Message><![CDATA[
+The RDP protocol component %1 detected an error (%2) in the protocol stream and the client was disconnected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+A TCP connection has been successfully established.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+The TCP connection has failed with the error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+The server has confirmed that the client's multi-transport capability.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>NetworkDetect</Opcode>
+                <Message><![CDATA[
+The network characteristics detection function has been disabled because of %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReasonString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>CloseConnection</Opcode>
+                <Message><![CDATA[
+The server has terminated main RDP connection with the client.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>CloseConnection</Opcode>
+                <Message><![CDATA[
+The disconnect reason is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>129</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>NetworkBinding</Opcode>
+                <Message><![CDATA[
+The server is using %1 to bind to port %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransportProtocolName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+The server has initiated a multi-transport request to the client, for tunnel: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+The server accepted a new %1 connection from client %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+A channel %1 has been connected between the server and the client using transport tunnel: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TunnelID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>NetworkDetect</Opcode>
+                <Message><![CDATA[
+The following network characteristics have been detected for tunnel %1; Link latency : %2 milliseconds and Bandwidth: %3 kbps.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RTT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Bandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>134</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>NetworkDetect</Opcode>
+                <Message><![CDATA[
+Link latency and bandwidth could not be detected for tunnel %2.  The error code is %1. The following default network characteristics will be used;  Link latency: %3 milliseconds and Bandwidth:%4 kbps. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TunnelID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RTT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Bandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>135</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+The multi-transport connection finished for tunnel: %1, its transport type set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransportType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>136</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+Unable to establish a multi-transport connection; the connection will use TCP. Consult the product documentation to enable UDP Connections.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>137</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>NetworkDetect</Opcode>
+                <Message><![CDATA[
+The following network characteristics have been detected for tunnel %1; Link latency : %2 milliseconds and Bandwidth: %3 kbps. Connections with these network characteristics may impact user experience.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RTT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Bandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>138</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>EstablishConnection</Opcode>
+                <Message><![CDATA[
+The DTLS initialization failed with the error code %1, TLS will be used instead. Audio/Video experience may be impacted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>139</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>ProtocolExchange</Opcode>
+                <Message><![CDATA[
+The server security layer detected an error (%1) in the protocol stream and the client (Client IP:%2) has been disconnected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IPString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>ProtocolExchange</Opcode>
+                <Message><![CDATA[
+A connection from the client computer with an IP address of %1 failed because the user name or password is not correct.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IPString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+PerfCounter session started with instance ID %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InstanceID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>161</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The RemoteFX encoding engine encountered an error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>162</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The client supports version %1 of the RDP graphics protocol, client mode: %2, H264 enabled: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClientMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="H264Enabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>163</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The client suports RDP 7.1 or lower protocol.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>164</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The client advertized RDP8 protocol configuration is not supported by the server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>165</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+RemoteFX Encoding for RemoteFX Clients designed for Windows Server 2008 R2 SP1 is enabled and a compatible session was created.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>166</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The RemoteFX Adaptive Graphics internal configuration changed to optimize for the minimum use of network bandwidth.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>167</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The RemoteFX Adaptive Graphics internal configuration changed to optimize for experience.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>168</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Initialize</Opcode>
+                <Message><![CDATA[
+The resolution requested by the client: Monitor %1: (%2, %3), origin: (%4, %5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MonitorNum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MonitorWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MonitorHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MonitorX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MonitorY" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>169</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The client operating system type is (%1, %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MajorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>193</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The RemoteFX Media Remoting is not supported by the client.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>194</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The RemoteFX Media Remoting is not supported by the current server configuration.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>195</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+The RemoteFX Media Remoting module encountered an error. The error code is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+%1: Transitioned successfully from %3 to %5 in response to %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StateTransition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousStateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewStateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+%1: An error was encountered when transitioning from %3 in response to %7 (error code %8).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StateTransition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousStateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewStateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>257</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>AdvancedRemoteAppEnabled</Opcode>
+                <Message><![CDATA[
+The connection is using advanced RemoteFX RemoteApp graphics.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>258</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoteFX module</Task>
+                <Opcode>AdvancedRemoteAppNotEnabled</Opcode>
+                <Message><![CDATA[
+The connection is not using advanced RemoteFX RemoteApp graphics]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

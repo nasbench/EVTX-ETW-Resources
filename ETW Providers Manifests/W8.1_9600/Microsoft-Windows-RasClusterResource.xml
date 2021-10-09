@@ -1,0 +1,146 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RasClusterResource</Name>
+        <Metadata>
+            <Guid>{215609B4-72AB-4E0E-96F8-4C503FC4BE3D}</Guid>
+            <ResourceFilePath>C:\Windows\System32\RasClusterRes.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\RasClusterRes.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=RasClusterRes.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Notification Channel</Message>
+                    <Path>Microsoft-Windows-RasClusterResource/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Log Always</Message>
+                    <Name>win:LogAlways</Name>
+                    <Value>0</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>None</Message>
+                    <Name>win:None</Name>
+                    <Value>0</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Message><![CDATA[
+Importing RemoteAccess service configuration using %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigurationFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationExportTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Message><![CDATA[
+RemoteAccess service configuration imported successfully from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigurationFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationExportTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to import RemoteAccess service configuration from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigurationFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationExportTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Message><![CDATA[
+RemoteAccess service configuration successfully exported to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigurationFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationExportTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Message><![CDATA[
+RemoteAccess service resource is becoming online with older configuration. Any configuration that was done after %1 is lost. Please reconfigure them.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LastConfigUpdateTimeString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationExportTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Message><![CDATA[
+Exporting RemoteAccess service configuration to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigurationFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationExportTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to export RemoteAccess service configuration to  %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigurationFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationExportTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,319 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UserModePowerService</Name>
+        <Metadata>
+            <Guid>{CE8DEE0B-D539-4000-B0F8-77BED049C590}</Guid>
+            <ResourceFilePath>C:\Windows\system32\umpo.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\umpo.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=umpo.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-UserModePowerService/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>RundownPlatformRole</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RundownPowerScheme</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RundownAcPowerSetting</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RundownDcPowerSetting</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AdaptiveDimTimeout</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RundownBatteryInformation</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RundownBatteryStatus</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RundownBrightnessCapability</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RundownPowerSource</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PowerSchemeChanged</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PowerMeterData</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PowerMeterMetaData</Name>
+                    <Value>12</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PowerMeter</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RundownPlatformRole</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformRole" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RundownPowerScheme</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RundownAcPowerSetting</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ValueIndex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RundownDcPowerSetting</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ValueIndex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AdaptiveDimTimeout</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RundownBatteryInformation</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ManufacturerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ManufactureDay" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ManufactureMonth" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ManufactureYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Capabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Technology" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Pad" inType="win:Binary" outType="xs:hexBinary" length="3"/>
+  <data name="Chemistry" inType="win:AnsiString" outType="xs:string" length="4"/>
+  <data name="DesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullChargeCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DefaultAlert1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DefaultAlert2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CriticalBias" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CycleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GranularityScaleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="GranularityScale" count="GranularityScaleCount">
+    <data name="Granularity" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Capacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+  <data name="UniqueId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RundownBatteryStatus</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Capacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Voltage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Rate" inType="win:Int32" outType="xs:int"/>
+  <data name="EstimatedRuntime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UniqueId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RundownBrightnessCapability</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrightnessCapable" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RundownPowerSource</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AcOnline" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>PowerSchemeChanged</Task>
+                <Message><![CDATA[
+Process %1 (process ID:%2) reset policy scheme from %3 to %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NewSchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PowerMeterData</Task>
+                <Keyword>PowerMeter</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="value" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserModePowerService/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PowerMeterMetaData</Task>
+                <Keyword>PowerMeter</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplingPeriod" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MeterNameLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MeterName" inType="win:UnicodeString" outType="xs:string" length="MeterNameLength"/>
+  <data name="MeteredHardwareCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MeteredHardwareName" inType="win:UnicodeString" outType="xs:string" count="MeteredHardwareCount"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

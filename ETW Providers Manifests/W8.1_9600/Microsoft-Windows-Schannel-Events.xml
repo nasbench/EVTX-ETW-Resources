@@ -1,0 +1,360 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Schannel-Events</Name>
+        <Metadata>
+            <Guid>{91CC1150-71AA-47E2-AE18-C96E61736B6F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\schannel.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\schannel.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=schannel.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Schannel-Events</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Schannel-Events/Perf</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>AcquireCredentialHandle</Name>
+                    <Value>4096</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AcceptSecurityContext</Name>
+                    <Value>8192</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MemoryAllocation</Name>
+                    <Value>12288</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CAPI2Calls</Name>
+                    <Value>16384</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PKCrypto</Name>
+                    <Value>20480</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FreeCredentialHandle</Name>
+                    <Value>24576</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DeleteSecurityContext</Name>
+                    <Value>28672</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Allocate</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Free</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>257</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>AcquireCredentialHandle</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>258</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>AcquireCredentialHandle</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReturnValue" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>AcceptSecurityContext</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CredHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>AcceptSecurityContext</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnValue" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>769</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>MemoryAllocation</Task>
+                <Opcode>Allocate</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AllocationSize" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>770</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>MemoryAllocation</Task>
+                <Opcode>Free</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>CAPI2Calls</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1281</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>PKCrypto</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1282</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>PKCrypto</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1283</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>PKCrypto</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1284</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>PKCrypto</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1537</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>FreeCredentialHandle</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CredHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1538</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>FreeCredentialHandle</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1793</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>DeleteSecurityContext</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1794</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Schannel-Events/Perf</Channel>
+                <Level>Information</Level>
+                <Task>DeleteSecurityContext</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

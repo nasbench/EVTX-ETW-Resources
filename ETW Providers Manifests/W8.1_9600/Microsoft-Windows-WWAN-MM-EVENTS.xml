@@ -1,0 +1,244 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WWAN-MM-EVENTS</Name>
+        <Metadata>
+            <Guid>{7839BB2A-2EA3-4ECA-A00F-B558BA678BEC}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wwansvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wwansvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=8.1.9600.16384&amp;FileName=wwansvc.dll&amp;FileVer=8.1.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WWAN-MM-EVENTS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>WWAN MM Diagnose Channel</Message>
+                    <Path>Microsoft-Windows-WWAN-MM-Events/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WWAN MM Interface Arrival task</Message>
+                    <Name>TaskInterfaceArrival</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>WWAN MM Connect task</Message>
+                    <Name>TaskWWanMMConnect</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>WWAN MM Write to UCM space task</Message>
+                    <Name>TaskWWanMMWrite</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L2ConnectPath</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ClosePath</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StateTransition</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM module started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM module stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WWAN MM Event : Error occurred in WWAN MM Module]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN MM Interface Arrival task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN MM Event : New WWAN Interface is arrived to the WWAN MM]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN MM Interface Arrival task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM got notification of Interface initialization of a new interface]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN MM Connect task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN MM Event : Connect request issued by the WWAN MM module]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN MM Connect task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN MM Event : Connect completion response received by the WWAN MM Module]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10021</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN MM Write to UCM space task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM Module writing start into UCM namepspace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10022</Id>
+                <Version>0</Version>
+                <Channel>WWAN MM Diagnose Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN MM Write to UCM space task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM Module writing complete into UCM namepspace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

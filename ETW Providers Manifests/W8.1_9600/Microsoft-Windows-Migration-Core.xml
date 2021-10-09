@@ -1,0 +1,212 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Migration-Core</Name>
+        <Metadata>
+            <Guid>{C553CED4-9BA3-478F-98EA-906CE99C2E4F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\migwiz\migcore.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\migwiz\migcore.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=migcore.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Migration-Engine/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MigEngineApply</Name>
+                    <Guid>{645BBC71-0024-4225-9A66-CB4164A1F7DE}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MigEngineDoApply</Name>
+                    <Guid>{0BF6B687-4572-493C-B3A4-30217F963D0C}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MigUnitDoApply</Name>
+                    <Guid>{A46A2661-7359-48A9-8E5C-C698381500A4}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MigUnitGather</Name>
+                    <Guid>{FA00E5E3-4E9D-4C21-A959-46EA006283E3}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MigAgentDetect</Name>
+                    <Guid>{94007561-9EBC-4764-A076-EA0E9A5505AF}</Guid>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>MigEngineEvent</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigEngineApply</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigEngineApply</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigEngineDoApply</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigEngineDoApply</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigUnitDoApply</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigUnitDoApply</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigUnitGather</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigUnitGather</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigAgentDetect</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Migration-Engine/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MigAgentDetect</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>MigEngineEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

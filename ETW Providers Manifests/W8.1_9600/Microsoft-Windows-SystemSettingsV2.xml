@@ -1,0 +1,308 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SystemSettingsV2</Name>
+        <Metadata>
+            <Guid>{558F177B-FE7A-4E1B-99F1-2025DB740D02}</Guid>
+            <ResourceFilePath>C:\Windows\system32\SystemSettingsDatabase.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\SystemSettingsDatabase.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=SystemSettingsDatabase.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SystemSettingsV2</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SystemSettingsV2/Informational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SystemSettingsV2/Performance</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SystemSettingsV2/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemSettingsV2_FindSettingById</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemSettingsV2_CreateSettingHandler</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemSettingsV2_GetSettingValue</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemSettingsV2_SetSettingValue</Name>
+                    <Value>40</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemSettingsV2_EvaluateSettingIsEnabled</Name>
+                    <Value>50</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemSettingsV2_InvokeSettingAction</Name>
+                    <Value>60</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemSettingsV2_GetDescriptionText</Name>
+                    <Value>70</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_FindSettingById</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Starting operation to find and create setting object with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_FindSettingById</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished operation to find and create setting object with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_CreateSettingHandler</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Starting operation to create setting handler instance for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_CreateSettingHandler</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished operation to create setting handler instance for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_GetSettingValue</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Starting operation to get synchronous value for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_GetSettingValue</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished operation to get synchronous value for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_SetSettingValue</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Starting operation to set synchronous value for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_SetSettingValue</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished operation to set synchronous value for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_EvaluateSettingIsEnabled</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Starting operation to evaluate IsEnabled for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_EvaluateSettingIsEnabled</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished operation to evaluate IsEnabled for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_InvokeSettingAction</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Starting operation to invoke an action for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_InvokeSettingAction</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished operation to invoke an action for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_GetDescriptionText</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Starting operation to get description text for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SystemSettingsV2/Informational</Channel>
+                <Level>Information</Level>
+                <Task>SystemSettingsV2_GetDescriptionText</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Finished operation to get description text for setting with id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

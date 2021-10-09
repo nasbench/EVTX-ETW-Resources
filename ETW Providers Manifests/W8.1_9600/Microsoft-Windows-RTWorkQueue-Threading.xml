@@ -1,0 +1,339 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RTWorkQueue-Threading</Name>
+        <Metadata>
+            <Guid>{E18D0FC9-9515-4232-98E4-89E456D8551B}</Guid>
+            <ResourceFilePath>C:\Windows\system32\rtworkq.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\rtworkq.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.9600.16384&amp;FileName=rtworkq.dll&amp;FileVer=12.0.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RTWorkQueue-Threading</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>RTWorkQueue Threading</Message>
+                    <Path>RTWorkQueueTheading</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WorkQueue: Execute</Message>
+                    <Name>WorkQueue_Execute</Name>
+                    <Value>583</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Queue</Message>
+                    <Name>WorkQueue_Queue</Name>
+                    <Value>584</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Thread</Message>
+                    <Name>WorkQueue_Thread</Name>
+                    <Value>588</Value>
+                </Task>
+                <Task>
+                    <Message>MMCSS Registration</Message>
+                    <Name>MMCSS_Registration</Name>
+                    <Value>595</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Queue_Create</Message>
+                    <Name>WorkQueue_Queue_Create</Name>
+                    <Value>602</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Execute callback</Message>
+                    <Name>WorkQueue_Execute_Callback</Name>
+                    <Value>603</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: MMCSS Transition</Message>
+                    <Name>WorkQueue_MMCSS</Name>
+                    <Value>604</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4435</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Execute</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Execute: Start workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4436</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Execute</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Execute: End workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4437</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Queue</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Queue: WorkQueuePtr=%1 Start threads=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QueueDepth" inType="win:Int32" outType="xs:int"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4438</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Queue</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Queue: WorkQueuePtr=%1 End threads=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QueueDepth" inType="win:Int32" outType="xs:int"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4439</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Information</Level>
+                <Task>WorkQueue: Thread</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Thread: Start workqueue_ptr=%1 WorkQueueID=%2 ThreadCount=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WordQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4440</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Information</Level>
+                <Task>WorkQueue: Thread</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Thread: End workqueue_ptr=%1 WorkQueueID=%2 ThreadCount=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WordQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4454</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Information</Level>
+                <Task>MMCSS Registration</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MMCSS Registration Enter Queue=%1 ThreadID=%2 Handle=%3 Error=%4 Class=%5 Pri=%6 TaskID=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Queue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4455</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Information</Level>
+                <Task>MMCSS Registration</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+MMCSS Registration Enter Queue=%1 ThreadID=%2 Handle=%3 Error=%4 Class=%5 Pri=%6 TaskID=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Queue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4472</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Queue_Create</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Queue: WorkQueuePtr=%1 WorkQueueID=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:Int32" outType="xs:int"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4473</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Queue_Create</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Queue: WorkQueuePtr=%1 WorkQueueID=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:Int32" outType="xs:int"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4474</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Execute callback</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Execute Callback: Start workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4475</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Execute callback</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Execute Callback: End workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4476</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: MMCSS Transition</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue MMCSS: Start workqueue_ptr=%1 workQueueID=%2 Class=%3 Pri=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4477</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Threading</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: MMCSS Transition</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue MMCSS: End workqueue_ptr=%1 workQueueID=%2 Class=%3 Pri=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

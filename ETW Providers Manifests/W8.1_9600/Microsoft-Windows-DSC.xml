@@ -1,0 +1,2005 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DSC</Name>
+        <Metadata>
+            <Guid>{50DF9E12-A8C4-4939-B281-47E1325BA63E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dsc\DscCoreR.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\dsc\DscCoreR.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dsc\DscCoreR.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.17396&amp;FileName=DscCoreR.dll&amp;FileVer=6.3.9600.17396</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Desired State Configuration</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DSC/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DSC/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DSC/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DSC/Debug</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Send configuration scenario for Local configuration manager</Message>
+                    <Name>SendConfigurationTaskinLCM</Name>
+                    <Guid>{9E5D646E-1D83-4190-9384-715C38E68E8B}</Guid>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4097</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Send configuration scenario for Local configuration manager</Task>
+                <Message><![CDATA[
+Job %1 : 
+This event indicates that failure happens when %2 is processing the configuration. ErrorId is %3. ErrorDetail is %4. ResourceId is %5 and SourceInfo is %6. ErrorMessage is %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorDetail" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResourceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4098</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Job %1 : 
+Displaying messages from built-in DSC resources:
+	 WMI channel %2 
+	 ResourceID: %3 
+	 Message : %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WMIMessageChannel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResourceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageBody" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4099</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Method %2 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Displaying messages from the engine:
+	 WMI channel %2 
+	 ResourceID: %3 
+	 Message : %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WMIMessageChannel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResourceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageBody" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+From %2, message is %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageBody" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Send configuration scenario for Local configuration manager</Task>
+                <Message><![CDATA[
+Job %1 : 
+Configuration is sent from computer %2 by user sid %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+This event indicates that a non-terminating error was thrown when %2 was executing %3 on %4 DSC resource. FullyQualifiedErrorId is %5. ErrorMessage is %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OperationCmd" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FullyQualifiedErrorId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+This event indicates that failure happens when %2 is trying to get the configuration from pull server using download manager %3. ErrorId is %4. ErrorDetail is %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadManagerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorDetail" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Attempting to get the configuration from pull server using Download Manager %2.Configuration Id is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadManagerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Attempting to get the modules from pull server using Download Manager %2. Configuration Id is %3. Modules are %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadManagerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Modules" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Attempting to get the action from pull server using Download Manager %2. Configuration Id is %3. Checksum is %4. Compliance status is %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadManagerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Checksum" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Compliant" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Successfully got the configuration from pull server using Download Manager %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadManagerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Successfully got the modules from pull server using Download Manager %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadManagerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Successfully got the action %2 from pull server using Download Manager %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActionStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadManagerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Successfully installed the certificate %2 from %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Skipping installing certificate %2 as it is already installed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Successfully deleted certificate file %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Running consistency engine.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Consistency engine was run successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+This event indicates that failure happened while trying to run consistency engine. ErrorId is %2. ErrorDetail is %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorDetail" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Displaying verbose messages from Powershell DSC resource:
+	 ResourceID : %2 
+	 Message : %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResourceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageBody" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4118</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Displaying debug messages from Powershell DSC resource:
+	 ResourceID : %2 
+	 Message : %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResourceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageBody" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4119</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Method %2 started with parameters 
+ 	 Class name: %3 
+ 	 Resource ID: %4 
+ 	 Flags: %5 
+ 	 Execution Mode: %6 
+ 	 DSC resource Namespace: %7 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResourceID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExecutionMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProviderNamespace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Method %2 ended successfully]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Send configuration scenario for Local configuration manager</Task>
+                <Message><![CDATA[
+Job %1 : 
+Current configuration is cancelled. %2 out of %3 resources are not configured.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TotalSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4128</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Send configuration scenario for Local configuration manager</Task>
+                <Message><![CDATA[
+Job %1 : 
+Configuration is stopped when Powershell DSC resource is executing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4129</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Send configuration scenario for Local configuration manager</Task>
+                <Message><![CDATA[
+Job %1 : 
+Write progress failed with error code %2. The current configuration will be stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Job %1 : 
+Current configuration is forcely stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+DSC Engine Error : 
+	 Error Message %2 
+	Error Code : %3 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4132</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Getting a registration instance for %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4133</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Module manager is loading instance document from location %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4134</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Validating instance document.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4135</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Deleting instance document from location %2 since it is invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4136</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Parsing the configuration to apply.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4137</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Resolving Dependencies inside the configuration document.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4144</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Setting resources in order. Number of resources: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4145</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Processing resource index %2, name %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4146</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Getting Metaconfiguration details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4147</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Moving the resource %2 of class %3 to desired state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4148</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Setting Metaconfiguration instance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4149</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Saving configuration instance into %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4150</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Copying configuration file from %2 to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4151</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Applying configuration from %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4152</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Waiting for the current configuration to stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4153</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Deleting file from %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4160</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Registering the task with task scheduler after rebooting the machine]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4161</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Scheduling a restart of the machine]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4162</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Executing operations for PS DSC resource %2 with resource name %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4163</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Executing operations for WMIv2 DSC resource %2s with resource name %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4164</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Executing GET for PS DSC resource %2 with resource name %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4165</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Executing GET for WMIv2 DSC resource %2 with resource name %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4166</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Invoking session and getting result for namespace %2, classname %3 for method %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4167</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Getting PS DSC resource schema path and registration information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4168</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Function %2 started with parameters 
+ 	 Class name: %3 
+ 	 Method Name: %4 
+ 	 Namespace: %5 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Namespace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4169</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Function %2 started with parameters 
+ 	 DataSize: %3 
+ 	 Flags: %4 
+ 	 Execution Mode: %5 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExecutionMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4176</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Validating infrastructure schema]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="paramNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4177</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Validating DSC resource registration against schema 
+	 Number of classes: %2 
+	 Number of Registrations: %3 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4178</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Validating DSC resource schema against a class array of size %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4179</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Validating Schema of class %2 which is class index %3 in an array of classes of size %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4180</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Validating DSC Document instance with instance array size of %2 and flags %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4181</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Validating DSC resource registration instance for class : %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4182</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Validating Class property %2 for class %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4183</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : Failed attempt number %2 : Couldn't delete file  %3 . The error code is %4. The error message is: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParamNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ParamText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParamErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ParamErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4184</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The current metaconfiguration is not registered for Pull configuration mode]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4185</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+Failed to register the Pull Server Task for the current metaconfiguration]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4192</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+Failed to register the Consistency Task for the current metaconfiguration]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4193</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+Failed to copy the configuration from location %2 to location %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4194</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+Failed to delete the current configuration file]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4195</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Machine was restarted as needed by one or more DSC resources.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4196</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Restoring the configuration to previous configuration]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4197</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Reading the file content from %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4198</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Consistency Engine did not find a current or pending configuration to apply]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4199</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The checksum validation for module %2 completed with status code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The content validation for module %2 completed with status code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The modules %2 were downloaded to the location %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The modules %2 were installed at the location %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Attempting to get the modules %2 from pull server with Server Url %3 using Web Download Manager.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Attempting to get the configuration %2 from pull server with Server Url %3 using Web Download Manager.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The checksum validation for configuration %2 completed with status code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The configuration %2 has an invalid format. The configuration name should be a UUID.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4213</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The module %2 has an invalid version format %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4214</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Skipping pulling module %2 with version %3 as it already exists in this location %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4215</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Extraction for module %2 failed since module path %3 already exists.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4216</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Skipping pulling of modules since all modules specified in configuration %2 are available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4217</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command using certificate id: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4224</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager processed certificate: %2 %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration s Get-DscDocument command, Http Client failed: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4226</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, GET Url: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4227</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, GET call result: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4228</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, Checksum validation failed: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4229</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Get-DscDocument command, File save result: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4230</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager Get-DscModule command, module %2 using certificate id: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4231</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, Http Client failed: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4232</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, GET Url: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4233</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, GET call result: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4240</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, Checksum validation failed: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4241</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager Get-DscModule command, module %2, File save result: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4242</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command with server url: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4243</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command using certificate id: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4244</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command, Http Client failed: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4245</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command, GET Url: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4246</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+WebDownloadManager for configuration %2 Do-DscAction command, GET call result: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4247</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Module %2 is over written with the downloaded module %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4248</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Cannot download configuration from %2. Downloading over HTTP is not allowed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4249</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Job %1 : 
+From %2, message is %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageBody" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4250</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Message %2 
+HResult %3 
+StackTrack %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="xs:int"/>
+  <data name="StackTrace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4257</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+Job runs under the following LCM setting. 
+ConfigurationMode: %2 
+ConfigurationModeFrequencyMins: %3 
+RefreshMode: %4 
+RefreshFrequencyMins: %5 
+RebootNodeIfNeeded: %6 
+DebugMode: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="configurationMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="configurationModeFrequencyMins" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="refreshmode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="refreshFrequencyMins" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rebootNodeIfNeeded" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="debugMode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4269</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1: 
+Restore default value due to corrupted MOF file %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4286</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager has applied the configuration successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4287</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager is attempting to remove the current configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4288</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager did not find any current configuration to remove.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4289</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager failed to remove the current configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4290</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager was able to successfully remove the current configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4291</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager is attempting to remove the pending configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4292</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager did not find any pending configuration to remove.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4293</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager failed to remove the pending configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4294</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager was able to successfully remove the pending configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4295</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager is attempting to remove the previous configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4296</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager did not find any previous configuration to remove.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4297</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager failed to remove the previous configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4298</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job %1 : 
+The local configuration manager was able to successfully remove the previous configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4299</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DSC/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Job %1 : 
+Could not wait for the stopping event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

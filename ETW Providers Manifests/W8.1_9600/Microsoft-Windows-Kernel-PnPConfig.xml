@@ -1,0 +1,103 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-PnPConfig</Name>
+        <Metadata>
+            <Guid>{D5EBB80C-4407-45E4-A87A-015F6AF60B41}</Guid>
+            <ResourceFilePath>C:\Windows\system32\microsoft-windows-kernel-pnp-events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\microsoft-windows-kernel-pnp-events.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=microsoft-windows-kernel-pnp-events.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-PnPConfig</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Configuration</Message>
+                    <Path>Microsoft-Windows-Kernel-PnPConfig/Configuration</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Configuration</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Device container %2 is unconfigured.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ContainerId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Configuration</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Property '%4 %5' on device '%3' changed.  This may affect the value of a property on device container %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ContainerId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceInstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropertyKeyGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PropertyKeyPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Configuration</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Device '%2' requires installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Configuration</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+New device interface '%2' with interface class %3 has been registered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceInterfaceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceClassGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

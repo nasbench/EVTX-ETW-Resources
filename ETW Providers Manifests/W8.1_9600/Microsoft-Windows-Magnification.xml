@@ -1,0 +1,334 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Magnification</Name>
+        <Metadata>
+            <Guid>{C882FF1D-7585-4B33-B135-95C577179137}</Guid>
+            <ResourceFilePath>C:\Windows\system32\magnification.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\magnification.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=magnification.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Magnification</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>LensCreate</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LensDestroy</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SetWindowSource</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SetWindowTransform</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UpdateLensContent</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UpdateContentSurfaces</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UpdateRedirectionSurfaces</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UpdateRedirectionResources</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UpdateSettings</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RecreateTextures</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Magnification</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>LensCreate</Task>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>LensDestroy</Task>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SetWindowSource</Task>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <struct name="SrcRect" count="1">
+    <data name="left" inType="win:Int32" outType="xs:int"/>
+    <data name="top" inType="win:Int32" outType="xs:int"/>
+    <data name="right" inType="win:Int32" outType="xs:int"/>
+    <data name="bottom" inType="win:Int32" outType="xs:int"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>SetWindowTransform</Task>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <struct name="Transform" count="1">
+    <data name="m_11" inType="win:Float" outType="xs:float"/>
+    <data name="m_12" inType="win:Float" outType="xs:float"/>
+    <data name="m_13" inType="win:Float" outType="xs:float"/>
+    <data name="m_21" inType="win:Float" outType="xs:float"/>
+    <data name="m_22" inType="win:Float" outType="xs:float"/>
+    <data name="m_23" inType="win:Float" outType="xs:float"/>
+    <data name="m_31" inType="win:Float" outType="xs:float"/>
+    <data name="m_32" inType="win:Float" outType="xs:float"/>
+    <data name="m_33" inType="win:Float" outType="xs:float"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateLensContent</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="DesktopComposited" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateLensContent</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="DesktopComposited" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateContentSurfaces</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UpdateId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateContentSurfaces</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UpdateId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateRedirectionSurfaces</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UpdateId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateRedirectionSurfaces</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UpdateId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateRedirectionResources</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UpdateId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateRedirectionResources</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UpdateId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateSettings</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UpdateSettings</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>RecreateTextures</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Width" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Height" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>RecreateTextures</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Magnification</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hWndLensCtx" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

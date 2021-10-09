@@ -1,0 +1,2888 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Iphlpsvc-Trace</Name>
+        <Metadata>
+            <Guid>{6600E712-C3B6-44A2-8A48-935C511F28C8}</Guid>
+            <ResourceFilePath>C:\Windows\system32\iphlpsvc.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\iphlpsvc.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\iphlpsvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.3.9600.16384&amp;FileName=iphlpsvc.dll&amp;FileVer=6.3.9600.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Iphlpsvc-Trace</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Iphlpsvc Etw Channel</Message>
+                    <Path>Microsoft-Windows-Iphlpsvc/Trace</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Iphlpsvc Etw Debug Channel</Message>
+                    <Path>Microsoft-Windows-Iphlpsvc/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>isatap</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>sixto4</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>iphttps</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>teredo</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>teredoVerbose</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>teredoStart</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>teredoEnd</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>teredoFailures</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>dns64</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CPVerbose</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CPStart</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CPEnd</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CPFailures</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CP</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>HA</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PROXYMGR</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>damultisite</Name>
+                    <Value>65536</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4051</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2: Forwarding %3 packet from %4 to %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IpAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source IP Address" inType="win:Binary" outType="win:IPv6" length="IpAddrLength"/>
+  <data name="Destination IP Address" inType="win:Binary" outType="win:IPv6" length="IpAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4052</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo server: Received %2 from %3 , Sending %4 to %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IpAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceivedTeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source IP Address" inType="win:Binary" outType="win:IPv6" length="IpAddrLength"/>
+  <data name="SentTeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Destination IP Address" inType="win:Binary" outType="win:IPv6" length="IpAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4053</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2 received %3, Mapping to %4.
+ source: %5, destination: %6, target: %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IpAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceivedTeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MappedTeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source IP Address" inType="win:Binary" outType="win:IPv6" length="IpAddrLength"/>
+  <data name="Destination IP Address" inType="win:Binary" outType="win:IPv6" length="IpAddrLength"/>
+  <data name="Target IP Address" inType="win:Binary" outType="win:IPv6" length="IpAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4054</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo client in state %1,received bad or invalid packet with %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeredoProtocolState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Bad or Invalid Packet" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4055</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo client state change: Previous state %1, Current state %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreviousTeredoProtocolState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentTeredoProtocolState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4056</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo client Sending %1 packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4057</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Starting Teredo Offload with: 
+LocalV6:%3 RemoteV6:%4 
+LocalV4:%5 RemoteV4:%6 
+LocalPort:%7 RemotePort:%8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IpAddrV4Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddrV6Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source Ipv6 Address" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length"/>
+  <data name="Destination IPv6 Address" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length"/>
+  <data name="Source IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Destination IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Source Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Destination Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4058</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4059</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo server received bad or invalid packet with %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Bad or Invalid Packet" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4060</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+%2 %3 mapping: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SockAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MappingType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="SockAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4061</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2 transmitting packet to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Primary or Secondary" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Destination Address" inType="win:Binary" outType="win:SocketAddress" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4062</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2 received %3 packet from %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source Ipv6 Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4063</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2 received %3, sending %4 to %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IpAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceivedTeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MappedTeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Destination IP Address" inType="win:Binary" outType="win:IPv6" length="IpAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4064</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2 received %3, sending %4 to %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceivedTeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MappedTeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Destination IP Address" inType="win:Binary" outType="win:SocketAddress" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4065</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2 received packet from %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Primary or Secondary" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Socket Address" inType="win:Binary" outType="win:SocketAddress" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4066</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2 received packet type %3;
+ with source %4 destination %5 target %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source Ipv6 Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="Destination IP Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="Target IP Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4067</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo %2 transmitting %3 packet to %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TeredoPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Destination Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4150</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap sixto4</Keyword>
+                <Message><![CDATA[
+%1 interface %2 %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4151</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap</Keyword>
+                <Message><![CDATA[
+ISATAP link local address for interface %2 was %3, is %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Current IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="New IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4152</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap</Keyword>
+                <Message><![CDATA[
+ISATAP potential router interface list has changed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4153</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap sixto4</Keyword>
+                <Message><![CDATA[
+%2: Found route to %3 from interface %4.
+Source = %5, Next Hop = %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Destination IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Source IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Next Hop IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4154</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Debug Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>isatap</Keyword>
+                <Message><![CDATA[
+%2: For %3, router %4 is %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Router IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Reachable" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4155</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Debug Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>isatap</Keyword>
+                <Message><![CDATA[
+For %2, router name: %3, is %4. %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RouterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Resolved" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Router IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4157</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap sixto4</Keyword>
+                <Message><![CDATA[
+%1 protocol started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4158</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap sixto4</Keyword>
+                <Message><![CDATA[
+%1 protocol stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4159</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap sixto4</Keyword>
+                <Message><![CDATA[
+%1 protocol initialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4160</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap sixto4</Keyword>
+                <Message><![CDATA[
+%1 protocol uninitialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4161</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap</Keyword>
+                <Message><![CDATA[
+ISATAP found interface %1 to reuse.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4162</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap sixto4</Keyword>
+                <Message><![CDATA[
+%2: interface %5 address %4 %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AddedorDeleted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4163</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>sixto4</Keyword>
+                <Message><![CDATA[
+6to4: Updating route %2/%3 interface %4 metric %5 lifetime %6/%7 publish %8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IP Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="PrefixLen" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="InterfaceAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metric" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreferredLifetime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ValidLifeTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Publish" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4164</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>sixto4</Keyword>
+                <Message><![CDATA[
+6to4: Configuring interface %1 with following parameters:
+ICS PrivateInterface = %2 AdvertiseDefaultRoute = %3 Advertises = %4 Forwards = %5 NTStatus = %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IcsPrivateInterface" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AdvertiseDefaultRoute" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Advertises" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Forwards" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Status" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4165</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>sixto4</Keyword>
+                <Message><![CDATA[
+6to4: Routing State changed to %1 from %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="New RoutingState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Old RoutingState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4166</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>sixto4</Keyword>
+                <Message><![CDATA[
+6to4: For interface %1, IPv4 address %2 was chosen for link layer address.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP Address" inType="win:UInt32" outType="win:IPv4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4167</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>sixto4</Keyword>
+                <Message><![CDATA[
+%1:Change notification for compartment %2, HaveGlobalIPv6Address = %3, ICS Enabled =  %4, GlobalIPv4AddressCount = %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HaveGlobalIpv6Address" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ICS Enabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="GlobalIPv4AddressCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4168</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>sixto4</Keyword>
+                <Message><![CDATA[
+6to4: Configuring interface %1 in compartment %2 with routing state %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RoutingState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4169</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap sixto4</Keyword>
+                <Message><![CDATA[
+Configuring interface %2 with address %3, lifetime %4, prefix %5 suffix %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="Lifetime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PrefixConf" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SuffixConf" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4170</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>isatap sixto4 teredo</Keyword>
+                <Message><![CDATA[
+%1 Callback for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtocolCallback" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4171</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo Client failed to start due to the following reason: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeredoReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4172</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Teredo Client stopped due to the following reason: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeredoReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4173</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>sixto4</Keyword>
+                <Message><![CDATA[
+6TO4 failed to start due to the following reason: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Windows Error Code" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4174</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>isatap</Keyword>
+                <Message><![CDATA[
+ISATAP router address %1 was set with status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IsatapRouter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4175</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+NLM found that the network is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4176</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>teredo</Keyword>
+                <Message><![CDATA[
+Port-Prediction complete with: V4Addr:%1 V4Port:%2 
+LowerValue:%3 UpperValue:%4 
+PortPredicted:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Source Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Upper Value" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Lower Value" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Port Predicted" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4177</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>teredoVerbose</Keyword>
+                <Message><![CDATA[
+Teredo operation in action: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4178</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>teredoStart</Keyword>
+                <Message><![CDATA[
+Teredo operation started: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4179</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>teredoEnd</Keyword>
+                <Message><![CDATA[
+Teredo operation ended: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4180</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>teredoFailures</Keyword>
+                <Message><![CDATA[
+Teredo operation failed: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: InterfaceName:%1 InterfaceType:%2 RegistryState:%3 CurrentState:%4 URL:%5 AuthenticationMode:%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegistryState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthenticationMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 installation failed. Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 update link address. Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Client interface %1 configured to use certificate %2 with preference = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertificateCN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Preference" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 cleanup complete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 firewall exception added. Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 performance counters added. Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 Memory allocation failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 Tunnel device IO failed: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 reusing an previously installed interface]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 deleted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 media connect indication: Status= %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 media disconnect indication: Status= %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5013</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 deactivated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5014</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Adapter %1 uninstalled as it does not have associated registry configuration.Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5015</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: V6 Address change callback. Address = %2 Added = %3 LimitedConnectivity = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Added" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LimitedConnectivity" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Global connectivity state change. GlobalAddressCount = %1 Ipv4Connectivity = %2 Ipv6Connectivity = %3 CorpConnectivity = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GlobalIpv6AddressCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Ipv4Connectivity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Ipv6Connectivity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CorpConnectivity" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface callback. Index = %1 Added = %3 LimitedConnectivity = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Added" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LimitedConnectivity" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5018</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 activated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5019</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Corp connectivity timer started. Due time = %1 (100ns units).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DueTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5020</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Corp connectivity timeout.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DueTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5021</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Network change. Network GUID = %1 Added = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Added" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5022</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Teredo dormancy change. New State = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentTeredoProtocolState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5023</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Initialization failed. Status = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5024</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: ND Packet. Packet type = %1, Target Address = %2, Prefix = %3, Default Router = %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prefix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DefaultRouter" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5025</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Client interface is being shutdown.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5026</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Client IO Reference %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5027</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Client IO Dereference %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5028</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Client Send Http Request: Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5029</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Client Send Receive Response: Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5030</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Client Send Http Status Code = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5031</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Client Receive Entity Completion Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5032</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Client Send Entity Completion Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5033</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Client Scheduling a reconnect after %2 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5034</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Client restarting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5035</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Client restarting due to internet connectivity.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5036</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Adding Client address mapping for address %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5037</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Removing Client address mapping for address %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5038</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Adding Pending packet for address %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5039</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Removing Pending packet for address %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5040</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Receive client certificate completed. Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5041</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Send HTTP response completed. Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5042</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Receive request completed. Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5043</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Receive entity completed. Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5044</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Send entity completed. Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5045</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Dropped packet destined to %2 due to neighbor discovery timeout.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5046</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 Sending neighbor solicitation for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5047</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: IPHTTPS Interface Reference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5048</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: IPHTTPS Interface Dereference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5049</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: IPHTTPS Client Interface Reference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5050</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: IPHTTPS Client Interface Dereference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5051</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: IPHTTPS Server Interface Reference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5052</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: IPHTTPS Server Interface Dereference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5053</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: IPHTTPS Client Context Reference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5054</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: IPHTTPS Client Context Dereference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5055</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Interface %1 installation aborted. IPHTTPS is disabled by DisabledComponents registry]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5061</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Received WMI notification (%1) for interface %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WmiNotificationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5062</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Received configuration change notification.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5063</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 WinHTTP open failed with error code = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5064</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 failed to get proxy information; error code = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5065</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: %1 proxy information: Access type = %2; proxy = %3; bypass = %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProxyAccessType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Proxy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProxyBypass" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5066</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Client interface %1 is being shutdown.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5067</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>iphttps</Keyword>
+                <Message><![CDATA[
+IPHTTPS: Sending Duplicate Address Detection Response to client (%1) for Target: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5100</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: Query of type A from client %2 for name %3, received on interface %4 and sent on interface %5, failed with code %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientIP" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="QuestionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QueryReceiveInterface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QuerySendInterface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DnsStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5101</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: Query of type AAAA from client %2 for name %3, received on interface %4 and sent on interface %5, failed with code %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientIP" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="QuestionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QueryReceiveInterface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QuerySendInterface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DnsStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5102</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: No matching IPv6 prefix found for IPv4 address %4, received for name %3 queried by client %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientIP" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="QuestionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Translated IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5103</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: Configured A query latency value is too high.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5104</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: AAAA response %5 received after A response %4 to query for name %3 by client %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientIP" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="QuestionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="IPv6 Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5105</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Module Init Failed with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5106</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Instance Create %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5107</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Instance Delete %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5108</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Instance Free %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5109</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Instance Reference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5110</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Instance Dereference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5111</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request %1 Create, with instance %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Object2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5112</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request %1 Free]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5113</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Reference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5114</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Dereference %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5115</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - request %1 with query type %3 for name %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5116</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - request %1 completed with response code %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5117</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - request %1 cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5118</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - AAAA query issued for request %1, DnsQueryEx returned status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5119</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - AAAA query issued for request %1 completed with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5120</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - AAAA query cancelled for request %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5121</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - A query issued for request %1, DnsQueryEx returned status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5122</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - A query issued for request %1 completed with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5123</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - A query cancelled for request %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5124</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - A query timer started for request %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5125</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - A query timer fired for request %1 with reason %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5126</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - Forwarded query issued for request %1, DnsQueryEx returned status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5127</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - Forwarded query issued for request %1 completed with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5128</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - Forwarded query cancelled for request %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5129</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - Processing locally PTR query matched configured suffixes for request %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5130</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - Copying records from AAAA query results for request %1, response code set to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5131</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - Synthesizing records from A query results for request %1, response code set to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5132</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - Merging records from A query results for request %1, response code set to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5133</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>dns64</Keyword>
+                <Message><![CDATA[
+DNS64: DNS64 Request Processing - Copying records from AAAA query results to otherwise empty response for request %1, response code set to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5200</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>CPVerbose</Keyword>
+                <Message><![CDATA[
+Connectivity Platform operation in action: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5201</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>CPStart</Keyword>
+                <Message><![CDATA[
+Connectivity Platform operation started: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5202</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>CPEnd</Keyword>
+                <Message><![CDATA[
+Connectivity Platform operation ended: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5203</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>CPFailures</Keyword>
+                <Message><![CDATA[
+Connectivity Platform operation failed: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5300</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>HA</Keyword>
+                <Message><![CDATA[
+HA: %1 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5301</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>HA</Keyword>
+                <Message><![CDATA[
+HA: %1 failed with status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5302</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>HA</Keyword>
+                <Message><![CDATA[
+HA: HEP discovery succeeded, found %1 addresses.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5303</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>HA</Keyword>
+                <Message><![CDATA[
+HA: Connection attempt failed, retrying %1 more times.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5304</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>HA</Keyword>
+                <Message><![CDATA[
+HA: Successfully connected to network %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Network ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5401</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>PROXYMGR</Keyword>
+                <Message><![CDATA[
+PROXYMGR: %1: notifying providers of event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5402</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>PROXYMGR</Keyword>
+                <Message><![CDATA[
+PROXYMGR: %1: notifying clients of event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5403</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>PROXYMGR</Keyword>
+                <Message><![CDATA[
+PROXYMGR: %1 failed with status %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5404</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>PROXYMGR</Keyword>
+                <Message><![CDATA[
+PROXYMGR: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5501</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Configuring site %2 selected based on %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteSelectionMethod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SiteName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IphttpsProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TeredoServerIp" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SiteIpv6Address" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="AdSiteName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorporateRanges" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5502</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Configured AD site name, status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdSiteName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5503</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Added a prefix to the prefix policy table, status %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prefix" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+  <data name="PrefixLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5504</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Configured IPHTTPS to use profile %1, status %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IphttpsProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5505</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Configured Teredo to use server %1, status %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeredoServerIp" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5506</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Removed configuration for site %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5508</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Site %4 is selected based on probing. Previously, TCP/IP sorting selected site %1 with metric %2 for address family %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SortingSiteName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SortingMetric" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProbingSiteName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5509</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Name resolution for multisite FQDN %2 started with error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5510</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Name resolution for multisite FQDN %1 cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5511</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Name resolution for multisite FQDN %2 completed with error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5512</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: No potentially reachable site record found for the IP address %2 resolved for the multisite FQDN.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prefix" inType="win:Binary" outType="win:IPv6" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5513</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Site probing preparation finished with %3 site probes prepared.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5514</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Site probing prepared for URL %1 at timestamp %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5515</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Site probing started for URL %1 with error code %2 at timestamp %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5516</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Site probing cancelled for URL %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5517</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Site probe for URL %1 completed with error code %2, HTTP status %3 at timestamp %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5518</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Timer expired in state %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5607</Id>
+                <Version>0</Version>
+                <Channel>Iphlpsvc Etw Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>damultisite</Keyword>
+                <Message><![CDATA[
+DA MULTISITE: Corporate connectivity has been indicated in %2 milliseconds or less after site %1 configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Delay" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
