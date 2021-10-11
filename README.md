@@ -1,8 +1,8 @@
 # ETW Resources
- 
+
 This is a repository that contains a bunch of resources to learn and understand ETW (Event Tracing for Windows)
 
-## Blogs / Research (https://nasbench.medium.com/)
+## Blogs / Research (<https://nasbench.medium.com/>)
 
 * [A Primer On Event Tracing For Windows (ETW)](https://nasbench.medium.com/a-primer-on-event-tracing-for-windows-etw-997725c082bf)
 * [Finding Detection and Forensic Goodness In ETW Providers](https://nasbench.medium.com/finding-detection-and-forensic-goodness-in-etw-providers-7c7a2b5b5f4f)
@@ -13,24 +13,26 @@ This is a repository that contains a bunch of resources to learn and understand 
 The following are a list of tools that can let us interact with the different ETW providers available. The examples directory contains example scripts and commands on how to use these tools
 
 ### Interacting w/ ETW
+
 * [**Logman**](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/logman)
 * [**Microsoft.Diagnostics.Tracing.TraceEvent**](nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/)
 * [**Message Analyzer**](https://github.com/riverar/messageanalyzer-archive)
 
 ### Dumping ETW Providers Manifest
+
 * [**ETW Explorer**](https://github.com/zodiacon/EtwExplorer/)
 * [**WEPExplorer**](https://github.com/lallousx86/WinTools/tree/master/WEPExplorer)
 * [**PerfView**](https://github.com/microsoft/perfview)
 
 ### Scripting w/ETW (Detection, Digital Forensics)
+
 * [**PSalander**](https://github.com/matthastings/PSalander)
 * [**Sealighter**](https://github.com/pathtofile/Sealighter)
 * [**PyWintrace**](https://github.com/fireeye/pywintrace)
 * [**SilkETW**](https://github.com/fireeye/SilkETW)
 * [**KrabsETW**](https://github.com/microsoft/krabsetw/)
 
-
-## Online Resources 
+## Online Resources
 
 The following are blogs and articles published by the wider security community discussing various aspects of ETW
 
