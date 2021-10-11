@@ -1,0 +1,201 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Recovery</Name>
+        <Metadata>
+            <Guid>{9E95E4D0-4CB4-4B5D-A936-C972D7D08D90}</Guid>
+            <ResourceFilePath>C:\Windows\system32\recovery.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\recovery.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=recovery.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Recovery</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Recovery/Operational</Message>
+                    <Path>Microsoft-Windows-Recovery/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Lifecycle Events</Message>
+                    <Name>RECOVERY_CENTER_TASK_LIFECYCLE</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Recovery operation event</Message>
+                    <Name>RECOVERY_CENTER_TASK_RECOVERYACTION</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Event is logged when Recovery (in Control Panel) is started.</Message>
+                    <Name>RECOVERY_CENTER_OPCODE_LIFECYCLE_START</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Event is logged when Recovery (in Control Panel) is shut down.</Message>
+                    <Name>RECOVERY_CENTER_OPCODE_LIFECYCLE_STOP</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Event is logged before a recovery operation is performed.</Message>
+                    <Name>RECOVERY_CENTER_OPCODE_RECOVERYACTION_START</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Event is logged after a recovery operation is completed.</Message>
+                    <Name>RECOVERY_CENTER_OPCODE_RECOVERYACTION_STOP</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Lifecycle events for Recovery.</Message>
+                    <Name>RECOVERY_CENTER_KEYWORD_LIFECYCLE</Name>
+                    <Value>268435456</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Recovery operation performed.</Message>
+                    <Name>RECOVERY_CENTER_KEYWORD_RECOVERYACTION</Name>
+                    <Value>536870912</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Recovery/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Event is logged when Recovery (in Control Panel) is started.</Opcode>
+                <Keyword>Lifecycle events for Recovery.</Keyword>
+                <Message><![CDATA[
+Recovery (in Control Panel) started successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Recovery/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Event is logged when Recovery (in Control Panel) is shut down.</Opcode>
+                <Keyword>Lifecycle events for Recovery.</Keyword>
+                <Message><![CDATA[
+Recovery (in Control Panel) closed successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Recovery/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Recovery operation event</Task>
+                <Opcode>Event is logged before a recovery operation is performed.</Opcode>
+                <Keyword>Recovery operation performed.</Keyword>
+                <Message><![CDATA[
+Recovery (in Control Panel) has initiated a recovery operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecoveryImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupLaunchAttempted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupLaunchStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BackupCompleted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupCompletionStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BackupCompletionResult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="RecoveryCompletionStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Recovery/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Recovery operation event</Task>
+                <Opcode>Event is logged after a recovery operation is completed.</Opcode>
+                <Keyword>Recovery operation performed.</Keyword>
+                <Message><![CDATA[
+The recovery operation initiated by Recovery (in Control Panel) has completed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecoveryImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupLaunchAttempted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupLaunchStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BackupCompleted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupCompletionStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BackupCompletionResult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="RecoveryCompletionStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Recovery/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Recovery operation event</Task>
+                <Opcode>Event is logged after a recovery operation is completed.</Opcode>
+                <Keyword>Recovery operation performed.</Keyword>
+                <Message><![CDATA[
+The recovery operation initiated by Recovery (in Control Panel) failed to complete.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecoveryImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupLaunchAttempted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupLaunchStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BackupCompleted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupCompletionStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BackupCompletionResult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="RecoveryCompletionStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Recovery/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Event is logged when Recovery (in Control Panel) is started.</Opcode>
+                <Keyword>Lifecycle events for Recovery.</Keyword>
+                <Message><![CDATA[
+Recovery (in Control Panel) failed to open because of an error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

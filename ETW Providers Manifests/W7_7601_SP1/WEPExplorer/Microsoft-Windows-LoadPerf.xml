@@ -1,0 +1,456 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-LoadPerf</Name>
+        <Metadata>
+            <Guid>{122EE297-BB47-41AE-B265-1CA8D1886D40}</Guid>
+            <ResourceFilePath>C:\Windows\system32\loadperf.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\loadperf.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=loadperf.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-LoadPerf</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Performance counters for the %1 (%2) service were loaded successfully. The Record Data in the data section contains the new index values assigned to this service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Performance counters for the %1 (%2) service were removed successfully. The Record Data contains the new values of the system Last Counter and Last Help registry entries.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Performance counters for the %1 (%2) service are already in the registry, no need to reinstall. This only happens when you install the same counter twice. The second time install will generate this event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+No MOF file %2 was created for the %1 service. Before the performance counters of this service can be collected by WMI, a MOF file will need to be created and loaded manually. Contact the vendor of this service for additional information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The MOF file created for the %1 service could not be loaded. The record data contains the error code returned by the MOF Compiler. Before the performance counters of this service can be collected by WMI, the MOF file will need to be loaded manually. Contact the vendor of this service for additional information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The MOF file created for the %1 service cannot be deleted as requested. The automatic recovery function requires the MOF file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Performance registry value %1 string is corrupted. Skip string \"%2\".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+No COUNTER/HELP definition for Language %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The LastCounter and LastHelp values of the performance registry are corrupted and need to be updated. The first and second DWORDs in the Data Section contain the original LastCounter and LastHelp values, respectively, while the third and fourth DWORDs in the Data Section contain the updated new values.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Cannot repair performance counters for %1 service. Reinstall the performance counters manually using the LODCTR tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The performance strings in the registry do not match the index values stored in Performance registry key. The first DWORD in the Data section contains the last index value from performance registry key and the second DWORD in the Data section contains the index of the last string.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The performance counter name string value in the registry is not formatted correctly. The malformed string is %1. The first DWORD in the Data section contains the index value to the malformed string while the second and third DWORDs in the Data section contain the last valid index values.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The performance counter explain text string value in the registry is not formatted correctly. The malformed string is %1. The first DWORD in the Data section contains the index value to the malformed string while the second and third DWORDs in the Data section contain the last valid index values.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to install counter strings because the %1 key could not be opened or accessed. The first DWORD in the Data section contains the Win32 error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to read the %1 registry value. The first DWORD in the Data section contains the Win32 error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to open the registry key for the performance counter strings defined for the %1 language ID. The first DWORD in the Data section contains the Win32 error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to read the performance counter strings defined for the %1 language ID. The first DWORD in the Data section contains the Win32 error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to read the performance counter explain text strings defined for the %1 language ID. The first DWORD in the Data section contains the Win32 error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3008</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to allocate a required memory buffer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3009</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Installing the performance counter strings for service %1 (%2) failed. The first DWORD in the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unloading the performance counter strings for service %1 (%2) failed. The first DWORD in the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The performance strings in the Performance registry value is corrupted when process %1 extension counter provider. The BaseIndex value from the Performance registry is the first DWORD in the Data section, LastCounter value is the second DWORD in the Data section, and LastHelp value is the third DWORD in the Data section.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to update the performance counter strings defined for the %1 language ID. The first DWORD in the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to update the performance counter explain text strings of the %1 language ID. The first DWORD in the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3015</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Index for %1 is corrupted. The first DWORD in the Data section contains the index value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3016</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Cannot update %1 value of %2 key. The first DWORD in the Data section contains the error code and the second DWORD contains the updated value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3017</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Cannot update %1 value of %2 key. The first DWORD in the Data section contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3018</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1 index range of service %2 is corrupted. The first DWORD in the Data section contains the first index value used and the second DWORD in the Data section contains last index value used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

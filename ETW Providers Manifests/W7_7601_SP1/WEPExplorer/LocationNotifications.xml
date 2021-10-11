@@ -1,0 +1,89 @@
+<Providers>
+    <Provider>
+        <Name>LocationNotifications</Name>
+        <Metadata>
+            <Guid>{5B93CDFA-5F51-45E0-9FDE-296983129E6C}</Guid>
+            <ResourceFilePath>C:\Windows\System32\LocationNotifications.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\LocationNotifications.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=LocationNotifications.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Location Activity</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A program accessed information from a location sensor or default location
+
+FriendlyName=%1;
+ImagePath=%2;
+PID=%3;
+Username=%4;
+SID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A program failed to access information from a location sensor or default location
+
+FriendlyName=%1;
+ImagePath=%2;
+PID=%3;
+Username=%4;
+SID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

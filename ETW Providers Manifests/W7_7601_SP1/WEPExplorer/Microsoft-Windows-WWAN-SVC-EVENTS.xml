@@ -1,0 +1,830 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WWAN-SVC-EVENTS</Name>
+        <Metadata>
+            <Guid>{3CB40AAA-1145-4FB8-B27B-7E30F0454316}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wwansvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wwansvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=8.1.2.0&amp;FileName=wwansvc.dll&amp;FileVer=8.1.2.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WWAN-SVC-EVENTS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>WWAN Diagnostic Channel</Message>
+                    <Path>Microsoft-Windows-WWAN-SVC-Events/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WWAN Service Startup</Message>
+                    <Name>TaskSvcStartup</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>WWAN Service Shutdown</Message>
+                    <Name>TaskSvcShutdown</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Interface Initialization Task</Message>
+                    <Name>TaskIntfInit</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Register Task</Message>
+                    <Name>TaskRegister</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Attach Task</Message>
+                    <Name>TaskAttach</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Activate Task</Message>
+                    <Name>TaskActivate</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Connect Task</Message>
+                    <Name>TaskConnect</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Scan Task</Message>
+                    <Name>TaskScan</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>WWAN Service Startup</Message>
+                    <Name>TaskSvcResume</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>WWAN Service Suspend</Message>
+                    <Name>TaskSvcSuspend</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L2ConnectPath</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ClosePath</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StateTransition</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN warning]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="WarningCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN Service startup]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN Service shutdown]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN Interface arrived]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN Interface removed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN Interface discarded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN Interface information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="dwMajorVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwMinorVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwDriverCaps" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WwanCellularClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WwanDataClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WwanGSMBandClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WwanCDMABandClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReadyState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwRadioState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SwRadioState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Information Availability" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="NoOfProviders" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegisterState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegisterMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketAttachState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentNetworkCaps" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NwError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActivationState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VoiceCallState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+WWAN Service event: WWAN API Request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="APIName" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Register happened. Either automatically or by some request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WWAN Service event: Register request failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="NetworkErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Deregister happened]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Packet attach happened. Either automatically or by some request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Packet Detach happened. Either automatically or by some request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3008</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Context Activate happened. Either automatically or by some request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Context Deactivate happened. Either automatically or by some request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Connect happened. Either automatically or by some request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WWAN Service event: Connect request failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="NetworkErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Disconnect happened. Either automatically or by some request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3015</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WWAN Service event: Disconnect request failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="NetworkErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Signal Notification recieved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Rssi" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RssiInterval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RssiThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Radio state change Notification recieved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HWRadio" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SWRadio" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4003</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Profile Update Notification recieved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProfileUpdateType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="oldProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Message><![CDATA[
+WWAN Service event: Pin Information Notification recieved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AttemptsRemaining" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Pin List Notification recieved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN Service event: Pin Action Completion Notification recieved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN Service Startup</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Start WWAN Service Startup]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN Service Startup</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Complete WWAN Service Startup]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN Service Shutdown</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Start Service Shutdown]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN Service Shutdown</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Complete Service Shutdown]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10021</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Interface Initialization Task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Start Interface Initialization]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10022</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Interface Initialization Task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Complete Interface Initialization]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10031</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Register Task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Start Registering]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10032</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Register Task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Complete Registering]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10061</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Connect Task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Start Connecting]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10062</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Connect Task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Complete Connecting]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10071</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Scan Task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Start Scanning]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10072</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Scan Task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Complete Scanning]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10081</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN Service Startup</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Start Service Resume]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10082</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN Service Startup</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Complete Service Resume]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10091</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN Service Suspend</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Start Service Suspend]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10092</Id>
+                <Version>0</Version>
+                <Channel>WWAN Diagnostic Channel</Channel>
+                <Level>Information</Level>
+                <Task>WWAN Service Suspend</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WWAN Service event: Complete Service Suspend]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

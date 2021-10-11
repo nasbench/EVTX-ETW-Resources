@@ -1,0 +1,138 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorDiag</Name>
+        <Metadata>
+            <Guid>{F5D05B38-80A6-4653-825D-C414E4AB3C68}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\classpnp.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\classpnp.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorDiag/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>ClassPnP IO request complete</Message>
+                    <Name>TaskClassPnPIOEnd</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>ClassPnP Enqueue Idle IO request</Message>
+                    <Name>TaskClassPnPEnqueueIdleIO</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>ClassPnP Boost Idle IO request</Message>
+                    <Name>TaskClassPnPBoostIdleIO</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>ClassPnP_IO_End</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>ClassPnP_Enqueue_IdleIO</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>ClassPnP_Boost_IdleIO</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ClassPnPAllIO</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ClassPnPIdleIO</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorDiag/Operational</Channel>
+                <Level>Information</Level>
+                <Task>ClassPnP IO request complete</Task>
+                <Opcode>ClassPnP_IO_End</Opcode>
+                <Keyword>ClassPnPAllIO</Keyword>
+                <Message><![CDATA[
+ClassPnP IO request complete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestProcessTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorFunction" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequestType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorDiag/Operational</Channel>
+                <Level>Information</Level>
+                <Task>ClassPnP Enqueue Idle IO request</Task>
+                <Opcode>ClassPnP_Enqueue_IdleIO</Opcode>
+                <Keyword>ClassPnPIdleIO</Keyword>
+                <Message><![CDATA[
+ClassPnP Enqueue Idle IO request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CurrentIOCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveIOCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorDiag/Operational</Channel>
+                <Level>Information</Level>
+                <Task>ClassPnP Boost Idle IO request</Task>
+                <Opcode>ClassPnP_Boost_IdleIO</Opcode>
+                <Keyword>ClassPnPIdleIO</Keyword>
+                <Message><![CDATA[
+ClassPnP Boost Idle IO request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Thread" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CurrentIOCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveIOCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

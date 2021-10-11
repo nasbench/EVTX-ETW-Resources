@@ -1,0 +1,722 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaFoundation-MFReadWrite</Name>
+        <Metadata>
+            <Guid>{4B7EAC67-FC53-448C-A49D-7CC6DB524DA7}</Guid>
+            <ResourceFilePath>C:\Windows\system32\MFReadWrite.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\MFReadWrite.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=12.0.7600.16385&amp;FileName=MFReadWrite.dll&amp;FileVer=12.0.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MediaFoundation-MFReadWrite</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MediaFoundation-MFReadWrite/Transform</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>SourceReader</Message>
+                    <Name>SourceReaderTask</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>SinkWriter</Message>
+                    <Name>SinkWriterTask</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Transform</Message>
+                    <Name>TransformTask</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SourceReader_SetCurrentMediaType_Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MajorType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Subtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SourceReader_SetCurrentMediaType_End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SourceReader_SetCurrentPosition_Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TimeFormat" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VariantType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Position" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SourceReader_SetCurrentPosition_End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SourceReader_ReadSample_Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SourceReader_ReadSample_End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ActualStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StreamFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Discontinuity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CleanPoint" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SourceReader_Flush_Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SourceReader_Flush_End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Message><![CDATA[
+SourceReader_RequestSample]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Message><![CDATA[
+SourceReader_MediaSourceEvent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Information</Level>
+                <Task>SourceReader</Task>
+                <Message><![CDATA[
+SourceReader_MediaStreamEvent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader</Channel>
+                <Level>Error</Level>
+                <Task>SourceReader</Task>
+                <Message><![CDATA[
+SourceReader_Error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SinkWriter_SetInputMediaType_Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MajorType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Subtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SinkWriter_SetInputMediaType_End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_BeginWriting]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SinkWriter_WriteSample]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Discontinuity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CleanPoint" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_StreamTick]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SinkWriter_Marker_Placed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SinkWriter_Marker_Fired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_ProcessSample]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SinkWriter_Finalize_Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SinkWriter_Finalize_End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_MediaSinkEvent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_StreamSinkEvent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SinkWriter_Throttle_Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClockTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SinkWriter_Throttle_End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Delay" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Error</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_Error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Error</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_StreamError]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_StateChange]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OldState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_EndOfSegment]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter</Channel>
+                <Level>Information</Level>
+                <Task>SinkWriter</Task>
+                <Message><![CDATA[
+SinkWriter_Flush]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/Transform</Channel>
+                <Level>Information</Level>
+                <Task>Transform</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Transform_ProcessInput]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Transform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Discontinuity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CleanPoint" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/Transform</Channel>
+                <Level>Information</Level>
+                <Task>Transform</Task>
+                <Message><![CDATA[
+Transform_ProcessInputError]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Transform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/Transform</Channel>
+                <Level>Information</Level>
+                <Task>Transform</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Transform_ProcessOutput]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Transform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OutputStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Discontinuity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CleanPoint" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/Transform</Channel>
+                <Level>Information</Level>
+                <Task>Transform</Task>
+                <Message><![CDATA[
+Transform_ProcessOutputError]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Transform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/Transform</Channel>
+                <Level>Information</Level>
+                <Task>Transform</Task>
+                <Message><![CDATA[
+Transform_ProcessMessage]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Transform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Param" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MediaFoundation-MFReadWrite/Transform</Channel>
+                <Level>Information</Level>
+                <Task>Transform</Task>
+                <Message><![CDATA[
+Transform_Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Transform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

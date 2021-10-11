@@ -1,0 +1,105 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-WDI</Name>
+        <Metadata>
+            <Guid>{E01B1A7C-C5C9-4E67-99A9-5E85ACFB2E10}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dps.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dps.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=dps.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Diagnosis-WDI</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnosis-WDI/Debug</Message>
+                    <Path>Microsoft-Windows-Diagnosis-WDI/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Debug task</Message>
+                    <Name>WDI_LIBRARY_TASK_DEBUG</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Debug event</Message>
+                    <Name>WDI_LIBRARY_OPCODE_DEBUG</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Memory tracing events</Message>
+                    <Name>memory</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Debug events</Message>
+                    <Name>debug</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDI/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Debug task</Task>
+                <Opcode>Debug event</Opcode>
+                <Message><![CDATA[
+The Diagnostic Policy Service encountered an error in file %1, function %2, line %3: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Keyword>Memory tracing events</Keyword>
+                <Message><![CDATA[
+The Diagnostic Infrastructure just made a heap allocation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Keyword>Memory tracing events</Keyword>
+                <Message><![CDATA[
+The Diagnostic Infrastructure just freed a previously made heap allocation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

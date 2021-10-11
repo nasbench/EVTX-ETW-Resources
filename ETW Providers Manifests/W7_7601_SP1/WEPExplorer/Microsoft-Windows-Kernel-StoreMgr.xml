@@ -1,0 +1,522 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-StoreMgr</Name>
+        <Metadata>
+            <Guid>{A6AD76E3-867A-4635-91B3-4904BA6374D7}</Guid>
+            <ResourceFilePath>C:\Windows\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7601.24214&amp;FileName=advapi32.dll&amp;FileVer=6.1.7601.24214</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-StoreMgr</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-StoreMgr/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-StoreMgr/Operational</Message>
+                    <Path>Microsoft-Windows-Kernel-StoreMgr/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>StoreAdd</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StoreRemove</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StoreCreate</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StoreDelete</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StoreRundown</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StoreCorruption</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StorePageRundown</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RegionEvict</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RegionWrite</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UnpersistFailure</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StoreIoStats</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>GlobalStats</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StoreEmpty</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RegionRelease</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RegionCompact</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RegionRundown</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CacheTermination</Name>
+                    <Value>17</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>StoreOps</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>StoreDiag</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>StoreContentsRundown</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SQM</Message>
+                    <Name>win:SQM</Name>
+                    <Value>2251799813685248</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>StoreAdd</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataKey" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreOffset" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CompressedSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>StoreRemove</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataKey" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreOffset" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>StoreCreate</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreFileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserDataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MetadataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SectorSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionStrength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StoreType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StoreId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BlocksStored" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegionsInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalSpaceUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MetaRegionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetaRegionsInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetaRegionsSpaceUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>StoreDelete</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>StoreRundown</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreFileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserDataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MetadataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SectorSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionStrength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StoreType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StoreId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BlocksStored" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegionsInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalSpaceUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MetaRegionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetaRegionsInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetaRegionsSpaceUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Operational</Channel>
+                <Level>Information</Level>
+                <Task>StoreCorruption</Task>
+                <Keyword>StoreOps StoreDiag</Keyword>
+                <Message><![CDATA[
+%5
+
+Virtual Address: %2
+Physical Address: %3
+Corruption Window Size: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VirtualAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PhysicalAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Size" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileBacked" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CorruptionType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>StorePageRundown</Task>
+                <Keyword>StoreContentsRundown</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataKey" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreOffset" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CompressedSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RegionEvict</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RegionWrite</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Operational</Channel>
+                <Level>Information</Level>
+                <Task>UnpersistFailure</Task>
+                <Keyword>StoreOps StoreDiag</Keyword>
+                <Message><![CDATA[
+A ReadyBoost cache failed to persist across boot. This may happen if the cache device was modified on another computer or if this computer was booted into another operating system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ObjectPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ObjectPath" inType="win:UnicodeString" outType="xs:string" length="ObjectPathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>StoreIoStats</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>GlobalStats</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>StoreEmpty</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Param" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RegionRelease</Task>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RegionCompact</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RegionCompact</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>StoreOps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RegionRundown</Task>
+                <Keyword>StoreContentsRundown</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-StoreMgr/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CacheTermination</Task>
+                <Keyword>StoreOps StoreDiag</Keyword>
+                <Message><![CDATA[
+%1
+
+Device name: %4
+Cache path: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FailStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceDescLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DeviceDescription" inType="win:UnicodeString" outType="xs:string" length="DeviceDescLength"/>
+  <data name="ObjectPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ObjectPath" inType="win:UnicodeString" outType="xs:string" length="ObjectPathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmStreamRowLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SqmStreamRow" count="SqmStreamRowLength">
+    <data name="SqmTypeEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmDWORDEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmStringEntry" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

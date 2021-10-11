@@ -1,0 +1,570 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BranchCache</Name>
+        <Metadata>
+            <Guid>{7EAFCF79-06A7-460B-8A55-BD0A0C9248AA}</Guid>
+            <ResourceFilePath>C:\Windows\system32\peerdistsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\peerdistsvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=peerdistsvc.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-BranchCache</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-BranchCache/Operational</Message>
+                    <Path>Microsoft-Windows-BranchCache/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>The BranchCache service is starting up.</Message>
+                    <Name>ServiceStartup</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Republishing content - making content available to others in the branch office.</Message>
+                    <Name>RepublishContent</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Publishing content on the server.</Message>
+                    <Name>PublishContent</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Downloading content.</Message>
+                    <Name>DownloadContent</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Offering content to hosted cache.</Message>
+                    <Name>HostedCacheOffer</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Publishing content on the server.</Message>
+                    <Name>CachePublishContent</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Loading local cache.</Message>
+                    <Name>CacheLoadPersistContent</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Saving local cache.</Message>
+                    <Name>CacheSavePersistContent</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BranchCache service started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BranchCache service stopped successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BranchCache service detected that this computer roamed to a different location. Group Policy settings will refresh.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>The BranchCache service is starting up.</Opcode>
+                <Message><![CDATA[
+The BranchCache service failed to start.
+Error: %1 %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A BranchCache configuration change was detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SubKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SettingType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UInt64" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BinaryLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Binary" inType="win:Binary" outType="xs:hexBinary" length="BinaryLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>The BranchCache service is starting up.</Opcode>
+                <Message><![CDATA[
+This computer is configured as a Hosted Cache server and it is also configured to use a Hosted Cache. Only one of these options is allowed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>The BranchCache service is starting up.</Opcode>
+                <Message><![CDATA[
+A firewall is blocking inbound traffic on UDP port 3702, which is used to discover the availability of cached content on this computer. Other computers on the network cannot discover this client. 
+To create a Windows Firewall rule that allows traffic on UDP port 3702, run the command "netsh branchcache set service distributed" from an elevated command prompt. If a different firewall is used, modify the firewall settings to allow this traffic.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>The BranchCache service is starting up.</Opcode>
+                <Message><![CDATA[
+A firewall is blocking inbound traffic on TCP port 80, which is used to serve content to requesting computers. As a result, other computers on the network, including the Hosted Cache server, cannot retrieve content from this client. 
+To create a Windows Firewall rule that allows inbound traffic on TCP port 80, run the command "netsh branchcache set service" from an elevated command prompt. If a different firewall is used, modify the firewall settings to allow this traffic.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>The BranchCache service is starting up.</Opcode>
+                <Message><![CDATA[
+A firewall is blocking inbound traffic on TCP port 443, which is used by the Hosted Cache server for accepting incoming client offers to add content. As a result, clients cannot add content to the Hosted Cache. 
+To create a Windows Firewall rule that allows inbound traffic on TCP port 443, run the command "netsh branchcache set service hostedserver" from an elevated command prompt. If a different firewall is used, modify the firewall settings to allow this traffic.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>The BranchCache service is starting up.</Opcode>
+                <Message><![CDATA[
+The BranchCache service cannot start because the HTTP namespace used for serving content to requesting clients is not reserved. 
+Run the command "netsh branchcache set service" from an elevated command prompt.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Republishing content - making content available to others in the branch office.</Opcode>
+                <Message><![CDATA[
+Content was not cached. BranchCache cannot free enough space in the local cache to accommodate the content being added. 
+The maximum cache size is %1 MB.
+To increase the cache size, run the command "netsh branchcache set cachesize" from an elevated command prompt and ensure that the disk where the local cache is saved has enough free space.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CacheSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Publishing content on the server.</Opcode>
+                <Message><![CDATA[
+BranchCache cannot publish the content at location %1.
+Error: %2 %3
+This might be because the publication directory location is not on an NTFS partition, the path is too long (typically, greater than 190 characters) or does not exist, or the BranchCache service does not have the permissions to write to the directory location. 
+Run the command "netsh branchcache set publicationcache" from an elevated command prompt.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Publishing content on the server.</Opcode>
+                <Message><![CDATA[
+BranchCache cannot publish the content with content-id: %2 because the publication cache size was exceeded or the disk does not have enough space.
+Error: %3 %4
+Run the command "netsh branchcache set publicationcachesize" from an elevated command prompt to increase the cache size.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cbContentId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ContentId" inType="win:Binary" outType="xs:hexBinary" length="cbContentId"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Downloading content.</Opcode>
+                <Message><![CDATA[
+A request message sent to another BranchCache client failed.
+Error: %6 %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cbSegmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="cbSegmentId"/>
+  <data name="BlockId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeerAddress" inType="win:AnsiString" outType="xs:string"/>
+  <data name="MessageType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Downloading content.</Opcode>
+                <Message><![CDATA[
+A request message sent to the Hosted Cache server failed.
+Error: %6 %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cbSegmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="cbSegmentId"/>
+  <data name="BlockId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostedCacheAddress" inType="win:AnsiString" outType="xs:string"/>
+  <data name="MessageType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Downloading content.</Opcode>
+                <Message><![CDATA[
+Another BranchCache client has been quarantined by this client for approximately %2 seconds.
+This might be because the client served data that was not valid or it repeatedly failed to serve data in a timely fashion.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PeerAddress" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SecondsOfQuarantine" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Downloading content.</Opcode>
+                <Message><![CDATA[
+A request message from another BranchCache client was dropped because it was not valid.
+Remote client address: %1
+Error: %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FromAddress" inType="win:AnsiString" outType="xs:string"/>
+  <data name="MessageType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Downloading content.</Opcode>
+                <Message><![CDATA[
+A content retrieval request from another BranchCache client was denied.
+Remote client address: %1
+Error: %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PeerAddress" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Offering content to hosted cache.</Opcode>
+                <Message><![CDATA[
+BranchCache tried to offer content to the Hosted Cache server on %1, but there was an error connecting to the Hosted Cache server. 
+Error: %2 %3 
+Possible reasons are that the Hosted Cache server location is incorrect, the port used for connection is not configured correctly on the client, or traffic on the port used for connection is blocked by a firewall on the Hosted Cache server. 
+From an elevated command prompt, run the command "netsh branchcache set service hostedclient" (on client computers), and run the command "netsh branchcache set service hostedserver" (on server computers).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostedCacheLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Offering content to hosted cache.</Opcode>
+                <Message><![CDATA[
+BranchCache tried to offer content to the Hosted Cache server on %1, but the request timed out. The Hosted Cache server might be experiencing heavy loads or might not be reachable because of network or authentication issues.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostedCacheLocation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%2 instance(s) of event id %1 occurred.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Windows Firewall rules for the BranchCache service are not configured correctly. 
+Run the command "netsh branchcache set service" to set the Windows Firewall configuration correctly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BranchCache service could not be started because it has been disabled. 
+Use the Services snap-in console to set the Startup Type for the BranchCache service to "Manual" on client computers and to "Automatic" on server computers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Loading local cache.</Opcode>
+                <Message><![CDATA[
+The BranchCache service started, but was unable to load the cache file from disk because the cache file was corrupted or was an incompatible version.
+Sub code: %2
+Error: %1 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SubCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Loading local cache.</Opcode>
+                <Message><![CDATA[
+The BranchCache service started and loaded a cache file from disk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Saving local cache.</Opcode>
+                <Message><![CDATA[
+BranchCache saved a cache file to disk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Saving local cache.</Opcode>
+                <Message><![CDATA[
+The BranchCache service stopped and was unable to save the cache file to disk.
+Error: %1 %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BranchCache service is stopping.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An SSL certificate is not bound to the port %1 on the Hosted Cache server. As a result, clients cannot add content to the Hosted Cache.
+Run the command "netsh http add sslcert" from an elevated command prompt to bind a certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCache/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BranchCache cannot initialize the local cache at location %1.
+Error: %2 %3
+Possible reasons are that the local cache directory location is not on an NTFS partition, the path is too long (typically, greater than 190 characters) or does not exist, or the BranchCache service does not have the permissions to write to the directory location. 
+Run the command "netsh branchcache set localcache" from an elevated command prompt.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CachePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
