@@ -10,7 +10,7 @@ This is a repository that contains a bunch of resources to learn and understand 
 
 ## Tools
 
-The following are a list of tools that can let us interact with the different ETW providers available. The examples directory contains example scripts and commands on how to use these tools
+The following is a list of tools that can let us interact with the different ETW providers available. The examples directory contains example scripts and commands on how to use these tools
 
 ### Interacting w/ ETW
 
