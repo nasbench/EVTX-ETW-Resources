@@ -2,7 +2,7 @@
 
 The following folder contains a list of all ETW events extracted from the currently dumped ETW manifests (See [**ETW Providers Manifests**](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Providers%20Manifests) for the complete list).
 
-![csvExample](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Events%20List/csvExample.png)
+![csvExample](csvExample.png)
 
 The CSV/Markdown files were generated using the script **[etw-to-csv.py](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Events%20List/etw-to-csv.py)**.
 
