@@ -32,10 +32,6 @@ python etw-to-csv.py -p /home/lab/etw-providers/w10_20h2
 
 The script will generates both a **`CSV`** and a **`Markdown`** version for each ETW Manifest.
 
-```python
-convertCsvToMD(fileName)
-```
-
 ## TODO
 
 - [x] ~~Modify the script to be able to generate CSV and Markdown from a single ETW manifest instead of a folder.~~
