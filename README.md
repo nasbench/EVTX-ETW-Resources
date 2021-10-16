@@ -17,6 +17,7 @@ This is a repository that contains a bunch of resources to learn and understand 
     - [Research](#research)
     - [Talks](#talks)
     - [Books](#books)
+    - [Other Github Projects w/ ETW Content](#other-github-projects-w-etw-content)
 
 ## Structure
 
@@ -95,3 +96,8 @@ The following are blogs and articles published by the wider security community d
 
 - [Windows Internals, Part 2, 7th Edition](https://www.microsoftpressstore.com/store/windows-internals-part-2-9780135462331)
 - [Windows 10 System Programming, Part 2](https://leanpub.com/windows10systemprogrammingpart2)
+
+### Other Github Projects w/ ETW Content
+
+- [OSSEM Data Dictionaries](https://github.com/OTRF/OSSEM-DD)
+- [ETW Providers Docs](https://github.com/repnz/etw-providers-docs)
