@@ -1,0 +1,11 @@
+Provider                |  Event ID  |  Channel                               |  Message
+------------------------|------------|----------------------------------------|---------
+Microsoft-Windows-D3D9  |  1         |  Microsoft-Windows-Direct3D9/Analytic  |
+Microsoft-Windows-D3D9  |  2         |  Microsoft-Windows-Direct3D9/Analytic  |
+Microsoft-Windows-D3D9  |  3         |  Microsoft-Windows-Direct3D9/Analytic  |
+Microsoft-Windows-D3D9  |  4         |  Microsoft-Windows-Direct3D9/Analytic  |
+Microsoft-Windows-D3D9  |  5         |  Microsoft-Windows-Direct3D9/Analytic  |
+Microsoft-Windows-D3D9  |  6         |  Microsoft-Windows-Direct3D9/Analytic  |
+Microsoft-Windows-D3D9  |  7         |  Microsoft-Windows-Direct3D9/Analytic  |
+Microsoft-Windows-D3D9  |  8         |  Microsoft-Windows-Direct3D9/Analytic  |
+Microsoft-Windows-D3D9  |  9         |  Microsoft-Windows-Direct3D9/Analytic  |

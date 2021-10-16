@@ -1,0 +1,17 @@
+Provider                         |  Event ID  |  Channel      |  Message
+---------------------------------|------------|---------------|---------
+Microsoft-Windows-VolumeControl  |  102       |  Performance  |
+Microsoft-Windows-VolumeControl  |  103       |  Performance  |
+Microsoft-Windows-VolumeControl  |  104       |  Performance  |
+Microsoft-Windows-VolumeControl  |  105       |  Performance  |
+Microsoft-Windows-VolumeControl  |  106       |  Performance  |
+Microsoft-Windows-VolumeControl  |  107       |  Performance  |
+Microsoft-Windows-VolumeControl  |  108       |  Performance  |
+Microsoft-Windows-VolumeControl  |  109       |  Performance  |
+Microsoft-Windows-VolumeControl  |  110       |  Performance  |
+Microsoft-Windows-VolumeControl  |  111       |  Performance  |
+Microsoft-Windows-VolumeControl  |  112       |  Performance  |
+Microsoft-Windows-VolumeControl  |  113       |  Performance  |
+Microsoft-Windows-VolumeControl  |  114       |  Performance  |
+Microsoft-Windows-VolumeControl  |  115       |  Performance  |
+Microsoft-Windows-VolumeControl  |  116       |  Performance  |

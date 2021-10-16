@@ -1,0 +1,14 @@
+Provider                          |  Event ID  |  Channel                                       |  Message
+----------------------------------|------------|------------------------------------------------|---------
+Microsoft-Windows-Security-Vault  |  100       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  101       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  102       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  103       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  104       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  105       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  106       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  107       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  108       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  109       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  110       |  Microsoft-Windows-Security-Vault/Performance  |
+Microsoft-Windows-Security-Vault  |  111       |  Microsoft-Windows-Security-Vault/Performance  |

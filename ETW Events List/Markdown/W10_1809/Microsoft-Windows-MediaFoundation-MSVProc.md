@@ -1,0 +1,27 @@
+Provider                                   |  Event ID  |  Channel                         |  Message
+-------------------------------------------|------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MediaFoundation-MSVProc  |  100       |  MS Video Processor MFT (D3D11)  |  CreateVideoProcessor Device {VideoDevice}, VP {VP} , Rate Conversion Index {RateConversionIndex}, PastFrames {PastFrames}
+Microsoft-Windows-MediaFoundation-MSVProc  |  101       |  MS Video Processor MFT (D3D11)  |  CreateView Sample {Sample}, BufferIndex {BufferIndex}, hr {hr}, View {View}
+Microsoft-Windows-MediaFoundation-MSVProc  |  102       |  MS Video Processor MFT (D3D11)  |  CreateView Sample {Sample}, BufferIndex {BufferIndex}, hr {hr}, View {View}
+Microsoft-Windows-MediaFoundation-MSVProc  |  103       |  MS Video Processor MFT (D3D11)  |  VPBlt obj={Object} Start Input Sample {InputSample}, Input Index {InputViewIndex}, Output Sample {OutputSample}, FrameOrField {InputFrameOrField}, OutputIndex {OutputIndex}, OutputFrame {OutputFrame}, ({SrcWidth}x{SrcHeight})..({Object}0x{Object}1) Input DXGI format {Object}2, Output DXGI format {Object}3, rotation {Object}4, mirrored {Object}5
+Microsoft-Windows-MediaFoundation-MSVProc  |  104       |  MS Video Processor MFT (D3D11)  |  VPBlt Stop Output Sample {OutputSample}, hr {hr}
+Microsoft-Windows-MediaFoundation-MSVProc  |  105       |  MS Video Processor MFT          |  MFT_Start XVPMFT = {MSVProcObj}
+Microsoft-Windows-MediaFoundation-MSVProc  |  106       |  MS Video Processor MFT          |  MFT_Stop XVPMFT = {MSVProcObj}
+Microsoft-Windows-MediaFoundation-MSVProc  |  107       |  MS Video Processor MFT          |  ProcessInput_Start XVPMFT = {MSVProcObj}
+Microsoft-Windows-MediaFoundation-MSVProc  |  108       |  MS Video Processor MFT          |  ProcessInput_Stop  XVPMFT = {MSVProcObj} hr = {hr}
+Microsoft-Windows-MediaFoundation-MSVProc  |  109       |  MS Video Processor MFT          |  ProcessOutput_Start XVPMFT = {MSVProcObj}
+Microsoft-Windows-MediaFoundation-MSVProc  |  110       |  MS Video Processor MFT          |  ProcessOutput_Stop  XVPMFT = {MSVProcObj} hr = {hr}
+Microsoft-Windows-MediaFoundation-MSVProc  |  111       |  MS Video Processor MFT          |  ColorConv_Start fourCCSrc = {fourCCSrc}, fourCCDst = {fourCCDst}
+Microsoft-Windows-MediaFoundation-MSVProc  |  112       |  MS Video Processor MFT          |  ColorConv_Stop
+Microsoft-Windows-MediaFoundation-MSVProc  |  113       |  MS Video Processor MFT          |  Resizer_Start fourCC = {fourCC}, srcWidth = {srcWidth}, srcHeight = {srcHeight}, dstWidth = {dstWidth}, dstHeight = {dstHeight}
+Microsoft-Windows-MediaFoundation-MSVProc  |  114       |  MS Video Processor MFT          |  Resizer_Stop
+Microsoft-Windows-MediaFoundation-MSVProc  |  115       |  MS Video Processor MFT          |  Rotation_Start fourCC = {fourCC}, Rotation = {Rotation}
+Microsoft-Windows-MediaFoundation-MSVProc  |  116       |  MS Video Processor MFT          |  Rotation_Stop
+Microsoft-Windows-MediaFoundation-MSVProc  |  117       |  MS Video Processor MFT          |  Mirror_Start fourCC = {fourCC}, Mirror = {Mirror}
+Microsoft-Windows-MediaFoundation-MSVProc  |  118       |  MS Video Processor MFT          |  Mirror_Stop
+Microsoft-Windows-MediaFoundation-MSVProc  |  119       |  MS Video Processor MFT (D3D11)  |  D3DShader Start obj={MSVProcObj} context={Context} input views={uiInputViewCount} output views={uiOutputViewCount} width={uiOutWidth} height={uiOutHeight} offsetX={uiOffsetX} offsetY={uiOffsetY} input DXGI format={SourceFormat} output DXGI format={MSVProcObj}0 shader={MSVProcObj}1 lightLevelIn={MSVProcObj}2 lightLevelOut={MSVProcObj}3
+Microsoft-Windows-MediaFoundation-MSVProc  |  120       |  MS Video Processor MFT (D3D11)  |  D3DShader Stop obj={MSVProcObj}
+Microsoft-Windows-MediaFoundation-MSVProc  |  121       |  MS Video Processor MFT (D3D11)  |  ConfigureInputHDRMetadata obj={MSVProcObj} red = ({RedPrimaryX},{RedPrimaryY}) green = ({GreenPrimaryX},{GreenPrimaryY}) blue = ({BluePrimaryX},{BluePrimaryY}) white = ({WhitePrimaryX},{WhitePrimaryY}) max = {MSVProcObj}0 min = {MSVProcObj}1
+Microsoft-Windows-MediaFoundation-MSVProc  |  122       |  MS Video Processor MFT (D3D11)  |  ConfigureOutputHDRMetadata obj={MSVProcObj} red = ({RedPrimaryX},{RedPrimaryY}) green = ({GreenPrimaryX},{GreenPrimaryY}) blue = ({BluePrimaryX},{BluePrimaryY}) white = ({WhitePrimaryX},{WhitePrimaryY}) max = {MSVProcObj}0 min = {MSVProcObj}1
+Microsoft-Windows-MediaFoundation-MSVProc  |  123       |  MS Video Processor MFT          |  Constriction_Resizer_Start fourCC = {fourCC}, srcWidth = {srcWidth}, srcHeight = {srcHeight}, dstWidth = {dstWidth}, dstHeight = {dstHeight}
+Microsoft-Windows-MediaFoundation-MSVProc  |  124       |  MS Video Processor MFT          |  Constriction_Resizer_Stop

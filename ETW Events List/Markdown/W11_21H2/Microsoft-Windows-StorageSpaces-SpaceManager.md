@@ -1,0 +1,4 @@
+Provider                                      |  Event ID  |  Channel                                                  |  Message
+----------------------------------------------|------------|-----------------------------------------------------------|-------------------
+Microsoft-Windows-StorageSpaces-SpaceManager  |  100       |  Microsoft-Windows-StorageSpaces-SpaceManager/Diagnostic  |  For internal use.
+Microsoft-Windows-StorageSpaces-SpaceManager  |  101       |  Microsoft-Windows-StorageSpaces-SpaceManager/Diagnostic  |  For internal use.

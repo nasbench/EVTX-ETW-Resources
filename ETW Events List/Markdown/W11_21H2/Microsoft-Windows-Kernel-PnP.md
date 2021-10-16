@@ -1,0 +1,181 @@
+Provider                      |  Event ID  |  Channel  |  Message
+------------------------------|------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-PnP  |  200       |           |
+Microsoft-Windows-Kernel-PnP  |  201       |           |
+Microsoft-Windows-Kernel-PnP  |  202       |           |
+Microsoft-Windows-Kernel-PnP  |  203       |           |
+Microsoft-Windows-Kernel-PnP  |  204       |           |  OS Loader Start: {OSLoaderStart}OS Loader End: {OSLoaderEnd}
+Microsoft-Windows-Kernel-PnP  |  204       |           |  OS Loader Start: {OSLoaderStart}OS Loader End: {OSLoaderEnd}
+Microsoft-Windows-Kernel-PnP  |  204       |           |  OS Loader Start: {OSLoaderStart}OS Loader End: {OSLoaderEnd}
+Microsoft-Windows-Kernel-PnP  |  205       |           |
+Microsoft-Windows-Kernel-PnP  |  206       |           |
+Microsoft-Windows-Kernel-PnP  |  207       |           |
+Microsoft-Windows-Kernel-PnP  |  208       |           |
+Microsoft-Windows-Kernel-PnP  |  209       |           |
+Microsoft-Windows-Kernel-PnP  |  210       |           |  Begin initializing boot start driver {DriverName}
+Microsoft-Windows-Kernel-PnP  |  211       |           |  End initializing boot start driver {DriverName}.  Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  212       |           |  Begin loading driver {DriverName}
+Microsoft-Windows-Kernel-PnP  |  213       |           |  End loading driver {DriverName}.  Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  214       |           |  Begin unloading driver {DriverName}
+Microsoft-Windows-Kernel-PnP  |  215       |           |  End unloading driver {DriverName}.  Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  216       |           |  Begin starting device {DriverName}
+Microsoft-Windows-Kernel-PnP  |  217       |           |  Pending start of device {DriverName}
+Microsoft-Windows-Kernel-PnP  |  218       |           |  End starting device {DriverName} using driver {FailureName}.  Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  219       |  System   |  The driver {FailureName} failed to load for the device {DriverName}.
+Microsoft-Windows-Kernel-PnP  |  220       |           |  Begin querying bus relations for device {DriverName}
+Microsoft-Windows-Kernel-PnP  |  221       |           |  Pending querying bus relations for device {DriverName}
+Microsoft-Windows-Kernel-PnP  |  222       |           |  End querying bus relations for device {DriverName}
+Microsoft-Windows-Kernel-PnP  |  223       |           |  Begin attempting to eject device {DriverName}
+Microsoft-Windows-Kernel-PnP  |  224       |           |  End attempting to eject device {DriverName}. Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  225       |  System   |  The application {ProcessName} with process id {ProcessId} stopped the removal or ejection for the device {DeviceInstance}.
+Microsoft-Windows-Kernel-PnP  |  225       |  System   |  The application {ProcessName} with process id {ProcessId} stopped the removal or ejection for the device {DeviceInstance}.Process command line: {CommandLine}
+Microsoft-Windows-Kernel-PnP  |  226       |           |  Begin calling driver initialization routine for driver {DriverName}
+Microsoft-Windows-Kernel-PnP  |  227       |           |  End calling driver initialization routine for driver {DriverName}. Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  228       |           |
+Microsoft-Windows-Kernel-PnP  |  229       |           |
+Microsoft-Windows-Kernel-PnP  |  230       |           |
+Microsoft-Windows-Kernel-PnP  |  231       |           |
+Microsoft-Windows-Kernel-PnP  |  232       |           |
+Microsoft-Windows-Kernel-PnP  |  233       |           |
+Microsoft-Windows-Kernel-PnP  |  234       |           |
+Microsoft-Windows-Kernel-PnP  |  235       |           |
+Microsoft-Windows-Kernel-PnP  |  236       |           |
+Microsoft-Windows-Kernel-PnP  |  240       |  System   |  A partition unit replace operation has been initiated.
+Microsoft-Windows-Kernel-PnP  |  241       |  System   |  A partition unit replace operation has failed.
+Microsoft-Windows-Kernel-PnP  |  241       |  System   |  A partition unit replace operation has failed.Cause: {ExtendedStatus}
+Microsoft-Windows-Kernel-PnP  |  242       |  System   |  A partition unit has been successfully replaced.
+Microsoft-Windows-Kernel-PnP  |  250       |           |  Begin configuration of device {DeviceInstance}
+Microsoft-Windows-Kernel-PnP  |  251       |           |  Pending configuration of device {DeviceInstance}
+Microsoft-Windows-Kernel-PnP  |  252       |           |  End configuration of device {DeviceInstance}. Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  260       |           |
+Microsoft-Windows-Kernel-PnP  |  261       |           |
+Microsoft-Windows-Kernel-PnP  |  262       |           |
+Microsoft-Windows-Kernel-PnP  |  263       |           |
+Microsoft-Windows-Kernel-PnP  |  264       |           |
+Microsoft-Windows-Kernel-PnP  |  265       |           |
+Microsoft-Windows-Kernel-PnP  |  266       |           |
+Microsoft-Windows-Kernel-PnP  |  267       |           |
+Microsoft-Windows-Kernel-PnP  |  270       |           |  Begin loading driver database {DriverName}
+Microsoft-Windows-Kernel-PnP  |  271       |           |  Pending loading driver database {DriverName}
+Microsoft-Windows-Kernel-PnP  |  272       |           |  End loading driver database {DriverName}
+Microsoft-Windows-Kernel-PnP  |  273       |           |  Begin unloading driver database {DriverName}
+Microsoft-Windows-Kernel-PnP  |  274       |           |  Pending unloading driver database {DriverName}
+Microsoft-Windows-Kernel-PnP  |  275       |           |  End unloading driver database {DriverName}
+Microsoft-Windows-Kernel-PnP  |  276       |           |
+Microsoft-Windows-Kernel-PnP  |  277       |           |
+Microsoft-Windows-Kernel-PnP  |  278       |           |
+Microsoft-Windows-Kernel-PnP  |  300       |           |
+Microsoft-Windows-Kernel-PnP  |  301       |           |
+Microsoft-Windows-Kernel-PnP  |  400       |           |  Device {DeviceInstanceId} was configured.Driver Name: {DriverName}Class Guid: {ClassGuid}Driver Date: {DriverDate}Driver Version: {DriverVersion}Driver Provider: {DriverProvider}Driver Section: {DriverSection}Driver Rank: {DriverRank}Matching Device Id: {DeviceInstanceId}0Outranked Drivers: {DeviceInstanceId}1Device Updated: {DeviceInstanceId}2Parent Device: {DeviceInstanceId}4
+Microsoft-Windows-Kernel-PnP  |  401       |           |  Device {DeviceInstanceId} failed configuration.Driver Name: {DriverName}Class Guid: {ClassGuid}Driver Date: {DriverDate}Driver Version: {DriverVersion}Driver Provider: {DriverProvider}Driver Section: {DriverSection}Driver Rank: {DriverRank}Matching Device Id: {DeviceInstanceId}0Outranked Drivers: {DeviceInstanceId}1Device Updated: {DeviceInstanceId}2Status: {DeviceInstanceId}3Parent Device: {DeviceInstanceId}4
+Microsoft-Windows-Kernel-PnP  |  402       |           |  Device {DeviceInstanceId} had its configuration blocked by policy.Driver Name: {DriverName}Class Guid: {ClassGuid}Driver Date: {DriverDate}Driver Version: {DriverVersion}Driver Provider: {DriverProvider}Driver Section: {DriverSection}Driver Rank: {DriverRank}Matching Device Id: {DeviceInstanceId}0Outranked Drivers: {DeviceInstanceId}1Device Updated: {DeviceInstanceId}2Status: {DeviceInstanceId}3Parent Device: {DeviceInstanceId}4
+Microsoft-Windows-Kernel-PnP  |  403       |           |  Device {DeviceInstanceId} requires a system reboot to complete configuration.Driver Name: {DriverName}Class Guid: {ClassGuid}Driver Date: {DriverDate}Driver Version: {DriverVersion}Driver Provider: {DriverProvider}Driver Section: {DriverSection}Driver Rank: {DriverRank}Matching Device Id: {DeviceInstanceId}0Outranked Drivers: {DeviceInstanceId}1Device Updated: {DeviceInstanceId}2Status: {DeviceInstanceId}3Parent Device: {DeviceInstanceId}4
+Microsoft-Windows-Kernel-PnP  |  410       |           |  Device {DeviceInstanceId} was started.Driver Name: {DriverName}Class Guid: {ClassGuid}Service: {ServiceName}Lower Filters: {LowerFilters}Upper Filters: {UpperFilters}
+Microsoft-Windows-Kernel-PnP  |  411       |           |  Device {DeviceInstanceId} had a problem starting.Driver Name: {DriverName}Class Guid: {ClassGuid}Service: {ServiceName}Lower Filters: {LowerFilters}Upper Filters: {UpperFilters}Problem: {Problem}Problem Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  412       |           |  Device {DeviceInstanceId} requires a system reboot before it can be started.Driver Name: {DriverName}Class Guid: {ClassGuid}Service: {ServiceName}Lower Filters: {LowerFilters}Upper Filters: {UpperFilters}Problem: {Problem}Problem Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  420       |           |  Device {DeviceInstanceId} was deleted.Class Guid: {ClassGuid}
+Microsoft-Windows-Kernel-PnP  |  421       |           |  Device {DeviceInstanceId} could not be deleted.Class Guid: {ClassGuid}Problem: {Problem}Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  430       |           |  Device {DeviceInstanceId} requires further installation.
+Microsoft-Windows-Kernel-PnP  |  440       |           |  Device settings for {DeviceInstanceId} were migrated from previous OS installation.Last Device Instance Id: {LastDeviceInstanceId}Class Guid: {ClassGuid}Location Path: {LocationPath}Migration Rank: {MigrationRank}Present: {Present}
+Microsoft-Windows-Kernel-PnP  |  441       |           |  Device settings for {DeviceInstanceId} could not be migrated from previous OS installation.Last Device Instance Id: {LastDeviceInstanceId}Class Guid: {ClassGuid}Location Path: {LocationPath}Migration Rank: {MigrationRank}Present: {Present}Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  442       |           |  Device settings for {DeviceInstanceId} were not migrated from previous OS installation due to partial or ambiguous device match.Last Device Instance Id: {LastDeviceInstanceId}Class Guid: {ClassGuid}Location Path: {LocationPath}Migration Rank: {MigrationRank}Present: {Present}Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  500       |           |
+Microsoft-Windows-Kernel-PnP  |  501       |           |
+Microsoft-Windows-Kernel-PnP  |  502       |           |
+Microsoft-Windows-Kernel-PnP  |  503       |           |
+Microsoft-Windows-Kernel-PnP  |  600       |           |  A start type override of {StartType} was set for driver {Driver} in hardware configuration {HardwareConfigurationId}
+Microsoft-Windows-Kernel-PnP  |  700       |           |
+Microsoft-Windows-Kernel-PnP  |  701       |           |
+Microsoft-Windows-Kernel-PnP  |  702       |           |
+Microsoft-Windows-Kernel-PnP  |  703       |           |
+Microsoft-Windows-Kernel-PnP  |  704       |           |
+Microsoft-Windows-Kernel-PnP  |  705       |           |
+Microsoft-Windows-Kernel-PnP  |  800       |           |  Begin processing new device ({DeviceNode})
+Microsoft-Windows-Kernel-PnP  |  801       |           |  Processing device {DeviceInstancePath} ({DeviceNode})
+Microsoft-Windows-Kernel-PnP  |  802       |           |  End processing new device ({DeviceNode})
+Microsoft-Windows-Kernel-PnP  |  803       |           |  Begin processing phase {Phase} of starting device {Device}
+Microsoft-Windows-Kernel-PnP  |  804       |           |  End processing phase {Phase} of starting device {Device}
+Microsoft-Windows-Kernel-PnP  |  805       |           |  Begin processing phase {Phase} of restarting device {Device}
+Microsoft-Windows-Kernel-PnP  |  806       |           |  End processing phase {Phase} of restarting device {Device}
+Microsoft-Windows-Kernel-PnP  |  807       |           |  Begin device add operation for driver {DriverName}, device {DeviceInstancePath}
+Microsoft-Windows-Kernel-PnP  |  808       |           |  End device add, status ({Status})
+Microsoft-Windows-Kernel-PnP  |  810       |           |  Reenumeration of device tree below {Device} has been queued.
+Microsoft-Windows-Kernel-PnP  |  811       |           |  Begin reenumeration of device tree below {Device}.
+Microsoft-Windows-Kernel-PnP  |  812       |           |  End reenumeration of device tree below {Device}.
+Microsoft-Windows-Kernel-PnP  |  813       |           |  Reenumeration of {Device} has been queued.
+Microsoft-Windows-Kernel-PnP  |  814       |           |  Begin reenumeration of {Device}.
+Microsoft-Windows-Kernel-PnP  |  815       |           |  End reenumeration of {Device}.
+Microsoft-Windows-Kernel-PnP  |  816       |           |  Configuration of device {Device} for configuration type {RequestType} has been queued.
+Microsoft-Windows-Kernel-PnP  |  817       |           |  Begin configuration of device {Device} for configuration type {RequestType}.
+Microsoft-Windows-Kernel-PnP  |  818       |           |  End configuration of device {Device} for configuration type {RequestType}. Result is {Status}
+Microsoft-Windows-Kernel-PnP  |  819       |           |
+Microsoft-Windows-Kernel-PnP  |  820       |           |
+Microsoft-Windows-Kernel-PnP  |  821       |           |
+Microsoft-Windows-Kernel-PnP  |  830       |           |  Removal of {Device} has been queued.
+Microsoft-Windows-Kernel-PnP  |  831       |           |  Begin removal of {Device}.
+Microsoft-Windows-Kernel-PnP  |  832       |           |  End removal of {Device}.
+Microsoft-Windows-Kernel-PnP  |  840       |           |  Begin resetting device {DeviceInstance}.
+Microsoft-Windows-Kernel-PnP  |  841       |           |  End resetting device {DeviceInstance} with status {Status}, veto type {VetoType}, veto name {VetoName}.
+Microsoft-Windows-Kernel-PnP  |  850       |           |  Begin assigning resources to device tree below {Device}.
+Microsoft-Windows-Kernel-PnP  |  851       |           |  End assigning resources to device tree below {Device}.
+Microsoft-Windows-Kernel-PnP  |  852       |           |  Begin rebalancing resources for device {DeviceInstance}.
+Microsoft-Windows-Kernel-PnP  |  853       |           |  End rebalancing resources for device {DeviceInstance}.
+Microsoft-Windows-Kernel-PnP  |  900       |           |  A long running thread for the device event queue was detected. The thread has been running for {ElapsedTimeMs} milliseconds.Thread ID: {ThreadId}Device: {DeviceInstanceId}Service: {ServiceName}
+Microsoft-Windows-Kernel-PnP  |  901       |           |  A long running thread for the device event queue has been completed.Thread ID: {ThreadId}Device: {DeviceInstanceId}Service: {ServiceName}Total run time in milliseconds: {ElapsedTimeMs}
+Microsoft-Windows-Kernel-PnP  |  902       |           |  A long running thread for device start processing was detected. The thread has been running for {ElapsedTimeMs} milliseconds.Thread ID: {ThreadId}Device: {DeviceInstanceId}Service: {ServiceName}
+Microsoft-Windows-Kernel-PnP  |  903       |           |  A long running thread for device start processing has been completed.Thread ID: {ThreadId}Device: {DeviceInstanceId}Service: {ServiceName}Total run time in milliseconds: {ElapsedTimeMs}
+Microsoft-Windows-Kernel-PnP  |  904       |           |  A long running thread for device removal was detected. The thread has been running for {ElapsedTimeMs} milliseconds.Thread ID: {ThreadId}Device: {DeviceInstanceId}Service: {ServiceName}
+Microsoft-Windows-Kernel-PnP  |  905       |           |  A long running thread for device removal has been completed.Thread ID: {ThreadId}Device: {DeviceInstanceId}Service: {ServiceName}Total run time in milliseconds: {ElapsedTimeMs}
+Microsoft-Windows-Kernel-PnP  |  906       |           |  A long running thread for device add routine was detected. The thread has been running for {ElapsedTimeMs} milliseconds.Thread ID: {ThreadId}Device: {DeviceInstanceId}Driver: {DriverName}
+Microsoft-Windows-Kernel-PnP  |  907       |           |  A long running thread for device add routine has been completed.Thread ID: {ThreadId}Device: {DeviceInstanceId}Driver: {DriverName}Total run time in milliseconds: {ElapsedTimeMs}
+Microsoft-Windows-Kernel-PnP  |  908       |           |  A long running thread for driver entry was detected. The thread has been running for {ElapsedTimeMs} milliseconds.Thread ID: {ThreadId}Driver: {DriverName}
+Microsoft-Windows-Kernel-PnP  |  909       |           |  A long running thread for driver entry routine has been completed.Thread ID: {ThreadId}Driver: {DriverName}Total run time in milliseconds: {ElapsedTimeMs}
+Microsoft-Windows-Kernel-PnP  |  1000      |           |  Device {DeviceInstanceId} could not be query removed as the removal was vetoed.Veto Type: {VetoType}Vetoed By: {VetoName}
+Microsoft-Windows-Kernel-PnP  |  1010      |           |  Device {DeviceInstanceId} has been surprise removed as it is reported as missing on the bus.Count of devices removed: {DeviceCount}
+Microsoft-Windows-Kernel-PnP  |  1011      |           |  Device {DeviceInstanceId} has been surprise removed as it was reported to be failing.Count of devices removed: {DeviceCount}
+Microsoft-Windows-Kernel-PnP  |  1020      |           |  A resource rebalance operation has succeeded.Device Instance Id: {DeviceInstanceId}Service Name: {ServiceName}Device Count: {DeviceCount}Rebalance Phase: {Phase}Subtree Root Instance Id: {SubtreeRootInstanceId}Subtree Includes Root: {SubtreeIncludesRoot}Rebalance Due to Dynamic Partitioning: {RebalanceDueToDynamicPartitioning}Rebalance Reason: {RebalanceReason}Conflicting Resource Type: {ConflictResourceType}Duration in Milliseconds: {DeviceInstanceId}0
+Microsoft-Windows-Kernel-PnP  |  1021      |           |  A resource rebalance operation has failed.Device Instance Id: {DeviceInstanceId}Service Name: {ServiceName}Device Count: {DeviceCount}Rebalance Phase: {Phase}Subtree Root Instance Id: {SubtreeRootInstanceId}Subtree Includes Root: {SubtreeIncludesRoot}Rebalance Due to Dynamic Partitioning: {RebalanceDueToDynamicPartitioning}Rebalance Reason: {RebalanceReason}Conflicting Resource Type: {ConflictResourceType}Rebalance Failure: {DeviceInstanceId}0Veto Reason: {DeviceInstanceId}1Vetoing Device Node Instance Id: {DeviceInstanceId}2Duration in Milliseconds: {DeviceInstanceId}3
+Microsoft-Windows-Kernel-PnP  |  1030      |           |  Device {Device} has been assigned to a guest partition.
+Microsoft-Windows-Kernel-PnP  |  1031      |           |  Device {Device} is no longer assigned to a guest partition.
+Microsoft-Windows-Kernel-PnP  |  1040      |           |  Device {DeviceInstanceId} has requested a platform-level device reset.Flags: {Flags}
+Microsoft-Windows-Kernel-PnP  |  1041      |           |  Device {DeviceInstance} has completed a platform-level device reset.Status: {Status}Veto type: {VetoType}Vetoed By: {VetoName}
+Microsoft-Windows-Kernel-PnP  |  1050      |           |  Failed to create driver package defined child device of {ParentDeviceInstancePath}.Child Instance ID: {InstanceId}Status: {Status}
+Microsoft-Windows-Kernel-PnP  |  1100      |           |
+Microsoft-Windows-Kernel-PnP  |  1101      |           |
+Microsoft-Windows-Kernel-PnP  |  1102      |           |
+Microsoft-Windows-Kernel-PnP  |  1103      |           |
+Microsoft-Windows-Kernel-PnP  |  1104      |           |
+Microsoft-Windows-Kernel-PnP  |  1105      |           |
+Microsoft-Windows-Kernel-PnP  |  1106      |           |
+Microsoft-Windows-Kernel-PnP  |  1107      |           |
+Microsoft-Windows-Kernel-PnP  |  1108      |           |
+Microsoft-Windows-Kernel-PnP  |  1109      |           |
+Microsoft-Windows-Kernel-PnP  |  1110      |           |
+Microsoft-Windows-Kernel-PnP  |  1111      |           |
+Microsoft-Windows-Kernel-PnP  |  1120      |           |
+Microsoft-Windows-Kernel-PnP  |  1121      |           |
+Microsoft-Windows-Kernel-PnP  |  1122      |           |
+Microsoft-Windows-Kernel-PnP  |  1130      |           |
+Microsoft-Windows-Kernel-PnP  |  1131      |           |
+Microsoft-Windows-Kernel-PnP  |  1132      |           |
+Microsoft-Windows-Kernel-PnP  |  1140      |           |
+Microsoft-Windows-Kernel-PnP  |  1141      |           |
+Microsoft-Windows-Kernel-PnP  |  1142      |           |
+Microsoft-Windows-Kernel-PnP  |  1143      |           |
+Microsoft-Windows-Kernel-PnP  |  1144      |           |
+Microsoft-Windows-Kernel-PnP  |  1145      |           |
+Microsoft-Windows-Kernel-PnP  |  1150      |           |
+Microsoft-Windows-Kernel-PnP  |  1151      |           |
+Microsoft-Windows-Kernel-PnP  |  1160      |           |
+Microsoft-Windows-Kernel-PnP  |  1161      |           |
+Microsoft-Windows-Kernel-PnP  |  1170      |           |
+Microsoft-Windows-Kernel-PnP  |  1171      |           |
+Microsoft-Windows-Kernel-PnP  |  1172      |           |
+Microsoft-Windows-Kernel-PnP  |  1173      |           |
+Microsoft-Windows-Kernel-PnP  |  1174      |           |
+Microsoft-Windows-Kernel-PnP  |  1175      |           |
+Microsoft-Windows-Kernel-PnP  |  1176      |           |
+Microsoft-Windows-Kernel-PnP  |  1177      |           |
+Microsoft-Windows-Kernel-PnP  |  1190      |           |
+Microsoft-Windows-Kernel-PnP  |  1191      |           |
+Microsoft-Windows-Kernel-PnP  |  1192      |           |

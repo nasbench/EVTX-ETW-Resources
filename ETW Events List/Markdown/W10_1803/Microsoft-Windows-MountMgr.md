@@ -1,0 +1,3 @@
+Provider                    |  Event ID  |  Channel  |  Message
+----------------------------|------------|-----------|---------
+Microsoft-Windows-MountMgr  |  100       |  System   |  {CVEId}

@@ -1,0 +1,14 @@
+Provider                          |  Event ID  |  Channel                                    |  Message
+----------------------------------|------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Hyper-V-Serial  |  1500      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-Serial  |  1510      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-Serial  |  1520      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-Serial  |  1530      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-Serial  |  10500     |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-Serial  |  10510     |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-Serial  |  10520     |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-Serial  |  10530     |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-Serial  |  12320     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  '{VmName}' error '{ErrorCodeString}' ({ErrorCode}) while opening file '{String}' during serial device startup. (Virtual machine ID {VmId})
+Microsoft-Windows-Hyper-V-Serial  |  12321     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  Error '{ErrorCodeString}' ({ErrorCode}) while opening file '{String}' during serial device startup.
+Microsoft-Windows-Hyper-V-Serial  |  12322     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  The virtual machine {VmName} cannot load device {Device} because there are no mutually supported protocol versions. The server version is {ServerVersion} and the client version is {ClientVersion} (Virtual machine ID {VmId}).
+Microsoft-Windows-Hyper-V-Serial  |  12323     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  The device {Device} cannot be loaded because there are no mutually support protocol versions between the server and client.

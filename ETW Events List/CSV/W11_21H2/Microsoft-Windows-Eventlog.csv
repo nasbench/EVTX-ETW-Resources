@@ -1,0 +1,43 @@
+Provider|Event ID|Channel|Message
+Microsoft-Windows-Eventlog|20|System|The event logging service encountered an error {ErrorCode} while obtaining or processing configuration for channel {Path}.
+Microsoft-Windows-Eventlog|21|System|The event logging service encountered a configuration-related error (res={ErrorCode}) for channel {ChannelPath}. The error was encountered while processing the {ConfigProperty} configuration property.
+Microsoft-Windows-Eventlog|22|System|The event logging service encountered an error while initializing publishing resources for channel {Path}. If channel type is Analytic or Debug, then this could mean there was an error initializing logging resources as well.
+Microsoft-Windows-Eventlog|23|System|The event logging service encountered an error (res={ErrorCode}) while initializing logging resources for channel {Path}.
+Microsoft-Windows-Eventlog|25|System|The event logging service encountered a corrupt log file for channel {ChannelPath}. The log was renamed with a .corrupt extension.
+Microsoft-Windows-Eventlog|26|System|The event logging service encountered a log file for channel {ChannelPath} which is an unsupported version. The log was renamed with a .UnsupportedVer extension.
+Microsoft-Windows-Eventlog|27|System|The event logging service encountered an error (res={ErrorCode}) while opening log file for channel {ChannelPath}. Trying again using default log file path {NewLogFilePath}.
+Microsoft-Windows-Eventlog|27|System|The event logging service encountered an error (res={ErrorCode}) while opening log file for channel {ChannelPath} at {FailedLogFilePath}. Trying again using default log file path {NewLogFilePath}.
+Microsoft-Windows-Eventlog|28|System|The event logging service encountered an error (res={ErrorCode}) while parsing filter for channel {ChannelPath}. Will continue without filter.
+Microsoft-Windows-Eventlog|29|System|The event logging service encountered a fatal error (res={ErrorCode}) when applying settings to the {ChannelPath} channel. The service is shutting down since this channel is vital to its operation.
+Microsoft-Windows-Eventlog|30|System|The event logging service encountered an error ({ErrorCode}) while enabling publisher {PublisherGuid} to channel {ChannelPath}. This does not affect channel operation, but does affect the ability of the publisher to raise events to the channel. One common reason for this error is that the Provider is using ETW Provider Security and has not granted enable permissions to the Event Log service identity.
+Microsoft-Windows-Eventlog|31|System|The event logging service encountered an error (res={ErrorCode}) while opening configuration for primary channel {ChannelPath}. Trying again using default configuration. This problem usually occurs if registry has been corrupted or explicitly misconfigured.
+Microsoft-Windows-Eventlog|40|System|The event logging service encountered an error when attempting to apply one or more policy settings.
+Microsoft-Windows-Eventlog|100|Analytic|The event logging service encountered an error while processing an incoming event published from {PubID}.
+Microsoft-Windows-Eventlog|102|Analytic|The event logging service encountered an error while processing an incoming event from publisher {PublisherName} and trying to process the metadata for it.
+Microsoft-Windows-Eventlog|103|Analytic|Events have been dropped by the transport.  The session name is {SessionName} and the reason code is {Reason}.
+Microsoft-Windows-Eventlog|104|System|The {Channel} log file was cleared.
+Microsoft-Windows-Eventlog|105|System|Event log automatic backup	Log:	{Channel}	File:	{BackupPath}
+Microsoft-Windows-Eventlog|106|System|Corruption was detected in the log for the {Channel} channel and some data was erased.
+Microsoft-Windows-Eventlog|107|Analytic|The event logging service encountered an error {ErrorCode} while going through publisher configuration. The publisher {ProviderName} is already installed with GUID {PublisherGuid}.
+Microsoft-Windows-Eventlog|108|System|The previous system shutdown was unexpected.
+Microsoft-Windows-Eventlog|109|Analytic|The event logging service encountered an error while processing an incoming event from publisher {PublisherName} and trying to process the metadata for it.
+Microsoft-Windows-Eventlog|110|Debug|Loading metadata for publisher {PublisherName} ({PublisherGuid}) and trying to process the metadata for it.
+Microsoft-Windows-Eventlog|111|Debug|Finished loading metadata for publisher {PublisherName} ({PublisherGuid}), with {EventMetaDataCount} event metadatas processed.
+Microsoft-Windows-Eventlog|112|Debug|Failed to load metadata for publisher {PublisherName} ({PublisherGuid}). The reason code is {ErrorCode}.
+Microsoft-Windows-Eventlog|200|Analytic|Channel {ChannelName} ({ChannelType}) was enabled ({Enabled}) programmatically.
+Microsoft-Windows-Eventlog|201|Analytic|A push subscription was created for {ChannelName}.
+Microsoft-Windows-Eventlog|202|Analytic|A pull subscription was created for {ChannelName}.
+Microsoft-Windows-Eventlog|203|Analytic|OpenEventLog legacy API was used to open {ModuleName}.
+Microsoft-Windows-Eventlog|204|Analytic|RegisterEventSource legacy API was used to register {ModuleName}.
+Microsoft-Windows-Eventlog|205|Analytic|ReportEvent legacy API was used to write an event to {ModuleName}.
+Microsoft-Windows-Eventlog|205|Analytic|ReportEvent legacy API was used to write an event to {ModuleName}.
+Microsoft-Windows-Eventlog|1100|Security|The event logging service has shut down.
+Microsoft-Windows-Eventlog|1101|Security|Audit events have been dropped by the transport.  {Reason}
+Microsoft-Windows-Eventlog|1102|Security|The audit log was cleared.Subject:	Security ID:	{SubjectUserSid}	Account Name:	{SubjectUserName}	Domain Name:	{SubjectDomainName}	Logon ID:	{SubjectLogonId}
+Microsoft-Windows-Eventlog|1103|Security|The security log is now {PercentFull} percent full.
+Microsoft-Windows-Eventlog|1104|Security|The security log is now full.
+Microsoft-Windows-Eventlog|1105|Security|Event log automatic backup	Log:	{Channel}	File:	{BackupPath}
+Microsoft-Windows-Eventlog|1106|Security|Events have been dropped by the event logging service. The reason code is {Reason}.
+Microsoft-Windows-Eventlog|1107|Security|The event logging service encountered an error while processing an incoming event from publisher {PublisherName} and trying to process the metadata for it.
+Microsoft-Windows-Eventlog|1108|Security|The event logging service encountered an error while processing an incoming event published from {PubID}.
+Microsoft-Windows-Eventlog|6000|System|The {Channel} log file is full.

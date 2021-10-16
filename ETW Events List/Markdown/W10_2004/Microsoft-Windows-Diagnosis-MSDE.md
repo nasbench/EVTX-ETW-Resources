@@ -1,0 +1,6 @@
+Provider                          |  Event ID  |  Channel                                 |  Message
+----------------------------------|------------|------------------------------------------|---------
+Microsoft-Windows-Diagnosis-MSDE  |  1000      |  Microsoft-Windows-Diagnosis-MSDE/Debug  |
+Microsoft-Windows-Diagnosis-MSDE  |  1001      |  Microsoft-Windows-Diagnosis-MSDE/Debug  |
+Microsoft-Windows-Diagnosis-MSDE  |  1002      |  Microsoft-Windows-Diagnosis-MSDE/Debug  |
+Microsoft-Windows-Diagnosis-MSDE  |  1003      |  Microsoft-Windows-Diagnosis-MSDE/Debug  |

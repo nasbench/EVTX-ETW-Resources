@@ -1,0 +1,4 @@
+Provider                          |  Event ID  |  Channel                                       |  Message
+----------------------------------|------------|------------------------------------------------|---------
+Microsoft-Windows-MobilityCenter  |  100       |  Microsoft-Windows-MobilityCenter/Performance  |
+Microsoft-Windows-MobilityCenter  |  101       |  Microsoft-Windows-MobilityCenter/Performance  |

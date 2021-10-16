@@ -1,0 +1,44 @@
+Provider                           |  Event ID  |  Channel                  |  Message
+-----------------------------------|------------|---------------------------|------------------------------------------------------------------------------------------
+Microsoft-Windows-WWAN-SVC-EVENTS  |  1001      |  WWAN Diagnostic Channel  |  WWAN Service event: WWAN error
+Microsoft-Windows-WWAN-SVC-EVENTS  |  1002      |  WWAN Diagnostic Channel  |  WWAN Service event: WWAN warning
+Microsoft-Windows-WWAN-SVC-EVENTS  |  2001      |  WWAN Diagnostic Channel  |
+Microsoft-Windows-WWAN-SVC-EVENTS  |  2002      |  WWAN Diagnostic Channel  |
+Microsoft-Windows-WWAN-SVC-EVENTS  |  2003      |  WWAN Diagnostic Channel  |  WWAN Service event: WWAN Interface arrived
+Microsoft-Windows-WWAN-SVC-EVENTS  |  2004      |  WWAN Diagnostic Channel  |  WWAN Service event: WWAN Interface removed
+Microsoft-Windows-WWAN-SVC-EVENTS  |  2005      |  WWAN Diagnostic Channel  |  WWAN Service event: WWAN Interface discarded
+Microsoft-Windows-WWAN-SVC-EVENTS  |  2006      |  WWAN Diagnostic Channel  |  WWAN Service event: WWAN Interface information
+Microsoft-Windows-WWAN-SVC-EVENTS  |  2007      |  WWAN Diagnostic Channel  |  WWAN Service event: WWAN API Request
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3001      |  WWAN Diagnostic Channel  |  WWAN Service event: Register happened. Either automatically or by some request
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3002      |  WWAN Diagnostic Channel  |  WWAN Service event: Register request failed
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3003      |  WWAN Diagnostic Channel  |  WWAN Service event: Deregister happened
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3004      |  WWAN Diagnostic Channel  |  WWAN Service event: Packet attach happened. Either automatically or by some request
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3006      |  WWAN Diagnostic Channel  |  WWAN Service event: Packet Detach happened. Either automatically or by some request
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3008      |  WWAN Diagnostic Channel  |  WWAN Service event: Context Activate happened. Either automatically or by some request
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3010      |  WWAN Diagnostic Channel  |  WWAN Service event: Context Deactivate happened. Either automatically or by some request
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3012      |  WWAN Diagnostic Channel  |  WWAN Service event: Connect happened. Either automatically or by some request
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3013      |  WWAN Diagnostic Channel  |  WWAN Service event: Connect request failed
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3014      |  WWAN Diagnostic Channel  |  WWAN Service event: Disconnect happened. Either automatically or by some request
+Microsoft-Windows-WWAN-SVC-EVENTS  |  3015      |  WWAN Diagnostic Channel  |  WWAN Service event: Disconnect request failed
+Microsoft-Windows-WWAN-SVC-EVENTS  |  4001      |  WWAN Diagnostic Channel  |  WWAN Service event: Signal Notification recieved
+Microsoft-Windows-WWAN-SVC-EVENTS  |  4002      |  WWAN Diagnostic Channel  |  WWAN Service event: Radio state change Notification recieved
+Microsoft-Windows-WWAN-SVC-EVENTS  |  4003      |  WWAN Diagnostic Channel  |  WWAN Service event: Profile Update Notification recieved
+Microsoft-Windows-WWAN-SVC-EVENTS  |  5001      |  WWAN Diagnostic Channel  |  WWAN Service event: Pin Information Notification recieved
+Microsoft-Windows-WWAN-SVC-EVENTS  |  5002      |  WWAN Diagnostic Channel  |  WWAN Service event: Pin List Notification recieved
+Microsoft-Windows-WWAN-SVC-EVENTS  |  5003      |  WWAN Diagnostic Channel  |  WWAN Service event: Pin Action Completion Notification recieved
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10001     |  WWAN Diagnostic Channel  |  WWAN Service event: Start WWAN Service Startup
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10002     |  WWAN Diagnostic Channel  |  WWAN Service event: Complete WWAN Service Startup
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10011     |  WWAN Diagnostic Channel  |  WWAN Service event: Start Service Shutdown
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10012     |  WWAN Diagnostic Channel  |  WWAN Service event: Complete Service Shutdown
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10021     |  WWAN Diagnostic Channel  |  WWAN Service event: Start Interface Initialization
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10022     |  WWAN Diagnostic Channel  |  WWAN Service event: Complete Interface Initialization
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10031     |  WWAN Diagnostic Channel  |  WWAN Service event: Start Registering
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10032     |  WWAN Diagnostic Channel  |  WWAN Service event: Complete Registering
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10061     |  WWAN Diagnostic Channel  |  WWAN Service event: Start Connecting
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10062     |  WWAN Diagnostic Channel  |  WWAN Service event: Complete Connecting
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10071     |  WWAN Diagnostic Channel  |  WWAN Service event: Start Scanning
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10072     |  WWAN Diagnostic Channel  |  WWAN Service event: Complete Scanning
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10081     |  WWAN Diagnostic Channel  |  WWAN Service event: Start Service Resume
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10082     |  WWAN Diagnostic Channel  |  WWAN Service event: Complete Service Resume
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10091     |  WWAN Diagnostic Channel  |  WWAN Service event: Start Service Suspend
+Microsoft-Windows-WWAN-SVC-EVENTS  |  10092     |  WWAN Diagnostic Channel  |  WWAN Service event: Complete Service Suspend

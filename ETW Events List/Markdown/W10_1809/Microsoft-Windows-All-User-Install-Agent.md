@@ -1,0 +1,12 @@
+Provider                                  |  Event ID  |  Channel  |  Message
+------------------------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-All-User-Install-Agent  |  1287      |  Admin    |  A profile deletion triggered the Windows All-User Install Agent to uninstall all packages for the user profile {Param1}.
+Microsoft-Windows-All-User-Install-Agent  |  1288      |  Admin    |  The Windows All-User Install Agent could not remove {PackageMoniker} packages during the profile deletion of the user profile {UserSid}. The error code is {Error}.
+Microsoft-Windows-All-User-Install-Agent  |  1300      |  Admin    |  The Windows All-User Install Agent could not delete the registered packages after the profile was deleted for user SID {UserSid}. Error code: {Error}.  Additional information: {location}.
+Microsoft-Windows-All-User-Install-Agent  |  1301      |  Admin    |  The Windows All-User Install Agent detected an attempt to delete a temporary or mandatory profile for user SID {Param1}. Package information for the user will be reset.
+Microsoft-Windows-All-User-Install-Agent  |  1302      |  Admin    |  The Windows All-User Install Agent will delete {NumberOfPackages} packages for user SID {UserSid} because the profile was deleted.
+Microsoft-Windows-All-User-Install-Agent  |  1303      |  Admin    |  The Windows All-User Install Agent could not retrieve a list of packages for user SID {UserSid}. The error code is {Error}.
+Microsoft-Windows-All-User-Install-Agent  |  1304      |  Admin    |  The Windows All-User Install Agent will delete package {Package} for user SID {UserSid} because the profile was deleted.
+Microsoft-Windows-All-User-Install-Agent  |  1305      |  Admin    |  GetApplicability API failed to determine status of package {Package}. The error code is {Error}.
+Microsoft-Windows-All-User-Install-Agent  |  1306      |  Admin    |  GetApplicability API has determined that package {Package} is either NotInstallable or RequiresReinstall. The detail code is {Error}.
+Microsoft-Windows-All-User-Install-Agent  |  1307      |  Admin    |  Dependent Package {Package} is already installed, registration will be skipped.

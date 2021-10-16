@@ -1,0 +1,59 @@
+Provider                                       |  Event ID  |  Channel  |  Message
+-----------------------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-AppModel-MessagingDataModel  |  1         |           |  Error: HRESULT: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  2         |           |  Error Propagated: HRESULT: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  100       |           |  [MessagingDataModel] CSmMessage::WriteMessageInternal() done.
+Microsoft-Windows-AppModel-MessagingDataModel  |  101       |           |  [MessagingDataModel] Writing message to database with pending download set and status succeeded
+Microsoft-Windows-AppModel-MessagingDataModel  |  102       |           |  [MessagingDataModel] Setting pending download to {Prop_Bool}
+Microsoft-Windows-AppModel-MessagingDataModel  |  103       |           |
+Microsoft-Windows-AppModel-MessagingDataModel  |  104       |           |  [Messaging] {Prop_UnicodeString}
+Microsoft-Windows-AppModel-MessagingDataModel  |  105       |           |  [Messaging] {Prop_UnicodeString}
+Microsoft-Windows-AppModel-MessagingDataModel  |  106       |           |  [Messaging] {Prop_Description_UnicodeString}, DWORD = {Prop_Data_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  107       |           |  [Messaging] MapiAdviseSink::OnNotify extended, event is {Prop_ExtendedEventType}
+Microsoft-Windows-AppModel-MessagingDataModel  |  108       |           |  [Messaging] MapiAdviseSink::OnNotify, Event type: {Prop_EventType}, Object type: {Prop_ObjectType}
+Microsoft-Windows-AppModel-MessagingDataModel  |  109       |           |  [Messaging] MapiAdviseSink::_OnMessageNotify, Event type: {Prop_EventType}
+Microsoft-Windows-AppModel-MessagingDataModel  |  110       |           |  [Messaging] CSmMessage::WriteMessageInternal - Status: {Prop_ReadStatusType}
+Microsoft-Windows-AppModel-MessagingDataModel  |  111       |           |  [Messaging] CSmMessage::SetUnread - Setting status to: {Prop_ReadStatusType}
+Microsoft-Windows-AppModel-MessagingDataModel  |  112       |           |
+Microsoft-Windows-AppModel-MessagingDataModel  |  113       |           |
+Microsoft-Windows-AppModel-MessagingDataModel  |  114       |           |
+Microsoft-Windows-AppModel-MessagingDataModel  |  117       |           |  [IMTransport] Error: Missing IMMRI for recipient, using User ID: {Prop_UnicodeString}
+Microsoft-Windows-AppModel-MessagingDataModel  |  118       |           |  [IMTransport] Error: Missing IMMRI and User ID for recipient, skipping
+Microsoft-Windows-AppModel-MessagingDataModel  |  119       |           |  [ProviderManager] Number of slots: {Prop_Data_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  120       |           |  [MessagingDataModel] SlideAccessor::_CreateXmlReaderForSmilParsing: XmlReader SetInput failed with hr={Prop_Data_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  121       |           |  [MessagingDataModel] SlideAccessor::_BuildSlideFromSmil: _CreateXmlReaderForSmilParsing failed with hr={Prop_Data_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  122       |           |  [MessagingDataModel] Unexpected media type {Prop_Data_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  123       |           |  [MessagingDataModel] Processing async deletions: Conversation Index = {Prop_Data_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  124       |           |  [MessagingDataModel] Processing async deletion for a conversation: Batch Count = {Prop_Data_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  125       |           |  [MessagingDataModel] MapiAdviseSink::_OnNewMessage()
+Microsoft-Windows-AppModel-MessagingDataModel  |  126       |           |  [MessagingDataModel] Calling notificationSink.pSink->OnNewMessage
+Microsoft-Windows-AppModel-MessagingDataModel  |  127       |           |  [MessagingDataModel] returned from notificationSink.pSink->OnNewMessage
+Microsoft-Windows-AppModel-MessagingDataModel  |  128       |           |  [MessagingDataModel] ResetNewMessageCountByProviders()
+Microsoft-Windows-AppModel-MessagingDataModel  |  129       |           |  [MessagingDataModel] CSmStore::SetProviderUnseenCount
+Microsoft-Windows-AppModel-MessagingDataModel  |  130       |           |  [Threading] Found contact [{Prop_Data1_UInt32}] [{Prop_Data2_UInt32}] [{Prop_Data3_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  131       |           |  [Threading] Found conversation for contact
+Microsoft-Windows-AppModel-MessagingDataModel  |  132       |           |  [Threading] Found better conversation
+Microsoft-Windows-AppModel-MessagingDataModel  |  133       |           |  [Threading] Looking for contact number hash = {Prop_Data_UInt32}
+Microsoft-Windows-AppModel-MessagingDataModel  |  134       |           |  [Threading] Creating new conversation for contact [{Prop_Data1_UInt32}] [{Prop_Data2_UInt32}] [{Prop_Data3_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  135       |           |  [MessagingDataModel] Conversation::GetLeadingMessageId - Message not found
+Microsoft-Windows-AppModel-MessagingDataModel  |  136       |           |  [MessagingDataModel] Conversation::GetLeadingMessageId - Query results found. ConversationId: [{Prop_Description_UnicodeString1}] MessageId: [{Prop_Description_UnicodeString2}] MessageType: [{Prop_Data_DWORD}] IterationCount: [{Prop_Data_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  138       |           |  [MessagingDataModel] Conversation::GetLeadingMessageId - Query results found. ConversationId: [{Prop_Description_UnicodeString1}] MessageId: [{Prop_Description_UnicodeString2}] MessageType: [{Prop_Data_DWORD}] ProviderId: [{Prop_Data_UInt64}] IterationCount: [{Prop_Data_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  139       |           |  [MessagingDataModel] CSmStore::FindConversationById - Conversation not found! Id:[{Prop_UnicodeString}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1001      |           |  [MessagingCloudServices] ChatService REST API response failure: StatusCode = [{Prop_Data_UInt32}], ContextId = [{Prop_Description_UnicodeString1}], Date = [{Prop_Description_UnicodeString2}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1002      |           |  [MessagingCloudServices] AsyncMediaService REST API response failure: StatusCode = [{Prop_Data_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1003      |           |  [MessagingCloudServices] CloudServiceController sync state transition [{Prop_Data1_UInt32}] => [{Prop_Data2_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1004      |           |  [MessagingCloudServices] CloudServiceTransaction HTTP request URI = [{Prop_UnicodeString}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1005      |           |  [MessagingCloudServices] CloudServiceTransaction HTTP success: StatusCode = [{Prop_Data_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1006      |           |  [MessagingCloudServices] CloudServiceTransaction HTTP failure: StatusCode = [{Prop_Data_UInt32}], request URI = [{Prop_Description_UnicodeString1}], response content = [{Prop_Description_UnicodeString2}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1007      |           |  [MessagingCloudServices] CloudServiceSync iteration started: current iteration = [{Prop_Data_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1008      |           |  [MessagingCloudServices] CloudServiceSync iteration finished: current iteration = [{Prop_Data1_UInt32}], current iteration HRESULT = [{Prop_Data2_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1009      |           |  [MessagingCloudServices] CloudServiceSync sync timer: current iteration = [{Prop_Data1_UInt32}], current iteration HRESULT = [{Prop_Data2_UInt32}], next sync timer interval = [{Prop_Data3_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1010      |           |  [MessagingCloudServices] CloudServiceSync sync failure: current iteration = [{Prop_Data1_UInt32}], current state = [{Prop_Data2_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1501      |           |  [MessagingNotifications] New message notification received
+Microsoft-Windows-AppModel-MessagingDataModel  |  1502      |           |  [MessagingNotifications] Notification item initialized - type = [{Prop_Data1_UInt32}], actions = [{Prop_Data2_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1503      |           |  [MessagingNotifications] Notification item started - type = [{Prop_Data1_UInt32}], actions = [{Prop_Data2_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1504      |           |  [MessagingNotifications] Notification item finished - type = [{Prop_Data1_UInt32}], actions = [{Prop_Data2_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1505      |           |  [MessagingNotifications] Notified messaging apps - actions = [{Prop_Data1_UInt32}], handled = [{Prop_Data2_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1506      |           |  [MessagingNotifications] Notification handled by provider [{Prop_Description_UnicodeString}], actions = [{Prop_Data_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1507      |           |  [MessagingNotifications] Notification suppressed - type = [{Prop_Data_UInt32}]
+Microsoft-Windows-AppModel-MessagingDataModel  |  1508      |           |  [MessagingNotifications] No notification was queued/needed

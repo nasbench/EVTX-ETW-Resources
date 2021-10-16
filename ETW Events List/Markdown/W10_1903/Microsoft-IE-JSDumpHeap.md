@@ -1,0 +1,9 @@
+Provider                 |  Event ID  |  Channel  |  Message
+-------------------------|------------|-----------|---------
+Microsoft-IE-JSDumpHeap  |  1         |           |
+Microsoft-IE-JSDumpHeap  |  2         |           |
+Microsoft-IE-JSDumpHeap  |  3         |           |
+Microsoft-IE-JSDumpHeap  |  4         |           |
+Microsoft-IE-JSDumpHeap  |  5         |           |
+Microsoft-IE-JSDumpHeap  |  6         |           |
+Microsoft-IE-JSDumpHeap  |  7         |           |

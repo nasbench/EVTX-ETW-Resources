@@ -1,0 +1,63 @@
+Provider                             |  Event ID  |  Channel                                                      |  Message
+-------------------------------------|------------|---------------------------------------------------------------|-------------------------------------------------------------------------------
+Microsoft-Windows-User-ControlPanel  |  6001      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
+Microsoft-Windows-User-ControlPanel  |  6002      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
+Microsoft-Windows-User-ControlPanel  |  6003      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
+Microsoft-Windows-User-ControlPanel  |  6004      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
+Microsoft-Windows-User-ControlPanel  |  6005      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
+Microsoft-Windows-User-ControlPanel  |  6006      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
+Microsoft-Windows-User-ControlPanel  |  7001      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7002      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7003      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7004      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7005      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7006      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7007      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7008      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7009      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7010      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7011      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7012      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7013      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7014      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7015      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7016      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7017      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7018      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7019      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7020      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7021      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7022      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7023      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7024      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7025      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7026      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7027      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  7028      |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  8001      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8002      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8003      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8004      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8005      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8006      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8007      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8008      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8009      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8010      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8011      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8012      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8013      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8014      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8015      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8016      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8017      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8018      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8019      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8020      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8021      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8022      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  8023      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
+Microsoft-Windows-User-ControlPanel  |  9001      |  Microsoft-Windows-User Control Panel/Operational             |  Failed execution of [{Method}]. (Result {HRESULT})
+Microsoft-Windows-User-ControlPanel  |  9002      |  Microsoft-Windows-User Control Panel/Operational             |  Failed execution of [{Method}] for instance = {Iteration}. (Result {HRESULT})
+Microsoft-Windows-User-ControlPanel  |  25000     |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Microsoft-Windows-User-ControlPanel  |  25001     |  Microsoft-Windows-User Control Panel/Diagnostic              |

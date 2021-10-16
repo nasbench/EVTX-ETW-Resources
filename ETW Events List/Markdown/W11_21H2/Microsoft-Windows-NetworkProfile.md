@@ -1,0 +1,19 @@
+Provider                          |  Event ID  |  Channel  |  Message
+----------------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-NetworkProfile  |  4001      |           |  Entered State: {CurrentOrNextState} Interface Guid: {InterfaceGuid}
+Microsoft-Windows-NetworkProfile  |  4002      |           |  Transitioning to State: {CurrentOrNextState} Interface Guid: {InterfaceGuid}
+Microsoft-Windows-NetworkProfile  |  4003      |           |  Transitioning to State: {CurrentOrNextState} Interface Guid: {InterfaceGuid}
+Microsoft-Windows-NetworkProfile  |  4004      |           |  Network State Change Fired	New Internet Connection Profile: {NewInternetConnectionProfile}	Connection Cost Changed: {ConnectionCostChanged}	Domain Connectivity Level Changed: {DomainConnectivityLevelChanged}	Network Connectivity Level Changed: {NetworkConnectivityLevelChanged}	Host Name Changed: {HostNameChanged}	Wwan Registration State Changed: {WwanRegistrationStateChanged}	Tethering Operational State Changed: {TetheringOperationalStateChanged}	Tethering Client Count Changed: {TetheringClientCountChanged}
+Microsoft-Windows-NetworkProfile  |  10000     |           |  Network Connected	Name: {Name}	Desc: {Description}	Type: {Type}	State: {State}	Category: {Category}
+Microsoft-Windows-NetworkProfile  |  10001     |           |  Network Disconnected	Name: {Name}	Desc: {Description}	Type: {Type}	State: {State}	Category: {Category}
+Microsoft-Windows-NetworkProfile  |  10002     |           |  Network Category Changed	Name: {Name}	Desc: {Description}	Type: {Type}	State: {State}	Category: {Category}
+Microsoft-Windows-NetworkProfile  |  10003     |           |  Posting Network Connected Event Type: {NetworkProfileEventState}	ProfileID: {Guid}
+Microsoft-Windows-NetworkProfile  |  10004     |           |  Posted Network Connected Event Type: {NetworkProfileEventState}	ProfileID: {Guid}
+Microsoft-Windows-NetworkProfile  |  10005     |           |  Posting Network Profile Event Type: {NetworkProfileEventState}	ProfileID: {Guid}
+Microsoft-Windows-NetworkProfile  |  10006     |           |  Posted Network Profile Event Type: {NetworkProfileEventState}	ProfileID: {Guid}
+Microsoft-Windows-NetworkProfile  |  10007     |           |  Posting Network Disconnected Event Type: {NetworkProfileEventState}	ProfileID: {Guid}
+Microsoft-Windows-NetworkProfile  |  10008     |           |  Posted Network Disconnected Event Type: {NetworkProfileEventState}	ProfileID: {Guid}
+Microsoft-Windows-NetworkProfile  |  20001     |           |  NLM service initialisation failed (error={ErrorCode})
+Microsoft-Windows-NetworkProfile  |  20002     |           |  NSI Set Category Result	Profile GUID: {ProfileGuid}	Interface GUID: {InterfaceGuid}	Network Category: {Category}	IPv4 Error Code: {ErrorCodev4}	IPv6 Error Code: {ErrorCodev6}	Context: {Context}
+Microsoft-Windows-NetworkProfile  |  20003     |           |
+Microsoft-Windows-NetworkProfile  |  20004     |           |

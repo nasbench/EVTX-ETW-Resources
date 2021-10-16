@@ -1,0 +1,4 @@
+Provider                 |  Event ID  |  Channel  |  Message
+-------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-SCPNP  |  1000      |  System   |  Could not get device ID for smart card in reader {ReaderName}. The return code is {ErrorCode}.
+Microsoft-Windows-SCPNP  |  1001      |  System   |  Software successfully installed for smart card in reader {ReaderName}. The smart card name is {FriendlyName}.

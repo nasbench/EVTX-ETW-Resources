@@ -1,0 +1,16 @@
+Provider                   |  Event ID  |  Channel                                |  Message
+---------------------------|------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-SenseIR  |  1         |  Microsoft-Windows-SenseIR/Operational  |  Starting action {ActionType}. Action ID: {ActionId}
+Microsoft-Windows-SenseIR  |  2         |  Microsoft-Windows-SenseIR/Operational  |  Failed to run action {ActionType}. Action ID: {ActionId}, error code: {HRESULT}
+Microsoft-Windows-SenseIR  |  3         |  Microsoft-Windows-SenseIR/Operational  |  Succeeded to run action {ActionType}. Action ID: {ActionId}
+Microsoft-Windows-SenseIR  |  4         |  Microsoft-Windows-SenseIR/Operational  |  SenseIR executable started.
+Microsoft-Windows-SenseIR  |  5         |  Microsoft-Windows-SenseIR/Operational  |  SenseIR executable terminated. Exit code: {HRESULT}
+Microsoft-Windows-SenseIR  |  7         |  Microsoft-Windows-SenseIR/Operational  |  SenseIR requested registration as an AIRS client. Result code: {HRESULT}
+Microsoft-Windows-SenseIR  |  8         |  Microsoft-Windows-SenseIR/Operational  |  Encountered unexpected error while getting actions from AIRS server. Error code: {HRESULT}
+Microsoft-Windows-SenseIR  |  9         |  Microsoft-Windows-SenseIR/Operational  |  Found the caller of SenseIR executable to be invalid. Terminating executable. Error code: {HRESULT}
+Microsoft-Windows-SenseIR  |  10        |  Microsoft-Windows-SenseIR/Operational  |  Failed to deserialize SenseIR parameters. Error code: {HRESULT}
+Microsoft-Windows-SenseIR  |  11        |  Microsoft-Windows-SenseIR/Operational  |  Finished uploading results of action {ActionType}. Action ID: {ActionId}, upload result code: {HRESULT}
+Microsoft-Windows-SenseIR  |  12        |  Microsoft-Windows-SenseIR/Operational  |  Failed to deserialize actions, received invalid actions from AIRS server. Error code: {HRESULT}
+Microsoft-Windows-SenseIR  |  13        |  Microsoft-Windows-SenseIR/Operational  |  Failed to execute AIRS request. Error code: {HRESULT}
+Microsoft-Windows-SenseIR  |  14        |  Microsoft-Windows-SenseIR/Operational  |  Starting to upload results of action {ActionType}. Action ID: {ActionId}
+Microsoft-Windows-SenseIR  |  15        |  Microsoft-Windows-SenseIR/Operational  |  Failure during action {ActionType}. Action ID: {ActionId}, Action phase: {ActionPhase}, error code: {HRESULT}

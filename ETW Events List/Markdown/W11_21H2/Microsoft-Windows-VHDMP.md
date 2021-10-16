@@ -1,0 +1,71 @@
+Provider                 |  Event ID  |  Channel                              |  Message
+-------------------------|------------|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-VHDMP  |  1         |  Microsoft-Windows-VHDMP/Operational  |  The VHD {VhdFileName} has come online (surfaced) as disk number {VhdDiskNumber}.
+Microsoft-Windows-VHDMP  |  2         |  Microsoft-Windows-VHDMP/Operational  |  The VHD {VhdFileName} has been removed (unsurfaced) as disk number {VhdDiskNumber}.
+Microsoft-Windows-VHDMP  |  3         |  Microsoft-Windows-VHDMP/Operational  |  Failed to surface VHD {VhdFileName}. Error status {Status}.
+Microsoft-Windows-VHDMP  |  4         |  Microsoft-Windows-VHDMP/Operational  |  Failed to surface VHD {VhdFileName}. Surface attempt was cancelled.
+Microsoft-Windows-VHDMP  |  5         |  Microsoft-Windows-VHDMP/Operational  |  Failed to {VhdMetaOps} VHD {VhdFileName}. Error status {Status}.
+Microsoft-Windows-VHDMP  |  6         |  Microsoft-Windows-VHDMP/Operational  |  Operation failed on VHD {VhdFileName}. Operation type {VhdIoType}. Error status {Status}.
+Microsoft-Windows-VHDMP  |  7         |  Microsoft-Windows-VHDMP/Operational  |  The Vhd Chain for VHD {VhdFileName} is corrupted. The expected LastWriteGUID {ExpectedParentLastWriteGUID1} ({ExpectedParentLastWriteGUID2}) did not match the parent's actual LastWriteGUID ({ParentLastWriteGUID}).
+Microsoft-Windows-VHDMP  |  8         |  Microsoft-Windows-VHDMP/Operational  |  The change tracking file for VHD {VhdFileName} is corrupted and cannot be read. No change tracking information will be available for this VHD, and change tracking will need to be enabled again before changed are tracked.
+Microsoft-Windows-VHDMP  |  9         |  Microsoft-Windows-VHDMP/Operational  |  The VHD file {VhdFileName} has been modified without updating its associated change tracking file. Because the consistency of the change tracking information cannot be ensured, the change tracking data has been reset. No change tracking information will be available for this VHD, and change tracking will need to be enabled again before changed are tracked.
+Microsoft-Windows-VHDMP  |  10        |  Microsoft-Windows-VHDMP/Operational  |  Error {Status} occured when attempting to update the change tracking file for VHD {VhdFileName}. This will invalidate the file's change tracking information. Change tracking will not be available for this VHD until change tracking is enabled again.
+Microsoft-Windows-VHDMP  |  11        |  Microsoft-Windows-VHDMP/Operational  |  Surface for VHD {VhdFileName} is invalidated and will be removed (unsurfaced) because of a {VhdIoType} operation failure with status {Status}.
+Microsoft-Windows-VHDMP  |  12        |  Microsoft-Windows-VHDMP/Operational  |  Handle for virtual disk '{VhdFile}' created successfully. VM ID = {VmId}, Type = {VhdType}, Version = {Version}, Flags = {Flags}, AccessMask = {AccessMask}, WriteDepth = {WriteDepth}, GetInfoOnly = {GetInfoOnly}, ReadOnly = {Status}0, HandleContext = {Status}1, VirtualDisk = {Status}2.
+Microsoft-Windows-VHDMP  |  13        |  Microsoft-Windows-VHDMP/Operational  |  Failed to create handle for virtual disk '{VhdFile}'. Status = {Status}, VM ID = {VmId}, Type = {VhdType}, Version = {Version}, Flags = {Flags}, AccessMask = {AccessMask}, WriteDepth = {WriteDepth}, GetInfoOnly = {GetInfoOnly}, ReadOnly = {Status}0, HandleContext = {Status}1, VirtualDisk = {Status}2.
+Microsoft-Windows-VHDMP  |  14        |  Microsoft-Windows-VHDMP/Operational  |  Virtual disk handle closed: HandleContext = {HandleContext}, VirtualDisk = {VirtualDisk}.
+Microsoft-Windows-VHDMP  |  15        |  Microsoft-Windows-VHDMP/Operational  |  Virtual disk object created: {VirtualDisk}.
+Microsoft-Windows-VHDMP  |  16        |  Microsoft-Windows-VHDMP/Operational  |  Virtual disk object destroyed: {VirtualDisk}.
+Microsoft-Windows-VHDMP  |  17        |  Microsoft-Windows-VHDMP/Operational  |  Virtual disk '{VhdFileName}' (no host access) has been surfaced.
+Microsoft-Windows-VHDMP  |  18        |  Microsoft-Windows-VHDMP/Operational  |  Virtual disk '{VhdFileName}' (no host access) has been unsurfaced.
+Microsoft-Windows-VHDMP  |  19        |  Microsoft-Windows-VHDMP/Operational  |  The VHD {VhdFileName} has come online (surfaced) as disk number {VhdInstanceId}.
+Microsoft-Windows-VHDMP  |  20        |  Microsoft-Windows-VHDMP/Operational  |  The VHD {VhdFileName} has been removed (unsurfaced) as disk number {VhdInstanceId}.
+Microsoft-Windows-VHDMP  |  21        |  Microsoft-Windows-VHDMP/Operational  |  Starting to open handle for virtual disk.
+Microsoft-Windows-VHDMP  |  22        |  Microsoft-Windows-VHDMP/Operational  |  Starting to create the handle for the file backing virtual disk '{VhdFileName}'.
+Microsoft-Windows-VHDMP  |  23        |  Microsoft-Windows-VHDMP/Operational  |  Handle for the file backing virtual disk '{VhdFileName}' created successfully.
+Microsoft-Windows-VHDMP  |  24        |  Microsoft-Windows-VHDMP/Operational  |  Failed to create handle for the file backing virtual disk '{VhdFileName}'. Status = {Status}.
+Microsoft-Windows-VHDMP  |  25        |  Microsoft-Windows-VHDMP/Operational  |  Beginning to bring the VHD {VhdFileName} online (surface).
+Microsoft-Windows-VHDMP  |  26        |  Microsoft-Windows-VHDMP/Operational  |  Beginning to remove the VHD {VirtualDisk} (unsurface).
+Microsoft-Windows-VHDMP  |  27        |  Microsoft-Windows-VHDMP/Operational  |  Starting to close the handle for the file backing virtual disk '{VhdFileName}'.
+Microsoft-Windows-VHDMP  |  28        |  Microsoft-Windows-VHDMP/Operational  |  Handle for the file backing virtual disk '{VhdFileName}' closed successfully.
+Microsoft-Windows-VHDMP  |  29        |  Microsoft-Windows-VHDMP/Operational  |  Operation failed on VHD {VhdFileName}. Operation type {VhdIoType}. Error status {Status}.
+Microsoft-Windows-VHDMP  |  30        |  Microsoft-Windows-VHDMP/Operational  |  Starting to close virtual disk handle: HandleContext = {HandleContext}, VirtualDisk = {VirtualDisk}.
+Microsoft-Windows-VHDMP  |  31        |  Microsoft-Windows-VHDMP/Operational  |  Starting to cleanup the backing store for virtual disk '{VhdFileName}'.
+Microsoft-Windows-VHDMP  |  32        |  Microsoft-Windows-VHDMP/Operational  |  Finished cleaning up the backing store for virtual disk '{VhdFileName}'.
+Microsoft-Windows-VHDMP  |  33        |  Microsoft-Windows-VHDMP/Operational  |  Starting to flush the backing store footer for virtual disk '{VhdFileName}'.
+Microsoft-Windows-VHDMP  |  34        |  Microsoft-Windows-VHDMP/Operational  |  Finished flushing the backing store footer for virtual disk '{VhdFileName}'.
+Microsoft-Windows-VHDMP  |  35        |  Microsoft-Windows-VHDMP/Operational  |  Virtual disk '{VhdFileName}' (no host access) has been unsurfaced with unflushed data. Data corruption is possible if the virtual disk is surfaced again.
+Microsoft-Windows-VHDMP  |  36        |  Microsoft-Windows-VHDMP/Operational  |  I/O cancellation (FastClose) started for file '{VhdFile}'. (VM ID: {VmId})
+Microsoft-Windows-VHDMP  |  50        |  Microsoft-Windows-VHDMP/Operational  |  Performing {VhdMetaOps} VHD for {VhdFileName} (target '{TargetVhdFileName}').
+Microsoft-Windows-VHDMP  |  51        |  Microsoft-Windows-VHDMP/Operational  |  Successfully performed {VhdMetaOps} VHD {VhdFileName}.
+Microsoft-Windows-VHDMP  |  100       |  Microsoft-Windows-VHDMP/Operational  |  Vhd resiliency initiated for {VhdFile} (VM ID: {VmId}). A {VhdIoType} IO failed with error {Status}.
+Microsoft-Windows-VHDMP  |  101       |  Microsoft-Windows-VHDMP/Operational  |  Vhd resiliency successfully recovered {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  102       |  Microsoft-Windows-VHDMP/Operational  |  Vhd resiliency failed to recover {VhdFile} (VM ID: {VmId}) with error {Status}.
+Microsoft-Windows-VHDMP  |  110       |  Microsoft-Windows-VHDMP/Operational  |  Recovery initiated for {VhdFile} (VM ID: {VmId}) due to an IO failure with error {Status}.
+Microsoft-Windows-VHDMP  |  111       |  Microsoft-Windows-VHDMP/Operational  |  Recovery succeeded for {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  112       |  Microsoft-Windows-VHDMP/Operational  |  Recovery failed for {VhdFile} (VM ID: {VmId}) with error {Status}.
+Microsoft-Windows-VHDMP  |  113       |  Microsoft-Windows-VHDMP/Operational  |  File {VhdFile} is invalidated (VM ID: {VmId}) from current mode {Mode} with error {Status}. Any recovery in process will be failed and the virtual disk will be invalidated as well.
+Microsoft-Windows-VHDMP  |  114       |  Microsoft-Windows-VHDMP/Operational  |  Waiting on file ({RefType}) recovery for {VhdFile} (VM ID: {VmId}) due to an IO failure with error {Status}.
+Microsoft-Windows-VHDMP  |  115       |  Microsoft-Windows-VHDMP/Operational  |  Waiting on file ({RefType}) recovery for {VhdFile} (VM ID: {VmId}) completed with status {Status}.
+Microsoft-Windows-VHDMP  |  116       |  Microsoft-Windows-VHDMP/Operational  |  File ({RefType}) recovery succeeded for {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  117       |  Microsoft-Windows-VHDMP/Operational  |  File ({RefType}) recovery failed for {VhdFile} (VM ID: {VmId}) with error {Status}.
+Microsoft-Windows-VHDMP  |  118       |  Microsoft-Windows-VHDMP/Operational  |  Failed to open file {VhdFile} with error {Status}. The file handle was previously invalidated due to a critical error. This operation will be retried periodically. (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  119       |  Microsoft-Windows-VHDMP/Operational  |  File {VhdFile} has been closed before initiating a recovery attempt. The file was open in mode {Mode}. (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  120       |  Microsoft-Windows-VHDMP/Operational  |  Recovery attempt initiated for virtual disk {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  121       |  Microsoft-Windows-VHDMP/Operational  |  Recovery attempt completed successfully for virtual disk {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  122       |  Microsoft-Windows-VHDMP/Operational  |  Recovery attempt for virtual disk {VhdFile} failed with status {Status} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  123       |  Microsoft-Windows-VHDMP/Operational  |  Reopening handles to file {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  124       |  Microsoft-Windows-VHDMP/Operational  |  Waiting for handles to file {VhdFile} to be reactivated (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  125       |  Microsoft-Windows-VHDMP/Operational  |  Recovery attempt completed for file {VhdFile} with status {Status} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  126       |  Microsoft-Windows-VHDMP/Operational  |  I/O failed with status {Status} on file {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP  |  208       |  Microsoft-Windows-VHDMP/Operational  |  Change Tracking has been enabled for the VHD {VhdFileName} ({VirtualDisk}) with log file {LogFileName}.
+Microsoft-Windows-VHDMP  |  209       |  Microsoft-Windows-VHDMP/Operational  |  Change Tracking has been disabled for the VHD {VhdFileName} ({VirtualDisk}).
+Microsoft-Windows-VHDMP  |  210       |  Microsoft-Windows-VHDMP/Operational  |  Change Tracking for the VHD {VirtualDisk} to the log file {LogFileName} has been stopped due to the error {Status}.
+Microsoft-Windows-VHDMP  |  211       |  Microsoft-Windows-VHDMP/Operational  |  Flushing of the header of the log file {LogFileName} has failed due to error {Status}.
+Microsoft-Windows-VHDMP  |  212       |  Microsoft-Windows-VHDMP/Operational  |  Flushing of the buffers to the log file {LogFileName} has failed due to error {Status}.
+Microsoft-Windows-VHDMP  |  213       |  Microsoft-Windows-VHDMP/Operational  |  Opening the log file {LogFileName} for tracking has failed due to error {Status}.
+Microsoft-Windows-VHDMP  |  214       |  Microsoft-Windows-VHDMP/Operational  |  Offline changes are detected for VHD {VhdFileName}. Log file: {LogFileName}, VHD time: {VHDFileTime}, Log file time: {LogFileTime}
+Microsoft-Windows-VHDMP  |  1001      |  Microsoft-Windows-VHDMP-Analytic     |  Starting an IO.
+Microsoft-Windows-VHDMP  |  1002      |  Microsoft-Windows-VHDMP-Analytic     |  Completing an IO.
+Microsoft-Windows-VHDMP  |  1010      |  Microsoft-Windows-VHDMP-Analytic     |  A {VhdSrbType} {VhdIoType} IO to {VhdFile} (VM ID: {VmId}) failed with error {Status}. Recovery of this virtual disk has been initiated. If this IO was initiated by a VM then it will be internally retried later when the virtual disk has successfully recovered.
+Microsoft-Windows-VHDMP  |  1011      |  Microsoft-Windows-VHDMP-Analytic     |  A {VhdSrbType} {VhdIoType} IO to {VhdFile} (VM ID: {VmId}) failed with error {Status}. Recovery for this virtual disk could not be initiated either because this is not a recoverable failure or recovery has failed or the virtual disk is in an invalid state.

@@ -1,0 +1,11 @@
+Provider                 |  Event ID  |  Channel                              |  Message
+-------------------------|------------|---------------------------------------|-----------------------------------------------------------------------------------------------
+Microsoft-Windows-Store  |  8000      |  Microsoft-Windows-Store/Operational  |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}
+Microsoft-Windows-Store  |  8001      |  Microsoft-Windows-Store/Operational  |  {Message}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store  |  8002      |  Microsoft-Windows-Store/Operational  |  {Message}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store  |  8003      |  Microsoft-Windows-Store/Operational  |  {Message}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store  |  8010      |  Microsoft-Windows-Store/Operational  |  {State Machine}: {Thread ID}: {State Machine Name}: Enqueue: {Event Name}
+Microsoft-Windows-Store  |  8011      |  Microsoft-Windows-Store/Operational  |  {State Machine}: {Thread ID}: {State Machine Name}: Dispatch: {Event Name} => {Current State}
+Microsoft-Windows-Store  |  8012      |  Microsoft-Windows-Store/Operational  |  {State Machine}: {Thread ID}: {State Machine Name} Change: {Current State} => {New State}
+Microsoft-Windows-Store  |  8013      |  Microsoft-Windows-Store/Operational  |  {State Machine}: {Thread ID}: {State Machine Name} Pumping: {Current State}
+Microsoft-Windows-Store  |  8014      |  Microsoft-Windows-Store/Operational  |  {State Machine}: {Thread ID}: {State Machine Name}: Done: {Current State}

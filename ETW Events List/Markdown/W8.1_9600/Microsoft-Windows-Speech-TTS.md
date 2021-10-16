@@ -1,0 +1,7 @@
+Provider                      |  Event ID  |  Channel                           |  Message
+------------------------------|------------|------------------------------------|---------
+Microsoft-Windows-Speech-TTS  |  1         |  Microsoft-Windows-TTS/Diagnostic  |
+Microsoft-Windows-Speech-TTS  |  2         |  Microsoft-Windows-TTS/Diagnostic  |
+Microsoft-Windows-Speech-TTS  |  3         |  Microsoft-Windows-TTS/Diagnostic  |
+Microsoft-Windows-Speech-TTS  |  4         |  Microsoft-Windows-TTS/Diagnostic  |
+Microsoft-Windows-Speech-TTS  |  5         |  Microsoft-Windows-TTS/Diagnostic  |

@@ -1,0 +1,22 @@
+Provider                                             |  Event ID  |  Channel      |  Message
+-----------------------------------------------------|------------|---------------|----------------------------------------------------------------------------------------
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  2         |  Debug        |  {message}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  3         |  Debug        |  {message}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  4         |  Analytic     |  {message}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  5         |  Analytic     |  {message}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  6         |  Debug        |  {message}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  7         |  Debug        |  {message}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  8         |  Analytic     |  {message}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  9         |  Analytic     |  {message}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  32        |  Analytic     |  Failed to create Physical Device Object for device {objectPointer}.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  34        |  Analytic     |  Driver for device {objectPointer} failed to load. Timeout period has expired.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  35        |  Admin        |  Device {deviceName} is not supported on this machine, a generic driver is loaded.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  36        |  Admin        |  Redirection of additional supported devices is disabled by policy.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  37        |  Operational  |  Device {deviceName} is successfully installed
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  38        |  Debug        |  Client requests to redirect device {objectPointer}.  NtStatus = {ntStatus}.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  39        |  Debug        |  Client requests to remove a redirected device {objectPointer}.  NtStatus = {ntStatus}.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  40        |  Debug        |  Dynamic virtual channel {objectPointer} is connected.  NtStatus = {ntStatus}.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  41        |  Debug        |  Dynamic virtual channel {objectPointer} is disconnected.  NtStatus = {ntStatus}.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  42        |  Debug        |  Redirected device {objectPointer} name is {nameString}.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  43        |  Debug        |  Redirected device {objectPointer} is starting. NtStatus = {ntStatus}
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  44        |  Debug        |  Redirected device {objectPointer} is stopping. NtStatus = {ntStatus}

@@ -1,0 +1,1043 @@
+Provider                         |  Event ID  |  Channel                                         |  Message
+---------------------------------|------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-AppModel-Exec  |  100       |                                                  |  DepMgr: Removed suspension group from the graph, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  101       |                                                  |  Not set app {PsmKey} into halted state because it should wait for other apps in the package halted first
+Microsoft-Windows-AppModel-Exec  |  102       |                                                  |  Not set app {PsmKey} into halted state because other app in the package have not finished quiescing
+Microsoft-Windows-AppModel-Exec  |  103       |                                                  |  Not terminate app {PsmKey}, because target app {AppPsmKey} state = {State}
+Microsoft-Windows-AppModel-Exec  |  104       |                                                  |  Updated current dependency graph (Removal : {Removal}) with Source {SrcPsmKey} and Target {TargetPsmKey} for type {Type} in return {Error}
+Microsoft-Windows-AppModel-Exec  |  105       |                                                  |  Default time for {ValueName} overridden to {Time} ms
+Microsoft-Windows-AppModel-Exec  |  106       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  107       |                                                  |  Window {HwndPointer} is hung in foreground
+Microsoft-Windows-AppModel-Exec  |  108       |                                                  |  Window {HwndPointer} is no longer hung in foreground
+Microsoft-Windows-AppModel-Exec  |  109       |                                                  |  Waiting for WER reporting to finish on app {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  110       |                                                  |  Hang reporting finished on app {PsmKey}.  App termination status: {Bool}
+Microsoft-Windows-AppModel-Exec  |  111       |                                                  |  Hung reporting finished on window {Hwnd} with result {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  112       |                                                  |  _SubmitActivationHangWerReport(start): Aumid={AUMID}, PIDs={PID} count={Count}
+Microsoft-Windows-AppModel-Exec  |  113       |                                                  |  _SubmitActivationHangWerReport(stop): Aumid={AUMID}, result={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  114       |                                                  |  _UnregisterForStateChanges: fPackageLevel={PackageLevel}, HRESULT is {ErrorCode}. Cookie is {Cookie}
+Microsoft-Windows-AppModel-Exec  |  115       |                                                  |  Application {AUMID} has successfully launched. HRESULT {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  116       |                                                  |  Canceled launch grace timer, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  117       |                                                  |  _InitializeLaunchGraceContext: Aumid={AUMID}, fExtendedLaunch={Bool1}, fEventExists={Bool2}
+Microsoft-Windows-AppModel-Exec  |  118       |                                                  |  App {AUMID} successfully launched and its launch grace period expired: removing suspend exemption
+Microsoft-Windows-AppModel-Exec  |  119       |                                                  |  Forcefully terminating app, Aumid={AUMID} flags={Flags}, reason={Reason}
+Microsoft-Windows-AppModel-Exec  |  120       |                                                  |  CheckTerminationBeforeSwitch: Should terminate: {MaxTterminate}, Aumid={AUMID}, HRESULT={ErrorCode}, reason={Reason}, fIsMisbehaving={Misbehaving}
+Microsoft-Windows-AppModel-Exec  |  121       |                                                  |  Termination requested for {AUMID} - flags {Flags}
+Microsoft-Windows-AppModel-Exec  |  122       |                                                  |  Failing TerminateApp due to pending task completions: {PlmFlags}
+Microsoft-Windows-AppModel-Exec  |  123       |                                                  |  Terminating {AUMID} immediately
+Microsoft-Windows-AppModel-Exec  |  124       |                                                  |  Uninstalling background work items for {AUMID}
+Microsoft-Windows-AppModel-Exec  |  125       |                                                  |  Termination of {ValueName} scheduled for {Time} ms in future
+Microsoft-Windows-AppModel-Exec  |  126       |                                                  |  Sent window message to the default immersive browser with HRESULT {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  127       |                                                  |  Attempting to terminate app {AUMID} prior to new app launch due to pending termination
+Microsoft-Windows-AppModel-Exec  |  128       |                                                  |  EvaluateAndTerminatePid: PID: {PID}. HRESULT: {ErrorCode}. Package State: {PackageState}
+Microsoft-Windows-AppModel-Exec  |  129       |                                                  |  Exempting application {AUMID} from suspend while it is being launched
+Microsoft-Windows-AppModel-Exec  |  130       |                                                  |  Exemption manager {SuspendExemptionReason} is requesting a higher minimum priority {Priority} for {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  131       |                                                  |  Debug mode is enabled for {PsmKey}, so it will run at {Priority} priority
+Microsoft-Windows-AppModel-Exec  |  132       |                                                  |  Handling logoff, {PsmKey} will run at {Priority} priority
+Microsoft-Windows-AppModel-Exec  |  133       |                                                  |  Throttling has been disabled, so {PsmKey} will run at {Priority} priority
+Microsoft-Windows-AppModel-Exec  |  134       |                                                  |  Suspend denied due to new key debounce, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  135       |                                                  |  Suspend denied due to debug mode, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  136       |                                                  |  Not suspending application {PsmKey} due to exemption {Exemption}
+Microsoft-Windows-AppModel-Exec  |  137       |                                                  |  _EvaluateAndSuspendApplication: PsmKey={PsmKey}, fIsSuspendAllowed={Bool}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  138       |                                                  |  _ReevaluatePolicy: Ignoring debug mode app, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  139       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  140       |                                                  |  ManagePreExistingApps: PsmKey={PsmKey}, Aumid={AUMID}, hr={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  141       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  142       |                                                  |  RequestSuspendTimeout called for application {PsmKey} and timeout {TimeOut}
+Microsoft-Windows-AppModel-Exec  |  143       |                                                  |  Debug mode enabled, PkgFamilyName={PackageFamilyName}
+Microsoft-Windows-AppModel-Exec  |  144       |                                                  |  Debug mode disabled, PkgFamilyName={PackageFamilyName}
+Microsoft-Windows-AppModel-Exec  |  145       |                                                  |  Set Package {PackageFullName}, Timeout to {Time}
+Microsoft-Windows-AppModel-Exec  |  146       |                                                  |  ResumeDebugModePackage(start): package={PackageFullName}
+Microsoft-Windows-AppModel-Exec  |  147       |                                                  |  ResumeDebugModePackage(stop): package={PackageFullName}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  148       |                                                  |  SuspendDebugModePackage(start): package={PackageFullName}
+Microsoft-Windows-AppModel-Exec  |  149       |                                                  |  SuspendDebugModePackage(stop): package={PackageFullName}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  150       |                                                  |  MultiAppSuspendAndTerminateSync(start): cPsmKeys={PsmKey}, suspendTrigger={Trigger}, terminateReason={Reason}
+Microsoft-Windows-AppModel-Exec  |  151       |                                                  |  MultiAppSuspendAndTerminateSync(stop): cPsmKeys={PsmKey}, suspendTrigger={Trigger}, terminateReason={Reason}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  152       |                                                  |  MultiPackageSuspendAndTerminateSync(start): cPsmKeys={PsmKey}, suspendTrigger={Trigger}, terminateReason={Reason}
+Microsoft-Windows-AppModel-Exec  |  153       |                                                  |  MultiPackageSuspendAndTerminateSync(stop): cPsmKeys={PsmKey}, suspendTrigger={Trigger}, terminateReason={Reason}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  154       |                                                  |  MultiPackageSuspendAndPendTerminateSync(start): cPsmKeys={PsmKey}, suspendTrigger={Trigger}, terminateReason={Reason}
+Microsoft-Windows-AppModel-Exec  |  155       |                                                  |  MultiPackageSuspendAndPendTerminateSync(stop): cPsmKeys={PsmKey}, suspendTrigger={Trigger}, terminateReason={Reason}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  156       |                                                  |  TerminateSync(start): PsmKey={PsmKey}, type={Type}, reason={Reason}
+Microsoft-Windows-AppModel-Exec  |  157       |                                                  |  TerminateSync(stop): PsmKey={PsmKey}, hrLogReason={LogErrorCode}, hrTermination={TerminationErrorCode}
+Microsoft-Windows-AppModel-Exec  |  158       |                                                  |  TerminatePackageSync(start): Package={PackageFullName}, type={Type}, reason={Reason}
+Microsoft-Windows-AppModel-Exec  |  159       |                                                  |  TerminatePackageSync(stop): Package={PackageFullName}, fPlmKnowsPackage={plmKnowsPackage}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  160       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  161       |                                                  |  _TerminateAllSuspendedApplications(stop): HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  162       |                                                  |  Application {PsmKey} is blocking Connected Standby
+Microsoft-Windows-AppModel-Exec  |  163       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  164       |                                                  |  All packages have been suspended or terminated. Notify PDC. Call to PdcNotificationClientAcknowledge() returned {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  165       |                                                  |  Kernel State Change Callback: There were {PidCount} PIDs present in the callback data
+Microsoft-Windows-AppModel-Exec  |  166       |                                                  |  Kernel State Change Callback: The state source was {StateSource}
+Microsoft-Windows-AppModel-Exec  |  167       |                                                  |  PDC_CONTROL_ABORT: PdcNotificationClientAcknowledge(STATUS_SUCCESS) returned {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  168       |                                                  |  Not terminating application {AUMID} in _EvaluateAndTerminateApplication because it contains a running IImmersiveApplication
+Microsoft-Windows-AppModel-Exec  |  169       |                                                  |  Not terminating application {AUMID} in _EvaluateAndTerminateApplication because it is a long running app
+Microsoft-Windows-AppModel-Exec  |  170       |                                                  |  Not terminating application {PsmKey} in _EvaluateAndTerminateApplication due to pending task completion
+Microsoft-Windows-AppModel-Exec  |  171       |                                                  |  Not terminating application {PsmKey} in _EvaluateAndTerminateApplication due to Launch Grace
+Microsoft-Windows-AppModel-Exec  |  172       |                                                  |  Not terminating application {PsmKey} in _EvaluateAndTerminateApplication due to debug mode
+Microsoft-Windows-AppModel-Exec  |  173       |                                                  |  Not terminating application {PsmKey} in _EvaluateAndTerminateApplication due to application had already been terminated
+Microsoft-Windows-AppModel-Exec  |  174       |                                                  |  _EvaluateAndTerminateApplication: Skipping child suspension group, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  175       |                                                  |  An empty application was detected. Setting pending termination for application {PsmKey}, HRESULT {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  176       |                                                  |  Parent allowed suspension for child app, childPsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  177       |                                                  |  GroupChildWithParent: ChildPsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  178       |                                                  |  Call a command line '{CommandLine}' to notify default browser with result {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  179       |                                                  |  Read executable path from registry with result {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  180       |                                                  |  Application {PsmKey} was added to PLM Data Store and registering for PSM notification
+Microsoft-Windows-AppModel-Exec  |  181       |                                                  |  Resume the PPLE app {PsmKey} when receiving the PSM new key notification
+Microsoft-Windows-AppModel-Exec  |  182       |                                                  |  An orphaned prereq application was detected. Setting pending termination for application {AUMID}, HRESULT {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  183       |                                                  |  Not terminating dependent application {AUMID} in _EvaluateAndTerminateDependentApplication due other dependency applications
+Microsoft-Windows-AppModel-Exec  |  184       |                                                  |  _EvaluateAndTerminateSourceApplication: Aumid={AUMID}, exemption={Exemption}
+Microsoft-Windows-AppModel-Exec  |  185       |                                                  |  An force termination exemption Application was detected. Setting pending termination for application {AUMID}
+Microsoft-Windows-AppModel-Exec  |  186       |                                                  |  StateMgr: State queued, PsmKey={PsmKey}, state={State}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  187       |                                                  |  StateMgr: OnApplicationStarted set to active, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  188       |                                                  |  StateMgr: OnApplicationStarted finished, PsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  189       |                                                  |  StateMgr: App's current state has changed, PsmKey={PsmKey}, state={State}
+Microsoft-Windows-AppModel-Exec  |  190       |                                                  |  StateMgr: OnApplicationTerminated(start), PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  191       |                                                  |  StateMgr: Application terminated signaled, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  192       |                                                  |  StateMgr: OnApplicationTerminated(stop), PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  193       |                                                  |  StateMgr: GetTerminateSyncData, PsmKey={PsmKey}, hr={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  194       |                                                  |  StateMgr: _ProcessStateQueue(start): PsmKey={PsmKey}, state={State}
+Microsoft-Windows-AppModel-Exec  |  195       |                                                  |  StateMgr: _ProcessStateQueue(stop): PsmKey={PsmKey}, state={State}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  196       |                                                  |  StateMgr: Queue's pause state has changed to {Bool}, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  197       |                                                  |  StateMgr: App's committed state has changed, PsmKey={PsmKey}, state={State}
+Microsoft-Windows-AppModel-Exec  |  198       |                                                  |  Enabling debug mode on package {PackageFullName}
+Microsoft-Windows-AppModel-Exec  |  199       |                                                  |  Disabling debug mode on package {PackageFullName}
+Microsoft-Windows-AppModel-Exec  |  200       |                                                  |  Suspending package {PackageFullName} via debug API. HRESULT: {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  201       |                                                  |  Resuming package {PackageFullName} via debug API. HRESULT: {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  202       |                                                  |  Terminating package {PackageFullName} via debug API. HRESULT: {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  203       |                                                  |  Default time for {ValueName} overridden to {Timeout} ms
+Microsoft-Windows-AppModel-Exec  |  204       |                                                  |  ReportActivationHangSync: Halt application Aumid={AUMID}, result={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  205       |                                                  |  _SubmitActivationHangWerReport(start): Aumid={AUMID}, PIDs={PID} count={Count}
+Microsoft-Windows-AppModel-Exec  |  206       |                                                  |  _SubmitActivationHangWerReport(stop): Aumid={AUMID} canceled({Canceled}) result={Count}
+Microsoft-Windows-AppModel-Exec  |  207       |                                                  |  PLM doesn't swap out application {PsmKey} due to its swap state {State}
+Microsoft-Windows-AppModel-Exec  |  208       |                                                  |  PLM termination policy started on background thread because application {PsmKey} failed to outswap
+Microsoft-Windows-AppModel-Exec  |  209       |                                                  |  PLM termination policy finished. Outswapping returned status {SwapState}
+Microsoft-Windows-AppModel-Exec  |  210       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  211       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  212       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  213       |                                                  |  PLM termination policy triggered by in use memory of {MemorySize} MiB
+Microsoft-Windows-AppModel-Exec  |  214       |                                                  |  PLM termination policy triggered by commit charge of {MemorySize} MiB
+Microsoft-Windows-AppModel-Exec  |  215       |                                                  |  MemoryPolicyWatcherTerminateCommitCharge
+Microsoft-Windows-AppModel-Exec  |  216       |                                                  |  PLM empty policy triggered by in use memory of {MemorySize} MB
+Microsoft-Windows-AppModel-Exec  |  217       |                                                  |  PLM memory policy does not allow termination of application {PsmKey} for reason {Exemption}
+Microsoft-Windows-AppModel-Exec  |  218       |                                                  |  PLM memory policy allows termination of application {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  219       |                                                  |  Application {PsmKey} was hidden {Time} seconds ago
+Microsoft-Windows-AppModel-Exec  |  220       |                                                  |  Application {PsmKey} is the clipboard owner
+Microsoft-Windows-AppModel-Exec  |  221       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  222       |                                                  |  PLM empty policy ignoring application {PsmKey} with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  223       |                                                  |  PLM empty policy finished after emptying {MemorySize} MiB
+Microsoft-Windows-AppModel-Exec  |  224       |                                                  |  PLM termination policy enumerated {ApplicationCouunt} applications
+Microsoft-Windows-AppModel-Exec  |  225       |                                                  |  PLM memory policy chose application {PsmKey} as its termination candidate, over old candidate application {OldPsmKey}
+Microsoft-Windows-AppModel-Exec  |  226       |                                                  |  PLM memory policy will terminate application {PsmKey} with memory size {MemorySize} MiB and score {Score}
+Microsoft-Windows-AppModel-Exec  |  227       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  228       |                                                  |  PLM memory policy received MemWatcher event
+Microsoft-Windows-AppModel-Exec  |  229       |                                                  |  Package exemption manager denied suspend for {PsmKey}.  Ref counts are LAUNCH={Exemption}, PSMREG={RegistrationRef}, PSMPENDING={PendingRef}
+Microsoft-Windows-AppModel-Exec  |  230       |                                                  |  Package Exemption Manager: ReferenceAdded:{Added}, {Type} ref to application {PsmKey}. The ref counts are now LAUNCH={Exemption}, PSMREG={RegistrationRef}, and PSMREGPENDING={PendingRef}
+Microsoft-Windows-AppModel-Exec  |  231       |                                                  |  Package {PackageFamilyName} added to the package data store
+Microsoft-Windows-AppModel-Exec  |  232       |                                                  |  Resetting priority to unpause the suspension group, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  233       |                                                  |  Changed the priority of {PsmKey} to {Priority}
+Microsoft-Windows-AppModel-Exec  |  234       |                                                  |  AllowServiceOfPackages(start): cPackages={PackageCount}, fNotifyBi={Notify}
+Microsoft-Windows-AppModel-Exec  |  235       |                                                  |  AllowServiceOfPackages(stop): HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  236       |                                                  |  FinishedServiceOfPackages(start): cPackages={PackageCount}
+Microsoft-Windows-AppModel-Exec  |  237       |                                                  |  FinishedServiceOfPackages(stop): HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  238       |                                                  |  AllowUninstallOfPackage(start): package={PackageFullName}
+Microsoft-Windows-AppModel-Exec  |  239       |                                                  |  AllowUninstallOfPackage(stop): package={PackageFullName}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  240       |                                                  |  Forcefully terminating misbehaving app {AUMID} due to activation failure {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  241       |                                                  |  App {ApplicationName}: Change = {Echange}
+Microsoft-Windows-AppModel-Exec  |  242       |                                                  |  PsmKey {PsmKey} has state {State}
+Microsoft-Windows-AppModel-Exec  |  243       |                                                  |  Changing app state through BI, PsmKey={PsmKey}, state={State} terminate action={TerminateAction}
+Microsoft-Windows-AppModel-Exec  |  244       |                                                  |  Changing the package state of {PackageFullName} through BI to {State}
+Microsoft-Windows-AppModel-Exec  |  245       |                                                  |  OnAfterQuiescing: Quiesce began for PsmKey={PsmKey}, suspendTrigger={Trigger}
+Microsoft-Windows-AppModel-Exec  |  246       |                                                  |  _CompleteQuiesceHelper: Queued termination for timed-out PsmKey {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  247       |                                                  |  Quiesce completed for PsmKey={PsmKey}, reason={Reason}, suspendTrigger={SuspendTrigger}
+Microsoft-Windows-AppModel-Exec  |  248       |                                                  |  Suspend trigger updated for PsmKey={PsmKey}, suspendTrigger={SuspendTrigger}
+Microsoft-Windows-AppModel-Exec  |  249       |                                                  |  ExtendQuiesceTimeout: PsmKey={PsmKey}, request={Timeout} ms, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  250       |                                                  |  _CompleteQuiesceHelper: Ignore timed-out PsmKey {PsmKey} as is being debugged
+Microsoft-Windows-AppModel-Exec  |  251       |                                                  |  ResumeHelper: Application resume(start), PsmKey={PsmKey}, reason={ResumeReason}
+Microsoft-Windows-AppModel-Exec  |  252       |                                                  |  ResumeHelper: Application resume(stop), PsmKey={PsmKey}, reason={ResumeReason}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  253       |                                                  |  Resume reason updated for PsmKey={PsmKey}, reason={ResumeReason}
+Microsoft-Windows-AppModel-Exec  |  254       |                                                  |  RPC 0->1 transition detected for {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  255       |                                                  |  RPC exemption was granted for application {PsmKey}. KernelRequest Value: {KernelRequest}. Runaway RPC: {RunawayRpc}.  RPC Debounce {RpcDebounce}
+Microsoft-Windows-AppModel-Exec  |  256       |                                                  |  RPC debounce received for package {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  257       |                                                  |  Application {AUMID} has successfully launched. HRESULT {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  258       |                                                  |  Application {PsmKey} termination is blocked. PreserverProcessRequest = {PreserverProcessRequest}, TaskCompletionCategory = {TaskCompletionCategory}
+Microsoft-Windows-AppModel-Exec  |  259       |                                                  |  PdcSystem activation (Activate = {fActivate}). Result = {Result}
+Microsoft-Windows-AppModel-Exec  |  260       |                                                  |  NetworkAudio entries: {NetworkAudioEntriesCount}, IsNetworkReferenced: {NetworkingReferenced}
+Microsoft-Windows-AppModel-Exec  |  261       |                                                  |  App {PsmKey} is Sharing
+Microsoft-Windows-AppModel-Exec  |  262       |                                                  |  Share {Guid} has started in app {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  263       |                                                  |  Share {Guid} in app {PsmKey} has stopped
+Microsoft-Windows-AppModel-Exec  |  264       |                                                  |  Queued termination reason updated for PsmKey={PsmKey}, reason={Reason}
+Microsoft-Windows-AppModel-Exec  |  265       |                                                  |  ClearTerminationTypesForForgottenPackage(start): PkgFamilyName={PackageFamilyName}
+Microsoft-Windows-AppModel-Exec  |  266       |                                                  |  Cleared termination type for forgotten app, Aumid={AUMID}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  267       |                                                  |  ClearTerminationTypesForForgottenPackage(stop): PkgFamilyName={PackageFamilyName}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  268       |                                                  |  Writing to termination type reg key for Aumid={AUMID}, type={Type}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  269       |                                                  |  Reading termination type reg key for Aumid={AUMID}, type={Type}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  270       |                                                  |  _ExtendForResourceStarvation: PsmKey={PsmKey}, TimerType={Type}, newRelativeExpirationTimeMs={NewRelativeExpirationTimer}, ElapsedMs={ElapsedMs}, CpuRunningMs={CpuRunning}, CpuReadyMs={CpuReady}, IoNormalMs={IoNormal}
+Microsoft-Windows-AppModel-Exec  |  271       |                                                  |  Foreground resume delay {Time} milliseconds
+Microsoft-Windows-AppModel-Exec  |  272       |                                                  |  Suspend allowed for {PsmKey} - Session not active
+Microsoft-Windows-AppModel-Exec  |  273       |                                                  |  Suspend denied due to a visible window or visibility debounce, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  274       |                                                  |  Suspend denied for {PsmKey} - UserRequest non-zero
+Microsoft-Windows-AppModel-Exec  |  275       |                                                  |  Suspend denied for {PsmKey}- failure {Status}
+Microsoft-Windows-AppModel-Exec  |  276       |                                                  |  OnWindowChanged: Aumid={AUMID}, Hwnd={Hwnd}, change={WindowChange}, fDeferredVisibility={DeferredVisibility}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  277       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  278       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  279       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  280       |                                                  |  PlmGetPackageFullNameFromAppId, Aumid={AUMID}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  281       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  282       |                                                  |  RegisterForActivationStateChanges: Act:{ActivationType} App:{ApplicationType} HRESULT is {ErrorCode}. Cookie is {Cookie}
+Microsoft-Windows-AppModel-Exec  |  283       |                                                  |  UnregisterForActivationStateChanges: Cookie is {Cookie}
+Microsoft-Windows-AppModel-Exec  |  284       |                                                  |  Can Auto Terminate app {AUMID} {Bool}
+Microsoft-Windows-AppModel-Exec  |  285       |                                                  |  TerminateApplicationBeforeActivation(start): Aumid={AUMID}
+Microsoft-Windows-AppModel-Exec  |  286       |                                                  |  TerminateApplicationBeforeActivation: wait for terminate, Aumid={AUMID}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  287       |                                                  |  TerminateApplicationBeforeActivation(stop): Aumid={Aumid}, reason={Reason}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  288       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  289       |                                                  |  s_SuspendPackagesAtLogOff(stop): HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  290       |                                                  |  StateMgr: OnApplicationStarted still halted, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  291       |                                                  |  Added Task Completion under {Category} for application {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  292       |                                                  |  Removed Task Completion under {Category} for application {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  293       |                                                  |  Illegal state change happened to App: {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  294       |                                                  |  EnableDebugMode failed: {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  295       |                                                  |  DisableDebugMode: RoDisableDebuggingForPackage failed with result {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  296       |                                                  |  DisableDebugMode: OnDebugModeDisabled failed with result {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  297       |                                                  |  DisableDebugMode: Enabling activation timeout failed with result {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  298       |                                                  |  DisableDebugMode failed: {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  299       |                                                  |  Couldn't open process: {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  300       |                                                  |  PLM failed to process a hang for window {Hwnd} with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  301       |                                                  |  PLM outswap application {PsmKey} failed to invoke with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  302       |                                                  |  PLM couldn't find any process for application {PsmKey}, and handle it as non-large app
+Microsoft-Windows-AppModel-Exec  |  303       |                                                  |  PLM failed to decide application {PsmKey} is large or not with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  304       |                                                  |  PLM empty policy failed to process application {PsmKey} with error code {ErrorCode}.  Ignoring the application
+Microsoft-Windows-AppModel-Exec  |  305       |                                                  |  PLM empty policy failed to empty application {PsmKey} with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  306       |                                                  |  PLM failed to terminate application {PsmKey} as empty policy with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  307       |                                                  |  PLM empty policy failed to enumerate applications with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  308       |                                                  |  PLM termination policy skipping application {PsmKey}, which is not registered with PLM
+Microsoft-Windows-AppModel-Exec  |  309       |                                                  |  PLM memory policy failed to queue work with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  310       |                                                  |  GetPackageData called on a Package {PackageFamilyName}, which is not in the PLM Package Data Store
+Microsoft-Windows-AppModel-Exec  |  311       |                                                  |  ERROR: Failed to set priority to {Priority}, PsmKey={PsmKey}, NTSTATUS={Status}
+Microsoft-Windows-AppModel-Exec  |  312       |                                                  |  AllowServiceOfPackages: Failed to terminate package={PackageFullName}, type={Type}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  313       |                                                  |  _CheckServicingPackages: Failed to enumerate app, PsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  314       |                                                  |  _CheckServicingPackages: Failed to enumerate package, PkgFullName={PackageFullName}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  315       |                                                  |  GetImmersiveApplicationCount failed with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  316       |                                                  |  Background workitems were force terminated, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  317       |                                                  |  ChangeApplicationBiState failed: {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  318       |                                                  |  Background workitems for package {PackageFullName} were force terminated
+Microsoft-Windows-AppModel-Exec  |  319       |                                                  |  ChangePackageBiState failed: {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  320       |                                                  |  ApplicationProcesses failed to track process ID {ProcessId} with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  321       |                                                  |  OnBeforeQuiescing: Failed to allocate memory for PsmKey={PsmKey}, suspendTrigger={SuspendTrigger}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  322       |                                                  |  OnAfterQuiescing: Quiesce failed for PsmKey={PsmKey}, suspendTrigger={SuspendTrigger}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  323       |                                                  |  ERROR: _CompleteQuiesceHelper: Failed to terminate timed-out PsmKey {PsmKey} with result {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  324       |                                                  |  ERROR: QuiesceHelper: App forgotten while still Quiescing, PsmKey={PsmKey}, suspendTrigger={SuspendTrigger}
+Microsoft-Windows-AppModel-Exec  |  325       |                                                  |  Failed to query the wake counters associated with application {PsmKey}. NTSTATUS: {Status}
+Microsoft-Windows-AppModel-Exec  |  326       |                                                  |  _AllAppSyncOperationHelper: Failed to allocate memory for PsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  327       |                                                  |  _MultiAppSyncOperationHelper: Failed to perform operation on PsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  328       |                                                  |  _MultiAppSyncOperationHelper: Failed in wait, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  329       |                                                  |  _MultiPackageSyncOperationHelper: Failed to enumerate PsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  330       |                                                  |  _MultiPackageSyncOperationHelper: Failed to find package in data store, PkgFullName=1%, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  331       |                                                  |  Failed to suspend and terminate apps, cPsmKeys={Template_PsmkeyCount}
+Microsoft-Windows-AppModel-Exec  |  332       |                                                  |  Could not initialize an extended launch grace period for app {AUMID} with HRESULT {ErrorCode} -- falling back to normal launch grace
+Microsoft-Windows-AppModel-Exec  |  333       |                                                  |  App {AUMID} failed to show a window after launch. Will attempt to terminate it now
+Microsoft-Windows-AppModel-Exec  |  334       |                                                  |  Failed to get a window for an app; assuming that the app's window is not hung, Aumid={AUMID}, HRESULT={Hwnd}
+Microsoft-Windows-AppModel-Exec  |  335       |                                                  |  Failed to query hidden time for visibility debounce for app {AUMID} with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  336       |                                                  |  _StartNewKeyDebounce: Error Result={ErrorCode}, PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  337       |                                                  |  StartTrackingNewApp failed with {ErrorCode}. The application launch is not protected and the app might potentially get suspended inappropriately
+Microsoft-Windows-AppModel-Exec  |  338       |                                                  |  ERROR: Failed to enumerate exemption targets starting from PsmKey={PsmKey}
+Microsoft-Windows-AppModel-Exec  |  339       |                                                  |  Failed to enumerate existing applications from PSM with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  340       |                                                  |  PsmRegisterApplicationNotification failed for application {PsmKey} with status {Status}.  PLM's cache says that the application's registration is: {Registered}
+Microsoft-Windows-AppModel-Exec  |  341       |                                                  |  ERROR: Failed to enumerate force termination targets starting from PsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  342       |                                                  |  Application {PsmKey} failed to be added in PLM Data Store
+Microsoft-Windows-AppModel-Exec  |  343       |                                                  |  Failed to initialize string to send app notification {Aumid} state {State}
+Microsoft-Windows-AppModel-Exec  |  344       |                                                  |  Failed to initialize string to remove app {PsmKey}
+Microsoft-Windows-AppModel-Exec  |  345       |                                                  |  Failed to add {Category} for application {PsmKey}. The application doesn't have BTC_AUDIO background task capability
+Microsoft-Windows-AppModel-Exec  |  346       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  347       |                                                  |  Task completion manager failed to add {PID} to its sharing cache with error code {ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  348       |                                                  |  ClearTerminationTypesForForgottenPackage: Failed to clear termination type for app, Aumid={AUMID}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  349       |                                                  |  ERROR: Failed to schedule the visibility debounce, PsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  350       |                                                  |  OnWindowChanged ERROR: Failed to queue thread for Aumid={AUMID}, Hwnd={Hwnd}, change={WindowChange}, HRESULT={DeferredVisibility}
+Microsoft-Windows-AppModel-Exec  |  351       |                                                  |  ERROR: Failed to schedule deferred visibility timer, PsmKey={PsmKey}, HRESULT={ErrorCode}
+Microsoft-Windows-AppModel-Exec  |  352       |                                                  |  WaitOnBiNotifyNewSession HRBiNotifyNewSession={p1_UInt32} HRBiNotifyNewUser={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  353       |                                                  |  RegisterKernelNotifications HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  354       |                                                  |  TCExemptionManager CompleteInitialization HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  355       |                                                  |  PlmActivationManager CompleteInitialization HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  356       |                                                  |  Plm CSDiagnostics CompleteInitialization HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  357       |                                                  |  Plm LogOff/LogOn Registration HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  501       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  502       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  503       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  504       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  505       |                                                  |  BM: Queued evaluate WorkItem: {WorkItemId} EventType: {EventType} Action: {ActivationAction} PsmKey: {PsmKey} HostJobType: {HostJobType} EntryPoint: {EntryPoint}
+Microsoft-Windows-AppModel-Exec  |  506       |                                                  |  BM: Evaluate returned WorkItem: {WorkItemId} EventType: {EventType} Action: {ActivationAction} PsmKey: {PsmKey} HostJobType: {HostJobType} EntryPoint: {EntryPoint}
+Microsoft-Windows-AppModel-Exec  |  507       |                                                  |  BM: TaskActivated WorkItem: {WorkItemId} Instance: {TaskInstanceId}
+Microsoft-Windows-AppModel-Exec  |  508       |                                                  |  BM: TaskCompleted WorkItem: {WorkItemId} Instance: {TaskInstanceId}
+Microsoft-Windows-AppModel-Exec  |  509       |                                                  |  BM: TaskCanceled WorkItem: {WorkItemId} Instance: {TaskInstanceId}
+Microsoft-Windows-AppModel-Exec  |  510       |                                                  |  BM: Policy evaluate returned WorkItem: {WorkItemId} EventType: {EventType} Action: {ActivationAction} WallClockLimit: {WallClockLimitMs} PsmKey: {PsmKey} HostJobType: {HostJobType}
+Microsoft-Windows-AppModel-Exec  |  511       |                                                  |  BM: TaskActivating WorkItem: {WorkItemId} Instance: {TaskInstanceId}
+Microsoft-Windows-AppModel-Exec  |  512       |                                                  |  BM: Enter {String}
+Microsoft-Windows-AppModel-Exec  |  513       |                                                  |  BM: Exit {String}, HR={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  514       |                                                  |  BM: TerminateHost WorkItem: {WorkItemId}
+Microsoft-Windows-AppModel-Exec  |  515       |                                                  |  BM: ResourceSet invalidated for WorkItem: {WorkItemId} Instance: {TaskInstanceId}.  This usually means the host has crashed before a ResourceSet could be applied.
+Microsoft-Windows-AppModel-Exec  |  516       |                                                  |  BM: OnAcquired ignoring invalid CallbackId ({CallbackId}).
+Microsoft-Windows-AppModel-Exec  |  517       |                                                  |  BM: TryAcquireResourceSet returning HR='{HRESULT}' PsmKey='{String}'; WorkItemId='{WorkItemId};' CallbackId='{CallBackId}'.
+Microsoft-Windows-AppModel-Exec  |  517       |                                                  |  BM: TryAcquireResourceSet returning HR='{HRESULT}' PsmKey='{String}' WorkItemId='{WorkItemId};' CallbackId='{CallBackId}' HostId='{HostId}' ResourceSetId='{ResourceSetId}'.
+Microsoft-Windows-AppModel-Exec  |  518       |                                                  |  BM: TryAcquireHostResourceSet returning HR='{HRESULT}' PsmKey='{String}'.
+Microsoft-Windows-AppModel-Exec  |  518       |                                                  |  BM: TryAcquireHostResourceSet returning HR='{HRESULT}' PsmKey='{String}' HostId='{HostId}' ResourceSetId='{ResourceSetId}'.
+Microsoft-Windows-AppModel-Exec  |  519       |                                                  |  BM: OnApplicationStateChanged returning State='{AppState}' PsmKey='{ApplicationId}' HR='{HRESULT}'.
+Microsoft-Windows-AppModel-Exec  |  520       |                                                  |  BM: OnAcquired received for CallbackId: {CallbackId}
+Microsoft-Windows-AppModel-Exec  |  521       |                                                  |  BM: OnAcquired request ignored for CallbackId: {CallbackId}
+Microsoft-Windows-AppModel-Exec  |  522       |                                                  |  BM: ActivateDeferredWorkItem WorkItem: {WorkItemId}
+Microsoft-Windows-AppModel-Exec  |  523       |                                                  |  BM: ActivateDeferredWorkItem discarded WorkItem: {WorkItemId} because of Status: {Status}
+Microsoft-Windows-AppModel-Exec  |  524       |                                                  |  BM: Enter {String} WorkItem: {WorkItemId}
+Microsoft-Windows-AppModel-Exec  |  525       |                                                  |  BM: Enter {String} WorkItem: {WorkItemId} TaskInstanceId: {TaskInstanceId}
+Microsoft-Windows-AppModel-Exec  |  526       |                                                  |  BM: Exit {String}
+Microsoft-Windows-AppModel-Exec  |  527       |                                                  |  BM: Failed to load settings for event {String}.
+Microsoft-Windows-AppModel-Exec  |  528       |                                                  |  BM: Failed to load settings for event {String} with error {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  529       |                                                  |  BM: Failed to load policy for CLSID: {PolicyCLSID}, for EventType {EventType} with error {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  530       |                                                  |  BM: Failed to load the policies with error {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  531       |                                                  |  BM: Evaluate returned WorkItem: {WorkItemId} EventType: {EventType} WallClockLimit: {WallClockLimitMs} PsmKey: {PsmKey} HostJobType: {HostJobType} EntryPoint: {EntryPoint}
+Microsoft-Windows-AppModel-Exec  |  532       |                                                  |  BM: TaskWallClockActive WorkItem: {WorkItemId} Instance: {TaskInstanceId}
+Microsoft-Windows-AppModel-Exec  |  533       |                                                  |  BM: TaskWallClockExpired WorkItem: {WorkItemId} Instance: {TaskInstanceId}
+Microsoft-Windows-AppModel-Exec  |  534       |                                                  |  BM: Policy returned HRESULT: {HRESULT} for WorkItem: {WorkItemId} PsmKey: {PsmKey}.
+Microsoft-Windows-AppModel-Exec  |  535       |                                                  |  BM: Canceling task for high energy usage PsmKey: {PsmKey} WorkItem: {WorkItemId}.
+Microsoft-Windows-AppModel-Exec  |  536       |                                                  |  BM: Ignoring cancelation request (whitelisted) for high energy usage PsmKey: {PsmKey} WorkItem: {WorkItemId}.
+Microsoft-Windows-AppModel-Exec  |  537       |                                                  |  BM: Session({SessionId}) started, session initialization returned {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  538       |                                                  |  BM: Session({SessionId}) ended.
+Microsoft-Windows-AppModel-Exec  |  539       |                                                  |  BM: Activation ignored due to no Session({SessionId}): PsmKey: {PsmKey} WorkItem: {WorkItemId}.
+Microsoft-Windows-AppModel-Exec  |  540       |                                                  |  BM: Failed to acquire a ResourceSet for WorkItem: {WorkItemId} with error {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  541       |                                                  |  BM: WorkItem: {WorkItemId} is being debugged. Setting wallclock limit to 0.
+Microsoft-Windows-AppModel-Exec  |  542       |                                                  |  BM: EvaluateActivationAction for WorkItem: {WorkItemId} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  543       |                                                  |  BM: Skipped Buffering Exempted task with SQMId: {SqmId} PsmKey: {PsmKey}.
+Microsoft-Windows-AppModel-Exec  |  544       |                                                  |  BM: Dropped Exempted task that came before SessionReady with SQMId: {SqmId} PsmKey: {PsmKey}.
+Microsoft-Windows-AppModel-Exec  |  545       |                                                  |  BM: Activation ignored due to no User({UserSid}): PsmKey: {PsmKey} WorkItem: {WorkItemId}.
+Microsoft-Windows-AppModel-Exec  |  546       |                                                  |  BM: User Logon Session: {SessionId} User: {UserSid} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  547       |                                                  |  BM: User Logoff Session: {SessionId} User: {UserSid} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  548       |                                                  |  BM: Pending activation discarded for work item ({WorkItemId}).
+Microsoft-Windows-AppModel-Exec  |  549       |                                                  |  BM: Flushing ignored EvaluationState: {EvaluationState} for WorkItem: {WorkItemId}.
+Microsoft-Windows-AppModel-Exec  |  550       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  551       |                                                  |  BM: Global Policy evaluate returned WorkItem: {WorkItemId} EventType: {EventType} Action: {ActivationAction} WallClockLimit: {WallClockLimitMs} PsmKey: {PsmKey} HostJobType: {HostJobType}
+Microsoft-Windows-AppModel-Exec  |  552       |                                                  |  BM: A Session object for Session({SessionId}) already exists.
+Microsoft-Windows-AppModel-Exec  |  553       |                                                  |  BM: ShellSuspendState changed, oldState: {OldState} newState: {NewState}
+Microsoft-Windows-AppModel-Exec  |  554       |                                                  |  BM: DPLKeyState changed, oldState: {OldState} newState: {NewState}
+Microsoft-Windows-AppModel-Exec  |  555       |                                                  |  BM: Canceling WorkItem: {WorkItemId} due to DPL policy.
+Microsoft-Windows-AppModel-Exec  |  556       |                                                  |  BM: Dropping activation for WorkItem: {WorkItemId} due to DPL policy.
+Microsoft-Windows-AppModel-Exec  |  557       |                                                  |  BM: Buffered activation for WorkItem: {WorkItemId} due to Shell Ready policy.
+Microsoft-Windows-AppModel-Exec  |  558       |                                                  |  BM: Exempted activation for WorkItem: {WorkItemId} due to Shell Ready policy.
+Microsoft-Windows-AppModel-Exec  |  559       |                                                  |  BM: Buffered activation for WorkItem: {WorkItemId} due to Thermal Throttling policy.
+Microsoft-Windows-AppModel-Exec  |  600       |                                                  |  AM: Failed to read activation plugin registry with error code {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  601       |                                                  |  AM: Failed to CoCreate activation plugin with error code {HRESULT} and CLSID {PluginClsid}.
+Microsoft-Windows-AppModel-Exec  |  602       |                                                  |  AM: Successfully created activation plugin with CLSID {PluginClsid} from the registry.
+Microsoft-Windows-AppModel-Exec  |  603       |                                                  |  AM: Failed to register package if needed with error {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  604       |                                                  |  AM: Failed trying to register package by family name async during activation with error {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  605       |                                                  |  AM: Failed trying to wait for the completion of the register package by family async during activation with error {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  700       |                                                  |  BAM: Added Package: {Package} UserSid: {UserSid}.
+Microsoft-Windows-AppModel-Exec  |  701       |                                                  |  BAM: Removed Package: {Package} UserSid: {UserSid}.
+Microsoft-Windows-AppModel-Exec  |  702       |                                                  |  BAM: Added Application: {AppUserModelId} UserSid: {UserSid}.
+Microsoft-Windows-AppModel-Exec  |  703       |                                                  |  BAM: Removed Application: {AppUserModelId} UserSid: {UserSid}.
+Microsoft-Windows-AppModel-Exec  |  704       |                                                  |  BAM: AccessState Changed for Package: {Package} OldState: {Old_AccessState} NewState: {New_AccessState} UserSid: {UserSid}.
+Microsoft-Windows-AppModel-Exec  |  705       |                                                  |  BAM: BackgroundExecutionManager::RequestAccessAsync called for Application: {AppUserModelId} Returned_AccessState: {Returned_AccessState}.
+Microsoft-Windows-AppModel-Exec  |  706       |                                                  |  BAM: BackgroundExecutionManager::GetStatus called for Application: {AppUserModelId} Returned_AccessState: {Returned_AccessState}.
+Microsoft-Windows-AppModel-Exec  |  707       |                                                  |  BAM: BackgroundExecutionManager::RemoveAccess called for Application: {AppUserModelId}.
+Microsoft-Windows-AppModel-Exec  |  708       |                                                  |  BAM: Sanitizing data for package: {PackageFullName} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  709       |                                                  |  BAM: ReregisteredPackage called during _SanitizeStore for package: {PackageFullName} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  710       |                                                  |  BAM: UnregisterPackage called during _SanitizeStore for package: {PackageFullName} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  711       |                                                  |  BAM: BackgroundExecutionManager::RequestAccessKindAsync called for Application: {AppUserModelId} Requested_AccessKind: {Requested_AccessKind} Returned: {Returned}.
+Microsoft-Windows-AppModel-Exec  |  712       |  Microsoft-Windows-Privacy-Auditing/Operational  |  Background Access State For User Modified CallerUserSid = {CallerUserSid} CallerProcessName = {CallerProcessName} CallerPackageFamilyName = {CallerPackageFamilyName}              OldConsentValue = {OldConsentValue} NewConsentValue = {NewConsentValue} IsSetByHigherAuthority = {IsSetByHigherAuthority} EffectiveConsentValue = {EffectiveConsentValue} TargetUserSid = {TargetUserSid} HRESULT = {HRESULT}
+Microsoft-Windows-AppModel-Exec  |  713       |  Microsoft-Windows-Privacy-Auditing/Operational  |  Background Access State For Package Modified CallerUserSid = {CallerUserSid} CallerProcessName = {CallerProcessName} CallerPackageFamilyName = {CallerPackageFamilyName}              OldConsentValue = {OldConsentValue} NewConsentValue = {NewConsentValue} IsSetByHigherAuthority = {IsSetByHigherAuthority} EffectiveConsentValue = {EffectiveConsentValue} TargetUserSid = {TargetUserSid}              TargetPackageFamilyName = {TargetPackageFamilyName} HRESULT = {CallerUserSid}0
+Microsoft-Windows-AppModel-Exec  |  750       |                                                  |  FAM: NotifyTaskInstanceCompleted, TaskID:{p1_UInt32}, hr:{p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  751       |                                                  |  FAM: NotifyTaskInstanceRunning, TaskID:{p1_UInt32} Timer - {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  752       |                                                  |  FAM: RegisterForegroundAgentManagerProxy:PID={p1_UInt32}, ConsumerTaskId={p2_UInt32}, Option={p3_UInt32}, hr={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  753       |                                                  |  FAM: UiForeground:Memory:{p1_UInt32}MB, CPU:{p2_UInt32}%%
+Microsoft-Windows-AppModel-Exec  |  754       |                                                  |  FAM: CreateAgentLaunchRequest, TaskID:{p1_UInt32}, Queue:{p2_UInt32}, hr:{p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  755       |                                                  |  FAM: CancelAgentRequest, TaskID:{p1_UInt32}, CancelType={p2_UInt32}, hr:{p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  756       |                                                  |  FAM: AbortAgentRequestsInternal, hr:{p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  757       |                                                  |  FAM: CompleteAgent, TaskID:{p1_UInt32}, hr:{p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  758       |                                                  |  FAM: PrioritizeAgentRequest, TaskID:{p1_UInt32}, hr:{p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  759       |                                                  |  FAM: OnForegroundAppChanged()-Abort agents
+Microsoft-Windows-AppModel-Exec  |  760       |                                                  |  FAM: OnRelease()
+Microsoft-Windows-AppModel-Exec  |  761       |                                                  |  FAM: NotifyConsumer, Notification:{p1_UInt32}, TaskID:{p2_UInt32}, hrResult:{p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  762       |                                                  |  FAM: AcquireSharedResourceSet, ProductID:{p1_GUID}, ConsumerPid:{p2_UInt32}, Pending:{p3_UInt32}, hr:{p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  763       |                                                  |  FAM: ReleaseResourceSet, #{p1_UInt32}, hr:{p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  764       |                                                  |  FAM: TimerExpired:TerminateHost[PID={p1_UInt32}]
+Microsoft-Windows-AppModel-Exec  |  765       |                                                  |  FAM: AcquireResourceSet, #{p1_UInt32}, Mem:{p2_UInt32}MB, CPU:{p3_UInt32}%%, hr:{p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  766       |                                                  |  FAM: AbortTask: TaskInstanceID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  801       |                                                  |  OTM: Read settings. First retry timeout = {p1_UInt32} ms, Second retry timeout = {p2_UInt32} ms, Third retry timeout = {p3_UInt32} ms, Maximum Retry Timeout = {p4_UInt32} ms
+Microsoft-Windows-AppModel-Exec  |  802       |                                                  |  OTM: Task instance {p2_UInt32} of product {p1_GUID} completed
+Microsoft-Windows-AppModel-Exec  |  803       |                                                  |  OTM: TaskHost of product {p1_GUID} has crashed
+Microsoft-Windows-AppModel-Exec  |  804       |                                                  |  OTM: TaskHost of product {p1_GUID} has been completed by PacMan
+Microsoft-Windows-AppModel-Exec  |  805       |                                                  |  OTM: Launching OEM boot agents
+Microsoft-Windows-AppModel-Exec  |  806       |                                                  |  OTM: Launching boot agents for product {p1_GUID} failed with error {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  807       |                                                  |  OTM: Launch boot agents for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  808       |                                                  |  OTM: Running OnUpdateStarted for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  809       |                                                  |  OTM: Restarting boot agents for product {p1_GUID} after update
+Microsoft-Windows-AppModel-Exec  |  810       |                                                  |  OTM: Start menu is ready.
+Microsoft-Windows-AppModel-Exec  |  811       |                                                  |  OTM: Could not launch OEM boot agents. QueueUserWorkItem failed with error {p1_UInt32}.
+Microsoft-Windows-AppModel-Exec  |  812       |                                                  |  OTM: Could not process update notification for OEM application. QueueUserWorkItem failed with error {p1_UInt32}.
+Microsoft-Windows-AppModel-Exec  |  813       |                                                  |  OTM: Could not process update notification for OEM application. ProcessUpdateNotification failed with error {p1_UInt32}.
+Microsoft-Windows-AppModel-Exec  |  814       |                                                  |  OTM: OemTaskManager::NotifyTaskInstanceCompleted failed with error {p1_UInt32}.
+Microsoft-Windows-AppModel-Exec  |  815       |                                                  |  OTM: OemTaskManager::NotifyTaskHostCompleted failed with error {p1_UInt32}.
+Microsoft-Windows-AppModel-Exec  |  816       |                                                  |  OTM: OemApp::DumpAgents failed with error {p1_UInt32}.
+Microsoft-Windows-AppModel-Exec  |  817       |                                                  |  OTM: An error occurred. Hr = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  818       |                                                  |  OTM: No apps with ServiceAgents were found.
+Microsoft-Windows-AppModel-Exec  |  819       |                                                  |  OTM: No ServiceAgent task found for product {p1_GUID}.
+Microsoft-Windows-AppModel-Exec  |  820       |                                                  |  OTM: AbortTask: TaskInstanceID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  851       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  852       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  853       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  854       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  861       |                                                  |  PLM: Start tracking new app user {p1_UInt64} app {p2_String}, contract {p3_String}, hr = {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  862       |                                                  |  PLM: Application launched {p1_UInt32} in app {p2_String}, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  863       |                                                  |  PLM: Application resume {p1_UInt32} in app {p2_String}, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  864       |                                                  |  PLM: Suspend-Terminate({p3_Boolean}) task {p1_UInt32} in app {p2_String}
+Microsoft-Windows-AppModel-Exec  |  865       |                                                  |  PLM: Suspend-Terminate suspend of task {p1_UInt32} in app {p2_String} exemption {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  866       |                                                  |  PLM: Suspend-Terminate auto terminate({p3_Boolean}) task {p1_UInt32} in app {p2_String}
+Microsoft-Windows-AppModel-Exec  |  867       |                                                  |  PLM: Suspend-Terminate task {p1_UInt32} in app {p2_String}, hr {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  868       |                                                  |  PLM: Halt app {p1_String}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  869       |                                                  |  PLM: Task resume {p1_UInt32} in app {p2_String}
+Microsoft-Windows-AppModel-Exec  |  870       |                                                  |  PLM: Task cancel {p1_UInt32} in app {p2_String}
+Microsoft-Windows-AppModel-Exec  |  871       |                                                  |  PLM: Task remove {p1_UInt32} in app {p2_String}
+Microsoft-Windows-AppModel-Exec  |  872       |                                                  |  PLM: Queue Application State Change Notification for user {user} app {ApplicationId} state {AppState}
+Microsoft-Windows-AppModel-Exec  |  873       |                                                  |  PLM: Queue Activation State Change Notification {ActivationId} state {ActState}
+Microsoft-Windows-AppModel-Exec  |  874       |                                                  |  PLM: Before Activate task {p1_UInt32} for user {p2_UInt64} in app {p3_String}, contract {p4_String}, hostid {p5_UInt64}, hr = {p6_UInt32}
+Microsoft-Windows-AppModel-Exec  |  875       |                                                  |  PLM: After Activate task {p1_UInt32} with result {p2_UInt32}, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  876       |                                                  |  PLM: ApplicationLayer={p1_AppLayer} Set Foreground new task {p2_UInt32}, prev task {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  877       |                                                  |  PLM: Add task {p1_UInt32} to user {p2_UInt64} and app {p3_String}, hr = {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  878       |                                                  |  PLM: Create app for user {p1_UInt64}, {p2_String}, new [app({p3_Boolean}) pkg({p4_Boolean})], hr = {p5_UInt32}
+Microsoft-Windows-AppModel-Exec  |  879       |                                                  |  PLM: Add task {p1_UInt32} to user {p2_UInt64} and app {p3_String}, new [app({p4_Boolean}) pkg({p5_Boolean})], hr = {p6_UInt32}
+Microsoft-Windows-AppModel-Exec  |  880       |                                                  |  PLM: Remove task {p1_UInt32}, was found({p2_Boolean})
+Microsoft-Windows-AppModel-Exec  |  881       |                                                  |  PLM: Remove app if empty from user {p1_UInt64}, {p2_String}, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  882       |                                                  |  PLM: Remove pkg if empty from user {p1_UInt64}, {p2_String}, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  883       |                                                  |  PLM: Send Application State Change Notification for user {user} app {ApplicationId} state {AppState}
+Microsoft-Windows-AppModel-Exec  |  884       |                                                  |  PLM: Send Activation State Change Notification {ActivationId} state {ActState}
+Microsoft-Windows-AppModel-Exec  |  886       |                                                  |  PLM: Timer Started duration {p1_UInt32}ms, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  887       |                                                  |  PLM: Timer Expired duration {p1_UInt32}ms, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  888       |                                                  |  PLM: Abort task {p1_UInt32} reason {p2_String}, dump({p3_Boolean})
+Microsoft-Windows-AppModel-Exec  |  889       |                                                  |  PLM: Task rehydrate {p1_UInt32} in app {p2_String} contract {p3_String}
+Microsoft-Windows-AppModel-Exec  |  890       |                                                  |  PLM: Start RPC suspension timer PSMKey={p1_String} WakeCounters={p2_UInt32}, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  891       |                                                  |  PLM: Cancel RPC suspension timer PSMKey={ApplicationId} app state={AppState}
+Microsoft-Windows-AppModel-Exec  |  892       |                                                  |  PLM: Terminate application PSMKey={p1_String} due to expired RPC suspension timeout
+Microsoft-Windows-AppModel-Exec  |  893       |                                                  |  PLM: Application {p1_String} cannot be terminated due to {p2_String} exemption
+Microsoft-Windows-AppModel-Exec  |  894       |                                                  |  PLM: Application {p1_String} can be terminated
+Microsoft-Windows-AppModel-Exec  |  895       |                                                  |  PLM: EvaluateAndTerminateApplication {p1_String} cannot be terminated due to {p2_String}
+Microsoft-Windows-AppModel-Exec  |  896       |                                                  |  PLM: EvaluateAndTerminateApplication {p1_String}, terminate hr = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  897       |                                                  |  PLM: Terminate debounce app {p1_String} current state {p2_UInt32} ultimate state {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  898       |                                                  |  PLM: Terminate debounce app {p1_String}, hr = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  899       |                                                  |
+Microsoft-Windows-AppModel-Exec  |  900       |                                                  |  PLM: Abort app user {p1_UInt64} app {p2_String} reason {p3_String}, dump({p4_Boolean})
+Microsoft-Windows-AppModel-Exec  |  901       |                                                  |  PLM: Watson dump NOT generated for user {p1_UInt64} app {p2_String}, process count {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  902       |                                                  |  PLM: Watson dump start for user {p1_UInt64} app {p2_String} reason {p3_String} description {p4_String}, process {p5_UInt32} ({p6_UInt32})
+Microsoft-Windows-AppModel-Exec  |  903       |                                                  |  PLM: Watson dump information for user {p1_UInt64} app {p2_String} product Id {p3_String} title {p4_String} version {p5_String}
+Microsoft-Windows-AppModel-Exec  |  904       |                                                  |  PLM: Watson dump end for user {p1_UInt64} app {p2_String}, hr {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  905       |                                                  |  PLM: Add Watson dump to user {p1_UInt64} app {p2_String} process {p3_UInt32}, hr {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  906       |                                                  |  PLM: Failed to add Watson process info for process {p1_UInt32} user {p2_UInt64} app {p3_String}
+Microsoft-Windows-AppModel-Exec  |  907       |                                                  |  PLM: Watson dump status changed pids({p1_UInt32})
+Microsoft-Windows-AppModel-Exec  |  908       |                                                  |  PLM: Watson dump status changed, add process {p1_UInt32} user {p2_UInt64} app {p3_String}
+Microsoft-Windows-AppModel-Exec  |  909       |                                                  |  PLM: Watson dump status changed, remove process {p1_UInt32} user {p2_UInt64} app {p3_String}
+Microsoft-Windows-AppModel-Exec  |  910       |                                                  |  PLM: Watson dump status changed, unknown process {p1_UInt32} app {p2_String}
+Microsoft-Windows-AppModel-Exec  |  911       |                                                  |  PLM: Watson add/remove({p2_Boolean}) error report task completion to process {p1_UInt32} (signaled {p4_Boolean}), hr {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  912       |                                                  |  PLM: Watson in progress for PSMKey {p1_String}, waiting...
+Microsoft-Windows-AppModel-Exec  |  913       |                                                  |  PLM: Watson in progress finished for PSMKey {p1_String}
+Microsoft-Windows-AppModel-Exec  |  914       |                                                  |  PLM: Extending RPC suspension timer PSMKey={p1_String}
+Microsoft-Windows-AppModel-Exec  |  915       |                                                  |  PLM: Acquire network reference failed CM_RESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  916       |                                                  |  PLM: Release network reference failed CM_RESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  917       |                                                  |  PLM: Suspend-Terminate({p2_Boolean}) app {p1_String} exemption {p3_UInt32}, hr {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  918       |                                                  |  PLM: Suspend-Terminate task {p1_UInt32} while dehydrating
+Microsoft-Windows-AppModel-Exec  |  919       |                                                  |  PLM: Add user {p1_UInt64} sid {p2_String} to data store, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  920       |                                                  |  PLM: Start launch grace for user {p1_UInt64} app {p2_String}, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  921       |                                                  |  PLM: Set Window Id for user {p1_UInt64} app {p2_String} wnd {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  922       |                                                  |  PLM: EvaluateLaunchGraceCompleted for user {p1_UInt64} app {p2_String}
+Microsoft-Windows-AppModel-Exec  |  923       |                                                  |  PLM: Terminating reexisting app due to sihost restart with PSMKey {p1_String}, status {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  924       |                                                  |  PLM: Terminating preexisting applications on sihost startup
+Microsoft-Windows-AppModel-Exec  |  925       |                                                  |  PLM: Set Pause On Lock for user {p1_UInt64} app {p2_String} value {p3_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1051      |                                                  |  AAM: Initiate activation for user {p1_UInt64} app {p2_String} contract {p3_String} task {p4_UInt32}, hr {p5_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1052      |                                                  |  AAM: Initiate activation completed for task {p2_UInt32} (expected {p1_UInt32}), hr {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1053      |                                                  |  AAM: Initialize activation for user {p1_UInt64} app {p2_String} contract {p3_String} lightup({p5_Boolean}), hr {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1054      |                                                  |  AAM: Validate activation, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1055      |                                                  |  AAM: Verify license for pkg {p1_String}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1056      |                                                  |  AAM: Activate activation task {p1_UInt32} host {p2_UInt32}, hr {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1057      |                                                  |  AAM: Activation shim timer expired {p1_UInt32}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1058      |                                                  |  AAM: Initiate Core UI, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1059      |                                                  |
+Microsoft-Windows-AppModel-Exec  |  1060      |                                                  |  AAM: Create Windows AAM, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1061      |                                                  |  AAM: Attempted remediation, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1062      |                                                  |  AAM: Failed while trying to find a remediation handler, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1063      |                                                  |  AAM: Failed while trying to find the package status, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1064      |                                                  |  AAM: Failed while trying to find the package origin, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1065      |                                                  |  AAM: Failed while trying to verify and initialize the activation, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1066      |                                                  |  AAM: Failed while trying to check roaming data, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1071      |                                                  |  AAM: Broker created plugins {p1_UInt32}, expected {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1072      |                                                  |  AAM: Broker initialize, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1073      |                                                  |  AAM: Broker start activate application {p1_String} ({p3_UInt32} args) arg[0] {p2_String} type {p4_activationType} caller PID {p5_UInt32} (initialization count {p6_UInt32})
+Microsoft-Windows-AppModel-Exec  |  1074      |                                                  |  AAM: Broker end activate application {p1_String} launched PID {p2_UInt32} task {p3_UInt32}, hr {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1075      |                                                  |  AAM: Broker activate task with result for app {p1_String} caller PID {p2_UInt32} caller task {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1076      |                                                  |  AAM: Broker get result for PID {p1_UInt32} task {p2_UInt32} result {p3_UInt32}, hr {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1077      |                                                  |  AAM: Broker get task id for process {p1_UInt32} window {p2_UInt32} = task {p3_UInt32}, hr {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1078      |                                                  |  AAM: Broker init session manager, hr {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1079      |                                                  |
+Microsoft-Windows-AppModel-Exec  |  1080      |                                                  |  AAM: Broker add task with result for parent {p1_UInt32}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1081      |                                                  |  AAM: Broker get task with result for parent {p1_UInt32}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1082      |                                                  |  AAM: Broker remove task with result for parent {p1_UInt32}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1083      |                                                  |  AAM: Broker create completed event for caller PID {p1_UInt32}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1084      |                                                  |  AAM: Broker get task with result for child {p1_UInt32}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1085      |                                                  |  AAM: Broker parent task completed {TaskId} with child state {State}
+Microsoft-Windows-AppModel-Exec  |  1086      |                                                  |  AAM: Broker child task completed {TaskId} with state {State}, hr {HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1087      |                                                  |  AAM: Broker task event signaled for parent {TaskId} child {TaskId_2} previous state {State}, hr {HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1088      |                                                  |  AAM: Broker close task {p1_UInt32}, hr {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1089      |                                                  |  AAM: Broker activate application {p1_String} arg[{p3_UInt32}] {p2_String}
+Microsoft-Windows-AppModel-Exec  |  1100      |                                                  |  FM-ARP: ApplyResourceSetType ResourceSetType={p1_UInt32} User={p2_UInt64} PSMKey={p3_String} ResourceSet={pResSet} HRESULT={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1101      |                                                  |  FM-ARP: ApplyTerminal UserContext={UserContext} PsmKey={PsmKey} ResourceSet={pResSet} HRESULT={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1102      |                                                  |  FM-ARP: RemoveInterruptiveUIAccess UserContext={UserContext} PsmKey={PsmKey} ResourceSet={pResSet} HRESULT={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1103      |                                                  |  FM-ARP: ResetInterruptiveUIAccess UserContext={UserContext} PsmKey={PsmKey} ResourceSet={pResSet} HRESULT={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1104      |                                                  |  FM-ARP: OnRelease UserContext={p1_UInt64} PsmKey={p2_String} ReleaseAction={p3_UInt32} ReleasedCachedResource={p4_Boolean} ReleaseAppliedResource={p5_Boolean} HRESULT={p6_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1105      |                                                  |  FM-ARP: OnAcquired UserContext={UserContext} PsmKey={PsmKey} ResourceSet={pResSet} HRESULT={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1106      |                                                  |  FM-ARP: OnOutOfMemory UserContext={UserContext} PsmKey={PsmKey} ResourceSet={pResSet} HRESULT={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1107      |                                                  |  FM-ARP: ApplyResourceBoost User={p1_UInt64} PsmKey={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1108      |                                                  |  FM-ARP: AcquireResourceSet ResourceSetType={p1_UInt32} Usercontext={p2_UInt64} PsmKey={p3_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1109      |                                                  |  FM-ARP: Apply Cached Resource Set Usercontext={p1_UInt64} PsmKey={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1110      |                                                  |  FM-ARP: Clear Cached Resource User={p1_UInt64} PSMKey={p2_String}
+Microsoft-Windows-AppModel-Exec  |  1111      |                                                  |  FM-ARP: Fire Cached ResourceCallback User={p1_UInt64} PSMKey={p2_String}
+Microsoft-Windows-AppModel-Exec  |  1200      |                                                  |  FM-CAM: OnApplicationStateChangedEx UserContext={UserContext} PsmKey={ApplicationId} state={AppState} HRESULT={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1201      |                                                  |  FM-CAM: AcquireForegroundResource UserContext={p1_UInt64} PsmKey={p2_String} isPending={p3_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1202      |                                                  |  FM-CAM: OnResourceAcquired UserContext={p1_UInt64} PsmKey={p2_String}
+Microsoft-Windows-AppModel-Exec  |  1203      |                                                  |  FM-CAM: OnResourceTimerExpired UserContext={p1_UInt64} PsmKey={p2_String}
+Microsoft-Windows-AppModel-Exec  |  1250      |                                                  |  FM: TaskCompletion New Battery Saver State {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1251      |                                                  |  FM: TaskCompletion Revoke Exemption PID={p1_UInt32} AUMID={p2_String} TC={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1252      |                                                  |  FM: TaskCompletion Apply({p3_Boolean}) Exemption PID={p1_UInt32} TC={p2_UInt32} HRESULT={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1253      |                                                  |  FM-EEP: CheckProcessBackgroundEligibility ProcessId={p1_UInt32} TaskCompletionCategory={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1254      |                                                  |  FM-EEP: ApplyTaskCompletion ProcessId={p1_UInt32} TaskCompletionCategory={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1255      |                                                  |  FM-EEP: RevokeTaskCompletion ProcessId={p1_UInt32} TaskCompletionCategory={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1256      |                                                  |  FM-EEP: RequestExtendedExecution ProcessId={p1_UInt32} Reason={p2_UInt32} DeniedReason={p3_UInt32} HRESULT={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1257      |                                                  |  FM-EEP: RegisterForExtensionRevokedEvent ProcessId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1258      |                                                  |  FM-EEP: CompleteExtendedExecution ProcessId={p1_UInt32} fIsResumed={p2_Boolean} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1259      |                                                  |  FM-EEP: RevokeSuspensionExtension User={p1_UInt64} PsmKey={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1260      |                                                  |  FM-ARP: NotifyPendingResourceSetTransition ResourceSetType={p1_UInt32} ResourceSet={pResSet} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1261      |                                                  |  FM-EEP: ApplyTaskCompletionResourceSet AppUserModelId={p0} fTimerExpiredCallback={p1} HRESULT={p2}
+Microsoft-Windows-AppModel-Exec  |  1262      |                                                  |  FM-EEP: IsApplicationStateBackgroundEligibile User={p1_UInt64} PsmKey={p2_String} fResult={p3_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1263      |                                                  |  FM-EEP: RevokeTaskCompletionExemption AppUserModelId={p1_String} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1264      |                                                  |  FM-EEP: AllowBackgroundExecution User={p1_UInt64} AppUserModelId={p2_String} DeniedReason={p3_UInt32} HRESULT={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1265      |                                                  |  FM-EEP: OnPackageEnergyStateChange PackageFullName={p1_String} PackageState={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1266      |                                                  |  FM-EEP: RegisterExtendedExecutionClient ProcessId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1267      |                                                  |  FM-EEP: UnregisterExtendedExecutionClient ProcessId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1268      |                                                  |  FM-EEP: UnregisterForExtensionRevokedEvent ProcessId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1269      |                                                  |  FM-EEP: ApplyTaskCompletionResourceSet AppUserModelId={p0} TC={p1} isResourcePending ={p2} HRESULT={p3}
+Microsoft-Windows-AppModel-Exec  |  1270      |                                                  |  FM-EEP: Task Completion Denied By EDP Policy ProcessId={p1_UInt32} TC={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1271      |                                                  |  FM-EEP: IsForegroundApplication Application={p0} Result={p1}
+Microsoft-Windows-AppModel-Exec  |  1400      |                                                  |  FM: Registering callback {p1_String} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1401      |                                                  |  FM: Generate ActivationInstanceID Id={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1402      |                                                  |  FM: +ActivationPrerequisitePhase ActivationInstanceId={p1_UInt32} UserContext={p2_UInt64} AUMID={p3_String} ContractId={p4_String}
+Microsoft-Windows-AppModel-Exec  |  1403      |                                                  |  FM: -ActivationPrerequisitePhase HRESULT={p1_UInt32} fPending={p2_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1404      |                                                  |  FM: +Resume_RehydrationPhase ActivationInstanceId={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1405      |                                                  |  FM: -Resume_RehydrationPhase ActivationInstanceId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1406      |                                                  |  FM: +ResumeActivation ActivationInstanceId={p1_UInt32} fIsResumed={p2_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1407      |                                                  |  FM: -ResumeActivation ActivationInstanceId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1408      |                                                  |  FM: +Resume_ActivationPhase ActivationInstanceId={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1409      |                                                  |  FM: -Resume_ActivationPhase ActivationInstanceId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1410      |                                                  |  FM: +PauseActivation ActivationInstanceId={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1411      |                                                  |  FM: -PauseActivation HRESULT={p1_UInt32} PausePending={p2_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1412      |                                                  |  FM: +CancelActivation ActivationInstanceId={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1413      |                                                  |  FM: -CancelActivation ActivationInstanceId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1414      |                                                  |  FM: +AbortActivation ActivationInstanceId={p1_UInt32} Reason={p2_String} fGenerateWER={p3_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1415      |                                                  |  FM: -AbortActivation ActivationInstanceId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1416      |                                                  |  FM: +GetActivationProcessId ActivationInstanceId={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1417      |                                                  |  FM: -GetActivationProcessId ActivationInstanceId={p1_UInt32} PID{p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1418      |                                                  |  FM: +SetForegroundActivationInstance ActivationInstanceId={p1_UInt32} Isforeground={p2_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1419      |                                                  |  FM: -SetForegroundActivationInstance ActivationInstanceId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1420      |                                                  |  FM: SetActivationDehydrationEligibility TaskID={p1_UInt32} State={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1421      |                                                  |  FM: OnActivationStateChanged ActivationInstanceId={ActivationId} state={ActState} HRESULT={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1422      |                                                  |  FM: OnApplicationStateChanged UserContext={UserContext} PSMKey={ApplicationId} state={AppState} HRESULT={HRESULT}
+Microsoft-Windows-AppModel-Exec  |  1423      |                                                  |  FM: IsValidActivationProcessId ActivationInstanceID={p1_UInt32} PID={p2_UInt32} fValid={p3_Boolean} HRESULT={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1424      |                                                  |  FM: GetForegroundProductId fIgnoreLockScreen={p1_Boolean} ProductID={p2_GUID} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1425      |                                                  |  FM: GetProductIdFromProcessID ProductID={p1_GUID} PID={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1426      |                                                  |  FM: Discarding Application Frozen notification because the application isn't really frozen
+Microsoft-Windows-AppModel-Exec  |  1427      |                                                  |  FM: Dehydrate Application AUMID={p1_UInt64} HRESULT={p2_String}
+Microsoft-Windows-AppModel-Exec  |  1428      |                                                  |  FM: +ResumePrerequisitePhase ActivationInstanceId={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1429      |                                                  |  FM: -ResumePrerequisitePhase HRESULT={p1_UInt32} fPending={p2_Boolean}
+Microsoft-Windows-AppModel-Exec  |  1430      |                                                  |  FM: GenerateWatsonReport PID={p1_UInt32} Reason={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1431      |                                                  |  FM: SetContinuation ActivationInstanceID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1432      |                                                  |  FM: AbandonContinuation ActivationInstanceID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1433      |                                                  |  FM: PerformContinuation ActivationInstanceID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1434      |                                                  |  FM: Shutdown HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1435      |                                                  |  FM: +PauseActivation ActivationInstanceId={p1_UInt32} AUMID={p2_String} PackageFullName={p3_String}
+Microsoft-Windows-AppModel-Exec  |  1436      |                                                  |  FM: +ActivationBypass ActivationInstanceId={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1437      |                                                  |  FM: -ActivationBypass ActivationInstanceId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1438      |                                                  |  FM: +PostPausePendingResume ActivationInstanceId={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1439      |                                                  |  FM: -PostPausePendingResume ActivationInstanceId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1440      |                                                  |  FM: SetActivationImportanceVector TaskID={p1_UInt32} Vector={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1441      |                                                  |  FM: NotifyWindowAdded TaskID={p1_UInt32} WindowInstanceId={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1442      |                                                  |  FM: NotifyWindowRemoved TaskID={p1_UInt32} WindowInstanceId={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1443      |                                                  |  FTM: Logoff User={p1_UInt64} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1444      |                                                  |  FM: ActivationTimeoutPolicyChanged  TaskID={p1_UInt32} WindowInstanceId={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1445      |                                                  |  FM-EEP: OnConnectedStandbyStateChanged  State={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1446      |                                                  |  FM: SendActivationNotification ActivationId={p1_UInt32} NotificationId={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1447      |                                                  |  FM: OnResourceAcquired Usercontext={p1_UInt64} PsmKey={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1448      |                                                  |  FM: OnResourceTimerExpired Usercontext={p1_UInt64} PsmKey={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  1449      |                                                  |  FM: PostPausePendingActivation ActivationId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  2000      |                                                  |  VoIPPolicy: Evaluate Activation Action for PsmKey = {PsmKey}, WorkItemId = {WorkItemId}, Action = {ActivationAction}, HRESULT = {HRESULT}
+Microsoft-Windows-AppModel-Exec  |  2001      |                                                  |  VoIPPolicy: Task Activated for PsmKey = {p1}, WorkItemId = {p0}, HRESULT = {p2}
+Microsoft-Windows-AppModel-Exec  |  2002      |                                                  |  VoIPPolicy: Task Completed for PsmKey = {p1}, WorkItemId = {p0}, HRESULT = {p2}
+Microsoft-Windows-AppModel-Exec  |  2003      |                                                  |  VoIPPolicy: Task Canceled for PsmKey = {p1}, WorkItemId = {p0}, HRESULT = {p2}
+Microsoft-Windows-AppModel-Exec  |  2004      |                                                  |  VoIPPolicy: Task Aborted for PsmKey = {p1}, WorkItemId = {p0}, HRESULT = {p2}
+Microsoft-Windows-AppModel-Exec  |  2005      |                                                  |  VoIPPolicy: Determine and Apply Resources PsmKey = {p1}, WorkItemId = {p0}, HRESULT = {p2}
+Microsoft-Windows-AppModel-Exec  |  2006      |                                                  |  VOIP: NotifyVoipActiveCall called for PID:{PID} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2007      |                                                  |  VOIP: LaunchVoipRtcTask called for PID:{PID} PSMKey:{{PsmKey}} with TaskEntryPoint:{{TaskEntryPoint}} and WNFStateName:{{WnfStateName}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2008      |                                                  |  VOIP: NotifyVoipActivityCompleted called for PID:{PID} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2009      |                                                  |  VOIP: HoldActiveCall called for PID:{PID} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2010      |                                                  |  VOIP: UnholdActiveCall called for PID:{PID} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2011      |                                                  |  VOIP: NotifyIncomingCallDialogDisplayed called for PID:{PID} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2012      |                                                  |  VOIP: NotifyIncomingCallDialogDismissed called for PID:{PID} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2013      |                                                  |  VOIP: CallActive called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2014      |                                                  |  VOIP: AppLaunchVoipRtcTask called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2015      |                                                  |  VOIP: OnVoipActivityCompleted called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2016      |                                                  |  VOIP: AppHoldActiveCall called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2017      |                                                  |  VOIP: AppUnholdActiveCall called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2018      |                                                  |  VOIP: OnIncomingCallDialogDisplayed called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2019      |                                                  |  VOIP: OnIncomingCallDialogDismissed called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2020      |                                                  |  VOIP: AppDetermineAndApplyBestResourceSet called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2021      |                                                  |  VOIP: PolicyEvaluateAction called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} ActivationAction:{ActivationAction} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2022      |                                                  |  VOIP: PolicyTaskActivated called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2023      |                                                  |  VOIP: PolicyTaskCompleted called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2024      |                                                  |  VOIP: PolicyTaskCanceled called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2025      |                                                  |  VOIP: PolicyTaskAborted called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  2026      |                                                  |  VOIP: OnForegroundApplicationChanged called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2027      |                                                  |  VOIP: AppOnTaskActivated called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2028      |                                                  |  VOIP: AppOnTaskCompleted called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2029      |                                                  |  VOIP: AppCancelVoipRtcTask called for WorkItemId:{{WorkItemId}} PSMKey:{{PsmKey}} HRESULT:{HRESULT} {InActiveCall:{InActiveCall}, HasRTCTask:{HasRTCTask} OnHold:{OnHold} TaskCompletionApplied:{TaskCompletionApplied} InForeground:{InForeground}}.
+Microsoft-Windows-AppModel-Exec  |  2030      |                                                  |  VOIP: CancelVoipRtcTask called for PID:{PID} PSMKey:{{PsmKey}} HRESULT:{HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  3201      |                                                  |  Task: {p1_UInt32} has started
+Microsoft-Windows-AppModel-Exec  |  3202      |                                                  |  Task: {p1_UInt32} has paused
+Microsoft-Windows-AppModel-Exec  |  3203      |                                                  |  Task: {p1_UInt32} has resumed
+Microsoft-Windows-AppModel-Exec  |  3204      |                                                  |  Task: {p1_UInt32} has completed
+Microsoft-Windows-AppModel-Exec  |  3205      |                                                  |  EM: +GetTaskInfo()
+Microsoft-Windows-AppModel-Exec  |  3206      |                                                  |  EM: -GetTaskInfo(). HRESULT = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3207      |                                                  |  EM: GetAppInfo:{p1_String},{p2_String}:{p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3208      |                                                  |  EM: ParseBackgroundAbilities - HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3209      |                                                  |  EM: +ExecManServerHost::CreateProcess
+Microsoft-Windows-AppModel-Exec  |  3210      |                                                  |  EM: -ExecManServerHost::CreateProcess. HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3211      |                                                  |  Sqm::AppPlatSqmAppDataUsage: {skuId}/{productId} - TaskID = {taskInstanceId}, Type = {taskType}, NewState = {newState}, ReasonForStateChange = {reasonForStateChange}, Duration (ms) = {duration}, PeakMemory (kb) = {peak}
+Microsoft-Windows-AppModel-Exec  |  3215      |                                                  |  Emc::ExecuteCommand: StartTaskCallbackBegin: TaskID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3216      |                                                  |  Emc::ExecuteCommand: StartTaskCallbackEnd: TaskID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3217      |                                                  |  Emc::ExecuteCommand: PauseTaskCallbackBegin: TaskID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3218      |                                                  |  Emc::ExecuteCommand: PauseTaskCallbackEnd: TaskID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3219      |                                                  |  Emc::ExecuteCommand: ResumeTaskCallbackBegin: TaskID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3220      |                                                  |  Emc::ExecuteCommand: ResumeTaskCallbackEnd: TaskID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3221      |                                                  |  Emc::ExecuteCommand: ControlTaskCallbackBegin: TaskID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3222      |                                                  |  Emc::ExecuteCommand: ControlTaskCallbackEnd: TaskID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3223      |                                                  |  Emc::ExecuteCommand: CancelTaskCallbackBegin: TaskID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3224      |                                                  |  Emc::ExecuteCommand: CancelTaskCallbackEnd: TaskID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3225      |                                                  |  Emc::ExecuteCommand: BackgroundExecutionTaskCallbackBegin: TaskID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3226      |                                                  |  Emc::ExecuteCommand: BackgroundExecutionTaskCallbackEnd: TaskID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3230      |                                                  |  Emc::RegisterBackgroundExecutionRequest: TaskID = {p1_UInt32}, ExecutionType = {p2_UInt32}, HR = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3240      |                                                  |  Emc::DeregisterBackgroundExecutionRequest: TaskID = {p1_UInt32}, ExecutionType = {p2_UInt32}, Reason = {p3_UInt32}, HR = {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3241      |                                                  |  Emc::EnsureXbfForCurrentLocale: EnsureXbfForCurrentLocaleBegin: ProductID = {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3242      |                                                  |  Emc::EnsureXbfForCurrentLocale: EnsureXbfForCurrentLocaleEnd: ProductID = {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3243      |                                                  |  EM: Skipping terminate process call for {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3244      |                                                  |  EM: Terminating process: PID = {p1_UInt32}, ExitCode = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3300      |                                                  |  AimServer::OnAgentRequestInvoked: AgentRequestID {p1_UInt32} was invoked. PID = {p2_UInt32}, HR = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3301      |                                                  |  AimServer::ReadSettings: HR = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3302      |                                                  |  AimServer: Detected server for scope {p1_UInt32} terminated (PID = {p2_UInt32})
+Microsoft-Windows-AppModel-Exec  |  3304      |                                                  |  AimServer::HandleEvent: ProductID {p1_GUID} received PM LifecyleEvent {p2_UInt32}. HR Notification = {p3_UInt32}, HR = {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3305      |                                                  |  BA::NotifyTaskInstanceCompleted: AgentRequestID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3306      |                                                  |  BA::RegisterServiceRequest: AlreadyReserved = {p1_Boolean}, SR = {p2_GUID}, HR = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3307      |                                                  |  BA::UnRegisterServiceRequest: SR = {p1_GUID}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3308      |                                                  |  BA::CancelAgentRequest: AgentRequestID = {p1_UInt32}, CancelType = {p2_UInt32}, PID = {p3_UInt32}, HR = {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3309      |                                                  |  BA::NotifyTaskInstanceCompleted: Terminating Orphaned Host PID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3310      |                                                  |  BA::OrphanAgentRequest: AgentRequestID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3311      |                                                  |  BA::UnRegisterServiceRequest: Terminating host PID {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3312      |                                                  |  BA::UnRegisterServiceRequest: Orphaning host PID {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3313      |                                                  |  BA::UnRegisterServiceRequest: Terminating second old orphaned host PID {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3314      |                                                  |  BTM::RecvCallback: Timer expired for AgentRequestID {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3315      |                                                  |  BTM::LaunchTask: TaskURI = {p1_String} TaskID = {p2_UInt32}, PID = {p3_UInt32}, HR = {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3316      |                                                  |  GBA::NotifyTaskInstanceCompleted: AgentRequestID = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3317      |                                                  |  GBA::RegisterServiceRequest: SR = {p1_GUID}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3318      |                                                  |  GBA::UnRegisterServiceRequest: SR = {p1_GUID}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3319      |                                                  |  GBA::RegisterAgentRequest: AgentRequestID = {p1_UInt32}, type = {p2_UInt32}, hr = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3320      |                                                  |  GBA: Cancelling low priority {p3_UInt32} agent because high priority {p2_UInt32} needs to run: Resource was dedicated = {p1_Boolean}
+Microsoft-Windows-AppModel-Exec  |  3321      |                                                  |  GBA::CancelAgentRequest: AgentRequestID = {p1_UInt32}, CancelType = {p2_UInt32}, PID = {p3_UInt32}, HR = {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3322      |                                                  |  GBA::TryAcquireResourceSet: pending = {p1_Boolean}, type = {p2_UInt32}, HR = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3323      |                                                  |  GBA::AbortTask: AgentRequestID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3324      |                                                  |  BA::AbortTask: AgentRequestID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3325      |                                                  |  BA::NotifyTaskHostCompleted: ProductID = {p1_GUID}, PID = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3326      |                                                  |  BA::RegisterAgentRequest: ProductID = {p1_GUID}, AgentRequestID = {p2_UInt32}, HR = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3327      |                                                  |  BA::PdcActivationFailed: ProductID = {p1_GUID}, Reason = {p2_UInt32}, NTSTATUS = {p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3500      |                                                  |  FTM: AllowBackgroundExecution for ProductID {p1_GUID}. HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3501      |                                                  |  FTM: Process is using too much memory for BG Execution. PID={p1_UInt32}, MemUsage={p2_UInt32}, RequiredMemUsage={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3502      |                                                  |  FTM: Removing BG capability from Task ID {p1_UInt32} due to OOM
+Microsoft-Windows-AppModel-Exec  |  3503      |                                                  |  FTM: Battery Saver State has change. New state = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3504      |                                                  |  FTM: Attempted new BG Execution request due to battery state change. TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3505      |                                                  |  FTM: NotifyTaskInstanceCompleted TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3506      |                                                  |  FTM: NotifyTaskInstancePaused TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3507      |                                                  |  FTM: NotifyTaskInstanceRunning TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3508      |                                                  |  FTM: SendTaskStatusChange TaskID={p1_UInt32} Status={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3509      |                                                  |  FTM: NotifyTaskHostCompleted HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3510      |                                                  |  FTM: Discarding NotifyTaskHostFrozen notification because the host isn't really frozen
+Microsoft-Windows-AppModel-Exec  |  3511      |                                                  |  FTM: NotifyTaskHostFrozen PID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3512      |                                                  |  FTM: NotifyTaskHostDehydrated HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3513      |                                                  |  FTM: Registering callback {p1_String} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3514      |                                                  |  FTM: New Task {p1_UInt32} is dehydration-suppressing
+Microsoft-Windows-AppModel-Exec  |  3515      |                                                  |  FTM: Applying Dehydration-Suppressing Policy to Host PID {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3516      |                                                  |  FTM: Revoking Dehydration-Suppressing Policy to Host PID {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3517      |                                                  |  FTM: +LaunchTask TaskURI={p1_String} LaunchFlags={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3518      |                                                  |  FTM: -LaunchTask TaskURI={p1_String} TaskID={p2_UInt32} PID={p3_UInt32} HRESULT={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3519      |                                                  |  FTM: ResumeTask TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3520      |                                                  |  FTM: Removing Foreground Resources from TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3521      |                                                  |  FTM: SetForegroundTaskInstanceId TaskID={p1_UInt32} HRESULT={p2_Boolean}
+Microsoft-Windows-AppModel-Exec  |  3522      |                                                  |  FTM: PauseTask TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3523      |                                                  |  FTM: CancelTask TaskID={p1_UInt32} Frozen={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3524      |                                                  |  FTM: AbortTask being ignored because the task is completed TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3525      |                                                  |  FTM: AbortTask TaskID={p1_UInt32} Reason={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3526      |                                                  |  FTM: SetTaskDehydrationEligibility TaskID={p1_UInt32} State={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3527      |                                                  |  FTM: RequestProcessBackgroundExecution type={p1_UInt32} Pid={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3528      |                                                  |  FTM: CancelProcessBackgroundExecutionRequest type={p1_UInt32} Pid={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3529      |                                                  |  FTM: TaskRunningInBackground TaskID={p1_UInt32} PID={p2_UInt32}  HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3530      |                                                  |  FTM: TaskRunningInForeground TaskID={p1_UInt32} PID={p2_UInt32}  HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3531      |                                                  |  FTM: Changing activation policy to resume due to BG Execution for ProductID {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3532      |                                                  |  FTM: OnShutdownCompleted
+Microsoft-Windows-AppModel-Exec  |  3533      |                                                  |  FTM: Ignoring expired watchdog for task {p1_UInt32} because it is being debugged.
+Microsoft-Windows-AppModel-Exec  |  3534      |                                                  |  FTM: Watchdog fired for task {p1_UInt32} while running in background. Pausing Task.
+Microsoft-Windows-AppModel-Exec  |  3535      |                                                  |  FTM: Request BG Execution Denied because it wasn't running. TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3536      |                                                  |  FTM: Request BG Execution Denied because product was forbidden. TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3537      |                                                  |  FTM: Request BG Execution Denied because task didn't have BG abilities in its manifest. TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3538      |                                                  |  FTM: Request BG Execution Denied due to lack of resources. TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3539      |                                                  |  FTM: Request BG Execution Denied because battery policy prevented it. TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3540      |                                                  |  FTM: RequestBGAccess IsAllowed={p1_UInt32} TaskID={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3541      |                                                  |  FTM: RemoveBGRequest RequestedRemoval={p1_UInt32} ActualRemoval={p2_UInt32} TaskID={p3_UInt32} HRESULT={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3542      |                                                  |  FTM: ForbidBackgroundExecution for ProductID {p1_GUID}. HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3543      |                                                  |  FTM: IsValidTaskInstancePid TaskID={p1_UInt32} Pid={p2_UInt32} fValid={p3_Boolean} HRESULT={p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3544      |                                                  |  FTM: DetermineBestResourceSet for child ProductID={p1_GUID} LaunchFlags={p2_UInt32} ResourceSetType={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3545      |                                                  |  FTM: OnRelease ResourceSet TaskID={p1_UInt32} ResouceSet={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3546      |                                                  |  FTM:UITask Call to Acquire network reference failed CM_RESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3547      |                                                  |  FTM:UITask Call to Release network reference failed CM_RESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3548      |                                                  |  FTM: SetTaskImportanceVector TaskID={p1_UInt32} Vector={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3549      |                                                  |  FTM: +RequestProcessBackgroundExecution type={p1_UInt32} Pid={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3550      |                                                  |  FTM: +RequestBackgroundExecution type={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3551      |                                                  |  FTM: -RequestBackgroundExecution type={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3552      |                                                  |  FTM: +RequestBGAccess TaskInstanceId={p1_UInt32} type={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3553      |                                                  |  FTM: Request BG Execution Denied because DPL policy prevented it. TaskID={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3554      |                                                  |  FTM: Windows Information Protection keys locked state ({p1_Boolean})
+Microsoft-Windows-AppModel-Exec  |  3650      |                                                  |  VoIP: Foreground state for product {p1_GUID} has changed. Is in foreground = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3651      |                                                  |  VoIP: Canceling communication agent for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3652      |                                                  |  VoIP: Timer expired for keep-alive agent of product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3653      |                                                  |  VoIP: Timer expired for incoming call agent of product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3654      |                                                  |  VoIP: Launched agent instance with id {p2_UInt32} and URI {p1_String}
+Microsoft-Windows-AppModel-Exec  |  3655      |                                                  |  VoIP: Canceled agent instance with id {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3656      |                                                  |  VoIP: Set active call resource set
+Microsoft-Windows-AppModel-Exec  |  3657      |                                                  |  VoIP: Set communication agent resource set
+Microsoft-Windows-AppModel-Exec  |  3658      |                                                  |  VoIP: Set VoIP Worker resource set
+Microsoft-Windows-AppModel-Exec  |  3659      |                                                  |  VoIP: Applied terminal resource set
+Microsoft-Windows-AppModel-Exec  |  3660      |                                                  |  VoIP: Last task instance completed. Releasing the task host ...
+Microsoft-Windows-AppModel-Exec  |  3661      |                                                  |  VoIP: Launching active call agent instance for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3662      |                                                  |  VoIP: Canceling active call agent for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3663      |                                                  |  VoIP: Putting an active call on hold for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3664      |                                                  |  VoIP: Taking an active call off hold for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3665      |                                                  |  VoIP: Incoming call dialog has been displayed for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3666      |                                                  |  VoIP: Incoming call dialog has been dismissed for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3667      |                                                  |  VoIP: Launch communication agent request received from process {p1_UInt32} for product {p2_GUID}
+Microsoft-Windows-AppModel-Exec  |  3668      |                                                  |  VoIP: Read settings. Keep alive timout = {p1_UInt32} ms, Max agent request queue = {p2_UInt32}, Incoming call grace period = {p3_UInt32} ms, Incoming call dismissed grace period = {p4_UInt32} ms
+Microsoft-Windows-AppModel-Exec  |  3669      |                                                  |  VoIP: Received request to launch agent type {p2_UInt32} for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3670      |                                                  |  VoIP: Task instance {p2_UInt32} of product {p1_GUID} completed
+Microsoft-Windows-AppModel-Exec  |  3671      |                                                  |  VoIP: Processing request to launch agent type {p2_UInt32} for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3672      |                                                  |  VoIP: Added VoIPApp object to map for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3673      |                                                  |  VoIP: Removed VoIPApp object from map for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3674      |                                                  |  VoIP: Getting VoIPApp object from map for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3675      |                                                  |  VoIP: Publishing WNF_DEVP_VOIP_ACTIVE_CALL_STATE_CHANGE failed with status {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3676      |                                                  |  VoIP: Subscribing to the WNF_WIFI_CONNECTION_STATUS event failed with status {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3677      |                                                  |  VoIP: Subscribed to WNF_WIFI_CONNECTION_STATUS? {p1_Boolean}
+Microsoft-Windows-AppModel-Exec  |  3678      |                                                  |  VoIP: WiFi connection status active/dormat? {p1_Boolean} (hConnection = {p2_UInt32})
+Microsoft-Windows-AppModel-Exec  |  3679      |                                                  |  VoIP: RtlQueryWnfStateData failed trying to query the value of WNF_WIFI_CONNECTION_STATUS. NTSTATUS = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3680      |                                                  |  VoIP: Could not spin up worker for UpdateWiFiStateHelper. HR ={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3681      |                                                  |  VoIP: In active call? {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3682      |                                                  |  VoIP: CmUtilSetWiFiActive was not successful. This could be because WiFi disconnected by the time we were notified of the connection.
+Microsoft-Windows-AppModel-Exec  |  3683      |                                                  |  VoIP: WiFi connection status is {p1_UInt32}.
+Microsoft-Windows-AppModel-Exec  |  3684      |                                                  |  VoIP: AbortTask: TaskInstanceID = {p1_UInt32}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3685      |                                                  |  VoIP: PhoneServiceRestart: HR = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3686      |                                                  |  VoIP: PhoneServiceRestart: Product = {p1_GUID}, HR = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3687      |                                                  |  VoIP: Launching call query info agent instance for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3688      |                                                  |  VoIP: Canceling call query info agent instance for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3689      |                                                  |  VoIP: Terminating agents due to low memory for product {p1_GUID}
+Microsoft-Windows-AppModel-Exec  |  3690      |                                                  |  VoIP: Acquired Pending ResourceSet for product = {p1_GUID}, Resourceset = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3691      |                                                  |  VoIP: Acquired Pending ResourceSet for product = {p1_GUID}, Resourceset = {p2_UInt32}, fApplied = {p3_UInt32}, HR = {p4_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3692      |                                                  |  VoIP: Set PDC Network Active for product = {p1_GUID}, NTSTATUS = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3693      |                                                  |  VoIP: Set PDC Network Inactive for product = {p1_GUID}, NTSTATUS = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3694      |                                                  |  VoIP: Renew PDC Network activation failed for product = {p1_GUID}, NTSTATUS = {p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  3699      |                                                  |  VoIP: An error occurred. Hr = {p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  6100      |                                                  |  {p0} - [{p1} = {p2}]\n
+Microsoft-Windows-AppModel-Exec  |  6101      |                                                  |  {p0} - Parsing config file [{p1}] file size = {p2}.  Parse = {p3}
+Microsoft-Windows-AppModel-Exec  |  6102      |                                                  |  {p0} - OnTaskModelMessage: Dispatching EM message
+Microsoft-Windows-AppModel-Exec  |  6103      |                                                  |  {p0} - InitializeTaskHost URI={p1}, Page={p2}, TaskId={p3}
+Microsoft-Windows-AppModel-Exec  |  6104      |                                                  |  {p0} - Resuming Task from dehydration
+Microsoft-Windows-AppModel-Exec  |  6105      |                                                  |  {p0} - TaskHandler::GetTaskHandler hr={p1}
+Microsoft-Windows-AppModel-Exec  |  6106      |                                                  |  {p0} - TaskHost Init
+Microsoft-Windows-AppModel-Exec  |  6107      |                                                  |  {p0} - TaskHost Init hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6108      |                                                  |  {p0} - Host Dispatcher Exiting hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6109      |                                                  |  {p0} - TaskHandlerReady received
+Microsoft-Windows-AppModel-Exec  |  6110      |                                                  |  {p0} - StartTask TaskId={p1}
+Microsoft-Windows-AppModel-Exec  |  6111      |                                                  |  {p0} - PauseTask TaskId={p1}
+Microsoft-Windows-AppModel-Exec  |  6112      |                                                  |  {p0} - ResumeTask TaskId={p1}
+Microsoft-Windows-AppModel-Exec  |  6113      |                                                  |  {p0} - OnTaskHandlerVisible received
+Microsoft-Windows-AppModel-Exec  |  6114      |                                                  |  {p0} - OnTaskHandlerHidden received
+Microsoft-Windows-AppModel-Exec  |  6115      |                                                  |  {p0} - BackgroundExecutionCallback TaskId[{p1}] Command[{p2}]
+Microsoft-Windows-AppModel-Exec  |  6116      |                                                  |  {p0} - BackgroundExecutionCallback hr={p1}
+Microsoft-Windows-AppModel-Exec  |  6117      |                                                  |  {p0} - OnHostRunning
+Microsoft-Windows-AppModel-Exec  |  6118      |                                                  |  {p0} - OnHostRunning. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6119      |                                                  |  {p0} - Dehydrating. dehydrateGracefully = {p1}
+Microsoft-Windows-AppModel-Exec  |  6120      |                                                  |  {p0} - Gracefully dehydrating TaskHost
+Microsoft-Windows-AppModel-Exec  |  6121      |                                                  |  {p0} - TryDehydrateHost. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6122      |                                                  |  {p0} - DehydrateHost event triggered
+Microsoft-Windows-AppModel-Exec  |  6123      |                                                  |  {p0} - WaitForUnfreeze hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6124      |                                                  |  {p0} - ReduceMemoryHostCallback hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6125      |                                                  |  {p0} - Graceful tear-down failed
+Microsoft-Windows-AppModel-Exec  |  6126      |                                                  |  {p0} - BeforeHostRunningInBackgroundCallback
+Microsoft-Windows-AppModel-Exec  |  6127      |                                                  |  {p0} - BeforeHostRunningInBackgroundCallback. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6128      |                                                  |  {p0} - AfterHostRunningInBackgroundCallback
+Microsoft-Windows-AppModel-Exec  |  6129      |                                                  |  {p0} - AfterHostRunningInBackgroundCallback. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6130      |                                                  |  {p0} - Unhandled exception occurred. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6131      |                                                  |  {p0} - State-Transition ({p1})->({p2})
+Microsoft-Windows-AppModel-Exec  |  6132      |                                                  |  {p0} - EnableProfiling = [{p1}]
+Microsoft-Windows-AppModel-Exec  |  6133      |                                                  |  {p0} - Profile Dll = [{p1}]
+Microsoft-Windows-AppModel-Exec  |  6134      |                                                  |  {p0} - ProfilerCLSID = [{p1}]
+Microsoft-Windows-AppModel-Exec  |  6135      |                                                  |  {p0} - TaskHostHelper::SetProfilerSettings hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6136      |                                                  |  {p0} - File path = {p1} : {p2}
+Microsoft-Windows-AppModel-Exec  |  6137      |                                                  |  {p0} - Parse Element: {p1}.
+Microsoft-Windows-AppModel-Exec  |  6138      |                                                  |  {p0} - Parse Element Value = {p1} with pwszLocalName = {p2}.
+Microsoft-Windows-AppModel-Exec  |  6139      |                                                  |  {p0} - Parse HResult = {p1}
+Microsoft-Windows-AppModel-Exec  |  6140      |                                                  |  {p0} - YUTHost: failed to GAC trusted assembly {p1}\r\n
+Microsoft-Windows-AppModel-Exec  |  6141      |                                                  |  {p0} - UITaskHandler::Initialize. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6142      |                                                  |  {p0} - UITaskHandler::Disconnect done
+Microsoft-Windows-AppModel-Exec  |  6143      |                                                  |  {p0} - UITaskHandler::GoBackground. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6144      |                                                  |  {p0} - UITaskHandler::GoForeground. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6145      |                                                  |  {p0} - Managed Framework Ready. Handling Pending Event:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6146      |                                                  |  {p0} - HandlePendingEvents Start TaskId={p1}
+Microsoft-Windows-AppModel-Exec  |  6147      |                                                  |  {p0} - HandlePendingEvents Pause TaskId={p1}
+Microsoft-Windows-AppModel-Exec  |  6148      |                                                  |  {p0} - HandlePendingEvents Resume TaskId={p1}
+Microsoft-Windows-AppModel-Exec  |  6149      |                                                  |  {p0} - Waiting for Siblings...
+Microsoft-Windows-AppModel-Exec  |  6150      |                                                  |  {p0} - Waiting for Siblings done. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6151      |                                                  |  {p0} - UITaskHandler::OnRuntimeHostReady TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6152      |                                                  |  {p0} - UITaskHandler::OnRuntimeHostReady. Processed pending SystemKeyPress [{p1}]
+Microsoft-Windows-AppModel-Exec  |  6153      |                                                  |  {p0} - UITaskHandler::OnRuntimeHostReady hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6154      |                                                  |  {p0} - UITaskHandler::RegistrationComplete hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6155      |                                                  |  {p0} - UITaskHandler::ConnectionComplete received
+Microsoft-Windows-AppModel-Exec  |  6156      |                                                  |  {p0} - UITaskHandler::ConnectionComplete hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6157      |                                                  |  {p0} - UITaskHandler::ProcessActivationData received, reason={p1}
+Microsoft-Windows-AppModel-Exec  |  6158      |                                                  |  {p0} - UITaskHandler::ProcessActivationData hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6159      |                                                  |  {p0} - UITaskHandler::Show received. Direction:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6160      |                                                  |  {p0} - Navigation in progress. Queuing up the Show
+Microsoft-Windows-AppModel-Exec  |  6161      |                                                  |  {p0} - UITaskHandler::Show hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6162      |                                                  |  {p0} - UITaskHandler::ShowInternal. Direction:[{p1}:NavigationDirection:]
+Microsoft-Windows-AppModel-Exec  |  6163      |                                                  |  {p0} - UITaskHandler::ShowInternal. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6164      |                                                  |  {p0} - UITaskHandler::Hide received. Direction:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6165      |                                                  |  {p0} - Navigation in progress. Cancelling Show and ignoring Hide
+Microsoft-Windows-AppModel-Exec  |  6166      |                                                  |  {p0} - UITaskHandler::Hide hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6167      |                                                  |  {p0} - UITaskHandler::NavigateTo received TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6168      |                                                  |  {p0} - UITaskHandler::NavigateTo. hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6169      |                                                  |  {p0} - UITaskHandler::NavigationComplete TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6170      |                                                  |  {p0} - UITaskHandler::NavigationComplete hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6171      |                                                  |  {p0} - UITaskHandler::NavigateAway received TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6172      |                                                  |  {p0} - Navigation interrupted since Task is closing
+Microsoft-Windows-AppModel-Exec  |  6173      |                                                  |  {p0} - Navigation in progress. Queuing up the NavigateAway
+Microsoft-Windows-AppModel-Exec  |  6174      |                                                  |  {p0} - UITaskHandler::NavigateAway hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6175      |                                                  |  {p0} - UITaskHandler::NavigateAwayInternal TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6176      |                                                  |  {p0} - UITaskHandler::NavigateAwayInternal hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6177      |                                                  |  {p0} - UITaskHandler::RequestClose called TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6178      |                                                  |  {p0} - UITaskHandler::RequestClose hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6179      |                                                  |  {p0} - LaunchSession in progress. Cannot add another callback
+Microsoft-Windows-AppModel-Exec  |  6180      |                                                  |  {p0} - UITaskHandler::LaunchSession hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6181      |                                                  |  {p0} - LaunchChildTask in progress. Cannot add another callback
+Microsoft-Windows-AppModel-Exec  |  6182      |                                                  |  {p0} - UITaskHandler::LaunchChildTask hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6183      |                                                  |  {p0} - UITaskHandler::SetPauseOnLock[{p1}] called TaskID:[{p2}]
+Microsoft-Windows-AppModel-Exec  |  6184      |                                                  |  {p0} - UITaskHandler::SetPauseOnLock hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6185      |                                                  |  {p0} - UITaskHandler::Close received TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6186      |                                                  |  {p0} - UITaskHandler::Close hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6187      |                                                  |  {p0} - UITaskHandler::SystemKeyPressed received: [{p1}]
+Microsoft-Windows-AppModel-Exec  |  6188      |                                                  |  {p0} - UITaskHandler::SystemKeyPressed processed
+Microsoft-Windows-AppModel-Exec  |  6189      |                                                  |  {p0} - UITaskHandler::SystemKeyPressed pending. Will be processed on RuntimeHost ready
+Microsoft-Windows-AppModel-Exec  |  6190      |                                                  |  {p0} - UITaskHandler::LaunchChildTaskComplete received with result {p1}
+Microsoft-Windows-AppModel-Exec  |  6191      |                                                  |  {p0} - UITaskHandler::LaunchChildTaskComplete result:{p1} hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6192      |                                                  |  {p0} - UITaskHandler::LaunchSessionComplete received with result {p1}
+Microsoft-Windows-AppModel-Exec  |  6193      |                                                  |  {p0} - UITaskHandler::LaunchChildTaskComplete result:{p1} hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6194      |                                                  |  {p0} - OrientationChanged NewOrientation={p1}
+Microsoft-Windows-AppModel-Exec  |  6195      |                                                  |  {p0} - OrientationChange received before RuntimeHostTask is set
+Microsoft-Windows-AppModel-Exec  |  6196      |                                                  |  {p0} - SetSupportedOrientations. SupportedOrientations:[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6197      |                                                  |  {p0} - GetSupportedOrientations. SupportedOrientations[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6198      |                                                  |  {p0} - GetCurrentOrientation. CurrentOrientation[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6199      |                                                  |  {p0} - UITaskHandler::ReplaceTouchEndpoint hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6200      |                                                  |  {p0} - UITaskHandler::ReplaceTextEndpoint hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6201      |                                                  |  {p0} - UITaskHandler::Get Task State. StateSize[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6202      |                                                  |  {p0} - UITaskHandler::Set Task State. StateSize[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6203      |                                                  |  {p0} - UITaskHandler::OnObscurityChange[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6204      |                                                  |  {p0} - UITaskHandler::OnLockScreenVisibilityChange[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6205      |                                                  |  {p0} - UITaskHandler::OnSipVisibilityChange[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6206      |                                                  |  {p0} - UITaskHandler::OnShowAnimationComplete
+Microsoft-Windows-AppModel-Exec  |  6207      |                                                  |  {p0} - UITaskHandler::Window.Visible property changed [{p1}]
+Microsoft-Windows-AppModel-Exec  |  6208      |                                                  |  {p0} - FreezeHost event triggered
+Microsoft-Windows-AppModel-Exec  |  6209      |                                                  |  {p0} - FreezeHostCallback failed with hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6210      |                                                  |  {p0} - CancelTask TaskId={p1}
+Microsoft-Windows-AppModel-Exec  |  6211      |                                                  |  {p0} - OnHostPausing
+Microsoft-Windows-AppModel-Exec  |  6212      |                                                  |  {p0} - OnHostPausing failed with hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6213      |                                                  |  {p0} - OnHostPaused
+Microsoft-Windows-AppModel-Exec  |  6214      |                                                  |  {p0} - OnHostPaused failed with hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6215      |                                                  |  {p0} - FreezeHost event triggered
+Microsoft-Windows-AppModel-Exec  |  6216      |                                                  |  {p0} - FreezeHostCallback failed with hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6217      |                                                  |  {p0} - CancelTask received while executing in background
+Microsoft-Windows-AppModel-Exec  |  6218      |                                                  |  {p0} - CancelTask received. Ignoring since this is a valid transition only when running in background
+Microsoft-Windows-AppModel-Exec  |  6219      |                                                  |  {p0} - CancelTask hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6220      |                                                  |  {p0} - TPA entry: {p1}\\{p2}{p3};
+Microsoft-Windows-AppModel-Exec  |  6221      |                                                  |  {p0} - Platform Assemblies List: {p1}
+Microsoft-Windows-AppModel-Exec  |  6222      |                                                  |  {p0} - ParseManifestFile HResult = {p1}
+Microsoft-Windows-AppModel-Exec  |  6223      |                                                  |  {p0} - NotifyError ! Unable to disable NI optimizations
+Microsoft-Windows-AppModel-Exec  |  6224      |                                                  |  {p0} - NotifyError ! Unable to set the debugger wait env variable
+Microsoft-Windows-AppModel-Exec  |  6225      |                                                  |  {p0} - TestTrustedPath: {p1}
+Microsoft-Windows-AppModel-Exec  |  6226      |                                                  |  {p0} - TestAppPaths: {p1}
+Microsoft-Windows-AppModel-Exec  |  6227      |                                                  |  {p0} - NotifyError ! Failed to set the test settings
+Microsoft-Windows-AppModel-Exec  |  6228      |                                                  |  {p0} - GetAppPaths failed with hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6229      |                                                  |  {p0} - NotifyError ! message = {p1}, source = {p2}
+Microsoft-Windows-AppModel-Exec  |  6230      |                                                  |  {p0} - NotifyError ! hr={p1}. message = {p2}
+Microsoft-Windows-AppModel-Exec  |  6231      |                                                  |  {p0} - GetIsoStoreAvailableFreeSpace hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6232      |                                                  |  {p0} - NotifyEvent XcpHostEvent_ApplicationStarted
+Microsoft-Windows-AppModel-Exec  |  6233      |                                                  |  {p0} - NotifyEvent XcpHostEvent_ApplicationStarting
+Microsoft-Windows-AppModel-Exec  |  6234      |                                                  |  {p0} - NotifyEvent XcpHostEvent_ApplicationConstructing: Assembly = {p1}, NotifyEvent Type = {p2}
+Microsoft-Windows-AppModel-Exec  |  6235      |                                                  |  {p0} - NotifyEvent XcpHostEvent_ApplicationConstructed: Assembly = {p1}, NotifyEvent Type = {p2}
+Microsoft-Windows-AppModel-Exec  |  6236      |                                                  |  {p0} - NotifyEvent XcpHostEvent_AssemblyLoading: Assembly = {p1}
+Microsoft-Windows-AppModel-Exec  |  6237      |                                                  |  {p0} - NotifyEvent XcpHostEvent_AssemblyLoaded: Assembly = {p1}
+Microsoft-Windows-AppModel-Exec  |  6238      |                                                  |  {p0} - NotifyEvent XcpHostEvent_SourceLoading: XAP = {p1}
+Microsoft-Windows-AppModel-Exec  |  6239      |                                                  |  {p0} - NotifyEvent XcpHostEvent_SourceLoaded: XAP = {p1}
+Microsoft-Windows-AppModel-Exec  |  6240      |                                                  |  {p0} - GetQualifiedMutexName returned:[{p1}]. AllowedMutexCount:[{p2}]\r\n
+Microsoft-Windows-AppModel-Exec  |  6241      |                                                  |  {p0} - XcpHost::Start() failed with hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6242      |                                                  |  {p0} - Shutting down the SL runtime...
+Microsoft-Windows-AppModel-Exec  |  6243      |                                                  |  {p0} - Calling into XcpHost::Pausing {p1}
+Microsoft-Windows-AppModel-Exec  |  6244      |                                                  |  {p0} - XcpHost::Pausing {p1}
+Microsoft-Windows-AppModel-Exec  |  6245      |                                                  |  {p0} - Calling into XcpHost::Pause {p1}
+Microsoft-Windows-AppModel-Exec  |  6246      |                                                  |  {p0} - XcpHost::Pause {p1}
+Microsoft-Windows-AppModel-Exec  |  6247      |                                                  |  {p0} - Calling into XcpHost::Resume {p1}
+Microsoft-Windows-AppModel-Exec  |  6248      |                                                  |  {p0} - XcpHost::Resume {p1}
+Microsoft-Windows-AppModel-Exec  |  6249      |                                                  |  {p0} - Calling into XcpHost::Resumed {p1}
+Microsoft-Windows-AppModel-Exec  |  6250      |                                                  |  {p0} - XcpHost::Resumed {p1}
+Microsoft-Windows-AppModel-Exec  |  6251      |                                                  |  {p0} - XcpHost::CompleteTask called TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6252      |                                                  |  {p0} - CompleteTask called when XcpTask is null. This likely indicates CompleteTask getting called twice
+Microsoft-Windows-AppModel-Exec  |  6253      |                                                  |  {p0} - Error in OnApplicationStarted
+Microsoft-Windows-AppModel-Exec  |  6254      |                                                  |  {p0} - Error in OnApplicationConstructing
+Microsoft-Windows-AppModel-Exec  |  6255      |                                                  |  {p0} - LaunchSession hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6256      |                                                  |  {p0} - LaunchChildTask hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6257      |                                                  |  {p0} - Raising Task.OnLaunching
+Microsoft-Windows-AppModel-Exec  |  6258      |                                                  |  {p0} - Raised Task.OnLaunching
+Microsoft-Windows-AppModel-Exec  |  6259      |                                                  |  {p0} - Raising Task.OnPause. PauseReason[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6260      |                                                  |  {p0} - Raised Task.OnPause
+Microsoft-Windows-AppModel-Exec  |  6261      |                                                  |  {p0} - Raising Task.OnResume. IsExecutionContextPreserved[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6262      |                                                  |  {p0} - Raised Task.OnResume
+Microsoft-Windows-AppModel-Exec  |  6263      |                                                  |  {p0} - Raising Task.OnRunningInBackground
+Microsoft-Windows-AppModel-Exec  |  6264      |                                                  |  {p0} - Raised Task.OnRunningInBackground
+Microsoft-Windows-AppModel-Exec  |  6265      |                                                  |  {p0} - Raising Task.OnCancel
+Microsoft-Windows-AppModel-Exec  |  6266      |                                                  |  {p0} - Raised Task.OnCancel
+Microsoft-Windows-AppModel-Exec  |  6267      |                                                  |  {p0} - Raising Task.OnHostDehydarting
+Microsoft-Windows-AppModel-Exec  |  6268      |                                                  |  {p0} - Raised Task.OnHostDehydarting
+Microsoft-Windows-AppModel-Exec  |  6269      |                                                  |  {p0} - Raising Task.OnNavigateTo
+Microsoft-Windows-AppModel-Exec  |  6270      |                                                  |  {p0} - Raised Task.OnNavigateTo
+Microsoft-Windows-AppModel-Exec  |  6271      |                                                  |  {p0} - Raising Task.OnNavigateAway
+Microsoft-Windows-AppModel-Exec  |  6272      |                                                  |  {p0} - Raised Task.OnNavigateAway
+Microsoft-Windows-AppModel-Exec  |  6273      |                                                  |  {p0} - Raising Task.OnShow
+Microsoft-Windows-AppModel-Exec  |  6274      |                                                  |  {p0} - Raised Task.OnShow
+Microsoft-Windows-AppModel-Exec  |  6275      |                                                  |  {p0} - Raising Task.OnHide
+Microsoft-Windows-AppModel-Exec  |  6276      |                                                  |  {p0} - Raised Task.OnHide
+Microsoft-Windows-AppModel-Exec  |  6277      |                                                  |  {p0} - Raising Task.OnSystemKeyPressed
+Microsoft-Windows-AppModel-Exec  |  6278      |                                                  |  {p0} - Raised Task.OnSystemKeyPressed
+Microsoft-Windows-AppModel-Exec  |  6279      |                                                  |  {p0} - Raising Task.OnChildTaskReturned
+Microsoft-Windows-AppModel-Exec  |  6280      |                                                  |  {p0} - Raised Task.OnChildTaskReturned
+Microsoft-Windows-AppModel-Exec  |  6281      |                                                  |  {p0} - Raising Task.OnObscurityChange
+Microsoft-Windows-AppModel-Exec  |  6282      |                                                  |  {p0} - Raised Task.OnObscurityChange
+Microsoft-Windows-AppModel-Exec  |  6283      |                                                  |  {p0} - Raising Task.OnLockScreenVisibilityChange
+Microsoft-Windows-AppModel-Exec  |  6284      |                                                  |  {p0} - Raised Task.OnLockScreenVisibilityChange
+Microsoft-Windows-AppModel-Exec  |  6285      |                                                  |  {p0} - Raising Task.OnClosing
+Microsoft-Windows-AppModel-Exec  |  6286      |                                                  |  {p0} - Raised Task.OnClosing
+Microsoft-Windows-AppModel-Exec  |  6287      |                                                  |  {p0} - RegisterAppCallbacks hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6288      |                                                  |  {p0} - RegisterTaskCallbacks hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6289      |                                                  |  {p0} - TaskReadyToShow hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6290      |                                                  |  {p0} - RequestCloseTask hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6291      |                                                  |  {p0} - CompleteTask hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6292      |                                                  |  {p0} - DestroyTaskCallbacks hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6293      |                                                  |  {p0} - SetHostErrorCode hrHostError = {p1}, hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6294      |                                                  |  {p0} - LaunchSession[{p1}] hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6295      |                                                  |  {p0} - GetTaskState hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6296      |                                                  |  {p0} - SetTaskState hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6297      |                                                  |  {p0} - LaunchChildTask[{p1}] hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6298      |                                                  |  {p0} - GetTaskAppChromeHandle hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6299      |                                                  |  {p0} - SetTaskPauseOnLock hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6300      |                                                  |  {p0} - SetHostObscurity[{p1}] hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6301      |                                                  |  {p0} - Entering Modal state
+Microsoft-Windows-AppModel-Exec  |  6302      |                                                  |  {p0} - Exiting Modal state hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6303      |                                                  |  {p0} - NotifyError: message={p1}, source={p2}
+Microsoft-Windows-AppModel-Exec  |  6304      |                                                  |  {p0} - NotifyEvent XcpHostEvent_ApplicationStarted
+Microsoft-Windows-AppModel-Exec  |  6305      |                                                  |  {p0} - NotifyEvent XcpHostEvent_ApplicationStarting
+Microsoft-Windows-AppModel-Exec  |  6306      |                                                  |  {p0} - NotifyEvent XcpHostEvent_ApplicationConstructing: Assembly = {p1}, NotifyEvent Type = {p2}
+Microsoft-Windows-AppModel-Exec  |  6307      |                                                  |  {p0} - NotifyEvent XcpHostEvent_ApplicationConstructed: Assembly = {p1}, NotifyEvent Type = {p2}
+Microsoft-Windows-AppModel-Exec  |  6308      |                                                  |  {p0} - NotifyEvent XcpHostEvent_AssemblyLoading: Assembly = {p1}
+Microsoft-Windows-AppModel-Exec  |  6309      |                                                  |  {p0} - NotifyEvent XcpHostEvent_AssemblyLoaded: Assembly = {p1}
+Microsoft-Windows-AppModel-Exec  |  6310      |                                                  |  {p0} - NotifyEvent XcpHostEvent_SourceLoading: XAP = {p1}
+Microsoft-Windows-AppModel-Exec  |  6311      |                                                  |  {p0} - NotifyEvent XcpHostEvent_SourceLoaded: XAP = {p1}
+Microsoft-Windows-AppModel-Exec  |  6312      |                                                  |  {p0} - Raising Task.OnRefresh
+Microsoft-Windows-AppModel-Exec  |  6313      |                                                  |  {p0} - Raised Task.OnRefresh
+Microsoft-Windows-AppModel-Exec  |  6314      |                                                  |  {p0} - UITaskHandler::RequestNavigateBack called TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6315      |                                                  |  {p0} - UITaskHandler::RequestNavigateBack hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6316      |                                                  |  {p0} - RequestNavigateBack hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6317      |                                                  |  {p0} - UITaskHandler::SetFullScreen[{p1}] called TaskID:[{p2}]
+Microsoft-Windows-AppModel-Exec  |  6318      |                                                  |  {p0} - UITaskHandler::SetFullScreen hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6319      |                                                  |  {p0} - SetTaskFullScreen hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6320      |                                                  |  {p0} - Raising Task.OnApplicationLayerChange
+Microsoft-Windows-AppModel-Exec  |  6321      |                                                  |  {p0} - Raised Task.OnApplicationLayerChange
+Microsoft-Windows-AppModel-Exec  |  6322      |                                                  |  {p0} - Raising Task.OnRequestOverlayStateChange. State={p1}
+Microsoft-Windows-AppModel-Exec  |  6323      |                                                  |  {p0} - Raised Task.OnRequestOverlayStateChange
+Microsoft-Windows-AppModel-Exec  |  6324      |                                                  |  {p0} - ApplicationLayerChanged NewApplicationLayer={p1}
+Microsoft-Windows-AppModel-Exec  |  6325      |                                                  |  {p0} - ApplicationLayerChange received before RuntimeHostTask is set
+Microsoft-Windows-AppModel-Exec  |  6326      |                                                  |  {p0} - AgTaskHandler::LaunchSession hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6327      |                                                  |  {p0} - AgTaskHandler::LaunchChildTask hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6328      |                                                  |  {p0} - GetSessionDisplayName. DisplayName={p1} hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6329      |                                                  |  {p0} - AgTaskHandler::ConnectionComplete received
+Microsoft-Windows-AppModel-Exec  |  6330      |                                                  |  {p0} - AgTaskHandler::ConnectionComplete hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6331      |                                                  |  {p0} - UITaskHandler::OnNavigationBarVisibilityChange[{p1}]. hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6332      |                                                  |  {p0} - Raising Task.OnModernActivation
+Microsoft-Windows-AppModel-Exec  |  6333      |                                                  |  {p0} - Raised Task.OnModernActivation
+Microsoft-Windows-AppModel-Exec  |  6334      |                                                  |  {p0} - UITaskHandler::LaunchModernChooser hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6335      |                                                  |  {p0} - LaunchChildTask hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6336      |                                                  |  {p0} - LaunchModernChooser[{p1}] hr = {p2}
+Microsoft-Windows-AppModel-Exec  |  6337      |                                                  |  {p0} - TaskFirstPresentCompleted = {p1}
+Microsoft-Windows-AppModel-Exec  |  6338      |                                                  |  {p0} - UITaskHandler::FirstPresentCompleted called TaskID:[{p1}]
+Microsoft-Windows-AppModel-Exec  |  6339      |                                                  |  {p0} - UITaskHandler::FirstPresentCompleted hr = {p1}
+Microsoft-Windows-AppModel-Exec  |  6350      |                                                  |
+Microsoft-Windows-AppModel-Exec  |  6351      |                                                  |
+Microsoft-Windows-AppModel-Exec  |  8100      |                                                  |  AgHost - FrameworkView::Initialize HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8101      |                                                  |  AgHost - FrameworkView::SetWindow HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8102      |                                                  |  AgHost - FrameworkView::Load HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8103      |                                                  |  AgHost - FrameworkView::Run HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8104      |                                                  |  AgHost - FrameworkView::Uninitialize HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8105      |                                                  |  AgHost - FrameworkView::OnActivated PreviousExecutionState={p1_UInt32} ActivationKind={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8106      |                                                  |  AgHost - FrameworkView::OnExiting HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8107      |                                                  |  AgHost - FrameworkView::OnResuming HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8108      |                                                  |  AgHost - FrameworkView::OnSuspending HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8110      |                                                  |  AgHostSvcs - EmCancelTaskInstance TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8111      |                                                  |  AgHostSvcs - EmCreateTaskInstance TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8112      |                                                  |  AgHostSvcs - EmExitTaskHost HRESULT={p1_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8113      |                                                  |  AgHostSvcs - EmPauseTaskInstance TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8114      |                                                  |  AgHostSvcs - EmResumeTaskInstance TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8115      |                                                  |  AgHostSvcs - EmSetTaskInstanceApplicationUri TaskID={p1_UInt32} ApplicationUri={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8116      |                                                  |  AgHostSvcs - EmSetTaskInstanceArguments TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8117      |                                                  |  AgHostSvcs - EmSetTaskInstanceBackgroundTaskId TaskID={p1_UInt32} BackgroundTaskID={p2_GUID} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8118      |                                                  |  AgHostSvcs - EmSetTaskInstanceNavigationPage TaskID={p1_UInt32} NavigationPage={p2_String} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8119      |                                                  |  AgHostSvcs - EmStartTaskInstance TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8120      |                                                  |  AgHostSvcs - TaskCompleted TaskID={p1_UInt32} CompletionCode={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8121      |                                                  |  AgHostSvcs - TaskPaused TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8122      |                                                  |  AgHostSvcs - TaskRunning TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8123      |                                                  |  AgHostSvcs - TaskRunningInBackground TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8124      |                                                  |  AgHostSvcs - TaskRunningInForeground TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8125      |                                                  |  AgHostSvcs - EmWaitForTaskInstanceCompleted TaskID={p1_UInt32} CompletionCode={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8126      |                                                  |  AgHostSvcs - OnModernContractActivation TaskID={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8200      |                                                  |  EEC: GetExtendedExecutionBroker ProcessId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8201      |                                                  |  EEC: RegisterRevokedHandler ProcessId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8202      |                                                  |  EEC: RequestExtendedExecution ProcessId={p1_UInt32} Reason={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8203      |                                                  |  EEC: ExtensionRevokedCallback ProcessId={p1_UInt32} Reason={p2_UInt32} HRESULT={p3_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8204      |                                                  |  EEC: CompleteExtendedExecution ProcessId={p1_UInt32} HRESULT={p2_UInt32}
+Microsoft-Windows-AppModel-Exec  |  8300      |                                                  |  ODB: LaunchTask - UserSid: {UserSid} SessionId: {SessionId} PackageFullName: {PackageFullName} EntryPoint: {EntryPoint} WorkItemId: {WorkItemId} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  8301      |                                                  |  ODB: CancelTask - UserSid: {UserSid} SessionId: {SessionId} WorkItemId: {WorkItemId} RudeTerminate: {RudeTerminate} CancellationReason: {CancelationReason} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  8302      |                                                  |  ODB: BeforeTaskActivated - WorkItemId: {WorkItemId} PsmKey: {PsmKey} HostJobType: {HostJobType} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  8303      |                                                  |  ODB: TaskActivated - WorkItemId: {WorkItemId} TaskInstanceId: {TaskInstanceId} PsmKey: {PsmKey} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  8304      |                                                  |  ODB: TaskCompleted - WorkItemId: {WorkItemId} TaskInstanceId: {TaskInstanceId} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  8305      |                                                  |  ODB: TaskCanceled - WorkItemId: {WorkItemId} TaskInstanceId: {TaskInstanceId} HRESULT: {HRESULT}.
+Microsoft-Windows-AppModel-Exec  |  8306      |                                                  |
+Microsoft-Windows-AppModel-Exec  |  8307      |                                                  |  ODB: CancelBackgroundTaskWithWnf WorkItemId: {p1_GUID}.
+Microsoft-Windows-AppModel-Exec  |  10000     |                                                  |  {p0}
+Microsoft-Windows-AppModel-Exec  |  10001     |                                                  |  {p1}: {p2}
+Microsoft-Windows-AppModel-Exec  |  10002     |                                                  |  *** ExecFailFast ***   {p1_String}
+Microsoft-Windows-AppModel-Exec  |  10010     |                                                  |  PreInstallTaskPolicy: Activate task for User = {UserSid} HRESULT = {HRESULT}
+Microsoft-Windows-AppModel-Exec  |  10011     |                                                  |  PreInstallTaskPolicy: BiActivate WorkItemId = {WorkItemId} for user = {UserSid}, PackageFullName = {PackageFullName}, EntryPoint = {EntryPoint}, HRESULT = {HRESULT}

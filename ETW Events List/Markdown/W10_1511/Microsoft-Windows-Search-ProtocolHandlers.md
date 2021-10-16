@@ -1,0 +1,16 @@
+Provider                                   |  Event ID  |  Channel                                               |  Message
+-------------------------------------------|------------|--------------------------------------------------------|---------
+Microsoft-Windows-Search-ProtocolHandlers  |  28        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  29        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  30        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  31        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  34        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  35        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  36        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  37        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  38        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  39        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  40        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  41        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  58        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |
+Microsoft-Windows-Search-ProtocolHandlers  |  62        |  Microsoft-Windows-Search-ProtocolHandlers/Diagnostic  |

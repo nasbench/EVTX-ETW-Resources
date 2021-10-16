@@ -1,0 +1,10 @@
+Provider                  |  Event ID  |  Channel                            |  Message
+--------------------------|------------|-------------------------------------|-------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Sdstor  |  100       |  Microsoft-Windows-Sdstor/Analytic  |  Request servicing time taken by SD stack.
+Microsoft-Windows-Sdstor  |  101       |  Microsoft-Windows-Sdstor/Analytic  |  Packed Command Read Received.Total Count: {PackedCommandCount}Number of Packed Irps: {NumIrpsPacked}
+Microsoft-Windows-Sdstor  |  102       |  Microsoft-Windows-Sdstor/Analytic  |  Packed Command Write Received.Total Count: {PackedCommandCount}Number of Packed Irps: {NumIrpsPacked}
+Microsoft-Windows-Sdstor  |  103       |  Microsoft-Windows-Sdstor/Analytic  |  HPI Timer Queued
+Microsoft-Windows-Sdstor  |  104       |  Microsoft-Windows-Sdstor/Analytic  |  HPI Irp Sent
+Microsoft-Windows-Sdstor  |  105       |  Microsoft-Windows-Sdstor/Analytic  |  HPI Irp Completed (0x{ResultCode})
+Microsoft-Windows-Sdstor  |  106       |  Microsoft-Windows-Sdstor/Analytic  |  Flush received
+Microsoft-Windows-Sdstor  |  107       |  Microsoft-Windows-Sdstor/Analytic  |  Discard received (LBA {LBA} Length {Length})

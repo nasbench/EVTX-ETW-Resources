@@ -1,0 +1,5 @@
+Provider                             |  Event ID  |  Channel                                       |  Message
+-------------------------------------|------------|------------------------------------------------|---------
+Microsoft-Windows-Tethering-Station  |  1001      |  Microsoft-Windows-Tethering-Station/Analytic  |
+Microsoft-Windows-Tethering-Station  |  1002      |  Microsoft-Windows-Tethering-Station/Analytic  |
+Microsoft-Windows-Tethering-Station  |  1003      |  Microsoft-Windows-Tethering-Station/Analytic  |

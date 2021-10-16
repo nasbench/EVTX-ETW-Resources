@@ -1,0 +1,6 @@
+Provider                                   |  Event ID  |  Channel                                                |  Message
+-------------------------------------------|------------|---------------------------------------------------------|---------
+Microsoft-Windows-PriResources-Deployment  |  1         |  Microsoft-Windows-PriResources-Deployment/Diagnostic   |
+Microsoft-Windows-PriResources-Deployment  |  2         |  Microsoft-Windows-PriResources-Deployment/Diagnostic   |
+Microsoft-Windows-PriResources-Deployment  |  1000      |  Microsoft-Windows-PriResources-Deployment/Operational  |
+Microsoft-Windows-PriResources-Deployment  |  1001      |  Microsoft-Windows-PriResources-Deployment/Operational  |

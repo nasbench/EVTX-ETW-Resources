@@ -1,0 +1,291 @@
+Provider                          |  Event ID  |  Channel                                       |  Message
+----------------------------------|------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WMPNSS-Service  |  1001      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1002      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1003      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1004      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1005      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1006      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1007      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1008      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1009      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1010      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1011      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1012      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1013      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1014      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1015      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1016      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1017      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1018      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1019      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1020      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1021      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1022      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1023      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1024      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1025      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1026      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1027      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1028      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1029      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1030      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1031      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1032      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1033      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1034      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1035      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1036      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1037      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1038      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1039      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1040      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1041      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1042      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1043      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1044      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1045      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1046      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1047      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1048      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1049      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1050      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1051      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1052      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1053      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  1054      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2001      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2002      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2003      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2004      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2005      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2006      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2007      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2008      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2009      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2010      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2011      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2012      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2013      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2014      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2015      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2016      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2017      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  2018      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3001      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3002      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3003      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3004      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3005      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3006      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3007      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3008      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3009      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3010      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3011      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3012      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3013      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3014      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3015      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3016      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3017      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3018      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3019      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3020      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3021      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3022      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3023      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3024      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3025      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3026      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3027      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3028      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3029      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3030      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3031      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3032      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3033      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3034      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  3035      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4001      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4002      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4003      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4004      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4005      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4006      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4007      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4008      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4009      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4010      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4011      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4012      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4013      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4014      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4015      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4016      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4017      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4018      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4019      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4020      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4021      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4022      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4023      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4024      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4025      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4026      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4027      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4028      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4029      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4030      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4031      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4032      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4033      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4034      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4035      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4036      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4037      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4038      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4039      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4040      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4041      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4042      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4043      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4044      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4045      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4046      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4047      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4048      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4049      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4050      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4051      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4052      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4053      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4054      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4055      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4056      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4057      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4058      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4059      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4060      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4061      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4062      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4063      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4064      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4065      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  4066      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5001      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5002      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5003      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5004      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5005      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5006      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5007      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5008      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5009      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5010      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5011      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5012      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5013      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5014      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5015      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5016      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5017      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5018      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5019      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5020      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5021      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5022      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5023      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5024      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  5025      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6001      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6002      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6003      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6004      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6005      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6006      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6007      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6008      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6009      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6010      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6011      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6012      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6013      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6101      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6102      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6103      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6104      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6105      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6106      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6107      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6108      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  6109      |  Microsoft-Windows-WMPNSS-Service/Diagnostic   |
+Microsoft-Windows-WMPNSS-Service  |  14100     |  Microsoft-Windows-WMPNSS-Service/Operational  |  IPv4 support has been disabled in WMPNetworkSvc because network address change monitoring encountered error '{ErrorCode}'.
+Microsoft-Windows-WMPNSS-Service  |  14101     |  Microsoft-Windows-WMPNSS-Service/Operational  |  Invalid request code {ErrorCode}.
+Microsoft-Windows-WMPNSS-Service  |  14102     |  Microsoft-Windows-WMPNSS-Service/Operational  |  While uninstalling service '{ServiceName}', the type library was not unregistered due to error '{ErrorCode}'.
+Microsoft-Windows-WMPNSS-Service  |  14103     |  Microsoft-Windows-WMPNSS-Service/Operational  |  While uninstalling service '{ServiceName}', the registry key 'HKLM\SOFTWARE\Microsoft\Windows Media Player NSS\3.0' was not deleted due to error '{ErrorCode}'. You must remove this registry key manually.
+Microsoft-Windows-WMPNSS-Service  |  14104     |  Microsoft-Windows-WMPNSS-Service/Operational  |  The Windows Media Player Network Sharing Service cannot process the request for URI '{URI}' from IP address '{IP Address}!S!' due to error '{ErrorCode}'.
+Microsoft-Windows-WMPNSS-Service  |  14200     |  System                                        |  '{ServiceName}' service was installed.
+Microsoft-Windows-WMPNSS-Service  |  14201     |  System                                        |  '{ServiceName}' service is already installed.
+Microsoft-Windows-WMPNSS-Service  |  14202     |  System                                        |  '{ServiceName}' service was uninstalled.
+Microsoft-Windows-WMPNSS-Service  |  14203     |  System                                        |  '{ServiceName}' service was uninstalled; however, you might need to restart your computer to complete the process.
+Microsoft-Windows-WMPNSS-Service  |  14204     |  System                                        |  Service '{ServiceName}' started.
+Microsoft-Windows-WMPNSS-Service  |  14205     |  System                                        |  Service '{ServiceName}' stopped.
+Microsoft-Windows-WMPNSS-Service  |  14206     |  Microsoft-Windows-WMPNSS-Service/Operational  |  Media server '{FriendlyName}' was successfully initialized and is sharing media with network media devices.
+Microsoft-Windows-WMPNSS-Service  |  14207     |  Microsoft-Windows-WMPNSS-Service/Operational  |  Media server '{FriendlyName}' was removed and has stopped sharing media with network media devices.
+Microsoft-Windows-WMPNSS-Service  |  14210     |  System                                        |  The monitored folders on media server '{FriendlyName}' changed.  Windows Media Player is updating security permissions for any included folders to enable media sharing.
+Microsoft-Windows-WMPNSS-Service  |  14300     |  System                                        |  Service '{ServiceName}' was not installed because OpenSCManager encountered access denied error '{ErrorCode}'. Try using an elevated administrator account to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14301     |  System                                        |  Service '{ServiceName}' was not installed because OpenSCManager encountered unknown error '{ErrorCode}'. Restart your computer, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14302     |  System                                        |  Service '{ServiceName}' was not installed because CreateService encountered error '{ErrorCode}'. Restart your computer, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14303     |  System                                        |  Service '{ServiceName}' was not installed because RegOpenKey(HKLM\SYSTEM\CurrentControlSet\Services\{ServiceName}) encountered error '{ErrorCode}'. Verify that this key exists and that the Administrators group has permission to modify this key, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14304     |  System                                        |  Service '{ServiceName}' was not installed because RegisterTypeLib() encountered error '{ErrorCode2}'. Restart your computer, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14305     |  System                                        |  Service '{ServiceName}' was not installed because LoadTypeLib() encountered error '{ErrorCode2}'. Restart your computer, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14306     |  System                                        |  Service '{ServiceName}' was not installed because registry keys under 'HKLM\SOFTWARE\Microsoft\Windows Media Player NSS\3.0' could not be created due to error '{ErrorCode1}'. Verify that the Administrators group has permission to modify this key and its parent keys, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14307     |  System                                        |  Service '{ServiceName}' was not installed because the ACL required to register with the Windows HTTP server could not be created (error '{ErrorCode}'). Restart your computer, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14308     |  System                                        |  Service '{ServiceName}' was not installed because HttpInitialize encountered error '{ErrorCode}'. Try using an elevated administrator account to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14309     |  System                                        |  Service '{ServiceName}' was not installed because HTTP reservation encountered error '{ErrorCode}'. Restart your computer, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14310     |  System                                        |  Service '{ServiceName}' was not installed because HttpTerminate encountered error '{ErrorCode}'. Restart your computer, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14311     |  System                                        |  Service '{ServiceName}' was not uninstalled because OpenSCManager encountered access denied error '{ErrorCode}'. Try using an elevated administrator account to uninstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14312     |  System                                        |  Service '{ServiceName}' was not uninstalled because OpenSCManager encountered unknown error '{ErrorCode}'. Restart your computer, and then try to reinstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14313     |  System                                        |  Service '{ServiceName}' was not uninstalled because OpenService encountered unknown error '{ErrorCode}'. Restart your computer, and then try to uninstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14314     |  System                                        |  Service '{ServiceName}' was not uninstalled because DeleteService encountered unknown error '{ErrorCode}'. Restart your computer, and then try to uninstall the service.
+Microsoft-Windows-WMPNSS-Service  |  14315     |  System                                        |  The control handler for service '{ServiceName}' could not be registered due to error {ErrorCode}. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14316     |  System                                        |  Service '{ServiceName}' was not initialized because CoInitializeEx encountered error {ErrorCode}. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14317     |  System                                        |  Service '{ServiceName}' was not initialized because CoInitializeSecurity encountered error {ErrorCode}. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14318     |  System                                        |  Service '{ServiceName}' was not initialized due to unknown error {ErrorCode}. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14319     |  System                                        |  Service '{ServiceName}' did not start because Group Policy is preventing Windows Media Player from sharing media with other devices.
+Microsoft-Windows-WMPNSS-Service  |  14320     |  System                                        |  Service '{ServiceName}' is shutting down because Group Policy is preventing Windows Media Player from sharing media with other devices.
+Microsoft-Windows-WMPNSS-Service  |  14321     |  System                                        |  Service '{ServiceName}' did not start correctly due to out-of-memory error '{ErrorCode}'. Close other programs or restart your computer and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14322     |  System                                        |  Service '{ServiceName}' did not start correctly because MFStartup encountered error '{ErrorCode}'. If possible, reinstall Windows Media Player.
+Microsoft-Windows-WMPNSS-Service  |  14323     |  System                                        |  Service '{ServiceName}' did not start correctly because MFCreateWMPMDEOpCenter encountered error '{ErrorCode}'. If possible, reinstall Windows Media Player.
+Microsoft-Windows-WMPNSS-Service  |  14326     |  System                                        |  Service '{ServiceName}' did not start correctly because the event database creation encountered error '{ErrorCode}'. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14327     |  System                                        |  Service '{ServiceName}' did not start correctly because worker thread intialization encountered error '{ErrorCode}'. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14328     |  System                                        |  Service '{ServiceName}' did not start correctly because a handle to a worker thread could not be added due to error '{ErrorCode}'. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14329     |  System                                        |  Service '{ServiceName}' did not start correctly because the registry could not be updated due to error '{ErrorCode}'. If possible, reinstall Windows Media Player.
+Microsoft-Windows-WMPNSS-Service  |  14330     |  System                                        |  Service '{ServiceName}' did not start correctly because the service is running the wrong binary or is running with the wrong account (error '{ErrorCode}'). The service binary should be wmpnetwk.exe and the account should be 'NT AUTHORITY\NetworkService'. If possible, reinstall Windows Media Player.
+Microsoft-Windows-WMPNSS-Service  |  14331     |  System                                        |  Service '{ServiceName}' did not start correctly because CoInitialize encountered error '{ErrorCode}'. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14333     |  System                                        |  Service '{ServiceName}' did not start correctly due to error '{ErrorCode}'. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14337     |  System                                        |  Service '{ServiceName}' did not start correctly because CreateMediaDevices encountered error '{ErrorCode}'. Restart your computer, and then try to restart the service.
+Microsoft-Windows-WMPNSS-Service  |  14338     |  System                                        |  A new media server was not initialized because CoCreateInstance(CLSID_UPnPRegistrar) encountered error '{ErrorCode}'. Verify that the UPnPHost service is running and that the UPnPHost component of Windows is installed properly.
+Microsoft-Windows-WMPNSS-Service  |  14339     |  System                                        |  A new media server was not initialized because QueryInterface(IUPnPReregistrar) encountered error '{ErrorCode}'. Verify that the UPnPHost service is running and that the UPnPHost component of Windows is installed properly.
+Microsoft-Windows-WMPNSS-Service  |  14340     |  System                                        |  A new media server was not initialized because GetFriendlyName() encountered error '{ErrorCode}'. In Windows Media Player, turn off media sharing, change the name of the shared library, and then turn sharing back on.
+Microsoft-Windows-WMPNSS-Service  |  14341     |  System                                        |  A new media server was not initialized because GetSerialNumber() encountered error '{ErrorCode}'. In Windows Media Player, turn off media sharing, and then turn it back on.
+Microsoft-Windows-WMPNSS-Service  |  14342     |  System                                        |  A new media server was not initialized because the model name could not be retrieved due to error '{ErrorCode}'. Delete the value 'ModelName' in the registry key HKLM\SOFTWARE\Microsoft\Windows Media Player NSS\3.0, and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14343     |  System                                        |  A new media server was not initialized due to out-of-memory error '{ErrorCode}'. Close other programs or restart your computer and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14345     |  System                                        |  A new media server was not initialized because device document generation encountered error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service. If the problem persists, reinstall Windows Media Player if possible.
+Microsoft-Windows-WMPNSS-Service  |  14346     |  System                                        |  A new media server was not initialized because RegisterRunningDevice() encountered error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14347     |  System                                        |  A new media server was not initialized because the registry key 'HKLM\SOFTWARE\Microsoft\Windows Media Player NSS\3.0\Media Servers' could not be updated (error '{ErrorCode}'). Delete this registry key, and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14348     |  System                                        |  A new media server was not initialized due to error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service. If the problem persists, in Windows Media Player, turn off media sharing, and then turn it back on.
+Microsoft-Windows-WMPNSS-Service  |  14349     |  System                                        |  A new media server was not initialized because the Windows Media Delivery Engine did not initialize due to error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service. If the problem persists, reinstall Windows Media Player if possible.
+Microsoft-Windows-WMPNSS-Service  |  14351     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized because the content provider's serial number could not be retrieved due to error '{ErrorCode}'. In Windows Media Player, turn off media sharing, and then turn it back on. If the problem persists, reinstall Windows Media Player if possible.
+Microsoft-Windows-WMPNSS-Service  |  14352     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized due to error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service. If the problem persists, reinstall Windows Media Player if possible.
+Microsoft-Windows-WMPNSS-Service  |  14353     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized due to error '{ErrorCode}' when adding the URL '{URL}!S!'. Restart your computer, and then restart the WMPNetworkSvc service. If the problem persists, reinstall Windows Media Player if possible.
+Microsoft-Windows-WMPNSS-Service  |  14354     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized due to out-of-memory error '{ErrorCode}'. Close other programs or restart your computer and then try to restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14355     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized because MFCreateNetVRoot() encountered error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14356     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized because RegisterDelegate() encountered error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14357     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized because GetSupportedProfiles() encountered error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14358     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized because enumeration of content profiles encountered error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14359     |  System                                        |  A media delivery engine with ID '{MDE ID}' was not initialized because AddProfile() encountered error '{ErrorCode}'. Restart your computer, and then restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14360     |  Microsoft-Windows-WMPNSS-Service/Operational  |  IPv4 support has been disabled in WMPNetworkSvc because NotifyAddrChange encountered error '{ErrorCode}'. To enable IPv4 support, restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14361     |  Microsoft-Windows-WMPNSS-Service/Operational  |  IPv4 support has been disabled in WMPNetworkSvc because IP address table retrieval encountered error '{ErrorCode}'. To enable IPv4 support, restart the WMPNetworkSvc service.
+Microsoft-Windows-WMPNSS-Service  |  14372     |  Microsoft-Windows-WMPNSS-Service/Operational  |  A media delivery engine was not initialized because the SSL certificate could not be retrieved from the local machine system certificate store. The error encountered was '{MDE ID}'. In Windows Media Player, turn off media sharing, and then turn it back on.

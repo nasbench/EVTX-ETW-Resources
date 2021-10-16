@@ -1,0 +1,71 @@
+Provider                          |  Event ID  |  Channel                                       |  Message
+----------------------------------|------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-SystemSettings  |  101       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  102       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  103       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  106       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  107       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  111       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  112       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  113       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  114       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  115       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  119       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  121       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  131       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  201       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  202       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  211       |  Microsoft-Windows-SystemSettings/Debug        |  Global Toasts Setting has been changed: current setting is {isEnabled}
+Microsoft-Windows-SystemSettings  |  212       |  Microsoft-Windows-SystemSettings/Debug        |  Audio Setting has been changed: current setting is {isEnabled}
+Microsoft-Windows-SystemSettings  |  213       |  Microsoft-Windows-SystemSettings/Debug        |  Application Setting has been changed: AppId = {AppID}, Setting = {isEnabled}, AppType = {AppType}
+Microsoft-Windows-SystemSettings  |  214       |  Microsoft-Windows-SystemSettings/Debug        |  AppList Visibility has changed: Visibility is set to: {isEnabled}
+Microsoft-Windows-SystemSettings  |  215       |  Microsoft-Windows-SystemSettings/Debug        |  Group Policy Visibility has changed: Visibility is set to: {isEnabled}
+Microsoft-Windows-SystemSettings  |  216       |  Microsoft-Windows-SystemSettings/Debug        |  Setting Sync has been scheduled for Package {PackageFamilyName} on behalf of App {AppUserModelID}
+Microsoft-Windows-SystemSettings  |  217       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  218       |  Microsoft-Windows-SystemSettings/Debug        |  Lock Screen Toast Setting has been changed: current setting is {isEnabled}
+Microsoft-Windows-SystemSettings  |  219       |  Microsoft-Windows-SystemSettings/Debug        |  Title String of Global Toggle has been changed: Is Temporary Suspend {isEnabled}
+Microsoft-Windows-SystemSettings  |  240       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  241       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  242       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  243       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  244       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  245       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  246       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  247       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  248       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  249       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  250       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  251       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  252       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  301       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  302       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  350       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  351       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  400       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  401       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  402       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  403       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  451       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  452       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  461       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  462       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  471       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  472       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  473       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  474       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  481       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  482       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  483       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  484       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  490       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  491       |  Microsoft-Windows-SystemSettings/Debug        |
+Microsoft-Windows-SystemSettings  |  500       |  Microsoft-Windows-SystemSettings/Operational  |  Attempted to add device to workplace. Result is {ResultCode} ending at phase {CorpDeviceOperationPhase}.
+Microsoft-Windows-SystemSettings  |  501       |  Microsoft-Windows-SystemSettings/Operational  |  Attempted to remove device from workplace. Result is {ResultCode}.
+Microsoft-Windows-SystemSettings  |  510       |  Microsoft-Windows-SystemSettings/Operational  |  Attempted to turn on workplace device management. Result is {ResultCode} ending at phase {CorpDeviceOperationPhase}.
+Microsoft-Windows-SystemSettings  |  511       |  Microsoft-Windows-SystemSettings/Operational  |  Attempted to turn off workplace device management. Result is {ResultCode}.
+Microsoft-Windows-SystemSettings  |  512       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  513       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  521       |  Microsoft-Windows-SystemSettings/Debug        |  Dialog or Flyout with Flow id = {FlowId} started.
+Microsoft-Windows-SystemSettings  |  522       |  Microsoft-Windows-SystemSettings/Debug        |  Dialog or Flyout with Flow id = {FlowId} stopped.
+Microsoft-Windows-SystemSettings  |  600       |  Microsoft-Windows-SystemSettings/Diagnostic   |
+Microsoft-Windows-SystemSettings  |  601       |  Microsoft-Windows-SystemSettings/Diagnostic   |

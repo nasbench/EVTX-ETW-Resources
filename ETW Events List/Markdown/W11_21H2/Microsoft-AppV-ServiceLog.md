@@ -1,0 +1,5 @@
+Provider                   |  Event ID  |  Channel                      |  Message
+---------------------------|------------|-------------------------------|--------------------------------
+Microsoft-AppV-ServiceLog  |  1         |  Microsoft-AppV-Client/Debug  |  {stringValue1}
+Microsoft-AppV-ServiceLog  |  2         |  Microsoft-AppV-Client/Debug  |  {WString1}
+Microsoft-AppV-ServiceLog  |  3         |  Microsoft-AppV-Client/Debug  |  {Message} [{Function}; {Line}]

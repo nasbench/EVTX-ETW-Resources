@@ -1,0 +1,4 @@
+Provider                                             |  Event ID  |  Channel                                |  Message
+-----------------------------------------------------|------------|-----------------------------------------|-------------------
+Microsoft-Windows-Base-Filtering-Engine-Connections  |  2000      |  BFE IPsec Connections Operational Log  |  New Connection
+Microsoft-Windows-Base-Filtering-Engine-Connections  |  2001      |  BFE IPsec Connections Operational Log  |  Connection Closed

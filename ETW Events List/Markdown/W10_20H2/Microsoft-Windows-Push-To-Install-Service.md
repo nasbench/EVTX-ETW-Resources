@@ -1,0 +1,8 @@
+Provider                                   |  Event ID  |  Channel                              |  Message
+-------------------------------------------|------------|---------------------------------------|--------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Push-To-Install-Service  |  6001      |  Microsoft-Windows-Store/Operational  |  {Message}Error Code: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Push-To-Install-Service  |  6002      |  Microsoft-Windows-Store/Operational  |  {Message}Exception Details: {Exception Details}Function: {Function}Source: {File Name} ({Line Number})
+Microsoft-Windows-Push-To-Install-Service  |  6003      |  Microsoft-Windows-Store/Operational  |  {Message}Error Code: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Push-To-Install-Service  |  6004      |  Microsoft-Windows-Store/Operational  |  {Message}Error Code: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Push-To-Install-Service  |  6005      |  Microsoft-Windows-Store/Operational  |  {Message}Error Code: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Push-To-Install-Service  |  6006      |  Microsoft-Windows-Store/Operational  |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}

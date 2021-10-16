@@ -1,0 +1,11 @@
+Provider                          |  Event ID  |  Channel                                 |  Message
+----------------------------------|------------|------------------------------------------|----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Containers-CCG  |  1         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard instantiated the plugin: {First}.
+Microsoft-Windows-Containers-CCG  |  2         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard fetched gmsa credentials for {First} using plugin: {Second}.
+Microsoft-Windows-Containers-CCG  |  3         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard failed to parse the credential spec. Error: {error}
+Microsoft-Windows-Containers-CCG  |  4         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard failed to instantiate the plugin: {First}. Error: {Second}
+Microsoft-Windows-Containers-CCG  |  5         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard failed to initialize the plugin: {First}. Error: {Second}
+Microsoft-Windows-Containers-CCG  |  6         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard failed to fetch credentials from the plugin: {First}. Error: {Second}
+Microsoft-Windows-Containers-CCG  |  7         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard is refetching the credentials using the plugin: {First}.
+Microsoft-Windows-Containers-CCG  |  8         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard failed to fetch gmsa credentials for {First} using plugin {Second}. Error reason: {Third}
+Microsoft-Windows-Containers-CCG  |  9         |  Microsoft-Windows-Containers-CCG/Admin  |  Container Credential Guard failed to parse the plugin GUID in the credential spec. Error: {First}

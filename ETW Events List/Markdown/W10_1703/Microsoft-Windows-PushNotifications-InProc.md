@@ -1,0 +1,12 @@
+Provider                                    |  Event ID  |  Channel                                           |  Message
+--------------------------------------------|------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-PushNotifications-InProc  |  1         |  Microsoft-Windows-PushNotifications-InProc/Debug  |  WpnInPrc has encountered an error in file {FileName}, function {FunctionName}, line {LineNumber}: {ErrorCode}.
+Microsoft-Windows-PushNotifications-InProc  |  2         |  Microsoft-Windows-PushNotifications-InProc/Debug  |
+Microsoft-Windows-PushNotifications-InProc  |  3         |  Microsoft-Windows-PushNotifications-InProc/Debug  |
+Microsoft-Windows-PushNotifications-InProc  |  100       |  Microsoft-Windows-PushNotifications-InProc/Debug  |  Setting Handler has been initalized with Package Family: {PackageFamilyName}.
+Microsoft-Windows-PushNotifications-InProc  |  101       |  Microsoft-Windows-PushNotifications-InProc/Debug  |  Setting Unit created with Package Family: {PackageFamilyName}, AppUserModelId: {AppUserModelId}, SettingValue: {SettingValue}.
+Microsoft-Windows-PushNotifications-InProc  |  102       |  Microsoft-Windows-PushNotifications-InProc/Debug  |  {NumApps} Setting Units created for Package Family: {PackageFamilyName}.
+Microsoft-Windows-PushNotifications-InProc  |  103       |  Microsoft-Windows-PushNotifications-InProc/Debug  |  Setting Units applied for Package Family: {PackageFamilyName}, AppUserModelId: {AppUserModelId}, SettingValue: {SettingValue}.
+Microsoft-Windows-PushNotifications-InProc  |  104       |  Microsoft-Windows-PushNotifications-InProc/Debug  |  Polling Setting Units applied for Package Family: {PackageFamilyName}, AppUserModelId: {AppUserModelId}
+Microsoft-Windows-PushNotifications-InProc  |  105       |  Microsoft-Windows-PushNotifications-InProc/Debug  |  Polling Setting Unit Created for Package Family: {PackageFamilyName}, AppUserModelId: {AppUserModelId}
+Microsoft-Windows-PushNotifications-InProc  |  106       |  Microsoft-Windows-PushNotifications-InProc/Debug  |  {NumApps} Polling Setting Units created for Package Family: {PackageFamilyName}.

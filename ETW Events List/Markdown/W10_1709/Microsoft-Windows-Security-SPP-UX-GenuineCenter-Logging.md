@@ -1,0 +1,4 @@
+Provider                                                 |  Event ID  |  Channel                                                              |  Message
+---------------------------------------------------------|------------|-----------------------------------------------------------------------|----------------------------------------------------------------------------
+Microsoft-Windows-Security-SPP-UX-GenuineCenter-Logging  |  200       |  Microsoft-Windows-Security-SPP-UX-GenuineCenter-Logging/Operational  |  Windows Activation logged the following information:{shKernelCacheValues}
+Microsoft-Windows-Security-SPP-UX-GenuineCenter-Logging  |  201       |  Microsoft-Windows-Security-SPP-UX-GenuineCenter-Logging/Operational  |  Windows Activation logged the following error: {shErrorCode}

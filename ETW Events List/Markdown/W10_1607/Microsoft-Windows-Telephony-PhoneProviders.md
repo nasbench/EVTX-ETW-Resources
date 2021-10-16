@@ -1,0 +1,267 @@
+Provider                                    |  Event ID  |  Channel  |  Message
+--------------------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Telephony-PhoneProviders  |  1         |           |  [ERROR] originated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
+Microsoft-Windows-Telephony-PhoneProviders  |  2         |           |  [ERROR] propagated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
+Microsoft-Windows-Telephony-PhoneProviders  |  10        |           |  {Prop_UnicodeString}
+Microsoft-Windows-Telephony-PhoneProviders  |  100       |           |  Enqueued verb {Prop_VerbName}, callid {Prop_CallId} (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  101       |           |  Enqueued verb {Prop_VerbName}, callids {Prop_CallId1}, {Prop_CallId2} (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  102       |           |  Enqueued verb Dial, callid {Prop_CallId}, callType {Prop_CallType}, calleridoption {Prop_CallerIdOption} (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  103       |           |  Dequeued verb {Prop_VerbName}, callid {Prop_CallId} (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  104       |           |  Dequeued verb {Prop_VerbName}, callids {Prop_CallId1}, {Prop_CallId2} (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  105       |           |  Dequeued verb Dial, callid {Prop_CallId}, callType {Prop_CallType}, calleridoption {Prop_CallerIdOption} (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  106       |           |  Verb completed with HRESULT {HResult}; host notified (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  107       |           |  Verb completed with HRESULT {HResult}; host not notified (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  108       |           |  Began tracking async CellVoice request id {Prop_HexInt32_1} (for completion context {Prop_HexInt32_2})
+Microsoft-Windows-Telephony-PhoneProviders  |  109       |           |  Stopped tracking async CellVoice request id {Prop_HexInt32_1} (for completion context {Prop_HexInt32_2})
+Microsoft-Windows-Telephony-PhoneProviders  |  110       |           |  Enqueued async CellVoice request id {Prop_HexInt32_1} completion with HRESULT {Prop_HexInt32_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  111       |           |  Gsm call manager called I3GPPCallModel::{Prop_UnicodeString} with async request id {AsyncId} for callid {CallId} (cellvoice callid {CellVoiceCallId})
+Microsoft-Windows-Telephony-PhoneProviders  |  112       |           |  Gsm call manager called I3GPPCallModel::{Prop_UnicodeString} with async request id {AsyncId} for callids {CallId1}, {CallId2}
+Microsoft-Windows-Telephony-PhoneProviders  |  113       |           |  Gsm call manager called I3GPPCallModel::RequestOutgoingCall with async request id {AsyncId} for callid {CallId}, callType {CallType} (no cellvoice callid)
+Microsoft-Windows-Telephony-PhoneProviders  |  114       |           |  CallManager got call progress update for cellvoiceId {CellVoiceCallId}; status {Status}; direction {Direction}; number {NumberPres}; name {NamePres}; party {Multiparty}; flags {Flags}; type {Type}; valid params {ParamsMask};
+Microsoft-Windows-Telephony-PhoneProviders  |  115       |           |  CellVoice returned failure {Prop_HexInt32} to get subscriber number
+Microsoft-Windows-Telephony-PhoneProviders  |  116       |           |  CellVoice returned failure {Prop_HexInt32} to get voicemail number
+Microsoft-Windows-Telephony-PhoneProviders  |  117       |           |  CellVoice get IMSI completed with error {Prop_HexInt32}
+Microsoft-Windows-Telephony-PhoneProviders  |  118       |           |  Resetting VVM state; old MCC/MNC/nameDiff {Prop_MCC} {Prop_MNC} {Prop_NameDiff}
+Microsoft-Windows-Telephony-PhoneProviders  |  119       |           |  Used RIL system type {SystemType}; got signal strength {IntParam}
+Microsoft-Windows-Telephony-PhoneProviders  |  120       |           |  Used RIL system type {SystemType}; voice domain {VoiceDomain}; got registration status {RegStat}
+Microsoft-Windows-Telephony-PhoneProviders  |  122       |           |  No Visual Voicemail provider was loaded for MCC,MNC {Prop_UInt_1},{Prop_UInt_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  123       |           |  Visual Voicemail action {Prop_UnicodeString} is not currently available on this line
+Microsoft-Windows-Telephony-PhoneProviders  |  124       |           |  Legacy Voicemail message received: {Prop_UnicodeString}. Message count: {Prop_HexInt32}
+Microsoft-Windows-Telephony-PhoneProviders  |  125       |           |  Registered to operator: params {ParamsMask}; long name "{LongName}"; short name "{ShortName}"; numeric name"{NumericName}"; country code "{CountryCode}"
+Microsoft-Windows-Telephony-PhoneProviders  |  126       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  127       |           |  Status {Prop_HexInt32_1} from cellcore reading voicemail count {Prop_HexInt32_2} from SIM
+Microsoft-Windows-Telephony-PhoneProviders  |  128       |           |  Status {Prop_HexInt32_1} from cellcore writing voicemail count {Prop_HexInt32_2} to SIM
+Microsoft-Windows-Telephony-PhoneProviders  |  131       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  132       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  133       |           |  CallManager got disconnect notification for cellvoiceId {CellVoiceCallId}; initiator {DisconnectInitiator}; reason {DisconnectReason}; group {DisconnectDetailsGroup}; gppdetails [ location {DisconnectDetailsGppLocation} cause {DisconnectDetailsGppCause} ]
+Microsoft-Windows-Telephony-PhoneProviders  |  134       |           |  CallModel3GPP2 invoking {Prop_UnicodeString}; callid {CallId}; asyncRequestId {AsyncId}
+Microsoft-Windows-Telephony-PhoneProviders  |  135       |           |  CdmaHeuristics invoking {Prop_UnicodeString}; callid {CallId} and {CallId2}; asyncRequestId {CallId2}; completionContext {AsyncId}
+Microsoft-Windows-Telephony-PhoneProviders  |  136       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  137       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  138       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  139       |           |  Call manager got call waiting notification for cellvoice callid {CellVoiceCallId}: rilremotepartyinfo: params {ParamsMask} numberpres {NumberPres} namepres {NamePres}
+Microsoft-Windows-Telephony-PhoneProviders  |  140       |           |  Call manager got dial id notification for cellvoice callid {CellVoiceCallId}: params {ParamsMask} numberpres {NumberPres} namepres {NamePres}
+Microsoft-Windows-Telephony-PhoneProviders  |  141       |           |  CdmaHeuristics started tracking verb {VerbName} asyncRequestId {int1} for completionContext {int2}
+Microsoft-Windows-Telephony-PhoneProviders  |  142       |           |  CdmaHeuristics stopped tracking verb {VerbName} asyncRequestId {int1} for completionContext {int2}
+Microsoft-Windows-Telephony-PhoneProviders  |  143       |           |  Status {Prop_HexInt32_1} from cellcore reading call forwarding status {Prop_HexInt32_2} from SIM
+Microsoft-Windows-Telephony-PhoneProviders  |  144       |           |  Status {Prop_HexInt32} from cellcore reading call forwarding number from SIM
+Microsoft-Windows-Telephony-PhoneProviders  |  145       |           |  Status {Prop_HexInt32} from cellcore writing call forwarding status to SIM
+Microsoft-Windows-Telephony-PhoneProviders  |  146       |           |  Status {Prop_HexInt32} from cellcore writing call forwarding number to SIM
+Microsoft-Windows-Telephony-PhoneProviders  |  147       |           |  Sim LockState changed to: {Prop_HexInt32}
+Microsoft-Windows-Telephony-PhoneProviders  |  148       |           |  Cellvoice UICC Line set; sim swap pending: {P1_Int}; old/new line ID: {P2_UnicodeString} / {P3_UnicodeString}
+Microsoft-Windows-Telephony-PhoneProviders  |  149       |           |  Finished retrieving home MCC/MNC: {Prop_UInt_1} {Prop_UInt_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  150       |           |  Set visual voicemail provisioning state to {Prop_State}
+Microsoft-Windows-Telephony-PhoneProviders  |  151       |           |  Forced SIM swap based on MCC/MNC: {Prop_UInt_1} {Prop_UInt_2} ==> {Prop_UInt_3} {Prop_UInt_4}
+Microsoft-Windows-Telephony-PhoneProviders  |  152       |           |  Modem power state changed to {PowerState}
+Microsoft-Windows-Telephony-PhoneProviders  |  153       |           |  Network codes: params {ParamsMask}; MCC {MCC}; MNC {MNC}
+Microsoft-Windows-Telephony-PhoneProviders  |  154       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  155       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  156       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  157       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  158       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  159       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  160       |           |  Line not created: modem index {ModemIndex} or slot index {SlotIndex} out of bounds (from ISlot {SlotPointer})
+Microsoft-Windows-Telephony-PhoneProviders  |  161       |           |  CallManager new incoming call from {Prop_Address}
+Microsoft-Windows-Telephony-PhoneProviders  |  162       |           |  Call forwarding state updated. SupSvcCode: {P1_SupSvcCode}; Enable: {P2_Int}; new m_callForwardingState: {P3_HexInt}
+Microsoft-Windows-Telephony-PhoneProviders  |  163       |           |  Read call forwarding state from registry. m_callForwardingState: {Prop_HexInt32}; m_callForwardingAddress: {Prop_UnicodeString}
+Microsoft-Windows-Telephony-PhoneProviders  |  164       |           |  OnSupServiceCallback. ExecutionResult: {P1_HResult}; SvcCode: {P2_SvcCode}; DialAction: {P3_Action}
+Microsoft-Windows-Telephony-PhoneProviders  |  165       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  166       |           |  CdmaHeuristics set local hold to {Prop_BOOL}
+Microsoft-Windows-Telephony-PhoneProviders  |  167       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  168       |           |  Enqueued verb AcceptIncoming, callid {Prop_CallId}, callType {Prop_CallType} (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  169       |           |  Dequeued verb AcceptIncoming, callid {Prop_CallId}, callType {Prop_CallType} (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  170       |           |  Gsm call manager called I3GPPCallModel::AcceptIncomingCall with async request id {AsyncId} for callid {CallId}, callType {CallType} (cellvoice callid {CellVoiceCallId})
+Microsoft-Windows-Telephony-PhoneProviders  |  171       |           |  Received an IMS SIP disconnect cause: error-code={Prop_UInt_1}, reason={Prop_UInt_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  172       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  173       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  174       |           |  [Voicemail] Attempting to queue action for Visual Voicemail configuration changes [isChangePending={isChangePending}]
+Microsoft-Windows-Telephony-PhoneProviders  |  175       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  176       |           |  [Voicemail] Configure Visual Voicemail [homeMcc={homeMcc}][homeMnc={homeMnc}][dataAffinityExists={dataAffinityExists}]
+Microsoft-Windows-Telephony-PhoneProviders  |  177       |           |  Can Data affinity change [LineId={Prop_Guid}][dataAffinityCanIndex={Prop_UINT}]
+Microsoft-Windows-Telephony-PhoneProviders  |  202       |           |  Terminating Active Call Agent {Prop_UnicodeString} due to timeout waiting for Notify callback
+Microsoft-Windows-Telephony-PhoneProviders  |  203       |           |  Cell Broadcast Listener received message {Prop_UnicodeString}
+Microsoft-Windows-Telephony-PhoneProviders  |  204       |           |  Display text changed: params {ParamsMask}, info type {InfoType}, info tag {InfoTag}, message size {MessageLength}
+Microsoft-Windows-Telephony-PhoneProviders  |  205       |           |  Calling IVoIPTaskManagerClient->LaunchActiveCallAgent({Prop_Guid})
+Microsoft-Windows-Telephony-PhoneProviders  |  206       |           |  Calling IVoIPTaskManagerClient->CancelActiveCallAgentInstance({Prop_Guid})
+Microsoft-Windows-Telephony-PhoneProviders  |  207       |           |  _CancelActiveCallAgent for product id: {Prop_Guid}; isForcedShutdown: {Prop_BOOL1}; isActiveCallAgentRunning: {Prop_BOOL2}
+Microsoft-Windows-Telephony-PhoneProviders  |  208       |           |  Calling IVoIPTaskManagerClient->HoldActiveCall({Prop_Guid})
+Microsoft-Windows-Telephony-PhoneProviders  |  209       |           |  Calling IVoIPTaskManagerClient->UnholdActiveCall({Prop_Guid})
+Microsoft-Windows-Telephony-PhoneProviders  |  210       |           |  Calling IVoIPTaskManagerClient->OnIncomingCallDialogDisplayed({Prop_Guid})
+Microsoft-Windows-Telephony-PhoneProviders  |  211       |           |  Calling IVoIPTaskManagerClient->OnIncomingCallDialogDismissed({Prop_Guid})
+Microsoft-Windows-Telephony-PhoneProviders  |  212       |           |  InitializedConnectionToAppHost called on VoipProvider. RPC Handle: {Prop_Ptr1}; VoipLine: {Prop_Ptr2}; AgentProcessId: {Prop_UINT}; ContextId: {Prop_Guid}
+Microsoft-Windows-Telephony-PhoneProviders  |  213       |           |  LineFactory->NewIncomingCall({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  214       |           |  LineFactory->NewOutgoingCall({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  215       |           |  LineFactory->CallActive({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  216       |           |  LineFactory->CallHeld({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  217       |           |  LineFactory->CallEnded({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  218       |           |  LineFactory->SetAudioRouting({Prop_Ptr}, {VoipAudioRoute})
+Microsoft-Windows-Telephony-PhoneProviders  |  219       |           |  LineFactory->GetAudioRouting({Prop_Ptr})
+Microsoft-Windows-Telephony-PhoneProviders  |  220       |           |  LineFactory->SetMuteState({Prop_Ptr}, {Prop_BOOL})
+Microsoft-Windows-Telephony-PhoneProviders  |  221       |           |  LineFactory->UpdateCallContactName({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  222       |           |  LineFactory->UpdateCallStartTime({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  223       |           |  LineFactory->GetCallStartTime({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  224       |           |  LineFactory->UpdateCallAttributes({Prop_Ptr}, {Prop_UINT}, {VoipCallAttributes})
+Microsoft-Windows-Telephony-PhoneProviders  |  225       |           |  VoipAppHostHandle_rundown({Prop_Ptr})
+Microsoft-Windows-Telephony-PhoneProviders  |  226       |           |  _PendingRpcCallCompleted({Prop_UINT}, {RpcCallType}) for line: {Prop_Ptr}; onTime: {Prop_BOOL}
+Microsoft-Windows-Telephony-PhoneProviders  |  227       |           |  Calling {RpcCallType} on VoipApp for line: {Prop_LinePtr}. Controller callId: {Prop_ControllerCallId}; VoipApp CallId: {Prop_VoipAppCallId}
+Microsoft-Windows-Telephony-PhoneProviders  |  228       |           |  Calling {RpcCallType} on VoipApp for line: {Prop_LinePtr}.
+Microsoft-Windows-Telephony-PhoneProviders  |  229       |           |  Calling OnAudioRouteChanged on VoipApp for line: {Prop_LinePtr}. AudioRoute: {Prop_AudioRoute}; Available Paths: {Prop_AvailableAudioRoutes}
+Microsoft-Windows-Telephony-PhoneProviders  |  230       |           |  Can {Prop_Guid} entered emergency mode {Prop_BOOL}
+Microsoft-Windows-Telephony-PhoneProviders  |  231       |           |  Modem constraint violated: Illegal CPI {Prop_CPI}
+Microsoft-Windows-Telephony-PhoneProviders  |  232       |           |  Modem constraint violated: Async dial failure {Prop_HR} for call in CPI state {Prop_CPI}
+Microsoft-Windows-Telephony-PhoneProviders  |  233       |           |  Modem constraint violated: Mismatched direction fields; direction {Prop_Direction}, CPI state {Prop_CPI}
+Microsoft-Windows-Telephony-PhoneProviders  |  234       |           |  CallManager invoked I3GPP[2]CallModel::{Prop_UnicodeString}; asyncRequestId {AsyncId}
+Microsoft-Windows-Telephony-PhoneProviders  |  235       |           |  CallManager invoking I3GPP[2]CallModel::{Prop_UnicodeString}; asyncRequestId {AsyncId}
+Microsoft-Windows-Telephony-PhoneProviders  |  236       |           |  CallModel3GPP2 invoking {Prop_UnicodeString}; callid {CallId} and {CallId2}; asyncRequestId {AsyncId})
+Microsoft-Windows-Telephony-PhoneProviders  |  237       |           |  CdmaHeuristics invoking {Prop_UnicodeString}; callid {CallId}; asyncRequestId {AsyncId}; completionContext {Context}
+Microsoft-Windows-Telephony-PhoneProviders  |  238       |           |  CdmaHeuristics verb completed: asyncRequestId {asyncRequestId}; result {HResult}; verb {VerbName}; callid {CallId1}; original completionContext {context}
+Microsoft-Windows-Telephony-PhoneProviders  |  239       |           |  CdmaHeuristics verb completed: asyncRequestId {HResult}; result {Prop_CompletionContext}
+Microsoft-Windows-Telephony-PhoneProviders  |  240       |           |  CallModel3GPP2 verb completed: asyncRequestId {asyncRequestId}; result {HResult}; verb {VerbName}; callid {CallId1}; original completionContext {context}
+Microsoft-Windows-Telephony-PhoneProviders  |  241       |           |  Dequeued async CellVoice request id {Prop_HexInt32_1} completion with HRESULT {Prop_HexInt32_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  242       |           |  CallModel processing call progress update with cellvoiceId {Prop_HexInt32_1} for callId {Prop_HexInt32_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  243       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  244       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  245       |           |  CdmaHeuristics tracking with asyncRequestId {Prop_HexInt32} not found
+Microsoft-Windows-Telephony-PhoneProviders  |  246       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  247       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  248       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  249       |           |  CallModel3GPP2 got unexpected call update for cellvoiceId {Prop_HexInt32_1}; while having existing cellvoiceId {Prop_HexInt32_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  250       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  251       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  252       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  253       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  254       |           |  Default voicemail number source is: {VoicemailSource}
+Microsoft-Windows-Telephony-PhoneProviders  |  255       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  256       |           |  Tone signal received: params {ToneParamMask}, {Ril3gppTone}, {Ril3gpp2Tone}, {Ril3gpp2Alerting}
+Microsoft-Windows-Telephony-PhoneProviders  |  257       |           |  LineNotificationWorkItem: instantiated #{SerialNumber} ({Kind})
+Microsoft-Windows-Telephony-PhoneProviders  |  258       |           |  LineNofiticationWorkItem: processing #{SerialNumber} ({Kind})
+Microsoft-Windows-Telephony-PhoneProviders  |  259       |           |  LineNofiticationWorkItem: finished processing #{SerialNumber} ({Kind})
+Microsoft-Windows-Telephony-PhoneProviders  |  260       |           |  LineNofiticationWorkItem: canceled #{SerialNumber} ({Kind})
+Microsoft-Windows-Telephony-PhoneProviders  |  261       |           |  Got subscriber numbers; dwNumSubscribers = {Prop_UInt}
+Microsoft-Windows-Telephony-PhoneProviders  |  262       |           |  Subscriber number entry #{Ordinal}: params #2, service #3
+Microsoft-Windows-Telephony-PhoneProviders  |  263       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  264       |           |  Got IMS status change notification. [Params={Params}][AvailableServices={Services}]
+Microsoft-Windows-Telephony-PhoneProviders  |  265       |           |  [CallModel3GPP] Call model changing between GSM and IMS, [ims={Prop_BOOL1}][m_imsOnWiFi={Prop_BOOL2}]
+Microsoft-Windows-Telephony-PhoneProviders  |  266       |           |  Roaming override number used.  Dialing {Prop_UnicodeString}.
+Microsoft-Windows-Telephony-PhoneProviders  |  267       |           |  HandleUICCPersoCheckStatusChange, [dwParams={dwParams}][dwPersoFeature={dwPersoFeature}][dwPersoCheckState={dwPersoCheckState}]
+Microsoft-Windows-Telephony-PhoneProviders  |  268       |           |  Get Perso deactivation state for {Result} completed with hr {Params}; params {State}; state {LockAttempts}; unlock remaining {PUKAttempts}; unblock remaining {Feature}
+Microsoft-Windows-Telephony-PhoneProviders  |  269       |           |  Deactivate Perso for {Result} completed with hr {Params}; params {State}; state {LockAttempts}; unlock remaining {PUKAttempts}; unblock remaining {Feature}; async API context {Context}
+Microsoft-Windows-Telephony-PhoneProviders  |  270       |           |  Initiating SIM PIN operation {Feature}; async completion context = {Context}
+Microsoft-Windows-Telephony-PhoneProviders  |  271       |           |  Initiating Perso unlock for {Feature}; async completion context = {Context}
+Microsoft-Windows-Telephony-PhoneProviders  |  272       |           |  SIM PIN operation '{Prop_String}' with async completion context {Prop_Int1} complete, result % = 3
+Microsoft-Windows-Telephony-PhoneProviders  |  273       |           |  3GPP2CallModel ignored alien call (CellVoice ID {Prop_HexInt32_1}) due to existing call (CellVoice ID {Prop_HexInt32_2}).
+Microsoft-Windows-Telephony-PhoneProviders  |  274       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  275       |           |  Unsolicited supservice {Prop_Code} received for CellVoice callid {Prop_CallId}
+Microsoft-Windows-Telephony-PhoneProviders  |  276       |           |  CellVoice Response Received in Method: {Prop_String}. Async Hresult: {Prop_HexInt32_1}
+Microsoft-Windows-Telephony-PhoneProviders  |  277       |           |  dwParams {Prop_HexInt32_1}; dwNetworkSSErrorCause {Prop_HexInt32_2}; dwNetworkCCErrorCause {Prop_HexInt32_3}; dwVendorErrorCause {Prop_HexInt32_4}
+Microsoft-Windows-Telephony-PhoneProviders  |  278       |           |  CellVoice reported infoClasses: {Prop_HexInt32}.
+Microsoft-Windows-Telephony-PhoneProviders  |  279       |           |  CellVoice reported hide ID settings: params {Prop_HexInt32_1}, status {Prop_HexInt32_2}, provisioning {Prop_HexInt32_3}.
+Microsoft-Windows-Telephony-PhoneProviders  |  280       |           |  CellVoice reported call forwarding settings: params {Prop_HexInt32_1}, info class {Prop_HexInt32_2}, delay time {Prop_HexInt32_3}, status {Prop_HexInt32_4}.
+Microsoft-Windows-Telephony-PhoneProviders  |  281       |           |  CellVoice Ussd Data Status: {Prop_HexInt32}.
+Microsoft-Windows-Telephony-PhoneProviders  |  282       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  283       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  284       |           |  Invalid Callforwarding delay time parameter: {Prop_UnicodeString}. Using default value instead.
+Microsoft-Windows-Telephony-PhoneProviders  |  285       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  286       |           |  CellVoice reported COLR settings: params {Prop_HexInt32_1}, status {Prop_HexInt32_2}, provisioning {Prop_HexInt32_3}.
+Microsoft-Windows-Telephony-PhoneProviders  |  287       |           |  CellVoice reported CLIP settings: params {Prop_HexInt32_1}, status {Prop_HexInt32_2}, provisioning {Prop_HexInt32_3}.
+Microsoft-Windows-Telephony-PhoneProviders  |  288       |           |  Executing sup service code {Prop_Code}, action {Prop_Action}
+Microsoft-Windows-Telephony-PhoneProviders  |  289       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  290       |           |  CellVoice reported COLP settings: params {Prop_HexInt32_1}, status {Prop_HexInt32_2}, provisioning {Prop_HexInt32_3}.
+Microsoft-Windows-Telephony-PhoneProviders  |  291       |           |  Address for unsolicited supservice {Prop_Code} is {Prop_Address}
+Microsoft-Windows-Telephony-PhoneProviders  |  292       |           |  Calling {RpcCallType} on VoipApp for line: {Prop_LinePtr}. VoipApp CallId: {Prop_VoipAppCallId}
+Microsoft-Windows-Telephony-PhoneProviders  |  295       |           |  RemoteId Request Complete: CallId: {Prop_HexInt32_1} RemoteId Exists: {Prop_HexInt32_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  296       |           |  Launching Voip app with URI: {Prop_UnicodeString}
+Microsoft-Windows-Telephony-PhoneProviders  |  297       |           |  LineFactory->NewIncomingUpgradeCall({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  298       |           |  LineFactory->NewOutgoingUpgradeCall({Prop_Ptr}, {Prop_UINT}). CallUpgradeGuid: {Prop_Guid}
+Microsoft-Windows-Telephony-PhoneProviders  |  299       |           |  LineFactory->CallReady({Prop_Ptr}, {Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  300       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  301       |           |  Dialing an Emergency call. PhoneCallId: {Prop_HexInt32}.
+Microsoft-Windows-Telephony-PhoneProviders  |  302       |           |  3GPPCallModel got surprise outgoing Emergency call notification. Existing ECallId: {Prop_HexInt32}, IgnoreNotification: {Prop_BOOL}.
+Microsoft-Windows-Telephony-PhoneProviders  |  303       |           |  Modem Radio Config changed to {RadioConfigType}
+Microsoft-Windows-Telephony-PhoneProviders  |  304       |           |  Setting Can Focus for Can: {Prop_Guid}
+Microsoft-Windows-Telephony-PhoneProviders  |  305       |           |  Set Can Focus result: {Prop_HexInt32}
+Microsoft-Windows-Telephony-PhoneProviders  |  306       |           |  Disconnecting dialed call with callId: {Prop_HexInt32} for incoming call.
+Microsoft-Windows-Telephony-PhoneProviders  |  307       |           |  LineFactory->GetNextOperation({Prop_Ptr})
+Microsoft-Windows-Telephony-PhoneProviders  |  308       |           |  Terminating Call Query Agent {Prop_UnicodeString} due to timeout waiting for Notify callback
+Microsoft-Windows-Telephony-PhoneProviders  |  309       |           |  lineFactory->VoipAppOperationComplete({Prop_Ptr}). Completed operationId: {Prop_UINT}. Succeeded: {Prop_BOOL}. Call upgrade support: {Prop_Code}
+Microsoft-Windows-Telephony-PhoneProviders  |  310       |           |  Calling IVoIPTaskManagerClient->LaunchCallQueryAgent({Prop_Guid})
+Microsoft-Windows-Telephony-PhoneProviders  |  311       |           |  Calling IVoIPTaskManagerClient->CancelCallQueryAgentInstance({Prop_Guid})
+Microsoft-Windows-Telephony-PhoneProviders  |  312       |           |  Received async dial completion. CallId: {Prop_HexInt32_1}, CellVoice CallId: {Prop_HexInt32_2}
+Microsoft-Windows-Telephony-PhoneProviders  |  313       |           |  3GPP2CallModel ignored disconnected call (CellVoice ID {Prop_HexInt32_1}) due to existing call (CellVoice ID {Prop_HexInt32_2}).
+Microsoft-Windows-Telephony-PhoneProviders  |  314       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  315       |           |  CallManager invoked I3GPP[2]CallModel::{Prop_UnicodeString}; asyncRequestId {AsyncId}, Dialed Number: {Number}
+Microsoft-Windows-Telephony-PhoneProviders  |  316       |           |  Update to call type or video context.  CallId: {Prop_CallId}, CallType: {Prop_CallType}, Video Context: {Prop_VideoContext}
+Microsoft-Windows-Telephony-PhoneProviders  |  317       |           |  CallModel3GPP2 CallVerb_SetVideoPaused; CallId: {Prop_CallId}; paused: {Paused}; completion context: {Prop_CompletionContext}
+Microsoft-Windows-Telephony-PhoneProviders  |  318       |           |  CallModel3GPP CallVerb_SetVideoPaused; CallId: {Prop_CallId}; paused: {Paused}; async id: {Prop_CompletionContext}
+Microsoft-Windows-Telephony-PhoneProviders  |  319       |           |  Enqueued verb SetVideoPaused, callid {Prop_CallId}, paused {Paused}, (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  320       |           |  Dequeued verb SetVideoPaused, callid {Prop_CallId}, paused {Paused}, (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  321       |           |  Video state update.  Params: {ValidParams}, Action: {Action}, Direction: {Direction}, State Params: {ValidStateParams}, Peer caps: {PeerCaps}, Flags: {Flags}, ContextID: {ContextID}
+Microsoft-Windows-Telephony-PhoneProviders  |  322       |           |  Calling Cellular API in media update for {Prop_UnicodeString}.  Async request id: {AsyncId}, CallId {CallId}, CellVoice CallId: {CellVoiceCallId})
+Microsoft-Windows-Telephony-PhoneProviders  |  323       |           |  Requesting video state publish.  Subscriber Number: {SubscriberNumber}, videoCapable: {videocapable}
+Microsoft-Windows-Telephony-PhoneProviders  |  324       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  325       |           |  Registration state according to voice domain, voice domain: {VoiceDomain}, registration status: {RegStatus}, mapped registration state: {RegState}
+Microsoft-Windows-Telephony-PhoneProviders  |  326       |           |  SubscriptionUpdate OMADM initiated : {Prop_String} HR = {Prop_HexInt32_1}
+Microsoft-Windows-Telephony-PhoneProviders  |  327       |           |  Video direction override during multitasking, new transmit state: {Prop_BOOL}
+Microsoft-Windows-Telephony-PhoneProviders  |  328       |           |  CellularLine SetVideoCallingSetting: [CurrentState={CurrentVideoCallingEnabled}][RequestType={VideoCallingSetting}][CacheSetting={CacheVideoCallingSetting}][PerSimConfigAvailable={PerSimConfigAvailable}][TargetState={TargetVideoCallingEnabled}]
+Microsoft-Windows-Telephony-PhoneProviders  |  329       |           |  IMS system-type changing from {ImsSystemType1} to {ImsSystemType2}
+Microsoft-Windows-Telephony-PhoneProviders  |  330       |           |  Video media offer answer. Params: {ValidParams}, Action: {Action}, Direction: {Direction}, State Params: {ValidStateParams}, Peer caps: {PeerCaps}, Flags: {Flags}, ContextID: {ContextID}
+Microsoft-Windows-Telephony-PhoneProviders  |  331       |           |  LineFactory->EndUpgradeOriginationCall({Prop_Ptr})
+Microsoft-Windows-Telephony-PhoneProviders  |  332       |           |  LineFactory->CancelUpgrade({Prop_Ptr})
+Microsoft-Windows-Telephony-PhoneProviders  |  333       |           |  ImsHandoverAttempt notify arrives. hrHandOverResult: {hrHandOverResult}, OldSystemType: {dwOldSystemType}, NewSystemType: {dwNewSystemType}
+Microsoft-Windows-Telephony-PhoneProviders  |  334       |           |  GetVideoCapabilitySharingSettings: Queried, [LineId={LineId}][PerSimConfigAvaiable={PerSimConfigAvailable}][IsCapabilitySharingEnabled={IsCapabilitySharingEnabled}][LastModifiedTimestamp={TickCount}]
+Microsoft-Windows-Telephony-PhoneProviders  |  335       |           |  SetVideoCapabilitySharingSettings: Updating, [LineId={LineId}][PerSimConfigAvaiable={PerSimConfigAvailable}][IsCapabilitySharingEnabled={IsCapabilitySharingEnabled}][CurrentTimestamp={TickCount}]
+Microsoft-Windows-Telephony-PhoneProviders  |  336       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  337       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  338       |           |  Updated home MCC value from SIM in line specific data, [LineId={LineId}][HomeMcc={HomeMcc}].
+Microsoft-Windows-Telephony-PhoneProviders  |  339       |           |  CallRecording: Phone service was notified of a Call Recording application whose Package Family Name is too long: '{Prop_UnicodeString}'
+Microsoft-Windows-Telephony-PhoneProviders  |  341       |           |  IMS service voice changed, [imsVoiceAvailable={imsVoiceAvailable}][imsVideoAvailable={imsVideoAvailable}][videoCallingEnabled={videoCallingEnabled}]
+Microsoft-Windows-Telephony-PhoneProviders  |  342       |           |  IMS service video changed, [imsVoiceAvailable={imsVoiceAvailable}][imsVideoAvailable={imsVideoAvailable}][videoCallingEnabled={videoCallingEnabled}]
+Microsoft-Windows-Telephony-PhoneProviders  |  343       |           |  DeterminePhoneSystemType, [imsVoiceSupported={imsVoiceSupported}][registration0SystemType={registration0SystemType}][registration0VoiceDomain={registration0VoiceDomain}][callPresence={callPresence}]
+Microsoft-Windows-Telephony-PhoneProviders  |  344       |           |  UpdateLineSystemType, [currentLineSystemType={currentLineSystemType}][newLineSystemType={newLineSystemType}]
+Microsoft-Windows-Telephony-PhoneProviders  |  345       |           |  SetRadioAccessTechnology, [radioAccessTechnology={radioAccessTechnology}][toIms={toIms}][toGsm={toGsm}][toCdma={toCdma}][fromIms={fromIms}][fromGsm={fromGsm}][fromCdma={fromCdma}]
+Microsoft-Windows-Telephony-PhoneProviders  |  346       |           |  SetRadioAccessTechnology, switching call model, [To3GPP={To3GPP}]
+Microsoft-Windows-Telephony-PhoneProviders  |  347       |           |  UpdateCallPresence, [currentPresence={currentPresence}][aggregatePresence={aggregatePresence}][allSameType={allSameType}]
+Microsoft-Windows-Telephony-PhoneProviders  |  348       |           |  [CallModel3GPP] Updating audio, [audioType={audioType}][audioActive={audioActive}][anyCallNeedsAudio={anyCallNeedsAudio}][anyCallNeedsAudioActive={anyCallNeedsAudioActive}][localHoldSupported={localHoldSupported}]
+Microsoft-Windows-Telephony-PhoneProviders  |  349       |           |  [CallModel3GPP2] Updating audio, [audioType={audioType}][shouldEnableAudio={shouldEnableAudio}][audioAllowed={audioAllowed}]
+Microsoft-Windows-Telephony-PhoneProviders  |  350       |           |  [CellularAudio] Updating audio for handover notification, [inProgress={inProgress}][isHandoverNotification={isHandoverNotification}][phase={phase}][oldType={oldType}][newType={newType}]
+Microsoft-Windows-Telephony-PhoneProviders  |  351       |           |  ProcessHandoverNotification, [callInfoParams={callInfoParams}][phase={phase}][handoverStateParams={handoverStateParams}][oldType={oldType}][newType={newType}][inProgress={inProgress}]
+Microsoft-Windows-Telephony-PhoneProviders  |  352       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  353       |           |  Updated video call conference state, [CallId={CallId}][CellVoiceCallId={CellVoiceCallId}][ContextId={ContextId}][ConferenceContextId={ConferenceContextId}][PreviousState={PreviousState}][UpdatedState={UpdatedState}].
+Microsoft-Windows-Telephony-PhoneProviders  |  354       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  355       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  356       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  357       |           |  Emergency call failed over. ECallId: {Prop_HexInt32}.
+Microsoft-Windows-Telephony-PhoneProviders  |  358       |           |  Emergency call DisableAndEnable Audio from 3GPP CallModel. ECallId: {Prop_HexInt32}.
+Microsoft-Windows-Telephony-PhoneProviders  |  359       |           |  Emergency call DisableAndEnable Audio from 3GPP2 CallModel. ECallId: {Prop_HexInt32}.
+Microsoft-Windows-Telephony-PhoneProviders  |  360       |           |  HandleUICCPinLockStateChange, [dwParams={dwParams}][dwLockState={dwLockState}]
+Microsoft-Windows-Telephony-PhoneProviders  |  361       |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  362       |           |  OnSubscriberNumbersChange, [result={Prop_HR}]
+Microsoft-Windows-Telephony-PhoneProviders  |  363       |           |  [CallModel3GPP] Notified for IMS on Wifi flag, [m_imsOnWiFi={Prop_BOOL1}][onWiFi={Prop_BOOL2}]
+Microsoft-Windows-Telephony-PhoneProviders  |  364       |           |  Removed stale pending RPC for line: {Prop_LinePtr}, callid: {Prop_ControllerCallId}, type: {RpcCallType}
+Microsoft-Windows-Telephony-PhoneProviders  |  365       |           |  Timedout pending RPC for line: {Prop_LinePtr}, callid: {Prop_ControllerCallId}, type: {RpcCallType}
+Microsoft-Windows-Telephony-PhoneProviders  |  366       |           |  ResetConnectionToApp for line: {Prop_Ptr}
+Microsoft-Windows-Telephony-PhoneProviders  |  367       |           |  CleanupVoipAppConnectionState for line: {Prop_Ptr}, pendingRPCCalls: {Prop_UINT1}, voipAppProcessId: {Prop_UINT2}
+Microsoft-Windows-Telephony-PhoneProviders  |  368       |           |  VoIP Line Id: {Prop_Guid} has AboveLock extension: {Prop_BOOL}
+Microsoft-Windows-Telephony-PhoneProviders  |  369       |           |  Enqueued verb {Prop_VerbName}, (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  370       |           |  Dequeued verb {Prop_VerbName}, (completion context {Prop_CompletionContext})
+Microsoft-Windows-Telephony-PhoneProviders  |  371       |           |  CellularCallModel initiating explicit call transfer; asyncRequestId {Prop_HexInt32}
+Microsoft-Windows-Telephony-PhoneProviders  |  372       |           |  Ril audio codec {RilAudioCodec} mapped to {PhoneMediaQuality} for CallId: {Prop_CallId}.
+Microsoft-Windows-Telephony-PhoneProviders  |  373       |           |  [Voicemail] Stop VVM Invoked [stopReason={Prop_State}]
+Microsoft-Windows-Telephony-PhoneProviders  |  374       |           |  [Voicemail] Start VVM Invoked [last stopReason={Prop_State}]
+Microsoft-Windows-Telephony-PhoneProviders  |  375       |           |  LineFactory->ReserveVoipCallResources({Prop_Ptr1}, {Prop_String}, {Prop_Ptr2}) Completed.
+Microsoft-Windows-Telephony-PhoneProviders  |  376       |           |  LineFactory->CancelVoipCallResourceReservation({Prop_Ptr}) Completed.
+Microsoft-Windows-Telephony-PhoneProviders  |  377       |           |  [VoipLine#{Prop_Ptr1}] Calling LaunchVoipRtcTask({Prop_UInt}, {Prop_String}, {Prop_Ptr2})
+Microsoft-Windows-Telephony-PhoneProviders  |  378       |           |  [VoipLine#{Prop_Ptr}] Calling CancelVoipRtcTask({Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  379       |           |  [VoipLine#{Prop_Ptr}] Calling NotifyVoipActivityCompleted({Prop_UINT})
+Microsoft-Windows-Telephony-PhoneProviders  |  380       |           |  CallerId Prefix updated.  Updated number is {Prop_UnicodeString}.
+Microsoft-Windows-Telephony-PhoneProviders  |  1000      |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  1010      |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  1050      |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  1051      |           |  Received IMS Failure changed, [imsFailureMessageType={ImsFailureMessageType}].
+Microsoft-Windows-Telephony-PhoneProviders  |  1052      |           |
+Microsoft-Windows-Telephony-PhoneProviders  |  1053      |           |  WiFi call disconnect occured, [errorMessage={Prop_UnicodeString}] .
+Microsoft-Windows-Telephony-PhoneProviders  |  1054      |           |  WiFi internet connection status: {Prop_BOOL}.
+Microsoft-Windows-Telephony-PhoneProviders  |  1055      |           |  WiFi calling feature enabled: {Prop_BOOL}.
+Microsoft-Windows-Telephony-PhoneProviders  |  1056      |           |  WiFi calling upsell suppressed: {Prop_BOOL}.
+Microsoft-Windows-Telephony-PhoneProviders  |  1057      |           |  Media Configuration Data, Set Index: {SetIndex}, IMS Service Type: {dwServiceType}, Media Preference: {dwMediaPreference}.
+Microsoft-Windows-Telephony-PhoneProviders  |  1058      |           |  Placing request for switching cellular audio provider, Executor Index: {ExecutorIndex}, Old Audio type: {oldType}, New Audio Type: {newType}.

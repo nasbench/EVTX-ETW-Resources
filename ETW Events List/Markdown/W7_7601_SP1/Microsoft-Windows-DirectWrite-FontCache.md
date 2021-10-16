@@ -1,0 +1,16 @@
+Provider                                 |  Event ID  |  Channel                                          |  Message
+-----------------------------------------|------------|---------------------------------------------------|-------------------------------------------------------------------------
+Microsoft-Windows-DirectWrite-FontCache  |  100       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service has started adding a cache element.
+Microsoft-Windows-DirectWrite-FontCache  |  101       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service has stopped adding a cache element.
+Microsoft-Windows-DirectWrite-FontCache  |  102       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  Could not construct a font cache element due to a malformed key.
+Microsoft-Windows-DirectWrite-FontCache  |  103       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  ALPC message has been received.
+Microsoft-Windows-DirectWrite-FontCache  |  104       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  Prefetch file has been created.
+Microsoft-Windows-DirectWrite-FontCache  |  105       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  Prefetch file has been opened.
+Microsoft-Windows-DirectWrite-FontCache  |  106       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The prefetch file is corrupt and will be recreated.
+Microsoft-Windows-DirectWrite-FontCache  |  107       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service has started creating a cache context.
+Microsoft-Windows-DirectWrite-FontCache  |  108       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service has stopped creating a cache context.
+Microsoft-Windows-DirectWrite-FontCache  |  109       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service has started updating the system font collection.
+Microsoft-Windows-DirectWrite-FontCache  |  110       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service has stopped updating the system font collection.
+Microsoft-Windows-DirectWrite-FontCache  |  111       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service opened a font file.
+Microsoft-Windows-DirectWrite-FontCache  |  112       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service closed a font file.
+Microsoft-Windows-DirectWrite-FontCache  |  113       |  Microsoft-Windows-DirectWrite-FontCache/Tracing  |  The font cache service performed an access check on a font file.

@@ -1,0 +1,251 @@
+Provider                |  Event ID  |  Channel                            |  Message
+------------------------|------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-WS-Licensing  |  1         |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  2         |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  3         |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  4         |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  5         |  Microsoft-WS-Licensing/Diagnostic  |  [ServiceCall] Service Call initiated for {ID} [Session ID]
+Microsoft-WS-Licensing  |  6         |  Microsoft-WS-Licensing/Diagnostic  |  [ServiceCall] Service Call complete for {ID} [Session ID]
+Microsoft-WS-Licensing  |  7         |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  8         |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  9         |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  10        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  11        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  12        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  13        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  14        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  15        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  16        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  17        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  18        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  19        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  20        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  21        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  22        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  23        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  24        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  25        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  26        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  27        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  28        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  29        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  30        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  31        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  32        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  33        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  34        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  35        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  36        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  37        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  38        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  39        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  40        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  41        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  42        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  43        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  44        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  45        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  46        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  47        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  48        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  49        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  50        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  51        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  52        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  53        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  54        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  55        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  56        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  57        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  58        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  59        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  60        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  61        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  62        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  63        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  64        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  65        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  66        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  67        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  68        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  69        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  70        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  71        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  72        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  73        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  74        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  75        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  76        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  77        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  78        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  79        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  80        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  81        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  82        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  83        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  84        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  85        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  86        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  87        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  88        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  89        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  90        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  91        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  92        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  93        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  94        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  95        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  96        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  97        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  98        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  99        |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  100       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  101       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  102       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  103       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  104       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  105       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  106       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  107       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  108       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  109       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  110       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  111       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  112       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  113       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  114       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  115       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  116       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  117       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  118       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  119       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  120       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  121       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  122       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  123       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  124       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  125       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  126       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  127       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  128       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  129       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  130       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  131       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  132       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  133       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  134       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  135       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  136       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  137       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  138       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  139       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  140       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  141       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  142       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  143       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  144       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  145       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  146       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  147       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  148       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  149       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  150       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  151       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  152       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  153       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  154       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  155       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  156       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  157       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  158       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  159       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  160       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  161       |  Microsoft-WS-Licensing/Admin       |  Windows Store ignored the server Info. Client nonce is: {ClientNonce}, server nonce is: {ReplayedNonce}
+Microsoft-WS-Licensing  |  162       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  163       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  164       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  165       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  166       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  167       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  168       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  169       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  170       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  171       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  172       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  173       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  174       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  175       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  176       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  177       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  180       |  Microsoft-WS-Licensing/Admin       |  [Service] Service initialization failed - result code: {HRESULT}
+Microsoft-WS-Licensing  |  181       |  Microsoft-WS-Licensing/Admin       |  [Service] WSService was restarted while there is a pending rearm reboot required.  Caller: {psz}
+Microsoft-WS-Licensing  |  182       |  Microsoft-WS-Licensing/Admin       |
+Microsoft-WS-Licensing  |  183       |  Microsoft-WS-Licensing/Admin       |
+Microsoft-WS-Licensing  |  184       |  Microsoft-WS-Licensing/Admin       |  Windows Store Developer License OAuth Failed. HR = {HRESULT}, ErrorId = {ErrorId}, ErrorDescription = {ErrorDescription}
+Microsoft-WS-Licensing  |  185       |  Microsoft-WS-Licensing/Admin       |
+Microsoft-WS-Licensing  |  186       |  Microsoft-WS-Licensing/Admin       |  WSService failed to get license for a product. productID: {WUGuid}. Error code: {HRESULT}
+Microsoft-WS-Licensing  |  187       |  Microsoft-WS-Licensing/Admin       |  WSClient failed to get licenses on update request. Error code: {HRESULT}
+Microsoft-WS-Licensing  |  188       |  Microsoft-WS-Licensing/Admin       |  There is no valid license present for productID: {guid}
+Microsoft-WS-Licensing  |  189       |  Microsoft-WS-Licensing/Admin       |  Licenses were requested for {Requested} product categories and valid licenses were found for {Actual} categories
+Microsoft-WS-Licensing  |  190       |  Microsoft-WS-Licensing/Admin       |  Windows Store simulated license initialized for {psz}
+Microsoft-WS-Licensing  |  191       |  Microsoft-WS-Licensing/Admin       |  WSService reported that the hardware changed.
+Microsoft-WS-Licensing  |  192       |  Microsoft-WS-Licensing/Admin       |  WSService failed to collect hardware data. Stage: {Stage}. Error code: {ErrorCode}
+Microsoft-WS-Licensing  |  193       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  194       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  195       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  196       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  197       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  198       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  200       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  201       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  202       |  Microsoft-WS-Licensing/Debug       |  [TLR] Success: {ResultCode} [Result Code]. TLR completed evaluation for package family {PackageName} [Package Family] and {SubPackageCount} [Related Packages Count] full packages
+Microsoft-WS-Licensing  |  203       |  Microsoft-WS-Licensing/Debug       |  [TLR] Error: {ResultCode} [Error Code]. TLR failed to evalute package family {PackageName} [Package Family] and {SubPackageCount} [Related Packages Count] full packages
+Microsoft-WS-Licensing  |  204       |  Microsoft-WS-Licensing/Debug       |  [TLR] TLR began evaluating {ItemCount} [package count] packages with level {TLRLevel} [TLR level]
+Microsoft-WS-Licensing  |  205       |  Microsoft-WS-Licensing/Debug       |  [TLR] TLR completed evaluating all packages with level {TLRLevel} [TLR level], with {SucceededCount} [success count], {FailedCount} [failure count], and {CanceledCount} [canceled count]
+Microsoft-WS-Licensing  |  206       |  Microsoft-WS-Licensing/Debug       |  [TLR] A TLR with level {TLRLevel} [TLR level] has been rescheduled for {RestartTime} [Restart time]
+Microsoft-WS-Licensing  |  210       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  211       |  Microsoft-WS-Licensing/Diagnostic  |  [TLR] Get Package complete
+Microsoft-WS-Licensing  |  212       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  213       |  Microsoft-WS-Licensing/Diagnostic  |  [TLR] Set Package complete
+Microsoft-WS-Licensing  |  254       |  Microsoft-WS-Licensing/Admin       |  Windows Store has reported that the package origin for {PackageName} has changed from {InitialOrigin} to {NewOrigin}.
+Microsoft-WS-Licensing  |  255       |  Microsoft-WS-Licensing/Admin       |  Windows Store has reported that the package origin for {PackageName} has changed from {InitialOrigin} to {NewOrigin}.  This may indicate the package has been altered and you may need to re-install the package.
+Microsoft-WS-Licensing  |  256       |  Microsoft-WS-Licensing/Admin       |  Windows Store has reported one or more files in package {PackageName} appear to be altered starting with file {FileName}.  Please re-install the package.
+Microsoft-WS-Licensing  |  257       |  Microsoft-WS-Licensing/Admin       |  Windows Store has reported that the block map for package {PackageName} appears to be altered.  Please re-install the package.
+Microsoft-WS-Licensing  |  258       |  Microsoft-WS-Licensing/Admin       |  The acquisition of the developer license failed. The error was: {ErrorString}. Result code {HRESULT}
+Microsoft-WS-Licensing  |  259       |  Microsoft-WS-Licensing/Admin       |  The acquisition of the developer license failed. Result code {HRESULT}
+Microsoft-WS-Licensing  |  260       |  Microsoft-WS-Licensing/Admin       |  Windows Store was unable to load the previous package list.Result code: {HRESULT}
+Microsoft-WS-Licensing  |  261       |  Microsoft-WS-Licensing/Admin       |  Windows Store was unable to load the latest package list.Result code: {HRESULT}
+Microsoft-WS-Licensing  |  262       |  Microsoft-WS-Licensing/Admin       |  Windows Store was unable to load the package list.Result code: {HRESULT}
+Microsoft-WS-Licensing  |  263       |  Microsoft-WS-Licensing/Admin       |  Windows Store was unable to load the full package list from AppX.Result code: {HRESULT}
+Microsoft-WS-Licensing  |  264       |  Microsoft-WS-Licensing/Admin       |  Windows Store was unable to update the remediation state for package {PackageName}.Result code: {ResultCode}
+Microsoft-WS-Licensing  |  270       |  Microsoft-WS-Licensing/Admin       |  Windows Store reported AppX failed to return a valid path for a package. Package: {PackageName}Error: {ResultCode}
+Microsoft-WS-Licensing  |  271       |  Microsoft-WS-Licensing/Admin       |  Windows Store reported AppX returned an empty path for package {PackageName}
+Microsoft-WS-Licensing  |  280       |  Microsoft-WS-Licensing/Admin       |  Windows Store reported that the developer license has been updated and is active.Status: {Status}Expiration date: {Expiration}Result code: {Reason}
+Microsoft-WS-Licensing  |  281       |  Microsoft-WS-Licensing/Admin       |  Windows Store reported that the developer license is no longer active.Status: {Status}.Expiration date: {Expiration}Result code: {Reason}
+Microsoft-WS-Licensing  |  290       |  Microsoft-WS-Licensing/Admin       |  Windows Store reported that the product license for {PackageFamily} has been updated and is active.Status: {Status}Expiration date: {Expiration}Product Id: {ProductId}License Type: {LicenseType}Result code: {Reason}
+Microsoft-WS-Licensing  |  291       |  Microsoft-WS-Licensing/Admin       |  Windows Store reported that the product license for {PackageFamily} is no longer active.Status: {Status}Expiration date: {Expiration}Product Id: {ProductId}License Type: {LicenseType}Result code: {Reason}
+Microsoft-WS-Licensing  |  300       |  Microsoft-WS-Licensing/Admin       |  Windows Store has successfully evaluated package {PackageName} - the package appears correct and licensed.Result code: {ResultCode}
+Microsoft-WS-Licensing  |  301       |  Microsoft-WS-Licensing/Admin       |  Windows Store detected a change to package {PackageName} - the package appears correct and licensed.Result code: {ResultCode}
+Microsoft-WS-Licensing  |  302       |  Microsoft-WS-Licensing/Admin       |  Windows Store reported that the package {PackageName} was not found and cannot be verified - the package was likely uninstalled since the last check.Result code: {ResultCode}
+Microsoft-WS-Licensing  |  310       |  Microsoft-WS-Licensing/Admin       |  Windows Store detected a package health issue with package {PackageName} - the package must be repaired before you can use it.Result code: {ResultCode}
+Microsoft-WS-Licensing  |  311       |  Microsoft-WS-Licensing/Admin       |  Windows Store detected a license issue with package {PackageName} - the package must be licensed before you can use it.Result code: {ResultCode}
+Microsoft-WS-Licensing  |  312       |  Microsoft-WS-Licensing/Admin       |  Windows Store detected that package {PackageName} is being installed without a valid AppStore license.This may be expected for some packages, but the package itself cannot be run.Result code: {ResultCode}
+Microsoft-WS-Licensing  |  315       |  Microsoft-WS-Licensing/Admin       |  Windows Store has begun evaluating files for package {PackageName}.
+Microsoft-WS-Licensing  |  316       |  Microsoft-WS-Licensing/Admin       |  Windows Store has completed evaluating files for package {PackageName}.Evaluated file count: {FileCount}Result code: {ResultCode}
+Microsoft-WS-Licensing  |  320       |  Microsoft-WS-Licensing/Admin       |  Windows Store rearm complete.  Result code {HRESULT}
+Microsoft-WS-Licensing  |  500       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  501       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  502       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  503       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  504       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  505       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  506       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  507       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  508       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  509       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  510       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  511       |  Microsoft-WS-Licensing/Diagnostic  |
+Microsoft-WS-Licensing  |  512       |  Microsoft-WS-Licensing/Admin       |  Windows Store failed to sync machine licenses. Result code {HRESULT}
+Microsoft-WS-Licensing  |  513       |  Microsoft-WS-Licensing/Admin       |
+Microsoft-WS-Licensing  |  514       |  Microsoft-WS-Licensing/Admin       |  Windows Store failed to recreate trusted store. Result code {HRESULT}
+Microsoft-WS-Licensing  |  515       |  Microsoft-WS-Licensing/Admin       |

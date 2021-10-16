@@ -1,0 +1,13 @@
+Provider                           |  Event ID  |  Channel                                             |  Message
+-----------------------------------|------------|------------------------------------------------------|--------------------------------------------------------
+Microsoft-Windows-ELS-Hyphenation  |  1         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  2         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  3         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  4         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  5         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  6         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  7         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  8         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  9         |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  10        |  Microsoft Windows ELS Hyphenation Analytic Channel  |
+Microsoft-Windows-ELS-Hyphenation  |  11        |                                                      |  Lexicon {String} not found. Using fallback hyphenator.

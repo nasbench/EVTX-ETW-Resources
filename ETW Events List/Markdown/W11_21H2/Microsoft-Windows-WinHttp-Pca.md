@@ -1,0 +1,3 @@
+Provider                       |  Event ID  |  Channel                        |  Message
+-------------------------------|------------|---------------------------------|--------------------------------------------------------------
+Microsoft-Windows-WinHttp-Pca  |  0         |  Microsoft-Windows-WinHttp-Pca  |  The WinHttp TLS handshake failed with version mismatch error

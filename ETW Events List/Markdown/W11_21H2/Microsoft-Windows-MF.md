@@ -1,0 +1,164 @@
+Provider              |  Event ID  |  Channel                             |  Message
+----------------------|------------|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MF  |  1         |  Media Foundation DeviceProxy        |  Devproxy QueueBuffersToDevice Notification
+Microsoft-Windows-MF  |  2         |  Media Foundation DeviceProxy        |  Devproxy SendBuffersToDevice Start
+Microsoft-Windows-MF  |  3         |  Media Foundation DeviceProxy        |  Devproxy SendBuffersToDevice Stop
+Microsoft-Windows-MF  |  4         |  Media Foundation DeviceProxy        |  Devproxy ProcessInput Notification
+Microsoft-Windows-MF  |  5         |  Media Foundation DeviceProxy        |  Devproxy HaveOutput Notification
+Microsoft-Windows-MF  |  6         |  Media Foundation DeviceProxy        |  Devproxy ProcessOutput Notification
+Microsoft-Windows-MF  |  7         |  Media Foundation DeviceProxy        |  Devproxy SetInputType Start
+Microsoft-Windows-MF  |  8         |  Media Foundation DeviceProxy        |  Devproxy SetInputType Start
+Microsoft-Windows-MF  |  9         |  Media Foundation DeviceProxy        |  Devproxy SetOutputType Start
+Microsoft-Windows-MF  |  10        |  Media Foundation DeviceProxy        |  Devproxy SetOutputType Stop
+Microsoft-Windows-MF  |  11        |  Media Foundation DeviceProxy        |  Devproxy Flush Notification
+Microsoft-Windows-MF  |  12        |  Media Foundation DeviceProxy        |  Devproxy KSPinStateChange Notification
+Microsoft-Windows-MF  |  13        |  Media Foundation DeviceProxy        |  Devproxy VideoPlugin Load Start
+Microsoft-Windows-MF  |  14        |  Media Foundation DeviceProxy        |  Devproxy VideoPlugin Load End
+Microsoft-Windows-MF  |  15        |  Media Foundation DeviceProxy        |  Devproxy VideoPlugin ProcessInput Start
+Microsoft-Windows-MF  |  16        |  Media Foundation DeviceProxy        |  Devproxy VideoPlugin ProcessInput End
+Microsoft-Windows-MF  |  17        |  Media Foundation DeviceProxy        |  Devproxy VideoPlugin ProcessOutput Start
+Microsoft-Windows-MF  |  18        |  Media Foundation DeviceProxy        |  Devproxy VideoPlugin ProcessOutput End
+Microsoft-Windows-MF  |  19        |  Media Foundation DeviceProxy        |  Devproxy D3DAllocatorCreated
+Microsoft-Windows-MF  |  20        |  Media Foundation DeviceProxy        |  Devproxy D3DAllocatorReleased
+Microsoft-Windows-MF  |  21        |  Media Foundation DeviceProxy        |
+Microsoft-Windows-MF  |  22        |  Media Foundation DeviceProxy        |
+Microsoft-Windows-MF  |  23        |  Media Foundation DeviceProxy        |  Devproxy MFT DynamicFormatChange Start
+Microsoft-Windows-MF  |  24        |  Media Foundation DeviceProxy        |  Devproxy MFT DynamicFormatChange Stop
+Microsoft-Windows-MF  |  25        |  Media Foundation DeviceProxy        |  Devproxy MFT StreamState Start
+Microsoft-Windows-MF  |  26        |  Media Foundation DeviceProxy        |  Devproxy MFT StreamState Stop
+Microsoft-Windows-MF  |  27        |  Media Foundation DeviceProxy        |  Devproxy OnPinBufferCompletion Notification
+Microsoft-Windows-MF  |  28        |  Media Foundation DeviceProxy        |  Devproxy OutoforderBufferCompletion Notification
+Microsoft-Windows-MF  |  29        |  Media Foundation DeviceProxy        |  Devproxy_DriverQueueInfo Notification
+Microsoft-Windows-MF  |  30        |  Media Foundation DeviceProxy        |  Devproxy_DroppedZeroLenghtSampleFromDeviceInfo Notification
+Microsoft-Windows-MF  |  31        |  Media Foundation DeviceProxy        |  Devproxy PhotoConfirmation Notification
+Microsoft-Windows-MF  |  32        |  Media Foundation DeviceProxy        |  Devproxy DMFT Notification Start
+Microsoft-Windows-MF  |  33        |  Media Foundation DeviceProxy        |  Devproxy DMFT Notification Stop
+Microsoft-Windows-MF  |  34        |  Media Foundation DeviceProxy        |  Devproxy DMFT Notification is implemented
+Microsoft-Windows-MF  |  1000      |  Media Foundation Pipeline           |  IMFTopoLoader::Load start
+Microsoft-Windows-MF  |  1001      |  Media Foundation Pipeline           |  IMFTopoLoader::Load returned {hr}
+Microsoft-Windows-MF  |  1002      |  Media Foundation Pipeline           |  Creating Transform {CLSID} returned {hr}
+Microsoft-Windows-MF  |  1003      |  Media Foundation Pipeline           |  Fallback to default D3D Format {D3DFmt}
+Microsoft-Windows-MF  |  1004      |  Media Foundation Pipeline           |  New destination rect is { ({left}), ({top}), ({right}), ({bottom})}
+Microsoft-Windows-MF  |  1005      |  Media Foundation Pipeline           |  New source rect is { ({left}), ({top}), ({right}), ({bottom})}
+Microsoft-Windows-MF  |  1006      |  Media Foundation Pipeline           |  DispatchDelayedEvents (Start) - Queue ({Bitpump}) Count ({Count})
+Microsoft-Windows-MF  |  1007      |  Media Foundation Pipeline           |  DispatchDelayedEvents (Stop) - Queue ({QueuePtr})
+Microsoft-Windows-MF  |  1008      |  Media Foundation Pipeline           |  HandleStreamEvent (Start) - Queue ({Bitpump}) type ({Type})
+Microsoft-Windows-MF  |  1009      |  Media Foundation Pipeline           |  HandleStreamEvent (Stop) - Queue ({Bitpump}) hr({Type})
+Microsoft-Windows-MF  |  1010      |  Media Foundation Pipeline           |  HandleMFTEvent (Start) - Queue ({MFT}) type ({Type})
+Microsoft-Windows-MF  |  1011      |  Media Foundation Pipeline           |  HandleMFTEvent (Stop) - Queue ({MFT}) hr({Type})
+Microsoft-Windows-MF  |  1012      |  Media Foundation Pipeline           |  MediaProcStreamRequestSample (Start) - Queue ({MPStream}) node ({Node}) Count({SampleCount})
+Microsoft-Windows-MF  |  1013      |  Media Foundation Pipeline           |  MediaProcStreamRequestSample (Stop) - Queue ({MPStream}) node ({Node}) hr({SampleCount})
+Microsoft-Windows-MF  |  1014      |  Media Foundation Pipeline           |  HandleSinkEvent (Start) - Queue ({Bitpump}) type ({Type})
+Microsoft-Windows-MF  |  1015      |  Media Foundation Pipeline           |  HandleSinkEvent (Stop) - Queue ({Bitpump}) hr({Type})
+Microsoft-Windows-MF  |  1016      |  Media Foundation Pipeline           |  PathLock_Acquire - PathLock ({PathLock})
+Microsoft-Windows-MF  |  1017      |  Media Foundation Pipeline           |  PathLock_Release - PathLock ({PathLock})
+Microsoft-Windows-MF  |  1018      |  Media Foundation Pipeline           |  HandleMediaSample (Start) - Queue ({Bitpump}) timestamp ({TimeStamp})
+Microsoft-Windows-MF  |  1019      |  Media Foundation Pipeline           |  HandleMediaSample (Stop) - Queue ({Bitpump}) hr({hr})
+Microsoft-Windows-MF  |  1020      |  Media Foundation Pipeline           |  HandleMediaSample_Process (Start) - Queue ({Bitpump}) pSample ({pSample})
+Microsoft-Windows-MF  |  1021      |  Media Foundation Pipeline           |  HandleMediaSample_Process (Stop) - Queue ({Bitpump}) hr ({hr})
+Microsoft-Windows-MF  |  1022      |  Media Foundation Pipeline           |  DispatchNodeInputEvent (Start) - Queue ({Node}) eventtype ({EventType})
+Microsoft-Windows-MF  |  1023      |  Media Foundation Pipeline           |  DispatchNodeInputEvent (Stop) - Queue ({Node}) hr ({hr})
+Microsoft-Windows-MF  |  1024      |  Media Foundation Pipeline           |  MediaProcSourceManagerOnStreamSample (Start) - Queue ({MP}) node ({Node}) Count({StreamIndex})
+Microsoft-Windows-MF  |  1025      |  Media Foundation Pipeline           |  MediaProcSourceManagerOnStreamSample (Stop) - Queue ({MP}) hr({hr})
+Microsoft-Windows-MF  |  1026      |  Media Foundation Pipeline           |  MediaProcStreamRequestSample (Process Start) - Queue ({MPStream}) index ({Node}) count({Index})
+Microsoft-Windows-MF  |  1027      |  Media Foundation Pipeline           |  MediaProcStreamRequestSample (Process Stop) - Queue ({MPStream}) index ({Node}) count({Index}) hr({SampleCount})
+Microsoft-Windows-MF  |  1028      |  Media Foundation Pipeline           |  MediaProc: SourceNode_ProcessSample Start: object={object} node={node} output={OutputIndex}
+Microsoft-Windows-MF  |  1029      |  Media Foundation Pipeline           |  MediaProc: SourceNode_ProcessSample Stop: object={object} node={node} HRESULT={result}
+Microsoft-Windows-MF  |  1030      |  Media Foundation Pipeline           |  MFTopo MFT Inserted IsHWMFT ({IsHWMFT}) GUID ({DecoderGUID})
+Microsoft-Windows-MF  |  1098      |  Media Foundation ContentProtection  |  OTA Failover to constricted video from protection scheme ID ({fromtype})
+Microsoft-Windows-MF  |  1099      |  Media Foundation ContentProtection  |  OPM Poll exit ({exitPolling})
+Microsoft-Windows-MF  |  1100      |  Media Foundation ContentProtection  |  RequestAccess Stream Id ({stream}) Action ({action}) EnablerObject Returned ({enablerReturned}) hr ({hr})
+Microsoft-Windows-MF  |  1101      |  Media Foundation ContentProtection  |  GetDecrypter Stream Id ({streamid}) hr ({hr})
+Microsoft-Windows-MF  |  1102      |  Media Foundation ContentProtection  |  GetPolicy Stream Id ({streamid}) Action ({Action}) Policy Returned ({policyReturned}) hr ({hr})
+Microsoft-Windows-MF  |  1103      |  Media Foundation ContentProtection  |  Reset Stream Id ({object}) hr ({hr})
+Microsoft-Windows-MF  |  1104      |  Media Foundation ContentProtection  |  BindAccess Stream Id ({object}) hr ({hr})
+Microsoft-Windows-MF  |  1105      |  Media Foundation ContentProtection  |  UpdateAccess Stream Id ({object}) hr ({hr})
+Microsoft-Windows-MF  |  1106      |  Media Foundation ContentProtection  |  GetInputTrustAuthority Stream Id ({streamId}) hr ({hr})
+Microsoft-Windows-MF  |  1107      |  Media Foundation ContentProtection  |  Decryptor ProcessOutput output ({bytes}) bytes hr ({hr})
+Microsoft-Windows-MF  |  1108      |  Media Foundation ContentProtection  |  GetInputProtectionVersion version ({value}) hr ({hr})
+Microsoft-Windows-MF  |  1109      |  Media Foundation ContentProtection  |  GetOutputProtectionVersion version ({value}) hr ({hr})
+Microsoft-Windows-MF  |  1110      |  Media Foundation ContentProtection  |  GetProtectionCertificate version ({value}) hr ({hr})
+Microsoft-Windows-MF  |  1111      |  Media Foundation ContentProtection  |  InitInputProtection version ({version}) stream ID ({streamId}) hr ({hr})
+Microsoft-Windows-MF  |  1112      |  Media Foundation ContentProtection  |  InitOutputProtection version ({version}) stream ID ({streamId}) hr ({hr})
+Microsoft-Windows-MF  |  1113      |  Media Foundation ContentProtection  |  Start MFPMP Protected ({isProtected}) hr ({hr})
+Microsoft-Windows-MF  |  1114      |  Media Foundation ContentProtection  |  ContentEnablerEvent Event Type ({type})
+Microsoft-Windows-MF  |  1115      |  Media Foundation ContentProtection  |  CreateObjectByCLSID CLSID ({CLSID}) hr ({hr})
+Microsoft-Windows-MF  |  1116      |  Media Foundation ContentProtection  |  GenerateRequiredSchemas attributes ({attributes}) Output Subtype ({outputSubtype}) Number of Schemas ({cSchemas}) hr ({hr})
+Microsoft-Windows-MF  |  1117      |  Media Foundation ContentProtection  |  RequiredSchema Context Data ({context}) Schema ID ({type})
+Microsoft-Windows-MF  |  1118      |  Media Foundation ContentProtection  |  PolicyEvent Event Type ({type}) Stream ID ({streamId}) hrStatus({hr})
+Microsoft-Windows-MF  |  1119      |  Media Foundation ContentProtection  |  ActivateClassById Class ({classId}) hrStatus({hr})
+Microsoft-Windows-MF  |  1120      |  Media Foundation ContentProtection  |  Validate Application Certificate Start
+Microsoft-Windows-MF  |  1121      |  Media Foundation ContentProtection  |  Validate Application Certificate Finish
+Microsoft-Windows-MF  |  1123      |  Media Foundation ContentProtection  |  OTA Apply Protection Scheme ID ({type}) Level ({level}) hr ({hr})
+Microsoft-Windows-MF  |  1124      |  Media Foundation AsyncWrapper       |  Need Input - Object ({WrapperPtr}) Stream ID ({StreamID}) Input Requests ({InputRequestsCount})
+Microsoft-Windows-MF  |  1126      |  Media Foundation AsyncWrapper       |  MFT ProcessInput (Start) - Object ({WrapperPtr}) Stream ID ({StreamID}) Sample ({SamplePtr})
+Microsoft-Windows-MF  |  1127      |  Media Foundation AsyncWrapper       |  MFT ProcessInput (End) - Object ({WrapperPtr}) Stream ID ({StreamID}) Sample ({SamplePtr}) SampleTime ({SampleTimestamp}) Input Queue Length ({InputQueueLength}) Result ({hr})
+Microsoft-Windows-MF  |  1128      |  Media Foundation AsyncWrapper       |  MFT ProcessOutput (Start) - Object ({WrapperPtr})
+Microsoft-Windows-MF  |  1129      |  Media Foundation AsyncWrapper       |  MFT ProcessOutput (End) - Object ({WrapperPtr}) Sample ({SamplePtr}) SampleTime ({SampleTime}) Result ({hr})
+Microsoft-Windows-MF  |  1130      |  Media Foundation AsyncWrapper       |  Have Output (End) - Object ({WrapperPtr}) Output Queue Length ({OutputQueueLength})
+Microsoft-Windows-MF  |  1131      |  Media Foundation AsyncWrapper       |  ProcessOutput - Object ({WrapperPtr}) Sample ({SamplePtr}) SampleTime ({SampleTimestamp}) Output Queue Length ({OutputQueueLength}) Result ({hr})
+Microsoft-Windows-MF  |  1132      |  Media Foundation AsyncWrapper       |  MFT Running (Start) - Object ({WrapperPtr})
+Microsoft-Windows-MF  |  1133      |  Media Foundation AsyncWrapper       |  MFT Running (End) - Object ({WrapperPtr})
+Microsoft-Windows-MF  |  1134      |  Media Foundation AsyncWrapper       |  SetWorkQueue - Object ({WrapperPtr}) WorkQueue ({WorkQueueID})
+Microsoft-Windows-MF  |  1135      |  Media Foundation AsyncWrapper       |  AsyncWrapper (Start) - Object ({ObjectPtr}) MFT({MFTPtr})
+Microsoft-Windows-MF  |  1136      |  Media Foundation AsyncWrapper       |  AsyncWrapper (End) - Object ({ObjectPtr}) MFT({MFTPtr})
+Microsoft-Windows-MF  |  1137      |  Media Foundation AsyncWrapper       |  MFT deadline (Start) - Object ({WrapperPtr}) Deadline ({WorkQueueID})
+Microsoft-Windows-MF  |  1138      |  Media Foundation AsyncWrapper       |  MFT deadline (End) - Object ({WrapperPtr})
+Microsoft-Windows-MF  |  1139      |  Media Foundation AsyncWrapper       |  MFT Loop Running (Start) - Object ({WrapperPtr})
+Microsoft-Windows-MF  |  1140      |  Media Foundation AsyncWrapper       |  MFT Loop Running (End) - Object ({WrapperPtr})
+Microsoft-Windows-MF  |  1141      |  Media Foundation AsyncWrapper       |  AsyncWrapperCompactedOutput- Object ({WrapperPtr}) Timestamp({SampleTimestamp}) Dur0({Duration0}) Dur1({Duration1}) NewDuration({DurationResult})
+Microsoft-Windows-MF  |  1145      |  Media Foundation AsyncWrapper       |  ProcessInput start - Object ({WrapperPtr}) Stream ID ({StreamID}) Sample ({SamplePtr}) Duration ({SampleTimestamp}) Input Queue Length ({Duration}) Shatter ({InputQueueLength})
+Microsoft-Windows-MF  |  1146      |  Media Foundation AsyncWrapper       |  ProcessInput stop - Object ({WrapperPtr}) Stream ID ({StreamID}) Input Queue Length ({SamplePtr}) Result ({InputQueueLength})
+Microsoft-Windows-MF  |  1147      |  Media Foundation AsyncWrapper       |  Multisample Expand - Buffer Index ({Buffer Index}) Time ({Timestamp}) Duration ({Duration})
+Microsoft-Windows-MF  |  1148      |  Media Foundation AsyncWrapper       |  Multisample Compact - Buffer count ({Buffer Count}) Time ({Timestamp}) OldDuration ({OrigDuration}) AddDuration ({AddDuration}) NewDuration ({NewDuration})
+Microsoft-Windows-MF  |  1150      |  Media Foundation ContentProtection  |  Video Frame Constriction to {bandwidthInPixels} kilopixels
+Microsoft-Windows-MF  |  1151      |  Media Foundation ContentProtection  |  Failed to establish OPM hr ({hr})
+Microsoft-Windows-MF  |  1160      |  Media Foundation ContentProtection  |  PMP Server Proxy Launched Process ID ({ProcessID})
+Microsoft-Windows-MF  |  1200      |  Media Foundation Pipeline           |  Low Latency was set on an MF component. Type ({ComponentType}) Set Interface ({SettingType}) Result ({Result})
+Microsoft-Windows-MF  |  1201      |  Media Foundation Pipeline           |  Low Latency was unset on an MF component. Type ({ComponentType}) Interface ({SettingType}) Result ({Result})
+Microsoft-Windows-MF  |  1202      |  Media Foundation DeviceProxy        |  MF Devproxy MFT ProcessMessage Event
+Microsoft-Windows-MF  |  1203      |  Media Foundation DeviceProxy        |  D3DDeviceLost
+Microsoft-Windows-MF  |  1204      |  Media Foundation DeviceProxy        |  MF Devproxy sample_TimeStamp Event
+Microsoft-Windows-MF  |  1205      |  Media Foundation Pipeline           |  Sync MFT Running (Start) - Object ({ObjectPtr})
+Microsoft-Windows-MF  |  1206      |  Media Foundation Pipeline           |  Sync MFT Running (End) - Object ({ObjectPtr})
+Microsoft-Windows-MF  |  1207      |  Media Foundation Pipeline           |  Sync MFT ProcessInput (Start) - Object ({WrapperPtr}) Stream ID ({StreamID}) Sample ({SamplePtr}) RequestsRemaining ({RemainingInputRequests}) SamplesRemaining({RemainingQueuedInputSamples})
+Microsoft-Windows-MF  |  1208      |  Media Foundation Pipeline           |  Sync MFT ProcessInput (End) - Object ({WrapperPtr}) Stream ID ({StreamID}) Sample ({SamplePtr}) SampleTime ({SampleTimestamp}) Input Queue Length ({InputQueueLength}) Result ({hr})
+Microsoft-Windows-MF  |  1209      |  Media Foundation Pipeline           |  Sync MFT ProcessOutput (Start) - Object ({WrapperPtr})
+Microsoft-Windows-MF  |  1210      |  Media Foundation Pipeline           |  Sync MFT ProcessOutput (End) - Object ({WrapperPtr}) Sample ({SamplePtr}) SampleTime ({SampleTime}) Result ({hr})
+Microsoft-Windows-MF  |  1211      |  Media Foundation Pipeline           |  Async MFT ProcessInput (Start) - Object ({WrapperPtr}) Stream ID ({StreamID}) Sample ({SamplePtr}) RequestsRemaining ({RemainingInputRequests}) SamplesRemaining({RemainingQueuedInputSamples})
+Microsoft-Windows-MF  |  1212      |  Media Foundation Pipeline           |  Async MFT ProcessInput (End) - Object ({WrapperPtr}) Stream ID ({StreamID}) Sample ({SamplePtr}) SampleTime ({SampleTimestamp}) Input Queue Length ({InputQueueLength}) Result ({hr})
+Microsoft-Windows-MF  |  1213      |  Media Foundation Pipeline           |  Async MFT ProcessOutput (Start) - Object ({WrapperPtr})
+Microsoft-Windows-MF  |  1214      |  Media Foundation Pipeline           |  Async MFT ProcessOutput (End) - Object ({WrapperPtr}) Sample ({SamplePtr}) SampleTime ({SampleTime}) Result ({hr})
+Microsoft-Windows-MF  |  1215      |  Media Foundation Pipeline           |  MFTInfo SetWorkQueue - Object ({ObjectPtr}) workq ({WorkQueueID})
+Microsoft-Windows-MF  |  1300      |  MFDS                                |  MFDS ReceiveSampleCP - Object ({Object}) Sample({SamplePtr}) TimeStamp({Timestamp})
+Microsoft-Windows-MF  |  1301      |  MFDS                                |  MFDS SendSampleEvent - Object ({Object}) StreamID({StreamID}) Sample({Sample}) TimeStamp({Timestamp})
+Microsoft-Windows-MF  |  1302      |  MFDS                                |  MFDS SamplePoolPending - Object ({Object}) Sample({Sample}) PendingCount({PendingCount})
+Microsoft-Windows-MF  |  1303      |  MFDS                                |  MFDS QueueSample - Object ({Object}) Sample({StreamID}) SampleQueueLen({Sample})
+Microsoft-Windows-MF  |  1304      |  MFDS                                |  MFDS RequestSample - Object ({Object}) Token({StreamID}) RequestQueueLen({Token})
+Microsoft-Windows-MF  |  1305      |  MFDS                                |  MFDS FillSampleRequest - Object ({Object}) Sample({StreamID}) Token({Sample}) SampleQueueLen({Token}) RequestQueueLen({SampleQueueLen})
+Microsoft-Windows-MF  |  1306      |  MFDS                                |  MFDS_GetTime object={Object} tsOrig={tsOrig} sysOrig={sysOrig} tsFixed={tsFixed} sysFixed={sysFixed} qpcNow={rtNow} tsOut={tsOut} fixed={tsOut_ms}
+Microsoft-Windows-MF  |  1307      |  MFDS                                |  MFDS_StateStart  object={Object} state={State}
+Microsoft-Windows-MF  |  1308      |  MFDS                                |  MFDS_StateStop  object={Object} state={State}
+Microsoft-Windows-MF  |  1310      |  SrcPrefetch                         |  SrcPrefetch FillBuffer Start - Object ({Object})
+Microsoft-Windows-MF  |  1311      |  SrcPrefetch                         |  SrcPrefetch FillBuffer Stop - Object ({Object})
+Microsoft-Windows-MF  |  1312      |  SrcPrefetch                         |  SrcStreamEOSState - Object ({Object}) ID ({StreamID}) old ({Old state}) new ({New state})
+Microsoft-Windows-MF  |  1313      |  SrcPrefetch                         |  SrcStreamNeedMoreSamples - Object ({Object}) UseBuffering ({UseSampleBasedBuffering}) rate ({Rate}) IsEOS({IsEOS}) UnprocessedSamples ({UnprocessedSamples}) prerolled ({Prerolled})
+Microsoft-Windows-MF  |  1314      |  SrcPrefetch                         |  SrcPrefetch Timeout Start - Object ({Object})
+Microsoft-Windows-MF  |  1315      |  SrcPrefetch                         |  SrcPrefetch Timeout Stop - Object ({Object})
+Microsoft-Windows-MF  |  1316      |  SrcPrefetch                         |  SrcPrefetch Timeout Cancel - Object ({Object})
+Microsoft-Windows-MF  |  1317      |  SrcPrefetch                         |  SrcStreamRequestSample Start - Object ({Object}) token ({Token})
+Microsoft-Windows-MF  |  1318      |  SrcPrefetch                         |  SrcStreamRequestSample Stop - Object ({Object}) token ({Token})
+Microsoft-Windows-MF  |  1350      |  MP4                                 |  MP4_CreateQTMovie Start - Object ({Object})
+Microsoft-Windows-MF  |  1351      |  MP4                                 |  MP4_CreateQTMovie Stop - Object ({Object}) (hr {hr})
+Microsoft-Windows-MF  |  1352      |  MP4                                 |  MP4_SampleQueue - Object ({Object}) StreamID ({StreamID}) SampleCount({SampleCount})
+Microsoft-Windows-MF  |  1353      |  MP4                                 |  MP4_CompactAudioSample - Object ({Object}) StreamID ({StreamID}) timestamp({timestamps}) prevDur({prevDuration}) nextDur({newDuration}) mergedDur({mergedDuration})
+Microsoft-Windows-MF  |  1417      |  Media Foundation DeviceMFT          |  DeviceMFTM InitializeTransform
+Microsoft-Windows-MF  |  1418      |  Media Foundation DeviceMFT          |  DeviceMFTM InitializeTransform
+Microsoft-Windows-MF  |  1419      |  Media Foundation DeviceMFT          |  DeviceMFTM SetOutputType Start
+Microsoft-Windows-MF  |  1420      |  Media Foundation DeviceMFT          |  DeviceMFTM SetOutputType Stop
+Microsoft-Windows-MF  |  1421      |  Media Foundation DeviceMFT          |  DeviceMFTM OnInputStreamState Start
+Microsoft-Windows-MF  |  1422      |  Media Foundation DeviceMFT          |  DeviceMFTM OnInputStreamState Stop
+Microsoft-Windows-MF  |  1423      |  Media Foundation DeviceMFT          |  DeviceMFTM ProcessOutput Event
+Microsoft-Windows-MF  |  1424      |  Media Foundation DeviceMFT          |  DeviceMFTM Error Thrown
+Microsoft-Windows-MF  |  1425      |  Media Foundation DeviceMFT          |  DeviceMFTM DeviceTransform SetOutputType Start
+Microsoft-Windows-MF  |  1426      |  Media Foundation DeviceMFT          |  DeviceMFTM DeviceTransform SetOutputType Stop

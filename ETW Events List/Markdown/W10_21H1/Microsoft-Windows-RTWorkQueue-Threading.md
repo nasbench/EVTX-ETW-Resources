@@ -1,0 +1,58 @@
+Provider                                 |  Event ID  |  Channel                |  Message
+-----------------------------------------|------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-RTWorkQueue-Threading  |  4435      |  RTWorkQueue Threading  |  WorkQueue Execute: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} AsyncResult={AsyncResult}
+Microsoft-Windows-RTWorkQueue-Threading  |  4436      |  RTWorkQueue Threading  |  WorkQueue Execute: End workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} AsyncResult={AsyncResult}
+Microsoft-Windows-RTWorkQueue-Threading  |  4437      |  RTWorkQueue Threading  |  WorkQueue Queue: WorkQueuePtr={WorkQueuePointer} Start threads={QueueDepth} AsyncResult={AsyncResult}
+Microsoft-Windows-RTWorkQueue-Threading  |  4438      |  RTWorkQueue Threading  |  WorkQueue Queue: WorkQueuePtr={WorkQueuePointer} End threads={QueueDepth} AsyncResult={AsyncResult}
+Microsoft-Windows-RTWorkQueue-Threading  |  4439      |  RTWorkQueue Threading  |  WorkQueue Thread: Start workqueue_ptr={WorkQueuePointer} WorkQueueID={WordQueueID} ThreadCount={ThreadCount}
+Microsoft-Windows-RTWorkQueue-Threading  |  4440      |  RTWorkQueue Threading  |  WorkQueue Thread: End workqueue_ptr={WorkQueuePointer} WorkQueueID={WordQueueID} ThreadCount={ThreadCount}
+Microsoft-Windows-RTWorkQueue-Threading  |  4454      |  RTWorkQueue Threading  |  MMCSS Registration Enter Queue={Queue} ThreadID={ThreadID} Handle={Handle} Error={Error} Class={Class} Pri={Priority} TaskID={TaskID}
+Microsoft-Windows-RTWorkQueue-Threading  |  4455      |  RTWorkQueue Threading  |  MMCSS Registration Enter Queue={Queue} ThreadID={ThreadID} Handle={Handle} Error={Error} Class={Class} Pri={Priority} TaskID={TaskID}
+Microsoft-Windows-RTWorkQueue-Threading  |  4472      |  RTWorkQueue Threading  |  WorkQueue Queue: WorkQueuePtr={WorkQueuePointer} WorkQueueID={WorkQueueID}
+Microsoft-Windows-RTWorkQueue-Threading  |  4473      |  RTWorkQueue Threading  |  WorkQueue Queue: WorkQueuePtr={WorkQueuePointer} WorkQueueID={WorkQueueID}
+Microsoft-Windows-RTWorkQueue-Threading  |  4474      |  RTWorkQueue Threading  |  WorkQueue Execute Callback: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} BaseWorkQueueID={BaseWorkQueueID} ThreadID={ThreadID} AsyncResult={AsyncResult} AsyncResultPtr={AsyncResultVTable} LongRunning={LongRunning}
+Microsoft-Windows-RTWorkQueue-Threading  |  4475      |  RTWorkQueue Threading  |  WorkQueue Execute Callback: End workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} BaseWorkQueueID={BaseWorkQueueID} ThreadID={ThreadID} AsyncResult={AsyncResult} AsyncResultPtr={AsyncResultVTable} LongRunning={LongRunning}
+Microsoft-Windows-RTWorkQueue-Threading  |  4476      |  RTWorkQueue Threading  |  WorkQueue MMCSS: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} Class={Class} Pri={Priority}
+Microsoft-Windows-RTWorkQueue-Threading  |  4477      |  RTWorkQueue Threading  |  WorkQueue MMCSS: End workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} Class={Class} Pri={Priority}
+Microsoft-Windows-RTWorkQueue-Threading  |  4478      |  RTWorkQueue Threading  |  WorkQueue UpdateDeadlines: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskId={TaskID} Previous={PreviousDeadline} Next={NextDeadline} Delay={lDelay_ms}
+Microsoft-Windows-RTWorkQueue-Threading  |  4479      |  RTWorkQueue Threading  |  WorkQueue UpdateDeadlines: End workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskId={TaskID} Previous={PreviousDeadline} Next={NextDeadline} Delay={lDelay_ms}
+Microsoft-Windows-RTWorkQueue-Threading  |  4480      |  RTWorkQueue Threading  |  WorkQueue AddDeadline: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} Item={ItemPointer} global={GlobalDeadline} delta={DeltaAhead_usec}
+Microsoft-Windows-RTWorkQueue-Threading  |  4481      |  RTWorkQueue Threading  |  WorkQueue AddDeadline: End workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} Item={ItemPointer} global={GlobalDeadline} delta={DeltaAhead_usec}
+Microsoft-Windows-RTWorkQueue-Threading  |  4482      |  RTWorkQueue Threading  |  WorkQueue AddImmediateDeadline: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} Item={ItemPointer} global={GlobalDeadline} delta={DeltaAhead_usec}
+Microsoft-Windows-RTWorkQueue-Threading  |  4483      |  RTWorkQueue Threading  |  WorkQueue AddImmediateDeadline: End workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} Item={ItemPointer} global={GlobalDeadline} delta={DeltaAhead_usec}
+Microsoft-Windows-RTWorkQueue-Threading  |  4484      |  RTWorkQueue Threading  |  WorkQueue DeadlineYield: Start workQueueID={WorkQueueID} Delay={Yield}
+Microsoft-Windows-RTWorkQueue-Threading  |  4485      |  RTWorkQueue Threading  |  WorkQueue DeadlineYield: End workQueueID={WorkQueueID} Delay={Yield}
+Microsoft-Windows-RTWorkQueue-Threading  |  4486      |  RTWorkQueue Threading  |  WorkQueue DeadlineQueue: WorkQueuePtr={WorkQueuePointer} workQueueID={WorkQueueID} count={TotalCount} immediateCount={ImmediateCount} nextDeadline={NextDeadline} nextItem={ItemPointer}
+Microsoft-Windows-RTWorkQueue-Threading  |  4487      |  RTWorkQueue Threading  |  WorkQueue LongRunning: Start workQueueID={WorkQueueID}
+Microsoft-Windows-RTWorkQueue-Threading  |  4488      |  RTWorkQueue Threading  |  WorkQueue LongRunning: End workQueueID={WorkQueueID}
+Microsoft-Windows-RTWorkQueue-Threading  |  4489      |  RTWorkQueue Threading  |  WorkQueue: StartTimer QueuePtr={WorkQueuePointer} QueueID={WorkQueueID} TimerPtr={TimerPointer} Timeout={Timeout} IsPeriodic={IsPeriodic}
+Microsoft-Windows-RTWorkQueue-Threading  |  4490      |  RTWorkQueue Threading  |  WorkQueue: ExecuteTimer QueuePtr={WorkQueuePointer} QueueID={WorkQueueID} TimerPtr={TimerPointer}
+Microsoft-Windows-RTWorkQueue-Threading  |  4493      |  RTWorkQueue Threading  |  UpdateSelectWorkQueuesCpuGroupMask Enter ProcessorGroup={ProcessorGroup} ProcessorMask={ProcessorMask}
+Microsoft-Windows-RTWorkQueue-Threading  |  4494      |  RTWorkQueue Threading  |  UpdateSelectWorkQueuesCpuGroupMask Leave ProcessorGroup={ProcessorGroup} ProcessorMask={ProcessorMask} hr={hResult}
+Microsoft-Windows-RTWorkQueue-Threading  |  4495      |  RTWorkQueue Threading  |  SubscribeCpuGroupMaskChangeWNF queryStatus={queryStatus} subscribeStatus={subscribeStatus} changeStamp={changeStamp}
+Microsoft-Windows-RTWorkQueue-Threading  |  4496      |  RTWorkQueue Threading  |  UpdateWorkqueueCpuGroupMask workQueue={dwWorkQueue} Class={Class} ProcesssorGroup={ProcessorGroup} ProcesssorMask={ProcessorMask}
+Microsoft-Windows-RTWorkQueue-Threading  |  4497      |  RTWorkQueue Threading  |  CpuGroupMaskChangeWnfCallback ChangeStamp={ChangeStamp} CurChangeStamp={CurChangeStamp} ProcessorGroup={ProcessorGroup} ProcessorMask={ProcessorMask} Length={Length}
+Microsoft-Windows-RTWorkQueue-Threading  |  4498      |  RTWorkQueue Threading  |  SetThreadCpuGroupMask pWorkQueue={pWorkQueue} Class={Class} Priority={Priority} ThreadId={ThreadId} CurProcessorGroup={CurProcessorGroup} CurProcessorMask={CurProcessorMask} NewProcessorGroup={NewProcessorGroup} NewProcessorMask={NewProcessorMask} status={Status}
+Microsoft-Windows-RTWorkQueue-Threading  |  4499      |  RTWorkQueue Threading  |  WorkQueue Start Notification WorkQueuePtr={WorkQueuePointer} WorkQueueID={WorkQueueID}
+Microsoft-Windows-RTWorkQueue-Threading  |  4500      |  RTWorkQueue Threading  |  WorkQueue End Notification WorkQueuePtr={WorkQueuePointer} WorkQueueID={WorkQueueID}
+Microsoft-Windows-RTWorkQueue-Threading  |  4501      |  RTWorkQueue Threading  |  WorkQueue Debounce: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4502      |  RTWorkQueue Threading  |  WorkQueue Debounce: Stop workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4503      |  RTWorkQueue Threading  |  WorkQueue Buffering: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4504      |  RTWorkQueue Threading  |  WorkQueue Buffering: Stop workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4505      |  RTWorkQueue Threading  |  Platform AllocIndex start: Platform={Platform} WorkQueueID={WorkQueueID} Index={Index}
+Microsoft-Windows-RTWorkQueue-Threading  |  4506      |  RTWorkQueue Threading  |  Platform AllocIndex stop: Platform={Platform} WorkQueueID={WorkQueueID} Index={Index}
+Microsoft-Windows-RTWorkQueue-Threading  |  4507      |  RTWorkQueue Threading  |  Platform Init start: Platform={Platform}
+Microsoft-Windows-RTWorkQueue-Threading  |  4508      |  RTWorkQueue Threading  |  Platform Init stop: Platform={Platform}
+Microsoft-Windows-RTWorkQueue-Threading  |  4509      |  RTWorkQueue Threading  |  Platform Shutdown start: Platform={Platform}
+Microsoft-Windows-RTWorkQueue-Threading  |  4510      |  RTWorkQueue Threading  |  Platform Shutdown stop: Platform={Platform}
+Microsoft-Windows-RTWorkQueue-Threading  |  4511      |  RTWorkQueue Threading  |  Platform Shutdown timeout: Platform={Platform}
+Microsoft-Windows-RTWorkQueue-Threading  |  4512      |  RTWorkQueue Threading  |  Platform Shutdown_WorkQueue start: Platform={Platform} workqueue={WorkQueue} index={Index}
+Microsoft-Windows-RTWorkQueue-Threading  |  4513      |  RTWorkQueue Threading  |  Platform Shutdown_WorkQueue stop: Platform={Platform} workqueue={WorkQueue} index={Index}
+Microsoft-Windows-RTWorkQueue-Threading  |  4514      |  RTWorkQueue Threading  |  WorkQueue RunLimit: Start workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4515      |  RTWorkQueue Threading  |  WorkQueue RunLimit: Stop workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4516      |  RTWorkQueue Threading  |  WorkQueue RunLimit: Exceeded workqueue_ptr={WorkQueuePointer} workQueueID={WorkQueueID} TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4517      |  RTWorkQueue Threading  |  TaskGroup: Start TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4518      |  RTWorkQueue Threading  |  TaskGroup: End TaskGroup={TaskGroup}
+Microsoft-Windows-RTWorkQueue-Threading  |  4519      |  RTWorkQueue Threading  |  TaskGroup RefCount TaskGroup={TaskGroup} RefCount={RefCount}
+Microsoft-Windows-RTWorkQueue-Threading  |  4520      |  RTWorkQueue Threading  |  TaskGroup ObjectCount ObjectCount={ObjectCount}
+Microsoft-Windows-RTWorkQueue-Threading  |  4521      |  RTWorkQueue Threading  |  TaskGroup Reinit TaskGroup={TaskGroup} TaskID={TaskID}

@@ -1,0 +1,3 @@
+Provider                                              |  Event ID  |  Channel                                         |  Message
+------------------------------------------------------|------------|--------------------------------------------------|------------------------------------------------------------------------------
+Microsoft-Windows-Privacy-Auditing-OneSettingsClient  |  1         |  Microsoft-Windows-Privacy-Auditing/Operational  |  Settings were downloaded from the {Partner}.{Feature} endpoint by {CallerId}

@@ -1,0 +1,147 @@
+Provider               |  Event ID  |  Channel                      |  Message
+-----------------------|------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-EFS  |  1         |  Microsoft-Windows-EFS/Debug  |  An API call failed at {FileNumber}.{LineNumber}.  Error code: {Param}
+Microsoft-Windows-EFS  |  2         |  Microsoft-Windows-EFS/Debug  |  An API call failed at {FileNumber}.{LineNumber}.  Error code: {Param1}, Data: {Param2}
+Microsoft-Windows-EFS  |  3         |  Microsoft-Windows-EFS/Debug  |  An API call failed at {FileNumber}.{LineNumber}.  Error code: {Param1}, Data: {Param2}, {Param3}
+Microsoft-Windows-EFS  |  4         |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Failed to allocate {Param} bytes.
+Microsoft-Windows-EFS  |  256       |  Microsoft-Windows-EFS/Debug  |  EFS key promoted from current key.  CertValidated: {CertValidated}, cbHash: {cbHash}, pbHash: {pbHash}, ContainerName: {ContainerName}, ProviderName: {ProviderName}, DisplayInformation: {DisplayInformation}, dwCapabilities: {dwCapabilities}, bIsCurrentKey: {bIsCurrentKey}, eKeyType: {eKeyType}
+Microsoft-Windows-EFS  |  257       |  Microsoft-Windows-EFS/Debug  |  EFS key demoted from current key.  CertValidated: {CertValidated}, cbHash: {cbHash}, pbHash: {pbHash}, ContainerName: {ContainerName}, ProviderName: {ProviderName}, DisplayInformation: {DisplayInformation}, dwCapabilities: {dwCapabilities}, bIsCurrentKey: {bIsCurrentKey}, eKeyType: {eKeyType}
+Microsoft-Windows-EFS  |  258       |  Microsoft-Windows-EFS/Debug  |  EFS key flushed from cache.  CertValidated: {CertValidated}, cbHash: {cbHash}, pbHash: {pbHash}, ContainerName: {ContainerName}, ProviderName: {ProviderName}, DisplayInformation: {DisplayInformation}, dwCapabilities: {dwCapabilities}, bIsCurrentKey: {bIsCurrentKey}, eKeyType: {eKeyType}
+Microsoft-Windows-EFS  |  259       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: The specified key is not valid for EFS
+Microsoft-Windows-EFS  |  260       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Attempt to create a new EFS key
+Microsoft-Windows-EFS  |  261       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: A new EFS key was successfully created
+Microsoft-Windows-EFS  |  262       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Begin searching the MY store for a valid EFS key
+Microsoft-Windows-EFS  |  263       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Begin searching the MY store for a valid EFS key
+Microsoft-Windows-EFS  |  264       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Deleting currentkey from registry
+Microsoft-Windows-EFS  |  265       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: The EFS cert is self-signed, but self-signed certs are disabled by policy
+Microsoft-Windows-EFS  |  272       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: RSA is required by policy, but the key does not support RSA encryption
+Microsoft-Windows-EFS  |  273       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: MASTERKEY is required by policy, but the key does not support MASTERKEY encryption
+Microsoft-Windows-EFS  |  274       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: SMARTCARDS are required by policy, but the key is not SMARTCARD-based
+Microsoft-Windows-EFS  |  275       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: key is expired
+Microsoft-Windows-EFS  |  276       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: key is valid
+Microsoft-Windows-EFS  |  277       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: try and locate the matching key based on cert hash
+Microsoft-Windows-EFS  |  278       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: key successfully loaded from registry
+Microsoft-Windows-EFS  |  279       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: try and locate the matching key in cache
+Microsoft-Windows-EFS  |  280       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: trying to load the masterkey history
+Microsoft-Windows-EFS  |  281       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: masterkey history loaded
+Microsoft-Windows-EFS  |  288       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: failed to encrypt: SIS or HSM file
+Microsoft-Windows-EFS  |  289       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Suite B is disabled by policy, but the key is a Suite B key
+Microsoft-Windows-EFS  |  290       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Suite B is required by policy, but the key is not a Suite B key
+Microsoft-Windows-EFS  |  512       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: releasing user cache object.  Refcount: {Param}
+Microsoft-Windows-EFS  |  513       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: trying to stop cache polling thread
+Microsoft-Windows-EFS  |  514       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: no decryption status in cache
+Microsoft-Windows-EFS  |  515       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: found matching decryption status in cache
+Microsoft-Windows-EFS  |  516       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: attempting to add key to user cache
+Microsoft-Windows-EFS  |  517       |  Microsoft-Windows-EFS/Debug  |  EFS key added to user cache.  CertValidated: {CertValidated}, cbHash: {cbHash}, pbHash: {pbHash}, ContainerName: {ContainerName}, ProviderName: {ProviderName}, DisplayInformation: {DisplayInformation}, dwCapabilities: {dwCapabilities}, bIsCurrentKey: {bIsCurrentKey}, eKeyType: {eKeyType}
+Microsoft-Windows-EFS  |  518       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: ensuring user has cache node
+Microsoft-Windows-EFS  |  519       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: found cache node in user info
+Microsoft-Windows-EFS  |  520       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: found cache node in global cache
+Microsoft-Windows-EFS  |  521       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: creating new cache node for user
+Microsoft-Windows-EFS  |  768       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Policy settings specified flush on card removal.  Starting the polling thread...
+Microsoft-Windows-EFS  |  769       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Policy settings specified NO flush on timeout.  Stopping the polling thread...
+Microsoft-Windows-EFS  |  770       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Policy settings specified flush on timeout.  Starting the polling thread...
+Microsoft-Windows-EFS  |  771       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Policy settings specified new cache flush interval: {Param}.  Stop polling (will restart if there are active user caches)
+Microsoft-Windows-EFS  |  772       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Polling thread stopped
+Microsoft-Windows-EFS  |  773       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Flush cache specified by policy, and we have active user caches.  Start polling.
+Microsoft-Windows-EFS  |  774       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Polling thread started
+Microsoft-Windows-EFS  |  775       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: User logon detected.  Beginning SSO processing.
+Microsoft-Windows-EFS  |  776       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: User logon detected, but is not smartcard-based.  No SSO processing required.
+Microsoft-Windows-EFS  |  777       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Smartcard notification detected.  Beginning SSO processing.
+Microsoft-Windows-EFS  |  784       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Smartcard notification detected, but the logon cert is already cached.  No processing required.
+Microsoft-Windows-EFS  |  785       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Current key matches the logon cert.  Setting up the PIN cache.
+Microsoft-Windows-EFS  |  786       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: User does not yet have a current key.  If smartcard is required by policy, the logon cert and PIN will be cached.
+Microsoft-Windows-EFS  |  787       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Logon notification detected on DC.  Beginning DRA install.
+Microsoft-Windows-EFS  |  788       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: user does not already have a cache: generating one now
+Microsoft-Windows-EFS  |  789       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: generating pre-cache for PIN and logon cert
+Microsoft-Windows-EFS  |  790       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: tried to install logon cert, but it's not available (not a smartcard logon, or the smartcard was removed)
+Microsoft-Windows-EFS  |  791       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: logon cert successfully installed
+Microsoft-Windows-EFS  |  792       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: trying to install logon cert
+Microsoft-Windows-EFS  |  793       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: User lock detected.  Beginning SSO processing.
+Microsoft-Windows-EFS  |  800       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: User logoff detected.  Beginning SSO processing.
+Microsoft-Windows-EFS  |  801       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Flushing the user cache
+Microsoft-Windows-EFS  |  802       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: User has locked workstation, but policy says not to flush cache
+Microsoft-Windows-EFS  |  803       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Checking for expired cache entries
+Microsoft-Windows-EFS  |  804       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Expired certificate in recovery policy
+Microsoft-Windows-EFS  |  805       |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Certificate in recovery policy is not yet valid
+Microsoft-Windows-EFS  |  1024      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: SL policy successfully updated
+Microsoft-Windows-EFS  |  1040      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS is disabled by SL policy
+Microsoft-Windows-EFS  |  1041      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS is not yet initialized
+Microsoft-Windows-EFS  |  1042      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS is disabled
+Microsoft-Windows-EFS  |  1280      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: the data received by the API was too large.  Expected: {Param1}, Actual: {Param2}
+Microsoft-Windows-EFS  |  1281      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: the data received by the API was too small.  Expected: {Param1}, Actual: {Param2}
+Microsoft-Windows-EFS  |  1282      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: POSSIBLE EFS ATTACK DETECTED: {DomainName}, {UserName}, {AttackId}
+Microsoft-Windows-EFS  |  1283      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: attempting to validate EFS stream
+Microsoft-Windows-EFS  |  1284      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS stream validated
+Microsoft-Windows-EFS  |  1536      |  Microsoft-Windows-EFS/Debug  |  PIN prompt dialog has closed
+Microsoft-Windows-EFS  |  1537      |  Microsoft-Windows-EFS/Debug  |  Prompt the user to select a smartcard-based EFS cert
+Microsoft-Windows-EFS  |  1538      |  Microsoft-Windows-EFS/Debug  |  Smartcard-based EFS cert successfully selected by the user
+Microsoft-Windows-EFS  |  1539      |  Microsoft-Windows-EFS/Debug  |  Prompt the user for PIN
+Microsoft-Windows-EFS  |  1540      |  Microsoft-Windows-EFS/Debug  |  PIN successfully acquired from the user
+Microsoft-Windows-EFS  |  1541      |  Microsoft-Windows-EFS/Debug  |  Perfect match found in cache.
+Microsoft-Windows-EFS  |  1542      |  Microsoft-Windows-EFS/Debug  |  Masterkey history already loaded
+Microsoft-Windows-EFS  |  1543      |  Microsoft-Windows-EFS/Debug  |  Current key loaded from cache
+Microsoft-Windows-EFS  |  1544      |  Microsoft-Windows-EFS/Debug  |  Current key loaded from registry
+Microsoft-Windows-EFS  |  1545      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Masterkey history: failed size consistency check.  {Param1}, {Param2}, {Param3}
+Microsoft-Windows-EFS  |  4096      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Encrypted keys not equal
+Microsoft-Windows-EFS  |  4097      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: doing a REKEY, but the DDF entry already exists
+Microsoft-Windows-EFS  |  4098      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: replace operation added a DDF (unexpected)
+Microsoft-Windows-EFS  |  4099      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: user is modifying a DDF entry not matching the PoP entry.  Require WRITE_ATTRIBUTES
+Microsoft-Windows-EFS  |  4100      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: user is modifying a DDF matching the PoP entry, or the DRF.  Don't require WRITE_ATTRIBUTES
+Microsoft-Windows-EFS  |  4101      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: UNEXPECTED condition: no ENCRYPTED_KEY for SC failure
+Microsoft-Windows-EFS  |  4102      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Plug-n-Play service not ready. EFS server will not try to detect interrupted encryption/decryption operation(s).
+Microsoft-Windows-EFS  |  4353      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Cannot open log file. Encryption/decryption operation(s) cannot be recovered.
+Microsoft-Windows-EFS  |  4354      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Cannot read log file. Encryption/decryption operation(s) cannot be recovered.
+Microsoft-Windows-EFS  |  4355      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: A corrupted or different format log file has been found. No action was taken.
+Microsoft-Windows-EFS  |  4356      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: The log file cannot be opened as non-cached IO. No action was taken.
+Microsoft-Windows-EFS  |  4357      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Interrupted encryption/decryption operation(s) found on a volume. Recovery procedure started.
+Microsoft-Windows-EFS  |  4358      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS recovery service cannot open the file {Param1}. The interrupted encryption/decryption operation cannot be recovered.
+Microsoft-Windows-EFS  |  4359      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS service recovered {Param1} successfully.
+Microsoft-Windows-EFS  |  4360      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS service could not open all the streams on file {Param1}  The file was not recovered.
+Microsoft-Windows-EFS  |  4361      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: {Param1} could not be recovered Completely.  EFS driver may be missing.
+Microsoft-Windows-EFS  |  4368      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: IO Error occurred during stream recovery.  {Param1} was not recovered.
+Microsoft-Windows-EFS  |  4369      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS recovery service cannot open the backup file {Param1} by name. The interrupted encryption/decryption operation (on file {Param2}) may be recovered.  The backup file will not be deleted. User should delete the backup file if the recovery operation is done successfully.
+Microsoft-Windows-EFS  |  4370      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: {Param1} was opened by File ID successfully the first time but not the second time. No recovery operation was tried on file {Param2}. This is an internal error.
+Microsoft-Windows-EFS  |  4371      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS recovery service cannot get the backup file name. The interrupted encryption/decryption operation (on file {Param1}) may be recovered.  The temporary backup file {Param2} is not deleted.  User should delete the backup file if the recovery operation is done successfully.
+Microsoft-Windows-EFS  |  4372      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: {Param1} could not be opened. {Param2} was not recovered.
+Microsoft-Windows-EFS  |  4373      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Stream Information could not be got from {Param1}. {Param2} was not recovered.
+Microsoft-Windows-EFS  |  4374      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS service could not open all the streams on file {Param1}.  {Param2} was not recovered.
+Microsoft-Windows-EFS  |  4375      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: EFS Service received logon notification.
+Microsoft-Windows-EFS  |  4376      |  Application                  |  EFS Service failed to start. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4377      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: User cache entry purged. Reference count: {Param}.
+Microsoft-Windows-EFS  |  4378      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: All user cache entries purged. Reference count: {Param}.
+Microsoft-Windows-EFS  |  4379      |  Application                  |  EFS service was unable to populate SID information. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4380      |  Application                  |  EFS service was unable to determine the computer name. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4381      |  Application                  |  EFS service was unable to initialize cache lock. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4382      |  Application                  |  EFS service was unable to initialize the BCrypt Algorithm Provider. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4383      |  Application                  |  EFS service was unable to query Software Licensing for the cache size. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4384      |  Application                  |  EFS service was unable to open handle to the MS_DEF_PROV provider. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4385      |  Application                  |  EFS service was unable to setup notifications from LSA. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4386      |  Application                  |  EFS service was unable to initialize the recovery policy resource. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4387      |  Application                  |  EFS service was unable process the recovery policy. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4388      |  Application                  |  EFS service was unable to notify NTFS of its state. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4389      |  Application                  |  EFS service was unable to setup group policy change notifications. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4390      |  Application                  |  EFS service was unable to process active user sessions. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4391      |  Microsoft-Windows-EFS/Debug  |  Encrypting File System server ready to accept calls.
+Microsoft-Windows-EFS  |  4392      |  Application                  |  {FileNumber}.{LineNumber}: EFS service failed to subscribe for updates to an MDM policy. Index: {ErrorCode}.
+Microsoft-Windows-EFS  |  4393      |  Application                  |  {FileNumber}.{LineNumber}: Failed to initialize one or more synchronization objects. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4400      |  Application                  |  {FileNumber}.{LineNumber}: EFS service failed to process MDM policy updates. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4401      |  Application                  |  {FileNumber}.{LineNumber}: EFS service failed to provision a user for EDP. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4402      |  Application                  |  {FileNumber}.{LineNumber}: EFS service failed to provision a user for DPL. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4403      |  Application                  |  {FileNumber}.{LineNumber}: EFS service failed to initialize file encryption queues. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4404      |  Application                  |  {FileNumber}.{LineNumber}: Recovery policy data is in an invalid format. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  4405      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Start: {Param1}.
+Microsoft-Windows-EFS  |  4406      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Complete: {Param1}. Code: {Param2}.
+Microsoft-Windows-EFS  |  4407      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Error Code: {Param1}.
+Microsoft-Windows-EFS  |  4408      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Status Code: {Param1}.
+Microsoft-Windows-EFS  |  4409      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Enter: {Param1}.
+Microsoft-Windows-EFS  |  4410      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Leave: {Param1}.
+Microsoft-Windows-EFS  |  4411      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Leave: {Param1}. Code: {Param2}.
+Microsoft-Windows-EFS  |  4412      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Error: {Param1}. Code: {Param2}.
+Microsoft-Windows-EFS  |  4413      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Warning: {Param1}. Code: {Param2}.
+Microsoft-Windows-EFS  |  4414      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: {Param1}. Code: {Param2}.
+Microsoft-Windows-EFS  |  4415      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: {Param1}. Value: {Param2}.
+Microsoft-Windows-EFS  |  4416      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Complete: {Param1}. Code: {Param2}.
+Microsoft-Windows-EFS  |  4417      |  Microsoft-Windows-EFS/Debug  |  {FileNumber}.{LineNumber}: Leave: {Param1}. Code: {Param2}.
+Microsoft-Windows-EFS  |  4418      |  Application                  |  {FileNumber}.{LineNumber}: EFS service failed to provision RMS for EDP. Error code: {ErrorCode}.
+Microsoft-Windows-EFS  |  7000      |  Application                  |  Machine role cannot be determined. {Reason}
+Microsoft-Windows-EFS  |  7002      |  Application                  |  Default group policy object cannot be created. {Reason}

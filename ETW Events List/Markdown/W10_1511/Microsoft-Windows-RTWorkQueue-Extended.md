@@ -1,0 +1,3 @@
+Provider                                |  Event ID  |  Channel               |  Message
+----------------------------------------|------------|------------------------|-------------------------------------------------------------------------------------------
+Microsoft-Windows-RTWorkQueue-Extended  |  1         |  RTWorkQueue Extended  |  WorkQueue Queue extended: AsyncResult={AsyncResult} AsyncResultVTable={AsyncResultVTable}

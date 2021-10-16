@@ -1,0 +1,78 @@
+Provider                             |  Event ID  |  Channel  |  Message
+-------------------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MCCS-InternetMail  |  1         |           |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-InternetMail  |  2         |           |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-InternetMail  |  101       |           |  Invalid IMAP Server response: Server response = {Prop_String}
+Microsoft-Windows-MCCS-InternetMail  |  102       |           |  Error selecting folder: {Prop_String}, Server response = {Prop_String2}
+Microsoft-Windows-MCCS-InternetMail  |  103       |           |  {Prop_String} authentication failed with mechanism {Prop_String2}
+Microsoft-Windows-MCCS-InternetMail  |  104       |           |  Google: Force enable IMAP on the server side completed. Result {Prop_Hex}
+Microsoft-Windows-MCCS-InternetMail  |  110       |           |  IMAP_IDLE: Execute Work invoked. Account Id = {Prop_Hex}
+Microsoft-Windows-MCCS-InternetMail  |  111       |           |  IMAP_IDLE: Cancel requested. Account Id = {Prop_Hex}
+Microsoft-Windows-MCCS-InternetMail  |  112       |           |
+Microsoft-Windows-MCCS-InternetMail  |  113       |           |
+Microsoft-Windows-MCCS-InternetMail  |  114       |           |
+Microsoft-Windows-MCCS-InternetMail  |  115       |           |
+Microsoft-Windows-MCCS-InternetMail  |  116       |           |  IMAP_IDLE: IDLE terminated with error {Prop_Hex}
+Microsoft-Windows-MCCS-InternetMail  |  117       |           |
+Microsoft-Windows-MCCS-InternetMail  |  118       |           |  IMAP_IDLE: Server Update received. Type {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  119       |           |  IMAP_IDLE: Server Update received. EXISTS {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  120       |           |  IMAP_IDLE: Server Update received. EXPUNGE {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  121       |           |  IMAP_IDLE: Server Update received. FLAG FETCH {Prop_Uint1} Read? {Prop_Uint2}
+Microsoft-Windows-MCCS-InternetMail  |  122       |           |
+Microsoft-Windows-MCCS-InternetMail  |  123       |           |
+Microsoft-Windows-MCCS-InternetMail  |  124       |           |  IMAP_IDLE: Processing Queued Updates. Count {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  125       |           |
+Microsoft-Windows-MCCS-InternetMail  |  126       |           |
+Microsoft-Windows-MCCS-InternetMail  |  127       |           |
+Microsoft-Windows-MCCS-InternetMail  |  128       |           |
+Microsoft-Windows-MCCS-InternetMail  |  200       |           |
+Microsoft-Windows-MCCS-InternetMail  |  201       |           |
+Microsoft-Windows-MCCS-InternetMail  |  202       |           |
+Microsoft-Windows-MCCS-InternetMail  |  203       |           |
+Microsoft-Windows-MCCS-InternetMail  |  204       |           |
+Microsoft-Windows-MCCS-InternetMail  |  205       |           |
+Microsoft-Windows-MCCS-InternetMail  |  206       |           |
+Microsoft-Windows-MCCS-InternetMail  |  207       |           |
+Microsoft-Windows-MCCS-InternetMail  |  208       |           |
+Microsoft-Windows-MCCS-InternetMail  |  209       |           |
+Microsoft-Windows-MCCS-InternetMail  |  210       |           |
+Microsoft-Windows-MCCS-InternetMail  |  211       |           |
+Microsoft-Windows-MCCS-InternetMail  |  212       |           |
+Microsoft-Windows-MCCS-InternetMail  |  213       |           |
+Microsoft-Windows-MCCS-InternetMail  |  220       |           |
+Microsoft-Windows-MCCS-InternetMail  |  221       |           |
+Microsoft-Windows-MCCS-InternetMail  |  222       |           |
+Microsoft-Windows-MCCS-InternetMail  |  223       |           |
+Microsoft-Windows-MCCS-InternetMail  |  226       |           |
+Microsoft-Windows-MCCS-InternetMail  |  227       |           |
+Microsoft-Windows-MCCS-InternetMail  |  228       |           |
+Microsoft-Windows-MCCS-InternetMail  |  229       |           |
+Microsoft-Windows-MCCS-InternetMail  |  230       |           |
+Microsoft-Windows-MCCS-InternetMail  |  231       |           |
+Microsoft-Windows-MCCS-InternetMail  |  232       |           |
+Microsoft-Windows-MCCS-InternetMail  |  233       |           |
+Microsoft-Windows-MCCS-InternetMail  |  234       |           |
+Microsoft-Windows-MCCS-InternetMail  |  235       |           |
+Microsoft-Windows-MCCS-InternetMail  |  236       |           |
+Microsoft-Windows-MCCS-InternetMail  |  237       |           |
+Microsoft-Windows-MCCS-InternetMail  |  238       |           |
+Microsoft-Windows-MCCS-InternetMail  |  239       |           |
+Microsoft-Windows-MCCS-InternetMail  |  242       |           |
+Microsoft-Windows-MCCS-InternetMail  |  243       |           |
+Microsoft-Windows-MCCS-InternetMail  |  248       |           |
+Microsoft-Windows-MCCS-InternetMail  |  249       |           |
+Microsoft-Windows-MCCS-InternetMail  |  311       |           |
+Microsoft-Windows-MCCS-InternetMail  |  401       |           |  Account {Prop_String} ImapIdle set PDC:{Prop_Boolean}
+Microsoft-Windows-MCCS-InternetMail  |  402       |           |  Account {Prop_String} ImapIdle set CCT, SUCCEEDED:{Prop_Boolean}
+Microsoft-Windows-MCCS-InternetMail  |  403       |           |  Account {Prop_String} ImapIdle Unset CCT, CCT allocated:{Prop_Boolean}
+Microsoft-Windows-MCCS-InternetMail  |  451       |           |  IMAP folder validity updated to {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  461       |           |  IMAP Failed to fetch message with UID {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  462       |           |  IMAP Skip fetching message with UID {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  470       |           |  IMAP hdr fetch overflowed batch queue - catching up: acct={Prop_Guid} max={Prop_Dword_1} bytes={Prop_Dword_2}
+Microsoft-Windows-MCCS-InternetMail  |  471       |           |  IMAP msg fetch overflowed batch queue - catching up: acct={Prop_Guid} max={Prop_Dword_1} msgs={Prop_Dword_2}
+Microsoft-Windows-MCCS-InternetMail  |  481       |           |
+Microsoft-Windows-MCCS-InternetMail  |  482       |           |
+Microsoft-Windows-MCCS-InternetMail  |  483       |           |
+Microsoft-Windows-MCCS-InternetMail  |  484       |           |
+Microsoft-Windows-MCCS-InternetMail  |  485       |           |  AutoConfig Provider result: {Prop_Hex}.
+Microsoft-Windows-MCCS-InternetMail  |  501       |           |  DavSyncProvider: Stop syncing InternetMail account {Prop_Guid} content type: {Prop_HexInt32}.

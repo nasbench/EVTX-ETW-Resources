@@ -1,0 +1,4 @@
+Provider                    |  Event ID  |  Channel  |  Message
+----------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ResetEng  |  4500      |  System   |  The system has been successfully restored to original condition.
+Microsoft-Windows-ResetEng  |  4502      |  System   |  Attempt to restore the system to original condition has failed. Changes to the system have been undone.

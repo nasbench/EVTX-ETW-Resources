@@ -1,0 +1,34 @@
+Provider                                          |  Event ID  |  Channel                                                   |  Message
+--------------------------------------------------|------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows Networking VPN Plugin Platform  |  2001      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn Connection Error = {Error}, Profile name = {Profile}, Plugin SID = {Plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2002      |  Microsoft-Windows-Vpn Plugin Platform/OperationalVerbose  |  Vpn Plugin Background Task Execution Started
+Microsoft-Windows Networking VPN Plugin Platform  |  2003      |  Microsoft-Windows-Vpn Plugin Platform/OperationalVerbose  |  Vpn Plugin Background Task Execution Exit
+Microsoft-Windows Networking VPN Plugin Platform  |  2004      |  Microsoft-Windows-Vpn Plugin Platform/OperationalVerbose  |  Message from VPN App: [{Profile}] {Message}
+Microsoft-Windows Networking VPN Plugin Platform  |  2005      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger [{profileName}], device is inside the trusted network boundary [{NetworkName}]
+Microsoft-Windows Networking VPN Plugin Platform  |  2006      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger [{string}], device is outside the trusted network boundary
+Microsoft-Windows Networking VPN Plugin Platform  |  2007      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], device is attempting to connect to VPN. Please refer to Microsoft-Windows-VPN channel under WFP for cause of connect
+Microsoft-Windows Networking VPN Plugin Platform  |  2008      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], device failed to connect to VPN
+Microsoft-Windows Networking VPN Plugin Platform  |  2009      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], device is connected to VPN
+Microsoft-Windows Networking VPN Plugin Platform  |  2010      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], device got disconnected from VPN, Redial it
+Microsoft-Windows Networking VPN Plugin Platform  |  2011      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], profile got activated
+Microsoft-Windows Networking VPN Plugin Platform  |  2012      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], profile got deactivated
+Microsoft-Windows Networking VPN Plugin Platform  |  2013      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], profile got auto disconnected. Please refer to Microsoft-Windows-VPN channel under WFP for cause of disconnect
+Microsoft-Windows Networking VPN Plugin Platform  |  2014      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], profile got disconnected as device going to sleep state
+Microsoft-Windows Networking VPN Plugin Platform  |  2015      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], device is resumed, Redialling it
+Microsoft-Windows Networking VPN Plugin Platform  |  2016      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], profile added
+Microsoft-Windows Networking VPN Plugin Platform  |  2017      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], profile deleted
+Microsoft-Windows Networking VPN Plugin Platform  |  2018      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}], profile modified
+Microsoft-Windows Networking VPN Plugin Platform  |  2019      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Invalid, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2020      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Connecting, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2021      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Connected, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2022      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Disconnecting, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2023      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Disconnected, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2024      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Abort, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2025      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Negotiating Network, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2026      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Requesting Credentials, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2027      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Vpn State Machine Status : Requesting Credentials using Custom UI, Profile name = {profile}, Plugin SID = {plugin}
+Microsoft-Windows Networking VPN Plugin Platform  |  2028      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Keep Alive event invoked, Profile name = {string}
+Microsoft-Windows Networking VPN Plugin Platform  |  2029      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: DNS query {string} is made, matching VPN trigger rules
+Microsoft-Windows Networking VPN Plugin Platform  |  2030      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: [{string}] Unable to determine internet connectivity, vpn trigger failed
+Microsoft-Windows Networking VPN Plugin Platform  |  2031      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: auto trigger module initialization completed with Error = {Error}
+Microsoft-Windows Networking VPN Plugin Platform  |  2032      |  Microsoft-Windows-Vpn Plugin Platform/Operational         |  Autotrigger: auto trigger Config registry content completed with Error = {Error}

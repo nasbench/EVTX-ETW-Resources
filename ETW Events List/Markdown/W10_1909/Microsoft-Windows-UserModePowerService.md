@@ -1,0 +1,67 @@
+Provider                                |  Event ID  |  Channel                                            |  Message
+----------------------------------------|------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-UserModePowerService  |  1         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  2         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  3         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  4         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  5         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  7         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  8         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  9         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  10        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  11        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  12        |  System                                             |  Process {ProcessPath} (process ID:{ProcessPid}) reset policy scheme from {OldSchemeGuid} to {NewSchemeGuid}
+Microsoft-Windows-UserModePowerService  |  13        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  14        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  15        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  16        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  16        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  17        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  18        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  19        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  22        |  System                                             |  Reapply power settings upon completion of the provisioning engine's turn {Turn}
+Microsoft-Windows-UserModePowerService  |  23        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  24        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  25        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  26        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  27        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  28        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  28        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  29        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  29        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  30        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  31        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  32        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  33        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  34        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  35        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  36        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  37        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  38        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  39        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  40        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  41        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  42        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  43        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  44        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  44        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  44        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  44        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  45        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  45        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  45        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  45        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  46        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  47        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  48        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  49        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  50        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  50        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  51        |  System                                             |  Process {ProcessPath} (process ID:{ProcessPid}) reset overlay policy scheme from {OldSchemeGuid} to {NewSchemeGuid}
+Microsoft-Windows-UserModePowerService  |  52        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  53        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  54        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  55        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  56        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  57        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  58        |  Microsoft-Windows-UserModePowerService/Diagnostic  |

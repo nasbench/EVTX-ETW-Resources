@@ -1,0 +1,8 @@
+Provider                      |  Event ID  |  Channel                                |  Message
+------------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-CoreWindow  |  1001      |  Microsoft-Windows-CoreWindow/Analytic  |
+Microsoft-Windows-CoreWindow  |  1002      |  Microsoft-Windows-CoreWindow/Analytic  |
+Microsoft-Windows-CoreWindow  |  1003      |  Microsoft-Windows-CoreWindow/Analytic  |
+Microsoft-Windows-CoreWindow  |  1004      |  Microsoft-Windows-CoreWindow/Analytic  |
+Microsoft-Windows-CoreWindow  |  1005      |  Microsoft-Windows-CoreWindow/Analytic  |
+Microsoft-Windows-CoreWindow  |  1006      |  Microsoft-Windows-CoreWindow/Analytic  |

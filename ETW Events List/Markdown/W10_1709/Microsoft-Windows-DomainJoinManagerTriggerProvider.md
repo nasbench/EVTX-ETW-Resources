@@ -1,0 +1,4 @@
+Provider                                            |  Event ID  |  Channel  |  Message
+----------------------------------------------------|------------|-----------|---------
+Microsoft-Windows-DomainJoinManagerTriggerProvider  |  1         |           |
+Microsoft-Windows-DomainJoinManagerTriggerProvider  |  2         |           |

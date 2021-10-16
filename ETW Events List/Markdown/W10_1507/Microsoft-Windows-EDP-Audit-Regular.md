@@ -1,0 +1,3 @@
+Provider                             |  Event ID  |  Channel                                      |  Message
+-------------------------------------|------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-EDP-Audit-Regular  |  201       |  Microsoft Windows EDP Audit Regular Channel  |  {DataInfo} has been copied ({Policy}) from {SourceAppName} (tagged as {SourceEnterpriseId}) to {DestinationAppName} (tagged as {DestinationEnterpriseId})

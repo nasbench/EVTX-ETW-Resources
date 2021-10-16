@@ -1,0 +1,36 @@
+Provider                                 |  Event ID  |  Channel                                             |  Message
+-----------------------------------------|------------|------------------------------------------------------|---------
+Microsoft-Windows-Diagnostics-PerfTrack  |  112       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  113       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  115       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  200       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  218       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  500       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  800       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1100      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1101      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1102      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1103      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1104      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1105      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1106      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1107      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1108      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1109      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1110      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1111      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1112      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1113      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1500      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1500      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1501      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1502      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1503      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1504      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1505      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1506      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1507      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1508      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1509      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1510      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  1511      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |

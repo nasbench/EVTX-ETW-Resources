@@ -1,0 +1,4 @@
+Provider                                                             |  Event ID  |  Channel  |  Message
+---------------------------------------------------------------------|------------|-----------|---------
+Microsoft-Windows-RemoteDesktopServices-RemoteDesktopSessionManager  |  1000      |  Admin    |
+Microsoft-Windows-RemoteDesktopServices-RemoteDesktopSessionManager  |  1001      |  Admin    |

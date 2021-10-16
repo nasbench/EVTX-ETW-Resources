@@ -1,0 +1,6 @@
+Provider                                                |  Event ID  |  Channel                                |  Message
+--------------------------------------------------------|------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Hyper-V-Guest-Drivers-Dynamic-Memory  |  1         |  Microsoft-Hyper-V-Guest-Drivers-Admin  |  The dynamic memory driver failed unexpectedly.
+Microsoft-Windows-Hyper-V-Guest-Drivers-Dynamic-Memory  |  2         |  Microsoft-Hyper-V-Guest-Drivers-Admin  |  The dynamic memory driver failed because this version of Windows does not support this feature.
+Microsoft-Windows-Hyper-V-Guest-Drivers-Dynamic-Memory  |  3         |  Microsoft-Hyper-V-Guest-Drivers-Admin  |  The dynamic memory driver failed because it is outdated and cannot communicate with the management operating system.
+Microsoft-Windows-Hyper-V-Guest-Drivers-Dynamic-Memory  |  4         |  Microsoft-Hyper-V-Guest-Drivers-Admin  |  The dynamic memory driver failed because the device was removed.

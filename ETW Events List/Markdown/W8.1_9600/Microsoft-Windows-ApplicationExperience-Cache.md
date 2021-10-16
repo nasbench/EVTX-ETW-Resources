@@ -1,0 +1,5 @@
+Provider                                       |  Event ID  |  Channel                                            |  Message
+-----------------------------------------------|------------|-----------------------------------------------------|----------------------
+Microsoft-Windows-ApplicationExperience-Cache  |  3         |  Microsoft-Windows-Kernel-ApphelpCache/Operational  |  {OperationalMessage}
+Microsoft-Windows-ApplicationExperience-Cache  |  4         |  Microsoft-Windows-Kernel-ApphelpCache/Analytic     |  {InfoMessage}
+Microsoft-Windows-ApplicationExperience-Cache  |  5         |  Microsoft-Windows-Kernel-ApphelpCache/Debug        |  {DebugMessage}

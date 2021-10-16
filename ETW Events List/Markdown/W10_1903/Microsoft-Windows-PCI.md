@@ -1,0 +1,3 @@
+Provider               |  Event ID  |  Channel                           |  Message
+-----------------------|------------|------------------------------------|---------
+Microsoft-Windows-PCI  |  10        |  Microsoft-Windows-PCI/Diagnostic  |

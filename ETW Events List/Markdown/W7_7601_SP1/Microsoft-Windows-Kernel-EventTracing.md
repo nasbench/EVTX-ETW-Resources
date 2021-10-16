@@ -1,0 +1,18 @@
+Provider                               |  Event ID  |  Channel                                         |  Message
+---------------------------------------|------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-EventTracing  |  0         |  Microsoft-Windows-Kernel-EventTracing/Admin     |  Session "{SessionName}" failed to write to log file "{FileName}" with the following error: {ErrorCode}
+Microsoft-Windows-Kernel-EventTracing  |  1         |  Microsoft-Windows-Kernel-EventTracing/Admin     |  The backing-file for the real-time session "{SessionName}" has reached its maximum size. As a result, new events will not be logged to this session until space becomes available. This error is often caused by starting a trace session in real-time mode without having any real-time consumers.
+Microsoft-Windows-Kernel-EventTracing  |  2         |  Microsoft-Windows-Kernel-EventTracing/Admin     |  Session "{SessionName}" failed to start with the following error: {ErrorCode}
+Microsoft-Windows-Kernel-EventTracing  |  3         |  Microsoft-Windows-Kernel-EventTracing/Admin     |  Session "{SessionName}" stopped due to the following error: {ErrorCode}
+Microsoft-Windows-Kernel-EventTracing  |  4         |  Microsoft-Windows-Kernel-EventTracing/Admin     |  The maximum file size for session "{SessionName}" has been reached. As a result, events might be lost (not logged) to file "{FileName}". The maximum files size is currently set to {MaxFileSize} bytes.
+Microsoft-Windows-Kernel-EventTracing  |  5         |  Microsoft-Windows-Kernel-EventTracing/Admin     |  An error was encountered while tracing session "{FileName}" was switching to the "{SessionName}" event log file. Error: {ErrorCode}
+Microsoft-Windows-Kernel-EventTracing  |  8         |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  Provider {ProviderName} was registered with Event Tracing for Windows.
+Microsoft-Windows-Kernel-EventTracing  |  9         |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  Provider {ProviderName} was unregistered from Event Tracing for Windows.
+Microsoft-Windows-Kernel-EventTracing  |  10        |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  Session "{SessionName}" was started.
+Microsoft-Windows-Kernel-EventTracing  |  11        |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  Session "{SessionName}" was stopped.
+Microsoft-Windows-Kernel-EventTracing  |  12        |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  The configuration of session "{SessionName}" has been modified.
+Microsoft-Windows-Kernel-EventTracing  |  13        |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  The events from session "{SessionName}" have been flushed.
+Microsoft-Windows-Kernel-EventTracing  |  14        |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  Provider {ProviderName} has been enabled to session "{SessionName}".
+Microsoft-Windows-Kernel-EventTracing  |  15        |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  Provider {ProviderName} is no longer enabled to session "{SessionName}".
+Microsoft-Windows-Kernel-EventTracing  |  17        |  Microsoft-Windows-Kernel-EventTracing/Analytic  |  The security descriptor for session "{SessionName}" has been updated.
+Microsoft-Windows-Kernel-EventTracing  |  18        |                                                  |

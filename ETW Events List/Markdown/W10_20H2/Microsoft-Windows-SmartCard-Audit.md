@@ -1,0 +1,4 @@
+Provider                           |  Event ID  |  Channel                                           |  Message
+-----------------------------------|------------|----------------------------------------------------|---------------------------------------------------------------------------------------------------
+Microsoft-Windows-SmartCard-Audit  |  100       |  Microsoft-Windows-SmartCard-Audit/Authentication  |  A smart card holder verification (CHV) attempt failed.Process image: {Process}PID: {ProcessId}
+Microsoft-Windows-SmartCard-Audit  |  101       |  Microsoft-Windows-SmartCard-Audit/Authentication  |  A smart card holder verification (CHV) attempt succeeded.Process image: {Process}PID: {ProcessId}

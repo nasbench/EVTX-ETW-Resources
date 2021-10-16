@@ -1,0 +1,34 @@
+Provider                                    |  Event ID  |  Channel   |  Message
+--------------------------------------------|------------|------------|---------------------------------------------------------------------------------------------------
+Microsoft-Windows-Serial-ClassExtension-V2  |  1         |  Analytic  |  SerCx2 loaded ({ControlDeviceName}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  2         |  System    |  SerCx2 failed to load ({Status}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  3         |  Analytic  |
+Microsoft-Windows-Serial-ClassExtension-V2  |  4         |  Analytic  |
+Microsoft-Windows-Serial-ClassExtension-V2  |  5         |  Analytic  |  Device rundown ({Device}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  6         |  Analytic  |
+Microsoft-Windows-Serial-ClassExtension-V2  |  7         |  Analytic  |  Device created ({Device}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  8         |  Analytic  |  Device destroyed ({Device}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  9         |  Analytic  |  TransmitSM ({TransferSmContext}) Event: {Event}
+Microsoft-Windows-Serial-ClassExtension-V2  |  10        |  Analytic  |  TransmitSM ({TransferSmContext}) Transition: {FromState}[{Event}] -> {ToState}
+Microsoft-Windows-Serial-ClassExtension-V2  |  11        |  Analytic  |  Invalid Transition TransmitSM ({TransferSmContext}) Transition: {FromState}[{Event}] -> {ToState}
+Microsoft-Windows-Serial-ClassExtension-V2  |  12        |  Analytic  |  ReceiveSM ({TransferSmContext}) Event: {Event}
+Microsoft-Windows-Serial-ClassExtension-V2  |  13        |  Analytic  |  ReceiveSM ({TransferSmContext}) Transition: {FromState}[{Event}] -> {ToState}
+Microsoft-Windows-Serial-ClassExtension-V2  |  14        |  Analytic  |  Invalid Transition ReceiveSM ({TransferSmContext}) Transition: {FromState}[{Event}] -> {ToState}
+Microsoft-Windows-Serial-ClassExtension-V2  |  15        |  Analytic  |  Processing {IOCTL}.
+Microsoft-Windows-Serial-ClassExtension-V2  |  16        |  Analytic  |  Completed {IOCTL} with {Status}.
+Microsoft-Windows-Serial-ClassExtension-V2  |  17        |  Analytic  |  Transmit I/O request for {Length} bytes started.
+Microsoft-Windows-Serial-ClassExtension-V2  |  18        |  Analytic  |  Transmit I/O request completed ({Status}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  19        |  Analytic  |  Transmit I/O chunk of {Length} bytes using {TransferModeEvent}.
+Microsoft-Windows-Serial-ClassExtension-V2  |  20        |  Analytic  |  Receive I/O request for {Length} bytes started.
+Microsoft-Windows-Serial-ClassExtension-V2  |  21        |  Analytic  |  Receive I/O request completed ({Status}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  22        |  Analytic  |  Receive I/O chunk of {Length} bytes using {TransferModeEvent}.
+Microsoft-Windows-Serial-ClassExtension-V2  |  23        |  Analytic  |  Saved {BytesSaved} bytes before exiting D0. Total {TotalBytes} bytes.
+Microsoft-Windows-Serial-ClassExtension-V2  |  24        |  Analytic  |  Transitioning to system power state {TargetState}.
+Microsoft-Windows-Serial-ClassExtension-V2  |  25        |  Analytic  |  Transitioning to device power state {TargetState}.
+Microsoft-Windows-Serial-ClassExtension-V2  |  26        |  Analytic  |  System power state transition {TargetState} complete ({Status}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  27        |  Analytic  |  Device power state transition {TargetState} complete ({Status}).
+Microsoft-Windows-Serial-ClassExtension-V2  |  28        |  Analytic  |  Event {Event}.
+Microsoft-Windows-Serial-ClassExtension-V2  |  29        |  Analytic  |  TransmitSM ({TransferSmContext}) Event: {Event}
+Microsoft-Windows-Serial-ClassExtension-V2  |  30        |  Analytic  |  TransmitSM ({TransferSmContext}) Transition: {FromState}[{Event}] -> {ToState}
+Microsoft-Windows-Serial-ClassExtension-V2  |  31        |  Analytic  |  ReceiveSM ({TransferSmContext}) Event: {Event}
+Microsoft-Windows-Serial-ClassExtension-V2  |  32        |  Analytic  |  ReceiveSM ({TransferSmContext}) Transition: {FromState}[{Event}] -> {ToState}

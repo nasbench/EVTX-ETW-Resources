@@ -1,0 +1,5 @@
+Provider                 |  Event ID  |  Channel                              |  Message
+-------------------------|------------|---------------------------------------|---------
+Microsoft-Windows-CDROM  |  100       |                                       |
+Microsoft-Windows-CDROM  |  103       |  Microsoft-Windows-CDROM/Operational  |
+Microsoft-Windows-CDROM  |  104       |  Microsoft-Windows-CDROM/Operational  |

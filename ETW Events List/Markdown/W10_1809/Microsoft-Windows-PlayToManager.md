@@ -1,0 +1,14 @@
+Provider                         |  Event ID  |  Channel                                   |  Message
+---------------------------------|------------|--------------------------------------------|---------
+Microsoft-Windows-PlayToManager  |  100       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  101       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  102       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  103       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  104       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  105       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  106       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  107       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  108       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  109       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  110       |  Microsoft-Windows-PlayToManager/Analytic  |
+Microsoft-Windows-PlayToManager  |  111       |  Microsoft-Windows-PlayToManager/Analytic  |

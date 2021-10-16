@@ -1,0 +1,10 @@
+Provider                    |  Event ID  |  Channel                              |  Message
+----------------------------|------------|---------------------------------------|---------
+Microsoft-Windows-Dism-Cli  |  1         |  Microsoft-Windows-Dism-Cli/Analytic  |
+Microsoft-Windows-Dism-Cli  |  2         |  Microsoft-Windows-Dism-Cli/Analytic  |
+Microsoft-Windows-Dism-Cli  |  3         |  Microsoft-Windows-Dism-Cli/Analytic  |
+Microsoft-Windows-Dism-Cli  |  4         |  Microsoft-Windows-Dism-Cli/Analytic  |
+Microsoft-Windows-Dism-Cli  |  5         |  Microsoft-Windows-Dism-Cli/Analytic  |
+Microsoft-Windows-Dism-Cli  |  6         |  Microsoft-Windows-Dism-Cli/Analytic  |
+Microsoft-Windows-Dism-Cli  |  7         |  Microsoft-Windows-Dism-Cli/Analytic  |
+Microsoft-Windows-Dism-Cli  |  8         |  Microsoft-Windows-Dism-Cli/Analytic  |

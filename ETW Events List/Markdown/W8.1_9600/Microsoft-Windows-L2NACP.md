@@ -1,0 +1,7 @@
+Provider                  |  Event ID  |  Channel                                         |  Message
+--------------------------|------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-L2NACP  |  13003     |  Microsoft-Windows-WLAN-AutoConfig/Operational   |  The pre-logon connection attempt is complete.Network connection attempt result: {Result}Reason: {Reason}Interface GUID: {InterfaceGuid}Profile Name: {ProfileName}
+Microsoft-Windows-L2NACP  |  13004     |  Microsoft-Windows-WLAN-AutoConfig/Operational   |  The pre-logon connection attempt is complete.Windows authentication result: {Result}Interface GUID: {InterfaceGuid}Profile Name: {ProfileName}
+Microsoft-Windows-L2NACP  |  13023     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The pre-logon connection attempt is complete.Network connection attempt result: {Result}Reason: {Reason}Interface GUID: {InterfaceGuid}
+Microsoft-Windows-L2NACP  |  13024     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The pre-logon connection attempt is complete.Windows authentication result: {Result}Interface GUID: {InterfaceGuid}
+Microsoft-Windows-L2NACP  |  14000     |  Microsoft-Windows-L2NACP/Diagnostic             |  Plap Enabled = {Enabled}

@@ -1,0 +1,85 @@
+Provider                             |  Event ID  |  Channel  |  Message
+-------------------------------------|------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MCCS-AccountsHost  |  1         |           |  Error: HRESULT: {P1_HexInt32} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  2         |           |  Error Propagated: HRESULT: {P1_HexInt32} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  3         |           |
+Microsoft-Windows-MCCS-AccountsHost  |  1000      |           |  Request Manager exceeded maximum requests limit and will start rejecting older requests
+Microsoft-Windows-MCCS-AccountsHost  |  1001      |           |  Scheduling function (Step) failed with result {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  1002      |           |  Authentication error ({Prop_UInt32_1}) detected for request [{Prop_UInt32_2}-{Prop_UInt32_3}]
+Microsoft-Windows-MCCS-AccountsHost  |  1004      |           |  RPC Registration failed with error code {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  1006      |           |  Request Manager was initialized correctly
+Microsoft-Windows-MCCS-AccountsHost  |  1007      |           |  Request [{Prop_UInt32_2}-{Prop_UInt32_3}] failed with error code {Prop_UInt32_1}
+Microsoft-Windows-MCCS-AccountsHost  |  1008      |           |  Request [{Prop_UInt32_2}-{Prop_UInt32_3}] permanently failed with error code {Prop_UInt32_1}
+Microsoft-Windows-MCCS-AccountsHost  |  1009      |           |  Requests (#{Prop_UInt32}) are pending execution during shutdown
+Microsoft-Windows-MCCS-AccountsHost  |  1012      |           |  Request Manager entered battery saving mode
+Microsoft-Windows-MCCS-AccountsHost  |  1013      |           |  Request Manager recovered from battery saving mode
+Microsoft-Windows-MCCS-AccountsHost  |  1014      |           |  Request Manager entered low-memory mode
+Microsoft-Windows-MCCS-AccountsHost  |  1015      |           |  Request Manager recovered from low-memory mode
+Microsoft-Windows-MCCS-AccountsHost  |  1016      |           |  Request Manager entered no connectivity mode, suspending activity
+Microsoft-Windows-MCCS-AccountsHost  |  1017      |           |  Request Manager detected connection recovery, retrying
+Microsoft-Windows-MCCS-AccountsHost  |  1018      |           |  Fetch more requested for feed which reached the end and can't fetch any more data
+Microsoft-Windows-MCCS-AccountsHost  |  1019      |           |  Fetch more was requested for empty or new feed, normal feed fetch will be performed
+Microsoft-Windows-MCCS-AccountsHost  |  1020      |           |  Failed to add the comment to the database after succesful post
+Microsoft-Windows-MCCS-AccountsHost  |  1021      |           |  Request Manager found matching request to cancel [{Prop_UInt32_1}-{Prop_UInt32_2}] (request is not executing)
+Microsoft-Windows-MCCS-AccountsHost  |  1022      |           |  Request Manager found matching executing request to cancel [{Prop_UInt32_1}-{Prop_UInt32_2}], sending cancelation to provider
+Microsoft-Windows-MCCS-AccountsHost  |  1023      |           |  Request [{Prop_UInt32_1}-{Prop_UInt32_2}] was canceled succesfully
+Microsoft-Windows-MCCS-AccountsHost  |  1028      |           |  Upload file job to alubm (id: {Prop_OLTIEMID0}-{Prop_OLITEMID1}-{Prop_OLITEMID2}) has exceeded the maximum number of retry
+Microsoft-Windows-MCCS-AccountsHost  |  1029      |           |  Request Manager queued request [{Prop_UInt32_1}-{Prop_UInt32_2}]
+Microsoft-Windows-MCCS-AccountsHost  |  1030      |           |  Request Manager is executing request [{Prop_UInt32_1}-{Prop_UInt32_2}]
+Microsoft-Windows-MCCS-AccountsHost  |  1031      |           |  Request Manager completed request [{Prop_UInt32_1}-{Prop_UInt32_2}] with success
+Microsoft-Windows-MCCS-AccountsHost  |  1034      |           |  Refresh requested for a feed that satisfies freshness requirement.
+Microsoft-Windows-MCCS-AccountsHost  |  1500      |           |  RM::[PERFMARKER] Single Step BEGIN
+Microsoft-Windows-MCCS-AccountsHost  |  1501      |           |  RM::[PERFMARKER] Single Step END
+Microsoft-Windows-MCCS-AccountsHost  |  1502      |           |  RM::[PERFMARKER] Execute request BEGIN (rmguid:{Prop_ReqGuid})(handle:{Prop_Handle})
+Microsoft-Windows-MCCS-AccountsHost  |  1503      |           |  RM::[PERFMARKER] Execute request END (rmguid:{Prop_ReqGuid})(handle:{Prop_Handle})
+Microsoft-Windows-MCCS-AccountsHost  |  2000      |           |  Sending notification failed for endpoint {Prop_String} with error code {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  2004      |           |  SNAS Initialized successfully
+Microsoft-Windows-MCCS-AccountsHost  |  2005      |           |  SNAS Uninitialized
+Microsoft-Windows-MCCS-AccountsHost  |  2051      |           |  Provider [{Prop_UInt32_1}] failed to initialize with HR: {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  2052      |           |  Provider [{Prop_UInt32_1}] failed to late-initialize HR: {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  2053      |           |  Failed to CoCreate provider [{Prop_UInt32_1}], HR: {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  2061      |           |  Job [{Prop_String}] submitted with id {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  5000      |           |  SNService - Service Started
+Microsoft-Windows-MCCS-AccountsHost  |  5001      |           |  SNService - Failed to Initialize
+Microsoft-Windows-MCCS-AccountsHost  |  5003      |           |  SNService - Critical error during SNService startup, HRESULT: {P1_HexInt32} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  5004      |           |  SNService - Request Manager Database failed to initialze, 0x{Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  5005      |           |  SNService - Service Stopped
+Microsoft-Windows-MCCS-AccountsHost  |  7001      |           |  Job [{Prop_String}] completed execution and will not be rescheduled
+Microsoft-Windows-MCCS-AccountsHost  |  7002      |           |  Job [{Prop_String}] failed, error [{Prop_UInt32}] and will remain inactive in the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7003      |           |  Job [{Prop_String}] completed all requests for given state and will be rescheduled for execution, allowExecutionInSeconds [{Prop_UInt32_1}] onlyWhenConnectionChanged [{Prop_UInt32_2}]
+Microsoft-Windows-MCCS-AccountsHost  |  7004      |           |  Job Dispatcher exceeded maximum number of jobs and will cancel oldest jobs in the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7005      |           |  Job [{Prop_String}] expired and will be removed from the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7006      |           |  Job [{Prop_String}] SNJobType:[{Prop_UInt32}] Executing
+Microsoft-Windows-MCCS-AccountsHost  |  7007      |           |  Synchronous failure in job execution for job [{Prop_String}, SNJobType:{Prop_UInt32_1}], error [{Prop_UInt32_2}]
+Microsoft-Windows-MCCS-AccountsHost  |  7008      |           |  Job [{Prop_String}] failed to update in database, error [{Prop_UInt32}]
+Microsoft-Windows-MCCS-AccountsHost  |  7009      |           |  Job [{Prop_UINT_1}] of type {Prop_UINT_2} was submitted to Job Dispatcher
+Microsoft-Windows-MCCS-AccountsHost  |  7010      |           |  Job [{Prop_UInt32_1}] failed to be submitted to Job Dispatcher, error {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  7011      |           |  Request for job [{Prop_UInt32_1}] failed to be submitted to Job Dispatcher, error {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  7012      |           |  Canceling job [{Prop_String}]
+Microsoft-Windows-MCCS-AccountsHost  |  7013      |           |  Job dispatcher received retry message from Connection Manager
+Microsoft-Windows-MCCS-AccountsHost  |  7014      |           |  Job dispatcher received time based retry message and will retry failed jobs
+Microsoft-Windows-MCCS-AccountsHost  |  7015      |           |  Job dispatcher received time based retry message and will retry failed jobs, error {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  7016      |           |  Job dispatcher created new volume
+Microsoft-Windows-MCCS-AccountsHost  |  7022      |           |  Unexpected job dispatcher failure occured, HRESULT: {P1_HexInt32} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  7023      |           |  Failed to cancel job, hr = {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  7024      |           |  Failed to add job {Prop_UInt32_1} to the queue, hr = {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  7025      |           |  Job [{Prop_String1}, SNJobType: {Prop_UInt32_2}] executed [{Prop_String3}] exceeding time limit; execution time = {Prop_UInt32_4}; (ActivityList entry = #{Prop_UInt32_5}/{Prop_UInt32_6})
+Microsoft-Windows-MCCS-AccountsHost  |  7026      |           |  Job [{Prop_String}] seems rogue (exceeded max step limit) and will be removed from the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7027      |           |  Job [{Prop_String}] seems rogue (exceeded delayed retry limit) and will be removed from the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7028      |           |  Job [{Prop_String1}, SNJobType: {Prop_UInt32_2}] executed [{Prop_String3}] within time limit; execution time = {Prop_UInt32_4};  (ActivityList entry = #{Prop_UInt32_5}/{Prop_UInt32_6})
+Microsoft-Windows-MCCS-AccountsHost  |  7029      |           |  Completing job [{Prop_String}, SNJobType:{Prop_UInt32}]
+Microsoft-Windows-MCCS-AccountsHost  |  7030      |           |  Exceeded maximum number of jobs in the queue, will remove old job [{Prop_String}]; (ActivityList entry #{Prop_UInt32_1}/{Prop_UInt32_2})
+Microsoft-Windows-MCCS-AccountsHost  |  8500      |           |  Setting Room background picture, deleting remote room picture (Step) failed with result {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  8501      |           |  Setting Room background picture, uploading room picture (Step) failed with result {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  8502      |           |  Download Room background picture, download room picture metadata (Step) failed with result {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  8503      |           |  Download Room background picture, download room picture binary (Step) failed with result {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  9001      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9002      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9003      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9004      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9005      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9006      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9007      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9008      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9009      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9010      |           |

@@ -1,0 +1,3 @@
+Provider                                     |  Event ID  |  Channel                                                  |  Message
+---------------------------------------------|------------|-----------------------------------------------------------|--------------------------------------------
+Microsoft-Windows-Bluetooth-BthLEPrepairing  |  100       |  Microsoft-Windows-Bluetooth-BthLEPrepairing/Operational  |  Device successfully prepaired ({DeviceID})

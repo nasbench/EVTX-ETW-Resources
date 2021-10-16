@@ -1,0 +1,103 @@
+Provider                            |  Event ID  |  Channel                                         |  Message
+------------------------------------|------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Wired-AutoConfig  |  13021     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  A pre-logon connection was not attempted.Result: {Result}Reason: {Reason}
+Microsoft-Windows-Wired-AutoConfig  |  13022     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  A pre-logon connection was attempted.Result: {Result}Interface GUID: {InterfaceGuid}Requested Fields: {RequestedFields}
+Microsoft-Windows-Wired-AutoConfig  |  13031     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  A post-logon connection was not attempted.Result: {Result}Reason: {Reason}
+Microsoft-Windows-Wired-AutoConfig  |  13032     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  A post-logon connection was attempted.Result: {Result}Interface GUID: {InterfaceGuid}
+Microsoft-Windows-Wired-AutoConfig  |  13033     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The post-logon connection attempt is complete.Network connection attempt result: {Result}Reason: {Reason}Interface GUID: {InterfaceGuid}
+Microsoft-Windows-Wired-AutoConfig  |  15500     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The network adapter has been unplugged.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}
+Microsoft-Windows-Wired-AutoConfig  |  15501     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The network adapter has been connected.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}
+Microsoft-Windows-Wired-AutoConfig  |  15502     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The profile was applied on the network adapter.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}	Profile Type: {ProfileType}	Profile Content: {ProfileContent}
+Microsoft-Windows-Wired-AutoConfig  |  15503     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  Wired 802.1X Authentication was started.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}	Connection ID: {ConnectionID}
+Microsoft-Windows-Wired-AutoConfig  |  15504     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  Wired 802.1X Authentication was restarted.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}	Connection ID: {ConnectionID}	Restart Reason: {RestartReason}
+Microsoft-Windows-Wired-AutoConfig  |  15505     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  Wired 802.1X Authentication succeeded.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}	Peer Address: {SwitchMAC}	Local Address: {LocalMAC}	Connection ID: {ConnectionID}	Identity: {Identity}	User: {User}	Domain: {Domain}	Reason: {ReasonCode}	Reason Text: {InterfaceGuid}0	Error Code: {InterfaceGuid}1
+Microsoft-Windows-Wired-AutoConfig  |  15506     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  Network authentication attempts have been temporarily suspended on this network adapter.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}	Reason Code: {ReasonCode}	Length of block timer (seconds): {BlockingTime}
+Microsoft-Windows-Wired-AutoConfig  |  15507     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  Network authentication attempts have been resumed on this network adapter.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}
+Microsoft-Windows-Wired-AutoConfig  |  15508     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  There has been an NDIS Port state change on this network adapter.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}	NDIS Control State: {NdisPortControlState}	NDIS Auth State: {NdisPortAuthState}
+Microsoft-Windows-Wired-AutoConfig  |  15509     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The operational state on the network adapter was identified.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}	Service State: {AdapterState}
+Microsoft-Windows-Wired-AutoConfig  |  15510     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  A network adapter was added to the system.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}
+Microsoft-Windows-Wired-AutoConfig  |  15511     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The Wired AutoConfig service entered the running state.
+Microsoft-Windows-Wired-AutoConfig  |  15512     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The Wired AutoConfig service entered the stopped state.
+Microsoft-Windows-Wired-AutoConfig  |  15513     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  A network adapter was removed from the system.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}
+Microsoft-Windows-Wired-AutoConfig  |  15514     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  Wired 802.1X Authentication failed.	Network Adapter: {InterfaceDescription}	Interface GUID: {InterfaceGuid}	Peer Address: {SwitchMAC}	Local Address: {LocalMAC}	Connection ID: {ConnectionID}	Identity: {Identity}	User: {User}	Domain: {Domain}	Reason: {ReasonCode}	Reason Text: {InterfaceGuid}0	Error Code: {InterfaceGuid}1
+Microsoft-Windows-Wired-AutoConfig  |  15515     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The Wired AutoConfig service is starting.
+Microsoft-Windows-Wired-AutoConfig  |  15516     |  Microsoft-Windows-Wired-AutoConfig/Operational  |  The Wired AutoConfig service is stopping.
+Microsoft-Windows-Wired-AutoConfig  |  20001     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  No interactive console session to send UI request
+Microsoft-Windows-Wired-AutoConfig  |  20002     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  ACM: IntfCompleteTimely failed, error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  20003     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  There are no available connections
+Microsoft-Windows-Wired-AutoConfig  |  20004     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  MSM failed to initialize the interface, error {ErrorCode}.
+Microsoft-Windows-Wired-AutoConfig  |  20005     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Failed to load profile, error {ErrorCode}.
+Microsoft-Windows-Wired-AutoConfig  |  20006     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  No profile found in db, error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  20007     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  ACM: UI request could not be sent.
+Microsoft-Windows-Wired-AutoConfig  |  20008     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  IntfCompletePlap failed, error {ErrorCode}.
+Microsoft-Windows-Wired-AutoConfig  |  20009     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface does not have any available networks
+Microsoft-Windows-Wired-AutoConfig  |  20010     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Invalid state of the adapter {ErrorCode}.
+Microsoft-Windows-Wired-AutoConfig  |  20011     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Media is disconnected, SSO can't be done
+Microsoft-Windows-Wired-AutoConfig  |  20012     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Failed to make the PLAP runtime state , error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  20013     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Failed to make the timely runtime state , error {ErrorCode}.
+Microsoft-Windows-Wired-AutoConfig  |  20014     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface does not have a profile
+Microsoft-Windows-Wired-AutoConfig  |  20015     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  OneXSetEapUserData failed, error {ErrorCode}.
+Microsoft-Windows-Wired-AutoConfig  |  20016     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  AcmQueryUserDataProperties failed, error {ErrorCode}.
+Microsoft-Windows-Wired-AutoConfig  |  20017     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Dot3AcmQueryUserDataByGuid failed, error {ErrorCode}.
+Microsoft-Windows-Wired-AutoConfig  |  20018     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  DsRoleGetPrimaryDomainInformation failed, error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  20019     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Adapter is connected , we have a valid IP
+Microsoft-Windows-Wired-AutoConfig  |  20020     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Don't have time to wait for DC connectivity. Returning now
+Microsoft-Windows-Wired-AutoConfig  |  20021     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Waiting for DC connectivity
+Microsoft-Windows-Wired-AutoConfig  |  20022     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Wait for ip address change successfully completed
+Microsoft-Windows-Wired-AutoConfig  |  20024     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Wait for ip address change timed out
+Microsoft-Windows-Wired-AutoConfig  |  20025     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Wait for ip address change failed with error ({Error})
+Microsoft-Windows-Wired-AutoConfig  |  20026     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Waiting for ip address change notification
+Microsoft-Windows-Wired-AutoConfig  |  20028     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Wait for 1x completion successfully completed
+Microsoft-Windows-Wired-AutoConfig  |  20029     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Adapter not connected. Returning now.
+Microsoft-Windows-Wired-AutoConfig  |  20030     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  1x completed with a failure {Error}
+Microsoft-Windows-Wired-AutoConfig  |  20031     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Wait for 1x completion failed with return code ({Error})
+Microsoft-Windows-Wired-AutoConfig  |  20032     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Wait for 1x completion timed out
+Microsoft-Windows-Wired-AutoConfig  |  20033     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  IntfDoTimely took longer than our timeout allows. Returning now
+Microsoft-Windows-Wired-AutoConfig  |  20034     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  IntfDoTimely completed successfully
+Microsoft-Windows-Wired-AutoConfig  |  20035     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  IntfDoTimely failed, error {Error}
+Microsoft-Windows-Wired-AutoConfig  |  20036     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  No TIMELY profiles were found. Completing the timely processing
+Microsoft-Windows-Wired-AutoConfig  |  20037     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Timely1x - Interface {InterfaceGuid}, profile {Start} - Start {Stop}, Stop {Duration}
+Microsoft-Windows-Wired-AutoConfig  |  20038     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  FindTimelyIntfAndProfile failed, error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21001     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  DeviceLayerOpenHandle failed, Error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21002     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  DeviceLayerQueryOID failed {ErrorCode}, OID {Context}
+Microsoft-Windows-Wired-AutoConfig  |  21003     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  DeviceLayerSetOID failed {ErrorCode}, OID {Context}
+Microsoft-Windows-Wired-AutoConfig  |  21004     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  DeviceLayerSendPacket failed, {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21005     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  DeviceLayerReceivePacket failed, {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21006     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Packet only {Size} bytes, skipped
+Microsoft-Windows-Wired-AutoConfig  |  21007     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Invalid packet type {Type}, skipped
+Microsoft-Windows-Wired-AutoConfig  |  21008     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  The read request was cancelled
+Microsoft-Windows-Wired-AutoConfig  |  21009     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Receiving data error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21010     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Packet skipped, error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21011     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Send data failed, error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21012     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): pAcmConnectionProgress failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21013     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): pAcmQueryUserData failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21014     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): pAcmSetMsmProfile failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21015     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): pAcmSetUserData failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21016     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): pAcmMsmNotify failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21017     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): pAcmMediaChange failed, error {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21018     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): pAcmUIRequest failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21019     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): pAcmConnectionCompletionRoutine failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21020     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): State Transition {OldState} --> {NewState}
+Microsoft-Windows-Wired-AutoConfig  |  21021     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): Received AuthNotStarted result from 1x
+Microsoft-Windows-Wired-AutoConfig  |  21022     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): Received AuthInvalid result from 1x
+Microsoft-Windows-Wired-AutoConfig  |  21023     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): Start processing event: ({EventId})
+Microsoft-Windows-Wired-AutoConfig  |  21024     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): Completed processing event: ({EventId})
+Microsoft-Windows-Wired-AutoConfig  |  21025     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): StartOneXAuth failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21026     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): SendOneXPacket failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21027     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): TIMING OUT 802.1x Authentication
+Microsoft-Windows-Wired-AutoConfig  |  21028     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): NOT TIMING OUT 802.1x authentication, next timer in {Context} msec
+Microsoft-Windows-Wired-AutoConfig  |  21029     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): DeviceLayerGetCurrentMediaState failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21030     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  No 1X port exists. Ignoring the packet received
+Microsoft-Windows-Wired-AutoConfig  |  21031     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): Set the SWITCH MAC address to {InterfaceDescription}
+Microsoft-Windows-Wired-AutoConfig  |  21032     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): OpenDeviceHandle failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21033     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): Start processing event ({EventId})
+Microsoft-Windows-Wired-AutoConfig  |  21034     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): ProcessDot3MsmEvent:  Dot3MsmPerformStateMachineProcessing FAILed ({Status}), Event={EventId}
+Microsoft-Windows-Wired-AutoConfig  |  21035     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): Completed processing event ({EventId})
+Microsoft-Windows-Wired-AutoConfig  |  21036     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Finished initializing a new interface with id = {InterfaceGuid} and friendly name = {InterfaceDescription}
+Microsoft-Windows-Wired-AutoConfig  |  21037     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Dot3MsmInit failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21038     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Dot3MSMInitAdapter failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21039     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Failed to parse original request {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21040     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Failed to parse UI Response {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21041     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): OneXUIResponse failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21042     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  Interface({InterfaceGuid}): Dot3MsmQueryPendingUIRequest failed {ErrorCode}
+Microsoft-Windows-Wired-AutoConfig  |  21043     |  Microsoft-Windows-Wired-AutoConfig/Diagnostic   |  OneXValidateProfile failed {ErrorCode}

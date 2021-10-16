@@ -1,0 +1,32 @@
+Provider                         |  Event ID  |  Channel  |  Message
+---------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MCCS-SyncUtil  |  1         |           |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-SyncUtil  |  2         |           |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-SyncUtil  |  101       |           |  Commsync:[Ctrl] [{Prop_Dword}] [{Prop_StringA_1}] {Prop_StringA_2}
+Microsoft-Windows-MCCS-SyncUtil  |  102       |           |
+Microsoft-Windows-MCCS-SyncUtil  |  103       |           |
+Microsoft-Windows-MCCS-SyncUtil  |  104       |           |  {Prop_String1}{Prop_String2}{Prop_String3} {Prop_AnsiString}
+Microsoft-Windows-MCCS-SyncUtil  |  121       |           |  SyncUtil: [Start Marker] [SPERF_TAG_LOAD_XMLDOM_START] Start loading xml [{P1_UnicodeString}]
+Microsoft-Windows-MCCS-SyncUtil  |  122       |           |  SyncUtil: [Stop Marker] [SPERF_TAG_SYNC_ENGINE_STOP] Done loading xml [{P1_UnicodeString}]
+Microsoft-Windows-MCCS-SyncUtil  |  202       |           |  SyncUtil: MXSML Error code={P1_HexInt32}
+Microsoft-Windows-MCCS-SyncUtil  |  203       |           |  SyncUtil: MXSML Error reason={P1_UnicodeString}
+Microsoft-Windows-MCCS-SyncUtil  |  204       |           |  SyncUtil: MXSML Error url={P1_UnicodeString}
+Microsoft-Windows-MCCS-SyncUtil  |  205       |           |  SyncUtil: MXSML Error srcText={P1_UnicodeString}
+Microsoft-Windows-MCCS-SyncUtil  |  206       |           |  SyncUtil: MXSML Error offset={P1_Int32}
+Microsoft-Windows-MCCS-SyncUtil  |  301       |           |
+Microsoft-Windows-MCCS-SyncUtil  |  400       |           |  Backup store {Prop_String1} {Prop_String2}.  Poom Props: {Prop_UINT1}, Poom Named Props: {Prop_UINT2}, Mapi Props: {Prop_UINT3}, Folders: {Prop_UINT4}
+Microsoft-Windows-MCCS-SyncUtil  |  401       |           |  Restored store {Prop_String1} {Prop_String2}. Restored: {Prop_Bool1}, Store found: {Prop_Bool2}, RestoreAllInfo: {Prop_Bool3}
+Microsoft-Windows-MCCS-SyncUtil  |  402       |           |  Got HasFolderHierarchySynced state {Prop_Bool} for store
+Microsoft-Windows-MCCS-SyncUtil  |  403       |           |  Restore store (Network source: {Prop_String1}, Account ID: {Prop_String2}), forget: {Prop_Bool}
+Microsoft-Windows-MCCS-SyncUtil  |  600       |           |
+Microsoft-Windows-MCCS-SyncUtil  |  601       |           |
+Microsoft-Windows-MCCS-SyncUtil  |  750       |           |  Total AUTD accounts count changed (previous count: {Prop_UINT1}, new count: {Prop_UINT2}, AUTD limit: {Prop_UINT3}).
+Microsoft-Windows-MCCS-SyncUtil  |  751       |           |  Saving fallback schedule for account {Prop_HEXINT1} (current schedule: {Prop_HEXINT2}, requested schedule {Prop_HEXINT2}, fallback schedule: {Prop_HEXINT4}, AUTD limit: {Prop_UINT1}).
+Microsoft-Windows-MCCS-SyncUtil  |  752       |           |  Demoting schedule for account {Prop_HEXINT1} (current schedule: {Prop_HEXINT2}, new schedule: {Prop_HEXINT3}, AUTD limit: {Prop_UINT1}).
+Microsoft-Windows-MCCS-SyncUtil  |  753       |           |  Account {Prop_HEXINT1} schedule changed from {Prop_HEXINT2} to {Prop_HEXINT3}.
+Microsoft-Windows-MCCS-SyncUtil  |  800       |           |  Received OAuth token of type {Prop_String1} expiring in {Prop_FileTime1}seconds.
+Microsoft-Windows-MCCS-SyncUtil  |  801       |           |  Received OAuth token of type {Prop_String1} expiring in {Prop_FileTime1}seconds.
+Microsoft-Windows-MCCS-SyncUtil  |  802       |           |  Received OAuth token of type {Prop_String1} expiring in {Prop_FileTime1}seconds.
+Microsoft-Windows-MCCS-SyncUtil  |  803       |           |  The SSO Token request failed with status {P1_Int32}
+Microsoft-Windows-MCCS-SyncUtil  |  804       |           |  The SSO request failed with a provider error (status: {Prop_HexInt32}, message: {Prop_String})
+Microsoft-Windows-MCCS-SyncUtil  |  810       |           |  Cred Vault: DeletePwd Called. Caller: UpdatePasswordForAccount, Partner {P1_HexInt32}

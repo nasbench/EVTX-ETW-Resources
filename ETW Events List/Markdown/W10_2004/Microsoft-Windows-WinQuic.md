@@ -1,0 +1,114 @@
+Provider                   |  Event ID  |  Channel  |  Message
+---------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WinQuic  |  1         |           |  [ lib] Initialized, PartitionCount={PartitionCount} DatapathFeatures={DatapathFeatures}
+Microsoft-Windows-WinQuic  |  2         |           |
+Microsoft-Windows-WinQuic  |  3         |           |
+Microsoft-Windows-WinQuic  |  4         |           |
+Microsoft-Windows-WinQuic  |  5         |           |
+Microsoft-Windows-WinQuic  |  6         |           |  Allocation of '{Desc}' failed. ({ByteCount} bytes)
+Microsoft-Windows-WinQuic  |  7         |           |  [ lib] Rundown, PartitionCount={PartitionCount} DatapathFeatures={DatapathFeatures}
+Microsoft-Windows-WinQuic  |  8         |           |  [ lib] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  9         |           |  [ lib] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  10        |           |  [ lib] ASSERT, {File}:{Line} - {Expression}.
+Microsoft-Windows-WinQuic  |  1024      |           |  [ reg][{Registration}] Created, AppName={AppName}
+Microsoft-Windows-WinQuic  |  1025      |           |  [ reg][{Registration}] Destroyed
+Microsoft-Windows-WinQuic  |  1026      |           |  [ reg][{Registration}] Cleaning up
+Microsoft-Windows-WinQuic  |  1027      |           |  [ reg][{Registration}] Rundown, AppName={AppName}
+Microsoft-Windows-WinQuic  |  1028      |           |  [ reg][{Registration}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  1029      |           |  [ reg][{Registration}] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  2048      |           |  [wrkr][{Worker}] Created, IdealProc={IdealProcessor} Owner={Owner}
+Microsoft-Windows-WinQuic  |  2049      |           |  [wrkr][{Worker}] Start
+Microsoft-Windows-WinQuic  |  2050      |           |  [wrkr][{Worker}] Stop
+Microsoft-Windows-WinQuic  |  2051      |           |  [wrkr][{Worker}] IsActive = {IsActive}, Arg = {Arg}
+Microsoft-Windows-WinQuic  |  2052      |           |  [wrkr][{Worker}] QueueDelay = {QueueDelay}
+Microsoft-Windows-WinQuic  |  2053      |           |  [wrkr][{Worker}] Destroyed
+Microsoft-Windows-WinQuic  |  2054      |           |  [wrkr][{Worker}] Cleaning up
+Microsoft-Windows-WinQuic  |  2055      |           |  [wrkr][{Worker}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  2056      |           |  [wrkr][{Worker}] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  3072      |           |  [sess][{Session}] Created, Registration={Registration}, Alpn={AppName}
+Microsoft-Windows-WinQuic  |  3073      |           |  [sess][{Session}] Destroyed
+Microsoft-Windows-WinQuic  |  3074      |           |  [sess][{Session}] Cleaning up
+Microsoft-Windows-WinQuic  |  3075      |           |  [sess][{Session}] Shutting down connections, Flags={Flags}, ErrorCode={ErrorCode}
+Microsoft-Windows-WinQuic  |  3076      |           |  [sess][{Session}] Rundown, Registration={Registration}, Alpn={AppName}
+Microsoft-Windows-WinQuic  |  3077      |           |  [sess][{Session}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  3078      |           |  [sess][{Session}] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  4096      |           |  [list][{Listener}] Created, Session={Session}
+Microsoft-Windows-WinQuic  |  4097      |           |  [list][{Listener}] Destroyed
+Microsoft-Windows-WinQuic  |  4098      |           |  [list][{Listener}] Started, Binding={Binding}, LocalAddr={Addr}
+Microsoft-Windows-WinQuic  |  4099      |           |  [list][{Listener}] Stopped
+Microsoft-Windows-WinQuic  |  4100      |           |  [list][{Listener}] Rundown, Session={Session}
+Microsoft-Windows-WinQuic  |  4101      |           |  [list][{Listener}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  4102      |           |  [list][{Listener}] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  5120      |           |  [conn][{Connection}] Created, IsServer={IsServer}
+Microsoft-Windows-WinQuic  |  5121      |           |  [conn][{Connection}] Destroyed
+Microsoft-Windows-WinQuic  |  5122      |           |  [conn][{Connection}] Handshake complete
+Microsoft-Windows-WinQuic  |  5123      |           |  [conn][{Connection}] Scheduling: {State}
+Microsoft-Windows-WinQuic  |  5124      |           |  [conn][{Connection}] Execute: {Type}
+Microsoft-Windows-WinQuic  |  5125      |           |  [conn][{Connection}] Execute: {Type}
+Microsoft-Windows-WinQuic  |  5126      |           |  [conn][{Connection}] Execute: {Type}
+Microsoft-Windows-WinQuic  |  5127      |           |  [conn][{Connection}] New Local IP: {Addr}
+Microsoft-Windows-WinQuic  |  5128      |           |  [conn][{Connection}] New Remote IP: {Addr}
+Microsoft-Windows-WinQuic  |  5129      |           |  [conn][{Connection}] Removed Local IP: {Addr}
+Microsoft-Windows-WinQuic  |  5130      |           |  [conn][{Connection}] Removed Remote IP: {Addr}
+Microsoft-Windows-WinQuic  |  5131      |           |  [conn][{Connection}] Assigned worker: {Worker}
+Microsoft-Windows-WinQuic  |  5132      |           |  [conn][{Connection}] Handshake start
+Microsoft-Windows-WinQuic  |  5133      |           |  [conn][{Connection}] Registered with session: {Session}
+Microsoft-Windows-WinQuic  |  5134      |           |  [conn][{Connection}] Unregistered from session: {Session}
+Microsoft-Windows-WinQuic  |  5135      |           |  [conn][{Connection}] Transport Shutdown: {ErrorCode} (Remote={IsRemoteShutdown}) (QS={IsQuicStatus})
+Microsoft-Windows-WinQuic  |  5136      |           |  [conn][{Connection}] App Shutdown: {ErrorCode} (Remote={IsRemoteShutdown})
+Microsoft-Windows-WinQuic  |  5137      |           |  [conn][{Connection}] Initialize complete
+Microsoft-Windows-WinQuic  |  5138      |           |  [conn][{Connection}] Handle closed
+Microsoft-Windows-WinQuic  |  5139      |           |  [conn][{Connection}] Version = {Value}
+Microsoft-Windows-WinQuic  |  5140      |           |  [conn][{Connection}] OUT: BytesSent={BytesSent} InFlight={BytesInFlight} InFlightMax={BytesInFlightMax} CWnd={CongestionWindow} SSThresh={SlowStartThreshold} ConnFC={ConnectionFlowControl} StreamFC={StreamFlowControl} ISB={IdealBytes} PostedBytes={Connection}0 SRtt={Connection}1
+Microsoft-Windows-WinQuic  |  5141      |           |  [conn][{Connection}] Send Blocked Flags: {ReasonFlags}
+Microsoft-Windows-WinQuic  |  5142      |           |  [conn][{Connection}] IN: BytesRecv={BytesReceived}
+Microsoft-Windows-WinQuic  |  5143      |           |  [conn][{Connection}] CUBIC: SlowStartThreshold={SlowStartThreshold} K={K} WindowMax={WindowMax} WindowLastMax={WindowLastMax}
+Microsoft-Windows-WinQuic  |  5144      |           |  [conn][{Connection}] Congestion event
+Microsoft-Windows-WinQuic  |  5145      |           |  [conn][{Connection}] Persistent congestion event
+Microsoft-Windows-WinQuic  |  5146      |           |  [conn][{Connection}] Recovery complete
+Microsoft-Windows-WinQuic  |  5147      |           |  [conn][{Connection}] Rundown, IsServer={IsServer}
+Microsoft-Windows-WinQuic  |  5148      |           |  [conn][{Connection}] New Source CID: {Cid}
+Microsoft-Windows-WinQuic  |  5149      |           |  [conn][{Connection}] New Destination CID: {Cid}
+Microsoft-Windows-WinQuic  |  5150      |           |  [conn][{Connection}] Removed Source CID: {Cid}
+Microsoft-Windows-WinQuic  |  5151      |           |  [conn][{Connection}] Removed Destination CID: {Cid}
+Microsoft-Windows-WinQuic  |  5152      |           |  [conn][{Connection}] Setting loss detection {Type} timer for {DelayMs} ms. (ProbeCount={ProbeCount})
+Microsoft-Windows-WinQuic  |  5153      |           |  [conn][{Connection}] Cancelling loss detection timer.
+Microsoft-Windows-WinQuic  |  5154      |           |  [conn][{Owner}] DROP packet[{PktNum}] Src={RemoteAddr} Dst={LocalAddr} Reason={Reason}.
+Microsoft-Windows-WinQuic  |  5155      |           |  [conn][{Owner}] DROP packet[{PktNum}] Src={RemoteAddr} Dst={LocalAddr} Reason={Reason}, {Value}.
+Microsoft-Windows-WinQuic  |  5156      |           |  [conn][{Connection}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  5157      |           |  [conn][{Connection}] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  5158      |           |  [conn][{Connection}] New packet keys created successfully.
+Microsoft-Windows-WinQuic  |  5159      |           |  [conn][{Connection}] Key phase change (locally initiated={IsLocallyInitiated}).
+Microsoft-Windows-WinQuic  |  5160      |           |  [conn][{Connection}] STATS: LifeTimeUs={LifeTimeUs} SendTotalPackets={SendTotalPackets} SendSuspectedLostPackets={SendSuspectedLostPackets} SendSpuriousLostPackets={SendSpuriousLostPackets} RecvTotalPackets={RecvTotalPackets} RecvReorderedPackets={RecvReorderedPackets} RecvDroppedPackets={RecvDroppedPackets} RecvDuplicatePackets={RecvDuplicatePackets} RecvDecryptionFailures={Connection}0 CongestionCount={Connection}1 PersistentCongestionCount={Connection}2 SendTotalBytes={Connection}3 RecvTotalBytes={Connection}4
+Microsoft-Windows-WinQuic  |  5161      |           |  [conn][{Connection}] Shutdown complete, PeerFailedToAcknowledged={Value}.
+Microsoft-Windows-WinQuic  |  5162      |           |  [conn][{Connection}] Read Key Updated, {NewValue}.
+Microsoft-Windows-WinQuic  |  5163      |           |  [conn][{Connection}] Write Key Updated, {NewValue}.
+Microsoft-Windows-WinQuic  |  5164      |           |  [conn][{Owner}][TX][{Number}] {Type} ({Length} bytes)
+Microsoft-Windows-WinQuic  |  5165      |           |  [conn][{Owner}][RX][{Number}] {Type} ({Length} bytes)
+Microsoft-Windows-WinQuic  |  5166      |           |  [conn][{Owner}][TX][{Number}] {Type} Lost: {Reason}
+Microsoft-Windows-WinQuic  |  5167      |           |  [conn][{Owner}][TX][{Number}] {Type} ACKed
+Microsoft-Windows-WinQuic  |  6144      |           |  [strm][{Stream}] Created, Conn={Connection} ID={ID} IsLocal={IsLocalOwned}
+Microsoft-Windows-WinQuic  |  6145      |           |  [strm][{Stream}] Destroyed
+Microsoft-Windows-WinQuic  |  6146      |           |  [strm][{Stream}] Send Blocked Flags: {ReasonFlags}
+Microsoft-Windows-WinQuic  |  6147      |           |  [strm][{Stream}] Rundown, Conn={Connection} ID={ID} IsLocal={IsLocalOwned}
+Microsoft-Windows-WinQuic  |  6148      |           |  [strm][{Stream}] Send State: {State}
+Microsoft-Windows-WinQuic  |  6149      |           |  [strm][{Stream}] Recv State: {State}
+Microsoft-Windows-WinQuic  |  6150      |           |  [strm][{Stream}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  6151      |           |  [strm][{Stream}] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  7168      |           |  [bind][{Binding}] Created, Udp={DatapathBinding} LocalAddr={LocalAddr} RemoteAddr={RemoteAddr}
+Microsoft-Windows-WinQuic  |  7169      |           |  [bind][{Binding}] Rundown, Udp={DatapathBinding} LocalAddr={LocalAddr} RemoteAddr={RemoteAddr}
+Microsoft-Windows-WinQuic  |  7170      |           |  [bind][{Binding}] Destroyed
+Microsoft-Windows-WinQuic  |  7171      |           |  [bind][{Binding}] Cleaning up
+Microsoft-Windows-WinQuic  |  7172      |           |  [bind][{Owner}] DROP packet[{PktNum}] Src={RemoteAddr} Dst={LocalAddr} Reason={Reason}.
+Microsoft-Windows-WinQuic  |  7173      |           |  [bind][{Owner}] DROP packet[{PktNum}] Src={RemoteAddr} Dst={LocalAddr} Reason={Reason}, {Value}.
+Microsoft-Windows-WinQuic  |  7174      |           |  [bind][{Binding}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  7175      |           |  [bind][{Binding}] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  7176      |           |  [bind][{Binding}] Execute: {Type}
+Microsoft-Windows-WinQuic  |  8192      |           |  [ tls][{Connection}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  8193      |           |  [ tls][{Connection}] ERROR, {Status}, {ErrStr}.
+Microsoft-Windows-WinQuic  |  9215      |           |  [mitls] {Message}
+Microsoft-Windows-WinQuic  |  9216      |           |  [ udp][{UdpBinding}] Send {TotalSize} bytes in {BufferCount} buffers (segment={SegmentSize}) Dst={RemoteAddr}
+Microsoft-Windows-WinQuic  |  9217      |           |  [ udp][{UdpBinding}] Send {TotalSize} bytes in {BufferCount} buffers (segment={SegmentSize}) Src={LocalAddr} Dst={RemoteAddr}
+Microsoft-Windows-WinQuic  |  9218      |           |  [ udp][{UdpBinding}] Recv {TotalSize} bytes (segment={SegmentSize}) Src={LocalAddrLength} Dst={RemoteAddrLength}
+Microsoft-Windows-WinQuic  |  9219      |           |  [ udp][{UdpBinding}] ERROR, {ErrStr}.
+Microsoft-Windows-WinQuic  |  9220      |           |  [ udp][{UdpBinding}] ERROR, {Status}, {ErrStr}.

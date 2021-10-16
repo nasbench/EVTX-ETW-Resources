@@ -1,0 +1,22 @@
+Provider                                                |  Event ID  |  Channel                                                             |  Message
+--------------------------------------------------------|------------|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  2         |  Microsoft-Windows-TerminalServices-LocalSessionManager/Debug        |  {message}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  3         |  Microsoft-Windows-TerminalServices-LocalSessionManager/Debug        |  {message}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  4         |  Microsoft-Windows-TerminalServices-LocalSessionManager/Debug        |  {message}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  5         |  Microsoft-Windows-TerminalServices-LocalSessionManager/Debug        |  {message}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  6         |  Microsoft-Windows-TerminalServices-LocalSessionManager/Debug        |  {message}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  7         |  Microsoft-Windows-TerminalServices-LocalSessionManager/Debug        |  {message}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  8         |  Microsoft-Windows-TerminalServices-LocalSessionManager/Debug        |  {message}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  9         |  Microsoft-Windows-TerminalServices-LocalSessionManager/Debug        |  {message}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  10        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Analytic     |
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  11        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Analytic     |
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  16        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Local Multi-User session manager failed to start. The relevant status code was {Param1}.
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  17        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Remote Desktop Service start failed. The relevant status code was {Param1}.
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  18        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  19        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Registering with Service Control Manager to monitor Remote Desktop Service status failed with {Param1}, retry in ten minutes.
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  20        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Attempt to send {messageName} message to Windows video subsystem failed. The relevant status code was {errorCode}.
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  21        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Remote Desktop Services: Session logon succeeded:User: {User}Session ID: {SessionID}Source Network Address: {Address}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  22        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Remote Desktop Services: Shell start notification received:User: {User}Session ID: {SessionID}Source Network Address: {Address}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  23        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Remote Desktop Services: Session logoff succeeded:User: {User}Session ID: {SessionID}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  24        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Remote Desktop Services: Session has been disconnected:User: {User}Session ID: {SessionID}Source Network Address: {Address}
+Microsoft-Windows-TerminalServices-LocalSessionManager  |  25        |  Microsoft-Windows-TerminalServices-LocalSessionManager/Operational  |  Remote Desktop Services: Session reconnection succeeded:User: {User}Session ID: {SessionID}Source Network Address: {Address}

@@ -1,0 +1,3 @@
+Provider                                       |  Event ID  |  Channel                                                     |  Message
+-----------------------------------------------|------------|--------------------------------------------------------------|-------------------------
+Microsoft-Windows-Shell-ConnectedAccountState  |  100       |  Microsoft-Windows-Shell-ConnectedAccountState/ActionCenter  |  Connected Account State

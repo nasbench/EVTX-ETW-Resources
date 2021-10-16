@@ -1,0 +1,5 @@
+Provider                               |  Event ID  |  Channel                                            |  Message
+---------------------------------------|------------|-----------------------------------------------------|---------------------------
+Microsoft-Windows-Fault-Tolerant-Heap  |  1001      |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |
+Microsoft-Windows-Fault-Tolerant-Heap  |  1002      |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |
+Microsoft-Windows-Fault-Tolerant-Heap  |  1003      |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |  FaultTolerantHeap Enabled

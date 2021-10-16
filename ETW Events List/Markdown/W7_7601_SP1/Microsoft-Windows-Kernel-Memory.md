@@ -1,0 +1,3 @@
+Provider                         |  Event ID  |  Channel                                   |  Message
+---------------------------------|------------|--------------------------------------------|---------
+Microsoft-Windows-Kernel-Memory  |  1         |  Microsoft-Windows-Kernel-Memory/Analytic  |

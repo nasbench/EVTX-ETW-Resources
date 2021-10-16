@@ -1,0 +1,4 @@
+Provider                           |  Event ID  |  Channel                                                                    |  Message
+-----------------------------------|------------|-----------------------------------------------------------------------------|-----------------------------------------------------
+Microsoft-Windows-EDP-AppLearning  |  401       |  Microsoft Windows Information Protection Application Learning Log Channel  |  An application tried to access enterprise resources
+Microsoft-Windows-EDP-AppLearning  |  402       |  Microsoft Windows Information Protection Application Learning Log Channel  |  An enterprise resource was shared to a website

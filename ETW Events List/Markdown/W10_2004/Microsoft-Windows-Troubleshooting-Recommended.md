@@ -1,0 +1,5 @@
+Provider                                       |  Event ID  |  Channel      |  Message
+-----------------------------------------------|------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Troubleshooting-Recommended  |  1         |  Admin        |  The {Type} troubleshooter "{Title}" is available from Microsoft. Learn more at {LearnMoreURL}
+Microsoft-Windows-Troubleshooting-Recommended  |  101       |  Operational  |  Successfully ran {Type} troubleshooter "{Title}". Learn more at {LearnMoreURL}
+Microsoft-Windows-Troubleshooting-Recommended  |  102       |  Operational  |  Couldn’t run the {Type} troubleshooter "{Title}". Learn more about this troubleshooter at {LearnMoreURL}. Error code: {ErrorCode}

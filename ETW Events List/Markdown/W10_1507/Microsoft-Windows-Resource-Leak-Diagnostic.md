@@ -1,0 +1,6 @@
+Provider                                    |  Event ID  |  Channel                                                 |  Message
+--------------------------------------------|------------|----------------------------------------------------------|---------------------------------------------------------------------------
+Microsoft-Windows-Resource-Leak-Diagnostic  |  1003      |  Microsoft-Windows-Resource-Leak-Diagnostic/Operational  |  Windows initiated memory leak diagnostics on {ProcessImageName}.
+Microsoft-Windows-Resource-Leak-Diagnostic  |  1004      |  Microsoft-Windows-Resource-Leak-Diagnostic/Operational  |  Windows completed memory leak diagnostics on {ProcessImageName}.
+Microsoft-Windows-Resource-Leak-Diagnostic  |  1005      |  Microsoft-Windows-Resource-Leak-Diagnostic/Operational  |  Windows failed to initiate memory leak diagnostics on {ProcessImageName}.
+Microsoft-Windows-Resource-Leak-Diagnostic  |  1006      |  Microsoft-Windows-Resource-Leak-Diagnostic/Operational  |  Windows failed to complete memory leak diagnostics on {ProcessImageName}.

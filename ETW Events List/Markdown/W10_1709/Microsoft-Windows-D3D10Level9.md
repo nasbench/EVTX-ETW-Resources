@@ -1,0 +1,11 @@
+Provider                       |  Event ID  |  Channel                                   |  Message
+-------------------------------|------------|--------------------------------------------|---------
+Microsoft-Windows-D3D10Level9  |  1         |  Microsoft-Windows-D3D10Level9/Analytic    |
+Microsoft-Windows-D3D10Level9  |  2         |  Microsoft-Windows-D3D10Level9/Analytic    |
+Microsoft-Windows-D3D10Level9  |  3         |  Microsoft-Windows-D3D10Level9/Analytic    |
+Microsoft-Windows-D3D10Level9  |  4         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
+Microsoft-Windows-D3D10Level9  |  5         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
+Microsoft-Windows-D3D10Level9  |  6         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
+Microsoft-Windows-D3D10Level9  |  7         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
+Microsoft-Windows-D3D10Level9  |  8         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
+Microsoft-Windows-D3D10Level9  |  9         |  Microsoft-Windows-D3D10Level9/PerfTiming  |

@@ -1,0 +1,34 @@
+Provider                                               |  Event ID  |  Channel  |  Message
+-------------------------------------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Security-Audit-Configuration-Client  |  100       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  101       |           |  Group policy processing for audit settings could not be started. Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  102       |           |  List of applicable GPOs:{GPOList}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  103       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  104       |           |  Failed to create local directory for downloading audit settings. Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  105       |           |  Processing audit settings from the following GPO.Display Name: {GPOName}GPO ID: {GPOID}SYSVOL Path: {SysvolPath}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  106       |           |  Successfully downloaded the audit settings file as follows.Remote File: {RemoteFile}Local File: {LocalFile}GPO Name: {GPOName}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  107       |           |  Failed to downloaded the audit settings file as follows.Remote File: {RemoteFile}Local File: {LocalFile}GPO Name: {GPOName}Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  108       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  109       |           |  Failed to configure the audit settings on the system.Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  110       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  111       |           |  Failed to generate RSoP data in WMI. Error:{ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  112       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  113       |           |  Group policy processing for audit settings finished with error. Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  114       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  115       |           |  Failed to communicate the results of the operation to group policy engine. Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  200       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  201       |           |  Group policy processing for central access policy settings could not be started. Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  202       |           |  List of applicable GPOs:{GPOList}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  203       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  204       |           |  Failed to create local directory for downloading central access policy settings. Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  205       |           |  Processing central access policy settings from the following GPO.Display Name: {GPOName}GPO ID: {GPOID}SYSVOL Path: {SysvolPath}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  206       |           |  Successfully downloaded the central access policy settings file as follows.Remote File: {RemoteFile}Local File: {LocalFile}GPO Name: {GPOName}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  207       |           |  Failed to downloaded the central access policy settings file as follows.Remote File: {RemoteFile}Local File: {LocalFile}GPO Name: {GPOName}Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  208       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  209       |           |  Failed to configure the central access policy settings on the system.Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  210       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  211       |           |  Failed to generate RSoP data in WMI. Error:{ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  212       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  213       |           |  Group policy processing for central access policy settings finished with error. Error: {ErrorCode}
+Microsoft-Windows-Security-Audit-Configuration-Client  |  214       |           |
+Microsoft-Windows-Security-Audit-Configuration-Client  |  215       |           |  Failed to communicate the results of the operation to group policy engine. Error: {ErrorCode}

@@ -1,0 +1,4 @@
+Provider                     |  Event ID  |  Channel                                  |  Message
+-----------------------------|------------|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WerKernel  |  1001      |  Microsoft-Windows-WerKernel/Operational  |  Component {ComponentName} has requested to create a Live Kernel Dump and the request has been completed. RequestedType {RequestedPolicy}, GrantedType {GrantedPolicy}, Status {Status}, ThrottleCheckResult {ThrottleCheckResult}.
+Microsoft-Windows-WerKernel  |  1002      |  Microsoft-Windows-WerKernel/Operational  |  Component {ComponentName} has requested to submit a Live Kernel Dump and the request has been completed. DumpType {Policy}, ReportId {ReportId}, Status {Status}.

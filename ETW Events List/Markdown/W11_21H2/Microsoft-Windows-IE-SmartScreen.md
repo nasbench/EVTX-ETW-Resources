@@ -1,0 +1,37 @@
+Provider                          |  Event ID  |  Channel                           |  Message
+----------------------------------|------------|------------------------------------|---------
+Microsoft-Windows-IE-SmartScreen  |  1         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  2         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  3         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  4         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  5         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  6         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  7         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  8         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  9         |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  10        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  11        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  12        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  13        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  14        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  15        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  16        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  17        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  18        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  19        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  20        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  21        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  22        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  23        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  24        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  25        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  26        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  27        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  28        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  29        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  30        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  31        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  32        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  33        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  34        |  Microsoft-Windows-IE-SmartScreen  |
+Microsoft-Windows-IE-SmartScreen  |  1100      |  Microsoft-Windows-IE-SmartScreen  |

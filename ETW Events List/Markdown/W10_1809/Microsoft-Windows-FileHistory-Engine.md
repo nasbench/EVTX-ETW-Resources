@@ -1,0 +1,21 @@
+Provider                              |  Event ID  |  Channel                                     |  Message
+--------------------------------------|------------|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-FileHistory-Engine  |  1         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  2         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  3         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  4         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  5         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  6         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  7         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  8         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  9         |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  10        |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  11        |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  12        |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  13        |  Microsoft-Windows-FileHistory-Engine/Debug  |
+Microsoft-Windows-FileHistory-Engine  |  100       |  File History backup log                     |  File was not backed up due to its full path exceeding MAX_PATH limit or containing unsupported characters:{Path}If you want it to be protected, try using different directory and file names.
+Microsoft-Windows-FileHistory-Engine  |  101       |  File History backup log                     |  File/directory was not backed up due to being encrypted or insufficient permissions:{Path}If you want it to be protected, remove encryption or ask your system administrator to give you access to this file/directory.
+Microsoft-Windows-FileHistory-Engine  |  102       |  File History backup log                     |  File was not backed up due to an error:{Path}Windows will not attempt to back up the file again, unless it is modified.
+Microsoft-Windows-FileHistory-Engine  |  103       |  File History backup log                     |  File was not backed up due to an error:{Path}Windows will attempt to back up the file at a later time.
+Microsoft-Windows-FileHistory-Engine  |  104       |  File History backup log                     |  File was not backed up due to being open by an application:{Path}Windows will attempt to back up the file at a later time.
+Microsoft-Windows-FileHistory-Engine  |  105       |  File History backup log                     |  File was successfully backed up:{Path}

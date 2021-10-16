@@ -1,0 +1,4 @@
+Provider                  |  Event ID  |  Channel                              |  Message
+--------------------------|------------|---------------------------------------|----------------------
+Microsoft-Windows-Volume  |  1001      |  Microsoft-Windows-Volume/Diagnostic  |  Operation started.
+Microsoft-Windows-Volume  |  1002      |  Microsoft-Windows-Volume/Diagnostic  |  Operation completed.

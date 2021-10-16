@@ -1,0 +1,4 @@
+Provider                                |  Event ID  |  Channel  |  Message
+----------------------------------------|------------|-----------|---------
+Microsoft-Windows-Processor-Aggregator  |  1         |           |
+Microsoft-Windows-Processor-Aggregator  |  2         |           |

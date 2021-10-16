@@ -1,0 +1,29 @@
+Provider                       |  Event ID  |  Channel                                   |  Message
+-------------------------------|------------|--------------------------------------------|---------
+Microsoft-Windows-InputSwitch  |  1         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  2         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  3         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  4         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  5         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  6         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  7         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  8         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  9         |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  10        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  11        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  12        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  13        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  14        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  15        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  16        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  17        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  18        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  19        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  20        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  21        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  22        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  23        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  26        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  27        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  28        |  Microsoft-Windows-InputSwitch/Diagnostic  |
+Microsoft-Windows-InputSwitch  |  29        |  Microsoft-Windows-InputSwitch/Diagnostic  |

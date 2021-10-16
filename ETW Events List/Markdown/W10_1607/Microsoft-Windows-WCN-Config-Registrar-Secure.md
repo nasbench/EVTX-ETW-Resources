@@ -1,0 +1,3 @@
+Provider                                       |  Event ID  |  Channel                                            |  Message
+-----------------------------------------------|------------|-----------------------------------------------------|------------------------------------
+Microsoft-Windows-WCN-Config-Registrar-Secure  |  9000      |  Microsoft-Windows-WCN-Config-Registrar/Diagnostic  |  WCN successfully decoded a message

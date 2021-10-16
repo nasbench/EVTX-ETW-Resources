@@ -1,0 +1,3 @@
+Provider                             |  Event ID  |  Channel  |  Message
+-------------------------------------|------------|-----------|---------
+Microsoft-Windows-Kernel-Tm-Trigger  |  1         |           |

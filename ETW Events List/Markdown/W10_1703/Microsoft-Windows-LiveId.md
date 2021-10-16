@@ -1,0 +1,112 @@
+Provider                  |  Event ID  |  Channel                               |  Message
+--------------------------|------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-LiveId  |  1005      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  1006      |  Microsoft-Windows-LiveId/Analytic     |  ConnectIdentity_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  1007      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  1008      |  Microsoft-Windows-LiveId/Analytic     |  DisconnectIdentity_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  1013      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  1014      |  Microsoft-Windows-LiveId/Analytic     |  NetworkCall_Stop.Number of Targets: {NoOfTargets}RequestType: {RequestType}
+Microsoft-Windows-LiveId  |  1015      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  1016      |  Microsoft-Windows-LiveId/Analytic     |  DeviceAuth_Stop.Status: {TicketsCached}
+Microsoft-Windows-LiveId  |  1017      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  1018      |  Microsoft-Windows-LiveId/Analytic     |  UserAuth_Stop.Status: {TicketsCached}
+Microsoft-Windows-LiveId  |  1019      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  1020      |  Microsoft-Windows-LiveId/Analytic     |  PromptForCredentials_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  1021      |  Microsoft-Windows-LiveId/Operational  |  SignOutUser_RegistryOpenOrReadFailure. RegistryLocation: {RegistryLocation}. Status: {Status}
+Microsoft-Windows-LiveId  |  1022      |  Microsoft-Windows-LiveId/Operational  |  SignOutUser_RegistryWriteFailure. RegistryLocation: {RegistryLocation}. Status: {Status}
+Microsoft-Windows-LiveId  |  2008      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2009      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2010      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2011      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2012      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2013      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2014      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2015      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2016      |  Microsoft-Windows-LiveId/Analytic     |  CommandLinkClicked_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  2017      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2018      |  Microsoft-Windows-LiveId/Analytic     |  UserImageGetBitmapValue_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  2019      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2020      |  Microsoft-Windows-LiveId/Analytic     |  CredProvSetSerialization_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  2021      |  Microsoft-Windows-LiveId/Analytic     |
+Microsoft-Windows-LiveId  |  2022      |  Microsoft-Windows-LiveId/Analytic     |  CredProvGetSerialization_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  2023      |  Microsoft-Windows-LiveId/Operational  |  Operation: {Operation}Details: {Target}Status: {Result}
+Microsoft-Windows-LiveId  |  2024      |  Microsoft-Windows-LiveId/Operational  |  Operation: {Operation}Details: {Details}Status: {Status}
+Microsoft-Windows-LiveId  |  2025      |  Microsoft-Windows-LiveId/Operational  |  WLIDSvc service failed to start.Function: {Operation}Reason: {Reason}Status: {Result}
+Microsoft-Windows-LiveId  |  2026      |  Microsoft-Windows-LiveId/Analytic     |  Generic telemetry trigger event.PointType: {PointType}AppName: {AppName}ModuleName: {ModuleName}ModuleVersion: {ModuleVersion}FileName: {FileName}FunctionName: {FunctionName}LineNumber: {LineNumber}ErrorCode: {ErrorCode}
+Microsoft-Windows-LiveId  |  2027      |  Microsoft-Windows-LiveId/Analytic     |  User specific telemetry trigger event for CID {cid}.
+Microsoft-Windows-LiveId  |  2028      |  Microsoft-Windows-LiveId/Operational  |  ErrorVerifier in function {FunctionName} encountered unexpected error code ({ErrorCode}).
+Microsoft-Windows-LiveId  |  2029      |  Microsoft-Windows-LiveId/Operational  |  Assertion failure for expression ({Expression}) in function {FunctionName} @{FileName}_{LineNumber}.
+Microsoft-Windows-LiveId  |  3000      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3001      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3002      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3003      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3004      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3005      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3006      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3007      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3009      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  3010      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  3011      |                                        |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  3012      |                                        |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  3013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3014      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  3015      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  3016      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4000      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4001      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4002      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4003      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4004      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4005      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4006      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4007      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4009      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  4010      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  4011      |                                        |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  4012      |                                        |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  4013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4014      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  4015      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  4016      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5000      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5001      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5002      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5003      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5004      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5005      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5006      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5007      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5009      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  5010      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  5011      |                                        |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  5012      |                                        |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  5013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5014      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  5015      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  5016      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6000      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6001      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6002      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6003      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6004      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6005      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6006      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6007      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6009      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  6010      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  6011      |                                        |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  6012      |                                        |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  6013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6014      |                                        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  6015      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6016      |                                        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  6100      |                                        |  Service Create Context for [{value}]
+Microsoft-Windows-LiveId  |  6101      |                                        |  Token with target [{TargetName}] expired on {ExpiryTime}, Deleting it from CredMan.
+Microsoft-Windows-LiveId  |  6102      |                                        |  Certificate (target = [{value}]) has expired. Deleting from CredMan.
+Microsoft-Windows-LiveId  |  6103      |                                        |  RemoveCachedAuthInfo Deleting item for target [{value}] from CredMan.
+Microsoft-Windows-LiveId  |  6104      |                                        |  RemoveCachedAuthInfo ALL Deleting [{value}] items from CredMan.
+Microsoft-Windows-LiveId  |  6105      |                                        |  RemovePersistedTokens Deleting item for target [{value}] from CredMan.

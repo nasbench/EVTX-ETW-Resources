@@ -1,0 +1,3 @@
+Provider                 |  Event ID  |  Channel                             |  Message
+-------------------------|------------|--------------------------------------|----------------
+Microsoft-Windows-IPNAT  |  2001      |  Microsoft-Windows-IPNAT/Diagnostic  |  {_DebugString}

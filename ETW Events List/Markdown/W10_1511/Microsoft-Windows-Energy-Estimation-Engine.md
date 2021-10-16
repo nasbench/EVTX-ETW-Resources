@@ -1,0 +1,29 @@
+Provider                                    |  Event ID  |  Channel                                              |  Message
+--------------------------------------------|------------|-------------------------------------------------------|---------
+Microsoft-Windows-Energy-Estimation-Engine  |  1         |  Microsoft-Windows-Energy-Estimation-Engine/EventLog  |
+Microsoft-Windows-Energy-Estimation-Engine  |  2         |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  3         |  Microsoft-Windows-Energy-Estimation-Engine/EventLog  |
+Microsoft-Windows-Energy-Estimation-Engine  |  4         |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  5         |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  6         |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  7         |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  8         |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  9         |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  10        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  11        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  12        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  13        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  14        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  15        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  16        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  17        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  18        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  19        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  20        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  21        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  22        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  23        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  24        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  25        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  26        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |
+Microsoft-Windows-Energy-Estimation-Engine  |  27        |  Microsoft-Windows-Energy-Estimation-Engine/Trace     |

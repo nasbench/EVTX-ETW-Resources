@@ -1,0 +1,57 @@
+Provider                         |  Event ID  |  Channel                                      |  Message
+---------------------------------|------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-International  |  1001      |  Microsoft-Windows-International/Operational  |  The NLS operation failed because the registry key {RegistryKey} cannot be opened. Error code is {ErrorCode}. Error message: {Message}
+Microsoft-Windows-International  |  1002      |  Microsoft-Windows-International/Operational  |  The NLS operation failed because the registry key {RegistryKey} cannot be opened. Status code is {StatusCode}.
+Microsoft-Windows-International  |  1003      |  Microsoft-Windows-International/Operational  |  NLS codepage operation failed for the codepage {CodePage} because the file {FileName} is missing.  To correct this error, replace this file or repair your Windows installation.
+Microsoft-Windows-International  |  1004      |  Microsoft-Windows-International/Operational  |  NLS codepage operation failed for the codepage {CodePage} because the file {FileName} is corrupted. To correct this error, replace this file or repair your Windows installation.
+Microsoft-Windows-International  |  1005      |  Microsoft-Windows-International/Operational  |  NLS operation failed for {LocaleName} locale because the file {WinDir}\globalization\{LocaleName}.nlp is missing.  To fix this problem, reinstall this custom locale.
+Microsoft-Windows-International  |  1006      |  Microsoft-Windows-International/Operational  |  NLS operation failed for {LocaleName} locale because the file {WinDir}\globalization\{LocaleName}.nlp is corrupted.  To fix this problem, reinstall this custom locale.
+Microsoft-Windows-International  |  1500      |  Microsoft-Windows-International/Operational  |  Group Policy has prevented process number {ProcessId} ({ProdessName}) from changing the standards and format information for the user.
+Microsoft-Windows-International  |  1501      |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  1502      |  Microsoft-Windows-International/Operational  |  Group Policy has prevented the user from changing their user locale to "{LocaleName}".
+Microsoft-Windows-International  |  1503      |  Microsoft-Windows-International/Operational  |  Group Policy does not allow custom user locales for standards and formats. The user was unable to select "{LocaleName}" as their user locale.
+Microsoft-Windows-International  |  2000      |  Microsoft-Windows-International/Operational  |  NLS operation recreated the registry key {RegistryKey}.
+Microsoft-Windows-International  |  2500      |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  3000      |  Microsoft-Windows-International/Operational  |  Process number {ProcessId} ({ProdessName}) called SetLocaleInfo({Locale}, {LCType}, "{lpLCData}")  successfully.
+Microsoft-Windows-International  |  3001      |  Microsoft-Windows-International/Operational  |  Process number {ProcessId} ({ProdessName}) called SetCalendarInfo({Locale}, {Calendar}, {CalType}, "{lpLCalData}")  successfully.
+Microsoft-Windows-International  |  3002      |  Microsoft-Windows-International/Operational  |  Process number {ProcessId} ({ProdessName}) called SetUserGeoID({GeoId}) successfully.
+Microsoft-Windows-International  |  3003      |  Microsoft-Windows-International/Operational  |  The system updated the locale "{LocaleName}" with flag {Flags}. Process number {ProcessId} ({ProdessName}). Return code is {ReturnCode}.
+Microsoft-Windows-International  |  10000     |  Microsoft-Windows-International/Operational  |  The user tried to apply an unattended XML file ({FileName}) in an unsupported format. Reason: {Reason} (Line {LineNumber}). The system has not been changed.
+Microsoft-Windows-International  |  10001     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10003     |  Microsoft-Windows-International/Operational  |  The user locale "{LocaleName}" (specified by the UserLocale element) is not a supported locale name or is not installed on the system. The user locale was not changed.
+Microsoft-Windows-International  |  10004     |  Microsoft-Windows-International/Operational  |  Unsupported alternate sort "{LocaleName}".
+Microsoft-Windows-International  |  10005     |  Microsoft-Windows-International/Operational  |  {AltSort} is not a supported sort order for locale "{Locale}".
+Microsoft-Windows-International  |  10006     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10007     |  Microsoft-Windows-International/Operational  |  Internal error while changing System locale (specified by the SystemLocale element).
+Microsoft-Windows-International  |  10008     |  Microsoft-Windows-International/Operational  |  Error while changing keyboard/input method for "{LocaleName}".
+Microsoft-Windows-International  |  10009     |  Microsoft-Windows-International/Operational  |  Error while changing location preference (geoid): {Value}. This error may be caused by an unsupported location preference (geoid) or a Group Policy restriction. Error code is {Win32ErrorCode}. Error message: {Win32ErrorMessage}
+Microsoft-Windows-International  |  10010     |  Microsoft-Windows-International/Operational  |  Failed to change UI Language to "{LocaleName}". Status code is: {StatusCode}.
+Microsoft-Windows-International  |  10011     |  Microsoft-Windows-International/Operational  |  Failed to change UI Language fallback order to "{LocaleName}". Status code is: {StatusCode}.
+Microsoft-Windows-International  |  10012     |  Microsoft-Windows-International/Operational  |  The user tried to apply an unattended XML file {FileName}, but the file does not exist.
+Microsoft-Windows-International  |  10013     |  Microsoft-Windows-International/Operational  |  Error while the user changed setting "{LCType}" with value "{Value}" for the current user locale. Error code is: {Win32ErrorCode}. Error message: {Win32ErrorMessage}
+Microsoft-Windows-International  |  10014     |  Microsoft-Windows-International/Operational  |  The selected calendar "{String};" (specified by the Calendar element) is not a supported calendar. The user locale was not changed.
+Microsoft-Windows-International  |  10015     |  Microsoft-Windows-International/Operational  |  The selected TwoDigitYearMax "{String};" (specified by the TwoDigitYearMax element) is not a supported value. The user locale was not changed.
+Microsoft-Windows-International  |  10111     |  Microsoft-Windows-International/Operational  |  The user does not have permission to change the TwoDigitYearMax setting
+Microsoft-Windows-International  |  10112     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10113     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10115     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10216     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10218     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10219     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10220     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10221     |  Microsoft-Windows-International/Operational  |  Failed when calling internal function. Error code is: {StatusCode}
+Microsoft-Windows-International  |  10222     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  10300     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  13000     |  Microsoft-Windows-International/Operational  |  The user changed their user locale (specified by the UserLocale element) to "{LocaleName}".
+Microsoft-Windows-International  |  13001     |  Microsoft-Windows-International/Operational  |  The user reset all customizations for their user locale "{LocaleName}" (specified by the UserLocale element) to the system default.
+Microsoft-Windows-International  |  13002     |  Microsoft-Windows-International/Operational  |  The user changed their user locale setting "{LCType}" (specified by the UserLocale element) to "{Value}".
+Microsoft-Windows-International  |  13003     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  13004     |  Microsoft-Windows-International/Operational  |  The user changed their alternate sort to "{LocaleName}".
+Microsoft-Windows-International  |  13005     |  Microsoft-Windows-International/Operational  |  The user changed their calendar to "{String}".
+Microsoft-Windows-International  |  13006     |  Microsoft-Windows-International/Operational  |  The user changed their TwoDigitYearMax to {String}.
+Microsoft-Windows-International  |  13007     |  Microsoft-Windows-International/Operational  |  The user changed their location preference (geoid) to {Value}.
+Microsoft-Windows-International  |  13008     |  Microsoft-Windows-International/Operational  |  The system locale (specified by the SystemLocale element) was changed to "{LocaleName}".
+Microsoft-Windows-International  |  13009     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  13010     |  Microsoft-Windows-International/Operational  |
+Microsoft-Windows-International  |  13011     |  Microsoft-Windows-International/Operational  |  The user has changed their UI Language to "{LocaleName}".
+Microsoft-Windows-International  |  13012     |  Microsoft-Windows-International/Operational  |  The user has changed their UI Language fallback order to "{LocaleName}".

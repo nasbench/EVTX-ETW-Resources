@@ -1,0 +1,12 @@
+Provider            |  Event ID  |  Channel                      |  Message
+--------------------|------------|-------------------------------|-------------------------------
+Intel-SST-CFD-DMIC  |  301       |  Intel-SST-CFD-DMIC/IntelSST  |
+Intel-SST-CFD-DMIC  |  302       |  Intel-SST-CFD-DMIC/IntelSST  |
+Intel-SST-CFD-DMIC  |  303       |  Intel-SST-CFD-DMIC/IntelSST  |
+Intel-SST-CFD-DMIC  |  304       |  Intel-SST-CFD-DMIC/IntelSST  |
+Intel-SST-CFD-DMIC  |  305       |  Intel-SST-CFD-DMIC/IntelSST  |
+Intel-SST-CFD-DMIC  |  306       |  Intel-SST-CFD-DMIC/IntelSST  |
+Intel-SST-CFD-DMIC  |  307       |  Intel-SST-CFD-DMIC/IntelSST  |
+Intel-SST-CFD-DMIC  |  308       |  Intel-SST-CFD-DMIC/IntelSST  |
+Intel-SST-CFD-DMIC  |  309       |  Intel-SST-CFD-DMIC/IntelSST  |  Begin of entering power state
+Intel-SST-CFD-DMIC  |  310       |  Intel-SST-CFD-DMIC/IntelSST  |  End of entering power state

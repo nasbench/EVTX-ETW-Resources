@@ -1,0 +1,35 @@
+Provider                          |  Event ID  |  Channel                                                     |  Message
+----------------------------------|------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Spell-Checking  |  0         |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  1         |  Microsoft Windows Spell Checking Facility Analytic Channel  |  Initialize wordlist request sent to provider
+Microsoft-Windows-Spell-Checking  |  2         |  Microsoft Windows Spell Checking Facility Analytic Channel  |  Initialize wordlist request returned from provider
+Microsoft-Windows-Spell-Checking  |  3         |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  4         |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  5         |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  6         |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  7         |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  8         |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  9         |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  10        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  11        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  12        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  13        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  14        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  16        |  Application                                                 |  File {First} is not Unicode (UTF-16LE). It has been moved to {Second}.
+Microsoft-Windows-Spell-Checking  |  17        |  Application                                                 |  File {string} is not Unicode (UTF-16LE). Unable to rename it. This will block spell checkers from using wordlists in this directory.
+Microsoft-Windows-Spell-Checking  |  18        |  Application                                                 |  {string} is not a directory. Please remove or rename.
+Microsoft-Windows-Spell-Checking  |  19        |  System                                                      |  Unable to create directory {string}.
+Microsoft-Windows-Spell-Checking  |  20        |  Application                                                 |  Attempt to initialize {wordlist} wordlist in {languageTag} spell checker failed. This could be due to a bug with the spell checker. The spell checker will remain available.
+Microsoft-Windows-Spell-Checking  |  21        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  22        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  23        |  Microsoft Windows Spell Checking Facility Analytic Channel  |  Initialize wordlist from files request sent to provider
+Microsoft-Windows-Spell-Checking  |  24        |  Microsoft Windows Spell Checking Facility Analytic Channel  |  Initialize wordlist from files request returned from provider
+Microsoft-Windows-Spell-Checking  |  25        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  26        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  27        |  Application                                                 |  Failed to launch the watcher thread for changes in user wordlists and spell checking options: {hr}. Spell checking will remain available, but no changes will be reported.
+Microsoft-Windows-Spell-Checking  |  28        |  Application                                                 |  Failed to watch for user wordlist changes: {hr}. Spell checking will remain available, but no changes will be reported.
+Microsoft-Windows-Spell-Checking  |  29        |  Application                                                 |  Failed to watch for spell checking option changes: {hr}. Spell checking will remain available, but no changes will be reported.
+Microsoft-Windows-Spell-Checking  |  30        |  Application                                                 |
+Microsoft-Windows-Spell-Checking  |  31        |  Application                                                 |  Failed to update {wordlist} user custom wordlist: {hr}. Spell checking will remain available, but this user wordlist will not be updated.
+Microsoft-Windows-Spell-Checking  |  32        |  Microsoft Windows Spell Checking Facility Analytic Channel  |
+Microsoft-Windows-Spell-Checking  |  33        |  Microsoft Windows Spell Checking Facility Analytic Channel  |

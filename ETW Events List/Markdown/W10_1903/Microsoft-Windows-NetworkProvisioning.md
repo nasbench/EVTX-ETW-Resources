@@ -1,0 +1,36 @@
+Provider                               |  Event ID  |  Channel                                            |  Message
+---------------------------------------|------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-NetworkProvisioning  |  1000      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Creating provisioning document ({SizeOfXMLInBytes} bytes)
+Microsoft-Windows-NetworkProvisioning  |  1001      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Finished creating provisioning document (Result={ErrorCode})
+Microsoft-Windows-NetworkProvisioning  |  1002      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  XML parsing completed (Result={Result})
+Microsoft-Windows-NetworkProvisioning  |  1003      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  XML schema validation completed (Result={Result})
+Microsoft-Windows-NetworkProvisioning  |  1004      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  XML signature verification completed (Result={ErrorCode})[Details]Carrier Id: {CarrierId}Subscriber Id: {SubscriberId}DeviceId: {DeviceId}Signer: {Signer}CertificateIssuer: {CertificateIssuer}CertificateSubject: {CertificateSubject}
+Microsoft-Windows-NetworkProvisioning  |  1005      |  Microsoft-Windows-NetworkProvisioning/Operational  |  XML stream rejected because the size exceeded the limit ({StreamSize} > {StreamSizeLimit})
+Microsoft-Windows-NetworkProvisioning  |  1006      |  Microsoft-Windows-NetworkProvisioning/Operational  |  XML stream rejected because of a parse error[Details]Error code: {ErrorCode}Error Message: {ErrorMessage}Description: {Description}
+Microsoft-Windows-NetworkProvisioning  |  1007      |  Microsoft-Windows-NetworkProvisioning/Operational  |  XML stream rejected because schema validation failed[Details]Error code: {ErrorCode}Line: {Line}Line Pos: {LinePos}Reason: {Reason}
+Microsoft-Windows-NetworkProvisioning  |  1008      |  Microsoft-Windows-NetworkProvisioning/Operational  |  XML stream rejected because signature verification failed ({Result})
+Microsoft-Windows-NetworkProvisioning  |  2000      |  Microsoft-Windows-NetworkProvisioning/Analytic     |
+Microsoft-Windows-NetworkProvisioning  |  2001      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Finished provisioning document (Result={ErrorCode} ErrorOccured={ErrorOccurred})
+Microsoft-Windows-NetworkProvisioning  |  2002      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Certificate verification completed (bool={BoolResult})
+Microsoft-Windows-NetworkProvisioning  |  4001      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Trigger to refresh task completed (Result={Result})
+Microsoft-Windows-NetworkProvisioning  |  5000      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Activation method {ActivationMethod} has been started[Details]Carrier Id: {CarrierId}Subscriber Id: {SubscriberId}Params: {Params}
+Microsoft-Windows-NetworkProvisioning  |  5001      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Activation method {ActivationMethod} has finished [Details]ICarrier Id: {CarrierId}Subscriber Id: {SubscriberId}Params: {Params}Result: {ErrorCode}
+Microsoft-Windows-NetworkProvisioning  |  5002      |  Microsoft-Windows-NetworkProvisioning/Operational  |  The radio is already off on interface {InterfaceGuid}; assuming the user has switched it off; aborting activation method
+Microsoft-Windows-NetworkProvisioning  |  5003      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Unable to turn the radio {RadioState} on interface {InterfaceGuid} (error={ErrorCode})
+Microsoft-Windows-NetworkProvisioning  |  5004      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Interface {InterfaceGuid} is not registered to the home network; aborting connection attempt (register state = {RegisterState})
+Microsoft-Windows-NetworkProvisioning  |  5005      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Cannot locate the {ProfileType} profile on interface {InterfaceGuid} (error={ErrorCode})
+Microsoft-Windows-NetworkProvisioning  |  5006      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Connection to profile {ProfileName} failed on interface {InterfaceGuid} (error={ErrorCode})
+Microsoft-Windows-NetworkProvisioning  |  5007      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Unable to disconnect interface {InterfaceGuid} from network (error={ErrorCode})
+Microsoft-Windows-NetworkProvisioning  |  6000      |  Microsoft-Windows-NetworkProvisioning/Operational  |
+Microsoft-Windows-NetworkProvisioning  |  6001      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Purge task has finishedResult: {ErrorCode}
+Microsoft-Windows-NetworkProvisioning  |  6002      |  Microsoft-Windows-NetworkProvisioning/Operational  |  Calling Purge[Details]Carrier Id: {CarrierId}Subscriber Id: {SubscriberId}AppId: {AppId}
+Microsoft-Windows-NetworkProvisioning  |  9000      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Handler {HandlerName}: provision (start)
+Microsoft-Windows-NetworkProvisioning  |  9001      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Handler {HandlerName}: provision (stop) [result: {ErrorCode}]
+Microsoft-Windows-NetworkProvisioning  |  9100      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Handler {HandlerName}: purge (start)
+Microsoft-Windows-NetworkProvisioning  |  9101      |  Microsoft-Windows-NetworkProvisioning/Analytic     |  Handler {HandlerName}: purge (stop)
+Microsoft-Windows-NetworkProvisioning  |  10000     |  Microsoft-Windows-NetworkProvisioning/Operational  |  Failed to connect to the {ServiceName}: {ErrorCode}
+Microsoft-Windows-NetworkProvisioning  |  10001     |  Microsoft-Windows-NetworkProvisioning/Operational  |  Failed to set WLAN profile {ProfileName} on interface {InterfaceGuid} with error code {ErrorCode} (reason={ReasonCode})
+Microsoft-Windows-NetworkProvisioning  |  10002     |  Microsoft-Windows-NetworkProvisioning/Operational  |  Failed to set WWAN profile {ProfileName} on interface {InterfaceGuid} with error code {ErrorCode} (reason={ReasonCode})
+Microsoft-Windows-NetworkProvisioning  |  10003     |  Microsoft-Windows-NetworkProvisioning/Operational  |  Failed to apply metadata to profile {ProfileName} on interface {InterfaceGuid} with error code {ErrorCode} (param={Parameter})
+Microsoft-Windows-NetworkProvisioning  |  11000     |  Microsoft-Windows-NetworkProvisioning/Operational  |  The message rule at position {Position} failed validation.Xml:{RulesXml}Reason:{Reason}
+Microsoft-Windows-NetworkProvisioning  |  20000     |  Microsoft-Windows-NetworkProvisioning/Operational  |  Provisioning results for caller application (AppId {CallerAppId}): [{ErrorCode}]

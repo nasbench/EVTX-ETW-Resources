@@ -1,0 +1,20 @@
+Provider                                        |  Event ID  |  Channel                                                  |  Message
+------------------------------------------------|------------|-----------------------------------------------------------|---------
+Microsoft-Windows-PortableDeviceStatusProvider  |  500       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  501       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  502       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  503       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  504       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  505       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  506       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  507       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  510       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  511       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  514       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  515       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  516       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  517       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  518       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  519       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  520       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |
+Microsoft-Windows-PortableDeviceStatusProvider  |  521       |  Microsoft-Windows-PortableDeviceStatusProvider/Analytic  |

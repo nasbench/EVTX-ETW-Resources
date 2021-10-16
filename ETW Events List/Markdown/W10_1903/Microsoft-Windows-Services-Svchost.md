@@ -1,0 +1,4 @@
+Provider                            |  Event ID  |  Channel                                        |  Message
+------------------------------------|------------|-------------------------------------------------|---------
+Microsoft-Windows-Services-Svchost  |  101       |  Microsoft-Windows-Services-Svchost/Diagnostic  |
+Microsoft-Windows-Services-Svchost  |  102       |  Microsoft-Windows-Services-Svchost/Diagnostic  |

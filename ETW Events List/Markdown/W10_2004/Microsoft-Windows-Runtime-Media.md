@@ -1,0 +1,88 @@
+Provider                         |  Event ID  |  Channel                                                           |  Message
+---------------------------------|------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Runtime-Media  |  200       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine Begin Initialization
+Microsoft-Windows-Runtime-Media  |  201       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine End Initialization
+Microsoft-Windows-Runtime-Media  |  202       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine Begin Take Photo
+Microsoft-Windows-Runtime-Media  |  203       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine End Take Photo
+Microsoft-Windows-Runtime-Media  |  204       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine Begin StartRecord
+Microsoft-Windows-Runtime-Media  |  205       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine End StartRecord
+Microsoft-Windows-Runtime-Media  |  206       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine Begin StopRecord
+Microsoft-Windows-Runtime-Media  |  207       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine End StopRecord
+Microsoft-Windows-Runtime-Media  |  208       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine Begin StartPreview
+Microsoft-Windows-Runtime-Media  |  209       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine End StartPreview
+Microsoft-Windows-Runtime-Media  |  210       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine Begin StopPreview
+Microsoft-Windows-Runtime-Media  |  211       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine End StopPreview
+Microsoft-Windows-Runtime-Media  |  212       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Capture Engine Error Received
+Microsoft-Windows-Runtime-Media  |  213       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  Microsoft Windows Runtime Preview Source Dispatch Sample
+Microsoft-Windows-Runtime-Media  |  214       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence Prepare operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  215       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence Prepare operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  216       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence Start operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  217       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence Start operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  218       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence Stop operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  219       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence Stop operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  220       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence Finish operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  221       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence Finish operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  222       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} PhotoSequence photo available (start time: {StartTime}, capture time: {CaptureTime})
+Microsoft-Windows-Runtime-Media  |  223       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} TrySetEncodingProperties operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  224       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} TrySetEncodingProperties operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  225       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagPhoto Prepare operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  226       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagPhoto Prepare operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  227       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagPhoto Capture operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  228       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagPhoto Capture operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  229       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagPhoto Finish operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  230       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagPhoto Finish operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  231       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} SetRegionsAsync operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  232       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} SetRegionsAsync operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  233       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} ClearRegionsAsync operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  234       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} ClearRegionsAsync operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  235       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagRecord Prepare operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  236       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagRecord Prepare operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  237       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagRecord Start operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  238       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagRecord Start operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  239       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagRecord Stop operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  240       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagRecord Stop operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  241       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagRecord Finish operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  242       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} LowLagRecord Finish operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  243       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} Lifetime started (Executable path: {ExecutablePath})
+Microsoft-Windows-Runtime-Media  |  244       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} Lifetime ended
+Microsoft-Windows-Runtime-Media  |  245       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture PhotoConfirmation
+Microsoft-Windows-Runtime-Media  |  246       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture FocusChanged to focus state: {FocusState}
+Microsoft-Windows-Runtime-Media  |  300       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Transcode operation {Transcode}{Transcode} used transcode engine type {EngineType}{EngineType}.
+Microsoft-Windows-Runtime-Media  |  301       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Smart Remux {Object}{Object} Stage 1 started.
+Microsoft-Windows-Runtime-Media  |  302       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Smart Remux {Object}{Object} Stage 1 ended.
+Microsoft-Windows-Runtime-Media  |  303       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Smart Remux {Object}{Object} Stage 2 started.
+Microsoft-Windows-Runtime-Media  |  304       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Smart Remux {Object}{Object} Stage 2 ended.
+Microsoft-Windows-Runtime-Media  |  305       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Smart Remux {Object}{Object} Stage 3 started.
+Microsoft-Windows-Runtime-Media  |  306       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Smart Remux {Object}{Object} Stage 3 ended.
+Microsoft-Windows-Runtime-Media  |  307       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Transcode operation {Object}{Object} started
+Microsoft-Windows-Runtime-Media  |  308       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  Transcode operation {Object}{Object} ended. {ErrorCode}{ErrorCode}
+Microsoft-Windows-Runtime-Media  |  309       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  PrepareTranscode operation {Object}{Object} started.
+Microsoft-Windows-Runtime-Media  |  310       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  PrepareTranscode operation {Object}{Object} ended. {ErrorCode}{ErrorCode}
+Microsoft-Windows-Runtime-Media  |  311       |  Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode            |  TranscodeEngine {transcode}{Transcode} is remuxing audio and video: {remuxing}{Remuxing}
+Microsoft-Windows-Runtime-Media  |  312       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  WinRTCaptureEngine Begin SetStreamMediaTypeAsync
+Microsoft-Windows-Runtime-Media  |  313       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  WinRTCaptureEngine End SetStreamMediaTypeAsync
+Microsoft-Windows-Runtime-Media  |  314       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  WindowsMediaCapture Device Thermal status changed event fired
+Microsoft-Windows-Runtime-Media  |  315       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} AdvancedPhoto Prepare operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  316       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} AdvancedPhoto Prepare operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  317       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} AdvancedPhoto Capture operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  318       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} AdvancedPhoto Capture operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  319       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} AdvancedPhoto Finish operation {AsyncOp} started
+Microsoft-Windows-Runtime-Media  |  320       |  Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine        |  MediaCapture {WinRTCaptureEngine} AdvancedPhoto Finish operation {AsyncOp} ended with status {OpStatus}
+Microsoft-Windows-Runtime-Media  |  500       |  Microsoft-Windows-Runtime-Windows-Media/WinRTMediaStreamSource    |  WinRTMediaStreamSource Event Fired
+Microsoft-Windows-Runtime-Media  |  501       |  Microsoft-Windows-Runtime-Windows-Media/WinRTMediaStreamSource    |  WinRTMediaStreamSource Event Deferred
+Microsoft-Windows-Runtime-Media  |  502       |  Microsoft-Windows-Runtime-Windows-Media/WinRTMediaStreamSource    |  WinRTMediaStreamSource Event Completed
+Microsoft-Windows-Runtime-Media  |  503       |  Microsoft-Windows-Runtime-Windows-Media/WinRTMediaStreamSource    |  WinRTMediaStreamSource SampleRequest Fired
+Microsoft-Windows-Runtime-Media  |  504       |  Microsoft-Windows-Runtime-Windows-Media/WinRTMediaStreamSource    |  WinRTMediaStreamSource SampleRequest Deferred
+Microsoft-Windows-Runtime-Media  |  505       |  Microsoft-Windows-Runtime-Windows-Media/WinRTMediaStreamSource    |  WinRTMediaStreamSource SampleRequest Completed
+Microsoft-Windows-Runtime-Media  |  600       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource started filling
+Microsoft-Windows-Runtime-Media  |  601       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource stopped filling
+Microsoft-Windows-Runtime-Media  |  602       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource started draining
+Microsoft-Windows-Runtime-Media  |  603       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource stopped draining
+Microsoft-Windows-Runtime-Media  |  604       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource buffer level changed
+Microsoft-Windows-Runtime-Media  |  605       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource HTTP Request
+Microsoft-Windows-Runtime-Media  |  606       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource HTTP Request
+Microsoft-Windows-Runtime-Media  |  607       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource HTTP Request Header
+Microsoft-Windows-Runtime-Media  |  608       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource HTTP Request Header
+Microsoft-Windows-Runtime-Media  |  609       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource Download
+Microsoft-Windows-Runtime-Media  |  610       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource Download
+Microsoft-Windows-Runtime-Media  |  611       |  Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource  |  AdaptiveMediaSource Download

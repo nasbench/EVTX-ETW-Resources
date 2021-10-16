@@ -1,0 +1,9 @@
+Provider                                     |  Event ID  |  Channel                                            |  Message
+---------------------------------------------|------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MemoryDiagnostics-Results  |  1101      |  System                                             |  The Windows Memory Diagnostic tested the computer's memory and detected no errors
+Microsoft-Windows-MemoryDiagnostics-Results  |  1102      |  System                                             |  The Windows Memory Diagnostic tested the computer's memory and detected hardware errors. To identify and repair these problems, contact the computer manufacturer
+Microsoft-Windows-MemoryDiagnostics-Results  |  1103      |  System                                             |  The Windows Memory Diagnostic was canceled during execution
+Microsoft-Windows-MemoryDiagnostics-Results  |  1104      |  System                                             |  The Windows Memory Diagnostic could not complete its tests of the computer's memory
+Microsoft-Windows-MemoryDiagnostics-Results  |  1201      |  System                                             |  The Windows Memory Diagnostic tested the computer's memory and detected no errors
+Microsoft-Windows-MemoryDiagnostics-Results  |  1202      |  System                                             |  The Windows Memory Diagnostic tested the computer's memory and detected hardware errors. To identify and repair these problems, contact the computer manufacturer
+Microsoft-Windows-MemoryDiagnostics-Results  |  2001      |  Microsoft-Windows-MemoryDiagnostics-Results/Debug  |  Windows Memory Diagnostic results

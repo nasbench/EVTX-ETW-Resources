@@ -1,0 +1,68 @@
+Provider|Event ID|Channel|Message
+Microsoft-Windows-DriverFrameworks-UserMode|1000||The Driver Manager service started successfully
+Microsoft-Windows-DriverFrameworks-UserMode|1000||
+Microsoft-Windows-DriverFrameworks-UserMode|1001||The Driver Manager service failed to start.  The error reported was {Error}.
+Microsoft-Windows-DriverFrameworks-UserMode|1001||The Driver Manager service failed to start.  The error reported was {Error}.
+Microsoft-Windows-DriverFrameworks-UserMode|1002||
+Microsoft-Windows-DriverFrameworks-UserMode|1003||The Driver Manager service is starting a host process for device {InstanceId}.
+Microsoft-Windows-DriverFrameworks-UserMode|1004||The host process ({LifetimeId}) started successfully.
+Microsoft-Windows-DriverFrameworks-UserMode|1005||The host process ({LifetimeId}) failed to start successfully.  The error reported was {FinalStatus}.
+Microsoft-Windows-DriverFrameworks-UserMode|1006||The host process ({LifetimeId}) is being asked to shutdown.
+Microsoft-Windows-DriverFrameworks-UserMode|1007||The host process ({LifetimeId}) has a problem ({Problem}) and is being terminated.
+Microsoft-Windows-DriverFrameworks-UserMode|1008||The host process ({LifetimeId}) has been shutdown.
+Microsoft-Windows-DriverFrameworks-UserMode|2000||The UMDF Host Process ({LifetimeId}) is starting up.
+Microsoft-Windows-DriverFrameworks-UserMode|2001||The UMDF Host Process ({LifetimeId}) started successfully.
+Microsoft-Windows-DriverFrameworks-UserMode|2002||The UMDF Host Process ({LifetimeId}) failed to start successfully.  The error reported was {ExitCode}.
+Microsoft-Windows-DriverFrameworks-UserMode|2003||The UMDF Host Process ({LifetimeId}) has been asked to load drivers for device {InstanceId}.
+Microsoft-Windows-DriverFrameworks-UserMode|2004||The UMDF Host is loading driver {Service} at level {Level} for device {InstanceId}.
+Microsoft-Windows-DriverFrameworks-UserMode|2005||The UMDF Host Process ({LifetimeId}) has loaded module {ModulePath} while loading drivers for device {InstanceId}.
+Microsoft-Windows-DriverFrameworks-UserMode|2006||The UMDF Host successfully loaded the driver at level {Level}.
+Microsoft-Windows-DriverFrameworks-UserMode|2007||The UMDF Host failed to load the driver at level {Level}.  The error reported was {FinalStatus}.
+Microsoft-Windows-DriverFrameworks-UserMode|2010||The UMDF Host Process ({LifetimeId}) has successfully loaded drivers for device {InstanceId}.
+Microsoft-Windows-DriverFrameworks-UserMode|2011||The UMDF Host Process ({LifetimeId}) has failed to load drivers for device {InstanceId}.  The error reported was {FinalStatus}
+Microsoft-Windows-DriverFrameworks-UserMode|2100||Received a Pnp or Power operation ({MajorCode}, {MinorCode}) for device {InstanceId}.
+Microsoft-Windows-DriverFrameworks-UserMode|2101||Completed a Pnp or Power operation ({MajorCode}, {MinorCode}) for device {InstanceId} with status {Status}.
+Microsoft-Windows-DriverFrameworks-UserMode|2102||Forwarded a finished Pnp or Power operation ({MajorCode}, {MinorCode}) to the lower driver for device {InstanceId} with status {Status}.
+Microsoft-Windows-DriverFrameworks-UserMode|2103||Completed a Pnp or Power operation ({MajorCode}, {MinorCode}) for device {InstanceId} with status {Status}.
+Microsoft-Windows-DriverFrameworks-UserMode|2105||Forwarded a Pnp or Power operation ({MajorCode}, {MinorCode}) for device {InstanceId} to the lower driver with status {Status}
+Microsoft-Windows-DriverFrameworks-UserMode|2106||Received a Pnp or Power operation ({MajorCode}, {MinorCode}) for device {InstanceId} which was completed by the lower drivers with status {Status}
+Microsoft-Windows-DriverFrameworks-UserMode|2107||Received a Pnp or Power operation ({MajorCode}, {MinorCode}) for device {InstanceId} which was completed by the lower drivers with status {Status}
+Microsoft-Windows-DriverFrameworks-UserMode|2900||The UMDF Host ({LifetimeId}) has been asked to shutdown.
+Microsoft-Windows-DriverFrameworks-UserMode|2901||The UMDF Host ({LifetimeId}) has shutdown.
+Microsoft-Windows-DriverFrameworks-UserMode|3000||UMDF State Machine {StateMachine} start processing event {Event} (Queueing {Queueing})
+Microsoft-Windows-DriverFrameworks-UserMode|3001||UMDF State Machine {StateMachine} dropped event {Event}
+Microsoft-Windows-DriverFrameworks-UserMode|3010||UMDF State Machine {StateMachine} state change from {CurrentState} to {NewState} on event {Event}
+Microsoft-Windows-DriverFrameworks-UserMode|3011||UMDF State Machine {StateMachine} event processing finished in state {CurrentState}
+Microsoft-Windows-DriverFrameworks-UserMode|3020||UMDF State Machine {StateMachine} event processing stopped in state {Event}
+Microsoft-Windows-DriverFrameworks-UserMode|10000|System|A driver package which uses user-mode driver framework version {FrameworkVersion} is being installed on device {DeviceId}.
+Microsoft-Windows-DriverFrameworks-UserMode|10001|System|The UMDF service {ServiceName} (CLSID {CLSID}) was installed.  It requires framework version {FxVersion} or higher.
+Microsoft-Windows-DriverFrameworks-UserMode|10002|System|The UMDF service {ServiceName} (CLSID {CLSID}) was upgraded.  It requires framework version {FxVersion} or higher.
+Microsoft-Windows-DriverFrameworks-UserMode|10100|System|The driver package installation has succeeded.
+Microsoft-Windows-DriverFrameworks-UserMode|10101|System|The driver package installation has failed.  The final status was {FinalStatus}.
+Microsoft-Windows-DriverFrameworks-UserMode|10110|System|A problem has occurred with one or more user-mode drivers and the hosting process has been terminated.  This may temporarily interrupt your ability to access the devices.
+Microsoft-Windows-DriverFrameworks-UserMode|10111|System|The device {FriendlyName} (location {Location}) is offline due to a user-mode driver crash.  Windows will attempt to restart the device {RestartCount} more times.  Please contact the device manufacturer for more information about this problem.
+Microsoft-Windows-DriverFrameworks-UserMode|10112|System|The device {FriendlyName} (location {Location}) is offline due to a user-mode device crash.  Windows will no longer attempt to restart this device because the maximum restart limit has been reached.  Disconnecting the device and reconnecting it, or disabling it and re-enabling it from the device manager, will reset this limit and allow the device to be accessed again.  Please contact the device manufacturer for more information about this problem.
+Microsoft-Windows-DriverFrameworks-UserMode|10113|System|The device {InstanceId} was unable to start due to conflict between the settings for driver {DriverName} ({ConflictingParameter} - {Value}) and the other drivers.  Windows will not be able to start this device.  Please contact the device manufacturer for assistance.
+Microsoft-Windows-DriverFrameworks-UserMode|10115|System|The device {FriendlyName} (location {Location}) is offline due to a user-mode driver crash.  Windows will attempt to restart the device {RestartCount} more times in its own process.  Please contact the device manufacturer for more information about this problem.
+Microsoft-Windows-DriverFrameworks-UserMode|10116|System|The device {FriendlyName} (location {Location}) is offline due to a user-mode driver crash.  Windows will attempt to restart the device in the shared process {RestartCount} more times before moving the device in its own process.  Please contact the device manufacturer for more information about this problem.
+Microsoft-Windows-DriverFrameworks-UserMode|10117|System|UMDF driver service {ServiceName} failed to load because it was compiled using a pre-release version of the Windows Driver Kit(WDK). The driver should be recompiled using a release version of the WDK. Driver's function table count is {ActualFuntionTableCount} and the expected count is {ExpectedFuntionTableCount}.
+Microsoft-Windows-DriverFrameworks-UserMode|10118|System|
+Microsoft-Windows-DriverFrameworks-UserMode|19999|System|UMDF Test Event ({String})
+Microsoft-Windows-DriverFrameworks-UserMode|20030||Power IRP related event in the User-mode Driver Frameworks Host Process
+Microsoft-Windows-DriverFrameworks-UserMode|20031||Power IRP related event in the User-mode Driver Frameworks Host Process
+Microsoft-Windows-DriverFrameworks-UserMode|20032||Power IRP related event in the User-mode Driver Frameworks Host Process
+Microsoft-Windows-DriverFrameworks-UserMode|20033||Power IRP related event in the User-mode Driver Frameworks Host Process
+Microsoft-Windows-DriverFrameworks-UserMode|30008||DDI to read from hardware begins (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30009||DDI to read from hardware ends (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30010||Read from hardware begins (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30011||Read from hardware ends (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30012||DDI to write to hardware begins (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30013||DDI to write to hardware ends (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30014||Write to hardware begins (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30015||Write to hardware ends (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30016||Read from hardware begins (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30017||Read from hardware ends (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30018||Write to hardware begins (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30019||Write to hardware ends (TargetType: {HwAccessTargetType}, TargetSize: {HwAccessTargetSize}, BufferCount: {HwAccessBufferCount}).
+Microsoft-Windows-DriverFrameworks-UserMode|30020||UMDF Reflector sent notification for hardware interrupt (Message ID {InterruptMessageNumber}).
+Microsoft-Windows-DriverFrameworks-UserMode|30021||UMDF framework received notification for hardware interrupt (Message ID {InterruptMessageNumber}).

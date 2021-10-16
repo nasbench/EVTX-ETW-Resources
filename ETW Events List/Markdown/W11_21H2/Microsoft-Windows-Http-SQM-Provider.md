@@ -1,0 +1,11 @@
+Provider                             |  Event ID  |  Channel  |  Message
+-------------------------------------|------------|-----------|---------
+Microsoft-Windows-Http-SQM-Provider  |  3         |           |
+Microsoft-Windows-Http-SQM-Provider  |  4         |           |
+Microsoft-Windows-Http-SQM-Provider  |  5         |           |
+Microsoft-Windows-Http-SQM-Provider  |  6         |           |
+Microsoft-Windows-Http-SQM-Provider  |  7         |           |
+Microsoft-Windows-Http-SQM-Provider  |  8         |           |
+Microsoft-Windows-Http-SQM-Provider  |  9         |           |
+Microsoft-Windows-Http-SQM-Provider  |  10        |           |
+Microsoft-Windows-Http-SQM-Provider  |  11        |           |

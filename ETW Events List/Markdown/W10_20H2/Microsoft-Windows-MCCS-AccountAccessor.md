@@ -1,0 +1,13 @@
+Provider                                |  Event ID  |  Channel  |  Message
+----------------------------------------|------------|-----------|-------------------------------------------------------------------------------
+Microsoft-Windows-MCCS-AccountAccessor  |  1         |           |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountAccessor  |  2         |           |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountAccessor  |  100       |           |
+Microsoft-Windows-MCCS-AccountAccessor  |  101       |           |
+Microsoft-Windows-MCCS-AccountAccessor  |  102       |           |
+Microsoft-Windows-MCCS-AccountAccessor  |  103       |           |
+Microsoft-Windows-MCCS-AccountAccessor  |  151       |           |  Being called to delete account {P1_Dword}, Is remote: {P2_Boolean}.
+Microsoft-Windows-MCCS-AccountAccessor  |  201       |           |  Missing property {P1_Dword} in PopImap account creation
+Microsoft-Windows-MCCS-AccountAccessor  |  202       |           |  Should not delete property {P1_Dword} in PopImap account modification
+Microsoft-Windows-MCCS-AccountAccessor  |  221       |           |  PopImapAccountAccessor: Filling in default Dav info for account {P1_Dword}
+Microsoft-Windows-MCCS-AccountAccessor  |  402       |           |

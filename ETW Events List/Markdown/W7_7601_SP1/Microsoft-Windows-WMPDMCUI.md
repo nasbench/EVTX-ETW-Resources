@@ -1,0 +1,14 @@
+Provider                    |  Event ID  |  Channel                                |  Message
+----------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-WMPDMCUI  |  2000      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2001      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2002      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2003      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2004      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2005      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2006      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2007      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2008      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2009      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2010      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |
+Microsoft-Windows-WMPDMCUI  |  2011      |  Microsoft-Windows-WMPDMCUI/Diagnostic  |

@@ -1,0 +1,87 @@
+Provider                               |  Event ID  |  Channel  |  Message
+---------------------------------------|------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MCCS-SyncController  |  1         |           |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-SyncController  |  2         |           |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-SyncController  |  102       |           |  SyncController:[Consistency] [{Prop_Dword_1}] Registry key for this partner is being deleted because it's invalid.
+Microsoft-Windows-MCCS-SyncController  |  103       |           |  SyncController:[Consistency] Default Store is invalid, but will not be deleted. There were '{Prop_Dword_1}' stores found.
+Microsoft-Windows-MCCS-SyncController  |  104       |           |  SyncController:[Consistency] [{Prop_Dword_0}:{Prop_Dword_1}:{Prop_Dword_2}] Store being deleted because it's invalid. There were '{Prop_Dword_3}' stores found.
+Microsoft-Windows-MCCS-SyncController  |  105       |           |  SyncController:[Consistency] [{Prop_Dword_0}] Registry key for this partner is invalid, the reason is '{Prop_Dword_1}'.
+Microsoft-Windows-MCCS-SyncController  |  106       |           |  SyncController:[Consistency] [{Prop_Dword_0}:{Prop_Dword_1}:{Prop_Dword_2}] Store is invalid, the reason is '{Prop_Dword_3}'.
+Microsoft-Windows-MCCS-SyncController  |  191       |           |  Sync WNF event: {P2_UnicodeString}
+Microsoft-Windows-MCCS-SyncController  |  193       |           |  Sync WNF event: {P1_Guid} - {P2_UnicodeString}
+Microsoft-Windows-MCCS-SyncController  |  194       |           |  Sync WNF event: {P1_Guid} - {P2_UnicodeString}
+Microsoft-Windows-MCCS-SyncController  |  195       |           |  Sync WNF event {P2_UnicodeString} not found.
+Microsoft-Windows-MCCS-SyncController  |  196       |           |  Notified golden account existence: {P1_Boolean}.
+Microsoft-Windows-MCCS-SyncController  |  201       |           |  Receive WNF event; current mode: {SyncMode}, current value: {Prop_Dword_2}
+Microsoft-Windows-MCCS-SyncController  |  401       |           |
+Microsoft-Windows-MCCS-SyncController  |  402       |           |
+Microsoft-Windows-MCCS-SyncController  |  403       |           |
+Microsoft-Windows-MCCS-SyncController  |  404       |           |
+Microsoft-Windows-MCCS-SyncController  |  405       |           |
+Microsoft-Windows-MCCS-SyncController  |  406       |           |
+Microsoft-Windows-MCCS-SyncController  |  407       |           |
+Microsoft-Windows-MCCS-SyncController  |  408       |           |
+Microsoft-Windows-MCCS-SyncController  |  409       |           |
+Microsoft-Windows-MCCS-SyncController  |  410       |           |
+Microsoft-Windows-MCCS-SyncController  |  411       |           |
+Microsoft-Windows-MCCS-SyncController  |  412       |           |
+Microsoft-Windows-MCCS-SyncController  |  500       |           |  AccountSyncController: Starting scheduled SyncExecutor for account {Prop_Dword_1}, engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  501       |           |  AccountSyncController: Starting interactive SyncExecutor for account {Prop_Dword_1}, engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  502       |           |  AccountSyncController: Starting AUTDExecutor for account {Prop_Dword_1}, engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  503       |           |  AccountSyncController: Finished SyncExecutor work for account {Prop_Dword_0} with hr={Prop_Dword_1}, retry level {Prop_Dword_2}, can start AUTD {Prop_Dword_3}, queue empty {Prop_Dword_4}, saver mode {SaverMode}, engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  504       |           |  AccountSyncController: Finished AUTDExecutor work for account {Prop_Dword_0} with hr {Prop_Dword_1}, can start AUTD {Prop_Dword_2}, queue empty {Prop_Dword_3}, saver mode {SaverMode}, engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  505       |           |  AccountSyncController: Adding new controller with id {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  506       |           |  AccountSyncController: Deleting sync controller with id {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  507       |           |  Handle schedule period changed from {Prop_Dword_1} min to {Prop_Dword_2} min for account {Prop_Dword_0} and engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  508       |           |  Handle content/filter change for account {Prop_Dword_1} and engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  509       |           |  AccountSyncController: Added new AccountSyncController for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  510       |           |  Started DownloadEmailBodyWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  511       |           |  Finished DownloadEmailBodyWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  512       |           |  Started AddMeetingResponseWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  513       |           |  Finished AddMeetingResponseWork for account {Prop_Dword_1} with HRESULT {Prop_HResult_2}
+Microsoft-Windows-MCCS-SyncController  |  516       |           |  Started DownloadEmailAttachmentWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  517       |           |  Finished DownloadEmailAttachmentWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  518       |           |  Started DownloadSharePointDocumentWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  519       |           |  Finished DownloadSharePointDocumentWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  522       |           |  Started GalSearchWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  523       |           |  Finished GalSearchWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  524       |           |  Started GetOofWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  525       |           |  Finished GetOofWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  526       |           |  Started MailboxSearchWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  527       |           |  Finished MailboxSearchWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  528       |           |
+Microsoft-Windows-MCCS-SyncController  |  529       |           |
+Microsoft-Windows-MCCS-SyncController  |  530       |           |  Started SetFolderSyncStateWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  531       |           |  Finished SetFolderSyncStateWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  534       |           |  Started UpdateContentTypesWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  535       |           |  Finished UpdateContentTypesWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  536       |           |  Started SetOofWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  537       |           |  Finished SetOofWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  538       |           |  Started AddMeetingResponseWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  539       |           |  Finished AddMeetingResponseWork for account {Prop_Dword_1} with HRESULT {Prop_HResult_2}
+Microsoft-Windows-MCCS-SyncController  |  540       |           |  Started FlushAccountSettingsWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  541       |           |  Finished FlushAccountSettingsWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  542       |           |  Started PurgeDeletedAccountWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  543       |           |  Finished PurgeDeletedAccountWork for account {Prop_Dword_1}.
+Microsoft-Windows-MCCS-SyncController  |  544       |           |  AccountSyncController: Adding new child sync controller with id {Prop_Dword_1} and engine id {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  545       |           |  Delete Account {P1_Guid}: Unknown Store Type {P2_UInt}.
+Microsoft-Windows-MCCS-SyncController  |  550       |           |  AccountSyncController: Starting ScheduleManager work for account {Prop_Dword_1}, engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  551       |           |  Upgrading account {Prop_Dword_0} from version {Prop_Dword_1} to the current version {Prop_Dword_2}.
+Microsoft-Windows-MCCS-SyncController  |  552       |           |  Ignoring account {Prop_Dword_0} because its version ({Prop_Dword_1}) doesn't match the current version ({Prop_Dword_2}).
+Microsoft-Windows-MCCS-SyncController  |  553       |           |  Detected a previous failure in Execute Activity Step for account {Prop_Dword_1}, delaying next run.
+Microsoft-Windows-MCCS-SyncController  |  555       |           |  Account {Prop_Dword} setting schedule trigger requirement {Prop_ScheduleTriggerRequirementFlags}.
+Microsoft-Windows-MCCS-SyncController  |  556       |           |  Account {Prop_Dword_1} exiting delay and resetting successive empty sync count to zero.
+Microsoft-Windows-MCCS-SyncController  |  561       |           |  Aggregate controller has new merged result: engine {Prop_Dword_1}, result {Prop_HResult_2}.
+Microsoft-Windows-MCCS-SyncController  |  562       |           |  Handle server change for account {Prop_Dword_1} and engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  563       |           |  Handle login info change for account {Prop_Dword_1} and engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  570       |           |  Executing ScheduleManager work of type {WorkType} for account {Prop_Dword_1}, engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  701       |           |  Cred Vault: DeletePwd Called. Caller: _PurgeActiveSyncAccount, Partner {Prop_Dword_1}
+Microsoft-Windows-MCCS-SyncController  |  702       |           |  Cred Vault: DeletePwd Called. Caller: ActiveSyncServer_DeletePassword, Partner {Prop_Dword_1}
+Microsoft-Windows-MCCS-SyncController  |  801       |           |  Setting delayed value of conversation sync enabled to {Prop_Dword_1}
+Microsoft-Windows-MCCS-SyncController  |  802       |           |  Setting the value of conversation sync if changed - Desired = {Prop_Dword_1}, Current = {Prop_Dword_2}
+Microsoft-Windows-MCCS-SyncController  |  809       |           |  Schedule for account {Prop_Dword_1} triggered when the screen was on and the schedule was set to trigger for screen on.
+Microsoft-Windows-MCCS-SyncController  |  810       |           |  Schedule {Prop_Guid} for account {Prop_Dword_1} triggered with period {Prop_Dword_2}, base period {Prop_Dword_3}, failure count {Prop_Dword_4}, trigger flags {Prop_ScheduleTriggerRequirementFlags}, engine {EngineGuid}.
+Microsoft-Windows-MCCS-SyncController  |  811       |           |  TokenBucket: Account {Prop_Dword_0} is throttling for {Prop_Dword_1} minutes.
+Microsoft-Windows-MCCS-SyncController  |  812       |           |  TokenBucket: Account {Prop_Dword_1} successfully retrieved a token.
+Microsoft-Windows-MCCS-SyncController  |  813       |           |  TokenBucket: Account {Prop_Dword_1} was not throttled because the screen was on.
+Microsoft-Windows-MCCS-SyncController  |  900       |           |  NotificationUtils: Initializing notification utils. IsOobeDone = {P1_Boolean}

@@ -1,0 +1,6 @@
+Provider                                                |  Event ID  |  Channel                                                |  Message
+--------------------------------------------------------|------------|---------------------------------------------------------|----------------------
+Microsoft-Windows-Base-Filtering-Engine-Resource-Flows  |  2002      |  BFE IPsec Connections' Resource Flows Operational Log  |  New Resource Flow
+Microsoft-Windows-Base-Filtering-Engine-Resource-Flows  |  2003      |  BFE IPsec Connections' Resource Flows Operational Log  |  Resource Flow Closed
+Microsoft-Windows-Base-Filtering-Engine-Resource-Flows  |  2004      |  BFE IPsec Connections' Resource Flows Operational Log  |  New Resource Flow
+Microsoft-Windows-Base-Filtering-Engine-Resource-Flows  |  2005      |  BFE IPsec Connections' Resource Flows Operational Log  |  Resource Flow Closed

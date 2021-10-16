@@ -1,0 +1,6 @@
+Provider                  |  Event ID  |  Channel                              |  Message
+--------------------------|------------|---------------------------------------|---------
+Microsoft-Windows-Shsvcs  |  11501     |  Microsoft-Windows-Shsvcs/Diagnostic  |
+Microsoft-Windows-Shsvcs  |  11502     |  Microsoft-Windows-Shsvcs/Diagnostic  |
+Microsoft-Windows-Shsvcs  |  11503     |  Microsoft-Windows-Shsvcs/Diagnostic  |
+Microsoft-Windows-Shsvcs  |  11504     |  Microsoft-Windows-Shsvcs/Diagnostic  |

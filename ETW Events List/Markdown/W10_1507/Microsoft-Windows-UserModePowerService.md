@@ -1,0 +1,21 @@
+Provider                                |  Event ID  |  Channel                                            |  Message
+----------------------------------------|------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-UserModePowerService  |  1         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  2         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  3         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  4         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  5         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  7         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  8         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  9         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  10        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  11        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  12        |  System                                             |  Process {ProcessPath} (process ID:{ProcessPid}) reset policy scheme from {OldSchemeGuid} to {NewSchemeGuid}
+Microsoft-Windows-UserModePowerService  |  13        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  14        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  15        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  16        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  17        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  18        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  19        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
+Microsoft-Windows-UserModePowerService  |  22        |  System                                             |  Reapply power settings upon completion of the provisioning engine's turn {Turn}

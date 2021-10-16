@@ -1,0 +1,14 @@
+Provider                                                 |  Event ID  |  Channel                                                           |  Message
+---------------------------------------------------------|------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  1         |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Admin     |
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  2         |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Admin     |
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  3         |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Admin     |
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  4         |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Admin     |
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  5         |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Admin     |
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  6         |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Admin     |
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  1020      |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Analytic  |
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  1021      |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Analytic  |
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  1022      |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Analytic  |  Error publishing background notification to system event broker.Error is {error}: {hresult}
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  1023      |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Analytic  |  No WNF state name found for this device.Error is {error}: {hresult}
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  1024      |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Analytic  |  Error getting network account details from device node.Error is {error}: {hresult}
+Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter  |  1025      |  Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter/Analytic  |  Error - Could not decode SMS message.Error is {error}: {hresult}

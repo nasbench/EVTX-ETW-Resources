@@ -1,0 +1,4 @@
+Provider                                     |  Event ID  |  Channel                                         |  Message
+---------------------------------------------|------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-FileHistory-EventListener  |  106       |  Microsoft-Windows-FileHistory-Engine/BackupLog  |  Directory was not backed up because it is a reparse point:{Path}If you want it to be protected, remove the reparse point.
+Microsoft-Windows-FileHistory-EventListener  |  107       |  Microsoft-Windows-FileHistory-Engine/BackupLog  |  File was not backed up due to an error:{Path}Windows will not attempt to back up the file again, unless it is modified.

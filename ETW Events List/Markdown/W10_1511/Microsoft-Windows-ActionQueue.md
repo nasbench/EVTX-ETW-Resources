@@ -1,0 +1,6 @@
+Provider                       |  Event ID  |  Channel                                 |  Message
+-------------------------------|------------|------------------------------------------|-----------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ActionQueue  |  1001      |  Microsoft-Windows-ActionQueue/Analytic  |  Processing Action Queue "{QueueFile}".
+Microsoft-Windows-ActionQueue  |  1002      |  Microsoft-Windows-ActionQueue/Analytic  |  Finished processing Action Queue with status {ErrorCode}.
+Microsoft-Windows-ActionQueue  |  2001      |  Microsoft-Windows-ActionQueue/Analytic  |  Executing "{ExecutableName}" with arguments "{Arguments}" for component "{Identity}" in unattend pass "{Pass}".
+Microsoft-Windows-ActionQueue  |  2002      |  Microsoft-Windows-ActionQueue/Analytic  |  Command completed with status {ErrorCode}.

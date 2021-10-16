@@ -1,0 +1,24 @@
+Provider                |  Event ID  |  Channel                                  |  Message
+------------------------|------------|-------------------------------------------|--------------------------------------------------------
+Microsoft-Windows-Disk  |  1         |  Microsoft-Windows-Disk/Operational       |  Disk Cache Information
+Microsoft-Windows-Disk  |  201       |  Microsoft-Windows-Storage-Disk/Analytic  |  Request servicing time taken by lower driver stack(s).
+Microsoft-Windows-Disk  |  202       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a read request.
+Microsoft-Windows-Disk  |  203       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a write request.
+Microsoft-Windows-Disk  |  204       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a read request.
+Microsoft-Windows-Disk  |  205       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a write request.
+Microsoft-Windows-Disk  |  206       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a read request.
+Microsoft-Windows-Disk  |  207       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a write request.
+Microsoft-Windows-Disk  |  208       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Completing an IO (read/write) request.
+Microsoft-Windows-Disk  |  209       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Retrying an IO (read/write) request.
+Microsoft-Windows-Disk  |  210       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Flush request.
+Microsoft-Windows-Disk  |  211       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Flush request.
+Microsoft-Windows-Disk  |  212       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching an IOCTL.
+Microsoft-Windows-Disk  |  213       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a WMI request.
+Microsoft-Windows-Disk  |  214       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Completing a non-read/write request.
+Microsoft-Windows-Disk  |  215       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a power request.
+Microsoft-Windows-Disk  |  216       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Completing a power request.
+Microsoft-Windows-Disk  |  217       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a PnP request.
+Microsoft-Windows-Disk  |  218       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Completing a PnP request.
+Microsoft-Windows-Disk  |  219       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Completing a PnP enumeration request.
+Microsoft-Windows-Disk  |  220       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Performing a queue-related operation.
+Microsoft-Windows-Disk  |  221       |  Microsoft-Windows-Storage-Disk/Diagnose  |  Dispatching a PassThrough request.

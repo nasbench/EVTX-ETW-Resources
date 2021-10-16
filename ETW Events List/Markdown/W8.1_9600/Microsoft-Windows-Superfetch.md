@@ -1,0 +1,68 @@
+Provider                      |  Event ID  |  Channel                               |  Message
+------------------------------|------------|----------------------------------------|---------------------------------------------------------------------------------------------------
+Microsoft-Windows-Superfetch  |  1000      |                                        |
+Microsoft-Windows-Superfetch  |  1001      |                                        |
+Microsoft-Windows-Superfetch  |  1002      |                                        |
+Microsoft-Windows-Superfetch  |  1003      |                                        |
+Microsoft-Windows-Superfetch  |  1004      |                                        |
+Microsoft-Windows-Superfetch  |  1005      |                                        |
+Microsoft-Windows-Superfetch  |  1006      |                                        |
+Microsoft-Windows-Superfetch  |  1007      |                                        |
+Microsoft-Windows-Superfetch  |  1008      |                                        |
+Microsoft-Windows-Superfetch  |  1009      |                                        |
+Microsoft-Windows-Superfetch  |  1010      |                                        |
+Microsoft-Windows-Superfetch  |  1011      |                                        |
+Microsoft-Windows-Superfetch  |  1012      |                                        |
+Microsoft-Windows-Superfetch  |  1013      |                                        |
+Microsoft-Windows-Superfetch  |  1014      |                                        |
+Microsoft-Windows-Superfetch  |  1015      |                                        |
+Microsoft-Windows-Superfetch  |  1016      |                                        |
+Microsoft-Windows-Superfetch  |  1017      |                                        |
+Microsoft-Windows-Superfetch  |  1018      |                                        |
+Microsoft-Windows-Superfetch  |  1019      |                                        |
+Microsoft-Windows-Superfetch  |  1020      |                                        |
+Microsoft-Windows-Superfetch  |  1021      |                                        |
+Microsoft-Windows-Superfetch  |  1022      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1023      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1024      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1025      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1026      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1027      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1028      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1029      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1030      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1031      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1032      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1033      |  Microsoft-Windows-Superfetch/AgmcLog  |
+Microsoft-Windows-Superfetch  |  1034      |  Memory cooling operational channel    |  Memory cooling is {Availability}.
+Microsoft-Windows-Superfetch  |  1035      |  Memory cooling operational channel    |  Memory working set scanning is {Availability}.
+Microsoft-Windows-Superfetch  |  1036      |  Memory cooling operational channel    |  Hardware feedback counter is {Availability}.
+Microsoft-Windows-Superfetch  |  1037      |  Memory cooling operational channel    |  Topology information for Node {NodeNumber} (Total {ChannelNumber} channels):	{NodeTopologyString}
+Microsoft-Windows-Superfetch  |  1038      |                                        |
+Microsoft-Windows-Superfetch  |  1039      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1040      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1041      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1042      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1043      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1044      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1045      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1046      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1047      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1048      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1049      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1050      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1051      |                                        |
+Microsoft-Windows-Superfetch  |  1052      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1053      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1054      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1055      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1056      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1057      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1058      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1059      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1060      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1061      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1062      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1063      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1064      |  Microsoft-Windows-Superfetch/PfApLog  |
+Microsoft-Windows-Superfetch  |  1065      |  Microsoft-Windows-Superfetch/PfApLog  |

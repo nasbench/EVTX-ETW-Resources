@@ -1,0 +1,6 @@
+Provider                   |  Event ID  |  Channel  |  Message
+---------------------------|------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-OcSetup  |  1         |  Setup    |  The Windows component "{ComponentName}" was successfully installed. (Command line: "{CommandLine}")
+Microsoft-Windows-OcSetup  |  2         |  Setup    |  The Windows component "{ComponentName}" was successfully uninstalled. (Command line: "{CommandLine}")
+Microsoft-Windows-OcSetup  |  3         |  Setup    |  The Windows component "{ComponentName}" could not be configured.  The component installer returned an error: {ErrorCode} "{ErrorString}" (Command line: "{CommandLine}")
+Microsoft-Windows-OcSetup  |  4         |  Setup    |  The Windows component could not be configured because of an error: {ErrorCode} "{ErrorString}" (Command line: "{CommandLine}")

@@ -1,0 +1,11 @@
+Provider                         |  Event ID  |  Channel                              |  Message
+---------------------------------|------------|---------------------------------------|----------------------------------------------------------------------------------
+Microsoft-Windows-Install-Agent  |  2000      |  Microsoft-Windows-Store/Operational  |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}
+Microsoft-Windows-Install-Agent  |  2001      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  2002      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  2003      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  2004      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  2005      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  2006      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  2007      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  2008      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})

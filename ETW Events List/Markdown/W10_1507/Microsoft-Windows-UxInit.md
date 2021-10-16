@@ -1,0 +1,7 @@
+Provider                  |  Event ID  |  Channel                              |  Message
+--------------------------|------------|---------------------------------------|---------
+Microsoft-Windows-UxInit  |  1         |  Microsoft-Windows-UxInit/Diagnostic  |
+Microsoft-Windows-UxInit  |  2         |  Microsoft-Windows-UxInit/Diagnostic  |
+Microsoft-Windows-UxInit  |  3         |  Microsoft-Windows-UxInit/Diagnostic  |
+Microsoft-Windows-UxInit  |  4         |  Microsoft-Windows-UxInit/Diagnostic  |
+Microsoft-Windows-UxInit  |  5         |  Microsoft-Windows-UxInit/Diagnostic  |

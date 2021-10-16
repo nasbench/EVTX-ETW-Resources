@@ -1,0 +1,34 @@
+Provider                     |  Event ID  |  Channel                                              |  Message
+-----------------------------|------------|-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-AppLocker  |  8000      |  Microsoft-Windows-AppLocker/EXE and DLL              |  AppID policy conversion failed. Status {Status}.
+Microsoft-Windows-AppLocker  |  8001      |  Microsoft-Windows-AppLocker/EXE and DLL              |
+Microsoft-Windows-AppLocker  |  8002      |  Microsoft-Windows-AppLocker/EXE and DLL              |  {PolicyNameLength}1 was allowed to run.
+Microsoft-Windows-AppLocker  |  8003      |  Microsoft-Windows-AppLocker/EXE and DLL              |  {PolicyNameLength}1 was allowed to run but would have been prevented from running if the AppLocker policy were enforced.
+Microsoft-Windows-AppLocker  |  8004      |  Microsoft-Windows-AppLocker/EXE and DLL              |  {PolicyNameLength}1 was prevented from running.
+Microsoft-Windows-AppLocker  |  8005      |  Microsoft-Windows-AppLocker/MSI and Script           |  {PolicyNameLength}1 was allowed to run.
+Microsoft-Windows-AppLocker  |  8006      |  Microsoft-Windows-AppLocker/MSI and Script           |  {PolicyNameLength}1 was allowed to run but would have been prevented from running if the AppLocker policy were enforced.
+Microsoft-Windows-AppLocker  |  8007      |  Microsoft-Windows-AppLocker/MSI and Script           |  {PolicyNameLength}1 was prevented from running.
+Microsoft-Windows-AppLocker  |  8008      |  Microsoft-Windows-AppLocker/EXE and DLL              |  {FilePathBuffer}: AppLocker component not available on this SKU.
+Microsoft-Windows-AppLocker  |  8009      |  Microsoft-Windows-AppLocker/MSI and Script           |  {FilePathBuffer}: AppLocker component not available on this SKU.
+Microsoft-Windows-AppLocker  |  8010      |                                                       |
+Microsoft-Windows-AppLocker  |  8011      |                                                       |
+Microsoft-Windows-AppLocker  |  8012      |                                                       |
+Microsoft-Windows-AppLocker  |  8013      |                                                       |
+Microsoft-Windows-AppLocker  |  8014      |                                                       |
+Microsoft-Windows-AppLocker  |  8015      |                                                       |
+Microsoft-Windows-AppLocker  |  8016      |                                                       |
+Microsoft-Windows-AppLocker  |  8017      |                                                       |
+Microsoft-Windows-AppLocker  |  8018      |                                                       |
+Microsoft-Windows-AppLocker  |  8019      |                                                       |
+Microsoft-Windows-AppLocker  |  8020      |  Microsoft-Windows-AppLocker/Packaged app-Execution   |  {PolicyNameLength}1 was allowed to run.
+Microsoft-Windows-AppLocker  |  8021      |  Microsoft-Windows-AppLocker/Packaged app-Execution   |  {PolicyNameLength}1 was allowed to run but would have been prevented from running if the AppLocker policy were enforced.
+Microsoft-Windows-AppLocker  |  8022      |  Microsoft-Windows-AppLocker/Packaged app-Execution   |  {PolicyNameLength}1 was prevented from running.
+Microsoft-Windows-AppLocker  |  8023      |  Microsoft-Windows-AppLocker/Packaged app-Deployment  |  {PolicyNameLength}1 was allowed to be installed.
+Microsoft-Windows-AppLocker  |  8024      |  Microsoft-Windows-AppLocker/Packaged app-Deployment  |  {PolicyNameLength}1 was allowed to run but would have been prevented from running if the AppLocker policy were enforced.
+Microsoft-Windows-AppLocker  |  8025      |  Microsoft-Windows-AppLocker/Packaged app-Deployment  |  {PolicyNameLength}1 was prevented from running.
+Microsoft-Windows-AppLocker  |  8026      |  Microsoft-Windows-AppLocker/Packaged app-Deployment  |
+Microsoft-Windows-AppLocker  |  8027      |  Microsoft-Windows-AppLocker/Packaged app-Execution   |
+Microsoft-Windows-AppLocker  |  8028      |  Microsoft-Windows-AppLocker/MSI and Script           |  {FilePath} was allowed to run but would have been prevented if the Config CI policy were enforced.
+Microsoft-Windows-AppLocker  |  8029      |  Microsoft-Windows-AppLocker/MSI and Script           |  {FilePath} was prevented from running due to Config CI policy.
+Microsoft-Windows-AppLocker  |  8030      |  Microsoft-Windows-AppLocker/EXE and DLL              |  SmartlockerEnforcement check during Appid verification of {ImageName}. Status {StatusCode}.
+Microsoft-Windows-AppLocker  |  8031      |  Microsoft-Windows-AppLocker/EXE and DLL              |  SmartlockerFilter detected file {FileName} being written by process {CurrentProcess}.

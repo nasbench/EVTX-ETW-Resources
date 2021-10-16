@@ -1,0 +1,9 @@
+Provider                |  Event ID  |  Channel                      |  Message
+------------------------|------------|-------------------------------|---------
+Multimedia-HEVCDECODER  |  0         |  WINDOWS_HEVCDECODER_CHANNEL  |
+Multimedia-HEVCDECODER  |  1         |  WINDOWS_HEVCDECODER_CHANNEL  |
+Multimedia-HEVCDECODER  |  2         |  WINDOWS_HEVCDECODER_CHANNEL  |
+Multimedia-HEVCDECODER  |  3         |  WINDOWS_HEVCDECODER_CHANNEL  |
+Multimedia-HEVCDECODER  |  4         |  WINDOWS_HEVCDECODER_CHANNEL  |
+Multimedia-HEVCDECODER  |  5         |  WINDOWS_HEVCDECODER_CHANNEL  |
+Multimedia-HEVCDECODER  |  6         |  WINDOWS_HEVCDECODER_CHANNEL  |

@@ -1,0 +1,78 @@
+Provider                       |  Event ID  |  Channel                                                                                                       |  Message
+-------------------------------|------------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-USB-USBXHCI  |  1         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  2         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  3         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Information
+Microsoft-Windows-USB-USBXHCI  |  3         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Information
+Microsoft-Windows-USB-USBXHCI  |  3         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Information
+Microsoft-Windows-USB-USBXHCI  |  3         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Information
+Microsoft-Windows-USB-USBXHCI  |  4         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Information
+Microsoft-Windows-USB-USBXHCI  |  4         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Information
+Microsoft-Windows-USB-USBXHCI  |  4         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Information
+Microsoft-Windows-USB-USBXHCI  |  4         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Information
+Microsoft-Windows-USB-USBXHCI  |  5         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Endpoint Information
+Microsoft-Windows-USB-USBXHCI  |  6         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Create
+Microsoft-Windows-USB-USBXHCI  |  6         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Create
+Microsoft-Windows-USB-USBXHCI  |  7         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Delete
+Microsoft-Windows-USB-USBXHCI  |  8         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Create
+Microsoft-Windows-USB-USBXHCI  |  8         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Create
+Microsoft-Windows-USB-USBXHCI  |  8         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Create
+Microsoft-Windows-USB-USBXHCI  |  8         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Create
+Microsoft-Windows-USB-USBXHCI  |  9         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Update
+Microsoft-Windows-USB-USBXHCI  |  9         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Update
+Microsoft-Windows-USB-USBXHCI  |  9         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Update
+Microsoft-Windows-USB-USBXHCI  |  9         |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Update
+Microsoft-Windows-USB-USBXHCI  |  10        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Delete
+Microsoft-Windows-USB-USBXHCI  |  10        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Delete
+Microsoft-Windows-USB-USBXHCI  |  10        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Delete
+Microsoft-Windows-USB-USBXHCI  |  10        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Device Delete
+Microsoft-Windows-USB-USBXHCI  |  11        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Endpoint Create
+Microsoft-Windows-USB-USBXHCI  |  12        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Endpoint Update
+Microsoft-Windows-USB-USBXHCI  |  13        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Endpoint Delete
+Microsoft-Windows-USB-USBXHCI  |  14        |  System                                                                                                        |  Windows failed to start the {DeviceDescription} for the following reason:{StartDeviceFailReason}
+Microsoft-Windows-USB-USBXHCI  |  15        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Firmware Version Update
+Microsoft-Windows-USB-USBXHCI  |  16        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller EvtDeviceD0Entry Start
+Microsoft-Windows-USB-USBXHCI  |  17        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller EvtDeviceD0Entry Complete
+Microsoft-Windows-USB-USBXHCI  |  18        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller EvtDeviceD0EntryPostInterruptsEnabled Start
+Microsoft-Windows-USB-USBXHCI  |  19        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller EvtDeviceD0EntryPostInterruptsEnabled Complete
+Microsoft-Windows-USB-USBXHCI  |  20        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller EvtDeviceD0ExitPreInterruptsDisabled Start
+Microsoft-Windows-USB-USBXHCI  |  21        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller EvtDeviceD0ExitPreInterruptsDisabled Complete
+Microsoft-Windows-USB-USBXHCI  |  22        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller EvtDeviceD0Exit Start
+Microsoft-Windows-USB-USBXHCI  |  23        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller EvtDeviceD0Exit Complete
+Microsoft-Windows-USB-USBXHCI  |  24        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Save State Start
+Microsoft-Windows-USB-USBXHCI  |  25        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Save State Complete
+Microsoft-Windows-USB-USBXHCI  |  26        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Restore State Start
+Microsoft-Windows-USB-USBXHCI  |  27        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Restore State Complete
+Microsoft-Windows-USB-USBXHCI  |  28        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Internal Reset Start
+Microsoft-Windows-USB-USBXHCI  |  29        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Internal Reset Complete
+Microsoft-Windows-USB-USBXHCI  |  30        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Error detected. To recover from this Error, Windows may need to reset the Controller and re-enumerate USB devices downstream of the Controller. Please refer Event Properties for more contextual information about this Error.Hardware Verifier Flag: {fid_HWVerifierFlag}.Detailed description: {fid_Description}
+Microsoft-Windows-USB-USBXHCI  |  31        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  xHCI Command sent to Controller
+Microsoft-Windows-USB-USBXHCI  |  32        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  xHCI Command waitlisted due to Command Ring full or Command Serialization
+Microsoft-Windows-USB-USBXHCI  |  33        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  xHCI Command Complete
+Microsoft-Windows-USB-USBXHCI  |  34        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  xHCI Command Complete with Error
+Microsoft-Windows-USB-USBXHCI  |  35        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  Query USB capability for controller
+Microsoft-Windows-USB-USBXHCI  |  36        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  Wdf Power Reference acquired or released because controller is shared with debugger
+Microsoft-Windows-USB-USBXHCI  |  37        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  37        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  38        |  This is the Analytic channel to which internal Analytic events from the USBXHCI trustlet are sent from VTL1.  |
+Microsoft-Windows-USB-USBXHCI  |  38        |  This is the Analytic channel to which internal Analytic events from the USBXHCI trustlet are sent from VTL1.  |
+Microsoft-Windows-USB-USBXHCI  |  39        |  This is the Analytic channel to which internal Analytic events from the USBXHCI trustlet are sent from VTL1.  |
+Microsoft-Windows-USB-USBXHCI  |  39        |  This is the Analytic channel to which internal Analytic events from the USBXHCI trustlet are sent from VTL1.  |
+Microsoft-Windows-USB-USBXHCI  |  40        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  40        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  41        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  41        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  42        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  42        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  43        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  43        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  44        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  44        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  45        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  45        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |
+Microsoft-Windows-USB-USBXHCI  |  46        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  Start Tracking For Time Sync
+Microsoft-Windows-USB-USBXHCI  |  47        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  Stop Tracking For Time Sync
+Microsoft-Windows-USB-USBXHCI  |  48        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  Configure Endpoint
+Microsoft-Windows-USB-USBXHCI  |  49        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Health Information
+Microsoft-Windows-USB-USBXHCI  |  49        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Health Information
+Microsoft-Windows-USB-USBXHCI  |  49        |  This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.              |  USBXHCI Controller Health Information

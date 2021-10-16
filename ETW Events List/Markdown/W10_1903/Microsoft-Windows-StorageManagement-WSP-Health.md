@@ -1,0 +1,7 @@
+Provider                                        |  Event ID  |  Channel                                    |  Message
+------------------------------------------------|------------|---------------------------------------------|--------------
+Microsoft-Windows-StorageManagement-WSP-Health  |  8448      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
+Microsoft-Windows-StorageManagement-WSP-Health  |  8449      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
+Microsoft-Windows-StorageManagement-WSP-Health  |  8450      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
+Microsoft-Windows-StorageManagement-WSP-Health  |  8451      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
+Microsoft-Windows-StorageManagement-WSP-Health  |  8452      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}

@@ -1,0 +1,139 @@
+Provider               |  Event ID  |  Channel                            |  Message
+-----------------------|------------|-------------------------------------|--------------------------------------------
+Microsoft-Windows-ESE  |  100       |                                     |
+Microsoft-Windows-ESE  |  101       |                                     |
+Microsoft-Windows-ESE  |  102       |                                     |
+Microsoft-Windows-ESE  |  103       |                                     |  ESE CacheNewPage Trace
+Microsoft-Windows-ESE  |  104       |                                     |  ESE CacheReadPage Trace
+Microsoft-Windows-ESE  |  105       |                                     |  ESE CachePrereadPage Trace
+Microsoft-Windows-ESE  |  106       |                                     |  ESE CacheWritePage Trace
+Microsoft-Windows-ESE  |  107       |                                     |  ESE CacheEvictPage Trace
+Microsoft-Windows-ESE  |  108       |                                     |  ESE CacheRequestPage Trace
+Microsoft-Windows-ESE  |  109       |                                     |
+Microsoft-Windows-ESE  |  110       |                                     |  ESE CacheDirtyPage Trace
+Microsoft-Windows-ESE  |  111       |                                     |  ESE TransactionBegin Trace
+Microsoft-Windows-ESE  |  112       |                                     |  ESE TransactionCommit Trace
+Microsoft-Windows-ESE  |  113       |                                     |  ESE TransactionRollback Trace
+Microsoft-Windows-ESE  |  114       |                                     |  ESE SpaceAllocExt Trace
+Microsoft-Windows-ESE  |  115       |                                     |  ESE SpaceFreeExt Trace
+Microsoft-Windows-ESE  |  116       |                                     |  ESE SpaceAllocPage Trace
+Microsoft-Windows-ESE  |  117       |                                     |  ESE SpaceFreePage Trace
+Microsoft-Windows-ESE  |  118       |  Microsoft-Windows-ESE/IODiagnose   |  ESE IorunEnqueue Trace
+Microsoft-Windows-ESE  |  119       |  Microsoft-Windows-ESE/IODiagnose   |  ESE IorunDequeue Trace
+Microsoft-Windows-ESE  |  120       |  Microsoft-Windows-ESE/IODiagnose   |  ESE IOCompletion Trace
+Microsoft-Windows-ESE  |  121       |                                     |
+Microsoft-Windows-ESE  |  122       |                                     |  ESE LogWrite Trace
+Microsoft-Windows-ESE  |  123       |  Microsoft-Windows-ESE/Operational  |  ESE EventLogInfo Trace
+Microsoft-Windows-ESE  |  124       |  Microsoft-Windows-ESE/Operational  |  ESE EventLogWarn Trace
+Microsoft-Windows-ESE  |  125       |  Microsoft-Windows-ESE/Operational  |  ESE EventLogError Trace
+Microsoft-Windows-ESE  |  126       |                                     |
+Microsoft-Windows-ESE  |  127       |                                     |
+Microsoft-Windows-ESE  |  128       |                                     |
+Microsoft-Windows-ESE  |  129       |                                     |  ESE TimerTaskSchedule Trace
+Microsoft-Windows-ESE  |  130       |                                     |  ESE TimerTaskRun Trace
+Microsoft-Windows-ESE  |  131       |                                     |  ESE TimerTaskCancel Trace
+Microsoft-Windows-ESE  |  132       |                                     |  ESE TaskManagerPost Trace
+Microsoft-Windows-ESE  |  133       |                                     |  ESE TaskManagerRun Trace
+Microsoft-Windows-ESE  |  134       |                                     |  ESE GPTaskManagerPost Trace
+Microsoft-Windows-ESE  |  135       |                                     |  ESE GPTaskManagerRun Trace
+Microsoft-Windows-ESE  |  136       |                                     |  ESE TestMarker Trace
+Microsoft-Windows-ESE  |  137       |                                     |  ESE ThreadCreate Trace
+Microsoft-Windows-ESE  |  138       |                                     |  ESE ThreadStart Trace
+Microsoft-Windows-ESE  |  139       |                                     |  ESE CacheVersionPage Trace
+Microsoft-Windows-ESE  |  140       |                                     |  ESE CacheVersionCopyPage Trace
+Microsoft-Windows-ESE  |  141       |                                     |  ESE CacheResize Trace
+Microsoft-Windows-ESE  |  142       |                                     |  ESE CacheLimitResize Trace
+Microsoft-Windows-ESE  |  143       |                                     |  ESE CacheScavengeProgress Trace
+Microsoft-Windows-ESE  |  144       |                                     |  ESE ApiCall_Start Trace
+Microsoft-Windows-ESE  |  145       |                                     |  ESE ApiCall_Stop Trace
+Microsoft-Windows-ESE  |  146       |                                     |  ESE ResMgrInit Trace
+Microsoft-Windows-ESE  |  147       |                                     |  ESE ResMgrTerm Trace
+Microsoft-Windows-ESE  |  148       |                                     |  ESE CacheCachePage Trace
+Microsoft-Windows-ESE  |  149       |                                     |  ESE MarkPageAsSuperCold Trace
+Microsoft-Windows-ESE  |  150       |                                     |  ESE CacheMissLatency Trace
+Microsoft-Windows-ESE  |  151       |                                     |  ESE BTreePrereadPageRequest Trace
+Microsoft-Windows-ESE  |  152       |                                     |  ESE DiskFlushFileBuffers Trace
+Microsoft-Windows-ESE  |  153       |                                     |  ESE DiskFlushFileBuffersBegin Trace
+Microsoft-Windows-ESE  |  154       |                                     |  ESE CacheFirstDirtyPage Trace
+Microsoft-Windows-ESE  |  155       |                                     |  ESE SysStationId Trace
+Microsoft-Windows-ESE  |  156       |                                     |  ESE InstStationId Trace
+Microsoft-Windows-ESE  |  157       |                                     |  ESE FmpStationId Trace
+Microsoft-Windows-ESE  |  158       |                                     |  ESE DiskStationId Trace
+Microsoft-Windows-ESE  |  159       |                                     |  ESE FileStationId Trace
+Microsoft-Windows-ESE  |  160       |                                     |  ESE IsamDbfilehdrInfo Trace
+Microsoft-Windows-ESE  |  161       |                                     |  ESE DiskOsDiskCacheInfo Trace
+Microsoft-Windows-ESE  |  162       |                                     |  ESE DiskOsStorageWriteCacheProp Trace
+Microsoft-Windows-ESE  |  163       |                                     |  ESE DiskOsDeviceSeekPenaltyDesc Trace
+Microsoft-Windows-ESE  |  164       |                                     |
+Microsoft-Windows-ESE  |  165       |                                     |  ESE IOCompletion2 Trace
+Microsoft-Windows-ESE  |  166       |                                     |  ESE FCBPurgeFailure Trace
+Microsoft-Windows-ESE  |  167       |                                     |  ESE IOLatencySpikeNotice Trace
+Microsoft-Windows-ESE  |  168       |                                     |  ESE IOCompletion2Sess Trace
+Microsoft-Windows-ESE  |  169       |                                     |  ESE IOIssueThreadPost Trace
+Microsoft-Windows-ESE  |  170       |                                     |  ESE IOIssueThreadPosted Trace
+Microsoft-Windows-ESE  |  171       |                                     |
+Microsoft-Windows-ESE  |  172       |                                     |  ESE IOThreadIssuedDisk Trace
+Microsoft-Windows-ESE  |  173       |                                     |  ESE IOThreadIssueProcessedIO Trace
+Microsoft-Windows-ESE  |  174       |                                     |  ESE IOIoreqCompletion Trace
+Microsoft-Windows-ESE  |  175       |                                     |  ESE CacheMemoryUsage Trace
+Microsoft-Windows-ESE  |  176       |                                     |  ESE CacheSetLgposModify Trace
+Microsoft-Windows-ESE  |  200       |                                     |  ESE tagNull Trace
+Microsoft-Windows-ESE  |  201       |                                     |  ESE tagInformation Trace
+Microsoft-Windows-ESE  |  202       |                                     |  ESE tagErrors Trace
+Microsoft-Windows-ESE  |  203       |                                     |  ESE tagAsserts Trace
+Microsoft-Windows-ESE  |  204       |                                     |  ESE tagAPI Trace
+Microsoft-Windows-ESE  |  205       |                                     |  ESE tagInitTerm Trace
+Microsoft-Windows-ESE  |  206       |                                     |  ESE tagBufferManager Trace
+Microsoft-Windows-ESE  |  207       |                                     |  ESE tagBufferManagerHashedLatches Trace
+Microsoft-Windows-ESE  |  208       |                                     |  ESE tagIO Trace
+Microsoft-Windows-ESE  |  209       |                                     |  ESE tagMemory Trace
+Microsoft-Windows-ESE  |  210       |                                     |  ESE tagVersionStore Trace
+Microsoft-Windows-ESE  |  211       |                                     |  ESE tagVersionStoreOOM Trace
+Microsoft-Windows-ESE  |  212       |                                     |  ESE tagVersionCleanup Trace
+Microsoft-Windows-ESE  |  213       |                                     |  ESE tagCatalog Trace
+Microsoft-Windows-ESE  |  214       |                                     |  ESE tagDDLRead Trace
+Microsoft-Windows-ESE  |  215       |                                     |  ESE tagDDLWrite Trace
+Microsoft-Windows-ESE  |  216       |                                     |  ESE tagDMLRead Trace
+Microsoft-Windows-ESE  |  217       |                                     |  ESE tagDMLWrite Trace
+Microsoft-Windows-ESE  |  218       |                                     |  ESE tagDMLConflicts Trace
+Microsoft-Windows-ESE  |  219       |                                     |  ESE tagInstances Trace
+Microsoft-Windows-ESE  |  220       |                                     |  ESE tagDatabases Trace
+Microsoft-Windows-ESE  |  221       |                                     |  ESE tagSessions Trace
+Microsoft-Windows-ESE  |  222       |                                     |  ESE tagCursors Trace
+Microsoft-Windows-ESE  |  223       |                                     |  ESE tagCursorNavigation Trace
+Microsoft-Windows-ESE  |  224       |                                     |  ESE tagCursorPageRefs Trace
+Microsoft-Windows-ESE  |  225       |                                     |  ESE tagBtree Trace
+Microsoft-Windows-ESE  |  226       |                                     |  ESE tagSpace Trace
+Microsoft-Windows-ESE  |  227       |                                     |  ESE tagFCBs Trace
+Microsoft-Windows-ESE  |  228       |                                     |  ESE tagTransactions Trace
+Microsoft-Windows-ESE  |  229       |                                     |  ESE tagLogging Trace
+Microsoft-Windows-ESE  |  230       |                                     |  ESE tagRecovery Trace
+Microsoft-Windows-ESE  |  231       |                                     |  ESE tagBackup Trace
+Microsoft-Windows-ESE  |  232       |                                     |  ESE tagRestore Trace
+Microsoft-Windows-ESE  |  233       |                                     |  ESE tagOLD Trace
+Microsoft-Windows-ESE  |  234       |                                     |  ESE tagEventlog Trace
+Microsoft-Windows-ESE  |  235       |                                     |  ESE tagBufferManagerMaintTasks Trace
+Microsoft-Windows-ESE  |  236       |                                     |  ESE tagSpaceManagement Trace
+Microsoft-Windows-ESE  |  237       |                                     |  ESE tagSpaceInternal Trace
+Microsoft-Windows-ESE  |  238       |                                     |  ESE tagIOQueue Trace
+Microsoft-Windows-ESE  |  239       |                                     |  ESE tagDiskVolumeManagement Trace
+Microsoft-Windows-ESE  |  240       |                                     |  ESE tagCallbacks Trace
+Microsoft-Windows-ESE  |  241       |                                     |  ESE tagIOProblems Trace
+Microsoft-Windows-ESE  |  242       |                                     |  ESE tagUpgrade Trace
+Microsoft-Windows-ESE  |  243       |                                     |  ESE tagRecoveryValidation Trace
+Microsoft-Windows-ESE  |  244       |                                     |  ESE tagBufferManagerBufferCacheState Trace
+Microsoft-Windows-ESE  |  245       |                                     |  ESE tagBufferManagerBufferDirtyState Trace
+Microsoft-Windows-ESE  |  246       |                                     |  ESE tagTimerQueue Trace
+Microsoft-Windows-ESE  |  247       |                                     |  ESE tagSortPerf Trace
+Microsoft-Windows-ESE  |  248       |                                     |  ESE tagOLDRegistration Trace
+Microsoft-Windows-ESE  |  249       |                                     |  ESE tagOLDWork Trace
+Microsoft-Windows-ESE  |  250       |                                     |  ESE tagSysInitTerm Trace
+Microsoft-Windows-ESE  |  251       |                                     |  ESE tagVersionAndStagingChecks Trace
+Microsoft-Windows-ESE  |  252       |                                     |  ESE tagFile Trace
+Microsoft-Windows-ESE  |  253       |                                     |  ESE tagFlushFileBuffers Trace
+Microsoft-Windows-ESE  |  254       |                                     |  ESE tagCheckpointUpdate Trace
+Microsoft-Windows-ESE  |  255       |                                     |  ESE tagDiagnostics Trace
+Microsoft-Windows-ESE  |  256       |                                     |  ESE tagBlockCache Trace
+Microsoft-Windows-ESE  |  257       |                                     |  ESE tagRBS Trace
+Microsoft-Windows-ESE  |  258       |                                     |  ESE tagRBSCleaner Trace
+Microsoft-Windows-ESE  |  5000      |                                     |  ESE Compression Experiment Trace

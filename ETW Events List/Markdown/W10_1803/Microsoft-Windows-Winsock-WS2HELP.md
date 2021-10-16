@@ -1,0 +1,6 @@
+Provider                           |  Event ID  |  Channel                                               |  Message
+-----------------------------------|------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Winsock-WS2HELP  |  1         |  Microsoft-Windows-Winsock Catalog Change/Operational  |  LSP {LSPName} was installed in the {Catalog}-bit catalog by {Installer} (GUID={GUID}, Category ID={Category})
+Microsoft-Windows-Winsock-WS2HELP  |  2         |  Microsoft-Windows-Winsock Catalog Change/Operational  |  LSP {LSPName} was removed from the {Catalog}-bit catalog by {Installer} (GUID={GUID}, Category ID={Category})
+Microsoft-Windows-Winsock-WS2HELP  |  3         |  Microsoft-Windows-Winsock Catalog Change/Operational  |  LSP {LSPName} was disabled in the {Catalog}-bit catalog by {Installer} (GUID={GUID}, Category ID={Category})
+Microsoft-Windows-Winsock-WS2HELP  |  4         |  Microsoft-Windows-Winsock Catalog Change/Operational  |  The {Catalog}-bit catalog was reset by the administrator

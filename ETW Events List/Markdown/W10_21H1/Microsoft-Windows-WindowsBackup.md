@@ -1,0 +1,4 @@
+Provider                         |  Event ID  |  Channel                                       |  Message
+---------------------------------|------------|------------------------------------------------|-----------------------
+Microsoft-Windows-WindowsBackup  |  100       |  Microsoft-Windows-WindowsBackup/ActionCenter  |  Windows Backup status
+Microsoft-Windows-WindowsBackup  |  101       |  Microsoft-Windows-WindowsBackup/ActionCenter  |  Windows Backup status

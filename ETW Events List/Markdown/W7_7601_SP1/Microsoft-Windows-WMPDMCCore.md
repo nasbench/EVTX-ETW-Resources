@@ -1,0 +1,17 @@
+Provider                      |  Event ID  |  Channel                                  |  Message
+------------------------------|------------|-------------------------------------------|---------
+Microsoft-Windows-WMPDMCCore  |  2000      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2001      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2002      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2003      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2004      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2005      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2006      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2007      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2008      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2009      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2010      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2011      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2012      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2013      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |
+Microsoft-Windows-WMPDMCCore  |  2014      |  Microsoft-Windows-WMPDMCCore/Diagnostic  |

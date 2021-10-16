@@ -1,0 +1,14 @@
+Provider                          |  Event ID  |  Channel                       |  Message
+----------------------------------|------------|--------------------------------|-------------------------------------------------
+Microsoft-Windows-MF-FrameServer  |  2         |  Media Foundation FrameServer  |  FrameServer FsProxy SetOutputType Start
+Microsoft-Windows-MF-FrameServer  |  3         |  Media Foundation FrameServer  |  FrameServer FsProxy SetOutputType Stop
+Microsoft-Windows-MF-FrameServer  |  4         |  Media Foundation FrameServer  |  FrameServer FsProxy D3dManager Start
+Microsoft-Windows-MF-FrameServer  |  5         |  Media Foundation FrameServer  |  FrameServer FsProxy D3dManager Stop
+Microsoft-Windows-MF-FrameServer  |  6         |  Media Foundation FrameServer  |  string.FrameServer FsProxy Initialization Start
+Microsoft-Windows-MF-FrameServer  |  7         |  Media Foundation FrameServer  |  string.FrameServer FsProxy Initialization Stop
+Microsoft-Windows-MF-FrameServer  |  8         |  Media Foundation FrameServer  |  FrameServer FsClient CreateSample
+Microsoft-Windows-MF-FrameServer  |  9         |  Media Foundation FrameServer  |  FrameServer FsClient CreateSample Stop
+Microsoft-Windows-MF-FrameServer  |  10        |  Media Foundation FrameServer  |  FrameServer Capture Statistics
+Microsoft-Windows-MF-FrameServer  |  11        |  Media Foundation FrameServer  |  FrameServer WatchdogTimer Start Event
+Microsoft-Windows-MF-FrameServer  |  12        |  Media Foundation FrameServer  |  FrameServer WatchdogTimer Stop Event
+Microsoft-Windows-MF-FrameServer  |  13        |  Media Foundation FrameServer  |  FrameServer WatchdogTimer Trigger Event

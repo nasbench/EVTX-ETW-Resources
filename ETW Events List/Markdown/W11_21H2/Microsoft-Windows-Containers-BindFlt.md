@@ -1,0 +1,6 @@
+Provider                              |  Event ID  |  Channel  |  Message
+--------------------------------------|------------|-----------|-----------------------------------------------------------------------------------------
+Microsoft-Windows-Containers-BindFlt  |  1         |           |  BINDFLT filter registratiion failed with error message: {NTStatus}
+Microsoft-Windows-Containers-BindFlt  |  2         |           |
+Microsoft-Windows-Containers-BindFlt  |  3         |           |  BINDFLT filter failed to attach to volume '{VolumeName}' with error message: {NTStatus}
+Microsoft-Windows-Containers-BindFlt  |  4         |           |

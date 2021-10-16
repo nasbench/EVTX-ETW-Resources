@@ -1,0 +1,8 @@
+Provider                    |  Event ID    |  Channel  |  Message
+----------------------------|--------------|-----------|---------
+Microsoft-Windows-PerfDisk  |  2147484648  |           |
+Microsoft-Windows-PerfDisk  |  3221226473  |           |
+Microsoft-Windows-PerfDisk  |  3221226474  |           |
+Microsoft-Windows-PerfDisk  |  3221226475  |           |
+Microsoft-Windows-PerfDisk  |  2147485648  |           |
+Microsoft-Windows-PerfDisk  |  2147485649  |           |

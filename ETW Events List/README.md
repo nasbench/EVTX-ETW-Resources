@@ -22,22 +22,20 @@ Options:
   -p PROVIDERSPATH, --path=PROVIDERSPATH
                         Path to the folder containing the ETW providers
                         manifests
-  -n FILENAME, --name=FILENAME
-                        Name of the to be generated file without extension
 ```
 
 Here is an example on how to use the script
 
 ```python
-python etw-to-csv.py -p /home/lab/etw-providers/w10_20h2 -n w10_20h2
+python etw-to-csv.py -p /home/lab/etw-providers/w10_20h2
 ```
 
-**Note** that the script can convert the generated **`CSV`** file into **`Markdown`**. We just need to uncomment the last line.
+The script will generates both a **`CSV`** and a **`Markdown`** version for each ETW Manifest.
 
 ```python
-convertToMD(fileName)
+convertCsvToMD(fileName)
 ```
 
 ## TODO
 
-1- Modify the script to be able to generate CSV and Markdown from a single ETW manifest instead of a folder.
+- [x] ~~Modify the script to be able to generate CSV and Markdown from a single ETW manifest instead of a folder.~~

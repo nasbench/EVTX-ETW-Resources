@@ -1,0 +1,9 @@
+Provider                  |  Event ID  |  Channel                              |  Message
+--------------------------|------------|---------------------------------------|---------
+Microsoft-Windows-SendTo  |  1         |  Microsoft-Windows-SendTo/Diagnostic  |
+Microsoft-Windows-SendTo  |  2         |  Microsoft-Windows-SendTo/Diagnostic  |
+Microsoft-Windows-SendTo  |  3         |  Microsoft-Windows-SendTo/Diagnostic  |
+Microsoft-Windows-SendTo  |  4         |  Microsoft-Windows-SendTo/Diagnostic  |
+Microsoft-Windows-SendTo  |  5         |  Microsoft-Windows-SendTo/Diagnostic  |
+Microsoft-Windows-SendTo  |  6         |  Microsoft-Windows-SendTo/Diagnostic  |
+Microsoft-Windows-SendTo  |  7         |  Microsoft-Windows-SendTo/Diagnostic  |

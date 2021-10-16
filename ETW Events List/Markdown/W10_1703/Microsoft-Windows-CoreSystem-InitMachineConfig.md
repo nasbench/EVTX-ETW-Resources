@@ -1,0 +1,6 @@
+Provider                                        |  Event ID  |  Channel  |  Message
+------------------------------------------------|------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-CoreSystem-InitMachineConfig  |  1         |  System   |  An error with reference Id={evtErrorId} was encountered while processing the hive '{evtHiveName}'. The status was: {evtStatus}.  The additional information was {evtAdditionalInfo}.
+Microsoft-Windows-CoreSystem-InitMachineConfig  |  2         |  System   |  Initial Machine Configuration processing of hive '{evtHiveName}' has completed.
+Microsoft-Windows-CoreSystem-InitMachineConfig  |  3         |  System   |  Initial Machine Configuration was unable to unload the IMC hive once processing was completed.  The status was {evtStatus}.
+Microsoft-Windows-CoreSystem-InitMachineConfig  |  4         |  System   |  Initial Machine Configuration was unable to update the system BCD to prevent future execution.  The status was {evtStatus}.

@@ -1,0 +1,16 @@
+Provider                   |  Event ID  |  Channel                                |  Message
+---------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-DxgKrnl  |  1         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
+Microsoft-Windows-DxgKrnl  |  2         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
+Microsoft-Windows-DxgKrnl  |  3         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
+Microsoft-Windows-DxgKrnl  |  5         |                                         |
+Microsoft-Windows-DxgKrnl  |  6         |                                         |
+Microsoft-Windows-DxgKrnl  |  7         |                                         |
+Microsoft-Windows-DxgKrnl  |  8         |                                         |
+Microsoft-Windows-DxgKrnl  |  9         |                                         |
+Microsoft-Windows-DxgKrnl  |  10        |                                         |
+Microsoft-Windows-DxgKrnl  |  11        |                                         |
+Microsoft-Windows-DxgKrnl  |  16        |                                         |
+Microsoft-Windows-DxgKrnl  |  10000     |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  10001     |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  10002     |  Microsoft-Windows-DxgKrnl/Performance  |

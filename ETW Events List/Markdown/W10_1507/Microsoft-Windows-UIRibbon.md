@@ -1,0 +1,36 @@
+Provider                    |  Event ID  |  Channel                                |  Message
+----------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-UIRibbon  |  1         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  2         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  3         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  4         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  5         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  6         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  7         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  8         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  9         |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  10        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  11        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  12        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  13        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  14        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  15        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  16        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  17        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  18        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  19        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  20        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  21        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  22        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  23        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  24        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  25        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  26        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  27        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  28        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  29        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  30        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  31        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  32        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  33        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Microsoft-Windows-UIRibbon  |  34        |  Microsoft-Windows-UIRibbon/Diagnostic  |

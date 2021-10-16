@@ -1,0 +1,5 @@
+Provider                      |  Event ID  |  Channel                                |  Message
+------------------------------|------------|-----------------------------------------|---------------------------------------------------------------
+Microsoft-Windows-SetupQueue  |  1001      |  Microsoft-Windows-SetupQueue/Analytic  |  Executing command queue entry "{Command}".
+Microsoft-Windows-SetupQueue  |  1002      |  Microsoft-Windows-SetupQueue/Analytic  |  Command queue entry exited with status {ErrorCode}.
+Microsoft-Windows-SetupQueue  |  1003      |  Microsoft-Windows-SetupQueue/Analytic  |  Failed to launch command queue entry with status {ErrorCode}.

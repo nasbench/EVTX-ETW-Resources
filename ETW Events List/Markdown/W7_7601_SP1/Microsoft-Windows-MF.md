@@ -1,0 +1,31 @@
+Provider              |  Event ID  |  Channel                        |  Message
+----------------------|------------|---------------------------------|------------------------------------------
+Microsoft-Windows-MF  |  1         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  2         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  3         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  4         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  5         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  6         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  7         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  8         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  9         |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  10        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  11        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  12        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  13        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  14        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  15        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  16        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  17        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  18        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  19        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  20        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  21        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  22        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  23        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  24        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  25        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  26        |  MF_MediaFoundationDeviceProxy  |
+Microsoft-Windows-MF  |  1000      |  Media Foundation Pipeline      |  IMFTopoLoader::Load start
+Microsoft-Windows-MF  |  1001      |  Media Foundation Pipeline      |  IMFTopoLoader::Load returned {hr}
+Microsoft-Windows-MF  |  1002      |  Media Foundation Pipeline      |  Creating Transform {CLSID} returned {hr}

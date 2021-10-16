@@ -1,0 +1,31 @@
+Provider                       |  Event ID  |  Channel                                   |  Message
+-------------------------------|------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-Acpi  |  1         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  A memory range descriptor has been marked as reserved.
+Microsoft-Windows-Kernel-Acpi  |  2         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  Unexpected GPE event was fired on GPE bits that should be disabled.
+Microsoft-Windows-Kernel-Acpi  |  3         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  A temperature change notification (Notify(thermal_zone, 0x80)) for ACPI thermal zone {ThermalZoneDeviceInstance} has been received.             _TMP = {_TMP}K             _PSV = {_PSV}K             _AC0 = {_AC0}K             _AC1 = {_AC1}K             _AC2 = {_AC2}K             _AC3 = {_AC3}K             _AC4 = {_AC4}K             _AC5 = {ThermalZoneDeviceInstanceLength}0K             _AC6 = {ThermalZoneDeviceInstanceLength}1K             _AC7 = {ThermalZoneDeviceInstanceLength}2K             _AC8 = {ThermalZoneDeviceInstanceLength}3K             _AC9 = {ThermalZoneDeviceInstanceLength}4K             _HOT = {ThermalZoneDeviceInstanceLength}5K             _CRT = {ThermalZoneDeviceInstanceLength}6K
+Microsoft-Windows-Kernel-Acpi  |  4         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  A trip point change notification (Notify(thermal_zone, 0x81)) for ACPI thermal zone {ThermalZoneDeviceInstance} has been received.             _TMP = {_TMP}K             _PSV = {_PSV}K             _AC0 = {_AC0}K             _AC1 = {_AC1}K             _AC2 = {_AC2}K             _AC3 = {_AC3}K             _AC4 = {_AC4}K             _AC5 = {ThermalZoneDeviceInstanceLength}0K             _AC6 = {ThermalZoneDeviceInstanceLength}1K             _AC7 = {ThermalZoneDeviceInstanceLength}2K             _AC8 = {ThermalZoneDeviceInstanceLength}3K             _AC9 = {ThermalZoneDeviceInstanceLength}4K             _HOT = {ThermalZoneDeviceInstanceLength}5K             _CRT = {ThermalZoneDeviceInstanceLength}6K
+Microsoft-Windows-Kernel-Acpi  |  5         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  The active cooling device {FanDeviceInstance} has been turned {PowerState}.             Thermal zone device instance: {ThermalZoneDeviceInstance}             Active cooling package: _AC{ActiveCoolingLevel}             Namespace object: _AL{ActiveCoolingDeviceIndex}
+Microsoft-Windows-Kernel-Acpi  |  6         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  The active cooling device {FanDeviceInstance} has been turned {PowerState}.             Thermal zone device instance: {ThermalZoneDeviceInstance}             Active cooling package: _AC{ActiveCoolingLevel}             Namespace object: _AL{ActiveCoolingDeviceIndex}
+Microsoft-Windows-Kernel-Acpi  |  7         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  ACPI method {AmlMethodName} evaluation has {AmlMethodState}.
+Microsoft-Windows-Kernel-Acpi  |  8         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  The active cooling device {DeviceInstance} has been turned {PowerState}.
+Microsoft-Windows-Kernel-Acpi  |  9         |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  The passive cooling device {DeviceInstance} throttle has changed to {Throttle} percent.
+Microsoft-Windows-Kernel-Acpi  |  10        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  The device {DeviceInstance} has the following cooling state.             Active cooling: {PowerState}             Passive cooling: {Throttle} percent
+Microsoft-Windows-Kernel-Acpi  |  11        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  12        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  12        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  12        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  12        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  12        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  13        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  13        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  14        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  15        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  15        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  16        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  17        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  18        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  19        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |
+Microsoft-Windows-Kernel-Acpi  |  20        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  ACPI device {DeviceBiosName} is undergoing {DeviceResetType}. Status {Status}.
+Microsoft-Windows-Kernel-Acpi  |  21        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  ACPI device OverRide - {AcpiOverrideType}
+Microsoft-Windows-Kernel-Acpi  |  22        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  Error occured while interpreting AML code: scope {Scope}, object {Object}. Status {Status}.
+Microsoft-Windows-Kernel-Acpi  |  23        |  Microsoft-Windows-Kernel-Acpi/Diagnostic  |  ACPI method {AmlMethodName} has high frequency {Frequency}.

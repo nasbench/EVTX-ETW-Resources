@@ -1,0 +1,8 @@
+Provider                    |  Event ID  |  Channel                                |  Message
+----------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-WlanConn  |  8001      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8002      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8003      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8004      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8005      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8006      |  Microsoft-Windows-WlanConn/Diagnostic  |

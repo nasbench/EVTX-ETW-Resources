@@ -1,0 +1,32 @@
+Provider                   |  Event ID    |  Channel  |  Message
+---------------------------|--------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Wininit  |  1           |           |
+Microsoft-Windows-Wininit  |  2           |           |
+Microsoft-Windows-Wininit  |  3           |           |
+Microsoft-Windows-Wininit  |  4           |           |
+Microsoft-Windows-Wininit  |  5           |           |
+Microsoft-Windows-Wininit  |  6           |           |
+Microsoft-Windows-Wininit  |  7           |           |
+Microsoft-Windows-Wininit  |  8           |           |
+Microsoft-Windows-Wininit  |  9           |           |
+Microsoft-Windows-Wininit  |  10          |           |
+Microsoft-Windows-Wininit  |  11          |  System   |  Custom dynamic link libraries are being loaded for every application. The system administrator should review the list of libraries to ensure they are related to trusted applications. Please visit http://support.microsoft.com/kb/197571 for more information.
+Microsoft-Windows-Wininit  |  12          |  System   |  LSASS.exe was started as a protected process with level: {Level}.
+Microsoft-Windows-Wininit  |  13          |  System   |
+Microsoft-Windows-Wininit  |  14          |  System   |  Credential Guard configuration: {Config}, {IsTestConfig}
+Microsoft-Windows-Wininit  |  15          |  System   |
+Microsoft-Windows-Wininit  |  16          |  System   |  LsaIso.exe, the host process for Credential Guard and Key Guard, failed to launch: {Level}
+Microsoft-Windows-Wininit  |  17          |  System   |  Error reading Credential Guard (LsaIso.exe) UEFI configuration: {Level}
+Microsoft-Windows-Wininit  |  18          |  System   |
+Microsoft-Windows-Wininit  |  51          |           |
+Microsoft-Windows-Wininit  |  53          |           |
+Microsoft-Windows-Wininit  |  55          |           |
+Microsoft-Windows-Wininit  |  1073742825  |           |
+Microsoft-Windows-Wininit  |  3221226487  |           |
+Microsoft-Windows-Wininit  |  3221228474  |           |
+Microsoft-Windows-Wininit  |  2147486651  |           |
+Microsoft-Windows-Wininit  |  2147486652  |           |
+Microsoft-Windows-Wininit  |  3221228477  |           |
+Microsoft-Windows-Wininit  |  3221228478  |           |
+Microsoft-Windows-Wininit  |  6001        |           |
+Microsoft-Windows-Wininit  |  6002        |           |

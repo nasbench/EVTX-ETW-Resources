@@ -1,0 +1,160 @@
+Provider                                          |  Event ID  |  Channel  |  Message
+--------------------------------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-UserDataAccess-UserDataService  |  1         |           |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-UserDataAccess-UserDataService  |  2         |           |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-UserDataAccess-UserDataService  |  3         |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  101       |           |  Handle {handle} running down (path {path}) - client crash?
+Microsoft-Windows-UserDataAccess-UserDataService  |  102       |           |  Opened data session object {handle}
+Microsoft-Windows-UserDataAccess-UserDataService  |  103       |           |  Closing data session object {handle}
+Microsoft-Windows-UserDataAccess-UserDataService  |  104       |           |  CanAppAccessStore: pAppOwnershipId->productId = {AppOwnershipId}, pStoreAppOwnershipId->productId = {StoreAppOwnershipId}
+Microsoft-Windows-UserDataAccess-UserDataService  |  105       |           |  CanAppAccessStore: Can access store = {Prop_Boolean_1}
+Microsoft-Windows-UserDataAccess-UserDataService  |  106       |           |  Cannot convert blob to string for msg [{Prop_UInt_1}], prop [{Prop_UInt_2}]: size actual [{Prop_UInt_3}] vs. expected [{Prop_UInt_4}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  107       |           |  UDM Data migrated with status: [{P1_HResult}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  108       |           |  Call favorites data migrated with status: [{P1_HResult}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  201       |           |  Handle {handle} updated controls to max:{maxnotify}
+Microsoft-Windows-UserDataAccess-UserDataService  |  202       |           |  Handle {handle} requested {requested} messages, got {returned}, {remaining} remain (also said lost {missed})
+Microsoft-Windows-UserDataAccess-UserDataService  |  203       |           |  Handle {handle} has {readyCount} ready notifications, (lost {lost})
+Microsoft-Windows-UserDataAccess-UserDataService  |  204       |           |  Handle {handle}: new notification type [{type}], id [{id}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  205       |           |  Id [{id}], StartTime [{starttime}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  206       |           |  Handle {handle} requested {requested} messages, got {returned}, {remaining} remain (also said lost {missed})
+Microsoft-Windows-UserDataAccess-UserDataService  |  301       |           |  Caller {handle} asked to update missing object type:{type} id:{id}
+Microsoft-Windows-UserDataAccess-UserDataService  |  302       |           |  Caller {handle} asked to delete missing object type:{type} id:{id}
+Microsoft-Windows-UserDataAccess-UserDataService  |  303       |           |  Caller {handle} looked for properties on missing object type:{type} id:{id}
+Microsoft-Windows-UserDataAccess-UserDataService  |  304       |           |  Deleting ENUM object {handle} in rundown
+Microsoft-Windows-UserDataAccess-UserDataService  |  305       |           |  Deleting SESSION object {handle} in rundown
+Microsoft-Windows-UserDataAccess-UserDataService  |  308       |           |  Client privacy capability failed allowedCallers = [{Prop_UInt_1}],  m_clientAPISecurityFlags = [{Prop_UInt_2}],  m_clientAPISecurityFlagsForPrivacy = [{Prop_UInt_3}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  400       |           |  CalendarEventSink {handle}: Advise to Poom
+Microsoft-Windows-UserDataAccess-UserDataService  |  401       |           |  CalendarEventSink {handle}: Unadvise from Poom
+Microsoft-Windows-UserDataAccess-UserDataService  |  402       |           |  CalendarSearch: {Prop_UInt_1} items returned. index = {Prop_UInt_2}, future items = {Prop_UInt_3}, past items = {Prop_UInt_4}
+Microsoft-Windows-UserDataAccess-UserDataService  |  403       |           |  Remote id not found: store={Prop_ULong}, found={Prop_UInt}
+Microsoft-Windows-UserDataAccess-UserDataService  |  404       |           |  Appointment cache skipped because of missing prop: {Prop_ULong}
+Microsoft-Windows-UserDataAccess-UserDataService  |  405       |           |  CalendarSearch: {Prop_UInt_1} recurring appts found. future items = {Prop_UInt_2}, past items = {Prop_UInt_3}
+Microsoft-Windows-UserDataAccess-UserDataService  |  406       |           |  CalendarSearch: inserted item {Prop_UInt_1}, type {Prop_UInt_2}
+Microsoft-Windows-UserDataAccess-UserDataService  |  407       |           |  Appointment Cache notified: invalidate calendars [{Prop_Boolean_1}], invalidate cache [{Prop_Boolean_2}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  501       |           |  Modifying Feed of Type {Prop_UInt_1} for OLITEMID: {Prop_UInt_2} {Prop_UInt_3} {Prop_UInt_4}
+Microsoft-Windows-UserDataAccess-UserDataService  |  502       |           |  Invalid Timestamp for Feed Item: {remoteId}
+Microsoft-Windows-UserDataAccess-UserDataService  |  503       |           |  Feed for contact {remoteId} as a part of operation {operationId} did not provide enough items. {requestAmnt} were requested and {providedAmnt} were provided with {qualifyingAmnt} qualifying. Marking as failed.
+Microsoft-Windows-UserDataAccess-UserDataService  |  504       |           |  The following deep link is invalid: {deepLink}
+Microsoft-Windows-UserDataAccess-UserDataService  |  505       |           |  The following image url is too long: {deepLink}
+Microsoft-Windows-UserDataAccess-UserDataService  |  602       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  700       |           |  ChatStoreChangedEventSink {handle}: Advise to Messaging OM
+Microsoft-Windows-UserDataAccess-UserDataService  |  701       |           |  ChatStoreChangedEventSink {handle}: Unadvise from Messaging OM
+Microsoft-Windows-UserDataAccess-UserDataService  |  702       |           |  ChatStoreChanged event: event type [{EventType}], item type [{ItemType}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  705       |           |  Activation status change notification received for Capability Service. New status: {ActivationStatus}
+Microsoft-Windows-UserDataAccess-UserDataService  |  706       |           |  Unknown activation status for Capability Service: {ActivationStatus}
+Microsoft-Windows-UserDataAccess-UserDataService  |  707       |           |  Request Capabilities: {TelString}
+Microsoft-Windows-UserDataAccess-UserDataService  |  708       |           |  Capabilities retrieved:  {TelString}, capabilities are {RcsCapabilityBits}
+Microsoft-Windows-UserDataAccess-UserDataService  |  711       |           |  ComposingStatusChangedEventSink {handle}: Advise to RCS
+Microsoft-Windows-UserDataAccess-UserDataService  |  712       |           |  ComposingStatusChangedEventSink {handle}: Unadvise from RCS
+Microsoft-Windows-UserDataAccess-UserDataService  |  713       |           |  ComposingStatusChanged event: source [RCS], chat id [{RcsChatId}], is group [{isGroup}], teluri [{TelString}], is composing [{isComposing}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  714       |           |  RcsEndUserMessageEventSink {handle}: Advise to End User Messages
+Microsoft-Windows-UserDataAccess-UserDataService  |  715       |           |  RcsEndUserMessageEventSink {handle}: Unadvise from End User Messages
+Microsoft-Windows-UserDataAccess-UserDataService  |  716       |           |  ServiceStatusChangedEventSink {handle}: Advise to RCS
+Microsoft-Windows-UserDataAccess-UserDataService  |  717       |           |  ServiceStatusChangedEventSink {handle}: Unadvise from RCS
+Microsoft-Windows-UserDataAccess-UserDataService  |  718       |           |  ServiceStatusChanged event: service type [{serviceType}], is supported [{isSupported}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  719       |           |  Default messaging app fall back to: {AppPackageFamilyName}
+Microsoft-Windows-UserDataAccess-UserDataService  |  720       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  721       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  722       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  723       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  724       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  725       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  726       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  727       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  728       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  729       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  730       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  731       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  732       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  733       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  735       |           |  Conversation does not exist. ConversationId: [{Prop_ULong}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  736       |           |  One or more conversation properties were not found. ConversationId: [{Prop_ULong}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  737       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  738       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  739       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  740       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  741       |           |  ChatCapabilitiesContext::GetCachedChatCapabilities() - capabilities = {Prop_ULong}
+Microsoft-Windows-UserDataAccess-UserDataService  |  742       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  743       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  744       |           |  Conversation does not exist. Provider count: [{Prop_UInt_1}], First Provider id [{Prop_UInt_2}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  745       |           |  Got app manager instance. HResult: [{P1_HResult}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  746       |           |  Got default messaging application. HResult: [{P1_HResult}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  747       |           |  Got messaging app package family name. HResult: [{P1_HResult}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  748       |           |  Got transport IDs. HResult: [{P1_HResult}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  749       |           |  Got one default transport ID. HResult: [{P1_HResult}] TransportID: [{Prop_ULong}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  750       |           |  Got one default transport ID. HResult: [{P1_HResult}] TransportID: [{Prop_ULong}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  751       |           |  Flattened items to send. HResult: [{P1_HResult}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  752       |           |  ChatCapabilitiesContext::_FindCachedPhoneNumberCapabilities found = [{Prop_ULong}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  753       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  754       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  755       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  756       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  757       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  758       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  759       |           |  ChatAppManager::_SetDefaultMessagingAppInRegistry().
+Microsoft-Windows-UserDataAccess-UserDataService  |  760       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  800       |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1000      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1001      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1002      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1003      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1004      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1005      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1100      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1101      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1104      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1105      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1106      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1107      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1108      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1109      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1110      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1111      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1112      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1113      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1114      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1115      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1116      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1117      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1118      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1119      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1120      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1121      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1122      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1123      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1124      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1125      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1126      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1127      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1128      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1129      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1200      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1201      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1202      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1203      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1204      |           |  App: {AppName}, Action: {AccessedString}
+Microsoft-Windows-UserDataAccess-UserDataService  |  1205      |           |  App: {AppName}, Action: {AccessedString}
+Microsoft-Windows-UserDataAccess-UserDataService  |  1206      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1207      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1208      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1209      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1210      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1211      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1212      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1213      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1214      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1215      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1216      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1217      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1218      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1219      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1220      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  1221      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  2001      |           |  Cleaning up stale data. Priority cleanup? [{Prop_Boolean_1}] Pending Installs? [{Prop_Boolean_2}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  2002      |           |
+Microsoft-Windows-UserDataAccess-UserDataService  |  2003      |           |  Finished the knowledge defragmentation task. Examined {Prop_UInt_1} stores and {Prop_UInt_2} partners out of which defragmentation succeeded for {Prop_UInt_3}, partially succeeded for {Prop_UInt_4} and failed for {Prop_UInt_5}.
+Microsoft-Windows-UserDataAccess-UserDataService  |  2004      |           |  Starting the knowledge defragmentation task for all sync partners associated with store {Prop_Prop}
+Microsoft-Windows-UserDataAccess-UserDataService  |  2005      |           |  Finished the knowledge defragmentation task for all sync partners associated with store {Prop_UInt_1}. Examined {Prop_UInt_2} partners out of which defragmentation succeeded for {Prop_UInt_3}, partially succeeded for {Prop_UInt_4} and failed for {Prop_UInt_5}.
+Microsoft-Windows-UserDataAccess-UserDataService  |  2006      |           |  App Store Deleted: App Id [{AppId}], Reason [{AppDataCleanupReason}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  2007      |           |  App Store Grouping Deleted: App Id [{AppId}], Reason [{AppDataCleanupReason}]
+Microsoft-Windows-UserDataAccess-UserDataService  |  2008      |           |  HandlePackageUninstall called for PFN: {P1_UnicodeString}

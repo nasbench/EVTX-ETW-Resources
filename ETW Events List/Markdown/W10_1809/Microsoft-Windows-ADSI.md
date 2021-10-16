@@ -1,0 +1,10 @@
+Provider                |  Event ID  |  Channel                       |  Message
+------------------------|------------|--------------------------------|---------
+Microsoft-Windows-ADSI  |  1         |  Microsoft-Windows-ADSI/Debug  |
+Microsoft-Windows-ADSI  |  2         |  Microsoft-Windows-ADSI/Debug  |
+Microsoft-Windows-ADSI  |  3         |  Microsoft-Windows-ADSI/Debug  |
+Microsoft-Windows-ADSI  |  4         |  Microsoft-Windows-ADSI/Debug  |
+Microsoft-Windows-ADSI  |  5         |  Microsoft-Windows-ADSI/Debug  |
+Microsoft-Windows-ADSI  |  6         |  Microsoft-Windows-ADSI/Debug  |
+Microsoft-Windows-ADSI  |  7         |  Microsoft-Windows-ADSI/Debug  |
+Microsoft-Windows-ADSI  |  8         |  Microsoft-Windows-ADSI/Debug  |

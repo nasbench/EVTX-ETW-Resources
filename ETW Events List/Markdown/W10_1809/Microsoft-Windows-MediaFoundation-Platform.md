@@ -1,0 +1,48 @@
+Provider                                    |  Event ID  |  Channel                     |  Message
+--------------------------------------------|------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MediaFoundation-Platform  |  1         |  Media Foundation Platform   |  Attempt to use MFT clsid {clsid} marked as do not use.
+Microsoft-Windows-MediaFoundation-Platform  |  2         |  Media Foundation Platform   |  Attempt to use Media Source clsid {clsid} marked as do not use.
+Microsoft-Windows-MediaFoundation-Platform  |  3         |  Media Foundation Platform   |  Mark MFT clsid {clsid} do not use = {Disabled}.
+Microsoft-Windows-MediaFoundation-Platform  |  4         |  Media Foundation Platform   |  Mark Media Source clsid {clsid} do not use = {Disabled}.
+Microsoft-Windows-MediaFoundation-Platform  |  5         |  Media Foundation Platform   |  Choosing preferred MFT clsid {clsid} for subtype {Selector}.
+Microsoft-Windows-MediaFoundation-Platform  |  6         |  Media Foundation Platform   |  Registering preferred MFT clsid {clsid} for subtype {Selector}.
+Microsoft-Windows-MediaFoundation-Platform  |  7         |  Media Foundation Platform   |  Choosing preferred Media Source clsid {clsid} for {Selector}.
+Microsoft-Windows-MediaFoundation-Platform  |  8         |  Media Foundation Platform   |  Registering preferred Media Soure clsid {clsid} for {Selector}.
+Microsoft-Windows-MediaFoundation-Platform  |  9         |  Media Foundation Platform   |  Found preferred MFT clsid {clsid} for media subtype {Selector}.
+Microsoft-Windows-MediaFoundation-Platform  |  10        |  Media Foundation Platform   |  Did not find preferred MFT for media subtype {Selector}.
+Microsoft-Windows-MediaFoundation-Platform  |  11        |  Media Foundation Platform   |  Query MFT clsid {clsid} do not use: {Disabled}.
+Microsoft-Windows-MediaFoundation-Platform  |  12        |  Media Foundation Platform   |  Found preferred Media Source clsid {clsid} for {Selector}.
+Microsoft-Windows-MediaFoundation-Platform  |  13        |  Media Foundation Platform   |  Did not find preferred Media Source for {Selector}.
+Microsoft-Windows-MediaFoundation-Platform  |  14        |  Media Foundation Platform   |  Query Media Source clsid {clsid} do not use: {Disabled}.
+Microsoft-Windows-MediaFoundation-Platform  |  15        |  Media Foundation Platform   |  Registering local MFT({MFTName}).
+Microsoft-Windows-MediaFoundation-Platform  |  16        |  Media Foundation Platform   |  Unregistering local MFT({MFTName}).
+Microsoft-Windows-MediaFoundation-Platform  |  17        |  Media Foundation Platform   |  Enumerating local MFT({MFTName}).
+Microsoft-Windows-MediaFoundation-Platform  |  18        |  MediaFoundationDeviceProxy  |
+Microsoft-Windows-MediaFoundation-Platform  |  19        |  MediaFoundationDeviceProxy  |
+Microsoft-Windows-MediaFoundation-Platform  |  20        |  MediaFoundationDeviceProxy  |
+Microsoft-Windows-MediaFoundation-Platform  |  21        |  Media Foundation Platform   |  Configuration: dwType = {dwType} dwConfig={dwConfig}
+Microsoft-Windows-MediaFoundation-Platform  |  100       |  Media Foundation Platform   |  MFStartup returned {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  101       |  Media Foundation Platform   |  Start MFShutdown
+Microsoft-Windows-MediaFoundation-Platform  |  102       |  Media Foundation Platform   |  End MFShutdown - return code {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  200       |  Media Foundation Platform   |  Source Resolver Context({Context}) Resolve {url} flags {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  201       |  Media Foundation Platform   |  Source Resolver Context({Context}) Trying Scheme Handler {clsid}
+Microsoft-Windows-MediaFoundation-Platform  |  202       |  Media Foundation Platform   |  Source Resolver Context({Context}) Trying Byte Scheme Handler CLSID({clsid})
+Microsoft-Windows-MediaFoundation-Platform  |  203       |  Media Foundation Platform   |  Source Resolver Context({Context}) SchemeHandler Result {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  204       |  Media Foundation Platform   |  Source Resolver Context({Context}) Byte stream Handler Result {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  205       |  Media Foundation Platform   |  Source Resolver Context({Context}) Resolving {url} returned {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  206       |  Media Foundation Platform   |  TraceFailure logger ({Context}) line {Line} result {hr} function {function}
+Microsoft-Windows-MediaFoundation-Platform  |  207       |  Media Foundation Platform   |  ByteStreamOnInputStream_Read_Start stream ({stream}) ptr {offset} length {length}
+Microsoft-Windows-MediaFoundation-Platform  |  208       |  Media Foundation Platform   |  ByteStreamOnInputStream_Read_Stop stream ({stream}) ptr {length} length {buffer} hr {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  300       |  Media Foundation Platform   |  MFTEnumEx flags {flags}, category {Category} for input type ({inputType},{inputSubtype}), output type ({outputType},{outputSubtype})
+Microsoft-Windows-MediaFoundation-Platform  |  301       |  Media Foundation Platform   |  Found matching software MFT {clsid}
+Microsoft-Windows-MediaFoundation-Platform  |  302       |  Media Foundation Platform   |  Found Local MFT {string}
+Microsoft-Windows-MediaFoundation-Platform  |  303       |  Media Foundation Platform   |  Found Hardware MFT {string}
+Microsoft-Windows-MediaFoundation-Platform  |  304       |  Media Foundation Platform   |  MFTEnumEx returned code {hr}, found {localMFTs} local MFTs, {hardwareMFTs} hardware MFTs and {MFTs} MFT CLSIDs
+Microsoft-Windows-MediaFoundation-Platform  |  305       |  Media Foundation Platform   |  MFTEnum2 flags {flags}, category {Category} for input type ({inputType},{inputSubtype}), output type ({outputType},{outputSubtype}), LUID set: {luidSet}
+Microsoft-Windows-MediaFoundation-Platform  |  306       |  Media Foundation Platform   |  MFTEnum2 returned code {hr}, found {numMFTs} MFTs matching adapter with vendor ID {adapterVendorId}, device ID {adapterDeviceId}, SubSys ID {adapterSubSysId}, Revision {adapterRevision}
+Microsoft-Windows-MediaFoundation-Platform  |  2500      |  Media Foundation Platform   |  MFGetMFTMerit Enter
+Microsoft-Windows-MediaFoundation-Platform  |  2501      |  Media Foundation Platform   |  MFGetMFTMerit Leave Merit({Merit}) Return Code({hr})
+Microsoft-Windows-MediaFoundation-Platform  |  2502      |  Media Foundation Platform   |  MFGetMFTMerit:  StartInitialization returned {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  2503      |  Media Foundation Platform   |  MFGetMFTMerit:  Validate Certificate returned {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  2504      |  Media Foundation Platform   |  MFGetMFTMerit:  EndInitialization returned {hr}
+Microsoft-Windows-MediaFoundation-Platform  |  2505      |  Media Foundation Platform   |  MFGetMFTMerit:  GetInformation returned {hr}

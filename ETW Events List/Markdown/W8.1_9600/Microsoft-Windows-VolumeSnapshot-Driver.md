@@ -1,0 +1,36 @@
+Provider                                 |  Event ID  |  Channel                                              |  Message
+-----------------------------------------|------------|-------------------------------------------------------|---------
+Microsoft-Windows-VolumeSnapshot-Driver  |  0         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  1         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  2         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  3         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  4         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  5         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  6         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  7         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  8         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  9         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  10        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  11        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  12        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  13        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  14        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  15        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  16        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  17        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  18        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  19        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  20        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  21        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  22        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  23        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  24        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  25        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  26        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  27        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  28        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  29        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  30        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  31        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  32        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  33        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |

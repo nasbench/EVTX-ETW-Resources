@@ -1,0 +1,26 @@
+Provider                              |  Event ID  |  Channel  |  Message
+--------------------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WiFiHotspotService  |  1000      |           |
+Microsoft-Windows-WiFiHotspotService  |  1001      |           |
+Microsoft-Windows-WiFiHotspotService  |  1002      |           |
+Microsoft-Windows-WiFiHotspotService  |  1003      |           |  Service: Init: {uString} FAILed, Error={Dword}
+Microsoft-Windows-WiFiHotspotService  |  1004      |           |  Service: LaunchHostProcess - {uString} FAILed, Error={Dword}
+Microsoft-Windows-WiFiHotspotService  |  1005      |           |  Service: LaunchHostProcess SUCCEEDed - hProcess={Ptr1}, hThread={Ptr2}
+Microsoft-Windows-WiFiHotspotService  |  1006      |           |  Service: RpcClient: {uString} FAILed, Error={Dword}
+Microsoft-Windows-WiFiHotspotService  |  1007      |           |  Service: Notification Event - {uString}, Value={Dword}
+Microsoft-Windows-WiFiHotspotService  |  1008      |           |  Service: Notification Error - {uString} FAILed, Error={Dword}
+Microsoft-Windows-WiFiHotspotService  |  1009      |           |  Service: Plug-in Event - {uString}, Value={Dword}
+Microsoft-Windows-WiFiHotspotService  |  1010      |           |  Service: Plug-in Error - {uString} FAILed, Error={Dword}
+Microsoft-Windows-WiFiHotspotService  |  1011      |           |  Service: Connection Event - {uString}, Value={Dword}
+Microsoft-Windows-WiFiHotspotService  |  1012      |           |  Service: Connection Error - {uString} FAILed, Error={Dword}
+Microsoft-Windows-WiFiHotspotService  |  2000      |           |  Test: S1={uString1}, S2={uString2}, D1={Dword1}, D2={Dword2}, D3={Dword3}
+Microsoft-Windows-WiFiHotspotService  |  3000      |           |  Utils: Allocate Memory FAILed: Error={Dword1}, ByteCount={Dword2}
+Microsoft-Windows-WiFiHotspotService  |  3001      |           |  Utils: Allocated Memory: 0x{Ptr} ByteCount={Dword}
+Microsoft-Windows-WiFiHotspotService  |  3002      |           |  Utils: Freeing Memory: 0x{Ptr}
+Microsoft-Windows-WiFiHotspotService  |  3003      |           |  Utils: UuidVector: 0x{uString}, ByteCount={Dword}
+Microsoft-Windows-WiFiHotspotService  |  3004      |           |  Utils: {uString} FAILed, Error={Dword}
+Microsoft-Windows-WiFiHotspotService  |  4000      |           |  :: {aString}
+Microsoft-Windows-WiFiHotspotService  |  4001      |           |  ++ {uString}: [{Dword}]
+Microsoft-Windows-WiFiHotspotService  |  4002      |           |  -- {uString}: [{Dword}]
+Microsoft-Windows-WiFiHotspotService  |  4003      |           |      [{Dword1}]: SSID={Dword2}:{aString1}, Auth:Ciph={Dword3}:{Dword4}, Flags={Dword5}, CmName={uString1}
+Microsoft-Windows-WiFiHotspotService  |  4004      |           |  HotspotConnectionStateChanged: CmName={uString}, NewState={Dword}

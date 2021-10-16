@@ -1,0 +1,11 @@
+Provider                      |  Event ID  |  Channel                                |  Message
+------------------------------|------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Crypto-RNG  |  1         |  Microsoft-Windows-Crypto-RNG/Analytic  |  An entropy source was registered.	Source	{SourceNumber}	Name	{SourceName}	Type	{SourceType}
+Microsoft-Windows-Crypto-RNG  |  2         |  Microsoft-Windows-Crypto-RNG/Analytic  |  Entropy source {SourceNumber} ({SourceName}) was unregistered.
+Microsoft-Windows-Crypto-RNG  |  3         |  Microsoft-Windows-Crypto-RNG/Analytic  |  Entropy source {SourceNumber} provided {BytesProvided} bytes with {EntropyEstimate} millibits of entropyData	{Data}
+Microsoft-Windows-Crypto-RNG  |  4         |  Microsoft-Windows-Crypto-RNG/Analytic  |  Callback to source {SourceNumber} returned status {ResultStatus}, taking time {TimeTaken}
+Microsoft-Windows-Crypto-RNG  |  16        |  Microsoft-Windows-Crypto-RNG/Analytic  |  Boot entropy result:	Source	{Source}	Policy	{Policy}	Code	{ResultCode}	Status	{ResultStatus}	Time	{Time}	BytesProvided	{BytesProvided}	Bytes	{Data}
+Microsoft-Windows-Crypto-RNG  |  32        |  Microsoft-Windows-Crypto-RNG/Analytic  |  Pool reseed:	Count	{PoolReseedCount}	Type	{ReseedType}	Data	{Data}
+Microsoft-Windows-Crypto-RNG  |  33        |  Microsoft-Windows-Crypto-RNG/Analytic  |  Pool add:	Pool	{PoolNo}	Data	{Data}
+Microsoft-Windows-Crypto-RNG  |  48        |  Microsoft-Windows-Crypto-RNG/Analytic  |  Prng (re)seed:Addr	{PrngAddress}Data	{Data}
+Microsoft-Windows-Crypto-RNG  |  49        |  Microsoft-Windows-Crypto-RNG/Analytic  |  Prng output:	Addr	{PrngAddress}	Bytes	{BytesProduced}	Data	{Data}

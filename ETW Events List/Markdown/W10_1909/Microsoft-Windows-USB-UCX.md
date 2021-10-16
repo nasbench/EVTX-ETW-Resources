@@ -1,0 +1,81 @@
+Provider                   |  Event ID  |  Channel                                                                                       |  Message
+---------------------------|------------|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------
+Microsoft-Windows-USB-UCX  |  1         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |
+Microsoft-Windows-USB-UCX  |  2         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |
+Microsoft-Windows-USB-UCX  |  3         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Controller Information
+Microsoft-Windows-USB-UCX  |  4         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX RootHub Information
+Microsoft-Windows-USB-UCX  |  5         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Device Information
+Microsoft-Windows-USB-UCX  |  6         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Endpoint Information
+Microsoft-Windows-USB-UCX  |  7         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Static Stream Information
+Microsoft-Windows-USB-UCX  |  8         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Controller Create
+Microsoft-Windows-USB-UCX  |  9         |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Controller Delete
+Microsoft-Windows-USB-UCX  |  10        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX RootHub Create
+Microsoft-Windows-USB-UCX  |  11        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX RootHub Delete
+Microsoft-Windows-USB-UCX  |  12        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX RootHub Prepare Hardware
+Microsoft-Windows-USB-UCX  |  13        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX RootHub Release Hardware
+Microsoft-Windows-USB-UCX  |  14        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Device Create
+Microsoft-Windows-USB-UCX  |  15        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Device Delete
+Microsoft-Windows-USB-UCX  |  16        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Endpoint Create
+Microsoft-Windows-USB-UCX  |  17        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Endpoint Delete
+Microsoft-Windows-USB-UCX  |  18        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Static Stream Create
+Microsoft-Windows-USB-UCX  |  19        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX Static Stream Delete
+Microsoft-Windows-USB-UCX  |  20        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CONTROL_TRANSFER
+Microsoft-Windows-USB-UCX  |  21        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_CONTROL_TRANSFER
+Microsoft-Windows-USB-UCX  |  21        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_CONTROL_TRANSFER
+Microsoft-Windows-USB-UCX  |  22        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_CONTROL_TRANSFER with data
+Microsoft-Windows-USB-UCX  |  23        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CONTROL_TRANSFER_EX
+Microsoft-Windows-USB-UCX  |  24        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_CONTROL_TRANSFER_EX
+Microsoft-Windows-USB-UCX  |  24        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_CONTROL_TRANSFER_EX
+Microsoft-Windows-USB-UCX  |  25        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_CONTROL_TRANSFER_EX with data
+Microsoft-Windows-USB-UCX  |  26        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER
+Microsoft-Windows-USB-UCX  |  27        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER
+Microsoft-Windows-USB-UCX  |  27        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER
+Microsoft-Windows-USB-UCX  |  28        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with partial data
+Microsoft-Windows-USB-UCX  |  29        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with full data
+Microsoft-Windows-USB-UCX  |  30        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_ISOCH_TRANSFER
+Microsoft-Windows-USB-UCX  |  31        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_ISOCH_TRANSFER
+Microsoft-Windows-USB-UCX  |  32        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_ISOCH_TRANSFER with partial data
+Microsoft-Windows-USB-UCX  |  33        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_ISOCH_TRANSFER with full data
+Microsoft-Windows-USB-UCX  |  34        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE
+Microsoft-Windows-USB-UCX  |  35        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE
+Microsoft-Windows-USB-UCX  |  36        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT
+Microsoft-Windows-USB-UCX  |  37        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE
+Microsoft-Windows-USB-UCX  |  38        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE
+Microsoft-Windows-USB-UCX  |  39        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT
+Microsoft-Windows-USB-UCX  |  40        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SET_FEATURE_TO_DEVICE
+Microsoft-Windows-USB-UCX  |  41        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SET_FEATURE_TO_INTERFACE
+Microsoft-Windows-USB-UCX  |  42        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SET_FEATURE_TO_ENDPOINT
+Microsoft-Windows-USB-UCX  |  43        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SET_FEATURE_TO_OTHER
+Microsoft-Windows-USB-UCX  |  44        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE
+Microsoft-Windows-USB-UCX  |  45        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE
+Microsoft-Windows-USB-UCX  |  46        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT
+Microsoft-Windows-USB-UCX  |  47        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_OTHER
+Microsoft-Windows-USB-UCX  |  48        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_STATUS_FROM_DEVICE
+Microsoft-Windows-USB-UCX  |  49        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_STATUS_FROM_INTERFACE
+Microsoft-Windows-USB-UCX  |  50        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_STATUS_FROM_ENDPOINT
+Microsoft-Windows-USB-UCX  |  51        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_STATUS_FROM_OTHER
+Microsoft-Windows-USB-UCX  |  52        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CLASS_DEVICE
+Microsoft-Windows-USB-UCX  |  53        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CLASS_INTERFACE
+Microsoft-Windows-USB-UCX  |  54        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CLASS_ENDPOINT
+Microsoft-Windows-USB-UCX  |  55        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_CLASS_OTHER
+Microsoft-Windows-USB-UCX  |  56        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_VENDOR_DEVICE
+Microsoft-Windows-USB-UCX  |  57        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_VENDOR_INTERFACE
+Microsoft-Windows-USB-UCX  |  58        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_VENDOR_ENDPOINT
+Microsoft-Windows-USB-UCX  |  59        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_VENDOR_OTHER
+Microsoft-Windows-USB-UCX  |  60        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_CONFIGURATION
+Microsoft-Windows-USB-UCX  |  61        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_INTERFACE
+Microsoft-Windows-USB-UCX  |  62        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR
+Microsoft-Windows-USB-UCX  |  63        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Endpoint State Machine Transition
+Microsoft-Windows-USB-UCX  |  64        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Endpoint State Machine Event
+Microsoft-Windows-USB-UCX  |  65        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Rundown Endpoint State Machine Transition
+Microsoft-Windows-USB-UCX  |  66        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Rundown Endpoint State Machine Event
+Microsoft-Windows-USB-UCX  |  67        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Controller State Machine Transition
+Microsoft-Windows-USB-UCX  |  68        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Controller State Machine Event
+Microsoft-Windows-USB-UCX  |  69        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Rundown Controller State Machine Transition
+Microsoft-Windows-USB-UCX  |  70        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Rundown Controller State Machine Event
+Microsoft-Windows-USB-UCX  |  71        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  UCX RootHub Initiating Wake
+Microsoft-Windows-USB-UCX  |  72        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SECURE_BULK_OR_INTERRUPT_TRANSFER
+Microsoft-Windows-USB-UCX  |  73        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_SECURE_BULK_OR_INTERRUPT_TRANSFER
+Microsoft-Windows-USB-UCX  |  73        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_SECURE_BULK_OR_INTERRUPT_TRANSFER
+Microsoft-Windows-USB-UCX  |  74        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Dispatch URB_FUNCTION_SECURE_ISOCH_TRANSFER
+Microsoft-Windows-USB-UCX  |  75        |  This is the Analytic channel to which internal Analytic events from the UCX driver are sent.  |  Complete URB_FUNCTION_SECURE_ISOCH_TRANSFER

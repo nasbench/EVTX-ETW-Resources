@@ -1,0 +1,9 @@
+Provider                                  |  Event ID  |  Channel                                               |  Message
+------------------------------------------|------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-VerifyHardwareSecurity  |  3001      |  Microsoft-Windows-VerifyHardwareSecurity/Operational  |  Hardware Security Check: {CurrentCheckBit}
+Microsoft-Windows-VerifyHardwareSecurity  |  3002      |  Microsoft-Windows-VerifyHardwareSecurity/Admin        |  SecureBoot is currently disabled. Please enable SecureBoot through the system firmware.
+Microsoft-Windows-VerifyHardwareSecurity  |  3003      |  Microsoft-Windows-VerifyHardwareSecurity/Admin        |  Failed to check if secureboot is enabled. Status: {hr}
+Microsoft-Windows-VerifyHardwareSecurity  |  3004      |  Microsoft-Windows-VerifyHardwareSecurity/Admin        |  PreRelease/Test cert found in SecureBoot database. Please re-provision SecureBoot to not include {name} in variable {database} of EFI database. Certificate Thumbprint = {bytes}
+Microsoft-Windows-VerifyHardwareSecurity  |  3005      |  Microsoft-Windows-VerifyHardwareSecurity/Admin        |  Failed to check for PreRelease/Test certificates found in SecureBoot DB. Status: {hr}
+Microsoft-Windows-VerifyHardwareSecurity  |  3006      |  Microsoft-Windows-VerifyHardwareSecurity/Admin        |  A non-production SecureBoot Policy was detected. Remove Debug/PreRelease policy through the system firmware.
+Microsoft-Windows-VerifyHardwareSecurity  |  3007      |  Microsoft-Windows-VerifyHardwareSecurity/Admin        |  Failed to check for non-production SecureBoot Policy. Status: {hr}

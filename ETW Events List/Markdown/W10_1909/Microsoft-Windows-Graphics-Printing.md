@@ -1,0 +1,8 @@
+Provider                             |  Event ID  |  Channel  |  Message
+-------------------------------------|------------|-----------|---------
+Microsoft-Windows-Graphics-Printing  |  1         |           |
+Microsoft-Windows-Graphics-Printing  |  2         |           |
+Microsoft-Windows-Graphics-Printing  |  3         |           |
+Microsoft-Windows-Graphics-Printing  |  4         |           |
+Microsoft-Windows-Graphics-Printing  |  5         |           |
+Microsoft-Windows-Graphics-Printing  |  6         |           |

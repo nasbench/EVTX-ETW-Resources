@@ -1,0 +1,6 @@
+Provider                                 |  Event ID  |  Channel  |  Message
+-----------------------------------------|------------|-----------|---------
+Microsoft-Windows-ErrorReportingConsole  |  105       |           |
+Microsoft-Windows-ErrorReportingConsole  |  106       |           |
+Microsoft-Windows-ErrorReportingConsole  |  111       |           |
+Microsoft-Windows-ErrorReportingConsole  |  112       |           |

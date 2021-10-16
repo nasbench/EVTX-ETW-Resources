@@ -1,0 +1,379 @@
+Provider                                      |  Event ID  |  Channel  |  Message
+----------------------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-PushNotifications-Platform  |  1         |           |  The Windows Push Notification Platform has encountered an error in file: {FileName}, function {FunctionName}, line {LineNumber}: {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  2         |           |
+Microsoft-Windows-PushNotifications-Platform  |  3         |           |
+Microsoft-Windows-PushNotifications-Platform  |  4         |           |
+Microsoft-Windows-PushNotifications-Platform  |  5         |           |
+Microsoft-Windows-PushNotifications-Platform  |  6         |           |
+Microsoft-Windows-PushNotifications-Platform  |  7         |           |  The Windows Push Notification Platform has launched as {Type} with {Privilege} privilege.
+Microsoft-Windows-PushNotifications-Platform  |  8         |           |  The Windows Push Notification Platform is switching into new {NewPrivilege} privilege.
+Microsoft-Windows-PushNotifications-Platform  |  9         |           |  The Windows Push Notification Platform has switched with error code {Error}, and current privilege is {ResultedPrivilege}.
+Microsoft-Windows-PushNotifications-Platform  |  10        |           |
+Microsoft-Windows-PushNotifications-Platform  |  11        |           |
+Microsoft-Windows-PushNotifications-Platform  |  12        |           |  The Windows Push Notification Platform has determined new maximum number of applications {MaximumApplication} based on count of current applications {CountApplication}. Old maximum number of applications is {OldMaximumApplication}.
+Microsoft-Windows-PushNotifications-Platform  |  13        |           |  The Windows Push Notification Platform has expanded its persistent header storage to accommodate {NewMaximumApplication} Applications.
+Microsoft-Windows-PushNotifications-Platform  |  14        |           |
+Microsoft-Windows-PushNotifications-Platform  |  15        |           |  The Windows Push Notification Platform has started loading file data: count applications {CountApplication}, count allocated entries {CountAllocated}, max count {MaximumApplication}.
+Microsoft-Windows-PushNotifications-Platform  |  16        |           |
+Microsoft-Windows-PushNotifications-Platform  |  17        |           |
+Microsoft-Windows-PushNotifications-Platform  |  18        |           |
+Microsoft-Windows-PushNotifications-Platform  |  19        |           |  The Windows Push Notification Platform has encountered an error in file: {FileName}, function {FunctionName}, line {LineNumber}: {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  20        |           |  The Windows Push Notification Platform has encountered error {ErrorCode} opening file {FilePath}.
+Microsoft-Windows-PushNotifications-Platform  |  21        |           |  The Windows Push Notification Platform has started processing tile update settings for {CountInboxApps} inbox and {CountPreinstallApps} preinstall apps.
+Microsoft-Windows-PushNotifications-Platform  |  22        |           |
+Microsoft-Windows-PushNotifications-Platform  |  23        |           |  The Windows Push Notification Platform is setting URI {Uri} with recurrence {WpnRecurrence} for AppUserModelId {AppUserModelId}.
+Microsoft-Windows-PushNotifications-Platform  |  24        |           |
+Microsoft-Windows-PushNotifications-Platform  |  25        |           |
+Microsoft-Windows-PushNotifications-Platform  |  26        |           |  ThreadPool: [{Name}] ({InstanceId}) has been scheduled.
+Microsoft-Windows-PushNotifications-Platform  |  27        |           |  ThreadPool: [{Name}] ({InstanceId}) finished with error code [{ErrorCode}]
+Microsoft-Windows-PushNotifications-Platform  |  28        |           |  ResourceManager has recevied a message: code [{MessageCode}]
+Microsoft-Windows-PushNotifications-Platform  |  29        |           |
+Microsoft-Windows-PushNotifications-Platform  |  30        |           |
+Microsoft-Windows-PushNotifications-Platform  |  31        |           |  The Windows Push Notification Platform has {TotalSize} entries in the image cache.
+Microsoft-Windows-PushNotifications-Platform  |  32        |           |
+Microsoft-Windows-PushNotifications-Platform  |  33        |           |
+Microsoft-Windows-PushNotifications-Platform  |  34        |           |
+Microsoft-Windows-PushNotifications-Platform  |  35        |           |  WNS Platform finished TraceLogging registration with code {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  36        |           |  WNS Connection Provider finished TraceLogging registration with code {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  37        |           |  The Windows Push Notification Platform is required to connect on startup, ValidChannelsExist : {ChannelsExist}.
+Microsoft-Windows-PushNotifications-Platform  |  38        |           |  PDC intialization finished with ErrorCode: {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  39        |           |  PDC unintialization finished with ErrorCode: {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  40        |           |  PDC activation finished with ErrorCode: {ErrorCode}, PdcType: {PdcType}, PdcScenario: {PdcScenario}, ScenarioData: [{ScenarioData}].
+Microsoft-Windows-PushNotifications-Platform  |  41        |           |  PDC deactivation finished with ErrorCode: {ErrorCode}, PdcType: {PdcType}, PdcNetRef: {PdcNetRefCount}, PdcPlatRef: {PdcPlatRefCount}.
+Microsoft-Windows-PushNotifications-Platform  |  42        |           |  Cloud Notifications must be enabled in GP and MDM to receive push notifications. GroupPolicyValue: {GroupPolicyValue}, MDMPolicyValue: {MDMPolicyValue}.
+Microsoft-Windows-PushNotifications-Platform  |  1000      |           |  A Connection Provider is registered with Windows Push Notification Platform using the following parameters: {CLSID} [CLSID] {Enabled} [Enabled] {Flags} [CLSCTX Flags].
+Microsoft-Windows-PushNotifications-Platform  |  1001      |           |  The following Connection Provider is enabled with the parameters: {CLSID} [CLSID] {Flags} [CLSCTX Flags].
+Microsoft-Windows-PushNotifications-Platform  |  1002      |           |  The Connection Provider with CLSID {CLSID} was instantiated with the following flags {Flags} and finished with ErrorCode {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  1003      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1004      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1005      |           |  The Connection Provider status changed to {Status}.
+Microsoft-Windows-PushNotifications-Platform  |  1006      |           |  Sending a channel request to the Connection Provider with parameters: {PackageFullName} [PackageFullName] {Properties} [Properties] {Cookie} [Cookie] {TransactionId} [TransactionId].
+Microsoft-Windows-PushNotifications-Platform  |  1007      |           |  The Connection Provider completed the channel request for transaction id {TransactionId}. {ChannelId} [ChannelId] {ChannelUri} [ChannelUri] {Expiry} [Expiry].
+Microsoft-Windows-PushNotifications-Platform  |  1008      |           |  Sending a channel revoke request to the Connection Provider for channel id {ChannelId}.
+Microsoft-Windows-PushNotifications-Platform  |  1010      |           |  {NotificationType} received for ChannelId {ChannelId} and AppUserModelId {AppUserModelId} with TrackingId {TrackingId}, X-WNS-MSG-ID {MessageId}, timestamp {Timestamp} and expiration {Expiry} tag: {Tag}, group: {Group}, action: {NotificationType}0, bundle: count={NotificationType}1;missed={NotificationType}2;Id={NotificationType}3.
+Microsoft-Windows-PushNotifications-Platform  |  1011      |           |  Sending a request to the Connection Provider to renew a channel with parameters: {ChannelId} [ChannelId] {PackageFullName} [PackageFullName] {Properties} [Properties] {Cookie} [Cookie] {TransactionId} [TransactionId].
+Microsoft-Windows-PushNotifications-Platform  |  1012      |           |  Setting batching configuration to the following state: {BatchingState}.
+Microsoft-Windows-PushNotifications-Platform  |  1013      |           |  Configuring notification delivery for AppUserModelId {AppUserModelId} with channel id {ChannelId}.  {NotificationType} [NotificationType] {Enabled} [Enabled].
+Microsoft-Windows-PushNotifications-Platform  |  1014      |           |  The Resource Manager was notified that display state changed to {DisplayStatus}.
+Microsoft-Windows-PushNotifications-Platform  |  1015      |           |  Configuring notification policy for {NotificationType} [NotificationType] {Enabled} [Enabled].
+Microsoft-Windows-PushNotifications-Platform  |  1016      |           |  The Resource Manager was notified of an update to the network cost. {NetworkCost} [Cost] {Costly} [Costly].
+Microsoft-Windows-PushNotifications-Platform  |  1017      |           |  The Resource Manager was notified of an update to the data plan. {DateSource} [Source] {BillingCycle} [BillingCycle].
+Microsoft-Windows-PushNotifications-Platform  |  1018      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1019      |           |  The Resource Manager was notified that user session state changed to {Status}.
+Microsoft-Windows-PushNotifications-Platform  |  1021      |           |  The Connection Manager has failed to connect: {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  1022      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1023      |           |  No internet connection available, {WorkItemName} is queued for next network status change.
+Microsoft-Windows-PushNotifications-Platform  |  1024      |           |  Internet connection status changed to {IsConnected}, submitting pending workitems: count = {PendingCount}.
+Microsoft-Windows-PushNotifications-Platform  |  1025      |           |  A Power event was fired: {PowerEventType} [PowerEventType] {IsEnabled} [Enabled].
+Microsoft-Windows-PushNotifications-Platform  |  1100      |           |  Connecting to the Windows Push Notification Service. {UserId} [UserId] {UserType} [UserType] {FeatureSet} [FeatureSet] {AuthType} [AuthType] {AuthPayload} [AuthPayload] {BindPayload} [BindPayload].
+Microsoft-Windows-PushNotifications-Platform  |  1101      |           |  Windows Push Notification Service connection result: {Error}.
+Microsoft-Windows-PushNotifications-Platform  |  1102      |           |  Sending Channel WNP Protocol command: {TransactionId} [TransactionId] {ChannelId} [ChannelId] {PackageFullName} [PackageFullName] {Properties} [Properties] {Command} [Command] {Namespace} [Namespace] {ContextId} [ContextId] {TransactionId}0 [Payload] {TransactionId}1 [UserId].
+Microsoft-Windows-PushNotifications-Platform  |  1103      |           |  Channel WNP Protocol command tracking information: {TransactionId} [TransactionId] {TrID} [TrID].
+Microsoft-Windows-PushNotifications-Platform  |  1104      |           |  Sending Revoke WNP Protocol command: {ChannelId} [ChannelId] {Command} [Command] {Namespace} [Namespace] {ContextId} [ContextId] {Payload} [Payload] {UserId} [UserId].
+Microsoft-Windows-PushNotifications-Platform  |  1105      |           |  Sending Block/Unblock WNP Protocol command: {ChannelId} [ChannelId] {NotificationType} [NotificationType] {Enabled} [Enabled] {Command} [Command] {Namespace} [Namespace] {ContextId} [ContextId] {Payload} [Payload] {ChannelId}0 [UserId].
+Microsoft-Windows-PushNotifications-Platform  |  1106      |           |  Sending Options WNP Protocol command: {BatchingState} [State] {Command} [Command] {Namespace} [Namespace] {ContextId} [ContextId] {Payload} [Payload].
+Microsoft-Windows-PushNotifications-Platform  |  1107      |           |  WNP Protocol command response: {TrID} [TrID] {Error} [Error] {ContextId} [ContextId] {UserId} [UserId].
+Microsoft-Windows-PushNotifications-Platform  |  1108      |           |  WNP Protocol delivered notification: {Namespace} [Namespace] {UserId} [UserId] {PayloadSize} [PayloadSize] {MsgId} [MsgId] {Ack} [Ack].
+Microsoft-Windows-PushNotifications-Platform  |  1109      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1110      |           |  Windows Push Notification Service disconnection result: {Error}.
+Microsoft-Windows-PushNotifications-Platform  |  1112      |           |  Requesting Device Compact Ticket for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1113      |           |  Device Compact Ticket request completed with Device Id {DeviceId} for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1114      |           |  Sending Filter/Unfilter WNP Protocol command: {NotificationType} [NotificationType] {Enabled} [Enabled] {Command} [Command] {Namespace} [Namespace] {ContextId} [ContextId] {Payload} [Payload] {UserId} [UserId].
+Microsoft-Windows-PushNotifications-Platform  |  1115      |           |  Sending Ack WNP Protocol command: {MsgId} [MsgId] {Command} [Command] {Namespace} [Namespace] {Payload} [Payload].
+Microsoft-Windows-PushNotifications-Platform  |  1116      |           |  Device Compact Ticket request failed with error {Error} for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1117      |           |  Windows Push Notification Service was disconnected due to error: {Error} and will now enter reconnect mode.
+Microsoft-Windows-PushNotifications-Platform  |  1118      |           |  Sending Challenge Response WNP Protocol command: {Nonce} [Nonce] {Response} [Response] {Command} [Command] {Namespace} [Namespace] {ContextId} [ContextId] {Payload} [Payload].
+Microsoft-Windows-PushNotifications-Platform  |  1201      |           |  WNP Transport Layer Connect call initiated for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1202      |           |  WNP Transport Layer Connect call completed for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1203      |           |  WNP Transport Layer SendCommand call initiated for TrID {CommandTrid} on the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1204      |           |  WNP Transport Layer SendCommand call completed for TrID {CommandTrid} on the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1205      |           |  WNP Transport Layer Disconnect call initiated for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1206      |           |  WNP Transport Layer Disconnect call completed for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1207      |           |  WNP Transport Layer resolving DNS initiated for host {HostName} for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1208      |           |  WNP Transport Layer resolving DNS completed for the {ConnectionType} with code {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  1211      |           |  WNP Transport Layer initial server connection initiated to server {HostName} on port {Port} for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1212      |           |  WNP Transport Layer initial server connection completed to server {HostName} on port {Port} for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1213      |           |  WNP Transport Layer proxy connection initiated for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1214      |           |  WNP Transport Layer proxy connection completed to server {HostName} for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1215      |           |  WNP Transport Layer proxy negotiation initiated for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1216      |           |  WNP Transport Layer proxy negotiation completed for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1217      |           |  WNP Transport Layer TLS negotiation initiated for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1218      |           |  WNP Transport Layer TLS negotiation completed for the {ConnectionType} with code {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  1219      |           |  WNP Transport Layer sent {Bytes} bytes on the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1220      |           |  WNP Transport Layer received {Bytes} bytes on the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1223      |           |  WNP Transport Layer sent command: {Verb}, Trid: {TrID}, Namespace: {Namespace}, CV: {CorrelationVector} containing {Bytes} bytes of payload: {Payload}. IsLongRunning: {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1224      |           |  WNP Transport Layer received {Bytes} bytes of payload: {Payload}.
+Microsoft-Windows-PushNotifications-Platform  |  1225      |           |  WNP Transport Layer received command: {Verb}, Trid: {TrID}, Namespace: {Namespace}, CV: {CorrelationVector} containing {Bytes} bytes of payload: {Payload}. IsLongRunning: {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1226      |           |  WNP Transport Layer received proxy server response for the {ConnectionType} of {Bytes} bytes with payload: {Payload}.
+Microsoft-Windows-PushNotifications-Platform  |  1227      |           |  WNP Transport Layer received command when disconnected with Verb: {Verb}, Trid: {TrID}, Namespace: {Namespace}, CV: {CorrelationVector} containing {Bytes} bytes of payload: {Payload}. IsLongRunning: {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1228      |           |  WNP Keep Alive Detector received OnConnected event from the test connection with Error: {ErrorCode}
+Microsoft-Windows-PushNotifications-Platform  |  1229      |           |  WNP Keep Alive Detector received OnReconnecting event from the test connection with Error: {ErrorCode}
+Microsoft-Windows-PushNotifications-Platform  |  1230      |           |  WNP Keep Alive Detector received OnDisconnected event from the test connection with Error: {ErrorCode}
+Microsoft-Windows-PushNotifications-Platform  |  1231      |           |  WNP Keep Alive Detector received KA hint from server: {ServerKaHint} seconds
+Microsoft-Windows-PushNotifications-Platform  |  1232      |           |  WNP Keep Alive Detector updating cached Ka time with value: {KaValue} seconds; type: {KaValueType}
+Microsoft-Windows-PushNotifications-Platform  |  1233      |           |  Fast reconnect triggered for previous WNS session ({SessionId}) on the {ConnectionType}.  It has been {SecondsSinceLastSentPacket} seconds since last packet.
+Microsoft-Windows-PushNotifications-Platform  |  1234      |           |  {ConnectionType} TCP connection established over {ProtocolType}.
+Microsoft-Windows-PushNotifications-Platform  |  1235      |           |  WNP Keep Alive Detector resetting Idle Failed Interval. Last Idle-Succeeded interval {IdleSucceededInterval} seconds is larger than Idle-Failed interval {IdleFailedInterval} seconds
+Microsoft-Windows-PushNotifications-Platform  |  1236      |           |  WNP Keep Alive Detector incrementing Idle-Succeeded count to {IdleSucceededCount}
+Microsoft-Windows-PushNotifications-Platform  |  1237      |           |  WNP Keep Alive Detector encountered failed idle interval of {IdleFailedInterval} seconds
+Microsoft-Windows-PushNotifications-Platform  |  1238      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1239      |           |  WNP Keep Alive Detector starting KA measurement with value: {KaValue} seconds; type: {KaValueType}; Min Limit: {KaMinLimit} seconds
+Microsoft-Windows-PushNotifications-Platform  |  1240      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1241      |           |  WNP Keep Alive Detector lost network over {ProtocolType}.
+Microsoft-Windows-PushNotifications-Platform  |  1242      |           |  WNP Transport Layer received Power Management event with type {PowerManagementType} on the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1243      |           |  WNP Transport Layer received Power Management event with type {PowerManagementType} on the {ConnectionType}.  Message is ignored
+Microsoft-Windows-PushNotifications-Platform  |  1244      |           |  Connection to the Windows Push Notification Service ({HostName}:{Port}) failed because proxy host detected ({ProxyHostName}) could not be used to establish the connection.  Please check the proxy configuration on the client as well as verify that the proxy host detected is operating correctly.
+Microsoft-Windows-PushNotifications-Platform  |  1245      |           |  Connection to the Windows Push Notification Service ({HostName}:{Port}) failed because the proxy host detected ({ProxyHostName}) explicitly requires user authentication.  Only proxies configured with NTLM authentication are supported.
+Microsoft-Windows-PushNotifications-Platform  |  1246      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1247      |           |  Connection to the Windows Push Notification Service failed because of a failure to configure the connection to run properly in low-power states.  Please ensure all network drivers are up to date.
+Microsoft-Windows-PushNotifications-Platform  |  1248      |           |  Connection to the Windows Push Notification Service ({HostName}:{Port}) failed because the proxy host detected ({ProxyHostName}) could not be connected to. The HTTP request failed with HTTP Status: {HttpStatus}.
+Microsoft-Windows-PushNotifications-Platform  |  1249      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1250      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1251      |           |  The test connection disconnect failed synchronously due to error: {Error}
+Microsoft-Windows-PushNotifications-Platform  |  1252      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1253      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1254      |           |  WNP Transport Layer for {ConnectionType} detected preferred interface change. Old index {OldIndex}, old address family {OldAddressFamily}. New index {NewIndex}, new address family {NewAddressFamily}, NDIS_PHYSICAL_MEDIUM {NewPhysicalMediumType}.
+Microsoft-Windows-PushNotifications-Platform  |  1255      |           |  WNP Transport Layer for {ConnectionType} reacting to preferred interface change, disconnect and immediately reconnect.
+Microsoft-Windows-PushNotifications-Platform  |  1256      |           |  WNP Transport Layer for {ConnectionType} reacting to preferred interface change, immediately reconnect.
+Microsoft-Windows-PushNotifications-Platform  |  1257      |           |  WNP Transport Layer for {ConnectionType} called InitializeSecurityContext and got return code {Error}.
+Microsoft-Windows-PushNotifications-Platform  |  1258      |           |  WNP Transport Layer for {ConnectionType} received asynchronous connection error {SocketError}.
+Microsoft-Windows-PushNotifications-Platform  |  1259      |           |  WNP Transport Layer for the Data Connection sending out of band keep alive (PNG) request.
+Microsoft-Windows-PushNotifications-Platform  |  1260      |           |  WNP Transport Layer for the Data Connection received cellular state change WNF event.
+Microsoft-Windows-PushNotifications-Platform  |  1261      |           |  Adding new user to the Windows Push Notification Service. {DeviceId} [DeviceId] {UserId} [UserId] {UserType} [UserType].
+Microsoft-Windows-PushNotifications-Platform  |  1262      |           |  Removing existing user from the Windows Push Notification Service. {DeviceId} [DeviceId] {UserId} [UserId] {UserType} [UserType].
+Microsoft-Windows-PushNotifications-Platform  |  1263      |           |  Replacing existing user from the Windows Push Notification Service. {DeviceId} [DeviceId] {OldUserId} [OldUserId] {OldUserType} [OldUserType] {NewUserId} [NewUserId] {NewUserType} [NewUserType].
+Microsoft-Windows-PushNotifications-Platform  |  1264      |           |  Adding new user to the Windows Push Notification Service completed. {DeviceId} [DeviceId] {UserId} [UserId] {Error} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  1265      |           |  Removing existing user from the Windows Push Notification Service completed. {DeviceId} [DeviceId] {UserId} [UserId] {Error} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  1266      |           |  Replacing existing user from the Windows Push Notification Service completed. {DeviceId} [DeviceId] {OldUserId} [OldUserId] {NewUserId} [NewUserId] {Error} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  1267      |           |  WNP Transport Layer sent command: {Verb}, Trid: {TrID}, Namespace: {Namespace}, CV: {CorrelationVector} containing {Bytes} bytes of payload only. However, full payload including header is: {Payload}. IsLongRunning: {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1268      |           |  WNP Transport Layer received command: {Verb}, Trid: {TrID}, Namespace: {Namespace}, CV: {CorrelationVector} containing {Bytes} bytes of payload only. However, full payload including header is: {Payload}. IsLongRunning: {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1300      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1301      |           |
+Microsoft-Windows-PushNotifications-Platform  |  1302      |           |  PDC Intialization finished with error code [{ErrorCode}] and Initialization Count is [{InitCount}].
+Microsoft-Windows-PushNotifications-Platform  |  1303      |           |  PDC Unintialization finished with error code [{ErrorCode}] and Initialization Count is [{InitCount}].
+Microsoft-Windows-PushNotifications-Platform  |  1304      |           |  PDC Activation finished with error code [{ErrorCode}], Initialization Count is [{InitCount}], and Reason is [{PdcReason}] for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1305      |           |  PDC Deactivation finished with error code [{ErrorCode}], Initialization Count is [{InitCount}], and Reason is [{PdcReason}] for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1306      |           |  WNP protocol state for Device Id {DeviceId} is State {State} for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1307      |           |  WNP Connector state for Connector Id {ConnectorId} is State {State} for the {ConnectionType}.
+Microsoft-Windows-PushNotifications-Platform  |  1308      |           |  WNP Transport Layer for Connector Id {ConnectorId} requested NCSI probe for the {ConnectionType} and got error code {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  1309      |           |  WNP Transport Layer for Auth Manager requested NCSI probe for the {ConnectionType} and got error code {ErrorCode}.
+Microsoft-Windows-PushNotifications-Platform  |  1310      |           |  WNP Transport Layer for {ConnectionType} detected first fallback interface change. Old index {OldIndex}, old address family {OldAddressFamily}. New index {NewIndex}, new address family {NewAddressFamily}, NDIS_PHYSICAL_MEDIUM {NewPhysicalMediumType}.
+Microsoft-Windows-PushNotifications-Platform  |  1311      |           |  WNP Transport Layer for {ConnectionType} detected second fallback interface change. Old index {OldIndex}, old address family {OldAddressFamily}. New index {NewIndex}, new address family {NewAddressFamily}, NDIS_PHYSICAL_MEDIUM {NewPhysicalMediumType}.
+Microsoft-Windows-PushNotifications-Platform  |  1312      |           |  WNP Transport Layer detected low WIFI signal quality level (value = {TriggerValue}); and hence sending out of band keep alive (PNG) request.
+Microsoft-Windows-PushNotifications-Platform  |  1313      |           |  WNP Transport Layer detected a significant drop in WIFI signal quality (delta = {TriggerValue}); and hence sending out of band keep alive (PNG) request.
+Microsoft-Windows-PushNotifications-Platform  |  1314      |           |  WNP Transport Layer detected a change in WIFI interface availability (event {TriggerValue}); and hence sending out of band keep alive (PNG) request.
+Microsoft-Windows-PushNotifications-Platform  |  1315      |           |  WNP Transport Layer detected a change in WIFI interface connectivity status (event {TriggerValue}); and hence sending out of band keep alive (PNG) request.
+Microsoft-Windows-PushNotifications-Platform  |  2000      |           |  The Windows Push Notification Platform has received a channel request with the following parameters: {PackageFullName} [PackageFullName] {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2001      |           |  The channel table has added a valid channel mapping: {ChannelId} [ChannelId] {AppUserModelId} [AppUserModelId] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2002      |           |  The channel table has removed a channel mapping: {ChannelId} [ChannelId] {AppUserModelId} [AppUserModelId] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2003      |           |  The channel table has updated a channel mapping: {ChannelId} [ChannelId] {AppUserModelId} [AppUserModelId] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2004      |           |  The channel table has returned a cached channel mapping: {ChannelId} [ChannelId] {AppUserModelId} [AppUserModelId] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2005      |           |  A cloud notification callback was added: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2006      |           |  A cloud notification callback was removed: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2007      |           |  A cloud notification could not be delivered to a callback due to an error: {AppUserModelId} [AppUserModelId] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2008      |           |  A cloud notification was delivered to a callback: {AppUserModelId} [AppUserModelId] {NotificationType} [NotificationType] {TrackingId} [NotificationTrackingId].
+Microsoft-Windows-PushNotifications-Platform  |  2009      |           |  A local notification was received through an application endpoint: {AppUserModelId} [AppUserModelId] {NotificationType} [NotificationType] {TrackingId} [NotificationTrackingId] {NotificationSource} [NotificationSource].
+Microsoft-Windows-PushNotifications-Platform  |  2010      |           |  A clear tile message was received from an application endpoint: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2011      |           |  A clear badge message was received from an application endpoint: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2012      |           |  A cancel toast message was received from an application endpoint: {AppUserModelId} [AppUserModelId] {TrackingId} [NotificationTrackingId].
+Microsoft-Windows-PushNotifications-Platform  |  2013      |           |  A clear toast message was received from an application endpoint: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2014      |           |  A remove toast message was received from an application endpoint: {AppUserModelId} [AppUserModelId] for {Tag} [Tag] and {Group} [Group].
+Microsoft-Windows-PushNotifications-Platform  |  2015      |           |  A channel request failed due to an error: {AppUserModelId} [AppUserModelId] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2016      |           |  A clear mixview message was received from an application endpoint: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2025      |           |  A toast feedback callback was added: {TrackingId} [NotificationTrackingId].
+Microsoft-Windows-PushNotifications-Platform  |  2026      |           |  A toast feedback callback was removed: {TrackingId} [NotificationTrackingId].
+Microsoft-Windows-PushNotifications-Platform  |  2027      |           |  A toast feedback callback was invoked: {TrackingId} [NotificationTrackingId].
+Microsoft-Windows-PushNotifications-Platform  |  2028      |           |  A scheduled toast was added: {PackageFullName} [PackageFullName] {AppUserModelID} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2029      |           |  A scheduled toast was removed: {PackageFullName} [PackageFullName] {AppUserModelID} [AppUserModelID].
+Microsoft-Windows-PushNotifications-Platform  |  2030      |           |  A scheduled toast is about to be raised: {AppUserModelID} [AppUserModelID] {TimerId} [TimerId] {Duetime} [Duetime].
+Microsoft-Windows-PushNotifications-Platform  |  2031      |           |  A background task to application mapping has been added: {AppUserModelID} [AppUserModelID]  {EventId} [EventId].
+Microsoft-Windows-PushNotifications-Platform  |  2032      |           |  A background task to application mapping has been removed: {AppUserModelID} [AppUserModelID]  {EventId} [EventId].
+Microsoft-Windows-PushNotifications-Platform  |  2033      |           |  A raw notification has activated a background task: {AppUserModelID} [AppUserModelID] {EventId} [EventId] {Notification Id} [NotificationID].
+Microsoft-Windows-PushNotifications-Platform  |  2034      |           |  A raw notification has activated a system task: {AppUserModelID} [AppUserModelID].
+Microsoft-Windows-PushNotifications-Platform  |  2035      |           |  A scheduled tile was added: {PackageFullName} [PackageFullName] {AppUserModelID} [AppUserModelId] {TimerId} [Cookie].
+Microsoft-Windows-PushNotifications-Platform  |  2036      |           |  A scheduled tile was removed: {PackageFullName} [PackageFullName] {AppUserModelID} [AppUserModelId] {TimerId} [Cookie].
+Microsoft-Windows-PushNotifications-Platform  |  2037      |           |  A scheduled tile is being raised: {AppUserModelID} [AppUserModelId] {TimerId} [Cookie].
+Microsoft-Windows-PushNotifications-Platform  |  2038      |           |  A scheduled tile was removed because the number of scheduled tiles per app exceeded maximum queue size: {AppUserModelID} [AppUserModelId] {TimerId} [Cookie].
+Microsoft-Windows-PushNotifications-Platform  |  2039      |           |  A periodic update has been set: {PackageFullName} [PackageFullName] {AppUserModelID} [AppUserModelId] {NotificationType} [Type].
+Microsoft-Windows-PushNotifications-Platform  |  2040      |           |  A periodic update has been reset: {PackageFullName} [PackageFullName] {AppUserModelID} [AppUserModelId] {NotificationType} [Type].
+Microsoft-Windows-PushNotifications-Platform  |  2041      |           |  A periodic update has started polling URL: {AppUserModelID} [AppUserModelId] {NotificationType} [Type].
+Microsoft-Windows-PushNotifications-Platform  |  2042      |           |  A periodic update has finished polling URL: {AppUserModelID} [AppUserModelId] {NotificationType} [Type].
+Microsoft-Windows-PushNotifications-Platform  |  2043      |           |  A periodic update has rejected polling URL because size of notification exceeded maximum: {AppUserModelID} [AppUserModelId] {NotificationType} [Type] {URL} [URL].
+Microsoft-Windows-PushNotifications-Platform  |  2044      |           |  A periodic update has rejected polling URL due to mobile broadband connection such as roaming or reaching quota : {AppUserModelID} [AppUserModelId] {NotificationType} [Type].
+Microsoft-Windows-PushNotifications-Platform  |  2045      |           |  A periodic update has failed polling URL. Please refer error description for detail: {AppUserModelID} [AppUserModelId] {NotificationType} [Type] {URL} [URL] {Error} [Error].
+Microsoft-Windows-PushNotifications-Platform  |  2046      |           |  A background task application mapping entry has been removed: {AppUserModelID} [AppUserModelID].
+Microsoft-Windows-PushNotifications-Platform  |  2047      |           |  Notification API call for {AppUserModelId} [AppUserModelId] failed. If you are logged into multiple sessions as the same user, please logoff and use a single user session.  If you are using the Visual Studio debugging simulator, exit the simulator to resolve this error.
+Microsoft-Windows-PushNotifications-Platform  |  2048      |           |  A raw notification has failed to activate a background task: {AppUserModelID} [AppUserModelID] {EventId} [EventId] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2049      |           |  A periodic update has found HTTP Status Code rather than 200: {AppUserModelID} [AppUserModelId] {NotificationType} [Type] {URL} [URL] {HttpStatusCode} [HTTP Status Code].
+Microsoft-Windows-PushNotifications-Platform  |  2050      |           |  A periodic update has failed polling URL because X-WNS-TAG header is invalid: {AppUserModelID} [AppUserModelId] {NotificationType} [Type] {URL} [URL].
+Microsoft-Windows-PushNotifications-Platform  |  2051      |           |  A periodic update has failed polling URL because X-WNS-EXPIRY header is invalid: {AppUserModelID} [AppUserModelId] {NotificationType} [Type] {URL} [URL].
+Microsoft-Windows-PushNotifications-Platform  |  2052      |           |  A periodic update of Type {NotificationType} for AppUserModelId {AppUserModelID}  at URL {URL} has been skipped due to settings.  Error Code: {Error}
+Microsoft-Windows-PushNotifications-Platform  |  2053      |           |  A periodic update has failed polling URL because X-WNS-GROUP header is invalid: {AppUserModelID} [AppUserModelId] {NotificationType} [Type] {URL} [URL].
+Microsoft-Windows-PushNotifications-Platform  |  2100      |           |  A cloud notification was dropped because the following channel is not valid: {ChannelId} [ChannelId].
+Microsoft-Windows-PushNotifications-Platform  |  2101      |           |  A notification was dropped because the expiration time was in the past: {TrackingId} [NotificationTrackingId].
+Microsoft-Windows-PushNotifications-Platform  |  2102      |           |  A notification was dropped because of global settings: {RequestFlags} [PolicyLevel] {TrackingId} [NotificationTrackingId] {NotificationType} [NotificationType].
+Microsoft-Windows-PushNotifications-Platform  |  2103      |           |  A notification was dropped because cloud notifications are disabled globally: {RequestFlags} [PolicyLevel]  {TrackingId} [NotificationTrackingId].
+Microsoft-Windows-PushNotifications-Platform  |  2104      |           |  A notification was dropped because of application settings: {AppUserModelId} [AppUserModelId] {TrackingId} [NotificationTrackingId] {NotificationType} [NotificationType].
+Microsoft-Windows-PushNotifications-Platform  |  2105      |           |  A notification was dropped because the application does not have the network capability: {AppUserModelId} [AppUserModelId] {TrackingId} [NotificationTrackingId].
+Microsoft-Windows-PushNotifications-Platform  |  2106      |           |  A notification was dropped because the application does not have the capability for the type: {AppUserModelId} [AppUserModelId] {TrackingId} [NotificationTrackingId] {NotificationType} [NotificationType].
+Microsoft-Windows-PushNotifications-Platform  |  2107      |           |  A notification was dropped because the current network is costly: {AppUserModelId} [AppUserModelId] {TrackingId} [NotificationTrackingId] {NotificationType} [NotificationType].
+Microsoft-Windows-PushNotifications-Platform  |  2108      |           |  A notification was dropped because the mobile broadband cap has been reached: {AppUserModelId} [AppUserModelId] {TrackingId} [NotificationTrackingId] {NotificationType} [NotificationType].
+Microsoft-Windows-PushNotifications-Platform  |  2109      |           |  Network traffic related to notifications was attributed to the following AppUserModelId: {AppUserModelId}. {NotificationType} [NotificationType] {Size} [Size] {NetworkType} [NetworkType].
+Microsoft-Windows-PushNotifications-Platform  |  2110      |           |  A notification was dropped because cloud notifications are disabled for the application: {AppUserModelId} [AppUserModelId] {TrackingId} [NotificationTrackingId] {NotificationType} [NotificationType].
+Microsoft-Windows-PushNotifications-Platform  |  2111      |           |  A notification was dropped because the application is not registered: {AppUserModelId} [AppUserModelId] {NotificationType} [NotificationType]
+Microsoft-Windows-PushNotifications-Platform  |  2112      |           |  A {NotificationType} notification with trackingid {TrackingId} is getting posted for the application {AppUserModelId} with setting override.
+Microsoft-Windows-PushNotifications-Platform  |  2150      |           |  An application setting was changed: {AppUserModelId} [AppUserModelId] {SettingType} [SettingType] {Enabled} [Enabled].
+Microsoft-Windows-PushNotifications-Platform  |  2151      |           |  A group policy setting was changed. Notification Service connection was updated: {Enabled} [Enabled].
+Microsoft-Windows-PushNotifications-Platform  |  2152      |           |  An application setting was queried: {AppUserModelId} [AppUserModelId] {SettingType} [SettingType] {Enabled} [Enabled].
+Microsoft-Windows-PushNotifications-Platform  |  2153      |           |  A global setting was changed: {SettingType} [SettingType] {Enabled} [Enabled] {PolicyLevel} [PolicyLevel].
+Microsoft-Windows-PushNotifications-Platform  |  2154      |           |  A global setting was queried: {SettingType} [SettingType] {Enabled} [Enabled] {PolicyLevel} [PolicyLevel].
+Microsoft-Windows-PushNotifications-Platform  |  2155      |           |  The list of apps with capability: {SettingType} [SettingType] was requested.
+Microsoft-Windows-PushNotifications-Platform  |  2156      |           |  Callback registered for {SettingType} [SettingType] with Cookie {Cookie} [Cookie Value].
+Microsoft-Windows-PushNotifications-Platform  |  2157      |           |  Callback unregistered : {Cookie} [Cookie Value].
+Microsoft-Windows-PushNotifications-Platform  |  2158      |           |
+Microsoft-Windows-PushNotifications-Platform  |  2159      |           |  Mobile Broadband Tile Cap Queried: {SettingsValue} [Cap Value (Bytes)].
+Microsoft-Windows-PushNotifications-Platform  |  2160      |           |  Mobile Broadband Tile Cap Changed: {SettingsValue} [Cap Value (Bytes)].
+Microsoft-Windows-PushNotifications-Platform  |  2161      |           |  Mobile Broadband Tile Usage Queried: {SettingsValue} [Usage Value (Bytes)].
+Microsoft-Windows-PushNotifications-Platform  |  2162      |           |
+Microsoft-Windows-PushNotifications-Platform  |  2163      |           |  The list of apps with capability: {SettingType} [SettingType] in Package: {PackageFamilyName} [PackageFamilyName] was requested.
+Microsoft-Windows-PushNotifications-Platform  |  2164      |           |
+Microsoft-Windows-PushNotifications-Platform  |  2165      |           |  Mobile Broadband Cap Enforcement Callback invoked: {Enabled} [Enabled].
+Microsoft-Windows-PushNotifications-Platform  |  2166      |           |  Toasts have been Temporarily Suspended until {WakeupTime} [UTC FILETIME].
+Microsoft-Windows-PushNotifications-Platform  |  2167      |           |  Toast Temporary Suspend Time was queried: Is Suspended? {IsValid} wakeupTime? {WakeupTime} [UTC FILETIME].
+Microsoft-Windows-PushNotifications-Platform  |  2168      |           |
+Microsoft-Windows-PushNotifications-Platform  |  2169      |           |  The list of Polling apps in Package: {PackageFamilyName} [PackageFamilyName] was requested.
+Microsoft-Windows-PushNotifications-Platform  |  2170      |           |  A Setting Sync was scheduled: {PackageFamilyName} [PackageFamilyName] {CollectionId} [Collection ID].
+Microsoft-Windows-PushNotifications-Platform  |  2171      |           |
+Microsoft-Windows-PushNotifications-Platform  |  2200      |           |  A channel request was not allowed because of global settings: {RequestFlags} [PolicyLevel] {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2201      |           |  A channel request was not allowed because the application does not have the network capability: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2202      |           |  A {NotificationType} notification with NotificationTrackingId {TrackingId} was dropped because appropriate privilege is not held. Please check out Mosh Debugger is running on your machine.
+Microsoft-Windows-PushNotifications-Platform  |  2203      |           |  A {NotificationType} notification with NotificationTrackingId {TrackingId} is being delivered to application {AppUserModelId}.
+Microsoft-Windows-PushNotifications-Platform  |  2250      |           |  Notification channels associated with a package are able to receive raw notifications: [PackageFullName] {PackageFullName}
+Microsoft-Windows-PushNotifications-Platform  |  2300      |           |  The following application was added to the lock screen: {PackageFullName} [PackageFullName] {PackageRelativeApplicationId} [PackageRelativeApplicationId].
+Microsoft-Windows-PushNotifications-Platform  |  2301      |           |  The following application was removed from the lock screen: {PackageFullName} [PackageFullName] {PackageRelativeApplicationId} [PackageRelativeApplicationId].
+Microsoft-Windows-PushNotifications-Platform  |  2400      |           |  System application was registered with the following paramaeters: {PackageFullName} [PackageFullName] {AppUserModelId} [AppUserModelId] {Capabilities} [Settings] {WNFEventName} [WNFEventName].
+Microsoft-Windows-PushNotifications-Platform  |  2401      |           |  System application was unregistered with the following parameters: {AppUserModelId} [AppUserModelId]
+Microsoft-Windows-PushNotifications-Platform  |  2402      |           |
+Microsoft-Windows-PushNotifications-Platform  |  2403      |           |
+Microsoft-Windows-PushNotifications-Platform  |  2404      |           |  Phone VoIP application was registered with the following parameters: {AppUserModelId} [AppUserModelId] {PhoneVoipAgentId} [PhoneVoipAgentId].
+Microsoft-Windows-PushNotifications-Platform  |  2405      |           |  Phone VoIP application was unregistered with the following parameters: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2406      |           |  The Windows Push Notification Platform has received a phone legacy channel request with the following parameters: {PackageFullName} [PackageFullName] {AppUserModelId} [AppUserModelId] {ChannelName} [ChannelName] {ServiceName} [ServiceName].
+Microsoft-Windows-PushNotifications-Platform  |  2407      |           |  PhoneLegacy push notification is being processed: ChannelId [{ChannelId}], NotificationType [{NotificationType}], TrackingId [{TrackingId}] AppId [{AppUserModelId}]
+Microsoft-Windows-PushNotifications-Platform  |  2408      |           |  PhoneLegacy voip notification is being processed: ChannelId [{ChannelId}], NotificationType [{NotificationType}], TrackingId [{TrackingId}] AppId [{AppUserModelId}], PhoneVoipAgentId [{PhoneVoipAgentId}]
+Microsoft-Windows-PushNotifications-Platform  |  2409      |           |  A connection status callback was added: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2410      |           |  A connection status callback was removed: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2411      |           |  A connection status callback was updated: {AppUserModelId} [AppUserModelId].
+Microsoft-Windows-PushNotifications-Platform  |  2412      |           |  A connection status was delivered to a callback: {AppUserModelId} [AppUserModelId] {IsConnected} [IsConnected] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2413      |           |  An application was registered with the following parameters: {PackageFullName} [PackageFullName] {AppUserModelId} [AppUserModelId] {AppSettings} [Settings] {AppType} [AppType] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2414      |           |  An application resgistration was updated with the following parameters: {PackageFullName} [PackageFullName] {AppUserModelId} [AppUserModelId] {AppSettings} [Settings] {AppType} [AppType] {ErrorCode} [ErrorCode].
+Microsoft-Windows-PushNotifications-Platform  |  2415      |           |  An application was unregistered with the following parameters: {AppUserModelId} [AppUserModelId] {ErrorCode} [ErrorCode]
+Microsoft-Windows-PushNotifications-Platform  |  3000      |           |  Tile session creation is requested for {ProcessName} endpoint {Object}.
+Microsoft-Windows-PushNotifications-Platform  |  3001      |           |  Tile session creation is finished for {ProcessName} from endpoint {Endpoint} with result {Error}, and {SessionId} is assigned as session id. Queued Closes = {QueuedTileCloses}, Queued Cleanups = {QueuedTileCleanups}
+Microsoft-Windows-PushNotifications-Platform  |  3002      |           |  Tile session {SessionId} is being updated.
+Microsoft-Windows-PushNotifications-Platform  |  3003      |           |  Tile session {SessionId} is updated with error code {Error}.
+Microsoft-Windows-PushNotifications-Platform  |  3004      |           |  Tile session {SessionId} is being closed
+Microsoft-Windows-PushNotifications-Platform  |  3005      |           |  Tile session {SessionId} is closed with error code {Error}.
+Microsoft-Windows-PushNotifications-Platform  |  3006      |           |  Toast session creation is requested for {ProcessName} from endpoint {Object}.
+Microsoft-Windows-PushNotifications-Platform  |  3007      |           |  Toast session creation is finished for {ProcessName} from endpoint {Endpoint} with result {Error}, and {SessionId} is assigned as session id.
+Microsoft-Windows-PushNotifications-Platform  |  3008      |           |  Toast session {SessionId} is being closed
+Microsoft-Windows-PushNotifications-Platform  |  3009      |           |  Toast session {SessionId} is closed with error code {Error}.
+Microsoft-Windows-PushNotifications-Platform  |  3010      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3011      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3012      |           |  Toast with notification tracking id {TrackingId} is delivered to {AppUserModelId} on session {SessionId}.
+Microsoft-Windows-PushNotifications-Platform  |  3013      |           |  {NotificationType} with notification tracking id {TrackingId} is delivered to {AppUserModelId}.
+Microsoft-Windows-PushNotifications-Platform  |  3014      |           |  Tile queue entry is created for {AppUserModelId}.
+Microsoft-Windows-PushNotifications-Platform  |  3015      |           |  Tile notification id {NotificationId} for {AppUserModelId} is stored at {QueueIndex} in queue.
+Microsoft-Windows-PushNotifications-Platform  |  3016      |           |  Tile notification id {OverridingNotificationId} overrided existing notification id {OverridedNotificationId}.
+Microsoft-Windows-PushNotifications-Platform  |  3017      |           |  This is a verbose debug event that dumps Tile Queue information.
+Microsoft-Windows-PushNotifications-Platform  |  3018      |           |  Badge notification id {TrackingId} is stored for {AppUserModelId}.
+Microsoft-Windows-PushNotifications-Platform  |  3019      |           |  Tile image request {RequestId} has started.
+Microsoft-Windows-PushNotifications-Platform  |  3020      |           |  Tile image request {RequestId} has been canceled due to new request.
+Microsoft-Windows-PushNotifications-Platform  |  3021      |           |  Tile image request for notification {NotificationId} in {AppUserModelId} contains {URLCount} URL.
+Microsoft-Windows-PushNotifications-Platform  |  3022      |           |  Image download request is being processed for first time: resource id [{ResourceId}],  URL [{URL}]
+Microsoft-Windows-PushNotifications-Platform  |  3023      |           |  Image download is complete for a single URL: notification id [{NotificationId}], resource id [{ResourceId}], local path [{LocalPath}], error code [{ErrorCode}], flags [{Flag}]
+Microsoft-Windows-PushNotifications-Platform  |  3024      |           |  Image download is complete for all URL with notification id [{NotificationId}]
+Microsoft-Windows-PushNotifications-Platform  |  3025      |           |  Processing initial batch on Image request for toast: AppUserModelId [{AppUserModelId}], Notification Id [{NotificationId}], UrlCount [{URLCount}], Flags [{Flag}]
+Microsoft-Windows-PushNotifications-Platform  |  3026      |           |  Processing Toast Image request URL: Resource Id [{ResourceId}], URL [{URL}]
+Microsoft-Windows-PushNotifications-Platform  |  3027      |           |  Scheduling Image Download Task: [Slot Index] {SlotIndex}, [Notification Id] {NotificationId}, [Priority] {BITSPriority}, [IsTile] {IsTile}, [URL] {URL}
+Microsoft-Windows-PushNotifications-Platform  |  3028      |           |  Completed Image Download Task: [Notification Id] {NotificationId}, [IsTile] {IsTile}, [Path] {Path}
+Microsoft-Windows-PushNotifications-Platform  |  3029      |           |  Download image has failed: [Notification Id] {NotificationId} [Tile] {IsTile} [ErrorCode] {ErrorCode} [URL] {URL}
+Microsoft-Windows-PushNotifications-Platform  |  3030      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3031      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3032      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3033      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3034      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3035      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3036      |           |  Image Download Manager policy is changed to {IDM_Enabled}.
+Microsoft-Windows-PushNotifications-Platform  |  3037      |           |  Detail event for tile session {SessionId} update.
+Microsoft-Windows-PushNotifications-Platform  |  3038      |           |  Detail event at start of Notification Request performance tracking.
+Microsoft-Windows-PushNotifications-Platform  |  3039      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3040      |           |  Downloading image has failed because protocol is not supported: URL [{URL}]
+Microsoft-Windows-PushNotifications-Platform  |  3041      |           |  Downloading image has failed because downloaded image it too big over maximum 150KB: URL [{URL}]
+Microsoft-Windows-PushNotifications-Platform  |  3042      |           |  Downloading image has failed because downloaded image is empty: URL [{URL}]
+Microsoft-Windows-PushNotifications-Platform  |  3043      |           |  The new tile notification was found to be a duplicate of a previous notification: new notification id [{NewNotificationId}], previous notification id [{OldNotificationId}]
+Microsoft-Windows-PushNotifications-Platform  |  3044      |           |  The new badge notification was found to be a duplicate of a previous notification: new notification id [{NewNotificationId}], previous notification id [{OldNotificationId}]
+Microsoft-Windows-PushNotifications-Platform  |  3045      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3046      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3047      |           |  The new tile flyout notification was found to be a duplicate of a previous notification: new notification id [{NewNotificationId}], previous notification id [{OldNotificationId}]
+Microsoft-Windows-PushNotifications-Platform  |  3048      |           |  Badge notification id {TrackingId} is stored for {AppUserModelId}.
+Microsoft-Windows-PushNotifications-Platform  |  3049      |           |  Endpoint {Object} is being cleanedup
+Microsoft-Windows-PushNotifications-Platform  |  3050      |           |  Toast notification id {NotificationId} for {AppUserModelId} is stored at {QueueIndex} in queue.
+Microsoft-Windows-PushNotifications-Platform  |  3051      |           |  Toast notification id {OverridingNotificationId} overrided existing notification id {OverridedNotificationId}.
+Microsoft-Windows-PushNotifications-Platform  |  3052      |           |  Toast with notification tracking id {TrackingId} is being delivered to {AppUserModelId} on session {SessionId}.
+Microsoft-Windows-PushNotifications-Platform  |  3053      |           |  {NotificationType} with notification tracking id {TrackingId} is being delivered to {AppUserModelId}.
+Microsoft-Windows-PushNotifications-Platform  |  3054      |           |  Toast with notification tracking id {TrackingId} is canceled by {AppUserModelId} - informed session {SessionId}.
+Microsoft-Windows-PushNotifications-Platform  |  3055      |           |  Some toast notifications have been cleared - informed session {SessionId}.
+Microsoft-Windows-PushNotifications-Platform  |  3056      |           |  {NotificationType} are being cleared for {AppUserModelId} - informed session {SessionId}.
+Microsoft-Windows-PushNotifications-Platform  |  3057      |           |  Presentation Endpoint received a call to close session {SessionId}.
+Microsoft-Windows-PushNotifications-Platform  |  3058      |           |  Presentation Endpoint ended a call to close session {SessionId}.
+Microsoft-Windows-PushNotifications-Platform  |  3100      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3101      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3102      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3103      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3104      |           |  Toast with notification id [{TrackingId}] has expired and will be removed from the queue.
+Microsoft-Windows-PushNotifications-Platform  |  3105      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3106      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3107      |           |  Processing of push notification has failed: ChannelId [{ChannelId}], NotificationType [{NotificationType}], TrackingId [{TrackingId}] AppId [{AppUserModelId}], ErrorCode [{ErrorCode}]
+Microsoft-Windows-PushNotifications-Platform  |  3108      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3109      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3110      |           |  Toast Notification Forwarding Global Settings: isFwToCdpEnabled = {IsFwdToCdpEnabled} isMirrorMasterSwitchEnabled = {IsMirrorMasterSwitchEnabled} MirroringDisabled = {MirroringEnabled}
+Microsoft-Windows-PushNotifications-Platform  |  3111      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3112      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3113      |           |  Toast Notification Forwarding Local Settings: isDeveloperAppMirroringEnabled = {IsFwdToCdpEnabled} isMirrorMasterSwitchEnabled = {IsMirrorMasterSwitchEnabled} isGroupPolicyEnabled = {IsGPEnabled}
+Microsoft-Windows-PushNotifications-Platform  |  3114      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3115      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3116      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3117      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3118      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3119      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3120      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3121      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3122      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3123      |           |  Toast Notification Forwarding Making Activity TrackingId = {TrackingId} AppUserModelId = {AppUserModelId}
+Microsoft-Windows-PushNotifications-Platform  |  3124      |           |  Toast Notification Forwarding Published Activity with Result = {ErrorCode}
+Microsoft-Windows-PushNotifications-Platform  |  3125      |           |  {VerboseLog}
+Microsoft-Windows-PushNotifications-Platform  |  3126      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3127      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3128      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3129      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3130      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3131      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3132      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3133      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3134      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3135      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3136      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3137      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3138      |           |  {VerboseLog}
+Microsoft-Windows-PushNotifications-Platform  |  3139      |           |  Sync Dismiss Removed Activity with Result = {ErrorCode}
+Microsoft-Windows-PushNotifications-Platform  |  3140      |           |  Sync Dismiss Removed Notification with Result = {ErrorCode}
+Microsoft-Windows-PushNotifications-Platform  |  3141      |           |  SyncDismissRemoveNotificationUsingActivityParams: MatchOnNotificationId = {MatchOnNotificationId} NotificationId = {NotificationId} ActivityId = {ActivityId}
+Microsoft-Windows-PushNotifications-Platform  |  3142      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3143      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3144      |           |
+Microsoft-Windows-PushNotifications-Platform  |  3145      |           |  [Sqlite][Informational] Status: {Error}. Message: {Message}
+Microsoft-Windows-PushNotifications-Platform  |  3146      |           |  [Sqlite][Warning] Status: {Error}. Message: {Message}
+Microsoft-Windows-PushNotifications-Platform  |  3147      |           |  [Sqlite][Error] Status: {Error}. Message: {Message}
+Microsoft-Windows-PushNotifications-Platform  |  3148      |           |  [Sqlite][Other] Status: {Error}. Message: {Message}
+Microsoft-Windows-PushNotifications-Platform  |  10000     |           |  DebugTrace: {debugString}

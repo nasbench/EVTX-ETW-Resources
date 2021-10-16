@@ -1,0 +1,17 @@
+Provider                       |  Event ID  |  Channel                                   |  Message
+-------------------------------|------------|--------------------------------------------|---------
+Microsoft-Windows-UIAnimation  |  1         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  2         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  3         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  4         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  5         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  6         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  7         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  8         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  9         |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  10        |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  11        |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  12        |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  13        |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  14        |  Microsoft-Windows-UIAnimation/Diagnostic  |
+Microsoft-Windows-UIAnimation  |  15        |  Microsoft-Windows-UIAnimation/Diagnostic  |

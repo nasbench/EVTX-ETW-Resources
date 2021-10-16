@@ -1,0 +1,115 @@
+Provider                       |  Event ID  |  Channel                                 |  Message
+-------------------------------|------------|------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Hyper-V-VID  |  1101      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to reserve {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1102      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to reserve {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1103      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to allocate {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1104      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to release {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1105      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to withdraw pages from bucket: {Parameter1}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1106      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to balloon {Parameter1} page ranges: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1107      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to un-balloon {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1108      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to hot add {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1109      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to hot add undo {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1110      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to create mem block with {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  1111      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Failed to create DAX file backed mem block with {Parameter1} pages: {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  3000      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Created partition with ID {Parameter0} and name {PartitionId}.
+Microsoft-Windows-Hyper-V-VID  |  5001      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started reserving {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5002      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished reserving pages with status = {Parameter2}. {Parameter1} pages reserved. {Parameter3} HugeLocal, {Parameter4} LargeLocal, {Parameter5} SmallLocal, {Parameter6} HugeRemote, {Parameter7} LargeRemote, {Parameter8} SmallRemote. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5003      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started reserving bucket pages. Reserving {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5004      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished reserving bucket pages with status = {Parameter2}. {Parameter1} pages reserved. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5005      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started allocating {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5006      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished allocating pages with status = {Parameter2}. {Parameter1} pages allocated. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5007      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started depositing pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5008      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished depositing pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5009      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started releasing {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5010      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished releasing {Parameter1} pages with status = {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5011      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started releasing bucket {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5012      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished releasing bucket {Parameter1} pages with status = {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5013      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started withdrawing pages from bucket. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5014      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished withdrawing pages from bucket with status = {Parameter1}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5017      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started depositing pages to bucket from page list. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5018      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished depositing pages to bucket from page list. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5019      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started ballooning {Parameter1} page ranges. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5020      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished ballooning {Parameter1} page ranges with status {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5021      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started de-committing GPAs - {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5022      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished de-committing GPAs - {Parameter1} pages with status {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5023      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started un-ballooning {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5024      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished un-ballooning {Parameter1} pages with status {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5025      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started committing {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5026      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished committing {Parameter1} pages with status {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5029      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started hot adding {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5030      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished hot adding {Parameter1} pages with status {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5031      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started hot add undoing {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5032      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished hot add undoing {Parameter1} pages with status {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5033      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started creating memory block with {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5034      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished creating memory block with {Parameter1} pages with status {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5035      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started un-ballooning {Parameter1} pages. Contiguous = {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5036      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished un-ballooning {Parameter1} pages with status {Parameter2}. Contiguous = {Parameter3}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5037      |  Microsoft-Windows-Hyper-V-VID-Admin     |  An uncorrected memory error occurred at physical address {PhysicalAddress}. This page was not found in a virtual machine. No action was taken. (Platform Directed: {Flags})
+Microsoft-Windows-Hyper-V-VID  |  5038      |  Microsoft-Windows-Hyper-V-VID-Admin     |  '{PartitionFriendlyName}' was reset because an uncorrected memory error occured at physical address {PhysicalAddress}, which was used by this virtual machine. (Virtual Machine: {PartitionName}, Platform Directed: {Flags}, Consumed: {Consumed})
+Microsoft-Windows-Hyper-V-VID  |  5039      |  Microsoft-Windows-Hyper-V-VID-Admin     |  An uncorrected memory error occurred at physical address {PhysicalAddress} which is used by virtual machine '{PartitionFriendlyName}'. The affected page has been released. A machine check event correpsonding to this memory error was injected into the virtual machine for handling by the virtual machine's operating system. (Virtual Machine: {PartitionName}, Platform Directed: {Flags}, Consumed: {Consumed})
+Microsoft-Windows-Hyper-V-VID  |  5040      |  Microsoft-Windows-Hyper-V-VID-Admin     |  An uncorrected memory error occurred at physical address {PhysicalAddress}. The virtual machine that was using the page is no longer valid. No action was taken. (Platform Directed: {Flags})
+Microsoft-Windows-Hyper-V-VID  |  5041      |  Microsoft-Windows-Hyper-V-VID-Admin     |  One or more corrected memory error occurred at physical address {PhysicalAddress}. This page was not found in a virtual machine. No action was taken. (Platform Directed: {Flags})
+Microsoft-Windows-Hyper-V-VID  |  5042      |  Microsoft-Windows-Hyper-V-VID-Admin     |  One or more corrected memory error occurred at physical address {PhysicalAddress}, which is used by virtual machine '{PartitionFriendlyName}'. The page could not be replaced. No action was taken. The virtual machine will continue operating normally. (Virtual Machine: {PartitionName}, Platform Directed: {Flags}, Consumed: {Consumed})
+Microsoft-Windows-Hyper-V-VID  |  5043      |  Microsoft-Windows-Hyper-V-VID-Admin     |  One or more corrected memory error occurred at physical address {PhysicalAddress}, which is used by virtual machine '{PartitionFriendlyName}'. The page has been replaced. The virtual machine will continue operating normally. (Virtual Machine: {PartitionName}, Platform Directed: {Flags}, Consumed: {Consumed})
+Microsoft-Windows-Hyper-V-VID  |  5044      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Failed to retrieve memory from the kernel with error {Parameter0} during a fast restore operation. (Virtual Machine {PartitionId})
+Microsoft-Windows-Hyper-V-VID  |  5045      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Failed to persist memory with the kernel with error {Parameter0} during a fast save operation. (Virtual Machine {PartitionId})
+Microsoft-Windows-Hyper-V-VID  |  5046      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5047      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5048      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5049      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5050      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5051      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5052      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5053      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5054      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5055      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5056      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5057      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5058      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5059      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5060      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5061      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5062      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5063      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5064      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5065      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5066      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5067      |                                          |
+Microsoft-Windows-Hyper-V-VID  |  5068      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Started creating DAX file backed memory block with {Parameter1} pages. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5069      |  Microsoft-Windows-Hyper-V-VID-Analytic  |  Finished creating DAX file backed memory block with {Parameter1} pages with status {Parameter2}. (Partition ID {Parameter0})
+Microsoft-Windows-Hyper-V-VID  |  5070      |  Microsoft-Windows-Hyper-V-VID-Analytic  |
+Microsoft-Windows-Hyper-V-VID  |  5071      |  Microsoft-Windows-Hyper-V-VID-Analytic  |
+Microsoft-Windows-Hyper-V-VID  |  5072      |  Microsoft-Windows-Hyper-V-VID-Admin     |  One or more uncorrected persistent memory errors ({TotalPages} pages) occurred. These pages were not found in a virtual machine. No action was taken. (Platform Directed: {Flags})
+Microsoft-Windows-Hyper-V-VID  |  5073      |  Microsoft-Windows-Hyper-V-VID-Admin     |  '{PartitionFriendlyName}' was reset because an uncorrected persistent memory error occured at physical address {PhysicalAddress}, which was used by this virtual machine. (Virtual Machine: {PartitionName}, Platform Directed: {Flags}, Consumed: {Consumed})
+Microsoft-Windows-Hyper-V-VID  |  5074      |  Microsoft-Windows-Hyper-V-VID-Admin     |  '{PartitionFriendlyName}' was reset because one or more uncorrected persistent memory errors ({PhysicalAddress} pages) occured, which were used by this virtual machine. (Virtual Machine: {PartitionName}, Platform Directed: {Flags}, Consumed: {Consumed})
+Microsoft-Windows-Hyper-V-VID  |  5075      |  Microsoft-Windows-Hyper-V-VID-Admin     |  An uncorrected persistent memory error occurred at physical address {PhysicalAddress} which is used by virtual machine '{PartitionFriendlyName}'. The affected page has been released. A machine check event correpsonding to this persistent memory error was injected into the virtual machine for handling by the virtual machine's operating system. (Virtual Machine: {PartitionName}, Platform Directed: {Flags}, Consumed: {Consumed})
+Microsoft-Windows-Hyper-V-VID  |  5076      |  Microsoft-Windows-Hyper-V-VID-Admin     |  An uncorrected persistent memory error occurred at physical address {PhysicalAddress}. The virtual machine that was using the page is no longer valid. No action was taken. (Platform Directed: {Flags})
+Microsoft-Windows-Hyper-V-VID  |  5077      |  Microsoft-Windows-Hyper-V-VID-Admin     |  One or more uncorrected persistent memory errors ({TotalPages} pages) occurred, which were used by virtual machine '{PartitionFriendlyName}'. ARS notification generated. (Virtual Machine: {PartitionName}, Platform Directed: {Flags}, Consumed: {Consumed})
+Microsoft-Windows-Hyper-V-VID  |  5078      |  Microsoft-Windows-Hyper-V-VID-Analytic  |
+Microsoft-Windows-Hyper-V-VID  |  5079      |  Microsoft-Windows-Hyper-V-VID-Analytic  |
+Microsoft-Windows-Hyper-V-VID  |  5080      |  Microsoft-Windows-Hyper-V-VID-Analytic  |
+Microsoft-Windows-Hyper-V-VID  |  5081      |  Microsoft-Windows-Hyper-V-VID-Analytic  |
+Microsoft-Windows-Hyper-V-VID  |  5082      |  Microsoft-Windows-Hyper-V-VID-Analytic  |
+Microsoft-Windows-Hyper-V-VID  |  5083      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition: Both Percentage({Parameter2}) and SizeInMB({Parameter1}) are specified for NUMA node {Parameter0}. Percentage({Parameter2}) is ignored.
+Microsoft-Windows-Hyper-V-VID  |  5084      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition: Both Percentage and SizeInMB are specified on the host. Percentage is ignored.
+Microsoft-Windows-Hyper-V-VID  |  5085      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition: Both NUMA node settings and host settings are specified. The host settings are ignored.
+Microsoft-Windows-Hyper-V-VID  |  5086      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition: Primary settings are different than the legacy settings. The legacy settings are ignored.
+Microsoft-Windows-Hyper-V-VID  |  5087      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition: Legacy memory reserve percentage setting was used.
+Microsoft-Windows-Hyper-V-VID  |  5088      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition not created due to 0 partition size. This maybe caused by invalid percentage or unaligned size.
+Microsoft-Windows-Hyper-V-VID  |  5089      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition creation failed ({Parameter1} MB) with status = {Parameter0}.
+Microsoft-Windows-Hyper-V-VID  |  5090      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition host percentage({Parameter0}) is invalid.
+Microsoft-Windows-Hyper-V-VID  |  5091      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition target could not be read from the registry.
+Microsoft-Windows-Hyper-V-VID  |  5092      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition target could not be written to the registry.
+Microsoft-Windows-Hyper-V-VID  |  5093      |  Microsoft-Windows-Hyper-V-VID-Admin     |  A non-zero memory partition target size was associated with a memoryless and processorless NUMA node. Node Number {Parameter0}.
+Microsoft-Windows-Hyper-V-VID  |  5094      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition target number of nodes ({Parameter0}) did not match the number of NUMA nodes on the system ({Parameter1}).
+Microsoft-Windows-Hyper-V-VID  |  5095      |  Microsoft-Windows-Hyper-V-VID-Analytic  |
+Microsoft-Windows-Hyper-V-VID  |  5096      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition per NUMA node ({Parameter0}) IO space size ({Parameter1}) unaligned.
+Microsoft-Windows-Hyper-V-VID  |  5097      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition per NUMA node ({Parameter0}) IO space size ({Parameter1}) is bigger than size ({Parameter2}).
+Microsoft-Windows-Hyper-V-VID  |  5098      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition host IO space size ({Parameter0}) unaligned.
+Microsoft-Windows-Hyper-V-VID  |  5099      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition host IO space size ({Parameter0}) is too big for size ({Parameter1}).
+Microsoft-Windows-Hyper-V-VID  |  5100      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition per NUMA node ({Parameter0}) size ({Parameter1}) unaligned.
+Microsoft-Windows-Hyper-V-VID  |  5101      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition host size ({Parameter0}) unaligned.
+Microsoft-Windows-Hyper-V-VID  |  5102      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition per NUMA node ({Parameter0}) percentage({Parameter1}) is invalid.
+Microsoft-Windows-Hyper-V-VID  |  5103      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Memory partition legacy percentage({Parameter0}) is invalid.
+Microsoft-Windows-Hyper-V-VID  |  5104      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Failed to retrieve memory block from the kernel with error {Parameter0} during a fast restore operation. (Virtual Machine {PartitionId})
+Microsoft-Windows-Hyper-V-VID  |  5105      |  Microsoft-Windows-Hyper-V-VID-Admin     |  Failed to persist memory block with the kernel with error {Parameter0} during a fast save operation. (Virtual Machine {PartitionId})

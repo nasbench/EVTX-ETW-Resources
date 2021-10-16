@@ -1,0 +1,30 @@
+Provider                   |  Event ID  |  Channel                               |  Message
+---------------------------|------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WinHttp  |  1         |                                        |  {param1}
+Microsoft-Windows-WinHttp  |  2         |                                        |  {param1}
+Microsoft-Windows-WinHttp  |  4         |                                        |  {load/unload info}
+Microsoft-Windows-WinHttp  |  9         |  Microsoft-Windows-WinHttp/Diagnostic  |  {Api}({ApiHandle}) API called.
+Microsoft-Windows-WinHttp  |  10        |  Microsoft-Windows-WinHttp/Diagnostic  |  {Api}({ApiHandle}) API returned successfully.
+Microsoft-Windows-WinHttp  |  11        |  Microsoft-Windows-WinHttp/Diagnostic  |  {Api}({ApiHandle}) API failed with an error = {Result}.
+Microsoft-Windows-WinHttp  |  12        |  Microsoft-Windows-WinHttp/Diagnostic  |  {Api}({ApiHandle}) API pending completion.
+Microsoft-Windows-WinHttp  |  13        |  Microsoft-Windows-WinHttp/Diagnostic  |  {Api}({ApiHandle}) API completed.
+Microsoft-Windows-WinHttp  |  14        |  Microsoft-Windows-WinHttp/Diagnostic  |  {Api}({ApiHandle}) API completed with an error = {Result}.
+Microsoft-Windows-WinHttp  |  100       |  Microsoft-Windows-WinHttp/Diagnostic  |  {hRequest}: WinHttpSetCredentials Details: Target ({AuthTargets}) Schemes ({AuthScheme}) UserName ({UserName}) Password ({Password})
+Microsoft-Windows-WinHttp  |  12501     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service detected an internal data corruption.
+Microsoft-Windows-WinHttp  |  12503     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service has been idle for {IdleTime} minutes, it will be shut down.
+Microsoft-Windows-WinHttp  |  12506     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service encountered a system error from {Function name}: (Error Code = {Error code}) {Error text}
+Microsoft-Windows-WinHttp  |  12507     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service failed to allocate a critical resource. The system may be running low on physical memory.
+Microsoft-Windows-WinHttp  |  12509     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service detected a non- local RPC request (Transport Type = {Transport type}); Access Denied. There may have been an rogue attempt to gain access to the service through the network.
+Microsoft-Windows-WinHttp  |  12511     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service failed to abort all pending requests in {param1} seconds.  The system WinHTTP Services may have been under stress and slow to respond to cancel requests.
+Microsoft-Windows-WinHttp  |  12512     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service failed parameter validation of a client request.  This may be due to an unexpected error from the system WinHTTP Services.
+Microsoft-Windows-WinHttp  |  12513     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service is shutting down and not accepting client requests.
+Microsoft-Windows-WinHttp  |  12514     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service detected an unexpected exception from the system WinHTTP Services. (Exception Code = {Exception code})
+Microsoft-Windows-WinHttp  |  12516     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service discarded and is re-attempting a request after a critical power event.
+Microsoft-Windows-WinHttp  |  12517     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service suspended operation.
+Microsoft-Windows-WinHttp  |  12518     |                                        |  The WinHTTP Web Proxy Auto-Discovery Service resumed operation.
+Microsoft-Windows-WinHttp  |  58999     |  Microsoft-Windows-WinHttp/Diagnostic  |  {Message}
+Microsoft-Windows-WinHttp  |  59995     |  Microsoft-Windows-WinHttp/Diagnostic  |  Canceling {EtwQueueActionType} Thread Action (Context: {Context})
+Microsoft-Windows-WinHttp  |  59996     |  Microsoft-Windows-WinHttp/Diagnostic  |  Queue {EtwQueueActionType} Thread Action (Context: {Context})
+Microsoft-Windows-WinHttp  |  59997     |  Microsoft-Windows-WinHttp/Diagnostic  |  Stopping {EtwQueueActionType} Thread Action (Context: {Context})
+Microsoft-Windows-WinHttp  |  59998     |  Microsoft-Windows-WinHttp/Diagnostic  |  Starting {EtwQueueActionType} Thread Action (Context: {Context})
+Microsoft-Windows-WinHttp  |  59999     |  Microsoft-Windows-WinHttp/Diagnostic  |  ({File}:{Line}) {Message}

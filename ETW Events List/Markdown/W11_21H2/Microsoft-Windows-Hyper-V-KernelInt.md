@@ -1,0 +1,8 @@
+Provider                             |  Event ID  |  Channel                                    |  Message
+-------------------------------------|------------|---------------------------------------------|---------
+Microsoft-Windows-Hyper-V-KernelInt  |  1500      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |
+Microsoft-Windows-Hyper-V-KernelInt  |  1510      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |
+Microsoft-Windows-Hyper-V-KernelInt  |  1520      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |
+Microsoft-Windows-Hyper-V-KernelInt  |  1530      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |
+Microsoft-Windows-Hyper-V-KernelInt  |  12322     |  Microsoft-Windows-Hyper-V-Worker-Admin     |
+Microsoft-Windows-Hyper-V-KernelInt  |  12323     |  Microsoft-Windows-Hyper-V-Worker-Admin     |

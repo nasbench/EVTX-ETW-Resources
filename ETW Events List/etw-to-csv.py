@@ -3,10 +3,10 @@ from optparse import OptionParser
 import os
 import csvtomd
 
-def convertToMD(fileName):
+def convertCsvToMD(fileName):
 
     with open(fileName + ".csv", "r") as f:
-        table = csvtomd.csv_to_table(f, ",")
+        table = csvtomd.csv_to_table(f, "|")
     
     if table:
         with open(fileName + ".md", "w") as f:
@@ -93,22 +93,20 @@ def fixMessage(message, template):
         listOfTemplateAttributes.append(e.attrib['name'])
     
     for i in range(len(listOfTemplateAttributes)-1):
-        message = message.replace("%"+str(i+1), "[" + listOfTemplateAttributes[i+1] + "]")
+        message = message.replace("%"+str(i+1), "{" + listOfTemplateAttributes[i+1] + "}")
     
     return message
 
 
 if __name__ == "__main__":
     parser = OptionParser()
-    parser.add_option("-p", "--path", dest="providersPath", help="Path to the folder containing the ETW providers manifests")
-    parser.add_option("-n", "--name", dest="fileName", help="Name of the to be generated file without extension", default="etw")
+    parser.add_option("-p", "--path", dest="providersPath", help="Path to the folder containing the ETW providers manifests")    
     (options, args) = parser.parse_args()
     if not options.providersPath:
         parser.error("Please provide a valid path")
 
     # We collect the arguments from the user
     providersPath = options.providersPath
-    fileName = options.fileName
 
     # We call the "getListOfFiles" to generate a list of file paths
     listOfProviders = getListOfFiles(providersPath)
@@ -121,17 +119,16 @@ if __name__ == "__main__":
             listOfParsedProviders.append(parsed)
 
     # We then start to generate the CSV file
-    header = "Provider,Event ID,Channel,Message"
-    with open(fileName + ".csv", "w") as f:
-        f.write(header)
-        f.write("\n")
-        for p in listOfParsedProviders:
+    for p in listOfParsedProviders:
+        header = "Provider|Event ID|Channel|Message"
+        with open(p["provider_name"] + ".csv", "w") as f:
+            f.write(header)
+            f.write("\n")
             for i in p["events"]:
                 fixed_message = ""
                 if i['template'] != "":
                     fixed_message = fixMessage(i['message'], i['template'])
-                s = p["provider_name"] + "," + i["eid"] + "," + i["channel"] + "," + fixed_message
+                s = p["provider_name"] + "|" + i["eid"] + "|" + i["channel"] + "|" + fixed_message
                 f.write(s)
                 f.write("\n")
-
-    #convertToMD(fileName)
+        convertCsvToMD(p["provider_name"])

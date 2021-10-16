@@ -1,0 +1,4 @@
+Provider                            |  Event ID  |  Channel                                         |  Message
+------------------------------------|------------|--------------------------------------------------|---------
+Microsoft-Windows-Devices-Location  |  100       |  Microsoft.Windows.Devices.Location-Performance  |
+Microsoft-Windows-Devices-Location  |  101       |  Microsoft.Windows.Devices.Location-Performance  |

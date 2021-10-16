@@ -1,0 +1,4 @@
+Provider                          |  Event ID  |  Channel      |  Message
+----------------------------------|------------|---------------|-------------------------------------------------------------------------------------------------------------------------
+Application-Addon-Event-Provider  |  1         |  Application  |  An add-on has been enabled. Application: {Application}. Add-on: {AddonName}. Publisher: {Publisher}. Version:{Version}
+Application-Addon-Event-Provider  |  2         |  Application  |  An add-on has been disabled. Application: {Application}. Add-on: {AddonName}. Publisher: {Publisher}. Version:{Version}

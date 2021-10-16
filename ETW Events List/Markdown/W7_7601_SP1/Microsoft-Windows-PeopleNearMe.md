@@ -1,0 +1,3 @@
+Provider                        |  Event ID  |  Channel      |  Message
+--------------------------------|------------|---------------|---------------------------------------------------------
+Microsoft-Windows-PeopleNearMe  |  1000      |  Operational  |  An external component returned error number {ErrorCode}

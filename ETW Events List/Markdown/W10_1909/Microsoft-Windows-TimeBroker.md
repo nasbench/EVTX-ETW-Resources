@@ -1,0 +1,6 @@
+Provider                      |  Event ID  |  Channel  |  Message
+------------------------------|------------|-----------|------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-TimeBroker  |  1         |  Debug    |  Event ID {BrokeredEventId} changed state from {OldState} to {NewState}
+Microsoft-Windows-TimeBroker  |  2         |  Debug    |  Event ID {BrokeredEventId} is set to fire between {StartTime} and {EndTime}
+Microsoft-Windows-TimeBroker  |  3         |  Debug    |  TimeBroker CreateEvent called for Event ID {BrokeredEventId} with Event Type {EventType} returned {Status}
+Microsoft-Windows-TimeBroker  |  4         |  Debug    |  TimeBroker DeleteEvent called for Event ID {BrokeredEventId} and returned {Status}

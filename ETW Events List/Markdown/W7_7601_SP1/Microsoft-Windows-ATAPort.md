@@ -1,0 +1,17 @@
+Provider                   |  Event ID  |  Channel                             |  Message
+---------------------------|------------|--------------------------------------|-------------------------------------------------
+Microsoft-Windows-ATAPort  |  0         |  Microsoft-Windows-ATAPort/SATA-LPM  |  Entering Partial state.
+Microsoft-Windows-ATAPort  |  1         |  Microsoft-Windows-ATAPort/SATA-LPM  |  Entering Slumber state.
+Microsoft-Windows-ATAPort  |  100       |  Microsoft-Windows-ATAPort/General   |  Device Enumeration Starts.
+Microsoft-Windows-ATAPort  |  101       |  Microsoft-Windows-ATAPort/General   |  Device Enumeration Completes.
+Microsoft-Windows-ATAPort  |  102       |  Microsoft-Windows-ATAPort/General   |  Transfer Mode Changed.
+Microsoft-Windows-ATAPort  |  103       |  Microsoft-Windows-ATAPort/General   |  Request is Completed.
+Microsoft-Windows-ATAPort  |  104       |  Microsoft-Windows-ATAPort/General   |  Request Timed Out.
+Microsoft-Windows-ATAPort  |  105       |  Microsoft-Windows-ATAPort/General   |  Request Failed because of Transportation Error.
+Microsoft-Windows-ATAPort  |  106       |  Microsoft-Windows-ATAPort/General   |  Device Lost.
+Microsoft-Windows-ATAPort  |  107       |  Microsoft-Windows-ATAPort/General   |  Channel Reset Starts.
+Microsoft-Windows-ATAPort  |  108       |  Microsoft-Windows-ATAPort/General   |  Channel Reset Complets.
+Microsoft-Windows-ATAPort  |  109       |  Microsoft-Windows-ATAPort/General   |  Device Reset Starts.
+Microsoft-Windows-ATAPort  |  110       |  Microsoft-Windows-ATAPort/General   |  Device Reset Complets.
+Microsoft-Windows-ATAPort  |  111       |  Microsoft-Windows-ATAPort/General   |
+Microsoft-Windows-ATAPort  |  112       |  Microsoft-Windows-ATAPort/General   |

@@ -1,0 +1,19 @@
+Provider               |  Event ID  |  Channel  |  Message
+-----------------------|------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-RPC  |  1         |  EEInfo   |  Extended Error Information: 	ProcessName: 	{ImageName} 	ComputerName: 	{ComputerName} 	ProcessId: 	{ProcessID} 	Status: 	{Status} 	DetectionLocation: 	{DetectionLocation}
+Microsoft-Windows-RPC  |  2         |  Debug    |  An RPC call was blocked by an RPC firewall filter. 	ProcessName: 	{ImangeName} 	InterfaceUuid: 	{InterfaceUuid} 	RpcFilterKey:	{FilterKey}
+Microsoft-Windows-RPC  |  3         |  Debug    |  An error occured. 	ProcessName: 	{ImageName} 	DetectionLocation: 	{DetectionLocation} 	Status: 	{Status} 	AdditionaData: 	{AdditionalData1} 	AddtionalData: 	{AdditionalData2}
+Microsoft-Windows-RPC  |  4         |  Debug    |  RPC Log Event. 	Subject: 	{Subject} 	Verb: 	{Verb} 	SubjectPointer: 	{SubjectPointer} 	ObjectPointer: 	{ObjectPointer} 	Data: 	{DataPointer}
+Microsoft-Windows-RPC  |  5         |  Debug    |  Client RPC call started. 	InterfaceUuid: 	{InterfaceUuid} 	OpNum: 	{ProcNum} 	Protocol: 	{Protocol} 	NetworkAddress 	{NetworkAddress} 	Endpoint 	{Endpoint} 	Binding Options 	{Options} 	Authentication Level 	7 	Authentication Service 	8 Impersonation Level 	9
+Microsoft-Windows-RPC  |  6         |  Debug    |  Server RPC call started. 	InterfaceUuid: 	{InterfaceUuid} 	OpNum: 	{ProcNum} 	Protocol: 	{Protocol} 	Endpoint 	{Endpoint} 	Authentication Level 	7 	Authentication Service 	8
+Microsoft-Windows-RPC  |  7         |  Debug    |  Client RPC call completed. 	Status: 	{Status}
+Microsoft-Windows-RPC  |  8         |  Debug    |  Server RPC call was completed. 	Status: 	{Status}
+Microsoft-Windows-RPC  |  9         |  Debug    |  Call failed due to RpcRaiseException. 	Status: 	{Status}
+Microsoft-Windows-RPC  |  10        |  Debug    |  RPC received a packet
+Microsoft-Windows-RPC  |  11        |  Debug    |  RPC sent a packet
+Microsoft-Windows-RPC  |  12        |  Debug    |  RPC/HTTP start event
+Microsoft-Windows-RPC  |  13        |  Debug    |  RPC/HTTP stop event
+Microsoft-Windows-RPC  |  14        |  Debug    |  RPC interface registered. 	Interface UUID {InterfaceUuid}	TypeMgr {TypeMgrUuid}	Flags {Flags}	Max Calls {Max Calls}
+Microsoft-Windows-RPC  |  15        |  Debug    |  RPC interface unregistered. 	Interface UUID {InterfaceUuid}	TypeMgr
+Microsoft-Windows-RPC  |  16        |  Debug    |  RPC Server bound to protocol. 	Protocol {Protocol}	Endpoint {Endpoint}
+Microsoft-Windows-RPC  |  17        |  Debug    |  RPC interface re-triggering failed with error {RPC Status}.

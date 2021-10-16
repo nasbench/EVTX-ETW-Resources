@@ -1,0 +1,4 @@
+Provider                   |  Event ID  |  Channel                               |  Message
+---------------------------|------------|----------------------------------------|------------------------
+Microsoft-Windows-Storsvc  |  1001      |  Microsoft-Windows-Storsvc/Diagnostic  |  For internal use only.
+Microsoft-Windows-Storsvc  |  1002      |  Microsoft-Windows-Storsvc/Diagnostic  |  For internal use only.

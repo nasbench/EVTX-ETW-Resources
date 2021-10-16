@@ -1,0 +1,9 @@
+Provider                               |  Event ID  |  Channel                                           |  Message
+---------------------------------------|------------|----------------------------------------------------|------------------------------------------------------------------
+Microsoft-Windows-ProcessStateManager  |  1         |  Microsoft-Windows-ProcessStateManager/Diagnostic  |  Application {PsmKey} state changed from {OldState} to {NewState}
+Microsoft-Windows-ProcessStateManager  |  2         |                                                    |
+Microsoft-Windows-ProcessStateManager  |  3         |                                                    |
+Microsoft-Windows-ProcessStateManager  |  4         |  Microsoft-Windows-ProcessStateManager/Diagnostic  |
+Microsoft-Windows-ProcessStateManager  |  100       |                                                    |
+Microsoft-Windows-ProcessStateManager  |  101       |  Microsoft-Windows-ProcessStateManager/Diagnostic  |
+Microsoft-Windows-ProcessStateManager  |  102       |                                                    |

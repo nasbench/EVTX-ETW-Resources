@@ -1,0 +1,24 @@
+Provider                    |  Event ID  |  Channel                                |  Message
+----------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-WlanConn  |  8001      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8002      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8003      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8004      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8005      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8006      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8007      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8008      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8009      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8010      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8011      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8012      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8013      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8014      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8015      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8016      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8017      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8018      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8019      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8020      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8021      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Microsoft-Windows-WlanConn  |  8022      |  Microsoft-Windows-WlanConn/Diagnostic  |

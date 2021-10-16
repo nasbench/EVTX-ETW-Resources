@@ -1,0 +1,5 @@
+Provider                                           |  Event ID  |  Channel  |  Message
+---------------------------------------------------|------------|-----------|---------
+Microsoft-Windows-ServiceTriggerPerfEventProvider  |  1         |           |
+Microsoft-Windows-ServiceTriggerPerfEventProvider  |  2         |           |
+Microsoft-Windows-ServiceTriggerPerfEventProvider  |  3         |           |

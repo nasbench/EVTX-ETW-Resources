@@ -1,0 +1,38 @@
+Provider                   |  Event ID  |  Channel                             |  Message
+---------------------------|------------|--------------------------------------|-------------------------------------
+Microsoft-Windows-IME-TIP  |  1         |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  2         |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  11        |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  12        |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  21        |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  22        |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  23        |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  24        |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  25        |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  26        |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  101       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  102       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  120       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  121       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  122       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  123       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  124       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  125       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  126       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  127       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  130       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  131       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  132       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  133       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  134       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  135       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  136       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  137       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  138       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  139       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  140       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  141       |  Microsoft-Windows-IME-TIP/Analytic  |
+Microsoft-Windows-IME-TIP  |  142       |  Microsoft-Windows-IME-TIP/Analytic  |  EAIME_IME_CHS_HWKBD_KeyProcess_Info
+Microsoft-Windows-IME-TIP  |  143       |  Microsoft-Windows-IME-TIP/Analytic  |  EAIME_IME_CHT_HWKBD_KeyProcess_Info
+Microsoft-Windows-IME-TIP  |  144       |  Microsoft-Windows-IME-TIP/Analytic  |  EAIME_IME_JPN_HWKBD_KeyProcess_Info
+Microsoft-Windows-IME-TIP  |  145       |  Microsoft-Windows-IME-TIP/Analytic  |  EAIME_IME_KOR_HWKBD_KeyProcess_Info

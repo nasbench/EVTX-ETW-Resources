@@ -1,0 +1,25 @@
+Provider                 |  Event ID  |  Channel                           |  Message
+-------------------------|------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Sdbus  |  100       |  Microsoft-Windows-Sdbus/Analytic  |  Interrupt detected in ISR.SD Host Physical Address: {SDHostPhysicalAddress}Events (masked): {EventMask}
+Microsoft-Windows-Sdbus  |  101       |  Microsoft-Windows-Sdbus/Analytic  |  Entering callback routine.SD Host Physical Address: {SDHostPhysicalAddress}
+Microsoft-Windows-Sdbus  |  102       |  Microsoft-Windows-Sdbus/Analytic  |  Exiting callback routine.SD Host Physical Address: {SDHostPhysicalAddress}
+Microsoft-Windows-Sdbus  |  103       |  Microsoft-Windows-Sdbus/Analytic  |  Retuning Sequence detected.SD Host Physical Address: {SDHostPhysicalAddress}Retuning Count: {RetuneCount}
+Microsoft-Windows-Sdbus  |  104       |  Microsoft-Windows-Sdbus/Debug     |  Error in bus transfer.SD Host Physical Address: {SDHostPhysicalAddress}Error Code: {ErrorCode}Error Count: {ErrorCount}
+Microsoft-Windows-Sdbus  |  105       |  Microsoft-Windows-Sdbus/Analytic  |  Hpi IO detected.SD Host Physical Address: {SDHostPhysicalAddress}Hpi Count: {HpiIoCount}
+Microsoft-Windows-Sdbus  |  106       |  Microsoft-Windows-Sdbus/Analytic  |  P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Requested: {PStateRequested}P-State Request Count: {PStateRequestCount}
+Microsoft-Windows-Sdbus  |  107       |  Microsoft-Windows-Sdbus/Analytic  |  P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Completed: {PStateCompleted}P-State Completion Count: {PStateCompletionCount}
+Microsoft-Windows-Sdbus  |  108       |  Microsoft-Windows-Sdbus/Analytic  |  Command issued.SD Host Physical Address: {SDHostPhysicalAddress}Command: {Command}Argument: {Argument}Size: {Size}
+Microsoft-Windows-Sdbus  |  109       |  Microsoft-Windows-Sdbus/Analytic  |  Command completed.SD Host Physical Address: {SDHostPhysicalAddress}Command: {Command}Argument: {Argument}Size: {Size}
+Microsoft-Windows-Sdbus  |  110       |  Microsoft-Windows-Sdbus/Analytic  |  Hpi CMD sent to the hardware. IRP {Irp}
+Microsoft-Windows-Sdbus  |  111       |  Microsoft-Windows-Sdbus/Analytic  |  Hpi CMD was accepted by the hardware. IRP {Irp}
+Microsoft-Windows-Sdbus  |  112       |  Microsoft-Windows-Sdbus/Analytic  |  Hpi CMD worker started. IRP {Irp}
+Microsoft-Windows-Sdbus  |  113       |  Microsoft-Windows-Sdbus/Analytic  |  Hpi CMD worker exited. IRP {Irp} Reason: {HpiExitReason}
+Microsoft-Windows-Sdbus  |  114       |  Microsoft-Windows-Sdbus/Analytic  |  P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Active Percentage: {PStateActivePercent}P-State Active Duration: {PStateActiveDuration}P-State Sample Duration: {PStateSampleDuration}P-State Current Frequency: {PStateCurrentFrequency}P-State Requested Frequency: {PStateRequestedFrequency}
+Microsoft-Windows-Sdbus  |  115       |  Microsoft-Windows-Sdbus/Analytic  |  SdbusWorkerDpcEnter: SD Host Physical Address: {SDHostPhysicalAddress} Irp: {Irp} Workpacket Function: {WorkPacket.WorkerProcFunction} CurrentState: {WorkEngine.CurrentState} FunctionPhase: {WorkEngine.FunctionPhase}
+Microsoft-Windows-Sdbus  |  116       |  Microsoft-Windows-Sdbus/Analytic  |  SdbusWorkerDpcExit: SD Host Physical Address: {SDHostPhysicalAddress} Irp: {Irp} Workpacket Function: {WorkPacket.WorkerProcFunction} CurrentState: {WorkEngine.CurrentState} FunctionPhase: {WorkEngine.FunctionPhase}
+Microsoft-Windows-Sdbus  |  117       |  Microsoft-Windows-Sdbus/Analytic  |  SdbusRequestStart: SD Host Physical Address: {SDHostPhysicalAddress} Irp: {Irp} Cmd: {WorkEngine.Command} Arg: {WorkEngine.Argument} Status: {Status}
+Microsoft-Windows-Sdbus  |  118       |  Microsoft-Windows-Sdbus/Analytic  |  SdbusRequestComplete: SD Host Physical Address: {SDHostPhysicalAddress} Irp: {Irp} Cmd: {WorkEngine.Command} Arg {WorkEngine.Argument} Status {Status}
+Microsoft-Windows-Sdbus  |  119       |  Microsoft-Windows-Sdbus/Analytic  |  Scheduled callback routine.SD Host Physical Address: {SDHostPhysicalAddress}
+Microsoft-Windows-Sdbus  |  120       |  Microsoft-Windows-Sdbus/Analytic  |  Interrupt DPC scheduled.
+Microsoft-Windows-Sdbus  |  121       |  Microsoft-Windows-Sdbus/Analytic  |  Interrupt DPC entered.
+Microsoft-Windows-Sdbus  |  122       |  Microsoft-Windows-Sdbus/Analytic  |  Interrupt DPC exited.

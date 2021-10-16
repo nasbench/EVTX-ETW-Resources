@@ -1,0 +1,15 @@
+Provider                     |  Event ID  |  Channel              |  Message
+-----------------------------|------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-IPxlatCfg  |  1001      |  Debug Channel        |  ErrorCode: {ErrorCode}, ErrorMessage: {ErrorString}
+Microsoft-Windows-IPxlatCfg  |  1002      |  Debug Channel        |  Interface: {InterfaceLuid}, ErrorCode: {ErrorCode}, ErrorMessage: {ErrorString}
+Microsoft-Windows-IPxlatCfg  |  1003      |  Debug Channel        |  {InfoString}
+Microsoft-Windows-IPxlatCfg  |  1005      |  Debug Channel        |  Synthetic IPv4 Range: {IPv4Address}/{IPv4Prefix}
+Microsoft-Windows-IPxlatCfg  |  1006      |  Debug Channel        |  Interface: {InterfaceLuid}, {InfoString}
+Microsoft-Windows-IPxlatCfg  |  1007      |  Debug Channel        |  Local Prefix Discovered: InterfaceLuid {InterfaceLuid}, Prefix: {Prefix}, PrefixLength: {PrefixLength}
+Microsoft-Windows-IPxlatCfg  |  1008      |  Debug Channel        |  InterfaceLuid: {InterfaceLuid}, Synthetic IPv4 Address: {IPv4Address}
+Microsoft-Windows-IPxlatCfg  |  1009      |  Debug Channel        |  InterfaceLuid: {InterfaceLuid}, Synthetic IPv6 Address: {IPv6Address}
+Microsoft-Windows-IPxlatCfg  |  1010      |  Debug Channel        |  IPxlatInterface::Cleanup: InterfaceLuid {InterfaceLuid}
+Microsoft-Windows-IPxlatCfg  |  1011      |  Debug Channel        |  {InfoString} {MTU}
+Microsoft-Windows-IPxlatCfg  |  1101      |  Operational Channel  |  464xlat Enabled: InterfaceLuid {InterfaceLuid}, Metric: {Metric}, RemotePrefix: {RemotePrefix}, RemotePrefixLength: {RemotePrefixLength}, LocalPrefix: {LocalPrefix}, LocalPrefixLength: {LocalPrefixLength}
+Microsoft-Windows-IPxlatCfg  |  1102      |  Operational Channel  |  464xlat Disabled: InterfaceLuid {InterfaceLuid}, Metric: {Metric}, RemotePrefix: {RemotePrefix}, RemotePrefixLength: {RemotePrefixLength}, LocalPrefix: {LocalPrefix}, LocalPrefixLength: {LocalPrefixLength}
+Microsoft-Windows-IPxlatCfg  |  1103      |  Operational Channel  |  Remote Prefix Discovered: InterfaceLuid {InterfaceLuid}, Prefix: {Prefix}, PrefixLength: {PrefixLength}

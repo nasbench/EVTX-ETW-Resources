@@ -1,0 +1,3 @@
+Provider           |  Event ID  |  Channel  |  Message
+-------------------|------------|-----------|-------------------------------------------
+Application Popup  |  26        |  System   |  Application pop-up: {Caption} : {Message}

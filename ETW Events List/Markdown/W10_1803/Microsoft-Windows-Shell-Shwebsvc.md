@@ -1,0 +1,18 @@
+Provider                          |  Event ID  |  Channel                           |  Message
+----------------------------------|------------|------------------------------------|---------
+Microsoft-Windows-Shell-Shwebsvc  |  1         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  2         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  3         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  4         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  5         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  6         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  7         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  8         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  9         |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  10        |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  11        |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  12        |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  13        |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  14        |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  15        |  Microsoft-Windows-Shell-Shwebsvc  |
+Microsoft-Windows-Shell-Shwebsvc  |  16        |  Microsoft-Windows-Shell-Shwebsvc  |

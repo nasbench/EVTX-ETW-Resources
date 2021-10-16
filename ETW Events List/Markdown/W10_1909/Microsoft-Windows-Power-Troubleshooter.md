@@ -1,0 +1,6 @@
+Provider                                |  Event ID  |  Channel  |  Message
+----------------------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Power-Troubleshooter  |  1         |  System   |  The system has returned from a low power state.Sleep Time: {SleepTime}Wake Time: {WakeTime}Wake Source: {SleepTime}3{SleepTime}5
+Microsoft-Windows-Power-Troubleshooter  |  1         |  System   |  The system has returned from a low power state.Sleep Time: {SleepTime}Wake Time: {WakeTime}Wake Source: {SleepTime}3{SleepTime}5
+Microsoft-Windows-Power-Troubleshooter  |  1         |  System   |  The system has returned from a low power state.Sleep Time: {SleepTime}Wake Time: {WakeTime}Wake Source: {SleepTime}3{SleepTime}5
+Microsoft-Windows-Power-Troubleshooter  |  1         |  System   |  The system has returned from a low power state.Sleep Time: {SleepTime}Wake Time: {WakeTime}Wake Source: {SleepTime}3{SleepTime}5

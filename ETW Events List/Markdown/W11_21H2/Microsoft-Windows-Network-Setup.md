@@ -1,0 +1,26 @@
+Provider                         |  Event ID  |  Channel                                     |  Message
+---------------------------------|------------|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Network-Setup  |  100       |  Microsoft-Windows-Network-Setup/Diagnostic  |
+Microsoft-Windows-Network-Setup  |  101       |  Microsoft-Windows-Network-Setup/Diagnostic  |
+Microsoft-Windows-Network-Setup  |  102       |  Microsoft-Windows-Network-Setup/Diagnostic  |  The Network Setup service failed to start with error {Code}
+Microsoft-Windows-Network-Setup  |  110       |  Microsoft-Windows-Network-Setup/Diagnostic  |
+Microsoft-Windows-Network-Setup  |  111       |  Microsoft-Windows-Network-Setup/Diagnostic  |
+Microsoft-Windows-Network-Setup  |  112       |  Microsoft-Windows-Network-Setup/Diagnostic  |
+Microsoft-Windows-Network-Setup  |  113       |  Microsoft-Windows-Network-Setup/Diagnostic  |
+Microsoft-Windows-Network-Setup  |  200       |  Microsoft-Windows-Network-Setup/Diagnostic  |  A new transaction has started
+Microsoft-Windows-Network-Setup  |  201       |  Microsoft-Windows-Network-Setup/Diagnostic  |  A transaction has been closed
+Microsoft-Windows-Network-Setup  |  202       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Network Setup has begun calculating new driver bindings
+Microsoft-Windows-Network-Setup  |  203       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Network Setup has finished calculating new driver bindings
+Microsoft-Windows-Network-Setup  |  204       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Network Setup has begun committing changes to the registry
+Microsoft-Windows-Network-Setup  |  205       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Network Setup has finished committing changes to the registry
+Microsoft-Windows-Network-Setup  |  300       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Begin API {Api} on transaction {TransactionGuid}
+Microsoft-Windows-Network-Setup  |  301       |  Microsoft-Windows-Network-Setup/Diagnostic  |  End API {Api} on transaction {TransactionGuid}
+Microsoft-Windows-Network-Setup  |  400       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Begin calling into plug-in {PluginName}
+Microsoft-Windows-Network-Setup  |  401       |  Microsoft-Windows-Network-Setup/Diagnostic  |  End calling into plug-in
+Microsoft-Windows-Network-Setup  |  500       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Begin operation {OperationType} on {ObjectType} in transaction {TransactionGuid}: {ObjectId} on {PropertyBufferSize}:{PropertyBuffer}
+Microsoft-Windows-Network-Setup  |  501       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Operation {TransactionGuid} ended with code {Code}
+Microsoft-Windows-Network-Setup  |  600       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Begin API {Api}
+Microsoft-Windows-Network-Setup  |  601       |  Microsoft-Windows-Network-Setup/Diagnostic  |  End API with status code {Code}
+Microsoft-Windows-Network-Setup  |  700       |  Microsoft-Windows-Network-Setup/Diagnostic  |  Invoking API {ComponentId} on Notify Object for {TransactionGuid}
+Microsoft-Windows-Network-Setup  |  701       |  Microsoft-Windows-Network-Setup/Diagnostic  |  The Notify Object returned with status: {Code}
+Microsoft-Windows-Network-Setup  |  702       |  Microsoft-Windows-Network-Setup/Diagnostic  |  An error occurred while invoking the Notify Object. The call was aborted with status: {Code}.

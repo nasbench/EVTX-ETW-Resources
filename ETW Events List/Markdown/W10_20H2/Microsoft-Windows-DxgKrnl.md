@@ -1,0 +1,575 @@
+Provider                   |  Event ID  |  Channel                                |  Message
+---------------------------|------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-DxgKrnl  |  1         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
+Microsoft-Windows-DxgKrnl  |  2         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
+Microsoft-Windows-DxgKrnl  |  3         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
+Microsoft-Windows-DxgKrnl  |  17        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  18        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  19        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  20        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  21        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  22        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  23        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  24        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  25        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  26        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  27        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  28        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  29        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  30        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  31        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  32        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  33        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  34        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  35        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  36        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  37        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  38        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  39        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  40        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  41        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  42        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  43        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  45        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  46        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  47        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  48        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  49        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  50        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  51        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  52        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  53        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  54        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  55        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  56        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  57        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  58        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  59        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  60        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  61        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  62        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  63        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  64        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  65        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  66        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  67        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  68        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  69        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  70        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  71        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  72        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  73        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  74        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  75        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  76        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  77        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  78        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  80        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  81        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  82        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  83        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  84        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  85        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  86        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  87        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  88        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  89        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  90        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  91        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  92        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  93        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  94        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  95        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  96        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  97        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  98        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  99        |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  100       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  101       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  102       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  103       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  104       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  105       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  106       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  107       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  108       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  109       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  110       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  111       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  112       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  113       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  115       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  116       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  117       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  118       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  119       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  120       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  121       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  122       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  123       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  124       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  125       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  126       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  127       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  128       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  129       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  130       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  131       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  132       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  133       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  134       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  135       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  136       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  137       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  138       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  139       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  140       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  141       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  142       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  143       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  144       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  145       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  146       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  147       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  148       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  149       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  150       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  151       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  152       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  153       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  154       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  155       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  156       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  157       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  158       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  159       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  160       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  161       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  162       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  163       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  164       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  165       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  166       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  167       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  168       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  169       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  170       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  171       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  172       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  173       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  174       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  175       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  176       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  177       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  178       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  179       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  180       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  181       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  182       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  183       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  184       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  185       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  186       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  187       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  188       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  189       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  190       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  191       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  192       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  193       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  194       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  195       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  196       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  197       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  198       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  199       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  200       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  201       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  202       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  203       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerComponentFStateStart
+Microsoft-Windows-DxgKrnl  |  204       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerComponentFStateEnd
+Microsoft-Windows-DxgKrnl  |  205       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerComponentActiveCBStart
+Microsoft-Windows-DxgKrnl  |  206       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerComponentActiveCBEnd
+Microsoft-Windows-DxgKrnl  |  207       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerComponentIdleCBStart
+Microsoft-Windows-DxgKrnl  |  208       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerComponentIdleCBEnd
+Microsoft-Windows-DxgKrnl  |  209       |  Microsoft-Windows-DxgKrnl/Performance  |  ComponentActiveCallback
+Microsoft-Windows-DxgKrnl  |  210       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  211       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  212       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  214       |  Microsoft-Windows-DxgKrnl/Performance  |  DevicePowerRequiredCallback
+Microsoft-Windows-DxgKrnl  |  215       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  216       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  217       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  218       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  219       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  220       |  Microsoft-Windows-DxgKrnl/Performance  |  ControlCallback
+Microsoft-Windows-DxgKrnl  |  221       |  Microsoft-Windows-DxgKrnl/Performance  |  ControlRequestCB
+Microsoft-Windows-DxgKrnl  |  222       |  Microsoft-Windows-DxgKrnl/Performance  |  PowerComponent
+Microsoft-Windows-DxgKrnl  |  223       |  Microsoft-Windows-DxgKrnl/Performance  |  PowerComponentIdleState
+Microsoft-Windows-DxgKrnl  |  225       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  226       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  227       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  228       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerComponentLatencyCB
+Microsoft-Windows-DxgKrnl  |  229       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerComponentResidencyCB
+Microsoft-Windows-DxgKrnl  |  230       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  231       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  232       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  233       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  234       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  235       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  236       |  Microsoft-Windows-DxgKrnl/Performance  |  DpiRequestDevicePowerState
+Microsoft-Windows-DxgKrnl  |  237       |  Microsoft-Windows-DxgKrnl/Performance  |  DpiRequestDevicePowerIrp
+Microsoft-Windows-DxgKrnl  |  238       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  239       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  240       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  241       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  242       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  243       |  Microsoft-Windows-DxgKrnl/Performance  |  CompleteFStateTransitionCB
+Microsoft-Windows-DxgKrnl  |  244       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  245       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  246       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  247       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  248       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  249       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  250       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  251       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  252       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  253       |  Microsoft-Windows-DxgKrnl/Performance  |  PowerPStateComponent
+Microsoft-Windows-DxgKrnl  |  254       |  Microsoft-Windows-DxgKrnl/Performance  |  PowerPState
+Microsoft-Windows-DxgKrnl  |  255       |  Microsoft-Windows-DxgKrnl/Performance  |  SetPowerPState
+Microsoft-Windows-DxgKrnl  |  256       |  Microsoft-Windows-DxgKrnl/Performance  |  PowerPStateCompleted
+Microsoft-Windows-DxgKrnl  |  257       |  Microsoft-Windows-DxgKrnl/Performance  |  ReportPowerComponentState
+Microsoft-Windows-DxgKrnl  |  258       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  259       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  260       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  261       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  262       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  263       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  264       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  265       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  266       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  267       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  268       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  269       |  Microsoft-Windows-DxgKrnl/Performance  |  PrimaryMonitorPowerChange
+Microsoft-Windows-DxgKrnl  |  270       |  Microsoft-Windows-DxgKrnl/Performance  |  SetDevicePowerTransitionState
+Microsoft-Windows-DxgKrnl  |  271       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  272       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  273       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  274       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  275       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  276       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  277       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  278       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  279       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  280       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  281       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  282       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  283       |  Microsoft-Windows-DxgKrnl/Performance  |  EnableDisableDevicePowerRequiredTimer
+Microsoft-Windows-DxgKrnl  |  284       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  285       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  286       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  287       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  288       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  289       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  290       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  291       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  292       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  293       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  294       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  295       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  296       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  297       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  298       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  299       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  300       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  301       |  Microsoft-Windows-DxgKrnl/Performance  |  RecycleRangeCreation
+Microsoft-Windows-DxgKrnl  |  302       |  Microsoft-Windows-DxgKrnl/Performance  |  RecycleRangeTransition
+Microsoft-Windows-DxgKrnl  |  303       |  Microsoft-Windows-DxgKrnl/Performance  |  RecycleRangeDestruction
+Microsoft-Windows-DxgKrnl  |  304       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  305       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  306       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  307       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  308       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  309       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  310       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  311       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  312       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  313       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  314       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  315       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  316       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  317       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  318       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  319       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  320       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  321       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  322       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  323       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  324       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  325       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  326       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  327       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  328       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  329       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  330       |  Microsoft-Windows-DxgKrnl/Performance  |  Report VAD
+Microsoft-Windows-DxgKrnl  |  331       |  Microsoft-Windows-DxgKrnl/Performance  |  Create VAD
+Microsoft-Windows-DxgKrnl  |  332       |  Microsoft-Windows-DxgKrnl/Performance  |  Destroy VAD
+Microsoft-Windows-DxgKrnl  |  333       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  334       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  335       |  Microsoft-Windows-DxgKrnl/Performance  |  Report VaAllocator
+Microsoft-Windows-DxgKrnl  |  336       |  Microsoft-Windows-DxgKrnl/Performance  |  Create VaAllocator
+Microsoft-Windows-DxgKrnl  |  337       |  Microsoft-Windows-DxgKrnl/Performance  |  Destroy VaAllocator
+Microsoft-Windows-DxgKrnl  |  338       |  Microsoft-Windows-DxgKrnl/Performance  |  Start
+Microsoft-Windows-DxgKrnl  |  339       |  Microsoft-Windows-DxgKrnl/Performance  |  End
+Microsoft-Windows-DxgKrnl  |  340       |  Microsoft-Windows-DxgKrnl/Performance  |  2
+Microsoft-Windows-DxgKrnl  |  341       |  Microsoft-Windows-DxgKrnl/Performance  |  2
+Microsoft-Windows-DxgKrnl  |  342       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  343       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  344       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  346       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  347       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  348       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  349       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  350       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  351       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  352       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  353       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  354       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  355       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  356       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  357       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  358       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  359       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  360       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  361       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  362       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  363       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  364       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  365       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  366       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  367       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  368       |  Microsoft-Windows-DxgKrnl/Power        |
+Microsoft-Windows-DxgKrnl  |  369       |  Microsoft-Windows-DxgKrnl/Power        |
+Microsoft-Windows-DxgKrnl  |  370       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  371       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  372       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  373       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  374       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  375       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  376       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  377       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  378       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  379       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  380       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  381       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  382       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  383       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  384       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  385       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  386       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  387       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  388       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  389       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  390       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  391       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  392       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  393       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  394       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  395       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  396       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  397       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  398       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  399       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  400       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  401       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  402       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  403       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  404       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  405       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  406       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  407       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  408       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  409       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  410       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  411       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  412       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  413       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  414       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  415       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  416       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  417       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  418       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  419       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  420       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  421       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  422       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  423       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  424       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  425       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  426       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  427       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  428       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  429       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  430       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  431       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  432       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  433       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  434       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  435       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  436       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  437       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  438       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  439       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  440       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  441       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  442       |  Microsoft-Windows-DxgKrnl/Performance  |  DeviceDirectedPowerCallback
+Microsoft-Windows-DxgKrnl  |  443       |                                         |
+Microsoft-Windows-DxgKrnl  |  444       |                                         |
+Microsoft-Windows-DxgKrnl  |  445       |  Microsoft-Windows-DxgKrnl-Admin        |  Creation of a virtual GPU on the adapter ({pDxgAdapter}) failed with the status ({Status}), reason ({FailureType})
+Microsoft-Windows-DxgKrnl  |  446       |  Microsoft-Windows-DxgKrnl-Operational  |  Starting creation of a virtual GPU on the adapter ({pDxgAdapter}). VirtualFunction ({VirtualFunctionIndex}). Secure ({bSecure})
+Microsoft-Windows-DxgKrnl  |  447       |  Microsoft-Windows-DxgKrnl-Operational  |  Finished creation of a virtual GPU on the adapter ({pDxgAdapter}). VirtualFunction ({VirtualFunctionIndex}). Status ({Status}). Failure reason ({FailureType})
+Microsoft-Windows-DxgKrnl  |  448       |                                         |
+Microsoft-Windows-DxgKrnl  |  449       |                                         |
+Microsoft-Windows-DxgKrnl  |  450       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  451       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  452       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  453       |  Microsoft-Windows-DxgKrnl-Admin        |  Open a virtual GPU from guest on the adapter ({pDxgAdapter}) failed with the status ({Status}), reason ({FailureType})
+Microsoft-Windows-DxgKrnl  |  454       |  Microsoft-Windows-DxgKrnl-Operational  |  Opening a virtual GPU on the adapter ({pDxgAdapter}). VirtualFunction ({VirtualFunctionIndex}))
+Microsoft-Windows-DxgKrnl  |  455       |  Microsoft-Windows-DxgKrnl-Operational  |  Finished opening a virtual GPU on the adapter ({pDxgAdapter}). VirtualFunction ({VirtualFunctionIndex}). Status ({Status}). Failure reason ({FailureType})
+Microsoft-Windows-DxgKrnl  |  456       |  Microsoft-Windows-DxgKrnl-Admin        |  Miniport driver failed to add device with status {Status}
+Microsoft-Windows-DxgKrnl  |  457       |  Microsoft-Windows-DxgKrnl-Admin        |  Miniport driver failed to start device with status {Status}
+Microsoft-Windows-DxgKrnl  |  458       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  459       |  Microsoft-Windows-DxgKrnl/Performance  |  PowerManagementSupport
+Microsoft-Windows-DxgKrnl  |  460       |  Microsoft-Windows-DxgKrnl/Performance  |  PowerManagementComponents
+Microsoft-Windows-DxgKrnl  |  461       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  462       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  463       |  Microsoft-Windows-DxgKrnl-Admin        |  Event from virtual GPU on the adapter ({pDxgAdapter}), virtual function ({VirtualFunctionIndex}), status ({Status}) scenario ({Scenario}), id ({EventId})
+Microsoft-Windows-DxgKrnl  |  464       |  Microsoft-Windows-DxgKrnl-Operational  |  Event from virtual GPU on the adapter ({pDxgAdapter}), virtual function ({VirtualFunctionIndex}), status ({Status}) scenario ({Scenario}), id ({EventId})
+Microsoft-Windows-DxgKrnl  |  465       |  Microsoft-Windows-DxgKrnl-Admin        |  Winlogon in session {SessionId} ({SessionType}) reuqested session stop using GPU, returned status {Status}, with progress stage of {Stage}
+Microsoft-Windows-DxgKrnl  |  466       |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1000      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1001      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1002      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1003      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1004      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1005      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1006      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1007      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1008      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1009      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1010      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1011      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1012      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1013      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1014      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1015      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1016      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1017      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1018      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1019      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1020      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1021      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1022      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1023      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1024      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1025      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1026      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1027      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1028      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1029      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1030      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1031      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1032      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1033      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1034      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1035      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1036      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1037      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1038      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1039      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1040      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1041      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1042      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1043      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1044      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1045      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1046      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1047      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1048      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1049      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1050      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1051      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1052      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1053      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1054      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1055      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1056      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1057      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1058      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1059      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1060      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1061      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1062      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1063      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1064      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1065      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1066      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1067      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1068      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1069      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1070      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1071      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1072      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1073      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1074      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1075      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1076      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1077      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1078      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1079      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1080      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1081      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1082      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1083      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1084      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1085      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1086      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1087      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1088      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1089      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1090      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1091      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1092      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1093      |  Microsoft-Windows-DxgKrnl/Power        |
+Microsoft-Windows-DxgKrnl  |  1094      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1095      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1096      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1097      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1098      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1099      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1100      |  Microsoft-Windows-DxgKrnl/Contention   |
+Microsoft-Windows-DxgKrnl  |  1101      |  Microsoft-Windows-DxgKrnl/Contention   |
+Microsoft-Windows-DxgKrnl  |  1102      |  Microsoft-Windows-DxgKrnl/Contention   |
+Microsoft-Windows-DxgKrnl  |  1103      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1104      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1105      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1106      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1107      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1108      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1109      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1110      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1111      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1112      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1113      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1114      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1115      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1116      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1117      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1118      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1119      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  1120      |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  10000     |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  10001     |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  10002     |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  10010     |  Microsoft-Windows-DxgKrnl/Performance  |
+Microsoft-Windows-DxgKrnl  |  10011     |  Microsoft-Windows-DxgKrnl/Performance  |

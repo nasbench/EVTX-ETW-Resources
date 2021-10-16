@@ -1,0 +1,20 @@
+Provider                      |  Event ID  |  Channel                                |  Message
+------------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-Direct3D10  |  1         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  2         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  3         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  4         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  5         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  6         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  7         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  8         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  9         |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  10        |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  11        |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  12        |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  13        |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  14        |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  15        |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  16        |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  17        |  Microsoft-Windows-Direct3D10/Analytic  |
+Microsoft-Windows-Direct3D10  |  18        |  Microsoft-Windows-Direct3D10/Analytic  |

@@ -1,0 +1,14 @@
+Provider                            |  Event ID  |  Channel                                         |  Message
+------------------------------------|------------|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Bluetooth-Policy  |  1         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  A Bluetooth policy has changed.  Policy {PolicyPath}\{PolicyName} has value of: {PolicyValue}
+Microsoft-Windows-Bluetooth-Policy  |  2         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  Bluetooth radio enablement has been {PolicyState} due to policy {PolicyPath}\{PolicyName}.
+Microsoft-Windows-Bluetooth-Policy  |  3         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  Bluetooth radio has {PolicyState} advertising due to policy {PolicyPath}\{PolicyName}.
+Microsoft-Windows-Bluetooth-Policy  |  4         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  Bluetooth radio has {PolicyState} discoverability due to policy {PolicyPath}\{PolicyName}.
+Microsoft-Windows-Bluetooth-Policy  |  5         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  Bluetooth radio has {PolicyState} radio name as {RadioName} due to policy {PolicyPath}\{PolicyName}.
+Microsoft-Windows-Bluetooth-Policy  |  6         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  Process {Service} has attempted to pair to radio {BtAddr}.
+Microsoft-Windows-Bluetooth-Policy  |  7         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  Bluetooth has {Accepted} service {ServiceGuid} on remote device {BtAddr} due to policy {PolicyPath}\{PolicyName}...
+Microsoft-Windows-Bluetooth-Policy  |  8         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  Bluetooth has {Accepted} PSM {Psm} on remote device {BtAddr} due to policy {PolicyPath}\{PolicyName}...
+Microsoft-Windows-Bluetooth-Policy  |  9         |  Microsoft-Windows-Bluetooth-Policy/Operational  |  A connection to a remote device {bthAddr} was successfully established.
+Microsoft-Windows-Bluetooth-Policy  |  10        |  Microsoft-Windows-Bluetooth-Policy/Operational  |  An attempt to connect to a remote device {bthAddr} failed.
+Microsoft-Windows-Bluetooth-Policy  |  11        |  Microsoft-Windows-Bluetooth-Policy/Operational  |  The minimum encryption key size requirement of {requiredKeySize} octets was enforced on a connection to the remote device {bthAddr}. The key size is {actualKeySize} octets.
+Microsoft-Windows-Bluetooth-Policy  |  12        |  Microsoft-Windows-Bluetooth-Policy/Operational  |  A connection to the remote device {bthAddr} was rejected because it did not meet the minimum encryption key size requirement of {requiredKeySize} octets. The key size was {actualKeySize} octets.

@@ -1,0 +1,9 @@
+Provider                      |  Event ID  |  Channel                                  |  Message
+------------------------------|------------|-------------------------------------------|---------
+Microsoft-Windows-Kernel-Pep  |  1         |  Microsoft-Windows-Kernel-Pep/Diagnostic  |
+Microsoft-Windows-Kernel-Pep  |  2         |  Microsoft-Windows-Kernel-Pep/Diagnostic  |
+Microsoft-Windows-Kernel-Pep  |  3         |  Microsoft-Windows-Kernel-Pep/Diagnostic  |
+Microsoft-Windows-Kernel-Pep  |  4         |  Microsoft-Windows-Kernel-Pep/Diagnostic  |
+Microsoft-Windows-Kernel-Pep  |  5         |  Microsoft-Windows-Kernel-Pep/Diagnostic  |
+Microsoft-Windows-Kernel-Pep  |  6         |  Microsoft-Windows-Kernel-Pep/Diagnostic  |
+Microsoft-Windows-Kernel-Pep  |  7         |  Microsoft-Windows-Kernel-Pep/Diagnostic  |

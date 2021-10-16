@@ -1,0 +1,32 @@
+Provider                     |  Event ID  |  Channel                                 |  Message
+-----------------------------|------------|------------------------------------------|---------
+Microsoft-Windows-IPSEC-SRV  |  101       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  102       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  103       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  104       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  105       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  106       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  107       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  108       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  109       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  110       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  111       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  112       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  113       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  114       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  115       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  116       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  117       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  118       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  119       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  120       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  121       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  122       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  123       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  124       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  125       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  126       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  127       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  128       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  129       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |
+Microsoft-Windows-IPSEC-SRV  |  130       |  Microsoft-Windows-IPSEC-SRV/Diagnostic  |

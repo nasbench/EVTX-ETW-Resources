@@ -1,0 +1,4 @@
+Provider                                         |  Event ID  |  Channel                                                   |  Message
+-------------------------------------------------|------------|------------------------------------------------------------|---------
+Microsoft-Windows-IME-CustomerFeedbackManagerUI  |  12        |  Microsoft-Windows-IME-CustomerFeedbackManagerUI/Analytic  |
+Microsoft-Windows-IME-CustomerFeedbackManagerUI  |  13        |  Microsoft-Windows-IME-CustomerFeedbackManagerUI/Analytic  |

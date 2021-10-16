@@ -1,0 +1,6 @@
+Provider             |  Event ID  |  Channel  |  Message
+---------------------|------------|-----------|---------
+Microsoft-RMS-MSIPC  |  1         |           |  {Value}
+Microsoft-RMS-MSIPC  |  2         |           |  {Value}
+Microsoft-RMS-MSIPC  |  3         |           |  {Value}
+Microsoft-RMS-MSIPC  |  4         |           |  {Value}

@@ -1,0 +1,3 @@
+Provider                   |  Event ID  |  Channel           |  Message
+---------------------------|------------|--------------------|----------------------
+Microsoft-Windows-HttpLog  |  1         |  HTTP Log Channel  |  HTTP transaction log

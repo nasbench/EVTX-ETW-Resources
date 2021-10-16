@@ -1,0 +1,12 @@
+Provider                           |  Event ID  |  Channel                                    |  Message
+-----------------------------------|------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft.Windows.HyperV.GpupVDev  |  1500      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft.Windows.HyperV.GpupVDev  |  1510      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft.Windows.HyperV.GpupVDev  |  1520      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft.Windows.HyperV.GpupVDev  |  1530      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
+Microsoft.Windows.HyperV.GpupVDev  |  23012     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  The virtual machine {VmName} cannot load device {Device} because there are no mutually supported protocol versions. The server version is {ServerVersion} and the client version is {ClientVersion} (Virtual machine ID {VmId}).
+Microsoft.Windows.HyperV.GpupVDev  |  23013     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  The device {Device} cannot be loaded because there are no mutually support protocol versions between the server and client.
+Microsoft.Windows.HyperV.GpupVDev  |  34000     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  Could not find a GPU Partitioning resource pool with ID '{Parameter0}'.
+Microsoft.Windows.HyperV.GpupVDev  |  34001     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  Could not find the GPU Partitioning resource pool.
+Microsoft.Windows.HyperV.GpupVDev  |  34002     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  VM '{VmName}' (Virtual machine ID {VmId}) cannot add a GPUP device ({Device}) because guest hibernation is enabled. GPUP is not supported with guest hibernation.
+Microsoft.Windows.HyperV.GpupVDev  |  34003     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  VM '{VmName}' (Virtual machine ID {VmId}) cannot add a GPUP device ({Device}) because guest hibernation is enabled. GPUP is not supported with guest hibernation.

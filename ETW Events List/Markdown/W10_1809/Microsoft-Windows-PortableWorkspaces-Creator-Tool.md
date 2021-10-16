@@ -1,0 +1,30 @@
+Provider                                           |  Event ID  |  Channel  |  Message
+---------------------------------------------------|------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  2         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  3         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  4         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  5         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  6         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  7         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  8         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  9         |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  10        |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  11        |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  12        |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  13        |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  14        |           |  Finished provisioning a portable workspace.
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1000      |           |  Selected device details: Friendly Name = {FriendlyName}, Name = {Name}, Drive Letters = {DriveLetters}, Size = {Size}, MediaType = {MediaType}.
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1001      |           |  Selected image details: Path = {Path}, Architecture = {Architecture}, IsEnterprise = {IsEnterprise}.
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1002      |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1003      |           |  Provision failed (HRESULT = {HRESULT}).
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1004      |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1005      |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1006      |           |  The WIM file was not found at: {Path}.
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1007      |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1008      |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1009      |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1010      |           |  Validation of the WIM file failed (HRESULT: {HRESULT})
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1011      |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1013      |           |
+Microsoft-Windows-PortableWorkspaces-Creator-Tool  |  1014      |           |

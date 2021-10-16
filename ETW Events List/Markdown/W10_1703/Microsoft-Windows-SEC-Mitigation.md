@@ -1,0 +1,4 @@
+Provider                          |  Event ID  |  Channel  |  Message
+----------------------------------|------------|-----------|---------
+Microsoft-Windows-SEC-Mitigation  |  1101      |           |
+Microsoft-Windows-SEC-Mitigation  |  1102      |           |

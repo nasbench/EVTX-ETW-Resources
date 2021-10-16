@@ -1,0 +1,10 @@
+Provider                                       |  Event ID  |  Channel  |  Message
+-----------------------------------------------|------------|-----------|---------
+Microsoft-Windows-DriverFrameworks-KernelMode  |  5         |           |
+Microsoft-Windows-DriverFrameworks-KernelMode  |  6         |           |
+Microsoft-Windows-DriverFrameworks-KernelMode  |  7         |           |
+Microsoft-Windows-DriverFrameworks-KernelMode  |  8         |           |
+Microsoft-Windows-DriverFrameworks-KernelMode  |  9         |           |
+Microsoft-Windows-DriverFrameworks-KernelMode  |  10        |           |
+Microsoft-Windows-DriverFrameworks-KernelMode  |  11        |           |
+Microsoft-Windows-DriverFrameworks-KernelMode  |  12        |           |

@@ -1,0 +1,16 @@
+Provider                           |  Event ID  |  Channel                                       |  Message
+-----------------------------------|------------|------------------------------------------------|-----------------------------
+Microsoft-Windows-StorageSettings  |  1001      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Storage usage breakdown.
+Microsoft-Windows-StorageSettings  |  1002      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Category action.
+Microsoft-Windows-StorageSettings  |  1003      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Volume usage overview.
+Microsoft-Windows-StorageSettings  |  1004      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Device volume count.
+Microsoft-Windows-StorageSettings  |  1005      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Completing initialisation.
+Microsoft-Windows-StorageSettings  |  1006      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Iterating cleanup plug-ins.
+Microsoft-Windows-StorageSettings  |  1007      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Iterating cleanup plug-ins.
+Microsoft-Windows-StorageSettings  |  1008      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Iterating cleanup plug-ins.
+Microsoft-Windows-StorageSettings  |  1009      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Iterating cleanup plug-ins.
+Microsoft-Windows-StorageSettings  |  1010      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Scanning cleanup plug-ins.
+Microsoft-Windows-StorageSettings  |  1011      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Completing scan.
+Microsoft-Windows-StorageSettings  |  1012      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Completing cleanup.
+Microsoft-Windows-StorageSettings  |  1013      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Purge cleanup plug-ins.
+Microsoft-Windows-StorageSettings  |  1014      |  Microsoft-Windows-StorageSettings/Diagnostic  |  Purge cleanup plug-ins.

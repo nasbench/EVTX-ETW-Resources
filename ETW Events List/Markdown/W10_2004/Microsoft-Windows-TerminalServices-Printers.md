@@ -1,0 +1,18 @@
+Provider                                     |  Event ID  |  Channel  |  Message
+---------------------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-TerminalServices-Printers  |  1100      |  Admin    |  TS RDPDR Device Redirection failed to initialize for a single user session {Param1}.  Serial, Parallel, Printer, and File System Redirection will be disabled.  Look in the System event log for other related errors.
+Microsoft-Windows-TerminalServices-Printers  |  1102      |  Admin    |  Driver {Param1} required for printer {Param2} is not installed on the server. Contact the administrator to install the driver before you log in again.
+Microsoft-Windows-TerminalServices-Printers  |  1103      |  Admin    |
+Microsoft-Windows-TerminalServices-Printers  |  1105      |  Admin    |  Printer security information for the printer {Param1} could not be set.
+Microsoft-Windows-TerminalServices-Printers  |  1107      |  Admin    |  The printer {Param1} could not be deleted.
+Microsoft-Windows-TerminalServices-Printers  |  1108      |  Admin    |  Configuration information for the {Param1} printer could not be restored.
+Microsoft-Windows-TerminalServices-Printers  |  1109      |  Admin    |  The {Param1} printer could not be set as the default printer.
+Microsoft-Windows-TerminalServices-Printers  |  1110      |  Admin    |  An error occurred during processing of {Param1}. The file might be corrupted. Run Setup again to reinstall the file.
+Microsoft-Windows-TerminalServices-Printers  |  1111      |  Admin    |  Driver {Param1} required for printer {Param2} is unknown. Contact the administrator to install the driver before you log in again.
+Microsoft-Windows-TerminalServices-Printers  |  1112      |  Admin    |
+Microsoft-Windows-TerminalServices-Printers  |  1113      |  Admin    |
+Microsoft-Windows-TerminalServices-Printers  |  1114      |  Admin    |
+Microsoft-Windows-TerminalServices-Printers  |  1115      |  Admin    |
+Microsoft-Windows-TerminalServices-Printers  |  1116      |  Admin    |  The printer {Param1} cannot be redirected by using Remote Desktop Easy Print. The client computer may not have a version of the Remote Desktop Connection client or Microsoft .NET Framework installed that supports this driver.
+Microsoft-Windows-TerminalServices-Printers  |  1123      |  Admin    |  The Print Spooler failed to add the printer {Param1}, port {Param2} because of a port error. The Print Spooler will not try again to add the printer.
+Microsoft-Windows-TerminalServices-Printers  |  1124      |  Admin    |  The number of printers per session limit was reached. The following print queue was not created: Printer = {Param1}Port = {Param2}

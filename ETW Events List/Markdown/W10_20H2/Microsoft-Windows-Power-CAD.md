@@ -1,0 +1,14 @@
+Provider                     |  Event ID  |  Channel  |  Message
+-----------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Power-CAD  |  100       |           |  CAD: {Message}
+Microsoft-Windows-Power-CAD  |  101       |           |  CAD: Internal Error Occurred in Function {Function} Line {Line}. Error Code is {ErrorCode}
+Microsoft-Windows-Power-CAD  |  201       |           |  CAD: Notifying Battery Driver    - Id:{PowerSourceId} MaxCurrent:{MaxChargeCurrent} Info:{PowerSourceInformation} Status:{PowerSourceStatus} ChargerId:{ChargerId}
+Microsoft-Windows-Power-CAD  |  202       |           |  CAD: Power Source Update Call    - Id:{PowerSourceId} MaxCurrent:{MaxChargeCurrent} Info:{PowerSourceInformation} Status:{PowerSourceStatus} ChargerId:{ChargerId}
+Microsoft-Windows-Power-CAD  |  203       |           |  CAD: Start Charging IOCTL Call   - Id:{PowerSourceId} MaxCurrent:{MaxChargeCurrent} Info:{PowerSourceInformation} Status:{PowerSourceStatus} ChargerId:{ChargerId}
+Microsoft-Windows-Power-CAD  |  204       |           |  CAD: Stop Charging IOCTL Call    - Id:{PowerSourceId}
+Microsoft-Windows-Power-CAD  |  205       |           |  CAD: Source Change Notification  - Id:{PowerSourceId} SourceOnline:{SourceOnline}
+Microsoft-Windows-Power-CAD  |  206       |           |  CAD: Battery Status              - Capacity:{Capacity} FullChargedCapacity:{FullChargedCapacity} Voltage:{Voltage} Rate:{Rate}
+Microsoft-Windows-Power-CAD  |  207       |           |  CAD-BAT: Notify Generic Charger Status       - Size:{Size} BatteryTag:{BatteryTag} InformationLevel:{InformationLevel} ChargingSourceType:{ChargingSourceType} VaData:{VaData}
+Microsoft-Windows-Power-CAD  |  208       |           |  CAD-BAT: Notify Charger Status Result        - BatteryTag:{BatteryTag} InformationLevel:{InformationLevel} ChargingSourceType:{ChargingSourceType} Status:{Status}
+Microsoft-Windows-Power-CAD  |  209       |           |  USB-CAD: Power Source Update Usb             - PowerSourceId:{PowerSourceId} Version:{Version} Flags:{Flags} MaxCurrent:{MaxCurrent} Voltage:{Voltage} PortType:{PortType} PortId:{PortId} PowerSourceInformation:{PowerSourceInformation} OemCharger:{OemCharger}
+Microsoft-Windows-Power-CAD  |  210       |           |  CAD-BAT: Notify Usb Charger Status           - Size:{Size} BatteryTag:{BatteryTag} InformationLevel:{InformationLevel} ChargingSourceType:{ChargingSourceType} Reserved:{Reserved} Flags:{Flags} MaxCurrent:{MaxCurrent} Voltage:{Voltage} PortType:{PortType} PortId:{Size}0 PowerSourceInformation:{Size}1 OemCharger:{Size}2

@@ -1,0 +1,85 @@
+Provider                                       |  Event ID  |  Channel  |  Message
+-----------------------------------------------|------------|-----------|------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1         |           |  Error: HRESULT: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  2         |           |  Error Propagated: HRESULT: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  10        |           |  {Prop_UnicodeString}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  100       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  101       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  102       |           |  New incoming VoIP call {Prop_HexInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  103       |           |  New outgoing VoIP call {Prop_HexInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  104       |           |  Made DSS token {Prop_UnicodeString_1} for file {Prop_UnicodeString_2}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  105       |           |  Outgoing Video call upgrade call: {Prop_HexInt32}, Call upgrade Guid: {Prop_Guid}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  106       |           |  New incoming upgrade video call {Prop_HexInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  120       |           |  Invoking AcceptIncoming for VoIP call {Prop_HexInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  121       |           |  Invoking RejectIncoming for VoIP call {Prop_HexInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  122       |           |  Invoking Hold for VoIP call {Prop_HexInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  123       |           |  Invoking Unhold for VoIP call {Prop_HexInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  124       |           |  Invoking End for VoIP call {Prop_HexInt32}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  140       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  141       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  142       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  143       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  144       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  145       |           |  A new SMS has been retrieved of length {Prop_UInt_1}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  150       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  151       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  152       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  153       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  200       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  201       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  202       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  203       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  204       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  205       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  206       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  207       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  301       |           |  Social object is missing UDM property: {Prop_UInt_1}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  302       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  303       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  304       |           |  Social object has invalid value for UDM property: {Prop_UInt_1}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  305       |           |  Saving feed of type={Prop_Type}, updateMode={Prop_Mode}, operationId={Prop_UInt_1}, itemCount={Prop_UInt_2}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  306       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  307       |           |  Social Originate Error: {Prop_UnicodeString}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  308       |           |  Social Cancellation State(Cookie: {Prop_HexInt32}): {Prop_UnicodeString}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  401       |           |  Saving online picture remote id: [{Prop_UnicodeString}]
+Microsoft-Windows-UserDataAccess-UserDataApis  |  402       |           |  Saving online video remote id: [{Prop_UnicodeString}])
+Microsoft-Windows-UserDataAccess-UserDataApis  |  403       |           |  Saving online album remote id: [{Prop_UnicodeString}])
+Microsoft-Windows-UserDataAccess-UserDataApis  |  404       |           |  Bulk saving {Prop_UInt_1} albums
+Microsoft-Windows-UserDataAccess-UserDataApis  |  405       |           |  Bulk saving {Prop_UInt_1} media items
+Microsoft-Windows-UserDataAccess-UserDataApis  |  406       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  407       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  500       |           |  PhoneCallAnnotations: Starting location query. Phone number: {Prop_UnicodeString}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  501       |           |  PhoneCallAnnotations: Completing location query. Location: {Prop_UnicodeString}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  502       |           |  PhoneCallAnnotations: Starting RPC server with endpoint {Prop_UnicodeString}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  503       |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  600       |           |  The store for app {Prop_Guid} was not found
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1000      |           |  [ChatApis] ChatMessageStoreChangedEventArgs Kind = {Prop_UInt_1}, Type = {Prop_UInt_2}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1001      |           |  [ChatApis] ChatConversationReaderImpl::ReadBatchWithCountAsync batch count= {Prop_UInt_1}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1002      |           |  [ChatApis] ChatMessageReaderImpl::_ReadBatchImpl batch count= {Prop_UInt_1}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1003      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1004      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1005      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1006      |           |  [ChatApis] ChatMessageManager::GetTransportsAsync Session->EnsureConnected complete. HRESULT={P1_HResult}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1007      |           |  [ChatApis] ChatMessageManager::GetTransportsAsync Completed RPC call to UdmSvc_GetChatTransports. HRESULT={P1_HResult}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1008      |           |  [ChatApis] ChatMessageManager::GetTransportsAsync TransportCount={Prop_ULong}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1009      |           |  [ChatApis] ChatNavigation::_LaunchUriForDefaultChatApp MessagingPackage = {Prop_UnicodeString}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1010      |           |  [ChatApis] ChatNavigation::_LaunchUriForDefaultChatApp LaunchStatus = {Prop_UInt_1}, Expected = {Prop_UInt_2}
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1500      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1501      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1502      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1503      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1504      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1505      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1506      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1507      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1508      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1509      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1510      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1511      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1512      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1513      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1514      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  1515      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  2000      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  2001      |           |
+Microsoft-Windows-UserDataAccess-UserDataApis  |  10000     |           |  3rd party log: {Prop_Caller} - {Prop_UnicodeString}

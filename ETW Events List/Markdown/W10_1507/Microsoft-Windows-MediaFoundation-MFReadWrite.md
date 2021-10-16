@@ -1,0 +1,49 @@
+Provider                                       |  Event ID  |  Channel                                                     |  Message
+-----------------------------------------------|------------|--------------------------------------------------------------|--------------------------------------------------------------
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  0         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_SetCurrentMediaType_Begin
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  1         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_SetCurrentMediaType_End
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  2         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_SetCurrentPosition_Begin
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  3         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_SetCurrentPosition_End
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  4         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_ReadSample_Begin
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  5         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_ReadSample_End
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  6         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_Flush_Begin
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  7         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_Flush_End
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  8         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_RequestSample
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  9         |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_MediaSourceEvent
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  10        |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_MediaStreamEvent
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  11        |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_Error
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  12        |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_CapturePluginCreated
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  13        |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  14        |  Microsoft-Windows-MediaFoundation-MFReadWrite/SourceReader  |  SourceReader_StreamError
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  100       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_SetInputMediaType_Begin
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  101       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_SetInputMediaType_End
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  102       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_BeginWriting
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  103       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_WriteSample
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  104       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_StreamTick
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  105       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_Marker_Placed
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  106       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_Marker_Fired
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  107       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_ProcessSample
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  108       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_Finalize_Begin
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  109       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_Finalize_End
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  110       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_MediaSinkEvent
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  111       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_StreamSinkEvent
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  112       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_Throttle_Begin
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  113       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_Throttle_End
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  114       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_Error
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  115       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_StreamError
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  116       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_StateChange
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  117       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_EndOfSegment
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  118       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |  SinkWriter_Flush
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  119       |  Microsoft-Windows-MediaFoundation-MFReadWrite/SinkWriter    |
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  200       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_ProcessInput
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  201       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_ProcessInputError
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  202       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_ProcessOutput
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  203       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_ProcessOutputError
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  204       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_ProcessMessage
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  205       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_Event
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  206       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_ProcessEvent
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  207       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_Created
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  208       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_Destroyed
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  209       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  MFReadWrite_Transform_Process, only valid in 1-in/1-out mode
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  210       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  MFReadWrite_Transform_Process, only valid in 1-in/1-out mode
+Microsoft-Windows-MediaFoundation-MFReadWrite  |  211       |  Microsoft-Windows-MediaFoundation-MFReadWrite/Transform     |  Transform_SetInputType

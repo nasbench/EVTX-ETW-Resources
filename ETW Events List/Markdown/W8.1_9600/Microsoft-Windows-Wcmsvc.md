@@ -1,0 +1,56 @@
+Provider                  |  Event ID  |  Channel      |  Message
+--------------------------|------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Wcmsvc  |  1001      |  Operational  |
+Microsoft-Windows-Wcmsvc  |  1002      |  Operational  |
+Microsoft-Windows-Wcmsvc  |  1003      |  Operational  |  CDE reported a state change  State: {Status}  Name: {Name}
+Microsoft-Windows-Wcmsvc  |  1004      |  Operational  |
+Microsoft-Windows-Wcmsvc  |  1005      |  Operational  |  A Power change was processed.  Reason: {Reason}
+Microsoft-Windows-Wcmsvc  |  1006      |  Operational  |  A Terminal Services session change was processed.  Reason: {Reason}
+Microsoft-Windows-Wcmsvc  |  1007      |  Diagnostic   |  CDE reported a state change  State: {Status}  Name: Nlasvc.
+Microsoft-Windows-Wcmsvc  |  1008      |  Diagnostic   |  NLA interface property change Interface: {Interface GUID}Internet v4: {Internet Connectivity v4}Internet v6: {Internet Connectivity v6}Probe Complete v4: {Internet Probe Complete v4}Probe Complete v6: {Internet Probe Complete v6}Domain Authenticated: {Domain Connectivity}Domain Probe Complete: {Domain Probe Complete}
+Microsoft-Windows-Wcmsvc  |  1009      |  Operational  |  CDE reported an L2 adapter arrival  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1010      |  Operational  |  CDE reported an L2 adapter removal  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1011      |  Diagnostic   |  CDE reported a successful connection  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1012      |  Operational  |  CDE reported a connection failure  Interface: {InterfaceGuid}  Type: {MediaType} Status: {Status}
+Microsoft-Windows-Wcmsvc  |  1013      |  Diagnostic   |  CDE reported a disconnection  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1014      |  Diagnostic   |  WcmSetParameter CalledInterface: {Interface GUID}Profile Name: {Profile Name}Wcm Opcode: {Wcm Opcode}Data Length: {Data length}Caller Process ID: {Caller Process ID}Return Value: {Return Value}
+Microsoft-Windows-Wcmsvc  |  1015      |  Operational  |  Interface Token AppliedInterface: {Interface GUID}Media Type: {Mediatype}Manual enabled: {Manual Connect}Manual Filter: {Manual Filter control}Num Manual: {Num Manual profiles}Manual Profiles: {Manual Profile Names}Auto enabled: {Auto Connect}Auto filter: {Auto Filter control}Num Auto: {Num Auto profiles}Auto Profiles: {Interface GUID}0
+Microsoft-Windows-Wcmsvc  |  1016      |  Operational  |  Interface Token FailedInterface: {Interface GUID}Media Type: {Mediatype}Manual enabled: {Manual Connect}Manual Filter: {Manual Filter control}Num Manual: {Num Manual profiles}Manual Profiles: {Manual Profile Names}Auto enabled: {Auto Connect}Auto filter: {Auto Filter control}Num Auto: {Num Auto profiles}AutoProfiles: {Interface GUID}0Status: {Interface GUID}1
+Microsoft-Windows-Wcmsvc  |  1017      |  Operational  |  Soft disconnect over thresholds for interface: {Interface GUID}AvgIn: {Avg In} AvgOut: {Avg Out} SpikeIn: {Spike In} SpikeOut: {Spike Out}Thresholds: AvgIn: {Threshold Avg In} AvgOut: {Threshold Avg Out} SpikeIn: {Threshold Spike In} SpikeOut:{Threshold Spike Out}All values are in bytes/second
+Microsoft-Windows-Wcmsvc  |  1018      |  Operational  |  Soft disconnect under thresholds for interface: {Interface GUID}AvgIn: {Avg In} AvgOut: {Avg Out} SpikeIn: {Spike In} SpikeOut: {Spike Out}Thresholds: AvgIn: {Threshold Avg In} AvgOut: {Threshold Avg Out} SpikeIn: {Threshold Spike In} SpikeOut:{Threshold Spike Out}All values are in bytes/second
+Microsoft-Windows-Wcmsvc  |  1019      |  Operational  |  CDE reported an unblocked profile  Interface: {InterfaceGuid}  Type: {MediaType} Profile: {Profile Name}
+Microsoft-Windows-Wcmsvc  |  1020      |  Operational  |  WCM Preferred Order List:{WCM Preferred Order List}
+Microsoft-Windows-Wcmsvc  |  1022      |  Operational  |
+Microsoft-Windows-Wcmsvc  |  1023      |  Operational  |
+Microsoft-Windows-Wcmsvc  |  1024      |  Diagnostic   |  Acquired NDIS NIC Active Reference for interface: {Interface GUID}
+Microsoft-Windows-Wcmsvc  |  1025      |  Diagnostic   |  Released NDIS NIC Active Reference for interface: {Interface GUID}
+Microsoft-Windows-Wcmsvc  |  1026      |  Operational  |  CDE reported an NDIS adapter arrival  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1027      |  Operational  |  CDE reported an NDIS adapter removal  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1028      |  Operational  |
+Microsoft-Windows-Wcmsvc  |  1029      |  Operational  |
+Microsoft-Windows-Wcmsvc  |  1030      |  Operational  |  Billing Cycle Reset Successful
+Microsoft-Windows-Wcmsvc  |  1031      |  Operational  |  Server Time Retrieval Failure
+Microsoft-Windows-Wcmsvc  |  1032      |  Operational  |  Acquire NDIS NIC Active Reference Failed for interface: {Interface GUID}
+Microsoft-Windows-Wcmsvc  |  1033      |  Operational  |  Release NDIS NIC Active Reference Failed for interface: {Interface GUID}
+Microsoft-Windows-Wcmsvc  |  1034      |  Operational  |  OnDemandInterfaceStateChanged. OnDemandType:{OnDemandType}, Interface: {Interface GUID}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, NewState:{New State}, Ref counter:{Ref count}
+Microsoft-Windows-Wcmsvc  |  1035      |  Diagnostic   |  OnDemand PDP Profile Created. OnDemandInfo:{APN name}, ProviderID:{Provider ID}, SubscriberID:{Subscriber ID}, Profile Name:{Profile name}
+Microsoft-Windows-Wcmsvc  |  1036      |  Diagnostic   |  OnDemand PDP Profile Deleted. Profile Name:{Profile name}
+Microsoft-Windows-Wcmsvc  |  1037      |  Operational  |  OnDemand Request opened. App ID:{App ID}, ProcessID:{Process ID},OnDemandType:{OnDemandType}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, Error: {Error}
+Microsoft-Windows-Wcmsvc  |  1038      |  Operational  |  OnDemand Request closed. App ID:{App ID}, ProcessID:{Process ID},OnDemandType:{OnDemandType}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, Error: {Error}
+Microsoft-Windows-Wcmsvc  |  1039      |  Diagnostic   |  OnDemand Request started. App ID:{App ID}, ProcessID:{Process ID},OnDemandType:{OnDemandType}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, Error: {Error}
+Microsoft-Windows-Wcmsvc  |  1040      |  Diagnostic   |  OnDemand Request cancelled. App ID:{App ID}, ProcessID:{Process ID},OnDemandType:{OnDemandType}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, Error: {Error}
+Microsoft-Windows-Wcmsvc  |  1050      |  Diagnostic   |  WcmSvc acquired the NIC reference for Interface: {Interface GUID} for reason: {ActionType}
+Microsoft-Windows-Wcmsvc  |  1051      |  Diagnostic   |  WcmSvc released the NIC reference for Interface: {Interface GUID} for reason: {ActionType}
+Microsoft-Windows-Wcmsvc  |  4020      |  Diagnostic   |  End of Wwan Resume Reconnect
+Microsoft-Windows-Wcmsvc  |  4021      |  Diagnostic   |  End of Wlan Resume Reconnect to Same Network
+Microsoft-Windows-Wcmsvc  |  4022      |  Diagnostic   |  End of Wlan Resume Reconnect to Same Network OneX
+Microsoft-Windows-Wcmsvc  |  4023      |  Diagnostic   |  End of Wlan Resume Reconnect to Different Network
+Microsoft-Windows-Wcmsvc  |  4024      |  Diagnostic   |  End of Wlan Resume Reconnect to Different Network OneX
+Microsoft-Windows-Wcmsvc  |  4025      |  Diagnostic   |  Cancel of Wlan Resume Reconnect2
+Microsoft-Windows-Wcmsvc  |  4026      |  Diagnostic   |
+Microsoft-Windows-Wcmsvc  |  10001     |  Operational  |
+Microsoft-Windows-Wcmsvc  |  10002     |  Operational  |
+Microsoft-Windows-Wcmsvc  |  10003     |  Operational  |
+Microsoft-Windows-Wcmsvc  |  10004     |  Operational  |
+Microsoft-Windows-Wcmsvc  |  10005     |  Diagnostic   |
+Microsoft-Windows-Wcmsvc  |  10006     |  Diagnostic   |

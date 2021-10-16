@@ -1,0 +1,10 @@
+Provider                                                |  Event ID  |  Channel                                        |  Message
+--------------------------------------------------------|------------|-------------------------------------------------|---------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter  |  1         |  Microsoft-Windows-Hyper-V-Guest-Drivers/Admin  |  The Virtual Storage Filter Driver failed to initialize ({NTStatus}).
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter  |  2         |  Microsoft-Windows-Hyper-V-Guest-Drivers/Admin  |  The Virtual Storage Filter Driver failed to intialize disk ({NTStatus}).
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter  |  3         |  Microsoft-Windows-Hyper-V-Guest-Drivers/Admin  |  The Virtual Storage Filter Driver is active for disk at location {Location} ({NTStatus}).
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter  |  4         |  Microsoft-Windows-Hyper-V-Guest-Drivers/Admin  |  The Virtual Storage Filter Driver is inactive for disk at location {Location} ({NTStatus}).
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter  |  5         |  Microsoft-Windows-Hyper-V-Guest-Drivers/Admin  |  The Virtual Storage Filter Driver is disabled through the registry. It is inactive for all disk drives.
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter  |  202       |  Microsoft-Windows-Hyper-V-Guest-Drivers/Debug  |  Dispatching a read request.
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter  |  203       |  Microsoft-Windows-Hyper-V-Guest-Drivers/Debug  |  Dispatching a write request.
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter  |  208       |  Microsoft-Windows-Hyper-V-Guest-Drivers/Debug  |  Completing an IO (read/write) request.

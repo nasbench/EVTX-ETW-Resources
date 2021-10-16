@@ -1,0 +1,13 @@
+Provider                                |  Event ID  |  Channel                                             |  Message
+----------------------------------------|------------|------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-StorageSpaces-Parser  |  100       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Space attached. Pool {PoolId}, Space {SpaceId}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  101       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Space attach Failed. Pool {PoolId}, Space {SpaceId}, Function:{Function}, Line:{Line}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  102       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Space paused. Pool {PoolId}, Space {SpaceId}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  103       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Space resumed. Pool {PoolId}, Space {SpaceId}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  104       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Space detached. Pool {PoolId}, Space {SpaceId}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  105       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Space resume Failed. Pool {PoolId}, Space {SpaceId}, Function:{Function}, Line:{Line}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  200       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Operation {Operation} Pool {PoolId}, Space {SpaceId}, Function:{Function}, Line:{Line}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  201       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Operation {Operation} failed. Pool {PoolId}, Space {SpaceId}, Function:{Function}, Line:{Line}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  202       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Command {Cdb} for Pool {PoolId} Space {SpaceId} failed. Function:{Function}, Line:{Line}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  203       |  Microsoft-Windows-StorageSpaces-Parser/Diagnostic   |  Command {Cdb} for Pool {PoolId} Space {SpaceId} failed. Function:{Function}, Line:{Line}, Return Code: {Status}
+Microsoft-Windows-StorageSpaces-Parser  |  204       |  Microsoft-Windows-StorageSpaces-Parser/Operational  |  Space attach Failed. Pool {PoolId}, Space {SpaceId}, Function:{Function}, Line:{Line}, Return Code: {Status}

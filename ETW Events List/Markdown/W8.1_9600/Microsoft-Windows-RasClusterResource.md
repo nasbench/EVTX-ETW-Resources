@@ -1,0 +1,9 @@
+Provider                              |  Event ID  |  Channel               |  Message
+--------------------------------------|------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-RasClusterResource  |  1001      |  Notification Channel  |  Importing RemoteAccess service configuration using {ConfigurationFilename}.
+Microsoft-Windows-RasClusterResource  |  1002      |  Notification Channel  |  RemoteAccess service configuration imported successfully from {ConfigurationFilename}.
+Microsoft-Windows-RasClusterResource  |  1003      |  Notification Channel  |  Failed to import RemoteAccess service configuration from {ConfigurationFilename}.
+Microsoft-Windows-RasClusterResource  |  1004      |  Notification Channel  |  RemoteAccess service configuration successfully exported to {ConfigurationFilename}.
+Microsoft-Windows-RasClusterResource  |  1005      |  Notification Channel  |  RemoteAccess service resource is becoming online with older configuration. Any configuration that was done after {LastConfigUpdateTimeString} is lost. Please reconfigure them.
+Microsoft-Windows-RasClusterResource  |  1006      |  Notification Channel  |  Exporting RemoteAccess service configuration to {ConfigurationFilename}.
+Microsoft-Windows-RasClusterResource  |  1007      |  Notification Channel  |  Failed to export RemoteAccess service configuration to  {ConfigurationFilename}.

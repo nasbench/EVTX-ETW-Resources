@@ -1,0 +1,12 @@
+Provider                           |  Event ID  |  Channel                                     |  Message
+-----------------------------------|------------|----------------------------------------------|---------
+Microsoft-Windows-IME-OEDCompiler  |  1         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  2         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  3         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  4         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  5         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  6         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  7         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  8         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  9         |  Microsoft-Windows-IME-OEDCompiler/Analytic  |
+Microsoft-Windows-IME-OEDCompiler  |  10        |  Microsoft-Windows-IME-OEDCompiler/Analytic  |

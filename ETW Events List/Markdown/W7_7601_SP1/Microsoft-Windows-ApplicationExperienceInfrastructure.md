@@ -1,0 +1,4 @@
+Provider                                               |  Event ID  |  Channel      |  Message
+-------------------------------------------------------|------------|---------------|------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ApplicationExperienceInfrastructure  |  1         |  Application  |  The application ({AppName}, from vendor {VendorName}) has the following problem: {Summary}
+Microsoft-Windows-ApplicationExperienceInfrastructure  |  2         |  Application  |  The application ({AppName}, from vendor {VendorName}) was hard-blocked and raised the following: {Summary}

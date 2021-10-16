@@ -1,0 +1,21 @@
+Provider                   |  Event ID  |  Channel                               |  Message
+---------------------------|------------|----------------------------------------|---------
+Microsoft-Windows-WSC-SRV  |  101       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  102       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  103       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  104       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  105       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  106       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  107       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  108       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  109       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  110       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  111       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  112       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  113       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  114       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  115       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  116       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  117       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  118       |  Microsoft-Windows-WSC-SRV/Diagnostic  |
+Microsoft-Windows-WSC-SRV  |  119       |  Microsoft-Windows-WSC-SRV/Diagnostic  |

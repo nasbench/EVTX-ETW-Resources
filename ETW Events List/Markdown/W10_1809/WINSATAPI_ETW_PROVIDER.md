@@ -1,0 +1,13 @@
+Provider                |  Event ID  |  Channel  |  Message
+------------------------|------------|-----------|-----------------------------------------------
+WINSATAPI_ETW_PROVIDER  |  0         |           |  {TestV1} {TestV2} {TestV3} {TestV4}
+WINSATAPI_ETW_PROVIDER  |  1         |           |  WinSAT Application Start: {StartTimeOfDay}
+WINSATAPI_ETW_PROVIDER  |  2         |           |  WinSAT Application Command Line {CommandLine}
+WINSATAPI_ETW_PROVIDER  |  3         |           |  WinSAT Application Stop: {ExitCode}
+WINSATAPI_ETW_PROVIDER  |  4         |           |  ERROR: {CantMsg}
+WINSATAPI_ETW_PROVIDER  |  5         |           |  COM ERROR: {Source} {Interface}
+WINSATAPI_ETW_PROVIDER  |  6         |           |  ERROR: {ErrorMsg}
+WINSATAPI_ETW_PROVIDER  |  7         |           |  ERROR: {FailingHresult} {ErrorMsg}
+WINSATAPI_ETW_PROVIDER  |  8         |           |  {Message}
+WINSATAPI_ETW_PROVIDER  |  9         |           |  {PhaseID}:{Description}
+WINSATAPI_ETW_PROVIDER  |  10        |           |  {PhaseID}

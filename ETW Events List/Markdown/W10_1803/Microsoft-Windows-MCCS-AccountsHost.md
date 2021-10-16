@@ -1,0 +1,108 @@
+Provider                             |  Event ID  |  Channel  |  Message
+-------------------------------------|------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MCCS-AccountsHost  |  1         |           |  Error: HRESULT: {P1_HexInt32} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  2         |           |  Error Propagated: HRESULT: {P1_HexInt32} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  2000      |           |  Sending notification failed for endpoint {Prop_String} with error code {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  2004      |           |  SNAS Initialized successfully
+Microsoft-Windows-MCCS-AccountsHost  |  2005      |           |  SNAS Uninitialized
+Microsoft-Windows-MCCS-AccountsHost  |  2051      |           |  Provider [{Prop_UInt32_1}] failed to initialize with HR: {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  2052      |           |  Provider [{Prop_UInt32_1}] failed to late-initialize HR: {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  2053      |           |  Failed to CoCreate provider [{Prop_UInt32_1}], HR: {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  2061      |           |  Job [{Prop_String}] submitted with id {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  4010      |           |  SNASJob: Initializing SNAS job [{Prop_UInt32}]
+Microsoft-Windows-MCCS-AccountsHost  |  4011      |           |  SNASJob: Job [{Prop_UInt32}] matches the empty filter
+Microsoft-Windows-MCCS-AccountsHost  |  4012      |           |  SNASJob: Job [{Prop_UInt32}] matches the filter
+Microsoft-Windows-MCCS-AccountsHost  |  4013      |           |  Activity: Submission failed and will be rolled back
+Microsoft-Windows-MCCS-AccountsHost  |  4014      |           |  Activity: Remaining schedule executions {Int32}
+Microsoft-Windows-MCCS-AccountsHost  |  4015      |           |  Activity: Remaining execution steps {Int32}
+Microsoft-Windows-MCCS-AccountsHost  |  4016      |           |  Activity: Remaining delayed executions {Int32}
+Microsoft-Windows-MCCS-AccountsHost  |  4017      |           |  Activity: Schedule was triggered for activity {Prop_String}
+Microsoft-Windows-MCCS-AccountsHost  |  4018      |           |  Activity: Canceling pending requests submitted by job [{Prop_String}]
+Microsoft-Windows-MCCS-AccountsHost  |  4019      |           |  Dispatcher: Subscribed for schedule {Prop_ptr}
+Microsoft-Windows-MCCS-AccountsHost  |  4020      |           |  Dispatcher: Connectivity events already subscribed, ignoring request
+Microsoft-Windows-MCCS-AccountsHost  |  4021      |           |  Dispatcher: Starting connectivity events subscription
+Microsoft-Windows-MCCS-AccountsHost  |  4022      |           |  Dispatcher: Stoping connectivity events subscription
+Microsoft-Windows-MCCS-AccountsHost  |  4023      |           |  Dispatcher: Starting timer with frequency ({Prop_UInt32})
+Microsoft-Windows-MCCS-AccountsHost  |  4024      |           |  Dispatcher: Stopping opportunistic timer ({Prop_UInt32})
+Microsoft-Windows-MCCS-AccountsHost  |  4025      |           |  JobList: Adding job [{Prop_uint}] failed, error {Prop_hr}
+Microsoft-Windows-MCCS-AccountsHost  |  4026      |           |  JobList: Adding child activity failed, error {Prop_hr}
+Microsoft-Windows-MCCS-AccountsHost  |  4027      |           |  JobList: Removing job [{Prop_String}] from the list of jobs
+Microsoft-Windows-MCCS-AccountsHost  |  4028      |           |  JobList: Job [{Prop_String}] not found on the main list
+Microsoft-Windows-MCCS-AccountsHost  |  4029      |           |  JobList: Job [{Prop_String}] not found in the job->wrapper index
+Microsoft-Windows-MCCS-AccountsHost  |  4030      |           |  Sched: Last request completed for job [{Prop_String}]
+Microsoft-Windows-MCCS-AccountsHost  |  4031      |           |  Sched: Iterating over job [{Prop_String}]
+Microsoft-Windows-MCCS-AccountsHost  |  4032      |           |  Sched: Activity [{Prop_String}] seems rogue and will be removed from the queue
+Microsoft-Windows-MCCS-AccountsHost  |  4033      |           |  Sched: Call to AboutToExecute failed, activity can't execute
+Microsoft-Windows-MCCS-AccountsHost  |  4034      |           |  Sched: Executing activity [{Prop_String}]
+Microsoft-Windows-MCCS-AccountsHost  |  4035      |           |  Sched: Activity can't execute at the moment as determined by calling AboutToExecute
+Microsoft-Windows-MCCS-AccountsHost  |  4036      |           |  Sched: Activity [{Prop_String}] needs DB update, updating
+Microsoft-Windows-MCCS-AccountsHost  |  4037      |           |  Sched: Incoming message ready to be processed
+Microsoft-Windows-MCCS-AccountsHost  |  4038      |           |  Sched: Processing incoming message
+Microsoft-Windows-MCCS-AccountsHost  |  4039      |           |  Sched: Job scheduler state change to 'uninitializing', winding down the message queue
+Microsoft-Windows-MCCS-AccountsHost  |  4040      |           |  Sched: All pre-existing messages has been processed
+Microsoft-Windows-MCCS-AccountsHost  |  4041      |           |  Sched: Job scheduler state change to 'shutting down', canceling all the jobs
+Microsoft-Windows-MCCS-AccountsHost  |  4042      |           |  Sched: Waiting for jobs to stop executing
+Microsoft-Windows-MCCS-AccountsHost  |  4043      |           |  Sched: All jobs are deleted, final shutdown stage
+Microsoft-Windows-MCCS-AccountsHost  |  4044      |           |  Sched: Job scheduler not initialized, ignoring
+Microsoft-Windows-MCCS-AccountsHost  |  4045      |           |  Sched: Attempting to post message to scheduler while uninitializing
+Microsoft-Windows-MCCS-AccountsHost  |  4046      |           |  Sched: Ignoring request from canceled job
+Microsoft-Windows-MCCS-AccountsHost  |  4047      |           |  Sched: Request completed for job [{Prop_string}], {Prop_int}
+Microsoft-Windows-MCCS-AccountsHost  |  4048      |           |  Sched: Job [{Prop_String}] matches the filter and will be canceled
+Microsoft-Windows-MCCS-AccountsHost  |  4049      |           |  Sched: Trailing message processed
+Microsoft-Windows-MCCS-AccountsHost  |  4050      |           |  Job: Removing persistent job from the registry
+Microsoft-Windows-MCCS-AccountsHost  |  4051      |           |  Job: Invalid job state persisted (executing). Restoring to idle
+Microsoft-Windows-MCCS-AccountsHost  |  4052      |           |  Sched: Schedule {Prop_ptr} advised with cookie {Prop_unit}
+Microsoft-Windows-MCCS-AccountsHost  |  4053      |           |  Sched: Unadvising schedule {Prop_ptr}
+Microsoft-Windows-MCCS-AccountsHost  |  4054      |           |  Sched: Received call from schedule {Prop_ptr}
+Microsoft-Windows-MCCS-AccountsHost  |  4055      |           |  APHost: Calling CoFreeUnusedLibrariesEx
+Microsoft-Windows-MCCS-AccountsHost  |  4056      |           |  SNAS: Attempting to execute request with correlation id = {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  4057      |           |  SNAS: SNAS instance invalid, actual {Prop_UINT_1}
+Microsoft-Windows-MCCS-AccountsHost  |  4058      |           |  SNAS: Service was not initialized
+Microsoft-Windows-MCCS-AccountsHost  |  4059      |           |  SNAS: Unadvising all notifications
+Microsoft-Windows-MCCS-AccountsHost  |  4060      |           |  SNAS: Request group completed
+Microsoft-Windows-MCCS-AccountsHost  |  5000      |           |  SNService - Service Started
+Microsoft-Windows-MCCS-AccountsHost  |  5001      |           |  SNService - Failed to Initialize
+Microsoft-Windows-MCCS-AccountsHost  |  5003      |           |  SNService - Critical error during SNService startup, HRESULT: {P1_HexInt32} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  5004      |           |  SNService - Request Manager Database failed to initialze, 0x{Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  5005      |           |  SNService - Service Stopped
+Microsoft-Windows-MCCS-AccountsHost  |  5006      |           |  SNService - Setting CPU rate cap to {Prop_UInt32}%%
+Microsoft-Windows-MCCS-AccountsHost  |  7001      |           |  Job [{Prop_String}] completed execution and will not be rescheduled
+Microsoft-Windows-MCCS-AccountsHost  |  7002      |           |  Job [{Prop_String}] failed, error [{Prop_UInt32}] and will remain inactive in the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7003      |           |  Job [{Prop_String}] completed all requests for given state and will be rescheduled for execution, onlyWhenConnectionChanged [{Prop_UInt32}]
+Microsoft-Windows-MCCS-AccountsHost  |  7004      |           |  Job Dispatcher exceeded maximum number of jobs and will cancel oldest jobs in the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7005      |           |  Job [{Prop_String}] expired and will be removed from the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7006      |           |  Job [{Prop_String}] SNJobType:[{Prop_UInt32}] Executing
+Microsoft-Windows-MCCS-AccountsHost  |  7007      |           |  Synchronous failure in job execution for job [{Prop_String}, SNJobType:{Prop_UInt32_1}], error [{Prop_UInt32_2}]
+Microsoft-Windows-MCCS-AccountsHost  |  7008      |           |  Job [{Prop_String}] failed to update in database, error [{Prop_UInt32}]
+Microsoft-Windows-MCCS-AccountsHost  |  7009      |           |  Job [{Prop_UINT_1}] of type {Prop_UINT_2} was submitted to Job Dispatcher
+Microsoft-Windows-MCCS-AccountsHost  |  7010      |           |  Job [{Prop_UInt32_1}] failed to be submitted to Job Dispatcher, error {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  7011      |           |  Request for job [{Prop_UInt32_1}] failed to be submitted to Job Dispatcher, error {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  7012      |           |  Canceling job [{Prop_String}]
+Microsoft-Windows-MCCS-AccountsHost  |  7013      |           |  Job dispatcher received retry message from Connection Manager
+Microsoft-Windows-MCCS-AccountsHost  |  7014      |           |  Job dispatcher received time based retry message and will retry failed jobs
+Microsoft-Windows-MCCS-AccountsHost  |  7015      |           |  Job dispatcher received time based retry message and will retry failed jobs, error {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  7022      |           |  Unexpected job dispatcher failure occured, HRESULT: {P1_HexInt32} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  7023      |           |  Failed to cancel job, hr = {Prop_UInt32}
+Microsoft-Windows-MCCS-AccountsHost  |  7024      |           |  Failed to add job {Prop_UInt32_1} to the queue, hr = {Prop_UInt32_2}
+Microsoft-Windows-MCCS-AccountsHost  |  7025      |           |  Job [{Prop_String1}, SNJobType: {Prop_UInt32_2}] executed [{Prop_String3}] exceeding time limit; execution time = {Prop_UInt32_4}; (ActivityList entry = #{Prop_UInt32_5}/{Prop_UInt32_6})
+Microsoft-Windows-MCCS-AccountsHost  |  7026      |           |  Job [{Prop_String}] seems rogue (exceeded max step limit) and will be removed from the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7027      |           |  Job [{Prop_String}] seems rogue (exceeded delayed retry limit) and will be removed from the queue
+Microsoft-Windows-MCCS-AccountsHost  |  7028      |           |  Job [{Prop_String1}, SNJobType: {Prop_UInt32_2}] executed [{Prop_String3}] within time limit; execution time = {Prop_UInt32_4};  (ActivityList entry = #{Prop_UInt32_5}/{Prop_UInt32_6})
+Microsoft-Windows-MCCS-AccountsHost  |  7029      |           |  Completing job [{Prop_String}, SNJobType:{Prop_UInt32}]
+Microsoft-Windows-MCCS-AccountsHost  |  7030      |           |  Exceeded maximum number of jobs in the queue, will remove old job [{Prop_String}]; (ActivityList entry #{Prop_UInt32_1}/{Prop_UInt32_2})
+Microsoft-Windows-MCCS-AccountsHost  |  7031      |           |  Added activity with handle [{Prop_SubmissionID0}] to the submission list of activity with handle [{Prop_SubmissionID1}]
+Microsoft-Windows-MCCS-AccountsHost  |  7032      |           |  Added work with handle [{Prop_SubmissionID0}] to the submission list of activity with handle [{Prop_SubmissionID1}]
+Microsoft-Windows-MCCS-AccountsHost  |  7033      |           |  Added request with handle [{Prop_SubmissionID0}] to the submission list of activity with handle [{Prop_SubmissionID1}]
+Microsoft-Windows-MCCS-AccountsHost  |  7034      |           |  Removed submission with handle [{Prop_SubmissionID0}] from the submission list of activity with handle [{Prop_SubmissionID1}]
+Microsoft-Windows-MCCS-AccountsHost  |  7035      |           |  Submission with handle [{Prop_SubmissionID0}] completed but was not removed from submission list of activity with handle [{Prop_SubmissionID1}]
+Microsoft-Windows-MCCS-AccountsHost  |  7036      |           |  Child activity with id [{Prop_String}] is about to be removed but it's parent activity is null
+Microsoft-Windows-MCCS-AccountsHost  |  9001      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9002      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9003      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9004      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9005      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9006      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9007      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9008      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9009      |           |
+Microsoft-Windows-MCCS-AccountsHost  |  9010      |           |

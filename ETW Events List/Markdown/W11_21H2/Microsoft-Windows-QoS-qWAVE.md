@@ -1,0 +1,24 @@
+Provider                     |  Event ID  |  Channel                            |  Message
+-----------------------------|------------|-------------------------------------|--------------------------------
+Microsoft-Windows-QoS-qWAVE  |  1         |  Microsoft-Windows-QoS-qWAVE/Debug  |  QOSSetFlow Failure
+Microsoft-Windows-QoS-qWAVE  |  2         |  Microsoft-Windows-QoS-qWAVE/Debug  |  QOSSetFlow Success
+Microsoft-Windows-QoS-qWAVE  |  3         |  Microsoft-Windows-QoS-qWAVE/Debug  |  QOSQueryFlow Failure
+Microsoft-Windows-QoS-qWAVE  |  4         |  Microsoft-Windows-QoS-qWAVE/Debug  |  QOSNotifyFlow Failure
+Microsoft-Windows-QoS-qWAVE  |  5         |  Microsoft-Windows-QoS-qWAVE/Debug  |  QosAddSocketToFlow Failure
+Microsoft-Windows-QoS-qWAVE  |  6         |  Microsoft-Windows-QoS-qWAVE/Debug  |  QOSEnumerateFlows Failure
+Microsoft-Windows-QoS-qWAVE  |  7         |  Microsoft-Windows-QoS-qWAVE/Debug  |  QOSStartTrackingClient Failure
+Microsoft-Windows-QoS-qWAVE  |  8         |  Microsoft-Windows-QoS-qWAVE/Debug  |  QOSStopTrackingClient Failure
+Microsoft-Windows-QoS-qWAVE  |  9         |  Microsoft-Windows-QoS-qWAVE/Debug  |  Network Congestion Begin
+Microsoft-Windows-QoS-qWAVE  |  10        |  Microsoft-Windows-QoS-qWAVE/Debug  |  Network Congestion End
+Microsoft-Windows-QoS-qWAVE  |  11        |  Microsoft-Windows-QoS-qWAVE/Debug  |  Available Bandwidth Detected
+Microsoft-Windows-QoS-qWAVE  |  12        |  Microsoft-Windows-QoS-qWAVE/Debug  |  QOSCreateHandle
+Microsoft-Windows-QoS-qWAVE  |  13        |  Microsoft-Windows-QoS-qWAVE/Debug  |  Diagonstics
+Microsoft-Windows-QoS-qWAVE  |  14        |  Microsoft-Windows-QoS-qWAVE/Debug  |  QDLHStartDiagnosingPath
+Microsoft-Windows-QoS-qWAVE  |  15        |  Microsoft-Windows-QoS-qWAVE/Debug  |  Packet Pair Result
+Microsoft-Windows-QoS-qWAVE  |  16        |  Microsoft-Windows-QoS-qWAVE/Debug  |  Probe Quiescent
+Microsoft-Windows-QoS-qWAVE  |  17        |  Microsoft-Windows-QoS-qWAVE/Debug  |  QosAddSocketToFlow Success
+Microsoft-Windows-QoS-qWAVE  |  18        |  Microsoft-Windows-QoS-qWAVE/Debug  |  Legacy Mode Active
+Microsoft-Windows-QoS-qWAVE  |  19        |  Microsoft-Windows-QoS-qWAVE/Debug  |  Legacy Mode Inactive
+Microsoft-Windows-QoS-qWAVE  |  20        |  Microsoft-Windows-QoS-qWAVE/Debug  |  Burst Control
+Microsoft-Windows-QoS-qWAVE  |  21        |  Microsoft-Windows-QoS-qWAVE/Debug  |  AC Cache Initialized
+Microsoft-Windows-QoS-qWAVE  |  22        |  Microsoft-Windows-QoS-qWAVE/Debug  |  AC Cache DeInitialized

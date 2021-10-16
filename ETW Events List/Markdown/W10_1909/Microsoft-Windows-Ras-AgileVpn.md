@@ -1,0 +1,18 @@
+Provider                        |  Event ID  |  Channel               |  Message
+--------------------------------|------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Ras-AgileVpn  |  2100      |  Debug Channel         |  {DebugString}
+Microsoft-Windows-Ras-AgileVpn  |  2101      |  Debug Channel         |  {DebugString}
+Microsoft-Windows-Ras-AgileVpn  |  2102      |  Debug Channel         |  {DebugString}
+Microsoft-Windows-Ras-AgileVpn  |  2103      |  Debug Channel         |  {DebugString}
+Microsoft-Windows-Ras-AgileVpn  |  3100      |  Notification Channel  |  {DebugString}
+Microsoft-Windows-Ras-AgileVpn  |  3101      |  Notification Channel  |  {DebugString}
+Microsoft-Windows-Ras-AgileVpn  |  3102      |  Notification Channel  |  {DebugString}
+Microsoft-Windows-Ras-AgileVpn  |  3103      |  Notification Channel  |  {DebugString}
+Microsoft-Windows-Ras-AgileVpn  |  3104      |  Notification Channel  |  {DebugString} {DebugParam}
+Microsoft-Windows-Ras-AgileVpn  |  3105      |  Notification Channel  |  {DebugString} {DebugParam}
+Microsoft-Windows-Ras-AgileVpn  |  3106      |  Notification Channel  |  {FunctionName} IPAddress: {IpAddress}
+Microsoft-Windows-Ras-AgileVpn  |  3201      |  Notification Channel  |  (Packet(s):Number of packets:{NumberOfPackets} Source Address:{SrcAddress} Destination Address:{DestAddress} Source Port:{SrcPort} Destination Port:{DestPort} Next Protocol:{NextProtocol})
+Microsoft-Windows-Ras-AgileVpn  |  3202      |  Notification Channel  |  (Packet(s)Drop Reason {DropReason} :Number of packets:{NumberOfPackets} Source Address:{SrcAddress} Destination Address:{DestAddress} Source Port:{SrcPort} Destination Port:{DestPort} Next Protocol:{NextProtocol})
+Microsoft-Windows-Ras-AgileVpn  |  3203      |  Notification Channel  |  AddressFamily:{AddressFamily} Start Port:{StartPort} End Port:{EndPort} ProtocolID:{ProtocolID} Start Address:{StartAddress} End Address:{EndAddress}
+Microsoft-Windows-Ras-AgileVpn  |  3204      |  Notification Channel  |  UpdateTsInfo: for TS ID :{TSID} (fDelete:{fDelete})
+Microsoft-Windows-Ras-AgileVpn  |  3205      |  Notification Channel  |  AgileVpnCmIncomingCallComplete called for tunnel ID {TunnelID}: {Status}

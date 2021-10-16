@@ -1,0 +1,110 @@
+Provider                        |  Event ID    |  Channel                              |  Message
+--------------------------------|--------------|---------------------------------------|---------
+Microsoft-Windows-Security-SPP  |  1           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  2           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  3           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  4           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  5           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  6           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  7           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  8           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  9           |  Microsoft-Windows-Security-SPP/Perf  |
+Microsoft-Windows-Security-SPP  |  1073742724  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742725  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742726  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742727  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226473  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742827  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742828  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742829  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742830  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742831  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226480  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742833  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226482  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742835  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226484  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742837  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226486  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484663  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742840  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484665  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742842  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484667  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484668  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484669  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484670  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484671  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484672  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742849  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226498  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226499  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226500  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484677  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484678  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484679  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484680  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742857  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742858  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742859  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742860  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484685  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742864  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226514  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226515  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484692  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484694  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742871  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742872  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742873  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742874  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742875  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742876  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742877  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484702  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484703  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484704  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484705  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484706  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484707  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742884  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226534  |                                       |
+Microsoft-Windows-Security-SPP  |  3221226535  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742888  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484713  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742890  |                                       |
+Microsoft-Windows-Security-SPP  |  2147484715  |                                       |
+Microsoft-Windows-Security-SPP  |  1073742896  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233664  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233665  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233666  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233667  |                                       |
+Microsoft-Windows-Security-SPP  |  1073750020  |                                       |
+Microsoft-Windows-Security-SPP  |  1073750021  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233670  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233672  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233674  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233676  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233677  |                                       |
+Microsoft-Windows-Security-SPP  |  1073750030  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233680  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233681  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233682  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233683  |                                       |
+Microsoft-Windows-Security-SPP  |  3221233684  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754112  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754113  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754114  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754115  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754116  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754117  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754118  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754128  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754129  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754130  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754131  |                                       |
+Microsoft-Windows-Security-SPP  |  1073754144  |                                       |
+Microsoft-Windows-Security-SPP  |  2147495969  |                                       |
+Microsoft-Windows-Security-SPP  |  3221237794  |                                       |
+Microsoft-Windows-Security-SPP  |  1073758208  |                                       |
+Microsoft-Windows-Security-SPP  |  3221241857  |                                       |

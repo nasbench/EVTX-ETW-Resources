@@ -1,0 +1,6 @@
+Provider                                |  Event ID  |  Channel                                                   |  Message
+----------------------------------------|------------|------------------------------------------------------------|---------------------------------------------------------------------------------------
+Microsoft-Windows-ParentalControlsSync  |  12000     |                                                            |  {ScenarioID} completed successfully.
+Microsoft-Windows-ParentalControlsSync  |  12001     |                                                            |  {ScenarioID} failed.  {ResultType} Error {ResultCode} occurred on step {OperationID}.
+Microsoft-Windows-ParentalControlsSync  |  12002     |  Microsoft-Windows-ParentalControls-Telemetry/Operational  |  {{Name}: {Data}}
+Microsoft-Windows-ParentalControlsSync  |  12003     |  Microsoft-Windows-ParentalControls-Telemetry/Auditing     |  {{Name}: {Data}}

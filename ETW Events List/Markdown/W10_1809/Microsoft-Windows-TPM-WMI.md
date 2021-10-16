@@ -1,0 +1,23 @@
+Provider                   |  Event ID  |  Channel  |  Message
+---------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-TPM-WMI  |  513       |  System   |
+Microsoft-Windows-TPM-WMI  |  514       |  System   |  Failed to backup TPM Owner Authorization information to Active Directory Domain Services.Errorcode: {ErrorCode}Check that your computer is connected to the domain.  If your computer is connected to the domain, have your Domain Administrator check that the Active Directory schema is appropriate for backup of Windows 8 TPM Owner Authorization information and that the current Computer object has write permission to the TPM object.  Installations of Windows Server 2008 R2 or before need a schema extension in order to be ready for backup of Windows 8 TPM Owner Authorization information.  Consult online documentation for more information about setting up Active Directory Domain Services for TPM.
+Microsoft-Windows-TPM-WMI  |  515       |  System   |
+Microsoft-Windows-TPM-WMI  |  516       |  System   |
+Microsoft-Windows-TPM-WMI  |  517       |  System   |  Failed to send physical presence request to clear the Trusted Platform Module(TPM).
+Microsoft-Windows-TPM-WMI  |  518       |  System   |  Failed to get isOwned status from Trusted Platform Module(TPM), proceeding to clear TPM assuming that TPM is owned. Error code:{HResult}
+Microsoft-Windows-TPM-WMI  |  769       |  System   |  TPM Owner Authorization configuration changed from '{Old OS Managed Auth Level}' to '{New OS Managed Auth Level}'.
+Microsoft-Windows-TPM-WMI  |  1025      |  System   |
+Microsoft-Windows-TPM-WMI  |  1026      |  System   |  The Trusted Platform Module (TPM) hardware on this computer cannot be provisioned for use automatically.  To set up the TPM interactively use the TPM management console (Start->tpm.msc) and use the action to make the TPM ready.Error: {Error Code}Additional Information: {Status Information}
+Microsoft-Windows-TPM-WMI  |  1027      |  System   |
+Microsoft-Windows-TPM-WMI  |  1028      |  System   |
+Microsoft-Windows-TPM-WMI  |  1029      |  System   |  The triggering of the NGC key generation task failed.
+Microsoft-Windows-TPM-WMI  |  1030      |  System   |
+Microsoft-Windows-TPM-WMI  |  1031      |  System   |  The triggering of the NGC certificate enrollment task failed.
+Microsoft-Windows-TPM-WMI  |  1281      |  System   |
+Microsoft-Windows-TPM-WMI  |  1282      |  System   |
+Microsoft-Windows-TPM-WMI  |  1537      |  System   |  The Device Health Certificate was successfully provisioned from {Health Attestation Server}.
+Microsoft-Windows-TPM-WMI  |  1538      |  System   |  The Device Health Certificate provisioning could not connect to {Health Attestation Server}. {HResult}
+Microsoft-Windows-TPM-WMI  |  1539      |  System   |  The Device Health Certificate could not be provisioned from {Health Attestation Server}. HTTP status code {HTTP Status}: {Server Response}
+Microsoft-Windows-TPM-WMI  |  1793      |  System   |
+Microsoft-Windows-TPM-WMI  |  1794      |  System   |

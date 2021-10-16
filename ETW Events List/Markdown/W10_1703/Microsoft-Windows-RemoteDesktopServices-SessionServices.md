@@ -1,0 +1,4 @@
+Provider                                                 |  Event ID  |  Channel                                                              |  Message
+---------------------------------------------------------|------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-RemoteDesktopServices-SessionServices  |  1         |  Microsoft-Windows-RemoteDesktopServices-SessionServices/Operational  |  The RDP display control module successfully changed the session monitor layout. New layout has {NumMonitors} monitors.
+Microsoft-Windows-RemoteDesktopServices-SessionServices  |  2         |  Microsoft-Windows-RemoteDesktopServices-SessionServices/Operational  |  The RDP display control module failed to change the session monitor layout. The operation failed with error code {ErrorCode}.

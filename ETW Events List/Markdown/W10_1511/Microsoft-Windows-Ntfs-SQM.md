@@ -1,0 +1,9 @@
+Provider                    |  Event ID  |  Channel  |  Message
+----------------------------|------------|-----------|---------
+Microsoft-Windows-Ntfs-SQM  |  235       |           |
+Microsoft-Windows-Ntfs-SQM  |  236       |           |
+Microsoft-Windows-Ntfs-SQM  |  237       |           |
+Microsoft-Windows-Ntfs-SQM  |  238       |           |
+Microsoft-Windows-Ntfs-SQM  |  272       |           |
+Microsoft-Windows-Ntfs-SQM  |  273       |           |
+Microsoft-Windows-Ntfs-SQM  |  274       |           |

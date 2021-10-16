@@ -1,0 +1,15 @@
+Provider                          |  Event ID  |  Channel                                    |  Message
+----------------------------------|------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-Process  |  1         |  Microsoft-Windows-Kernel-Process/Analytic  |  Process {ProcessID} started at time {CreateTime} by parent {ParentProcessID} running in session {SessionID} with name {ImageName}.
+Microsoft-Windows-Kernel-Process  |  2         |  Microsoft-Windows-Kernel-Process/Analytic  |  Process {ProcessID} (which started at time {CreateTime}) stopped at time {ExitTime} with exit code {ExitCode}.
+Microsoft-Windows-Kernel-Process  |  2         |  Microsoft-Windows-Kernel-Process/Analytic  |  Process {ProcessID} (which started at time {CreateTime}) stopped at time {ExitTime} with exit code {ExitCode}.
+Microsoft-Windows-Kernel-Process  |  3         |  Microsoft-Windows-Kernel-Process/Analytic  |  Thread {ThreadID} (in Process {ProcessID}) started.
+Microsoft-Windows-Kernel-Process  |  3         |  Microsoft-Windows-Kernel-Process/Analytic  |  Thread {ThreadID} (in Process {ProcessID}) started.
+Microsoft-Windows-Kernel-Process  |  4         |  Microsoft-Windows-Kernel-Process/Analytic  |  Thread {ThreadID} (in Process {ProcessID}) stopped.
+Microsoft-Windows-Kernel-Process  |  4         |  Microsoft-Windows-Kernel-Process/Analytic  |  Thread {ThreadID} (in Process {ProcessID}) stopped.
+Microsoft-Windows-Kernel-Process  |  5         |  Microsoft-Windows-Kernel-Process/Analytic  |  Process {ProcessID} had an image loaded with name {ImageName}.
+Microsoft-Windows-Kernel-Process  |  6         |  Microsoft-Windows-Kernel-Process/Analytic  |  Process {ProcessID} had an image unloaded with name {ImageName}.
+Microsoft-Windows-Kernel-Process  |  7         |  Microsoft-Windows-Kernel-Process/Analytic  |  Base CPU priority of thread {ThreadID} in process {ProcessID} was changed from {OldPriority} to {NewPriority}.
+Microsoft-Windows-Kernel-Process  |  8         |  Microsoft-Windows-Kernel-Process/Analytic  |  CPU priority of thread {ThreadID} in process {ProcessID} was changed from {OldPriority} to {NewPriority}.
+Microsoft-Windows-Kernel-Process  |  9         |  Microsoft-Windows-Kernel-Process/Analytic  |  Page priority of thread {ThreadID} in process {ProcessID} was changed from {OldPriority} to {NewPriority}.
+Microsoft-Windows-Kernel-Process  |  10        |  Microsoft-Windows-Kernel-Process/Analytic  |  I/O priority of thread {ThreadID} in process {ProcessID} was changed from {OldPriority} to {NewPriority}.

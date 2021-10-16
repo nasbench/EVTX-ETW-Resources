@@ -1,0 +1,23 @@
+Provider                             |  Event ID  |  Channel  |  Message
+-------------------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-ShimEngine  |  1         |           |
+Microsoft-Windows-Kernel-ShimEngine  |  2         |           |
+Microsoft-Windows-Kernel-ShimEngine  |  3         |           |  {ShimCount} shim(s) were applied to driver [{DriverName}].Shim(s) source: {ShimSource}.Shim GUID(s): {AppliedGuids}.
+Microsoft-Windows-Kernel-ShimEngine  |  4         |           |  Flags [{Flags}] were applied to device [{DeviceName}] - class [{DeviceClass}].Flags source: {FlagSource}.
+Microsoft-Windows-Kernel-ShimEngine  |  5         |           |
+Microsoft-Windows-Kernel-ShimEngine  |  6         |           |
+Microsoft-Windows-Kernel-ShimEngine  |  10        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  11        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  12        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  13        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  14        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  15        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  16        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  17        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  18        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  19        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  20        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  21        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  22        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  23        |           |
+Microsoft-Windows-Kernel-ShimEngine  |  24        |           |

@@ -1,0 +1,77 @@
+Provider                                           |  Event ID  |  Channel                                      |  Message
+---------------------------------------------------|------------|-----------------------------------------------|---------------------------------------------------------------
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  200       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Initialization - Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  201       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Initialization - End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  202       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Shutdown - Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  203       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Shutdown - End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  204       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine TakePhoto - Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  205       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine TakePhoto - End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  206       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StartPreview - Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  207       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StartPreview - End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  208       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StopPreview - Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  209       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StopPreview - End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  210       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StartRecord - Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  211       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StartRecord - End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  212       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StopRecord - Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  213       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StopRecord - End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  214       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Source ReadSample Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  215       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Source ReadSample End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  216       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Sample received
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  217       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Record Sample received
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  218       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Preview Sample received
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  219       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Sink WriteSample Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  220       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Sink WriteSample End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  221       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Encode Started
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  222       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Encode Ended
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  223       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Format Convertion Started
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  224       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Format Covertion Ended
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  225       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Flipping Started
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  226       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Flipping Ended
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  227       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Processing Started
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  228       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Processing Ended
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  229       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Sink Configuration Started
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  230       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Sink Configuration Ended
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  231       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine capture source and capture sinks
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  232       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine sample probe
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  233       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine sample probe
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  234       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine sample probe
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  235       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine sample probe
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  236       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Start Record Task
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  237       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Start Preview Task
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  238       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Photo Sink XVP Creation
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  239       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine Sink Sample Dropped
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  240       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine FlushRequiredStreams Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  241       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine FlushRequiredStreams End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  242       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine SetCurrentDeviceMediaType Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  243       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine SetCurrentDeviceMediaType End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  244       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine FlushAllStreams Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  245       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine FlushAllStreams End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  246       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine OnFlushForAllStreams
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  247       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine SetExtendedPropertyAsync Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  248       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine SetExtendedPropertyAsync End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  249       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine KSAsynPropertySet Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  250       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine KSAsynPropertySet End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  251       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine PhotoSink Prepare Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  252       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine PhotoSink Prepare End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  253       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StartCapturePhotoSequence Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  254       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StartCapturePhotoSequence End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  255       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StopCapturePhotoSequence Begin
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  256       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine StopCapturePhotoSequence End
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  257       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine CaptureSinkAddStream Event
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  258       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_OnEvent
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  259       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine GetAvailableDeviceMediaType
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  260       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine GetAvailableDeviceMediaType
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  261       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_BridgeSourceSink
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  262       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_BridgeSourceSink
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  263       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_Source_Stream_Infomation
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  264       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_Camera_Sound_Init Event
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  265       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_Camera_Sound_Init Event
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  266       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_Camera_Sound_QueuePlayback Event
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  267       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_Camera_Sound_QueuePlayback Event
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  268       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_Camera_Sound_Playback Event
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  269       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_Camera_Sound_Playback Event
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  270       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_RecordSink_WriteFirstSample EventMessage
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  271       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_PreviewSink_WriteFirstSample EventMessage
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  272       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_DiskFull_Condition.EventMessage
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  273       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_DiskFull_Condition.EventMessage
+Microsoft-Windows-MediaFoundation-MFCaptureEngine  |  274       |  Media Foundation Capture Engine ETW Channel  |  MFCaptureEngine_FrameReaderSink_WriteFirstSample EventMessage

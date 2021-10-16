@@ -1,0 +1,7 @@
+Provider                              |  Event ID  |  Channel                                        |  Message
+--------------------------------------|------------|-------------------------------------------------|-------------------------------------
+Microsoft-Windows-Hyper-V-KMCL-Child  |  1         |  Microsoft-Windows-Hyper-V-KMCL-Child/Analytic  |  Fetching a packet from vmbus.
+Microsoft-Windows-Hyper-V-KMCL-Child  |  2         |  Microsoft-Windows-Hyper-V-KMCL-Child/Analytic  |  Sending a packet to vmbus.
+Microsoft-Windows-Hyper-V-KMCL-Child  |  3         |  Microsoft-Windows-Hyper-V-KMCL-Child/Analytic  |  Finish fetching packets from vmbus.
+Microsoft-Windows-Hyper-V-KMCL-Child  |  4         |  Microsoft-Windows-Hyper-V-KMCL-Child/Analytic  |  Incoming packet quota is hit.
+Microsoft-Windows-Hyper-V-KMCL-Child  |  5         |  Microsoft-Windows-Hyper-V-KMCL-Child/Analytic  |  DPC cycle limit is hit.

@@ -1,0 +1,12 @@
+Provider                               |  Event ID  |  Channel                                      |  Message
+---------------------------------------|------------|-----------------------------------------------|---------
+Microsoft-Windows-FileHistory-Service  |  1         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  2         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  3         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  4         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  5         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  6         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  7         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  8         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  9         |  Microsoft-Windows-FileHistory-Service/Debug  |
+Microsoft-Windows-FileHistory-Service  |  10        |  Microsoft-Windows-FileHistory-Service/Debug  |

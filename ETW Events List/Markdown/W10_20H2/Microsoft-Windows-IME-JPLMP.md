@@ -1,0 +1,20 @@
+Provider                     |  Event ID  |  Channel                               |  Message
+-----------------------------|------------|----------------------------------------|---------
+Microsoft-Windows-IME-JPLMP  |  51        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  52        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  57        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  58        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  61        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  62        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  63        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  64        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  65        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  66        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  67        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  68        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  69        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  70        |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  110       |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  111       |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  112       |  Microsoft-Windows-IME-JPLMP/Analytic  |
+Microsoft-Windows-IME-JPLMP  |  113       |  Microsoft-Windows-IME-JPLMP/Analytic  |

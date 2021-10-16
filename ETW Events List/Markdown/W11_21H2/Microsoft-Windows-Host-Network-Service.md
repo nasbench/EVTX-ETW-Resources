@@ -1,0 +1,60 @@
+Provider                                |  Event ID  |  Channel  |  Message
+----------------------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Host-Network-Service  |  1000      |           |  HNS failed to create vmswitch with error '{Parameter0}' and adapter id = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1001      |           |  HNS failed to delete vmswitch with error = '{Parameter0}', id = '{Parameter1}' and friendly name = '{Parameter2}'.
+Microsoft-Windows-Host-Network-Service  |  1002      |           |  HNS failed to create intenal nic with error = '{Parameter0}', id = '{Parameter1}' and friendly name = '{Parameter2}'.
+Microsoft-Windows-Host-Network-Service  |  1003      |           |  HNS failed to delete internal nic with error = '{HResult}' and id = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1004      |           |  HNS failed to create vmswitch port with error '{HResult}', switch id = '{Switch Id}', port id = '{Port Id}' and type = '{Port Type}'.
+Microsoft-Windows-Host-Network-Service  |  1005      |           |  HNS failed to delete vmswitch port with error '{Parameter0}', switch id = '{Parameter1}' and port id = '{Parameter2}'.
+Microsoft-Windows-Host-Network-Service  |  1006      |           |  HNS failed to connect vmswitch port with error '{Parameter0}', switch id = '{Parameter1}', port id = '{Paramete3}' and nic name = '{Parameter4}'.
+Microsoft-Windows-Host-Network-Service  |  1007      |           |  HNS failed to disconnect vmswitch port with error '{Parameter0}', switch id = '{Parameter1}', port id = '{Paramete3}' and nic name = '{Parameter4}'.
+Microsoft-Windows-Host-Network-Service  |  1008      |           |  HNS failed to bind external adapter to vswitch with error '{HResult}' and adapter id = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1009      |           |  HNS failed to unbind external adapter to vswitch with error '{HResult}' and adapter id = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1010      |           |  HNS failed to set vmswitch extension with error '{HResult}' on switch id = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1011      |           |  HNS failed to set vmswitch port profile with error '{Parameter0}', switch id = '{Parameter1}', port id = '{Paramete3}' and profile id = '{Parameter4}'.
+Microsoft-Windows-Host-Network-Service  |  1012      |           |  HNS failed to set vmswitch port isolation with error '{Parameter0}', switch id = '{Paramete1}', port id = '{Paramete2}' and isolation id = '{Parameter3}'.
+Microsoft-Windows-Host-Network-Service  |  1013      |           |  {Parameter0} :-  Network id = '{Parameter1}'. Network type = '{Parameter2}'.  Result code = '{Parameter3}'.
+Microsoft-Windows-Host-Network-Service  |  1014      |           |  {Parameter0} :-  Network id = '{Parameter1}'. Network type = '{Parameter2}'.  Result code = '{Parameter3}'.
+Microsoft-Windows-Host-Network-Service  |  1015      |           |  {Parameter0} :-  Endpoint id = '{Parameter1}'.  Network id = '{Parameter2}'.  Network type = '{Parameter3}'.  Result code = '{Parameter4}'.
+Microsoft-Windows-Host-Network-Service  |  1016      |           |  {Parameter0}':-  Endpoint id = '{Parameter1}'.  Network id = '{Parameter2}'.  Network type = '{Parameter3}'.  Result code = '{Parameter4}'.
+Microsoft-Windows-Host-Network-Service  |  1017      |           |  HNS failed to configure hostagent traffic managment on vmswitch port with error '{Parameter0}', port profile id = '{Paramete1}', ip address = '{Paramete2}' and isolation id = '{Parameter3}'
+Microsoft-Windows-Host-Network-Service  |  1018      |           |  HNS failed to reset hostagent traffic management on vmswitch port with error '{HResult}' and port profile id = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1019      |           |  HNS failed to configure hostagent traffic managment on switch with error '{Parameter0}', switch id = '{Parameter1}', managment ip address = '{Parameter2}' and forward all traffic to external network = '{Parameter3}'.
+Microsoft-Windows-Host-Network-Service  |  1020      |           |  HNS failed to add firewall rules for new container with error '{Parameter0}' and unique error string "'{Parameter1}'"
+Microsoft-Windows-Host-Network-Service  |  1021      |           |  HNS failed to create winnat instance with error '{Parameter0}', external ip prefix = '{Parameter1}', internal ip prefix = '{Paramete3}' and nat name = '{Parameter4}'.
+Microsoft-Windows-Host-Network-Service  |  1022      |           |  HNS failed to delete winnat instance with error '{Parameter0}', class name '{Parameter1}' and instance id = '{Parameter2}'.
+Microsoft-Windows-Host-Network-Service  |  1023      |           |  HNS failed to set interface configuration with error '{Parameter0}'.NetCfgInstanceId = '{Parameter1}'.HostDnsServerList = '{Parameter2}'.HostDnsSuffix = '{Parameter3}'.EnableLLMNR = '{Parameter4}'.Unique error string = '{Parameter5}'.
+Microsoft-Windows-Host-Network-Service  |  1024      |           |  HNS failed to configure ipv4 address with error '{Parameter0}'.Adapter index = '{Parameter1}'.Compartment id = '{Parameter2}'.Prefix length = '{Parameter3}'.IPv4 address = '{Parameter4}'. Persistent = '{Parameter5}'.
+Microsoft-Windows-Host-Network-Service  |  1025      |           |  HNS failed to configure default route with error '{Parameter0}'.Adapter index = '{Parameter1}'.Compartment id = '{Parameter2}'.Gateway ip address = '{Parameter3}'.
+Microsoft-Windows-Host-Network-Service  |  1026      |           |  HNS failed to allocate nat port with error '{HResult}'.Port Number= '{Parameter0}'.
+Microsoft-Windows-Host-Network-Service  |  1027      |           |  HNS failed to restore all configuration from its data file with error {HResult}
+Microsoft-Windows-Host-Network-Service  |  1028      |           |  HNS failed to set ethernet adapter MAC address with error = '{Parameter0}', adapter guid = '{Parameter1}' and MAC address = '{Parameter2}'.
+Microsoft-Windows-Host-Network-Service  |  1030      |           |  '{API}' : '{HResult}'.
+Microsoft-Windows-Host-Network-Service  |  1031      |           |  HNS failed to add encryption rules for new container with error '{Parameter0}' and unique error string "'{Parameter1}'"
+Microsoft-Windows-Host-Network-Service  |  1032      |           |  '{API}' : '{HResult}'.
+Microsoft-Windows-Host-Network-Service  |  1033      |           |  HNS failed to get vmswitch info with error = '{HResult}', switchid = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1034      |           |  HNS failed to enumerate vmswitch ports with error = '{HResult}', switchid = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1035      |           |  HNS failed to get port handle count with error = '{HResult}', portname = '{Parameter1}'.
+Microsoft-Windows-Host-Network-Service  |  1036      |           |  Mirrored Networking was requested.
+Microsoft-Windows-Host-Network-Service  |  1037      |           |  HNS failed to update vmswitch port isolation with error '{Parameter0}', switch id = '{Paramete1}', port id = '{Paramete2}' and isolation id = '{Parameter3}'.
+Microsoft-Windows-Host-Network-Service  |  1038      |           |  HNS failed to set vmswitch MAC spoofing with error '{Parameter0}', switch id = '{Paramete1}', port id = '{Paramete2}'.
+Microsoft-Windows-Host-Network-Service  |  1039      |           |  HNS failed to delete vmswitch port property with error '{Parameter0}', switch id = '{Paramete1}', port id = '{Paramete2}'.
+Microsoft-Windows-Host-Network-Service  |  1040      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1041      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1042      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1043      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1044      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1045      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1046      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1047      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1048      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1049      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1050      |           |  Modified guest '{ResourceType}' settings. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1051      |           |  Failed to modify guest '{ResourceType}' settings with error '{Result}'. Entity: '{EntityType}', Id: '{EntityId}', Operation: '{OperationType}', Settings: '{Settings}'
+Microsoft-Windows-Host-Network-Service  |  1052      |           |  {Parameter0} :-  GuestNetworkService id = '{Parameter1}'. Result code = '{Parameter3}'.
+Microsoft-Windows-Host-Network-Service  |  1053      |           |  {Parameter0} :-  GuestNetworkService id = '{Parameter1}'. Result code = '{Parameter3}'.
+Microsoft-Windows-Host-Network-Service  |  1054      |           |  Guest Network Service state changed. Id: '{GnsId}', State: '{GnsState}'
+Microsoft-Windows-Host-Network-Service  |  1055      |           |  RPC request received. Type: '{Request}', Entity: '{Entity}', Id: '{Id}', Access Level: '{RpcAccessLevel}', Data: '{Data}'
+Microsoft-Windows-Host-Network-Service  |  1056      |           |  {EventString} :-  Endpoint id = '{EndpointId}'.  Network id = '{NetworkId}'.  Policy type = '{PolicyType}'.  Result code = '{Result}'.
+Microsoft-Windows-Host-Network-Service  |  1057      |           |  {EventString} :-  Endpoint id = '{EndpointId}'.  Network id = '{NetworkId}'.  Policy type = '{PolicyType}'.  Result code = '{Result}'.
+Microsoft-Windows-Host-Network-Service  |  1058      |           |  HNS failed to configure IOV offload on vmswitch port with error '{Parameter0}', switch id = '{Parameter1}', port id = '{Parameter2}'.

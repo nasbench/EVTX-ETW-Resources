@@ -1,0 +1,4 @@
+Provider                       |  Event ID  |  Channel  |  Message
+-------------------------------|------------|-----------|---------
+Microsoft-Windows-GPIOButtons  |  1         |           |
+Microsoft-Windows-GPIOButtons  |  2         |           |

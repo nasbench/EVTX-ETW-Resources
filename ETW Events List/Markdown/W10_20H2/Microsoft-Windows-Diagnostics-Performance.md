@@ -1,0 +1,114 @@
+Provider                                   |  Event ID  |  Channel              |  Message
+-------------------------------------------|------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Diagnostics-Performance  |  100       |  Operational          |  Windows has started up:      Boot Duration		:	{BootTime}ms     IsDegradation		:	{BootStartTime}6     Incident Time (UTC)	:	{BootStartTime}
+Microsoft-Windows-Diagnostics-Performance  |  100       |  Operational          |  Windows has started up:      Boot Duration		:	{BootTime}ms     IsDegradation		:	{BootStartTime}6     Incident Time (UTC)	:	{BootStartTime}
+Microsoft-Windows-Diagnostics-Performance  |  101       |  Operational          |  This application took longer than usual to start up, resulting in a performance degradation in the system startup process:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  102       |  Operational          |  This driver took longer to initialize, resulting in a performance degradation in the system start up process:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  103       |  Operational          |  This startup service took longer than expected to startup, resulting in a performance degradation in the system start up process:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  104       |  Operational          |  Core system took longer to initialize, resulting in a performance degradation in the system start up process:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  105       |  Operational          |  Foreground optimizations (prefetching) took longer to complete, resulting in a performance degradation in the system start up process:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  106       |  Operational          |  Background optimizations (prefetching) took longer to complete, resulting in a performance degradation in the system start up process:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  107       |  Operational          |  Application of machine policy caused a slow down in the system start up process:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  108       |  Operational          |  Application of user policy caused a slow down in the system start up process:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  109       |  Operational          |  This device took longer to initialize, resulting in a performance degradation in the system start up process:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  110       |  Operational          |  Session manager initialization caused a slow down in the startup process:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  200       |  Operational          |  Windows has shutdown:      Shutdown Duration	:	{ShutdownTime}ms     IsDegradation		:	{ShutdownTsVersion}6     Incident Time (UTC)	:	{ShutdownStartTime}
+Microsoft-Windows-Diagnostics-Performance  |  201       |  Operational          |  This application caused a delay in the system shutdown process:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  202       |  Operational          |  This device caused a delay in the system shutdown process:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  203       |  Operational          |  This service caused a delay in the system shutdown process:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  300       |  Operational          |  Windows has resumed from standby:      Standby Duration		:	{StandbySuspendTotal}ms     Standby Incident Time (UTC)	:	{StandbyStartTime}     Resume  Duration		:	{StandbyServicesCount}9ms     Resume  Incident Time (UTC)	:	{StandbyServicesCount}7     IsDegradation			:	{StandbyStartTime}1
+Microsoft-Windows-Diagnostics-Performance  |  301       |  Operational          |  This application caused a delay during standby:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  302       |  Operational          |  This driver caused a delay during standby while servicing a device:     Driver File Name		:	{Name}     Driver Friendly Name		:	{FriendlyName}     Driver Version			:	{Version}     Driver Total Time		:	{TotalTime}ms     Driver Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)		:	{StartTime}     Device Name			:	{StartTime}7     Device Friendly Name		:	{StartTime}9     Device Total Time		:	{NameLength}0ms     Device Degradation Time	:	{NameLength}1ms
+Microsoft-Windows-Diagnostics-Performance  |  303       |  Operational          |  This service caused a delay during hybrid-sleep:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  304       |  Operational          |  Creation of the hiber-file was slower than expected:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  305       |  Operational          |  Persisting disk caches was slower than expected:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  306       |  Operational          |  Preparing the video subsystem for sleep was slower than expected:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  307       |  Operational          |  Preparing Winlogon for sleep was slower than expected:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  308       |  Operational          |  Preparing system memory for sleep was slower than expected:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  309       |  Operational          |  Preparing core system for sleep was slower than expected:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  310       |  Operational          |  Preparing system worker threads for sleep was slower than expected:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  350       |  Operational          |  Bios initialization time was greater than 250ms (logo requirement) during system resume:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  351       |  Operational          |  This driver responded slower than expected to the resume request while servicing this device:      Driver File Name		:	{Name}     Driver Friendly Name		:	{FriendlyName}     Driver Version			:	{Version}     Driver Total Time		:	{TotalTime}ms     Driver Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)		:	{StartTime}     Device Name			:	{StartTime}7     Device Friendly Name		:	{StartTime}9     Device Total Time		:	{NameLength}0ms     Device Degradation Time	:	{NameLength}1ms
+Microsoft-Windows-Diagnostics-Performance  |  352       |  Operational          |  Reading the hiber-file was slower than expected:      Name		:	{Name}     Total Time		:	{TotalTime}ms     Degradation Time	:	{DegradationTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  400       |  Operational          |  Information about the system performance monitoring event:      Scenario		:	{ShellSubScenario}     Analysis result		:	{ShellAnalysisResult}     Incident Time (UTC)	:	{ShellScenarioStartTime}
+Microsoft-Windows-Diagnostics-Performance  |  401       |  Operational          |  This process is using up processor time and is impacting the performance of Windows:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Thread time		:	{ThreadTime}ms     Blocked Time		:	{BlockedTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  402       |  Operational          |  This process is doing excessive disk activities and is impacting the performance of Windows:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Thread time		:	{ThreadTime}ms     Blocked Time		:	{BlockedTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  403       |  Operational          |  This driver is using up too many resources and is impacting the performance of Windows:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Thread time		:	{ThreadTime}ms     Blocked Time		:	{BlockedTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  404       |  Operational          |  This driver is waiting longer than expected on a device:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Thread time		:	{ThreadTime}ms     Blocked Time		:	{BlockedTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  405       |  Operational          |  This file is fragmented and is impacting the performance of Windows:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Thread time		:	{ThreadTime}ms     Blocked Time		:	{BlockedTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  406       |  Operational          |  Disk IO to this file is taking longer than expected:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Thread time		:	{ThreadTime}ms     Blocked Time		:	{BlockedTime}ms     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  407       |  Operational          |  This process is using up too much system memory:      File Name		:	{Name}     Friendly Name		:	{FriendlyName}     Version		:	{Version}     Workingset size	:	{WorkingSetSizeKb}Kb     Percent memory	:	{StartTime}1     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  408       |  Operational          |  Many processes are using too much system memory:      Workingset size	:	{WorkingSetSizeKb}Kb     Percent memory	:	{PercentMemory}     Incident Time (UTC)	:	{StartTime}
+Microsoft-Windows-Diagnostics-Performance  |  500       |  Operational          |  The Desktop Window Manager is experiencing heavy resource contention.      Scenario	:	{Scenario}
+Microsoft-Windows-Diagnostics-Performance  |  501       |  Operational          |  The Desktop Window Manager is experiencing heavy resource contention.     Reason	:	{Reason}     Diagnosis	:	{Diagnosis}
+Microsoft-Windows-Diagnostics-Performance  |  1001      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1002      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1003      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1005      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1006      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1007      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1010      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1011      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1012      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1013      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1014      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1015      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1020      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1022      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1024      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1025      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  1026      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1027      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1028      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  1029      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2001      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  2002      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  2003      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  2004      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  2005      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2006      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2007      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2008      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2009      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2010      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2011      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2012      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2013      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2014      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2015      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  2016      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  7001      |  Diagnostic-Loopback  |
+Microsoft-Windows-Diagnostics-Performance  |  7101      |  Diagnostic-Loopback  |
+Microsoft-Windows-Diagnostics-Performance  |  7102      |  Diagnostic-Loopback  |
+Microsoft-Windows-Diagnostics-Performance  |  7103      |  Diagnostic-Loopback  |
+Microsoft-Windows-Diagnostics-Performance  |  7104      |  Diagnostic-Loopback  |
+Microsoft-Windows-Diagnostics-Performance  |  7105      |  Diagnostic-Loopback  |
+Microsoft-Windows-Diagnostics-Performance  |  7106      |  Diagnostic-Loopback  |
+Microsoft-Windows-Diagnostics-Performance  |  8001      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  8002      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  8003      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  8004      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  8005      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  8006      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  8007      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  8008      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  8009      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  8010      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  8011      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  8012      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  8013      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  9001      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  9003      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  9005      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  9007      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  9009      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  9011      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  9012      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  9013      |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  9015      |  Diagnostic           |  Status
+Microsoft-Windows-Diagnostics-Performance  |  10001     |  Diagnostic-Loopback  |
+Microsoft-Windows-Diagnostics-Performance  |  11001     |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  11002     |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  11003     |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  11005     |  Diagnostic           |
+Microsoft-Windows-Diagnostics-Performance  |  11006     |  Diagnostic           |

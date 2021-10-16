@@ -1,0 +1,5 @@
+Provider                     |  Event ID  |  Channel                                  |  Message
+-----------------------------|------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-IO  |  1         |  Microsoft-Windows-Kernel-IO/Operational  |  Windows has started processing the volume mount request.           Volume GUID: {VolumeGuid}           Volume Name: {VolumeName}
+Microsoft-Windows-Kernel-IO  |  2         |  Microsoft-Windows-Kernel-IO/Operational  |  The volume has been successfully mounted.           Volume GUID: {VolumeGuid}           Volume Name: {VolumeName}
+Microsoft-Windows-Kernel-IO  |  3         |  Microsoft-Windows-Kernel-IO/Operational  |  Windows failed to mount the volume.           Status: {Error}           Volume GUID: {VolumeGuid}           Volume Name: {VolumeName}

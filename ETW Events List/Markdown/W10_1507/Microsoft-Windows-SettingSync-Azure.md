@@ -1,0 +1,12 @@
+Provider                             |  Event ID  |  Channel                                          |  Message
+-------------------------------------|------------|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-SettingSync-Azure  |  5001      |  Microsoft-Windows-SettingSync-Azure/Operational  |  {ApiName} - Collection: {CollectionId}, ProviderOp: {ProviderOp}, Duration: {Duration}, HRESULT: {HRESULT}, CorrelationId: {CorrelationId}
+Microsoft-Windows-SettingSync-Azure  |  5002      |  Microsoft-Windows-SettingSync-Azure/Operational  |  GetToken - Status: {WebTokenRequestStatus}, Result: {HRESULT}
+Microsoft-Windows-SettingSync-Azure  |  5003      |  Microsoft-Windows-SettingSync-Azure/Operational  |  Failed to apply a setting unit to cloud for collection: {CollectionId} due to error HRESULT: {HRESULT}
+Microsoft-Windows-SettingSync-Azure  |  6001      |  Microsoft-Windows-SettingSync-Azure/Debug        |  {ApiName} - Collection: {CollectionId}, ProviderOp: {ProviderOp}, Duration: {Duration}, HRESULT: {HRESULT}, CorrelationId: {CorrelationId}
+Microsoft-Windows-SettingSync-Azure  |  6002      |  Microsoft-Windows-SettingSync-Azure/Debug        |  Call to initialize Azure WNS registrar, HRESULT: {HRESULT}
+Microsoft-Windows-SettingSync-Azure  |  6003      |  Microsoft-Windows-SettingSync-Azure/Debug        |  Call to initialize new Azure Settings WNF state name, New name: {Name0Data0} {Name0Data1}, HRESULT: {HRESULT}
+Microsoft-Windows-SettingSync-Azure  |  6004      |  Microsoft-Windows-SettingSync-Azure/Debug        |  Call to uninitialize old Azure Settings WNF state name, Old name: {Name0Data0} {Name0Data1}, New Name: {Name1Data0} {Name1Data1}, HRESULT: {HRESULT}
+Microsoft-Windows-SettingSync-Azure  |  6005      |  Microsoft-Windows-SettingSync-Azure/Debug        |  Call to register collection {CollectionId} for notifications HRESULT: {HRESULT}
+Microsoft-Windows-SettingSync-Azure  |  6006      |  Microsoft-Windows-SettingSync-Azure/Debug        |  Call to unregister collection {CollectionId} for notifications HRESULT: {HRESULT}
+Microsoft-Windows-SettingSync-Azure  |  6007      |  Microsoft-Windows-SettingSync-Azure/Debug        |  GetToken for IsServiceEnabled failed HRESULT: {HRESULT}

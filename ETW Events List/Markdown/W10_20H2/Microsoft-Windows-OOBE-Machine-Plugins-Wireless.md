@@ -1,0 +1,3 @@
+Provider                                         |  Event ID  |  Channel                                                     |  Message
+-------------------------------------------------|------------|--------------------------------------------------------------|---------
+Microsoft-Windows-OOBE-Machine-Plugins-Wireless  |  5111      |  Microsoft-Windows-OOBE-Machine-Plugins-Wireless/Diagnostic  |

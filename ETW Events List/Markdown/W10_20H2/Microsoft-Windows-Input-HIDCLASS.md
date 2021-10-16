@@ -1,0 +1,6 @@
+Provider                          |  Event ID  |  Channel                                                                                            |  Message
+----------------------------------|------------|-----------------------------------------------------------------------------------------------------|-----------------------------
+Microsoft-Windows-Input-HIDCLASS  |  1         |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |
+Microsoft-Windows-Input-HIDCLASS  |  2         |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |
+Microsoft-Windows-Input-HIDCLASS  |  3         |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |  HIDCLASS device information
+Microsoft-Windows-Input-HIDCLASS  |  3         |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |  HIDCLASS device information

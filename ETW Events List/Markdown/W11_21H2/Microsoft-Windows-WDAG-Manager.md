@@ -1,0 +1,13 @@
+Provider                        |  Event ID  |  Channel      |  Message
+--------------------------------|------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WDAG-Manager  |  100       |  Operational  |  Failed to start RPC listener: {ErrorCode}
+Microsoft-Windows-WDAG-Manager  |  101       |  Operational  |  Failed to start RDP connection: {ErrorCode}
+Microsoft-Windows-WDAG-Manager  |  102       |  Operational  |  Failed to start the container: {ErrorCode}
+Microsoft-Windows-WDAG-Manager  |  103       |  Operational  |  Failed to set the RDP policies: {ErrorCode}
+Microsoft-Windows-WDAG-Manager  |  104       |  Operational  |  RDP Session was disconnected: Reason = {Reason}, Extended = {ExtReason}
+Microsoft-Windows-WDAG-Manager  |  105       |  Operational  |
+Microsoft-Windows-WDAG-Manager  |  106       |  Operational  |
+Microsoft-Windows-WDAG-Manager  |  108       |  Operational  |  A Failure has occurred: HResult = {HResult}, File = {File}, LineNumber = {LineNumber}, Function = {Function}, Message = {Message}, CallingContext = {CallContext}, Module = {Module}, Code = {Code}
+Microsoft-Windows-WDAG-Manager  |  113       |  Operational  |  Informational Event: Message = {Message}, HResult = {ErrorCode}, ContainerId = {Container Id}
+Microsoft-Windows-WDAG-Manager  |  114       |  Operational  |  Informational Event: Message = {Message}, HResult = {ErrorCode}, ContainerId = {Container Id}, ProgramId = {AppId}, Arguments = {Arguments}
+Microsoft-Windows-WDAG-Manager  |  115       |  Operational  |  A WDAG Error Dialogue has been shown: ContainerId = {ContainerId}, ProgramType = {ProgramType}, Container Error = {LastOperationResult}, Container Error Extended = {NotificationType}, RdpError = {RdpError}, Rdp Error Extended = {RdpErrorExt}, Location = {RdpNotificationEvent}

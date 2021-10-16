@@ -1,0 +1,4 @@
+Provider                                      |  Event ID  |  Channel  |  Message
+----------------------------------------------|------------|-----------|---------
+Microsoft-Windows-GroupPolicyTriggerProvider  |  1         |           |
+Microsoft-Windows-GroupPolicyTriggerProvider  |  2         |           |

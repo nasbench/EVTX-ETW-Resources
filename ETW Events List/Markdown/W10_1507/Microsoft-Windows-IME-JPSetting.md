@@ -1,0 +1,4 @@
+Provider                         |  Event ID  |  Channel                                   |  Message
+---------------------------------|------------|--------------------------------------------|---------
+Microsoft-Windows-IME-JPSetting  |  1         |  Microsoft-Windows-IME-JPSetting/Analytic  |
+Microsoft-Windows-IME-JPSetting  |  2         |  Microsoft-Windows-IME-JPSetting/Analytic  |

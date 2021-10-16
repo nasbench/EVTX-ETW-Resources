@@ -1,0 +1,37 @@
+Provider                            |  Event ID  |  Channel                                         |  Message
+------------------------------------|------------|--------------------------------------------------|---------
+Microsoft-Windows-OOBE-Machine-DUI  |  5100      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5105      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5106      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5107      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5108      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5110      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5112      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5113      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5114      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5115      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5116      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5117      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5118      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5119      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5120      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5121      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5122      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5123      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5124      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5125      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5126      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5127      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5128      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5129      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5130      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5131      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5132      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5133      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5134      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5135      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5136      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5137      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5138      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5139      |  Microsoft-Windows-OOBE-Machine-DUI/Diagnostic   |
+Microsoft-Windows-OOBE-Machine-DUI  |  5500      |  Microsoft-Windows-OOBE-Machine-DUI/Operational  |

@@ -1,0 +1,10 @@
+Provider                      |  Event ID  |  Channel                                   |  Message
+------------------------------|------------|--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-VPN-Client  |  10001     |  Microsoft-Windows-VPN-Client/Operational  |  VPN Profile {VpnConnectionName} has been created with the following properties: {PropertiesString}
+Microsoft-Windows-VPN-Client  |  10002     |  Microsoft-Windows-VPN-Client/Operational  |  VPN Profile {VpnConnectionName} could not be created. Error: ({ErrorCode}). Properties: {PropertiesString}
+Microsoft-Windows-VPN-Client  |  10003     |  Microsoft-Windows-VPN-Client/Operational  |  VPN Profile {VpnConnectionName} has been deleted.
+Microsoft-Windows-VPN-Client  |  10004     |  Microsoft-Windows-VPN-Client/Operational  |  VPN Profile {VpnConnectionName} could not be deleted. Error: ({ErrorCode}).
+Microsoft-Windows-VPN-Client  |  10005     |  Microsoft-Windows-VPN-Client/Operational  |  VPN Connection {VpnConnectionName} has been modified with the following properties: {PropertiesString}
+Microsoft-Windows-VPN-Client  |  10006     |  Microsoft-Windows-VPN-Client/Operational  |  VPN Profile {VpnConnectionName} could not be modified. Error: ({ErrorCode}). Properties: {PropertiesString}
+Microsoft-Windows-VPN-Client  |  10007     |  Microsoft-Windows-VPN-Client/Operational  |  VPN Profile {VpnConnectionName} has been created with the following input properties: {PropertiesString}The following properties could not be updated:{PropertiesNotUpdatedString}
+Microsoft-Windows-VPN-Client  |  10008     |  Microsoft-Windows-VPN-Client/Operational  |  VPN Connection {VpnConnectionName} has been modified with the following input properties: {PropertiesString}The following properties could not be updated:{PropertiesNotUpdatedString}

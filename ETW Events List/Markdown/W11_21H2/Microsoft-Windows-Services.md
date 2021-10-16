@@ -1,0 +1,17 @@
+Provider                    |  Event ID  |  Channel                                |  Message
+----------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-Services  |  101       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  102       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  103       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  104       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  105       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  106       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  107       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  108       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  109       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  200       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  201       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  202       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  203       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  204       |  Microsoft-Windows-Services/Diagnostic  |
+Microsoft-Windows-Services  |  205       |  Microsoft-Windows-Services/Diagnostic  |

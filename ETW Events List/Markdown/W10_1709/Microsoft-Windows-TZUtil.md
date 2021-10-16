@@ -1,0 +1,7 @@
+Provider                  |  Event ID  |  Channel      |  Message
+--------------------------|------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-TZUtil  |  1004      |  Operational  |  The attempt to set the system time zone to "{Time Zone}" returned error. Error code is {ErrorCode}. Error message is: "{ErrorMessage}".
+Microsoft-Windows-TZUtil  |  1005      |  Operational  |  The attempt to set the system time zone to "{Time Zone}" returned error. Error code is {ErrorCode}. The time zone has been made obsolete.
+Microsoft-Windows-TZUtil  |  1006      |  Operational  |  The attempt to set the system time zone to "{Time Zone}" returned error. Error code is {ErrorCode}. The time zone is unrecognized.
+Microsoft-Windows-TZUtil  |  1007      |  Operational  |  The attempt to set the system time zone to "{Time Zone}" returned error. Error code is {ErrorCode}. The time zone data is unreadable.
+Microsoft-Windows-TZUtil  |  20001     |  Operational  |  The system time zone was set successfully to "{Time Zone}".

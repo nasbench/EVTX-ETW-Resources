@@ -1,0 +1,4 @@
+Provider                                |  Event ID  |  Channel  |  Message
+----------------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-DNS-Client-DiagTrack  |  3021      |           |  Collecting trace for DoH query {QueryName} and type {QueryType} which failed with response status {QueryStatus}
+Microsoft-Windows-DNS-Client-DiagTrack  |  3022      |           |  Finished collecting trace for DoH query {QueryName} and type {QueryType}. Retry status code is: {QueryStatus}

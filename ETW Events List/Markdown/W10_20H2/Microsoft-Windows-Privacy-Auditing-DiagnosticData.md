@@ -1,0 +1,4 @@
+Provider                                           |  Event ID  |  Channel                                         |  Message
+---------------------------------------------------|------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Privacy-Auditing-DiagnosticData  |  1000      |  Microsoft-Windows-Privacy-Auditing/Operational  |  The Diagnostic Data Value was changed from {OldConsentValue} to {NewConsentValue} by {CallerProcessName}
+Microsoft-Windows-Privacy-Auditing-DiagnosticData  |  1001      |  Microsoft-Windows-Privacy-Auditing/Operational  |  The Diagnostic Data Value failed to change from {OldConsentValue} to {NewConsentValue} by {CallerProcessName}

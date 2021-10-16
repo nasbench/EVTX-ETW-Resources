@@ -1,0 +1,111 @@
+Provider                            |  Event ID  |  Channel  |  Message
+------------------------------------|------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-BitLocker-Driver  |  24577     |  System   |  Encryption of volume {Volume} started.
+Microsoft-Windows-BitLocker-Driver  |  24578     |  System   |  Encryption of volume {Volume} stopped.
+Microsoft-Windows-BitLocker-Driver  |  24579     |  System   |  Encryption of volume {Volume} completed.
+Microsoft-Windows-BitLocker-Driver  |  24580     |  System   |  Decryption of volume {Volume} started.
+Microsoft-Windows-BitLocker-Driver  |  24581     |  System   |  Decryption of volume {Volume} stopped.
+Microsoft-Windows-BitLocker-Driver  |  24582     |  System   |  Decryption of volume {Volume} completed.
+Microsoft-Windows-BitLocker-Driver  |  24583     |  System   |  Conversion worker thread for volume {Volume} was started.
+Microsoft-Windows-BitLocker-Driver  |  24584     |  System   |  Conversion worker thread for volume {Volume} was temporarily stopped.
+Microsoft-Windows-BitLocker-Driver  |  24585     |  System   |  Auto-unlock enabled for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24586     |  System   |  An error was encountered converting volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24587     |  System   |  Auto-unlock disabled for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24588     |  System   |  The conversion operation on volume {Volume} encountered a bad sector error. Please validate the data on this volume.
+Microsoft-Windows-BitLocker-Driver  |  24589     |  System   |  Failed to enable auto-unlock for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24590     |  System   |  Failed to disable auto-unlock for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24591     |  System   |  Auto-unlocking failed for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24592     |  System   |  An attempt to automatically restart conversion on volume {Volume} failed.
+Microsoft-Windows-BitLocker-Driver  |  24593     |  System   |  Metadata write: Volume {Volume} returning errors while trying to modify metadata. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24594     |  System   |  Metadata rebuild: An attempt to write a copy of metadata on volume {Volume} failed and may appear as disk corruption. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24595     |  System   |  Volume {Volume} contains bad clusters. These clusters will be skipped during conversion.
+Microsoft-Windows-BitLocker-Driver  |  24596     |  System   |  No key file was found for Volume {Volume} during restart.
+Microsoft-Windows-BitLocker-Driver  |  24597     |  System   |  A corrupt key file was encountered for Volume {Volume} during restart.
+Microsoft-Windows-BitLocker-Driver  |  24598     |  System   |  No volume master key was retrieved in a key file during restart.
+Microsoft-Windows-BitLocker-Driver  |  24599     |  System   |  The TPM was not enabled during restart.
+Microsoft-Windows-BitLocker-Driver  |  24600     |  System   |  The SRK was found to be invalid during restart.
+Microsoft-Windows-BitLocker-Driver  |  24601     |  System   |  The PCRs did not match during restart.
+Microsoft-Windows-BitLocker-Driver  |  24602     |  System   |  No volume master key was retrieved from a key file during restart.
+Microsoft-Windows-BitLocker-Driver  |  24603     |  System   |  A boot application hash did not match expected value during restart.
+Microsoft-Windows-BitLocker-Driver  |  24604     |  System   |  The boot configuration options did not match expected values during restart.
+Microsoft-Windows-BitLocker-Driver  |  24605     |  System   |  No volume master key was retrieved from a PIN during restart.
+Microsoft-Windows-BitLocker-Driver  |  24606     |  System   |  No volume master key was retrieved from a recovery password during restart.
+Microsoft-Windows-BitLocker-Driver  |  24607     |  System   |  A valid key was found during the last restart.
+Microsoft-Windows-BitLocker-Driver  |  24608     |  System   |  An unexpected error was encountered attempting to retrieve the volume master key during restart.
+Microsoft-Windows-BitLocker-Driver  |  24609     |  System   |  A key was not available from required sources during restart.
+Microsoft-Windows-BitLocker-Driver  |  24610     |  System   |  Metadata commit: Not all copies of metadata on volume {Volume} could be written. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24611     |  System   |  Metadata commit: No copies of metadata on volume {Volume} could be written. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24612     |  System   |  Metadata commit: Metadata update could not be flushed.
+Microsoft-Windows-BitLocker-Driver  |  24613     |  System   |  Metadata commit: An attempt to verify metadata update on volume {Volume} failed at read. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24614     |  System   |  Metadata commit: Update verification of metadata on volume {Volume} failed. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24615     |  System   |  Metadata initial read: Primary metadata record on volume {Volume} could not be found. Volume needs recovery.
+Microsoft-Windows-BitLocker-Driver  |  24616     |  System   |  Metadata initial read: Failover metadata record on volume {Volume} could not be found. Volume needs recovery.
+Microsoft-Windows-BitLocker-Driver  |  24617     |  System   |  Metadata initial read: Failover metadata record on volume {Volume} used. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24618     |  System   |  Metadata check: Metadata record on volume {Volume} could not be read and has been marked for rebuild. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24619     |  System   |  Metadata rebuild: An attempt build a new set of metadata on {Volume} failed at commit and may appear as disk corruption. If failures continue, decrypt volume.
+Microsoft-Windows-BitLocker-Driver  |  24620     |  System   |  Encrypted volume check: Volume information on {Volume} cannot be read.
+Microsoft-Windows-BitLocker-Driver  |  24621     |  System   |  Initial state check: Rolling volume conversion transaction on {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24622     |  System   |  BIOS/TCG Memory Overwrite Control: Error finding TPM driver.
+Microsoft-Windows-BitLocker-Driver  |  24623     |  System   |  BIOS/TCG Memory Overwrite Control: Error registering TPM device interface.
+Microsoft-Windows-BitLocker-Driver  |  24624     |  System   |  BIOS/TCG Memory Overwrite Control: Error changing value.
+Microsoft-Windows-BitLocker-Driver  |  24625     |  System   |  A valid BitLocker key was found during the last restart.
+Microsoft-Windows-BitLocker-Driver  |  24626     |  System   |  The auto-unlock master key was not available from the operating system volume.  Retry the operation via the BitLocker WMI interface.
+Microsoft-Windows-BitLocker-Driver  |  24627     |  System   |  Boot debugging is enabled on Bootmgr so TPM based keys cannot be obtained.
+Microsoft-Windows-BitLocker-Driver  |  24628     |  System   |  The partition size specified in the partition table is smaller than the size of the file system contained by that partition.  BitLocker TPM based keys cannot be used until the size of the partition calculated from the partition table is consistent with the size of the file system calculated from the bytes per sector and number of sectors fields in the boot sector.
+Microsoft-Windows-BitLocker-Driver  |  24629     |  System   |  The system firmware failed to enable overwriting of system memory on restart. The firmware should be upgraded.
+Microsoft-Windows-BitLocker-Driver  |  24630     |  System   |  Bootmgr failed to find a BitLocker key file for Volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24631     |  System   |  Bootmgr detected corruption in the BitLocker key file for Volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24632     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the key file contents.
+Microsoft-Windows-BitLocker-Driver  |  24633     |  System   |  Bootmgr determined that the TPM is disabled.
+Microsoft-Windows-BitLocker-Driver  |  24634     |  System   |  Bootmgr determined that the authorization data for the SRK of the TPM is incompatible with BitLocker.
+Microsoft-Windows-BitLocker-Driver  |  24635     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the TPM because the PCRs did not match.
+Microsoft-Windows-BitLocker-Driver  |  24636     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the TPM.
+Microsoft-Windows-BitLocker-Driver  |  24637     |  System   |  A boot application hash did not match the expected value during restart.
+Microsoft-Windows-BitLocker-Driver  |  24638     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the TPM + PIN.
+Microsoft-Windows-BitLocker-Driver  |  24639     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the recovery password.
+Microsoft-Windows-BitLocker-Driver  |  24640     |  System   |  A valid BitLocker key was found during the last restart.
+Microsoft-Windows-BitLocker-Driver  |  24641     |  System   |  An unexpected error was encountered attempting to retrieve the BitLocker volume master key during restart.
+Microsoft-Windows-BitLocker-Driver  |  24642     |  System   |  An internal BitLocker self-test failed for drive {Volume}. BitLocker cannot continue encrypting data. Contact your system administrator.
+Microsoft-Windows-BitLocker-Driver  |  24643     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the TPM + enhanced PIN.
+Microsoft-Windows-BitLocker-Driver  |  24644     |  System   |  An internal BitLocker self-test failed for drive {Volume} when switching from raw mode to filtering mode. BitLocker cannot continue encrypting data on this drive. Contact your system administrator.
+Microsoft-Windows-BitLocker-Driver  |  24645     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the network key protector.
+Microsoft-Windows-BitLocker-Driver  |  24646     |  System   |  Encryption of the used space on volume {Volume} started.
+Microsoft-Windows-BitLocker-Driver  |  24647     |  System   |  Encryption of the used space on volume {Volume} stopped.
+Microsoft-Windows-BitLocker-Driver  |  24648     |  System   |  Encryption of the used space on volume {Volume} completed.
+Microsoft-Windows-BitLocker-Driver  |  24649     |  System   |  Wiping of free space on volume {Volume} started.
+Microsoft-Windows-BitLocker-Driver  |  24650     |  System   |  Wiping of free space on volume {Volume} stopped.
+Microsoft-Windows-BitLocker-Driver  |  24651     |  System   |  Wiping of free space on volume {Volume} completed.
+Microsoft-Windows-BitLocker-Driver  |  24652     |  System   |  A recovery password was used to start Windows.Protector ID: {OptionalGUID}.
+Microsoft-Windows-BitLocker-Driver  |  24653     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the password.
+Microsoft-Windows-BitLocker-Driver  |  24654     |  System   |  A recovery key was used to start Windows.Protector ID: {OptionalGUID}.
+Microsoft-Windows-BitLocker-Driver  |  24655     |  System   |  The BitLocker driver has started a self-healing operation on the metadata of volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24656     |  System   |  The BitLocker driver has successfully completed a self-healing operation on the metadata of volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24657     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the TPM because Secure Boot was disabled.
+Microsoft-Windows-BitLocker-Driver  |  24658     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the TPM because Secure Boot configuration changed unexpectedly.
+Microsoft-Windows-BitLocker-Driver  |  24659     |  System   |  Device Lock was triggered due to too many incorrect password attempts.
+Microsoft-Windows-BitLocker-Driver  |  24660     |  System   |  BitLocker encryption on write started for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24661     |  System   |  BitLocker free space sweep started for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24662     |  System   |  BitLocker free space sweep stopped for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24663     |  System   |  BitLocker free space sweep completed for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24664     |  System   |  BitLocker finalization sweep started for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24665     |  System   |  BitLocker finalization sweep paused for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24666     |  System   |  BitLocker finalization sweep resumed for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24667     |  System   |  BitLocker finalization sweep completed for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24668     |  System   |  BitLocker encryption on write failed for volume {Volume} due to disk I/O error. Check the disk for bad sectors.
+Microsoft-Windows-BitLocker-Driver  |  24669     |  System   |  BitLocker finalization sweep failed for volume {Volume} due to disk I/O error. Check the disk for bad sectors.
+Microsoft-Windows-BitLocker-Driver  |  24670     |  System   |  Disk containing volume {Volume} is employing non-volatile caching software which does not support control over its caching policies. This may temporarily impact BitLocker's ability to fully secure your data.
+Microsoft-Windows-BitLocker-Driver  |  24671     |  System   |  Disk containing volume {Volume} is employing non-volatile caching software which is experiencing problems. This may temporarily impact BitLocker's ability to fully secure your data. Contact disk manufacturer for an updated software.
+Microsoft-Windows-BitLocker-Driver  |  24672     |  System   |  Device Lock was triggered due to Device Lockout state validation failure.
+Microsoft-Windows-BitLocker-Driver  |  24673     |  System   |  Drive {Volume} is no longer automatically managed by device encryption.
+Microsoft-Windows-BitLocker-Driver  |  24674     |  System   |  Drive {Volume} is now automatically managed by device encryption.
+Microsoft-Windows-BitLocker-Driver  |  24675     |  System   |  WIM hash generation paused for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24676     |  System   |  WIM hash generation resumed for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24677     |  System   |  WIM hash generation completed for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24678     |  System   |  WIM hash generation failed for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24679     |  System   |  WIM hashes will be deleted for volume {Volume}.
+Microsoft-Windows-BitLocker-Driver  |  24680     |  System   |  Bootmgr failed to unseal VMK using the TPM
+Microsoft-Windows-BitLocker-Driver  |  24681     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the network key protector: failed to acquire protocol handle.
+Microsoft-Windows-BitLocker-Driver  |  24682     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the network key protector: failed to get IP address.
+Microsoft-Windows-BitLocker-Driver  |  24683     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the network key protector: failed to create request.
+Microsoft-Windows-BitLocker-Driver  |  24684     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the network key protector: failed to send request.
+Microsoft-Windows-BitLocker-Driver  |  24685     |  System   |  Bootmgr failed to obtain the BitLocker volume master key from the network key protector: invalid response.

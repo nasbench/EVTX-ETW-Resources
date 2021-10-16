@@ -1,0 +1,40 @@
+Provider                   |  Event ID  |  Channel                               |  Message
+---------------------------|------------|----------------------------------------|------------------------------------------------------------
+Microsoft-Windows-MSPaint  |  1         |  Microsoft-Windows-MSPaint/Debug       |
+Microsoft-Windows-MSPaint  |  2         |  Microsoft-Windows-MSPaint/Debug       |
+Microsoft-Windows-MSPaint  |  3         |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  4         |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  5         |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  6         |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  7         |  Microsoft-Windows-MSPaint/Diagnostic  |  Select Tool(ID: {Tool ID}) Start
+Microsoft-Windows-MSPaint  |  8         |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  9         |  Microsoft-Windows-MSPaint/Diagnostic  |  Commit Tool(ID: {Tool ID})b Start
+Microsoft-Windows-MSPaint  |  10        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  11        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  12        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  13        |  Microsoft-Windows-MSPaint/Diagnostic  |  Change Tool(ID: {Tool ID}) Thickness({Tool Thickness})
+Microsoft-Windows-MSPaint  |  14        |  Microsoft-Windows-MSPaint/Diagnostic  |  Change Stroke Color(RGB: {Color})
+Microsoft-Windows-MSPaint  |  15        |  Microsoft-Windows-MSPaint/Diagnostic  |  Change Fill Color(RGB: {Color})
+Microsoft-Windows-MSPaint  |  16        |  Microsoft-Windows-MSPaint/Diagnostic  |  Change DrawMode({Shape DrawMode})
+Microsoft-Windows-MSPaint  |  17        |  Microsoft-Windows-MSPaint/Diagnostic  |  Change Brush CrossSection({Tool Crosssection})
+Microsoft-Windows-MSPaint  |  18        |  Microsoft-Windows-MSPaint/Diagnostic  |  Change Caligraphic Brush CrossSection({Tool Crosssection})
+Microsoft-Windows-MSPaint  |  19        |  Microsoft-Windows-MSPaint/Diagnostic  |  Change Glitter Color({Color})
+Microsoft-Windows-MSPaint  |  20        |  Microsoft-Windows-MSPaint/Debug       |  Error enabling/disabling RTS
+Microsoft-Windows-MSPaint  |  21        |  Microsoft-Windows-MSPaint/Debug       |
+Microsoft-Windows-MSPaint  |  22        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  23        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  24        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  25        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  26        |  Microsoft-Windows-MSPaint/Diagnostic  |  Stop save drawing
+Microsoft-Windows-MSPaint  |  27        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  28        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  29        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  30        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  31        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  32        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  33        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  34        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  35        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  36        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  37        |  Microsoft-Windows-MSPaint/Diagnostic  |
+Microsoft-Windows-MSPaint  |  38        |  Microsoft-Windows-MSPaint/Diagnostic  |  Stop resize skew operation

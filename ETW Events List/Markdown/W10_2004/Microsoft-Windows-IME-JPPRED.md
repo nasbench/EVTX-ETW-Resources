@@ -1,0 +1,4 @@
+Provider                      |  Event ID  |  Channel                                |  Message
+------------------------------|------------|-----------------------------------------|---------
+Microsoft-Windows-IME-JPPRED  |  120       |  Microsoft-Windows-IME-JPPRED/Analytic  |
+Microsoft-Windows-IME-JPPRED  |  121       |  Microsoft-Windows-IME-JPPRED/Analytic  |

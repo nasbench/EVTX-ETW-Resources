@@ -1,0 +1,4 @@
+Provider                              |  Event ID  |  Channel  |  Message
+--------------------------------------|------------|-----------|---------
+Microsoft-Windows-BfeTriggerProvider  |  1         |           |
+Microsoft-Windows-BfeTriggerProvider  |  2         |           |

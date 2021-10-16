@@ -1,0 +1,60 @@
+Provider                |  Event ID  |  Channel  |  Message
+------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-NCSI  |  2001      |           |  Corporate connectivity check will be skipped. Reason: {CorpCheckDisabledReason}
+Microsoft-Windows-NCSI  |  2002      |           |
+Microsoft-Windows-NCSI  |  2003      |           |  Corporate inside/outside location check will be skipped. Reason: {CorpCheckDisabledReason}
+Microsoft-Windows-NCSI  |  2004      |           |
+Microsoft-Windows-NCSI  |  4001      |           |  Entered State: {CurrentOrNextState} Interface Luid: {IfLuid}
+Microsoft-Windows-NCSI  |  4002      |           |  Transitioning to State: {CurrentOrNextState} Interface Luid: {IfLuid}
+Microsoft-Windows-NCSI  |  4003      |           |  Entered State: {CurrentOrNextState} Interface Luid: {IfLuid}
+Microsoft-Windows-NCSI  |  4004      |           |  Transitioning to State: {CurrentOrNextState} Interface Luid: {IfLuid}
+Microsoft-Windows-NCSI  |  4005      |           |  Entered State: {CurrentOrNextState} Interface Luid: {IfLuid}
+Microsoft-Windows-NCSI  |  4006      |           |  Transitioning to State: {CurrentOrNextState} Interface Luid: {IfLuid}
+Microsoft-Windows-NCSI  |  4007      |           |  Entered State: {CurrentOrNextState} Interface Luid: {IfLuid}
+Microsoft-Windows-NCSI  |  4008      |           |  Transitioning to State: {CurrentOrNextState} Interface Luid: {IfLuid}
+Microsoft-Windows-NCSI  |  4009      |           |  Inside/Outside detection started for interface {IfLuid}.
+Microsoft-Windows-NCSI  |  4010      |           |  Inside/Outside detection finished for interface {IfLuid} ({CorporateLocation}).
+Microsoft-Windows-NCSI  |  4011      |           |
+Microsoft-Windows-NCSI  |  4012      |           |  Inside/Outside probe failed for interface {IfLuid}.Error: {ErrorString} ({ErrorCode})Host: {ProbeHost}/{ProbePath}Next retry: {RetryInterval} second(s).
+Microsoft-Windows-NCSI  |  4013      |           |  Active Internet Probe started on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4014      |           |  Active Internet Probe finished on interface {InterfaceGuid} ({Succeeded})
+Microsoft-Windows-NCSI  |  4015      |           |  Active Internet Probe (DNS) started on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4016      |           |  Active Internet Probe (DNS) finished on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4017      |           |  Active Internet Probe (HTTP) started on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4018      |           |  Active Internet Probe (HTTP) finished on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4019      |           |  Active Corp Probe started on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4020      |           |  Active Corp Probe finished on interface {InterfaceGuid} ({Succeeded})
+Microsoft-Windows-NCSI  |  4021      |           |  Active Corp Probe (DNS) started on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4022      |           |  Active Corp Probe (DNS) finished on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4023      |           |  Active Corp Probe (HTTP) started on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4024      |           |  Active Corp Probe (HTTP) finished on interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4025      |           |
+Microsoft-Windows-NCSI  |  4026      |           |  Proxy Detection stopped (HasProxy={ErrorCode})
+Microsoft-Windows-NCSI  |  4027      |           |  Opportunistic Internet flag on interface {InterfaceGuid} for family {Family} marked
+Microsoft-Windows-NCSI  |  4028      |           |  Inside/Outside detection is suspect
+Microsoft-Windows-NCSI  |  4029      |           |  Entered suspect state on interface {IfLuid} (Family: {Family} Reason: {SuspectStateReason})
+Microsoft-Windows-NCSI  |  4030      |           |  Suspect state cancelled on interface {IfLuid} (Family: {Family})
+Microsoft-Windows-NCSI  |  4031      |           |  Suspect state expired on interface {IfLuid} (Family: {Family})
+Microsoft-Windows-NCSI  |  4032      |           |  Entered corporate suspect state on interface {IfLuid}
+Microsoft-Windows-NCSI  |  4033      |           |  Corporate suspect state cancelled on interface {IfLuid}
+Microsoft-Windows-NCSI  |  4034      |           |  Corporate suspect state expired on interface {IfLuid}
+Microsoft-Windows-NCSI  |  4035      |           |  Cancelling hotspot detection scenario for interface {InterfaceGuid}
+Microsoft-Windows-NCSI  |  4036      |           |
+Microsoft-Windows-NCSI  |  4037      |           |  Starting hotspot detection for family {Family} on interface {IfLuid}
+Microsoft-Windows-NCSI  |  4038      |           |  Hotspot detected on interface {IfLuid} (Family: {Family})
+Microsoft-Windows-NCSI  |  4039      |           |  Hotspot not detected on interface {IfLuid} (Family: {Family})
+Microsoft-Windows-NCSI  |  4040      |           |  Interface {ConnectedInterfaceGuid} ({IfLuid}) has been connected
+Microsoft-Windows-NCSI  |  4041      |           |  Interface {DisconnectedInterfaceGuid} ({IfLuid}) has been disconnected
+Microsoft-Windows-NCSI  |  4042      |           |  Capability change on {InterfaceGuid} ({IfLuid} Family: {Family} Capability: {Capability} ChangeReason: {CapabilityChangeReason})
+Microsoft-Windows-NCSI  |  4043      |           |  Proxied capability change on {InterfaceGuid} ({IfLuid} Family: {Family} ProxiedCapability: {ProxiedCapability})
+Microsoft-Windows-NCSI  |  4044      |           |  Passive Poll state change (ShouldPassivePollRun: {ShouldPassivePollRun} WasPassivePollRunning: {WasPassivePollRunning} IsPassivePollAllowed: {IsPassivePollAllowed} ClientPresent: {ClientPresent} UserPresent: {UserPresent} NetworkQuietMode: {NetworkQuietMode} DeadUserPollCount: {DeadUserPollCount} DeadNetPollCountV4: {DeadNetPollCountV4} DeadNetPollCountV6: {DeadNetPollCountV6})
+Microsoft-Windows-NCSI  |  4045      |           |  NetReady update on {InterfaceGuid} ({IfLuid} Family: {Family} NetReady: {NetReady})
+Microsoft-Windows-NCSI  |  4046      |           |  Corporate connectivity change on {InterfaceGuid} ({IfLuid} Family: {Family} HasCorporateConnectivity: {HasCorporateConnectivity})
+Microsoft-Windows-NCSI  |  4047      |           |  Default gateway is set on {InterfaceGuid} ({IfLuid} Family: {Family} GatewayIP: {IpAddress} GatewayMAC: {MacAddress} KnownProxyless: {KnownProxyless} KnownHotspot: {KnownHotspot} KnownOppInternet: {InterfaceGuid}0 KnownProxiedOppInternet: {InterfaceGuid}1)
+Microsoft-Windows-NCSI  |  4048      |           |  Next hop to Internet has changed on {InterfaceGuid} ({IfLuid} Family: {Family} HasNextHopToInternet: {HasNextHopToInternet} NextHopAddress: {NextHopAddress})
+Microsoft-Windows-NCSI  |  4049      |           |  Preferred address change on {InterfaceGuid} ({IfLuid} Family: {Family} HasPreferredAddress: {HasPreferredAddress} AddressSuffixOrigins: {AddressSuffixOrigins})
+Microsoft-Windows-NCSI  |  4050      |           |  Preferred global address change on {InterfaceGuid} ({IfLuid} Family: {Family} HasPreferredGlobalAddress: {HasPreferredGlobalAddress} AddressSuffixOrigins: {AddressSuffixOrigins})
+Microsoft-Windows-NCSI  |  4051      |           |  Active probe result code on interface {InterfaceGuid} ({IfLuid} Family: {Family}) = {ActiveProbeResultCode}
+Microsoft-Windows-NCSI  |  4052      |           |  Interface diagnostic for {InterfaceGuid} ({IfLuid}): IPv4 address: {HasPreferredGlobalAddressIPv4}, IPv6 address: {HasPreferredGlobalAddressIPv6}, IPv4 capability: {InternetCapabilityIPv4}, IPv6 capability: {InternetCapabilityIPv6}, IPv4 test used: {InternetTestIPv4}, IPv6 test used: {InternetTestIPv6}
+Microsoft-Windows-NCSI  |  4053      |           |
+Microsoft-Windows-NCSI  |  4054      |           |

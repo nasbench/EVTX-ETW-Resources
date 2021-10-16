@@ -1,0 +1,346 @@
+Provider                   |  Event ID  |  Channel                              |  Message
+---------------------------|------------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WinINet  |  101       |  Microsoft-Windows-WinINet/Analytic   |  Session handle {HINTERNET} created: UserAgent={UserAgent}, AccessType={AccessType}, ProxyList={ProxyList}, ProxyBypassList={ProxyBypassList}, Flags={HINTERNET}0
+Microsoft-Windows-WinINet  |  102       |  Microsoft-Windows-WinINet/Analytic   |  Handle {ConnectionHandle} created by InternetOpenURL: SessionHandle={ParentHandle},URL={URL}, Headers={Headers}, Flags={Flags}
+Microsoft-Windows-WinINet  |  103       |  Microsoft-Windows-WinINet/Analytic   |  Handle {ConnectionHandle} created by InternetConnect: SessionHandle={ParentHandle}, Server={ServerName}:{ServerPort}, {Service}, Flags={Flags}
+Microsoft-Windows-WinINet  |  104       |  Microsoft-Windows-WinINet/Analytic   |  Request handle {ConnectionHandle} created by HttpOpenRequest: ConnectionHandle={ParentHandle}, {Verb}, Target={ObjectName}, Ver={Version}, Referrer={ConnectionHandle}0, Media types={ConnectionHandle}2, Flags={ConnectionHandle}3
+Microsoft-Windows-WinINet  |  105       |  Microsoft-Windows-WinINet/Analytic   |  Handle {HINTERNET} closed successfully
+Microsoft-Windows-WinINet  |  106       |  Microsoft-Windows-WinINet/Analytic   |  Failed to create handle: ParentHandle={HINTERNET}, Error={Error}
+Microsoft-Windows-WinINet  |  107       |  Microsoft-Windows-WinINet/Analytic   |  Handle {HINTERNET} failed to close: Error={Error}
+Microsoft-Windows-WinINet  |  108       |  Microsoft-Windows-WinINet/Analytic   |  Request handle {ConnectionHandle} Server Details: Server={ServerName} Port={ServerPort} Service={Service}
+Microsoft-Windows-WinINet  |  200       |  Microsoft-Windows-WinINet/Analytic   |  HTTP request was received from API: RequestHandle={HINTERNET}
+Microsoft-Windows-WinINet  |  200       |  Microsoft-Windows-WinINet/Analytic   |  HTTP request was received from API: RequestHandle={HINTERNET}, RequestContext={Context}
+Microsoft-Windows-WinINet  |  201       |  Microsoft-Windows-WinINet/Analytic   |  HTTP request was sent successfully: RequestHandle={RequestHandle}, SocketHandle={SocketHandle}, {Verb}, CookieSent= {Cookie}
+Microsoft-Windows-WinINet  |  202       |  Microsoft-Windows-WinINet/Analytic   |  HTTP request send failed: Handle={Handle}, Error={Error}
+Microsoft-Windows-WinINet  |  203       |  Microsoft-Windows-WinINet/Analytic   |  HTTP response ({ResponseCode}) received: RequestHandle={RequestHandle}, SocketHandle={SocketHandle}, {Verb}, ContentLength={ContentLength}
+Microsoft-Windows-WinINet  |  204       |  Microsoft-Windows-WinINet/Analytic   |  HTTP response failed: Handle={Handle}, Error={Error}
+Microsoft-Windows-WinINet  |  205       |  Microsoft-Windows-WinINet/Analytic   |  HTTP connection (Handle={ConnectionHandle}, SocketHandle={SocketHandle}) closed due to the following reason: {Reason}
+Microsoft-Windows-WinINet  |  206       |  Microsoft-Windows-WinINet/Analytic   |  Keep-alive connection is re-used: ConnectionHandle={ConnectionHandle}, SocketHandle={SocketHandle}
+Microsoft-Windows-WinINet  |  207       |  Microsoft-Windows-WinINet/Analytic   |  Connection is returned to keep-alive pool: RequestHandle={ConnectionHandle}, SocketHandle={SocketHandle}
+Microsoft-Windows-WinINet  |  208       |  Microsoft-Windows-WinINet/Analytic   |  Keep-alive connection is closed: ConnectionHandle={ConnectionHandle}, SocketHandle={SocketHandle}
+Microsoft-Windows-WinINet  |  209       |  Microsoft-Windows-WinINet/Analytic   |  HTTP response entity body received: RequestHandle={RequestHandle}
+Microsoft-Windows-WinINet  |  210       |  Microsoft-Windows-WinINet/Analytic   |  HTTP Request Headers RequestHandle={RequestHandle} {Headers}
+Microsoft-Windows-WinINet  |  211       |  Microsoft-Windows-WinINet/Analytic   |  HTTP Response Headers RequestHandle={RequestHandle} {Headers}
+Microsoft-Windows-WinINet  |  212       |  Microsoft-Windows-WinINet/Analytic   |  HTTP Request Headers OptionalData RequestHandle={RequestHandle} {Headers}
+Microsoft-Windows-WinINet  |  213       |  Microsoft-Windows-WinINet/Analytic   |  WinInet::Http response entity body receive failed: Request Handle={RequestHandle}, Error={Error}
+Microsoft-Windows-WinINet  |  301       |  Microsoft-Windows-WinINet/Analytic   |  TCP connection to server {ServerName} established: ConnectionHandle={ConnectionHandle}, SocketHandle={SocketHandle}, LocalPort={LocalPort}
+Microsoft-Windows-WinINet  |  302       |  Microsoft-Windows-WinINet/Analytic   |  TCP connection to {ServerName} for connection handle {ConnectionHandle} failed: Error={Error}
+Microsoft-Windows-WinINet  |  303       |  Microsoft-Windows-WinINet/Analytic   |  TCP connection closed successfully: SocketHandle={SocketHandle}
+Microsoft-Windows-WinINet  |  304       |  Microsoft-Windows-WinINet/Analytic   |  DNS query for {HostName} hostname is sent: Handle={RequestHandle}
+Microsoft-Windows-WinINet  |  305       |  Microsoft-Windows-WinINet/Analytic   |  DNS query for {HostName} hostname is complete: Handle={RequestHandle}, Addresses={AddressList}
+Microsoft-Windows-WinINet  |  306       |  Microsoft-Windows-WinINet/Analytic   |  DNS query for {HostName} hostname failed: Handle={RequestHandle} Error={Error}
+Microsoft-Windows-WinINet  |  307       |  Microsoft-Windows-WinINet/Analytic   |  Re-used DNS cache, query for {HostName} hostname is complete: Handle={RequestHandle}, Addresses={AddressList}
+Microsoft-Windows-WinINet  |  308       |  Microsoft-Windows-WinINet/Analytic   |  A network change was detected: Handle={Handle}
+Microsoft-Windows-WinINet  |  400       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  401       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  402       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  403       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  404       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  405       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  406       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  407       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  408       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  409       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  410       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  411       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  412       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  413       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  414       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  415       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  416       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  417       |  Microsoft-Windows-WinINet/WebSocket  |
+Microsoft-Windows-WinINet  |  501       |  Microsoft-Windows-WinINet/Analytic   |  Received response including a cookie header: URL={URL}
+Microsoft-Windows-WinINet  |  502       |  Microsoft-Windows-WinINet/Analytic   |  Client has stored a cookie in the cookie jar: Domain={Domain}, Path={Path}, Name={Name}, Value={Value}
+Microsoft-Windows-WinINet  |  503       |  Microsoft-Windows-WinINet/Analytic   |  Client has deleted a cookie in the cookie jar: Domain={Domain}, Path={Path}, Name={Name}, Value={Value}
+Microsoft-Windows-WinINet  |  504       |  Microsoft-Windows-WinINet/Analytic   |  Client has rejected a cookie sent by the server: Domain={Domain}, Path={Path}, Name={Name}, Value={Value}
+Microsoft-Windows-WinINet  |  505       |  Microsoft-Windows-WinINet/Analytic   |  Server cookie was rejected by the client's P3P policy: Domain={Domain}, Path={Path}, Name={Name}, Value={Value}
+Microsoft-Windows-WinINet  |  506       |  Microsoft-Windows-WinINet/Analytic   |  A cookie header was created for the request: URL={URL}
+Microsoft-Windows-WinINet  |  507       |  Microsoft-Windows-WinINet/Analytic   |  Cookie added to the request header: Domain={Domain}, Path={Path}, Name={Name}, Value={Value}
+Microsoft-Windows-WinINet  |  601       |  Microsoft-Windows-WinINet/Analytic   |  Auth response received: RequestHandle={RequestHandle}, Scheme={Scheme}, IsProxy={IsProxy}
+Microsoft-Windows-WinINet  |  602       |  Microsoft-Windows-WinINet/Analytic   |  Client sets username: RequestHandle={RequestHandle}, IsProxy={IsProxy}
+Microsoft-Windows-WinINet  |  603       |  Microsoft-Windows-WinINet/Analytic   |  Client sets password: RequestHandle={RequestHandle}, IsProxy={IsProxy}
+Microsoft-Windows-WinINet  |  604       |  Microsoft-Windows-WinINet/Analytic   |  Using cached credentials: RequestHandle={RequestHandle}, IsProxy={IsProxy}
+Microsoft-Windows-WinINet  |  605       |  Microsoft-Windows-WinINet/Analytic   |  Using default credentials: RequestHandle={RequestHandle}, IsProxy={IsProxy}
+Microsoft-Windows-WinINet  |  606       |  Microsoft-Windows-WinINet/Analytic   |  Client adds authorization headers to an HTTP request: RequestHandle={RequestHandle}, Scheme={Scheme}, IsProxy={IsProxy}
+Microsoft-Windows-WinINet  |  701       |  Microsoft-Windows-WinINet/Analytic   |  Client begins SSL negotiation: RequestHandle={RequestHandle}
+Microsoft-Windows-WinINet  |  702       |  Microsoft-Windows-WinINet/Analytic   |  SSL negotiation between client and server has completed successfully: RequestHandle={RequestHandle}
+Microsoft-Windows-WinINet  |  703       |  Microsoft-Windows-WinINet/Analytic   |  SSL negotiation failed: RequestHandle={RequestHandle}, Error={Error}
+Microsoft-Windows-WinINet  |  704       |  Microsoft-Windows-WinINet/Analytic   |  Error validating server certificate (SCHANNEL error): RequestHandle={RequestHandle}, Error={Error}
+Microsoft-Windows-WinINet  |  705       |  Microsoft-Windows-WinINet/Analytic   |  Server certificate validated: RequestHandle={RequestHandle}, CertHash={CertHash}, WarningFlags={WarningFlags}
+Microsoft-Windows-WinINet  |  706       |  Microsoft-Windows-WinINet/Analytic   |  Server requires a client certificate for client authorization: RequestHandle={RequestHandle}
+Microsoft-Windows-WinINet  |  707       |  Microsoft-Windows-WinINet/Analytic   |  There is no client certificate available: RequestHandle={RequestHandle}
+Microsoft-Windows-WinINet  |  708       |  Microsoft-Windows-WinINet/Analytic   |  The selected client certificate will be used for the SSL transaction: RequestHandle={RequestHandle}, CertHash={CertHash}
+Microsoft-Windows-WinINet  |  711       |  Microsoft-Windows-WinINet/Analytic   |  Client begins SSL renegotiation: RequestHandle={RequestHandle}
+Microsoft-Windows-WinINet  |  712       |  Microsoft-Windows-WinINet/Analytic   |  SSL renegotiation between client and server has completed successfully: RequestHandle={RequestHandle}
+Microsoft-Windows-WinINet  |  713       |  Microsoft-Windows-WinINet/Analytic   |  SSL renegotiation failed: RequestHandle={RequestHandle}, Error={Error}
+Microsoft-Windows-WinINet  |  801       |  Microsoft-Windows-WinINet/Analytic   |  Client begins attempts to locate the WPAD configuration file: ConnectionName={ConnectionName}, DetectFlags={DetectFlags}
+Microsoft-Windows-WinINet  |  801       |  Microsoft-Windows-WinINet/Analytic   |  Client begins attempts to locate the WPAD configuration file: ConnectionName={ConnectionName}, DetectFlags={DetectFlags}
+Microsoft-Windows-WinINet  |  802       |  Microsoft-Windows-WinINet/Analytic   |  Begin search for configuration file using DHCP: Interface={Interface}
+Microsoft-Windows-WinINet  |  802       |  Microsoft-Windows-WinINet/Analytic   |  Begin search for configuration file using DHCP: Interface={Interface}
+Microsoft-Windows-WinINet  |  803       |  Microsoft-Windows-WinINet/Analytic   |  WPAD configuration file found using DHCP: Interface={Interface}, ConfigurationURL={ConfigurationURL}
+Microsoft-Windows-WinINet  |  803       |  Microsoft-Windows-WinINet/Analytic   |  WPAD configuration file found using DHCP: Interface={Interface}, ConfigurationURL={ConfigurationURL}
+Microsoft-Windows-WinINet  |  804       |  Microsoft-Windows-WinINet/Analytic   |  Search for WPAD configuration file using DHCP failed: Interface={Interface}, ConfigurationURL={ConfigurationURL}, Error={Error}
+Microsoft-Windows-WinINet  |  804       |  Microsoft-Windows-WinINet/Analytic   |  Search for WPAD configuration file using DHCP failed: Interface={Interface}, ConfigurationURL={ConfigurationURL}, Error={Error}
+Microsoft-Windows-WinINet  |  805       |  Microsoft-Windows-WinINet/Analytic   |  Begin search for configuration file using DNS: DetectFlags={DetectFlags}
+Microsoft-Windows-WinINet  |  806       |  Microsoft-Windows-WinINet/Analytic   |  WPAD configuration file found using DNS: ConfigurationURL={ConfigurationURL}, DetectFlags={DetectFlags}
+Microsoft-Windows-WinINet  |  806       |  Microsoft-Windows-WinINet/Analytic   |  WPAD configuration file found using DNS: ConfigurationURL={ConfigurationURL}, DetectFlags={DetectFlags}
+Microsoft-Windows-WinINet  |  807       |  Microsoft-Windows-WinINet/Analytic   |  Search for WPAD configuration file using DNS failed: DetectFlags={DetectFlags}, Error={Error}
+Microsoft-Windows-WinINet  |  808       |  Microsoft-Windows-WinINet/Analytic   |  Search for WPAD configruation file failed: Error={Error}
+Microsoft-Windows-WinINet  |  809       |  Microsoft-Windows-WinINet/Analytic   |  Begin downloading the configuration file from the configuration URL: ConfigurationURL={ConfigurationURL}
+Microsoft-Windows-WinINet  |  809       |  Microsoft-Windows-WinINet/Analytic   |  Begin downloading the configuration file from the configuration URL: ConfigurationURL={ConfigurationURL}
+Microsoft-Windows-WinINet  |  810       |  Microsoft-Windows-WinINet/Analytic   |  Client successfully downloaded the configuration file from the configuration URL: ConfigurationURL={ConfigurationURL}
+Microsoft-Windows-WinINet  |  810       |  Microsoft-Windows-WinINet/Analytic   |  Client successfully downloaded the configuration file from the configuration URL: ConfigurationURL={ConfigurationURL}
+Microsoft-Windows-WinINet  |  811       |  Microsoft-Windows-WinINet/Analytic   |  Downloading the configuration file from the configuration URL failed: ConfigurationURL={ConfigurationURL}, Error={Error}
+Microsoft-Windows-WinINet  |  811       |  Microsoft-Windows-WinINet/Analytic   |  Downloading the configuration file from the configuration URL failed: ConfigurationURL={ConfigurationURL}, Error={Error}
+Microsoft-Windows-WinINet  |  812       |  Microsoft-Windows-WinINet/Analytic   |  The downloaded configuration file could not be used: ConfigurationURL={ConfigurationURL}, MIMEType={MIMEType}, Error={Error}
+Microsoft-Windows-WinINet  |  812       |  Microsoft-Windows-WinINet/Analytic   |  The downloaded configuration file could not be used: ConfigurationURL={ConfigurationURL}, MIMEType={MIMEType}, Error={Error}
+Microsoft-Windows-WinINet  |  813       |  Microsoft-Windows-WinINet/Analytic   |  Searching for Proxy Information for the URL: URL={URL}
+Microsoft-Windows-WinINet  |  813       |  Microsoft-Windows-WinINet/Analytic   |  Searching for Proxy Information for the URL: URL={URL}
+Microsoft-Windows-WinINet  |  814       |  Microsoft-Windows-WinINet/Analytic   |  Client has successfully retrieved proxy data for accessing a specified resource: URL={URL}, ProxyString={ProxyString}
+Microsoft-Windows-WinINet  |  814       |  Microsoft-Windows-WinINet/Analytic   |  Client has successfully retrieved proxy data for accessing a specified resource: URL={URL}, ProxyString={ProxyString}
+Microsoft-Windows-WinINet  |  815       |  Microsoft-Windows-WinINet/Analytic   |  Error locating proxy information for the URL: URL={URL}, Error={Error}
+Microsoft-Windows-WinINet  |  815       |  Microsoft-Windows-WinINet/Analytic   |  Error locating proxy information for the URL: URL={URL}, Error={Error}
+Microsoft-Windows-WinINet  |  816       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  817       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  818       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  819       |  Microsoft-Windows-WinINet/Analytic   |  AutoProxy SWPAD Decision ({WPADNetworkDecision}) NumConnections ({NetworkCount})
+Microsoft-Windows-WinINet  |  820       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  821       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  822       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  823       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  824       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  825       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  826       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  827       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  828       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  829       |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  834       |  Microsoft-Windows-WinINet/Analytic   |  Autoproxy full scenario started
+Microsoft-Windows-WinINet  |  835       |  Microsoft-Windows-WinINet/Analytic   |  Autoproxy full scenario stopped
+Microsoft-Windows-WinINet  |  901       |  Microsoft-Windows-WinINet/Analytic   |  Application offline check started
+Microsoft-Windows-WinINet  |  902       |  Microsoft-Windows-WinINet/Analytic   |  Application offline check complete
+Microsoft-Windows-WinINet  |  1000      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1007      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1008      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1009      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1011      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1013      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1015      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1017      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1019      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1021      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1023      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1025      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1027      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1028      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1029      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1030      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1031      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1033      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1035      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1037      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1039      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1041      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1043      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1045      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1046      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1046      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1047      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1048      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1049      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1051      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1052      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1053      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1054      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1055      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1056      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1057      |  Microsoft-Windows-WinINet/UsageLog   |  Requested URL={URL} Verb={Verb} RequestHeaders={RequestHeaders} ResponseHeaders={ResponseHeaders} Status={Status} Cache={UsageLogRequestCache}
+Microsoft-Windows-WinINet  |  1058      |  Microsoft-Windows-WinINet/UsageLog   |  Scavenged URL={URL}
+Microsoft-Windows-WinINet  |  1059      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1060      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1061      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1062      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1063      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1064      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1065      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1066      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1067      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1068      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1069      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1070      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1071      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1072      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1073      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1074      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1075      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1076      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1077      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1078      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1079      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1080      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1081      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1082      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1083      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1084      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1085      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1086      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1087      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1088      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1089      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1090      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1091      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1092      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1093      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1094      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1095      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1096      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1097      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1098      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1099      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1100      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1101      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1102      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1103      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1104      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1105      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1106      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1107      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1108      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1109      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1110      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1111      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1112      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1113      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1114      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1115      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1116      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1117      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1118      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1119      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1120      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1121      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1122      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1123      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1124      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1125      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1126      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1127      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1128      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1129      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1130      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1131      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1132      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1133      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1134      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1135      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1136      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1137      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1138      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1139      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1140      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1141      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1142      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1143      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1144      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1145      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1146      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1147      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1148      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1149      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1150      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1151      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1152      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1153      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1154      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1155      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1156      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1157      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1158      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1159      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1160      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1161      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1162      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1163      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1164      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1165      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1166      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1167      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1168      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1169      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1170      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1171      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1172      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1173      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1174      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1175      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1176      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1177      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1178      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1179      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1180      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1181      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1182      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1183      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1184      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1185      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1186      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1187      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1188      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1189      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1190      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1191      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1192      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1193      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1194      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1195      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1196      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1197      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1198      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1199      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1200      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1201      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1202      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1203      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1204      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1205      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1206      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1207      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1208      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1209      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1210      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1211      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1212      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1213      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1214      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1215      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1216      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1217      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1218      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1219      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1220      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1221      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1222      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1223      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1224      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1225      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1226      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1227      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1228      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1229      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1230      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1231      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1232      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1233      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1234      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1235      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1236      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1237      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1238      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1239      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1240      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1241      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1242      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1243      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1244      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1245      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1246      |  Microsoft-Windows-WinINet/Analytic   |
+Microsoft-Windows-WinINet  |  1247      |  Microsoft-Windows-WinINet/Analytic   |

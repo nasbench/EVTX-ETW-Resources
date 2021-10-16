@@ -1,0 +1,6 @@
+Provider                                        |  Event ID  |  Channel                                                 |  Message
+------------------------------------------------|------------|----------------------------------------------------------|------------------------------------------------------------
+Microsoft-Windows-Websocket-Protocol-Component  |  1         |  Microsoft-Windows-Websocket-Protocol-Component/Tracing  |  {TraceMessage}
+Microsoft-Windows-Websocket-Protocol-Component  |  2         |  Microsoft-Windows-Websocket-Protocol-Component/Tracing  |  Operation of '{OperationType}' type queued with ID '{Id}'.
+Microsoft-Windows-Websocket-Protocol-Component  |  3         |  Microsoft-Windows-Websocket-Protocol-Component/Tracing  |  Operation '{Id}' is executing action '{ActionType}'.
+Microsoft-Windows-Websocket-Protocol-Component  |  4         |  Microsoft-Windows-Websocket-Protocol-Component/Tracing  |  Operation '{Id}' finished.

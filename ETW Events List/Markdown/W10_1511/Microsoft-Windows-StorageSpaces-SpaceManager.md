@@ -1,0 +1,5 @@
+Provider                                      |  Event ID  |  Channel                                                   |  Message
+----------------------------------------------|------------|------------------------------------------------------------|-------------------------------------------------------------
+Microsoft-Windows-StorageSpaces-SpaceManager  |  100       |  Microsoft-Windows-StorageSpaces-SpaceManager/Operational  |  The Storage Spaces driver has requested a repair operation.
+Microsoft-Windows-StorageSpaces-SpaceManager  |  101       |  Microsoft-Windows-StorageSpaces-SpaceManager/Operational  |  The repair was successfully queued.
+Microsoft-Windows-StorageSpaces-SpaceManager  |  102       |  Microsoft-Windows-StorageSpaces-SpaceManager/Operational  |  The repair request failed with status {status}.

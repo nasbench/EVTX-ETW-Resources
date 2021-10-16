@@ -1,0 +1,37 @@
+Provider|Event ID|Channel|Message
+Microsoft-Windows-ReadyBoost|1000|Operational|The device ({DeviceName}) is suitable for a ReadyBoost cache.  The random read speed is {ReadRate} KB/sec.  The random write speed is {WriteRate} KB/sec.
+Microsoft-Windows-ReadyBoost|1002|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it is not attached to a supported interface.     For USB devices, ReadyBoost requires that the device be connected to a USB 2.0 interface.
+Microsoft-Windows-ReadyBoost|1003|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it does not have enough free space. Free Space: {IntValue} MB
+Microsoft-Windows-ReadyBoost|1003|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it does not have enough free space. Free Space {IntValue} MB, required {SecondIntValue} MB.
+Microsoft-Windows-ReadyBoost|1004|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it has insufficient write performance: {IORate} KB/sec.
+Microsoft-Windows-ReadyBoost|1005|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it has insufficient read performance: {IORate} KB/sec.
+Microsoft-Windows-ReadyBoost|1006|Operational|The ReadyBoost service encountered an error during the analysis of the new device ({DeviceName}). Error code: {ErrorCode}
+Microsoft-Windows-ReadyBoost|1007|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it is not formatted with FAT, FAT32, or NTFS. Current Format:{StringLabel}
+Microsoft-Windows-ReadyBoost|1007|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it is not formatted with FAT, FAT32, exFAT, or NTFS.
+Microsoft-Windows-ReadyBoost|1008|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it does not exhibit uniform performance across the device.  Size of fast region: {IntValue} MB.
+Microsoft-Windows-ReadyBoost|1009|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because the device is too small. Size: {IntValue} MB.  Minimum Size: {SecondIntValue} MB
+Microsoft-Windows-ReadyBoost|1010|Operational|A ReadyBoost cache was successfully created on the device ({DeviceName}) of size {IntValue} MB.
+Microsoft-Windows-ReadyBoost|1011|Operational|Caching was enabled for device ({DeviceName}).
+Microsoft-Windows-ReadyBoost|1012|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because a ReadyBoost cache already exists (on device {StringLabel}) and only one cache is supported at a given time.
+Microsoft-Windows-ReadyBoost|1013|Operational|A ReadyBoost cache was successfully deleted on the device ({DeviceName}).
+Microsoft-Windows-ReadyBoost|1014|Operational|Caching was disabled for device ({DeviceName}).
+Microsoft-Windows-ReadyBoost|1015|Operational|Summary of ReadyBoot Performance:     Io Read Count: {RB_BootTimeUTC}2     Io Read KB: {RB_IoReadKB}     Cache Hit Count: {RB_BootTimeUTC}3     Cache Hit KB: {RB_CacheHitKB}     Cache Hit Percentage: {RB_CacheHitPercentage}     Cache Fragmentation: {RB_BootTimeUTC}0     Compressed Data Size KB: {RB_CompressedDataSizeKB}     Raw Data Size KB: {RB_RawDataSizeKB}     Compression Ratio: {RB_BootTimeUTC}1     Cache Size KB: {RB_BootTimeUTC}4     Boot Prefetch Time us: {RB_BootPrefetchDiskTimeUs}     Boot Prefetch Bytes Read: {RB_BootPrefetchDataReadBytes}     Boot Timestamp (UTC): {RB_BootTimeUTC}     Last Boot Plan Timestamp (UTC): {RB_LastBootPlanUTC}     Last Boot Plan Timestamp (Local): {RB_BootTimeUTC}6
+Microsoft-Windows-ReadyBoost|1015|Operational|Summary of ReadyBoot Performance:     Io Read Count: {RB_IoReadCount}     Io Read Bytes: {RB_IoReadBytes}     Cache Hit Count: {RB_CacheHitCount}     Cache Hit Bytes: {RB_CacheHitBytes}     Cache Hit Percentage: {RB_CacheHitPercentage}     Boot Prefetch Time (us): {RB_PrefetchDiskTimeUs}     Boot Prefetch Bytes: {RB_PrefetchBytes}     Boot Prefetch Read Count: {RB_PrefetchReadCount}
+Microsoft-Windows-ReadyBoost|1016|Operational|Boot plan calculation completed.     Boot Plan Timestamp (UTC): {BootPlanTimestamp}     Valid Boot Plan Obtained: {ValidBootPlan}
+Microsoft-Windows-ReadyBoost|1016|Operational|Boot plan calculation completed in {Duration (ms)} ms.     Boot Plan Timestamp: {BootPlanTimestamp}     Reason: {Reason}     Result: {ErrorCode}
+Microsoft-Windows-ReadyBoost|1017|Operational|A defrag. operation has completed.  A boot plan will be calculated soon.  Defrag. Timestamp (UTC): {DefragCompletionTimestamp}
+Microsoft-Windows-ReadyBoost|1017|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it incurs seek penalties.
+Microsoft-Windows-ReadyBoost|1018|Operational|ReadyBoot disk assessment completed.     Disk Assessment Timestamp (UTC): {DiskAssessmentTimestamp}     Success: {Success}
+Microsoft-Windows-ReadyBoost|1018|Operational|ReadyBoot disk assessment completed in {Duration (ms)} ms.     Disk Assessment Timestamp: {DiskAssessmentTimestamp}     Result: {ErrorCode}
+Microsoft-Windows-ReadyBoost|1019|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it is remote, read-only, virtual, or otherwise unsupported.
+Microsoft-Windows-ReadyBoost|1020|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it contains a system volume.
+Microsoft-Windows-ReadyBoost|1021|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it contains a configuration file which explicitly prohibits this.
+Microsoft-Windows-ReadyBoost|1022|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because the ReadyBoost driver is attached to its volume stack.
+Microsoft-Windows-ReadyBoost|1023|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it is mounted read-only. This is usually caused by one of the following reasons: * Write-protected devices/media * BitLocker group policy settings prohibit write access to non-encrypted removable devices
+Microsoft-Windows-ReadyBoost|1024|Microsoft-Windows-ReadyBoost/Analytic|
+Microsoft-Windows-ReadyBoost|1024|Microsoft-Windows-ReadyBoost/Analytic|
+Microsoft-Windows-ReadyBoost|1025|Operational|The device ({DeviceName}) will not be used for a ReadyBoost cache because it is a VHD (virtual hard disk).
+Microsoft-Windows-ReadyBoost|1026|Operational|The attach state for volume {VolumePath} (Unique Id: {VolumeUniqueId}) has changed.     Old ReadyBoost State: {OldRdbAttachState}     New ReadyBoost State: {NewRdbAttachState}     Old Hybrid Drive State: {OldHbdrvAttachState}     New Hybrid Drive State: {NewHbdrvAttachState}
+Microsoft-Windows-ReadyBoost|1027|Operational|ReadyBoot has updated the system volume unique ID: {VolumeUniqueId} ErrorCode: {ErrorCode}
+Microsoft-Windows-ReadyBoost|1028|Operational|Caching on the solid state hybrid disk (Disk number: {DiskNumber}) has been disabled due to insufficient device performance.
+Microsoft-Windows-ReadyBoost|1029|Operational|A speed test was performed on the Hybrid Disk.Test result: {HbdrvSpeedTestResult}ErrorCode: {ErrorCode}

@@ -1,0 +1,71 @@
+Provider                  |  Event ID  |  Channel  |  Message
+--------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Wcmsvc  |  1001      |           |
+Microsoft-Windows-Wcmsvc  |  1002      |           |
+Microsoft-Windows-Wcmsvc  |  1003      |           |  CDE reported a state change  State: {Status}  Name: {Name}
+Microsoft-Windows-Wcmsvc  |  1004      |           |
+Microsoft-Windows-Wcmsvc  |  1005      |           |  A Power change was processed.  Reason: {Reason}
+Microsoft-Windows-Wcmsvc  |  1006      |           |  A Terminal Services session change was processed.  Reason: {Reason}
+Microsoft-Windows-Wcmsvc  |  1007      |           |  CDE reported a state change  State: {Status}  Name: Nlasvc.
+Microsoft-Windows-Wcmsvc  |  1008      |           |  NLA interface property change Interface: {Interface GUID}Internet v4: {Internet Connectivity v4}Internet v6: {Internet Connectivity v6}Probe Complete v4: {Internet Probe Complete v4}Probe Complete v6: {Internet Probe Complete v6}Domain Authenticated: {Domain Connectivity}Domain Probe Complete: {Domain Probe Complete}
+Microsoft-Windows-Wcmsvc  |  1009      |           |  CDE reported an L2 adapter arrival  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1010      |           |  CDE reported an L2 adapter removal  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1011      |           |  CDE reported a successful connection  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1012      |           |  CDE reported a connection failure  Interface: {InterfaceGuid}  Type: {MediaType} Status: {Status}
+Microsoft-Windows-Wcmsvc  |  1013      |           |  CDE reported a disconnection  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1014      |           |  WcmSetParameter CalledInterface: {Interface GUID}Profile Name: {Profile Name}Wcm Opcode: {Wcm Opcode}Data Length: {Data length}Caller Process ID: {Caller Process ID}Return Value: {Return Value}
+Microsoft-Windows-Wcmsvc  |  1015      |           |  Interface Token AppliedInterface: {Interface GUID}Media Type: {Mediatype}Manual enabled: {Manual Connect}Manual Filter: {Manual Filter control}Num Manual: {Num Manual profiles}Manual Profiles: {Manual Profile Names}Auto enabled: {Auto Connect}Auto filter: {Auto Filter control}Num Auto: {Num Auto profiles}Auto Profiles: {Interface GUID}0
+Microsoft-Windows-Wcmsvc  |  1015      |           |  Interface Token AppliedInterface: {Interface GUID}Media Type: {Mediatype}Manual enabled: {manualConnectEnabled}Auto enabled: {autoConnectEnabled}
+Microsoft-Windows-Wcmsvc  |  1016      |           |  Interface Token FailedInterface: {Interface GUID}Media Type: {Mediatype}Manual enabled: {Manual Connect}Manual Filter: {Manual Filter control}Num Manual: {Num Manual profiles}Manual Profiles: {Manual Profile Names}Auto enabled: {Auto Connect}Auto filter: {Auto Filter control}Num Auto: {Num Auto profiles}AutoProfiles: {Interface GUID}0Status: {Interface GUID}1
+Microsoft-Windows-Wcmsvc  |  1016      |           |  Interface Token FailedInterface: {Interface GUID}Media Type: {Mediatype}Manual enabled: {manualConnectEnabled}Auto enabled: {autoConnectEnabled}Status: {Error}
+Microsoft-Windows-Wcmsvc  |  1017      |           |  Soft disconnect over thresholds for interface: {Interface GUID}AvgIn: {Avg In} AvgOut: {Avg Out} SpikeIn: {Spike In} SpikeOut: {Spike Out}Thresholds: AvgIn: {Threshold Avg In} AvgOut: {Threshold Avg Out} SpikeIn: {Threshold Spike In} SpikeOut:{Threshold Spike Out}All values are in bytes/second
+Microsoft-Windows-Wcmsvc  |  1018      |           |  Soft disconnect under thresholds for interface: {Interface GUID}AvgIn: {Avg In} AvgOut: {Avg Out} SpikeIn: {Spike In} SpikeOut: {Spike Out}Thresholds: AvgIn: {Threshold Avg In} AvgOut: {Threshold Avg Out} SpikeIn: {Threshold Spike In} SpikeOut:{Threshold Spike Out}All values are in bytes/second
+Microsoft-Windows-Wcmsvc  |  1019      |           |  CDE reported an unblocked profile  Interface: {InterfaceGuid}  Type: {MediaType} Profile: {Profile Name}
+Microsoft-Windows-Wcmsvc  |  1020      |           |  WCM Preferred Order List:{WCM Preferred Order List}
+Microsoft-Windows-Wcmsvc  |  1022      |           |
+Microsoft-Windows-Wcmsvc  |  1023      |           |
+Microsoft-Windows-Wcmsvc  |  1024      |           |  Acquired NDIS NIC Active Reference for interface: {Interface GUID}
+Microsoft-Windows-Wcmsvc  |  1025      |           |  Released NDIS NIC Active Reference for interface: {Interface GUID}
+Microsoft-Windows-Wcmsvc  |  1026      |           |  CDE reported an NDIS adapter arrival  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1027      |           |  CDE reported an NDIS adapter removal  Interface: {InterfaceGuid}  Type: {MediaType}
+Microsoft-Windows-Wcmsvc  |  1028      |           |
+Microsoft-Windows-Wcmsvc  |  1029      |           |
+Microsoft-Windows-Wcmsvc  |  1030      |           |  Billing Cycle Reset Successful
+Microsoft-Windows-Wcmsvc  |  1031      |           |  Server Time Retrieval Failure
+Microsoft-Windows-Wcmsvc  |  1032      |           |  Acquire NDIS NIC Active Reference Failed for interface: {Interface GUID}
+Microsoft-Windows-Wcmsvc  |  1033      |           |  Release NDIS NIC Active Reference Failed for interface: {Interface GUID}
+Microsoft-Windows-Wcmsvc  |  1034      |           |  OnDemandInterfaceStateChanged. OnDemandType:{OnDemandType}, Interface: {Interface GUID}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, NewState:{New State}, Ref counter:{Ref count}
+Microsoft-Windows-Wcmsvc  |  1035      |           |  OnDemand PDP Profile Created. OnDemandInfo:{APN name}, ProviderID:{Provider ID}, SubscriberID:{Subscriber ID}, Profile Name:{Profile name}
+Microsoft-Windows-Wcmsvc  |  1036      |           |  OnDemand PDP Profile Deleted. Profile Name:{Profile name}
+Microsoft-Windows-Wcmsvc  |  1037      |           |  OnDemand Request opened. App ID:{App ID}, ProcessID:{Process ID},OnDemandType:{OnDemandType}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, Error: {Error}
+Microsoft-Windows-Wcmsvc  |  1038      |           |  OnDemand Request closed. App ID:{App ID}, ProcessID:{Process ID},OnDemandType:{OnDemandType}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, Error: {Error}
+Microsoft-Windows-Wcmsvc  |  1039      |           |  OnDemand Request started. App ID:{App ID}, ProcessID:{Process ID},OnDemandType:{OnDemandType}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, Error: {Error}
+Microsoft-Windows-Wcmsvc  |  1040      |           |  OnDemand Request cancelled. App ID:{App ID}, ProcessID:{Process ID},OnDemandType:{OnDemandType}, OnDemandInfo:{OnDemand Info}, ProviderID:{Provider ID}, Error: {Error}
+Microsoft-Windows-Wcmsvc  |  1050      |           |  WcmSvc acquired the NIC reference for Interface: {Interface GUID} for reason: {ActionType}
+Microsoft-Windows-Wcmsvc  |  1051      |           |  WcmSvc released the NIC reference for Interface: {Interface GUID} for reason: {ActionType}
+Microsoft-Windows-Wcmsvc  |  1052      |           |
+Microsoft-Windows-Wcmsvc  |  1053      |           |
+Microsoft-Windows-Wcmsvc  |  1054      |           |  WcmSvc received power policy update for networking in standby - the new policy value is {PolicyValue}
+Microsoft-Windows-Wcmsvc  |  4020      |           |  End of Wwan Resume Reconnect
+Microsoft-Windows-Wcmsvc  |  4021      |           |  End of Wlan Resume Reconnect to Same Network
+Microsoft-Windows-Wcmsvc  |  4022      |           |  End of Wlan Resume Reconnect to Same Network OneX
+Microsoft-Windows-Wcmsvc  |  4023      |           |  End of Wlan Resume Reconnect to Different Network
+Microsoft-Windows-Wcmsvc  |  4024      |           |  End of Wlan Resume Reconnect to Different Network OneX
+Microsoft-Windows-Wcmsvc  |  4025      |           |  Cancel of Wlan Resume Reconnect2
+Microsoft-Windows-Wcmsvc  |  4026      |           |
+Microsoft-Windows-Wcmsvc  |  4027      |           |  WcmSvc CmPdcActivationClientRegister - Status [{Status}]
+Microsoft-Windows-Wcmsvc  |  4028      |           |  WcmSvc CmPdcActivationClientUnregister - Status [{Status}]
+Microsoft-Windows-Wcmsvc  |  4029      |           |  WcmSvc CmPdcActivationClientActivityRequest - Activate [{Activity}], Status [{Status}]
+Microsoft-Windows-Wcmsvc  |  4030      |           |  WcmSvc SetNetworkReference - Activate [{Activate}], Result [{Result}], TotalNetworkRefCount [{TotalNetworkRefCount}], ProcessId [{ProcessId}], PerProcessNetworkRefCount [{ProcessNetworkRefCount}], App [{AppName}]
+Microsoft-Windows-Wcmsvc  |  4031      |           |  WcmSvc ReleaseNetworkReferenceInProcess - ProcessId [{ProcessId}], PerProcessNetworkRefCount [{ProcessNetworkRefCount}], TotalNetworkRefCount [{TotalNetworkRefCount}]
+Microsoft-Windows-Wcmsvc  |  4032      |           |  WcmSvc AcquireNdisReference - Result [{Result}], TotalCmNdisRefCount [{TotalCmNdisRefCount}], ProcessId [{ProcessId}], PerProcessCmNdisRefCount [{PerProcessCmNdisRefCount}], App [{AppName}]
+Microsoft-Windows-Wcmsvc  |  4033      |           |  WcmSvc ReleaseNdisReference - Result [{Result}], TotalCmNdisRefCount [{TotalCmNdisRefCount}], ProcessId [{ProcessId}], PerProcessCmNdisRefCount [{PerProcessCmNdisRefCount}], App [{AppName}]
+Microsoft-Windows-Wcmsvc  |  4034      |           |  WcmSvc ReleaseNdisReferenceInProcess - ProcessId [{ProcessId}], PerProcessCmNdisRefCount [{ProcessNetworkRefCount}], TotalCmNdisRefCount [{TotalNetworkRefCount}]
+Microsoft-Windows-Wcmsvc  |  4035      |           |  WcmSvc NdisReferenceError - [{FunctionName}]: Result [{Error}]
+Microsoft-Windows-Wcmsvc  |  4036      |           |  CmService::NdisReference - [{Acquire-Release}] InterfaceLuid [{InterfaceLuid}], Result [{Result}]
+Microsoft-Windows-Wcmsvc  |  10001     |           |
+Microsoft-Windows-Wcmsvc  |  10002     |           |
+Microsoft-Windows-Wcmsvc  |  10003     |           |
+Microsoft-Windows-Wcmsvc  |  10004     |           |
+Microsoft-Windows-Wcmsvc  |  10005     |           |
+Microsoft-Windows-Wcmsvc  |  10006     |           |

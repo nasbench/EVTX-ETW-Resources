@@ -1,0 +1,21 @@
+Provider                           |  Event ID  |  Channel                                        |  Message
+-----------------------------------|------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-StoreMgr  |  1         |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  2         |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  3         |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  4         |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  5         |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  6         |  Microsoft-Windows-Kernel-StoreMgr/Operational  |  {FileBacked}Virtual Address: {VirtualAddress}Physical Address: {PhysicalAddress}Corruption Window Size: {Size}
+Microsoft-Windows-Kernel-StoreMgr  |  7         |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  8         |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  9         |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  10        |  Microsoft-Windows-Kernel-StoreMgr/Operational  |  A ReadyBoost cache failed to persist across boot. This may happen if the cache device was modified on another computer or if this computer was booted into another operating system.
+Microsoft-Windows-Kernel-StoreMgr  |  11        |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  12        |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  13        |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  14        |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  15        |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  16        |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  17        |  Microsoft-Windows-Kernel-StoreMgr/Analytic     |
+Microsoft-Windows-Kernel-StoreMgr  |  18        |  Microsoft-Windows-Kernel-StoreMgr/Operational  |  {Reason}Device name: {DeviceDescription}Cache path: {ObjectPath}
+Microsoft-Windows-Kernel-StoreMgr  |  19        |                                                 |

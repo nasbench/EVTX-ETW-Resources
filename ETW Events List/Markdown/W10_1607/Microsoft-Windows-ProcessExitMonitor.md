@@ -1,0 +1,4 @@
+Provider                              |  Event ID    |  Channel  |  Message
+--------------------------------------|--------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ProcessExitMonitor  |  1073744824  |           |  The process '{param1}' exited with exit code {param2}. The creation time for the exiting process was 0x{param3}.
+Microsoft-Windows-ProcessExitMonitor  |  1073744825  |           |  The process '{param1}' was terminated by the process '{param2}' with termination code {param3}. The creation time for the exiting process was 0x{param4}.
