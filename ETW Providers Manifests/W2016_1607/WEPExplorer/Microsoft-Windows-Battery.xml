@@ -1,0 +1,349 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Battery</Name>
+        <Metadata>
+            <Guid>{59819D0A-ADAF-46B2-8D7C-990BC39C7C15}</Guid>
+            <ResourceFilePath>C:\Windows\system32\microsoft-windows-battery-events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\microsoft-windows-battery-events.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=microsoft-windows-battery-events.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Battery/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemBatteryStatusChange</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SystemBatteryStatusRundown</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BatteryBayRundown</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BixUpdated</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BixRundown</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BifUpdated</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BifRundown</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BstUpdated</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BstRundown</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BtpSet</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BtpRundown</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AcpiNotify</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BatteryPercentRemaining</Name>
+                    <Value>13</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SystemBatteryStatusChange</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BatteryPresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PowerState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Capacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SystemBatteryStatusRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BatteryPresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PowerState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Capacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BatteryBayRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BatteryPresent" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BixUpdated</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PowerUnit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastFullChargeCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BatteryTechnology" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DesignVoltage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WarningDesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowDesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CapacityGranularity1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CapacityGranularity2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CycleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MeasurementAccuracy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxSamplingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinSamplingTIme" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxAveragingInterval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinAveragingInterval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModelNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="BatteryType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OemInformation" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BixRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PowerUnit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastFullChargeCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BatteryTechnology" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DesignVoltage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WarningDesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowDesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CapacityGranularity1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CapacityGranularity2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CycleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MeasurementAccuracy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxSamplingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinSamplingTIme" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxAveragingInterval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinAveragingInterval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModelNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="BatteryType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OemInformation" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BifUpdated</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PowerUnit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastFullChargeCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BatteryTechnology" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DesignVoltage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WarningDesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowDesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CapacityGranularity1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CapacityGranularity2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModelNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="BatteryType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OemInformation" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BifRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PowerUnit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastFullChargeCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BatteryTechnology" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DesignVoltage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WarningDesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowDesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CapacityGranularity1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CapacityGranularity2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModelNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="BatteryType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OemInformation" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BstUpdated</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PresentRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PresentVoltage" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BstRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PresentRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PresentVoltage" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BtpSet</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TripPoint" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BtpRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TripPoint" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AcpiNotify</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Notification" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Battery/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>BatteryPercentRemaining</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PercentageChange" inType="win:Int32" outType="xs:int"/>
+  <data name="AcDc" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ElapsedTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

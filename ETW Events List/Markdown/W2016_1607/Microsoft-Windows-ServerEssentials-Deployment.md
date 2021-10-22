@@ -1,0 +1,8 @@
+Provider                                       |  Event ID  |  Channel  |  Message
+-----------------------------------------------|------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ServerEssentials-Deployment  |  129       |  Deploy   |  Essentials configuration wizard called PowerShell: {CmdletName}
+Microsoft-Windows-ServerEssentials-Deployment  |  130       |  Deploy   |  Unexpected error occured: {Message}
+Microsoft-Windows-ServerEssentials-Deployment  |  131       |  Deploy   |  Essentials configuration wizard entered page: {PageName}
+Microsoft-Windows-ServerEssentials-Deployment  |  132       |  Deploy   |  Essentials configuration wizard left page: {PageName}
+Microsoft-Windows-ServerEssentials-Deployment  |  133       |  Deploy   |  Essentials configuration wizard is canceled: {PageName}, and cancel type is: {Cancel}
+Microsoft-Windows-ServerEssentials-Deployment  |  134       |  Deploy   |  Essentials configuration wizard fails to connect remotely, and it might because remote server is restarting. More information: {Message}

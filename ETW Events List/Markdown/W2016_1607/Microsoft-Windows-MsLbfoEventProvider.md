@@ -1,0 +1,34 @@
+Provider                               |  Event ID  |  Channel                                       |  Message
+---------------------------------------|------------|------------------------------------------------|-----------------------------------------------------------------------------------------
+Microsoft-Windows-MsLbfoEventProvider  |  1         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Replacing Member {OldMember} with new Member {NewMember} for load balancing
+Microsoft-Windows-MsLbfoEventProvider  |  2         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Excluding Member {Member} from load balancing
+Microsoft-Windows-MsLbfoEventProvider  |  3         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Using Member {Member} for load balancing
+Microsoft-Windows-MsLbfoEventProvider  |  4         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Starting ConnectTimer for Member {Member}
+Microsoft-Windows-MsLbfoEventProvider  |  5         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Stopping to use Member {Member} for load balancing
+Microsoft-Windows-MsLbfoEventProvider  |  6         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Priming Switch for TeamNic {TeamNic} using Member {Member}
+Microsoft-Windows-MsLbfoEventProvider  |  7         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Failing NBL send on Member {Member}
+Microsoft-Windows-MsLbfoEventProvider  |  8         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Failing NBL send on TeamNic {TeamNic}
+Microsoft-Windows-MsLbfoEventProvider  |  9         |  Microsoft-Windows-MsLbfoProvider/Operational  |  Dropping NBLs on Member {Member}
+Microsoft-Windows-MsLbfoEventProvider  |  10        |  Microsoft-Windows-MsLbfoProvider/Operational  |  DriverEntry exiting, Status = {Status}
+Microsoft-Windows-MsLbfoEventProvider  |  11        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Member {Member} created.
+Microsoft-Windows-MsLbfoEventProvider  |  12        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Aggregator {Aggregator} created.
+Microsoft-Windows-MsLbfoEventProvider  |  13        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Member {Member} placed in Team {TeamNic}, Status = {Status}.
+Microsoft-Windows-MsLbfoEventProvider  |  14        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Indicating new link state for TeamNic {TeamNic}. StatusBuffer = {StatusBuffer}.
+Microsoft-Windows-MsLbfoEventProvider  |  15        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Default Aggregator for TeamNic {TeamNic} changed to {Receiver}.
+Microsoft-Windows-MsLbfoEventProvider  |  16        |  Microsoft-Windows-MsLbfoProvider/Operational  |  BroadcastReceiver for TeamNic {TeamNic} changed to {Receiver}.
+Microsoft-Windows-MsLbfoEventProvider  |  17        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Initializing TeamNic {TeamNic}, Status = {Status}.
+Microsoft-Windows-MsLbfoEventProvider  |  18        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Removing Aggregator {Aggregator} from TeamNic {TeamNic}.
+Microsoft-Windows-MsLbfoEventProvider  |  19        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Removed Member {Member} from TeamNic {TeamNic}.
+Microsoft-Windows-MsLbfoEventProvider  |  20        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Removing TeamNic {TeamNic}.
+Microsoft-Windows-MsLbfoEventProvider  |  21        |  Microsoft-Windows-MsLbfoProvider/Operational  |
+Microsoft-Windows-MsLbfoEventProvider  |  22        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Changing Aggregator for Member {Member} from {OldAggregator} to {NewAggregator}.
+Microsoft-Windows-MsLbfoEventProvider  |  23        |  Microsoft-Windows-MsLbfoProvider/Operational  |  LACP Initializing for Member {Member}, Status = {Status}.
+Microsoft-Windows-MsLbfoEventProvider  |  24        |  Microsoft-Windows-MsLbfoProvider/Operational  |  LACP de-initialized for Member {Member}.
+Microsoft-Windows-MsLbfoEventProvider  |  25        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Received LACPDU on Member {Member}. Buffer= {Buffer}.
+Microsoft-Windows-MsLbfoEventProvider  |  26        |  Microsoft-Windows-MsLbfoProvider/Operational  |  LBFO LACP Member {Member}; ReceiveMachine: {OldState}->{NewState}.
+Microsoft-Windows-MsLbfoEventProvider  |  27        |  Microsoft-Windows-MsLbfoProvider/Operational  |  LBFO LACP Member {Member}; Periodic Transmission Machine: {OldState}->{NewState}.
+Microsoft-Windows-MsLbfoEventProvider  |  28        |  Microsoft-Windows-MsLbfoProvider/Operational  |  LBFO LACP Member {Member}; Mux Machine: {OldState}->{NewState}.
+Microsoft-Windows-MsLbfoEventProvider  |  29        |  Microsoft-Windows-MsLbfoProvider/Operational  |  Sending LACPDU on Member {Member}. Buffer= {Buffer}.
+Microsoft-Windows-MsLbfoEventProvider  |  30        |  Microsoft-Windows-MsLbfoProvider/Operational  |  LBFO LACP Member {Member}; Selected NewAgg: {NewAggregator}, Ready:{Ready}.
+Microsoft-Windows-MsLbfoEventProvider  |  31        |  Microsoft-Windows-MsLbfoProvider/Operational  |  LBFO LACP Member {Member}; UnSelected, OldAgg: {OldAggregator} NewAgg: {NewAggregator}.
+Microsoft-Windows-MsLbfoEventProvider  |  32        |  Microsoft-Windows-MsLbfoProvider/Operational  |  LBFO LACP Member {Member}; Churn Type ({ChurnType}): {OldState}->{NewState}.

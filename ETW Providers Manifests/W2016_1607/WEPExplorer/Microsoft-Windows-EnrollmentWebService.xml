@@ -1,0 +1,201 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EnrollmentWebService</Name>
+        <Metadata>
+            <Guid>{C3CBA89D-B3D1-48F1-BE6C-9B317A3CF3D5}</Guid>
+            <ResourceFilePath>C:\Windows\system32\certadm.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\certadm.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.2097&amp;FileName=certadm.dll&amp;FileVer=10.0.14393.2097</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-EnrollmentWebService/Admin</Message>
+                    <Path>Microsoft-Windows-EnrollmentWebService/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Certificate Enrollment Server</Message>
+                    <Name>CertificateEnrollmentServer</Name>
+                    <Value>4097</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service failed to start. Confirm that the Certificate Enrollment Web Service is properly installed, and restart Internet Information Services (IIS) by using iisreset.exe. If the problem persists, enable tracing in the web.config file, restart IIS, attempt to enroll for a certificate again from any client, and then contact Microsoft Customer Service and Support with the trace file information. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service failed to start. The certification authority (CA) "%1" is not an enterprise CA.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAConfig" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service failed to start. A valid certification authority (CA) configuration is not specified in the web.config file. Please specify a CA configuration in the web.config file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service has been stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service is in renewal-only mode. New enrollment requests cannot be processed when the Certificate Enrollment Web Service is in renewal-only mode. If you want to enable new enrollment requests, configure both the CA and the Certificate Enrollment Web Service for new enrollment requests.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAConfig" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service is attempting to use renewal-only mode, but certification authority (CA) "%1" does not support this mode. To use renewal-only mode, configure the Certificate Enrollment Web Service to use a CA that is installed on a computer that is running at least Windows Server 2008 R2. Then, configure the CA by running the following command on the CA: certutil -setreg policy\editflags +EDITF_ENABLERENEWONBEHALFOF. Otherwise, disable renewal-only mode. If no action is taken, subsequent requests will be rejected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAConfig" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service cannot read the version or the configuration flags from certification authority (CA) "%1." On the Security tab of the CA property sheet, grant Read permission to the account used by the Certificate Enrollment Web Service application pool. If no action is taken, subsequent requests will be rejected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAConfig" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service is attempting to use renewal-only mode, but certification authority (CA) "%1" does not support this mode. To use renewal-only mode, configure the CA by running the following command on the CA: certutil -setreg policy\editflags +EDITF_ENABLERENEWONBEHALFOF. Otherwise, disable renewal-only mode. If no action is taken, subsequent requests will be rejected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAConfig" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service cannot operate because an incompatible configuration was selected. To resolve this issue, remove the Certificate Enrollment Web Service. If you want to use key based renewal, enable both client certificate authentication and renewal-only mode. If you want to use user name and password authentication or Windows authentication, disable key based renewal, and then run Setup again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Web Service is enabled for key based renewal. Client certificates without subject information in the Active Directory database can be used to renew certificates.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

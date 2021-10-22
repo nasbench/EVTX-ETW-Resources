@@ -1,0 +1,280 @@
+Provider|Event ID|Channel|Message
+Microsoft-AppV-Client|1|Operational|
+Microsoft-AppV-Client|2|Operational|
+Microsoft-AppV-Client|3|Admin|A required component ({Item}) cannot be loaded.  Please repair your installation. {error: {Error}}
+Microsoft-AppV-Client|4|Admin|The Client service could not get the list of currently logged-on users.  If users experience any issues running virtual applications, please logoff and logon again, or restart the service. {error: {Error}}
+Microsoft-AppV-Client|5|Admin|The Client could not register a logged-on user.  The user will not be able to access any App-V services, including running virtual applications.  Please have the user logoff and logon again. {error: {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|6|Admin|The Client could not unregister a user that logged off.  If other users experience any issues logging on, please restart the Client service. {error: {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|7|Admin|The Client could not determine the identity of a caller on a public request, and the request was denied. {error: {Error}}
+Microsoft-AppV-Client|8|Admin|The Client could not register a caller, or verify the registration status of a caller, on a public request, and the request was denied. {error: {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|9|Admin|A public request to the Client was initiated by a caller which granted the Client the authority for {CurrentImpersonationLevel}, whereas the Client requires at a minimum RPC_C_IMP_LEVEL_IMPERSONATE in order to satisfy a request on the caller's behalf.  The calling application will need to modify its security settings for outbound calls in order to successfully access the Client API.
+Microsoft-AppV-Client|10|Admin|
+Microsoft-AppV-Client|11|Admin|The Client failed to register for power notifications.  {error: {ErrorHigh}-{ErrorLow}}.
+Microsoft-AppV-Client|12|Admin|The Client failed to unregister for power notifications.  {error: {ErrorHigh}-{ErrorLow}}.
+Microsoft-AppV-Client|13|Operational|SLAPI check failed because of failure to read license info. {error: {Error}}
+Microsoft-AppV-Client|14|Operational|
+Microsoft-AppV-Client|15|Operational|
+Microsoft-AppV-Client|101|Operational|IAppVClient::{Item} COM method entered.
+Microsoft-AppV-Client|102|Operational|IAppVClient::{Name} COM method exited. {HResult}
+Microsoft-AppV-Client|1001|Admin|Active processing could not be shut down, this may lead to delays or hangs for Client shutdown. {error: {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|1002|Operational|Package {Package} version {Version} was successfully configured in folder '{Folder}'.
+Microsoft-AppV-Client|1003|Operational|Package {Package} version {Version} was successfully published for the user.
+Microsoft-AppV-Client|1004|Operational|Package {Package} version {Version} was successfully published for all users.
+Microsoft-AppV-Client|1005|Operational|Package {Package} version {Version} was unpublished for the user.
+Microsoft-AppV-Client|1006|Operational|Package {Package} version {Version} was unpublished for all users.
+Microsoft-AppV-Client|1007|Operational|Package {Package} version {Version} was removed.
+Microsoft-AppV-Client|1008|Admin|Package {Package} version {Version} failed configuration in folder '{Folder}' with error {ErrorHigh}-{ErrorLow}.
+Microsoft-AppV-Client|1009|Operational|Virtual application connection group {PackageGroup} version {Version} was successfully configured.
+Microsoft-AppV-Client|1010|Admin|Virtual application connection group {PackageGroup} version {Version} failed configuration with error {ErrorHigh}-{ErrorLow}.
+Microsoft-AppV-Client|1011|Operational|Virtual application connection group {PackageGroup} version {Version} was successfully published for the user.
+Microsoft-AppV-Client|1012|Operational|Virtual application connection group {PackageGroup} version {Version} was successfully published for all users.
+Microsoft-AppV-Client|1013|Operational|Virtual application connection group {PackageGroup} version {Version} was unpublished for the user.
+Microsoft-AppV-Client|1014|Operational|Virtual application connection group {PackageGroup} version {Version} was unpublished for all users.
+Microsoft-AppV-Client|1015|Operational|Virtual application connection group {PackageGroup} version {Version} was removed.
+Microsoft-AppV-Client|1016|Admin|Failed to unpublish package {Package} version {Version} because the package is published as part of one or more connection groups. Unpublish all connection groups that reference this package and try again.
+Microsoft-AppV-Client|1017|Admin|Failed to remove package {Package} version {Version} because the package is configured as part of one or more connection groups. Remove all connection groups that reference this package and try again.
+Microsoft-AppV-Client|1018|Admin|A package could not be unpublished for the user because it is currently in use by the user.  Shut down all applications in the package, and try again.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1019|Admin|A package could not be globally unpublished because it is currently in use.  Make sure all users have shut down all applications in the package, and try again.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1020|Admin|A package could not be removed because it is currently in use.  Make sure all users have shut down all applications in the package, and try again.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1021|Admin|An app connection group could not be unpublished for the user because it is currently in use by the user.  Shut down all applications in the group, and try again.Connection Group {ConnectionGroup}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1022|Admin|An app connection group could not be globally unpublished because it is currently in use.  Make sure all users have shut down all applications in the group, and try again.Connection Group {ConnectionGroup}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1023|Admin|An app connection group could not be removed because it is currently in use.  Make sure all users have shut down all applications in the group, and try again.Connection Group {ConnectionGroup}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1024|Admin|The package {Package} version {Version} could not be reconfigured because it is not configured on the system.  Ensure the package ID and version ID are correct and try again.
+Microsoft-AppV-Client|1025|Admin|The package {Package} version {Version} could not be configured because it can only be used with 64-bit versions of Windows.
+Microsoft-AppV-Client|1026|Admin|The package {Package} version {Version} could not be configured because it is not compatible with this version of Windows.
+Microsoft-AppV-Client|1027|Admin|The package {Id} version {Version} could not be configured becaused the Deployment Configuration file '{Path}' could not be found.  Ensure the path is correct and try again.
+Microsoft-AppV-Client|1028|Admin|The package {Id} version {Version} could not be configured because the Deployment Configuration file '{Path}' is not valid.  Verify that the document is valid and try again.
+Microsoft-AppV-Client|1029|Admin|The package {Package} version {Version} could not be configured because the Deployment Configuration file does not match the the specified package.  Ensure the GUIDs in the Deployment Configuration file match those of the package and try again.
+Microsoft-AppV-Client|1030|Admin|The package {Package} version {Version} could not be configured because the user account does not have administrative privileges.
+Microsoft-AppV-Client|1031|Admin|The package {Package} version {Version} could not be published globally because the user account does not have administrative privileges.
+Microsoft-AppV-Client|1032|Admin|The package {Package} version {Version} could not be published because the package has not been configured on the system.  Configure the package and try again.
+Microsoft-AppV-Client|1033|Admin|The package {Id} version {Version} could not be published becaused the User Configuration file '{Path}' could not be found.  Ensure the path is correct and try again.
+Microsoft-AppV-Client|1034|Admin|The package {Id} version {Version} could not be published because the User Configuration file '{Path}' is not valid.  Verify that the document is valid and try again.
+Microsoft-AppV-Client|1035|Admin|The package {Package} version {Version} could not be published because the User Configuration file does not match the the specified package.  Ensure the GUIDs in the User Configuration file match those of the package and try again.
+Microsoft-AppV-Client|1036|Admin|The package {Package} version {Version} could not be published globally because a User Configuration file was specified.  Either publish the package for the user with the User Configuration file specified or do not supply a User Configuration.
+Microsoft-AppV-Client|1037|Admin|The package {Package} version {Version} could not be unpublished globally because the user account does not have administrative privileges.
+Microsoft-AppV-Client|1038|Admin|The package {Package} version {Version} could not be unpublished because it is not published to the target of the unpublish operation.
+Microsoft-AppV-Client|1039|Admin|The package {Package} version {Version} could not be removed because the package is not configured on the system.
+Microsoft-AppV-Client|1040|Admin|The package {Package} version {Version} could not be removed because the user account does not have administrative privileges.
+Microsoft-AppV-Client|1041|Admin|The package {Package} version {Version} cannot be repaired because the package is not configured on the system.
+Microsoft-AppV-Client|1042|Admin|The package {Package} version {Version} was repaired successfully, but the package is published in one or more Virtual Application Connection Groups.  Settings are associated with the group, so you may need to clear settings for the Virtual Application Connection Groups associated with this package.
+Microsoft-AppV-Client|1043|Admin|The app connection group {Id} version {Version} could not be added because the app connection group file '{Path}' could not be found.  Ensure the path is correct and try again.
+Microsoft-AppV-Client|1044|Admin|The app connection group {ConnectionGroup} version {GroupVersion} could not be added because the package {Package} version {PackageVersion} is not configured on the system.  Configure the package and try again.
+Microsoft-AppV-Client|1045|Admin|The app connection group {Id} version {Version} could not be added because the app connection group file '{Path}' is not valid.  Verify that the document is valid and try again.
+Microsoft-AppV-Client|1046|Admin|The app connection group {ConnectionGroup} version {Version} could not be added because the user account does not have administrative privileges.
+Microsoft-AppV-Client|1047|Admin|The app connection group {ConnectionGroup} version {Version} could not be enabled because the app connection group has not been added on the system.  Add the app connection group and try again.
+Microsoft-AppV-Client|1048|Admin|The app connection group {ConnectionGroup} version {GroupVersion} could not be enabled because the package {Package} version {PackageVersion} is not published to the target of the operation.  Publish the package and try again.
+Microsoft-AppV-Client|1049|Admin|The app connection group {ConnectionGroup} version {Version} could not be enabled globally because the user account does not have administrative privileges.
+Microsoft-AppV-Client|1050|Admin|The app connection group {ConnectionGroup} version {Version} could not be disabled because it is not enabled for the target of the disable operation.
+Microsoft-AppV-Client|1051|Admin|The app connection group {ConnectionGroup} version {Version} could not be disabled globally because the user account does not have administrative privileges.
+Microsoft-AppV-Client|1052|Admin|The app connection group {ConnectionGroup} version {Version} could not be removed because the package it has not been added on the system.
+Microsoft-AppV-Client|1053|Admin|The app connection group {ConnectionGroup} version {Version} could not be removed because the user account does not have administrative privileges.
+Microsoft-AppV-Client|1054|Admin|The app connection group {ConnectionGroup} version {Version} cannot be repaired because the app connection group has not been added on the system.
+Microsoft-AppV-Client|1055|Operational|A package could not be unpublished for the user because it is currently in use by the user.  The package will be unpublished at a later time.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1056|Operational|A package could not be globally unpublished because it is currently in use.  The package will be unpublished at a later time.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1057|Admin|The package {Package} version {Version} was detected to have a pending global Unpublish task. The App-V Client cannot start the virtual environment. Please close all running applications in the package or stop the package.
+Microsoft-AppV-Client|1058|Admin|The app connection group {Package} version {Version} was detected to have a pending global Unpublish task. The App-V Client cannot start the virtual environment. Please close all running applications in the app connection group or stop the app connection group.
+Microsoft-AppV-Client|1059|Admin|The package {Package} version {Version} was detected to have a pending user Unpublish task. The App-V Client cannot start the virtual environment. Please close all running applications in the package or stop the package.
+Microsoft-AppV-Client|1060|Admin|The app connection group {Package} version {Version} was detected to have a pending user Unpublish task. The App-V Client cannot start the virtual environment. Please close all running applications in the app connection group or stop the app connection group.
+Microsoft-AppV-Client|1061|Operational|A connection group could not be unpublished for the user because it is currently in use by the user.  The connection group will be unpublished at a later time.Connection Group {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1062|Operational|A connection group could not be globally unpublished because it is currently in use.  The connection group will be unpublished at a later time.Connection Group {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1063|Admin|A package could not be published for the user because it is currently in use by the user.  Shut down all applications in the package, and try again.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1064|Admin|A package could not be globally published because it is currently in use.  Make sure all users have shut down all applications in the package, and try again.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1065|Admin|An app connection group could not be published for the user because it is currently in use by the user.  Shut down all applications in the group, and try again.Connection Group {ConnectionGroup}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1066|Admin|An app connection group could not be globally published because it is currently in use.  Make sure all users have shut down all applications in the group, and try again.Connection Group {ConnectionGroup}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1067|Operational|A package could not be published for the user because it is currently in use by the user.  The package will be published at a later time.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1068|Operational|A package could not be globally published because it is currently in use.  The package will be published at a later time.Package {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1069|Operational|A connection group could not be published for the user because it is currently in use by the user.  The connection group will be published at a later time.Connection Group {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1070|Operational|A connection group could not be globally published because it is currently in use.  The connection group will be published at a later time.Connection Group {Package}Version {Version}Activity #{ActivityID}
+Microsoft-AppV-Client|1071|Admin|The package {Package} version {Version} was detected to have an upgrading task. The App-V Client cannot start the virtual environment. Please try again in several minutes once the update is complete.
+Microsoft-AppV-Client|1072|Admin|The application connection group {Package} version {Version} was detected to have an upgrading task. The App-V Client cannot start the virtual environment. Please try again in several minutes once the update is complete.
+Microsoft-AppV-Client|1073|Admin|The pending publish operation for package {Package} version {Version} was not performed because network connectivity is not available.
+Microsoft-AppV-Client|1074|Admin|The package {Package} version {Version} was detected to have a pending publish or unpublish operation. The App-V Client cannot remove the package. Pending user operations are processed at logon, and pending global operations are processed at startup. Please try again when any related pending operations are complete. Activity #{ActivityID}
+Microsoft-AppV-Client|1075|Admin|The app connection group {ConnectionGroup} version {Version} was detected to have a pending task. The App-V Client cannot remove the app connection group. Pending user operations are processed at logon, and pending global operations are processed at startup. Please try again when any related pending operations are complete. Activity #{ActivityID}
+Microsoft-AppV-Client|1076|Admin|The UserSID value {StringParam} is not valid. Please ensure it is a valid SID and that the associated user is logged in when you run the cmdlet. {error: {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|1077|Admin|While publishing package {Package} version {Version} an error occurred when obtaining the integration settings for each of the connection groups that the package belongs to {error {ErrorHigh} - {ErrorLow}}.The package has not been published.
+Microsoft-AppV-Client|1078|Admin|Package {PackageId} version {PackageVersion} was user published while belonging to globally published Connection Group {GroupId} version {GroupVersion}.Therefore, although the package will be published to the user, it will not be assocated with the Connection Group until it is also published globally.
+Microsoft-AppV-Client|1079|Admin|The App-V driver mappings were not successfully updated when Package {Package} version {Version} was added (error: {ErrorHigh}-{ErrorLow}).Connection Groups containing this package may not work correctly.
+Microsoft-AppV-Client|1080|Admin|The App-V driver mappings were not successfully updated when Package {Package} version {Version} was removed (error: {ErrorHigh}-{ErrorLow}).Connection Groups previously containing this package may not work correctly.
+Microsoft-AppV-Client|1082|Admin|The App-V driver mappings were not successfully updated when Package {Package} version {Version} was published (error: {ErrorHigh}-{ErrorLow}).Connection Groups previously containing this package may not work correctly.
+Microsoft-AppV-Client|1083|Admin|The App-V driver mappings were not successfully updated when Package {Package} version {Version} was unpublished (error: {ErrorHigh}-{ErrorLow}).Connection Groups previously containing this package may not work correctly.
+Microsoft-AppV-Client|2001|Admin|Failed to move Catalog folder ‘{LastFolder}’ to new required location ‘{ReqFolder}’. {error: {Error}}
+Microsoft-AppV-Client|2002|Admin|Catalog folder ‘{LastFolder}’ was migrated to new required location ‘{ReqFolder}’, but the old location could not be removed.  The Catalog will be used from the new location. {error: {Error}}
+Microsoft-AppV-Client|2003|Admin|Catalog folder ‘{LastFolder}’ was migrated to new required location ‘{ReqFolder}’, but the new location previously existed.
+Microsoft-AppV-Client|2004|Admin|Failed due to could not get catalog folder. {error: {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|2005|Admin|The package {Package} version {Version} was detected to be in an irreconcilable state and has been removed. Please manually remove any remaining data (by default under %ProgramData%\App-V\) when re-adding the package.
+Microsoft-AppV-Client|2006|Admin|The app connection group {Package} version {Version} was detected to be in an irreconcilable state and has been removed. Please manually remove any remaining data (by default under %ProgramData%\App-V\) when re-adding the app connection group.
+Microsoft-AppV-Client|3001|Admin|The Client service has encountered a critical security issue and must shut down immediately. {error {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|3002|Admin|The Client service has encountered a critical security issue and must shut down immediately. {error {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|4001|Admin|The App-V client failed to create a process for {ScriptScope} script event {EventType} with command line: '{CommandLine}'. Windows error: {Error}.  The path must be a Windows application (.exe file).
+Microsoft-AppV-Client|4002|Admin|The App-V client waited for the designated Timeout of {Timeout} seconds for {ScriptScope} script event {EventType} with executable: '{CommandLine}' to complete. Because the Timeout was reached, the script process was terminated. Since RollbackOnError is set to true in script definition, the current AppV Client operation was rolled back due to script timeout.
+Microsoft-AppV-Client|4004|Operational|Running {ScriptScope} script defined in package {Package} for event {EventType}. Script execution was initiated by User Account: '{UserSid}'; command line: '{CommandLine}'.
+Microsoft-AppV-Client|4005|Operational|A {ScriptScope} script is defined in package {Package} for event {EventType} but will not be run because embedded scripting is disabled for this client.
+Microsoft-AppV-Client|4006|Admin|Parsing of Embedded Script XML in package Manifest failed. Package: {tGuid}; event name: {tString}; XML parsing error: {ErrorHigh}-{ErrorLow}. Please ensure that the XML script section in the package manifest for event {tString} is well formed.
+Microsoft-AppV-Client|4007|Admin|An error was encountered while reading the setting to enable scripts. Error code:  {ErrorHigh}-{ErrorLow}.
+Microsoft-AppV-Client|4008|Admin|The App-V client waited for the designated Timeout of {Timeout} seconds for {ScriptScope} script event {EventType} with executable: '{CommandLine}' to complete. Because the Timeout was reached, the script process was terminated. Since RollbackOnError is set to false in script definition, the timeout is ignored and current AppV Client operation will continue.
+Microsoft-AppV-Client|4009|Admin|{ScriptScope} script for event {EventType} with command line: '{CommandLine}' exited with failure error code: {Error}. Because Rollback is set to true in the script definition, the current AppV Client operation was rolled back.
+Microsoft-AppV-Client|4010|Admin|{ScriptScope} script for event {EventType} with command line: '{CommandLine}' exited with failure error code: {Error}. Because Rollback is set to false in the script definition, the script process failure is ignored and the current AppV Client operation will continue.
+Microsoft-AppV-Client|4011|Admin|
+Microsoft-AppV-Client|5001|Virtual Applications|
+Microsoft-AppV-Client|5002|Virtual Applications|
+Microsoft-AppV-Client|5003|Virtual Applications|The delete of directory '{Item}' was blocked by the Virtual File System because it represented the merged view of more than one package directory and/or a non-package directory.
+Microsoft-AppV-Client|6001|Operational|Failed to get Virtual Service information from manifest. Package: {Package} Version: {Version} Error: {ErrorHigh}-{ErrorLow}
+Microsoft-AppV-Client|6002|Operational|Virtual Service startup type {Item} is not supported. The only supported configuration values are Automatic, Manual and Disabled.
+Microsoft-AppV-Client|6006|Operational|Service {Item1} failed to start due to error {Item2}.
+Microsoft-AppV-Client|6007|Operational|DependentService {Item1} failed to start due to error {Item2}.
+Microsoft-AppV-Client|6008|Operational|Service {Item1} failed while handling a control message due to error {Item2}.
+Microsoft-AppV-Client|6009|Operational|Could not acquire service start lock due to error {Error}.
+Microsoft-AppV-Client|6010|Operational|Starting automatic service {Item}.
+Microsoft-AppV-Client|6011|Operational|Service {Item} could not be stopped.
+Microsoft-AppV-Client|6012|Operational|Automatic service {Item} could not be started.
+Microsoft-AppV-Client|6013|Operational|
+Microsoft-AppV-Client|6014|Operational|
+Microsoft-AppV-Client|6015|Operational|Service {Item} is created as a native service instead of a virtual service. Creating virtual service during runtime is not supported.
+Microsoft-AppV-Client|6016|Operational|
+Microsoft-AppV-Client|7001|Admin|The client service has encountered an error monitoring settings. Changes to some settings will not take effect until the service is restarted. {error: {Error}}
+Microsoft-AppV-Client|8001|Admin|Failed to load provided xml.DOM Error: {Error}Reason: {Reason}Line: {line}Column: {column}Offset: {offset}
+Microsoft-AppV-Client|8002|Admin|Failed to validate provided xml.DOM Error: {Error}Reason: {Reason}
+Microsoft-AppV-Client|8003|Admin|Invalid connection group document format. There are no packages specified in the connection group document for connection group {Package}, version {Version}.
+Microsoft-AppV-Client|8004|Admin|Invalid connection group XML document format. There needs to be at least one mandatory package in the connection group XML document for connection group {Package}, version {Version}.
+Microsoft-AppV-Client|8005|Admin|Failed to update the connection groups for user {StringParam}. Some virtualized applications may fail to execute properly. Error: {ErrorHigh}
+Microsoft-AppV-Client|8006|Admin|All of the package groups associated with the publishing of package {Package}, version {Version} were not successfully refreshed. Error: {ErrorHigh}
+Microsoft-AppV-Client|8007|Admin|All of the package groups associated with the unpublishing of package {Package}, version {Version} were not successfully refreshed. Error: {ErrorHigh}
+Microsoft-AppV-Client|8008|Admin|All of the package groups associated with the adding of package {Package}, version {Version} were not successfully refreshed. Error: {ErrorHigh}
+Microsoft-AppV-Client|8009|Admin|Failed to get the package groups associated with the removal of package {Package}, version {Version}. Error: {ErrorHigh}.
+Microsoft-AppV-Client|8010|Admin|All of the package groups associated with the removal of package {Package}, version {Version} were not successfully refreshed. Error: {ErrorHigh}
+Microsoft-AppV-Client|8011|Admin|Package group {Package}, version {Version} was not successfully refreshed. Error: {ErrorHigh}
+Microsoft-AppV-Client|8012|Admin|Mandatory package {Package}, version {PackageVersion} specified in connection group {ConnectionGroup}, version {GroupVersion} has not been added to the computer or has not been entitled to the user.
+Microsoft-AppV-Client|8013|Admin|Error {ErrorHigh}-{ErrorLow} occurred while attempting to delete the user publishing data associated with group {ConnectionGroup}, version {Version} for user {Sid}. The publishing data may need to be removed manually.
+Microsoft-AppV-Client|8014|Admin|Error {ErrorHigh}-{ErrorLow} occurred while attempting to unpublish group {ConnectionGroup}, version {Version} for user {Sid}. This error should correct itself on the next publishing refresh for the user.
+Microsoft-AppV-Client|8015|Admin|Failed to get the package groups associated with the unpublish of package {Package}, version {Version}. Error: {ErrorHigh}.
+Microsoft-AppV-Client|9001|Admin|Error encountered while executing command {Command}. Error: {ErrorWarning}
+Microsoft-AppV-Client|9002|Admin|Warning raised while executing command {Command}. Warning: {ErrorWarning}
+Microsoft-AppV-Client|9003|Admin|
+Microsoft-AppV-Client|9004|Admin|
+Microsoft-AppV-Client|9005|Admin|
+Microsoft-AppV-Client|9006|Admin|
+Microsoft-AppV-Client|9007|Admin|
+Microsoft-AppV-Client|9008|Admin|
+Microsoft-AppV-Client|9009|Admin|Error encountered during Powershell process startup or exit while executing command '{Item}'.
+Microsoft-AppV-Client|9010|Admin|Error encountered while executing command '{Item}'. Please refer to the AppV Client log for error details.
+Microsoft-AppV-Client|9012|Admin|
+Microsoft-AppV-Client|10001|Admin|Process {PID} failed to start due to {SubsystemName} subsystem failure. Package ID {Package}. Version ID {Version}. Error: {ErrorHigh}-{ErrorLow}
+Microsoft-AppV-Client|10002|Admin|Unable to inject into a non-virtual process with PID {Value}. This process will not be able to use virtual components.
+Microsoft-AppV-Client|11002|Admin|Could not takeover extension points ownership from legacy package {Item}. Error: {Error}
+Microsoft-AppV-Client|11003|Admin|Could not give extension points ownership back to legacy package {Item}. Error: {Error}
+Microsoft-AppV-Client|11004|Admin|MigrationMode is enabled but legacy App-V Client is not installed on the machine. Managing Authority policy will not be applied for the package {Package}.
+Microsoft-AppV-Client|11005|Operational|Taking over extension points ownership using command: {Item}
+Microsoft-AppV-Client|11006|Operational|Give back extension points ownership using command: {Item}
+Microsoft-AppV-Client|11007|Admin|Failed reading Managing Authority policy for package {Package}. Error: {ErrorHigh}-{ErrorLow}
+Microsoft-AppV-Client|11008|Admin|Failed reading old Managing Authority policy for package {Package}. Error: {ErrorHigh}-{ErrorLow}
+Microsoft-AppV-Client|11009|Admin|Error '{Error}' waitig for command: {Item}
+Microsoft-AppV-Client|11010|Admin|Timed out waitig for command: {Item}
+Microsoft-AppV-Client|11011|Admin|Error '{Error}' getting exit code for command: {Item}
+Microsoft-AppV-Client|11012|Operational|Command '{Item}' exited with code: {Error}
+Microsoft-AppV-Client|12001|Admin|A conflict was detected in the user configuration setting for enabling the virtual registry in virtual application connection group {PackageGroup} version {Version}. The virtual application could not be started.
+Microsoft-AppV-Client|13001|Operational|User VFS COW state deleted for package ID {Package}.
+Microsoft-AppV-Client|13002|Operational|User VFS COW state deletion failed for package ID {Package}, error {ErrorHigh}-{ErrorLow}.
+Microsoft-AppV-Client|13003|Operational|{ProcessName} application from package ID {Package} failed to launch. process ID {Pid}, error {ErrorHigh}-{ErrorLow}.
+Microsoft-AppV-Client|13004|Operational|User VFS COW folder validation failed for source: {Item1}, target: {Item2}.
+Microsoft-AppV-Client|13005|Operational|Failed to publish roaming packages, error {ErrorHigh}-{ErrorLow}.
+Microsoft-AppV-Client|13006|Operational|Failed to publish roaming groups, error {ErrorHigh}-{ErrorLow}.
+Microsoft-AppV-Client|13007|Admin|Security information for VFS directory {Item} has changed from its previous value.
+Microsoft-AppV-Client|14001|Operational|
+Microsoft-AppV-Client|14002|Operational|
+Microsoft-AppV-Client|14003|Admin|
+Microsoft-AppV-Client|14004|Admin|
+Microsoft-AppV-Client|14005|Admin|Unexpected error {ErrorHigh}-{ErrorLow}.  The App-V client was unable to start the background load queue.  Packages will not be loaded in the background automatically.
+Microsoft-AppV-Client|14006|Admin|
+Microsoft-AppV-Client|14007|Operational|
+Microsoft-AppV-Client|14008|Operational|
+Microsoft-AppV-Client|14009|Admin|
+Microsoft-AppV-Client|14010|Admin|The package {Package} version {Version} could not be configured because the path {Folder} could not be reached.  Ensure the path is correct and try again.
+Microsoft-AppV-Client|14011|Admin|The package {Package} version {Version} could not be configured because the package is corrupt.  Ensure that the package file is a valid App-V package and try again.
+Microsoft-AppV-Client|14012|Admin|The package {Package} version {Version} could not be configured because the package store location is not on a valid NTFS file system.  Ensure that the package store location is a valid NTFS file system and try again.
+Microsoft-AppV-Client|14013|Admin|The package {Package} version {Version} could not be configured due to low disk space.  Ensure that there is enough disk space and try again.
+Microsoft-AppV-Client|14014|Admin|The package {Package} version {Version} could not be configured because the specified URL is not valid.  Ensure that the URL is valid and try again.
+Microsoft-AppV-Client|14015|Admin|The package {Package} version {Version} could not be configured because the target location {Folder} already exists.  Ensure that this location is removed and try again.
+Microsoft-AppV-Client|14016|Admin|The package {Package} version {Version} could not be mounted because the network connection has been lost or is unavailable.  Check your network connection and try again.
+Microsoft-AppV-Client|14017|Admin|The package {Package} version {Version} could not be mounted. The operation failed with HRESULT {Hresult}, probably due to low disk space.  Ensure that there is enough disk space and try again.
+Microsoft-AppV-Client|14018|Admin|The package {Package} version {Version} could not be mounted due to the network connection timing out.  Check your network connection and try again.
+Microsoft-AppV-Client|14019|Admin|The package {Package} version {Version} full mount was suspended because the user who initiated the operation has logged off.
+Microsoft-AppV-Client|14020|Admin|The package {Package} version {Version} failed to be configured because the package is not valid for the current CPU architecture.
+Microsoft-AppV-Client|14021|Admin|Content required by an application could not be retrieved from the network. A request for file {tString} from package version {tGuid} failed with error {HResult}.  Check your network connection and try again.
+Microsoft-AppV-Client|14022|Admin|The App-V Client failed to initialize properly.  The Streaming Mini-Filter failed to initialize with error code {Error}. Please verify that the App-V Client is installed properly.
+Microsoft-AppV-Client|14023|Operational|A request for the file {File} from process {Pid} is being processed as SYSTEM since no suitable user token could be found.
+Microsoft-AppV-Client|14024|Operational|A request for the file {File} from process {Pid} is being processed as an alternate user {Sid}.
+Microsoft-AppV-Client|14025|Operational|
+Microsoft-AppV-Client|14026|Operational|
+Microsoft-AppV-Client|14027|Operational|
+Microsoft-AppV-Client|14028|Operational|
+Microsoft-AppV-Client|15001|Admin|The AppVStreamingUX application experienced an AppV error while attempting to connect to the AppVClient service. The AppVStreamingUX process will now exit. AppV Error: {ErrorHigh}-{ErrorLow}
+Microsoft-AppV-Client|15002|Admin|The AppVStreamingUX application experienced a COM error while attempting to connect to the AppVClient service. The AppVStreamingUX process will now exit. HResult: {HResult}
+Microsoft-AppV-Client|15003|Admin|The AppVStreamingUX application experienced an AppV error while attempting to stop a package or connection group. Running Virtual Environment ID: {VirtualEnvironmentId}, Version: {VirtualEnvironmentVersion}, AppV Error: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|16001|Admin|A conflict was detected in the configuration settings for Virtual Object exclusions in virtual application connection group {PackageGroup} version {Version}. The virtual application could not be started. Verify that the settings are correct and try again.
+Microsoft-AppV-Client|16002|Admin|A conflict was detected in the 'enabled' setting for Virtual Object subsystem in virtual application connection group {PackageGroup} version {Version}. The virtual application could not be started. Verify that the settings are correct and try again.
+Microsoft-AppV-Client|16003|Admin|The connection group {PackageGroup} version {Version} could not be published because the virtual objects settings of the individual packages conflict. Verify that the virtual objects settings are the same for all member packages and try again.Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|16004|Admin|Failed to publish package {PackageId} version {PackageVersion} because its virtual objects settings do not match those of other packages in connection group {GroupId} version {GroupVersion}.Verify that the virtual objects settings are the same for all member packages and try again.Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|17001|Admin|Failed to save last report data cache file path {Item} to the registry due to error {Error}.  If there is a Client failure before the next save attempt, and the report data must be loaded from the cache, some records may be missing.
+Microsoft-AppV-Client|17002|Admin|Reporting data cache could not be loaded from {StringParam} due to error {ErrorHigh}-{ErrorLow}.  A new report data cache file will be generated and saved separately.  Any report data from the previous cache file will be lost.
+Microsoft-AppV-Client|17003|Admin|Reporting data manager queue worker thread is exiting on unexpected wait condition {ErrorHigh}, error code {ErrorLow}.  No further report records will be processed.
+Microsoft-AppV-Client|17004|Admin|Reporting data cache could not be saved to disk after adding new records (rc = {ErrorHigh}-{ErrorLow}); those records may be lost if the Client shuts down before the next attempt to save or transmit the cache.
+Microsoft-AppV-Client|17005|Operational|
+Microsoft-AppV-Client|17006|Admin|Reporting data cache could not be sent to Reporting Server. (rc = {ErrorHigh}-{ErrorLow}).
+Microsoft-AppV-Client|17007|Admin|Failed to add application launch data to the reporting queue. This application launch will not be reported to the reporting server. (rc = {ErrorHigh}-{ErrorLow}).
+Microsoft-AppV-Client|17008|Admin|Failed to add application shutdown data to the reporting queue. This application shutdown will not be reported to the reporting server. (rc = {ErrorHigh}-{ErrorLow}).
+Microsoft-AppV-Client|17009|Admin|Failed to add virtual environment created data for the launching application. The application launch will not be reported to the reporting server. (rc = {ErrorHigh}-{ErrorLow}).
+Microsoft-AppV-Client|17010|Admin|Failed to add virtual environment terminated data for the terminating application. The application shutdown will not be reported to the reporting server. (rc = {ErrorHigh}-{ErrorLow}).
+Microsoft-AppV-Client|17011|Admin|Failed to save updated cached file after upload due to error {ErrorHigh}-{ErrorLow}; duplicate records may be sent to the server if the cache must be reloaded before the next save attempt.
+Microsoft-AppV-Client|17012|Admin|Failed to add virtual process launch failure information for the terminating process. The application launch failure will not be reported to the reporting server. (rc = {ErrorHigh}-{ErrorLow}).
+Microsoft-AppV-Client|18001|Admin|A virtual application could not be launched from package '{Item}' because the App-V Client Service is not running.  Start the App-V Client Service and try again.
+Microsoft-AppV-Client|18002|Admin|The virtual application '{Item}' could not be launched because the user is not entitled to the package to which it belongs.  Either publish the package to the user or globally and try again.
+Microsoft-AppV-Client|18003|Admin|The virtual application '{Item}' could not be launched because the App-V Client could not determine which environment to use.  Provide a priority to the app connection group for the package and try again.
+Microsoft-AppV-Client|18004|Admin|The virtual application '{Item1}' could not be launched because the service '{Item2}' could not be started.
+Microsoft-AppV-Client|18005|Virtual Applications|The virtual application '{StringParam1}' could not be started because the App-V Subsystem '{StringParam2}' could not be initialized. {error: {ErrorHigh}-{ErrorLow}}
+Microsoft-AppV-Client|18006|Admin|The virtual environment for connection group {ConnectionGroup} version {GroupVersion} could not be created because the package {Package} version {PackageVersion} is not published.  Publish the package and try again.
+Microsoft-AppV-Client|19001|Operational|Publishing Refresh started. URL: {String} Global: {Flag}
+Microsoft-AppV-Client|19002|Operational|Publishing Refresh stopped. URL: {String} Global: {Flag} Return code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19010|Operational|Settings synced. Return code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19011|Admin|Settings sync failed. Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19101|Admin|Getting client information failed. Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19102|Admin|Getting server publishing data failed. URL: {StringParam} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19103|Admin|Getting client published data failed. Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19104|Admin|Part or all packages publish failed. published: {Value1} failed: {Value2} Please check the error events of 'Configure/Publish Package' before this message for the details of the failure.
+Microsoft-AppV-Client|19105|Admin|Part or all packages un-publish failed. un-published: {Value1} failed: {Value2} Please check the error events of 'Unpublish Package' before this message for the details of the failure.
+Microsoft-AppV-Client|19106|Admin|Part or all groups publish failed. published: {Value1} failed: {Value2} Please check the error events of 'Configure/Publish Virtual Application Connection Group' before this message for the details of the failure.
+Microsoft-AppV-Client|19107|Admin|Part or all groups un-publish failed. un-published: {Value1} failed: {Value2} Please check the error events of 'Unpublish Virtual Application Connection Group' before this message for the details of the failure.
+Microsoft-AppV-Client|19108|Admin|Failed to publish group due to the failure of the package. Group GUID: {Guid1} Group Version GUID: {Guid2} Package GUID: {Guid3}
+Microsoft-AppV-Client|19201|Admin|Unknown protocol for package URI. input: {Item}
+Microsoft-AppV-Client|19202|Admin|HttpRequest initialize failed. URL: {StringParam} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19203|Admin|HttpRequest sendRequest failed. URL: {StringParam} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19204|Admin|The content could not be coverted to unicode. URL: {Item}
+Microsoft-AppV-Client|19205|Admin|The content from server is not valid XML for publishing. URL: {StringParam} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19301|Admin|Failed to create default machine policy document. Package: {Package}, {Version} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19302|Admin|Failed to create machine policy document from string. Package: {Package}, {Version} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19303|Admin|Failed to create user policy document from string. Package: {Package}, {Version} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19304|Admin|Failed to create package group descriptor document from string. Group: {Package}, {Version} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19401|Admin|Failed to get publishing server record from registry. Server ID: {Value} Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|19402|Admin|The URL has already been used by other publishing server. Server ID: {Value} URL: {String}
+Microsoft-AppV-Client|19403|Admin|No URL was supplied for the publishing server. Server ID: {Value}
+Microsoft-AppV-Client|19404|Admin|The ID for the publishing server is out of the range. Server ID: {Value} Valid Range: [1~5]
+Microsoft-AppV-Client|19405|Admin|The interval of hours for the publishing server is out of the range. Server ID: {Value1} Interval: {Value2} Valid Range: [0~23]
+Microsoft-AppV-Client|19406|Admin|The interval of days for the publishing server is out of the range. Server ID: {Value1} Interval: {Value2} Valid Range: [0~365]
+Microsoft-AppV-Client|19407|Admin|The interval unint for the publishing server is not valid. Server ID: {Value1} Interval Unit: {Value2} Valid Values: 0/Hour, 1/Day
+Microsoft-AppV-Client|19408|Operational|The stored URL {Item1} for the server {Item2} is incorrectly formatted.
+Microsoft-AppV-Client|19501|Operational|SyncAppvPublishingServer completed successfully: '{Item}'.
+Microsoft-AppV-Client|19502|Admin|SyncAppvPublishingServer failed due to a PowerShell error.Error: '{Item}'
+Microsoft-AppV-Client|19801|Admin|Deimpersonation failed. Error: {ErrorHigh} - {ErrorLow}.
+Microsoft-AppV-Client|19802|Admin|Read policy identities failed. URL: {String} Global: {Flag1} For deployment configuration: {Flag2} Error: {ErrorHigh} - {ErrorLow}.
+Microsoft-AppV-Client|19803|Admin|Write policy identities failed. URL: {String} Global: {Flag1} For deployment configuration: {Flag2} Error: {ErrorHigh} - {ErrorLow}.
+Microsoft-AppV-Client|19804|Operational|
+Microsoft-AppV-Client|19805|Operational|Failed to update file type associations, shell extensions, and shortcuts. Error: {ErrorHigh} - {ErrorLow}.
+Microsoft-AppV-Client|20001|Admin|The connection group {PackageGroup} version {Version} could not be published because the virtual COM settings of the individual packages conflict.  Verify that the virtual COM settings are the same for all member packages and try again.Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|20002|Admin|Package {PackageId} version {PackageVersion} could not be published because its virtual COM settings conflict with those of other packages in connection group {GroupId}-{GroupVersion}.  Verify that the virtual COM settings are the same for all member packages and try again.Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|20101|Admin|Package {PackageId} version {PackageVersion} could not be published because its virtual file system settings conflict with other packages in connection group {GroupId}-{GroupVersion}.  Verify that the virtual COM settings are the same for all member packages and try again.Error code: {ErrorHigh} - {ErrorLow}
+Microsoft-AppV-Client|21001|Operational|An error was encountered while reading the setting to enable or disable Dynamic Virtualization. Dynamic Virtualization is enabled by default and can be modified using the Set-AppvClientConfiguration Powershell cmdlet. Error code:  {ErrorHigh}-{ErrorLow}.
+Microsoft-AppV-Client|21002|Operational|
+Microsoft-AppV-Client|22001|Admin|The SxS assembly '{Item1}' could not be installed because its payload file '{Item2}' is not part of the package. Please ensure this assembly is installed natively to ensure package functionality.
+Microsoft-AppV-Client|23001|Operational|
+Microsoft-AppV-Client|24001|Operational|Enable Appv failed with error {Error}.
+Microsoft-AppV-Client|24002|Operational|Disable Appv failed with error {Error}.

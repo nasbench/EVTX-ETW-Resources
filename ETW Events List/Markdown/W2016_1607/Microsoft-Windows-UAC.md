@@ -1,0 +1,3 @@
+Provider               |  Event ID  |  Channel                            |  Message
+-----------------------|------------|-------------------------------------|-----------------------------------------------------------------------------------------------
+Microsoft-Windows-UAC  |  1         |  Microsoft-Windows-UAC/Operational  |  The process failed to handle ERROR_ELEVATION_REQUIRED during the creation of a child process.

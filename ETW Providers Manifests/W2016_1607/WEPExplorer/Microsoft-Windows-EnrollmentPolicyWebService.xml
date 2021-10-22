@@ -1,0 +1,357 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EnrollmentPolicyWebService</Name>
+        <Metadata>
+            <Guid>{F64ED6BA-BD9B-4CE1-90FB-7B8765928134}</Guid>
+            <ResourceFilePath>C:\Windows\system32\certadm.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\certadm.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.2097&amp;FileName=certadm.dll&amp;FileVer=10.0.14393.2097</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Message>
+                    <Path>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Certificate Enrollment Policy Server</Message>
+                    <Name>CertificateEnrollmentPolicyServer</Name>
+                    <Value>4097</Value>
+                </Task>
+                <Task>
+                    <Message>Active Directory Certificate Enrollment Policy Provider</Message>
+                    <Name>ActiveDirectoryCertificateEnrollmentPolicyProvider</Name>
+                    <Value>4098</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment Policy Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Policy Web Service has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment Policy Server</Task>
+                <Message><![CDATA[
+A service end point with URI %1 has been configured for this service. The client authentication scheme is %2. Use the Group Policy Management Console or the Certificates snap-in to configure clients with this Certificate Enrollment Policy Web Service information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Authentication" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Certificate Enrollment Policy Server</Task>
+                <Message><![CDATA[
+A service end point with URI %1 has been configured for this service. The configuration of the client authentication scheme or the binding is not recommended. To fix the issue, open the web.config file and verify the binding and security settings. The only supported binding type for this service is wsHttpBinding. The security mode should be either Transport or TransportWithMessageCredential. When the security mode is Transport, the ClientCredentialType should be either Windows or Certificate. When the security mode is TransportWithMessageCredential, the ClientCredentialType should be UserName.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Policy Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Policy Web Service failed to initialize. Confirm that the Certificate Enrollment Policy Web Service is properly installed. Try to restart Internet Information Services (IIS) by using iisreset.exe. If the problem persists, enable tracing in the web.config file, restart IIS, attempt to obtain policy information from any client, and then contact Microsoft Customer Service and Support with the trace file information.  %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment Policy Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Policy Web Service has been stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+The Active Directory certificate enrollment policy provider has been initialized to target the "%1" domain controller.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DC" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+The Active Directory certificate enrollment policy provider has been initialized to target the default domain controller for the current domain.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+The Active Directory certificate enrollment policy provider failed to initialize. Try to restart Internet Information Services (IIS) by using iisreset.exe. If the problem persists, enable tracing in the web.config file, restart IIS, attempt to obtain policy information from any client, and then contact Microsoft Customer Service and Support with the trace file information. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+The Active Directory certificate enrollment policy provider failed to obtain policy information from Active Directory Domain Services (AD DS). The provider will attempt to read the information again in %1 milliseconds. If the problem persists, enable tracing in the web.config file, enable logging by using "certutil -setreg debug 0xffffffe3", restart IIS by using iisreset.exe, attempt to obtain policy information from any client, and then contact Microsoft Customer Service and Support with the information in the trace files and certenroll.log file. %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RetryIntervalMs" inType="win:Int32" outType="xs:int"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+There is no enterprise certification authority (CA) configured with the Certificate Enrollment Web Service in the current forest. Confirm that at least one enterprise CA is available in the forest and that at least one server running the Certificate Enrollment Web Service is configured to work with this CA.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+No certificate templates in the forest are configured to be sent as part of the policy response. Confirm that the server hosting the Certificate Enrollment Policy Web Service has Read permission to the required templates in this forest and that at least one server hosting the Certificate Enrollment Web Service is configured to work with the certification authorities (CAs) configured to issue the required templates.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+The certification authority (CA) "%1" cannot be sent as part of the policy response. Confirm that this CA is running and that at least one Certificate Enrollment Web Service is configured to use this CA . %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+The certificate template "%1" cannot be sent as part of the policy response. Use the Certificate Templates snap-in to confirm that this is a valid certificate template. Also confirm that at least one running certification authority (CA) has this template enabled and that at least one Certificate Enrollment Web Service is configured to use this CA. %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+The certification authority (CA) "%1" associated with the template "%2" cannot be sent as part of the policy response. Confirm that the CA is running and that at least one Certificate Enrollment Web Service is configured to use this  CA. %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+The URI %2 used by the Certificate Enrollment Web Service for certification authority (CA) "%1" is invalid. Use Server Manager to configure the Certificate Enrollment Web Service to use a valid CA. %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+A certificate template %1 has been loaded. For additional information, please refer to the EventData section of the Details pane.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateDetails" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+A certification authority %1 has been loaded. For additional information, please refer to the EventData section of the Details pane.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CADetails" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Active Directory Certificate Enrollment Policy Provider</Task>
+                <Message><![CDATA[
+For a list of the OIDs which are loaded please refer to the "Details" pane.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OIDs" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment Policy Server</Task>
+                <Message><![CDATA[
+The Certificate Enrollment Policy Web Service cannot operate because Windows authentication is not compatible with key based renewal. To resolve this issue, remove the Certificate Enrollment Policy Web Service. Reconfigure the Setup options to disable key based renewal, or select either user name and password authentication or client certificate authentication, and then run Setup again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment Policy Server</Task>
+                <Message><![CDATA[
+A service end point with URI %1 has been configured for this service. The client authentication scheme is %2. Only policies that contain certificate templates that are enabled for key based renewal will be returned to the client. Use the Group Policy Management Console or the Certificates snap-in to configure clients with this Certificate Enrollment Policy Web Service information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Authentication" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EnrollmentPolicyWebService/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment Policy Server</Task>
+                <Message><![CDATA[
+A service end point with URI %1 has been configured for this service. The client authentication scheme is %2. Only policies that contain certificate templates that are enabled for key based renewal will be returned to the client. Client certificates without subject information in the Active Directory database can be used to retrieve certificate templates. Use the Group Policy Management Console or the Certificates snap-in to configure clients with this Certificate Enrollment Policy Web Service information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Authentication" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

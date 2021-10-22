@@ -1,0 +1,18 @@
+Provider                                       |  Event ID  |  Channel      |  Message
+-----------------------------------------------|------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-FileShareShadowCopyProvider  |  0         |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  1         |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  2         |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  3         |  Operational  |  Microsoft File Share Shadow Copy Provider: Delete Shadow Copy: {ShadowCopyId}.
+Microsoft-Windows-FileShareShadowCopyProvider  |  1000      |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  1001      |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  1002      |  Operational  |  Fail to open Microsoft File Share Shadow Copy Provider primary metadata store failed with error code: {ErrorCode}.
+Microsoft-Windows-FileShareShadowCopyProvider  |  1003      |  Operational  |  Fail to open Microsoft File Share Shadow Copy Provider alternate metadata store failed with error code: {ErrorCode}.
+Microsoft-Windows-FileShareShadowCopyProvider  |  1004      |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  1005      |  Operational  |  Microsoft File Share Shadow Copy Provider Error: Fail to negotiate with file server supported version.
+Microsoft-Windows-FileShareShadowCopyProvider  |  1006      |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  1007      |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  1008      |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  1009      |  Operational  |  Microsoft File Share Shadow Copy Provider Error: Failed to connect to FssAgentRPC server: {FileServerName} with error code: {ErrorCode}.
+Microsoft-Windows-FileShareShadowCopyProvider  |  1010      |  Operational  |
+Microsoft-Windows-FileShareShadowCopyProvider  |  1011      |  Operational  |

@@ -1,0 +1,31 @@
+Provider          |  Event ID  |  Channel           |  Message
+------------------|------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------
+Intel-iaLPSS-I2C  |  1001      |  Analytic Channel  |  Created WDFDEVICE {FxDevice}
+Intel-iaLPSS-I2C  |  1002      |  Analytic Channel  |  WDFDEVICE {FxDevice} mapped to vAddr {VAddr} (MMIO Addr {PAddr})
+Intel-iaLPSS-I2C  |  1003      |  System            |  {FailReason}. WDFDEVICE {WDFDEVICE}
+Intel-iaLPSS-I2C  |  1004      |  Analytic Channel  |  Resource for {FxDevice} Released
+Intel-iaLPSS-I2C  |  1005      |  Analytic Channel  |  D0 Entrty Start for WDFDEVICE {FxDevice} (MMIO {PAddr})
+Intel-iaLPSS-I2C  |  1006      |  Analytic Channel  |  D0 Entry End for WDFDEVICE {FxDevice} (MMIO {PAddr})
+Intel-iaLPSS-I2C  |  1007      |  Analytic Channel  |  D0 Exit Start for WDFDEVICE {FxDevice} (MMIO {PAddr})
+Intel-iaLPSS-I2C  |  1008      |  Analytic Channel  |  D0 Exit End for WDFDEVICE {FxDevice} (MMIO {PAddr})
+Intel-iaLPSS-I2C  |  1009      |  Analytic Channel  |  SpbRequest {pRequest} (Type {IOCTL}) received. WDFDEVICE {pDevice} (MMIO {MMIO}). Target {pTarget} (Address {Target I2C Address})
+Intel-iaLPSS-I2C  |  1010      |  Analytic Channel  |  SpbRequest {Request} Completed Status {Status }
+Intel-iaLPSS-I2C  |  1011      |  Analytic Channel  |  ISR For WDFDEVICE {WDFDEVICE} (MMIO {MMIO}) Begin
+Intel-iaLPSS-I2C  |  1012      |  Analytic Channel  |  ISR For WDFDEVICE {WDFDEVICE} (MMIO {MMIO}) End Interrupt Status {Stat}
+Intel-iaLPSS-I2C  |  1013      |  Analytic Channel  |  DPC for WDFDEVICE {WDFDEVICE} (MMIO {MMIO}) Start
+Intel-iaLPSS-I2C  |  1014      |  Analytic Channel  |  DPC for WDFDEVICE {WDFDEVICE} (MMIO {MMIO}) End
+Intel-iaLPSS-I2C  |  1015      |  Analytic Channel  |
+Intel-iaLPSS-I2C  |  1016      |  Analytic Channel  |
+Intel-iaLPSS-I2C  |  1017      |  Analytic Channel  |
+Intel-iaLPSS-I2C  |  1018      |  Analytic Channel  |
+Intel-iaLPSS-I2C  |  1019      |  Analytic Channel  |
+Intel-iaLPSS-I2C  |  1020      |  Analytic Channel  |
+Intel-iaLPSS-I2C  |  1021      |  Analytic Channel  |  DMA Configurations {Status} for WDFDEVICE {WDFDevice} (MMIO {MMIO})
+Intel-iaLPSS-I2C  |  1022      |  Analytic Channel  |  Monitor State {MonitorState}. Idle Timeout {IdleTimeout}. WDFDEVICE {WDFDevice} (MMIO {MMIO})
+Intel-iaLPSS-I2C  |  1023      |  Analytic Channel  |  Cancel SpbRequest {pRequest} received. WDFDEVICE {pDevice} (MMIO {MMIO}). Target {pTarget} {pTarget} (Address {Target I2C Address})
+Intel-iaLPSS-I2C  |  1024      |  Analytic Channel  |
+Intel-iaLPSS-I2C  |  1025      |  Analytic Channel  |
+Intel-iaLPSS-I2C  |  1026      |  Analytic Channel  |  DMA Txn Start. Direction {Direction} # of MDL {NumMdls} #bytes {NumBytes} WDFDEVICE {WDFDEVICE} (MMIO {MMIO})
+Intel-iaLPSS-I2C  |  1027      |  Analytic Channel  |  DMA Txn End. Direction {Direction} DmaStatus {DMA Status} #bytes {NumBytes} WDFDEVICE {WDFDEVICE} (MMIO {MMIO})
+Intel-iaLPSS-I2C  |  1029      |  Analytic Channel  |  Cancel Timer Expired WDFDEVICE {WDFDEVICE} (MMIO {MMIO})
+Intel-iaLPSS-I2C  |  1030      |  Analytic Channel  |

@@ -1,0 +1,10 @@
+Provider                         |  Event ID  |  Channel      |  Message
+---------------------------------|------------|---------------|-----------------------------------------------------------------
+Microsoft-Windows-BestPractices  |  0         |  Operational  |
+Microsoft-Windows-BestPractices  |  1         |  Operational  |
+Microsoft-Windows-BestPractices  |  2         |  Operational  |  Started scan of model '{String}' submodel '{String2}'
+Microsoft-Windows-BestPractices  |  3         |  Operational  |  Finished starting scan of model '{String}' submodel '{String2}'
+Microsoft-Windows-BestPractices  |  4         |  Operational  |  {String}
+Microsoft-Windows-BestPractices  |  5         |  Operational  |
+Microsoft-Windows-BestPractices  |  6         |  Operational  |
+Microsoft-Windows-BestPractices  |  7         |  Operational  |

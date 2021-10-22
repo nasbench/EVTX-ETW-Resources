@@ -1,0 +1,72 @@
+Provider                                            |  Event ID  |  Channel      |  Message
+----------------------------------------------------|------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ServerManager-ManagementProvider  |  1         |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  2         |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  12        |  Debug        |  Condition {ptzMessage1} failed, throwing {ptzMessage2}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  14        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  15        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  16        |  Operational  |  Get performance collector state task generated an error ({hResult}).
+Microsoft-Windows-ServerManager-ManagementProvider  |  17        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  18        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  19        |  Operational  |  Set performance collector state task generated an error ({hResult}).
+Microsoft-Windows-ServerManager-ManagementProvider  |  26        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  27        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  28        |  Operational  |  Get counter samples in time range task generated an error ({hResult}).
+Microsoft-Windows-ServerManager-ManagementProvider  |  29        |  Debug        |  Unable to process log file: {Name}, error: {hResult}, last error: {hLastError}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  30        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  31        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  32        |  Operational  |  Get counter samples at time task generated an error ({hResult}).
+Microsoft-Windows-ServerManager-ManagementProvider  |  33        |  Debug        |  Unable to process log file: {Name}, error: {hResult}, last error: {hLastError}
+Microsoft-Windows-ServerManager-ManagementProvider  |  41        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  42        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  43        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  44        |  Debug        |  Get server inventory task failed to query information from facility: {facility}, error code: {error}, last error: {last error}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  45        |  Operational  |  Failure opening metadata of the owning provider for channel: {Name} [hResult = {hResult}, hLastResult = {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  46        |  Operational  |  Generic failure querying the localized name for channel: {Name} [hResult = {hResult}, hLastResult = {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  47        |  Operational  |  Get server feature task started, flags: {uValue}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  48        |  Operational  |  Get server feature task complete, total features returned: {uValue}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  49        |  Operational  |  Get server feature task failed, error: {hResult}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  50        |  Operational  |  The feature returned by the ceip provider is not found in the static feature information xml. Id: {Id}, Name: {Name}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  51        |  Operational  |  The feature's parent id returned by the ceip provider is not found in the static feature information xml. Feature Id: {Id}, Parent Id: {Parent Id}
+Microsoft-Windows-ServerManager-ManagementProvider  |  52        |  Operational  |  Get server event detail task started, number of logs: {uValue}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  53        |  Operational  |  Get server event detail task complete, number of results: {uValue}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  54        |  Operational  |  Get server event detail task failed, error: {hResult}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  55        |  Debug        |  Server event detail query: {Query}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  56        |  Debug        |  Couldn't find event query file: {Name} [hResult: {hResult}, hLastResult: {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  57        |  Debug        |  Server event detail task failed to process the query file: {Name}, error code: {hResult}, last error: {hLastError}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  58        |  Debug        |  Server event detail task failed to open the provider's metadata, name: {Name}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  61        |  Debug        |
+Microsoft-Windows-ServerManager-ManagementProvider  |  62        |  Operational  |  Get bpa result task start: {TotalXPaths}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  63        |  Operational  |  Get bpa result task complete: {ResultsReturned}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  64        |  Operational  |  Get bpa result task generated an error: {Error}, last error: {LastError}
+Microsoft-Windows-ServerManager-ManagementProvider  |  65        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  66        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  67        |  Operational  |
+Microsoft-Windows-ServerManager-ManagementProvider  |  68        |  Operational  |  Events were queried from ADAM (ADAM.Events.xml) but the provider was not able to find any instances [hResult = {Error}, hLastResult = {Last Error}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  69        |  Operational  |  Get server service detail task start. Number of service requested: {uValue}
+Microsoft-Windows-ServerManager-ManagementProvider  |  70        |  Operational  |  Get server service detail task complete. Number of services returned: {uValue}
+Microsoft-Windows-ServerManager-ManagementProvider  |  71        |  Operational  |  Get server service detail task generated an error [hResult: {Error}, hLastResult = {Last Error}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  72        |  Operational  |  Couldn't open service: {Name} [hResult = {hResult}, hLastResult = {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  73        |  Debug        |  Can't get description of service: {Name} [hResult = {hResult}, hLastResult = {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  74        |  Debug        |  Can't get config information of service: {Name} [hResult = {hResult}, hLastResult = {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  75        |  Debug        |  Generic failure querying service details of service: {Name} [hResult = {hResult}, hLastResult = {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  76        |  Debug        |  Generic failure querying delayed auto start property of serice: {Name} [hResult = {hResult}, hLastResult = {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  77        |  Operational  |  Remove server performance log task start. Collector name: {Collector}, CutOff time in milliseconds: {MillisecondCutOff}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  78        |  Operational  |  Remove server performance log task complete. Number of logs removed: {Count}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  79        |  Operational  |  Remove server performance log task generated an error '{Collector}' [hResult: {ErrorCode}, hLastResult = {LastErrorCode}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  80        |  Operational  |  Remove server performance log task encountered an error processing log: {Log} [hResult: {Error}, hLastResult = {LastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  81        |  Operational  |  Elevated operation {Identifier} failed to revert to network service token. error: {Error}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  82        |  Operational  |  Elevated operation {Error} failed to impersonate the client back. error: {Error}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  83        |  Operational  |  The task thread is not impersonating the client after running a elevated operation {Identifier}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  84        |  Debug        |  The wmi enumeration operation [{Identifier}] is being closed without completely enumerating the result. This is not supported in wmi API and will result in unpredictable results.
+Microsoft-Windows-ServerManager-ManagementProvider  |  85        |  Operational  |  Failed to query the results of bpa xpath: {XPath}. error: {Error}, last error: {LastError}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  86        |  Debug        |  Failed to get/query the resource of type {Type} at index {Index}. error: {Error}, last error: {LastError}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  87        |  Debug        |  Generic failure querying trigger information of serice: {Name} [hResult = {hResult}, hLastResult = {hLastError}].
+Microsoft-Windows-ServerManager-ManagementProvider  |  88        |  Operational  |  Failed to get the performance data with error code PDH_LOG_TYPE_NOT_FOUND. Error: {LastError}, Qfe Check: {QfeCheck}
+Microsoft-Windows-ServerManager-ManagementProvider  |  89        |  Operational  |  Failed to check the status of the performance counter DL QFE, error: {Error}, last error: {Last Error}
+Microsoft-Windows-ServerManager-ManagementProvider  |  90        |  Operational  |  Get server event detail extended task started.
+Microsoft-Windows-ServerManager-ManagementProvider  |  91        |  Operational  |  Get server event detail extended task complete, number of results: {uValue}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  92        |  Operational  |  Get server event detail extended task failed, error: {Error}, extended error: {Last Error}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  93        |  Debug        |  Server event detail extended query: {Query}.
+Microsoft-Windows-ServerManager-ManagementProvider  |  94        |  Debug        |  Server event detail extended task failed to process the query: error: {Error}, last error: {Last Error}
+Microsoft-Windows-ServerManager-ManagementProvider  |  95        |  Debug        |  Server event detail extended task failed to open the provider's metadata, name: {Name}.

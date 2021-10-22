@@ -1,0 +1,40 @@
+Provider                                             |  Event ID  |  Channel      |  Message
+-----------------------------------------------------|------------|---------------|------------------------------------------------------------------------------------------------
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1001      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1002      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1003      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1004      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1005      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1006      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1007      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1008      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1009      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1010      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1011      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1012      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1013      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1014      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1015      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1016      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1017      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1018      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1019      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1020      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1030      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1031      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1032      |  Operational  |  Enumerate Server error. Error: {error}, Type: {errorType}, Message: {errorMessage}
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1033      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1034      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1035      |  Operational  |  Enumerate QFE error.  Error: {error}, Type: {errorType}, Message: {errorMessage}
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1036      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1037      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1038      |  Operational  |  Enumerate Software error. Error: {error}, Type: {errorType}, Message: {errorMessage}
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1039      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1040      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1041      |  Operational  |  Enumerate UAL Access error. Error: {error}, Type: {errorType}, Message: {errorMessage}
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1042      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1043      |  Operational  |
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1044      |  Operational  |  Get Guest Data error. Error: {error}, Type: {errorType}, Message: {errorMessage}
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1045      |  Operational  |  Get Guest Data warning. Failed to get guest FQDN. Guest may not be running. VM Guid: {vmGuid}.
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1100      |  Debug        |  Deserialize guest data started. VM Guid: {vmGuid}, File: {tempFileName}.
+Microsoft-Windows-SoftwareInventoryLogging-Provider  |  1101      |  Debug        |  Deserialize guest data stopped. VM Guid: {vmGuid}, File: {tempFileName}.

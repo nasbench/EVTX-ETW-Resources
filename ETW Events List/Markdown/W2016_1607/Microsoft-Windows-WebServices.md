@@ -1,0 +1,23 @@
+Provider                       |  Event ID  |  Channel                                |  Message
+-------------------------------|------------|-----------------------------------------|---------------------------------------------------------------
+Microsoft-Windows-WebServices  |  1         |  Microsoft-Windows-WebServices/Tracing  |  {api} API is called.
+Microsoft-Windows-WebServices  |  2         |  Microsoft-Windows-WebServices/Tracing  |  {api} API returned.
+Microsoft-Windows-WebServices  |  3         |  Microsoft-Windows-WebServices/Tracing  |  {api} API failed by {result}
+Microsoft-Windows-WebServices  |  4         |  Microsoft-Windows-WebServices/Tracing  |  {api} API is pending completion.
+Microsoft-Windows-WebServices  |  5         |  Microsoft-Windows-WebServices/Tracing  |  {api} API completed.
+Microsoft-Windows-WebServices  |  6         |  Microsoft-Windows-WebServices/Tracing  |  {api} API failed to complete by {result}
+Microsoft-Windows-WebServices  |  7         |  Microsoft-Windows-WebServices/Tracing  |  Error occurred: {error} - {errorString}
+Microsoft-Windows-WebServices  |  8         |  Microsoft-Windows-WebServices/Tracing  |  {operation} IO operation started.
+Microsoft-Windows-WebServices  |  9         |  Microsoft-Windows-WebServices/Tracing  |  {operation} IO operation completed, {size} bytes transferred.
+Microsoft-Windows-WebServices  |  10        |  Microsoft-Windows-WebServices/Tracing  |  {operation} IO operation failed: {error}
+Microsoft-Windows-WebServices  |  11        |  Microsoft-Windows-WebServices/Tracing  |  Sending message - bin  (id: {correlationId}): {message}
+Microsoft-Windows-WebServices  |  12        |  Microsoft-Windows-WebServices/Tracing  |  Received message - bin (id: {correlationId}): {message}
+Microsoft-Windows-WebServices  |  13        |  Microsoft-Windows-WebServices/Tracing  |  Sending message        (id: {correlationId}): {message}
+Microsoft-Windows-WebServices  |  14        |  Microsoft-Windows-WebServices/Tracing  |  Received message       (id: {correlationId}): {message}
+Microsoft-Windows-WebServices  |  15        |  Microsoft-Windows-WebServices/Tracing  |  Sending Message Start  (id: {correlationId})
+Microsoft-Windows-WebServices  |  16        |  Microsoft-Windows-WebServices/Tracing  |  Sending Message Stop   (id: {correlationId})
+Microsoft-Windows-WebServices  |  17        |  Microsoft-Windows-WebServices/Tracing  |  Received Message Start (id: {correlationId})
+Microsoft-Windows-WebServices  |  18        |  Microsoft-Windows-WebServices/Tracing  |  Received Message Stop  (id: {correlationId})
+Microsoft-Windows-WebServices  |  19        |  Microsoft-Windows-WebServices/Tracing  |  Sending following HTTP headers: {length}
+Microsoft-Windows-WebServices  |  20        |  Microsoft-Windows-WebServices/Tracing  |  Receiving following HTTP headers: {length}
+Microsoft-Windows-WebServices  |  21        |  Microsoft-Windows-WebServices/Tracing  |  Trace: {traceString}

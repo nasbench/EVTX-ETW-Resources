@@ -1,0 +1,75 @@
+Provider                               |  Event ID  |  Channel                                            |  Message
+---------------------------------------|------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WindowsUpdateClient  |  16        |  System                                             |
+Microsoft-Windows-WindowsUpdateClient  |  17        |  System                                             |  Installation Ready: The following updates are downloaded and ready for installation. To install the updates, an administrator should log on to this computer and Windows will prompt with further instructions: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  18        |  System                                             |  Installation Ready: The following updates are downloaded and ready for installation. This computer is currently scheduled to install these updates on {schedinstalldate} at {schedinstalltime}: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  19        |  System                                             |  Installation Successful: Windows successfully installed the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  19        |  System                                             |  Installation Successful: Windows successfully installed the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  20        |  System                                             |  Installation Failure: Windows failed to install the following update with error {errorCode}: {updateTitle}.
+Microsoft-Windows-WindowsUpdateClient  |  20        |  System                                             |  Installation Failure: Windows failed to install the following update with error {errorCode}: {updateTitle}.
+Microsoft-Windows-WindowsUpdateClient  |  21        |  System                                             |  Restart Required: To complete the installation of the following updates, the computer must be restarted. Until this computer has been restarted, Windows cannot search for or download new updates: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  22        |  System                                             |  Restart Required: To complete the installation of the following updates, the computer will be restarted within {restarttime} minutes: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  23        |  System                                             |  Uninstallation Successful: Windows successfully uninstalled the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  23        |  System                                             |  Uninstallation Successful: Windows successfully uninstalled the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  24        |  System                                             |  Uninstallation Failure: Windows failed to uninstall the following update with error {errorCode}: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  24        |  System                                             |  Uninstallation Failure: Windows failed to uninstall the following update with error {errorCode}: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  25        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update failed to check for updates with error {errorCode}.
+Microsoft-Windows-WindowsUpdateClient  |  25        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update failed to check for updates with error {errorCode}.
+Microsoft-Windows-WindowsUpdateClient  |  26        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update successfully found {updateCount} updates.
+Microsoft-Windows-WindowsUpdateClient  |  26        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update successfully found {updateCount} updates.
+Microsoft-Windows-WindowsUpdateClient  |  27        |  System                                             |
+Microsoft-Windows-WindowsUpdateClient  |  28        |  System                                             |
+Microsoft-Windows-WindowsUpdateClient  |  29        |  Microsoft-Windows-WindowsUpdateClient/Operational  |
+Microsoft-Windows-WindowsUpdateClient  |  30        |  Microsoft-Windows-WindowsUpdateClient/Operational  |
+Microsoft-Windows-WindowsUpdateClient  |  31        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update failed to download an update.
+Microsoft-Windows-WindowsUpdateClient  |  31        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update failed to download an update.
+Microsoft-Windows-WindowsUpdateClient  |  32        |  System                                             |  Windows Update cannot connect to the server. Please check the connection to server {serverName}.
+Microsoft-Windows-WindowsUpdateClient  |  33        |  System                                             |  Windows Update was unable to connect to proxy server {serverName} because valid credentials (user name and password) were required, but were either not available or were incorrect. Please check your proxy credentials, and then try searching again for updates.
+Microsoft-Windows-WindowsUpdateClient  |  34        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  The Windows Update Client Core component failed to install a self-update with error {errorCode}.
+Microsoft-Windows-WindowsUpdateClient  |  35        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  The Windows Update Client Auxillary component failed to install a self-update with error {errorCode}.
+Microsoft-Windows-WindowsUpdateClient  |  36        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  The Windows Update Client Core component was successfully updated from version {version1} to version {version2}.
+Microsoft-Windows-WindowsUpdateClient  |  37        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  The Windows Update Client Auxillary was successfully updated from version {version1} to version {version2}.
+Microsoft-Windows-WindowsUpdateClient  |  38        |  Microsoft-Windows-WindowsUpdateClient/Operational  |
+Microsoft-Windows-WindowsUpdateClient  |  39        |  Microsoft-Windows-WindowsUpdateClient/Operational  |
+Microsoft-Windows-WindowsUpdateClient  |  40        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  An update was detected.
+Microsoft-Windows-WindowsUpdateClient  |  40        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  An update was detected.
+Microsoft-Windows-WindowsUpdateClient  |  41        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  An update was downloaded.
+Microsoft-Windows-WindowsUpdateClient  |  41        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  An update was downloaded.
+Microsoft-Windows-WindowsUpdateClient  |  42        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  There has been a change in the health of Windows Update.
+Microsoft-Windows-WindowsUpdateClient  |  43        |  System                                             |  Installation Started: Windows has started installing the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  43        |  System                                             |  Installation Started: Windows has started installing the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  44        |  System                                             |  Windows Update started downloading an update.
+Microsoft-Windows-WindowsUpdateClient  |  44        |  System                                             |  Windows Update started downloading an update.
+Microsoft-Windows-WindowsUpdateClient  |  101       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  102       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  103       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  104       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  105       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  106       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  107       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  108       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  109       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  110       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  111       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  112       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  113       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  114       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  115       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  116       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  118       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  119       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  120       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  121       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  122       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  123       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  124       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  125       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  126       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  127       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  128       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  129       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  130       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  131       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  209       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  210       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Microsoft-Windows-WindowsUpdateClient  |  211       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |

@@ -1,0 +1,21 @@
+Provider                           |  Event ID  |  Channel                                         |  Message
+-----------------------------------|------------|--------------------------------------------------|------------------------------------------------------------------------------------
+Microsoft-Pef-WFP-MessageProvider  |  2000      |   Microsoft-Pef-WFP-MessageProvider/Operational  |  The generic ETW message fragment that ORT can reassemble.
+Microsoft-Pef-WFP-MessageProvider  |  10001     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  Driver Load
+Microsoft-Pef-WFP-MessageProvider  |  10002     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  Driver Unload
+Microsoft-Pef-WFP-MessageProvider  |  10003     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  Callout Register
+Microsoft-Pef-WFP-MessageProvider  |  10004     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  Callout Unregister
+Microsoft-Pef-WFP-MessageProvider  |  10005     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  Callout Notify Filter Add
+Microsoft-Pef-WFP-MessageProvider  |  10006     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  Callout Notify Filter Delete
+Microsoft-Pef-WFP-MessageProvider  |  20001     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  An error was encountered while loading the driver.
+Microsoft-Pef-WFP-MessageProvider  |  20002     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  An error was encountered while unloading the driver.
+Microsoft-Pef-WFP-MessageProvider  |  20003     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  An error was encountered while registering a callout.
+Microsoft-Pef-WFP-MessageProvider  |  20004     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  An error was encountered while unregistering a callout.
+Microsoft-Pef-WFP-MessageProvider  |  20005     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  An error was encountered in a classify function.
+Microsoft-Pef-WFP-MessageProvider  |  60011     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  The Transport Layer Message for IPv4. The Transport header is in the MessageFrame.
+Microsoft-Pef-WFP-MessageProvider  |  60012     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  The Transport Layer Message for IPv4. The Transport header is in the MessageFrame.
+Microsoft-Pef-WFP-MessageProvider  |  60021     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  The Transport Layer Message for IPv6. The Transport header is in the MessageFrame.
+Microsoft-Pef-WFP-MessageProvider  |  60022     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  The Transport Layer Message for IPv6. The Transport header is in the MessageFrame.
+Microsoft-Pef-WFP-MessageProvider  |  60031     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  The ALE Layer Message for IPv4.
+Microsoft-Pef-WFP-MessageProvider  |  60041     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  The Transport Layer Message for IPv6.
+Microsoft-Pef-WFP-MessageProvider  |  60050     |   Microsoft-Pef-WFP-MessageProvider/Operational  |  A packet has been discarded.

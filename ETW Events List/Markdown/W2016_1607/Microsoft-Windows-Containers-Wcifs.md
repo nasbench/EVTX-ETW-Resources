@@ -1,0 +1,6 @@
+Provider                            |  Event ID  |  Channel                                         |  Message
+------------------------------------|------------|--------------------------------------------------|---------------------------------------------------------------------------------------
+Microsoft-Windows-Containers-Wcifs  |  1         |  Microsoft-Windows-Containers-Wcifs/Operational  |  WCIFS filter registratiion failed with error message: {NTStatus}
+Microsoft-Windows-Containers-Wcifs  |  2         |  Microsoft-Windows-Containers-Wcifs/Operational  |
+Microsoft-Windows-Containers-Wcifs  |  3         |  Microsoft-Windows-Containers-Wcifs/Operational  |  WCIFS filter failed to attach to volume '{VolumeName}' with error message: {NTStatus}
+Microsoft-Windows-Containers-Wcifs  |  4         |  Microsoft-Windows-Containers-Wcifs/Operational  |

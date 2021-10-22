@@ -1,0 +1,493 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DataCollectionService</Name>
+        <Metadata>
+            <Guid>{3B416199-2C3B-4C28-98B8-F7165F5936F0}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dcpsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dcpsvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=dcpsvc.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>CrowdsourcingService_PrepareUpload</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CrowdsourcingService_UploadFiles</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CrowdsourcingService_ReadDataFile</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CrowdsourcingService_PostDataFile</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CrowdsourcingService_RecieveData</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Error</Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Verbose</Message>
+                    <Name>Verbose</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], Error=[%2]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwError" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], hr=[%2]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], Error=[%2]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwError" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], hr=[%2]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], n=[%2]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nInt" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], str=[%2]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="strString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], str=[%2], n=[%3]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="strString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="nInt" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], str1=[%2], str2=[%3]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="strString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="strString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], Error=[%2], str=[%3]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nInt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="strString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+DCP: Tag:[%1], Error=[%2], n=[%3]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nInt1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nInt2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+Enter uploader thread]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+Exit uploader thread]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+Enter Drainer thread]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+Exit Drainer thread]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+Upload session result. Error=%1, FailureReason=%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwError" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bFailureReason" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Verbose</Keyword>
+                <Message><![CDATA[
+Uploader WinINet connect. Error=%1, ServerName=%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwError" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="szServerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+Invalid registry setting for %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szSettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>CrowdsourcingService_PrepareUpload</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService PrepareUpload Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>CrowdsourcingService_PrepareUpload</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService PrepareUpload Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>CrowdsourcingService_UploadFiles</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService UploadFiles Start. TriggerSource=%1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="bTriggerSource" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>CrowdsourcingService_UploadFiles</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService UploadFiles Stop. NumFilesUploaded=%1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwNumFilesUploaded" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>CrowdsourcingService_ReadDataFile</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService ReadDataFileStart Start. HttpObjectName=%1, FileFullpath=%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szHttpObjectNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="szFullpath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>CrowdsourcingService_ReadDataFile</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService ReadDataFileStart Stop. Error=%1, FileSize=%2, BytesRead=%3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwError" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="cbFileSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="cbRead" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>134</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>CrowdsourcingService_PostDataFile</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService PostDataFileStart Start. HttpObjectName=%1, HeaderLength=%2, BodyLength=%3, Headers=%4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szHttpObjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="cchHeader" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="cchBody" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="szHeaders" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>135</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>CrowdsourcingService_PostDataFile</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService PostDataFileStop  Stop. Error=%1, HttpStatusCode=%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwError" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwHttpStatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>136</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>CrowdsourcingService_RecieveData</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+CrowdsourcingService Original SessionId=%1, PayloadSize=%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="guidSessionId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="dwPayloadSize" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
