@@ -1,63 +1,63 @@
-Provider                             |  Event ID  |  Channel                                                      |  Message
--------------------------------------|------------|---------------------------------------------------------------|-------------------------------------------------------------------------------
-Microsoft-Windows-User-ControlPanel  |  6001      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6002      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6003      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6004      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6005      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6006      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  7001      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7002      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7003      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7004      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7005      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7006      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7007      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7008      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7009      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7010      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7011      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7012      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7013      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7014      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7015      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7016      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7017      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7018      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7019      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7020      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7021      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7022      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7023      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7024      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7025      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7026      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7027      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  7028      |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  8001      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8002      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8003      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8004      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8005      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8006      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8007      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8008      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8009      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8010      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8011      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8012      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8013      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8014      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8015      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8016      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8017      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8018      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8019      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8020      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8021      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8022      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  8023      |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |
-Microsoft-Windows-User-ControlPanel  |  9001      |  Microsoft-Windows-User Control Panel/Operational             |  Failed execution of [{Method}]. (Result {HRESULT})
-Microsoft-Windows-User-ControlPanel  |  9002      |  Microsoft-Windows-User Control Panel/Operational             |  Failed execution of [{Method}] for instance = {Iteration}. (Result {HRESULT})
-Microsoft-Windows-User-ControlPanel  |  25000     |  Microsoft-Windows-User Control Panel/Diagnostic              |
-Microsoft-Windows-User-ControlPanel  |  25001     |  Microsoft-Windows-User Control Panel/Diagnostic              |
+Provider                             |  Level        |  Event ID  |  Version  |  Channel                                                      |  Task                                                          |  Opcode  |  Keyword  |  Message
+-------------------------------------|---------------|------------|-----------|---------------------------------------------------------------|----------------------------------------------------------------|----------|-----------|-------------------------------------------------------------------------------
+Microsoft-Windows-User-ControlPanel  |  Information  |  6001      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Initialization_Core                                           |  Start   |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6002      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Initialization_Core                                           |  Stop    |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6003      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Initialization_Page                                           |  Start   |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6004      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Initialization_Page                                           |  Stop    |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6005      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Settings_UserCreate                                           |  Start   |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6006      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Settings_UserCreate                                           |  Stop    |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7001      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_SettingsPageLoad                                  |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7002      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_UserListRefresh                                   |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7003      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_ConfirmPasswordPage                      |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7004      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_ConfirmPasswordPage                      |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7005      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_EmailPage                                |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7006      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_EmailPage                                |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7007      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_FinishPage                               |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7008      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_FinishPage                               |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7009      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_LocalUserPage                            |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7010      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_LocalUserPage                            |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7011      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_MoreInfoPage                             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7012      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_MoreInfoPage                             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7013      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_RoamingPage                              |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7014      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_RoamingPage                              |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7015      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_WebErrorPage                             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7016      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_WebErrorPage                             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7017      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_WebWizardPage                            |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7018      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_WebWizardPage                            |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7019      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_BitLockerInfoPage                        |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7020      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_BitLockerInfoPage                        |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7021      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |                                                                |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7022      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |                                                                |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7023      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |                                                                |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7024      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |                                                                |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7025      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |                                                                |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7026      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |                                                                |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7027      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_AddChildPage                             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  7028      |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  UserAccount_Taskflow_AddChildPage                             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8001      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserWizard_DomainUserAdded                     |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8002      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserWizard_ExistingOnlineUserAdded             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8003      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserWizard_InstallProviderLinkClickedonLocal   |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8004      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserWizard_InstallProviderLinkClickedonOnline  |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8005      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserWizard_LocalUserAdded                      |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8006      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserWizard_NewOnlineUserAdded                  |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8007      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserWizard_OnlineWizardError                   |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8008      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserWizardOpened                               |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8009      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_ConnectDomainAccount_Completed                    |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8010      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_ConnectDomainAccount_OnlineWizardError            |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8011      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_ConnectDomainAccountOpened                        |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8012      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_ConnectLocalAccount_Completed                     |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8013      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_ConnectLocalAccount_OnlineWizardError             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8014      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_ConnectLocalAccountOpened                         |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8015      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_DisconnectDomainAccount_Completed                 |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8016      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_DisconnectDomainAccountOpened                     |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8017      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_DisconnectOnlineAccount_Completed                 |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8018      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_DisconnectOnlineAccountOpened                     |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8019      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserDialogOpened                               |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8020      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserDialog_NewOnlineUserAdded                  |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8021      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserDialog_ExistingOnlineUserAdded             |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8022      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserDialog_LocalUserAdded                      |          |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  8023      |  0        |  Microsoft-Windows-User Control Panel Usage/Diagnostic        |  UserAccount_AddUserDialog_OnlineWizardError                   |          |           |
+Microsoft-Windows-User-ControlPanel  |  Error        |  9001      |  0        |  Microsoft-Windows-User Control Panel/Operational             |                                                                |          |           |  Failed execution of [{Method}]. (Result {HRESULT})
+Microsoft-Windows-User-ControlPanel  |  Error        |  9002      |  0        |  Microsoft-Windows-User Control Panel/Operational             |                                                                |          |           |  Failed execution of [{Method}] for instance = {Iteration}. (Result {HRESULT})
+Microsoft-Windows-User-ControlPanel  |  Information  |  25000     |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  PerfTrack_UAM_TaskFlowPageChange                              |  Start   |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  25001     |  0        |  Microsoft-Windows-User Control Panel/Diagnostic              |  PerfTrack_UAM_TaskFlowPageChange                              |  Stop    |           |

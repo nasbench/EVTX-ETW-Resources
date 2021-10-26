@@ -1,13 +1,13 @@
-Provider                                    |  Event ID  |  Channel      |  Message
---------------------------------------------|------------|---------------|------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  300       |  Operational  |  Microsoft Defender Application Guard CSP: Failed to set one or more settings : {ErrorCode}
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  301       |  Operational  |  Microsoft Defender Application Guard CSP: delete value failed:{ErrorCode}
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  302       |  Operational  |  Microsoft Defender Application Guard CSP: Feature Installation action failed because of missing dependency
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  350       |  Operational  |  Failed to start container service when Hvsi is turned on: {ErrorCode}
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  351       |  Operational  |  Failed to merge policy to CSP current hive: {ErrorCode}
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  352       |  Operational  |  At least one mandatory network isolation policy must be set, please configure: {MissingPolicy}
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  353       |  Operational  |  Failed to send alert message back to MDM server: {ErrorCode}
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  354       |  Operational  |
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  355       |  Operational  |  The system does not meet the minimal requirement: {MissingPolicy}
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  356       |  Operational  |   {Message} {SecondMessage}
-Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  357       |  Operational  |
+Provider                                    |  Level        |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------------------|---------------|------------|-----------|---------------|--------|----------|-----------|------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Error        |  300       |  0        |  Operational  |        |          |           |  Microsoft Defender Application Guard CSP: Failed to set one or more settings : {ErrorCode}
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Error        |  301       |  0        |  Operational  |        |          |           |  Microsoft Defender Application Guard CSP: delete value failed:{ErrorCode}
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Information  |  302       |  0        |  Operational  |        |          |           |  Microsoft Defender Application Guard CSP: Feature Installation action failed because of missing dependency
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Error        |  350       |  0        |  Operational  |        |          |           |  Failed to start container service when Hvsi is turned on: {ErrorCode}
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Error        |  351       |  0        |  Operational  |        |          |           |  Failed to merge policy to CSP current hive: {ErrorCode}
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Information  |  352       |  0        |  Operational  |        |          |           |  At least one mandatory network isolation policy must be set, please configure: {MissingPolicy}
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Error        |  353       |  0        |  Operational  |        |          |           |  Failed to send alert message back to MDM server: {ErrorCode}
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Error        |  354       |  0        |  Operational  |        |          |           |
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Error        |  355       |  0        |  Operational  |        |          |           |  The system does not meet the minimal requirement: {MissingPolicy}
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Information  |  356       |  0        |  Operational  |        |          |           |   {Message} {SecondMessage}
+Microsoft-Windows-WDAG-PolicyEvaluator-CSP  |  Error        |  357       |  0        |  Operational  |        |          |           |

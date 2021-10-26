@@ -1,333 +1,333 @@
-Provider                              |  Event ID  |  Channel  |  Message
---------------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-WiFiNetworkManager  |  0         |           |
-Microsoft-Windows-WiFiNetworkManager  |  1         |           |
-Microsoft-Windows-WiFiNetworkManager  |  2         |           |
-Microsoft-Windows-WiFiNetworkManager  |  100       |           |  NotifMgr - Failed to create event for client notification registration, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  102       |           |
-Microsoft-Windows-WiFiNetworkManager  |  103       |           |
-Microsoft-Windows-WiFiNetworkManager  |  104       |           |
-Microsoft-Windows-WiFiNetworkManager  |  105       |           |
-Microsoft-Windows-WiFiNetworkManager  |  106       |           |  NotifMgr - Publishing new WNF connection state, type = {type}, state = {state}, ntStatus = {error}.
-Microsoft-Windows-WiFiNetworkManager  |  107       |           |  NotifMgr - Received policy state update notifiction. New state = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  108       |           |
-Microsoft-Windows-WiFiNetworkManager  |  109       |           |
-Microsoft-Windows-WiFiNetworkManager  |  200       |           |  PowerMgr - Failed to query power state for indicating state change, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  201       |           |  PowerMgr - Received radio state change notification from WlanSvc, PhyIndex = {dwValue1}, state = {dwValue2}.
-Microsoft-Windows-WiFiNetworkManager  |  202       |           |  PowerMgr - Failed to register for Wlan Notifications, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  203       |           |  PowerMgr - Failed to query initial prompting state from registry, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  204       |           |  PowerMgr - Failed to save prompting state to registry, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  205       |           |
-Microsoft-Windows-WiFiNetworkManager  |  206       |           |  PowerMgr - Uninitialized Wlan, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  207       |           |
-Microsoft-Windows-WiFiNetworkManager  |  208       |           |
-Microsoft-Windows-WiFiNetworkManager  |  209       |           |
-Microsoft-Windows-WiFiNetworkManager  |  210       |           |
-Microsoft-Windows-WiFiNetworkManager  |  211       |           |  PowerMgr - Sending power state changed notification to clients, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  212       |           |  PowerMgr - Setting current cached Phy count to {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  213       |           |
-Microsoft-Windows-WiFiNetworkManager  |  214       |           |  PowerMgr - Failed to get current radio state, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  215       |           |  PowerMgr - Successfully got current radio state = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  216       |           |  PowerMgr - Setting new power state = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  217       |           |  PowerMgr - Failed to set current power state, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  218       |           |
-Microsoft-Windows-WiFiNetworkManager  |  219       |           |  PowerMgr - Got an invalid call to set power, newState = {dwValue1}, curState = {dwValue2}, isChanging = {dwValue3}.
-Microsoft-Windows-WiFiNetworkManager  |  220       |           |
-Microsoft-Windows-WiFiNetworkManager  |  221       |           |  PowerMgr - Setting new power state (async) = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  222       |           |  PowerMgr - Failed to set current power state (async), {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  223       |           |
-Microsoft-Windows-WiFiNetworkManager  |  224       |           |  PowerMgr - Publishing new power status, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  225       |           |
-Microsoft-Windows-WiFiNetworkManager  |  226       |           |
-Microsoft-Windows-WiFiNetworkManager  |  227       |           |
-Microsoft-Windows-WiFiNetworkManager  |  228       |           |
-Microsoft-Windows-WiFiNetworkManager  |  229       |           |
-Microsoft-Windows-WiFiNetworkManager  |  230       |           |
-Microsoft-Windows-WiFiNetworkManager  |  231       |           |
-Microsoft-Windows-WiFiNetworkManager  |  232       |           |
-Microsoft-Windows-WiFiNetworkManager  |  300       |           |  ScanMgr - Received a scan failed notification from WlanSvc. WLAN_REASON_CODE: {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  301       |           |  ScanMgr - Received a scan complete notification from WlanSvc ({dwValue} valid networks).
-Microsoft-Windows-WiFiNetworkManager  |  302       |           |
-Microsoft-Windows-WiFiNetworkManager  |  303       |           |
-Microsoft-Windows-WiFiNetworkManager  |  304       |           |
-Microsoft-Windows-WiFiNetworkManager  |  305       |           |  ScanMgr - Failed to start scan for hidden network, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  306       |           |  ScanMgr - Failed to start scan for active scan, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  307       |           |  ScanMgr - Failed to get wlan interface at start of service, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  308       |           |
-Microsoft-Windows-WiFiNetworkManager  |  309       |           |
-Microsoft-Windows-WiFiNetworkManager  |  310       |           |
-Microsoft-Windows-WiFiNetworkManager  |  311       |           |  ScanMgr - Failed to get the STA mode interface GUID from Wlan, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  312       |           |
-Microsoft-Windows-WiFiNetworkManager  |  313       |           |
-Microsoft-Windows-WiFiNetworkManager  |  314       |           |  ScanMgr - Client initiating a scan for a hidden network: {ssid}.
-Microsoft-Windows-WiFiNetworkManager  |  315       |           |
-Microsoft-Windows-WiFiNetworkManager  |  316       |           |  ScanMgr - Failed to get the available network list from Wlan, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  317       |           |  ScanMgr - Failed to convert SSID to string while building available network list: {ssidLen}.
-Microsoft-Windows-WiFiNetworkManager  |  318       |           |
-Microsoft-Windows-WiFiNetworkManager  |  319       |           |  ScanMgr - Subscribing for WNF notifications for Media UI Requests, ntstatus={dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  320       |           |  ScanMgr - Unsubscribing for WNF notifications for Media UI Requests, ntstatus={dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  321       |           |
-Microsoft-Windows-WiFiNetworkManager  |  322       |           |  ScanMgr - Failed to start scan, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  323       |           |  ScanMgr - Found cache for current connection. Auth = {algo}, Cipher = {cipher}, Secure = {secure}, Signal Strength = {signal}.
-Microsoft-Windows-WiFiNetworkManager  |  324       |           |  ScanMgr - Setting Current Connection, {szConnName}, as Action Required because of UI Request Timeout.
-Microsoft-Windows-WiFiNetworkManager  |  325       |           |  ScanMgr - Setting Current Connection, {szConnName}, as Action Required because of Auth Fail for Auto Connect.
-Microsoft-Windows-WiFiNetworkManager  |  326       |           |  ScanMgr - Returning Network Item in Scan as Action Required, {ssid}.
-Microsoft-Windows-WiFiNetworkManager  |  327       |           |  ScanMgr - Returning Connection Name {szConnName} as Action Required on request.
-Microsoft-Windows-WiFiNetworkManager  |  328       |           |
-Microsoft-Windows-WiFiNetworkManager  |  329       |           |
-Microsoft-Windows-WiFiNetworkManager  |  330       |           |
-Microsoft-Windows-WiFiNetworkManager  |  331       |           |  ScanMgr - Ignoring duplicate action required failure for {szConnName}.
-Microsoft-Windows-WiFiNetworkManager  |  332       |           |
-Microsoft-Windows-WiFiNetworkManager  |  333       |           |  ScanMgr - Found {dwValue} valid SSIDs to update cache with.
-Microsoft-Windows-WiFiNetworkManager  |  334       |           |
-Microsoft-Windows-WiFiNetworkManager  |  335       |           |
-Microsoft-Windows-WiFiNetworkManager  |  336       |           |
-Microsoft-Windows-WiFiNetworkManager  |  400       |           |
-Microsoft-Windows-WiFiNetworkManager  |  401       |           |  WiFiUserHost - Finished initializing host modules, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  402       |           |
-Microsoft-Windows-WiFiNetworkManager  |  403       |           |  WiFiUserHost - Finished uninitializing host modules, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  404       |           |  WiFiUserHost - Failed to enable provider for WPP Logging for provider {dwValue1} with hr = {dwValue2}.
-Microsoft-Windows-WiFiNetworkManager  |  405       |           |  WiFiUserHost - Failed to stop WPP session with dwError = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  406       |           |  WiFiUserHost - Failed to query WPP session state with dwError = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  407       |           |  WiFiUserHost - Failed to load DataCollection.dll, GetLastError() = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  408       |           |  WiFiUserHost - Failed to GetProcAddress '{szString}', GetLastError() = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  409       |           |
-Microsoft-Windows-WiFiNetworkManager  |  410       |           |
-Microsoft-Windows-WiFiNetworkManager  |  600       |           |  WiFiUserRpc - Failed call RpcServerUseProtseqEp, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  601       |           |  WiFiUserRpc - Failed call RpcServerInqBindings, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  602       |           |  WiFiUserRpc - Failed call RpcEpRegister, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  603       |           |  WiFiUserRpc - Registration complete, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  604       |           |  WiFiUserRpc - Failed call RpcEpUnregister, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  605       |           |  WiFiUserRpc - Unregistration complete, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  606       |           |  WiFiUserRpc - Call to QueryTransientObjectSecurityDescriptor for TransportSecurityDescriptor failed, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  607       |           |  WiFiUserRpc - Call to QueryTransientObjectSecurityDescriptor for InterfaceSecurityDescriptor failed, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  608       |           |  WiFiUserRpc - Call to RpcImpersonateClient failed, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  609       |           |  WiFiUserRpc - Call to OpenThreadToken failed, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  610       |           |  WiFiUserRpc - Call to CapabilityCheck failed, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1000      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1001      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1002      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1003      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1004      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1005      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1006      |           |  UiRequestMgr - Received unsupported Wlan Request Type, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1007      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1008      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1009      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1010      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1011      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1012      |           |  UiRequestMgr - Received unsupported MSM Sec Request Type, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1013      |           |  UiRequestMgr - Failed call to WlanIsUIRequestPending, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1014      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1015      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1016      |           |  UiRequestMgr - Sending UI Request to clients, handle[{dwValue}].
-Microsoft-Windows-WiFiNetworkManager  |  1017      |           |  UiRequestMgr - Request timed out, handle[{dwValue}].
-Microsoft-Windows-WiFiNetworkManager  |  1018      |           |  UiRequestMgr - Received invalid response, handle[{dwValue}].
-Microsoft-Windows-WiFiNetworkManager  |  1019      |           |  UiRequestMgr - Received valid response, handle[{dwValue}].
-Microsoft-Windows-WiFiNetworkManager  |  1020      |           |  UiRequestMgr - Sending PSK UI response to Wlan, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1021      |           |  UiRequestMgr - Failed to convert WEP passphrase, {dwValue1}, reason {dwValue1}.
-Microsoft-Windows-WiFiNetworkManager  |  1022      |           |  UiRequestMgr - Failed to convert PSK passphrase, {dwValue1}, reason {dwValue1}.
-Microsoft-Windows-WiFiNetworkManager  |  1023      |           |  UiRequestMgr - Failed to convert Key passphrase, {dwValue1}, reason {dwValue1}.
-Microsoft-Windows-WiFiNetworkManager  |  1024      |           |  UiRequestMgr - Encountered Eap Error: Port({port}): Eap error info contains winError={winerror}, reasonCode={reasoncode}, EapMethod(Type={eaptype}), rootCauseString={string}.
-Microsoft-Windows-WiFiNetworkManager  |  1025      |           |  UiRequestMgr - Received unsupported OneX Request Type, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1026      |           |  UiRequestMgr - Received unsupported EAP Request Type, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1027      |           |  UiRequestMgr - Received unsupported EAP Field Type, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1028      |           |  UiRequestMgr - Call to query EAP blob failed, {dwValue}, ignoring...
-Microsoft-Windows-WiFiNetworkManager  |  1029      |           |  UiRequestMgr - Call to Create OneX response failed, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1030      |           |  UiRequestMgr - Sending OneX UI response to Wlan, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1031      |           |  UiRequestMgr - Failed to convert SSID '{ssid}' while caching username, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1032      |           |  UiRequestMgr - Failed to cache username in CM Config, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1033      |           |  UiRequestMgr - Received credentials for an invalid handle, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1034      |           |  UiRequestMgr - Received credentials for the correct handle ({dwValue1}), {dwValue2}.
-Microsoft-Windows-WiFiNetworkManager  |  1035      |           |  UiRequestMgr - Cleaning request for {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1036      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1037      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1038      |           |  UiRequestMgr - Received direct request for UI, flags = {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1039      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1040      |           |  UiRequestMgr - Received unknown IHV UI request type, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1041      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1042      |           |  UiRequestMgr - Sending PSK IHV UI response to Wlan, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1043      |           |  UiRequestMgr - Sending Cert IHV UI response to Wlan, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1044      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1045      |           |  UiRequestMgr - Received cancel response, handle[{dwValue}].
-Microsoft-Windows-WiFiNetworkManager  |  1046      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1047      |           |  UiRequestMgr - Received OneX UI request type {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1400      |           |  PowerMgr - Turn off failed (async = {dwValue1}) failed, error {dwValue2}.
-Microsoft-Windows-WiFiNetworkManager  |  1401      |           |  PowerMgr - Turn on failed failed, error {Error}.
-Microsoft-Windows-WiFiNetworkManager  |  1402      |           |  PowerMgr - Activating trigger(s) {trigger} - Prev State: Active {active}, Delayed {delayed}, Time Left {timer}.
-Microsoft-Windows-WiFiNetworkManager  |  1403      |           |  PowerMgr - Releasing trigger(s) {trigger} - Prev State: Active {active}, Delayed {delayed}, Time Left {timer}.
-Microsoft-Windows-WiFiNetworkManager  |  1404      |           |  PowerMgr - Releasing delayed trigger(s) - Prev State: Active {active}, Delayed {delayed}.
-Microsoft-Windows-WiFiNetworkManager  |  1405      |           |  PowerMgr - New AOAC state, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1406      |           |  PowerMgr - New Power State: Active {active}, Delayed {delayed}, Time Left {timer}.
-Microsoft-Windows-WiFiNetworkManager  |  1407      |           |  PowerMgr - New Battery Saver state, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1408      |           |  PowerMgr - User power preference at boot, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  1500      |           |  RadioMgr - Create event failed, error {Error}.
-Microsoft-Windows-WiFiNetworkManager  |  1501      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1502      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1503      |           |  RadioMgr - Failed to create set power thread, error {Error}.
-Microsoft-Windows-WiFiNetworkManager  |  1504      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1505      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1506      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1507      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1508      |           |  RadioMgr - Bringing power back on, {Error}.
-Microsoft-Windows-WiFiNetworkManager  |  1509      |           |  RadioMgr - Setting bring power back on option: {dwValue1}, timer: {dwValue2}.
-Microsoft-Windows-WiFiNetworkManager  |  1510      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1511      |           |  RadioMgr - Bring power back on option at boot: {dwValue1}, timer - {dwValue2}.
-Microsoft-Windows-WiFiNetworkManager  |  1512      |           |  RadioMgr - Called Cortana to Create Rule: {Error}.
-Microsoft-Windows-WiFiNetworkManager  |  1513      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1600      |           |  AutoConnect - {szString}
-Microsoft-Windows-WiFiNetworkManager  |  1601      |           |  AutoConnect - {szString}
-Microsoft-Windows-WiFiNetworkManager  |  1602      |           |  AutoConnect - QueryAutoConnectParameters: SUCCESSfully read {szString1} - Default={dwValue1}, Read={dwValue2}
-Microsoft-Windows-WiFiNetworkManager  |  1603      |           |  AutoConnect - CheckAndUpdateAutoConnectState: State updated: QueryScm=[{dwValue1}-->{dwValue2}], CredSharing=[{dwValue3}-->{dwValue4}], CP=[{dwValue5}-->{dwValue6}], ACEnabled=[{dwValue7}-->{dwValue8}], ServiceInit=[{dwValue9}], StateFlags=[{dwValue1}0]
-Microsoft-Windows-WiFiNetworkManager  |  1604      |           |  AutoConnect - New{wsSource}NotificationInternal [{wsConnName}]: +++ [{szNotifType}:{szNotifState}] [{dwType}:{dwState}] +++
-Microsoft-Windows-WiFiNetworkManager  |  1605      |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Result=NOT connecting .. UserConfiguredNetworks=[{dwValue1}+{dwValue2}], AutoConnectable:Stationary=[{dwValue3}:{dwValue4}], State=[{dwValue5}], Network=[{Ssid}]
-Microsoft-Windows-WiFiNetworkManager  |  1606      |           |  AutoConnect - CheckAndAddAuthCipherPair: Secure Ssid entry for [{szString}:{dwValue1}:{dwValue2}] already exists
-Microsoft-Windows-WiFiNetworkManager  |  1607      |           |  AutoConnect - CheckAndAddAuthCipherPair: NOT adding [{szString}:{dwValue1}:{dwValue2}] - Overflow + AuthCipher too weak
-Microsoft-Windows-WiFiNetworkManager  |  1608      |           |  AutoConnect -     [{dwIndex}] TM SSID=[{szNetwork}:{dwAuth}:{dwCipher}], LinkQ=[{dwQuality}], Flags:Score=[{dwFlags}:{Score}], CP=[{dwCPSize}-{dwCPOffset}], Cr=[{dwIndex}0-{dwIndex}1]
-Microsoft-Windows-WiFiNetworkManager  |  1609      |           |  AutoConnect - TileMgrQueryNetworks: Type:Sources=[{QueryType}:{QuerySources}]: returned [{dwNetworkOut}/{dwNetworksIn}] NetInfos, Flags=[{dwFlags}], ACEnabled:ConfScanTO:MinLinkQ:MinScore=[{dwACEnabled}:{ConfScanTO}:{MinLinkQ}:{MinScore}], ScoreWt:SignalWt:OverlapP:Retries=[{QueryType}0:{QueryType}1:{QueryType}2:{QueryType}3]
-Microsoft-Windows-WiFiNetworkManager  |  1610      |           |  AutoConnect - ApplyConfigurationAndSetPolicies: NumNetworks=[{AllNetworks}], AutoConnectableNetworks=[{ConnNetworks}], GlobalFlags=[{dwGblFlags}], Managed:User:WPS=[{dwMngFlags}:{dwUserFlags}:{dwWPSFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1611      |           |  AutoConnect - AutoConnect is DISABLEd, StateFlags=[{dwValue}]
-Microsoft-Windows-WiFiNetworkManager  |  1612      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], NO CM name, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1613      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], DO-NOT-CONNECT, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1614      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], UNKNOWN network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1615      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], COSTED network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1616      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], NOT CredShared, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1617      |           |  AutoConnect - RefreshAllProfiles: Network [{szString}] is now out of backoff state
-Microsoft-Windows-WiFiNetworkManager  |  1618      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] ++ [{szNetwork}:{dwAuth}:{dwCipher}] [{szType}:{szState}]: LinkQuality=[{LinkQ}], Score=[{Score}], CfgWt:CalcWt=[{dwIndex1}0:{dwIndex1}1], ConfigFlags:ProfFlags=[{dwIndex1}2:{dwIndex1}3], CPLength=[{dwIndex1}4], CredsLength=[{dwIndex1}5]
-Microsoft-Windows-WiFiNetworkManager  |  1619      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1620      |           |  AutoConnect -     [{dwIndex}] Updating Profile [{szNetwork}:{wsConnection}], Weight = [{dwCfgWt} to {dwCalcWt}], ProfileFlags=[{dwProfFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1621      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1622      |           |  AutoConnect -     {szString1}: Deleting Profile [{szString2}:{wszString}]
-Microsoft-Windows-WiFiNetworkManager  |  1623      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1624      |           |  AutoConnect -     [{dwIndex}] Creating CM profile for [{szNetwork}:{wsConnection}], Weight = [{dwCfgWt} to {dwCalcWt}], ProfileFlags=[{dwProfFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1625      |           |  AutoConnect - GetConnectableNetwork: Found! ScanIndex=[{dwIndex}] Network=[{szNetwork}:{wsConnection}], Weight = [{dwCfgWt} to {dwCalcWt}], ProfileFlags=[{dwProfFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1626      |           |  AutoConnect - DeleteAllHotspotNetworks: Deleting {dwValue} Connections
-Microsoft-Windows-WiFiNetworkManager  |  1627      |           |  AutoConnect -     [{dwValue}] Deleting Connection [{szString}]
-Microsoft-Windows-WiFiNetworkManager  |  1628      |           |  AutoConnect - HandleNewConnectionToNetworkInternal: Status=[{wszStatus}], Network=[{Ssid}], IsUserNetwork=[{bUserNetwork}], bACProfileExists=[{bACProfile}], ProfileFlags=[{dwProfFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1629      |           |  AutoConnect - HandleUserConnectionToNetworkInternal: Successfully changed [{szString1}:{szString2}] to User-configured
-Microsoft-Windows-WiFiNetworkManager  |  1630      |           |  AutoConnect - HandleConnectionDisconnected: Network [{szString}] has retries left, Have currently used [{dwValue1} / {dwValue2}] retries
-Microsoft-Windows-WiFiNetworkManager  |  1631      |           |  AutoConnect - HandleConnectionDisconnected: BLOCKed network [{szNetwork}] for [{szState}], Retries=[{dwRetries}], BackoffTimeSecs=[{dwBackoffMin}+{dwBackoffRng}]
-Microsoft-Windows-WiFiNetworkManager  |  1632      |           |  AutoConnect - HandleConnectionStateChange: Unknown network - Did NOT find profile for [{szString}]
-Microsoft-Windows-WiFiNetworkManager  |  1633      |           |  AutoConnect - HandleConnectionStateChange: Dup state notification, State=[{szString1}], Profile=[{szString2}]
-Microsoft-Windows-WiFiNetworkManager  |  1634      |           |  AutoConnect - SetAutoConnectStatusInternal: New State=[{dwValue}]
-Microsoft-Windows-WiFiNetworkManager  |  1635      |           |  AutoConnect - SetDisconnectReasonInternal: Disconnect Reason = [{szString1}], Connection=[{szString2}]
-Microsoft-Windows-WiFiNetworkManager  |  1636      |           |  AutoConnect - UpdateNetworksList: TotalNetworks=[{dwValue1}], New=[{dwValue2}+{dwValue3}+{dwValue4}], Common=[{dwValue5}+{dwValue6}+{dwValue7}+{dwValue8}], Cached=[{dwValue9}], Dropped=[{dwValue1}0] - AutoConnectable=[{dwValue1}1+{dwValue1}2], StationaryNetworks=[{dwValue1}3]
-Microsoft-Windows-WiFiNetworkManager  |  1637      |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Confirmation Timer - TimeLeft = [{dwValue}] msecs
-Microsoft-Windows-WiFiNetworkManager  |  1638      |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Result=Scheduling Confirmation Scan in [{dwValue}] secs
-Microsoft-Windows-WiFiNetworkManager  |  1639      |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Stopping Confirmation timer - TimeLeft=[{dwValue1}], less than [{dwValue2}] msecs
-Microsoft-Windows-WiFiNetworkManager  |  1640      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1641      |           |  AutoConnect - OpenAutoConnectFile: Disposition=[{dwValue}], File=[{szString}]
-Microsoft-Windows-WiFiNetworkManager  |  1642      |           |  AutoConnect - InitializeACBlackList: Read [{dwValue1}] bytes, [{dwValue2}-{dwValue3}] Ssids
-Microsoft-Windows-WiFiNetworkManager  |  1643      |           |  AutoConnect - AddNewEntryToBlackList: Added SSID:BSSID=[{szString}:{BSSID}]- NumBssids=[{dwValue1}] to BlackList, Ssids Used:Alloc=[{dwValue2}-{dwValue3}]
-Microsoft-Windows-WiFiNetworkManager  |  1644      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], USER-Configured network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1645      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] ** [{szNetwork}:{dwAuth}:{dwCipher}], Hotspot OFFLOAD network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1646      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], USER-BLOCKED network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1647      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], In BACKOFF State, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1648      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], Below LINK Quality, LinkQuality=[{LinkQ}], Score=[{Score}], MinLinkQuality=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1649      |           |  AutoConnect -     FindEntryInBlackList: Found SSID:BSSID=[{szString}:{BSSID}], Index=[{dwValue1}/{dwValue2}], bDelete=[{dwValue3}]
-Microsoft-Windows-WiFiNetworkManager  |  1650      |           |  AutoConnect - FindEntryInBlackList: Removing SSID=[{szString}], NumBssidsIn=[{dwValue1}], NumSsidsLeft=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1651      |           |  AutoConnect - AddNewEntryToBlackList: Adding new entry SSID:BSSID=[{szString}:{BSSID}], Ssid:Bssid Index=[{dwValue1}:{dwValue2}], Previous NumBssids=[{dwValue3}]
-Microsoft-Windows-WiFiNetworkManager  |  1652      |           |  AutoConnect - GetNewBlackListIndex -- Created NEW list - Previous SsidsAllocated=[{dwValue1}] New SsidsAllocated=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1653      |           |  AutoConnect - HandleNewConnectionToNetworkInternal: Successfully removed Ssid=[{szString}:{dwValue1}:{dwValue2}] from BlackList
-Microsoft-Windows-WiFiNetworkManager  |  1654      |           |  AutoConnect - SetAutoConnectNetworkStateInternal[ACTIVE]: Successfully removed Ssid=[{szString}:{dwValue1}:{dwValue2}] from BlackList
-Microsoft-Windows-WiFiNetworkManager  |  1655      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], Transient Network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1656      |           |  AutoConnect - GetConnectionInfoInternal: Inconsistent Connection State Internal=[{dwValue1}], Actual=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1657      |           |  AutoConnect - SendConnectionUpdateNotification: Network=[{szString}], Context=[{dwValue1}], QueryTileManagerForNetwork returned=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1658      |           |  AutoConnect - SendConnectionUpdateNotification [{Type} : {Context}]: Network=[{szNetwork}], Score=[{Score}], flightId=[{flightId}], networkId=[{networkId}], DataNeeded=[{DataNeeded}]
-Microsoft-Windows-WiFiNetworkManager  |  1659      |           |  AutoConnect - SetAutoConnectPCDValueInternal: ConnectionContext=[{Context1}], PCD=[{PCD}], current ConnectionContext=[{Context2}]
-Microsoft-Windows-WiFiNetworkManager  |  1660      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], Below MIN Score, LinkQuality=[{LinkQ}], Score=[{Score}], MinScoreNormalized=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1661      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], Hotspot Offload Network from Tile, but not marked locally, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1662      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], AutoConnect DISABLED, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1663      |           |  AutoConnect - AddAutoConnectProfile: SUCCESSfully added CM profile for [{szString}]
-Microsoft-Windows-WiFiNetworkManager  |  1664      |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Result=Ignoring as AutoConnect is Disabled, StateFlags=[{dwValue}]
-Microsoft-Windows-WiFiNetworkManager  |  1666      |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], {szReason}, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
-Microsoft-Windows-WiFiNetworkManager  |  1667      |           |  AutoConnect - FlushNetworkList: Context=[{szString}], SSIDs=[{dwValue1}], BssEntries=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1668      |           |  AutoConnect - FirewallBlockWiFiPrivateNet Set=[{dwValue1}]: Result=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1670      |           |  AutoConnect - [CREDSHARING] MarkProfilesForDeletion: Credentials Cache timed out for [{szString}], Context=[{dwValue1}], CredSharing handle=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1671      |           |  AutoConnect - [CREDSHARING] CheckIsNetworkConnectable: NOT Requesting creds as request is currently outstanding for [{szString}], Context=[{dwValue1}], CredSharing handle=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1672      |           |  AutoConnect - [CREDSHARING] CheckIsNetworkConnectable: Requesting creds for [{szString}], Context=[{dwValue1}], CredSharing handle=[{dwValue2}] ...
-Microsoft-Windows-WiFiNetworkManager  |  1673      |           |  AutoConnect - [CREDSHARING] --> CredentialAvailableCallbackInternal: SUCCESS -- Using credentials for [{szString}], Context=[{dwValue1}], CredSharing handle=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1674      |           |  AutoConnect - [CREDSHARING] ConnectToAvailableNetwork: Using creds for [{szString}], Context=[{dwValue1}], CredsLength=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1675      |           |  AutoConnect - [CREDSHARING] CheckAndUpdateAutoConnectState: Credential sharing State updated - {dwValue1} --> {dwValue2}
-Microsoft-Windows-WiFiNetworkManager  |  1676      |           |  AutoConnect - [NLO] SetNetworkMostRecentlyUsedHintInternal: Network=[{szString}], Request=[{dwValue1}], CurrentFlags=[{dwValue2}]
-Microsoft-Windows-WiFiNetworkManager  |  1677      |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: UserTMSettings=[QueryTM={bQueryTM}, SCM={bScmEnabled}, CRED={bCredEnabled}, CP={bCPEnabled}], TMFlags=[{dwTMFlags}, Enabled={bCloudEnabled}]
-Microsoft-Windows-WiFiNetworkManager  |  1700      |           |  WlanMgr - Recieved wlan notif: {notif}
-Microsoft-Windows-WiFiNetworkManager  |  1701      |           |  WlanMgr - Recieved wlan notif: {notif}
-Microsoft-Windows-WiFiNetworkManager  |  1702      |           |  WlanMgr - Queried for Bss List and got {dwValue} items back
-Microsoft-Windows-WiFiNetworkManager  |  1703      |           |  WlanMgr - Set new Nic State = {state}
-Microsoft-Windows-WiFiNetworkManager  |  1704      |           |  WlanMgr - AOAC Support Level = {level}
-Microsoft-Windows-WiFiNetworkManager  |  1705      |           |  WlanMgr - Failed to register for Nic state change notifications, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  1706      |           |  WlanMgr - Received Nic state change: {state}
-Microsoft-Windows-WiFiNetworkManager  |  1707      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1708      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1709      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1710      |           |  WlanMgr - Ignoring duplicate state set to, {state}.
-Microsoft-Windows-WiFiNetworkManager  |  1711      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1712      |           |
-Microsoft-Windows-WiFiNetworkManager  |  1713      |           |  WlanMgr -   Nlo[{dwValue}] : {szString}
-Microsoft-Windows-WiFiNetworkManager  |  1714      |           |  WlanMgr - WlanSetProfileListForOffload result: {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  1900      |           |  Roaming Tethering Settings - Failed to register Bluetooth Change notifications, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  1901      |           |  Roaming Tethering Settings - Failed to update bluetooth change registry key, {hr}
-Microsoft-Windows-WiFiNetworkManager  |  1902      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2000      |           |  Credential Sharing - Unable to write to the Credential Sharing Pending registry key, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2001      |           |  Credential Sharing - Unable to read the Credential Sharing Pending registry key, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2002      |           |  Credential Sharing - Unable to verify user sign in, {dwValue}.
-Microsoft-Windows-WiFiNetworkManager  |  2003      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2004      |           |  Credential Sharing - MSA token request failed, {hr}.
-Microsoft-Windows-WiFiNetworkManager  |  2100      |           |  Credential Sharing Manager - Callback Failure. HTTP Status = {dwValue1}, Reponse Status = {dwValue2}
-Microsoft-Windows-WiFiNetworkManager  |  2101      |           |  Credential Sharing Manager - Failed to query MCC code, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2102      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2103      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2104      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2105      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2106      |           |  Credential Sharing Manager - SendSocialProfileRequestAsync completed, {hr}
-Microsoft-Windows-WiFiNetworkManager  |  2107      |           |  Credential Sharing Manager - BuildCredSharingRequest completed, {hr}
-Microsoft-Windows-WiFiNetworkManager  |  2108      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2109      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2110      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2111      |           |  Credential Sharing Manager - Received password response for {ssid}, {bssid}
-Microsoft-Windows-WiFiNetworkManager  |  2112      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2113      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2114      |           |  Credential Sharing Manager - Set Opt In Status Request failed to be made, {hr}
-Microsoft-Windows-WiFiNetworkManager  |  2115      |           |  Credential Sharing Manager - Get Opt In Status failed, {hr}
-Microsoft-Windows-WiFiNetworkManager  |  2116      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2117      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2118      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2119      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2120      |           |  Credential Sharing Manager - Sync connected shared network failed, {hr}
-Microsoft-Windows-WiFiNetworkManager  |  2200      |           |  Profile Sharing Manager - Set Network Exchange State to {dwValue} for {szConnName}
-Microsoft-Windows-WiFiNetworkManager  |  2201      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2202      |           |  Profile Sharing Manager - Set Network Exchange State failed, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2203      |           |  Profile Sharing Manager - Failed to set the registry for {szString}
-Microsoft-Windows-WiFiNetworkManager  |  2204      |           |  Profile Sharing Manager - Set Cred Sharing Opt In State to {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2205      |           |  Profile Sharing Manager - Set Cred Sharing Opt In State failed, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2206      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2207      |           |  Profile Sharing Manager - Get Cred Sharing Opt In State failed, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2208      |           |  Profile Sharing Manager - Get Cred Sharing Opt In State succeeded. State, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2209      |           |  Profile Sharing Manager - Set social network {szString} in registry failed. State, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2300      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2301      |           |  Profile Sharing Upload Manager - # of uploaded networks, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2302      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2303      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2304      |           |  Profile Sharing Upload Manager - Upload failed, {hr}
-Microsoft-Windows-WiFiNetworkManager  |  2305      |           |  Profile Sharing Upload Manager - Building Json payload for {szConnName}
-Microsoft-Windows-WiFiNetworkManager  |  2306      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2307      |           |  Profile Sharing Upload Manager - Building Json payload completed with result {dwValue1}, shared = {dwValue2}
-Microsoft-Windows-WiFiNetworkManager  |  2308      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2309      |           |  Profile Sharing Upload Manager - Send Shared Networks
-Microsoft-Windows-WiFiNetworkManager  |  2310      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2311      |           |  Profile Sharing Upload Manager - Building Shared networks Json payload completed with result {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2312      |           |  Profile Sharing Upload Manager - Failed to disable exchange state by location, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2313      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2314      |           |  Profile Sharing Upload Manager - Failed to set opt in status on location WNF change, {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2400      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2401      |           |
-Microsoft-Windows-WiFiNetworkManager  |  2402      |           |  FeatureManager - Failed to subscribe to location notifications with result {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2403      |           |  FeatureManager - Failed to start social network sync schedule with result {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2404      |           |  FeatureManager - Failed to start sqm schedule with result {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2405      |           |  FeatureManager - Failed to subscribe to policy changed notifications with result {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2406      |           |  FeatureManager - EnableFeatureInternal failed with result {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2407      |           |  FeatureManager - DisableFeatureInternal failed with result {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2408      |           |  FeatureManager - Notifying NetworkManager of feature state change #{dwValue1} failed with result {dwValue2}
-Microsoft-Windows-WiFiNetworkManager  |  2409      |           |  FeatureManager - SetFeatureRegValue failed with result {dwValue}
-Microsoft-Windows-WiFiNetworkManager  |  2410      |           |  FeatureManager - GetFeatureRegValue failed with result {dwValue}
+Provider                              |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  0         |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1         |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Verbose      |  2         |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  100       |  0        |           |        |          |           |  NotifMgr - Failed to create event for client notification registration, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Verbose      |  102       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Verbose      |  103       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  104       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  105       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  106       |  0        |           |        |          |           |  NotifMgr - Publishing new WNF connection state, type = {type}, state = {state}, ntStatus = {error}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  107       |  0        |           |        |          |           |  NotifMgr - Received policy state update notifiction. New state = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  108       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  109       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  200       |  0        |           |        |          |           |  PowerMgr - Failed to query power state for indicating state change, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  201       |  0        |           |        |          |           |  PowerMgr - Received radio state change notification from WlanSvc, PhyIndex = {dwValue1}, state = {dwValue2}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  202       |  0        |           |        |          |           |  PowerMgr - Failed to register for Wlan Notifications, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  203       |  0        |           |        |          |           |  PowerMgr - Failed to query initial prompting state from registry, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  204       |  0        |           |        |          |           |  PowerMgr - Failed to save prompting state to registry, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  205       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  206       |  0        |           |        |          |           |  PowerMgr - Uninitialized Wlan, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  207       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  208       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  209       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  210       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  211       |  0        |           |        |          |           |  PowerMgr - Sending power state changed notification to clients, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  212       |  0        |           |        |          |           |  PowerMgr - Setting current cached Phy count to {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  213       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  214       |  0        |           |        |          |           |  PowerMgr - Failed to get current radio state, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  215       |  0        |           |        |          |           |  PowerMgr - Successfully got current radio state = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  216       |  0        |           |        |          |           |  PowerMgr - Setting new power state = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  217       |  0        |           |        |          |           |  PowerMgr - Failed to set current power state, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  218       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  219       |  0        |           |        |          |           |  PowerMgr - Got an invalid call to set power, newState = {dwValue1}, curState = {dwValue2}, isChanging = {dwValue3}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  220       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  221       |  0        |           |        |          |           |  PowerMgr - Setting new power state (async) = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  222       |  0        |           |        |          |           |  PowerMgr - Failed to set current power state (async), {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  223       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  224       |  0        |           |        |          |           |  PowerMgr - Publishing new power status, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  225       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  226       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  227       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  228       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  229       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  230       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  231       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  232       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  300       |  0        |           |        |          |  ScnEvt   |  ScanMgr - Received a scan failed notification from WlanSvc. WLAN_REASON_CODE: {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  301       |  0        |           |        |          |  ScnEvt   |  ScanMgr - Received a scan complete notification from WlanSvc ({dwValue} valid networks).
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  302       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  303       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  304       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  305       |  0        |           |        |          |  ScnEvt   |  ScanMgr - Failed to start scan for hidden network, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  306       |  0        |           |        |          |  ScnEvt   |  ScanMgr - Failed to start scan for active scan, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  307       |  0        |           |        |          |           |  ScanMgr - Failed to get wlan interface at start of service, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  308       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  309       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  310       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  311       |  0        |           |        |          |           |  ScanMgr - Failed to get the STA mode interface GUID from Wlan, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  312       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  313       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  314       |  0        |           |        |          |  ScnEvt   |  ScanMgr - Client initiating a scan for a hidden network: {ssid}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  315       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  316       |  0        |           |        |          |           |  ScanMgr - Failed to get the available network list from Wlan, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  317       |  0        |           |        |          |           |  ScanMgr - Failed to convert SSID to string while building available network list: {ssidLen}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  318       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  319       |  0        |           |        |          |           |  ScanMgr - Subscribing for WNF notifications for Media UI Requests, ntstatus={dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  320       |  0        |           |        |          |           |  ScanMgr - Unsubscribing for WNF notifications for Media UI Requests, ntstatus={dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  321       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  322       |  0        |           |        |          |  ScnEvt   |  ScanMgr - Failed to start scan, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  323       |  0        |           |        |          |           |  ScanMgr - Found cache for current connection. Auth = {algo}, Cipher = {cipher}, Secure = {secure}, Signal Strength = {signal}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  324       |  0        |           |        |          |           |  ScanMgr - Setting Current Connection, {szConnName}, as Action Required because of UI Request Timeout.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  325       |  0        |           |        |          |           |  ScanMgr - Setting Current Connection, {szConnName}, as Action Required because of Auth Fail for Auto Connect.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  326       |  0        |           |        |          |           |  ScanMgr - Returning Network Item in Scan as Action Required, {ssid}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  327       |  0        |           |        |          |           |  ScanMgr - Returning Connection Name {szConnName} as Action Required on request.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  328       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  329       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  330       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  331       |  0        |           |        |          |           |  ScanMgr - Ignoring duplicate action required failure for {szConnName}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  332       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  333       |  0        |           |        |          |  ScnEvt   |  ScanMgr - Found {dwValue} valid SSIDs to update cache with.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  334       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  335       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  336       |  0        |           |        |          |  ScnEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  400       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  401       |  0        |           |        |          |           |  WiFiUserHost - Finished initializing host modules, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  402       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  403       |  0        |           |        |          |           |  WiFiUserHost - Finished uninitializing host modules, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  404       |  0        |           |        |          |           |  WiFiUserHost - Failed to enable provider for WPP Logging for provider {dwValue1} with hr = {dwValue2}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  405       |  0        |           |        |          |           |  WiFiUserHost - Failed to stop WPP session with dwError = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  406       |  0        |           |        |          |           |  WiFiUserHost - Failed to query WPP session state with dwError = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  407       |  0        |           |        |          |           |  WiFiUserHost - Failed to load DataCollection.dll, GetLastError() = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  408       |  0        |           |        |          |           |  WiFiUserHost - Failed to GetProcAddress '{szString}', GetLastError() = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  409       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  410       |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  600       |  0        |           |        |          |           |  WiFiUserRpc - Failed call RpcServerUseProtseqEp, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  601       |  0        |           |        |          |           |  WiFiUserRpc - Failed call RpcServerInqBindings, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  602       |  0        |           |        |          |           |  WiFiUserRpc - Failed call RpcEpRegister, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  603       |  0        |           |        |          |           |  WiFiUserRpc - Registration complete, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  604       |  0        |           |        |          |           |  WiFiUserRpc - Failed call RpcEpUnregister, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  605       |  0        |           |        |          |           |  WiFiUserRpc - Unregistration complete, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  606       |  0        |           |        |          |           |  WiFiUserRpc - Call to QueryTransientObjectSecurityDescriptor for TransportSecurityDescriptor failed, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  607       |  0        |           |        |          |           |  WiFiUserRpc - Call to QueryTransientObjectSecurityDescriptor for InterfaceSecurityDescriptor failed, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  608       |  0        |           |        |          |           |  WiFiUserRpc - Call to RpcImpersonateClient failed, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  609       |  0        |           |        |          |           |  WiFiUserRpc - Call to OpenThreadToken failed, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  610       |  0        |           |        |          |           |  WiFiUserRpc - Call to CapabilityCheck failed, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1000      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1001      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1002      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1003      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1004      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1005      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1006      |  0        |           |        |          |           |  UiRequestMgr - Received unsupported Wlan Request Type, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1007      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1008      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1009      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1010      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1011      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1012      |  0        |           |        |          |           |  UiRequestMgr - Received unsupported MSM Sec Request Type, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1013      |  0        |           |        |          |           |  UiRequestMgr - Failed call to WlanIsUIRequestPending, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1014      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1015      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1016      |  0        |           |        |          |           |  UiRequestMgr - Sending UI Request to clients, handle[{dwValue}].
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1017      |  0        |           |        |          |           |  UiRequestMgr - Request timed out, handle[{dwValue}].
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1018      |  0        |           |        |          |           |  UiRequestMgr - Received invalid response, handle[{dwValue}].
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1019      |  0        |           |        |          |           |  UiRequestMgr - Received valid response, handle[{dwValue}].
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1020      |  0        |           |        |          |           |  UiRequestMgr - Sending PSK UI response to Wlan, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1021      |  0        |           |        |          |           |  UiRequestMgr - Failed to convert WEP passphrase, {dwValue1}, reason {dwValue1}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1022      |  0        |           |        |          |           |  UiRequestMgr - Failed to convert PSK passphrase, {dwValue1}, reason {dwValue1}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1023      |  0        |           |        |          |           |  UiRequestMgr - Failed to convert Key passphrase, {dwValue1}, reason {dwValue1}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1024      |  0        |           |        |          |           |  UiRequestMgr - Encountered Eap Error: Port({port}): Eap error info contains winError={winerror}, reasonCode={reasoncode}, EapMethod(Type={eaptype}), rootCauseString={string}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1025      |  0        |           |        |          |           |  UiRequestMgr - Received unsupported OneX Request Type, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1026      |  0        |           |        |          |           |  UiRequestMgr - Received unsupported EAP Request Type, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1027      |  0        |           |        |          |           |  UiRequestMgr - Received unsupported EAP Field Type, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1028      |  0        |           |        |          |           |  UiRequestMgr - Call to query EAP blob failed, {dwValue}, ignoring...
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1029      |  0        |           |        |          |           |  UiRequestMgr - Call to Create OneX response failed, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1030      |  0        |           |        |          |           |  UiRequestMgr - Sending OneX UI response to Wlan, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1031      |  0        |           |        |          |           |  UiRequestMgr - Failed to convert SSID '{ssid}' while caching username, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1032      |  0        |           |        |          |           |  UiRequestMgr - Failed to cache username in CM Config, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1033      |  0        |           |        |          |           |  UiRequestMgr - Received credentials for an invalid handle, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1034      |  0        |           |        |          |           |  UiRequestMgr - Received credentials for the correct handle ({dwValue1}), {dwValue2}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1035      |  0        |           |        |          |           |  UiRequestMgr - Cleaning request for {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1036      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1037      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1038      |  0        |           |        |          |           |  UiRequestMgr - Received direct request for UI, flags = {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1039      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1040      |  0        |           |        |          |           |  UiRequestMgr - Received unknown IHV UI request type, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1041      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1042      |  0        |           |        |          |           |  UiRequestMgr - Sending PSK IHV UI response to Wlan, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1043      |  0        |           |        |          |           |  UiRequestMgr - Sending Cert IHV UI response to Wlan, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1044      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1045      |  0        |           |        |          |           |  UiRequestMgr - Received cancel response, handle[{dwValue}].
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1046      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1047      |  0        |           |        |          |           |  UiRequestMgr - Received OneX UI request type {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1400      |  0        |           |        |          |           |  PowerMgr - Turn off failed (async = {dwValue1}) failed, error {dwValue2}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1401      |  0        |           |        |          |           |  PowerMgr - Turn on failed failed, error {Error}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1402      |  0        |           |        |          |           |  PowerMgr - Activating trigger(s) {trigger} - Prev State: Active {active}, Delayed {delayed}, Time Left {timer}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1403      |  0        |           |        |          |           |  PowerMgr - Releasing trigger(s) {trigger} - Prev State: Active {active}, Delayed {delayed}, Time Left {timer}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1404      |  0        |           |        |          |           |  PowerMgr - Releasing delayed trigger(s) - Prev State: Active {active}, Delayed {delayed}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1405      |  0        |           |        |          |           |  PowerMgr - New AOAC state, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1406      |  0        |           |        |          |           |  PowerMgr - New Power State: Active {active}, Delayed {delayed}, Time Left {timer}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1407      |  0        |           |        |          |           |  PowerMgr - New Battery Saver state, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1408      |  0        |           |        |          |           |  PowerMgr - User power preference at boot, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1500      |  0        |           |        |          |           |  RadioMgr - Create event failed, error {Error}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1501      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1502      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1503      |  0        |           |        |          |  PwrEvt   |  RadioMgr - Failed to create set power thread, error {Error}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1504      |  0        |           |        |          |  PwrEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1505      |  0        |           |        |          |  PwrEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1506      |  0        |           |        |          |  PwrEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1507      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1508      |  0        |           |        |          |  PwrEvt   |  RadioMgr - Bringing power back on, {Error}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1509      |  0        |           |        |          |  PwrEvt   |  RadioMgr - Setting bring power back on option: {dwValue1}, timer: {dwValue2}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1510      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1511      |  0        |           |        |          |  PwrEvt   |  RadioMgr - Bring power back on option at boot: {dwValue1}, timer - {dwValue2}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1512      |  0        |           |        |          |  PwrEvt   |  RadioMgr - Called Cortana to Create Rule: {Error}.
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1513      |  0        |           |        |          |  PwrEvt   |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1600      |  0        |           |        |          |           |  AutoConnect - {szString}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1601      |  0        |           |        |          |           |  AutoConnect - {szString}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1602      |  0        |           |        |          |           |  AutoConnect - QueryAutoConnectParameters: SUCCESSfully read {szString1} - Default={dwValue1}, Read={dwValue2}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1603      |  0        |           |        |          |           |  AutoConnect - CheckAndUpdateAutoConnectState: State updated: QueryScm=[{dwValue1}-->{dwValue2}], CredSharing=[{dwValue3}-->{dwValue4}], CP=[{dwValue5}-->{dwValue6}], ACEnabled=[{dwValue7}-->{dwValue8}], ServiceInit=[{dwValue9}], StateFlags=[{dwValue1}0]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1604      |  0        |           |        |          |           |  AutoConnect - New{wsSource}NotificationInternal [{wsConnName}]: +++ [{szNotifType}:{szNotifState}] [{dwType}:{dwState}] +++
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1605      |  0        |           |        |          |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Result=NOT connecting .. UserConfiguredNetworks=[{dwValue1}+{dwValue2}], AutoConnectable:Stationary=[{dwValue3}:{dwValue4}], State=[{dwValue5}], Network=[{Ssid}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1606      |  0        |           |        |          |           |  AutoConnect - CheckAndAddAuthCipherPair: Secure Ssid entry for [{szString}:{dwValue1}:{dwValue2}] already exists
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1607      |  0        |           |        |          |           |  AutoConnect - CheckAndAddAuthCipherPair: NOT adding [{szString}:{dwValue1}:{dwValue2}] - Overflow + AuthCipher too weak
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1608      |  0        |           |        |          |  ScnEvt   |  AutoConnect -     [{dwIndex}] TM SSID=[{szNetwork}:{dwAuth}:{dwCipher}], LinkQ=[{dwQuality}], Flags:Score=[{dwFlags}:{Score}], CP=[{dwCPSize}-{dwCPOffset}], Cr=[{dwIndex}0-{dwIndex}1]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1609      |  0        |           |        |          |  ScnEvt   |  AutoConnect - TileMgrQueryNetworks: Type:Sources=[{QueryType}:{QuerySources}]: returned [{dwNetworkOut}/{dwNetworksIn}] NetInfos, Flags=[{dwFlags}], ACEnabled:ConfScanTO:MinLinkQ:MinScore=[{dwACEnabled}:{ConfScanTO}:{MinLinkQ}:{MinScore}], ScoreWt:SignalWt:OverlapP:Retries=[{QueryType}0:{QueryType}1:{QueryType}2:{QueryType}3]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1610      |  0        |           |        |          |  ScnEvt   |  AutoConnect - ApplyConfigurationAndSetPolicies: NumNetworks=[{AllNetworks}], AutoConnectableNetworks=[{ConnNetworks}], GlobalFlags=[{dwGblFlags}], Managed:User:WPS=[{dwMngFlags}:{dwUserFlags}:{dwWPSFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1611      |  0        |           |        |          |  ScnEvt   |  AutoConnect - AutoConnect is DISABLEd, StateFlags=[{dwValue}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1612      |  0        |           |        |          |  ScnEvt   |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], NO CM name, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1613      |  0        |           |        |          |  ScnEvt   |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], DO-NOT-CONNECT, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1614      |  0        |           |        |          |  ScnEvt   |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], UNKNOWN network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1615      |  0        |           |        |          |  ScnEvt   |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], COSTED network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1616      |  0        |           |        |          |  ScnEvt   |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], NOT CredShared, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1617      |  0        |           |        |          |           |  AutoConnect - RefreshAllProfiles: Network [{szString}] is now out of backoff state
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1618      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] ++ [{szNetwork}:{dwAuth}:{dwCipher}] [{szType}:{szState}]: LinkQuality=[{LinkQ}], Score=[{Score}], CfgWt:CalcWt=[{dwIndex1}0:{dwIndex1}1], ConfigFlags:ProfFlags=[{dwIndex1}2:{dwIndex1}3], CPLength=[{dwIndex1}4], CredsLength=[{dwIndex1}5]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1619      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1620      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex}] Updating Profile [{szNetwork}:{wsConnection}], Weight = [{dwCfgWt} to {dwCalcWt}], ProfileFlags=[{dwProfFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1621      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1622      |  0        |           |        |          |           |  AutoConnect -     {szString1}: Deleting Profile [{szString2}:{wszString}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1623      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1624      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex}] Creating CM profile for [{szNetwork}:{wsConnection}], Weight = [{dwCfgWt} to {dwCalcWt}], ProfileFlags=[{dwProfFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1625      |  0        |           |        |          |           |  AutoConnect - GetConnectableNetwork: Found! ScanIndex=[{dwIndex}] Network=[{szNetwork}:{wsConnection}], Weight = [{dwCfgWt} to {dwCalcWt}], ProfileFlags=[{dwProfFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1626      |  0        |           |        |          |           |  AutoConnect - DeleteAllHotspotNetworks: Deleting {dwValue} Connections
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1627      |  0        |           |        |          |           |  AutoConnect -     [{dwValue}] Deleting Connection [{szString}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1628      |  0        |           |        |          |           |  AutoConnect - HandleNewConnectionToNetworkInternal: Status=[{wszStatus}], Network=[{Ssid}], IsUserNetwork=[{bUserNetwork}], bACProfileExists=[{bACProfile}], ProfileFlags=[{dwProfFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1629      |  0        |           |        |          |           |  AutoConnect - HandleUserConnectionToNetworkInternal: Successfully changed [{szString1}:{szString2}] to User-configured
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1630      |  0        |           |        |          |           |  AutoConnect - HandleConnectionDisconnected: Network [{szString}] has retries left, Have currently used [{dwValue1} / {dwValue2}] retries
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1631      |  0        |           |        |          |           |  AutoConnect - HandleConnectionDisconnected: BLOCKed network [{szNetwork}] for [{szState}], Retries=[{dwRetries}], BackoffTimeSecs=[{dwBackoffMin}+{dwBackoffRng}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1632      |  0        |           |        |          |           |  AutoConnect - HandleConnectionStateChange: Unknown network - Did NOT find profile for [{szString}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1633      |  0        |           |        |          |           |  AutoConnect - HandleConnectionStateChange: Dup state notification, State=[{szString1}], Profile=[{szString2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1634      |  0        |           |        |          |           |  AutoConnect - SetAutoConnectStatusInternal: New State=[{dwValue}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1635      |  0        |           |        |          |           |  AutoConnect - SetDisconnectReasonInternal: Disconnect Reason = [{szString1}], Connection=[{szString2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1636      |  0        |           |        |          |           |  AutoConnect - UpdateNetworksList: TotalNetworks=[{dwValue1}], New=[{dwValue2}+{dwValue3}+{dwValue4}], Common=[{dwValue5}+{dwValue6}+{dwValue7}+{dwValue8}], Cached=[{dwValue9}], Dropped=[{dwValue1}0] - AutoConnectable=[{dwValue1}1+{dwValue1}2], StationaryNetworks=[{dwValue1}3]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1637      |  0        |           |        |          |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Confirmation Timer - TimeLeft = [{dwValue}] msecs
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1638      |  0        |           |        |          |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Result=Scheduling Confirmation Scan in [{dwValue}] secs
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1639      |  0        |           |        |          |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Stopping Confirmation timer - TimeLeft=[{dwValue1}], less than [{dwValue2}] msecs
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1640      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1641      |  0        |           |        |          |           |  AutoConnect - OpenAutoConnectFile: Disposition=[{dwValue}], File=[{szString}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1642      |  0        |           |        |          |           |  AutoConnect - InitializeACBlackList: Read [{dwValue1}] bytes, [{dwValue2}-{dwValue3}] Ssids
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1643      |  0        |           |        |          |           |  AutoConnect - AddNewEntryToBlackList: Added SSID:BSSID=[{szString}:{BSSID}]- NumBssids=[{dwValue1}] to BlackList, Ssids Used:Alloc=[{dwValue2}-{dwValue3}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1644      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], USER-Configured network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1645      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] ** [{szNetwork}:{dwAuth}:{dwCipher}], Hotspot OFFLOAD network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1646      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], USER-BLOCKED network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1647      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], In BACKOFF State, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1648      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], Below LINK Quality, LinkQuality=[{LinkQ}], Score=[{Score}], MinLinkQuality=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1649      |  0        |           |        |          |           |  AutoConnect -     FindEntryInBlackList: Found SSID:BSSID=[{szString}:{BSSID}], Index=[{dwValue1}/{dwValue2}], bDelete=[{dwValue3}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1650      |  0        |           |        |          |           |  AutoConnect - FindEntryInBlackList: Removing SSID=[{szString}], NumBssidsIn=[{dwValue1}], NumSsidsLeft=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1651      |  0        |           |        |          |           |  AutoConnect - AddNewEntryToBlackList: Adding new entry SSID:BSSID=[{szString}:{BSSID}], Ssid:Bssid Index=[{dwValue1}:{dwValue2}], Previous NumBssids=[{dwValue3}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1652      |  0        |           |        |          |           |  AutoConnect - GetNewBlackListIndex -- Created NEW list - Previous SsidsAllocated=[{dwValue1}] New SsidsAllocated=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1653      |  0        |           |        |          |           |  AutoConnect - HandleNewConnectionToNetworkInternal: Successfully removed Ssid=[{szString}:{dwValue1}:{dwValue2}] from BlackList
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1654      |  0        |           |        |          |           |  AutoConnect - SetAutoConnectNetworkStateInternal[ACTIVE]: Successfully removed Ssid=[{szString}:{dwValue1}:{dwValue2}] from BlackList
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1655      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], Transient Network, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1656      |  0        |           |        |          |           |  AutoConnect - GetConnectionInfoInternal: Inconsistent Connection State Internal=[{dwValue1}], Actual=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1657      |  0        |           |        |          |           |  AutoConnect - SendConnectionUpdateNotification: Network=[{szString}], Context=[{dwValue1}], QueryTileManagerForNetwork returned=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1658      |  0        |           |        |          |           |  AutoConnect - SendConnectionUpdateNotification [{Type} : {Context}]: Network=[{szNetwork}], Score=[{Score}], flightId=[{flightId}], networkId=[{networkId}], DataNeeded=[{DataNeeded}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1659      |  0        |           |        |          |           |  AutoConnect - SetAutoConnectPCDValueInternal: ConnectionContext=[{Context1}], PCD=[{PCD}], current ConnectionContext=[{Context2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1660      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], Below MIN Score, LinkQuality=[{LinkQ}], Score=[{Score}], MinScoreNormalized=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1661      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], Hotspot Offload Network from Tile, but not marked locally, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1662      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], AutoConnect DISABLED, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1663      |  0        |           |        |          |           |  AutoConnect - AddAutoConnectProfile: SUCCESSfully added CM profile for [{szString}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1664      |  0        |           |        |          |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: Result=Ignoring as AutoConnect is Disabled, StateFlags=[{dwValue}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1666      |  0        |           |        |          |           |  AutoConnect -     [{dwIndex1}.{dwIndex2}] -- [{szNetwork}:{dwAuth}:{dwCipher}], {szReason}, LinkQuality=[{LinkQ}], Score=[{Score}], CfgFlags=[{dwFlags}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1667      |  0        |           |        |          |           |  AutoConnect - FlushNetworkList: Context=[{szString}], SSIDs=[{dwValue1}], BssEntries=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1668      |  0        |           |        |          |           |  AutoConnect - FirewallBlockWiFiPrivateNet Set=[{dwValue1}]: Result=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1670      |  0        |           |        |          |           |  AutoConnect - [CREDSHARING] MarkProfilesForDeletion: Credentials Cache timed out for [{szString}], Context=[{dwValue1}], CredSharing handle=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1671      |  0        |           |        |          |           |  AutoConnect - [CREDSHARING] CheckIsNetworkConnectable: NOT Requesting creds as request is currently outstanding for [{szString}], Context=[{dwValue1}], CredSharing handle=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1672      |  0        |           |        |          |           |  AutoConnect - [CREDSHARING] CheckIsNetworkConnectable: Requesting creds for [{szString}], Context=[{dwValue1}], CredSharing handle=[{dwValue2}] ...
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1673      |  0        |           |        |          |           |  AutoConnect - [CREDSHARING] --> CredentialAvailableCallbackInternal: SUCCESS -- Using credentials for [{szString}], Context=[{dwValue1}], CredSharing handle=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1674      |  0        |           |        |          |           |  AutoConnect - [CREDSHARING] ConnectToAvailableNetwork: Using creds for [{szString}], Context=[{dwValue1}], CredsLength=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1675      |  0        |           |        |          |           |  AutoConnect - [CREDSHARING] CheckAndUpdateAutoConnectState: Credential sharing State updated - {dwValue1} --> {dwValue2}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1676      |  0        |           |        |          |           |  AutoConnect - [NLO] SetNetworkMostRecentlyUsedHintInternal: Network=[{szString}], Request=[{dwValue1}], CurrentFlags=[{dwValue2}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1677      |  0        |           |        |          |           |  AutoConnect - ConfigureAutoConnectNetworksInternal: UserTMSettings=[QueryTM={bQueryTM}, SCM={bScmEnabled}, CRED={bCredEnabled}, CP={bCPEnabled}], TMFlags=[{dwTMFlags}, Enabled={bCloudEnabled}]
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1700      |  0        |           |        |          |           |  WlanMgr - Recieved wlan notif: {notif}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1701      |  0        |           |        |          |           |  WlanMgr - Recieved wlan notif: {notif}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1702      |  0        |           |        |          |           |  WlanMgr - Queried for Bss List and got {dwValue} items back
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1703      |  0        |           |        |          |           |  WlanMgr - Set new Nic State = {state}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1704      |  0        |           |        |          |           |  WlanMgr - AOAC Support Level = {level}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1705      |  0        |           |        |          |           |  WlanMgr - Failed to register for Nic state change notifications, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1706      |  0        |           |        |          |           |  WlanMgr - Received Nic state change: {state}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1707      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1708      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1709      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Warning      |  1710      |  0        |           |        |          |           |  WlanMgr - Ignoring duplicate state set to, {state}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1711      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1712      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1713      |  0        |           |        |          |           |  WlanMgr -   Nlo[{dwValue}] : {szString}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1714      |  0        |           |        |          |           |  WlanMgr - WlanSetProfileListForOffload result: {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1900      |  0        |           |        |          |           |  Roaming Tethering Settings - Failed to register Bluetooth Change notifications, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  1901      |  0        |           |        |          |           |  Roaming Tethering Settings - Failed to update bluetooth change registry key, {hr}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  1902      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2000      |  0        |           |        |          |           |  Credential Sharing - Unable to write to the Credential Sharing Pending registry key, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2001      |  0        |           |        |          |           |  Credential Sharing - Unable to read the Credential Sharing Pending registry key, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2002      |  0        |           |        |          |           |  Credential Sharing - Unable to verify user sign in, {dwValue}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2003      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2004      |  0        |           |        |          |           |  Credential Sharing - MSA token request failed, {hr}.
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2100      |  0        |           |        |          |           |  Credential Sharing Manager - Callback Failure. HTTP Status = {dwValue1}, Reponse Status = {dwValue2}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2101      |  0        |           |        |          |           |  Credential Sharing Manager - Failed to query MCC code, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2102      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2103      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2104      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2105      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2106      |  0        |           |        |          |           |  Credential Sharing Manager - SendSocialProfileRequestAsync completed, {hr}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2107      |  0        |           |        |          |           |  Credential Sharing Manager - BuildCredSharingRequest completed, {hr}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2108      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2109      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2110      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2111      |  0        |           |        |          |           |  Credential Sharing Manager - Received password response for {ssid}, {bssid}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2112      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2113      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2114      |  0        |           |        |          |           |  Credential Sharing Manager - Set Opt In Status Request failed to be made, {hr}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2115      |  0        |           |        |          |           |  Credential Sharing Manager - Get Opt In Status failed, {hr}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2116      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2117      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2118      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2119      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2120      |  0        |           |        |          |           |  Credential Sharing Manager - Sync connected shared network failed, {hr}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2200      |  0        |           |        |          |           |  Profile Sharing Manager - Set Network Exchange State to {dwValue} for {szConnName}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2201      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2202      |  0        |           |        |          |           |  Profile Sharing Manager - Set Network Exchange State failed, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2203      |  0        |           |        |          |           |  Profile Sharing Manager - Failed to set the registry for {szString}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2204      |  0        |           |        |          |           |  Profile Sharing Manager - Set Cred Sharing Opt In State to {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2205      |  0        |           |        |          |           |  Profile Sharing Manager - Set Cred Sharing Opt In State failed, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2206      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2207      |  0        |           |        |          |           |  Profile Sharing Manager - Get Cred Sharing Opt In State failed, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2208      |  0        |           |        |          |           |  Profile Sharing Manager - Get Cred Sharing Opt In State succeeded. State, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2209      |  0        |           |        |          |           |  Profile Sharing Manager - Set social network {szString} in registry failed. State, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2300      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2301      |  0        |           |        |          |           |  Profile Sharing Upload Manager - # of uploaded networks, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2302      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2303      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2304      |  0        |           |        |          |           |  Profile Sharing Upload Manager - Upload failed, {hr}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2305      |  0        |           |        |          |           |  Profile Sharing Upload Manager - Building Json payload for {szConnName}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2306      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2307      |  0        |           |        |          |           |  Profile Sharing Upload Manager - Building Json payload completed with result {dwValue1}, shared = {dwValue2}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2308      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2309      |  0        |           |        |          |           |  Profile Sharing Upload Manager - Send Shared Networks
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2310      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2311      |  0        |           |        |          |           |  Profile Sharing Upload Manager - Building Shared networks Json payload completed with result {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2312      |  0        |           |        |          |           |  Profile Sharing Upload Manager - Failed to disable exchange state by location, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2313      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2314      |  0        |           |        |          |           |  Profile Sharing Upload Manager - Failed to set opt in status on location WNF change, {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2400      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Information  |  2401      |  0        |           |        |          |           |
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2402      |  0        |           |        |          |           |  FeatureManager - Failed to subscribe to location notifications with result {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2403      |  0        |           |        |          |           |  FeatureManager - Failed to start social network sync schedule with result {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2404      |  0        |           |        |          |           |  FeatureManager - Failed to start sqm schedule with result {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2405      |  0        |           |        |          |           |  FeatureManager - Failed to subscribe to policy changed notifications with result {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2406      |  0        |           |        |          |           |  FeatureManager - EnableFeatureInternal failed with result {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2407      |  0        |           |        |          |           |  FeatureManager - DisableFeatureInternal failed with result {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2408      |  0        |           |        |          |           |  FeatureManager - Notifying NetworkManager of feature state change #{dwValue1} failed with result {dwValue2}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2409      |  0        |           |        |          |           |  FeatureManager - SetFeatureRegValue failed with result {dwValue}
+Microsoft-Windows-WiFiNetworkManager  |  Error        |  2410      |  0        |           |        |          |           |  FeatureManager - GetFeatureRegValue failed with result {dwValue}

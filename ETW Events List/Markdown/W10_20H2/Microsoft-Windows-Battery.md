@@ -1,17 +1,17 @@
-Provider                   |  Event ID  |  Channel                               |  Message
----------------------------|------------|----------------------------------------|---------
-Microsoft-Windows-Battery  |  1         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  2         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  3         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  4         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  5         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  6         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  7         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  8         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  9         |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  10        |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  11        |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  12        |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  13        |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  14        |  Microsoft-Windows-Battery/Diagnostic  |
-Microsoft-Windows-Battery  |  15        |  Microsoft-Windows-Battery/Diagnostic  |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                               |  Task                            |  Opcode  |  Keyword  |  Message
+---------------------------|---------------|------------|-----------|----------------------------------------|----------------------------------|----------|-----------|---------
+Microsoft-Windows-Battery  |  Information  |  1         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  SystemBatteryStatusChange       |          |           |
+Microsoft-Windows-Battery  |  Information  |  2         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  SystemBatteryStatusRundown      |          |           |
+Microsoft-Windows-Battery  |  Information  |  3         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BatteryBayRundown               |          |           |
+Microsoft-Windows-Battery  |  Information  |  4         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BixUpdated                      |          |           |
+Microsoft-Windows-Battery  |  Information  |  5         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BixRundown                      |          |           |
+Microsoft-Windows-Battery  |  Information  |  6         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BifUpdated                      |          |           |
+Microsoft-Windows-Battery  |  Information  |  7         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BifRundown                      |          |           |
+Microsoft-Windows-Battery  |  Information  |  8         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BstUpdated                      |          |           |
+Microsoft-Windows-Battery  |  Information  |  9         |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BstRundown                      |          |           |
+Microsoft-Windows-Battery  |  Information  |  10        |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BtpSet                          |          |           |
+Microsoft-Windows-Battery  |  Information  |  11        |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BtpRundown                      |          |           |
+Microsoft-Windows-Battery  |  Information  |  12        |  0        |  Microsoft-Windows-Battery/Diagnostic  |  AcpiNotify                      |          |           |
+Microsoft-Windows-Battery  |  Information  |  13        |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BatteryPercentRemaining         |          |           |
+Microsoft-Windows-Battery  |  Information  |  14        |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BatteryChargingWatchdogUpdated  |          |           |
+Microsoft-Windows-Battery  |  Information  |  15        |  0        |  Microsoft-Windows-Battery/Diagnostic  |  BatteryChargingWatchdogRundown  |          |           |

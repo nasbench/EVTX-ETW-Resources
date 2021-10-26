@@ -1,18 +1,18 @@
-Provider        |  Event ID  |  Channel  |  Message
-----------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HidEventFilter  |  100       |           |  INFO: {Message}
-HidEventFilter  |  101       |           |  WARNING: {Message}
-HidEventFilter  |  102       |           |  ERROR: {Message}. Status={Status}.
-HidEventFilter  |  103       |           |  Entering function {FunctionName}.
-HidEventFilter  |  104       |           |  Leaving function {FunctionName} with Status={Status}.
-HidEventFilter  |  105       |           |  Processing CreateDevice with Device=0x{Device}, DeviceInit=0x{DeviceInit}.
-HidEventFilter  |  106       |           |  End processing DeviceAdd with Status=0x{Status}.
-HidEventFilter  |  107       |           |  Start processing D0Entry with Device=0x{Device}, PreviousState={PreviousState}.
-HidEventFilter  |  108       |           |  End processing D0Entry with Status=0x{Status}.
-HidEventFilter  |  109       |           |  Start processing D0Exit with Device=0x{WDFDEVICE}, TargetState={TargetState}.
-HidEventFilter  |  110       |           |  End processing D0Exit with Status=0x{Status}.
-HidEventFilter  |  111       |           |  Feature Data Message=0x{Message} Value=0x{FeatureDataValue}.
-HidEventFilter  |  115       |           |  Acpi Notification Message=0x{Message} AcpiNotifyvalue=0x{AcpiNotificationValue}.
-HidEventFilter  |  117       |           |  Indicator Status Message=0x{Message} IndicatorStatus=0x{IndicatorsStatus}.
-HidEventFilter  |  127       |           |  Start processing Internal IO request with Request=0x{Request}, Queue=0x{Queue}, OutputBufferLength={OutputBufferLength}, InputBufferLength={InputBufferLength}, IOCTL=0x{IOCTL}.
-HidEventFilter  |  128       |           |  End processing Internal IO request with Request=0x{Request}, Status=0x{Status}.
+Provider        |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword            |  Message
+----------------|---------------|------------|-----------|-----------|--------|----------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HidEventFilter  |  Information  |  100       |  1        |           |        |          |  Default            |  INFO: {Message}
+HidEventFilter  |  Warning      |  101       |  1        |           |        |          |  Default            |  WARNING: {Message}
+HidEventFilter  |  Error        |  102       |  1        |           |        |          |  Default            |  ERROR: {Message}. Status={Status}.
+HidEventFilter  |  Verbose      |  103       |  1        |           |        |  Start   |  Default ApiTrace   |  Entering function {FunctionName}.
+HidEventFilter  |  Verbose      |  104       |  1        |           |        |  Stop    |  Default ApiTrace   |  Leaving function {FunctionName} with Status={Status}.
+HidEventFilter  |  Information  |  105       |  1        |           |        |  Start   |  Default PlugnPlay  |  Processing CreateDevice with Device=0x{Device}, DeviceInit=0x{DeviceInit}.
+HidEventFilter  |  Information  |  106       |  1        |           |        |  Stop    |  Default PlugnPlay  |  End processing DeviceAdd with Status=0x{Status}.
+HidEventFilter  |  Information  |  107       |  1        |           |        |  Start   |  Default Power      |  Start processing D0Entry with Device=0x{Device}, PreviousState={PreviousState}.
+HidEventFilter  |  Information  |  108       |  1        |           |        |  Stop    |  Default Power      |  End processing D0Entry with Status=0x{Status}.
+HidEventFilter  |  Information  |  109       |  1        |           |        |  Start   |  Default Power      |  Start processing D0Exit with Device=0x{WDFDEVICE}, TargetState={TargetState}.
+HidEventFilter  |  Information  |  110       |  1        |           |        |  Stop    |  Default Power      |  End processing D0Exit with Status=0x{Status}.
+HidEventFilter  |  Information  |  111       |  1        |           |        |  Start   |  Default            |  Feature Data Message=0x{Message} Value=0x{FeatureDataValue}.
+HidEventFilter  |  Information  |  115       |  1        |           |        |  Start   |  Default            |  Acpi Notification Message=0x{Message} AcpiNotifyvalue=0x{AcpiNotificationValue}.
+HidEventFilter  |  Information  |  117       |  1        |           |        |  Start   |  Default            |  Indicator Status Message=0x{Message} IndicatorStatus=0x{IndicatorsStatus}.
+HidEventFilter  |  Information  |  127       |  1        |           |        |  Start   |  Default IRP        |  Start processing Internal IO request with Request=0x{Request}, Queue=0x{Queue}, OutputBufferLength={OutputBufferLength}, InputBufferLength={InputBufferLength}, IOCTL=0x{IOCTL}.
+HidEventFilter  |  Information  |  128       |  1        |           |        |  Stop    |  Default IRP        |  End processing Internal IO request with Request=0x{Request}, Status=0x{Status}.

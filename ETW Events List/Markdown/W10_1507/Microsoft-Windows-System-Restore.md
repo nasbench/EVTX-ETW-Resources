@@ -1,6 +1,6 @@
-Provider                          |  Event ID  |  Channel      |  Message
-----------------------------------|------------|---------------|----------------------------------------------------------------------------
-Microsoft-Windows-System-Restore  |  8300      |  Application  |  Scoping started for shadowcopy {SnapshotPath}.
-Microsoft-Windows-System-Restore  |  8301      |  Application  |  Scoping completed for shadowcopy {SnapshotPath}.
-Microsoft-Windows-System-Restore  |  8302      |  Application  |  Scoping successfully completed for shadowcopy {SnapshotPath}.
-Microsoft-Windows-System-Restore  |  8303      |  Application  |  Scoping unsuccessful for shadowcopy {SnapshotPath} with error {ErrorCode}.
+Provider                          |  Level        |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword      |  Message
+----------------------------------|---------------|------------|-----------|---------------|--------|----------|---------------|----------------------------------------------------------------------------
+Microsoft-Windows-System-Restore  |  Information  |  8300      |  0        |  Application  |        |  Start   |  Performance  |  Scoping started for shadowcopy {SnapshotPath}.
+Microsoft-Windows-System-Restore  |  Information  |  8301      |  0        |  Application  |        |  Stop    |  Performance  |  Scoping completed for shadowcopy {SnapshotPath}.
+Microsoft-Windows-System-Restore  |  Information  |  8302      |  0        |  Application  |        |          |               |  Scoping successfully completed for shadowcopy {SnapshotPath}.
+Microsoft-Windows-System-Restore  |  Warning      |  8303      |  0        |  Application  |        |          |               |  Scoping unsuccessful for shadowcopy {SnapshotPath} with error {ErrorCode}.

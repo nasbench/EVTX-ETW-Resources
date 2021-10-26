@@ -1,4 +1,4 @@
-Provider                                         |  Event ID  |  Channel  |  Message
--------------------------------------------------|------------|-----------|---------
-Microsoft-Windows-NetworkManagerTriggerProvider  |  1         |           |
-Microsoft-Windows-NetworkManagerTriggerProvider  |  2         |           |
+Provider                                         |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                           |  Keyword                           |  Message
+-------------------------------------------------|---------------|------------|-----------|-----------|--------|-----------------------------------|------------------------------------|---------
+Microsoft-Windows-NetworkManagerTriggerProvider  |  Information  |  1         |  0        |           |        |  Opcode_FirstAddressArrivalEvent  |  Keyword_FirstAddressArrivalEvent  |
+Microsoft-Windows-NetworkManagerTriggerProvider  |  Information  |  2         |  0        |           |        |  Opcode_LastAddressRemovalEvent   |  Keyword_LastAddressRemovalEvent   |

@@ -1,29 +1,29 @@
-Provider                                 |  Event ID  |  Channel  |  Message
------------------------------------------|------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-DataCollectionService  |  10        |           |  DCP: Tag:[{dwTag}], Error=[{dwError}]
-Microsoft-Windows-DataCollectionService  |  11        |           |  DCP: Tag:[{dwTag}], hr=[{hr}]
-Microsoft-Windows-DataCollectionService  |  12        |           |  DCP: Tag:[{dwTag}], Error=[{dwError}]
-Microsoft-Windows-DataCollectionService  |  13        |           |  DCP: Tag:[{dwTag}], hr=[{hr}]
-Microsoft-Windows-DataCollectionService  |  14        |           |  DCP: Tag:[{dwTag}]
-Microsoft-Windows-DataCollectionService  |  15        |           |  DCP: Tag:[{dwTag}], n=[{nInt}]
-Microsoft-Windows-DataCollectionService  |  16        |           |  DCP: Tag:[{dwTag}], str=[{strString}]
-Microsoft-Windows-DataCollectionService  |  17        |           |  DCP: Tag:[{dwTag}], str=[{strString}], n=[{nInt}]
-Microsoft-Windows-DataCollectionService  |  18        |           |  DCP: Tag:[{dwTag}], str1=[{strString1}], str2=[{strString2}]
-Microsoft-Windows-DataCollectionService  |  19        |           |  DCP: Tag:[{dwTag}], Error=[{nInt}], str=[{strString}]
-Microsoft-Windows-DataCollectionService  |  20        |           |  DCP: Tag:[{dwTag}], Error=[{nInt1}], n=[{nInt2}]
-Microsoft-Windows-DataCollectionService  |  100       |           |
-Microsoft-Windows-DataCollectionService  |  101       |           |
-Microsoft-Windows-DataCollectionService  |  102       |           |
-Microsoft-Windows-DataCollectionService  |  103       |           |
-Microsoft-Windows-DataCollectionService  |  104       |           |  Upload session result. Error={dwError}, FailureReason={bFailureReason}
-Microsoft-Windows-DataCollectionService  |  105       |           |  Uploader WinINet connect. Error={dwError}, ServerName={szServerName}
-Microsoft-Windows-DataCollectionService  |  106       |           |  Invalid registry setting for {szSettingName}
-Microsoft-Windows-DataCollectionService  |  120       |           |
-Microsoft-Windows-DataCollectionService  |  121       |           |
-Microsoft-Windows-DataCollectionService  |  130       |           |  CrowdsourcingService UploadFiles Start. TriggerSource={bTriggerSource}
-Microsoft-Windows-DataCollectionService  |  131       |           |  CrowdsourcingService UploadFiles Stop. NumFilesUploaded={dwNumFilesUploaded}
-Microsoft-Windows-DataCollectionService  |  132       |           |  CrowdsourcingService ReadDataFileStart Start. HttpObjectName={szHttpObjectNames}, FileFullpath={szFullpath}
-Microsoft-Windows-DataCollectionService  |  133       |           |  CrowdsourcingService ReadDataFileStart Stop. Error={dwError}, FileSize={cbFileSize}, BytesRead={cbRead}
-Microsoft-Windows-DataCollectionService  |  134       |           |  CrowdsourcingService PostDataFileStart Start. HttpObjectName={szHttpObjectName}, HeaderLength={cchHeader}, BodyLength={cchBody}, Headers={szHeaders}
-Microsoft-Windows-DataCollectionService  |  135       |           |  CrowdsourcingService PostDataFileStop  Stop. Error={dwError}, HttpStatusCode={dwHttpStatusCode}
-Microsoft-Windows-DataCollectionService  |  136       |           |  CrowdsourcingService Original SessionId={guidSessionId}, PayloadSize={dwPayloadSize}
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel  |  Task                                |  Opcode  |  Keyword      |  Message
+-----------------------------------------|---------------|------------|-----------|-----------|--------------------------------------|----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-DataCollectionService  |  Error        |  10        |  0        |           |                                      |          |  Error        |  DCP: Tag:[{dwTag}], Error=[{dwError}]
+Microsoft-Windows-DataCollectionService  |  Error        |  11        |  0        |           |                                      |          |  Error        |  DCP: Tag:[{dwTag}], hr=[{hr}]
+Microsoft-Windows-DataCollectionService  |  Warning      |  12        |  0        |           |                                      |          |  Error        |  DCP: Tag:[{dwTag}], Error=[{dwError}]
+Microsoft-Windows-DataCollectionService  |  Warning      |  13        |  0        |           |                                      |          |  Error        |  DCP: Tag:[{dwTag}], hr=[{hr}]
+Microsoft-Windows-DataCollectionService  |  Information  |  14        |  0        |           |                                      |          |  Verbose      |  DCP: Tag:[{dwTag}]
+Microsoft-Windows-DataCollectionService  |  Information  |  15        |  0        |           |                                      |          |  Verbose      |  DCP: Tag:[{dwTag}], n=[{nInt}]
+Microsoft-Windows-DataCollectionService  |  Information  |  16        |  0        |           |                                      |          |  Verbose      |  DCP: Tag:[{dwTag}], str=[{strString}]
+Microsoft-Windows-DataCollectionService  |  Information  |  17        |  0        |           |                                      |          |  Verbose      |  DCP: Tag:[{dwTag}], str=[{strString}], n=[{nInt}]
+Microsoft-Windows-DataCollectionService  |  Information  |  18        |  0        |           |                                      |          |  Verbose      |  DCP: Tag:[{dwTag}], str1=[{strString1}], str2=[{strString2}]
+Microsoft-Windows-DataCollectionService  |  Error        |  19        |  0        |           |                                      |          |  Error        |  DCP: Tag:[{dwTag}], Error=[{nInt}], str=[{strString}]
+Microsoft-Windows-DataCollectionService  |  Error        |  20        |  0        |           |                                      |          |  Error        |  DCP: Tag:[{dwTag}], Error=[{nInt1}], n=[{nInt2}]
+Microsoft-Windows-DataCollectionService  |  Information  |  100       |  0        |           |                                      |          |  Verbose      |
+Microsoft-Windows-DataCollectionService  |  Information  |  101       |  0        |           |                                      |          |  Verbose      |
+Microsoft-Windows-DataCollectionService  |  Information  |  102       |  0        |           |                                      |          |  Verbose      |
+Microsoft-Windows-DataCollectionService  |  Information  |  103       |  0        |           |                                      |          |  Verbose      |
+Microsoft-Windows-DataCollectionService  |  Information  |  104       |  0        |           |                                      |          |  Verbose      |  Upload session result. Error={dwError}, FailureReason={bFailureReason}
+Microsoft-Windows-DataCollectionService  |  Verbose      |  105       |  0        |           |                                      |          |  Verbose      |  Uploader WinINet connect. Error={dwError}, ServerName={szServerName}
+Microsoft-Windows-DataCollectionService  |  Error        |  106       |  0        |           |                                      |          |  Error        |  Invalid registry setting for {szSettingName}
+Microsoft-Windows-DataCollectionService  |  Information  |  120       |  0        |           |  CrowdsourcingService_PrepareUpload  |  Start   |  Performance  |
+Microsoft-Windows-DataCollectionService  |  Information  |  121       |  0        |           |  CrowdsourcingService_PrepareUpload  |  Stop    |  Performance  |
+Microsoft-Windows-DataCollectionService  |  Information  |  130       |  0        |           |  CrowdsourcingService_UploadFiles    |  Start   |  Performance  |  CrowdsourcingService UploadFiles Start. TriggerSource={bTriggerSource}
+Microsoft-Windows-DataCollectionService  |  Information  |  131       |  0        |           |  CrowdsourcingService_UploadFiles    |  Stop    |  Performance  |  CrowdsourcingService UploadFiles Stop. NumFilesUploaded={dwNumFilesUploaded}
+Microsoft-Windows-DataCollectionService  |  Verbose      |  132       |  0        |           |  CrowdsourcingService_ReadDataFile   |  Start   |  Performance  |  CrowdsourcingService ReadDataFileStart Start. HttpObjectName={szHttpObjectNames}, FileFullpath={szFullpath}
+Microsoft-Windows-DataCollectionService  |  Verbose      |  133       |  0        |           |  CrowdsourcingService_ReadDataFile   |  Stop    |  Performance  |  CrowdsourcingService ReadDataFileStart Stop. Error={dwError}, FileSize={cbFileSize}, BytesRead={cbRead}
+Microsoft-Windows-DataCollectionService  |  Verbose      |  134       |  0        |           |  CrowdsourcingService_PostDataFile   |  Start   |  Performance  |  CrowdsourcingService PostDataFileStart Start. HttpObjectName={szHttpObjectName}, HeaderLength={cchHeader}, BodyLength={cchBody}, Headers={szHeaders}
+Microsoft-Windows-DataCollectionService  |  Verbose      |  135       |  0        |           |  CrowdsourcingService_PostDataFile   |  Stop    |  Performance  |  CrowdsourcingService PostDataFileStop  Stop. Error={dwError}, HttpStatusCode={dwHttpStatusCode}
+Microsoft-Windows-DataCollectionService  |  Verbose      |  136       |  0        |           |  CrowdsourcingService_RecieveData    |  Start   |  Performance  |  CrowdsourcingService Original SessionId={guidSessionId}, PayloadSize={dwPayloadSize}

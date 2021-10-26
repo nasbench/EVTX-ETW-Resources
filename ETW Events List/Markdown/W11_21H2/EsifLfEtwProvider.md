@@ -1,12 +1,12 @@
-Provider           |  Event ID  |  Channel  |  Message
--------------------|------------|-----------|----------------------------------------------------------------------------------
-EsifLfEtwProvider  |  0         |           |  {stringPtr}
-EsifLfEtwProvider  |  100       |           |  INFO: ISR Start,  Interrupt = {Interrupt}, MessageID = {MessageID}
-EsifLfEtwProvider  |  101       |           |  INFO: ISR End,  Status = {Status}
-EsifLfEtwProvider  |  102       |           |  DEBUG: {String}
-EsifLfEtwProvider  |  103       |           |  ERROR: {String}
-EsifLfEtwProvider  |  104       |           |  WARN: {String}
-EsifLfEtwProvider  |  105       |           |  INFO: {String}
-EsifLfEtwProvider  |  106       |           |  INFO: {String}, Status = {Status}
-EsifLfEtwProvider  |  107       |           |  INFO: DPC Start, Interrupt = {Interrupt}, Associated Object = {AssociatedObject}
-EsifLfEtwProvider  |  108       |           |
+Provider           |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword           |  Message
+-------------------|---------------|------------|-----------|-----------|--------|----------|--------------------|----------------------------------------------------------------------------------
+EsifLfEtwProvider  |               |  0         |  0        |           |        |          |                    |  {stringPtr}
+EsifLfEtwProvider  |  Information  |  100       |  0        |           |        |  Start   |  ApiTrace Windows  |  INFO: ISR Start,  Interrupt = {Interrupt}, MessageID = {MessageID}
+EsifLfEtwProvider  |  Information  |  101       |  0        |           |        |  Stop    |  ApiTrace Windows  |  INFO: ISR End,  Status = {Status}
+EsifLfEtwProvider  |               |  102       |  0        |           |        |          |  Windows           |  DEBUG: {String}
+EsifLfEtwProvider  |  Error        |  103       |  0        |           |        |          |  Windows           |  ERROR: {String}
+EsifLfEtwProvider  |  Warning      |  104       |  0        |           |        |          |  Windows           |  WARN: {String}
+EsifLfEtwProvider  |  Information  |  105       |  0        |           |        |          |  Windows           |  INFO: {String}
+EsifLfEtwProvider  |  Information  |  106       |  0        |           |        |          |  Windows           |  INFO: {String}, Status = {Status}
+EsifLfEtwProvider  |  Information  |  107       |  0        |           |        |          |  ApiTrace Windows  |  INFO: DPC Start, Interrupt = {Interrupt}, Associated Object = {AssociatedObject}
+EsifLfEtwProvider  |  Information  |  108       |  0        |           |        |  Stop    |  ApiTrace Windows  |

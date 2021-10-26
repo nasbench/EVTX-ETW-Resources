@@ -1,4 +1,4 @@
-Provider                                     |  Event ID  |  Channel                                                 |  Message
----------------------------------------------|------------|----------------------------------------------------------|---------
-Microsoft-Windows-System-Profile-HardwareId  |  1001      |  Microsoft-Windows-System-Profile-HardwareId/Diagnostic  |
-Microsoft-Windows-System-Profile-HardwareId  |  1002      |  Microsoft-Windows-System-Profile-HardwareId/Diagnostic  |
+Provider                                     |  Level        |  Event ID  |  Version  |  Channel                                                 |  Task                                        |  Opcode  |  Keyword  |  Message
+---------------------------------------------|---------------|------------|-----------|----------------------------------------------------------|----------------------------------------------|----------|-----------|---------
+Microsoft-Windows-System-Profile-HardwareId  |  Information  |  1001      |  0        |  Microsoft-Windows-System-Profile-HardwareId/Diagnostic  |  SystemProfile.Task.GetPackageSpecificToken  |  Start   |           |
+Microsoft-Windows-System-Profile-HardwareId  |  Information  |  1002      |  0        |  Microsoft-Windows-System-Profile-HardwareId/Diagnostic  |  SystemProfile.Task.GetPackageSpecificToken  |  Stop    |           |

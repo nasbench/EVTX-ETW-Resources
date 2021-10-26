@@ -1,4 +1,4 @@
-Provider                          |  Event ID  |  Channel                                      |  Message
-----------------------------------|------------|-----------------------------------------------|---------
-Microsoft-Windows-Shell-OpenWith  |  103       |  Microsoft-Windows-Shell-OpenWith/Diagnostic  |
-Microsoft-Windows-Shell-OpenWith  |  104       |  Microsoft-Windows-Shell-OpenWith/Diagnostic  |
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                      |  Task                   |  Opcode  |  Keyword   |  Message
+----------------------------------|---------------|------------|-----------|-----------------------------------------------|-------------------------|----------|------------|---------
+Microsoft-Windows-Shell-OpenWith  |  Information  |  103       |  0        |  Microsoft-Windows-Shell-OpenWith/Diagnostic  |  ShowImmersiveOpenWith  |  Start   |  OpenWith  |
+Microsoft-Windows-Shell-OpenWith  |  Information  |  104       |  0        |  Microsoft-Windows-Shell-OpenWith/Diagnostic  |  ShowImmersiveOpenWith  |  Stop    |  OpenWith  |

@@ -1,20 +1,20 @@
-Provider|Event ID|Channel|Message
-Microsoft-Windows-QoS-Pacer|1|Microsoft-Windows-QoS-Pacer/Diagnostic|Create {FlowType} at {SendSpec.TokenRate} bytes/sec with status {Status}
-Microsoft-Windows-QoS-Pacer|1|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: Flow created with status {Status} (type={FlowType}, rate={SendSpec.TokenRate}Bps, service={SendSpec.ServiceType}, dscp={Status}1, 802.1p={Status}2, system={Status}5)
-Microsoft-Windows-QoS-Pacer|2|Microsoft-Windows-QoS-Pacer/Diagnostic|Update {FlowType} from {OldSendSpec.TokenRate} to {Status}1 with status {Status}
-Microsoft-Windows-QoS-Pacer|2|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: Flow updated with status {Status} (rate={SendSpec.TokenRate}Bps, service={SendSpec.ServiceType}, dscp={Status}1, 802.1p={Status}2)
-Microsoft-Windows-QoS-Pacer|3|Microsoft-Windows-QoS-Pacer/Diagnostic|Start Pacer on NetLuid={NetLuid} ({FriendlyName})
-Microsoft-Windows-QoS-Pacer|3|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: Starting adapter {FriendlyName} (luid={NetLuid})
-Microsoft-Windows-QoS-Pacer|4|Microsoft-Windows-QoS-Pacer/Diagnostic|Stop Pacer on NetLuid={NetLuid} ({FriendlyName})
-Microsoft-Windows-QoS-Pacer|4|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: Stopping adapter {FriendlyName} (luid={NetLuid})
-Microsoft-Windows-QoS-Pacer|5|Microsoft-Windows-QoS-Pacer/Diagnostic|Update {FlowType} from {OldSendSpec.TokenRate} to {FlowType}0
-Microsoft-Windows-QoS-Pacer|6|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: Flow deleted (dropped={DroppedPackets}, scheduled={PacketsScheduled}/{BytesScheduled}, transmitted={PacketsTransmitted}/{BytesTransmitted}, nbl={NblComplete}/{NblSent})
-Microsoft-Windows-QoS-Pacer|7|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: Packet dropped, reason={DropReason}
-Microsoft-Windows-QoS-Pacer|8|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: Non-conformance marking, dscp={DsClass}, 802.1p={TrafficClass}, WMM={Wmm}
-Microsoft-Windows-QoS-Pacer|9|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: Application-based DSCP marking policy state={Allow}
-Microsoft-Windows-QoS-Pacer|11|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: CurrentTime= {CurrentTime} BytesSent= {BytesSent} BytesDropped= {BytesDropped} NewSendWindow= {NewSendWindow} MinSendWindow= {MinSendWindow}
-Microsoft-Windows-QoS-Pacer|12|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: NetLuid= {NetLuid} CurrentTime= {CurrentTime} ActiveFlows= {ActiveFlows} ActiveWeight= {ActiveWeight} NewSendWindow= {NewSendWindow}
-Microsoft-Windows-QoS-Pacer|13|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: FlowConformanceEventId= {FlowConformanceEvent} CurrentTime= {CurrentTime} LastConformanceTime= {LastConformanceTime} PeakConformanceTime= {PeakConformanceTime} Tokens= {Tokens} MaxTokens= {MaxTokens} Rate= {Rate} LastConformanceCredits= {LastConformanceCredits}
-Microsoft-Windows-QoS-Pacer|14|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: FlowSendQueueEventId= {FlowSendQueueEvent} CurrentTime= {CurrentTime} IdleTime= {IdleTime} DelayTime= {DelayTime} BytesRequested= {BytesRequested} BytesSent= {BytesSent} BytesQueued= {BytesQueued}
-Microsoft-Windows-QoS-Pacer|15|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: TimerId= {TimerEvent} EventId= {TimerId} CurrentTime= {CurrentTime} SetTime= {SetTime} RunTime= {RunTime} FlowsProcessed= {FlowsProcessed} NblsSent= {NblsSent} NblsDropped= {NblsDropped} Flags= {Flags}
-Microsoft-Windows-QoS-Pacer|16|Microsoft-Windows-QoS-Pacer/Diagnostic|PACER: NetLuid= {NetLuid} CurrentTime= {CurrentTime} BytesRequested= {BytesRequested} BytesCompleted= {BytesCompleted} BytesInQueue= {BytesInQueue} BufferAvailable= {BufferAvailable} AlphaTerm= {AlphaTerm} BetaTerm= {BetaTerm} DeltaSendWindow= {DeltaSendWindow} NewSendWindow= {NetLuid}0
+Provider|Level|Event ID|Version|Channel|Task|Opcode|Keyword|Message
+Microsoft-Windows-QoS-Pacer|Information|1|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||Create {FlowType} at {SendSpec.TokenRate} bytes/sec with status {Status}
+Microsoft-Windows-QoS-Pacer|Information|1|1|Microsoft-Windows-QoS-Pacer/Diagnostic||Start||PACER: Flow created with status {Status} (type={FlowType}, rate={SendSpec.TokenRate}Bps, service={SendSpec.ServiceType}, dscp={Status}1, 802.1p={Status}2, system={Status}5)
+Microsoft-Windows-QoS-Pacer|Information|2|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||Update {FlowType} from {OldSendSpec.TokenRate} to {Status}1 with status {Status}
+Microsoft-Windows-QoS-Pacer|Information|2|1|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: Flow updated with status {Status} (rate={SendSpec.TokenRate}Bps, service={SendSpec.ServiceType}, dscp={Status}1, 802.1p={Status}2)
+Microsoft-Windows-QoS-Pacer|Information|3|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||Start Pacer on NetLuid={NetLuid} ({FriendlyName})
+Microsoft-Windows-QoS-Pacer|Information|3|1|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: Starting adapter {FriendlyName} (luid={NetLuid})
+Microsoft-Windows-QoS-Pacer|Information|4|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||Stop Pacer on NetLuid={NetLuid} ({FriendlyName})
+Microsoft-Windows-QoS-Pacer|Information|4|1|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: Stopping adapter {FriendlyName} (luid={NetLuid})
+Microsoft-Windows-QoS-Pacer|Information|5|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||Update {FlowType} from {OldSendSpec.TokenRate} to {FlowType}0
+Microsoft-Windows-QoS-Pacer|Information|6|0|Microsoft-Windows-QoS-Pacer/Diagnostic||Stop||PACER: Flow deleted (dropped={DroppedPackets}, scheduled={PacketsScheduled}/{BytesScheduled}, transmitted={PacketsTransmitted}/{BytesTransmitted}, nbl={NblComplete}/{NblSent})
+Microsoft-Windows-QoS-Pacer|Error|7|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: Packet dropped, reason={DropReason}
+Microsoft-Windows-QoS-Pacer|Warning|8|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: Non-conformance marking, dscp={DsClass}, 802.1p={TrafficClass}, WMM={Wmm}
+Microsoft-Windows-QoS-Pacer|Information|9|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: Application-based DSCP marking policy state={Allow}
+Microsoft-Windows-QoS-Pacer|Information|11|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: CurrentTime= {CurrentTime} BytesSent= {BytesSent} BytesDropped= {BytesDropped} NewSendWindow= {NewSendWindow} MinSendWindow= {MinSendWindow}
+Microsoft-Windows-QoS-Pacer|Information|12|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: NetLuid= {NetLuid} CurrentTime= {CurrentTime} ActiveFlows= {ActiveFlows} ActiveWeight= {ActiveWeight} NewSendWindow= {NewSendWindow}
+Microsoft-Windows-QoS-Pacer|Verbose|13|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: FlowConformanceEventId= {FlowConformanceEvent} CurrentTime= {CurrentTime} LastConformanceTime= {LastConformanceTime} PeakConformanceTime= {PeakConformanceTime} Tokens= {Tokens} MaxTokens= {MaxTokens} Rate= {Rate} LastConformanceCredits= {LastConformanceCredits}
+Microsoft-Windows-QoS-Pacer|Verbose|14|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: FlowSendQueueEventId= {FlowSendQueueEvent} CurrentTime= {CurrentTime} IdleTime= {IdleTime} DelayTime= {DelayTime} BytesRequested= {BytesRequested} BytesSent= {BytesSent} BytesQueued= {BytesQueued}
+Microsoft-Windows-QoS-Pacer|Verbose|15|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: TimerId= {TimerEvent} EventId= {TimerId} CurrentTime= {CurrentTime} SetTime= {SetTime} RunTime= {RunTime} FlowsProcessed= {FlowsProcessed} NblsSent= {NblsSent} NblsDropped= {NblsDropped} Flags= {Flags}
+Microsoft-Windows-QoS-Pacer|Information|16|0|Microsoft-Windows-QoS-Pacer/Diagnostic||||PACER: NetLuid= {NetLuid} CurrentTime= {CurrentTime} BytesRequested= {BytesRequested} BytesCompleted= {BytesCompleted} BytesInQueue= {BytesInQueue} BufferAvailable= {BufferAvailable} AlphaTerm= {AlphaTerm} BetaTerm= {BetaTerm} DeltaSendWindow= {DeltaSendWindow} NewSendWindow= {NetLuid}0

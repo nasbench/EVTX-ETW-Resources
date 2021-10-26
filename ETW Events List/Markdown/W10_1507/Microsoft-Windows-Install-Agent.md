@@ -1,7 +1,7 @@
-Provider                         |  Event ID  |  Channel                              |  Message
----------------------------------|------------|---------------------------------------|----------------------------------------------------------------------------------
-Microsoft-Windows-Install-Agent  |  2000      |  Microsoft-Windows-Store/Operational  |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}
-Microsoft-Windows-Install-Agent  |  2001      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Install-Agent  |  2002      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Install-Agent  |  2003      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Install-Agent  |  2004      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Provider                         |  Level        |  Event ID  |  Version  |  Channel                              |  Task                         |  Opcode   |  Keyword   |  Message
+---------------------------------|---------------|------------|-----------|---------------------------------------|-------------------------------|-----------|------------|----------------------------------------------------------------------------------
+Microsoft-Windows-Install-Agent  |  Information  |  2000      |  0        |  Microsoft-Windows-Store/Operational  |  Install Agent Module Loaded  |           |  Messages  |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}
+Microsoft-Windows-Install-Agent  |  Information  |  2001      |  0        |  Microsoft-Windows-Store/Operational  |  Agent                        |  Verbose  |  Messages  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  Information  |  2002      |  0        |  Microsoft-Windows-Store/Operational  |  Agent                        |  Info     |  Messages  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  Warning      |  2003      |  0        |  Microsoft-Windows-Store/Operational  |  Agent                        |  Warning  |  Messages  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Install-Agent  |  Error        |  2004      |  0        |  Microsoft-Windows-Store/Operational  |  Agent                        |  Error    |  Messages  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})

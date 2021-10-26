@@ -1,3 +1,3 @@
-Provider           |  Event ID  |  Channel  |  Message
--------------------|------------|-----------|-------------------------------------------
-Application Popup  |  26        |  System   |  Application pop-up: {Caption} : {Message}
+Provider           |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-------------------|---------------|------------|-----------|-----------|--------|----------|-----------|-------------------------------------------
+Application Popup  |  Information  |  26        |  0        |  System   |        |          |           |  Application pop-up: {Caption} : {Message}

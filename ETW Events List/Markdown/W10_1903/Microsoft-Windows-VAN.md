@@ -1,19 +1,19 @@
-Provider               |  Event ID  |  Channel                           |  Message
------------------------|------------|------------------------------------|---------
-Microsoft-Windows-VAN  |  8001      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8002      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8005      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8006      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8007      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8008      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8009      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8010      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8012      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8013      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8014      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8015      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8016      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8017      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8018      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8019      |  Microsoft-Windows-VAN/Diagnostic  |
-Microsoft-Windows-VAN  |  8020      |  Microsoft-Windows-VAN/Diagnostic  |
+Provider               |  Level        |  Event ID  |  Version  |  Channel                           |  Task                     |  Opcode  |  Keyword               |  Message
+-----------------------|---------------|------------|-----------|------------------------------------|---------------------------|----------|------------------------|---------
+Microsoft-Windows-VAN  |  Information  |  8001      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  Init                     |  Start   |                        |
+Microsoft-Windows-VAN  |  Information  |  8002      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  Init                     |  Stop    |                        |
+Microsoft-Windows-VAN  |  Information  |  8005      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  ShowFlyoutFromTray       |  Start   |                        |
+Microsoft-Windows-VAN  |  Information  |  8006      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  ShowFlyoutFromTray       |  Stop    |                        |
+Microsoft-Windows-VAN  |  Information  |  8007      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  ShowCFE                  |  Start   |  VAN-Performance       |
+Microsoft-Windows-VAN  |  Information  |  8008      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  ShowCFE                  |  Stop    |                        |
+Microsoft-Windows-VAN  |  Information  |  8009      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  Disconnect               |  Start   |                        |
+Microsoft-Windows-VAN  |  Information  |  8010      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  Disconnect               |  Stop    |                        |
+Microsoft-Windows-VAN  |  Information  |  8012      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  CFEConnectFlowFinished   |          |  VAN-Performance       |
+Microsoft-Windows-VAN  |  Information  |  8013      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  NetworkStatus_Limited    |          |  VAN-Performance Aoac  |
+Microsoft-Windows-VAN  |  Information  |  8014      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  NetworkStatus_Connected  |          |  VAN-Performance Aoac  |
+Microsoft-Windows-VAN  |  Information  |  8015      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  LoadPreCFE               |  Start   |  VAN-Performance       |
+Microsoft-Windows-VAN  |  Information  |  8016      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  LoadPreCFE               |  Stop    |  VAN-Performance       |
+Microsoft-Windows-VAN  |  Information  |  8017      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  ExpandNetwork            |  Start   |  VAN-Performance       |
+Microsoft-Windows-VAN  |  Information  |  8018      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  ExpandNetwork            |  Stop    |  VAN-Performance       |
+Microsoft-Windows-VAN  |  Information  |  8019      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  DisplayContextMenu       |  Start   |  VAN-Performance       |
+Microsoft-Windows-VAN  |  Information  |  8020      |  0        |  Microsoft-Windows-VAN/Diagnostic  |  DisplayContextMenu       |  Stop    |  VAN-Performance       |

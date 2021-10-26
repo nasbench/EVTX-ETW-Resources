@@ -1,8 +1,8 @@
-Provider                    |  Event ID  |  Channel                                |  Message
-----------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-WlanConn  |  8001      |  Microsoft-Windows-WlanConn/Diagnostic  |
-Microsoft-Windows-WlanConn  |  8002      |  Microsoft-Windows-WlanConn/Diagnostic  |
-Microsoft-Windows-WlanConn  |  8003      |  Microsoft-Windows-WlanConn/Diagnostic  |
-Microsoft-Windows-WlanConn  |  8004      |  Microsoft-Windows-WlanConn/Diagnostic  |
-Microsoft-Windows-WlanConn  |  8005      |  Microsoft-Windows-WlanConn/Diagnostic  |
-Microsoft-Windows-WlanConn  |  8006      |  Microsoft-Windows-WlanConn/Diagnostic  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                |  Task    |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------|----------|----------|-----------|---------
+Microsoft-Windows-WlanConn  |  Information  |  8001      |  0        |  Microsoft-Windows-WlanConn/Diagnostic  |  L2Conn  |  Start   |           |
+Microsoft-Windows-WlanConn  |  Information  |  8002      |  0        |  Microsoft-Windows-WlanConn/Diagnostic  |  L2Conn  |  Stop    |           |
+Microsoft-Windows-WlanConn  |  Information  |  8003      |  0        |  Microsoft-Windows-WlanConn/Diagnostic  |  L2Conn  |  Stop    |           |
+Microsoft-Windows-WlanConn  |  Information  |  8004      |  0        |  Microsoft-Windows-WlanConn/Diagnostic  |  L3Conn  |  Start   |           |
+Microsoft-Windows-WlanConn  |  Information  |  8005      |  0        |  Microsoft-Windows-WlanConn/Diagnostic  |  L3Conn  |  Stop    |           |
+Microsoft-Windows-WlanConn  |  Information  |  8006      |  0        |  Microsoft-Windows-WlanConn/Diagnostic  |  L3Conn  |  Stop    |           |

@@ -1,89 +1,89 @@
-Provider                             |  Event ID  |  Channel  |  Message
--------------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------
-Microsoft-Windows-MCCS-InternetMail  |  1         |           |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
-Microsoft-Windows-MCCS-InternetMail  |  2         |           |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
-Microsoft-Windows-MCCS-InternetMail  |  101       |           |  Invalid IMAP Server response: Server response = {Prop_String}
-Microsoft-Windows-MCCS-InternetMail  |  102       |           |  Error selecting folder: {Prop_String}, Server response = {Prop_String2}
-Microsoft-Windows-MCCS-InternetMail  |  103       |           |  {Prop_String} authentication failed with mechanism {Prop_String2}
-Microsoft-Windows-MCCS-InternetMail  |  104       |           |  Google: Force enable IMAP on the server side completed. Result {Prop_Hex}
-Microsoft-Windows-MCCS-InternetMail  |  110       |           |  IMAP_IDLE: Execute Work invoked. Account Id = {Prop_Hex}
-Microsoft-Windows-MCCS-InternetMail  |  111       |           |  IMAP_IDLE: Cancel requested. Account Id = {Prop_Hex}
-Microsoft-Windows-MCCS-InternetMail  |  112       |           |
-Microsoft-Windows-MCCS-InternetMail  |  113       |           |
-Microsoft-Windows-MCCS-InternetMail  |  114       |           |
-Microsoft-Windows-MCCS-InternetMail  |  115       |           |
-Microsoft-Windows-MCCS-InternetMail  |  116       |           |  IMAP_IDLE: IDLE terminated with error {Prop_Hex}
-Microsoft-Windows-MCCS-InternetMail  |  117       |           |
-Microsoft-Windows-MCCS-InternetMail  |  118       |           |  IMAP_IDLE: Server Update received. Type {Prop_Uint}
-Microsoft-Windows-MCCS-InternetMail  |  119       |           |  IMAP_IDLE: Server Update received. EXISTS {Prop_Uint}
-Microsoft-Windows-MCCS-InternetMail  |  120       |           |  IMAP_IDLE: Server Update received. EXPUNGE {Prop_Uint}
-Microsoft-Windows-MCCS-InternetMail  |  121       |           |  IMAP_IDLE: Server Update received. FLAG FETCH {Prop_Uint1} Read? {Prop_Uint2}
-Microsoft-Windows-MCCS-InternetMail  |  122       |           |
-Microsoft-Windows-MCCS-InternetMail  |  123       |           |
-Microsoft-Windows-MCCS-InternetMail  |  124       |           |  IMAP_IDLE: Processing Queued Updates. Count {Prop_Uint}
-Microsoft-Windows-MCCS-InternetMail  |  125       |           |
-Microsoft-Windows-MCCS-InternetMail  |  126       |           |
-Microsoft-Windows-MCCS-InternetMail  |  127       |           |
-Microsoft-Windows-MCCS-InternetMail  |  128       |           |
-Microsoft-Windows-MCCS-InternetMail  |  200       |           |
-Microsoft-Windows-MCCS-InternetMail  |  201       |           |
-Microsoft-Windows-MCCS-InternetMail  |  202       |           |
-Microsoft-Windows-MCCS-InternetMail  |  203       |           |
-Microsoft-Windows-MCCS-InternetMail  |  204       |           |
-Microsoft-Windows-MCCS-InternetMail  |  205       |           |
-Microsoft-Windows-MCCS-InternetMail  |  206       |           |
-Microsoft-Windows-MCCS-InternetMail  |  207       |           |
-Microsoft-Windows-MCCS-InternetMail  |  208       |           |
-Microsoft-Windows-MCCS-InternetMail  |  209       |           |
-Microsoft-Windows-MCCS-InternetMail  |  210       |           |
-Microsoft-Windows-MCCS-InternetMail  |  211       |           |
-Microsoft-Windows-MCCS-InternetMail  |  212       |           |
-Microsoft-Windows-MCCS-InternetMail  |  213       |           |
-Microsoft-Windows-MCCS-InternetMail  |  214       |           |
-Microsoft-Windows-MCCS-InternetMail  |  215       |           |
-Microsoft-Windows-MCCS-InternetMail  |  216       |           |
-Microsoft-Windows-MCCS-InternetMail  |  217       |           |
-Microsoft-Windows-MCCS-InternetMail  |  218       |           |
-Microsoft-Windows-MCCS-InternetMail  |  219       |           |
-Microsoft-Windows-MCCS-InternetMail  |  220       |           |
-Microsoft-Windows-MCCS-InternetMail  |  221       |           |
-Microsoft-Windows-MCCS-InternetMail  |  222       |           |
-Microsoft-Windows-MCCS-InternetMail  |  223       |           |
-Microsoft-Windows-MCCS-InternetMail  |  224       |           |
-Microsoft-Windows-MCCS-InternetMail  |  225       |           |
-Microsoft-Windows-MCCS-InternetMail  |  226       |           |
-Microsoft-Windows-MCCS-InternetMail  |  227       |           |
-Microsoft-Windows-MCCS-InternetMail  |  228       |           |
-Microsoft-Windows-MCCS-InternetMail  |  229       |           |
-Microsoft-Windows-MCCS-InternetMail  |  230       |           |
-Microsoft-Windows-MCCS-InternetMail  |  231       |           |
-Microsoft-Windows-MCCS-InternetMail  |  232       |           |
-Microsoft-Windows-MCCS-InternetMail  |  233       |           |
-Microsoft-Windows-MCCS-InternetMail  |  234       |           |
-Microsoft-Windows-MCCS-InternetMail  |  235       |           |
-Microsoft-Windows-MCCS-InternetMail  |  236       |           |
-Microsoft-Windows-MCCS-InternetMail  |  237       |           |
-Microsoft-Windows-MCCS-InternetMail  |  238       |           |
-Microsoft-Windows-MCCS-InternetMail  |  239       |           |
-Microsoft-Windows-MCCS-InternetMail  |  240       |           |
-Microsoft-Windows-MCCS-InternetMail  |  241       |           |
-Microsoft-Windows-MCCS-InternetMail  |  242       |           |
-Microsoft-Windows-MCCS-InternetMail  |  243       |           |
-Microsoft-Windows-MCCS-InternetMail  |  244       |           |
-Microsoft-Windows-MCCS-InternetMail  |  245       |           |
-Microsoft-Windows-MCCS-InternetMail  |  246       |           |
-Microsoft-Windows-MCCS-InternetMail  |  247       |           |
-Microsoft-Windows-MCCS-InternetMail  |  248       |           |
-Microsoft-Windows-MCCS-InternetMail  |  249       |           |
-Microsoft-Windows-MCCS-InternetMail  |  301       |           |  Sync result: {P1_HResult}, engine index: {P2_UInt32} severity: {P3_UInt32} retry level: {P4_UInt32}
-Microsoft-Windows-MCCS-InternetMail  |  401       |           |  Account {Prop_String} ImapIdle set PDC:{Prop_Boolean}
-Microsoft-Windows-MCCS-InternetMail  |  402       |           |  Account {Prop_String} ImapIdle set CCT, SUCCEEDED:{Prop_Boolean}
-Microsoft-Windows-MCCS-InternetMail  |  403       |           |  Account {Prop_String} ImapIdle Unset CCT, CCT allocated:{Prop_Boolean}
-Microsoft-Windows-MCCS-InternetMail  |  451       |           |  IMAP folder validity updated to {Prop_Uint}
-Microsoft-Windows-MCCS-InternetMail  |  461       |           |  IMAP Failed to fetch message with UID {Prop_Uint}
-Microsoft-Windows-MCCS-InternetMail  |  462       |           |  IMAP Skip fetching message with UID {Prop_Uint}
-Microsoft-Windows-MCCS-InternetMail  |  481       |           |
-Microsoft-Windows-MCCS-InternetMail  |  482       |           |
-Microsoft-Windows-MCCS-InternetMail  |  483       |           |
-Microsoft-Windows-MCCS-InternetMail  |  484       |           |
-Microsoft-Windows-MCCS-InternetMail  |  485       |           |  AutoConfig Provider result: {Prop_Hex}.
+Provider                             |  Level        |  Event ID  |  Version  |  Channel  |  Task                                     |  Opcode  |  Keyword      |  Message
+-------------------------------------|---------------|------------|-----------|-----------|-------------------------------------------|----------|---------------|-----------------------------------------------------------------------------------------------------
+Microsoft-Windows-MCCS-InternetMail  |  Error        |  1         |  0        |           |                                           |          |  Error        |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-InternetMail  |  Warning      |  2         |  0        |           |                                           |          |               |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-InternetMail  |  Error        |  101       |  0        |           |                                           |          |  Error        |  Invalid IMAP Server response: Server response = {Prop_String}
+Microsoft-Windows-MCCS-InternetMail  |  Warning      |  102       |  0        |           |                                           |          |               |  Error selecting folder: {Prop_String}, Server response = {Prop_String2}
+Microsoft-Windows-MCCS-InternetMail  |  Warning      |  103       |  0        |           |                                           |          |               |  {Prop_String} authentication failed with mechanism {Prop_String2}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  104       |  0        |           |                                           |          |               |  Google: Force enable IMAP on the server side completed. Result {Prop_Hex}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  110       |  0        |           |                                           |          |               |  IMAP_IDLE: Execute Work invoked. Account Id = {Prop_Hex}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  111       |  0        |           |                                           |          |               |  IMAP_IDLE: Cancel requested. Account Id = {Prop_Hex}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  112       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  113       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  114       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  115       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  116       |  0        |           |                                           |          |               |  IMAP_IDLE: IDLE terminated with error {Prop_Hex}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  117       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  118       |  0        |           |                                           |          |               |  IMAP_IDLE: Server Update received. Type {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  119       |  0        |           |                                           |          |               |  IMAP_IDLE: Server Update received. EXISTS {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  120       |  0        |           |                                           |          |               |  IMAP_IDLE: Server Update received. EXPUNGE {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  121       |  0        |           |                                           |          |               |  IMAP_IDLE: Server Update received. FLAG FETCH {Prop_Uint1} Read? {Prop_Uint2}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  122       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  123       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  124       |  0        |           |                                           |          |               |  IMAP_IDLE: Processing Queued Updates. Count {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  125       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  126       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  127       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  128       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  200       |  0        |           |  PIPERF_TAG_SYNCSESSION_INIT              |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  201       |  0        |           |  PIPERF_TAG_SYNCSESSION_INIT              |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  202       |  0        |           |  PIPERF_TAG_SYNCSESSION_SMTPINIT          |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  203       |  0        |           |  PIPERF_TAG_SYNCSESSION_SMTPINIT          |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  204       |  0        |           |  PIPERF_TAG_SYNCSESSION_SYNC              |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  205       |  0        |           |  PIPERF_TAG_SYNCSESSION_SYNC              |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  206       |  0        |           |  PIPERF_TAG_SYNCSESSION_FDSYNC            |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  207       |  0        |           |  PIPERF_TAG_SYNCSESSION_FDSYNC            |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  208       |  0        |           |  PIPERF_TAG_SYNCSESSION_FDSYNCWITHSERVER  |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  209       |  0        |           |  PIPERF_TAG_SYNCSESSION_FDSYNCWITHSERVER  |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  210       |  0        |           |  PIPERF_TAG_SYNCSESSION_FULLSYNC          |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  211       |  0        |           |  PIPERF_TAG_SYNCSESSION_FULLSYNC          |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  212       |  0        |           |  PIPERF_TAG_SYNCSESSION_CONNECT           |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  213       |  0        |           |  PIPERF_TAG_SYNCSESSION_CONNECT           |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  214       |  0        |           |  PIPERF_TAG_SYNCSESSION_CREATEFOLDER      |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  215       |  0        |           |  PIPERF_TAG_SYNCSESSION_CREATEFOLDER      |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  216       |  0        |           |  PIPERF_TAG_SYNCSESSION_RENAMEFOLDER      |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  217       |  0        |           |  PIPERF_TAG_SYNCSESSION_RENAMEFOLDER      |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  218       |  0        |           |  PIPERF_TAG_SYNCSESSION_DELETEFOLDER      |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  219       |  0        |           |  PIPERF_TAG_SYNCSESSION_DELETEFOLDER      |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  220       |  0        |           |  PIPERF_TAG_SYNCSESSION_FETCHMESSAGE      |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  221       |  0        |           |  PIPERF_TAG_SYNCSESSION_FETCHMESSAGE      |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  222       |  0        |           |  PIPERF_TAG_SYNCSESSION_POSTRECV          |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  223       |  0        |           |  PIPERF_TAG_SYNCSESSION_POSTRECV          |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  224       |  0        |           |  PIPERF_TAG_SYNCSESSION_IMAPTRACKER       |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  225       |  0        |           |  PIPERF_TAG_SYNCSESSION_IMAPTRACKER       |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  226       |  0        |           |  PIPERF_TAG_SYNCSESSION_FETCHFOLDERLIST   |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  227       |  0        |           |  PIPERF_TAG_SYNCSESSION_FETCHFOLDERLIST   |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  228       |  0        |           |  PIPERF_TAG_SYNCSESSION_SENDMESSAGE       |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  229       |  0        |           |  PIPERF_TAG_SYNCSESSION_SENDMESSAGE       |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  230       |  0        |           |  PIPERF_TAG_SYNCSESSION_SMTPFULLSYNC      |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  231       |  0        |           |  PIPERF_TAG_SYNCSESSION_SMTPFULLSYNC      |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  232       |  0        |           |  PIPERF_TAG_SYNCSESSION_SMTPCONNECT       |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  233       |  0        |           |  PIPERF_TAG_SYNCSESSION_SMTPCONNECT       |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  234       |  0        |           |  PIPERF_TAG_SOCKET_CONNECT                |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  235       |  0        |           |  PIPERF_TAG_SOCKET_CONNECT                |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  236       |  0        |           |  PIPERF_TAG_SOCKET_RECEIVE                |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  237       |  0        |           |  PIPERF_TAG_SOCKET_RECEIVE                |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  238       |  0        |           |  PIPERF_TAG_SOCKET_SEND                   |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  239       |  0        |           |  PIPERF_TAG_SOCKET_SEND                   |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  240       |  0        |           |  PIPERF_TAG_SOCKET_OPTIONS                |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  241       |  0        |           |  PIPERF_TAG_SOCKET_OPTIONS                |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  242       |  0        |           |  PIPERF_TAG_SOCKET_CLOSE                  |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  243       |  0        |           |  PIPERF_TAG_SOCKET_CLOSE                  |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  244       |  0        |           |  PIPERF_TAG_SOCKET_VERIFYCERT             |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  245       |  0        |           |  PIPERF_TAG_SOCKET_VERIFYCERT             |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  246       |  0        |           |  PIPERF_TAG_SOCKET_STORECERT              |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  247       |  0        |           |  PIPERF_TAG_SOCKET_STORECERT              |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  248       |  0        |           |  PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE   |  Start   |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  249       |  0        |           |  PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE   |  Stop    |  Performance  |
+Microsoft-Windows-MCCS-InternetMail  |  Error        |  301       |  0        |           |                                           |          |  Error        |  Sync result: {P1_HResult}, engine index: {P2_UInt32} severity: {P3_UInt32} retry level: {P4_UInt32}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  401       |  0        |           |                                           |          |               |  Account {Prop_String} ImapIdle set PDC:{Prop_Boolean}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  402       |  0        |           |                                           |          |               |  Account {Prop_String} ImapIdle set CCT, SUCCEEDED:{Prop_Boolean}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  403       |  0        |           |                                           |          |               |  Account {Prop_String} ImapIdle Unset CCT, CCT allocated:{Prop_Boolean}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  451       |  0        |           |                                           |          |               |  IMAP folder validity updated to {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  461       |  0        |           |                                           |          |               |  IMAP Failed to fetch message with UID {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  462       |  0        |           |                                           |          |               |  IMAP Skip fetching message with UID {Prop_Uint}
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  481       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  482       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  483       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  484       |  0        |           |                                           |          |               |
+Microsoft-Windows-MCCS-InternetMail  |  Information  |  485       |  0        |           |                                           |          |               |  AutoConfig Provider result: {Prop_Hex}.

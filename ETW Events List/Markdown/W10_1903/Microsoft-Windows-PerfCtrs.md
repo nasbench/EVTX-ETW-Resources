@@ -1,76 +1,76 @@
-Provider                    |  Event ID    |  Channel  |  Message
-----------------------------|--------------|-----------|---------
-Microsoft-Windows-PerfCtrs  |  1073743724  |           |
-Microsoft-Windows-PerfCtrs  |  1073743823  |           |
-Microsoft-Windows-PerfCtrs  |  1073743824  |           |
-Microsoft-Windows-PerfCtrs  |  3221227473  |           |
-Microsoft-Windows-PerfCtrs  |  3221227474  |           |
-Microsoft-Windows-PerfCtrs  |  3221227475  |           |
-Microsoft-Windows-PerfCtrs  |  3221227476  |           |
-Microsoft-Windows-PerfCtrs  |  3221227477  |           |
-Microsoft-Windows-PerfCtrs  |  3221227478  |           |
-Microsoft-Windows-PerfCtrs  |  3221227479  |           |
-Microsoft-Windows-PerfCtrs  |  1073743923  |           |
-Microsoft-Windows-PerfCtrs  |  1073743924  |           |
-Microsoft-Windows-PerfCtrs  |  2147485749  |           |
-Microsoft-Windows-PerfCtrs  |  1073743926  |           |
-Microsoft-Windows-PerfCtrs  |  1073743927  |           |
-Microsoft-Windows-PerfCtrs  |  3221227576  |           |
-Microsoft-Windows-PerfCtrs  |  1073743929  |           |
-Microsoft-Windows-PerfCtrs  |  3221227578  |           |
-Microsoft-Windows-PerfCtrs  |  3221227579  |           |
-Microsoft-Windows-PerfCtrs  |  1073744023  |           |
-Microsoft-Windows-PerfCtrs  |  1073744024  |           |
-Microsoft-Windows-PerfCtrs  |  1073744026  |           |
-Microsoft-Windows-PerfCtrs  |  2147485851  |           |
-Microsoft-Windows-PerfCtrs  |  1073744824  |           |
-Microsoft-Windows-PerfCtrs  |  1073744923  |           |
-Microsoft-Windows-PerfCtrs  |  1073744924  |           |
-Microsoft-Windows-PerfCtrs  |  3221228573  |           |
-Microsoft-Windows-PerfCtrs  |  1073744926  |           |
-Microsoft-Windows-PerfCtrs  |  3221228575  |           |
-Microsoft-Windows-PerfCtrs  |  1073745023  |           |
-Microsoft-Windows-PerfCtrs  |  1073745024  |           |
-Microsoft-Windows-PerfCtrs  |  1073745824  |           |
-Microsoft-Windows-PerfCtrs  |  3221229473  |           |
-Microsoft-Windows-PerfCtrs  |  1073745826  |           |
-Microsoft-Windows-PerfCtrs  |  3221229475  |           |
-Microsoft-Windows-PerfCtrs  |  1073745828  |           |
-Microsoft-Windows-PerfCtrs  |  3221229477  |           |
-Microsoft-Windows-PerfCtrs  |  3221229478  |           |
-Microsoft-Windows-PerfCtrs  |  3221229479  |           |
-Microsoft-Windows-PerfCtrs  |  3221229480  |           |
-Microsoft-Windows-PerfCtrs  |  1073745833  |           |
-Microsoft-Windows-PerfCtrs  |  3221229482  |           |
-Microsoft-Windows-PerfCtrs  |  3221229483  |           |
-Microsoft-Windows-PerfCtrs  |  1073745923  |           |
-Microsoft-Windows-PerfCtrs  |  1073745924  |           |
-Microsoft-Windows-PerfCtrs  |  1073745925  |           |
-Microsoft-Windows-PerfCtrs  |  3221229574  |           |
-Microsoft-Windows-PerfCtrs  |  2147487751  |           |
-Microsoft-Windows-PerfCtrs  |  1073745928  |           |
-Microsoft-Windows-PerfCtrs  |  3221229577  |           |
-Microsoft-Windows-PerfCtrs  |  2147487754  |           |
-Microsoft-Windows-PerfCtrs  |  3221229579  |           |
-Microsoft-Windows-PerfCtrs  |  3221229580  |           |
-Microsoft-Windows-PerfCtrs  |  3221229582  |           |
-Microsoft-Windows-PerfCtrs  |  1073745935  |           |
-Microsoft-Windows-PerfCtrs  |  2147487760  |           |
-Microsoft-Windows-PerfCtrs  |  3221229585  |           |
-Microsoft-Windows-PerfCtrs  |  1073745938  |           |
-Microsoft-Windows-PerfCtrs  |  2147487764  |           |
-Microsoft-Windows-PerfCtrs  |  2147487767  |           |
-Microsoft-Windows-PerfCtrs  |  2147487768  |           |
-Microsoft-Windows-PerfCtrs  |  2147487769  |           |
-Microsoft-Windows-PerfCtrs  |  1073746023  |           |
-Microsoft-Windows-PerfCtrs  |  1073746024  |           |
-Microsoft-Windows-PerfCtrs  |  3221229673  |           |
-Microsoft-Windows-PerfCtrs  |  1073747124  |           |
-Microsoft-Windows-PerfCtrs  |  1073747125  |           |
-Microsoft-Windows-PerfCtrs  |  1073747126  |           |
-Microsoft-Windows-PerfCtrs  |  1073747127  |           |
-Microsoft-Windows-PerfCtrs  |  1073747128  |           |
-Microsoft-Windows-PerfCtrs  |  1073747129  |           |
-Microsoft-Windows-PerfCtrs  |  1073747130  |           |
-Microsoft-Windows-PerfCtrs  |  1073747131  |           |
-Microsoft-Windows-PerfCtrs  |  2147488956  |           |
+Provider                    |  Level  |  Event ID    |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+----------------------------|---------|--------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-PerfCtrs  |         |  1073743724  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073743823  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073743824  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227473  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227474  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227475  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227476  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227477  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227478  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227479  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073743923  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073743924  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147485749  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073743926  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073743927  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227576  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073743929  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227578  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221227579  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073744023  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073744024  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073744026  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147485851  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073744824  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073744923  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073744924  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221228573  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073744926  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221228575  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745023  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745024  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745824  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229473  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745826  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229475  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745828  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229477  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229478  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229479  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229480  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745833  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229482  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229483  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745923  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745924  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745925  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229574  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147487751  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745928  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229577  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147487754  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229579  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229580  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229582  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745935  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147487760  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229585  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073745938  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147487764  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147487767  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147487768  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147487769  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073746023  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073746024  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  3221229673  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073747124  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073747125  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073747126  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073747127  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073747128  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073747129  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073747130  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  1073747131  |  0        |           |        |          |           |
+Microsoft-Windows-PerfCtrs  |         |  2147488956  |  0        |           |        |          |           |

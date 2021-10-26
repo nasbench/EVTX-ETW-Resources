@@ -1,12 +1,12 @@
-Provider                          |  Event ID  |  Channel                                      |  Message
-----------------------------------|------------|-----------------------------------------------|---------
-Microsoft-Windows-Migration-Core  |  1         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  2         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  3         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  4         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  5         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  6         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  7         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  8         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  9         |  Microsoft-Windows-Migration-Engine/Analytic  |
-Microsoft-Windows-Migration-Core  |  10        |  Microsoft-Windows-Migration-Engine/Analytic  |
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                      |  Task              |  Opcode  |  Keyword         |  Message
+----------------------------------|---------------|------------|-----------|-----------------------------------------------|--------------------|----------|------------------|---------
+Microsoft-Windows-Migration-Core  |  Information  |  1         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigEngineApply    |  Start   |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  2         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigEngineApply    |  Stop    |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  3         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigEngineDoApply  |  Start   |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  4         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigEngineDoApply  |  Stop    |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  5         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigUnitDoApply    |  Start   |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  6         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigUnitDoApply    |  Stop    |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  7         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigUnitGather     |  Start   |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  8         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigUnitGather     |  Stop    |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  9         |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigAgentDetect    |  Start   |  MigEngineEvent  |
+Microsoft-Windows-Migration-Core  |  Information  |  10        |  0        |  Microsoft-Windows-Migration-Engine/Analytic  |  MigAgentDetect    |  Stop    |  MigEngineEvent  |

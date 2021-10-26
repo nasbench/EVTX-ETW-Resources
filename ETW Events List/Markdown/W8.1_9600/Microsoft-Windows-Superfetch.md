@@ -1,68 +1,68 @@
-Provider                      |  Event ID  |  Channel                               |  Message
-------------------------------|------------|----------------------------------------|---------------------------------------------------------------------------------------------------
-Microsoft-Windows-Superfetch  |  1000      |                                        |
-Microsoft-Windows-Superfetch  |  1001      |                                        |
-Microsoft-Windows-Superfetch  |  1002      |                                        |
-Microsoft-Windows-Superfetch  |  1003      |                                        |
-Microsoft-Windows-Superfetch  |  1004      |                                        |
-Microsoft-Windows-Superfetch  |  1005      |                                        |
-Microsoft-Windows-Superfetch  |  1006      |                                        |
-Microsoft-Windows-Superfetch  |  1007      |                                        |
-Microsoft-Windows-Superfetch  |  1008      |                                        |
-Microsoft-Windows-Superfetch  |  1009      |                                        |
-Microsoft-Windows-Superfetch  |  1010      |                                        |
-Microsoft-Windows-Superfetch  |  1011      |                                        |
-Microsoft-Windows-Superfetch  |  1012      |                                        |
-Microsoft-Windows-Superfetch  |  1013      |                                        |
-Microsoft-Windows-Superfetch  |  1014      |                                        |
-Microsoft-Windows-Superfetch  |  1015      |                                        |
-Microsoft-Windows-Superfetch  |  1016      |                                        |
-Microsoft-Windows-Superfetch  |  1017      |                                        |
-Microsoft-Windows-Superfetch  |  1018      |                                        |
-Microsoft-Windows-Superfetch  |  1019      |                                        |
-Microsoft-Windows-Superfetch  |  1020      |                                        |
-Microsoft-Windows-Superfetch  |  1021      |                                        |
-Microsoft-Windows-Superfetch  |  1022      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1023      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1024      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1025      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1026      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1027      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1028      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1029      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1030      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1031      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1032      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1033      |  Microsoft-Windows-Superfetch/AgmcLog  |
-Microsoft-Windows-Superfetch  |  1034      |  Memory cooling operational channel    |  Memory cooling is {Availability}.
-Microsoft-Windows-Superfetch  |  1035      |  Memory cooling operational channel    |  Memory working set scanning is {Availability}.
-Microsoft-Windows-Superfetch  |  1036      |  Memory cooling operational channel    |  Hardware feedback counter is {Availability}.
-Microsoft-Windows-Superfetch  |  1037      |  Memory cooling operational channel    |  Topology information for Node {NodeNumber} (Total {ChannelNumber} channels):	{NodeTopologyString}
-Microsoft-Windows-Superfetch  |  1038      |                                        |
-Microsoft-Windows-Superfetch  |  1039      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1040      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1041      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1042      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1043      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1044      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1045      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1046      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1047      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1048      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1049      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1050      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1051      |                                        |
-Microsoft-Windows-Superfetch  |  1052      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1053      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1054      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1055      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1056      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1057      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1058      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1059      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1060      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1061      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1062      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1063      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1064      |  Microsoft-Windows-Superfetch/PfApLog  |
-Microsoft-Windows-Superfetch  |  1065      |  Microsoft-Windows-Superfetch/PfApLog  |
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                               |  Task                       |  Opcode  |  Keyword   |  Message
+------------------------------|---------------|------------|-----------|----------------------------------------|-----------------------------|----------|------------|---------------------------------------------------------------------------------------------------
+Microsoft-Windows-Superfetch  |  Information  |  1000      |  1        |                                        |  VirtualRebalance           |  Start   |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1001      |  1        |                                        |  VirtualRebalance           |  Stop    |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1002      |  1        |                                        |  EmptyVirtualStore          |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1003      |  1        |                                        |  CreateVirtualStore         |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1004      |  1        |                                        |  DeleteVirtualStore         |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1005      |  1        |                                        |  MemoryInversionReaction    |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1006      |  1        |                                        |  InMemoryCompression        |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1007      |  1        |                                        |  InMemoryDecompression      |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1008      |  1        |                                        |  StoreLogAdd                |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1009      |  1        |                                        |  StoreLogRemove             |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1010      |  1        |                                        |  StoreLogFull               |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1011      |  1        |                                        |  StoreLogEmpty              |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1012      |  1        |                                        |  StoreLogDelete             |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1013      |  2        |                                        |  PerfTrackWorkingSet        |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1014      |  1        |                                        |  PerfTrackPagedPool         |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1015      |  1        |                                        |  PerfTrackNonPagedPool      |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1016      |  1        |                                        |  PerfTrackPhysical          |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1017      |  1        |                                        |  PerfTrackSessionPool       |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1018      |  1        |                                        |  PerfTrackNXNonPagedPool    |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1019      |  1        |                                        |  PerfTrackNonPagedPoolFrag  |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1020      |  1        |                                        |  PerfTrackPagedPoolFrag     |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1021      |  1        |                                        |  PerfTrackSessionPoolFrag   |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1022      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  Topology                   |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1023      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  ChannelInfo                |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1024      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  ChannelOrder               |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1025      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  ChannelStates              |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1026      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  ChannelStateChange         |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1027      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  Relocation                 |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1028      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  NodeStateChange            |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1029      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  NodeMonitorIndex           |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1030      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  NodeMonitorStats           |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1031      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  NodeCpuInfo                |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1032      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  ChannelMonitorStats        |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1033      |  1        |  Microsoft-Windows-Superfetch/AgmcLog  |  PowerStateChange           |          |  Agmc      |
+Microsoft-Windows-Superfetch  |  Information  |  1034      |  1        |  Memory cooling operational channel    |  Memory cooling task        |          |  Agmc      |  Memory cooling is {Availability}.
+Microsoft-Windows-Superfetch  |  Information  |  1035      |  1        |  Memory cooling operational channel    |  Memory cooling task        |          |  Agmc      |  Memory working set scanning is {Availability}.
+Microsoft-Windows-Superfetch  |  Information  |  1036      |  1        |  Memory cooling operational channel    |  Memory cooling task        |          |  Agmc      |  Hardware feedback counter is {Availability}.
+Microsoft-Windows-Superfetch  |  Information  |  1037      |  1        |  Memory cooling operational channel    |  Memory cooling task        |          |  Agmc      |  Topology information for Node {NodeNumber} (Total {ChannelNumber} channels):	{NodeTopologyString}
+Microsoft-Windows-Superfetch  |  Information  |  1038      |  1        |                                        |  PerfTrackHandleCounts      |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1039      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PredictorQuery             |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1040      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchHeartBeat         |  Start   |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1041      |  2        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchHeartBeat         |  Stop    |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1042      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchPredictorQuery    |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1043      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  Prelaunch                  |  Start   |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1044      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  Prelaunch                  |  Stop    |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1045      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchEnqueue           |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1046      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchDequeue           |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1047      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchWorker            |  Start   |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1048      |  2        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchWorker            |  Stop    |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1049      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchProcessCommand    |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1050      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchIdleCheck         |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1051      |  0        |                                        |  PerfTrackModernWorkingSet  |          |            |
+Microsoft-Windows-Superfetch  |  Information  |  1052      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrefetchHeartBeat          |  Start   |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1053      |  2        |  Microsoft-Windows-Superfetch/PfApLog  |  PrefetchHeartBeat          |  Stop    |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1054      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrefetchPredictorQuery     |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1055      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrefetchScheduleTask       |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1056      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PostlaunchAppFail          |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1057      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  AppSkip                    |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1058      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrefetchBenefitReport      |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1059      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrefetchIsCandidate        |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1060      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrefetchDecision           |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1061      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrefetchStartCallback      |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1062      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  DeploymentCommand          |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1063      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  FetchCommand               |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1064      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  AppUseCommand              |          |  PfAp      |
+Microsoft-Windows-Superfetch  |  Information  |  1065      |  1        |  Microsoft-Windows-Superfetch/PfApLog  |  PrelaunchAppCrash          |          |  PfAp      |

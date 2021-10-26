@@ -1,12 +1,12 @@
-Provider                    |  Event ID  |  Channel                              |  Message
-----------------------------|------------|---------------------------------------|-------------------------------------------------------------------------
-Microsoft-Windows-VIRTDISK  |  1         |  Microsoft-Windows-VIRTDISK-Analytic  |  Opening backing store {VhdFileName} as type {VhdVirtualStorageType}.
-Microsoft-Windows-VIRTDISK  |  2         |  Microsoft-Windows-VIRTDISK-Analytic  |  Opened backing store, returning handle {VhdHandle}, status {VhdStatus}.
-Microsoft-Windows-VIRTDISK  |  3         |  Microsoft-Windows-VIRTDISK-Analytic  |  Attaching using handle {VhdHandle}.
-Microsoft-Windows-VIRTDISK  |  4         |  Microsoft-Windows-VIRTDISK-Analytic  |  Attached with status {VhdStatus}.
-Microsoft-Windows-VIRTDISK  |  5         |  Microsoft-Windows-VIRTDISK-Analytic  |  Detaching using handle {VhdHandle}.
-Microsoft-Windows-VIRTDISK  |  6         |  Microsoft-Windows-VIRTDISK-Analytic  |  Detached with status {VhdStatus}.
-Microsoft-Windows-VIRTDISK  |  1000      |  Microsoft-Windows-VIRTDISK-Analytic  |  {TraceData}
-Microsoft-Windows-VIRTDISK  |  1001      |  Microsoft-Windows-VIRTDISK-Analytic  |  {TraceData}
-Microsoft-Windows-VIRTDISK  |  1002      |  Microsoft-Windows-VIRTDISK-Analytic  |  {TraceData}
-Microsoft-Windows-VIRTDISK  |  1003      |  Microsoft-Windows-VIRTDISK-Analytic  |  {TraceData}
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                              |  Task                  |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|---------------------------------------|------------------------|----------|-----------|-------------------------------------------------------------------------
+Microsoft-Windows-VIRTDISK  |  Information  |  1         |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |  Open virtual disk.    |  Start   |           |  Opening backing store {VhdFileName} as type {VhdVirtualStorageType}.
+Microsoft-Windows-VIRTDISK  |  Information  |  2         |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |  Open virtual disk.    |  Stop    |           |  Opened backing store, returning handle {VhdHandle}, status {VhdStatus}.
+Microsoft-Windows-VIRTDISK  |  Information  |  3         |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |  Attach virtual disk.  |  Start   |           |  Attaching using handle {VhdHandle}.
+Microsoft-Windows-VIRTDISK  |  Information  |  4         |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |  Attach virtual disk.  |  Stop    |           |  Attached with status {VhdStatus}.
+Microsoft-Windows-VIRTDISK  |  Information  |  5         |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |  Detach virtual disk.  |  Start   |           |  Detaching using handle {VhdHandle}.
+Microsoft-Windows-VIRTDISK  |  Information  |  6         |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |  Detach virtual disk.  |  Stop    |           |  Detached with status {VhdStatus}.
+Microsoft-Windows-VIRTDISK  |  Information  |  1000      |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |                        |          |           |  {TraceData}
+Microsoft-Windows-VIRTDISK  |  Warning      |  1001      |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |                        |          |           |  {TraceData}
+Microsoft-Windows-VIRTDISK  |  Error        |  1002      |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |                        |          |           |  {TraceData}
+Microsoft-Windows-VIRTDISK  |  Critical     |  1003      |  0        |  Microsoft-Windows-VIRTDISK-Analytic  |                        |          |           |  {TraceData}

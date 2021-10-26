@@ -1,6 +1,6 @@
-Provider                    |  Event ID  |  Channel                              |  Message
-----------------------------|------------|---------------------------------------|---------
-Microsoft-Windows-DDisplay  |  1         |  Microsoft-Windows-DDisplay/Analytic  |
-Microsoft-Windows-DDisplay  |  2         |  Microsoft-Windows-DDisplay/Analytic  |
-Microsoft-Windows-DDisplay  |  3         |  Microsoft-Windows-DDisplay/Analytic  |
-Microsoft-Windows-DDisplay  |  4         |  Microsoft-Windows-DDisplay/Analytic  |
+Provider                    |  Level  |  Event ID  |  Version  |  Channel                              |  Task                     |  Opcode  |  Keyword  |  Message
+----------------------------|---------|------------|-----------|---------------------------------------|---------------------------|----------|-----------|---------
+Microsoft-Windows-DDisplay  |         |  1         |  0        |  Microsoft-Windows-DDisplay/Analytic  |  Adapter                  |  Start   |  Objects  |
+Microsoft-Windows-DDisplay  |         |  2         |  0        |  Microsoft-Windows-DDisplay/Analytic  |  Adapter                  |  Stop    |  Objects  |
+Microsoft-Windows-DDisplay  |         |  3         |  0        |  Microsoft-Windows-DDisplay/Analytic  |  FindClosestMatchingMode  |  Start   |  Events   |
+Microsoft-Windows-DDisplay  |         |  4         |  0        |  Microsoft-Windows-DDisplay/Analytic  |  FindClosestMatchingMode  |  Stop    |  Events   |

@@ -1,16 +1,16 @@
-Provider                                    |  Event ID  |  Channel                                                 |  Message
---------------------------------------------|------------|----------------------------------------------------------|---------
-Microsoft-Windows-UniversalTelemetryClient  |  1         |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  2         |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  3         |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  20        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  21        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  22        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  23        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  50        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  55        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  56        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  60        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  61        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  62        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
-Microsoft-Windows-UniversalTelemetryClient  |  63        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |
+Provider                                    |  Level        |  Event ID  |  Version  |  Channel                                                 |  Task                                       |  Opcode  |  Keyword  |  Message
+--------------------------------------------|---------------|------------|-----------|----------------------------------------------------------|---------------------------------------------|----------|-----------|---------
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  1         |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Tenant_Register                            |          |  Tenant   |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  2         |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Tenant_Unregister                          |          |  Tenant   |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  3         |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Tenant_UpdateDailyUploadQuota              |          |  Tenant   |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  20        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Upload_UrlChanged                          |          |  Upload   |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  21        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Upload_ConnectionError                     |          |  Upload   |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  22        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Upload_SevilleBandwidthMonitor_TierChange  |          |  Upload   |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  23        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Upload_SevilleEventStorage_TierChange      |          |  Upload   |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  50        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Service_ServiceStart                       |          |  Service  |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  55        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Service_InternetAvailable                  |          |  Service  |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  56        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Service_FreeNetworkAvailable               |          |  Service  |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  60        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Service_OnBatteryPower                     |          |  Service  |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  61        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Service_OnBatterySaver                     |          |  Service  |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  62        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Service_InConnectedStandby                 |          |  Service  |
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  63        |  0        |  Microsoft-Windows-UniversalTelemetryClient/Operational  |  Service_PowerLimitExceeded                 |          |  Service  |

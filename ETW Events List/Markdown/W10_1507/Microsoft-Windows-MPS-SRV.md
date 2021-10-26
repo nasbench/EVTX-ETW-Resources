@@ -1,201 +1,201 @@
-Provider                   |  Event ID  |  Channel                               |  Message
----------------------------|------------|----------------------------------------|---------
-Microsoft-Windows-MPS-SRV  |  101       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  102       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  103       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  104       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  105       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  106       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  107       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  108       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  113       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  114       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  115       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  116       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  117       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  118       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  119       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  120       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  121       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  122       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  123       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  124       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  125       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  126       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  127       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  128       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  129       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  130       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  131       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  132       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  133       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  134       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  135       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  136       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  137       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  138       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  139       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  140       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  141       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  142       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  143       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  144       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  145       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  146       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  147       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  148       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  149       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  150       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  151       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  152       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  153       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  154       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  155       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  156       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  157       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  158       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  159       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  160       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  161       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  162       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  163       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  164       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  165       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  166       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  167       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  168       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  169       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  170       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  171       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  172       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  173       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  174       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  175       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  176       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  177       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  178       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  179       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  180       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  181       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  182       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  183       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  184       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  185       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  186       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  187       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  188       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  200       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  201       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  202       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  203       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  204       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  205       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  206       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  207       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  208       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  209       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  210       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  211       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  212       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  213       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  214       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  215       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  216       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  217       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  218       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  219       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  220       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  221       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  222       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  223       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  224       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  225       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  226       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  227       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  228       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  229       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  230       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  231       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  232       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  233       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  234       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  235       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  236       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  237       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  238       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  239       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  240       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  241       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  242       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  243       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  244       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  245       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  246       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  247       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  248       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  249       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  250       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  251       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  252       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  253       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  254       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  255       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  256       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  257       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  258       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  259       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  260       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  261       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  262       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  263       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  264       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  265       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  266       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  267       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  268       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  269       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  270       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  271       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  272       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  273       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  274       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  275       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  276       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  277       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  278       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  279       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  280       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  281       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  282       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  283       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  284       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  285       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  286       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  287       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  288       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  289       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  301       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  302       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  303       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  304       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  305       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  306       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  307       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  308       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  309       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  310       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  311       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  312       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  313       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  314       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  315       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  316       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  317       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  318       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  319       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  320       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  400       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  401       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  501       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  502       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
-Microsoft-Windows-MPS-SRV  |  503       |  Microsoft-Windows-MPS-SRV/Diagnostic  |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                               |  Task                                          |  Opcode  |  Keyword  |  Message
+---------------------------|---------------|------------|-----------|----------------------------------------|------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-MPS-SRV  |  Information  |  101       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  StartService                                  |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  102       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  StartService                                  |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  103       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  StopService                                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  104       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  StopService                                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  105       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Audit_Initialize                              |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  106       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Audit_Initialize                              |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  107       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Audit_Shutdown                                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  108       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Audit_Shutdown                                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  113       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  AuthApps_Initialize                           |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  114       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  AuthApps_Initialize                           |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  115       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  AuthApps_Shutdown                             |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  116       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  AuthApps_Shutdown                             |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  117       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Notify_Initialize                             |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  118       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Notify_Initialize                             |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  119       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Notify_Shutdown                               |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  120       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Notify_Shutdown                               |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  121       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynPorts_Initialize                           |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  122       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynPorts_Initialize                           |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  123       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynPorts_Shutdown                             |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  124       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynPorts_Shutdown                             |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  125       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ChangeSource_Initialize                       |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  126       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ChangeSource_Initialize                       |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  127       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ChangeSource_Shutdown                         |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  128       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ChangeSource_Shutdown                         |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  129       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Writer_Initialize                             |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  130       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Writer_Initialize                             |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  131       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Writer_Shutdown                               |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  132       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Writer_Shutdown                               |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  133       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Logger_Initialize                             |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  134       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Logger_Initialize                             |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  135       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Logger_Shutdown                               |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  136       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Logger_Shutdown                               |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  137       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynDataNLA1stPhase_Initialize                 |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  138       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynDataNLA1stPhase_Initialize                 |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  139       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynDataNLA1stPhase_Shutdown                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  140       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynDataNLA1stPhase_Shutdown                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  141       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ProfileMgr_Initialize                         |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  142       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ProfileMgr_Initialize                         |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  143       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ProfileMgr_Shutdown                           |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  144       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ProfileMgr_Shutdown                           |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  145       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Upcall2ndPhase_Initialize                     |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  146       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Upcall2ndPhase_Initialize                     |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  147       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Upcall2ndPhase_Shutdown                       |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  148       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Upcall2ndPhase_Shutdown                       |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  149       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  RpcAPIs_Initialize                            |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  150       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  RpcAPIs_Initialize                            |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  151       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  RpcAPIs_Shutdown                              |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  152       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  RpcAPIs_Shutdown                              |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  153       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ResrcIndicationAPIs_Initialize                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  154       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ResrcIndicationAPIs_Initialize                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  155       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ResrcIndicationAPIs_Shutdown                  |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  156       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ResrcIndicationAPIs_Shutdown                  |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  157       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  GPMon_Initialize                              |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  158       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  GPMon_Initialize                              |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  159       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  GPMon_Shutdown                                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  160       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  GPMon_Shutdown                                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  161       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynDataNLA2ndPhase_Initialize                 |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  162       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynDataNLA2ndPhase_Initialize                 |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  163       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynDataNLA2ndPhase_Shutdown                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  164       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  DynDataNLA2ndPhase_Shutdown                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  165       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ServiceSignalReady                            |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  166       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  ServiceSignalReady                            |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  167       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Empty_Shutdown                                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  168       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Empty_Shutdown                                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  169       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Products_Initialize                           |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  170       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Products_Initialize                           |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  171       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Products_Shutdown                             |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  172       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Products_Shutdown                             |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  173       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  HttpProxy_Initialize                          |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  174       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  HttpProxy_Initialize                          |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  175       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  HttpProxy_Shutdown                            |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  176       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  HttpProxy_Shutdown                            |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  177       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  AdhSitesSubnets_Initialize                    |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  178       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  AdhSitesSubnets_Initialize                    |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  179       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  AdhSitesSubnets_Shutdown                      |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  180       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  AdhSitesSubnets_Shutdown                      |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  181       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Moneis_Initialize                             |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  182       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Moneis_Initialize                             |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  183       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Moneis_Shutdown                               |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  184       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  Moneis_Shutdown                               |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  185       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MoneisRegistrationApiPhase2_Initialize        |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  186       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MoneisRegistrationApiPhase2_Initialize        |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  187       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MoneisRegistrationApiPhase2_Shutdown          |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  188       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MoneisRegistrationApiPhase2_Shutdown          |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  200       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_RestoreDefaults                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  201       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_RestoreDefaults                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  202       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumFirewallRules                 |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  203       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumFirewallRules                 |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  204       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteFirewallRule                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  205       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteFirewallRule                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  206       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllFirewallRules            |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  207       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllFirewallRules            |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  208       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddFirewallRule                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  209       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddFirewallRule                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  210       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetFirewallRule                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  211       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetFirewallRule                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  212       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_GetConfig                         |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  213       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_GetConfig                         |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  214       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetConfig                         |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  215       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetConfig                         |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  216       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_GetGlobalConfig                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  217       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_GetGlobalConfig                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  218       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetGlobalConfig                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  219       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetGlobalConfig                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  220       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_OpenPolicyStore                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  221       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_OpenPolicyStore                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  222       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_ClosePolicyStore                  |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  223       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_ClosePolicyStore                  |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  224       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddConnectionSecurityRule         |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  225       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddConnectionSecurityRule         |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  226       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetConnectionSecurityRule         |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  227       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetConnectionSecurityRule         |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  228       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteConnectionSecurityRule      |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  229       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteConnectionSecurityRule      |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  230       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllConnectionSecurityRules  |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  231       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllConnectionSecurityRules  |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  232       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumConnectionSecurityRules       |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  233       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumConnectionSecurityRules       |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  234       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddAuthenticationSet              |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  235       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddAuthenticationSet              |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  236       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAuthenticationSet           |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  237       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAuthenticationSet           |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  238       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetAuthenticationSet              |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  239       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetAuthenticationSet              |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  240       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllAuthenticationSets       |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  241       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllAuthenticationSets       |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  242       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumAuthenticationSets            |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  243       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumAuthenticationSets            |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  244       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddCryptoSet                      |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  245       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddCryptoSet                      |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  246       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetCryptoSet                      |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  247       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetCryptoSet                      |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  248       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteCryptoSet                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  249       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteCryptoSet                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  250       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllCryptoSets               |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  251       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllCryptoSets               |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  252       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumCryptoSets                    |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  253       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumCryptoSets                    |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  254       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumPhase1SAs                     |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  255       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumPhase1SAs                     |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  256       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeletePhase1SAs                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  257       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeletePhase1SAs                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  258       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumPhase2SAs                     |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  259       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumPhase2SAs                     |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  260       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeletePhase2SAs                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  261       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeletePhase2SAs                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  262       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_NotifyUnsupportedAttempt          |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  263       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_NotifyUnsupportedAttempt          |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  264       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_RegisterProduct                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  265       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_RegisterProduct                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  266       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_UnregisterProduct                 |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  267       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_UnregisterProduct                 |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  268       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumProducts                      |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  269       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumProducts                      |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  270       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddMainModeRule                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  271       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_AddMainModeRule                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  272       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetMainModeRule                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  273       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_SetMainModeRule                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  274       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteMainModeRule                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  275       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteMainModeRule                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  276       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllMainModeRules            |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  277       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_DeleteAllMainModeRules            |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  278       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumMainModeRules                 |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  279       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_EnumMainModeRules                 |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  280       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryFirewallRules                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  281       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryFirewallRules                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  282       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryConnectionSecurityRules      |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  283       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryConnectionSecurityRules      |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  284       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryMainModeRules                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  285       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryMainModeRules                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  286       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryAuthenticationSets           |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  287       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryAuthenticationSets           |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  288       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryCryptoSets                   |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  289       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_API_QueryCryptoSets                   |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  301       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_EngineOpen                        |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  302       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_EngineOpen                        |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  303       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_EngineClose                       |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  304       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_EngineClose                       |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  305       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_TransactionBegin                  |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  306       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_TransactionBegin                  |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  307       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_TransactionAbort                  |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  308       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_TransactionAbort                  |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  309       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_TransactionCommit                 |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  310       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_TransactionCommit                 |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  311       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_ProviderAdd                       |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  312       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_ProviderAdd                       |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  313       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_SublayerAdd                       |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  314       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_SublayerAdd                       |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  315       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_FilterAdd                         |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  316       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_FilterAdd                         |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  317       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_FilterDeleteByKey                 |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  318       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_FilterDeleteByKey                 |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  319       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_FilterDeleteById                  |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  320       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  MPS_SVC_BFE_FilterDeleteById                  |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  400       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  GPPolicyUpdate                                |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  401       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  GPPolicyUpdate                                |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  501       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  PlumberPolicyBegin                            |  Start   |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  502       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  PlumberPolicyCommit                           |  Stop    |  Service  |
+Microsoft-Windows-MPS-SRV  |  Information  |  503       |  0        |  Microsoft-Windows-MPS-SRV/Diagnostic  |  PlumberPolicyAbort                            |  Stop    |  Service  |

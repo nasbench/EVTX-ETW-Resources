@@ -1,0 +1,6 @@
+Provider                              |  Level              |  Event ID  |  Version  |  Channel                                          |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------------|---------------------|------------|-----------|---------------------------------------------------|--------|----------|-----------|---------
+Microsoft-Windows-SystemDataArchiver  |  win:Verbose        |  2049      |  0        |  Microsoft-Windows-SystemDataArchiver/Diagnostic  |        |          |           |
+Microsoft-Windows-SystemDataArchiver  |  win:Informational  |  2050      |  0        |  Microsoft-Windows-SystemDataArchiver/Diagnostic  |        |          |           |
+Microsoft-Windows-SystemDataArchiver  |  win:Warning        |  2051      |  0        |  Microsoft-Windows-SystemDataArchiver/Diagnostic  |        |          |           |
+Microsoft-Windows-SystemDataArchiver  |  win:Error          |  2052      |  0        |  Microsoft-Windows-SystemDataArchiver/Diagnostic  |        |          |           |

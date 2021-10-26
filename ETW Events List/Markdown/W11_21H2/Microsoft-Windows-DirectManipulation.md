@@ -1,66 +1,66 @@
-Provider                              |  Event ID  |  Channel                                          |  Message
---------------------------------------|------------|---------------------------------------------------|---------
-Microsoft-Windows-DirectManipulation  |  26        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  27        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  28        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  29        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  30        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  31        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  32        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  33        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  34        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  36        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  37        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  38        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  39        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  40        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  41        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  42        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  43        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  44        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  45        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  46        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  47        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  48        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  49        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  50        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  51        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  52        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  53        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  54        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  55        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  56        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  57        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  58        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  59        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  60        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  61        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  62        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  63        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  64        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  65        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  66        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  67        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  68        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  69        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  70        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  71        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  72        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  73        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  74        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  75        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  76        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  77        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  78        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  79        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  80        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  81        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  82        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  83        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  84        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  85        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  86        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  87        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  88        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  89        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
-Microsoft-Windows-DirectManipulation  |  90        |  Microsoft-Windows-DirectManipulation/Diagnostic  |
+Provider                              |  Level        |  Event ID  |  Version  |  Channel                                          |  Task                                                 |  Opcode  |  Keyword  |  Message
+--------------------------------------|---------------|------------|-----------|---------------------------------------------------|-------------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-DirectManipulation  |  Information  |  26        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_SetInput                                |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  27        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_SetInput                                |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  28        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_SetContact                              |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  29        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_SetContact                              |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  30        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_EnumTargets                             |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  31        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_EnumTargets                             |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  32        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessInput_RegionUpdate               |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  33        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessInput_RegionUpdate               |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  34        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessInput_MotionUpdate               |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  36        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessInputInteraction                 |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  37        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessInputInteraction                 |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  38        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_LayerCommit                             |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  39        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Running                                 |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  40        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Running                                 |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  41        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Inertia                                 |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  42        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Inertia                                 |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  43        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DManipTrigger                           |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  44        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_UpdateTransform                         |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  45        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ViewportAbandon                         |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  46        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ViewportAbandon                         |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  47        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DCompCompositorOnViewportStatusChanged  |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  48        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DCompCompositorOnViewportStatusChanged  |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  49        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DCompCompositorOnViewportUpdated        |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  50        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DCompCompositorOnViewportUpdated        |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  51        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DCompCompositorOnContentUpdated         |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  52        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DCompCompositorOnContentUpdated         |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  53        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DCompCompositorUpdate                   |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  54        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_DCompCompositorUpdate                   |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  55        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ManagerActivate                         |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  56        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ManagerActivate                         |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  57        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ManagerDeactivate                       |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  58        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ManagerDeactivate                       |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  59        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ManagerCreateViewport                   |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  60        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ManagerCreateViewport                   |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  61        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ImplicitHitTest                         |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  62        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ImplicitHitTest                         |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  63        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessBufferedQueue                    |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  64        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessBufferedQueue                    |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  65        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessAutoInput                        |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  66        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ProcessAutoInput                        |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  67        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Behaviors                               |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  68        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Behaviors                               |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  69        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Behaviors                               |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  70        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Behaviors                               |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  71        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Prediction                              |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  72        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Inertia                                 |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  73        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ParametricMotion                        |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  74        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ParametricMotion                        |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  75        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ParametricMotion                        |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  76        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ParametricMotion                        |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  77        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Inertia                                 |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  78        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ViewportEnable                          |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  79        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ViewportDisable                         |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  80        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_ZoomToRect                              |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  81        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Storyboard                              |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  82        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_PointerAssociation                      |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  83        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_InputHandled                            |          |           |
+Microsoft-Windows-DirectManipulation  |  Verbose      |  84        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Telemetry                               |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  85        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Telemetry                               |  Start   |           |
+Microsoft-Windows-DirectManipulation  |  Verbose      |  86        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Telemetry                               |          |           |
+Microsoft-Windows-DirectManipulation  |  Information  |  87        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Telemetry                               |  Stop    |           |
+Microsoft-Windows-DirectManipulation  |  Verbose      |  88        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_Telemetry                               |          |           |
+Microsoft-Windows-DirectManipulation  |  Verbose      |  89        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_TurnOffInteraction                      |          |           |
+Microsoft-Windows-DirectManipulation  |  Verbose      |  90        |  0        |  Microsoft-Windows-DirectManipulation/Diagnostic  |  Manipulation_TurnOnInteraction                       |          |           |

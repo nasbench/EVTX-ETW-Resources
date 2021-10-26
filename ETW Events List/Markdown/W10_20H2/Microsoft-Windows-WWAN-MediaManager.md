@@ -1,7 +1,7 @@
-Provider                             |  Event ID  |  Channel                                         |  Message
--------------------------------------|------------|--------------------------------------------------|---------
-Microsoft-Windows-WWAN-MediaManager  |  1         |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |
-Microsoft-Windows-WWAN-MediaManager  |  2         |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |
-Microsoft-Windows-WWAN-MediaManager  |  3         |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |
-Microsoft-Windows-WWAN-MediaManager  |  4         |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |
-Microsoft-Windows-WWAN-MediaManager  |  5         |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |
+Provider                             |  Level        |  Event ID  |  Version  |  Channel                                         |  Task                 |  Opcode  |  Keyword  |  Message
+-------------------------------------|---------------|------------|-----------|--------------------------------------------------|-----------------------|----------|-----------|---------
+Microsoft-Windows-WWAN-MediaManager  |  Information  |  1         |  0        |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |  Create_Context_Menu  |  Start   |           |
+Microsoft-Windows-WWAN-MediaManager  |  Information  |  2         |  0        |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |  Create_Context_Menu  |  Stop    |           |
+Microsoft-Windows-WWAN-MediaManager  |  Information  |  3         |  0        |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |  Show_Data_Usage      |          |           |
+Microsoft-Windows-WWAN-MediaManager  |  Information  |  4         |  0        |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |  Hide_Data_Usage      |          |           |
+Microsoft-Windows-WWAN-MediaManager  |  Information  |  5         |  0        |  Microsoft-Windows-WWAN-MediaManager/Diagnostic  |  Change_Network_Cost  |          |           |

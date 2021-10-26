@@ -1,18 +1,18 @@
-Provider                         |  Event ID  |  Channel  |  Message
----------------------------------|------------|-----------|---------
-Microsoft-Windows-Magnification  |  1         |           |
-Microsoft-Windows-Magnification  |  2         |           |
-Microsoft-Windows-Magnification  |  3         |           |
-Microsoft-Windows-Magnification  |  4         |           |
-Microsoft-Windows-Magnification  |  5         |           |
-Microsoft-Windows-Magnification  |  6         |           |
-Microsoft-Windows-Magnification  |  7         |           |
-Microsoft-Windows-Magnification  |  8         |           |
-Microsoft-Windows-Magnification  |  9         |           |
-Microsoft-Windows-Magnification  |  10        |           |
-Microsoft-Windows-Magnification  |  11        |           |
-Microsoft-Windows-Magnification  |  12        |           |
-Microsoft-Windows-Magnification  |  13        |           |
-Microsoft-Windows-Magnification  |  14        |           |
-Microsoft-Windows-Magnification  |  15        |           |
-Microsoft-Windows-Magnification  |  16        |           |
+Provider                         |  Level        |  Event ID  |  Version  |  Channel  |  Task                        |  Opcode  |  Keyword        |  Message
+---------------------------------|---------------|------------|-----------|-----------|------------------------------|----------|-----------------|---------
+Microsoft-Windows-Magnification  |  Information  |  1         |  0        |           |  LensCreate                  |          |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  2         |  0        |           |  LensDestroy                 |          |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  3         |  0        |           |  SetWindowSource             |          |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  4         |  0        |           |  SetWindowTransform          |          |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  5         |  0        |           |  UpdateLensContent           |  Start   |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  6         |  0        |           |  UpdateLensContent           |  Stop    |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  7         |  0        |           |  UpdateContentSurfaces       |  Start   |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  8         |  0        |           |  UpdateContentSurfaces       |  Stop    |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  9         |  0        |           |  UpdateRedirectionSurfaces   |  Start   |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  10        |  0        |           |  UpdateRedirectionSurfaces   |  Stop    |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  11        |  0        |           |  UpdateRedirectionResources  |  Start   |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  12        |  0        |           |  UpdateRedirectionResources  |  Stop    |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  13        |  0        |           |  UpdateSettings              |  Start   |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  14        |  0        |           |  UpdateSettings              |  Stop    |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  15        |  0        |           |  RecreateTextures            |  Start   |  Magnification  |
+Microsoft-Windows-Magnification  |  Information  |  16        |  0        |           |  RecreateTextures            |  Stop    |  Magnification  |

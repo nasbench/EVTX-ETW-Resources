@@ -1,13 +1,13 @@
-Provider                   |  Event ID  |  Channel  |  Message
----------------------------|------------|-----------|---------
-Microsoft-Windows-StorSqm  |  3         |           |
-Microsoft-Windows-StorSqm  |  4         |           |
-Microsoft-Windows-StorSqm  |  5         |           |
-Microsoft-Windows-StorSqm  |  6         |           |
-Microsoft-Windows-StorSqm  |  7         |           |
-Microsoft-Windows-StorSqm  |  8         |           |
-Microsoft-Windows-StorSqm  |  9         |           |
-Microsoft-Windows-StorSqm  |  10        |           |
-Microsoft-Windows-StorSqm  |  11        |           |
-Microsoft-Windows-StorSqm  |  16        |           |
-Microsoft-Windows-StorSqm  |  17        |           |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+---------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-StorSqm  |  Information  |  3         |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  4         |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  5         |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  6         |  0        |           |        |  Stop    |           |
+Microsoft-Windows-StorSqm  |  Information  |  7         |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  8         |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  9         |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  10        |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  11        |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  16        |  0        |           |        |          |           |
+Microsoft-Windows-StorSqm  |  Information  |  17        |  0        |           |        |          |           |

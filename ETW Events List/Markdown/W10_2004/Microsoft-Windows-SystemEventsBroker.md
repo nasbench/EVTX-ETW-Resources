@@ -1,8 +1,8 @@
-Provider                              |  Event ID  |  Channel  |  Message
---------------------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-SystemEventsBroker  |  15        |  Debug    |  SystemEventsBroker CreateEvent called for Event ID {BrokeredEventId}, UserSID: {UserSID} with Event Type {EventType}
-Microsoft-Windows-SystemEventsBroker  |  16        |  Debug    |  SystemEventsBroker DeleteEvent called for Event ID {BrokeredEventId}
-Microsoft-Windows-SystemEventsBroker  |  17        |  Debug    |  SystemEventsBroker SignalEvent for Event ID {BrokeredEventId}
-Microsoft-Windows-SystemEventsBroker  |  18        |  Debug    |  SystemEventsBroker DropEvent for Event ID {BrokeredEventId}
-Microsoft-Windows-SystemEventsBroker  |  19        |  Debug    |  SystemEventsBroker SessionConnectedEvent, SessionID: {SessionID}
-Microsoft-Windows-SystemEventsBroker  |  19        |  Debug    |  SystemEventsBroker SessionConnectedEvent, SessionID: {SessionID}
+Provider                              |  Level        |  Event ID  |  Version  |  Channel  |  Task      |  Opcode            |  Keyword          |  Message
+--------------------------------------|---------------|------------|-----------|-----------|------------|--------------------|-------------------|----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-SystemEventsBroker  |  Information  |  15        |  1        |  Debug    |  SebEvent  |  Create            |  Trace SEB Event  |  SystemEventsBroker CreateEvent called for Event ID {BrokeredEventId}, UserSID: {UserSID} with Event Type {EventType}
+Microsoft-Windows-SystemEventsBroker  |  Information  |  16        |  1        |  Debug    |  SebEvent  |  Delete            |  Trace SEB Event  |  SystemEventsBroker DeleteEvent called for Event ID {BrokeredEventId}
+Microsoft-Windows-SystemEventsBroker  |  Information  |  17        |  1        |  Debug    |  SebEvent  |  Signal            |  Trace SEB Event  |  SystemEventsBroker SignalEvent for Event ID {BrokeredEventId}
+Microsoft-Windows-SystemEventsBroker  |  Information  |  18        |  1        |  Debug    |  SebEvent  |  Drop              |  Trace SEB Event  |  SystemEventsBroker DropEvent for Event ID {BrokeredEventId}
+Microsoft-Windows-SystemEventsBroker  |  Information  |  19        |  1        |  Debug    |  SebEvent  |  SessionConnected  |  Trace SEB Event  |  SystemEventsBroker SessionConnectedEvent, SessionID: {SessionID}
+Microsoft-Windows-SystemEventsBroker  |  Information  |  19        |  2        |  Debug    |  SebEvent  |  SessionConnected  |  Trace SEB Event  |  SystemEventsBroker SessionConnectedEvent, SessionID: {SessionID}

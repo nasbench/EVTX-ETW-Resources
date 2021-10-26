@@ -1,161 +1,161 @@
-Provider                    |  Event ID  |  Channel                                |  Message
-----------------------------|------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Dwm-Udwm  |  1         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  2         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  3         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  4         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  6         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  7         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  8         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  9         |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  10        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  11        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  12        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  13        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  14        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  15        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5000      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5001      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5002      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5003      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5004      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5005      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5006      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5007      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5008      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5009      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5010      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5011      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5012      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5013      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5014      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5015      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5016      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5017      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5018      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5019      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5020      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5021      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5022      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5023      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5024      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5025      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5026      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5027      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5028      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5029      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5030      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5031      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5032      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5035      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5036      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5037      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5038      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5047      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5048      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5049      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5050      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5051      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5052      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5053      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5054      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5055      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5056      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5057      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5058      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5059      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5060      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5061      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5062      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5063      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5064      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5065      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5066      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5067      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5068      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5069      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5070      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5071      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5072      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5073      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5074      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5075      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5076      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5077      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5078      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5079      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5080      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5081      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5082      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5083      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5084      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5085      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5086      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5087      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5088      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5089      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5090      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5091      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5092      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5093      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5094      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5095      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5096      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5097      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5098      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5099      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5100      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5101      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5102      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5103      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5104      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5105      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5106      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5107      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5108      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5109      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5110      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5111      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5112      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5113      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5114      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5115      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5116      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5117      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5118      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5119      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5120      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5121      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5122      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5123      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5124      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5125      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5126      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5127      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5128      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5129      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5130      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5131      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5132      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5133      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5134      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5138      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5139      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5150      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5151      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5152      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5153      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5154      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5155      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  5156      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
-Microsoft-Windows-Dwm-Udwm  |  9001      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  wr RemoveSecondaryWindowRepresentation {secondarywindowpointer}{secondarywindowpointer}, {hwnd}{hwnd}
-Microsoft-Windows-Dwm-Udwm  |  9002      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  RemoveSecondaryWindowRepresentation {secondarywindowpointer}{secondarywindowpointer}, {hwnd}{hwnd} {representationType}{representationType}
-Microsoft-Windows-Dwm-Udwm  |  9003      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  RemoveSecondaryWindowRepresentation {secondarywindowpointer}{secondarywindowpointer}, {hwnd}{hwnd}
-Microsoft-Windows-Dwm-Udwm  |  9004      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  _StopTrackingWindow {CWindowData}{CWindowData}
-Microsoft-Windows-Dwm-Udwm  |  9005      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  Thumbnail {hwndDestination}{hwndDestination}
-Microsoft-Windows-Dwm-Udwm  |  9006      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  ownedWindow {pwd}{pwd}, {hwnd}{hwnd}
-Microsoft-Windows-Dwm-Udwm  |  9007      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UpdateScene
-Microsoft-Windows-Dwm-Udwm  |  9008      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  Disconnect
-Microsoft-Windows-Dwm-Udwm  |  9009      |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  Snapshot {pSnapshot}{pSnapshot}
-Microsoft-Windows-Dwm-Udwm  |  10000     |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                |  Task                                                   |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------|---------------------------------------------------------|----------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Dwm-Udwm  |  Information  |  1         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGraphicsStreamChange                               |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  2         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGraphicsStreamChange                               |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Verbose      |  3         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessLPCMessage                                  |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Verbose      |  4         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessLPCMessage                                  |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessModeChange                                  |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  6         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmEstablishTransport                                 |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  7         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmEstablishTransport                                 |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  8         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmEstablishStructuralRedirection                     |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9         |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmEstablishStructuralRedirection                     |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  10        |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmEstablishDesktopComposition                        |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  11        |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmEstablishDesktopComposition                        |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  12        |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmEstablishKernelRedirection                         |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  13        |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmEstablishKernelRedirection                         |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  14        |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmRefreshDesktopComposition                          |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  15        |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmResetGraphicsStream                                |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5000      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmStartup                                            |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5001      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmShutdownMessage                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5002      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimation                                          |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5003      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimation                                          |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5004      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimation                                          |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5005      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmManageIconicThumbnail                              |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5006      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSelectIconicRepresentation                         |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5007      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessSetIconicThumbnail                          |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5008      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessSetIconicThumbnail                          |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5009      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessSnapshotIconicThumbnail                     |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5010      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessSnapshotIconicThumbnail                     |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5011      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmLivePreviewAnimation                               |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5012      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmLivePreviewAnimation                               |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5013      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAllAnimationFinished                               |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5014      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessSetIconicLivePreviewBitmap                  |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5015      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessSetIconicLivePreviewBitmap                  |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5016      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessInvalidateIconicBitmaps                     |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5017      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmProcessInvalidateIconicBitmaps                     |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5018      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGlassSheetAnimation                                |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5019      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGlassSheetAnimation                                |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5020      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGlassSheetAnimation                                |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5021      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmRippleAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5022      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmRippleAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5023      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGlassSheetFadeOut                                  |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5024      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGlassSheetFadeOut                                  |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5025      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmLoadTheme                                          |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5026      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmLoadTheme                                          |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5027      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmDirectTouchDownAnimation                           |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5028      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmDirectTouchDownAnimation                           |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5029      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmDirectTouchDownAnimation                           |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5030      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTouchUpReceived                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5031      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmContactStationaryVisual                            |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5032      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmContactStationaryVisual                            |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5035      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationInitialization                            |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5036      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationInitialization                            |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5037      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationRecalc                                    |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5038      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationRecalc                                    |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5047      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmPressTapVisual                                     |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5048      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmPressTapVisual                                     |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5049      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTetherVisual                                       |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5050      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTetherVisual                                       |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5051      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmPenPressHoldVisual                                 |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5052      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmPenPressHoldVisual                                 |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5053      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmFlickVisual                                        |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5054      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmFlickVisual                                        |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5055      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTouchDragVisual                                    |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5056      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTouchDragVisual                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5057      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTouchDragVisual                                    |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5058      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTitleTextAligned                                   |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5059      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationEngine                                    |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5060      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationEngine                                    |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5061      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmLoginTransition                                    |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5062      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmLoginTransition                                    |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5063      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTransitionVisualController                         |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5064      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTransitionVisualController                         |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5065      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTransitionVisualController                         |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5066      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationCapture                              |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5067      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationDelay                                |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5068      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationDelay                                |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5069      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationAnimation                            |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5070      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationAnimation                            |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5071      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationEngine                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5072      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmPenBarrel                                          |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5073      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmPenBarrel                                          |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5074      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmIndirectTouchVisual                                |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5075      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmIndirectTouchVisual                                |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5076      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmStoryboard                                         |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5077      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGradientLoad                                       |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5078      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGradientLoad                                       |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5079      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGradientColorize                                   |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5080      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmGradientColorize                                   |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5081      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAccentLoad                                         |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5082      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAccentLoad                                         |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5083      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationComponent                                 |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5084      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationComponent                                 |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5085      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationComponent                                 |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5086      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationComponent                                 |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5087      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTouchPressHoldVisual                               |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5088      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTouchPressHoldVisual                               |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5089      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimatedTransitionVisual                           |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5090      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmIndirectTouchVisual                                |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5091      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTransitionRequest                                  |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5092      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTransitionRequest                                  |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5093      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTransitionRequest                                  |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5094      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTransitionCVISnapshot                              |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5095      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTransitionProcessSnapshotOnVisual                  |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5096      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSecondaryWindowBrushSnapshot                       |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5097      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSecondaryWindowMakeStatic                          |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5098      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationPreDelayAnimation                    |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5099      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationPreDelayAnimation                    |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5100      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationPostDelayAnimation                   |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5101      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationPostDelayAnimation                   |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5102      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationHintDelay                            |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5103      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationHintDelay                            |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5104      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmScreenRotationHintFired                            |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5105      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionCapture                          |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5106      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionDelay                            |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5107      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionDelay                            |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5108      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionHintDelay                        |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5109      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionHintDelay                        |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5110      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionPreDelayAnimation                |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5111      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionPreDelayAnimation                |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5112      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionPostDelayAnimation               |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5113      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionPostDelayAnimation               |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5114      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionAnimation                        |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5115      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionAnimation                        |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5116      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmHardwareExpressionHintFired                        |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5117      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5118      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5119      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5120      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5121      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5122      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5123      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5124      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5125      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5126      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5127      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationClock                                     |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5128      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationClock                                     |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5129      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationClock                                     |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5130      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationClock                                     |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5131      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationClock                                     |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5132      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationClock                                     |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5133      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationClock                                     |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5134      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationClock                                     |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5138      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTextTetherVisual                                   |  Start   |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5139      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmTextTetherVisual                                   |  Stop    |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5150      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmThumbnailVisualValidated                           |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5151      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5152      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmAnimationResource                                  |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5153      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmWindowDPIChange                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5154      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5155      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  5156      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  UdwmSystemAnimation                                    |          |  Udwm     |
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9001      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  wr RemoveSecondaryWindowRepresentation {secondarywindowpointer}{secondarywindowpointer}, {hwnd}{hwnd}
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9002      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  RemoveSecondaryWindowRepresentation {secondarywindowpointer}{secondarywindowpointer}, {hwnd}{hwnd} {representationType}{representationType}
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9003      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  RemoveSecondaryWindowRepresentation {secondarywindowpointer}{secondarywindowpointer}, {hwnd}{hwnd}
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9004      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  _StopTrackingWindow {CWindowData}{CWindowData}
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9005      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  Thumbnail {hwndDestination}{hwndDestination}
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9006      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  ownedWindow {pwd}{pwd}, {hwnd}{hwnd}
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9007      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  UpdateScene
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9008      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  Disconnect
+Microsoft-Windows-Dwm-Udwm  |  Information  |  9009      |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |                                                         |          |  Udwm     |  Snapshot {pSnapshot}{pSnapshot}
+Microsoft-Windows-Dwm-Udwm  |  Information  |  10000     |  0        |  Microsoft-Windows-Dwm-Udwm/Diagnostic  |  PerfTrack_UdwmLivePreviewAnimation_FirstFrameFinished  |          |  Udwm     |

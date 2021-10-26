@@ -1,5 +1,5 @@
-Provider                         |  Event ID  |  Channel                                |  Message
----------------------------------|------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Diagnosis-WDI  |  140       |  Microsoft-Windows-Diagnosis-WDI/Debug  |  The Diagnostic Policy Service encountered an error in file {FileName}, function {FunctionName}, line {LineNumber}: {ErrorMessage}.
-Microsoft-Windows-Diagnosis-WDI  |  5016      |                                         |  The Diagnostic Infrastructure just made a heap allocation
-Microsoft-Windows-Diagnosis-WDI  |  5017      |                                         |  The Diagnostic Infrastructure just freed a previously made heap allocation
+Provider                         |  Level  |  Event ID  |  Version  |  Channel                                |  Task        |  Opcode       |  Keyword                |  Message
+---------------------------------|---------|------------|-----------|-----------------------------------------|--------------|---------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Diagnosis-WDI  |  Error  |  140       |  0        |  Microsoft-Windows-Diagnosis-WDI/Debug  |  Debug task  |  Debug event  |                         |  The Diagnostic Policy Service encountered an error in file {FileName}, function {FunctionName}, line {LineNumber}: {ErrorMessage}.
+Microsoft-Windows-Diagnosis-WDI  |         |  5016      |  0        |                                         |              |               |  Memory tracing events  |  The Diagnostic Infrastructure just made a heap allocation
+Microsoft-Windows-Diagnosis-WDI  |         |  5017      |  0        |                                         |              |               |  Memory tracing events  |  The Diagnostic Infrastructure just freed a previously made heap allocation

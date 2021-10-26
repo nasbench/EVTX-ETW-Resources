@@ -1,5 +1,5 @@
-Provider                                              |  Event ID  |  Channel  |  Message
-------------------------------------------------------|------------|-----------|----------------------------------------------------------------------------------
-Microsoft-Windows-Telephony-TelephonyInteractiveUser  |  1         |           |  [ERROR] originated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
-Microsoft-Windows-Telephony-TelephonyInteractiveUser  |  2         |           |  [ERROR] propagated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
-Microsoft-Windows-Telephony-TelephonyInteractiveUser  |  105       |           |  [Incoming Call Toast] Remove, aumId: {String1}, tag: {String2}, group: {String3}
+Provider                                              |  Level    |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+------------------------------------------------------|-----------|------------|-----------|-----------|--------|----------|-----------|----------------------------------------------------------------------------------
+Microsoft-Windows-Telephony-TelephonyInteractiveUser  |  Error    |  1         |  0        |           |        |          |  Error    |  [ERROR] originated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
+Microsoft-Windows-Telephony-TelephonyInteractiveUser  |  Warning  |  2         |  0        |           |        |          |           |  [ERROR] propagated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
+Microsoft-Windows-Telephony-TelephonyInteractiveUser  |  Verbose  |  105       |  0        |           |        |          |  MISC     |  [Incoming Call Toast] Remove, aumId: {String1}, tag: {String2}, group: {String3}

@@ -1,16 +1,16 @@
-Provider                  |  Event ID  |  Channel                              |  Message
---------------------------|------------|---------------------------------------|---------
-Microsoft-Windows-Shsvcs  |  11501     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11502     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11503     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11504     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11505     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11506     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11507     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11508     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11509     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11510     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11511     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11512     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11513     |  Microsoft-Windows-Shsvcs/Diagnostic  |
-Microsoft-Windows-Shsvcs  |  11514     |  Microsoft-Windows-Shsvcs/Diagnostic  |
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                              |  Task                            |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|---------------------------------------|----------------------------------|----------|-----------|---------
+Microsoft-Windows-Shsvcs  |  Information  |  11501     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_Service_Start             |  Start   |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11502     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_Service_Start             |  Stop    |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11503     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_Service_Stop              |  Start   |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11504     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_Service_Stop              |  Stop    |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11505     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_Volume_Arrived_Updated    |  Start   |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11506     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_Volume_Arrived_Updated    |  Stop    |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11507     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_Volume_Removed            |  Start   |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11508     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_Volume_Removed            |  Stop    |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11509     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_NonVolume_NotifyShell     |  Start   |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11510     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_NonVolume_NotifyShell     |  Stop    |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11511     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_ProcessInterfaceCallback  |  Start   |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11512     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_ProcessInterfaceCallback  |  Stop    |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11513     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_CreateSafeFileHandle      |  Start   |           |
+Microsoft-Windows-Shsvcs  |  Information  |  11514     |  0        |  Microsoft-Windows-Shsvcs/Diagnostic  |  HDSrv_CreateSafeFileHandle      |  Stop    |           |

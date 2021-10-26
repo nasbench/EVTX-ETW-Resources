@@ -1,8 +1,8 @@
-Provider                                          |  Event ID  |  Channel                                                      |  Message
---------------------------------------------------|------------|---------------------------------------------------------------|---------
-Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  2000      |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  2001      |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  2002      |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  2003      |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  2004      |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  2005      |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |
+Provider                                          |  Level        |  Event ID  |  Version  |  Channel                                                      |  Task                             |  Opcode  |  Keyword                   |  Message
+--------------------------------------------------|---------------|------------|-----------|---------------------------------------------------------------|-----------------------------------|----------|----------------------------|---------
+Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  Information  |  2000      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |  PerfTrackCounter_Process         |          |  Process Counter           |
+Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  Information  |  2001      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |  PerfTrackCounter_FileCache       |          |  FileCache Counter         |
+Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  Information  |  2002      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |  PerfTrackCounter_Pool            |          |  Pool Counter              |
+Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  Information  |  2003      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |  PerfTrackCounter_SessionPool     |          |  Session Pool Counter      |
+Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  Information  |  2004      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |  PerfTrackCounter_PoolTag         |          |  Pool Tag Counter          |
+Microsoft-Windows-Diagnostics-PerfTrack-Counters  |  Information  |  2005      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack-Counters/Diagnostic  |  PerfTrackCounter_SessionPoolTag  |          |  Session Pool Tag Counter  |

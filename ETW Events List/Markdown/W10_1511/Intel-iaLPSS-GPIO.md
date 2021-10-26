@@ -1,24 +1,24 @@
-Provider           |  Event ID  |  Channel           |  Message
--------------------|------------|--------------------|-------------------------------------------------------------------------------------------------------------------
-Intel-iaLPSS-GPIO  |  1001      |  Analytic Channel  |  Created WDFDEVICE {WDFDEVICE}
-Intel-iaLPSS-GPIO  |  1002      |  Analytic Channel  |  WDFDEVICE {FxDevice} IO Addr {IOAddr}
-Intel-iaLPSS-GPIO  |  1003      |  System            |  {FailReason}. WDFDEVICE {WDFDEVICE}
-Intel-iaLPSS-GPIO  |  1004      |  Analytic Channel  |  Resource for {WDFDEVICE} Released
-Intel-iaLPSS-GPIO  |  1005      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1006      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1007      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1008      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1015      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1016      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1017      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1018      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1019      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1020      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1030      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1040      |  Analytic Channel  |  Query Stop {WDFDEVICE}
-Intel-iaLPSS-GPIO  |  1041      |  Analytic Channel  |  Surprise Removal {WDFDEVICE}
-Intel-iaLPSS-GPIO  |  1042      |  Analytic Channel  |
-Intel-iaLPSS-GPIO  |  1045      |  Analytic Channel  |  ConnectIO BankId = {BankId}, PinCount = {PinCount}, ConnectMode = {ConnectMode}, PullConfiguration = {PullConfig}
-Intel-iaLPSS-GPIO  |  1046      |  Analytic Channel  |  DisconnectIO BankId = {BankId}, PinCount = {PinCount}, DisconnectMode = {DisconnectMode}
-Intel-iaLPSS-GPIO  |  1048      |  Analytic Channel  |  ReadIoPins BankID:{BankID} PinValues:{PinValues}
-Intel-iaLPSS-GPIO  |  1049      |  Analytic Channel  |  WriteIoPins BankID:{BankID} SetValue:{SetValue} ClearValue:{ClearValue}
+Provider           |  Level        |  Event ID  |  Version  |  Channel           |  Task                         |  Opcode  |  Keyword  |  Message
+-------------------|---------------|------------|-----------|--------------------|-------------------------------|----------|-----------|-------------------------------------------------------------------------------------------------------------------
+Intel-iaLPSS-GPIO  |  Information  |  1001      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |          |           |  Created WDFDEVICE {WDFDEVICE}
+Intel-iaLPSS-GPIO  |  Information  |  1002      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |          |           |  WDFDEVICE {FxDevice} IO Addr {IOAddr}
+Intel-iaLPSS-GPIO  |  Error        |  1003      |  1        |  System            |  Enumeration of GPIOx driver  |          |           |  {FailReason}. WDFDEVICE {WDFDEVICE}
+Intel-iaLPSS-GPIO  |  Information  |  1004      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |          |           |  Resource for {WDFDEVICE} Released
+Intel-iaLPSS-GPIO  |  Information  |  1005      |  1        |  Analytic Channel  |                               |  Start   |           |
+Intel-iaLPSS-GPIO  |  Information  |  1006      |  1        |  Analytic Channel  |                               |  Stop    |           |
+Intel-iaLPSS-GPIO  |  Information  |  1007      |  1        |  Analytic Channel  |                               |  Start   |           |
+Intel-iaLPSS-GPIO  |  Information  |  1008      |  1        |  Analytic Channel  |                               |  Stop    |           |
+Intel-iaLPSS-GPIO  |  Information  |  1015      |  1        |  Analytic Channel  |                               |  Start   |           |
+Intel-iaLPSS-GPIO  |  Information  |  1016      |  1        |  Analytic Channel  |                               |  Stop    |           |
+Intel-iaLPSS-GPIO  |  Information  |  1017      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |  Start   |           |
+Intel-iaLPSS-GPIO  |  Information  |  1018      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |  Stop    |           |
+Intel-iaLPSS-GPIO  |  Information  |  1019      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |  Start   |           |
+Intel-iaLPSS-GPIO  |  Information  |  1020      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |  Stop    |           |
+Intel-iaLPSS-GPIO  |  Information  |  1030      |  1        |  Analytic Channel  |                               |          |           |
+Intel-iaLPSS-GPIO  |  Information  |  1040      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |          |           |  Query Stop {WDFDEVICE}
+Intel-iaLPSS-GPIO  |  Information  |  1041      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |  Start   |           |  Surprise Removal {WDFDEVICE}
+Intel-iaLPSS-GPIO  |  Information  |  1042      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |          |           |
+Intel-iaLPSS-GPIO  |  Information  |  1045      |  1        |  Analytic Channel  |  Gpio IO operations           |          |           |  ConnectIO BankId = {BankId}, PinCount = {PinCount}, ConnectMode = {ConnectMode}, PullConfiguration = {PullConfig}
+Intel-iaLPSS-GPIO  |  Information  |  1046      |  1        |  Analytic Channel  |  Gpio IO operations           |          |           |  DisconnectIO BankId = {BankId}, PinCount = {PinCount}, DisconnectMode = {DisconnectMode}
+Intel-iaLPSS-GPIO  |  Information  |  1048      |  0        |  Analytic Channel  |  Gpio IO operations           |          |           |  ReadIoPins BankID:{BankID} PinValues:{PinValues}
+Intel-iaLPSS-GPIO  |  Information  |  1049      |  0        |  Analytic Channel  |  Gpio IO operations           |          |           |  WriteIoPins BankID:{BankID} SetValue:{SetValue} ClearValue:{ClearValue}

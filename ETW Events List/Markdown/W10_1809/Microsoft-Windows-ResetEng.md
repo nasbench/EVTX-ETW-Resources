@@ -1,5 +1,5 @@
-Provider                    |  Event ID  |  Channel  |  Message
-----------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-ResetEng  |  4500      |  System   |  The system has been successfully reset.
-Microsoft-Windows-ResetEng  |  4502      |  System   |  Attempt to reset the system has failed. Changes to the system have been undone.
-Microsoft-Windows-ResetEng  |  4503      |  System   |  Attempt to watch for errors while resetting the system has failed. Failures to reset the system may not be reported.
+Provider                    |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ResetEng  |  Information  |  4500      |  0        |  System   |        |          |           |  The system has been successfully reset.
+Microsoft-Windows-ResetEng  |  Critical     |  4502      |  0        |  System   |        |          |           |  Attempt to reset the system has failed. Changes to the system have been undone.
+Microsoft-Windows-ResetEng  |  Critical     |  4503      |  0        |  System   |        |          |           |  Attempt to watch for errors while resetting the system has failed. Failures to reset the system may not be reported.

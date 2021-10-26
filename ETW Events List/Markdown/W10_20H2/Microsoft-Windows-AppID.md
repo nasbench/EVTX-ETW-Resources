@@ -1,10 +1,10 @@
-Provider                 |  Event ID  |  Channel                              |  Message
--------------------------|------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-AppID  |  4001      |  Microsoft-Windows-AppID/Operational  |  AppID failed to compute {FilePathBuffer} process attributes. Status {Status}.
-Microsoft-Windows-AppID  |  4002      |  Microsoft-Windows-AppID/Operational  |  AppID Driver failed to start. Status {Status}.
-Microsoft-Windows-AppID  |  4003      |  Microsoft-Windows-AppID/Operational  |  AppID Service failed to start. Status {Status}.
-Microsoft-Windows-AppID  |  4004      |  Microsoft-Windows-AppID/Operational  |  AppID Service is called to verify {FilePathBuffer} signature. Status {Status}.
-Microsoft-Windows-AppID  |  4005      |  Microsoft-Windows-AppID/Operational  |  AppID certificate store verification failed. Status {Status}.
-Microsoft-Windows-AppID  |  4006      |  Microsoft-Windows-AppID/Operational  |
-Microsoft-Windows-AppID  |  4007      |  Microsoft-Windows-AppID/Operational  |  AppID encountered a failure from discache.sys. Status {Status}.
-Microsoft-Windows-AppID  |  4008      |  Microsoft-Windows-AppID/Operational  |  Function call error: {CallingFunctionName} called {FunctionCallName} which returned unsuccessfully (Error code: {Status}).
+Provider                 |  Level        |  Event ID  |  Version  |  Channel                              |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------|---------------|------------|-----------|---------------------------------------|--------|----------|-----------|----------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-AppID  |  Error        |  4001      |  0        |  Microsoft-Windows-AppID/Operational  |        |          |           |  AppID failed to compute {FilePathBuffer} process attributes. Status {Status}.
+Microsoft-Windows-AppID  |  Error        |  4002      |  0        |  Microsoft-Windows-AppID/Operational  |        |          |           |  AppID Driver failed to start. Status {Status}.
+Microsoft-Windows-AppID  |  Error        |  4003      |  0        |  Microsoft-Windows-AppID/Operational  |        |          |           |  AppID Service failed to start. Status {Status}.
+Microsoft-Windows-AppID  |  Information  |  4004      |  0        |  Microsoft-Windows-AppID/Operational  |        |          |           |  AppID Service is called to verify {FilePathBuffer} signature. Status {Status}.
+Microsoft-Windows-AppID  |  Error        |  4005      |  0        |  Microsoft-Windows-AppID/Operational  |        |          |           |  AppID certificate store verification failed. Status {Status}.
+Microsoft-Windows-AppID  |  Information  |  4006      |  0        |  Microsoft-Windows-AppID/Operational  |        |          |           |
+Microsoft-Windows-AppID  |  Error        |  4007      |  0        |  Microsoft-Windows-AppID/Operational  |        |          |           |  AppID encountered a failure from discache.sys. Status {Status}.
+Microsoft-Windows-AppID  |  Error        |  4008      |  0        |  Microsoft-Windows-AppID/Operational  |        |          |           |  Function call error: {CallingFunctionName} called {FunctionCallName} which returned unsuccessfully (Error code: {Status}).

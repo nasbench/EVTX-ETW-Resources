@@ -1,6 +1,6 @@
-Provider                          |  Event ID  |  Channel                                      |  Message
-----------------------------------|------------|-----------------------------------------------|---------
-Microsoft-Windows-GettingStarted  |  1         |  Microsoft-Windows-GettingStarted/Diagnostic  |
-Microsoft-Windows-GettingStarted  |  2         |  Microsoft-Windows-GettingStarted/Diagnostic  |
-Microsoft-Windows-GettingStarted  |  3         |  Microsoft-Windows-GettingStarted/Diagnostic  |
-Microsoft-Windows-GettingStarted  |  4         |  Microsoft-Windows-GettingStarted/Diagnostic  |
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                      |  Task               |  Opcode  |  Keyword  |  Message
+----------------------------------|---------------|------------|-----------|-----------------------------------------------|---------------------|----------|-----------|---------
+Microsoft-Windows-GettingStarted  |  Information  |  1         |  0        |  Microsoft-Windows-GettingStarted/Diagnostic  |  DestMenu_Populate  |  Start   |           |
+Microsoft-Windows-GettingStarted  |  Information  |  2         |  0        |  Microsoft-Windows-GettingStarted/Diagnostic  |  DestMenu_Populate  |  Stop    |           |
+Microsoft-Windows-GettingStarted  |  Information  |  3         |  0        |  Microsoft-Windows-GettingStarted/Diagnostic  |  CPLWnd_LoadItems   |  Start   |           |
+Microsoft-Windows-GettingStarted  |  Information  |  4         |  0        |  Microsoft-Windows-GettingStarted/Diagnostic  |  CPLWnd_LoadItems   |  Stop    |           |

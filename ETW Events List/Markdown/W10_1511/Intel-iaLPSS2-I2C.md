@@ -1,108 +1,108 @@
-Provider           |  Event ID  |  Channel                          |  Message
--------------------|------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Intel-iaLPSS2-I2C  |  1001      |  iaLPSS2_I2C Debug channel        |  ERROR: {Message} - Status:{Status}
-Intel-iaLPSS2-I2C  |  1002      |  iaLPSS2_I2C Debug channel        |  INFO: {Message}
-Intel-iaLPSS2-I2C  |  1003      |  iaLPSS2_I2C Debug channel        |  [{Function}] -->
-Intel-iaLPSS2-I2C  |  1004      |  iaLPSS2_I2C Debug channel        |  [{Function}] -&lt;--
-Intel-iaLPSS2-I2C  |  1005      |  iaLPSS2_I2C Debug channel        |  [{Function}] -&lt;-- Status:{Status}
-Intel-iaLPSS2-I2C  |  1011      |  iaLPSS2_I2C Performance channel  |  DriverEntry Start
-Intel-iaLPSS2-I2C  |  1012      |  iaLPSS2_I2C Performance channel  |  DriverEntry End
-Intel-iaLPSS2-I2C  |  1013      |  iaLPSS2_I2C Debug channel        |  Driver ERROR: WdfDriverCreate() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1014      |  iaLPSS2_I2C Debug channel        |  Driver ERROR: CheckSupportedOs() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1015      |  iaLPSS2_I2C Performance channel  |  DriverCleanup Info
-Intel-iaLPSS2-I2C  |  1021      |  iaLPSS2_I2C Performance channel  |  DeviceAdd Start
-Intel-iaLPSS2-I2C  |  1022      |  iaLPSS2_I2C Performance channel  |  DeviceAdd End
-Intel-iaLPSS2-I2C  |  1023      |  iaLPSS2_I2C Debug channel        |  Device ERROR: SpbDeviceInitConfig() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1024      |  iaLPSS2_I2C Debug channel        |  Device ERROR: WdfDeviceInitAssignSDDLString() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1025      |  iaLPSS2_I2C Debug channel        |  Device ERROR: WdfDeviceCreate() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1026      |  iaLPSS2_I2C Debug channel        |  Device HW profile FOUND: Instance:{Instance} Version:{Version} Revision:{Revision} Mode:{Mode}
-Intel-iaLPSS2-I2C  |  1027      |  iaLPSS2_I2C Debug channel        |  Device HW profile ERROR: Instance:{Instance} Version:{Version} Revision:{Revision} Mode:{Mode}
-Intel-iaLPSS2-I2C  |  1028      |  iaLPSS2_I2C Debug channel        |  Device ERROR: SpbDeviceInitialize() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1029      |  iaLPSS2_I2C Debug channel        |  Device ERROR: WdfSpinLockCreate() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1030      |  iaLPSS2_I2C Debug channel        |  Device ERROR: WdfInterruptCreate() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1031      |  iaLPSS2_I2C Debug channel        |  Device ERROR: WdfTimerCreate() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1032      |  iaLPSS2_I2C Debug channel        |  Device ERROR: WdfDeviceAssignS0IdleSettings() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1041      |  iaLPSS2_I2C Performance channel  |  PrepareHardware Start
-Intel-iaLPSS2-I2C  |  1042      |  iaLPSS2_I2C Performance channel  |  PrepareHardware End
-Intel-iaLPSS2-I2C  |  1043      |  iaLPSS2_I2C Debug channel        |  PrepareHardware MBAR{MBAR} mapped: PA:{PA} LEN:{LEN} VA:{VA}
-Intel-iaLPSS2-I2C  |  1044      |  iaLPSS2_I2C Debug channel        |  PrepareHardware WARNING: Too many MBAR resources IDX:{MBAR} PA:{PA} LEN:{LEN} - MBAR disabled
-Intel-iaLPSS2-I2C  |  1045      |  iaLPSS2_I2C Debug channel        |  PrepareHardware ERROR: Can't map MMIO for MBAR{MBAR} PA:{PA} LEN:{LEN} - STATUS:{Status}
-Intel-iaLPSS2-I2C  |  1046      |  iaLPSS2_I2C Debug channel        |  PrepareHardware INTERRUPT VEC:{Vector}
-Intel-iaLPSS2-I2C  |  1047      |  iaLPSS2_I2C Debug channel        |  PrepareHardware ERROR: Incorrect resource count. MMIO:{MBAR_count} (exp. 1 or 2) INT:{INT_count} (exp. 1) - STATUS:{Status}
-Intel-iaLPSS2-I2C  |  1048      |  iaLPSS2_I2C Debug channel        |  PrepareHardware ERROR: DMA SW initialization failed
-Intel-iaLPSS2-I2C  |  1049      |  iaLPSS2_I2C Debug channel        |  PrepareHardware DMA SW initialized
-Intel-iaLPSS2-I2C  |  1050      |  iaLPSS2_I2C Debug channel        |  PrepareHardware DMA disabled or not needed
-Intel-iaLPSS2-I2C  |  1051      |  iaLPSS2_I2C Performance channel  |  ReleaseHardware Start
-Intel-iaLPSS2-I2C  |  1052      |  iaLPSS2_I2C Performance channel  |  ReleaseHardware End
-Intel-iaLPSS2-I2C  |  1061      |  iaLPSS2_I2C Performance channel  |  D0Entry Start
-Intel-iaLPSS2-I2C  |  1062      |  iaLPSS2_I2C Performance channel  |  D0Entry End
-Intel-iaLPSS2-I2C  |  1063      |  iaLPSS2_I2C Performance channel  |  D0Exit Start
-Intel-iaLPSS2-I2C  |  1064      |  iaLPSS2_I2C Performance channel  |  D0Exit End
-Intel-iaLPSS2-I2C  |  1065      |  iaLPSS2_I2C Debug channel        |  Power ERROR: PoRegisterPowerSettingCallback() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1066      |  iaLPSS2_I2C Debug channel        |  Power ERROR: Invalid power callback context
-Intel-iaLPSS2-I2C  |  1067      |  iaLPSS2_I2C Debug channel        |  Power INFO: Monitor is {MonitorState}. Setting idle timeout to {Timeout} ms
-Intel-iaLPSS2-I2C  |  1068      |  iaLPSS2_I2C Debug channel        |  Power ERROR: WdfDeviceAssignS0IdleSettings() returned status:{Status}
-Intel-iaLPSS2-I2C  |  1070      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: {Function}
-Intel-iaLPSS2-I2C  |  1071      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbTargetConnect: SpbController:{SpbController} SpbTarget:{SpbTarget}
-Intel-iaLPSS2-I2C  |  1072      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbTargetDisconnect: SpbController:{SpbController} SpbTarget:{SpbTarget}
-Intel-iaLPSS2-I2C  |  1073      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbControllerLock: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest}
-Intel-iaLPSS2-I2C  |  1074      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbControllerUnlock: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest}
-Intel-iaLPSS2-I2C  |  1075      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbIoRead: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest} Length:{Length}
-Intel-iaLPSS2-I2C  |  1076      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbIoWrite: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest} Length:{Length}
-Intel-iaLPSS2-I2C  |  1077      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbIoSequence: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest} TransferCount:{TransferCount}
-Intel-iaLPSS2-I2C  |  1078      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbOtherInCallerContext: SpbController:{SpbController} FxRequest:{FxTarget}
-Intel-iaLPSS2-I2C  |  1079      |  iaLPSS2_I2C Debug channel        |  SpbCx DDI: EvtSpbOther: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest} InLength:{InputLength} OutLength:{OutputLength} IoCtrlCode:{IoControlCode}
-Intel-iaLPSS2-I2C  |  1081      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Connected to target: Addr:{SlaveAddress} Mode:{AddressMode} ClkFreq:{ClkFreq}
-Intel-iaLPSS2-I2C  |  1082      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Incorrect target settings - STATUS:{Status}
-Intel-iaLPSS2-I2C  |  1083      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Disconnected from target: Addr:{SlaveAddress}
-Intel-iaLPSS2-I2C  |  1084      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Controller locked to target: Addr:{SlaveAddress}
-Intel-iaLPSS2-I2C  |  1085      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Controller lock failed - STATUS:{Status}
-Intel-iaLPSS2-I2C  |  1086      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Connected unlocked from target: Addr:{SlaveAddress}
-Intel-iaLPSS2-I2C  |  1091      |  iaLPSS2_I2C Debug channel        |  Request INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - context configured for {Direction} (type:{Type}) with length {Length}
-Intel-iaLPSS2-I2C  |  1092      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - invalid request direction {Direction} (type:{Type}) with length {Length}
-Intel-iaLPSS2-I2C  |  1093      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - invalid transfer length {Length} (size), supported max is 64KB
-Intel-iaLPSS2-I2C  |  1094      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - invalid transfer length {Length} (alignment), supported is 8, 16, 32
-Intel-iaLPSS2-I2C  |  1095      |  iaLPSS2_I2C Debug channel        |  Request INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - transfer delayed for {Delay_us} us
-Intel-iaLPSS2-I2C  |  1096      |  iaLPSS2_I2C Debug channel        |  Request INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - delay timer expired - start transfer
-Intel-iaLPSS2-I2C  |  1100      |  iaLPSS2_I2C Debug channel        |  Interrupt ISR: Status:{HwStatus}
-Intel-iaLPSS2-I2C  |  1101      |  iaLPSS2_I2C Debug channel        |  Interrupt DPC: HW_Status:{HwStatus} SW_Status:{SwStatus}
-Intel-iaLPSS2-I2C  |  1102      |  iaLPSS2_I2C Debug channel        |  Interrupt DPC: Reenable HW interrupts with mask:{HwMask}
-Intel-iaLPSS2-I2C  |  1171      |  iaLPSS2_I2C Debug channel        |  Target ERROR: Invalid connection properties length (current:{Current}, supported:{Expected})
-Intel-iaLPSS2-I2C  |  1172      |  iaLPSS2_I2C Debug channel        |  Target ERROR: Invalid bus type (current:{Current}, supported:I2C)
-Intel-iaLPSS2-I2C  |  1176      |  iaLPSS2_I2C Debug channel        |  Target ERROR: Invalid clock frequency (requested:{Frequency})
-Intel-iaLPSS2-I2C  |  1177      |  iaLPSS2_I2C Debug channel        |  Request WARNING: Cancel Timer Callback without valid Target - this happen when request was already cancelled
-Intel-iaLPSS2-I2C  |  1178      |  iaLPSS2_I2C Debug channel        |  Request WARNING: Cancel Timer Callback without valid Request - this happen when request was already cancelled
-Intel-iaLPSS2-I2C  |  1179      |  iaLPSS2_I2C Debug channel        |  Request INFO: Cancel Timer Callback with outstanding Request: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest}
-Intel-iaLPSS2-I2C  |  1181      |  iaLPSS2_I2C Debug channel        |  Request WARNING: Timer Callback without valid Target - this happen when request was already cancelled
-Intel-iaLPSS2-I2C  |  1182      |  iaLPSS2_I2C Debug channel        |  Request WARNING: Timer Callback without valid Request - this happen when request was already cancelled
-Intel-iaLPSS2-I2C  |  1183      |  iaLPSS2_I2C Debug channel        |  Request WARNING: DPC Callback without valid Target - this happen when request was already cancelled
-Intel-iaLPSS2-I2C  |  1184      |  iaLPSS2_I2C Debug channel        |  Request WARNING: DPC Callback without valid Request - this happen when request was already cancelled
-Intel-iaLPSS2-I2C  |  1185      |  iaLPSS2_I2C Debug channel        |  Request WARNING: Cancel Callback without valid Target - this happen when request was already cancelled
-Intel-iaLPSS2-I2C  |  1186      |  iaLPSS2_I2C Debug channel        |  Request WARNING: Cancel Callback without valid Request - this happen when request was already cancelled
-Intel-iaLPSS2-I2C  |  1187      |  iaLPSS2_I2C Debug channel        |  Request INFO: Cancel Callback with outstanding Request: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest}
-Intel-iaLPSS2-I2C  |  1188      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Failed to configure controller for transfer - Status:{Status}
-Intel-iaLPSS2-I2C  |  1189      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Other transfer requires 0us delays - Status:{Status}
-Intel-iaLPSS2-I2C  |  1190      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Other transfer requires write then read sequence items - Status:{Status}
-Intel-iaLPSS2-I2C  |  1191      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Other transfer requires 2 sequence items - Status:{Status}
-Intel-iaLPSS2-I2C  |  1192      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Failed to enqueue Other request - Status:{Status}
-Intel-iaLPSS2-I2C  |  1193      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Unsupported Other RequestType - Status:{Status}
-Intel-iaLPSS2-I2C  |  1194      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Unsupported Other IoControlCode - Status:{Status}
-Intel-iaLPSS2-I2C  |  1195      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Failed to capture Other TransferList - Status:{Status}
-Intel-iaLPSS2-I2C  |  1196      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Request failed to mark cancelable - Status:{Status}
-Intel-iaLPSS2-I2C  |  1197      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Request for SpbController:{SpbController} SpbRequest:{SpbRequest} Type:{Type} failed and is finished synchronously - Status:{Status}
-Intel-iaLPSS2-I2C  |  1198      |  iaLPSS2_I2C Debug channel        |  Request INFO: Request for SpbController:{SpbController} SpbRequest:{SpbRequest} complete with Length:{TotalInformation} - Status:{Status}
-Intel-iaLPSS2-I2C  |  1199      |  iaLPSS2_I2C Debug channel        |  Request ERROR: Request for SpbController:{SpbController} SpbRequest:{SpbRequest} complete with Length:{TotalInformation} - Status:{Status}
-Intel-iaLPSS2-I2C  |  1200      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Failing device !!!
-Intel-iaLPSS2-I2C  |  1201      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Invalid capability (Type:{Type}, Capability:{Capability})
-Intel-iaLPSS2-I2C  |  1202      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Configured for LOCKed operation
-Intel-iaLPSS2-I2C  |  1203      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Configured for WRITE {Length} bytes
-Intel-iaLPSS2-I2C  |  1204      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Configured for READ {Length} bytes
-Intel-iaLPSS2-I2C  |  1205      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Other transfer is not supported
-Intel-iaLPSS2-I2C  |  1206      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - DMA Processing
-Intel-iaLPSS2-I2C  |  1207      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - PIO Processing
-Intel-iaLPSS2-I2C  |  1208      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - I2C Bus busy on controler init start
-Intel-iaLPSS2-I2C  |  1209      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Timeout disabling controller
-Intel-iaLPSS2-I2C  |  1210      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Timeout enabling controller
-Intel-iaLPSS2-I2C  |  1215      |  iaLPSS2_I2C Debug channel        |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Controller initialization failed - STATUS:{Status}
-Intel-iaLPSS2-I2C  |  1220      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Transfer ended with {Length} bytes processed - STATUS:{Status}
-Intel-iaLPSS2-I2C  |  1225      |  iaLPSS2_I2C Debug channel        |  Controller INFO: Interrupt processing started: HW_Status:{HwStatus} SW_Status:{SwStatus}
+Provider           |  Level        |  Event ID  |  Version  |  Channel                          |  Task                             |  Opcode  |  Keyword  |  Message
+-------------------|---------------|------------|-----------|-----------------------------------|-----------------------------------|----------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Intel-iaLPSS2-I2C  |  Error        |  1001      |  0        |  iaLPSS2_I2C Debug channel        |                                   |          |           |  ERROR: {Message} - Status:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1002      |  0        |  iaLPSS2_I2C Debug channel        |                                   |          |           |  INFO: {Message}
+Intel-iaLPSS2-I2C  |  Information  |  1003      |  0        |  iaLPSS2_I2C Debug channel        |                                   |          |           |  [{Function}] -->
+Intel-iaLPSS2-I2C  |  Information  |  1004      |  0        |  iaLPSS2_I2C Debug channel        |                                   |          |           |  [{Function}] -&lt;--
+Intel-iaLPSS2-I2C  |  Information  |  1005      |  0        |  iaLPSS2_I2C Debug channel        |                                   |          |           |  [{Function}] -&lt;-- Status:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1011      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Driver routines      |  Start   |           |  DriverEntry Start
+Intel-iaLPSS2-I2C  |  Information  |  1012      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Driver routines      |  Stop    |           |  DriverEntry End
+Intel-iaLPSS2-I2C  |  Error        |  1013      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Driver routines      |          |           |  Driver ERROR: WdfDriverCreate() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1014      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Driver routines      |          |           |  Driver ERROR: CheckSupportedOs() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1015      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Driver routines      |          |           |  DriverCleanup Info
+Intel-iaLPSS2-I2C  |  Information  |  1021      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Init routines        |  Start   |           |  DeviceAdd Start
+Intel-iaLPSS2-I2C  |  Information  |  1022      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Init routines        |  Stop    |           |  DeviceAdd End
+Intel-iaLPSS2-I2C  |  Error        |  1023      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device ERROR: SpbDeviceInitConfig() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1024      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device ERROR: WdfDeviceInitAssignSDDLString() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1025      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device ERROR: WdfDeviceCreate() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1026      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device HW profile FOUND: Instance:{Instance} Version:{Version} Revision:{Revision} Mode:{Mode}
+Intel-iaLPSS2-I2C  |  Error        |  1027      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device HW profile ERROR: Instance:{Instance} Version:{Version} Revision:{Revision} Mode:{Mode}
+Intel-iaLPSS2-I2C  |  Error        |  1028      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device ERROR: SpbDeviceInitialize() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1029      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device ERROR: WdfSpinLockCreate() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1030      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device ERROR: WdfInterruptCreate() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1031      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device ERROR: WdfTimerCreate() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1032      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  Device ERROR: WdfDeviceAssignS0IdleSettings() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1041      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Init routines        |  Start   |           |  PrepareHardware Start
+Intel-iaLPSS2-I2C  |  Information  |  1042      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Init routines        |  Stop    |           |  PrepareHardware End
+Intel-iaLPSS2-I2C  |  Information  |  1043      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  PrepareHardware MBAR{MBAR} mapped: PA:{PA} LEN:{LEN} VA:{VA}
+Intel-iaLPSS2-I2C  |  Warning      |  1044      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  PrepareHardware WARNING: Too many MBAR resources IDX:{MBAR} PA:{PA} LEN:{LEN} - MBAR disabled
+Intel-iaLPSS2-I2C  |  Error        |  1045      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  PrepareHardware ERROR: Can't map MMIO for MBAR{MBAR} PA:{PA} LEN:{LEN} - STATUS:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1046      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  PrepareHardware INTERRUPT VEC:{Vector}
+Intel-iaLPSS2-I2C  |  Information  |  1047      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  PrepareHardware ERROR: Incorrect resource count. MMIO:{MBAR_count} (exp. 1 or 2) INT:{INT_count} (exp. 1) - STATUS:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1048      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  PrepareHardware ERROR: DMA SW initialization failed
+Intel-iaLPSS2-I2C  |  Information  |  1049      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  PrepareHardware DMA SW initialized
+Intel-iaLPSS2-I2C  |  Information  |  1050      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Init routines        |          |           |  PrepareHardware DMA disabled or not needed
+Intel-iaLPSS2-I2C  |  Information  |  1051      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Init routines        |  Start   |           |  ReleaseHardware Start
+Intel-iaLPSS2-I2C  |  Information  |  1052      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Init routines        |  Stop    |           |  ReleaseHardware End
+Intel-iaLPSS2-I2C  |  Information  |  1061      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Power routines       |  Start   |           |  D0Entry Start
+Intel-iaLPSS2-I2C  |  Information  |  1062      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Power routines       |  Stop    |           |  D0Entry End
+Intel-iaLPSS2-I2C  |  Information  |  1063      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Power routines       |  Start   |           |  D0Exit Start
+Intel-iaLPSS2-I2C  |  Information  |  1064      |  0        |  iaLPSS2_I2C Performance channel  |  iaLPSS2_I2C Power routines       |  Stop    |           |  D0Exit End
+Intel-iaLPSS2-I2C  |  Error        |  1065      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Power routines       |          |           |  Power ERROR: PoRegisterPowerSettingCallback() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1066      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Power routines       |          |           |  Power ERROR: Invalid power callback context
+Intel-iaLPSS2-I2C  |  Information  |  1067      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Power routines       |          |           |  Power INFO: Monitor is {MonitorState}. Setting idle timeout to {Timeout} ms
+Intel-iaLPSS2-I2C  |  Error        |  1068      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Power routines       |          |           |  Power ERROR: WdfDeviceAssignS0IdleSettings() returned status:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1070      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: {Function}
+Intel-iaLPSS2-I2C  |  Information  |  1071      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbTargetConnect: SpbController:{SpbController} SpbTarget:{SpbTarget}
+Intel-iaLPSS2-I2C  |  Information  |  1072      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbTargetDisconnect: SpbController:{SpbController} SpbTarget:{SpbTarget}
+Intel-iaLPSS2-I2C  |  Information  |  1073      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbControllerLock: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest}
+Intel-iaLPSS2-I2C  |  Information  |  1074      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbControllerUnlock: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest}
+Intel-iaLPSS2-I2C  |  Information  |  1075      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbIoRead: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest} Length:{Length}
+Intel-iaLPSS2-I2C  |  Information  |  1076      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbIoWrite: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest} Length:{Length}
+Intel-iaLPSS2-I2C  |  Information  |  1077      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbIoSequence: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest} TransferCount:{TransferCount}
+Intel-iaLPSS2-I2C  |  Information  |  1078      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbOtherInCallerContext: SpbController:{SpbController} FxRequest:{FxTarget}
+Intel-iaLPSS2-I2C  |  Information  |  1079      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C SPB DDI calls        |          |           |  SpbCx DDI: EvtSpbOther: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest} InLength:{InputLength} OutLength:{OutputLength} IoCtrlCode:{IoControlCode}
+Intel-iaLPSS2-I2C  |  Information  |  1081      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Connected to target: Addr:{SlaveAddress} Mode:{AddressMode} ClkFreq:{ClkFreq}
+Intel-iaLPSS2-I2C  |  Error        |  1082      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Incorrect target settings - STATUS:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1083      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Disconnected from target: Addr:{SlaveAddress}
+Intel-iaLPSS2-I2C  |  Information  |  1084      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Controller locked to target: Addr:{SlaveAddress}
+Intel-iaLPSS2-I2C  |  Error        |  1085      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Controller lock failed - STATUS:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1086      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Connected unlocked from target: Addr:{SlaveAddress}
+Intel-iaLPSS2-I2C  |  Information  |  1091      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - context configured for {Direction} (type:{Type}) with length {Length}
+Intel-iaLPSS2-I2C  |  Error        |  1092      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - invalid request direction {Direction} (type:{Type}) with length {Length}
+Intel-iaLPSS2-I2C  |  Error        |  1093      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - invalid transfer length {Length} (size), supported max is 64KB
+Intel-iaLPSS2-I2C  |  Error        |  1094      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - invalid transfer length {Length} (alignment), supported is 8, 16, 32
+Intel-iaLPSS2-I2C  |  Information  |  1095      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - transfer delayed for {Delay_us} us
+Intel-iaLPSS2-I2C  |  Information  |  1096      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - delay timer expired - start transfer
+Intel-iaLPSS2-I2C  |  Information  |  1100      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Interrupt ISR: Status:{HwStatus}
+Intel-iaLPSS2-I2C  |  Information  |  1101      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Interrupt DPC: HW_Status:{HwStatus} SW_Status:{SwStatus}
+Intel-iaLPSS2-I2C  |  Information  |  1102      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Interrupt DPC: Reenable HW interrupts with mask:{HwMask}
+Intel-iaLPSS2-I2C  |  Error        |  1171      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Target ERROR: Invalid connection properties length (current:{Current}, supported:{Expected})
+Intel-iaLPSS2-I2C  |  Error        |  1172      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Target ERROR: Invalid bus type (current:{Current}, supported:I2C)
+Intel-iaLPSS2-I2C  |  Error        |  1176      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Target ERROR: Invalid clock frequency (requested:{Frequency})
+Intel-iaLPSS2-I2C  |  Warning      |  1177      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request WARNING: Cancel Timer Callback without valid Target - this happen when request was already cancelled
+Intel-iaLPSS2-I2C  |  Warning      |  1178      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request WARNING: Cancel Timer Callback without valid Request - this happen when request was already cancelled
+Intel-iaLPSS2-I2C  |  Information  |  1179      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request INFO: Cancel Timer Callback with outstanding Request: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest}
+Intel-iaLPSS2-I2C  |  Warning      |  1181      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request WARNING: Timer Callback without valid Target - this happen when request was already cancelled
+Intel-iaLPSS2-I2C  |  Warning      |  1182      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request WARNING: Timer Callback without valid Request - this happen when request was already cancelled
+Intel-iaLPSS2-I2C  |  Warning      |  1183      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request WARNING: DPC Callback without valid Target - this happen when request was already cancelled
+Intel-iaLPSS2-I2C  |  Warning      |  1184      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request WARNING: DPC Callback without valid Request - this happen when request was already cancelled
+Intel-iaLPSS2-I2C  |  Warning      |  1185      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request WARNING: Cancel Callback without valid Target - this happen when request was already cancelled
+Intel-iaLPSS2-I2C  |  Warning      |  1186      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request WARNING: Cancel Callback without valid Request - this happen when request was already cancelled
+Intel-iaLPSS2-I2C  |  Information  |  1187      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request INFO: Cancel Callback with outstanding Request: SpbController:{SpbController} SpbTarget:{SpbTarget} SpbRequest:{SpbRequest}
+Intel-iaLPSS2-I2C  |  Error        |  1188      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Failed to configure controller for transfer - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1189      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Other transfer requires 0us delays - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1190      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Other transfer requires write then read sequence items - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1191      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Other transfer requires 2 sequence items - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1192      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Failed to enqueue Other request - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1193      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Unsupported Other RequestType - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1194      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Unsupported Other IoControlCode - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1195      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Failed to capture Other TransferList - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1196      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Request failed to mark cancelable - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1197      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Request for SpbController:{SpbController} SpbRequest:{SpbRequest} Type:{Type} failed and is finished synchronously - Status:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1198      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request INFO: Request for SpbController:{SpbController} SpbRequest:{SpbRequest} complete with Length:{TotalInformation} - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1199      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Request ERROR: Request for SpbController:{SpbController} SpbRequest:{SpbRequest} complete with Length:{TotalInformation} - Status:{Status}
+Intel-iaLPSS2-I2C  |  Error        |  1200      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Failing device !!!
+Intel-iaLPSS2-I2C  |  Error        |  1201      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Invalid capability (Type:{Type}, Capability:{Capability})
+Intel-iaLPSS2-I2C  |  Information  |  1202      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Configured for LOCKed operation
+Intel-iaLPSS2-I2C  |  Information  |  1203      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Configured for WRITE {Length} bytes
+Intel-iaLPSS2-I2C  |  Information  |  1204      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Configured for READ {Length} bytes
+Intel-iaLPSS2-I2C  |  Error        |  1205      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Other transfer is not supported
+Intel-iaLPSS2-I2C  |  Information  |  1206      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - DMA Processing
+Intel-iaLPSS2-I2C  |  Information  |  1207      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - PIO Processing
+Intel-iaLPSS2-I2C  |  Error        |  1208      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - I2C Bus busy on controler init start
+Intel-iaLPSS2-I2C  |  Error        |  1209      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Timeout disabling controller
+Intel-iaLPSS2-I2C  |  Error        |  1210      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Timeout enabling controller
+Intel-iaLPSS2-I2C  |  Error        |  1215      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller ERROR: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Controller initialization failed - STATUS:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1220      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Addr:{SlaveAddress} Idx:{Idx} Cnt:{Count} - Transfer ended with {Length} bytes processed - STATUS:{Status}
+Intel-iaLPSS2-I2C  |  Information  |  1225      |  0        |  iaLPSS2_I2C Debug channel        |  iaLPSS2_I2C Controller routines  |          |           |  Controller INFO: Interrupt processing started: HW_Status:{HwStatus} SW_Status:{SwStatus}

@@ -1,4 +1,4 @@
-Provider                   |  Event ID  |  Channel   |  Message
----------------------------|------------|------------|------------------------
-Microsoft-Windows-WPD-API  |  100       |  Analytic  |  API request to Driver
-Microsoft-Windows-WPD-API  |  101       |  Analytic  |  Driver response to API
+Provider                   |  Level        |  Event ID  |  Version  |  Channel   |  Task  |  Opcode  |  Keyword  |  Message
+---------------------------|---------------|------------|-----------|------------|--------|----------|-----------|------------------------
+Microsoft-Windows-WPD-API  |  Information  |  100       |  0        |  Analytic  |        |          |           |  API request to Driver
+Microsoft-Windows-WPD-API  |  Information  |  101       |  0        |  Analytic  |        |          |           |  Driver response to API

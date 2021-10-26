@@ -1,84 +1,84 @@
-Provider                    |  Event ID  |  Channel                                      |  Message
-----------------------------|------------|-----------------------------------------------|---------
-Microsoft-Windows-Dism-Api  |  1         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  2         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  3         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  4         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  5         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  6         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  7         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  8         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  9         |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  10        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  11        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  12        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  13        |  Microsoft-Windows-Dism-Api/InternalAnalytic  |
-Microsoft-Windows-Dism-Api  |  14        |  Microsoft-Windows-Dism-Api/InternalAnalytic  |
-Microsoft-Windows-Dism-Api  |  15        |  Microsoft-Windows-Dism-Api/InternalAnalytic  |
-Microsoft-Windows-Dism-Api  |  16        |  Microsoft-Windows-Dism-Api/InternalAnalytic  |
-Microsoft-Windows-Dism-Api  |  23        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  24        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  25        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  26        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  27        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  28        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  29        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  30        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  31        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  32        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  33        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  34        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  35        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  36        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  37        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  38        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  39        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  40        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  41        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  42        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  43        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  44        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  45        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  46        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  47        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  48        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  49        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  50        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  51        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  52        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  53        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  54        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  55        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  56        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  57        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  58        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  59        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  60        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  61        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  62        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  63        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  64        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  65        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  66        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  67        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  68        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  69        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  70        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  71        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  72        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  73        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  74        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  75        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  76        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  77        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  78        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  79        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  80        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  81        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  82        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  83        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  84        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  85        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  86        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  87        |  Microsoft-Windows-Dism-Api/Analytic          |
-Microsoft-Windows-Dism-Api  |  88        |  Microsoft-Windows-Dism-Api/Analytic          |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                      |  Task                              |  Opcode  |  Keyword                                                                      |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------------|------------------------------------|----------|-------------------------------------------------------------------------------|---------
+Microsoft-Windows-Dism-Api  |  Information  |  1         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismInitialize                    |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  2         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismInitialize                    |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  3         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismShutdown                      |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  4         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismShutdown                      |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  5         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismOpenSession                   |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  6         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismOpenSession                   |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  7         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismCloseSession                  |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  8         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismCloseSession                  |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  9         |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismMountImage                    |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  10        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismMountImage                    |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  11        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismUnmountImage                  |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  12        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismUnmountImage                  |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  13        |  0        |  Microsoft-Windows-Dism-Api/InternalAnalytic  |  EnqueueCommandObject              |  Start   |  DismApiCommandThreadEvent DismApiCommandQueueEvent DismApiSessionTableEvent  |
+Microsoft-Windows-Dism-Api  |  Information  |  14        |  0        |  Microsoft-Windows-Dism-Api/InternalAnalytic  |  EnqueueCommandObject              |  Stop    |  DismApiCommandThreadEvent DismApiCommandQueueEvent DismApiSessionTableEvent  |
+Microsoft-Windows-Dism-Api  |  Information  |  15        |  0        |  Microsoft-Windows-Dism-Api/InternalAnalytic  |  DequeueCommandObject              |  Start   |  DismApiCommandThreadEvent DismApiCommandQueueEvent DismApiSessionTableEvent  |
+Microsoft-Windows-Dism-Api  |  Information  |  16        |  0        |  Microsoft-Windows-Dism-Api/InternalAnalytic  |  DequeueCommandObject              |  Stop    |  DismApiCommandThreadEvent DismApiCommandQueueEvent DismApiSessionTableEvent  |
+Microsoft-Windows-Dism-Api  |  Information  |  23        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismSetFirstBootCommandLine       |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  24        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismSetFirstBootCommandLine       |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  25        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemountImage                  |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  26        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemountImage                  |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  27        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismCommitImage                   |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  28        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismCommitImage                   |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  29        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetImageInfo                  |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  30        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetImageInfo                  |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  31        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetMountedImageInfo           |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  32        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetMountedImageInfo           |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  33        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismCleanupMountpoints            |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  34        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismCleanupMountpoints            |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  35        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismAddPackage                    |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  36        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismAddPackage                    |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  37        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemovePackage                 |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  38        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemovePackage                 |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  39        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismEnableFeature                 |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  40        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismEnableFeature                 |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  41        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismDisableFeature                |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  42        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismDisableFeature                |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  43        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetPackages                   |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  44        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetPackages                   |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  45        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetPackageInfo                |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  46        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetPackageInfo                |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  47        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetFeatures                   |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  48        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetFeatures                   |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  49        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetFeatureInfo                |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  50        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetFeatureInfo                |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  51        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetFeatureParent              |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  52        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetFeatureParent              |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  53        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismApplyUnattend                 |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  54        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismApplyUnattend                 |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  55        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismAddDriver                     |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  56        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismAddDriver                     |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  57        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemoveDriver                  |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  58        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemoveDriver                  |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  59        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetDrivers                    |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  60        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetDrivers                    |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  61        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetDriverInfo                 |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  62        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetDriverInfo                 |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  63        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismCheckImageHealth              |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  64        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismCheckImageHealth              |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  65        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRestoreImageHealth            |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  66        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRestoreImageHealth            |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  67        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismSetEdition                    |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  68        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismSetEdition                    |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  69        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismSetProductKey                 |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  70        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismSetProductKey                 |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  71        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetCurrentEdition             |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  72        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetCurrentEdition             |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  73        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetTargetEditions             |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  74        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetTargetEditions             |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  75        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetFeaturesEx                 |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  76        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetFeaturesEx                 |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  77        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismAddProvisionedAppxPackage     |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  78        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismAddProvisionedAppxPackage     |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  79        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemoveProvisionedAppxPackage  |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  80        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemoveProvisionedAppxPackage  |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  81        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetProvisionedAppxPackages    |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  82        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismGetProvisionedAppxPackages    |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  83        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismExportDriver                  |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  84        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismExportDriver                  |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  85        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismOptimizeImage                 |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  86        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismOptimizeImage                 |  Stop    |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  87        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemoveProvisionedAppxPackage  |  Start   |  DismApiEvent                                                                 |
+Microsoft-Windows-Dism-Api  |  Information  |  88        |  0        |  Microsoft-Windows-Dism-Api/Analytic          |  DismRemoveProvisionedAppxPackage  |  Stop    |  DismApiEvent                                                                 |

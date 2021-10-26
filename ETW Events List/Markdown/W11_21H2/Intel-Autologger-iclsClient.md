@@ -1,2 +1,2 @@
-Provider  |  Event ID  |  Channel  |  Message
-----------|------------|-----------|---------
+Provider  |  Level  |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+----------|---------|------------|-----------|-----------|--------|----------|-----------|---------

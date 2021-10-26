@@ -1,3 +1,3 @@
-Provider                                                |  Event ID  |  Channel  |  Message
---------------------------------------------------------|------------|-----------|----------------------------------------------------------------------------------------------
-Microsoft-Windows-CertificationAuthorityClient-CertCli  |  10000     |           |  Certificate Enrollment Server {ServerURL} was not able to process the request: {FaultString}
+Provider                                                |  Level  |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------------------------------|---------|------------|-----------|-----------|--------|----------|-----------|----------------------------------------------------------------------------------------------
+Microsoft-Windows-CertificationAuthorityClient-CertCli  |         |  10000     |  0        |           |        |          |           |  Certificate Enrollment Server {ServerURL} was not able to process the request: {FaultString}

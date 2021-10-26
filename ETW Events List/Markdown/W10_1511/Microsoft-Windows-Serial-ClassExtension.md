@@ -1,11 +1,11 @@
-Provider                                 |  Event ID  |  Channel   |  Message
------------------------------------------|------------|------------|-------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Serial-ClassExtension  |  1000      |  Analytic  |  The Serial WDF class extension has started.  The control object name is {ControlDeviceName}.
-Microsoft-Windows-Serial-ClassExtension  |  1001      |  Analytic  |  The Serial WDF class extension failed to start (error {Status}).  The control object name is {ControlDeviceName}.
-Microsoft-Windows-Serial-ClassExtension  |  1002      |  Analytic  |  Received request {Request} for {IoControlCodeString}
-Microsoft-Windows-Serial-ClassExtension  |  1003      |  Analytic  |  {Request} Complete
-Microsoft-Windows-Serial-ClassExtension  |  1004      |  Analytic  |  Transmitting request {Request} for {Length} byte(s)
-Microsoft-Windows-Serial-ClassExtension  |  1005      |  Analytic  |  Receiving request {Request} for {Length} byte(s)
-Microsoft-Windows-Serial-ClassExtension  |  1006      |  Analytic  |  Completed request {Request} for {Length} byte(s) with status {Status}
-Microsoft-Windows-Serial-ClassExtension  |  1007      |  Analytic  |  {Data}
-Microsoft-Windows-Serial-ClassExtension  |  1008      |  Analytic  |  EvtIoStop for request {Request} in queue {Queue}, invoke cancel
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel   |  Task                                               |  Opcode  |  Keyword  |  Message
+-----------------------------------------|---------------|------------|-----------|------------|-----------------------------------------------------|----------|-----------|-------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Serial-ClassExtension  |  Information  |  1000      |  1        |  Analytic  |  Startup of the serial class extension              |          |           |  The Serial WDF class extension has started.  The control object name is {ControlDeviceName}.
+Microsoft-Windows-Serial-ClassExtension  |  Error        |  1001      |  1        |  Analytic  |  Startup of the serial class extension              |          |           |  The Serial WDF class extension failed to start (error {Status}).  The control object name is {ControlDeviceName}.
+Microsoft-Windows-Serial-ClassExtension  |  Information  |  1002      |  1        |  Analytic  |  IO Control received by the serial class extension  |  Start   |           |  Received request {Request} for {IoControlCodeString}
+Microsoft-Windows-Serial-ClassExtension  |  Information  |  1003      |  1        |  Analytic  |  IO Control received by the serial class extension  |  Stop    |           |  {Request} Complete
+Microsoft-Windows-Serial-ClassExtension  |  Information  |  1004      |  1        |  Analytic  |  Request received by the serial class extension     |  Start   |           |  Transmitting request {Request} for {Length} byte(s)
+Microsoft-Windows-Serial-ClassExtension  |  Information  |  1005      |  1        |  Analytic  |  Request received by the serial class extension     |  Start   |           |  Receiving request {Request} for {Length} byte(s)
+Microsoft-Windows-Serial-ClassExtension  |  Information  |  1006      |  1        |  Analytic  |  Request received by the serial class extension     |  Stop    |           |  Completed request {Request} for {Length} byte(s) with status {Status}
+Microsoft-Windows-Serial-ClassExtension  |  Verbose      |  1007      |  1        |  Analytic  |  Request received by the serial class extension     |          |           |  {Data}
+Microsoft-Windows-Serial-ClassExtension  |  Information  |  1008      |  1        |  Analytic  |  Request received by the serial class extension     |          |           |  EvtIoStop for request {Request} in queue {Queue}, invoke cancel

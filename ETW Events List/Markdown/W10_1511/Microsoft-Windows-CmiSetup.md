@@ -1,8 +1,8 @@
-Provider                    |  Event ID  |  Channel                              |  Message
-----------------------------|------------|---------------------------------------|-------------------------------------------------------
-Microsoft-Windows-CmiSetup  |  1001      |  Microsoft-Windows-CmiSetup/Analytic  |
-Microsoft-Windows-CmiSetup  |  1002      |  Microsoft-Windows-CmiSetup/Analytic  |  CMI Configuration completed with status {ErrorCode}.
-Microsoft-Windows-CmiSetup  |  2001      |  Microsoft-Windows-CmiSetup/Analytic  |
-Microsoft-Windows-CmiSetup  |  2002      |  Microsoft-Windows-CmiSetup/Analytic  |  CMI changes completed with status {ErrorCode}.
-Microsoft-Windows-CmiSetup  |  3001      |  Microsoft-Windows-CmiSetup/Analytic  |
-Microsoft-Windows-CmiSetup  |  3002      |  Microsoft-Windows-CmiSetup/Analytic  |  CBS Online Install completed with status {ErrorCode}.
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                              |  Task                 |  Opcode  |  Keyword      |  Message
+----------------------------|---------------|------------|-----------|---------------------------------------|-----------------------|----------|---------------|-------------------------------------------------------
+Microsoft-Windows-CmiSetup  |  Information  |  1001      |  0        |  Microsoft-Windows-CmiSetup/Analytic  |  CMI Configuration    |  Start   |  Performance  |
+Microsoft-Windows-CmiSetup  |  Information  |  1002      |  0        |  Microsoft-Windows-CmiSetup/Analytic  |  CMI Configuration    |  Stop    |  Performance  |  CMI Configuration completed with status {ErrorCode}.
+Microsoft-Windows-CmiSetup  |  Information  |  2001      |  0        |  Microsoft-Windows-CmiSetup/Analytic  |  CMI Execute Changes  |  Start   |  Performance  |
+Microsoft-Windows-CmiSetup  |  Information  |  2002      |  0        |  Microsoft-Windows-CmiSetup/Analytic  |  CMI Execute Changes  |  Stop    |  Performance  |  CMI changes completed with status {ErrorCode}.
+Microsoft-Windows-CmiSetup  |  Information  |  3001      |  0        |  Microsoft-Windows-CmiSetup/Analytic  |  CBS Online Install   |  Start   |  Performance  |
+Microsoft-Windows-CmiSetup  |  Information  |  3002      |  0        |  Microsoft-Windows-CmiSetup/Analytic  |  CBS Online Install   |  Stop    |  Performance  |  CBS Online Install completed with status {ErrorCode}.

@@ -1,13 +1,13 @@
-Provider                      |  Event ID  |  Channel   |  Message
-------------------------------|------------|------------|-------------------------------------------------------
-Microsoft-Windows-SPB-HIDI2C  |  1000      |  Analytic  |  The HIDI2C driver has enumerated successfully
-Microsoft-Windows-SPB-HIDI2C  |  1001      |  Analytic  |  The HIDI2C driver failed to enumerate ({Status})
-Microsoft-Windows-SPB-HIDI2C  |  1002      |  Analytic  |  The HIDI2C driver failed to enumerate ({Status})
-Microsoft-Windows-SPB-HIDI2C  |  1003      |  Analytic  |  The HIDI2C driver failed to enumerate ({Status})
-Microsoft-Windows-SPB-HIDI2C  |  1010      |  Analytic  |
-Microsoft-Windows-SPB-HIDI2C  |  1011      |  Analytic  |
-Microsoft-Windows-SPB-HIDI2C  |  1012      |  Analytic  |
-Microsoft-Windows-SPB-HIDI2C  |  1013      |  Analytic  |
-Microsoft-Windows-SPB-HIDI2C  |  1014      |  Analytic  |
-Microsoft-Windows-SPB-HIDI2C  |  1020      |  Analytic  |  Reset Command sent to HIDI2C device
-Microsoft-Windows-SPB-HIDI2C  |  1021      |  Analytic  |  Power Command (opcode:{Opcode}) sent to HIDI2C device
+Provider                      |  Level        |  Event ID  |  Version  |  Channel   |  Task                                   |  Opcode                      |  Keyword  |  Message
+------------------------------|---------------|------------|-----------|------------|-----------------------------------------|------------------------------|-----------|-------------------------------------------------------
+Microsoft-Windows-SPB-HIDI2C  |  Information  |  1000      |  1        |  Analytic  |  Enumeration of the HIDI2C driver       |                              |           |  The HIDI2C driver has enumerated successfully
+Microsoft-Windows-SPB-HIDI2C  |  Error        |  1001      |  1        |  Analytic  |  Enumeration of the HIDI2C driver       |                              |           |  The HIDI2C driver failed to enumerate ({Status})
+Microsoft-Windows-SPB-HIDI2C  |  Error        |  1002      |  1        |  Analytic  |  Enumeration of the HIDI2C driver       |                              |           |  The HIDI2C driver failed to enumerate ({Status})
+Microsoft-Windows-SPB-HIDI2C  |  Error        |  1003      |  1        |  Analytic  |  Enumeration of the HIDI2C driver       |                              |           |  The HIDI2C driver failed to enumerate ({Status})
+Microsoft-Windows-SPB-HIDI2C  |  Information  |  1010      |  1        |  Analytic  |  IO request flow via the HIDI2C driver  |  Start                       |           |
+Microsoft-Windows-SPB-HIDI2C  |  Information  |  1011      |  1        |  Analytic  |  IO request flow via the HIDI2C driver  |  IoSpbReadDispatch           |           |
+Microsoft-Windows-SPB-HIDI2C  |  Information  |  1012      |  1        |  Analytic  |  IO request flow via the HIDI2C driver  |  IoSpbReadComplete           |           |
+Microsoft-Windows-SPB-HIDI2C  |  Information  |  1013      |  1        |  Analytic  |  IO request flow via the HIDI2C driver  |  IoForwardToCompletionQueue  |           |
+Microsoft-Windows-SPB-HIDI2C  |  Information  |  1014      |  1        |  Analytic  |  IO request flow via the HIDI2C driver  |  Stop                        |           |
+Microsoft-Windows-SPB-HIDI2C  |  Information  |  1020      |  1        |  Analytic  |  Command requests in the HIDI2C driver  |                              |           |  Reset Command sent to HIDI2C device
+Microsoft-Windows-SPB-HIDI2C  |  Information  |  1021      |  1        |  Analytic  |  Command requests in the HIDI2C driver  |                              |           |  Power Command (opcode:{Opcode}) sent to HIDI2C device

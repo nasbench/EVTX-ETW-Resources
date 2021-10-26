@@ -1,230 +1,230 @@
-Provider                     |  Event ID  |  Channel                             |  Message
------------------------------|------------|--------------------------------------|---------------------------------------------------------------------
-Microsoft-Windows-PDFReader  |  1         |  Microsoft-Windows-glcnd/Debug       |  Loading File
-Microsoft-Windows-PDFReader  |  2         |  Microsoft-Windows-glcnd/Admin       |  Unhandled Exception
-Microsoft-Windows-PDFReader  |  3         |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  4         |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  15        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  16        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  17        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  18        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  19        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  20        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  21        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  22        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  31        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  32        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  33        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  34        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  35        |  Microsoft-Windows-glcnd/Debug       |  Exception Information
-Microsoft-Windows-PDFReader  |  44        |  Microsoft-Windows-glcnd/Diagnostic  |  Building page
-Microsoft-Windows-PDFReader  |  45        |  Microsoft-Windows-glcnd/Diagnostic  |  Page building completed
-Microsoft-Windows-PDFReader  |  46        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  47        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  58        |  Microsoft-Windows-glcnd/Diagnostic  |  Trigger Change Layout: Start
-Microsoft-Windows-PDFReader  |  59        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  60        |  Microsoft-Windows-glcnd/Diagnostic  |  CHange Layout: Start
-Microsoft-Windows-PDFReader  |  61        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  62        |  Microsoft-Windows-glcnd/Diagnostic  |  Step Zoom: Start
-Microsoft-Windows-PDFReader  |  63        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  64        |  Microsoft-Windows-glcnd/Diagnostic  |  Smooth Zoom: Start
-Microsoft-Windows-PDFReader  |  65        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  66        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  67        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  68        |  Microsoft-Windows-glcnd/Diagnostic  |  Normal Tile Render: Start
-Microsoft-Windows-PDFReader  |  69        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  70        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBar : Show Start
-Microsoft-Windows-PDFReader  |  71        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBar : Show Stop
-Microsoft-Windows-PDFReader  |  72        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBar : Hide Start
-Microsoft-Windows-PDFReader  |  73        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBar : Hide Stop
-Microsoft-Windows-PDFReader  |  74        |  Microsoft-Windows-glcnd/Debug       |  Rotate Pages Start
-Microsoft-Windows-PDFReader  |  75        |  Microsoft-Windows-glcnd/Debug       |  Rotate Pages Stop
-Microsoft-Windows-PDFReader  |  76        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  77        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  78        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  79        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  87        |  Microsoft-Windows-glcnd/Debug       |  Zoom updated
-Microsoft-Windows-PDFReader  |  88        |  Microsoft-Windows-glcnd/Debug       |  Zoom Range Updated
-Microsoft-Windows-PDFReader  |  89        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  90        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  91        |  Microsoft-Windows-glcnd/Debug       |  Unexpected content in Type 1 non-CFF font
-Microsoft-Windows-PDFReader  |  92        |  Microsoft-Windows-glcnd/Debug       |  Unsupported feature
-Microsoft-Windows-PDFReader  |  93        |  Microsoft-Windows-glcnd/Debug       |  Encountered duplicate value in CFF Font Stream
-Microsoft-Windows-PDFReader  |  94        |  Microsoft-Windows-glcnd/Debug       |  ToUnicodeCMap Error
-Microsoft-Windows-PDFReader  |  95        |  Microsoft-Windows-glcnd/Debug       |  Form Control Creation
-Microsoft-Windows-PDFReader  |  96        |  Microsoft-Windows-glcnd/Debug       |  Type3 Parse Error skipped
-Microsoft-Windows-PDFReader  |  97        |  Microsoft-Windows-glcnd/Debug       |  App Mode Entered
-Microsoft-Windows-PDFReader  |  98        |  Microsoft-Windows-glcnd/Debug       |  App Mode Exited
-Microsoft-Windows-PDFReader  |  99        |  Microsoft-Windows-glcnd/Diagnostic  |  PageRender: Start
-Microsoft-Windows-PDFReader  |  100       |  Microsoft-Windows-glcnd/Diagnostic  |  PageRender: Stop
-Microsoft-Windows-PDFReader  |  101       |  Microsoft-Windows-glcnd/Diagnostic  |  Launched URI
-Microsoft-Windows-PDFReader  |  102       |  Microsoft-Windows-glcnd/Debug       |  Inputs logged for Type4 Function evaluation
-Microsoft-Windows-PDFReader  |  103       |  Microsoft-Windows-glcnd/Debug       |  Outputs logged for Type4 Function evaluation
-Microsoft-Windows-PDFReader  |  104       |  Microsoft-Windows-glcnd/Debug       |  Property not found in digital certificate
-Microsoft-Windows-PDFReader  |  105       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  106       |  Microsoft-Windows-glcnd/Debug       |  Add summary pane item
-Microsoft-Windows-PDFReader  |  107       |  Microsoft-Windows-glcnd/Diagnostic  |  Page Async Print: Start
-Microsoft-Windows-PDFReader  |  108       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  109       |  Microsoft-Windows-glcnd/Diagnostic  |  Save/SaveAs Entered
-Microsoft-Windows-PDFReader  |  110       |  Microsoft-Windows-glcnd/Diagnostic  |  Save/SaveAs Exited
-Microsoft-Windows-PDFReader  |  111       |  Microsoft-Windows-glcnd/Diagnostic  |  Initiating Highlight Create
-Microsoft-Windows-PDFReader  |  112       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  113       |  Microsoft-Windows-glcnd/Debug       |  View Manipulation Start
-Microsoft-Windows-PDFReader  |  114       |  Microsoft-Windows-glcnd/Debug       |  View Manipulation Stop
-Microsoft-Windows-PDFReader  |  115       |  Microsoft-Windows-glcnd/Debug       |  Reader Flyout Show
-Microsoft-Windows-PDFReader  |  116       |  Microsoft-Windows-glcnd/Debug       |  Reader Flyout Hide
-Microsoft-Windows-PDFReader  |  117       |  Microsoft-Windows-glcnd/Debug       |  Glyph Name does not conform to specification
-Microsoft-Windows-PDFReader  |  118       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  119       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  120       |  Microsoft-Windows-glcnd/Debug       |  Exception Handled Gracefully
-Microsoft-Windows-PDFReader  |  121       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  124       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  125       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  126       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  127       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  128       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  129       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  130       |  Microsoft-Windows-glcnd/Diagnostic  |  Start Word Selection
-Microsoft-Windows-PDFReader  |  131       |  Microsoft-Windows-glcnd/Diagnostic  |  Start Word Selection
-Microsoft-Windows-PDFReader  |  133       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  134       |  Microsoft-Windows-glcnd/Debug       |  Embedded font zero ascent and descent values are handled
-Microsoft-Windows-PDFReader  |  135       |  Microsoft-Windows-glcnd/Debug       |  Ascent and Descent values of font descriptor are zeroes
-Microsoft-Windows-PDFReader  |  136       |  Microsoft-Windows-glcnd/Debug       |  Descent value in the font descriptor is positive
-Microsoft-Windows-PDFReader  |  137       |  Microsoft-Windows-glcnd/Diagnostic  |  Page Async Print Preview: Start
-Microsoft-Windows-PDFReader  |  138       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  139       |  Microsoft-Windows-glcnd/Debug       |  Font Descriptor Flags are invalid
-Microsoft-Windows-PDFReader  |  140       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  141       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  142       |  Microsoft-Windows-glcnd/Diagnostic  |  Highlight Created
-Microsoft-Windows-PDFReader  |  143       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  144       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  145       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  146       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  147       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  148       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  149       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  150       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  151       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  152       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  153       |  Microsoft-Windows-glcnd/Debug       |  Content ignored in Type 1 non-CFF font
-Microsoft-Windows-PDFReader  |  154       |  Microsoft-Windows-glcnd/Debug       |  Invalid Width Information present
-Microsoft-Windows-PDFReader  |  155       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  156       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  157       |  Microsoft-Windows-glcnd/Debug       |  Unsupported Page Element Block
-Microsoft-Windows-PDFReader  |  158       |  Microsoft-Windows-glcnd/Debug       |  Embedded Font Stream type is invalid in FontDictionary of subtype:
-Microsoft-Windows-PDFReader  |  159       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  160       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  161       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  162       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  163       |  Microsoft-Windows-glcnd/Diagnostic  |  PageView Info:
-Microsoft-Windows-PDFReader  |  164       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  165       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  166       |  Microsoft-Windows-glcnd/Diagnostic  |  Page Resources Update : Start
-Microsoft-Windows-PDFReader  |  167       |  Microsoft-Windows-glcnd/Diagnostic  |  Page Resources Update : Stop
-Microsoft-Windows-PDFReader  |  170       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  171       |  Microsoft-Windows-glcnd/Diagnostic  |  Stop copying rendered content to Drawing Surface
-Microsoft-Windows-PDFReader  |  172       |  Microsoft-Windows-glcnd/Debug       |  Received manipulation delta
-Microsoft-Windows-PDFReader  |  177       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  178       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  179       |  Microsoft-Windows-glcnd/Debug       |  Reader Dialog Show
-Microsoft-Windows-PDFReader  |  180       |  Microsoft-Windows-glcnd/Debug       |  Reader Dialog Hide
-Microsoft-Windows-PDFReader  |  181       |  Microsoft-Windows-glcnd/Debug       |  Stylus Down Event
-Microsoft-Windows-PDFReader  |  182       |  Microsoft-Windows-glcnd/Debug       |  Stylus Move Event
-Microsoft-Windows-PDFReader  |  183       |  Microsoft-Windows-glcnd/Debug       |  Stylus Up Event
-Microsoft-Windows-PDFReader  |  184       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  185       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  186       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  187       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  188       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  189       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  190       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  191       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  192       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  193       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  194       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  195       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  196       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  197       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  198       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  199       |  Microsoft-Windows-glcnd/Admin       |  XAML Unhandled Exception
-Microsoft-Windows-PDFReader  |  200       |  Microsoft-Windows-glcnd/Debug       |  PageView data context has been initialized
-Microsoft-Windows-PDFReader  |  201       |  Microsoft-Windows-glcnd/Diagnostic  |  Semantic zoom view change started
-Microsoft-Windows-PDFReader  |  202       |  Microsoft-Windows-glcnd/Diagnostic  |  Semantic zoom view change completed
-Microsoft-Windows-PDFReader  |  203       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  204       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  206       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  207       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  208       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  209       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  210       |  Microsoft-Windows-glcnd/Debug       |  Zoom updated
-Microsoft-Windows-PDFReader  |  211       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  212       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  213       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  214       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  215       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  216       |  Microsoft-Windows-glcnd/Diagnostic  |  Form, ink or highlight control render start
-Microsoft-Windows-PDFReader  |  217       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  218       |  Microsoft-Windows-glcnd/Diagnostic  |  Render Tile Request Created
-Microsoft-Windows-PDFReader  |  219       |  Microsoft-Windows-glcnd/Diagnostic  |  Sezo Static Thumbnail Cached
-Microsoft-Windows-PDFReader  |  220       |  Microsoft-Windows-glcnd/Diagnostic  |  Sezo Static Thumbnail Deleted
-Microsoft-Windows-PDFReader  |  221       |  Microsoft-Windows-glcnd/Diagnostic  |  Sezo Thumbnail Cached
-Microsoft-Windows-PDFReader  |  222       |  Microsoft-Windows-glcnd/Diagnostic  |  Sezo Thumbnail Deleted
-Microsoft-Windows-PDFReader  |  223       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  224       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  225       |  Microsoft-Windows-glcnd/Diagnostic  |  Page Element Render Tile Request Created
-Microsoft-Windows-PDFReader  |  226       |  Microsoft-Windows-glcnd/Debug       |  Unsupported DOM object accessed in javascript code:
-Microsoft-Windows-PDFReader  |  227       |  Microsoft-Windows-glcnd/Debug       |  Document Layout updated from Javascript
-Microsoft-Windows-PDFReader  |  228       |  Microsoft-Windows-glcnd/Debug       |  Mouse Enter trigger event
-Microsoft-Windows-PDFReader  |  229       |  Microsoft-Windows-glcnd/Debug       |  Mouse Exit trigger event
-Microsoft-Windows-PDFReader  |  230       |  Microsoft-Windows-glcnd/Debug       |  Mouse Up trigger event
-Microsoft-Windows-PDFReader  |  231       |  Microsoft-Windows-glcnd/Debug       |  Mouse Down trigger event
-Microsoft-Windows-PDFReader  |  232       |  Microsoft-Windows-glcnd/Debug       |  Field Validate trigger event
-Microsoft-Windows-PDFReader  |  233       |  Microsoft-Windows-glcnd/Debug       |  Field Calculate trigger event
-Microsoft-Windows-PDFReader  |  234       |  Microsoft-Windows-glcnd/Debug       |  Field Keystroke trigger event
-Microsoft-Windows-PDFReader  |  235       |  Microsoft-Windows-glcnd/Debug       |  Field Format trigger event
-Microsoft-Windows-PDFReader  |  236       |  Microsoft-Windows-glcnd/Debug       |  Focus trigger event
-Microsoft-Windows-PDFReader  |  237       |  Microsoft-Windows-glcnd/Debug       |  Blur trigger event
-Microsoft-Windows-PDFReader  |  238       |  Microsoft-Windows-glcnd/Debug       |  Page Open trigger event
-Microsoft-Windows-PDFReader  |  239       |  Microsoft-Windows-glcnd/Debug       |  Page Close trigger event
-Microsoft-Windows-PDFReader  |  240       |  Microsoft-Windows-glcnd/Diagnostic  |  SeZo Thumbnail Request Created
-Microsoft-Windows-PDFReader  |  241       |  Microsoft-Windows-glcnd/Diagnostic  |  SeZo Tile Render Request in progress
-Microsoft-Windows-PDFReader  |  242       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  245       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  246       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  247       |  Microsoft-Windows-glcnd/Debug       |  Invalid write on Readonly property in javascript code:
-Microsoft-Windows-PDFReader  |  248       |  Microsoft-Windows-glcnd/Diagnostic  |  Flat Tile Render: Start
-Microsoft-Windows-PDFReader  |  249       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  250       |  Microsoft-Windows-glcnd/Diagnostic  |  Switching To Document:
-Microsoft-Windows-PDFReader  |  251       |  Microsoft-Windows-glcnd/Diagnostic  |  SwitchTo Document: Start
-Microsoft-Windows-PDFReader  |  252       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  253       |  Microsoft-Windows-glcnd/Diagnostic  |  Tile Request Cancelled
-Microsoft-Windows-PDFReader  |  254       |  Microsoft-Windows-glcnd/Diagnostic  |  Visible Rect for a page in docview
-Microsoft-Windows-PDFReader  |  255       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  256       |  Microsoft-Windows-glcnd/Diagnostic  |  Javascript Execution started
-Microsoft-Windows-PDFReader  |  257       |  Microsoft-Windows-glcnd/Diagnostic  |  Javascript Execution finished
-Microsoft-Windows-PDFReader  |  258       |  Microsoft-Windows-glcnd/Diagnostic  |  Signature verification started
-Microsoft-Windows-PDFReader  |  259       |  Microsoft-Windows-glcnd/Diagnostic  |  Signature verification completed
-Microsoft-Windows-PDFReader  |  260       |  Microsoft-Windows-glcnd/Diagnostic  |  Certificate verification started
-Microsoft-Windows-PDFReader  |  261       |  Microsoft-Windows-glcnd/Diagnostic  |  Certificate verification completed
-Microsoft-Windows-PDFReader  |  262       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  263       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  264       |  Microsoft-Windows-glcnd/Debug       |  MailDoc invoked via document javascript
-Microsoft-Windows-PDFReader  |  265       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  266       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  267       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  268       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  269       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  270       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  272       |  Microsoft-Windows-glcnd/Diagnostic  |  VSIS UpdatesNeeded Callback
-Microsoft-Windows-PDFReader  |  273       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  274       |  Microsoft-Windows-glcnd/Diagnostic  |  New Window Created
-Microsoft-Windows-PDFReader  |  275       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  276       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  277       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  278       |  Microsoft-Windows-glcnd/Diagnostic  |  Window Close started
-Microsoft-Windows-PDFReader  |  279       |  Microsoft-Windows-glcnd/Diagnostic  |  Window closed
-Microsoft-Windows-PDFReader  |  280       |  Microsoft-Windows-glcnd/Diagnostic  |  ContextMenuShow : Show
-Microsoft-Windows-PDFReader  |  281       |  Microsoft-Windows-glcnd/Diagnostic  |  ContextMenuHide : Hide
-Microsoft-Windows-PDFReader  |  282       |  Microsoft-Windows-glcnd/Debug       |  MRU Pane Show
-Microsoft-Windows-PDFReader  |  283       |  Microsoft-Windows-glcnd/Debug       |  MRU Pane Hide
-Microsoft-Windows-PDFReader  |  284       |  Microsoft-Windows-glcnd/Diagnostic  |
+Provider                     |  Level        |  Event ID  |  Version  |  Channel                             |  Task                      |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|--------------------------------------|----------------------------|----------|-----------|---------------------------------------------------------------------
+Microsoft-Windows-PDFReader  |  Information  |  1         |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Loading File
+Microsoft-Windows-PDFReader  |  Error        |  2         |  0        |  Microsoft-Windows-glcnd/Admin       |                            |          |  Reader   |  Unhandled Exception
+Microsoft-Windows-PDFReader  |  Information  |  3         |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadFile                  |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  4         |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadFile                  |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  15        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadImage                 |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  16        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadImage                 |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  17        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  EmbededColorProfile       |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  18        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  EmbededColorProfile       |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  19        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplyDecodeArray          |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  20        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplyDecodeArray          |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  21        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplyDctDecodeArray       |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  22        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplyDctDecodeArray       |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  31        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SetImagePixels            |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  32        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SetImagePixels            |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  33        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateMaskArray           |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  34        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateMaskArray           |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Error        |  35        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Exception Information
+Microsoft-Windows-PDFReader  |  Information  |  44        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageBuild                 |  Start   |  Reader   |  Building page
+Microsoft-Windows-PDFReader  |  Information  |  45        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageBuild                 |  Stop    |  Reader   |  Page building completed
+Microsoft-Windows-PDFReader  |  Information  |  46        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  FontResourceLoad          |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  47        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  FontResourceLoad          |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  58        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TriggerChangeLayout       |  Start   |  Reader   |  Trigger Change Layout: Start
+Microsoft-Windows-PDFReader  |  Information  |  59        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TriggerChangeLayout       |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  60        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ChangeLayout              |  Start   |  Reader   |  CHange Layout: Start
+Microsoft-Windows-PDFReader  |  Information  |  61        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ChangeLayout              |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  62        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  StepZoom                  |  Start   |  Reader   |  Step Zoom: Start
+Microsoft-Windows-PDFReader  |  Information  |  63        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  StepZoom                  |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  64        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SmoothZoom                |  Start   |  Reader   |  Smooth Zoom: Start
+Microsoft-Windows-PDFReader  |  Information  |  65        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SmoothZoom                |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  66        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Resize                    |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  67        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Resize                    |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  68        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |  Start   |  Reader   |  Normal Tile Render: Start
+Microsoft-Windows-PDFReader  |  Information  |  69        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  70        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBarShow            |  Start   |  Reader   |  CommandBar : Show Start
+Microsoft-Windows-PDFReader  |  Information  |  71        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBarShow            |  Stop    |  Reader   |  CommandBar : Show Stop
+Microsoft-Windows-PDFReader  |  Information  |  72        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBarHide            |  Start   |  Reader   |  CommandBar : Hide Start
+Microsoft-Windows-PDFReader  |  Information  |  73        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBarHide            |  Stop    |  Reader   |  CommandBar : Hide Stop
+Microsoft-Windows-PDFReader  |  Verbose      |  74        |  0        |  Microsoft-Windows-glcnd/Debug       |  RotatePages               |          |  Reader   |  Rotate Pages Start
+Microsoft-Windows-PDFReader  |  Verbose      |  75        |  0        |  Microsoft-Windows-glcnd/Debug       |  RotatePages               |          |  Reader   |  Rotate Pages Stop
+Microsoft-Windows-PDFReader  |  Verbose      |  76        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  77        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  78        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Find.Action               |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  79        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Find.Action               |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  87        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Zoom updated
+Microsoft-Windows-PDFReader  |  Information  |  88        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Zoom Range Updated
+Microsoft-Windows-PDFReader  |  Information  |  89        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Scroll                    |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  90        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Scroll                    |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  91        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Unexpected content in Type 1 non-CFF font
+Microsoft-Windows-PDFReader  |  Error        |  92        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Unsupported feature
+Microsoft-Windows-PDFReader  |  Information  |  93        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Encountered duplicate value in CFF Font Stream
+Microsoft-Windows-PDFReader  |  Information  |  94        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  ToUnicodeCMap Error
+Microsoft-Windows-PDFReader  |  Information  |  95        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Form Control Creation
+Microsoft-Windows-PDFReader  |  Information  |  96        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Type3 Parse Error skipped
+Microsoft-Windows-PDFReader  |  Verbose      |  97        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  App Mode Entered
+Microsoft-Windows-PDFReader  |  Verbose      |  98        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  App Mode Exited
+Microsoft-Windows-PDFReader  |  Information  |  99        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageRender                |  Start   |  Reader   |  PageRender: Start
+Microsoft-Windows-PDFReader  |  Information  |  100       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageRender                |  Stop    |  Reader   |  PageRender: Stop
+Microsoft-Windows-PDFReader  |  Information  |  101       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LaunchURI                 |          |  Reader   |  Launched URI
+Microsoft-Windows-PDFReader  |  Verbose      |  102       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Inputs logged for Type4 Function evaluation
+Microsoft-Windows-PDFReader  |  Verbose      |  103       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Outputs logged for Type4 Function evaluation
+Microsoft-Windows-PDFReader  |  Information  |  104       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Property not found in digital certificate
+Microsoft-Windows-PDFReader  |  Information  |  105       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  106       |  0        |  Microsoft-Windows-glcnd/Debug       |  PopulateSummaryPane       |          |  Reader   |  Add summary pane item
+Microsoft-Windows-PDFReader  |  Information  |  107       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageAsyncPrint            |  Start   |  Reader   |  Page Async Print: Start
+Microsoft-Windows-PDFReader  |  Information  |  108       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageAsyncPrint            |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  109       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Save                      |  Start   |  Reader   |  Save/SaveAs Entered
+Microsoft-Windows-PDFReader  |  Information  |  110       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Save                      |  Stop    |  Reader   |  Save/SaveAs Exited
+Microsoft-Windows-PDFReader  |  Information  |  111       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightCreate           |          |  Reader   |  Initiating Highlight Create
+Microsoft-Windows-PDFReader  |  Information  |  112       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightDelete           |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  113       |  0        |  Microsoft-Windows-glcnd/Debug       |  ManipulateView            |          |  Reader   |  View Manipulation Start
+Microsoft-Windows-PDFReader  |  Verbose      |  114       |  0        |  Microsoft-Windows-glcnd/Debug       |  ManipulateView            |          |  Reader   |  View Manipulation Stop
+Microsoft-Windows-PDFReader  |  Verbose      |  115       |  0        |  Microsoft-Windows-glcnd/Debug       |  Flyout                    |          |  Reader   |  Reader Flyout Show
+Microsoft-Windows-PDFReader  |  Verbose      |  116       |  0        |  Microsoft-Windows-glcnd/Debug       |  Flyout                    |          |  Reader   |  Reader Flyout Hide
+Microsoft-Windows-PDFReader  |  Information  |  117       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Glyph Name does not conform to specification
+Microsoft-Windows-PDFReader  |  Information  |  118       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadFormFields            |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  119       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadFormFields            |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Error        |  120       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Exception Handled Gracefully
+Microsoft-Windows-PDFReader  |  Information  |  121       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LaunchURI                 |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  124       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplicationLaunch         |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  125       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplicationLaunch         |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  126       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplicationRehydrate      |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  127       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplicationRehydrate      |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  128       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SelectionRendering        |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  129       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SelectionRendering        |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  130       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  WordSelection             |  Start   |  Reader   |  Start Word Selection
+Microsoft-Windows-PDFReader  |  Information  |  131       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  WordSelection             |  Stop    |  Reader   |  Start Word Selection
+Microsoft-Windows-PDFReader  |  Information  |  133       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  134       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Embedded font zero ascent and descent values are handled
+Microsoft-Windows-PDFReader  |  Information  |  135       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Ascent and Descent values of font descriptor are zeroes
+Microsoft-Windows-PDFReader  |  Information  |  136       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Descent value in the font descriptor is positive
+Microsoft-Windows-PDFReader  |  Information  |  137       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageAsyncPrintPreview     |  Start   |  Reader   |  Page Async Print Preview: Start
+Microsoft-Windows-PDFReader  |  Information  |  138       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageAsyncPrintPreview     |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  139       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Font Descriptor Flags are invalid
+Microsoft-Windows-PDFReader  |  Information  |  140       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ScrollToDestination       |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  141       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ScrollToDestination       |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  142       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightCreate           |          |  Reader   |  Highlight Created
+Microsoft-Windows-PDFReader  |  Information  |  143       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightDelete           |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  144       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightRender           |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  145       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightRender           |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  146       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  WindowsSearch.Show        |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  147       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  WindowsSearch.Show        |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  148       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ThumbnailHandler.Show     |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  149       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ThumbnailHandler.Show     |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  150       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocSummary                |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  151       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocSummary                |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  152       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  153       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Content ignored in Type 1 non-CFF font
+Microsoft-Windows-PDFReader  |  Information  |  154       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Invalid Width Information present
+Microsoft-Windows-PDFReader  |  Information  |  155       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentPrintJob          |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  156       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentPrintJob          |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  157       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Unsupported Page Element Block
+Microsoft-Windows-PDFReader  |  Information  |  158       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Embedded Font Stream type is invalid in FontDictionary of subtype:
+Microsoft-Windows-PDFReader  |  Information  |  159       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PreviewHandler            |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  160       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PreviewHandler            |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  161       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  RenderView                |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  162       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  RenderView                |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  163       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  PageView Info:
+Microsoft-Windows-PDFReader  |  Information  |  164       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SemanticZoom              |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  165       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SemanticZoom              |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  166       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageResourceUpdate        |  Start   |  Reader   |  Page Resources Update : Start
+Microsoft-Windows-PDFReader  |  Information  |  167       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageResourceUpdate        |  Stop    |  Reader   |  Page Resources Update : Stop
+Microsoft-Windows-PDFReader  |  Information  |  170       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentViewCopy          |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  171       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentViewCopy          |  Stop    |  Reader   |  Stop copying rendered content to Drawing Surface
+Microsoft-Windows-PDFReader  |  Verbose      |  172       |  0        |  Microsoft-Windows-glcnd/Debug       |  ManipulationDelta         |          |  Reader   |  Received manipulation delta
+Microsoft-Windows-PDFReader  |  Verbose      |  177       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  178       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  179       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Reader Dialog Show
+Microsoft-Windows-PDFReader  |  Verbose      |  180       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Reader Dialog Hide
+Microsoft-Windows-PDFReader  |  Verbose      |  181       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Stylus Down Event
+Microsoft-Windows-PDFReader  |  Verbose      |  182       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Stylus Move Event
+Microsoft-Windows-PDFReader  |  Verbose      |  183       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Stylus Up Event
+Microsoft-Windows-PDFReader  |  Information  |  184       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InkRendering              |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  185       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InkRendering              |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  186       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InkUpdate                 |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  187       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InkUpdate                 |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  188       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  UpdateViewState           |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  189       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  UpdateViewState           |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  190       |  0        |  Microsoft-Windows-glcnd/Debug       |  AsyncRenderViewRequest    |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  191       |  0        |  Microsoft-Windows-glcnd/Debug       |  AsyncRenderViewRequest    |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  192       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DrawingsurfaceDrawEvent   |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  193       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DrawingsurfaceDrawEvent   |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  194       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocViewAnimation          |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  195       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocViewAnimation          |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  196       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  FileAccessed              |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  197       |  0        |  Microsoft-Windows-glcnd/Debug       |  IncrementalRender         |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  198       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocSummary                |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Error        |  199       |  0        |  Microsoft-Windows-glcnd/Admin       |                            |          |  Reader   |  XAML Unhandled Exception
+Microsoft-Windows-PDFReader  |  Information  |  200       |  0        |  Microsoft-Windows-glcnd/Debug       |  PageView                  |          |  Reader   |  PageView data context has been initialized
+Microsoft-Windows-PDFReader  |  Information  |  201       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SemanticZoomViewChanging  |  Start   |  Reader   |  Semantic zoom view change started
+Microsoft-Windows-PDFReader  |  Information  |  202       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SemanticZoomViewChanging  |  Stop    |  Reader   |  Semantic zoom view change completed
+Microsoft-Windows-PDFReader  |  Information  |  203       |  0        |  Microsoft-Windows-glcnd/Debug       |  PickerFileSelected        |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  204       |  0        |  Microsoft-Windows-glcnd/Debug       |  PickerFileSelected        |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  206       |  0        |  Microsoft-Windows-glcnd/Debug       |  InteractiveControl        |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  207       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PrintPreview              |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  208       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PrintPreview              |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  209       |  0        |  Microsoft-Windows-glcnd/Debug       |  JumpToDestination         |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  210       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Zoom updated
+Microsoft-Windows-PDFReader  |  Information  |  211       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TextCopy                  |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  212       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TextCopy                  |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  213       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  214       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  215       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  216       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InteractiveControlRender  |  Start   |  Reader   |  Form, ink or highlight control render start
+Microsoft-Windows-PDFReader  |  Information  |  217       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InteractiveControlRender  |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  218       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Render Tile Request Created
+Microsoft-Windows-PDFReader  |  Information  |  219       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Sezo Static Thumbnail Cached
+Microsoft-Windows-PDFReader  |  Information  |  220       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Sezo Static Thumbnail Deleted
+Microsoft-Windows-PDFReader  |  Information  |  221       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Sezo Thumbnail Cached
+Microsoft-Windows-PDFReader  |  Information  |  222       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Sezo Thumbnail Deleted
+Microsoft-Windows-PDFReader  |  Information  |  223       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  224       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  225       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Page Element Render Tile Request Created
+Microsoft-Windows-PDFReader  |  Information  |  226       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Unsupported DOM object accessed in javascript code:
+Microsoft-Windows-PDFReader  |  Information  |  227       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Document Layout updated from Javascript
+Microsoft-Windows-PDFReader  |  Information  |  228       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Mouse Enter trigger event
+Microsoft-Windows-PDFReader  |  Information  |  229       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Mouse Exit trigger event
+Microsoft-Windows-PDFReader  |  Information  |  230       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Mouse Up trigger event
+Microsoft-Windows-PDFReader  |  Information  |  231       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Mouse Down trigger event
+Microsoft-Windows-PDFReader  |  Information  |  232       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Field Validate trigger event
+Microsoft-Windows-PDFReader  |  Information  |  233       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Field Calculate trigger event
+Microsoft-Windows-PDFReader  |  Information  |  234       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Field Keystroke trigger event
+Microsoft-Windows-PDFReader  |  Information  |  235       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Field Format trigger event
+Microsoft-Windows-PDFReader  |  Information  |  236       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Focus trigger event
+Microsoft-Windows-PDFReader  |  Information  |  237       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Blur trigger event
+Microsoft-Windows-PDFReader  |  Information  |  238       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Page Open trigger event
+Microsoft-Windows-PDFReader  |  Information  |  239       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Page Close trigger event
+Microsoft-Windows-PDFReader  |  Information  |  240       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  SeZo Thumbnail Request Created
+Microsoft-Windows-PDFReader  |  Information  |  241       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  SeZo Tile Render Request in progress
+Microsoft-Windows-PDFReader  |  Information  |  242       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  245       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  246       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  247       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  Invalid write on Readonly property in javascript code:
+Microsoft-Windows-PDFReader  |  Information  |  248       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |  Start   |  Reader   |  Flat Tile Render: Start
+Microsoft-Windows-PDFReader  |  Information  |  249       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  250       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SwitchTo                  |          |  Reader   |  Switching To Document:
+Microsoft-Windows-PDFReader  |  Information  |  251       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SwitchTo                  |  Start   |  Reader   |  SwitchTo Document: Start
+Microsoft-Windows-PDFReader  |  Information  |  252       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SwitchTo                  |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  253       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |          |  Reader   |  Tile Request Cancelled
+Microsoft-Windows-PDFReader  |  Information  |  254       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Visible Rect for a page in docview
+Microsoft-Windows-PDFReader  |  Information  |  255       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  256       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ExecuteJavascript         |  Start   |  Reader   |  Javascript Execution started
+Microsoft-Windows-PDFReader  |  Information  |  257       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ExecuteJavascript         |  Stop    |  Reader   |  Javascript Execution finished
+Microsoft-Windows-PDFReader  |  Information  |  258       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  VerifySignature           |  Start   |  Reader   |  Signature verification started
+Microsoft-Windows-PDFReader  |  Information  |  259       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  VerifySignature           |  Stop    |  Reader   |  Signature verification completed
+Microsoft-Windows-PDFReader  |  Information  |  260       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  VerifyCertificate         |  Start   |  Reader   |  Certificate verification started
+Microsoft-Windows-PDFReader  |  Information  |  261       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  VerifyCertificate         |  Stop    |  Reader   |  Certificate verification completed
+Microsoft-Windows-PDFReader  |  Verbose      |  262       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Verbose      |  263       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  264       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |  MailDoc invoked via document javascript
+Microsoft-Windows-PDFReader  |  Information  |  265       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  266       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentNavBarShow        |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  267       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentNavBarShow        |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  268       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentNavBarHide        |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  269       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentNavBarHide        |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  270       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  272       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  VSIS UpdatesNeeded Callback
+Microsoft-Windows-PDFReader  |  Information  |  273       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateWindow              |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  274       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateWindow              |  Stop    |  Reader   |  New Window Created
+Microsoft-Windows-PDFReader  |  Information  |  275       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateWindow              |          |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  276       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CloseDocument             |  Start   |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  277       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CloseDocument             |  Stop    |  Reader   |
+Microsoft-Windows-PDFReader  |  Information  |  278       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CloseWindow               |  Start   |  Reader   |  Window Close started
+Microsoft-Windows-PDFReader  |  Information  |  279       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CloseWindow               |  Stop    |  Reader   |  Window closed
+Microsoft-Windows-PDFReader  |  Information  |  280       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ContextMenuShow           |  Stop    |  Reader   |  ContextMenuShow : Show
+Microsoft-Windows-PDFReader  |  Information  |  281       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ContextMenuHide           |  Stop    |  Reader   |  ContextMenuHide : Hide
+Microsoft-Windows-PDFReader  |  Verbose      |  282       |  0        |  Microsoft-Windows-glcnd/Debug       |  MRU                       |          |  Reader   |  MRU Pane Show
+Microsoft-Windows-PDFReader  |  Verbose      |  283       |  0        |  Microsoft-Windows-glcnd/Debug       |  MRU                       |          |  Reader   |  MRU Pane Hide
+Microsoft-Windows-PDFReader  |  Information  |  284       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |

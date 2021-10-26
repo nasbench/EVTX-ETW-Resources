@@ -1,79 +1,79 @@
-Provider                           |  Event ID  |  Channel                                       |  Message
------------------------------------|------------|------------------------------------------------|---------
-Microsoft-Windows-Narrator-Inproc  |  9         |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  13        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  25        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  31        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  35        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  37        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  39        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  41        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  45        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  47        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  48        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  50        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  51        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  52        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  53        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  54        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  55        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  56        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  57        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  58        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  60        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  61        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  66        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  69        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  70        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  71        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  72        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  73        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  74        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  75        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  76        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  77        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  98        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  99        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  104       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  105       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  108       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  109       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  112       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  113       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  120       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  121       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  122       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  123       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  124       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  125       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  126       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  127       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  128       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  129       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  130       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  133       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  134       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  135       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  136       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  137       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  138       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  139       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  140       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  141       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  142       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  143       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  144       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  145       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  146       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  147       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  148       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  149       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  150       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  153       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  154       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  156       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  157       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  158       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  159       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  160       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
-Microsoft-Windows-Narrator-Inproc  |  161       |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |
+Provider                           |  Level        |  Event ID  |  Version  |  Channel                                       |  Task                               |  Opcode  |  Keyword              |  Message
+-----------------------------------|---------------|------------|-----------|------------------------------------------------|-------------------------------------|----------|-----------------------|---------
+Microsoft-Windows-Narrator-Inproc  |  Information  |  9         |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ModeChange                         |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  13        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  FocusChangeTextGeneratedInproc     |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  25        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  QueueAppEvent                      |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  31        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  TouchModeSwitch                    |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  35        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  OSKToggled                         |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  37        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ScreenRotatedInproc                |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  39        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  TaskbarIsFlashing                  |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  41        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ExplorerStateChange                |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  45        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ToggleSelectionMode                |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  47        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ProcessNarratorCommand             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  48        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ProcessNarratorCommand             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  50        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NarratorPlaySoundInproc            |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  51        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  EventQueued                        |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  52        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ProcessInputEvent                  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  53        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NarratorGetElementFromPoint        |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  54        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NarratorGetElementFromPoint        |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  55        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  InvestigateUpdateTextPattern       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  56        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  InvestigateUpdateTextPattern       |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  57        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  TextPatternUpdateCursor            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  58        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  TextPatternUpdateCursor            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  60        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GetElementTextInproc               |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  61        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GetElementTextInproc               |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  66        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ProcessInputEvent                  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  69        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NavigationOriginId                 |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  70        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NavigationOriginId                 |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  71        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NavigationTargetId                 |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  72        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NavigationTargetId                 |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  73        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  UiaFocusEventReceived              |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  74        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  UiaFocusVerification               |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  75        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  UiaFocusVerification               |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  76        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  UiaSecondFocusVerification         |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  77        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  UiaSecondFocusVerification         |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  98        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ClearEventQueue                    |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  99        |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ClearEventQueue                    |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  104       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GetTargetTextPatternElementInproc  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  105       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GetTargetTextPatternElementInproc  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  108       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NextObjectId                       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  109       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  NextObjectId                       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  112       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  DetermineActionSequence            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  113       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  DetermineActionSequence            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  120       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  UiaTextEventReceived               |          |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  121       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  TextEventPreprocessing             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  122       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  TextEventPreprocessing             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  123       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  InitializeTextPatternState         |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  124       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  InitializeTextPatternState         |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  125       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  CheckTextEventDelta                |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  126       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  CheckTextEventDelta                |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  127       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GenerateTextEventTextChange        |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  128       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GenerateTextEventTextChange        |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  129       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  TextEventParentUpdate              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  130       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  TextEventParentUpdate              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  133       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ElementTextGeneration              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  134       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ElementTextGeneration              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  135       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GenerateTextPatternText            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  136       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GenerateTextPatternText            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  137       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  FindTextPatternActionElement       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  138       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  FindTextPatternActionElement       |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  139       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  InternalGetTextPatternUnitChange   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  140       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  InternalGetTextPatternUnitChange   |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  141       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  SaveCharactersAroundTextCursor     |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  142       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  SaveCharactersAroundTextCursor     |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  143       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GenerateNonDegenerateTextChange    |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  144       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GenerateNonDegenerateTextChange    |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  145       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ShutdownFocusMonitor               |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  146       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ShutdownFocusMonitor               |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  147       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ShutdownMouseMonitor               |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  148       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ShutdownMouseMonitor               |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  149       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ShutdownTouchMonitor               |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  150       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ShutdownTouchMonitor               |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  153       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ShutdownSystemMonitor              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  154       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  ShutdownSystemMonitor              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  156       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  BreakChunkIntoFormats              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  157       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  BreakChunkIntoFormats              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  158       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GetFormatReading                   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  159       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  GetFormatReading                   |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  160       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  DetailedReadingData                |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Narrator-Inproc  |  Information  |  161       |  0        |  Microsoft-Windows-Narrator-Inproc/Diagnostic  |  DetailedReadingData                |  Stop    |  PerfInstrumentation  |

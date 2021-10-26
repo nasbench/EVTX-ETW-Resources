@@ -1,3 +1,3 @@
-Provider                              |  Event ID  |  Channel  |  Message
---------------------------------------|------------|-----------|---------
-Microsoft-Windows-BdeTriggerProvider  |  1         |           |
+Provider                              |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                        |  Keyword                        |  Message
+--------------------------------------|---------------|------------|-----------|-----------|--------|--------------------------------|---------------------------------|---------
+Microsoft-Windows-BdeTriggerProvider  |  Information  |  1         |  0        |           |        |  Opcode_BdeVolumeArrivalEvent  |  Keyword_BdeVolumeArrivalEvent  |

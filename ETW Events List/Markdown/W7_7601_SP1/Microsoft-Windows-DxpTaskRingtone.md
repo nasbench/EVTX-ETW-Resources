@@ -1,8 +1,8 @@
-Provider                           |  Event ID  |  Channel                                     |  Message
------------------------------------|------------|----------------------------------------------|---------
-Microsoft-Windows-DxpTaskRingtone  |  1         |  Microsoft-Windows-DxpTaskRingtone/Analytic  |
-Microsoft-Windows-DxpTaskRingtone  |  2         |  Microsoft-Windows-DxpTaskRingtone/Analytic  |
-Microsoft-Windows-DxpTaskRingtone  |  3         |  Microsoft-Windows-DxpTaskRingtone/Analytic  |
-Microsoft-Windows-DxpTaskRingtone  |  4         |  Microsoft-Windows-DxpTaskRingtone/Analytic  |
-Microsoft-Windows-DxpTaskRingtone  |  5         |  Microsoft-Windows-DxpTaskRingtone/Analytic  |
-Microsoft-Windows-DxpTaskRingtone  |  6         |  Microsoft-Windows-DxpTaskRingtone/Analytic  |
+Provider                           |  Level        |  Event ID  |  Version  |  Channel                                     |  Task          |  Opcode  |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|----------------------------------------------|----------------|----------|-----------|---------
+Microsoft-Windows-DxpTaskRingtone  |  Information  |  1         |  0        |  Microsoft-Windows-DxpTaskRingtone/Analytic  |  UxNavigation  |  Start   |           |
+Microsoft-Windows-DxpTaskRingtone  |  Information  |  2         |  0        |  Microsoft-Windows-DxpTaskRingtone/Analytic  |  UxNavigation  |  Stop    |           |
+Microsoft-Windows-DxpTaskRingtone  |  Information  |  3         |  0        |  Microsoft-Windows-DxpTaskRingtone/Analytic  |  UxNavigation  |  Start   |           |
+Microsoft-Windows-DxpTaskRingtone  |  Information  |  4         |  0        |  Microsoft-Windows-DxpTaskRingtone/Analytic  |  UxNavigation  |  Stop    |           |
+Microsoft-Windows-DxpTaskRingtone  |  Information  |  5         |  0        |  Microsoft-Windows-DxpTaskRingtone/Analytic  |  UxNavigation  |  Start   |           |
+Microsoft-Windows-DxpTaskRingtone  |  Information  |  6         |  0        |  Microsoft-Windows-DxpTaskRingtone/Analytic  |  UxNavigation  |  Stop    |           |

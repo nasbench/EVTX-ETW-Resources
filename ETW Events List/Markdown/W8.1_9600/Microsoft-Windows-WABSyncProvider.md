@@ -1,24 +1,24 @@
-Provider                           |  Event ID  |  Channel                                     |  Message
------------------------------------|------------|----------------------------------------------|---------
-Microsoft-Windows-WABSyncProvider  |  3         |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  4         |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  5         |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  6         |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  7         |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  8         |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  9         |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  10        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  11        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  12        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  13        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  14        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  15        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  16        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  17        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  18        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  19        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  20        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  21        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  22        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  23        |  Microsoft-Windows-WABSyncProvider/Analytic  |
-Microsoft-Windows-WABSyncProvider  |  24        |  Microsoft-Windows-WABSyncProvider/Analytic  |
+Provider                           |  Level        |  Event ID  |  Version  |  Channel                                     |  Task                   |  Opcode  |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|----------------------------------------------|-------------------------|----------|-----------|---------
+Microsoft-Windows-WABSyncProvider  |  Information  |  3         |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  InitializePropertyMap  |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  4         |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  InitializePropertyMap  |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  5         |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  GetIdParameter         |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  6         |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  GetIdParameter         |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  7         |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  BeginSession           |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  8         |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  BeginSession           |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  9         |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  EndSession             |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  10        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  EndSession             |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  11        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  GetMetadataStore       |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  12        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  GetMetadataStore       |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  13        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  GetMetadataSchema      |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  14        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  GetMetadataSchema      |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  15        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  EnumerateItems         |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  16        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  EnumerateItems         |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  17        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  LoadChangeData         |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  18        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  LoadChangeData         |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  19        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  InsertItem             |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  20        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  InsertItem             |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  21        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  UpdateItem             |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  22        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  UpdateItem             |  Stop    |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  23        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  DeleteItem             |  Start   |           |
+Microsoft-Windows-WABSyncProvider  |  Information  |  24        |  0        |  Microsoft-Windows-WABSyncProvider/Analytic  |  DeleteItem             |  Stop    |           |

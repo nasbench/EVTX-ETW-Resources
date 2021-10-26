@@ -1,126 +1,126 @@
-Provider                                 |  Event ID  |  Channel       |  Message
------------------------------------------|------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Media Center Extender  |  100       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  101       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  102       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  104       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  105       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  106       |  Media Center  |  Failed to create the message window.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  107       |  Media Center  |  An unauthorized window was detected while running Windows Media Center, '{Title}', with file name '{File}'.
-Microsoft-Windows-Media Center Extender  |  108       |  Media Center  |  An unauthorized window was detected while running Windows Media Center, '{Title}', could not retrieve the file name.
-Microsoft-Windows-Media Center Extender  |  109       |  Media Center  |  An unauthorized window was detected while running Windows Media Center with file name '{File}', could not retrieve the window title.
-Microsoft-Windows-Media Center Extender  |  110       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  111       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  112       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  113       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  114       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  115       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  116       |  Media Center  |  The Media Center Extender session failed to start.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  117       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  118       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  119       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  120       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  121       |  Media Center  |  The Media Center Extender session was terminated because the check to verify that the Extender is enabled in PnP failed.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  122       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  123       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  124       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  200       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  300       |  Media Center  |  Media Center Extender software was sent to Extender '{ID}'.Software version: {Version}
-Microsoft-Windows-Media Center Extender  |  301       |  Media Center  |  Cannot send Media Center Extender software to Extender '{ID}'.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  408       |  Media Center  |  Media Center Extender '{ID}' was uninstalled.
-Microsoft-Windows-Media Center Extender  |  500       |  Media Center  |  Media Center Extender {DeviceName} '{ID}' discovered at address {Address}.
-Microsoft-Windows-Media Center Extender  |  506       |  Media Center  |  Media Center Extender account {User} has been created for the Extender with ID: {ID}.
-Microsoft-Windows-Media Center Extender  |  508       |  Media Center  |  Media Center Extender Setup cannot update access permissions for media locations:{Folders}Media Center Extender: {ID}Error: {Error}
-Microsoft-Windows-Media Center Extender  |  509       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  510       |  Media Center  |  Media Center Extender Setup cannot copy Music settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  511       |  Media Center  |  Media Center Extender Setup cannot copy Pictures settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  512       |  Media Center  |  Media Center Extender Setup cannot copy Videos settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  513       |  Media Center  |  Media Center Extender Setup cannot copy Playlists settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  514       |  Media Center  |  Media Center Extender Setup cannot copy Photo Albums settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  515       |  Media Center  |  Media Center Extender Setup cannot copy Downloads settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  516       |  Media Center  |  Media Center Extender Setup cannot copy Documents settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  517       |  Media Center  |  Media Center Extender Setup cannot copy Favorites settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  519       |  Media Center  |  Media Center Extender Setup cannot copy CD Burning settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  520       |  Media Center  |  Media Center Extender Setup cannot copy Music Library settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  521       |  Media Center  |  Media Center Extender Setup cannot copy Picture Library settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  522       |  Media Center  |  Media Center Extender Setup cannot copy Video Library settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  523       |  Media Center  |  Media Center Extender Setup failed at step {SetupStep}.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  524       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  525       |  Media Center  |  Media Center Extender Setup cannot copy Media Library settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  526       |  Media Center  |  Media Center Extender Setup failed to switch your Network Profile from Public to Home.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  530       |  Media Center  |  Media Center Extender Setup cannot configure or start the SSDP Discovery service.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  531       |  Media Center  |  Media Center Extender Setup cannot configure or start the Function Discovery Provider Host service.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  532       |  Media Center  |  Media Center Extender Setup cannot configure or start the PnP-X IP Bus Enumerator service.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  533       |  Media Center  |  Media Center Extender Setup failed to create or retrieve the Windows Media Center Extender PC certificate.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  534       |  Media Center  |  Media Center Extender Setup failed to configure Terminal Services for Extender.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  535       |  Media Center  |  Media Center Extender Setup cannot start Terminal Services.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  536       |  Media Center  |  Media Center Extender Setup cannot configure or start the Windows Media Center Extender service.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  537       |  Media Center  |  Media Center Extender Setup cannot start Extender discovery.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  538       |  Media Center  |  Media Center Extender Setup failed as the Extender was detected on the network but the UPnP search for the Extender failed (timed out after {Timeout}ms).
-Microsoft-Windows-Media Center Extender  |  539       |  Media Center  |  Media Center Extender Setup failed to find the Extender on the network (timed out after {Timeout}ms).
-Microsoft-Windows-Media Center Extender  |  540       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  541       |  Media Center  |  Media Center Extender Setup failed to associate the Extender with ID: {ID}.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  542       |  Media Center  |  Media Center Extender Setup failed to temporarily enable image download for the Extender.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  543       |  Media Center  |  Media Center Extender Setup failed to create the PnP device with ID: {ID} (timed out after {Timeout}ms).Error: {Error}
-Microsoft-Windows-Media Center Extender  |  544       |  Media Center  |  Media Center Extender Setup cannot exchange certificates with the Extender with ID: {ID}.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  545       |  Media Center  |  Media Center Extender Setup cannot create an account for the Extender with ID: {ID}.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  546       |  Media Center  |  Both your PC and Extender support Wake-on-LAN.Wake-on-LAN adapter: {NIC}
-Microsoft-Windows-Media Center Extender  |  547       |  Media Center  |  Media Center Extender Setup failed to apply settings for the Extender with ID: {ID}.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  548       |  Media Center  |  Media Center Extender Setup failed to permanently enable image download for the Extender.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  549       |  Media Center  |  Media Center Extender Uninstall failed at step: {SetupStep} for the Extender with ID: {ID}.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  550       |  Media Center  |  Media Center Extender Setup failed due to insufficient privileges.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  551       |  Media Center  |  Media Center Extender Uninstall failed due to insufficient privileges.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  552       |  Media Center  |  Media Center Extender Setup cannot enable the Media Center Extender exception in the Domain profile of the Windows Firewall.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  553       |  Media Center  |  Media Center Extender Setup cannot enable the Media Center Extender exception in the Home profile of the Windows Firewall.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  554       |  Media Center  |  Media Center Extender Setup cannot enable the Media Center Extender exception in the Public profile of the Windows Firewall.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  555       |  Media Center  |  Media Center Extender Setup failed to create the scheduled task to update the permissions on media files.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  556       |  Media Center  |  Media Center Extender Setup failed to disable the Extender with ID: {ID}.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  557       |  Media Center  |  Media Center Extender Setup failed to enable the Extender with ID: {ID}.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  558       |  Media Center  |  Media Center Extender Setup aborted due to a Group Policy restriction that disables Media Center.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  559       |  Media Center  |  An update to your Windows Media Center PC is required to use your {DeviceName}.  Go to http://go.microsoft.com/fwlink/?LinkId=121910 to learn more.
-Microsoft-Windows-Media Center Extender  |  560       |  Media Center  |  An update to your Media Center Extender is required to use your {DeviceName} with your PC.  Go to http://go.microsoft.com/fwlink/?LinkId=121911 to learn more.
-Microsoft-Windows-Media Center Extender  |  570       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  571       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  572       |  Media Center  |  Media Center Extender Setup found the following firewalls:{Firewalls}
-Microsoft-Windows-Media Center Extender  |  573       |  Media Center  |  Media Center Extender found:ID: {ID}IP Address: {Address}Interface GUID: {GUID}NHED type: {NhedType}
-Microsoft-Windows-Media Center Extender  |  574       |  Media Center  |  Media Center Extender Uninstall was started for the Extender with ID: {ID}.
-Microsoft-Windows-Media Center Extender  |  575       |  Media Center  |  Media Center Extender Setup started with the following settings:Affiliation code: {AffCode}Username: {User}
-Microsoft-Windows-Media Center Extender  |  576       |  Media Center  |  Your Extender does not support Wake-on-LAN.  Media Center Extender setup could not configure your PC to prevent it from going to sleep.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  577       |  Media Center  |  Your PC does not support Wake-on-LAN.  Media Center Extender setup could not configure your PC to prevent it from going to sleep.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  578       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  579       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  580       |  Media Center  |  Media Center Extender Setup started with the following settings:ID: {ID}Username: {User}
-Microsoft-Windows-Media Center Extender  |  581       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  582       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  583       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  584       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  585       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  586       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  590       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  591       |  Media Center  |  Media Center Extender Setup failed to start an LLTD search.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  592       |  Media Center  |  Your Media Center Extender was set up successfully, but failed to connect (timed out after {Timeout}ms).
-Microsoft-Windows-Media Center Extender  |  593       |  Media Center  |  Your Media Center Extender was set up successfully, but a firewall may be blocking the Extender's connection to your Windows Media Center PC (timed out after {Timeout}ms).
-Microsoft-Windows-Media Center Extender  |  594       |  Media Center  |  Media Center Extender Setup failed to revert settings for the Extender with ID: {ID}.
-Microsoft-Windows-Media Center Extender  |  595       |  Media Center  |  Media Center Extender Setup failed to unassociate the Extender with ID: {ID}.
-Microsoft-Windows-Media Center Extender  |  596       |  Media Center  |  Media Center Extender Setup failed to set LLTD Group Policy Settings and initialize an LLTD search.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  597       |  Media Center  |  Media Center Extender Setup encountered an error while copying Movie settings.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  600       |  Media Center  |  WMDRM-ND root license creation failed for Media Center Extender.Area: {Area}Error: {Error}
-Microsoft-Windows-Media Center Extender  |  601       |  Media Center  |  WMDRM-ND leaf license creation failed for Media Center Extender.Area: {Area}Error: {Error}
-Microsoft-Windows-Media Center Extender  |  602       |  Media Center  |  Windows Media Center Extender encountered a DRM failure.Area: {Area}Error: {Error}
-Microsoft-Windows-Media Center Extender  |  700       |  Media Center  |  WMDRM-ND registration failed for Media Center Extender.Area: {Area}Error: {Error}
-Microsoft-Windows-Media Center Extender  |  701       |  Media Center  |  WMDRM-ND proximity detection failed for Media Center Extender.Area: {Area}Error: {Error}
-Microsoft-Windows-Media Center Extender  |  800       |  Media Center  |  The UPnP Digital Media Renderer failed to start.Error: {Error}
-Microsoft-Windows-Media Center Extender  |  801       |  Media Center  |  The UPnP Digital Media Renderer failed to start.Exception Message: '{Error}'
-Microsoft-Windows-Media Center Extender  |  802       |  Media Center  |  An unsupported Preset was selected.Preset: {Preset}
-Microsoft-Windows-Media Center Extender  |  803       |  Media Center  |
-Microsoft-Windows-Media Center Extender  |  804       |  Media Center  |  Mute is not supported for the requested channel.Channel: {Channel}
-Microsoft-Windows-Media Center Extender  |  805       |  Media Center  |  An action could not be performed because the device is busy.Action: '{Action}'
-Microsoft-Windows-Media Center Extender  |  806       |  Media Center  |  The requested content is not supported.URI: {URI}Protocol Info: {ProtocolInfo}
-Microsoft-Windows-Media Center Extender  |  807       |  Media Center  |  No file extension was found on the provided image URI.URI: {URI}
-Microsoft-Windows-Media Center Extender  |  808       |  Media Center  |  Unable to play picture.Exception Message: '{Error}'
-Microsoft-Windows-Media Center Extender  |  809       |  Media Center  |  Unable to play content as the location is not in the proper format.URI: {URI}
-Microsoft-Windows-Media Center Extender  |  810       |  Media Center  |  Unable to play content as it is on a different network.URI: {URI}
-Microsoft-Windows-Media Center Extender  |  811       |  Media Center  |  An error occurred while parsing the media metadata.  Some information may not be correct.Metadata: {Metadata}
-Microsoft-Windows-Media Center Extender  |  812       |  Media Center  |  An unsupported play speed was requested.Speed: {Speed}
-Microsoft-Windows-Media Center Extender  |  813       |  Media Center  |  The requested seek location was unsupported.Seek Unit: {SeekUnit}
-Microsoft-Windows-Media Center Extender  |  814       |  Media Center  |  Unable to seek to the requested time.Seek Target: {SeekTarget}
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel       |  Task                       |  Opcode  |  Keyword  |  Message
+-----------------------------------------|---------------|------------|-----------|----------------|-----------------------------|----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Media Center Extender  |  Warning      |  100       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  101       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  102       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  104       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  105       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  106       |  0        |  Media Center  |  Session Enforcement        |          |           |  Failed to create the message window.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  107       |  0        |  Media Center  |  Session Enforcement        |          |           |  An unauthorized window was detected while running Windows Media Center, '{Title}', with file name '{File}'.
+Microsoft-Windows-Media Center Extender  |  Warning      |  108       |  0        |  Media Center  |  Session Enforcement        |          |           |  An unauthorized window was detected while running Windows Media Center, '{Title}', could not retrieve the file name.
+Microsoft-Windows-Media Center Extender  |  Warning      |  109       |  0        |  Media Center  |  Session Enforcement        |          |           |  An unauthorized window was detected while running Windows Media Center with file name '{File}', could not retrieve the window title.
+Microsoft-Windows-Media Center Extender  |  Warning      |  110       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  111       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  112       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  113       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  114       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  115       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  116       |  0        |  Media Center  |  Session Enforcement        |          |           |  The Media Center Extender session failed to start.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  117       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  118       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  119       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  120       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  121       |  0        |  Media Center  |  Session Enforcement        |          |           |  The Media Center Extender session was terminated because the check to verify that the Extender is enabled in PnP failed.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  122       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  123       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  124       |  0        |  Media Center  |  Session Enforcement        |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  200       |  0        |  Media Center  |  Congestion Controller      |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  300       |  0        |  Media Center  |  Service                    |          |           |  Media Center Extender software was sent to Extender '{ID}'.Software version: {Version}
+Microsoft-Windows-Media Center Extender  |  Error        |  301       |  0        |  Media Center  |  Service                    |          |           |  Cannot send Media Center Extender software to Extender '{ID}'.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Information  |  408       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender '{ID}' was uninstalled.
+Microsoft-Windows-Media Center Extender  |  Information  |  500       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender {DeviceName} '{ID}' discovered at address {Address}.
+Microsoft-Windows-Media Center Extender  |  Information  |  506       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender account {User} has been created for the Extender with ID: {ID}.
+Microsoft-Windows-Media Center Extender  |  Warning      |  508       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot update access permissions for media locations:{Folders}Media Center Extender: {ID}Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  509       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  510       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Music settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  511       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Pictures settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  512       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Videos settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  513       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Playlists settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  514       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Photo Albums settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  515       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Downloads settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  516       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Documents settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  517       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Favorites settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  519       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy CD Burning settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  520       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Music Library settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  521       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Picture Library settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  522       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Video Library settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  523       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed at step {SetupStep}.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  524       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  525       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot copy Media Library settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  526       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to switch your Network Profile from Public to Home.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  530       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot configure or start the SSDP Discovery service.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  531       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot configure or start the Function Discovery Provider Host service.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  532       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot configure or start the PnP-X IP Bus Enumerator service.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  533       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to create or retrieve the Windows Media Center Extender PC certificate.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  534       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to configure Terminal Services for Extender.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  535       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot start Terminal Services.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  536       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot configure or start the Windows Media Center Extender service.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  537       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot start Extender discovery.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  538       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed as the Extender was detected on the network but the UPnP search for the Extender failed (timed out after {Timeout}ms).
+Microsoft-Windows-Media Center Extender  |  Error        |  539       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to find the Extender on the network (timed out after {Timeout}ms).
+Microsoft-Windows-Media Center Extender  |  Error        |  540       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  541       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to associate the Extender with ID: {ID}.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  542       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to temporarily enable image download for the Extender.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  543       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to create the PnP device with ID: {ID} (timed out after {Timeout}ms).Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  544       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot exchange certificates with the Extender with ID: {ID}.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  545       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot create an account for the Extender with ID: {ID}.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Information  |  546       |  0        |  Media Center  |  Configuration              |          |           |  Both your PC and Extender support Wake-on-LAN.Wake-on-LAN adapter: {NIC}
+Microsoft-Windows-Media Center Extender  |  Error        |  547       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to apply settings for the Extender with ID: {ID}.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  548       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to permanently enable image download for the Extender.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  549       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Uninstall failed at step: {SetupStep} for the Extender with ID: {ID}.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  550       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed due to insufficient privileges.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  551       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Uninstall failed due to insufficient privileges.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  552       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot enable the Media Center Extender exception in the Domain profile of the Windows Firewall.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  553       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot enable the Media Center Extender exception in the Home profile of the Windows Firewall.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  554       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup cannot enable the Media Center Extender exception in the Public profile of the Windows Firewall.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  555       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to create the scheduled task to update the permissions on media files.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  556       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to disable the Extender with ID: {ID}.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  557       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to enable the Extender with ID: {ID}.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  558       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup aborted due to a Group Policy restriction that disables Media Center.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  559       |  0        |  Media Center  |  Configuration              |          |           |  An update to your Windows Media Center PC is required to use your {DeviceName}.  Go to http://go.microsoft.com/fwlink/?LinkId=121910 to learn more.
+Microsoft-Windows-Media Center Extender  |  Error        |  560       |  0        |  Media Center  |  Configuration              |          |           |  An update to your Media Center Extender is required to use your {DeviceName} with your PC.  Go to http://go.microsoft.com/fwlink/?LinkId=121911 to learn more.
+Microsoft-Windows-Media Center Extender  |  Information  |  570       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  571       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  572       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup found the following firewalls:{Firewalls}
+Microsoft-Windows-Media Center Extender  |  Information  |  573       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender found:ID: {ID}IP Address: {Address}Interface GUID: {GUID}NHED type: {NhedType}
+Microsoft-Windows-Media Center Extender  |  Information  |  574       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Uninstall was started for the Extender with ID: {ID}.
+Microsoft-Windows-Media Center Extender  |  Information  |  575       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup started with the following settings:Affiliation code: {AffCode}Username: {User}
+Microsoft-Windows-Media Center Extender  |  Warning      |  576       |  0        |  Media Center  |  Configuration              |          |           |  Your Extender does not support Wake-on-LAN.  Media Center Extender setup could not configure your PC to prevent it from going to sleep.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  577       |  0        |  Media Center  |  Configuration              |          |           |  Your PC does not support Wake-on-LAN.  Media Center Extender setup could not configure your PC to prevent it from going to sleep.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Information  |  578       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  579       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  580       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup started with the following settings:ID: {ID}Username: {User}
+Microsoft-Windows-Media Center Extender  |  Information  |  581       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  582       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  583       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  584       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  585       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Information  |  586       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  590       |  0        |  Media Center  |  Configuration              |          |           |
+Microsoft-Windows-Media Center Extender  |  Warning      |  591       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to start an LLTD search.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  592       |  0        |  Media Center  |  Configuration              |          |           |  Your Media Center Extender was set up successfully, but failed to connect (timed out after {Timeout}ms).
+Microsoft-Windows-Media Center Extender  |  Warning      |  593       |  0        |  Media Center  |  Configuration              |          |           |  Your Media Center Extender was set up successfully, but a firewall may be blocking the Extender's connection to your Windows Media Center PC (timed out after {Timeout}ms).
+Microsoft-Windows-Media Center Extender  |  Warning      |  594       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to revert settings for the Extender with ID: {ID}.
+Microsoft-Windows-Media Center Extender  |  Warning      |  595       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to unassociate the Extender with ID: {ID}.
+Microsoft-Windows-Media Center Extender  |  Warning      |  596       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup failed to set LLTD Group Policy Settings and initialize an LLTD search.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Warning      |  597       |  0        |  Media Center  |  Configuration              |          |           |  Media Center Extender Setup encountered an error while copying Movie settings.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  600       |  0        |  Media Center  |  Digital Rights Management  |          |           |  WMDRM-ND root license creation failed for Media Center Extender.Area: {Area}Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  601       |  0        |  Media Center  |  Digital Rights Management  |          |           |  WMDRM-ND leaf license creation failed for Media Center Extender.Area: {Area}Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  602       |  0        |  Media Center  |  Digital Rights Management  |          |           |  Windows Media Center Extender encountered a DRM failure.Area: {Area}Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  700       |  0        |  Media Center  |  Digital Rights Management  |          |           |  WMDRM-ND registration failed for Media Center Extender.Area: {Area}Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  701       |  0        |  Media Center  |  Digital Rights Management  |          |           |  WMDRM-ND proximity detection failed for Media Center Extender.Area: {Area}Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  800       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  The UPnP Digital Media Renderer failed to start.Error: {Error}
+Microsoft-Windows-Media Center Extender  |  Error        |  801       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  The UPnP Digital Media Renderer failed to start.Exception Message: '{Error}'
+Microsoft-Windows-Media Center Extender  |  Error        |  802       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  An unsupported Preset was selected.Preset: {Preset}
+Microsoft-Windows-Media Center Extender  |  Error        |  803       |  0        |  Media Center  |  Digital Media Renderer     |          |           |
+Microsoft-Windows-Media Center Extender  |  Error        |  804       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  Mute is not supported for the requested channel.Channel: {Channel}
+Microsoft-Windows-Media Center Extender  |  Error        |  805       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  An action could not be performed because the device is busy.Action: '{Action}'
+Microsoft-Windows-Media Center Extender  |  Error        |  806       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  The requested content is not supported.URI: {URI}Protocol Info: {ProtocolInfo}
+Microsoft-Windows-Media Center Extender  |  Error        |  807       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  No file extension was found on the provided image URI.URI: {URI}
+Microsoft-Windows-Media Center Extender  |  Error        |  808       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  Unable to play picture.Exception Message: '{Error}'
+Microsoft-Windows-Media Center Extender  |  Error        |  809       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  Unable to play content as the location is not in the proper format.URI: {URI}
+Microsoft-Windows-Media Center Extender  |  Error        |  810       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  Unable to play content as it is on a different network.URI: {URI}
+Microsoft-Windows-Media Center Extender  |  Warning      |  811       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  An error occurred while parsing the media metadata.  Some information may not be correct.Metadata: {Metadata}
+Microsoft-Windows-Media Center Extender  |  Error        |  812       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  An unsupported play speed was requested.Speed: {Speed}
+Microsoft-Windows-Media Center Extender  |  Error        |  813       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  The requested seek location was unsupported.Seek Unit: {SeekUnit}
+Microsoft-Windows-Media Center Extender  |  Error        |  814       |  0        |  Media Center  |  Digital Media Renderer     |          |           |  Unable to seek to the requested time.Seek Target: {SeekTarget}

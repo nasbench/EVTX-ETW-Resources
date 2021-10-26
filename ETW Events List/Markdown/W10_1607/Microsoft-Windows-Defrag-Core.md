@@ -1,14 +1,14 @@
-Provider                       |  Event ID  |  Channel                              |  Message
--------------------------------|------------|---------------------------------------|---------
-Microsoft-Windows-Defrag-Core  |  1         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  2         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  3         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  4         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  5         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  6         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  7         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  8         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  9         |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  10        |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  11        |  Microsoft-Windows-Defrag-Core/Debug  |
-Microsoft-Windows-Defrag-Core  |  12        |  Microsoft-Windows-Defrag-Core/Debug  |
+Provider                       |  Level  |  Event ID  |  Version  |  Channel                              |  Task              |  Opcode  |  Keyword  |  Message
+-------------------------------|---------|------------|-----------|---------------------------------------|--------------------|----------|-----------|---------
+Microsoft-Windows-Defrag-Core  |         |  1         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Start   |           |
+Microsoft-Windows-Defrag-Core  |         |  2         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Stop    |           |
+Microsoft-Windows-Defrag-Core  |         |  3         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Start   |           |
+Microsoft-Windows-Defrag-Core  |         |  4         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Stop    |           |
+Microsoft-Windows-Defrag-Core  |         |  5         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Start   |           |
+Microsoft-Windows-Defrag-Core  |         |  6         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Stop    |           |
+Microsoft-Windows-Defrag-Core  |         |  7         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Start   |           |
+Microsoft-Windows-Defrag-Core  |         |  8         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Stop    |           |
+Microsoft-Windows-Defrag-Core  |         |  9         |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Start   |           |
+Microsoft-Windows-Defrag-Core  |         |  10        |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Stop    |           |
+Microsoft-Windows-Defrag-Core  |         |  11        |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Start   |           |
+Microsoft-Windows-Defrag-Core  |         |  12        |  0        |  Microsoft-Windows-Defrag-Core/Debug  |  TierOptimization  |  Stop    |           |

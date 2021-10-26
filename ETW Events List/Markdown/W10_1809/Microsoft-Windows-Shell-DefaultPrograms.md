@@ -1,10 +1,10 @@
-Provider                                 |  Event ID  |  Channel                                             |  Message
------------------------------------------|------------|------------------------------------------------------|---------
-Microsoft-Windows-Shell-DefaultPrograms  |  1         |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |
-Microsoft-Windows-Shell-DefaultPrograms  |  2         |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |
-Microsoft-Windows-Shell-DefaultPrograms  |  3         |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |
-Microsoft-Windows-Shell-DefaultPrograms  |  4         |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |
-Microsoft-Windows-Shell-DefaultPrograms  |  5         |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |
-Microsoft-Windows-Shell-DefaultPrograms  |  6         |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |
-Microsoft-Windows-Shell-DefaultPrograms  |  7         |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |
-Microsoft-Windows-Shell-DefaultPrograms  |  8         |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel                                             |  Task                                                   |  Opcode  |  Keyword  |  Message
+-----------------------------------------|---------------|------------|-----------|------------------------------------------------------|---------------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-Shell-DefaultPrograms  |  Information  |  1         |  0        |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |  CPL_DefaultPrograms_Hub_SetYourDefaultProgramsClicks   |          |           |
+Microsoft-Windows-Shell-DefaultPrograms  |  Information  |  2         |  0        |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |  CPL_DefaultPrograms_Hub_FileAssociationClicks          |          |           |
+Microsoft-Windows-Shell-DefaultPrograms  |  Information  |  3         |  0        |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |  CPL_DefaultPrograms_Hub_AutoplayClicks                 |          |           |
+Microsoft-Windows-Shell-DefaultPrograms  |  Information  |  4         |  0        |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |  CPL_DefaultPrograms_Hub_SpadClicks                     |          |           |
+Microsoft-Windows-Shell-DefaultPrograms  |  Information  |  5         |  0        |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |  CPL_DefaultPrograms_ProgramsPage_SetAsDefaultClicks    |          |           |
+Microsoft-Windows-Shell-DefaultPrograms  |  Information  |  6         |  0        |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |  CPL_DefaultPrograms_ProgramsPage_ChooseDefaultsClicks  |          |           |
+Microsoft-Windows-Shell-DefaultPrograms  |  Information  |  7         |  0        |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |  CPL_DefaultPrograms_Advanced_SaveClicks                |          |           |
+Microsoft-Windows-Shell-DefaultPrograms  |  Information  |  8         |  0        |  Microsoft-Windows-Shell-DefaultPrograms/Diagnostic  |  CPL_DefaultPrograms_Advanced_3rdPartyInvocations       |          |           |

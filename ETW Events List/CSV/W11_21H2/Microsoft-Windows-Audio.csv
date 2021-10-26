@@ -1,120 +1,120 @@
-Provider|Event ID|Channel|Message
-Microsoft-Windows-Audio|0||Windows Audio encountered an error while processing a device event.                    Event ID     : 0x{Event} ({EventName})                     Failure Code : 0x{hr}
-Microsoft-Windows-Audio|1||Windows Audio encountered an error while processing a device event.                    DeviceEventType : 0x{DeviceEventType} ({DeviceEventTypeName})                     Failure Code    : 0x{hr}
-Microsoft-Windows-Audio|2|Application|Windows Audio failed during a call to SetServiceStatus.                    Service Type               : 0x{dwServiceType}                     Current State              : 0x{dwCurrentState}                     Controls Accepted          : 0x{dwControlsAccepted}                     Win32 Exit Code            : 0x{dwWin32ExitCode}                     Service Specific Exit Code : 0x{dwServiceSpecificExitCode}                     Check Point                : 0x{dwCheckPoint}                     Wait Hint                  : 0x{dwWaitHint}
-Microsoft-Windows-Audio|3||Windows Audio failed to start the {szSubsystemName} subsystem.                    Subsystem Failure Code     : 0x{dwSubsystemFailureCode} 
-Microsoft-Windows-Audio|4||The Windows Audio Device Graph Isolation process (audiodg.exe) has terminated unexpectedly.                    Process Exit Code     : 0x{dwAudioDgTerminationCode} 
-Microsoft-Windows-Audio|5||The Windows Audio Device Graph Isolation process (audiodg.exe) could not be started.                    Error Code     : 0x{dwAudioDgStartupFailureCode} 
-Microsoft-Windows-Audio|10||The Capture Monitor has failed to restart the capture monitor between {szInputEndpointName} and {szOutputEndpointName}  {dwRestartCount} times.                   The capture monitor will no longer attempt to start this monitor.
-Microsoft-Windows-Audio|11||StreamFlags {dwAudioSrvStreamFlags}
-Microsoft-Windows-Audio|12||
-Microsoft-Windows-Audio|13||
-Microsoft-Windows-Audio|14||
-Microsoft-Windows-Audio|15||
-Microsoft-Windows-Audio|16||
-Microsoft-Windows-Audio|17||
-Microsoft-Windows-Audio|18||Windows Audio Device Graph glitch threshold count exceeded                               Count   : 0x{dwAudioDgTerminationCode}
-Microsoft-Windows-Audio|19||Windows Audio Device Graph glitch threshold count exceeded                               Count   : 0x{dwGlitchCount}
-Microsoft-Windows-Audio|20||Format: {Format}Sampling rate: {SamplingRate}HzOffloaded: {bAudioSrvStreamResourceType}
-Microsoft-Windows-Audio|21||Sound level for application [{AppId}] changed to [{SoundLevel}]
-Microsoft-Windows-Audio|22||Suspended: {bIsSuspended}
-Microsoft-Windows-Audio|23||Released exclusive mode resource {bExclusiveModeStream}Released offload mode resource {bOffloadStream}
-Microsoft-Windows-Audio|24||Stream started.App Id: {AppId}PID: {PID}Audio Stream Category: {Category}
-Microsoft-Windows-Audio|25||Stream stopped.App Id: {AppId}PID: {PID}Audio Stream Category: {Category}
-Microsoft-Windows-Audio|26||Capture Monitor Render Glitch: pCMonitor=[{pCMonitor}], DevicePosition=[{DevicePosition}], QPCPosition=[{QPCPosition}]
-Microsoft-Windows-Audio|27||Capture Monitor Capture Glitch: pCMonitor=[{pCMonitor}], DevicePosition=[{DevicePosition}], QPCPosition=[{QPCPosition}]
-Microsoft-Windows-Audio|28||APO Glitch: Format Converter INF detected: pCAudioFormatConvert=[{pCAudioFormatConvert}], [{ConverstionType}]
-Microsoft-Windows-Audio|29||Engine Glitch: CP Client Input Endpoint - pCCrossProcessClientInputEndpoint=[{pCCrossProcessClientInputEndpoint}] No Messages in queue
-Microsoft-Windows-Audio|30||Engine Glitch: CP Client Input Endpoint - pCCrossProcessClientInputEndpoint=[{pCCrossProcessClientInputEndpoint}] Queue item does not match requested size
-Microsoft-Windows-Audio|31||Engine Glitch: CP Client Output Endpoint - Server Overread: pCCrossProcessClientOutputEndpoint=[{pCCrossProcessClientOutputEndpoint}] WritePos=[{WriteBytePos}] ReadPos=[{ReadBytePos}] BytesToWrite=[{BytesToWrite}]
-Microsoft-Windows-Audio|32||Engine Glitch: CP Client Output Endpoint - Read Pointer Overwrite: pCCrossProcessClientOutputEndpoint=[{pCCrossProcessClientOutputEndpoint}] WriteOffset=[{WriteOffset}] ReadOffset=[{ReadOffset}] BytesToWrite=[{BytesToWrite}] EndOfDataOffset=[{EndOfDataOffset}]
-Microsoft-Windows-Audio|33||Engine Glitch: CP Server Input Endpoint - Starvation: pCCrossProcessServerInputEndpoint=[{pCCrossProcessServerInputEndpoint}] WriteOffset=[{WriteOffset}] ReadOffset=[{ReadOffset}] BufferSize=[{BufferSize}] BytesAvail=[{BytesAvailable}]
-Microsoft-Windows-Audio|34||Engine Glitch: CP Server Output Endpoint - Queue Full Packet Drop: pCCrossProcessServerOutputEndpoint=[{pCCrossProcessServerOutputEndpoint}] WritePos=[{WriteBytePos}] DroppedBytes=[{DroppedBytes}] ReadPos=[{ReadBytePos}] BytesToWrite=[{BytesToWrite}]
-Microsoft-Windows-Audio|35||Engine Glitch: CP Server Output Endpoint - Read Pointer Overwrite: pCCrossProcessServerOutputEndpoint=[{pCCrossProcessServerOutputEndpoint}] WriteOffset=[{WriteOffset}] ReadOffset=[{ReadOffset}] BytesToWrite=[{BytesToWrite}]
-Microsoft-Windows-Audio|36||KS Endpoint Glitch: IOMGR No Outstanding Packets: pOwner=[{pOwner}] NextStreamingPacketToComplete=[{NextStreamingPacketToComplete}] MaxPacketCount=[{MaxPacketCount}]
-Microsoft-Windows-Audio|37||KS Endpoint Glitch: IOMGR Ioctl Time Limit Exceeded: pOwner=[{pOwner}] DeltaHNS=[{IoctlTimeHNS}]
-Microsoft-Windows-Audio|38||KS Endpoint Glitch: BASE Output Unexpected Buffer Completed: pCAudioBasePin=[{pCAudioBasePin}] LockedDataPointer=[{pLockedDataPointer}] bLockedEqualsUnrolled=[{bLockedEqualsUnrolled}]
-Microsoft-Windows-Audio|39||KS Endpoint Glitch: BASE Input Null Last Buffer with LockedData != LoopedBuffer: pCAudioBasePin=[{pCAudioBasePin}] LockedDataPointer=[{LockedDataPointer}]
-Microsoft-Windows-Audio|40||KS Endpoint Glitch: BASE Input Buffer Index Mismatch: pCAudioBasePin=[{pCAudioBasePin}] LockedDataPointer=[{LockedDataPointer}]
-Microsoft-Windows-Audio|41||KS Endpoint Glitch: BASE End Glitch: pCAudioBasePin=[{pCAudioBasePin}] StreamPosition=[{GlitchStreamPosition}] GlitchDuration=[{GlitchDuration}]
-Microsoft-Windows-Audio|42||KS Endpoint Glitch: RTCAP StreamPos Ahead of HW Pos: pCAudioCapturePinRealtimeStreaming=[{pCAudioCapturePinRealtimeStreaming}] WritePos=[{WritePosition}] PlayPos=[{PlayPosition}] StreamPos=[{StreamPosition}] StreamPosMinusReadPos=[{StreamPosMinusReadPos}]
-Microsoft-Windows-Audio|43||KS Endpoint Glitch: RTCAP StreamPos Too Far Behind: pCAudioCapturePinRealtimeStreaming=[{pCAudioCapturePinRealtimeStreaming}] WritePos=[{WritePosition}] PlayPos=[{PlayPosition}] StreamPos=[{StreamPosition}] ReadPosMinusStreamPos=[{ReadPosMinusStreamPos}]
-Microsoft-Windows-Audio|44||KS Endpoint Glitch: RTREN WritePos Exceeds TotalPos: pCAudioRenderPinRealtimeStreaming=[{pCAudioRenderPinRealtimeStreaming}] WritePos=[{WritePosition}] PlayPos=[{PlayPosition}] TotalPos=[{TotalPosition}] WritePosMinusTotalPos=[{WritePosMinusTotalPos}]
-Microsoft-Windows-Audio|45||KS Endpoint Glitch: STCAP Capture Ahead: pCAudioCapturePinStandardStreaming=[{pCAudioCapturePinStandardStreaming}] ValidPosEnd=[{ValidPositionEnd}] ValidPosStart=[{ValidPositionStart}] StreamPos=[{StreamPosition}] StreamPosMinusValidPosEnd=[{StreamPosMinusValidPosEnd}]
-Microsoft-Windows-Audio|46||KS Endpoint Glitch: STCAP Capture Behind: pCAudioCapturePinStandardStreaming=[{pCAudioCapturePinStandardStreaming}] ValidPosEnd=[{ValidPositionEnd}] ValidPosStart=[{ValidPositionStart}] StreamPos=[{StreamPosition}] ValidPosStartMinusStreamPos=[{ValidPosStartMinusStreamPos}]
-Microsoft-Windows-Audio|47||KS Endpoint Glitch: STCAP Device Starved: pCAudioCapturePinStandardStreaming=[{pCAudioCapturePinStandardStreaming}] StreamPos=[{StreamPosition}] FrameCount=[{FrameCount}]
-Microsoft-Windows-Audio|48||KS Endpoint Glitch: STREN Device Starved: pCAudioRenderPinStandardStreaming=[{pCAudioRenderPinStandardStreaming}] DevicePos=[{DevicePosition}] StreamPos=[{StreamPosition}] AvailFrames=[{AvailableFrames}]
-Microsoft-Windows-Audio|49||KS Endpoint Glitch: STREN EXCL PULL Invalid Buffer Count: pCAudioRenderPinStandardStreaming=[{pCAudioRenderPinStandardStreaming}] DevicePos=[{DevicePosition}] StreamPos=[{StreamPosition}] AvailFrames=[{AvailableFrames}]
-Microsoft-Windows-Audio|50||System effect initialized: CLSID=[{APOCLSID}] AudioSignalProcessingMode=[{AudioSignalProcessingMode}] InitializeForDiscoveryOnly=[{InitializeForDiscoveryOnly}]
-Microsoft-Windows-Audio|51||Volume limit event signalled to audiosrv enter
-Microsoft-Windows-Audio|52||Volume limit event signalled to audiosrv exit
-Microsoft-Windows-Audio|53||AudioSrv published AVLC state
-Microsoft-Windows-Audio|58||MMDevAPI: Default device changed triggered
-Microsoft-Windows-Audio|59||MMDevAPI: OnMediaNotification Enter
-Microsoft-Windows-Audio|60||MMDevAPI: OnMediaNotification Exit
-Microsoft-Windows-Audio|61||MMDevAPI: DeviceStateChanged callback
-Microsoft-Windows-Audio|62||MMDevAPI: DeviceAdded callback
-Microsoft-Windows-Audio|63||MMDevAPI: DeviceRemoved callback
-Microsoft-Windows-Audio|64||MMDevAPI: DefaultDeviceChanged callback
-Microsoft-Windows-Audio|65||MMDevAPI: Audio device state changed
-Microsoft-Windows-Audio|101||MidiRT: Application Suspension Handler
-Microsoft-Windows-Audio|102||MidiRT: Application Resume Handler
-Microsoft-Windows-Audio|103||MidiRT: Application Entering CS Handler
-Microsoft-Windows-Audio|104||MidiRT: Application Resuming from CS Handler
-Microsoft-Windows-Audio|105||MidiRT: Device Removal Handler
-Microsoft-Windows-Audio|106||MidiRT: Cleanup and release device handle
-Microsoft-Windows-Audio|107||MidiRT: Close handle to MIDI Device
-Microsoft-Windows-Audio|108||MidiRT: Begin binding to DeviceId: {DeviceId}
-Microsoft-Windows-Audio|109||MidiRT: Done binding to device interface
-Microsoft-Windows-Audio|110||MidiRT: Create new MidiPortDeviceIoControl
-Microsoft-Windows-Audio|111||MidiRT: Beginning Synchronous I/O
-Microsoft-Windows-Audio|112||MidiRT: Done with synchronous I/O
-Microsoft-Windows-Audio|113||MidiRT: Beginning Asynchronous I/O
-Microsoft-Windows-Audio|114||MidiRT: Done with Asynchronous I/O
-Microsoft-Windows-Audio|115||CrossProcess packet added
-Microsoft-Windows-Audio|116||Pump: setting deadline
-Microsoft-Windows-Audio|117||Pump: cancelling deadline
-Microsoft-Windows-Audio|118||Pump: missed deadline!
-Microsoft-Windows-Audio|119||Pump: Start - setting MultimediMode to AVRT_MULTIMEDIA_MODE_BUFFERING
-Microsoft-Windows-Audio|120||Pump: Stop - setting MultimediMode to AVRT_MULTIMEDIA_MODE_IDLE
-Microsoft-Windows-Audio|121||Discovering EndpointCharacteristics for [{Endpoint Id}]
-Microsoft-Windows-Audio|122||Discovered EndpointCharacteristics for [{Endpoint Id}] (hr = {hr})
-Microsoft-Windows-Audio|123||GetMixFormat starting on endpoint [{Endpoint Id}] (category={category}, raw={Raw}, matchformat={MatchFormat}, connector={ConnectorType})
-Microsoft-Windows-Audio|124||
-Microsoft-Windows-Audio|125||IsFormatSupported starting on endpoint [{Endpoint Id}] (category={category}, raw={Raw}, matchformat={MatchFormat}, connector={ConnectorType})
-Microsoft-Windows-Audio|126||
-Microsoft-Windows-Audio|127||Vadserver_CreateStream starting on endpoint [{Endpoint Id}] (category={category}, raw={Raw}, matchformat={MatchFormat}, connector={ConnectorType})
-Microsoft-Windows-Audio|128||
-Microsoft-Windows-Audio|129||
-Microsoft-Windows-Audio|130||
-Microsoft-Windows-Audio|131||
-Microsoft-Windows-Audio|132||
-Microsoft-Windows-Audio|133||CreateDeviceEndpointInstance starting on endpoint [{Endpoint Id}] (connector={ConnectorType})
-Microsoft-Windows-Audio|134||
-Microsoft-Windows-Audio|135||Pump: Correct Position
-Microsoft-Windows-Audio|136||Pump: Start - Yield start
-Microsoft-Windows-Audio|137||Pump: Stop - Yield stop
-Microsoft-Windows-Audio|138||Pump: Start - Process start
-Microsoft-Windows-Audio|139||Pump: Stop - Process stop
-Microsoft-Windows-Audio|140||Pump: ProcPassDuration
-Microsoft-Windows-Audio|141||
-Microsoft-Windows-Audio|142||
-Microsoft-Windows-Audio|143||
-Microsoft-Windows-Audio|144||
-Microsoft-Windows-Audio|145||
-Microsoft-Windows-Audio|146||
-Microsoft-Windows-Audio|147||
-Microsoft-Windows-Audio|148||
-Microsoft-Windows-Audio|149||
-Microsoft-Windows-Audio|150||
-Microsoft-Windows-Audio|151||
-Microsoft-Windows-Audio|152||
-Microsoft-Windows-Audio|153||
-Microsoft-Windows-Audio|154||
-Microsoft-Windows-Audio|155||
-Microsoft-Windows-Audio|156||
-Microsoft-Windows-Audio|157||
-Microsoft-Windows-Audio|158||
-Microsoft-Windows-Audio|159||
-Microsoft-Windows-Audio|160||
-Microsoft-Windows-Audio|161||Pump: Processing pass skipped
+Provider|Level|Event ID|Version|Channel|Task|Opcode|Keyword|Message
+Microsoft-Windows-Audio|Warning|0|0||AudioServer_Fail_Service_Device|||Windows Audio encountered an error while processing a device event.                    Event ID     : 0x{Event} ({EventName})                     Failure Code : 0x{hr}
+Microsoft-Windows-Audio|Warning|1|0||AudioServer_Fail_Device_Event_Worker|||Windows Audio encountered an error while processing a device event.                    DeviceEventType : 0x{DeviceEventType} ({DeviceEventTypeName})                     Failure Code    : 0x{hr}
+Microsoft-Windows-Audio|Error|2|0|Application|AudioServer_Fail_Set_Service_Status|||Windows Audio failed during a call to SetServiceStatus.                    Service Type               : 0x{dwServiceType}                     Current State              : 0x{dwCurrentState}                     Controls Accepted          : 0x{dwControlsAccepted}                     Win32 Exit Code            : 0x{dwWin32ExitCode}                     Service Specific Exit Code : 0x{dwServiceSpecificExitCode}                     Check Point                : 0x{dwCheckPoint}                     Wait Hint                  : 0x{dwWaitHint}
+Microsoft-Windows-Audio|Error|3|0||AudioServer_Fail_Subsystem_Startup|||Windows Audio failed to start the {szSubsystemName} subsystem.                    Subsystem Failure Code     : 0x{dwSubsystemFailureCode} 
+Microsoft-Windows-Audio|Error|4|0||AudioServer_Fail_AudioDG_Crashed|||The Windows Audio Device Graph Isolation process (audiodg.exe) has terminated unexpectedly.                    Process Exit Code     : 0x{dwAudioDgTerminationCode} 
+Microsoft-Windows-Audio|Error|5|0||AudioServer_Fail_AudioDG_Failed_Startup|||The Windows Audio Device Graph Isolation process (audiodg.exe) could not be started.                    Error Code     : 0x{dwAudioDgStartupFailureCode} 
+Microsoft-Windows-Audio|Error|10|0||CaptureMonitor_Monitor_Restart_Limit_Hit|||The Capture Monitor has failed to restart the capture monitor between {szInputEndpointName} and {szOutputEndpointName}  {dwRestartCount} times.                   The capture monitor will no longer attempt to start this monitor.
+Microsoft-Windows-Audio|Information|11|0||AudioServer_Stream_Flags|||StreamFlags {dwAudioSrvStreamFlags}
+Microsoft-Windows-Audio|Information|12|0||AudioPerf_Task_LaunchAudioDG|Start||
+Microsoft-Windows-Audio|Information|13|0||AudioPerf_Task_LaunchAudioDG|Stop||
+Microsoft-Windows-Audio|Information|14|0||AudioPerf_Task_EndpointVolume|Start||
+Microsoft-Windows-Audio|Information|15|0||AudioPerf_Task_EndpointVolume|Stop||
+Microsoft-Windows-Audio|Information|16|0||AudioPerf_Task_SessionAPI|Start||
+Microsoft-Windows-Audio|Information|17|0||AudioPerf_Task_SessionAPI|Stop||
+Microsoft-Windows-Audio|Warning|18|0||AudioDG_Glitch_Threshold_Exceeded|||Windows Audio Device Graph glitch threshold count exceeded                               Count   : 0x{dwAudioDgTerminationCode}
+Microsoft-Windows-Audio|Information|19|0||AudioPerf_Task_GlitchCounter|||Windows Audio Device Graph glitch threshold count exceeded                               Count   : 0x{dwGlitchCount}
+Microsoft-Windows-Audio|Information|20|0||AudioSession_Stream_Resource_Type|||Format: {Format}Sampling rate: {SamplingRate}HzOffloaded: {bAudioSrvStreamResourceType}
+Microsoft-Windows-Audio|Information|21|0||AudioServer_Sound_Level_Changed|||Sound level for application [{AppId}] changed to [{SoundLevel}]
+Microsoft-Windows-Audio|Information|22|0||AudioSession_Client_Suspended|||Suspended: {bIsSuspended}
+Microsoft-Windows-Audio|Information|23|0||AudioSession_Release_Client_Resource|||Released exclusive mode resource {bExclusiveModeStream}Released offload mode resource {bOffloadStream}
+Microsoft-Windows-Audio|Information|24|0||PBM_StreamStarted|||Stream started.App Id: {AppId}PID: {PID}Audio Stream Category: {Category}
+Microsoft-Windows-Audio|Information|25|0||PBM_StreamStopped|||Stream stopped.App Id: {AppId}PID: {PID}Audio Stream Category: {Category}
+Microsoft-Windows-Audio|Verbose|26|0||Audio_Glitch_Detection|Capture Monitor Render Glitch||Capture Monitor Render Glitch: pCMonitor=[{pCMonitor}], DevicePosition=[{DevicePosition}], QPCPosition=[{QPCPosition}]
+Microsoft-Windows-Audio|Verbose|27|0||Audio_Glitch_Detection|Capture Monitor Capture Glitch||Capture Monitor Capture Glitch: pCMonitor=[{pCMonitor}], DevicePosition=[{DevicePosition}], QPCPosition=[{QPCPosition}]
+Microsoft-Windows-Audio|Verbose|28|0||Audio_Glitch_Detection|APO Glitch: Format Converter INF detected||APO Glitch: Format Converter INF detected: pCAudioFormatConvert=[{pCAudioFormatConvert}], [{ConverstionType}]
+Microsoft-Windows-Audio|Verbose|29|0||Audio_Glitch_Detection|Engine Glitch: CP Client Input Endpoint - No Messages in queue||Engine Glitch: CP Client Input Endpoint - pCCrossProcessClientInputEndpoint=[{pCCrossProcessClientInputEndpoint}] No Messages in queue
+Microsoft-Windows-Audio|Verbose|30|0||Audio_Glitch_Detection|Engine Glitch: CP Client Input Endpoint - Queue item does not match requested size||Engine Glitch: CP Client Input Endpoint - pCCrossProcessClientInputEndpoint=[{pCCrossProcessClientInputEndpoint}] Queue item does not match requested size
+Microsoft-Windows-Audio|Verbose|31|0||Audio_Glitch_Detection|Engine Glitch: CP Client Output Endpoint - Server Overread||Engine Glitch: CP Client Output Endpoint - Server Overread: pCCrossProcessClientOutputEndpoint=[{pCCrossProcessClientOutputEndpoint}] WritePos=[{WriteBytePos}] ReadPos=[{ReadBytePos}] BytesToWrite=[{BytesToWrite}]
+Microsoft-Windows-Audio|Verbose|32|0||Audio_Glitch_Detection|Engine Glitch: CP Client Output Endpoint - Read Pointer Overwrite||Engine Glitch: CP Client Output Endpoint - Read Pointer Overwrite: pCCrossProcessClientOutputEndpoint=[{pCCrossProcessClientOutputEndpoint}] WriteOffset=[{WriteOffset}] ReadOffset=[{ReadOffset}] BytesToWrite=[{BytesToWrite}] EndOfDataOffset=[{EndOfDataOffset}]
+Microsoft-Windows-Audio|Verbose|33|0||Audio_Glitch_Detection|Engine Glitch: CP Server Input Endpoint - Starvation||Engine Glitch: CP Server Input Endpoint - Starvation: pCCrossProcessServerInputEndpoint=[{pCCrossProcessServerInputEndpoint}] WriteOffset=[{WriteOffset}] ReadOffset=[{ReadOffset}] BufferSize=[{BufferSize}] BytesAvail=[{BytesAvailable}]
+Microsoft-Windows-Audio|Verbose|34|0||Audio_Glitch_Detection|Engine Glitch: CP Server Output Endpoint - Queue Full Packet Drop||Engine Glitch: CP Server Output Endpoint - Queue Full Packet Drop: pCCrossProcessServerOutputEndpoint=[{pCCrossProcessServerOutputEndpoint}] WritePos=[{WriteBytePos}] DroppedBytes=[{DroppedBytes}] ReadPos=[{ReadBytePos}] BytesToWrite=[{BytesToWrite}]
+Microsoft-Windows-Audio|Verbose|35|0||Audio_Glitch_Detection|Engine Glitch: CP Server Output Endpoint - Read Pointer Overwrite||Engine Glitch: CP Server Output Endpoint - Read Pointer Overwrite: pCCrossProcessServerOutputEndpoint=[{pCCrossProcessServerOutputEndpoint}] WriteOffset=[{WriteOffset}] ReadOffset=[{ReadOffset}] BytesToWrite=[{BytesToWrite}]
+Microsoft-Windows-Audio|Verbose|36|0||Audio_Glitch_Detection|KS Endpoint Glitch: IOMGR No Outstanding Packets||KS Endpoint Glitch: IOMGR No Outstanding Packets: pOwner=[{pOwner}] NextStreamingPacketToComplete=[{NextStreamingPacketToComplete}] MaxPacketCount=[{MaxPacketCount}]
+Microsoft-Windows-Audio|Verbose|37|0||Audio_Glitch_Detection|KS Endpoint Glitch: IOMGR Ioctl Time Limit Exceeded||KS Endpoint Glitch: IOMGR Ioctl Time Limit Exceeded: pOwner=[{pOwner}] DeltaHNS=[{IoctlTimeHNS}]
+Microsoft-Windows-Audio|Verbose|38|0||Audio_Glitch_Detection|KS Endpoint Glitch: BASE Output Unexpected Buffer Completed||KS Endpoint Glitch: BASE Output Unexpected Buffer Completed: pCAudioBasePin=[{pCAudioBasePin}] LockedDataPointer=[{pLockedDataPointer}] bLockedEqualsUnrolled=[{bLockedEqualsUnrolled}]
+Microsoft-Windows-Audio|Verbose|39|0||Audio_Glitch_Detection|KS Endpoint Glitch: BASE Input Null Last Buffer with LockedData != LoopedBuffer||KS Endpoint Glitch: BASE Input Null Last Buffer with LockedData != LoopedBuffer: pCAudioBasePin=[{pCAudioBasePin}] LockedDataPointer=[{LockedDataPointer}]
+Microsoft-Windows-Audio|Verbose|40|0||Audio_Glitch_Detection|KS Endpoint Glitch: BASE Input Buffer Index Mismatch||KS Endpoint Glitch: BASE Input Buffer Index Mismatch: pCAudioBasePin=[{pCAudioBasePin}] LockedDataPointer=[{LockedDataPointer}]
+Microsoft-Windows-Audio|Verbose|41|0||Audio_Glitch_Detection|KS Endpoint Glitch: BASE End Glitch||KS Endpoint Glitch: BASE End Glitch: pCAudioBasePin=[{pCAudioBasePin}] StreamPosition=[{GlitchStreamPosition}] GlitchDuration=[{GlitchDuration}]
+Microsoft-Windows-Audio|Verbose|42|0||Audio_Glitch_Detection|KS Endpoint Glitch: RTCAP StreamPos Ahead of HW Pos||KS Endpoint Glitch: RTCAP StreamPos Ahead of HW Pos: pCAudioCapturePinRealtimeStreaming=[{pCAudioCapturePinRealtimeStreaming}] WritePos=[{WritePosition}] PlayPos=[{PlayPosition}] StreamPos=[{StreamPosition}] StreamPosMinusReadPos=[{StreamPosMinusReadPos}]
+Microsoft-Windows-Audio|Verbose|43|0||Audio_Glitch_Detection|KS Endpoint Glitch: RTCAP StreamPos Too Far Behind||KS Endpoint Glitch: RTCAP StreamPos Too Far Behind: pCAudioCapturePinRealtimeStreaming=[{pCAudioCapturePinRealtimeStreaming}] WritePos=[{WritePosition}] PlayPos=[{PlayPosition}] StreamPos=[{StreamPosition}] ReadPosMinusStreamPos=[{ReadPosMinusStreamPos}]
+Microsoft-Windows-Audio|Verbose|44|0||Audio_Glitch_Detection|KS Endpoint Glitch: RTREN WritePos Exceeds TotalPos||KS Endpoint Glitch: RTREN WritePos Exceeds TotalPos: pCAudioRenderPinRealtimeStreaming=[{pCAudioRenderPinRealtimeStreaming}] WritePos=[{WritePosition}] PlayPos=[{PlayPosition}] TotalPos=[{TotalPosition}] WritePosMinusTotalPos=[{WritePosMinusTotalPos}]
+Microsoft-Windows-Audio|Verbose|45|0||Audio_Glitch_Detection|KS Endpoint Glitch: STCAP Capture Ahead||KS Endpoint Glitch: STCAP Capture Ahead: pCAudioCapturePinStandardStreaming=[{pCAudioCapturePinStandardStreaming}] ValidPosEnd=[{ValidPositionEnd}] ValidPosStart=[{ValidPositionStart}] StreamPos=[{StreamPosition}] StreamPosMinusValidPosEnd=[{StreamPosMinusValidPosEnd}]
+Microsoft-Windows-Audio|Verbose|46|0||Audio_Glitch_Detection|KS Endpoint Glitch: STCAP Capture Behind||KS Endpoint Glitch: STCAP Capture Behind: pCAudioCapturePinStandardStreaming=[{pCAudioCapturePinStandardStreaming}] ValidPosEnd=[{ValidPositionEnd}] ValidPosStart=[{ValidPositionStart}] StreamPos=[{StreamPosition}] ValidPosStartMinusStreamPos=[{ValidPosStartMinusStreamPos}]
+Microsoft-Windows-Audio|Verbose|47|0||Audio_Glitch_Detection|KS Endpoint Glitch: STCAP Device Starved||KS Endpoint Glitch: STCAP Device Starved: pCAudioCapturePinStandardStreaming=[{pCAudioCapturePinStandardStreaming}] StreamPos=[{StreamPosition}] FrameCount=[{FrameCount}]
+Microsoft-Windows-Audio|Verbose|48|0||Audio_Glitch_Detection|KS Endpoint Glitch: STREN Device Starved||KS Endpoint Glitch: STREN Device Starved: pCAudioRenderPinStandardStreaming=[{pCAudioRenderPinStandardStreaming}] DevicePos=[{DevicePosition}] StreamPos=[{StreamPosition}] AvailFrames=[{AvailableFrames}]
+Microsoft-Windows-Audio|Verbose|49|0||Audio_Glitch_Detection|KS Endpoint Glitch: STREN EXCL PULL Invalid Buffer Count||KS Endpoint Glitch: STREN EXCL PULL Invalid Buffer Count: pCAudioRenderPinStandardStreaming=[{pCAudioRenderPinStandardStreaming}] DevicePos=[{DevicePosition}] StreamPos=[{StreamPosition}] AvailFrames=[{AvailableFrames}]
+Microsoft-Windows-Audio|Information|50|0||System_Effect_APO_Initialized|||System effect initialized: CLSID=[{APOCLSID}] AudioSignalProcessingMode=[{AudioSignalProcessingMode}] InitializeForDiscoveryOnly=[{InitializeForDiscoveryOnly}]
+Microsoft-Windows-Audio|Information|51|0||AudioSrv_EVT_VOLUME_LIMIT_CHANGED_ENTER|||Volume limit event signalled to audiosrv enter
+Microsoft-Windows-Audio|Information|52|0||AudioSrv_EVT_VOLUME_LIMIT_CHANGED_EXIT|||Volume limit event signalled to audiosrv exit
+Microsoft-Windows-Audio|Information|53|0||AudioSrv_EVT_VOLUME_LIMIT_PUBLISH_WNF_AVLC_STATE|||AudioSrv published AVLC state
+Microsoft-Windows-Audio|Information|58|0||AudioCore_EVT_MMDevAPI|MMDevAPI: Default device changed triggered||MMDevAPI: Default device changed triggered
+Microsoft-Windows-Audio|Verbose|59|0||AudioCore_EVT_MMDevAPI|Start||MMDevAPI: OnMediaNotification Enter
+Microsoft-Windows-Audio|Verbose|60|0||AudioCore_EVT_MMDevAPI|Stop||MMDevAPI: OnMediaNotification Exit
+Microsoft-Windows-Audio|Information|61|0||AudioCore_EVT_MMDevAPI|MMDevAPI: DeviceStateChanged callback||MMDevAPI: DeviceStateChanged callback
+Microsoft-Windows-Audio|Information|62|0||AudioCore_EVT_MMDevAPI|MMDevAPI: DeviceAdded callback||MMDevAPI: DeviceAdded callback
+Microsoft-Windows-Audio|Information|63|0||AudioCore_EVT_MMDevAPI|MMDevAPI: DeviceRemoved callback||MMDevAPI: DeviceRemoved callback
+Microsoft-Windows-Audio|Information|64|0||AudioCore_EVT_MMDevAPI|MMDevAPI: DefaultDeviceChanged callback||MMDevAPI: DefaultDeviceChanged callback
+Microsoft-Windows-Audio|Information|65|0||AudioCore_EVT_MMDevAPI|MMDevAPI: Audio device state changed||MMDevAPI: Audio device state changed
+Microsoft-Windows-Audio|Information|101|0||AudioCore_EVT_MidiRT|MidiRT: Application Suspension Handler||MidiRT: Application Suspension Handler
+Microsoft-Windows-Audio|Information|102|0||AudioCore_EVT_MidiRT|MidiRT: Application Resume Handler||MidiRT: Application Resume Handler
+Microsoft-Windows-Audio|Information|103|0||AudioCore_EVT_MidiRT|MidiRT: Application Entering CS Handler||MidiRT: Application Entering CS Handler
+Microsoft-Windows-Audio|Information|104|0||AudioCore_EVT_MidiRT|MidiRT: Application Resuming from CS Handler||MidiRT: Application Resuming from CS Handler
+Microsoft-Windows-Audio|Information|105|0||AudioCore_EVT_MidiRT|MidiRT: Device Removal Handler||MidiRT: Device Removal Handler
+Microsoft-Windows-Audio|Information|106|0||AudioCore_EVT_MidiRT|MidiRT: Cleanup and release device handle||MidiRT: Cleanup and release device handle
+Microsoft-Windows-Audio|Information|107|0||AudioCore_EVT_MidiRT|MidiRT: Close handle to MIDI Device||MidiRT: Close handle to MIDI Device
+Microsoft-Windows-Audio|Information|108|0||MidiRT: Try to open device a handle on the device|Start||MidiRT: Begin binding to DeviceId: {DeviceId}
+Microsoft-Windows-Audio|Information|109|0||MidiRT: Try to open device a handle on the device|Stop||MidiRT: Done binding to device interface
+Microsoft-Windows-Audio|Information|110|0||AudioCore_EVT_MidiRT|MidiRT: Create new MidiPortDeviceIoControl||MidiRT: Create new MidiPortDeviceIoControl
+Microsoft-Windows-Audio|Information|111|0||MidiRT: Perform Synchronous I/O|Start||MidiRT: Beginning Synchronous I/O
+Microsoft-Windows-Audio|Information|112|0||MidiRT: Perform Synchronous I/O|Stop||MidiRT: Done with synchronous I/O
+Microsoft-Windows-Audio|Information|113|0||MidiRT: Perform Asynchronous I/O|Start||MidiRT: Beginning Asynchronous I/O
+Microsoft-Windows-Audio|Information|114|0||MidiRT: Perform Asynchronous I/O|Stop||MidiRT: Done with Asynchronous I/O
+Microsoft-Windows-Audio|Verbose|115|0||CrossProcess packet added|||CrossProcess packet added
+Microsoft-Windows-Audio|Verbose|116|1||Pump: setting deadline|||Pump: setting deadline
+Microsoft-Windows-Audio|Verbose|117|1||Pump: cancelling deadline|||Pump: cancelling deadline
+Microsoft-Windows-Audio|Information|118|1||Pump: missed deadline!|||Pump: missed deadline!
+Microsoft-Windows-Audio|Verbose|119|1||Pump: MultiMedia mode|Start||Pump: Start - setting MultimediMode to AVRT_MULTIMEDIA_MODE_BUFFERING
+Microsoft-Windows-Audio|Verbose|120|1||Pump: MultiMedia mode|Stop||Pump: Stop - setting MultimediMode to AVRT_MULTIMEDIA_MODE_IDLE
+Microsoft-Windows-Audio|Information|121|0||EndpointCharacteristics Discovery|Start||Discovering EndpointCharacteristics for [{Endpoint Id}]
+Microsoft-Windows-Audio|Information|122|0||EndpointCharacteristics Discovery|Stop||Discovered EndpointCharacteristics for [{Endpoint Id}] (hr = {hr})
+Microsoft-Windows-Audio|Information|123|0||GetMixFormat evaluation|Start||GetMixFormat starting on endpoint [{Endpoint Id}] (category={category}, raw={Raw}, matchformat={MatchFormat}, connector={ConnectorType})
+Microsoft-Windows-Audio|Information|124|0||GetMixFormat evaluation|Stop||
+Microsoft-Windows-Audio|Information|125|0||IsFormatSupported evaluation|Start||IsFormatSupported starting on endpoint [{Endpoint Id}] (category={category}, raw={Raw}, matchformat={MatchFormat}, connector={ConnectorType})
+Microsoft-Windows-Audio|Information|126|0||IsFormatSupported evaluation|Stop||
+Microsoft-Windows-Audio|Information|127|0||Stream Creation|Start||Vadserver_CreateStream starting on endpoint [{Endpoint Id}] (category={category}, raw={Raw}, matchformat={MatchFormat}, connector={ConnectorType})
+Microsoft-Windows-Audio|Information|128|0||Stream Creation|Stop||
+Microsoft-Windows-Audio|Information|129|0||Stream Creation|Derived stream settings for stream||
+Microsoft-Windows-Audio|Information|130|0||Stream Creation|Created StreamGroup and stream||
+Microsoft-Windows-Audio|Information|131|0||Stream Creation|Created SaDevice||
+Microsoft-Windows-Audio|Information|132|0||Stream Creation|Connected StreamGroup to SaDevice||
+Microsoft-Windows-Audio|Information|133|0||CreateDeviceEndpointInstance task|Start||CreateDeviceEndpointInstance starting on endpoint [{Endpoint Id}] (connector={ConnectorType})
+Microsoft-Windows-Audio|Information|134|0||CreateDeviceEndpointInstance task|Stop||
+Microsoft-Windows-Audio|Verbose|135|0||Pump: Correct Position|||Pump: Correct Position
+Microsoft-Windows-Audio|Verbose|136|0||Pump: Yield|Start||Pump: Start - Yield start
+Microsoft-Windows-Audio|Verbose|137|0||Pump: Yield|Stop||Pump: Stop - Yield stop
+Microsoft-Windows-Audio|Verbose|138|0||Pump: Process|Start||Pump: Start - Process start
+Microsoft-Windows-Audio|Verbose|139|0||Pump: Process|Stop||Pump: Stop - Process stop
+Microsoft-Windows-Audio|Verbose|140|0||Pump: ProcPassDuration|||Pump: ProcPassDuration
+Microsoft-Windows-Audio|Information|141|0||AE Object|||
+Microsoft-Windows-Audio|Verbose|142|0||AE Glitch|||
+Microsoft-Windows-Audio|Verbose|143|0||AE Drop|||
+Microsoft-Windows-Audio|Verbose|144|0||AE CPU Usage|||
+Microsoft-Windows-Audio|Verbose|145|0||AE Control|||
+Microsoft-Windows-Audio|Verbose|146|0||AE Position|||
+Microsoft-Windows-Audio|Verbose|147|0||AE Security|||
+Microsoft-Windows-Audio|Verbose|148|0||AE Data|||
+Microsoft-Windows-Audio|Verbose|149|0||AE IRP|||
+Microsoft-Windows-Audio|Verbose|150|0||AE Endpoint|||
+Microsoft-Windows-Audio|Verbose|151|0||AE Interpolator|||
+Microsoft-Windows-Audio|Verbose|152|0||AE Timestamp|||
+Microsoft-Windows-Audio|Verbose|153|0||AE Performance|||
+Microsoft-Windows-Audio|Verbose|154|0||AE Generic|||
+Microsoft-Windows-Audio|Verbose|155|0||AE Memory|||
+Microsoft-Windows-Audio|Verbose|156|0||AE Memory|||
+Microsoft-Windows-Audio|Verbose|157|0||AE Memory|||
+Microsoft-Windows-Audio|Verbose|158|0||SetCurrentTimeStamp|||
+Microsoft-Windows-Audio|Verbose|159|0||Writing history packet|||
+Microsoft-Windows-Audio|Verbose|160|0||Signal pump pass completion|||
+Microsoft-Windows-Audio|Verbose|161|0||Pump: Processing pass skipped|||Pump: Processing pass skipped

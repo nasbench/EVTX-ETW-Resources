@@ -1,40 +1,40 @@
-Provider|Event ID|Channel|Message
-Microsoft-Windows-MCCS-EngineShared|1||Error: HRESULT: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
-Microsoft-Windows-MCCS-EngineShared|2||Error Propagated: HRESULT: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
-Microsoft-Windows-MCCS-EngineShared|3||
-Microsoft-Windows-MCCS-EngineShared|1001||MCCSEngineShared::Album is missing required field and will be skipped. Field:{Prop_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1002||MCCSEngineShared::Photo is missing required field and will be skipped. Field:{Prop_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1003||MCCSEngineShared::Activity Attachment is missing required field and will be skipped. Attachment:{Prop_1_UInt32}, Field:{Prop_2_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1004||MCCSEngineShared::Tag failed save to store HR:{Prop_Hr_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1005||MCCSEngineShared::Processed {Prop_1_UInt32} tags, persisted {Prop_2_UInt32} tags
-Microsoft-Windows-MCCS-EngineShared|1006||MCCSEngineShared::SubscribeDevice target endpoint url has been updated to :{Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|1007||MCCSEngineShared::Failed to get Device Unique Id HR: {Prop_Hr_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1008||MCCSEngineShared::File upload: File size about to upload: {Prop_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1050||Succesfully returned the unseen count as {Prop_1_UInt32} for store {Prop_2_UInt32}-{Prop_3_UInt32}-{Prop_4_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1051||Succesfully updated the unseen count to {Prop_1_UInt32} for store {Prop_2_UInt32}-{Prop_3_UInt32}-{Prop_4_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1052||Failed to return an unseen count for store {Prop_1_UInt32}-{Prop_2_UInt32}-{Prop_3_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1053||Failed to update the unseen count to {Prop_1_UInt32} for store {Prop_2_UInt32}-{Prop_3_UInt32}-{Prop_4_UInt32}
-Microsoft-Windows-MCCS-EngineShared|1054||Updated FeedWriter canFetchMore: {Prop_1_UInt32}, lastActivityTimeGMT: {Prop_2_FILETIME}, endActivityRemoteId: {Prop_3_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2000||NPXOModel::PopulateUrls SourceId: {Prop_UnicodeString} returned {Prop_Hr}
-Microsoft-Windows-MCCS-EngineShared|2001||UIXNPXO::PopulateUrls returned {Prop_Hr_UInt32}
-Microsoft-Windows-MCCS-EngineShared|2002||UIXNPXO::OnNavigateError dwStatusCode: {Prop_1_UInt32}, dwStatusSubCode: {Prop_2_UInt32}
-Microsoft-Windows-MCCS-EngineShared|2003||UIXNPXO::SetfCanNavigateBack whether we can navigate back: {Prop_Boolean}
-Microsoft-Windows-MCCS-EngineShared|2004||UIXNPXO::SetfStartWebConnectFlow whether to start WCF: {Prop_Boolean}
-Microsoft-Windows-MCCS-EngineShared|2005||UIXNPXO::OnFinishWebConnectFlow WCF has finished with result: {Prop_Boolean}
-Microsoft-Windows-MCCS-EngineShared|2006||NPEventSink::NavigateRedirected found the urls to match
-Microsoft-Windows-MCCS-EngineShared|2007||NPEventSink::BeforeNavigate Url: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2008||NPEventSink::BeforeNavigateRefresh Url: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2009||NPEventSink::NavigateComplete Url: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2010||NPEventSink::DocumentComplete Url: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2011||NPEventSink::NavigateRedirected Original Url: {Prop_1_UnicodeString} Redirected Url: {Prop_2_UnicodeString} Finish Url: {Prop_3_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2012||NPEventSink::NavigateError Url: {Prop_UnicodeString} StatusCode: {Prop_UInt32}
-Microsoft-Windows-MCCS-EngineShared|2013||NPEventSink::NewWindow Url: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2014||NPXOModel::Urls StartUrl: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2015||NPXOModel::Urls FinishUrl: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2017||NPXOUtils::Error Response: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|2018||NPXOUtils::Error StatusSubCode: {Prop_UInt32}
-Microsoft-Windows-MCCS-EngineShared|2019||UIXNPXO::PopulateUrls starting on dedicated thread
-Microsoft-Windows-MCCS-EngineShared|2020||UIXNPXO::SpawnPopulateUrlsThread returned {Prop_Hr_UInt32}
-Microsoft-Windows-MCCS-EngineShared|3001||Mms Mime: Invalid phone number: {Prop_UnicodeString}
-Microsoft-Windows-MCCS-EngineShared|3002||
-Microsoft-Windows-MCCS-EngineShared|3003||
+Provider|Level|Event ID|Version|Channel|Task|Opcode|Keyword|Message
+Microsoft-Windows-MCCS-EngineShared|Error|1|0||||Error|Error: HRESULT: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Warning|2|0|||||Error Propagated: HRESULT: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Verbose|3|0||Trace||Debug|
+Microsoft-Windows-MCCS-EngineShared|Information|1001|0||||Photos|MCCSEngineShared::Album is missing required field and will be skipped. Field:{Prop_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|1002|0||||Photos|MCCSEngineShared::Photo is missing required field and will be skipped. Field:{Prop_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|1003|0||||Feeds|MCCSEngineShared::Activity Attachment is missing required field and will be skipped. Attachment:{Prop_1_UInt32}, Field:{Prop_2_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Warning|1004|0||||Photos|MCCSEngineShared::Tag failed save to store HR:{Prop_Hr_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|1005|0||||Photos|MCCSEngineShared::Processed {Prop_1_UInt32} tags, persisted {Prop_2_UInt32} tags
+Microsoft-Windows-MCCS-EngineShared|Information|1006|0||||Feeds|MCCSEngineShared::SubscribeDevice target endpoint url has been updated to :{Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Error|1007|0||||Error|MCCSEngineShared::Failed to get Device Unique Id HR: {Prop_Hr_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|1008|0||||Photos|MCCSEngineShared::File upload: File size about to upload: {Prop_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|1050|0||||Feeds|Succesfully returned the unseen count as {Prop_1_UInt32} for store {Prop_2_UInt32}-{Prop_3_UInt32}-{Prop_4_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|1051|0||||Feeds|Succesfully updated the unseen count to {Prop_1_UInt32} for store {Prop_2_UInt32}-{Prop_3_UInt32}-{Prop_4_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Warning|1052|0||||Feeds|Failed to return an unseen count for store {Prop_1_UInt32}-{Prop_2_UInt32}-{Prop_3_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Warning|1053|0||||Feeds|Failed to update the unseen count to {Prop_1_UInt32} for store {Prop_2_UInt32}-{Prop_3_UInt32}-{Prop_4_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|1054|0||||Feeds|Updated FeedWriter canFetchMore: {Prop_1_UInt32}, lastActivityTimeGMT: {Prop_2_FILETIME}, endActivityRemoteId: {Prop_3_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Information|2000|0||||Connect|NPXOModel::PopulateUrls SourceId: {Prop_UnicodeString} returned {Prop_Hr}
+Microsoft-Windows-MCCS-EngineShared|Information|2001|0||||Connect|UIXNPXO::PopulateUrls returned {Prop_Hr_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Warning|2002|0||||Connect|UIXNPXO::OnNavigateError dwStatusCode: {Prop_1_UInt32}, dwStatusSubCode: {Prop_2_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|2003|0||||Connect|UIXNPXO::SetfCanNavigateBack whether we can navigate back: {Prop_Boolean}
+Microsoft-Windows-MCCS-EngineShared|Information|2004|0||||Connect|UIXNPXO::SetfStartWebConnectFlow whether to start WCF: {Prop_Boolean}
+Microsoft-Windows-MCCS-EngineShared|Information|2005|0||||Connect|UIXNPXO::OnFinishWebConnectFlow WCF has finished with result: {Prop_Boolean}
+Microsoft-Windows-MCCS-EngineShared|Information|2006|0||||Connect|NPEventSink::NavigateRedirected found the urls to match
+Microsoft-Windows-MCCS-EngineShared|Information|2007|0||||Connect|NPEventSink::BeforeNavigate Url: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Information|2008|0||||Connect|NPEventSink::BeforeNavigateRefresh Url: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Information|2009|0||||Connect|NPEventSink::NavigateComplete Url: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Information|2010|0||||Connect|NPEventSink::DocumentComplete Url: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Information|2011|0||||Connect|NPEventSink::NavigateRedirected Original Url: {Prop_1_UnicodeString} Redirected Url: {Prop_2_UnicodeString} Finish Url: {Prop_3_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Warning|2012|0||||Connect|NPEventSink::NavigateError Url: {Prop_UnicodeString} StatusCode: {Prop_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|2013|0||||Connect|NPEventSink::NewWindow Url: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Information|2014|0||||Connect|NPXOModel::Urls StartUrl: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Information|2015|0||||Connect|NPXOModel::Urls FinishUrl: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Warning|2017|0||||Connect|NPXOUtils::Error Response: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Warning|2018|0||||Connect|NPXOUtils::Error StatusSubCode: {Prop_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|2019|0||||Connect|UIXNPXO::PopulateUrls starting on dedicated thread
+Microsoft-Windows-MCCS-EngineShared|Information|2020|0||||Connect|UIXNPXO::SpawnPopulateUrlsThread returned {Prop_Hr_UInt32}
+Microsoft-Windows-MCCS-EngineShared|Information|3001|0||||Debug|Mms Mime: Invalid phone number: {Prop_UnicodeString}
+Microsoft-Windows-MCCS-EngineShared|Information|3002|0||SPERF_TAG_SHARED_MIME_LOOKUP_NAME|Start|Performance|
+Microsoft-Windows-MCCS-EngineShared|Information|3003|0||SPERF_TAG_SHARED_MIME_LOOKUP_NAME|Stop|Performance|

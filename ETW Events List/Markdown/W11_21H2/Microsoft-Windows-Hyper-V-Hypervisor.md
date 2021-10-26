@@ -1,100 +1,100 @@
-Provider                              |  Event ID  |  Channel  |  Message
---------------------------------------|------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Hyper-V-Hypervisor  |  1         |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  2         |  System   |  Hypervisor scheduler type is {SchedulerType}.
-Microsoft-Windows-Hyper-V-Hypervisor  |  3         |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  5         |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  10        |           |  Hypervisor Eventlog creation failed!
-Microsoft-Windows-Hyper-V-Hypervisor  |  11        |           |  Hypervisor Eventlog deletion failed!
-Microsoft-Windows-Hyper-V-Hypervisor  |  12        |           |  Host processor features mask: {ProcessorFeatures}Host xsave features mask: {XsaveFeatures}Host cache line flush size: {CLFlushSize} bytes
-Microsoft-Windows-Hyper-V-Hypervisor  |  12        |           |  Host processor features mask: {ProcessorFeatures}Host xsave features mask: {XsaveFeatures}Host cache line flush size: {CLFlushSize} bytes
-Microsoft-Windows-Hyper-V-Hypervisor  |  13        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  14        |           |  Hypervisor Eventlog flush failed!
-Microsoft-Windows-Hyper-V-Hypervisor  |  20        |  System   |  Hypervisor launch failed; sleep and hibernate could not be disabled (status {ErrorCode}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  26        |  System   |  Hypervisor launch failed; the hypervisor boot loader's internal logic failed (BalStatus {BalStatus}, sub-status {Error}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  27        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  28        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  31        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  32        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  34        |  System   |  Hyper-V launch failed; the image {ImageName} could not be loaded (status {Status}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  36        |  System   |  Hypervisor launch failed; the image {ImageName} failed code integrity checks, and cannot be used.
-Microsoft-Windows-Hyper-V-Hypervisor  |  37        |  System   |  Hypervisor launch failed; the image {ImageName} does not contain the image description datastructures, and cannot be used.
-Microsoft-Windows-Hyper-V-Hypervisor  |  38        |  System   |  Hyper-V launch failed; at least one of the processors in the system was unable to launch the hypervisor (status {BalStatus}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  39        |           |  Hypervisor Load Options - {LoadOptions}.
-Microsoft-Windows-Hyper-V-Hypervisor  |  40        |  System   |  Hypervisor launch failed; the hypervisor image is revision {HypervisorVersion}, but the currently installed virtualization software only supports launching revision {VersionSupported} hypervisor images.
-Microsoft-Windows-Hyper-V-Hypervisor  |  41        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  42        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  43        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  44        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  46        |  System   |  Hypervisor launch failed; Processor does not support the minimum features required to run the hypervisor (MSR index {MSRIndex}, allowed bits {AllowedZeroes}, required bits {AllowedOnes}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  48        |  System   |  Hypervisor launch failed; Processor does not provide the features necessary to run the hypervisor (leaf {Leaf}, register {Register}: features needed {FeaturesNeeded}, features supported {FeaturesSupported}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  54        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  55        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  56        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  59        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  60        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  61        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  62        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  63        |  System   |  Hypervisor launch failed; The hypervisor was unable to initialize successfully (phase {Phase}), and was not started.  This initialization failure may be the result of a platform configuration or firmware issue.  Contact your system vendor for more information or updated firmware.
-Microsoft-Windows-Hyper-V-Hypervisor  |  64        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  80        |  System   |  Hypervisor launch failed; The operating systems boot loader failed with error {NtStatus}.
-Microsoft-Windows-Hyper-V-Hypervisor  |  81        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  82        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  83        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  84        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  85        |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  86        |  System   |  Hypervisor launch failed; the version of the microcode update dll does not match the current operating system.
-Microsoft-Windows-Hyper-V-Hypervisor  |  96        |  System   |  Hypervisor processor startup failed (APIC ID {CPU}, status {ErrorCode}). Further processors in the system were not started.
-Microsoft-Windows-Hyper-V-Hypervisor  |  97        |  System   |  Hypervisor processor startup failed (APIC ID {CPU}) due to CPUID feature validation error. Further processors in the system were not started. Leaf {LeafNumber}, register {Register} feature mismatch: BSP has features {APCpuidData}; AP has features {BSPCpuidData}
-Microsoft-Windows-Hyper-V-Hypervisor  |  129       |  System   |  Hypervisor initialized I/O remapping.Hardware present: {HardwarePresent}Hardware enabled: {HardwareEnabled}Policy: {Policy}Enabled features: {EnabledFeatures}Internal information: {InternalInfo}Problems: {Problems}Additional information: {AdditionalInfo}
-Microsoft-Windows-Hyper-V-Hypervisor  |  130       |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  131       |  System   |  There is an I/O remapping problem with the sytem BIOS.Problems: {Problems}
-Microsoft-Windows-Hyper-V-Hypervisor  |  144       |  System   |  A device is operating with reduced performance because of a problem with the system BIOS.The device is not reported under the scope of a unique I/O remapping unit.Device ID: {DeviceId}Partition ID: {PartitionId}
-Microsoft-Windows-Hyper-V-Hypervisor  |  145       |  System   |  A device will not work correctly because of a problem with the system BIOS.The Requester IDs reported for the device overlap with those reported for another device.Device ID: {DeviceId}Partition ID: {PartitionId}
-Microsoft-Windows-Hyper-V-Hypervisor  |  146       |  System   |  A device will not work correctly because the hypervisor does not have enough resources.Device ID: {DeviceId}Partition ID: {PartitionId}
-Microsoft-Windows-Hyper-V-Hypervisor  |  147       |  System   |  A device will not work correctly because of a problem with the system BIOS.An IOAPIC is not correctly reported.IOAPIC ID: {IoApicId}
-Microsoft-Windows-Hyper-V-Hypervisor  |  148       |  System   |  A device could not be used by a child partition because of a limitation of the system hardware and BIOS.The I/O remapping unit that controls the device does not have sufficient capabilities.Device ID: {DeviceId}I/O remapping unit base address: {UnitBaseAddress}Partition ID: {PartitionId}
-Microsoft-Windows-Hyper-V-Hypervisor  |  149       |  System   |  A device could not be used by a child partition because of a limitation of the system hardware and BIOS.The device cannot be securely used by a child partition.Device ID: {DeviceId}Partition ID: {PartitionId}
-Microsoft-Windows-Hyper-V-Hypervisor  |  152       |  System   |  The image {ImageName} could not be read (status {Status}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  153       |  System   |  The image {ImageName} failed code integrity checks, and cannot be used.
-Microsoft-Windows-Hyper-V-Hypervisor  |  154       |  System   |  Hypervisor failed to properly synchronize TSC across logical processors (Max delta: {MaxDelta}, Min delta: {MinDelta}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  155       |           |  Host processor features mask: {ProcessorFeatures}Host xsave features mask: {XsaveFeatures}Host cache line flush size: {CLFlushSize} bytes
-Microsoft-Windows-Hyper-V-Hypervisor  |  155       |           |  Host processor features mask: {ProcessorFeatures}Host xsave features mask: {XsaveFeatures}Host cache line flush size: {CLFlushSize} bytes
-Microsoft-Windows-Hyper-V-Hypervisor  |  156       |  System   |  Hypervisor configured mitigations for CVE-2018-3646 for virtual machines.Processor not affected: {NotAffectedRdclNo}Processor family not affected: {NotAffectedAtom}Processor supports cache flush: {CacheFlushSupported}HyperThreading enabled: {SmtEnabled}Parent hypervisor applies mitigations: {ParentHypervisorFlushes}Mitigations disabled by bcdedit: {DisabledLoadOption}Mitigations enabled: {Enabled}Cache flush needed: {CacheFlushNeeded}
-Microsoft-Windows-Hyper-V-Hypervisor  |  156       |           |  Hypervisor initial page allocation NUMA policy: {InitialAllocationNumaPolicy}
-Microsoft-Windows-Hyper-V-Hypervisor  |  157       |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  158       |  System   |  The queried interface version {CurrentVersion} is not supported (Min : {MinVersion}, Max : {MaxVersion}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  159       |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  160       |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  161       |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  162       |  System   |  Failed to unregister the remote hypercall interface (status {NtStatus}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  165       |  System   |  Hypervisor configured mitigations for CVE-2019-11091, CVE-2018-12126, CVE-2018-12127, CVE-2018-12130 for virtual machines.Processor not affected: {NotAffectedMdsNo}Processor family not affected: {NotAffectedAtom}Processor supports microarchitectural buffer flush: {MdClearSupported}Buffer flush needed: {BufferFlushNeeded}
-Microsoft-Windows-Hyper-V-Hypervisor  |  166       |           |  Hypervisor Load Options are conflicting - {LoadOptions}, {LoadFlags}.
-Microsoft-Windows-Hyper-V-Hypervisor  |  167       |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  168       |  System   |  AMD PSP PCI device discovered. Segment: {Segment}, bus: {Bus}, device: {Device}, function: {Function}.
-Microsoft-Windows-Hyper-V-Hypervisor  |  169       |  System   |  Secure firmware update status: {Status}.
-Microsoft-Windows-Hyper-V-Hypervisor  |  170       |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  171       |  System   |  Secure firmware version: {Version}.
-Microsoft-Windows-Hyper-V-Hypervisor  |  172       |           |  Features are enabled that require all processors be started. {RunningProcessors} of {AvailableProcessors} processors currently running.
-Microsoft-Windows-Hyper-V-Hypervisor  |  173       |  System   |
-Microsoft-Windows-Hyper-V-Hypervisor  |  8451      |           |  Hyper-V failed creating a new partition (status {Error})!
-Microsoft-Windows-Hyper-V-Hypervisor  |  12288     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12289     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12290     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12291     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12292     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12293     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12294     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12295     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12296     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12297     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12298     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12299     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12300     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12301     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12302     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12303     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12304     |           |
-Microsoft-Windows-Hyper-V-Hypervisor  |  12550     |           |  Hyper-V detected access to a restricted MSR (Msr: {Msr}, IsWrite: {IsWrite}, MsrValue: {MsrValue}, AccessStatus: {AccessStatus}, Pc: {Pc}, ImageBase: {ImageBase}, ImageChecksum: {ImageChecksum}, ImageTimestamp: {ImageTimestamp}, ImageName: {ImageName}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  16641     |           |  Hyper-V successfully created a new partition (partition {PartitionId}).
-Microsoft-Windows-Hyper-V-Hypervisor  |  16642     |           |  Hyper-V successfully deleted a partition (partition {PartitionId}).
+Provider                              |  Level        |  Event ID  |  Version  |  Channel  |  Task                            |  Opcode  |  Keyword  |  Message
+--------------------------------------|---------------|------------|-----------|-----------|----------------------------------|----------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  1         |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  2         |  0        |  System   |                                  |          |           |  Hypervisor scheduler type is {SchedulerType}.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  3         |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  5         |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  10        |  0        |           |                                  |          |           |  Hypervisor Eventlog creation failed!
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  11        |  0        |           |                                  |          |           |  Hypervisor Eventlog deletion failed!
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  12        |  0        |           |                                  |          |           |  Host processor features mask: {ProcessorFeatures}Host xsave features mask: {XsaveFeatures}Host cache line flush size: {CLFlushSize} bytes
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  12        |  1        |           |                                  |          |           |  Host processor features mask: {ProcessorFeatures}Host xsave features mask: {XsaveFeatures}Host cache line flush size: {CLFlushSize} bytes
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  13        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  14        |  0        |           |                                  |          |           |  Hypervisor Eventlog flush failed!
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  20        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; sleep and hibernate could not be disabled (status {ErrorCode}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  26        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; the hypervisor boot loader's internal logic failed (BalStatus {BalStatus}, sub-status {Error}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  27        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  28        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  31        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  32        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  34        |  0        |  System   |                                  |          |           |  Hyper-V launch failed; the image {ImageName} could not be loaded (status {Status}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  36        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; the image {ImageName} failed code integrity checks, and cannot be used.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  37        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; the image {ImageName} does not contain the image description datastructures, and cannot be used.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  38        |  0        |  System   |                                  |          |           |  Hyper-V launch failed; at least one of the processors in the system was unable to launch the hypervisor (status {BalStatus}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  39        |  0        |           |                                  |          |           |  Hypervisor Load Options - {LoadOptions}.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  40        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; the hypervisor image is revision {HypervisorVersion}, but the currently installed virtualization software only supports launching revision {VersionSupported} hypervisor images.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  41        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  42        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  43        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  44        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  46        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; Processor does not support the minimum features required to run the hypervisor (MSR index {MSRIndex}, allowed bits {AllowedZeroes}, required bits {AllowedOnes}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  48        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; Processor does not provide the features necessary to run the hypervisor (leaf {Leaf}, register {Register}: features needed {FeaturesNeeded}, features supported {FeaturesSupported}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  54        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  55        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  56        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  59        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  60        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  61        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  62        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  63        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; The hypervisor was unable to initialize successfully (phase {Phase}), and was not started.  This initialization failure may be the result of a platform configuration or firmware issue.  Contact your system vendor for more information or updated firmware.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  64        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  80        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; The operating systems boot loader failed with error {NtStatus}.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  81        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  82        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  83        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  84        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  85        |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  86        |  0        |  System   |                                  |          |           |  Hypervisor launch failed; the version of the microcode update dll does not match the current operating system.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  96        |  0        |  System   |                                  |          |           |  Hypervisor processor startup failed (APIC ID {CPU}, status {ErrorCode}). Further processors in the system were not started.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  97        |  0        |  System   |                                  |          |           |  Hypervisor processor startup failed (APIC ID {CPU}) due to CPUID feature validation error. Further processors in the system were not started. Leaf {LeafNumber}, register {Register} feature mismatch: BSP has features {APCpuidData}; AP has features {BSPCpuidData}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  129       |  0        |  System   |                                  |          |           |  Hypervisor initialized I/O remapping.Hardware present: {HardwarePresent}Hardware enabled: {HardwareEnabled}Policy: {Policy}Enabled features: {EnabledFeatures}Internal information: {InternalInfo}Problems: {Problems}Additional information: {AdditionalInfo}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  130       |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  131       |  0        |  System   |                                  |          |           |  There is an I/O remapping problem with the sytem BIOS.Problems: {Problems}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  144       |  0        |  System   |                                  |          |           |  A device is operating with reduced performance because of a problem with the system BIOS.The device is not reported under the scope of a unique I/O remapping unit.Device ID: {DeviceId}Partition ID: {PartitionId}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  145       |  0        |  System   |                                  |          |           |  A device will not work correctly because of a problem with the system BIOS.The Requester IDs reported for the device overlap with those reported for another device.Device ID: {DeviceId}Partition ID: {PartitionId}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  146       |  0        |  System   |                                  |          |           |  A device will not work correctly because the hypervisor does not have enough resources.Device ID: {DeviceId}Partition ID: {PartitionId}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  147       |  0        |  System   |                                  |          |           |  A device will not work correctly because of a problem with the system BIOS.An IOAPIC is not correctly reported.IOAPIC ID: {IoApicId}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  148       |  0        |  System   |                                  |          |           |  A device could not be used by a child partition because of a limitation of the system hardware and BIOS.The I/O remapping unit that controls the device does not have sufficient capabilities.Device ID: {DeviceId}I/O remapping unit base address: {UnitBaseAddress}Partition ID: {PartitionId}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  149       |  0        |  System   |                                  |          |           |  A device could not be used by a child partition because of a limitation of the system hardware and BIOS.The device cannot be securely used by a child partition.Device ID: {DeviceId}Partition ID: {PartitionId}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  152       |  0        |  System   |                                  |          |           |  The image {ImageName} could not be read (status {Status}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  153       |  0        |  System   |                                  |          |           |  The image {ImageName} failed code integrity checks, and cannot be used.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  154       |  0        |  System   |                                  |          |           |  Hypervisor failed to properly synchronize TSC across logical processors (Max delta: {MaxDelta}, Min delta: {MinDelta}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  155       |  0        |           |                                  |          |           |  Host processor features mask: {ProcessorFeatures}Host xsave features mask: {XsaveFeatures}Host cache line flush size: {CLFlushSize} bytes
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  155       |  1        |           |                                  |          |           |  Host processor features mask: {ProcessorFeatures}Host xsave features mask: {XsaveFeatures}Host cache line flush size: {CLFlushSize} bytes
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  156       |  0        |  System   |                                  |          |           |  Hypervisor configured mitigations for CVE-2018-3646 for virtual machines.Processor not affected: {NotAffectedRdclNo}Processor family not affected: {NotAffectedAtom}Processor supports cache flush: {CacheFlushSupported}HyperThreading enabled: {SmtEnabled}Parent hypervisor applies mitigations: {ParentHypervisorFlushes}Mitigations disabled by bcdedit: {DisabledLoadOption}Mitigations enabled: {Enabled}Cache flush needed: {CacheFlushNeeded}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  156       |  1        |           |                                  |          |           |  Hypervisor initial page allocation NUMA policy: {InitialAllocationNumaPolicy}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  157       |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  158       |  0        |  System   |                                  |          |           |  The queried interface version {CurrentVersion} is not supported (Min : {MinVersion}, Max : {MaxVersion}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  159       |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  160       |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  161       |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  162       |  0        |  System   |                                  |          |           |  Failed to unregister the remote hypercall interface (status {NtStatus}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  165       |  0        |  System   |                                  |          |           |  Hypervisor configured mitigations for CVE-2019-11091, CVE-2018-12126, CVE-2018-12127, CVE-2018-12130 for virtual machines.Processor not affected: {NotAffectedMdsNo}Processor family not affected: {NotAffectedAtom}Processor supports microarchitectural buffer flush: {MdClearSupported}Buffer flush needed: {BufferFlushNeeded}
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  166       |  0        |           |                                  |          |           |  Hypervisor Load Options are conflicting - {LoadOptions}, {LoadFlags}.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  167       |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  168       |  0        |  System   |                                  |          |           |  AMD PSP PCI device discovered. Segment: {Segment}, bus: {Bus}, device: {Device}, function: {Function}.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  169       |  0        |  System   |                                  |          |           |  Secure firmware update status: {Status}.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  170       |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  171       |  0        |  System   |                                  |          |           |  Secure firmware version: {Version}.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  172       |  0        |           |                                  |          |           |  Features are enabled that require all processors be started. {RunningProcessors} of {AvailableProcessors} processors currently running.
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  173       |  0        |  System   |                                  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  8451      |  0        |           |                                  |          |           |  Hyper-V failed creating a new partition (status {Error})!
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12288     |  0        |           |  RegisterInterface               |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12289     |  0        |           |  HvldrIoctl                      |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12290     |  0        |           |  RemoteHypercall                 |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12291     |  0        |           |  HvldrCreatePartition            |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12292     |  0        |           |  RegisterPartitionId             |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12293     |  0        |           |  HvldrDeletePartition            |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12294     |  0        |           |  HvldrDepositMemory              |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12295     |  0        |           |  HvldrMapGpaPages                |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12296     |  0        |           |  HvldrUnmapGpaSpace              |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  12297     |  0        |           |  HvldrNumaDistributedAllocation  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12298     |  0        |           |  HvldrGetLpRegisterMsr           |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12299     |  0        |           |  HvldrGetLpRegisterCpuid         |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12300     |  0        |           |  HvldrReadSystemMemory           |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12301     |  0        |           |  HvldrGetMtrrs                   |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Error        |  12302     |  0        |           |  HvldrGetPlatformCaps            |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  12303     |  0        |           |  HvldrHsrInUse                   |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  12304     |  0        |           |  HvldrConfigureIommuLiveHandoff  |          |           |
+Microsoft-Windows-Hyper-V-Hypervisor  |  Warning      |  12550     |  0        |           |                                  |          |           |  Hyper-V detected access to a restricted MSR (Msr: {Msr}, IsWrite: {IsWrite}, MsrValue: {MsrValue}, AccessStatus: {AccessStatus}, Pc: {Pc}, ImageBase: {ImageBase}, ImageChecksum: {ImageChecksum}, ImageTimestamp: {ImageTimestamp}, ImageName: {ImageName}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  16641     |  0        |           |                                  |          |           |  Hyper-V successfully created a new partition (partition {PartitionId}).
+Microsoft-Windows-Hyper-V-Hypervisor  |  Information  |  16642     |  0        |           |                                  |          |           |  Hyper-V successfully deleted a partition (partition {PartitionId}).

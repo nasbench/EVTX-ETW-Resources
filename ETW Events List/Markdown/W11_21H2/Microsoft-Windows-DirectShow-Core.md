@@ -1,34 +1,34 @@
-Provider                           |  Event ID  |  Channel                  |  Message
------------------------------------|------------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-DirectShow-Core  |  1         |  Application              |  The file {FileName} could not be processed by the application {ApplicationName} because it requires Indeo® Decoders of type {ContentType}
-Microsoft-Windows-DirectShow-Core  |  2         |  DirectShowPluginControl  |  Initialise:  Found {PreferredCount} Preferred Filter clsids, {DontUseCount} Do Not Use Filter clsids.
-Microsoft-Windows-DirectShow-Core  |  3         |  DirectShowPluginControl  |  Attempt to use Filter clsid {clsid} marked as do not use.
-Microsoft-Windows-DirectShow-Core  |  4         |  DirectShowPluginControl  |  Mark Filter clsid {clsid} do not use = {Disabled}.
-Microsoft-Windows-DirectShow-Core  |  5         |  DirectShowPluginControl  |  Choosing preferred Filter clsid {clsid} for sub-type {Subtype}.
-Microsoft-Windows-DirectShow-Core  |  6         |  DirectShowPluginControl  |  Registering preferred Filter clsid {clsid} for sub-type {Subtype}.
-Microsoft-Windows-DirectShow-Core  |  7         |  DirectShowPluginControl  |  Attempt to use Do Not Use VCM codec fourcc {FourCC} DLL name {dllName}.
-Microsoft-Windows-DirectShow-Core  |  8         |  DirectShowPluginControl  |  Query for preferred sub-type {Subtype} found clsid {clsid}.
-Microsoft-Windows-DirectShow-Core  |  9         |  DirectShowPluginControl  |  Query for preferred sub-type {Subtype} found no clsid.
-Microsoft-Windows-DirectShow-Core  |  10        |  DirectShowPluginControl  |  Query Do Not Use for clsid {clsid}: do not use = {Disabled}
-Microsoft-Windows-DirectShow-Core  |  100       |  DirectShow FilterGraph   |  RenderFile Enter CFilterGraph({context}) url({url})
-Microsoft-Windows-DirectShow-Core  |  101       |  DirectShow FilterGraph   |  RenderFile Leave CFilterGraph({context}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  102       |  DirectShow FilterGraph   |  Connect Enter CFilterGraph({context}) OutputPin({pinOutput},{pinOutputName}) InputPin({pinInput},{pinInputName})
-Microsoft-Windows-DirectShow-Core  |  103       |  DirectShow FilterGraph   |  Connect Leave CFilterGraph({context}) hr({hr}) Major Type({type}) Subtype({subtype})
-Microsoft-Windows-DirectShow-Core  |  104       |  DirectShow FilterGraph   |  Render Pin Enter CFilterGraph({context}) Pin({pinOutput},{pinOutputName})
-Microsoft-Windows-DirectShow-Core  |  105       |  DirectShow FilterGraph   |  Render Pin Leave CFilterGraph({context}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  106       |  DirectShow FilterGraph   |  AddFilter CFilterGraph({context}) Filter({filter},{filterName}) Name({name}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  107       |  DirectShow FilterGraph   |  AddSourceFilter Enter CFilterGraph({context}) url({url})
-Microsoft-Windows-DirectShow-Core  |  108       |  DirectShow FilterGraph   |  AddSourceFilter Leave CFilterGraph({context}) Filter({filter},{filterName}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  109       |  DirectShow FilterGraph   |  NotifyEvent CFilterGraph({context}) EventCode({eventCode}) Param1({param1}) Param2({param2})
-Microsoft-Windows-DirectShow-Core  |  110       |  DirectShow FilterGraph   |  Pause Enter CFilterGraph({context})
-Microsoft-Windows-DirectShow-Core  |  111       |  DirectShow FilterGraph   |  Pause Leave CFilterGraph({context}) Failing Filter ({failingFilter},{failingFilterName}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  112       |  DirectShow FilterGraph   |  Stop Enter CFilterGraph({context})
-Microsoft-Windows-DirectShow-Core  |  113       |  DirectShow FilterGraph   |  Stop Leave CFilterGraph({context}) Failing Filter ({failingFilter},{failingFilterName}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  114       |  DirectShow FilterGraph   |  Run Enter CFilterGraph({context}) tStart({tStart})
-Microsoft-Windows-DirectShow-Core  |  115       |  DirectShow FilterGraph   |  Run Leave CFilterGraph({context}) Failing Filter ({failingFilter},{failingFilterName}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  116       |  DirectShow FilterGraph   |  ConnectDirect Enter CFilterGraph({context}) OutputPin({pinOutput},{pinOutputName}) InputPin({pinInput},{pinInputName})
-Microsoft-Windows-DirectShow-Core  |  117       |  DirectShow FilterGraph   |  ConnectDirect Leave CFilterGraph({context}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  118       |  DirectShow FilterGraph   |  Disconnect CFilterGraph({context}) Pin({pin},{pinName}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  119       |  DirectShow FilterGraph   |  GetState Enter CFilterGraph({context}) Timeout({timeout})
-Microsoft-Windows-DirectShow-Core  |  120       |  DirectShow FilterGraph   |  GetState Leave CFilterGraph({context}) State({state}) Failing Filter({failingFilter},{failingFilterName}) hr({hr})
-Microsoft-Windows-DirectShow-Core  |  121       |  DirectShow FilterGraph   |  RemoveFIlter CFilterGraph({context}) Filter({filter},{filterName}) hr({hr})
+Provider                           |  Level        |  Event ID  |  Version  |  Channel                  |  Task                                    |  Opcode  |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|---------------------------|------------------------------------------|----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-DirectShow-Core  |  Warning      |  1         |  0        |  Application              |                                          |          |           |  The file {FileName} could not be processed by the application {ApplicationName} because it requires Indeo® Decoders of type {ContentType}
+Microsoft-Windows-DirectShow-Core  |  Information  |  2         |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |  Start   |           |  Initialise:  Found {PreferredCount} Preferred Filter clsids, {DontUseCount} Do Not Use Filter clsids.
+Microsoft-Windows-DirectShow-Core  |  Warning      |  3         |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |          |           |  Attempt to use Filter clsid {clsid} marked as do not use.
+Microsoft-Windows-DirectShow-Core  |  Information  |  4         |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |          |           |  Mark Filter clsid {clsid} do not use = {Disabled}.
+Microsoft-Windows-DirectShow-Core  |  Information  |  5         |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |          |           |  Choosing preferred Filter clsid {clsid} for sub-type {Subtype}.
+Microsoft-Windows-DirectShow-Core  |  Information  |  6         |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |          |           |  Registering preferred Filter clsid {clsid} for sub-type {Subtype}.
+Microsoft-Windows-DirectShow-Core  |  Warning      |  7         |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |          |           |  Attempt to use Do Not Use VCM codec fourcc {FourCC} DLL name {dllName}.
+Microsoft-Windows-DirectShow-Core  |  Verbose      |  8         |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |          |           |  Query for preferred sub-type {Subtype} found clsid {clsid}.
+Microsoft-Windows-DirectShow-Core  |  Verbose      |  9         |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |          |           |  Query for preferred sub-type {Subtype} found no clsid.
+Microsoft-Windows-DirectShow-Core  |  Verbose      |  10        |  0        |  DirectShowPluginControl  |  Plug-in Manager                         |          |           |  Query Do Not Use for clsid {clsid}: do not use = {Disabled}
+Microsoft-Windows-DirectShow-Core  |  Information  |  100       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph RenderFile       |  Start   |           |  RenderFile Enter CFilterGraph({context}) url({url})
+Microsoft-Windows-DirectShow-Core  |  Information  |  101       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph RenderFile       |  Stop    |           |  RenderFile Leave CFilterGraph({context}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  102       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Connect          |  Start   |           |  Connect Enter CFilterGraph({context}) OutputPin({pinOutput},{pinOutputName}) InputPin({pinInput},{pinInputName})
+Microsoft-Windows-DirectShow-Core  |  Information  |  103       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Connect          |  Stop    |           |  Connect Leave CFilterGraph({context}) hr({hr}) Major Type({type}) Subtype({subtype})
+Microsoft-Windows-DirectShow-Core  |  Information  |  104       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph RenderPin        |  Start   |           |  Render Pin Enter CFilterGraph({context}) Pin({pinOutput},{pinOutputName})
+Microsoft-Windows-DirectShow-Core  |  Information  |  105       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph RenderPin        |  Stop    |           |  Render Pin Leave CFilterGraph({context}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  106       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph AddFilter        |          |           |  AddFilter CFilterGraph({context}) Filter({filter},{filterName}) Name({name}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  107       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph AddSourceFilter  |  Start   |           |  AddSourceFilter Enter CFilterGraph({context}) url({url})
+Microsoft-Windows-DirectShow-Core  |  Information  |  108       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph AddSourceFilter  |  Stop    |           |  AddSourceFilter Leave CFilterGraph({context}) Filter({filter},{filterName}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  109       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph NotifyEvent      |          |           |  NotifyEvent CFilterGraph({context}) EventCode({eventCode}) Param1({param1}) Param2({param2})
+Microsoft-Windows-DirectShow-Core  |  Information  |  110       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Pause            |  Start   |           |  Pause Enter CFilterGraph({context})
+Microsoft-Windows-DirectShow-Core  |  Information  |  111       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Pause            |  Stop    |           |  Pause Leave CFilterGraph({context}) Failing Filter ({failingFilter},{failingFilterName}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  112       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Stop             |  Start   |           |  Stop Enter CFilterGraph({context})
+Microsoft-Windows-DirectShow-Core  |  Information  |  113       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Stop             |  Stop    |           |  Stop Leave CFilterGraph({context}) Failing Filter ({failingFilter},{failingFilterName}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  114       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Run              |  Start   |           |  Run Enter CFilterGraph({context}) tStart({tStart})
+Microsoft-Windows-DirectShow-Core  |  Information  |  115       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Run              |  Stop    |           |  Run Leave CFilterGraph({context}) Failing Filter ({failingFilter},{failingFilterName}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  116       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph ConnectDirect    |  Start   |           |  ConnectDirect Enter CFilterGraph({context}) OutputPin({pinOutput},{pinOutputName}) InputPin({pinInput},{pinInputName})
+Microsoft-Windows-DirectShow-Core  |  Information  |  117       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph ConnectDirect    |  Stop    |           |  ConnectDirect Leave CFilterGraph({context}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  118       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph Disconnect       |          |           |  Disconnect CFilterGraph({context}) Pin({pin},{pinName}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  119       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph GetState         |  Start   |           |  GetState Enter CFilterGraph({context}) Timeout({timeout})
+Microsoft-Windows-DirectShow-Core  |  Information  |  120       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph GetState         |  Stop    |           |  GetState Leave CFilterGraph({context}) State({state}) Failing Filter({failingFilter},{failingFilterName}) hr({hr})
+Microsoft-Windows-DirectShow-Core  |  Information  |  121       |  0        |  DirectShow FilterGraph   |  DirectShow FilterGraph RemoveFilter     |          |           |  RemoveFIlter CFilterGraph({context}) Filter({filter},{filterName}) hr({hr})

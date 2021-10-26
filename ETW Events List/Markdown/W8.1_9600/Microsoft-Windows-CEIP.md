@@ -1,9 +1,9 @@
-Provider                |  Event ID    |  Channel  |  Message
-------------------------|--------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-CEIP  |  1073742829  |           |  Customer Experience Improvement Program data was successfully consolidated into files that will be sent to Microsoft for analysis. These files will be sent only if the user has opted to join the Windows Customer Experience Improvement Program.
-Microsoft-Windows-CEIP  |  3221226478  |           |  A problem prevented Customer Experience Improvement Program data from being consolidated into files that can be sent to Microsoft, (Error {param1}).
-Microsoft-Windows-CEIP  |  1073742831  |           |  Customer Experience Improvement Program data was successfully sent to Microsoft.
-Microsoft-Windows-CEIP  |  3221226480  |           |  A problem prevented Customer Experience Improvement Program data from being sent to Microsoft, (Error {param1}).
-Microsoft-Windows-CEIP  |  1073742833  |           |  The Customer Experience Improvement Program Opt-in notification was displayed to the user.
-Microsoft-Windows-CEIP  |  3221226482  |           |  A problem prevented the Customer Experience Improvement Program Opt-in notification from being displayed. (Error {param1})
-Microsoft-Windows-CEIP  |  3221226483  |           |  The Customer Experience Improvement Program downloaded new manifest, {param1} from Server.
+Provider                |  Level  |  Event ID    |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+------------------------|---------|--------------|-----------|-----------|--------|----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-CEIP  |         |  1073742829  |  0        |           |        |          |           |  Customer Experience Improvement Program data was successfully consolidated into files that will be sent to Microsoft for analysis. These files will be sent only if the user has opted to join the Windows Customer Experience Improvement Program.
+Microsoft-Windows-CEIP  |         |  3221226478  |  0        |           |        |          |           |  A problem prevented Customer Experience Improvement Program data from being consolidated into files that can be sent to Microsoft, (Error {param1}).
+Microsoft-Windows-CEIP  |         |  1073742831  |  0        |           |        |          |           |  Customer Experience Improvement Program data was successfully sent to Microsoft.
+Microsoft-Windows-CEIP  |         |  3221226480  |  0        |           |        |          |           |  A problem prevented Customer Experience Improvement Program data from being sent to Microsoft, (Error {param1}).
+Microsoft-Windows-CEIP  |         |  1073742833  |  0        |           |        |          |           |  The Customer Experience Improvement Program Opt-in notification was displayed to the user.
+Microsoft-Windows-CEIP  |         |  3221226482  |  0        |           |        |          |           |  A problem prevented the Customer Experience Improvement Program Opt-in notification from being displayed. (Error {param1})
+Microsoft-Windows-CEIP  |         |  3221226483  |  0        |           |        |          |           |  The Customer Experience Improvement Program downloaded new manifest, {param1} from Server.

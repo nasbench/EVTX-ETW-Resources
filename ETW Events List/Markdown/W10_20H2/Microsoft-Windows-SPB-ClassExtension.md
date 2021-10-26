@@ -1,20 +1,20 @@
-Provider                              |  Event ID  |  Channel   |  Message
---------------------------------------|------------|------------|----------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-SPB-ClassExtension  |  1000      |  Analytic  |  The Simple Peripheral Bus WDF class extension has started.  The control object name is {ControlDeviceName}.
-Microsoft-Windows-SPB-ClassExtension  |  1001      |  Analytic  |  The Simple Peripheral Bus WDF class extension failed to start (error {Status}).  The control object name is {ControlDeviceName}.
-Microsoft-Windows-SPB-ClassExtension  |  1002      |  Analytic  |
-Microsoft-Windows-SPB-ClassExtension  |  1010      |  Analytic  |
-Microsoft-Windows-SPB-ClassExtension  |  1011      |  Analytic  |
-Microsoft-Windows-SPB-ClassExtension  |  1012      |  Analytic  |
-Microsoft-Windows-SPB-ClassExtension  |  1013      |  Analytic  |
-Microsoft-Windows-SPB-ClassExtension  |  1014      |  Analytic  |
-Microsoft-Windows-SPB-ClassExtension  |  1015      |  Analytic  |
-Microsoft-Windows-SPB-ClassExtension  |  1016      |  Analytic  |
-Microsoft-Windows-SPB-ClassExtension  |  1018      |  Analytic  |  Direction: {Data}
-Microsoft-Windows-SPB-ClassExtension  |  1019      |  Analytic  |  Target {TargetName} has exceeded the locked IO watchdog period.
-Microsoft-Windows-SPB-ClassExtension  |  1020      |  Analytic  |  Preprocessing {DeviceState} IRP in SPBCx for controller {Controller}.
-Microsoft-Windows-SPB-ClassExtension  |  1021      |  Analytic  |  Payload begin: TotalByteCount = {IoTotalByteCount}, TransferCount = {TransferCount}
-Microsoft-Windows-SPB-ClassExtension  |  1022      |  Analytic  |  Transfer descriptor begin: Index = {TransferIndex}, Direction = {TransferDirection}, TotalByteCount = {TransferTotalByteCount}
-Microsoft-Windows-SPB-ClassExtension  |  1023      |  Analytic  |  Transfer buffer: Index = {BufferIndex}, ByteCount = {ByteCount}
-Microsoft-Windows-SPB-ClassExtension  |  1024      |  Analytic  |  Transfer descriptor end.
-Microsoft-Windows-SPB-ClassExtension  |  1025      |  Analytic  |  Payload end.
+Provider                              |  Level        |  Event ID  |  Version  |  Channel   |  Task                                          |  Opcode                      |  Keyword  |  Message
+--------------------------------------|---------------|------------|-----------|------------|------------------------------------------------|------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1000      |  1        |  Analytic  |  Startup of the SPB class extension            |                              |           |  The Simple Peripheral Bus WDF class extension has started.  The control object name is {ControlDeviceName}.
+Microsoft-Windows-SPB-ClassExtension  |  Error        |  1001      |  1        |  Analytic  |  Startup of the SPB class extension            |                              |           |  The Simple Peripheral Bus WDF class extension failed to start (error {Status}).  The control object name is {ControlDeviceName}.
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1002      |  1        |  Analytic  |  Unload of the SPB class extension             |                              |           |
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1010      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  Start                       |           |
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1011      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoDispatchToTarget          |           |
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1012      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoForwardToControllerQueue  |           |
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1013      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoDispatchToController      |           |
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1014      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoPresentToDriver           |           |
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1015      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoComplete                  |           |
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1016      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  Stop                        |           |
+Microsoft-Windows-SPB-ClassExtension  |  Verbose      |  1018      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoSpbDirection              |           |  Direction: {Data}
+Microsoft-Windows-SPB-ClassExtension  |  Warning      |  1019      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoLockWatchdogTimeout       |           |  Target {TargetName} has exceeded the locked IO watchdog period.
+Microsoft-Windows-SPB-ClassExtension  |  Information  |  1020      |  1        |  Analytic  |  D-state transition for SPB controller driver  |  DIrpPreprocess              |           |  Preprocessing {DeviceState} IRP in SPBCx for controller {Controller}.
+Microsoft-Windows-SPB-ClassExtension  |  Verbose      |  1021      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoSpbPayloadStart           |           |  Payload begin: TotalByteCount = {IoTotalByteCount}, TransferCount = {TransferCount}
+Microsoft-Windows-SPB-ClassExtension  |  Verbose      |  1022      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoSpbPayloadTdStart         |           |  Transfer descriptor begin: Index = {TransferIndex}, Direction = {TransferDirection}, TotalByteCount = {TransferTotalByteCount}
+Microsoft-Windows-SPB-ClassExtension  |  Verbose      |  1023      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoSpbPayloadTdBuffer        |           |  Transfer buffer: Index = {BufferIndex}, ByteCount = {ByteCount}
+Microsoft-Windows-SPB-ClassExtension  |  Verbose      |  1024      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoSpbPayloadTdStop          |           |  Transfer descriptor end.
+Microsoft-Windows-SPB-ClassExtension  |  Verbose      |  1025      |  1        |  Analytic  |  I/O operation flow through SPBCx              |  IoSpbPayloadStop            |           |  Payload end.

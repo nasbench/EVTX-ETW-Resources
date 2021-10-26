@@ -1,10 +1,10 @@
-Provider               |  Event ID  |  Channel                           |  Message
------------------------|------------|------------------------------------|---------
-Microsoft-Windows-osk  |  1         |  Microsoft-Windows-osk/Diagnostic  |
-Microsoft-Windows-osk  |  2         |  Microsoft-Windows-osk/Diagnostic  |
-Microsoft-Windows-osk  |  3         |  Microsoft-Windows-osk/Diagnostic  |
-Microsoft-Windows-osk  |  4         |  Microsoft-Windows-osk/Diagnostic  |
-Microsoft-Windows-osk  |  5         |  Microsoft-Windows-osk/Diagnostic  |
-Microsoft-Windows-osk  |  6         |  Microsoft-Windows-osk/Diagnostic  |
-Microsoft-Windows-osk  |  7         |  Microsoft-Windows-osk/Diagnostic  |
-Microsoft-Windows-osk  |  8         |  Microsoft-Windows-osk/Diagnostic  |
+Provider               |  Level        |  Event ID  |  Version  |  Channel                           |  Task              |  Opcode  |  Keyword              |  Message
+-----------------------|---------------|------------|-----------|------------------------------------|--------------------|----------|-----------------------|---------
+Microsoft-Windows-osk  |  Information  |  1         |  0        |  Microsoft-Windows-osk/Diagnostic  |  LaunchApp         |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-osk  |  Information  |  2         |  0        |  Microsoft-Windows-osk/Diagnostic  |  LaunchApp         |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-osk  |  Information  |  3         |  0        |  Microsoft-Windows-osk/Diagnostic  |  LaunchOptionsDlg  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-osk  |  Information  |  4         |  0        |  Microsoft-Windows-osk/Diagnostic  |  LaunchOptionsDlg  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-osk  |  Information  |  5         |  0        |  Microsoft-Windows-osk/Diagnostic  |  SwitchMode        |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-osk  |  Information  |  6         |  0        |  Microsoft-Windows-osk/Diagnostic  |  SwitchMode        |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-osk  |  Information  |  7         |  0        |  Microsoft-Windows-osk/Diagnostic  |  ShowPredictions   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-osk  |  Information  |  8         |  0        |  Microsoft-Windows-osk/Diagnostic  |  ShowPredictions   |  Stop    |  PerfInstrumentation  |

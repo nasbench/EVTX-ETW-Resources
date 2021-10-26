@@ -1,3 +1,3 @@
-Provider                                  |  Event ID  |  Channel                                              |  Message
-------------------------------------------|------------|-------------------------------------------------------|---------
-Microsoft-Windows-Kernel-BootDiagnostics  |  501       |  Microsoft-Windows-Kernel-BootDiagnostics/Diagnostic  |
+Provider                                  |  Level        |  Event ID  |  Version  |  Channel                                              |  Task        |  Opcode  |  Keyword  |  Message
+------------------------------------------|---------------|------------|-----------|-------------------------------------------------------|--------------|----------|-----------|---------
+Microsoft-Windows-Kernel-BootDiagnostics  |  Information  |  501       |  0        |  Microsoft-Windows-Kernel-BootDiagnostics/Diagnostic  |  SystemBoot  |  Start   |           |

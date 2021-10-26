@@ -1,108 +1,108 @@
-Provider                   |  Event ID  |  Channel                               |  Message
----------------------------|------------|----------------------------------------|---------
-Microsoft-Windows-Dwm-Api  |  1         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  2         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  3         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  4         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  5         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  6         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  7         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  8         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  9         |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  10        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  11        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  12        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  13        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  14        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  15        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  16        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  17        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  18        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  19        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  20        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  21        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  22        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  23        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  24        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  25        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  26        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  27        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  28        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  29        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  30        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  31        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  32        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  33        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  34        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  35        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  36        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  37        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  38        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  39        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  40        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  41        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  42        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  43        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  44        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  45        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  46        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  47        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  48        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  49        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  50        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  51        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  52        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  53        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  54        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  55        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  56        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  57        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  58        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  65        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  66        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  67        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  68        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  69        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  70        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  71        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  72        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  73        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  74        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  75        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  76        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  77        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  78        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  79        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  80        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  81        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  82        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  83        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  84        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  85        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  86        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  87        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  88        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  89        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  90        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  91        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  92        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  93        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  94        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  95        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  96        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  97        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  98        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  99        |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  100       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  101       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  102       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  103       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  104       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  105       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  106       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  107       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  108       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  109       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  110       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  111       |  Microsoft-Windows-Dwm-API/Diagnostic  |
-Microsoft-Windows-Dwm-Api  |  112       |  Microsoft-Windows-Dwm-API/Diagnostic  |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                               |  Task                                     |  Opcode  |  Keyword  |  Message
+---------------------------|---------------|------------|-----------|----------------------------------------|-------------------------------------------|----------|-----------|---------
+Microsoft-Windows-Dwm-Api  |  Information  |  1         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiEnableBlurBehindWindow                |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  2         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiEnableBlurBehindWindow                |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  3         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiExtendFrameIntoClientArea             |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  4         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiExtendFrameIntoClientArea             |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  5         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiGetColorizationColor                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  6         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiGetColorizationColor                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  7         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiGetCompositionTimingInfo              |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  8         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiGetCompositionTimingInfo              |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  9         |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiGetWindowAttribute                    |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  10        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiGetWindowAttribute                    |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  11        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSetWindowAttribute                    |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  12        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSetWindowAttribute                    |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  13        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiIsCompositionEnabled                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  14        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiIsCompositionEnabled                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  15        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiRegisterThumbnail                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  16        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiRegisterThumbnail                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  17        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiUnregisterThumbnail                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  18        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiUnregisterThumbnail                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  19        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiUpdateThumbnailProperties             |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  20        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiUpdateThumbnailProperties             |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  21        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSetPresentParameters                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  22        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSetPresentParameters                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  23        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiEnableMMCSS                           |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  24        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiEnableMMCSS                           |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  25        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiFlush                                 |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  26        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiFlush                                 |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  27        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSetIconicThumbnail                    |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  28        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSetIconicThumbnail                    |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  29        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipAttachMilContent                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  30        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipAttachMilContent                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  31        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDetachMilContent                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  32        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDetachMilContent                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  33        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipOpenGraphicsStream                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  34        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipOpenGraphicsStream                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  35        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipCloseGraphicsStream                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  36        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipCloseGraphicsStream                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  37        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipEnumGraphicsStreamClients            |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  38        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipEnumGraphicsStreamClients            |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  39        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipQueryGraphicsStream                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  40        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipQueryGraphicsStream                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  41        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipSetColorizationColor                 |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  42        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipSetColorizationColor                 |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  43        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipStartupViaUserInit                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  44        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipStartupViaUserInit                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  45        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDxGetWindowSharedSurface             |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  46        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDxGetWindowSharedSurface             |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  47        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDxUpdateWindowSharedSurface          |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  48        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDxUpdateWindowSharedSurface          |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  49        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipEnableComposition                    |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  50        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipEnableComposition                    |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  51        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipQueryThumbnailSourceSize             |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  52        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipQueryThumbnailSourceSize             |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  53        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipGetSpecialWindow                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  54        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipGetSpecialWindow                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  55        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipRestartComposition                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  56        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipRestartComposition                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  57        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipIsCompositionCapable                 |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  58        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipIsCompositionCapable                 |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  65        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipSetGraphicsStreamTransformHInt       |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  66        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipSetGraphicsStreamTransformHInt       |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  67        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipEnumGraphicsStreamTransformHInts     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  68        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipEnumGraphicsStreamTransformHInts     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  69        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipGetGlobalState                       |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  70        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipGetGlobalState                       |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  71        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSnapshotIconicThumbnail               |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  72        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSnapshotIconicThumbnail               |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  73        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipActivateLivePreview                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  74        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipActivateLivePreview                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  75        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSetIconicLivePreviewBitmap            |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  76        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiSetIconicLivePreviewBitmap            |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  77        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiInvalidateIconicBitmaps               |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  78        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiInvalidateIconicBitmaps               |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  79        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDxUpdateWindowRedirectionBltSurface  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  80        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDxUpdateWindowRedirectionBltSurface  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  81        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDxSetContentHostingInformation       |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  82        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipDxSetContentHostingInformation       |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  83        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipRenderFlick                          |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  84        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipRenderFlick                          |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  85        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiRenderGesture                         |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  86        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiRenderGesture                         |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  87        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiShowContact                           |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  88        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiShowContact                           |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  89        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiTetherContact                         |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  90        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiTetherContact                         |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  91        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiRegisterTransitionRegionSource        |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  92        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiRegisterTransitionRegionSource        |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  93        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiRegisterTransitionRegionDestination   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  94        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiRegisterTransitionRegionDestination   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  95        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiStartTransitionRegion                 |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  96        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiStartTransitionRegion                 |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  97        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiUnregisterTransitionRegion            |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  98        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiUnregisterTransitionRegion            |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  99        |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipStartTransition                      |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  100       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipStartTransition                      |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  101       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipEndTransition                        |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  102       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipEndTransition                        |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  103       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipTransitionWindow                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  104       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipTransitionWindow                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  105       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiTransitionOwnedWindow                 |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  106       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiTransitionOwnedWindow                 |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  107       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipUpdateDesktopThumbnail               |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  108       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipUpdateDesktopThumbnail               |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  109       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipActivateHardwareExpression           |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  110       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApipActivateHardwareExpression           |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  111       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiTetherTextContact                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  112       |  0        |  Microsoft-Windows-Dwm-API/Diagnostic  |  ApiTetherTextContact                     |  Stop    |  DwmApi   |

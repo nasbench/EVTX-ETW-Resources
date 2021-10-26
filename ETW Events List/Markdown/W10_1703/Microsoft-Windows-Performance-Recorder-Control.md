@@ -1,55 +1,55 @@
-Provider                                        |  Event ID  |  Channel  |  Message
-------------------------------------------------|------------|-----------|------------------------------------------------------------------------
-Microsoft-Windows-Performance-Recorder-Control  |  100       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  101       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  102       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  103       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  104       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  105       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  106       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  107       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  108       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  109       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  110       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  111       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  112       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  113       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  114       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  115       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  116       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  117       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  118       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  119       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  120       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  121       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  122       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  123       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  124       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  125       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  126       |           |  A recording profile set is being saved as {FileName}...
-Microsoft-Windows-Performance-Recorder-Control  |  127       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  128       |           |  A recording profile set is being stopped as {FileName}...
-Microsoft-Windows-Performance-Recorder-Control  |  129       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  130       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  131       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  132       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  133       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  134       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  135       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  136       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  137       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  138       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  139       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  140       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  141       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  142       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  143       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  144       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  145       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  146       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  147       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  148       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  149       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  150       |           |  CaptureState on a Provider failed.Provider	:	{Provider}Error	:	{Error}
-Microsoft-Windows-Performance-Recorder-Control  |  151       |           |
-Microsoft-Windows-Performance-Recorder-Control  |  200       |           |
+Provider                                        |  Level        |  Event ID  |  Version  |  Channel  |  Task                                     |  Opcode  |  Keyword              |  Message
+------------------------------------------------|---------------|------------|-----------|-----------|-------------------------------------------|----------|-----------------------|------------------------------------------------------------------------
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  100       |  0        |           |  Perf_ExternalCall                        |  Start   |  Perf Status Verbose  |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  101       |  0        |           |  Perf_ExternalCall                        |  Stop    |  Perf Status Verbose  |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  102       |  0        |           |  Perf_LoadProfileFromFile                 |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  103       |  0        |           |  Perf_LoadProfileFromFile                 |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  104       |  0        |           |  Perf_LoadProfileFromString               |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  105       |  0        |           |  Perf_LoadProfileFromString               |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  106       |  0        |           |  Perf_AddProfileToCollection              |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  107       |  0        |           |  Perf_IsEqualProfile                      |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  108       |  0        |           |  Perf_IsEqualProfile                      |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  109       |  0        |           |  Perf_AddProfileToCollection              |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  110       |  0        |           |  Perf_RemoveProfileFromCollection         |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  111       |  0        |           |  Perf_RemoveProfileFromCollection         |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  112       |  0        |           |  Perf_IsEqualProfileCollection            |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  113       |  0        |           |  Perf_IsEqualProfileCollection            |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  114       |  0        |           |  Perf_LoadTraceMergePropertiesFromFile    |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  115       |  0        |           |  Perf_LoadTraceMergePropertiesFromFile    |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  116       |  0        |           |  Perf_LoadTraceMergePropertiesFromString  |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  117       |  0        |           |  Perf_LoadTraceMergePropertiesFromString  |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  118       |  0        |           |  Perf_IsEqualTraceMergeProperties         |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  119       |  0        |           |  Perf_IsEqualTraceMergeProperties         |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  120       |  0        |           |  Perf_StartProfiles                       |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  121       |  0        |           |  Perf_StartProfiles                       |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  122       |  0        |           |  Perf_UpdateProfiles                      |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  123       |  0        |           |  Perf_UpdateProfiles                      |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  124       |  0        |           |  Perf_CancelProfiles                      |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  125       |  0        |           |  Perf_CancelProfiles                      |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  126       |  0        |           |  Perf_SaveProfiles                        |  Start   |  Perf Status          |  A recording profile set is being saved as {FileName}...
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  127       |  0        |           |  Perf_SaveProfiles                        |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  128       |  0        |           |  Perf_StopProfiles                        |  Start   |  Perf Status          |  A recording profile set is being stopped as {FileName}...
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  129       |  0        |           |  Perf_StopProfiles                        |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  130       |  0        |           |  Perf_QueryProfiles                       |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  131       |  0        |           |  Perf_QueryProfiles                       |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  132       |  0        |           |  Perf_EnableBootTracing                   |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  133       |  0        |           |  Perf_EnableBootTracing                   |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  134       |  0        |           |  Perf_DisableBootTracing                  |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  135       |  0        |           |  Perf_DisableBootTracing                  |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  136       |  0        |           |  Perf_QueryBuiltInProfiles                |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  137       |  0        |           |  Perf_QueryBuiltInProfiles                |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  138       |  0        |           |  Perf_ControlProgressHandlerBegin         |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  139       |  0        |           |  Perf_ControlProgressHandlerBegin         |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  140       |  0        |           |  Perf_ControlProgressHandlerUpdate        |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  141       |  0        |           |  Perf_ControlProgressHandlerUpdate        |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  142       |  0        |           |  Perf_ControlProgressHandlerEnd           |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  143       |  0        |           |  Perf_ControlProgressHandlerEnd           |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  144       |  0        |           |  Perf_StartShutdownProfiles               |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  145       |  0        |           |  Perf_StartShutdownProfiles               |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  146       |  0        |           |  Perf_UpdateShutdownProfiles              |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  147       |  0        |           |  Perf_UpdateShutdownProfiles              |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  148       |  0        |           |  Perf_MergeShutdownProfiles               |  Start   |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  149       |  0        |           |  Perf_MergeShutdownProfiles               |  Stop    |  Perf Status          |
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  150       |  0        |           |  Perf_CaptureState                        |          |  Perf Status          |  CaptureState on a Provider failed.Provider	:	{Provider}Error	:	{Error}
+Microsoft-Windows-Performance-Recorder-Control  |  Information  |  151       |  0        |           |  Perf_WPRProfileIds                       |          |  Informational        |
+Microsoft-Windows-Performance-Recorder-Control  |  Warning      |  200       |  0        |           |  Debug_WPRCControl                        |          |  Debug Status         |

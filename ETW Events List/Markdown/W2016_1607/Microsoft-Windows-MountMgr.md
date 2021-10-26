@@ -1,3 +1,3 @@
-Provider                    |  Event ID  |  Channel  |  Message
-----------------------------|------------|-----------|---------
-Microsoft-Windows-MountMgr  |  100       |  System   |  {CVEId}
+Provider                    |  Level  |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+----------------------------|---------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-MountMgr  |  Error  |  100       |  0        |  System   |        |          |           |  {CVEId}

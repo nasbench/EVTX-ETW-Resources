@@ -1,50 +1,50 @@
-Provider                        |  Event ID  |  Channel                                    |  Message
---------------------------------|------------|---------------------------------------------|---------
-Microsoft-Windows-OOBE-Machine  |  5001      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5002      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5003      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5004      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5005      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5006      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5007      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5008      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5009      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5010      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5011      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5012      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5013      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5014      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5015      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5016      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5017      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5018      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5019      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5020      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5021      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5022      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5023      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5024      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5025      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5026      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5027      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5028      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5029      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5030      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5031      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5032      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5033      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5034      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5035      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5036      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5037      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5038      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5039      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5040      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5041      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5042      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5043      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5044      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5045      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5046      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5047      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
-Microsoft-Windows-OOBE-Machine  |  5048      |  Microsoft-Windows-OOBE-Machine/Diagnostic  |
+Provider                        |  Level        |  Event ID  |  Version  |  Channel                                    |  Task                           |  Opcode  |  Keyword  |  Message
+--------------------------------|---------------|------------|-----------|---------------------------------------------|---------------------------------|----------|-----------|---------
+Microsoft-Windows-OOBE-Machine  |  Information  |  5001      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  WirelessNetworkListRefresh     |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5002      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  WirelessPageVisibilityResult   |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5003      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  HomeGroupPageVisibilityResult  |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5004      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  ServiceStartResult             |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5005      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CComputerPage_OnSetActive      |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5006      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CComputerPage_OnOobeWizNext    |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5007      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CComputerPage_OnKillActive     |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5008      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CEndPage_OnSetActive           |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5009      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CEndPage_OnOobeWizNext         |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5010      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CEndPage_OnKillActive          |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5011      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CEulaPage_OnSetActive          |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5012      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CEulaPage_OnOobeWizNext        |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5013      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CEulaPage_OnKillActive         |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5014      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CHomeGroupPage_OnSetActive     |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5015      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CHomeGroupPage_OnOobeWizNext   |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5016      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CHomeGroupPage_OnKillActive    |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5017      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CLanguagePage_OnSetActive      |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5018      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CLanguagePage_OnOobeWizNext    |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5019      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CLanguagePage_OnKillActive     |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5020      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CNetworkPage_OnSetActive       |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5021      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CNetworkPage_LocationSelected  |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5022      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CNetworkPage_OnKillActive      |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5023      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CPidPage_OnSetActive           |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5024      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CPidPage_OnOobeWizNext         |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5025      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CPidPage_OnKillActive          |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5026      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CProtectPCPage_OnSetActive     |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5027      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CProtectPCPage_OptionSelected  |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5028      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CProtectPCPage_OnKillActive    |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5029      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CTimeDatePage_OnSetActive      |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5030      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CTimeDatePage_OnOobeWizNext    |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5031      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CTimeDatePage_OnKillActive     |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5032      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CUserPage_OnSetActive          |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5033      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CUserPage_OnOobeWizNext        |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5034      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CUserPage_OnKillActive         |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5035      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CWelcomePage_OnSetActive       |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5036      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CWelcomePage_OnOobeWizNext     |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5037      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CWelcomePage_OnKillActive      |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5038      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CWirelessPage_OnSetActive      |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5039      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CWirelessPage_OnOobeWizNext    |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5040      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  CWirelessPage_OnKillActive     |          |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5041      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  MandatoryTasks                 |  Start   |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5042      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  MandatoryTasks                 |  Stop    |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5043      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  Finalize                       |  Start   |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5044      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  Finalize                       |  Stop    |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5045      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  RunSetupFinalTasks             |  Start   |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5046      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  RunSetupFinalTasks             |  Stop    |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5047      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  OOBE_DisplayUI                 |  Start   |           |
+Microsoft-Windows-OOBE-Machine  |  Information  |  5048      |  0        |  Microsoft-Windows-OOBE-Machine/Diagnostic  |  OOBE_DisplayUI                 |  Stop    |           |

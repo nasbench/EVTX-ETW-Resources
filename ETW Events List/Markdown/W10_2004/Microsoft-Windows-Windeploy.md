@@ -1,10 +1,10 @@
-Provider                     |  Event ID  |  Channel                               |  Message
------------------------------|------------|----------------------------------------|---------------------------------------------------------------------
-Microsoft-Windows-Windeploy  |  1001      |  Microsoft-Windows-Windeploy/Analytic  |  Windeploy.exe is running.
-Microsoft-Windows-Windeploy  |  1002      |  Microsoft-Windows-Windeploy/Analytic  |  Windeploy.exe exiting with status {ErrorCode}.
-Microsoft-Windows-Windeploy  |  2001      |  Microsoft-Windows-Windeploy/Analytic  |  Launching "{CommandLine}".
-Microsoft-Windows-Windeploy  |  2002      |  Microsoft-Windows-Windeploy/Analytic  |  External process exited with status {ErrorCode}.
-Microsoft-Windows-Windeploy  |  2003      |  Microsoft-Windows-Windeploy/Analytic  |  Failed to start external process with status {ErrorCode}.
-Microsoft-Windows-Windeploy  |  3001      |  Microsoft-Windows-Windeploy/Analytic  |  Running user-provided script: "{CommandLine}".
-Microsoft-Windows-Windeploy  |  3002      |  Microsoft-Windows-Windeploy/Analytic  |  Successfully executed script: "{Command}". Exit code is {ExitCode}.
-Microsoft-Windows-Windeploy  |  3003      |  Microsoft-Windows-Windeploy/Analytic  |  Failed to execute script: "{Command}".Exit code is {ExitCode}.
+Provider                     |  Level        |  Event ID  |  Version  |  Channel                               |  Task                                  |  Opcode  |  Keyword      |  Message
+-----------------------------|---------------|------------|-----------|----------------------------------------|----------------------------------------|----------|---------------|---------------------------------------------------------------------
+Microsoft-Windows-Windeploy  |  Information  |  1001      |  0        |  Microsoft-Windows-Windeploy/Analytic  |  Run Windeploy                         |  Start   |  Performance  |  Windeploy.exe is running.
+Microsoft-Windows-Windeploy  |  Information  |  1002      |  0        |  Microsoft-Windows-Windeploy/Analytic  |  Run Windeploy                         |  Stop    |  Performance  |  Windeploy.exe exiting with status {ErrorCode}.
+Microsoft-Windows-Windeploy  |  Information  |  2001      |  0        |  Microsoft-Windows-Windeploy/Analytic  |  Launch and wait for external process  |  Start   |  Performance  |  Launching "{CommandLine}".
+Microsoft-Windows-Windeploy  |  Information  |  2002      |  0        |  Microsoft-Windows-Windeploy/Analytic  |  Launch and wait for external process  |  Stop    |  Performance  |  External process exited with status {ErrorCode}.
+Microsoft-Windows-Windeploy  |  Information  |  2003      |  0        |  Microsoft-Windows-Windeploy/Analytic  |  Launch and wait for external process  |  Stop    |  Performance  |  Failed to start external process with status {ErrorCode}.
+Microsoft-Windows-Windeploy  |  Information  |  3001      |  0        |  Microsoft-Windows-Windeploy/Analytic  |  Run user-provided script              |  Start   |  Performance  |  Running user-provided script: "{CommandLine}".
+Microsoft-Windows-Windeploy  |  Information  |  3002      |  0        |  Microsoft-Windows-Windeploy/Analytic  |  Run user-provided script              |  Stop    |  Performance  |  Successfully executed script: "{Command}". Exit code is {ExitCode}.
+Microsoft-Windows-Windeploy  |  Information  |  3003      |  0        |  Microsoft-Windows-Windeploy/Analytic  |  Run user-provided script              |  Stop    |  Performance  |  Failed to execute script: "{Command}".Exit code is {ExitCode}.

@@ -1,5 +1,5 @@
-Provider                     |  Event ID  |  Channel                            |  Message
------------------------------|------------|-------------------------------------|-----------
-Microsoft-Windows-OneBackup  |  1000      |  Microsoft-Windows-OneBackup/Debug  |  {Message}
-Microsoft-Windows-OneBackup  |  1001      |  Microsoft-Windows-OneBackup/Debug  |  {Message}
-Microsoft-Windows-OneBackup  |  1002      |  Microsoft-Windows-OneBackup/Debug  |  {Message}
+Provider                     |  Level    |  Event ID  |  Version  |  Channel                            |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------|-----------|------------|-----------|-------------------------------------|--------|----------|-----------|-----------
+Microsoft-Windows-OneBackup  |  Error    |  1000      |  0        |  Microsoft-Windows-OneBackup/Debug  |        |          |           |  {Message}
+Microsoft-Windows-OneBackup  |  Warning  |  1001      |  0        |  Microsoft-Windows-OneBackup/Debug  |        |          |           |  {Message}
+Microsoft-Windows-OneBackup  |  Verbose  |  1002      |  0        |  Microsoft-Windows-OneBackup/Debug  |        |          |           |  {Message}

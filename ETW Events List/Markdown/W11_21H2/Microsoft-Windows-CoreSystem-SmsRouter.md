@@ -1,18 +1,18 @@
-Provider                                |  Event ID  |  Channel                        |  Message
-----------------------------------------|------------|---------------------------------|---------------------------------------------------------------------------------------------
-Microsoft-Windows-CoreSystem-SmsRouter  |  100       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  101       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  102       |  SmsRouter Operational Channel  |  [SmsRouter::{AnsiStringName}:{LineNumber}] Error {HResultName}: {Context}
-Microsoft-Windows-CoreSystem-SmsRouter  |  103       |  SmsRouter Debug Channel        |  [SmsRouter::{AnsiStringName}:{LineNumber}] {Context}
-Microsoft-Windows-CoreSystem-SmsRouter  |  200       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  201       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  301       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  302       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  303       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  304       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  1020      |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  1021      |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  1022      |  SmsRouter Operational Channel  |  Error publishing background notification to system event broker.Error is {error}: {hresult}
-Microsoft-Windows-CoreSystem-SmsRouter  |  1023      |  SmsRouter Operational Channel  |  No WNF state name found for this device.Error is {error}: {hresult}
-Microsoft-Windows-CoreSystem-SmsRouter  |  1024      |  SmsRouter Operational Channel  |  Error getting network account details from device node.Error is {error}: {hresult}
-Microsoft-Windows-CoreSystem-SmsRouter  |  1025      |  SmsRouter Operational Channel  |  Error - Could not decode SMS message.Error is {error}: {hresult}
+Provider                                |  Level        |  Event ID  |  Version  |  Channel                        |  Task                 |  Opcode  |  Keyword      |  Message
+----------------------------------------|---------------|------------|-----------|---------------------------------|-----------------------|----------|---------------|---------------------------------------------------------------------------------------------
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  100       |  0        |  SmsRouter Operational Channel  |  SmsRouter            |  Start   |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  101       |  0        |  SmsRouter Operational Channel  |  SmsRouter            |  Stop    |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Error        |  102       |  0        |  SmsRouter Operational Channel  |  SmsRouter            |          |  Error        |  [SmsRouter::{AnsiStringName}:{LineNumber}] Error {HResultName}: {Context}
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  103       |  0        |  SmsRouter Debug Channel        |  SmsRouter            |          |  Performance  |  [SmsRouter::{AnsiStringName}:{LineNumber}] {Context}
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  200       |  0        |  SmsRouter Operational Channel  |  SmsBroker            |  Start   |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  201       |  0        |  SmsRouter Operational Channel  |  SmsBroker            |  Stop    |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  301       |  0        |  SmsRouter Operational Channel  |                       |          |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  302       |  0        |  SmsRouter Operational Channel  |                       |          |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  303       |  0        |  SmsRouter Operational Channel  |                       |          |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  304       |  0        |  SmsRouter Operational Channel  |                       |          |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  1020      |  0        |  SmsRouter Operational Channel  |  ProcessNotification  |  Start   |               |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  1021      |  0        |  SmsRouter Operational Channel  |  ProcessNotification  |  Stop    |               |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Error        |  1022      |  0        |  SmsRouter Operational Channel  |                       |          |  Error        |  Error publishing background notification to system event broker.Error is {error}: {hresult}
+Microsoft-Windows-CoreSystem-SmsRouter  |  Error        |  1023      |  0        |  SmsRouter Operational Channel  |                       |          |  Error        |  No WNF state name found for this device.Error is {error}: {hresult}
+Microsoft-Windows-CoreSystem-SmsRouter  |  Error        |  1024      |  0        |  SmsRouter Operational Channel  |                       |          |  Error        |  Error getting network account details from device node.Error is {error}: {hresult}
+Microsoft-Windows-CoreSystem-SmsRouter  |  Error        |  1025      |  0        |  SmsRouter Operational Channel  |                       |          |  Error        |  Error - Could not decode SMS message.Error is {error}: {hresult}

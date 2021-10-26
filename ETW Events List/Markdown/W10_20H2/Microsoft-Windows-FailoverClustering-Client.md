@@ -1,53 +1,53 @@
-Provider                                     |  Event ID  |  Channel                                                 |  Message
----------------------------------------------|------------|----------------------------------------------------------|--------------
-Microsoft-Windows-FailoverClustering-Client  |  1         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  2         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  3         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  4         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  5         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  6         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  7         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  8         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  9         |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  16        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  17        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  18        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  19        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  20        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  21        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  22        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  23        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  24        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  25        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  32        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  33        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  34        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  35        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  36        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  37        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  38        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  39        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  40        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  41        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  48        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  49        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  50        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  51        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  52        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  53        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  54        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  55        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  56        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  57        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  64        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  65        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  66        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  67        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  68        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  69        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  70        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  71        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  72        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  73        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  80        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |  {Parameter1}
-Microsoft-Windows-FailoverClustering-Client  |  81        |  System                                                  |  {Parameter1}
+Provider                                     |  Level        |  Event ID  |  Version  |  Channel                                                 |  Task  |  Opcode  |  Keyword    |  Message
+---------------------------------------------|---------------|------------|-----------|----------------------------------------------------------|--------|----------|-------------|--------------
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  1         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Cluster    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  2         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Cluster    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  3         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Cluster    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  4         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Cluster    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  5         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Cluster    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  6         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Node       |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  7         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Node       |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  8         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Node       |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  9         |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Node       |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  16        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Node       |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  17        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Group      |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  18        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Group      |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  19        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Group      |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  20        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Group      |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  21        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Group      |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  22        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Resource   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  23        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Resource   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  24        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Resource   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  25        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Resource   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  32        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Resource   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  33        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Network    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  34        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Network    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  35        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Network    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  36        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Network    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  37        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Network    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  38        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  NetInt     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  39        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  NetInt     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  40        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  NetInt     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  41        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  NetInt     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  48        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  NetInt     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  49        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Quorum     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  50        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Quorum     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  51        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Quorum     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  52        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Quorum     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  53        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Quorum     |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  54        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Reconnect  |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  55        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Reconnect  |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  56        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Reconnect  |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  57        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Reconnect  |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  64        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Reconnect  |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  65        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  ResType    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  66        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  ResType    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  67        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  ResType    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  68        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  ResType    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  69        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  ResType    |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Critical     |  70        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Property   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  71        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Property   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Warning      |  72        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Property   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Information  |  73        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Property   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Verbose      |  80        |  0        |  Microsoft-Windows-FailoverClustering-Client/Diagnostic  |        |          |  Property   |  {Parameter1}
+Microsoft-Windows-FailoverClustering-Client  |  Error        |  81        |  0        |  System                                                  |        |          |  RPCLog     |  {Parameter1}

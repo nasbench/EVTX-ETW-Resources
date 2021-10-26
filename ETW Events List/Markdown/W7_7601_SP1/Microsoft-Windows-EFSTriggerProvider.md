@@ -1,3 +1,3 @@
-Provider                              |  Event ID  |  Channel  |  Message
---------------------------------------|------------|-----------|---------
-Microsoft-Windows-EFSTriggerProvider  |  1         |           |
+Provider                              |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                |  Keyword                |  Message
+--------------------------------------|---------------|------------|-----------|-----------|--------|------------------------|-------------------------|---------
+Microsoft-Windows-EFSTriggerProvider  |  Information  |  1         |  0        |           |        |  Opcode_EfsStartEvent  |  Keyword_EfsStartEvent  |

@@ -1,3 +1,3 @@
-Provider                    |  Event ID  |  Channel  |  Message
-----------------------------|------------|-----------|---------
-Microsoft-Windows-WlanPref  |  8001      |           |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel  |  Task          |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|-----------|----------------|----------|-----------|---------
+Microsoft-Windows-WlanPref  |  Information  |  8001      |  0        |           |  ShowWlanPref  |  Stop    |           |

@@ -1,26 +1,26 @@
-Provider                                    |  Event ID  |  Channel  |  Message
---------------------------------------------|------------|-----------|----------------------------------------------------------------------------------------
-Microsoft-Windows-UniversalTelemetryClient  |  1         |           |  Tenant {IKey} has been registered for telemetry usage.
-Microsoft-Windows-UniversalTelemetryClient  |  2         |           |  Tenant {IKey} has been unregistered for telemetry usage.
-Microsoft-Windows-UniversalTelemetryClient  |  3         |           |  The daily upload quota for {IKey} has been updated to {DailyUploadQuotaInBytes} bytes.
-Microsoft-Windows-UniversalTelemetryClient  |  20        |           |  The upload URL has changed to {Url} .
-Microsoft-Windows-UniversalTelemetryClient  |  21        |           |  Upload failed with the following HRESULT: {HRESULT}
-Microsoft-Windows-UniversalTelemetryClient  |  22        |           |  The daily upload quota for SENSE has crossed into a new tier.
-Microsoft-Windows-UniversalTelemetryClient  |  23        |           |  Storage capacity for the SENSE tenant has changed to a new tier.
-Microsoft-Windows-UniversalTelemetryClient  |  24        |           |  An unknown and unconfigured dynamic Vortex region {Region} was attempted to be set.
-Microsoft-Windows-UniversalTelemetryClient  |  25        |           |  The event storage for SENSE has been throttled.
-Microsoft-Windows-UniversalTelemetryClient  |  26        |           |  The upload for SENSE has been throttled.
-Microsoft-Windows-UniversalTelemetryClient  |  27        |           |  Connection state - All connections have succeeded since the previous period.
-Microsoft-Windows-UniversalTelemetryClient  |  28        |           |  Connection state - Some connections have failed since the previous period.
-Microsoft-Windows-UniversalTelemetryClient  |  29        |           |  Connection state - Some connections have failed since the previous period.
-Microsoft-Windows-UniversalTelemetryClient  |  50        |           |  The service has been started to the following state: {Status}.
-Microsoft-Windows-UniversalTelemetryClient  |  55        |           |  Is the Internet available: {State}
-Microsoft-Windows-UniversalTelemetryClient  |  56        |           |  Is a free network available: {State}
-Microsoft-Windows-UniversalTelemetryClient  |  60        |           |  Is device on battery power: {State}
-Microsoft-Windows-UniversalTelemetryClient  |  61        |           |  Is the Battery Saver state enabled: {State}
-Microsoft-Windows-UniversalTelemetryClient  |  62        |           |  Is the device in connected standby: {State}
-Microsoft-Windows-UniversalTelemetryClient  |  63        |           |  Has the service used more power than considered reasonable: {State}
-Microsoft-Windows-UniversalTelemetryClient  |  64        |           |  Diagnostic Data Collection Level
-Microsoft-Windows-UniversalTelemetryClient  |  65        |           |  The agent has transitioned to or from an idle state.
-Microsoft-Windows-UniversalTelemetryClient  |  66        |           |  The diagnostic and feedback permission level has changed.
-Microsoft-Windows-UniversalTelemetryClient  |  67        |           |
+Provider                                    |  Level        |  Event ID  |  Version  |  Channel  |  Task                                         |  Opcode  |  Keyword  |  Message
+--------------------------------------------|---------------|------------|-----------|-----------|-----------------------------------------------|----------|-----------|----------------------------------------------------------------------------------------
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  1         |  0        |           |  Tenant_Register                              |          |  Tenant   |  Tenant {IKey} has been registered for telemetry usage.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  2         |  0        |           |  Tenant_Unregister                            |          |  Tenant   |  Tenant {IKey} has been unregistered for telemetry usage.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  3         |  0        |           |  Tenant_UpdateDailyUploadQuota                |          |  Tenant   |  The daily upload quota for {IKey} has been updated to {DailyUploadQuotaInBytes} bytes.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  20        |  0        |           |  Upload_UrlChanged                            |          |  Upload   |  The upload URL has changed to {Url} .
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  21        |  0        |           |  Upload_ConnectionError                       |          |  Upload   |  Upload failed with the following HRESULT: {HRESULT}
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  22        |  0        |           |  Upload_SevilleBandwidthMonitor_TierChange    |          |  Upload   |  The daily upload quota for SENSE has crossed into a new tier.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  23        |  0        |           |  Upload_SevilleEventStorage_TierChange        |          |  Upload   |  Storage capacity for the SENSE tenant has changed to a new tier.
+Microsoft-Windows-UniversalTelemetryClient  |  Warning      |  24        |  0        |           |  Upload_UnconfiguredDynamicRegion             |          |  Upload   |  An unknown and unconfigured dynamic Vortex region {Region} was attempted to be set.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  25        |  0        |           |  Upload_SevilleEventStorage_StorageThrottled  |          |  Upload   |  The event storage for SENSE has been throttled.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  26        |  0        |           |  Upload_SevilleBandwidth_Throttled            |          |  Upload   |  The upload for SENSE has been throttled.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  27        |  0        |           |  Upload_SevilleEventlog_Info                  |          |  Upload   |  Connection state - All connections have succeeded since the previous period.
+Microsoft-Windows-UniversalTelemetryClient  |  Warning      |  28        |  0        |           |  Upload_SevilleEventlog_Warning               |          |  Upload   |  Connection state - Some connections have failed since the previous period.
+Microsoft-Windows-UniversalTelemetryClient  |  Error        |  29        |  0        |           |  Upload_SevilleEventlog_Error                 |          |  Upload   |  Connection state - Some connections have failed since the previous period.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  50        |  0        |           |  Service_ServiceStart                         |          |  Service  |  The service has been started to the following state: {Status}.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  55        |  0        |           |  Service_InternetAvailable                    |          |  Service  |  Is the Internet available: {State}
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  56        |  0        |           |  Service_FreeNetworkAvailable                 |          |  Service  |  Is a free network available: {State}
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  60        |  0        |           |  Service_OnBatteryPower                       |          |  Service  |  Is device on battery power: {State}
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  61        |  0        |           |  Service_OnBatterySaver                       |          |  Service  |  Is the Battery Saver state enabled: {State}
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  62        |  0        |           |  Service_InConnectedStandby                   |          |  Service  |  Is the device in connected standby: {State}
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  63        |  0        |           |  Service_PowerLimitExceeded                   |          |  Service  |  Has the service used more power than considered reasonable: {State}
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  64        |  0        |           |  Service_OptInLevelChange                     |          |  Service  |  Diagnostic Data Collection Level
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  65        |  0        |           |  Agent_IdleStateChange                        |          |  Agent    |  The agent has transitioned to or from an idle state.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  66        |  0        |           |  Service_OptInApiEventlog_Info                |          |  Upload   |  The diagnostic and feedback permission level has changed.
+Microsoft-Windows-UniversalTelemetryClient  |  Information  |  67        |  0        |           |  Service_ProcessorMode_NoAadOrCommercialId    |          |  Upload   |

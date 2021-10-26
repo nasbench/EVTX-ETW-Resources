@@ -1,34 +1,34 @@
-Provider                       |  Event ID  |  Channel  |  Message
--------------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Kernel-WHEA  |  1         |  System   |  A non-fatal hardware error occurred.
-Microsoft-Windows-Kernel-WHEA  |  2         |  System   |  A fatal hardware error occurred.
-Microsoft-Windows-Kernel-WHEA  |  3         |           |  A non-fatal hardware error occurred.
-Microsoft-Windows-Kernel-WHEA  |  4         |           |  A fatal hardware error occurred.
-Microsoft-Windows-Kernel-WHEA  |  5         |           |  WHEA successfully initialized.   {ErrorSourceCount} error sources are active   Error record format version is {ErrorRecordFormat}.
-Microsoft-Windows-Kernel-WHEA  |  6         |  System   |  Machine Check Event reported is a fatal memory hierarchy error. Trasaction Type: {TransactionType} Memory Hierarchy Level: {MemHierarchyLvl} Request Type: {RequestType} Address: {Address}
-Microsoft-Windows-Kernel-WHEA  |  7         |           |  Machine Check Event reported is a memory hierarchy error. Trasaction Type: {TransactionType} Memory Hierarchy Level: {MemHierarchyLvl} Request Type: {RequestType} Address: {Address}
-Microsoft-Windows-Kernel-WHEA  |  8         |  System   |  Machine Check Event reported is a fatal TLB error. Transaction Type: {TransactionType} Memory Hierarchy Level: {MemHierarchyLvl} Address: {Address}
-Microsoft-Windows-Kernel-WHEA  |  9         |           |  Machine Check Event reported is a TLB error. Transaction Type: {TransactionType} Memory Hierarchy Level: {MemHierarchyLvl} Address: {Address}
-Microsoft-Windows-Kernel-WHEA  |  10        |  System   |  Machine Check Event reported is a fatal Bus or Interconnect error. Memory Hierarchy Level: {MemHierarchyLvl} Participation: {Participation} Request Type: {RequestType} Memory/IO: {MemorIO} Address: {Address}
-Microsoft-Windows-Kernel-WHEA  |  11        |           |  Machine Check Event reported is a Bus or Interconnect error. Memory Hierarchy Level: {MemHierarchyLvl} Participation: {Participation} Request Type: {RequestType} Memory/IO: {MemorIO} Address: {Address}
-Microsoft-Windows-Kernel-WHEA  |  12        |  System   |  Machine Check Event reported is a fatal Bus or Interconnect timeout error. Memory Hierarchy Level: {MemHierarchyLvl} Participation: {Participation} Request Type: {RequestType} Memory/IO: {MemorIO} Address: {Address}
-Microsoft-Windows-Kernel-WHEA  |  13        |           |  Machine Check Event reported is a Bus or Interconnect timeout error. Memory Hierarchy Level: {MemHierarchyLvl} Participation: {Participation} Request Type: {RequestType} Memory/IO: {MemorIO} Address: {Address}
-Microsoft-Windows-Kernel-WHEA  |  14        |  System   |  Machine Check Event reported is a fatal internal watchdog timer error.
-Microsoft-Windows-Kernel-WHEA  |  15        |           |  Machine Check Event reported is a fatal microcode ROM parity error.
-Microsoft-Windows-Kernel-WHEA  |  16        |  System   |  Machine Check Event reported is a fatal condition. A processor received an external signal that an unrecoverable error has occurred.
-Microsoft-Windows-Kernel-WHEA  |  17        |  System   |  Machine Check Event reported is a fatal functional redundancy check error.
-Microsoft-Windows-Kernel-WHEA  |  18        |  System   |  PCI Express reported a fatal error. Device Identifier: Bus {SourceIdBus} Device {SourceIdDev} Function {SourceIdFun} Uncorrectable Error Status: {UncorrectableErrorStatus} Correctable Error Status: {CorrectableErrorStatus} Header Log: {HeaderLog0} {HeaderLog1} {HeaderLog2} {HeaderLog3}
-Microsoft-Windows-Kernel-WHEA  |  19        |           |  PCI Express reported a non-fatal error. Device Identifier: Bus {SourceIdBus} Device {SourceIdDev} Function {SourceIdFun} Uncorrectable Error Status: {UncorrectableErrorStatus} Correctable Error Status: {CorrectableErrorStatus} Header Log: {HeaderLog0} {HeaderLog1} {HeaderLog2} {HeaderLog3}
-Microsoft-Windows-Kernel-WHEA  |  20        |           |  WHEA Event
-Microsoft-Windows-Kernel-WHEA  |  31        |  System   |  The memory page located at physical address {PhysicalAddress} {Pending} {PlatformDirected} {Uncorrected}. {Persisted}
-Microsoft-Windows-Kernel-WHEA  |  32        |           |
-Microsoft-Windows-Kernel-WHEA  |  33        |           |
-Microsoft-Windows-Kernel-WHEA  |  34        |           |
-Microsoft-Windows-Kernel-WHEA  |  35        |           |
-Microsoft-Windows-Kernel-WHEA  |  36        |           |
-Microsoft-Windows-Kernel-WHEA  |  37        |           |
-Microsoft-Windows-Kernel-WHEA  |  38        |           |
-Microsoft-Windows-Kernel-WHEA  |  39        |           |
-Microsoft-Windows-Kernel-WHEA  |  40        |           |
-Microsoft-Windows-Kernel-WHEA  |  41        |  System   |  A processs was terminated due to an uncorrected hardware error. Process ID: {ProcessId} Image name: {ProcessName}
-Microsoft-Windows-Kernel-WHEA  |  42        |           |  WHEA event log entry
+Provider                       |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword                 |  Message
+-------------------------------|---------------|------------|-----------|-----------|--------|----------|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-WHEA  |  Warning      |  1         |  0        |  System   |        |          |                          |  A non-fatal hardware error occurred.
+Microsoft-Windows-Kernel-WHEA  |  Error        |  2         |  0        |  System   |        |          |                          |  A fatal hardware error occurred.
+Microsoft-Windows-Kernel-WHEA  |  Warning      |  3         |  0        |           |        |          |                          |  A non-fatal hardware error occurred.
+Microsoft-Windows-Kernel-WHEA  |  Error        |  4         |  0        |           |        |          |                          |  A fatal hardware error occurred.
+Microsoft-Windows-Kernel-WHEA  |  Information  |  5         |  0        |           |        |          |                          |  WHEA successfully initialized.   {ErrorSourceCount} error sources are active   Error record format version is {ErrorRecordFormat}.
+Microsoft-Windows-Kernel-WHEA  |  Error        |  6         |  0        |  System   |        |          |                          |  Machine Check Event reported is a fatal memory hierarchy error. Trasaction Type: {TransactionType} Memory Hierarchy Level: {MemHierarchyLvl} Request Type: {RequestType} Address: {Address}
+Microsoft-Windows-Kernel-WHEA  |  Warning      |  7         |  0        |           |        |          |                          |  Machine Check Event reported is a memory hierarchy error. Trasaction Type: {TransactionType} Memory Hierarchy Level: {MemHierarchyLvl} Request Type: {RequestType} Address: {Address}
+Microsoft-Windows-Kernel-WHEA  |  Error        |  8         |  0        |  System   |        |          |                          |  Machine Check Event reported is a fatal TLB error. Transaction Type: {TransactionType} Memory Hierarchy Level: {MemHierarchyLvl} Address: {Address}
+Microsoft-Windows-Kernel-WHEA  |  Warning      |  9         |  0        |           |        |          |                          |  Machine Check Event reported is a TLB error. Transaction Type: {TransactionType} Memory Hierarchy Level: {MemHierarchyLvl} Address: {Address}
+Microsoft-Windows-Kernel-WHEA  |  Error        |  10        |  0        |  System   |        |          |                          |  Machine Check Event reported is a fatal Bus or Interconnect error. Memory Hierarchy Level: {MemHierarchyLvl} Participation: {Participation} Request Type: {RequestType} Memory/IO: {MemorIO} Address: {Address}
+Microsoft-Windows-Kernel-WHEA  |  Warning      |  11        |  0        |           |        |          |                          |  Machine Check Event reported is a Bus or Interconnect error. Memory Hierarchy Level: {MemHierarchyLvl} Participation: {Participation} Request Type: {RequestType} Memory/IO: {MemorIO} Address: {Address}
+Microsoft-Windows-Kernel-WHEA  |  Error        |  12        |  0        |  System   |        |          |                          |  Machine Check Event reported is a fatal Bus or Interconnect timeout error. Memory Hierarchy Level: {MemHierarchyLvl} Participation: {Participation} Request Type: {RequestType} Memory/IO: {MemorIO} Address: {Address}
+Microsoft-Windows-Kernel-WHEA  |  Warning      |  13        |  0        |           |        |          |                          |  Machine Check Event reported is a Bus or Interconnect timeout error. Memory Hierarchy Level: {MemHierarchyLvl} Participation: {Participation} Request Type: {RequestType} Memory/IO: {MemorIO} Address: {Address}
+Microsoft-Windows-Kernel-WHEA  |  Error        |  14        |  0        |  System   |        |          |                          |  Machine Check Event reported is a fatal internal watchdog timer error.
+Microsoft-Windows-Kernel-WHEA  |  Error        |  15        |  0        |           |        |          |                          |  Machine Check Event reported is a fatal microcode ROM parity error.
+Microsoft-Windows-Kernel-WHEA  |  Error        |  16        |  0        |  System   |        |          |                          |  Machine Check Event reported is a fatal condition. A processor received an external signal that an unrecoverable error has occurred.
+Microsoft-Windows-Kernel-WHEA  |  Error        |  17        |  0        |  System   |        |          |                          |  Machine Check Event reported is a fatal functional redundancy check error.
+Microsoft-Windows-Kernel-WHEA  |  Error        |  18        |  0        |  System   |        |          |                          |  PCI Express reported a fatal error. Device Identifier: Bus {SourceIdBus} Device {SourceIdDev} Function {SourceIdFun} Uncorrectable Error Status: {UncorrectableErrorStatus} Correctable Error Status: {CorrectableErrorStatus} Header Log: {HeaderLog0} {HeaderLog1} {HeaderLog2} {HeaderLog3}
+Microsoft-Windows-Kernel-WHEA  |  Warning      |  19        |  0        |           |        |          |                          |  PCI Express reported a non-fatal error. Device Identifier: Bus {SourceIdBus} Device {SourceIdDev} Function {SourceIdFun} Uncorrectable Error Status: {UncorrectableErrorStatus} Correctable Error Status: {CorrectableErrorStatus} Header Log: {HeaderLog0} {HeaderLog1} {HeaderLog2} {HeaderLog3}
+Microsoft-Windows-Kernel-WHEA  |  Information  |  20        |  0        |           |        |          |  WHEA Error Events       |  WHEA Event
+Microsoft-Windows-Kernel-WHEA  |  Information  |  31        |  0        |  System   |        |          |  WHEA Error Events       |  The memory page located at physical address {PhysicalAddress} {Pending} {PlatformDirected} {Uncorrected}. {Persisted}
+Microsoft-Windows-Kernel-WHEA  |  Information  |  32        |  0        |           |        |          |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  33        |  0        |           |        |          |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  34        |  0        |           |        |          |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  35        |  0        |           |        |  Stop    |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  36        |  0        |           |        |          |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  37        |  0        |           |        |          |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  38        |  0        |           |        |          |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  39        |  0        |           |        |          |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  40        |  0        |           |        |          |                          |
+Microsoft-Windows-Kernel-WHEA  |  Information  |  41        |  0        |  System   |        |          |  WHEA Error Events       |  A processs was terminated due to an uncorrected hardware error. Process ID: {ProcessId} Image name: {ProcessName}
+Microsoft-Windows-Kernel-WHEA  |  Information  |  42        |  0        |           |        |          |  WHEA Event Log Entries  |  WHEA event log entry

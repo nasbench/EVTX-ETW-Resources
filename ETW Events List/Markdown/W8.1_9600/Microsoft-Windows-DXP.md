@@ -1,32 +1,32 @@
-Provider               |  Event ID  |  Channel                         |  Message
------------------------|------------|----------------------------------|---------
-Microsoft-Windows-DXP  |  1         |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  2         |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  3         |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  4         |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  5         |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  6         |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  7         |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  8         |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  11        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  12        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  13        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  14        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  15        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  16        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  18        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  19        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  20        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  21        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  22        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  23        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  24        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  25        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  26        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  27        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  28        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  29        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  30        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  31        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  32        |  Microsoft-Windows-DXP/Analytic  |
-Microsoft-Windows-DXP  |  33        |  Microsoft-Windows-DXP/Analytic  |
+Provider               |  Level        |  Event ID  |  Version  |  Channel                         |  Task                     |  Opcode  |  Keyword  |  Message
+-----------------------|---------------|------------|-----------|----------------------------------|---------------------------|----------|-----------|---------
+Microsoft-Windows-DXP  |  Information  |  1         |  0        |  Microsoft-Windows-DXP/Analytic  |  WorkingSetComposition    |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  2         |  0        |  Microsoft-Windows-DXP/Analytic  |  WorkingSetComposition    |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  3         |  0        |  Microsoft-Windows-DXP/Analytic  |  MetadataAcquisition      |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  4         |  0        |  Microsoft-Windows-DXP/Analytic  |  MetadataAcquisition      |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  5         |  0        |  Microsoft-Windows-DXP/Analytic  |  SignatureVerification    |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  6         |  0        |  Microsoft-Windows-DXP/Analytic  |  SignatureVerification    |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  7         |  0        |  Microsoft-Windows-DXP/Analytic  |  DestinationListCreation  |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  8         |  0        |  Microsoft-Windows-DXP/Analytic  |  DestinationListCreation  |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  11        |  0        |  Microsoft-Windows-DXP/Analytic  |  AutoPlayLaunch           |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  12        |  0        |  Microsoft-Windows-DXP/Analytic  |  AutoPlayLaunch           |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  13        |  0        |  Microsoft-Windows-DXP/Analytic  |  Launcher                 |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  14        |  0        |  Microsoft-Windows-DXP/Analytic  |  Launcher                 |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  15        |  0        |  Microsoft-Windows-DXP/Analytic  |  Launcher                 |          |           |
+Microsoft-Windows-DXP  |  Information  |  16        |  0        |  Microsoft-Windows-DXP/Analytic  |  Launcher                 |          |           |
+Microsoft-Windows-DXP  |  Information  |  18        |  0        |  Microsoft-Windows-DXP/Analytic  |  LayoutInitialized        |          |           |
+Microsoft-Windows-DXP  |  Information  |  19        |  0        |  Microsoft-Windows-DXP/Analytic  |  Status                   |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  20        |  0        |  Microsoft-Windows-DXP/Analytic  |  Status                   |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  21        |  0        |  Microsoft-Windows-DXP/Analytic  |  Tasks                    |          |           |
+Microsoft-Windows-DXP  |  Information  |  22        |  0        |  Microsoft-Windows-DXP/Analytic  |  DeviceAccess             |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  23        |  0        |  Microsoft-Windows-DXP/Analytic  |  DeviceAccess             |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  24        |  0        |  Microsoft-Windows-DXP/Analytic  |  Tasks                    |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  25        |  0        |  Microsoft-Windows-DXP/Analytic  |  Tasks                    |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  26        |  0        |  Microsoft-Windows-DXP/Analytic  |  SSO                      |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  27        |  0        |  Microsoft-Windows-DXP/Analytic  |  SSO                      |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  28        |  0        |  Microsoft-Windows-DXP/Analytic  |  DeviceConnect            |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  29        |  0        |  Microsoft-Windows-DXP/Analytic  |  DeviceConnect            |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  30        |  0        |  Microsoft-Windows-DXP/Analytic  |  LayoutInitialized        |          |           |
+Microsoft-Windows-DXP  |  Information  |  31        |  0        |  Microsoft-Windows-DXP/Analytic  |  LayoutInitialized        |  Start   |           |
+Microsoft-Windows-DXP  |  Information  |  32        |  0        |  Microsoft-Windows-DXP/Analytic  |  LayoutInitialized        |  Stop    |           |
+Microsoft-Windows-DXP  |  Information  |  33        |  0        |  Microsoft-Windows-DXP/Analytic  |  LayoutInitialized        |          |           |

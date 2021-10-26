@@ -1,23 +1,23 @@
-Provider                                    |  Event ID  |  Channel                                                |  Message
---------------------------------------------|------------|---------------------------------------------------------|---------
-Microsoft-Windows-DesktopActivityModerator  |  1         |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  4         |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  9         |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  11        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  19        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  21        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  22        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  23        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  24        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  25        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  26        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  31        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  32        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  41        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  42        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  51        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  52        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  53        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  54        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  60        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
-Microsoft-Windows-DesktopActivityModerator  |  61        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |
+Provider                                    |  Level        |  Event ID  |  Version  |  Channel                                                |  Task                 |  Opcode  |  Keyword          |  Message
+--------------------------------------------|---------------|------------|-----------|---------------------------------------------------------|-----------------------|----------|-------------------|---------
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  1         |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  StartDriver          |  Start   |  StartStopDriver  |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  4         |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  StartDriver          |          |  StartStopDriver  |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  9         |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  StartDriver          |  Stop    |  StartStopDriver  |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  11        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  StopDriver           |  Start   |  StartStopDriver  |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  19        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  StopDriver           |  Stop    |  StartStopDriver  |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  21        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  SuspendResume        |  Start   |  Control          |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  22        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  SuspendResume        |  Stop    |  Control          |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  23        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  Throttle             |  Start   |  Control          |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  24        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  Throttle             |  Stop    |  Control          |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  25        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  ResiliencyEngage     |  Start   |  Control          |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  26        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  ResiliencyEngage     |  Stop    |  Control          |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  31        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  ProcessActivity      |  Start   |  ProcessActivity  |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  32        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  ProcessActivity      |  Stop    |  ProcessActivity  |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  41        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  ProcessExempt        |          |  Policy           |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  42        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  PolicyReload         |          |  Policy           |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  51        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  PdcCallback          |          |  Pdc              |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  52        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  PdcCallback          |          |  Pdc              |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  53        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  PdcCallback          |          |  Pdc              |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  54        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  PdcAcknowledge       |          |  Pdc              |
+Microsoft-Windows-DesktopActivityModerator  |  Information  |  60        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  IoTrackingPerfTrack  |          |  IoTracking       |
+Microsoft-Windows-DesktopActivityModerator  |  Verbose      |  61        |  0        |  Microsoft-Windows-DesktopActivityModerator/Diagnostic  |  IoTrackingCallback   |          |  IoTracking       |

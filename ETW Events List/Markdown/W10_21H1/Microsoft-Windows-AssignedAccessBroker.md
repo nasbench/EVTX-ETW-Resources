@@ -1,14 +1,14 @@
-Provider                                |  Event ID  |  Channel                                       |  Message
-----------------------------------------|------------|------------------------------------------------|---------------------------------------------------------------------------------------------------------
-Microsoft-Windows-AssignedAccessBroker  |  30000     |  Microsoft-Windows-AssignedAccessBroker/Admin  |  Activated above lock app {AboveLockAppAUMID} using interface {InterfaceType} with return code {HResult}
-Microsoft-Windows-AssignedAccessBroker  |  30002     |  Microsoft-Windows-AssignedAccessBroker/Admin  |
-Microsoft-Windows-AssignedAccessBroker  |  30003     |  Microsoft-Windows-AssignedAccessBroker/Admin  |  Above lock app exited with result code {Result}
-Microsoft-Windows-AssignedAccessBroker  |  30004     |  Microsoft-Windows-AssignedAccessBroker/Admin  |  This is a custom event, see details for more information
-Microsoft-Windows-AssignedAccessBroker  |  30005     |  Microsoft-Windows-AssignedAccessBroker/Admin  |  Failed to get {Interface} with return code {HResult}
-Microsoft-Windows-AssignedAccessBroker  |  30006     |  Microsoft-Windows-AssignedAccessBroker/Admin  |
-Microsoft-Windows-AssignedAccessBroker  |  30007     |  Microsoft-Windows-AssignedAccessBroker/Admin  |  {Interface} failed with return code {HResult}
-Microsoft-Windows-AssignedAccessBroker  |  30008     |  Microsoft-Windows-AssignedAccessBroker/Admin  |  Abovelock toast operation {Operation} failed with return code {HResult}
-Microsoft-Windows-AssignedAccessBroker  |  30009     |  Microsoft-Windows-AssignedAccessBroker/Admin  |  Set PowerRequestActiveLockScreenInternal request action {RequestAction}, returns code {HResult}
-Microsoft-Windows-AssignedAccessBroker  |  30010     |  Microsoft-Windows-AssignedAccessBroker/Admin  |  Close power request handle returns {Result}
-Microsoft-Windows-AssignedAccessBroker  |  30011     |  Microsoft-Windows-AssignedAccessBroker/Admin  |
-Microsoft-Windows-AssignedAccessBroker  |  30012     |  Microsoft-Windows-AssignedAccessBroker/Admin  |
+Provider                                |  Level        |  Event ID  |  Version  |  Channel                                       |  Task                                         |  Opcode  |  Keyword  |  Message
+----------------------------------------|---------------|------------|-----------|------------------------------------------------|-----------------------------------------------|----------|-----------|---------------------------------------------------------------------------------------------------------
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30000     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  ActivateAssignedAccessApplication            |          |           |  Activated above lock app {AboveLockAppAUMID} using interface {InterfaceType} with return code {HResult}
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30002     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  WaitForAssignedAccessApplicationToDie        |          |           |
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30003     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  WaitForAssignedAccessApplicationToDie        |          |           |  Above lock app exited with result code {Result}
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30004     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  CustomTask                                   |          |           |  This is a custom event, see details for more information
+Microsoft-Windows-AssignedAccessBroker  |  Error        |  30005     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  LockFrameworkQueryTask                       |          |           |  Failed to get {Interface} with return code {HResult}
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30006     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  UnlockTask                                   |          |           |
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30007     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  LockAppPidTask                               |          |           |  {Interface} failed with return code {HResult}
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30008     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  AbovelockToastTask                           |          |           |  Abovelock toast operation {Operation} failed with return code {HResult}
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30009     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  SetPowerManagerStatusTask                    |          |           |  Set PowerRequestActiveLockScreenInternal request action {RequestAction}, returns code {HResult}
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30010     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  ClosePowerRequestHandleTask                  |          |           |  Close power request handle returns {Result}
+Microsoft-Windows-AssignedAccessBroker  |  Error        |  30011     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  ReportUnresponsiveAssignedAccessApplication  |          |           |
+Microsoft-Windows-AssignedAccessBroker  |  Information  |  30012     |  0        |  Microsoft-Windows-AssignedAccessBroker/Admin  |  AppSpecificSettingsTask                      |          |           |

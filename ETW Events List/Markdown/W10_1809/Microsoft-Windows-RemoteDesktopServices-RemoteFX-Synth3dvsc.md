@@ -1,5 +1,5 @@
-Provider                                                     |  Event ID  |  Channel  |  Message
--------------------------------------------------------------|------------|-----------|------------------------------------------------------------------------------------------------
-Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc  |  1         |  Admin    |  Microsoft RemoteFX Synth3D Video VSC loaded.
-Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc  |  2         |  Admin    |  Microsoft RemoteFX Synth3D Video VSC unloaded.
-Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc  |  4         |  Admin    |  The RemoteFX-enabled virtual machine negotiated protcol version: {MajorVersion}.{MinorVersion}
+Provider                                                     |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|------------------------------------------------------------------------------------------------
+Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc  |  Information  |  1         |  0        |  Admin    |        |          |           |  Microsoft RemoteFX Synth3D Video VSC loaded.
+Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc  |  Information  |  2         |  0        |  Admin    |        |          |           |  Microsoft RemoteFX Synth3D Video VSC unloaded.
+Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc  |  Information  |  4         |  0        |  Admin    |        |          |           |  The RemoteFX-enabled virtual machine negotiated protcol version: {MajorVersion}.{MinorVersion}

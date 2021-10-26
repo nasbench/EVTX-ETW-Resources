@@ -1,23 +1,23 @@
-Provider                             |  Event ID  |  Channel  |  Message
--------------------------------------|------------|-----------|----------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Kernel-ShimEngine  |  1         |           |
-Microsoft-Windows-Kernel-ShimEngine  |  2         |           |
-Microsoft-Windows-Kernel-ShimEngine  |  3         |           |  {ShimCount} shim(s) were applied to driver [{DriverName}].Shim(s) source: {ShimSource}.Shim GUID(s): {AppliedGuids}.
-Microsoft-Windows-Kernel-ShimEngine  |  4         |           |  Flags [{Flags}] were applied to device [{DeviceName}] - class [{DeviceClass}].Flags source: {FlagSource}.
-Microsoft-Windows-Kernel-ShimEngine  |  5         |           |
-Microsoft-Windows-Kernel-ShimEngine  |  6         |           |
-Microsoft-Windows-Kernel-ShimEngine  |  10        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  11        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  12        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  13        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  14        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  15        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  16        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  17        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  18        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  19        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  20        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  21        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  22        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  23        |           |
-Microsoft-Windows-Kernel-ShimEngine  |  24        |           |
+Provider                             |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword                  |  Message
+-------------------------------------|---------------|------------|-----------|-----------|--------|----------|---------------------------|----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-ShimEngine  |  Error        |  1         |  1        |           |        |          |                           |
+Microsoft-Windows-Kernel-ShimEngine  |  Information  |  2         |  1        |           |        |          |                           |
+Microsoft-Windows-Kernel-ShimEngine  |  Information  |  3         |  1        |           |        |          |                           |  {ShimCount} shim(s) were applied to driver [{DriverName}].Shim(s) source: {ShimSource}.Shim GUID(s): {AppliedGuids}.
+Microsoft-Windows-Kernel-ShimEngine  |  Information  |  4         |  1        |           |        |          |                           |  Flags [{Flags}] were applied to device [{DeviceName}] - class [{DeviceClass}].Flags source: {FlagSource}.
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  5         |  1        |           |        |          |  SkipDriverUnloadGeneral  |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  6         |  1        |           |        |          |  SkipDriverUnloadGeneral  |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  10        |  1        |           |        |          |  DriverScopeGeneral       |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  11        |  1        |           |        |          |  DriverScopeGeneral       |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  12        |  1        |           |        |          |  DriverScopeGeneral       |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  13        |  1        |           |        |          |  DriverScopePool          |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  14        |  1        |           |        |          |  DriverScopePool          |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  15        |  1        |           |        |          |  DriverScopeIrps          |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  16        |  1        |           |        |          |  DriverScopeGeneral       |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  17        |  1        |           |        |          |  DriverScopeIrps          |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  18        |  1        |           |        |          |  DriverScopePnp           |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  19        |  1        |           |        |          |  DriverScopePnp           |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  20        |  1        |           |        |          |  DriverScopePnp           |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  21        |  1        |           |        |          |  DriverScopePower         |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  22        |  1        |           |        |          |  DriverScopePower         |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  23        |  1        |           |        |          |  DriverScopePower         |
+Microsoft-Windows-Kernel-ShimEngine  |  Verbose      |  24        |  1        |           |        |          |  DriverScopePower         |

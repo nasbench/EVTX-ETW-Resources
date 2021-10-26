@@ -1,39 +1,39 @@
-Provider                   |  Event ID  |  Channel      |  Message
----------------------------|------------|---------------|--------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-WebAuth  |  1000      |  Operational  |  AuthHost started at URL: <{StartUrl}> until matching termination URL: <{TerminateUrl}!S!>.
-Microsoft-Windows-WebAuth  |  1001      |  Operational  |  AuthHost started over at URL: <{StartUrl}>.
-Microsoft-Windows-WebAuth  |  1002      |  Operational  |  AuthHost about to navigate (HTTP GET) to URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1003      |  Operational  |  AuthHost about to navigate (HTTP POST) to URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1010      |  Operational  |  AuthHost completed navigation to URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1011      |  Operational  |  AuthHost completed document from URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1020      |  Operational  |  AuthHost redirected to URL: <{RedirectedUrl}> from URL: <{OriginalUrl}!S!> with HttpStatusCode: {HttpStatusCode}.
-Microsoft-Windows-WebAuth  |  1021      |  Operational  |  AuthHost about to navigate (new window) to URL: <{Url}> from URL: <{ReferrerUrl}!S!>.
-Microsoft-Windows-WebAuth  |  1022      |  Operational  |  AuthHost about to navigate with delegation to URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1023      |  Operational  |  AuthHost created new script engine at URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1024      |  Operational  |  AuthHost about to launch URL: <{Url}> in browser from URL: <{ReferrerUrl}!S!>.
-Microsoft-Windows-WebAuth  |  1040      |  Operational  |  AuthHost terminated navigation at URL: <{Url}> matching termination URL: <{TerminateUrl}!S!>.
-Microsoft-Windows-WebAuth  |  1041      |  Operational  |  AuthHost terminated navigation with title: <{Title}> at URL: <{Url}!S!> matching termination URL: <{TerminateUrl}!S!>.
-Microsoft-Windows-WebAuth  |  1042      |  Operational  |  Navigation cancelled by user.
-Microsoft-Windows-WebAuth  |  1043      |  Operational  |  AuthHost terminated navigation with HTTP POST data: <{Post}> at URL: <{Url}!S!> matching termination URL: <{TerminateUrl}!S!>.
-Microsoft-Windows-WebAuth  |  1050      |  Operational  |  AuthHost encountered a navigation error at URL: <{Url}> with StatusCode: {StatusCode}.
-Microsoft-Windows-WebAuth  |  1051      |  Operational  |  AuthHost encountered a navigation error at URL: <{Url}> with HttpStatusCode: {HttpStatusCode}.
-Microsoft-Windows-WebAuth  |  1100      |  Operational  |  AuthHost encountered a security problem: {Problem} and will retry the navigation.
-Microsoft-Windows-WebAuth  |  1101      |  Operational  |  AuthHost encountered a security problem: {StatusCode} and will abort the navigation
-Microsoft-Windows-WebAuth  |  1200      |  Operational  |  AuthHost allowed UrlAction: {Action} for URL: <{Url}!S!>.
-Microsoft-Windows-WebAuth  |  1201      |  Operational  |  AuthHost disallowed UrlAction: {Action} for URL: <{Url}!S!>.
-Microsoft-Windows-WebAuth  |  1202      |  Operational  |  AuthHost used default for UrlAction: {Action} for URL: <{Url}!S!>.
-Microsoft-Windows-WebAuth  |  1203      |  Operational  |  AuthHost prohibited UrlAction of Java permissions for URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1204      |  Operational  |  AuthHost blocked credential prompt for URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1205      |  Operational  |  AuthHost allowed credential silent log-on for URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1206      |  Operational  |  AuthHost allowed credential user prompt for URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1300      |  Operational  |  AuthHost allowed UrlAction for ActiveX object: {Clsid} for URL: <{Url}!S!>.
-Microsoft-Windows-WebAuth  |  1301      |  Operational  |  AuthHost disallowed UrlAction for ActiveX object: {Clsid} for URL: <{Url}!S!>.
-Microsoft-Windows-WebAuth  |  1310      |  Operational  |  AuthHost allowed UrlAction for ActiveX object: {Clsid} for URL: <{Url}!S!>.
-Microsoft-Windows-WebAuth  |  1311      |  Operational  |  AuthHost disallowed UrlAction for ActiveX object: {Clsid} for URL: <{Url}!S!>.
-Microsoft-Windows-WebAuth  |  1400      |  Operational  |  AuthHost encountered Meta Tag: mswebdialog-title with content: <{Content}>.
-Microsoft-Windows-WebAuth  |  1401      |  Operational  |  AuthHost resolved Meta Tag: mswebdialog-logo to URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1402      |  Operational  |  AuthHost converted Meta Tag: mswebdialog-header-colour with content: <{Content}> to value: {ConvertedValue}.
-Microsoft-Windows-WebAuth  |  1403      |  Operational  |  AuthHost unable to convert Meta Tag: mswebdialog-header-colour with content: <{Content}>.
-Microsoft-Windows-WebAuth  |  1404      |  Operational  |  AuthHost resolved Meta Tag: mswebdialog-newwindowurl to URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1405      |  Operational  |  AuthHost downloaded logo image from URL: <{Url}>.
-Microsoft-Windows-WebAuth  |  1406      |  Operational  |  AuthHost encountered an error downloading logo image from URL: <{Url}> with Error: {StatusCode}.
+Provider                   |  Level        |  Event ID  |  Version  |  Channel      |  Task                          |  Opcode  |  Keyword   |  Message
+---------------------------|---------------|------------|-----------|---------------|--------------------------------|----------|------------|--------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WebAuth  |  Information  |  1000      |  0        |  Operational  |  Navigation Start              |  Start   |  AuthHost  |  AuthHost started at URL: <{StartUrl}> until matching termination URL: <{TerminateUrl}!S!>.
+Microsoft-Windows-WebAuth  |  Information  |  1001      |  0        |  Operational  |  Navigation Start              |  Start   |  AuthHost  |  AuthHost started over at URL: <{StartUrl}>.
+Microsoft-Windows-WebAuth  |  Information  |  1002      |  0        |  Operational  |  Navigation Start              |  Start   |  AuthHost  |  AuthHost about to navigate (HTTP GET) to URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1003      |  0        |  Operational  |  Navigation Start              |  Start   |  AuthHost  |  AuthHost about to navigate (HTTP POST) to URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1010      |  0        |  Operational  |  Navigation Complete           |  Stop    |  AuthHost  |  AuthHost completed navigation to URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1011      |  0        |  Operational  |  Navigation Complete           |  Stop    |  AuthHost  |  AuthHost completed document from URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1020      |  0        |  Operational  |  Navigation Redirect           |  Start   |  AuthHost  |  AuthHost redirected to URL: <{RedirectedUrl}> from URL: <{OriginalUrl}!S!> with HttpStatusCode: {HttpStatusCode}.
+Microsoft-Windows-WebAuth  |  Information  |  1021      |  0        |  Operational  |  Navigation New Window         |  Start   |  AuthHost  |  AuthHost about to navigate (new window) to URL: <{Url}> from URL: <{ReferrerUrl}!S!>.
+Microsoft-Windows-WebAuth  |  Information  |  1022      |  0        |  Operational  |  Navigation Delegate           |  Start   |  AuthHost  |  AuthHost about to navigate with delegation to URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1023      |  0        |  Operational  |  Navigation New Script Engine  |  Start   |  AuthHost  |  AuthHost created new script engine at URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1024      |  0        |  Operational  |  Navigation New Window         |          |  AuthHost  |  AuthHost about to launch URL: <{Url}> in browser from URL: <{ReferrerUrl}!S!>.
+Microsoft-Windows-WebAuth  |  Information  |  1040      |  0        |  Operational  |  Navigation Terminate          |  Stop    |  AuthHost  |  AuthHost terminated navigation at URL: <{Url}> matching termination URL: <{TerminateUrl}!S!>.
+Microsoft-Windows-WebAuth  |  Information  |  1041      |  0        |  Operational  |  Navigation Terminate          |  Stop    |  AuthHost  |  AuthHost terminated navigation with title: <{Title}> at URL: <{Url}!S!> matching termination URL: <{TerminateUrl}!S!>.
+Microsoft-Windows-WebAuth  |  Information  |  1042      |  0        |  Operational  |  Navigation Terminate          |  Stop    |  AuthHost  |  Navigation cancelled by user.
+Microsoft-Windows-WebAuth  |  Information  |  1043      |  0        |  Operational  |  Navigation Terminate          |  Stop    |  AuthHost  |  AuthHost terminated navigation with HTTP POST data: <{Post}> at URL: <{Url}!S!> matching termination URL: <{TerminateUrl}!S!>.
+Microsoft-Windows-WebAuth  |  Error        |  1050      |  0        |  Operational  |  Navigation Error              |  Stop    |  AuthHost  |  AuthHost encountered a navigation error at URL: <{Url}> with StatusCode: {StatusCode}.
+Microsoft-Windows-WebAuth  |  Error        |  1051      |  0        |  Operational  |  Navigation Error              |  Stop    |  AuthHost  |  AuthHost encountered a navigation error at URL: <{Url}> with HttpStatusCode: {HttpStatusCode}.
+Microsoft-Windows-WebAuth  |  Warning      |  1100      |  0        |  Operational  |  Security Problem              |          |  AuthHost  |  AuthHost encountered a security problem: {Problem} and will retry the navigation.
+Microsoft-Windows-WebAuth  |  Error        |  1101      |  0        |  Operational  |  Security Problem              |  Stop    |  AuthHost  |  AuthHost encountered a security problem: {StatusCode} and will abort the navigation
+Microsoft-Windows-WebAuth  |  Verbose      |  1200      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost allowed UrlAction: {Action} for URL: <{Url}!S!>.
+Microsoft-Windows-WebAuth  |  Verbose      |  1201      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost disallowed UrlAction: {Action} for URL: <{Url}!S!>.
+Microsoft-Windows-WebAuth  |  Warning      |  1202      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost used default for UrlAction: {Action} for URL: <{Url}!S!>.
+Microsoft-Windows-WebAuth  |  Verbose      |  1203      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost prohibited UrlAction of Java permissions for URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1204      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost blocked credential prompt for URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1205      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost allowed credential silent log-on for URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1206      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost allowed credential user prompt for URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1300      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost allowed UrlAction for ActiveX object: {Clsid} for URL: <{Url}!S!>.
+Microsoft-Windows-WebAuth  |  Warning      |  1301      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost disallowed UrlAction for ActiveX object: {Clsid} for URL: <{Url}!S!>.
+Microsoft-Windows-WebAuth  |  Information  |  1310      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost allowed UrlAction for ActiveX object: {Clsid} for URL: <{Url}!S!>.
+Microsoft-Windows-WebAuth  |  Warning      |  1311      |  0        |  Operational  |  Security Manager              |          |  AuthHost  |  AuthHost disallowed UrlAction for ActiveX object: {Clsid} for URL: <{Url}!S!>.
+Microsoft-Windows-WebAuth  |  Information  |  1400      |  0        |  Operational  |  Meta Tag                      |          |  AuthHost  |  AuthHost encountered Meta Tag: mswebdialog-title with content: <{Content}>.
+Microsoft-Windows-WebAuth  |  Information  |  1401      |  0        |  Operational  |  Meta Tag                      |          |  AuthHost  |  AuthHost resolved Meta Tag: mswebdialog-logo to URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1402      |  0        |  Operational  |  Meta Tag                      |          |  AuthHost  |  AuthHost converted Meta Tag: mswebdialog-header-colour with content: <{Content}> to value: {ConvertedValue}.
+Microsoft-Windows-WebAuth  |  Warning      |  1403      |  0        |  Operational  |  Meta Tag                      |          |  AuthHost  |  AuthHost unable to convert Meta Tag: mswebdialog-header-colour with content: <{Content}>.
+Microsoft-Windows-WebAuth  |  Information  |  1404      |  0        |  Operational  |  Meta Tag                      |          |  AuthHost  |  AuthHost resolved Meta Tag: mswebdialog-newwindowurl to URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Information  |  1405      |  0        |  Operational  |  Meta Tag                      |          |  AuthHost  |  AuthHost downloaded logo image from URL: <{Url}>.
+Microsoft-Windows-WebAuth  |  Error        |  1406      |  0        |  Operational  |  Meta Tag                      |          |  AuthHost  |  AuthHost encountered an error downloading logo image from URL: <{Url}> with Error: {StatusCode}.

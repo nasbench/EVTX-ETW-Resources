@@ -1,301 +1,301 @@
-Provider               |  Event ID  |  Channel        |  Message
------------------------|------------|-----------------|------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-WMP  |  1         |                 |
-Microsoft-Windows-WMP  |  2         |                 |
-Microsoft-Windows-WMP  |  3         |                 |
-Microsoft-Windows-WMP  |  4         |                 |
-Microsoft-Windows-WMP  |  5         |                 |
-Microsoft-Windows-WMP  |  7         |                 |
-Microsoft-Windows-WMP  |  8         |                 |
-Microsoft-Windows-WMP  |  9         |                 |
-Microsoft-Windows-WMP  |  10        |                 |
-Microsoft-Windows-WMP  |  11        |                 |
-Microsoft-Windows-WMP  |  12        |                 |
-Microsoft-Windows-WMP  |  13        |                 |
-Microsoft-Windows-WMP  |  14        |                 |
-Microsoft-Windows-WMP  |  15        |                 |
-Microsoft-Windows-WMP  |  16        |                 |
-Microsoft-Windows-WMP  |  17        |                 |
-Microsoft-Windows-WMP  |  18        |                 |
-Microsoft-Windows-WMP  |  19        |                 |
-Microsoft-Windows-WMP  |  20        |                 |
-Microsoft-Windows-WMP  |  21        |                 |
-Microsoft-Windows-WMP  |  22        |                 |
-Microsoft-Windows-WMP  |  23        |                 |
-Microsoft-Windows-WMP  |  24        |                 |
-Microsoft-Windows-WMP  |  25        |                 |
-Microsoft-Windows-WMP  |  26        |                 |
-Microsoft-Windows-WMP  |  27        |                 |
-Microsoft-Windows-WMP  |  28        |                 |
-Microsoft-Windows-WMP  |  29        |                 |
-Microsoft-Windows-WMP  |  30        |                 |
-Microsoft-Windows-WMP  |  31        |                 |
-Microsoft-Windows-WMP  |  32        |                 |
-Microsoft-Windows-WMP  |  33        |                 |
-Microsoft-Windows-WMP  |  34        |                 |
-Microsoft-Windows-WMP  |  35        |                 |
-Microsoft-Windows-WMP  |  36        |                 |
-Microsoft-Windows-WMP  |  37        |                 |
-Microsoft-Windows-WMP  |  38        |                 |
-Microsoft-Windows-WMP  |  39        |                 |
-Microsoft-Windows-WMP  |  40        |                 |
-Microsoft-Windows-WMP  |  41        |                 |
-Microsoft-Windows-WMP  |  42        |                 |
-Microsoft-Windows-WMP  |  43        |                 |
-Microsoft-Windows-WMP  |  44        |                 |
-Microsoft-Windows-WMP  |  45        |                 |
-Microsoft-Windows-WMP  |  46        |                 |
-Microsoft-Windows-WMP  |  47        |                 |
-Microsoft-Windows-WMP  |  48        |                 |
-Microsoft-Windows-WMP  |  49        |                 |
-Microsoft-Windows-WMP  |  50        |                 |
-Microsoft-Windows-WMP  |  51        |                 |
-Microsoft-Windows-WMP  |  52        |                 |
-Microsoft-Windows-WMP  |  53        |                 |
-Microsoft-Windows-WMP  |  54        |                 |
-Microsoft-Windows-WMP  |  55        |                 |
-Microsoft-Windows-WMP  |  56        |                 |
-Microsoft-Windows-WMP  |  57        |                 |
-Microsoft-Windows-WMP  |  58        |                 |
-Microsoft-Windows-WMP  |  59        |                 |
-Microsoft-Windows-WMP  |  60        |                 |
-Microsoft-Windows-WMP  |  61        |                 |
-Microsoft-Windows-WMP  |  62        |                 |
-Microsoft-Windows-WMP  |  63        |                 |
-Microsoft-Windows-WMP  |  64        |                 |
-Microsoft-Windows-WMP  |  65        |                 |
-Microsoft-Windows-WMP  |  66        |                 |
-Microsoft-Windows-WMP  |  67        |                 |
-Microsoft-Windows-WMP  |  68        |                 |
-Microsoft-Windows-WMP  |  69        |                 |
-Microsoft-Windows-WMP  |  70        |                 |
-Microsoft-Windows-WMP  |  71        |                 |
-Microsoft-Windows-WMP  |  72        |                 |
-Microsoft-Windows-WMP  |  73        |                 |
-Microsoft-Windows-WMP  |  74        |                 |
-Microsoft-Windows-WMP  |  75        |                 |
-Microsoft-Windows-WMP  |  76        |                 |
-Microsoft-Windows-WMP  |  77        |                 |
-Microsoft-Windows-WMP  |  78        |                 |
-Microsoft-Windows-WMP  |  79        |                 |
-Microsoft-Windows-WMP  |  80        |                 |
-Microsoft-Windows-WMP  |  81        |                 |
-Microsoft-Windows-WMP  |  82        |                 |
-Microsoft-Windows-WMP  |  83        |                 |
-Microsoft-Windows-WMP  |  84        |                 |
-Microsoft-Windows-WMP  |  85        |                 |
-Microsoft-Windows-WMP  |  86        |                 |
-Microsoft-Windows-WMP  |  87        |                 |
-Microsoft-Windows-WMP  |  88        |                 |
-Microsoft-Windows-WMP  |  89        |                 |
-Microsoft-Windows-WMP  |  90        |                 |
-Microsoft-Windows-WMP  |  91        |                 |
-Microsoft-Windows-WMP  |  92        |                 |
-Microsoft-Windows-WMP  |  93        |                 |
-Microsoft-Windows-WMP  |  94        |                 |
-Microsoft-Windows-WMP  |  95        |                 |
-Microsoft-Windows-WMP  |  96        |                 |
-Microsoft-Windows-WMP  |  97        |                 |
-Microsoft-Windows-WMP  |  99        |                 |
-Microsoft-Windows-WMP  |  100       |                 |
-Microsoft-Windows-WMP  |  101       |                 |
-Microsoft-Windows-WMP  |  102       |                 |
-Microsoft-Windows-WMP  |  103       |                 |
-Microsoft-Windows-WMP  |  104       |                 |
-Microsoft-Windows-WMP  |  105       |                 |
-Microsoft-Windows-WMP  |  106       |                 |
-Microsoft-Windows-WMP  |  107       |                 |
-Microsoft-Windows-WMP  |  108       |                 |
-Microsoft-Windows-WMP  |  109       |                 |
-Microsoft-Windows-WMP  |  110       |                 |
-Microsoft-Windows-WMP  |  149       |                 |
-Microsoft-Windows-WMP  |  150       |                 |
-Microsoft-Windows-WMP  |  151       |                 |
-Microsoft-Windows-WMP  |  152       |                 |
-Microsoft-Windows-WMP  |  153       |                 |
-Microsoft-Windows-WMP  |  154       |                 |
-Microsoft-Windows-WMP  |  155       |                 |
-Microsoft-Windows-WMP  |  156       |                 |
-Microsoft-Windows-WMP  |  157       |                 |
-Microsoft-Windows-WMP  |  158       |                 |
-Microsoft-Windows-WMP  |  200       |                 |
-Microsoft-Windows-WMP  |  201       |                 |
-Microsoft-Windows-WMP  |  202       |                 |
-Microsoft-Windows-WMP  |  205       |                 |
-Microsoft-Windows-WMP  |  206       |                 |
-Microsoft-Windows-WMP  |  207       |                 |
-Microsoft-Windows-WMP  |  220       |                 |
-Microsoft-Windows-WMP  |  221       |                 |
-Microsoft-Windows-WMP  |  222       |                 |
-Microsoft-Windows-WMP  |  250       |                 |
-Microsoft-Windows-WMP  |  251       |                 |
-Microsoft-Windows-WMP  |  252       |                 |
-Microsoft-Windows-WMP  |  280       |                 |
-Microsoft-Windows-WMP  |  281       |                 |
-Microsoft-Windows-WMP  |  282       |                 |
-Microsoft-Windows-WMP  |  283       |                 |
-Microsoft-Windows-WMP  |  284       |                 |
-Microsoft-Windows-WMP  |  285       |                 |
-Microsoft-Windows-WMP  |  286       |                 |
-Microsoft-Windows-WMP  |  287       |                 |
-Microsoft-Windows-WMP  |  288       |                 |
-Microsoft-Windows-WMP  |  289       |                 |
-Microsoft-Windows-WMP  |  300       |                 |
-Microsoft-Windows-WMP  |  301       |                 |
-Microsoft-Windows-WMP  |  302       |                 |
-Microsoft-Windows-WMP  |  303       |                 |
-Microsoft-Windows-WMP  |  304       |                 |
-Microsoft-Windows-WMP  |  305       |                 |
-Microsoft-Windows-WMP  |  306       |                 |
-Microsoft-Windows-WMP  |  307       |                 |
-Microsoft-Windows-WMP  |  308       |                 |
-Microsoft-Windows-WMP  |  309       |                 |
-Microsoft-Windows-WMP  |  310       |                 |
-Microsoft-Windows-WMP  |  311       |                 |
-Microsoft-Windows-WMP  |  312       |                 |
-Microsoft-Windows-WMP  |  313       |                 |
-Microsoft-Windows-WMP  |  314       |                 |
-Microsoft-Windows-WMP  |  315       |                 |
-Microsoft-Windows-WMP  |  316       |                 |
-Microsoft-Windows-WMP  |  317       |                 |
-Microsoft-Windows-WMP  |  318       |                 |
-Microsoft-Windows-WMP  |  323       |                 |
-Microsoft-Windows-WMP  |  324       |                 |
-Microsoft-Windows-WMP  |  325       |                 |
-Microsoft-Windows-WMP  |  326       |                 |
-Microsoft-Windows-WMP  |  327       |                 |
-Microsoft-Windows-WMP  |  328       |                 |
-Microsoft-Windows-WMP  |  350       |                 |
-Microsoft-Windows-WMP  |  351       |                 |
-Microsoft-Windows-WMP  |  352       |                 |
-Microsoft-Windows-WMP  |  353       |                 |
-Microsoft-Windows-WMP  |  354       |                 |
-Microsoft-Windows-WMP  |  355       |                 |
-Microsoft-Windows-WMP  |  356       |                 |
-Microsoft-Windows-WMP  |  357       |                 |
-Microsoft-Windows-WMP  |  358       |                 |
-Microsoft-Windows-WMP  |  359       |                 |
-Microsoft-Windows-WMP  |  360       |                 |
-Microsoft-Windows-WMP  |  361       |                 |
-Microsoft-Windows-WMP  |  362       |                 |
-Microsoft-Windows-WMP  |  363       |                 |
-Microsoft-Windows-WMP  |  364       |                 |
-Microsoft-Windows-WMP  |  365       |                 |
-Microsoft-Windows-WMP  |  366       |                 |
-Microsoft-Windows-WMP  |  367       |                 |
-Microsoft-Windows-WMP  |  368       |                 |
-Microsoft-Windows-WMP  |  369       |                 |
-Microsoft-Windows-WMP  |  370       |                 |
-Microsoft-Windows-WMP  |  371       |                 |
-Microsoft-Windows-WMP  |  372       |                 |
-Microsoft-Windows-WMP  |  373       |                 |
-Microsoft-Windows-WMP  |  374       |                 |
-Microsoft-Windows-WMP  |  375       |                 |
-Microsoft-Windows-WMP  |  376       |                 |
-Microsoft-Windows-WMP  |  377       |                 |
-Microsoft-Windows-WMP  |  378       |                 |
-Microsoft-Windows-WMP  |  379       |                 |
-Microsoft-Windows-WMP  |  380       |                 |
-Microsoft-Windows-WMP  |  381       |                 |
-Microsoft-Windows-WMP  |  382       |                 |
-Microsoft-Windows-WMP  |  383       |                 |
-Microsoft-Windows-WMP  |  384       |                 |
-Microsoft-Windows-WMP  |  385       |                 |
-Microsoft-Windows-WMP  |  386       |                 |
-Microsoft-Windows-WMP  |  387       |                 |
-Microsoft-Windows-WMP  |  388       |                 |
-Microsoft-Windows-WMP  |  389       |                 |
-Microsoft-Windows-WMP  |  390       |                 |
-Microsoft-Windows-WMP  |  391       |                 |
-Microsoft-Windows-WMP  |  392       |                 |
-Microsoft-Windows-WMP  |  393       |                 |
-Microsoft-Windows-WMP  |  394       |                 |
-Microsoft-Windows-WMP  |  395       |                 |
-Microsoft-Windows-WMP  |  396       |                 |
-Microsoft-Windows-WMP  |  397       |                 |
-Microsoft-Windows-WMP  |  398       |                 |
-Microsoft-Windows-WMP  |  400       |  WMPSyncEngine  |  Transcode has started.  Source file: {SourcePath}, Target File: {TargetPath}
-Microsoft-Windows-WMP  |  401       |  WMPSyncEngine  |  Transcode has rolled over to using the dshow source.  Source file: {SourcePath}, Target file: {TargetPath}
-Microsoft-Windows-WMP  |  403       |  WMPSyncEngine  |  Transcode has completed.  Source file: {SourcePath}, Target File: {TargetPath}, HRESULT {HRESULT}
-Microsoft-Windows-WMP  |  404       |  WMPSyncEngine  |
-Microsoft-Windows-WMP  |  405       |  WMPSyncEngine  |
-Microsoft-Windows-WMP  |  406       |  WMPSyncEngine  |  IsTranscodeNeeded for source file {SourceFile} (DRM flag: {IsDRM}) has started.
-Microsoft-Windows-WMP  |  407       |  WMPSyncEngine  |  IsTranscodeNeeded for source file {SourceFile} has stopped.  HRESULT: {HRESULT}
-Microsoft-Windows-WMP  |  408       |  WMPSyncEngine  |  GetTranscodeProfile for source file {SourceFile} has started
-Microsoft-Windows-WMP  |  409       |  WMPSyncEngine  |  GetTranscodeProfile for source file {SourceFile} has stopped.  HRESULT: {HRESULT}
-Microsoft-Windows-WMP  |  410       |  WMPSyncEngine  |  Sync engine is attempting to acquire a license for file {SourceFile}
-Microsoft-Windows-WMP  |  411       |  WMPSyncEngine  |  Sync engine has finished attempt to acquire license for file {SourceFile}.  HRESULT: {HRESULT}
-Microsoft-Windows-WMP  |  412       |                 |
-Microsoft-Windows-WMP  |  413       |                 |
-Microsoft-Windows-WMP  |  414       |                 |
-Microsoft-Windows-WMP  |  415       |                 |
-Microsoft-Windows-WMP  |  416       |                 |
-Microsoft-Windows-WMP  |  417       |                 |
-Microsoft-Windows-WMP  |  418       |                 |
-Microsoft-Windows-WMP  |  419       |                 |
-Microsoft-Windows-WMP  |  420       |                 |
-Microsoft-Windows-WMP  |  425       |                 |
-Microsoft-Windows-WMP  |  426       |                 |
-Microsoft-Windows-WMP  |  427       |                 |
-Microsoft-Windows-WMP  |  428       |                 |
-Microsoft-Windows-WMP  |  429       |                 |
-Microsoft-Windows-WMP  |  430       |                 |
-Microsoft-Windows-WMP  |  431       |                 |
-Microsoft-Windows-WMP  |  432       |                 |
-Microsoft-Windows-WMP  |  433       |                 |
-Microsoft-Windows-WMP  |  434       |                 |
-Microsoft-Windows-WMP  |  435       |                 |
-Microsoft-Windows-WMP  |  436       |                 |
-Microsoft-Windows-WMP  |  437       |                 |
-Microsoft-Windows-WMP  |  438       |                 |
-Microsoft-Windows-WMP  |  439       |                 |
-Microsoft-Windows-WMP  |  440       |                 |
-Microsoft-Windows-WMP  |  441       |                 |
-Microsoft-Windows-WMP  |  450       |                 |
-Microsoft-Windows-WMP  |  451       |                 |
-Microsoft-Windows-WMP  |  452       |                 |
-Microsoft-Windows-WMP  |  453       |                 |
-Microsoft-Windows-WMP  |  454       |                 |
-Microsoft-Windows-WMP  |  455       |                 |
-Microsoft-Windows-WMP  |  456       |                 |
-Microsoft-Windows-WMP  |  457       |                 |
-Microsoft-Windows-WMP  |  460       |                 |
-Microsoft-Windows-WMP  |  461       |                 |
-Microsoft-Windows-WMP  |  462       |                 |
-Microsoft-Windows-WMP  |  463       |                 |
-Microsoft-Windows-WMP  |  464       |                 |
-Microsoft-Windows-WMP  |  465       |                 |
-Microsoft-Windows-WMP  |  466       |                 |
-Microsoft-Windows-WMP  |  467       |                 |
-Microsoft-Windows-WMP  |  468       |                 |
-Microsoft-Windows-WMP  |  469       |                 |
-Microsoft-Windows-WMP  |  470       |                 |
-Microsoft-Windows-WMP  |  471       |                 |
-Microsoft-Windows-WMP  |  472       |                 |
-Microsoft-Windows-WMP  |  473       |                 |
-Microsoft-Windows-WMP  |  474       |                 |
-Microsoft-Windows-WMP  |  475       |                 |
-Microsoft-Windows-WMP  |  476       |                 |
-Microsoft-Windows-WMP  |  477       |                 |
-Microsoft-Windows-WMP  |  478       |                 |
-Microsoft-Windows-WMP  |  479       |                 |
-Microsoft-Windows-WMP  |  480       |                 |
-Microsoft-Windows-WMP  |  481       |                 |
-Microsoft-Windows-WMP  |  482       |                 |
-Microsoft-Windows-WMP  |  483       |                 |
-Microsoft-Windows-WMP  |  490       |                 |
-Microsoft-Windows-WMP  |  491       |                 |
-Microsoft-Windows-WMP  |  492       |                 |
-Microsoft-Windows-WMP  |  493       |                 |
-Microsoft-Windows-WMP  |  501       |  WMPSyncEngine  |
-Microsoft-Windows-WMP  |  1305      |                 |
-Microsoft-Windows-WMP  |  1306      |                 |
-Microsoft-Windows-WMP  |  1307      |                 |
-Microsoft-Windows-WMP  |  1308      |                 |
-Microsoft-Windows-WMP  |  1309      |                 |
-Microsoft-Windows-WMP  |  1310      |                 |
-Microsoft-Windows-WMP  |  1311      |                 |
-Microsoft-Windows-WMP  |  1312      |                 |
-Microsoft-Windows-WMP  |  1313      |                 |
-Microsoft-Windows-WMP  |  1314      |                 |
-Microsoft-Windows-WMP  |  1615      |                 |
+Provider               |  Level        |  Event ID  |  Version  |  Channel        |  Task                                            |  Opcode                                                     |  Keyword            |  Message
+-----------------------|---------------|------------|-----------|-----------------|--------------------------------------------------|-------------------------------------------------------------|---------------------|------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WMP  |  Information  |  1         |  0        |                 |  LEGACY_EVENT                                    |  MEDIA_OPEN                                                 |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  2         |  0        |                 |  LEGACY_EVENT                                    |  PLAYLIST_OPEN_NOMEDIA                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  3         |  0        |                 |  LEGACY_EVENT                                    |  PLAYING                                                    |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  4         |  0        |                 |  RIP                                             |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  5         |  0        |                 |  RIP                                             |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  7         |  0        |                 |  LEGACY_EVENT                                    |  LOCAL_PLAY_BEGIN                                           |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  8         |  0        |                 |  LEGACY_EVENT                                    |  STREAMING_PLAY_BEGIN                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  9         |  0        |                 |  PDA_TRANSFER                                    |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  10        |  0        |                 |  PDA_TRANSFER                                    |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  11        |  0        |                 |  LEGACY_EVENT                                    |  ADD_FILES_LIBRARY_END                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  12        |  0        |                 |  SEARCHFORMEDIA                                  |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  13        |  0        |                 |  SEARCHFORMEDIA                                  |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  14        |  0        |                 |  LEGACY_EVENT                                    |  DELETESELECTED_END                                         |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  15        |  0        |                 |  LEGACY_EVENT                                    |  BEFORENAVIGATE2                                            |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  16        |  0        |                 |  LEGACY_EVENT                                    |  DOCUMENTCOMPLETE                                           |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  17        |  0        |                 |  LEGACY_EVENT                                    |  TRANSITIONING                                              |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  18        |  0        |                 |  LEGACY_EVENT                                    |  MEDIA_ENDED                                                |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  19        |  0        |                 |  TASK_SWITCH                                     |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  20        |  0        |                 |  TASK_SWITCH                                     |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  21        |  0        |                 |  PDA_DISCOVERY                                   |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  22        |  0        |                 |  PDA_DISCOVERY                                   |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  23        |  0        |                 |  LEGACY_EVENT                                    |  ERROR_DIALOG                                               |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  24        |  0        |                 |  LEGACY_EVENT                                    |  EXCEPTION_THROWN                                           |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  25        |  0        |                 |  LEGACY_EVENT                                    |  APP_IDLE                                                   |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  26        |  0        |                 |  LEGACY_EVENT                                    |  PLAYLIST_POPULATED                                         |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  27        |  0        |                 |  LEGACY_EVENT                                    |  OCX_FIRST_PAINT                                            |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  28        |  0        |                 |  LEGACY_EVENT                                    |  TREEVIEW_EXPANDED                                          |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  29        |  0        |                 |  LEGACY_EVENT                                    |  FULLSCREEN                                                 |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  30        |  0        |                 |  LEGACY_EVENT                                    |  BULKEDITCOMPLETE                                           |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  31        |  0        |                 |  LEGACY_EVENT                                    |  NODERENAMECOMPLETE                                         |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  32        |  0        |                 |  LEGACY_EVENT                                    |  DROPCOMPLETE                                               |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  33        |  0        |                 |  LEGACY_EVENT                                    |  COLUMNSORTCOMPLETE                                         |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  34        |  0        |                 |  LEGACY_EVENT                                    |  OCXSETCLIENTSITE                                           |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  35        |  0        |                 |  LEGACY_EVENT                                    |  OCXACTIVATED                                               |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  36        |  0        |                 |  LEGACY_EVENT                                    |  DEVICEINDIVSETCLOCK                                        |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  37        |  0        |                 |  PDA_TRANSCODE                                   |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  38        |  0        |                 |  PDA_TRANSCODE                                   |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  39        |  0        |                 |  PDA_TRANSFER_FILE                               |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  40        |  0        |                 |  PDA_TRANSFER_FILE                               |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  41        |  0        |                 |  PDA_NEWSYNC                                     |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  42        |  0        |                 |  PDA_NEWSYNC                                     |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  43        |  0        |                 |  APP_NAVIGATE                                    |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  44        |  0        |                 |  APP_NAVIGATE                                    |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  45        |  0        |                 |  LEGACY_EVENT                                    |  SQM_UPLOAD_SIGNAL                                          |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  46        |  0        |                 |  PDA_DEVICE_ENUMERATION                          |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  47        |  0        |                 |  PDA_DEVICE_ENUMERATION                          |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  48        |  0        |                 |  LEGACY_EVENT                                    |  PROC_START                                                 |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  49        |  0        |                 |  LEGACY_EVENT                                    |  PROC_END                                                   |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  50        |  0        |                 |  LEGACY_EVENT                                    |  DLL_START                                                  |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  51        |  0        |                 |  LEGACY_EVENT                                    |  DLL_END                                                    |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  52        |  0        |                 |  LEGACY_EVENT                                    |  HME_SERVICEADDED                                           |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  53        |  0        |                 |  HME_INITIALDISCOVERY                            |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  54        |  0        |                 |  HME_INITIALDISCOVERY                            |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  55        |  0        |                 |  HME_EXECUTEQUERY                                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  56        |  0        |                 |  HME_EXECUTEQUERY                                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  57        |  0        |                 |  HME_BROWSE                                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  58        |  0        |                 |  HME_BROWSE                                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  59        |  0        |                 |  LEGACY_EVENT                                    |  PDA_DEVICE_DETECTED                                        |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  60        |  0        |                 |  APP_LAUNCH                                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  61        |  0        |                 |  APP_LAUNCH                                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  62        |  0        |                 |  PARSE_CMD_LINE                                  |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  63        |  0        |                 |  PARSE_CMD_LINE                                  |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  64        |  0        |                 |  PROCESS_CMD_LINE                                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  65        |  0        |                 |  PROCESS_CMD_LINE                                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  66        |  0        |                 |  APPLY_SKIN                                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  67        |  0        |                 |  APPLY_SKIN                                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  68        |  0        |                 |  RESTORE_FROM_SKIN                               |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  69        |  0        |                 |  RESTORE_FROM_SKIN                               |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  70        |  0        |                 |  FULLSCREEN                                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  71        |  0        |                 |  FULLSCREEN                                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  72        |  0        |                 |  TASKBAR                                         |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  73        |  0        |                 |  TASKBAR                                         |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  74        |  0        |                 |  MODE_SWITCHER                                   |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  75        |  0        |                 |  DSHOWGRAPH_OPEN                                 |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  76        |  0        |                 |  FSDKGRAPH_OPEN                                  |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  77        |  0        |                 |  MFGRAPH_OPEN                                    |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  78        |  0        |                 |  CDBURN                                          |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  79        |  0        |                 |  CDBURN                                          |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  80        |  0        |                 |  CDBURN                                          |  Checkpoint_1                                               |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  81        |  0        |                 |  CDBURN                                          |  Checkpoint_2                                               |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  82        |  0        |                 |  PLAYBACK                                        |  StateChange                                                |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  83        |  0        |                 |  FULLSCREEN                                      |  CLOSEBUTTON_CLICK                                          |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  84        |  0        |                 |  DDPRESET_NORMAL                                 |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  85        |  0        |                 |  DDPRESET_LAPTOP                                 |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  86        |  0        |                 |  DDPRESET_THEATER                                |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  87        |  0        |                 |  DISCMEDIACHANGE                                 |  Added                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  88        |  0        |                 |  DISCMEDIACHANGE                                 |  Removed                                                    |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  89        |  0        |                 |  DISCMEDIACHANGE                                 |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  90        |  0        |                 |  FULLSCREEN                                      |  EXITBUTTON_CLICK                                           |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  91        |  0        |                 |  MAINFRAME_DESTROY                               |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  92        |  0        |                 |  MAINFRAME_DESTROY                               |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  93        |  0        |                 |  FULLSCREEN_LOADINGUI                            |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  94        |  0        |                 |  FULLSCREEN_LOADINGUI                            |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  95        |  0        |                 |  FULLSCREEN_LOADINGUI_FADE                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  96        |  0        |                 |  FULLSCREEN_LOADINGUI_FADE                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  97        |  0        |                 |  DVDGRAPH                                        |                                                             |                     |
+Microsoft-Windows-WMP  |  Information  |  99        |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  100       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  101       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  102       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  103       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  104       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  105       |  0        |                 |  GROVELER                                        |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  106       |  0        |                 |  GROVELER                                        |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  107       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  108       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  109       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  110       |  0        |                 |  GROVELER                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  149       |  0        |                 |  METADATAPLUGIN                                  |                                                             |  metadataplugin     |
+Microsoft-Windows-WMP  |  Information  |  150       |  0        |                 |  METADATAPLUGIN                                  |                                                             |  metadataplugin     |
+Microsoft-Windows-WMP  |  Information  |  151       |  0        |                 |  METADATAPLUGIN                                  |                                                             |  metadataplugin     |
+Microsoft-Windows-WMP  |  Information  |  152       |  0        |                 |  METADATAPLUGIN                                  |                                                             |  metadataplugin     |
+Microsoft-Windows-WMP  |  Information  |  153       |  0        |                 |  METADATAPLUGIN                                  |                                                             |  metadataplugin     |
+Microsoft-Windows-WMP  |  Information  |  154       |  0        |                 |  METADATAPLUGIN                                  |                                                             |  metadataplugin     |
+Microsoft-Windows-WMP  |  Information  |  155       |  0        |                 |  RAMCACHE                                        |                                                             |  ramcache           |
+Microsoft-Windows-WMP  |  Information  |  156       |  0        |                 |  RAMCACHE                                        |                                                             |  ramcache           |
+Microsoft-Windows-WMP  |  Information  |  157       |  0        |                 |  RAMCACHE                                        |  Start                                                      |  ramcache           |
+Microsoft-Windows-WMP  |  Information  |  158       |  0        |                 |  RAMCACHE                                        |  Stop                                                       |  ramcache           |
+Microsoft-Windows-WMP  |  Information  |  200       |  0        |                 |  METADATALIFECYCLE                               |                                                             |  metadatalifecycle  |
+Microsoft-Windows-WMP  |  Information  |  201       |  0        |                 |  METADATADOWNLOAD                                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  202       |  0        |                 |  METADATADOWNLOAD                                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  205       |  0        |                 |  MLS                                             |                                                             |  mls                |
+Microsoft-Windows-WMP  |  Information  |  206       |  0        |                 |  MLS                                             |                                                             |  mls                |
+Microsoft-Windows-WMP  |  Information  |  207       |  0        |                 |  MLS                                             |                                                             |  mls                |
+Microsoft-Windows-WMP  |  Information  |  220       |  0        |                 |  PLAYLIST                                        |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  221       |  0        |                 |  PLAYLIST                                        |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  222       |  0        |                 |  PLAYHISTORYCLICK                                |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  250       |  0        |                 |  RADIO                                           |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  251       |  0        |                 |  RADIO                                           |  Removed                                                    |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  252       |  0        |                 |  RADIO                                           |  Added                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  280       |  0        |                 |  THUMBNAIL_TOOLBAR_ADD                           |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  281       |  0        |                 |  THUMBNAIL_TOOLBAR_ADD                           |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  282       |  0        |                 |  THUMBNAIL_TOOLBAR_BUTTON_CLICKED                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  283       |  0        |                 |  THUMBNAIL_TOOLBAR_BUTTON_CLICKED                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  284       |  0        |                 |  THUMBNAIL_TOOLTIP_CHANGED                       |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  285       |  0        |                 |  THUMBNAIL_BITMAPS_INVALIDATED                   |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  286       |  0        |                 |  THUMBNAIL_BITMAP_UPDATE                         |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  287       |  0        |                 |  THUMBNAIL_BITMAP_UPDATE                         |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  288       |  0        |                 |  THUMBNAIL_LIVEPREVIEWBITMAP_UPDATE              |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  289       |  0        |                 |  THUMBNAIL_LIVEPREVIEWBITMAP_UPDATE              |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  300       |  0        |                 |  SKINEVENT                                       |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  301       |  0        |                 |  HOVERTRANSPORTS                                 |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  302       |  0        |                 |  HOVERTRANSPORTS                                 |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  303       |  0        |                 |  SKINPAINT                                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  304       |  0        |                 |  SKINPAINT                                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  305       |  0        |                 |  BASKET                                          |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  306       |  0        |                 |  BASKET                                          |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  307       |  0        |                 |  NAVIGATION                                      |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  308       |  0        |                 |  LISTVIEW                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  309       |  0        |                 |  LISTVIEW                                        |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  310       |  0        |                 |  LISTVIEW                                        |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  311       |  0        |                 |  TREEVIEW                                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  312       |  0        |                 |  PLAYHISTORY                                     |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  313       |  0        |                 |  LIBRARYUX                                       |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  314       |  0        |                 |  LIBRARYUX                                       |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  315       |  0        |                 |  USAGELOGGER                                     |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  316       |  0        |                 |  WORDWHEEL                                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  317       |  0        |                 |  WORDWHEEL                                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  318       |  0        |                 |  WORDWHEEL                                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  323       |  0        |                 |  HME_SERVER_CONTAINER_UPDATE_IDS                 |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  324       |  0        |                 |  HME_SERVER_CONTAINER_UPDATE_IDS                 |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  325       |  0        |                 |  RME_CLIENT_ENUMERATE_LIBRARIES_REQUEST          |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  326       |  0        |                 |  RME_CLIENT_ENUMERATE_LIBRARIES_RESPONSE         |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  327       |  0        |                 |  RME_CLIENT_CURRENT_BANDWIDTH_ESTIMATE           |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  328       |  0        |                 |  RME_CLIENT_CURRENT_BANDWIDTH                    |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  350       |  0        |                 |  RME_CLIENT_RESOLVE_SERVER_URL_REQUEST           |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  351       |  0        |                 |  RME_CLIENT_RESOLVE_SERVER_URL_RESPONSE          |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  352       |  0        |                 |  RME_CLIENT_LIBRARY_METADATA_REQUEST             |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  353       |  0        |                 |  RME_CLIENT_LIBRARY_METADATA_RESPONSE            |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  354       |  0        |                 |  RME_CLIENT_ESTIMATE_BITRATE_BEGIN               |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  355       |  0        |                 |  RME_CLIENT_ESTIMATE_BITRATE_END                 |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  356       |  0        |                 |  HME_SERVER_EXECUTE_QUERY                        |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  357       |  0        |                 |  HME_SERVER_EXECUTE_QUERY                        |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  358       |  0        |                 |  HME_RME_CLIENT_CONSUME_METADATA_RESPONSE_BEGIN  |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  359       |  0        |                 |  HME_RME_CLIENT_CONSUME_METADATA_RESPONSE_END    |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  360       |  0        |                 |  HME_SERVER_UPDATEOBJECT                         |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  361       |  0        |                 |  HME_SERVER_UPDATEOBJECT                         |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  362       |  0        |                 |  HME_CLIENT_UPDATE_METADATA                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  363       |  0        |                 |  HME_CLIENT_UPDATE_METADATA                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  364       |  0        |                 |  HME_SERVER_ONLINE_OFFLINE                       |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  365       |  0        |                 |  HME_SERVER_MAGIC_PACKET_SENT                    |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  366       |  0        |                 |  HME_SERVER_WAKEUP_FAILED                        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  367       |  0        |                 |  RME_CLIENT_LIVE_MACHINE_DISCOVERY               |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  368       |  0        |                 |  RME_CLIENT_LIVE_MACHINE_DISCOVERY               |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  369       |  0        |                 |  RME_CLIENT_ON_LIVE_MACHINE_DISCOVERY            |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  370       |  0        |                 |  HME_EnableSharing                               |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  371       |  0        |                 |  HME_EnableSharing                               |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  372       |  0        |                 |  HME_UPnPDiscoveryBegin                          |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  373       |  0        |                 |  HME_UPnPDiscoveryBegin                          |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  374       |  0        |                 |  HME_UPnPDiscoveryInitialComplete                |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  375       |  0        |                 |  HME_UPnPDiscoveryEnd                            |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  376       |  0        |                 |  HME_UPnPDeviceAddedCallback                     |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  377       |  0        |                 |  HME_UPnPDeviceAddedCallback                     |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  378       |  0        |                 |  HME_UPnPDeviceAddedCallback                     |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  379       |  0        |                 |  HME_UPnPDeviceAddedCallback                     |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  380       |  0        |                 |  HME_UPnPDeviceRemovedCallback                   |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  381       |  0        |                 |  HME_UPnPDeviceRemovedCallback                   |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  382       |  0        |                 |  HME_UPnPDeviceRemovedCallback                   |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  383       |  0        |                 |  HME_InitCDSThread                               |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  384       |  0        |                 |  HME_InitCDSThread                               |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  385       |  0        |                 |  HME_InitCDS                                     |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  386       |  0        |                 |  HME_InitCDS                                     |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  387       |  0        |                 |  RME_CreateDeviceFinder                          |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  388       |  0        |                 |  RME_CreateDeviceFinder                          |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  389       |  0        |                 |  HME_ServiceAdded                                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  390       |  0        |                 |  HME_ServiceAdded                                |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  391       |  0        |                 |  HME_ServiceAdded                                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  392       |  0        |                 |  HME_CDSUPnPInitialize                           |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  393       |  0        |                 |  HME_CDSUPnPInitialize                           |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  394       |  0        |                 |  HME_ProviderAddToRAMCache                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  395       |  0        |                 |  HME_ProviderAddToRAMCache                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  396       |  0        |                 |  HME_ProviderShutdown                            |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  397       |  0        |                 |  HME_ProviderShutdown                            |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  398       |  0        |                 |  HME_ProviderUpdateMessage                       |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  400       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Manager                      |  Start                                                      |  mediaplayer        |  Transcode has started.  Source file: {SourcePath}, Target File: {TargetPath}
+Microsoft-Windows-WMP  |  Information  |  401       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Manager                      |  The transcode manager has rolled over to the DShow Source  |  mediaplayer        |  Transcode has rolled over to using the dshow source.  Source file: {SourcePath}, Target file: {TargetPath}
+Microsoft-Windows-WMP  |  Information  |  403       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Manager                      |  Stop                                                       |  mediaplayer        |  Transcode has completed.  Source file: {SourcePath}, Target File: {TargetPath}, HRESULT {HRESULT}
+Microsoft-Windows-WMP  |  Information  |  404       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Matrix                       |  Using the MP4 transcode matrix                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  405       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Matrix                       |  Using the ASF transcode matrix                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  406       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Matrix                       |  Start                                                      |  mediaplayer        |  IsTranscodeNeeded for source file {SourceFile} (DRM flag: {IsDRM}) has started.
+Microsoft-Windows-WMP  |  Information  |  407       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Matrix                       |  Stop                                                       |  mediaplayer        |  IsTranscodeNeeded for source file {SourceFile} has stopped.  HRESULT: {HRESULT}
+Microsoft-Windows-WMP  |  Information  |  408       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Matrix                       |  Start                                                      |  mediaplayer        |  GetTranscodeProfile for source file {SourceFile} has started
+Microsoft-Windows-WMP  |  Information  |  409       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Matrix                       |  Stop                                                       |  mediaplayer        |  GetTranscodeProfile for source file {SourceFile} has stopped.  HRESULT: {HRESULT}
+Microsoft-Windows-WMP  |  Information  |  410       |  0        |  WMPSyncEngine  |  WMP Sync License Acquisition                    |  Start                                                      |  mediaplayer        |  Sync engine is attempting to acquire a license for file {SourceFile}
+Microsoft-Windows-WMP  |  Information  |  411       |  0        |  WMPSyncEngine  |  WMP Sync License Acquisition                    |  Stop                                                       |  mediaplayer        |  Sync engine has finished attempt to acquire license for file {SourceFile}.  HRESULT: {HRESULT}
+Microsoft-Windows-WMP  |  Information  |  412       |  0        |                 |  PLAYTOMENU_ENUMERATION                          |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  413       |  0        |                 |  PLAYTOMENU_ENUMERATION                          |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  414       |  0        |                 |  PLAYTOMENU_OPERATION                            |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  415       |  0        |                 |  PLAYTOMENU_OPERATION                            |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  416       |  0        |                 |  PLAYTOMENU_OPERATION                            |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  417       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  418       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  419       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  420       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  425       |  0        |                 |  STREAMING_MENU_ACTIONS                          |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  426       |  0        |                 |  STREAMING_MENU_ACTIONS                          |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  427       |  0        |                 |  CONFIGURE_STREAMING_MENU_ACTION                 |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  428       |  0        |                 |  CONFIGURE_STREAMING_MENU_ACTION                 |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  429       |  0        |                 |  RECEIVE_MEDIA_MENU_ACTION                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  430       |  0        |                 |  RECEIVE_MEDIA_MENU_ACTION                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  431       |  0        |                 |  CONFIGURE_RME_MENU_ACTION                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  432       |  0        |                 |  CONFIGURE_RME_MENU_ACTION                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  433       |  0        |                 |  STREAMING_MENU_RENDER_ACTION                    |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  434       |  0        |                 |  STREAMING_MENU_RENDER_ACTION                    |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  435       |  0        |                 |  STREAMING_MENUITEM_RME_CHECKSTATE_ACTION        |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  436       |  0        |                 |  STREAMING_MENUITEM_RECEIVEMEDIA_CHECKSTATE      |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  437       |  0        |                 |  STREAMING_MENUITEM_AUTOALLOWDEVICES_CHECKSTATE  |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  438       |  0        |                 |  ALLOW_ALL_DEVICES_MENU_ACTION                   |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  439       |  0        |                 |  ALLOW_ALL_DEVICES_MENU_ACTION                   |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  440       |  0        |                 |  CONFIGURE_STREAMING_HG_MENU_ACTION              |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  441       |  0        |                 |  CONFIGURE_STREAMING_HG_MENU_ACTION              |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  450       |  0        |                 |  PLAYSINGLE_PH_RESOLVE                           |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  451       |  0        |                 |  PLAYSINGLE_PH_RESOLVE                           |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  452       |  0        |                 |  PLAYSINGLE_PH_RESOLVE                           |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  453       |  0        |                 |  PLAYSINGLE_PH_BROWSECDS                         |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  454       |  0        |                 |  PLAYSINGLE_PH_BROWSECDS                         |                                                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  455       |  0        |                 |  PLAYSINGLE_PH_BROWSECDS                         |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  456       |  0        |                 |  PLAYCONTAINER_CREATE_PLAYLIST                   |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  457       |  0        |                 |  PLAYCONTAINER_CREATE_PLAYLIST                   |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  460       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  461       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  462       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  463       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  464       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  465       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  466       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  467       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  468       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  469       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  470       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  471       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  472       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  473       |  0        |                 |  WMPDMR_AVTRANSPORT_ACTIONS                      |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  474       |  0        |                 |  WMPDMR_CONNECTION_MANAGER_ACTIONS               |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  475       |  0        |                 |  WMPDMR_CONNECTION_MANAGER_ACTIONS               |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  476       |  0        |                 |  WMPDMR_RENDERING_CONTROL_ACTIONS                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  477       |  0        |                 |  WMPDMR_RENDERING_CONTROL_ACTIONS                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  478       |  0        |                 |  WMPDMR_RENDERING_CONTROL_ACTIONS                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  479       |  0        |                 |  WMPDMR_RENDERING_CONTROL_ACTIONS                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  480       |  0        |                 |  WMPDMR_RENDERING_CONTROL_ACTIONS                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  481       |  0        |                 |  WMPDMR_RENDERING_CONTROL_ACTIONS                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  482       |  0        |                 |  WMPDMR_RENDERING_CONTROL_ACTIONS                |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  483       |  0        |                 |  WMPDMR_RENDERING_CONTROL_ACTIONS                |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  490       |  0        |                 |  CDDVD_LAUNCH                                    |  Start                                                      |                     |
+Microsoft-Windows-WMP  |  Information  |  491       |  0        |                 |  CDDVD_LAUNCH                                    |  LOCAL_PLAY_BEGIN                                           |                     |
+Microsoft-Windows-WMP  |  Information  |  492       |  0        |                 |  CDDVD_LAUNCH                                    |  LOCAL_PLAY_BEGIN                                           |                     |
+Microsoft-Windows-WMP  |  Information  |  493       |  0        |                 |  CDDVD_LAUNCH                                    |  Stop                                                       |                     |
+Microsoft-Windows-WMP  |  Information  |  501       |  0        |  WMPSyncEngine  |  WMP Sync Transcode Matrix                       |  Using the MP3 transcode matrix                             |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1305      |  0        |                 |  SKINCLOSE                                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1306      |  0        |                 |  SKINCLOSE                                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1307      |  0        |                 |  APPCLOSE                                        |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1308      |  0        |                 |  APPCLOSE                                        |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1309      |  0        |                 |  SKINPAINT                                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1310      |  0        |                 |  SKINPAINT                                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1311      |  0        |                 |  SKINPAINT                                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1312      |  0        |                 |  SKINPAINT                                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1313      |  0        |                 |  SKINPAINT                                       |  Start                                                      |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1314      |  0        |                 |  SKINPAINT                                       |  Stop                                                       |  mediaplayer        |
+Microsoft-Windows-WMP  |  Information  |  1615      |  0        |                 |  CDGRAPH                                         |                                                             |                     |

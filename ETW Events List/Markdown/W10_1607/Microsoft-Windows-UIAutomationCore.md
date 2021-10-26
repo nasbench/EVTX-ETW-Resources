@@ -1,58 +1,58 @@
-Provider                            |  Event ID  |  Channel                                        |  Message
-------------------------------------|------------|-------------------------------------------------|---------
-Microsoft-Windows-UIAutomationCore  |  1         |  Microsoft-Windows-UIAutomationCore/Diagnostic  |
-Microsoft-Windows-UIAutomationCore  |  2         |  Microsoft-Windows-UIAutomationCore/Diagnostic  |
-Microsoft-Windows-UIAutomationCore  |  3         |  Microsoft-Windows-UIAutomationCore/Diagnostic  |
-Microsoft-Windows-UIAutomationCore  |  4         |  Microsoft-Windows-UIAutomationCore/Diagnostic  |
-Microsoft-Windows-UIAutomationCore  |  101       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  102       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  103       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  104       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  105       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  106       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  107       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  108       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  109       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  110       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  111       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  112       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  113       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  114       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  115       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  116       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  117       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  118       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  119       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  120       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  121       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  122       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  123       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  124       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  125       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  126       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  127       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  128       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  129       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  130       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  131       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  132       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  133       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  134       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  135       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  136       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  137       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  138       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  139       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  140       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  141       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  142       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  143       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  144       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  145       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  146       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  147       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  148       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  149       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  150       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  151       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  152       |  Microsoft-Windows-UIAutomationCore/Perf        |
+Provider                            |  Level        |  Event ID  |  Version  |  Channel                                        |  Task                                                          |  Opcode  |  Keyword              |  Message
+------------------------------------|---------------|------------|-----------|-------------------------------------------------|----------------------------------------------------------------|----------|-----------------------|---------
+Microsoft-Windows-UIAutomationCore  |  Information  |  1         |  0        |  Microsoft-Windows-UIAutomationCore/Diagnostic  |  UIAutomationCore_ProviderErrors                               |          |                       |
+Microsoft-Windows-UIAutomationCore  |  Information  |  2         |  0        |  Microsoft-Windows-UIAutomationCore/Diagnostic  |  UIAutomationCore_IAccessibleErrors                            |          |                       |
+Microsoft-Windows-UIAutomationCore  |  Information  |  3         |  0        |  Microsoft-Windows-UIAutomationCore/Diagnostic  |  UIAutomationCore_OtherErrors                                  |          |                       |
+Microsoft-Windows-UIAutomationCore  |  Information  |  4         |  0        |  Microsoft-Windows-UIAutomationCore/Diagnostic  |  UIAutomationCore_ClientApiErrors                              |          |                       |
+Microsoft-Windows-UIAutomationCore  |  Information  |  101       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Property_Retrieval                           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  102       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Property_Retrieval                           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  103       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Cache_Request                                |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  104       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Cache_Request                                |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  105       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_HitTest                             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  106       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_HitTest                             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  107       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_Focused                             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  108       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_Focused                             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  109       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_Selected                            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  110       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_Selected                            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  111       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Event_Registration                           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  112       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Event_Registration                           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  113       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_GetClickablePoint                            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  114       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_GetClickablePoint                            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  115       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_TreeWalkerNavigate                           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  116       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_TreeWalkerNavigate                           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  117       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_BuildUpdatedCache                            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  118       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_BuildUpdatedCache                            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  119       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_RichEditProxy_GetText                        |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  120       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_RichEditProxy_GetText                        |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  121       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_RichEditProxy_GetVisibleRange                |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  122       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_RichEditProxy_GetVisibleRange                |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  123       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_EditProxy_NextWord                           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  124       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_EditProxy_NextWord                           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  125       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_ClientConnection_CallWithReturn              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  126       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_ClientConnection_CallWithReturn              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  127       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_ReadNextChunk                     |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  128       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_ReadNextChunk                     |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  129       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_Clone                             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  130       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_Clone                             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  131       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_Compare                           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  132       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_Compare                           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  133       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_CompareEndpoints                  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  134       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_CompareEndpoints                  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  135       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_ExpandToEnclosingUnit             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  136       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_ExpandToEnclosingUnit             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  137       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_GetAttributeValue                 |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  138       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_GetAttributeValue                 |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  139       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_GetEnclosingElement               |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  140       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_GetEnclosingElement               |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  141       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_GetText                           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  142       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_GetText                           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  143       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_Move                              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  144       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_Move                              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  145       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_MoveEndpointByUnit                |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  146       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_MoveEndpointByUnit                |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  147       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_MoveEndpointByRange               |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  148       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_MoveEndpointByRange               |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  149       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_GetChildren                       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  150       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_CTextRange_GetChildren                       |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  151       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_UIAutomationCoreAPI_UiaRaiseAutomationEvent  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  152       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_UIAutomationCoreAPI_UiaRaiseAutomationEvent  |  Stop    |  PerfInstrumentation  |

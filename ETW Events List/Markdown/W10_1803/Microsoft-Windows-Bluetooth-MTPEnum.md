@@ -1,11 +1,11 @@
-Provider                             |  Event ID  |  Channel      |  Message
--------------------------------------|------------|---------------|------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Bluetooth-MTPEnum  |  100       |  Operational  |  MTP Bluetooth enumerator driver is operational with status code ({StatusCode}).
-Microsoft-Windows-Bluetooth-MTPEnum  |  101       |  Operational  |  MTP Bluetooth enumerator driver has failed to operate with error code ({StatusCode}).
-Microsoft-Windows-Bluetooth-MTPEnum  |  102       |  Operational  |  MTP Bluetooth enumerator driver has created a device object with status code ({StatusCode}).
-Microsoft-Windows-Bluetooth-MTPEnum  |  103       |  Operational  |  MTP Bluetooth enumerator driver has failed to create a device object with error code ({StatusCode}).
-Microsoft-Windows-Bluetooth-MTPEnum  |  200       |  Operational  |  An MTP Bluetooth Link between PC and an MTP Bluetooth device has been established ({ResultCode}).
-Microsoft-Windows-Bluetooth-MTPEnum  |  201       |  Operational  |  An MTP Bluetooth Link between PC and an MTP Bluetooth device has been disassociated ({ResultCode}).
-Microsoft-Windows-Bluetooth-MTPEnum  |  202       |  Operational  |  An MTP Bluetooth Link connection is being initiated by ({Name}).
-Microsoft-Windows-Bluetooth-MTPEnum  |  203       |  Operational  |  An MTP Bluetooth Link connection is being disassociated by ({Name}).
-Microsoft-Windows-Bluetooth-MTPEnum  |  204       |  Operational  |  An MTP Bluetooth Link between PC and an MTP Bluetooth device has been disassociated ({ResultCode}).
+Provider                             |  Level        |  Event ID  |  Version  |  Channel      |  Task           |  Opcode  |  Keyword  |  Message
+-------------------------------------|---------------|------------|-----------|---------------|-----------------|----------|-----------|------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Bluetooth-MTPEnum  |  Information  |  100       |  0        |  Operational  |  Driver Health  |          |           |  MTP Bluetooth enumerator driver is operational with status code ({StatusCode}).
+Microsoft-Windows-Bluetooth-MTPEnum  |  Error        |  101       |  0        |  Operational  |  Driver Health  |          |           |  MTP Bluetooth enumerator driver has failed to operate with error code ({StatusCode}).
+Microsoft-Windows-Bluetooth-MTPEnum  |  Information  |  102       |  0        |  Operational  |  Driver Health  |          |           |  MTP Bluetooth enumerator driver has created a device object with status code ({StatusCode}).
+Microsoft-Windows-Bluetooth-MTPEnum  |  Error        |  103       |  0        |  Operational  |  Driver Health  |          |           |  MTP Bluetooth enumerator driver has failed to create a device object with error code ({StatusCode}).
+Microsoft-Windows-Bluetooth-MTPEnum  |  Information  |  200       |  0        |  Operational  |  Link State     |          |           |  An MTP Bluetooth Link between PC and an MTP Bluetooth device has been established ({ResultCode}).
+Microsoft-Windows-Bluetooth-MTPEnum  |  Information  |  201       |  0        |  Operational  |  Link State     |          |           |  An MTP Bluetooth Link between PC and an MTP Bluetooth device has been disassociated ({ResultCode}).
+Microsoft-Windows-Bluetooth-MTPEnum  |  Information  |  202       |  0        |  Operational  |  Link State     |          |           |  An MTP Bluetooth Link connection is being initiated by ({Name}).
+Microsoft-Windows-Bluetooth-MTPEnum  |  Information  |  203       |  0        |  Operational  |  Link State     |          |           |  An MTP Bluetooth Link connection is being disassociated by ({Name}).
+Microsoft-Windows-Bluetooth-MTPEnum  |  Error        |  204       |  0        |  Operational  |  Link State     |          |           |  An MTP Bluetooth Link between PC and an MTP Bluetooth device has been disassociated ({ResultCode}).

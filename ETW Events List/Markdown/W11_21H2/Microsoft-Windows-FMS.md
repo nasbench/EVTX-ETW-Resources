@@ -1,19 +1,19 @@
-Provider               |  Event ID  |  Channel                         |  Message
------------------------|------------|----------------------------------|-------------------------------
-Microsoft-Windows-FMS  |  1000      |  System                          |  FMS DLL initialisation failed
-Microsoft-Windows-FMS  |  2015      |  Microsoft-Windows-FMS/Analytic  |  FMS API entry for: {ApiName}
-Microsoft-Windows-FMS  |  2016      |  Microsoft-Windows-FMS/Analytic  |  FMS API exit for: {ApiName}
-Microsoft-Windows-FMS  |  30000     |  Microsoft-Windows-FMS/Analytic  |
-Microsoft-Windows-FMS  |  30001     |  Microsoft-Windows-FMS/Analytic  |
-Microsoft-Windows-FMS  |  40000     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40001     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40002     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40003     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40004     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40005     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40006     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40007     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40008     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40009     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40010     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
-Microsoft-Windows-FMS  |  40011     |  Microsoft-Windows-FMS/Analytic  |  FMS ETW: {ApiName}
+Provider               |  Level        |  Event ID  |  Version  |  Channel                         |  Task                      |  Opcode                           |  Keyword  |  Message
+-----------------------|---------------|------------|-----------|----------------------------------|----------------------------|-----------------------------------|-----------|-------------------------------
+Microsoft-Windows-FMS  |  Error        |  1000      |  1        |  System                          |  FMS DLL initialisation    |  Start                            |           |  FMS DLL initialisation failed
+Microsoft-Windows-FMS  |  Information  |  2015      |  0        |  Microsoft-Windows-FMS/Analytic  |  FMS API entry call        |                                   |           |  FMS API entry for: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  2016      |  0        |  Microsoft-Windows-FMS/Analytic  |  FMS API exit call         |                                   |           |  FMS API exit for: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  30000     |  0        |  Microsoft-Windows-FMS/Analytic  |  PerfTrack_DisplayFmsInit  |  Start                            |           |
+Microsoft-Windows-FMS  |  Information  |  30001     |  0        |  Microsoft-Windows-FMS/Analytic  |  PerfTrack_DisplayFmsInit  |  Stop                             |           |
+Microsoft-Windows-FMS  |  Information  |  40000     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  NameResolution                   |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40001     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  GetFontNameTable Start           |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40002     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  GetFontNameTable Stop            |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40003     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  Get Name Record Start            |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40004     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  Get Name Record Stop             |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40005     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  Get Name Strings Start           |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40006     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  Get Name Strings Stop            |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40007     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  Get Font Data Start              |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40008     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  Get Font Data Stop               |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40009     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  GdiGetFontRealizationInfo Start  |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40010     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  GdiGetFontRealizationInfo Stop   |           |  FMS ETW: {ApiName}
+Microsoft-Windows-FMS  |  Information  |  40011     |  0        |  Microsoft-Windows-FMS/Analytic  |  ETW Debug Msg             |  FmsErrorMessage                  |           |  FMS ETW: {ApiName}

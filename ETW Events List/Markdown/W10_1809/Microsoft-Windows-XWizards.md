@@ -1,5 +1,5 @@
-Provider                    |  Event ID  |  Channel      |  Message
-----------------------------|------------|---------------|------------------
-Microsoft-Windows-XWizards  |  81        |  Application  |  {Caption}-{Text}
-Microsoft-Windows-XWizards  |  82        |  Application  |  {Caption}-{Text}
-Microsoft-Windows-XWizards  |  83        |  Application  |  {Caption}-{Text}
+Provider                    |  Level        |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|---------------|--------|----------|-----------|------------------
+Microsoft-Windows-XWizards  |  Information  |  81        |  0        |  Application  |        |          |           |  {Caption}-{Text}
+Microsoft-Windows-XWizards  |  Warning      |  82        |  0        |  Application  |        |          |           |  {Caption}-{Text}
+Microsoft-Windows-XWizards  |  Error        |  83        |  0        |  Application  |        |          |           |  {Caption}-{Text}

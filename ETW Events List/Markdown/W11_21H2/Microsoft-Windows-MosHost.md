@@ -1,30 +1,30 @@
-Provider                   |  Event ID  |  Channel                                |  Message
----------------------------|------------|-----------------------------------------|-------------------------------------------------------------------
-Microsoft-Windows-MosHost  |  1         |  Microsoft-Windows-MosHost/Operational  |  {String1}
-Microsoft-Windows-MosHost  |  2         |  Microsoft-Windows-MosHost/Operational  |  {String1} {String2}
-Microsoft-Windows-MosHost  |  3         |  Microsoft-Windows-MosHost/Operational  |  {Message} Error: {ErrorCode}
-Microsoft-Windows-MosHost  |  10        |  Microsoft-Windows-MosHost/Operational  |  Framework State: {State}, HRESULT: {HRESULT}
-Microsoft-Windows-MosHost  |  20        |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  21        |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  30        |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  31        |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  50        |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  70        |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  80        |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  90        |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  100       |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  101       |  Microsoft-Windows-MosHost/Operational  |  MosHost RegisterClient PID: {Dword1} Type: {Dword2}
-Microsoft-Windows-MosHost  |  110       |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  111       |  Microsoft-Windows-MosHost/Operational  |  MosHost DeregisterClient PID: {Dword1} Type: {Dword2}
-Microsoft-Windows-MosHost  |  120       |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  121       |  Microsoft-Windows-MosHost/Operational  |  MosHost GetActiveClients Total: {Dword1} Unique: {Dword2}
-Microsoft-Windows-MosHost  |  130       |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  131       |  Microsoft-Windows-MosHost/Operational  |  MosHost GetReadSharingToken Info Path: {String1} Token: {String2}
-Microsoft-Windows-MosHost  |  150       |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  151       |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  152       |  Microsoft-Windows-MosHost/Operational  |  MosHost ConnectivityCallback Online: {Dword1}
-Microsoft-Windows-MosHost  |  153       |  Microsoft-Windows-MosHost/Operational  |  MosHost SetMosOnline Online: {Dword1}
-Microsoft-Windows-MosHost  |  1000      |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  1001      |  Microsoft-Windows-MosHost/Operational  |
-Microsoft-Windows-MosHost  |  1010      |  Microsoft-Windows-MosHost/Performance  |
-Microsoft-Windows-MosHost  |  1011      |  Microsoft-Windows-MosHost/Performance  |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                                |  Task     |  Opcode  |  Keyword          |  Message
+---------------------------|---------------|------------|-----------|-----------------------------------------|-----------|----------|-------------------|-------------------------------------------------------------------
+Microsoft-Windows-MosHost  |  Information  |  1         |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  {String1}
+Microsoft-Windows-MosHost  |  Information  |  2         |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  {String1} {String2}
+Microsoft-Windows-MosHost  |  Error        |  3         |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  {Message} Error: {ErrorCode}
+Microsoft-Windows-MosHost  |  Information  |  10        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  Framework State: {State}, HRESULT: {HRESULT}
+Microsoft-Windows-MosHost  |  Information  |  20        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  21        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  30        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  31        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  50        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  70        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  80        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  90        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  100       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  101       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  MosHost RegisterClient PID: {Dword1} Type: {Dword2}
+Microsoft-Windows-MosHost  |  Information  |  110       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  111       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  MosHost DeregisterClient PID: {Dword1} Type: {Dword2}
+Microsoft-Windows-MosHost  |  Information  |  120       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  121       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  MosHost GetActiveClients Total: {Dword1} Unique: {Dword2}
+Microsoft-Windows-MosHost  |  Information  |  130       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  131       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  MosHost GetReadSharingToken Info Path: {String1} Token: {String2}
+Microsoft-Windows-MosHost  |  Information  |  150       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  151       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  152       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  MosHost ConnectivityCallback Online: {Dword1}
+Microsoft-Windows-MosHost  |  Information  |  153       |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  MosHost SetMosOnline Online: {Dword1}
+Microsoft-Windows-MosHost  |  Information  |  1000      |  0        |  Microsoft-Windows-MosHost/Operational  |  Odml     |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  1001      |  0        |  Microsoft-Windows-MosHost/Operational  |  Odml     |          |  API              |
+Microsoft-Windows-MosHost  |  Information  |  1010      |  0        |  Microsoft-Windows-MosHost/Performance  |  Odml     |  Start   |  API Performance  |
+Microsoft-Windows-MosHost  |  Information  |  1011      |  0        |  Microsoft-Windows-MosHost/Performance  |  Odml     |  Stop    |  API Performance  |

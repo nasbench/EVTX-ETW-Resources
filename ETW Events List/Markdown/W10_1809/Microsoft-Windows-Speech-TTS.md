@@ -1,7 +1,7 @@
-Provider                      |  Event ID  |  Channel                           |  Message
-------------------------------|------------|------------------------------------|---------
-Microsoft-Windows-Speech-TTS  |  1         |  Microsoft-Windows-TTS/Diagnostic  |
-Microsoft-Windows-Speech-TTS  |  2         |  Microsoft-Windows-TTS/Diagnostic  |
-Microsoft-Windows-Speech-TTS  |  3         |  Microsoft-Windows-TTS/Diagnostic  |
-Microsoft-Windows-Speech-TTS  |  4         |  Microsoft-Windows-TTS/Diagnostic  |
-Microsoft-Windows-Speech-TTS  |  5         |  Microsoft-Windows-TTS/Diagnostic  |
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                           |  Task       |  Opcode  |  Keyword              |  Message
+------------------------------|---------------|------------|-----------|------------------------------------|-------------|----------|-----------------------|---------
+Microsoft-Windows-Speech-TTS  |  Information  |  1         |  0        |  Microsoft-Windows-TTS/Diagnostic  |  LoadVoice  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-TTS  |  Information  |  2         |  0        |  Microsoft-Windows-TTS/Diagnostic  |  LoadVoice  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-TTS  |  Information  |  3         |  0        |  Microsoft-Windows-TTS/Diagnostic  |  Speak      |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-TTS  |  Information  |  4         |  0        |  Microsoft-Windows-TTS/Diagnostic  |  Speak      |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-TTS  |  Information  |  5         |  0        |  Microsoft-Windows-TTS/Diagnostic  |  Speak      |          |  PerfInstrumentation  |

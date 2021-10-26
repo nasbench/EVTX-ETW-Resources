@@ -1,6 +1,6 @@
-Provider                      |  Event ID  |  Channel                                |  Message
-------------------------------|------------|-----------------------------------------|--------------------------------------------------------------------------
-Microsoft-Windows-Kernel-XDV  |  1         |  System                                 |
-Microsoft-Windows-Kernel-XDV  |  2         |  Microsoft-Windows-Kernel-XDV/Analytic  |
-Microsoft-Windows-Kernel-XDV  |  3         |  Microsoft-Windows-Kernel-XDV/Analytic  |  Driver Event: entry function/DDI calls
-Microsoft-Windows-Kernel-XDV  |  4         |  System                                 |  BugCheck Event: A driver rule violation has been detected by VerifierExt
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                                |  Task  |  Opcode  |  Keyword  |  Message
+------------------------------|---------------|------------|-----------|-----------------------------------------|--------|----------|-----------|--------------------------------------------------------------------------
+Microsoft-Windows-Kernel-XDV  |  Information  |  1         |  0        |  System                                 |        |  Start   |           |
+Microsoft-Windows-Kernel-XDV  |  Information  |  2         |  0        |  Microsoft-Windows-Kernel-XDV/Analytic  |        |  Stop    |           |
+Microsoft-Windows-Kernel-XDV  |  Information  |  3         |  0        |  Microsoft-Windows-Kernel-XDV/Analytic  |        |  Start   |           |  Driver Event: entry function/DDI calls
+Microsoft-Windows-Kernel-XDV  |  Error        |  4         |  0        |  System                                 |        |  Start   |           |  BugCheck Event: A driver rule violation has been detected by VerifierExt

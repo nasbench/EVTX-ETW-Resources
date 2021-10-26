@@ -1,4 +1,4 @@
-Provider                             |  Event ID  |  Channel  |  Message
--------------------------------------|------------|-----------|---------------------------------------------------------------------
-Microsoft-Windows-Telephony-PhoneOm  |  1         |           |  [ERROR] originated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
-Microsoft-Windows-Telephony-PhoneOm  |  2         |           |  [ERROR] propagated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
+Provider                             |  Level    |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------------|-----------|------------|-----------|-----------|--------|----------|-----------|---------------------------------------------------------------------
+Microsoft-Windows-Telephony-PhoneOm  |  Error    |  1         |  0        |           |        |          |  Error    |  [ERROR] originated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]
+Microsoft-Windows-Telephony-PhoneOm  |  Warning  |  2         |  0        |           |        |          |           |  [ERROR] propagated HRESULT={P1_HResult} [{P2_String} @ {P3_UInt32}]

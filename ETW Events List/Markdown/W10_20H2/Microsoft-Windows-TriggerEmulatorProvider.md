@@ -1,3 +1,3 @@
-Provider                                   |  Event ID  |  Channel  |  Message
--------------------------------------------|------------|-----------|---------
-Microsoft-Windows-TriggerEmulatorProvider  |  1         |           |
+Provider                                   |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                       |  Keyword                       |  Message
+-------------------------------------------|---------------|------------|-----------|-----------|--------|-------------------------------|--------------------------------|---------
+Microsoft-Windows-TriggerEmulatorProvider  |  Information  |  1         |  0        |           |        |  Opcode_TriggerEmulatorEvent  |  Keyword_TriggerEmulatorEvent  |

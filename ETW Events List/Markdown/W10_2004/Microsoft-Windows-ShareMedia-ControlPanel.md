@@ -1,34 +1,34 @@
-Provider                                   |  Event ID  |  Channel                                               |  Message
--------------------------------------------|------------|--------------------------------------------------------|---------
-Microsoft-Windows-ShareMedia-ControlPanel  |  1001      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1002      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1003      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1004      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1005      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1006      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1007      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1008      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1009      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1010      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1011      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1012      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1013      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1014      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1015      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1016      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1017      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1018      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1019      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1020      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1021      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1022      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1023      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1024      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1025      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1026      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1027      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1028      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1029      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1030      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1031      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
-Microsoft-Windows-ShareMedia-ControlPanel  |  1032      |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |
+Provider                                   |  Level        |  Event ID  |  Version  |  Channel                                               |  Task                       |  Opcode  |  Keyword  |  Message
+-------------------------------------------|---------------|------------|-----------|--------------------------------------------------------|-----------------------------|----------|-----------|---------
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1001      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  PopulateShareWithListView  |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1002      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  PopulateShareWithListView  |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1003      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  LaunchShareMediaCPL        |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1004      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  LaunchShareMediaCPL        |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1005      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  WriteSettings              |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1006      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  WriteSettings              |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1007      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  AddDevice                  |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1008      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  AddDevice                  |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1009      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  UpdateDevice               |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1010      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  UpdateDevice               |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1011      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  RemoveDevice               |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1012      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  RemoveDevice               |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1013      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  RemoveAllDevices           |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1014      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  RemoveAllDevices           |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1015      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  ShowNormalPage             |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1016      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  ShowNormalPage             |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1017      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  ShowWarningPage            |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1018      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  ShowWarningPage            |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1019      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  ShowErrorPage              |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1020      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  ShowErrorPage              |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1021      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  AllowAll                   |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1022      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  AllowAll                   |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1023      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  BlockAll                   |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1024      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  BlockAll                   |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1025      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  OKButton                   |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1026      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  OKButton                   |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1027      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  CancelButton               |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1028      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  CancelButton               |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1029      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  NavigateAway               |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1030      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  NavigateAway               |  Stop    |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1031      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  EnableSharing              |  Start   |           |
+Microsoft-Windows-ShareMedia-ControlPanel  |  Information  |  1032      |  0        |  Microsoft-Windows-ShareMedia-ControlPanel/Diagnostic  |  EnableSharing              |  Stop    |           |

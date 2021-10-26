@@ -1,47 +1,47 @@
-Provider                    |  Event ID  |  Channel                   |  Message
-----------------------------|------------|----------------------------|---------
-Microsoft-Windows-wmvdecod  |  0         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  1         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  2         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  3         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  4         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  5         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  6         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  7         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  8         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  9         |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  10        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  11        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  12        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  13        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  14        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  15        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  16        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  17        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  18        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  19        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  20        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  21        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  22        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  23        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  24        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  25        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  26        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  27        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  28        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  29        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  30        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  31        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  32        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  33        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  34        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  35        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  36        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  37        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  38        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  39        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  40        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  41        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  42        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  43        |  WINDOWS_wmvdecod_CHANNEL  |
-Microsoft-Windows-wmvdecod  |  44        |  WINDOWS_wmvdecod_CHANNEL  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                   |  Task                                |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|----------------------------|--------------------------------------|----------|-----------|---------
+Microsoft-Windows-wmvdecod  |  Information  |  0         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_VC1_DecodeTask             |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  1         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_VC1_DecodeTask             |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  2         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_Init                       |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  3         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_Init                       |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  4         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_setExtendedFormat          |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  5         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_setExtendedFormat          |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  6         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ProcessInput               |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  7         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ProcessInput               |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  8         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ProcessInput               |          |           |
+Microsoft-Windows-wmvdecod  |  Information  |  9         |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ProcessOutput              |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  10        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ProcessOutput              |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  11        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_LoopFilter                 |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  12        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_LoopFilter                 |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  13        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_Deblocking                 |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  14        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_Deblocking                 |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  15        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ProcessOutput              |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  16        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ProcessOutput              |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  17        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ColorConv                  |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  18        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_ColorConv                  |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  19        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_GetBuffer            |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  20        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_GetBuffer            |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  21        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_ReleaseBuffer        |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  22        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_ReleaseBuffer        |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  23        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2                      |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  24        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2                      |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  25        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2                      |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  26        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2                      |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  27        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_BeginFrame           |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  28        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_BeginFrame           |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  29        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_EndFrame             |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  30        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_EndFrame             |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  31        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_Execute              |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  32        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_Execute              |  Stop    |           |
+Microsoft-Windows-wmvdecod  |  Information  |  33        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_MFSampleOut          |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  34        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA2_MFSampleReturn       |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  35        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_FormatChange               |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  36        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_MonitorSwitch              |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  37        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_QualityManager             |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  38        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_MFMessages_D3D             |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  39        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_MFMessages_BeginStreaming  |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  40        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_MFMessages_EndStreaming    |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  41        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_MFMessages_Drain           |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  42        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_MFMessages_Flush           |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  43        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA_EncryptFrame          |  Start   |           |
+Microsoft-Windows-wmvdecod  |  Information  |  44        |  0        |  WINDOWS_wmvdecod_CHANNEL  |  wmvdecod_DXVA_EncryptFrame          |  Stop    |           |

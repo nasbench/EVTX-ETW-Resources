@@ -1,6 +1,6 @@
-Provider                                 |  Event ID  |  Channel  |  Message
------------------------------------------|------------|-----------|---------
-Microsoft-Windows-ErrorReportingConsole  |  105       |           |
-Microsoft-Windows-ErrorReportingConsole  |  106       |           |
-Microsoft-Windows-ErrorReportingConsole  |  111       |           |
-Microsoft-Windows-ErrorReportingConsole  |  112       |           |
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel  |  Task                   |  Opcode  |  Keyword  |  Message
+-----------------------------------------|---------------|------------|-----------|-----------|-------------------------|----------|-----------|---------
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  105       |  0        |           |  PrsCplPageLayout       |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  106       |  0        |           |  PrsCplPageLayout       |  Stop    |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  111       |  0        |           |  PrsReportDbPopulation  |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  112       |  0        |           |  PrsReportDbPopulation  |  Stop    |           |

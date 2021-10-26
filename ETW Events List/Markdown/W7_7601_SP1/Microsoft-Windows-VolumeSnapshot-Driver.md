@@ -1,36 +1,36 @@
-Provider                                 |  Event ID  |  Channel                                              |  Message
------------------------------------------|------------|-------------------------------------------------------|---------
-Microsoft-Windows-VolumeSnapshot-Driver  |  0         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  1         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  2         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  3         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  4         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  5         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  6         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  7         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  8         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  9         |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  10        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  11        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  12        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  13        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  14        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  15        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  16        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  17        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  18        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  19        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  20        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  21        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  22        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  23        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  24        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  25        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  26        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  27        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  28        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  29        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  30        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  31        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  32        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
-Microsoft-Windows-VolumeSnapshot-Driver  |  33        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel                                              |  Task                  |  Opcode  |  Keyword        |  Message
+-----------------------------------------|---------------|------------|-----------|-------------------------------------------------------|------------------------|----------|-----------------|---------
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  0         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Prepare            |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  1         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Prepare            |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  2         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:PreExposure        |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  3         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:PreExposure        |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  4         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:AdjustBitmap       |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  5         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:AdjustBitmap       |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  6         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:EndCommit          |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  7         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:EndCommit          |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  8         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Activate           |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  9         |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Activate           |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  10        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:SetIgnorable       |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  11        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:SetIgnorable       |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  12        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:IgnorableProduct   |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  13        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:IgnorableProduct   |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  14        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Dismount           |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  15        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Dismount           |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  16        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Remount            |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  17        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Remount            |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  18        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:DeleteProcess      |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  19        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:DeleteProcess      |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  20        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Revert             |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  21        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:Revert             |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  22        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:ProtectedBitmap    |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  23        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:ProtectedBitmap    |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  24        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:FlushHoldFs        |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  25        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:FlushHoldFs        |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  26        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:ActivateLoop       |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  27        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:ActivateLoop       |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  28        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:ValidateFiles      |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  29        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:ValidateFiles      |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  30        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:VolumeSafe         |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  31        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:VolumeSafe         |  Stop    |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  32        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:DiscoverSnapshots  |  Start   |  vs:Diagnostic  |
+Microsoft-Windows-VolumeSnapshot-Driver  |  Information  |  33        |  0        |  Microsoft-Windows-VolumeSnapshot-Driver/Operational  |  vs:DiscoverSnapshots  |  Stop    |  vs:Diagnostic  |

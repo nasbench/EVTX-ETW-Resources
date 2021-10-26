@@ -1,11 +1,11 @@
-Provider                           |  Event ID  |  Channel             |  Message
------------------------------------|------------|----------------------|---------
-Microsoft-Windows-KernelStreaming  |  200       |  WINDOWS_KS_CHANNEL  |
-Microsoft-Windows-KernelStreaming  |  201       |  WINDOWS_KS_CHANNEL  |
-Microsoft-Windows-KernelStreaming  |  202       |  WINDOWS_KS_CHANNEL  |
-Microsoft-Windows-KernelStreaming  |  203       |  WINDOWS_KS_CHANNEL  |
-Microsoft-Windows-KernelStreaming  |  206       |  WINDOWS_KS_CHANNEL  |
-Microsoft-Windows-KernelStreaming  |  207       |  WINDOWS_KS_CHANNEL  |
-Microsoft-Windows-KernelStreaming  |  208       |  WINDOWS_KS_CHANNEL  |
-Microsoft-Windows-KernelStreaming  |  209       |  WINDOWS_KS_CHANNEL  |
-Microsoft-Windows-KernelStreaming  |  210       |  WINDOWS_KS_CHANNEL  |
+Provider                           |  Level        |  Event ID  |  Version  |  Channel             |  Task                 |  Opcode  |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|----------------------|-----------------------|----------|-----------|---------
+Microsoft-Windows-KernelStreaming  |  Information  |  200       |  0        |  WINDOWS_KS_CHANNEL  |  KS_PnpAddDevice      |  Start   |           |
+Microsoft-Windows-KernelStreaming  |  Information  |  201       |  0        |  WINDOWS_KS_CHANNEL  |  KS_PnpAddDevice      |  Stop    |           |
+Microsoft-Windows-KernelStreaming  |  Information  |  202       |  0        |  WINDOWS_KS_CHANNEL  |  KS_StreamingRequest  |  Start   |           |
+Microsoft-Windows-KernelStreaming  |  Information  |  203       |  0        |  WINDOWS_KS_CHANNEL  |  KS_StreamingRequest  |  Stop    |           |
+Microsoft-Windows-KernelStreaming  |  Information  |  206       |  0        |  WINDOWS_KS_CHANNEL  |  KS_WNF               |          |           |
+Microsoft-Windows-KernelStreaming  |  Information  |  207       |  0        |  WINDOWS_KS_CHANNEL  |  KS_WNF               |          |           |
+Microsoft-Windows-KernelStreaming  |  Information  |  208       |  0        |  WINDOWS_KS_CHANNEL  |  KS_WNFPinState       |          |           |
+Microsoft-Windows-KernelStreaming  |  Information  |  209       |  0        |  WINDOWS_KS_CHANNEL  |  KS_WNFNotification   |          |           |
+Microsoft-Windows-KernelStreaming  |  Information  |  210       |  0        |  WINDOWS_KS_CHANNEL  |  KS_DisplayOff        |          |           |

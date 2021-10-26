@@ -1,5 +1,5 @@
-Provider                       |  Event ID  |  Channel                              |  Message
--------------------------------|------------|---------------------------------------|---------------------------------
-Microsoft-Windows-SmartScreen  |  1000      |  Microsoft-Windows-SmartScreen/Debug  |  Application SmartScreen Event
-Microsoft-Windows-SmartScreen  |  1001      |  Microsoft-Windows-SmartScreen/Debug  |  Uri SmartScreen Event
-Microsoft-Windows-SmartScreen  |  1002      |  Microsoft-Windows-SmartScreen/Debug  |  User Decision SmartScreen Event
+Provider                       |  Level        |  Event ID  |  Version  |  Channel                              |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------|---------------|------------|-----------|---------------------------------------|--------|----------|-----------|---------------------------------
+Microsoft-Windows-SmartScreen  |  Information  |  1000      |  0        |  Microsoft-Windows-SmartScreen/Debug  |        |          |           |  Application SmartScreen Event
+Microsoft-Windows-SmartScreen  |  Information  |  1001      |  0        |  Microsoft-Windows-SmartScreen/Debug  |        |          |           |  Uri SmartScreen Event
+Microsoft-Windows-SmartScreen  |  Information  |  1002      |  0        |  Microsoft-Windows-SmartScreen/Debug  |        |          |           |  User Decision SmartScreen Event

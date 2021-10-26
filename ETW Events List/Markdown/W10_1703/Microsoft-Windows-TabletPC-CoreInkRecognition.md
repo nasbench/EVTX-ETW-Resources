@@ -1,80 +1,80 @@
-Provider                                       |  Event ID  |  Channel  |  Message
------------------------------------------------|------------|-----------|---------
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  1         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  2         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  3         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  4         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  5         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  6         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  7         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  8         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  9         |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  10        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  11        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  12        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  13        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  14        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  15        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  16        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  17        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  18        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  19        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  20        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  21        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  22        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  23        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  24        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  25        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  26        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  27        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  28        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  29        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  30        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  31        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  32        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  33        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  34        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  35        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  36        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  37        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  38        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  39        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  40        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  41        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  42        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  43        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  44        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  45        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  46        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  47        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  48        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  49        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  50        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  51        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  52        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  53        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  54        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  55        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  56        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  57        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  58        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  59        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  60        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  61        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  62        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  63        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  64        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  65        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  66        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  67        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  68        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  69        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  70        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  71        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  72        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  73        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  74        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  75        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  76        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  77        |           |
-Microsoft-Windows-TabletPC-CoreInkRecognition  |  78        |           |
+Provider                                       |  Level        |  Event ID  |  Version  |  Channel  |  Task                                    |  Opcode  |  Keyword  |  Message
+-----------------------------------------------|---------------|------------|-----------|-----------|------------------------------------------|----------|-----------|---------
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  1         |  0        |           |  RECO_API_AddStroke                      |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  2         |  0        |           |  RECO_API_AddStroke                      |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  3         |  0        |           |  RECO_API_AddWordsToWordList             |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  4         |  0        |           |  RECO_API_AddWordsToWordList             |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  5         |  0        |           |  RECO_API_AdviseInkChange                |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  6         |  0        |           |  RECO_API_AdviseInkChange                |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  7         |  0        |           |  RECO_API_CloneContext                   |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  8         |  0        |           |  RECO_API_CloneContext                   |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  9         |  0        |           |  RECO_API_CreateContext                  |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  10        |  0        |           |  RECO_API_CreateContext                  |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  11        |  0        |           |  RECO_API_CreateRecognizer               |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  12        |  0        |           |  RECO_API_CreateRecognizer               |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  13        |  0        |           |  RECO_API_DestroyContext                 |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  14        |  0        |           |  RECO_API_DestroyContext                 |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  15        |  0        |           |  RECO_API_DestroyRecognizer              |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  16        |  0        |           |  RECO_API_DestroyRecognizer              |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  17        |  0        |           |  RECO_API_DestroyWordList                |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  18        |  0        |           |  RECO_API_DestroyWordList                |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  19        |  0        |           |  RECO_API_EndInkInput                    |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  20        |  0        |           |  RECO_API_EndInkInput                    |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  21        |  0        |           |  RECO_API_GetBestResultString            |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  22        |  0        |           |  RECO_API_GetBestResultString            |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  23        |  0        |           |  RECO_API_GetEnabledUnicodeRanges        |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  24        |  0        |           |  RECO_API_GetEnabledUnicodeRanges        |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  25        |  0        |           |  RECO_API_GetGuide                       |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  26        |  0        |           |  RECO_API_GetGuide                       |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  27        |  0        |           |  RECO_API_GetLatticePtr                  |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  28        |  0        |           |  RECO_API_GetLatticePtr                  |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  29        |  0        |           |  RECO_API_GetPreferredPacketDescription  |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  30        |  0        |           |  RECO_API_GetPreferredPacketDescription  |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  31        |  0        |           |  RECO_API_GetRecoAttributes              |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  32        |  0        |           |  RECO_API_GetRecoAttributes              |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  33        |  0        |           |  RECO_API_GetResultPropertyList          |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  34        |  0        |           |  RECO_API_GetResultPropertyList          |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  35        |  0        |           |  RECO_API_GetUnicodeRanges               |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  36        |  0        |           |  RECO_API_GetUnicodeRanges               |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  37        |  0        |           |  RECO_API_IsStringSupported              |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  38        |  0        |           |  RECO_API_IsStringSupported              |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  39        |  0        |           |  RECO_API_MakeWordList                   |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  40        |  0        |           |  RECO_API_MakeWordList                   |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  41        |  0        |           |  RECO_API_Process                        |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  42        |  0        |           |  RECO_API_Process                        |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  43        |  0        |           |  RECO_API_ResetContext                   |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  44        |  0        |           |  RECO_API_ResetContext                   |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  45        |  0        |           |  RECO_API_SetCACMode                     |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  46        |  0        |           |  RECO_API_SetCACMode                     |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  47        |  0        |           |  RECO_API_SetEnabledUnicodeRanges        |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  48        |  0        |           |  RECO_API_SetEnabledUnicodeRanges        |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  49        |  0        |           |  RECO_API_SetFactoid                     |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  50        |  0        |           |  RECO_API_SetFactoid                     |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  51        |  0        |           |  RECO_API_SetFlags                       |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  52        |  0        |           |  RECO_API_SetFlags                       |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  53        |  0        |           |  RECO_API_SetGuide                       |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  54        |  0        |           |  RECO_API_SetGuide                       |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  55        |  0        |           |  RECO_API_SetPersonalizationData         |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  56        |  0        |           |  RECO_API_SetPersonalizationData         |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  57        |  0        |           |  RECO_API_SetTextContext                 |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  58        |  0        |           |  RECO_API_SetTextContext                 |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  59        |  0        |           |  RECO_API_SetWordList                    |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  60        |  0        |           |  RECO_API_SetWordList                    |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  61        |  0        |           |  RECO_DLL_Attach                         |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  62        |  0        |           |  RECO_DLL_Attach                         |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  63        |  0        |           |  RECO_DLL_Detach                         |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  64        |  0        |           |  RECO_DLL_Detach                         |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  65        |  0        |           |  RECO_TRAINER_AbortTrainer               |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  66        |  0        |           |  RECO_TRAINER_AbortTrainer               |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  67        |  0        |           |  RECO_TRAINER_CreateTrainer              |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  68        |  0        |           |  RECO_TRAINER_CreateTrainer              |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  69        |  0        |           |  RECO_TRAINER_DestroyTrainer             |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  70        |  0        |           |  RECO_TRAINER_DestroyTrainer             |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  71        |  0        |           |  RECO_TRAINER_RecoTransferLayer          |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  72        |  0        |           |  RECO_TRAINER_RecoTransferLayer          |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  73        |  0        |           |  RECO_TRAINER_ShapeTrain                 |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  74        |  0        |           |  RECO_TRAINER_ShapeTrain                 |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  75        |  0        |           |  RECO_TRAINER_TextTrain                  |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  76        |  0        |           |  RECO_TRAINER_TextTrain                  |  Stop    |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  77        |  0        |           |  RECO_API_GetPredictionText              |  Start   |           |
+Microsoft-Windows-TabletPC-CoreInkRecognition  |  Information  |  78        |  0        |           |  RECO_API_GetPredictionText              |  Stop    |           |

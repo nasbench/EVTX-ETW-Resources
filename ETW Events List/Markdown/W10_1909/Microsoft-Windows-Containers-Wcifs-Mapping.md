@@ -1,3 +1,3 @@
-Provider                                    |  Event ID  |  Channel  |  Message
---------------------------------------------|------------|-----------|-----------------------------------
-Microsoft-Windows-Containers-Wcifs-Mapping  |  1         |           |  source: {Source} target: {Target}
+Provider                                    |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword          |  Message
+--------------------------------------------|---------------|------------|-----------|-----------|--------|----------|-------------------|-----------------------------------
+Microsoft-Windows-Containers-Wcifs-Mapping  |  Information  |  1         |  0        |           |        |          |  WcifsDiagnostic  |  source: {Source} target: {Target}

@@ -1,5 +1,5 @@
-Provider                          |  Event ID  |  Channel                                                                                            |  Message
-----------------------------------|------------|-----------------------------------------------------------------------------------------------------|-----------------------------
-Microsoft-Windows-Input-HIDCLASS  |  1         |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |
-Microsoft-Windows-Input-HIDCLASS  |  2         |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |
-Microsoft-Windows-Input-HIDCLASS  |  3         |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |  HIDCLASS device information
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                                                                            |  Task              |  Opcode       |  Keyword  |  Message
+----------------------------------|---------------|------------|-----------|-----------------------------------------------------------------------------------------------------|--------------------|---------------|-----------|-----------------------------
+Microsoft-Windows-Input-HIDCLASS  |  Information  |  1         |  0        |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |  HIDCLASS Rundown  |  Start        |  Default  |
+Microsoft-Windows-Input-HIDCLASS  |  Information  |  2         |  0        |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |  HIDCLASS Rundown  |  Stop         |  Default  |
+Microsoft-Windows-Input-HIDCLASS  |  Information  |  3         |  0        |  This is the Analytic channel to which internal Analytic events from the HIDCLASS driver are sent.  |                    |  Information  |  Default  |  HIDCLASS device information

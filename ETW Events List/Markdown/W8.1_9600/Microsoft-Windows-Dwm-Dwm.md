@@ -1,16 +1,16 @@
-Provider                   |  Event ID  |  Channel                               |  Message
----------------------------|------------|----------------------------------------|---------
-Microsoft-Windows-Dwm-Dwm  |  1         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  2         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  3         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  4         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  5         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  6         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  7         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  8         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  9         |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  10        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  11        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  12        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  13        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
-Microsoft-Windows-Dwm-Dwm  |  14        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                               |  Task                          |  Opcode  |  Keyword         |  Message
+---------------------------|---------------|------------|-----------|----------------------------------------|--------------------------------|----------|------------------|---------
+Microsoft-Windows-Dwm-Dwm  |  Information  |  1         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  RedirectionStateAndInput      |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  2         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  RedirectionStateOutput        |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  3         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  TraceGraphicsCapabilities     |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  4         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  CompositionOverriden          |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  5         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  CompositionEnabledByPolicy    |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  6         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  RemotingCaps                  |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  7         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  SystemMemoryLockingThreshold  |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  8         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  SlowCompositionTime           |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  9         |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  StartDWMTransport             |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  10        |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  StopDWMTransport              |          |  DwmExe          |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  11        |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  AddGhost                      |          |  DwmExeGhosting  |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  12        |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  DuplicateGhost                |          |  DwmExeGhosting  |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  13        |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  VetoCreateGhostWindow         |          |  DwmExeGhosting  |
+Microsoft-Windows-Dwm-Dwm  |  Information  |  14        |  0        |  Microsoft-Windows-Dwm-Dwm/Diagnostic  |  PolicyOrModeChange            |          |  DwmExe          |

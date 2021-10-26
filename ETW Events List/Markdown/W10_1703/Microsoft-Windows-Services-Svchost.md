@@ -1,4 +1,4 @@
-Provider                            |  Event ID  |  Channel                                        |  Message
-------------------------------------|------------|-------------------------------------------------|---------
-Microsoft-Windows-Services-Svchost  |  101       |  Microsoft-Windows-Services-Svchost/Diagnostic  |
-Microsoft-Windows-Services-Svchost  |  102       |  Microsoft-Windows-Services-Svchost/Diagnostic  |
+Provider                            |  Level        |  Event ID  |  Version  |  Channel                                        |  Task         |  Opcode  |  Keyword  |  Message
+------------------------------------|---------------|------------|-----------|-------------------------------------------------|---------------|----------|-----------|---------
+Microsoft-Windows-Services-Svchost  |  Information  |  101       |  0        |  Microsoft-Windows-Services-Svchost/Diagnostic  |  ServiceMain  |  Start   |           |
+Microsoft-Windows-Services-Svchost  |  Information  |  102       |  0        |  Microsoft-Windows-Services-Svchost/Diagnostic  |  ServiceMain  |  Stop    |           |

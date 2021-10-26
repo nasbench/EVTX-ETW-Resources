@@ -1,33 +1,33 @@
-Provider               |  Event ID    |  Channel  |  Message
------------------------|--------------|-----------|---------
-Microsoft-Windows-WMI  |  3221225476  |           |
-Microsoft-Windows-WMI  |  3221225482  |           |
-Microsoft-Windows-WMI  |  3221225493  |           |
-Microsoft-Windows-WMI  |  3221225494  |           |
-Microsoft-Windows-WMI  |  3221225495  |           |
-Microsoft-Windows-WMI  |  3221225496  |           |
-Microsoft-Windows-WMI  |  3221225497  |           |
-Microsoft-Windows-WMI  |  3221225500  |           |
-Microsoft-Windows-WMI  |  3221225501  |           |
-Microsoft-Windows-WMI  |  3221225515  |           |
-Microsoft-Windows-WMI  |  3221225520  |           |
-Microsoft-Windows-WMI  |  3221225530  |           |
-Microsoft-Windows-WMI  |  3221225531  |           |
-Microsoft-Windows-WMI  |  2147483711  |           |
-Microsoft-Windows-WMI  |  3221225537  |           |
-Microsoft-Windows-WMI  |  3221225538  |           |
-Microsoft-Windows-WMI  |  3221225539  |           |
-Microsoft-Windows-WMI  |  3221225540  |           |
-Microsoft-Windows-WMI  |  1073747424  |           |
-Microsoft-Windows-WMI  |  3221231073  |           |
-Microsoft-Windows-WMI  |  3221231074  |           |
-Microsoft-Windows-WMI  |  3221231076  |           |
-Microsoft-Windows-WMI  |  3221231077  |           |
-Microsoft-Windows-WMI  |  3221231078  |           |
-Microsoft-Windows-WMI  |  3221231083  |           |
-Microsoft-Windows-WMI  |  3221231084  |           |
-Microsoft-Windows-WMI  |  3221231086  |           |
-Microsoft-Windows-WMI  |  3221231087  |           |
-Microsoft-Windows-WMI  |  3221231088  |           |
-Microsoft-Windows-WMI  |  3221231089  |           |
-Microsoft-Windows-WMI  |  3221231103  |           |
+Provider               |  Level  |  Event ID    |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------|---------|--------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-WMI  |         |  3221225476  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225482  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225493  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225494  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225495  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225496  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225497  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225500  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225501  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225515  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225520  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225530  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225531  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  2147483711  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225537  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225538  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225539  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221225540  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  1073747424  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231073  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231074  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231076  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231077  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231078  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231083  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231084  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231086  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231087  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231088  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231089  |  0        |           |        |          |           |
+Microsoft-Windows-WMI  |         |  3221231103  |  0        |           |        |          |           |

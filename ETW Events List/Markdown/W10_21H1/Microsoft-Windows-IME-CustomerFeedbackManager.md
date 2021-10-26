@@ -1,20 +1,20 @@
-Provider                                       |  Event ID  |  Channel                                              |  Message
------------------------------------------------|------------|-------------------------------------------------------|--------------------------------------------------------------------------------------
-Microsoft-Windows-IME-CustomerFeedbackManager  |  1         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  {Msg}
-Microsoft-Windows-IME-CustomerFeedbackManager  |  2         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  3         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  4         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  5         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  6         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  7         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  8         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  9         |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  10        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  11        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  SQM sender: Start method ends successfully. hr = {HRESULT}, Thread ID = {Thread ID}.
-Microsoft-Windows-IME-CustomerFeedbackManager  |  12        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  13        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |
-Microsoft-Windows-IME-CustomerFeedbackManager  |  14        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  SQM sender: Calling SqmStartUpload({path}).
-Microsoft-Windows-IME-CustomerFeedbackManager  |  15        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  SQM sender: Find file loop 1: ({pattern}) => {result}
-Microsoft-Windows-IME-CustomerFeedbackManager  |  16        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  SQM sender: Find file loop 2: ({pattern}) => {result}
-Microsoft-Windows-IME-CustomerFeedbackManager  |  17        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  SQM sender: szLocalLowFolderRelative = {path}
-Microsoft-Windows-IME-CustomerFeedbackManager  |  18        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  SQM sender: SqmStartUpload failed with GLE = {GLE}
+Provider                                       |  Level        |  Event ID  |  Version  |  Channel                                              |  Task             |  Opcode  |  Keyword  |  Message
+-----------------------------------------------|---------------|------------|-----------|-------------------------------------------------------|-------------------|----------|-----------|--------------------------------------------------------------------------------------
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  1         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_ShipAsserts  |          |           |  {Msg}
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  2         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  3         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  4         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  5         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  6         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  7         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  8         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  9         |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  10        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  11        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |  SQM sender: Start method ends successfully. hr = {HRESULT}, Thread ID = {Thread ID}.
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  12        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  13        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  14        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |  SQM sender: Calling SqmStartUpload({path}).
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  15        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |  SQM sender: Find file loop 1: ({pattern}) => {result}
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  16        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |  SQM sender: Find file loop 2: ({pattern}) => {result}
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  17        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |  SQM sender: szLocalLowFolderRelative = {path}
+Microsoft-Windows-IME-CustomerFeedbackManager  |  Information  |  18        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManager/Debug  |  IME_SQMsender    |          |           |  SQM sender: SqmStartUpload failed with GLE = {GLE}

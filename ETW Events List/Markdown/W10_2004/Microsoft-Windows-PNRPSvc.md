@@ -1,5 +1,5 @@
-Provider                   |  Event ID    |  Channel  |  Message
----------------------------|--------------|-----------|---------
-Microsoft-Windows-PNRPSvc  |  3221225572  |           |
-Microsoft-Windows-PNRPSvc  |  3221225573  |           |
-Microsoft-Windows-PNRPSvc  |  3221225574  |           |
+Provider                   |  Level  |  Event ID    |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+---------------------------|---------|--------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-PNRPSvc  |         |  3221225572  |  0        |           |        |          |           |
+Microsoft-Windows-PNRPSvc  |         |  3221225573  |  0        |           |        |          |           |
+Microsoft-Windows-PNRPSvc  |         |  3221225574  |  0        |           |        |          |           |

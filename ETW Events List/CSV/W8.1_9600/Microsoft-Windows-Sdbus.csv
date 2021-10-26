@@ -1,16 +1,16 @@
-Provider|Event ID|Channel|Message
-Microsoft-Windows-Sdbus|100|Microsoft-Windows-Sdbus/Analytic|Interrupt detected in ISR.SD Host Physical Address: {SDHostPhysicalAddress}Events (masked): {EventMask}
-Microsoft-Windows-Sdbus|101|Microsoft-Windows-Sdbus/Analytic|Entering callback routine.SD Host Physical Address: {SDHostPhysicalAddress}
-Microsoft-Windows-Sdbus|102|Microsoft-Windows-Sdbus/Analytic|Exiting callback routine.SD Host Physical Address: {SDHostPhysicalAddress}
-Microsoft-Windows-Sdbus|103|Microsoft-Windows-Sdbus/Analytic|Retuning Sequence detected.SD Host Physical Address: {SDHostPhysicalAddress}Retuning Count: {RetuneCount}
-Microsoft-Windows-Sdbus|104|Microsoft-Windows-Sdbus/Debug|Error in bus transfer.SD Host Physical Address: {SDHostPhysicalAddress}Error Code: {ErrorCode}Error Count: {ErrorCount}
-Microsoft-Windows-Sdbus|105|Microsoft-Windows-Sdbus/Analytic|Hpi IO detected.SD Host Physical Address: {SDHostPhysicalAddress}Hpi Count: {HpiIoCount}
-Microsoft-Windows-Sdbus|106|Microsoft-Windows-Sdbus/Analytic|P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Requested: {PStateRequested}P-State Request Count: {PStateRequestCount}
-Microsoft-Windows-Sdbus|107|Microsoft-Windows-Sdbus/Analytic|P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Completed: {PStateCompleted}P-State Completion Count: {PStateCompletionCount}
-Microsoft-Windows-Sdbus|108|Microsoft-Windows-Sdbus/Analytic|Command issued.SD Host Physical Address: {SDHostPhysicalAddress}Command: {Command}Argument: {Argument}Size: {Size}
-Microsoft-Windows-Sdbus|109|Microsoft-Windows-Sdbus/Analytic|Command completed.SD Host Physical Address: {SDHostPhysicalAddress}Command: {Command}Argument: {Argument}Size: {Size}
-Microsoft-Windows-Sdbus|110|Microsoft-Windows-Sdbus/Analytic|Hpi CMD sent to the hardware. IRP {Irp}
-Microsoft-Windows-Sdbus|111|Microsoft-Windows-Sdbus/Analytic|Hpi CMD was accepted by the hardware. IRP {Irp}
-Microsoft-Windows-Sdbus|112|Microsoft-Windows-Sdbus/Analytic|Hpi CMD worker started. IRP {Irp}
-Microsoft-Windows-Sdbus|113|Microsoft-Windows-Sdbus/Analytic|Hpi CMD worker exited. IRP {Irp} Reason: {HpiExitReason}
-Microsoft-Windows-Sdbus|114|Microsoft-Windows-Sdbus/Analytic|P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Active Percentage: {PStateActivePercent}P-State Active Duration: {PStateActiveDuration}P-State Sample Duration: {PStateSampleDuration}P-State Current Frequency: {PStateCurrentFrequency}P-State Requested Frequency: {PStateRequestedFrequency}
+Provider|Level|Event ID|Version|Channel|Task|Opcode|Keyword|Message
+Microsoft-Windows-Sdbus|Information|100|0|Microsoft-Windows-Sdbus/Analytic|Interrupt||Interrupt handling|Interrupt detected in ISR.SD Host Physical Address: {SDHostPhysicalAddress}Events (masked): {EventMask}
+Microsoft-Windows-Sdbus|Information|101|0|Microsoft-Windows-Sdbus/Analytic|Callback Routine|Start|SDIO specific processing|Entering callback routine.SD Host Physical Address: {SDHostPhysicalAddress}
+Microsoft-Windows-Sdbus|Information|102|0|Microsoft-Windows-Sdbus/Analytic|Callback Routine|Stop|SDIO specific processing|Exiting callback routine.SD Host Physical Address: {SDHostPhysicalAddress}
+Microsoft-Windows-Sdbus|Information|103|0|Microsoft-Windows-Sdbus/Analytic|Retune||eMMC specific processing|Retuning Sequence detected.SD Host Physical Address: {SDHostPhysicalAddress}Retuning Count: {RetuneCount}
+Microsoft-Windows-Sdbus|Information|104|0|Microsoft-Windows-Sdbus/Debug| Error||eMMC specific processing|Error in bus transfer.SD Host Physical Address: {SDHostPhysicalAddress}Error Code: {ErrorCode}Error Count: {ErrorCount}
+Microsoft-Windows-Sdbus|Information|105|0|Microsoft-Windows-Sdbus/Analytic|HPI IO||eMMC specific processing|Hpi IO detected.SD Host Physical Address: {SDHostPhysicalAddress}Hpi Count: {HpiIoCount}
+Microsoft-Windows-Sdbus|Information|106|0|Microsoft-Windows-Sdbus/Analytic|P-State Request||Sdbus P-state frequency scaling|P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Requested: {PStateRequested}P-State Request Count: {PStateRequestCount}
+Microsoft-Windows-Sdbus|Information|107|0|Microsoft-Windows-Sdbus/Analytic|P-State Completion||Sdbus P-state frequency scaling|P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Completed: {PStateCompleted}P-State Completion Count: {PStateCompletionCount}
+Microsoft-Windows-Sdbus|Information|108|0|Microsoft-Windows-Sdbus/Analytic|Command Issued||Sdbus P-state frequency scaling|Command issued.SD Host Physical Address: {SDHostPhysicalAddress}Command: {Command}Argument: {Argument}Size: {Size}
+Microsoft-Windows-Sdbus|Information|109|0|Microsoft-Windows-Sdbus/Analytic|Command Completed||Sdbus P-state frequency scaling|Command completed.SD Host Physical Address: {SDHostPhysicalAddress}Command: {Command}Argument: {Argument}Size: {Size}
+Microsoft-Windows-Sdbus|Information|110|0|Microsoft-Windows-Sdbus/Analytic|HPI CMD Issued||eMMC specific processing|Hpi CMD sent to the hardware. IRP {Irp}
+Microsoft-Windows-Sdbus|Information|111|0|Microsoft-Windows-Sdbus/Analytic|HPI CMD Issued||eMMC specific processing|Hpi CMD was accepted by the hardware. IRP {Irp}
+Microsoft-Windows-Sdbus|Information|112|0|Microsoft-Windows-Sdbus/Analytic|HPI Worker Process||eMMC specific processing|Hpi CMD worker started. IRP {Irp}
+Microsoft-Windows-Sdbus|Information|113|0|Microsoft-Windows-Sdbus/Analytic|HPI Worker Process||eMMC specific processing|Hpi CMD worker exited. IRP {Irp} Reason: {HpiExitReason}
+Microsoft-Windows-Sdbus|Information|114|0|Microsoft-Windows-Sdbus/Analytic|P-State Utilization||Sdbus P-state frequency scaling|P-State change requested.PoFx Device Handle: {PoFx Device Handle}P-State Active Percentage: {PStateActivePercent}P-State Active Duration: {PStateActiveDuration}P-State Sample Duration: {PStateSampleDuration}P-State Current Frequency: {PStateCurrentFrequency}P-State Requested Frequency: {PStateRequestedFrequency}

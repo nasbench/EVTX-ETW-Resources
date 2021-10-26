@@ -1,3 +1,3 @@
-Provider                               |  Event ID  |  Channel  |  Message
----------------------------------------|------------|-----------|---------
-Microsoft-Windows-Kernel-LicensingSqm  |  6         |           |
+Provider                               |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+---------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-Kernel-LicensingSqm  |  Information  |  6         |  0        |           |        |          |           |

@@ -1,35 +1,35 @@
-Provider                                 |  Event ID  |  Channel                                             |  Message
------------------------------------------|------------|------------------------------------------------------|---------
-Microsoft-Windows-Diagnostics-PerfTrack  |  112       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  113       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  115       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  200       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  218       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  500       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  800       |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1100      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1101      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1102      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1103      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1104      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1105      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1106      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1107      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1108      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1109      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1110      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1111      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1112      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1113      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1500      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1501      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1502      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1503      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1504      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1505      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1506      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1507      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1508      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1509      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1510      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
-Microsoft-Windows-Diagnostics-PerfTrack  |  1511      |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel                                             |  Task                                          |  Opcode  |  Keyword           |  Message
+-----------------------------------------|---------------|------------|-----------|------------------------------------------------------|------------------------------------------------|----------|--------------------|---------
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  112       |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  GenericScenario_WDIInit                       |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  113       |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  GenericScenario_WDIUnload                     |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  115       |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  GenericScenario_AllocatedInstance             |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  200       |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfPipe_TraceCapture_StartEnd                |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  218       |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfPipe_TraceCapture_Trigger                 |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  500       |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  SqmLogger_AddToScenarioStream                 |          |  SQM Status        |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  800       |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  ConfigCriteria_Result                         |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1100      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_PostBoot                        |  Start   |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1101      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_PostResumeFromSleep             |  Start   |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1102      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_PostResumeFromHibernate         |  Start   |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1103      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_Stop                            |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1104      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_Cancel                          |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1105      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_Parameters                      |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Verbose      |  1106      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_Sample                          |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Verbose      |  1107      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_Sample_Error                    |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Verbose      |  1108      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_SliceSummary                    |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Verbose      |  1109      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_Disk_OpenedDisk                 |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Verbose      |  1110      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_Status_Info                     |          |  PerfTrack Status  |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1111      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_PostResumeFromHybridboot        |  Start   |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1112      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_PostResumeFromConnectedStandby  |  Start   |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1113      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  IdleDetection_MeasureStop                     |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1500      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  MainPath_HybridBoot                           |          |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1501      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStart                             |  Start   |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1502      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStop_metadata                     |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1503      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStop                              |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1504      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moTrigger_metadata                  |          |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1505      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moTrigger                           |          |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1506      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStop_launchVisibleComplete        |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1507      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStop_launchResponsive             |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1508      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStop_resumeVisibleComplete        |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1509      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStop_resumeResponsive             |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1510      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStop_resizeVisibleComplete        |  Stop    |                    |
+Microsoft-Windows-Diagnostics-PerfTrack  |  Information  |  1511      |  0        |  Microsoft-Windows-Diagnostics-PerfTrack/Diagnostic  |  PerfTrack_moStop_resizeResponsive             |  Stop    |                    |

@@ -1,15 +1,15 @@
-Provider                      |  Event ID  |  Channel  |  Message
-------------------------------|------------|-----------|---------
-Microsoft-Windows-Superfetch  |  1000      |           |
-Microsoft-Windows-Superfetch  |  1001      |           |
-Microsoft-Windows-Superfetch  |  1002      |           |
-Microsoft-Windows-Superfetch  |  1003      |           |
-Microsoft-Windows-Superfetch  |  1004      |           |
-Microsoft-Windows-Superfetch  |  1005      |           |
-Microsoft-Windows-Superfetch  |  1006      |           |
-Microsoft-Windows-Superfetch  |  1007      |           |
-Microsoft-Windows-Superfetch  |  1008      |           |
-Microsoft-Windows-Superfetch  |  1009      |           |
-Microsoft-Windows-Superfetch  |  1010      |           |
-Microsoft-Windows-Superfetch  |  1011      |           |
-Microsoft-Windows-Superfetch  |  1012      |           |
+Provider                      |  Level        |  Event ID  |  Version  |  Channel  |  Task                     |  Opcode  |  Keyword   |  Message
+------------------------------|---------------|------------|-----------|-----------|---------------------------|----------|------------|---------
+Microsoft-Windows-Superfetch  |  Information  |  1000      |  1        |           |  VirtualRebalance         |  Start   |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1001      |  1        |           |  VirtualRebalance         |  Stop    |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1002      |  1        |           |  EmptyVirtualStore        |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1003      |  1        |           |  CreateVirtualStore       |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1004      |  1        |           |  DeleteVirtualStore       |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1005      |  1        |           |  MemoryInversionReaction  |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1006      |  1        |           |  InMemoryCompression      |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1007      |  1        |           |  InMemoryDecompression    |          |  Store     |
+Microsoft-Windows-Superfetch  |  Information  |  1008      |  1        |           |  StoreLogAdd              |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1009      |  1        |           |  StoreLogRemove           |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1010      |  1        |           |  StoreLogFull             |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1011      |  1        |           |  StoreLogEmpty            |          |  StoreLog  |
+Microsoft-Windows-Superfetch  |  Information  |  1012      |  1        |           |  StoreLogDelete           |          |  StoreLog  |

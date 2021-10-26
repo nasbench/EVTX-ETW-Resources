@@ -1,125 +1,125 @@
-Provider                    |  Event ID    |  Channel  |  Message
-----------------------------|--------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Winlogon  |  1           |           |
-Microsoft-Windows-Winlogon  |  2           |           |  Authentication stopped. Result {Win32Status}
-Microsoft-Windows-Winlogon  |  3           |           |
-Microsoft-Windows-Winlogon  |  4           |           |
-Microsoft-Windows-Winlogon  |  5           |           |
-Microsoft-Windows-Winlogon  |  6           |           |
-Microsoft-Windows-Winlogon  |  7           |           |
-Microsoft-Windows-Winlogon  |  8           |           |
-Microsoft-Windows-Winlogon  |  9           |           |
-Microsoft-Windows-Winlogon  |  10          |           |
-Microsoft-Windows-Winlogon  |  11          |           |
-Microsoft-Windows-Winlogon  |  12          |           |
-Microsoft-Windows-Winlogon  |  13          |           |
-Microsoft-Windows-Winlogon  |  14          |           |
-Microsoft-Windows-Winlogon  |  51          |           |
-Microsoft-Windows-Winlogon  |  52          |           |
-Microsoft-Windows-Winlogon  |  61          |           |
-Microsoft-Windows-Winlogon  |  62          |           |
-Microsoft-Windows-Winlogon  |  64          |           |
-Microsoft-Windows-Winlogon  |  65          |           |
-Microsoft-Windows-Winlogon  |  67          |           |
-Microsoft-Windows-Winlogon  |  68          |           |
-Microsoft-Windows-Winlogon  |  70          |           |
-Microsoft-Windows-Winlogon  |  71          |           |
-Microsoft-Windows-Winlogon  |  72          |           |
-Microsoft-Windows-Winlogon  |  73          |           |
-Microsoft-Windows-Winlogon  |  101         |           |
-Microsoft-Windows-Winlogon  |  102         |           |
-Microsoft-Windows-Winlogon  |  103         |           |
-Microsoft-Windows-Winlogon  |  104         |           |
-Microsoft-Windows-Winlogon  |  105         |           |
-Microsoft-Windows-Winlogon  |  106         |           |
-Microsoft-Windows-Winlogon  |  107         |           |
-Microsoft-Windows-Winlogon  |  108         |           |
-Microsoft-Windows-Winlogon  |  201         |           |
-Microsoft-Windows-Winlogon  |  202         |           |
-Microsoft-Windows-Winlogon  |  203         |           |
-Microsoft-Windows-Winlogon  |  204         |           |
-Microsoft-Windows-Winlogon  |  205         |           |
-Microsoft-Windows-Winlogon  |  206         |           |
-Microsoft-Windows-Winlogon  |  207         |           |
-Microsoft-Windows-Winlogon  |  208         |           |
-Microsoft-Windows-Winlogon  |  301         |           |
-Microsoft-Windows-Winlogon  |  401         |           |
-Microsoft-Windows-Winlogon  |  402         |           |
-Microsoft-Windows-Winlogon  |  403         |           |
-Microsoft-Windows-Winlogon  |  404         |           |
-Microsoft-Windows-Winlogon  |  501         |           |
-Microsoft-Windows-Winlogon  |  502         |           |
-Microsoft-Windows-Winlogon  |  503         |           |
-Microsoft-Windows-Winlogon  |  504         |           |
-Microsoft-Windows-Winlogon  |  505         |           |
-Microsoft-Windows-Winlogon  |  801         |           |
-Microsoft-Windows-Winlogon  |  802         |           |
-Microsoft-Windows-Winlogon  |  803         |           |
-Microsoft-Windows-Winlogon  |  804         |           |
-Microsoft-Windows-Winlogon  |  805         |           |
-Microsoft-Windows-Winlogon  |  806         |           |
-Microsoft-Windows-Winlogon  |  807         |           |
-Microsoft-Windows-Winlogon  |  808         |           |
-Microsoft-Windows-Winlogon  |  809         |           |
-Microsoft-Windows-Winlogon  |  810         |           |
-Microsoft-Windows-Winlogon  |  811         |           |  The winlogon notification subscriber <{SubscriberName}> began handling the notification event ({Event}).
-Microsoft-Windows-Winlogon  |  812         |           |  The winlogon notification subscriber <{SubscriberName}> finished handling the notification event ({Event}).
-Microsoft-Windows-Winlogon  |  1001        |           |  Log-on hours expiry warning.
-Microsoft-Windows-Winlogon  |  1073742826  |           |
-Microsoft-Windows-Winlogon  |  1101        |           |  The computer will be locked because the user has exceeded the maximum number of failed log-on attempts allowed on this computer. A recovery key is required to unlock the device.UserSid: {UserSid} UserName: {UserName} UserDomain: {UserDomain}
-Microsoft-Windows-Winlogon  |  1102        |           |  The computer will be rebooted because the user has exceeded the maximum number of failed log-on attempts allowed on this computer.UserSid: {UserSid} UserName: {UserName} UserDomain: {UserDomain}
-Microsoft-Windows-Winlogon  |  1103        |           |  The user is approaching the threshold for maximum number of failed log-on attempts. Once the maximum limit is reached the computer will be locked or rebooted.UserSid: {UserSid} UserName: {UserName} UserDomain: {UserDomain}
-Microsoft-Windows-Winlogon  |  1104        |           |  Encryption Provider initialisation failed. Error {Win32Status}
-Microsoft-Windows-Winlogon  |  1073745826  |           |
-Microsoft-Windows-Winlogon  |  3221229475  |           |
-Microsoft-Windows-Winlogon  |  3221229476  |           |
-Microsoft-Windows-Winlogon  |  3221229477  |           |
-Microsoft-Windows-Winlogon  |  2147487654  |           |
-Microsoft-Windows-Winlogon  |  2147487655  |           |
-Microsoft-Windows-Winlogon  |  2147487656  |           |
-Microsoft-Windows-Winlogon  |  1073745925  |           |
-Microsoft-Windows-Winlogon  |  3221229574  |           |
-Microsoft-Windows-Winlogon  |  3221229575  |           |
-Microsoft-Windows-Winlogon  |  1073745928  |           |
-Microsoft-Windows-Winlogon  |  2147487753  |           |
-Microsoft-Windows-Winlogon  |  5001        |           |
-Microsoft-Windows-Winlogon  |  5002        |           |
-Microsoft-Windows-Winlogon  |  5003        |           |
-Microsoft-Windows-Winlogon  |  5005        |           |
-Microsoft-Windows-Winlogon  |  5007        |           |
-Microsoft-Windows-Winlogon  |  5007        |           |
-Microsoft-Windows-Winlogon  |  5007        |           |
-Microsoft-Windows-Winlogon  |  2147489648  |           |
-Microsoft-Windows-Winlogon  |  6001        |           |
-Microsoft-Windows-Winlogon  |  2147489649  |           |
-Microsoft-Windows-Winlogon  |  2147489650  |           |
-Microsoft-Windows-Winlogon  |  2147489651  |           |
-Microsoft-Windows-Winlogon  |  2147489652  |           |
-Microsoft-Windows-Winlogon  |  2147489653  |           |
-Microsoft-Windows-Winlogon  |  2147489654  |           |
-Microsoft-Windows-Winlogon  |  6101        |           |
-Microsoft-Windows-Winlogon  |  6102        |           |
-Microsoft-Windows-Winlogon  |  6103        |           |
-Microsoft-Windows-Winlogon  |  6104        |           |
-Microsoft-Windows-Winlogon  |  6105        |           |
-Microsoft-Windows-Winlogon  |  6106        |           |
-Microsoft-Windows-Winlogon  |  6107        |           |
-Microsoft-Windows-Winlogon  |  6108        |           |
-Microsoft-Windows-Winlogon  |  6109        |           |
-Microsoft-Windows-Winlogon  |  6110        |           |
-Microsoft-Windows-Winlogon  |  6111        |           |
-Microsoft-Windows-Winlogon  |  6112        |           |
-Microsoft-Windows-Winlogon  |  6113        |           |
-Microsoft-Windows-Winlogon  |  6114        |           |
-Microsoft-Windows-Winlogon  |  6115        |           |
-Microsoft-Windows-Winlogon  |  6116        |           |
-Microsoft-Windows-Winlogon  |  6117        |           |
-Microsoft-Windows-Winlogon  |  6118        |           |
-Microsoft-Windows-Winlogon  |  6119        |           |
-Microsoft-Windows-Winlogon  |  6120        |           |
-Microsoft-Windows-Winlogon  |  6121        |           |
-Microsoft-Windows-Winlogon  |  6122        |           |
-Microsoft-Windows-Winlogon  |  6123        |           |
-Microsoft-Windows-Winlogon  |  6124        |           |
-Microsoft-Windows-Winlogon  |  7001        |  System   |  User Log-on Notification for Customer Experience Improvement Program
-Microsoft-Windows-Winlogon  |  7002        |  System   |  User Log-off Notification for Customer Experience Improvement Program
+Provider                    |  Level        |  Event ID    |  Version  |  Channel  |  Task                                 |  Opcode              |  Keyword                               |  Message
+----------------------------|---------------|--------------|-----------|-----------|---------------------------------------|----------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Winlogon  |  Information  |  1           |  0        |           |  AuthenticateUser                     |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  2           |  0        |           |  AuthenticateUser                     |  Stop                |  PerfInstrumentation                   |  Authentication stopped. Result {Win32Status}
+Microsoft-Windows-Winlogon  |  Information  |  3           |  0        |           |  UpdatePerUserSystemParameters        |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  4           |  0        |           |  UpdatePerUserSystemParameters        |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  5           |  0        |           |  CheckWindowsLicenseStatus            |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  6           |  0        |           |  CheckWindowsLicenseStatus            |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  7           |  0        |           |  RestoringNetConnections              |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  8           |  0        |           |  RestoringNetConnections              |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  9           |  0        |           |  ExecuteShellCommandList              |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  10          |  0        |           |  ExecuteShellCommandList              |  Stop                |  PerfInstrumentation PerfDiagnostics   |
+Microsoft-Windows-Winlogon  |  Information  |  11          |  0        |           |  ThemesOnLogonPre                     |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  12          |  0        |           |  ThemesOnLogonPre                     |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  13          |  0        |           |  ThemesOnLogonPost                    |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  14          |  0        |           |  ThemesOnLogonPost                    |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  51          |  0        |           |  ThemesOnLogoff                       |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  52          |  0        |           |  ThemesOnLogoff                       |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  61          |  0        |           |  DwmpCreateSessionProcess             |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  62          |  0        |           |  DwmpCreateSessionProcess             |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  64          |  0        |           |  DwmpTerminateSessionProcess          |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  65          |  0        |           |  DwmpTerminateSessionProcess          |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  67          |  0        |           |  DwmpNotifyUserLogon                  |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  68          |  0        |           |  DwmpNotifyUserLogon                  |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  70          |  0        |           |  ThemesOnEarlyCreateSession           |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  71          |  0        |           |  ThemesOnEarlyCreateSession           |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  72          |  0        |           |  DwmpNotifyUserLogoff                 |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  73          |  0        |           |  DwmpNotifyUserLogoff                 |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  101         |  0        |           |  CreatePrimaryTerminal                |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  102         |  0        |           |  CreatePrimaryTerminal                |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  103         |  0        |           |  StartLogonUI                         |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  104         |  0        |           |  StartLogonUI                         |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  105         |  0        |           |  RunStateMachine                      |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  106         |  0        |           |  RunStateMachine                      |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  107         |  0        |           |  WaitForLSM                           |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  108         |  0        |           |  WaitForLSM                           |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  201         |  0        |           |  DisplayWelcomeScreen                 |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  202         |  0        |           |  DisplayWelcomeScreen                 |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  203         |  0        |           |  RequestCredentials                   |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  204         |  0        |           |  RequestCredentials                   |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  205         |  0        |           |  ThemesOnCreateSession                |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  206         |  0        |           |  ThemesOnCreateSession                |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  207         |  0        |           |  ThemesOnTerminateSession             |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  208         |  0        |           |  ThemesOnTerminateSession             |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  301         |  0        |           |  ReceivedLogoffRequest                |                      |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  401         |  0        |           |  ShutdownWindows                      |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  402         |  0        |           |  ShutdownWindows                      |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  403         |  0        |           |  InitiateShutdown                     |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  404         |  0        |           |  InitiateShutdown                     |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  501         |  0        |           |  WluiServerStartup                    |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  502         |  0        |           |  WluiServerStartup                    |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  503         |  0        |           |  WluiServerShutdown                   |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  504         |  0        |           |  WluiServerShutdown                   |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Error        |  505         |  0        |           |  WluiServerStartup                    |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  801         |  0        |           |  NotifyExecute                        |  Start               |  PerfInstrumentation PerfTrackContext  |
+Microsoft-Windows-Winlogon  |  Information  |  802         |  0        |           |  NotifyExecute                        |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  803         |  0        |           |  NotifyServices                       |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  804         |  0        |           |  NotifyServices                       |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  805         |  0        |           |  NotifySubscriber                     |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  806         |  0        |           |  NotifySubscriber                     |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  807         |  0        |           |  NotifySubscriber                     |  NotificationPended  |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  808         |  0        |           |  NotifySubscriber                     |  NotificationFailed  |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  809         |  0        |           |  ConnectToSubscriber                  |  Start               |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  810         |  0        |           |  ConnectToSubscriber                  |  Stop                |  PerfInstrumentation                   |
+Microsoft-Windows-Winlogon  |  Information  |  811         |  0        |           |  CallSubscriber                       |  Start               |  PerfInstrumentation                   |  The winlogon notification subscriber <{SubscriberName}> began handling the notification event ({Event}).
+Microsoft-Windows-Winlogon  |  Information  |  812         |  0        |           |  CallSubscriber                       |  Stop                |  PerfInstrumentation                   |  The winlogon notification subscriber <{SubscriberName}> finished handling the notification event ({Event}).
+Microsoft-Windows-Winlogon  |  Information  |  1001        |  0        |           |  LogonHours                           |                      |  NotificationEvents                    |  Log-on hours expiry warning.
+Microsoft-Windows-Winlogon  |               |  1073742826  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |  Warning      |  1101        |  0        |           |  EAS                                  |                      |                                        |  The computer will be locked because the user has exceeded the maximum number of failed log-on attempts allowed on this computer. A recovery key is required to unlock the device.UserSid: {UserSid} UserName: {UserName} UserDomain: {UserDomain}
+Microsoft-Windows-Winlogon  |  Warning      |  1102        |  0        |           |  EAS                                  |                      |                                        |  The computer will be rebooted because the user has exceeded the maximum number of failed log-on attempts allowed on this computer.UserSid: {UserSid} UserName: {UserName} UserDomain: {UserDomain}
+Microsoft-Windows-Winlogon  |  Warning      |  1103        |  0        |           |  EAS                                  |                      |                                        |  The user is approaching the threshold for maximum number of failed log-on attempts. Once the maximum limit is reached the computer will be locked or rebooted.UserSid: {UserSid} UserName: {UserName} UserDomain: {UserDomain}
+Microsoft-Windows-Winlogon  |  Warning      |  1104        |  0        |           |  EAS                                  |                      |                                        |  Encryption Provider initialisation failed. Error {Win32Status}
+Microsoft-Windows-Winlogon  |               |  1073745826  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  3221229475  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  3221229476  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  3221229477  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147487654  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147487655  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147487656  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  1073745925  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  3221229574  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  3221229575  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  1073745928  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147487753  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  5001        |  0        |           |  UserBoot                             |  Start               |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  5002        |  0        |           |  UserBoot                             |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  5003        |  0        |           |  UserBoot                             |                      |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  5005        |  0        |           |  UserShellLaunch                      |                      |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  5007        |  0        |           |  SystemBoot                           |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  5007        |  1        |           |  SystemBoot                           |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  5007        |  2        |           |  SystemBoot                           |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |               |  2147489648  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6001        |  0        |           |  ShutdownDiagnostics                  |  Start               |  PerfInstrumentation PerfDiagnostics   |
+Microsoft-Windows-Winlogon  |               |  2147489649  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147489650  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147489651  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147489652  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147489653  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |               |  2147489654  |  0        |           |                                       |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6101        |  0        |           |  LogoffRequestToUserFeedback          |  Start               |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6102        |  0        |           |  LogoffRequestToUserFeedback          |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6103        |  0        |           |  LogoffAppsTerminationToSessionEnd    |  Start               |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6104        |  0        |           |  LogoffAppsTerminationToSessionEnd    |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6105        |  0        |           |  Unlock                               |  Start               |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6106        |  0        |           |  Unlock                               |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6107        |  0        |           |  Unlock                               |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6108        |  0        |           |  Logon                                |  Start               |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6109        |  0        |           |  Logon                                |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6110        |  0        |           |  Logon                                |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6111        |  0        |           |  Logon                                |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6112        |  0        |           |  Logon                                |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6113        |  0        |           |  Lock                                 |  Start               |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6114        |  0        |           |  Lock                                 |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6115        |  0        |           |  Lock                                 |  Stop                |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6116        |  0        |           |  Logoff                               |                      |  PerfDiagnostics                       |
+Microsoft-Windows-Winlogon  |  Information  |  6117        |  0        |           |  DelayLockDisplayLockScreen           |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6118        |  0        |           |  KillingScreenSaverToLockWorkStation  |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6119        |  0        |           |  AutomaticRestartSignOn               |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6120        |  0        |           |  HotKeyLockDesktopInvoked             |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6121        |  0        |           |  PINResetLogon                        |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6122        |  0        |           |  PINResetUnlock                       |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6123        |  0        |           |  AssignedAccessLogon                  |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  6124        |  0        |           |  AssignedAccessUnlock                 |                      |                                        |
+Microsoft-Windows-Winlogon  |  Information  |  7001        |  0        |  System   |  WinSqmUserLogin                      |                      |                                        |  User Log-on Notification for Customer Experience Improvement Program
+Microsoft-Windows-Winlogon  |  Information  |  7002        |  0        |  System   |  WinSqmUserLogoff                     |                      |                                        |  User Log-off Notification for Customer Experience Improvement Program

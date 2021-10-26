@@ -1,14 +1,14 @@
-Provider                   |  Event ID  |  Channel                              |  Message
----------------------------|------------|---------------------------------------|----------------------------------------------------------------------------------
-Microsoft-Gaming-Services  |  9001      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Gaming-Services  |  9002      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Gaming-Services  |  9003      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Gaming-Services  |  9004      |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Gaming-Services  |  9005      |  Microsoft-Windows-Store/Operational  |  {Message}Status: {Error Code}
-Microsoft-Gaming-Services  |  9006      |  Microsoft-Windows-Store/Operational  |  {Message}Status: {Error Code}
-Microsoft-Gaming-Services  |  9007      |  Microsoft-Windows-Store/Operational  |  {Message}Status: {Error Code}
-Microsoft-Gaming-Services  |  9008      |  Microsoft-Windows-Store/Operational  |  {Message}Status: {Error Code}
-Microsoft-Gaming-Services  |  9009      |  Microsoft-Windows-Store/Operational  |  {Message}Status: {Error Code}
-Microsoft-Gaming-Services  |  9010      |  Microsoft-Windows-Store/Operational  |  {Message}Status: {Error Code}
-Microsoft-Gaming-Services  |  9011      |  Microsoft-Windows-Store/Operational  |  {Message}Status: {Error Code}
-Microsoft-Gaming-Services  |  9012      |  Microsoft-Windows-Store/Operational  |  {Message}Status: {Error Code}
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                              |  Task             |  Opcode   |  Keyword         |  Message
+---------------------------|---------------|------------|-----------|---------------------------------------|-------------------|-----------|------------------|----------------------------------------------------------------------------------
+Microsoft-Gaming-Services  |  Error        |  9001      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Error    |  GamingServices  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Gaming-Services  |  Warning      |  9002      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Warning  |  GamingServices  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Gaming-Services  |  Information  |  9003      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Info     |  GamingServices  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Gaming-Services  |  Verbose      |  9004      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Verbose  |  GamingServices  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Gaming-Services  |  Error        |  9005      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Error    |  GamingServices  |  {Message}Status: {Error Code}
+Microsoft-Gaming-Services  |  Warning      |  9006      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Warning  |  GamingServices  |  {Message}Status: {Error Code}
+Microsoft-Gaming-Services  |  Information  |  9007      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Info     |  GamingServices  |  {Message}Status: {Error Code}
+Microsoft-Gaming-Services  |  Verbose      |  9008      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Verbose  |  GamingServices  |  {Message}Status: {Error Code}
+Microsoft-Gaming-Services  |  Error        |  9009      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Error    |  GamingServices  |  {Message}Status: {Error Code}
+Microsoft-Gaming-Services  |  Warning      |  9010      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Warning  |  GamingServices  |  {Message}Status: {Error Code}
+Microsoft-Gaming-Services  |  Information  |  9011      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Info     |  GamingServices  |  {Message}Status: {Error Code}
+Microsoft-Gaming-Services  |  Verbose      |  9012      |  0        |  Microsoft-Windows-Store/Operational  |  Gaming Services  |  Verbose  |  GamingServices  |  {Message}Status: {Error Code}

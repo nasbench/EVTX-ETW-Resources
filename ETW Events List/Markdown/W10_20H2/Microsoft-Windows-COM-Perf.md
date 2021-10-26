@@ -1,57 +1,57 @@
-Provider                    |  Event ID  |  Channel                                      |  Message
-----------------------------|------------|-----------------------------------------------|---------
-Microsoft-Windows-COM-Perf  |  1         |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  2         |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  3         |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  4         |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  5         |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  6         |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  7         |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  8         |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  9         |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  10        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  11        |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  12        |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  13        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  14        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  15        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  16        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  17        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  18        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  19        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  20        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  21        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  22        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  23        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  24        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  25        |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  26        |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  27        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  28        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  29        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  30        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  31        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  32        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  33        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  34        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  35        |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  36        |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  37        |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  38        |  Microsoft-Windows-COM/CreateInstance         |
-Microsoft-Windows-COM-Perf  |  39        |  Microsoft-Windows-COM/Call                   |
-Microsoft-Windows-COM-Perf  |  40        |  Microsoft-Windows-COM/Call                   |
-Microsoft-Windows-COM-Perf  |  41        |  Microsoft-Windows-COM/Call                   |
-Microsoft-Windows-COM-Perf  |  42        |  Microsoft-Windows-COM/Call                   |
-Microsoft-Windows-COM-Perf  |  43        |  Microsoft-Windows-COM/Call                   |
-Microsoft-Windows-COM-Perf  |  44        |  Microsoft-Windows-COM/Call                   |
-Microsoft-Windows-COM-Perf  |  45        |  Microsoft-Windows-COM/Call                   |
-Microsoft-Windows-COM-Perf  |  46        |  Microsoft-Windows-COM/Call                   |
-Microsoft-Windows-COM-Perf  |  47        |  Microsoft-Windows-COM/FreeUnusedLibrary      |
-Microsoft-Windows-COM-Perf  |  48        |  Microsoft-Windows-COM/ApartmentUninitialize  |
-Microsoft-Windows-COM-Perf  |  49        |  Microsoft-Windows-COM/ApartmentInitialize    |
-Microsoft-Windows-COM-Perf  |  50        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  51        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  52        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  53        |  Microsoft-Windows-Runtime/CreateInstance     |
-Microsoft-Windows-COM-Perf  |  54        |  Microsoft-Windows-COM/ExtensionCatalog       |
-Microsoft-Windows-COM-Perf  |  55        |  Microsoft-Windows-COM/ExtensionCatalog       |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                      |  Task                                                           |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------------|-----------------------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-COM-Perf  |  Information  |  1         |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_ActivateInstance_InProc                        |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  2         |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_ActivateInstance_InProc                        |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  3         |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_ActivateInstance_OutOfProc                     |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  4         |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_ActivateInstance_OutOfProc                     |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  5         |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_CreateInstance                                             |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  6         |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_CreateInstance                                             |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  7         |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_GetActivationFactory_InProc                    |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  8         |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_GetActivationFactory_InProc                    |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  9         |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_GetActivationFactory_OutOfProc                 |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  10        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_GetActivationFactory_OutOfProc                 |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  11        |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_GetClassObject                                             |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  12        |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_GetClassObject                                             |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  13        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_RoGetExtensionRegistration                    |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  14        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_RoGetExtensionRegistration                    |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  15        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_RoGetExtensionRegistrationByExtensionId       |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  16        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_RoGetExtensionRegistrationByExtensionId       |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  17        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_QueryCatalog                                  |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  18        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_QueryCatalog                                  |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  19        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_QueryCatalogByPackageFamily                   |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  20        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_QueryCatalogByPackageFamily                   |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  21        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_CustomPropertyLookup                          |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  22        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_CustomPropertyLookup                          |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  23        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_MoveNext                                      |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  24        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_MoveNext                                      |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  25        |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_CreateInstance_App                                         |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  26        |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_CreateInstance_App                                         |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  27        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_BrokeredActivateInstance                       |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  28        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_BrokeredActivateInstance                       |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  29        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_BrokeredGetActivationFactory                   |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  30        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_BrokeredGetActivationFactory                   |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  31        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_GetActivationFactory_InprocServerImpl          |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  32        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_GetActivationFactory_InprocServerImpl          |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  33        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_ActivateInstance_InprocServerImpl              |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  34        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_ActivateInstance_InprocServerImpl              |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  35        |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_GetClassFactory_InprocServerImpl                           |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  36        |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_GetClassFactory_InprocServerImpl                           |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  37        |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_CreateInstance_InprocServerImpl                            |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  38        |  0        |  Microsoft-Windows-COM/CreateInstance         |  COM_CreateInstance_InprocServerImpl                            |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  39        |  1        |  Microsoft-Windows-COM/Call                   |  COM_ClientSyncCall                                             |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  40        |  0        |  Microsoft-Windows-COM/Call                   |  COM_ClientSyncCall                                             |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  41        |  1        |  Microsoft-Windows-COM/Call                   |  COM_ClientAsyncCall                                            |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  42        |  0        |  Microsoft-Windows-COM/Call                   |  COM_ClientAsyncCall                                            |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  43        |  2        |  Microsoft-Windows-COM/Call                   |  COM_ServerSyncCall                                             |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  44        |  0        |  Microsoft-Windows-COM/Call                   |  COM_ServerSyncCall                                             |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  45        |  1        |  Microsoft-Windows-COM/Call                   |  COM_ServerAsyncCall                                            |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  46        |  0        |  Microsoft-Windows-COM/Call                   |  COM_ServerAsyncCall                                            |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  47        |  0        |  Microsoft-Windows-COM/FreeUnusedLibrary      |  COM_FreeUnusedLibrary                                          |          |           |
+Microsoft-Windows-COM-Perf  |  Information  |  48        |  0        |  Microsoft-Windows-COM/ApartmentUninitialize  |  COM_ApartmentUninitialize                                      |          |           |
+Microsoft-Windows-COM-Perf  |  Information  |  49        |  0        |  Microsoft-Windows-COM/ApartmentInitialize    |  COM_ApartmentInitialize                                        |          |           |
+Microsoft-Windows-COM-Perf  |  Information  |  50        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_DesktopBrokeredActivateInstance                |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  51        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_DesktopBrokeredActivateInstance                |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  52        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_DesktopBrokeredGetActivationFactory            |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  53        |  0        |  Microsoft-Windows-Runtime/CreateInstance     |  Windows_Runtime_DesktopBrokeredGetActivationFactory            |  Stop    |           |
+Microsoft-Windows-COM-Perf  |  Information  |  54        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_RoGetExtensionRegistrationForLaunchContracts  |  Start   |           |
+Microsoft-Windows-COM-Perf  |  Information  |  55        |  0        |  Microsoft-Windows-COM/ExtensionCatalog       |  ExtensionCatalog_RoGetExtensionRegistrationForLaunchContracts  |  Stop    |           |

@@ -1,17 +1,17 @@
-Provider            |  Event ID  |  Channel                    |  Message
---------------------|------------|-----------------------------|---------------------------
-NisDrvWFP Provider  |  1001      |  NIS-Driver-WFP/Diagnostic  |  Begin WFP Reinjection
-NisDrvWFP Provider  |  1002      |  NIS-Driver-WFP/Diagnostic  |  End WFP Reinjection
-NisDrvWFP Provider  |  1003      |  NIS-Driver-WFP/Diagnostic  |  Begin DPC Deferred Action
-NisDrvWFP Provider  |  1004      |  NIS-Driver-WFP/Diagnostic  |  End DPC Deferred Action
-NisDrvWFP Provider  |  1005      |  NIS-Driver-WFP/Diagnostic  |  Begin Stalled Action
-NisDrvWFP Provider  |  1006      |  NIS-Driver-WFP/Diagnostic  |  End Stalled Action
-NisDrvWFP Provider  |  1007      |  NIS-Driver-WFP/Diagnostic  |  Begin Intercepted Packet
-NisDrvWFP Provider  |  1008      |  NIS-Driver-WFP/Diagnostic  |  End Intercepted Packet
-NisDrvWFP Provider  |  1009      |  NIS-Driver-WFP/Diagnostic  |
-NisDrvWFP Provider  |  1010      |  NIS-Driver-WFP/Diagnostic  |
-NisDrvWFP Provider  |  1011      |  NIS-Driver-WFP/Diagnostic  |
-NisDrvWFP Provider  |  1012      |  NIS-Driver-WFP/Diagnostic  |
-NisDrvWFP Provider  |  1013      |  NIS-Driver-WFP/Diagnostic  |
-NisDrvWFP Provider  |  1014      |  NIS-Driver-WFP/Diagnostic  |  Dynamic Exclusion
-NisDrvWFP Provider  |  1015      |  NIS-Driver-WFP/Diagnostic  |  Flow
+Provider            |  Level        |  Event ID  |  Version  |  Channel                    |  Task                   |  Opcode  |  Keyword                 |  Message
+--------------------|---------------|------------|-----------|-----------------------------|-------------------------|----------|--------------------------|---------------------------
+NisDrvWFP Provider  |  Information  |  1001      |  0        |  NIS-Driver-WFP/Diagnostic  |  WFP Reinjection        |  Start   |  WfpReinjection          |  Begin WFP Reinjection
+NisDrvWFP Provider  |  Information  |  1002      |  0        |  NIS-Driver-WFP/Diagnostic  |  WFP Reinjection        |  Stop    |  WfpReinjection          |  End WFP Reinjection
+NisDrvWFP Provider  |  Information  |  1003      |  0        |  NIS-Driver-WFP/Diagnostic  |  DPC Deferred Action    |  Start   |  DeferredAction          |  Begin DPC Deferred Action
+NisDrvWFP Provider  |  Information  |  1004      |  0        |  NIS-Driver-WFP/Diagnostic  |  DPC Deferred Action    |  Stop    |  DeferredAction          |  End DPC Deferred Action
+NisDrvWFP Provider  |  Information  |  1005      |  0        |  NIS-Driver-WFP/Diagnostic  |  Stalled Actions        |  Start   |  StalledAction           |  Begin Stalled Action
+NisDrvWFP Provider  |  Information  |  1006      |  0        |  NIS-Driver-WFP/Diagnostic  |  Stalled Actions        |  Stop    |  StalledAction           |  End Stalled Action
+NisDrvWFP Provider  |  Information  |  1007      |  0        |  NIS-Driver-WFP/Diagnostic  |  Intercepted Packet     |  Start   |  InterceptedPacket       |  Begin Intercepted Packet
+NisDrvWFP Provider  |  Information  |  1008      |  0        |  NIS-Driver-WFP/Diagnostic  |  Intercepted Packet     |  Stop    |  InterceptedPacket       |  End Intercepted Packet
+NisDrvWFP Provider  |  Information  |  1009      |  0        |  NIS-Driver-WFP/Diagnostic  |  Flow Established       |          |  FlowEstablished         |
+NisDrvWFP Provider  |  Information  |  1010      |  0        |  NIS-Driver-WFP/Diagnostic  |  Flow Filtered          |          |  FlowFiltered            |
+NisDrvWFP Provider  |  Information  |  1011      |  0        |  NIS-Driver-WFP/Diagnostic  |  Flow Canceled          |          |  FlowCancelInterception  |
+NisDrvWFP Provider  |  Information  |  1012      |  0        |  NIS-Driver-WFP/Diagnostic  |  Stream Irps Exhausted  |          |  StreamIrpsExhausted     |
+NisDrvWFP Provider  |  Information  |  1013      |  0        |  NIS-Driver-WFP/Diagnostic  |  All Irps Exhausted     |          |  AllIrpsExhausted        |
+NisDrvWFP Provider  |  Information  |  1014      |  0        |  NIS-Driver-WFP/Diagnostic  |  Dynamic Exclusion      |          |  DynamicExclusion        |  Dynamic Exclusion
+NisDrvWFP Provider  |  Information  |  1015      |  0        |  NIS-Driver-WFP/Diagnostic  |  Flow                   |          |                          |  Flow

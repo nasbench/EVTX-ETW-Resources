@@ -1,25 +1,25 @@
-Provider                                    |  Event ID  |  Channel  |  Message
---------------------------------------------|------------|-----------|---------
-Microsoft-Windows-Sensors-Core-Performance  |  1001      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1002      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1003      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1004      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1005      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1006      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1007      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1008      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1009      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1010      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1011      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1012      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1013      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1014      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1015      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1016      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1017      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1018      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1019      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1020      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1021      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1022      |           |
-Microsoft-Windows-Sensors-Core-Performance  |  1023      |           |
+Provider                                    |  Level  |  Event ID  |  Version  |  Channel  |  Task                                        |  Opcode  |  Keyword  |  Message
+--------------------------------------------|---------|------------|-----------|-----------|----------------------------------------------|----------|-----------|---------
+Microsoft-Windows-Sensors-Core-Performance  |         |  1001      |  0        |           |  SensorsIoctlTask                            |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1002      |  0        |           |  SensorsIoctlTask                            |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1003      |  0        |           |  CollectionListSerializationTask             |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1004      |  0        |           |  CollectionListSerializationTask             |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1005      |  0        |           |  CollectionListAllocateAndSerializationTask  |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1006      |  0        |           |  CollectionListAllocateAndSerializationTask  |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1007      |  0        |           |  CollectionListDeserializationTask           |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1008      |  0        |           |  CollectionListDeserializationTask           |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1009      |  0        |           |  SensorsNativeIoctlTask                      |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1010      |  0        |           |  SensorsNativeIoctlTask                      |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1011      |  0        |           |  NativeToCxIoctlTransferTask                 |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1012      |  0        |           |  NativeToCxIoctlTransferTask                 |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1013      |  0        |           |  CxToNativeIoctlTransferTask                 |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1014      |  0        |           |  CxToNativeIoctlTransferTask                 |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1015      |  0        |           |  SensorsCxReadTask                           |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1016      |  0        |           |  SensorsCxReadTask                           |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1017      |  0        |           |  NativeToCxReadTransferTask                  |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1018      |  0        |           |  NativeToCxReadTransferTask                  |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1019      |  0        |           |  CxToNativeReadTransferTask                  |  Start   |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1020      |  0        |           |  CxToNativeReadTransferTask                  |  Stop    |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1021      |  0        |           |  SensorSubscription                          |          |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1022      |  0        |           |  SensorsCxReadTask                           |          |           |
+Microsoft-Windows-Sensors-Core-Performance  |         |  1023      |  0        |           |  SensorsCxReadTask                           |          |           |

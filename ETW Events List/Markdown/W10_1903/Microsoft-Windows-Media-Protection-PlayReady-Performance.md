@@ -1,151 +1,151 @@
-Provider                                                  |  Event ID  |  Channel                |  Message
-----------------------------------------------------------|------------|-------------------------|-----------------------------------------------------------------------
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  1         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr} NewCount={NewCount}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  2         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  3         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  4         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  5         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  6         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  7         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  8         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  9         |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  10        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  11        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  12        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  13        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  14        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  15        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  16        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  17        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  18        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  19        |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  20        |  PlayReady-Performance  |  FunctionMapOEMValue={FunctionMapOEMValue}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  21        |  PlayReady-Performance  |  FunctionMapOEMValue={FunctionMapOEMValue}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  22        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  23        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  24        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  25        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  26        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  27        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  28        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  29        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  30        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  31        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  32        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  33        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  34        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  35        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  36        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  37        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  38        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  39        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  40        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  41        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  42        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  43        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  44        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  45        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  46        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  47        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  48        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  49        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  50        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  51        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  52        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  53        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  54        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  55        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  56        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  57        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  58        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  59        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  60        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  61        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  62        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  63        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  64        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  65        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  66        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  67        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  68        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  69        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  70        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  71        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  72        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  73        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  74        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  75        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  76        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  77        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  78        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  79        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  80        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  81        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  82        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  83        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  84        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  85        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  86        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  87        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  88        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  89        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  90        |  PlayReady-Performance  |  Object={Object} HResult={Flag}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  91        |  PlayReady-Performance  |  Object={Object} HResult={Flag}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  92        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  93        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  94        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  95        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  96        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  97        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  98        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  99        |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  100       |  PlayReady-Performance  |  Arg1={Arg1} Arg2={Arg2}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  101       |  PlayReady-Performance  |  Arg1={Arg1} Arg2={Arg2} Arg3={Arg3} Arg4={Arg4}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  102       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  103       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  104       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  105       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  106       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  107       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  108       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  109       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  110       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  111       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  112       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  113       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  114       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  115       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  116       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  117       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  118       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  119       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  120       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  121       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  122       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  123       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  124       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  125       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  126       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  127       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  128       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  129       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  130       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  131       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  132       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  133       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  134       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  135       |  PlayReady-Performance  |  Object={Object} HResult={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  136       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  137       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr} hr={HResult}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  138       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_lock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  139       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_lock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  140       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_AcquireStateLock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  141       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_AcquireStateLock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  142       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ProcessOutput}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  143       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ProcessOutput}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  144       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_OutputLock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  145       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_OutputLock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  146       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_AcquireOutputLock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  147       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_AcquireOutputLock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  148       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_StateLock}
-Microsoft-Windows-Media-Protection-PlayReady-Performance  |  149       |  PlayReady-Performance  |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_StateLock}
+Provider                                                  |  Level    |  Event ID  |  Version  |  Channel                |  Task                                                             |  Opcode  |  Keyword  |  Message
+----------------------------------------------------------|-----------|------------|-----------|-------------------------|-------------------------------------------------------------------|----------|-----------|-----------------------------------------------------------------------
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  1         |  0        |  PlayReady-Performance  |  UpdateOutputDataBufferQueue                                      |          |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr} NewCount={NewCount}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  2         |  0        |  PlayReady-Performance  |  MFTStateStopped                                                  |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  3         |  0        |  PlayReady-Performance  |  MFTStateStopped                                                  |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  4         |  0        |  PlayReady-Performance  |  MFTStateFeedInput                                                |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  5         |  0        |  PlayReady-Performance  |  MFTStateFeedInput                                                |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  6         |  0        |  PlayReady-Performance  |  MFTStateGetOutput                                                |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  7         |  0        |  PlayReady-Performance  |  MFTStateGetOutput                                                |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  8         |  0        |  PlayReady-Performance  |  MFTStateShutdown                                                 |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  9         |  0        |  PlayReady-Performance  |  MFTStateShutdown                                                 |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  10        |  0        |  PlayReady-Performance  |  MFTStateWaitingForStateChange                                    |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  11        |  0        |  PlayReady-Performance  |  MFTStateWaitingForStateChange                                    |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  12        |  0        |  PlayReady-Performance  |  MFTStateWaitingForLicenseWithPendingPolicy                       |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  13        |  0        |  PlayReady-Performance  |  MFTStateWaitingForLicenseWithPendingPolicy                       |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  14        |  0        |  PlayReady-Performance  |  MFTStateWaitingForReleaseRenewResources                          |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  15        |  0        |  PlayReady-Performance  |  MFTStateWaitingForReleaseRenewResources                          |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  16        |  0        |  PlayReady-Performance  |  MFTStateWaitingForPolicyNotification                             |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  17        |  0        |  PlayReady-Performance  |  MFTStateWaitingForPolicyNotification                             |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  18        |  0        |  PlayReady-Performance  |  MFTStateWaitingForReaquireResourcesMessage                       |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  19        |  0        |  PlayReady-Performance  |  MFTStateWaitingForReaquireResourcesMessage                       |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  20        |  0        |  PlayReady-Performance  |  OemTeeProxyMethodInvoke                                          |  Start   |           |  FunctionMapOEMValue={FunctionMapOEMValue}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  21        |  0        |  PlayReady-Performance  |  OemTeeProxyMethodInvoke                                          |  Stop    |           |  FunctionMapOEMValue={FunctionMapOEMValue}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  22        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncDomainJoin                                        |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  23        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncDomainJoin                                        |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  24        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncDomainLeave                                       |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  25        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncDomainLeave                                       |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  26        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncLicenseAcq                                        |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  27        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncLicenseAcq                                        |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  28        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncLicenseAcqAck                                     |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  29        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncLicenseAcqAck                                     |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  30        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncMeterDataReport                                   |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  31        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncMeterDataReport                                   |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  32        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncSecureStop                                        |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  33        |  0        |  PlayReady-Performance  |  HrSendHttpAsyncSecureStop                                        |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  34        |  0        |  PlayReady-Performance  |  HrSendHttpIndividualization                                      |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  35        |  0        |  PlayReady-Performance  |  HrSendHttpIndividualization                                      |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  36        |  0        |  PlayReady-Performance  |  HrSendHttpRevocationRequest                                      |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  37        |  0        |  PlayReady-Performance  |  HrSendHttpRevocationRequest                                      |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  38        |  0        |  PlayReady-Performance  |  DecryptAESSample                                                 |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  39        |  0        |  PlayReady-Performance  |  DecryptAESSample                                                 |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  40        |  0        |  PlayReady-Performance  |  DecryptCocktailSample                                            |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  41        |  0        |  PlayReady-Performance  |  DecryptCocktailSample                                            |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  42        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEInit                                             |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  43        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEInit                                             |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  44        |  0        |  PlayReady-Performance  |  CBlackboxWithTEESecureCorePreInit                                |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  45        |  0        |  PlayReady-Performance  |  CBlackboxWithTEESecureCorePreInit                                |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  46        |  0        |  PlayReady-Performance  |  CBlackboxWithTEESecureCoreInit                                   |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  47        |  0        |  PlayReady-Performance  |  CBlackboxWithTEESecureCoreInit                                   |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  48        |  0        |  PlayReady-Performance  |  CBlackboxWithTEESecureCoreReInit                                 |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  49        |  0        |  PlayReady-Performance  |  CBlackboxWithTEESecureCoreReInit                                 |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  50        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEStorePasswordCallback                            |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  51        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEStorePasswordCallback                            |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  52        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEEnsureInited                                     |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  53        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEEnsureInited                                     |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  54        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEPrepareSampleProtectionKey                       |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  55        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEPrepareSampleProtectionKey                       |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  56        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGetCertificate                                   |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  57        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGetCertificate                                   |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  58        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGetBinaryCertificateChain                        |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  59        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGetBinaryCertificateChain                        |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  60        |  0        |  PlayReady-Performance  |  CBlackboxWithTEECreateDecryptor                                  |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  61        |  0        |  PlayReady-Performance  |  CBlackboxWithTEECreateDecryptor                                  |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  62        |  0        |  PlayReady-Performance  |  CBlackboxWithTEESign                                             |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  63        |  0        |  PlayReady-Performance  |  CBlackboxWithTEESign                                             |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  64        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEPrepareDomainPrivateKeysForStorage               |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  65        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEPrepareDomainPrivateKeysForStorage               |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  66        |  0        |  PlayReady-Performance  |  CBlackboxWithTEERefreshIMFCPD                                    |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  67        |  0        |  PlayReady-Performance  |  CBlackboxWithTEERefreshIMFCPD                                    |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  68        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEProcessLicenseToStore                            |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  69        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEProcessLicenseToStore                            |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  70        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEDeleteLicenseLKB                                 |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  71        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEDeleteLicenseLKB                                 |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  72        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEPrepareProvisioningChallengeForNetwork           |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  73        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEPrepareProvisioningChallengeForNetwork           |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  74        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEPrepareBootstrapProvisioningChallengeForNetwork  |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  75        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEPrepareBootstrapProvisioningChallengeForNetwork  |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  76        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEParseProvisioningResponseFromNetwork             |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  77        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEParseProvisioningResponseFromNetwork             |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  78        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGenerateBootstrapChallenge                       |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  79        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGenerateBootstrapChallenge                       |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  80        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEProcessBootstrapResponse                         |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  81        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEProcessBootstrapResponse                         |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  82        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGenerateProvisioningRequest                      |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  83        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGenerateProvisioningRequest                      |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  84        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEProcessProvisioningResponse                      |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  85        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEProcessProvisioningResponse                      |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  86        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGetVersionInformation                            |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  87        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGetVersionInformation                            |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  88        |  0        |  PlayReady-Performance  |  CBlackboxWithTEECheckIfTEEFunctionSupported                      |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  89        |  0        |  PlayReady-Performance  |  CBlackboxWithTEECheckIfTEEFunctionSupported                      |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  90        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEIsSystemPropertySet                              |  Start   |           |  Object={Object} HResult={Flag}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  91        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEIsSystemPropertySet                              |  Stop    |           |  Object={Object} HResult={Flag}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  92        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGetReIndivReason                                 |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  93        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGetReIndivReason                                 |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  94        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGenerateNonce                                    |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  95        |  0        |  PlayReady-Performance  |  CBlackboxWithTEEGenerateNonce                                    |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  96        |  0        |  PlayReady-Performance  |  CBlackboxWithTEECreateGlobalStorePassword                        |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  97        |  0        |  PlayReady-Performance  |  CBlackboxWithTEECreateGlobalStorePassword                        |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  98        |  0        |  PlayReady-Performance  |  CBlackboxWithTEECreateLicenseStateStorePassword                  |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  99        |  0        |  PlayReady-Performance  |  CBlackboxWithTEECreateLicenseStateStorePassword                  |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  100       |  0        |  PlayReady-Performance  |  CreateSampleAndBufferUsingPool                                   |          |           |  Arg1={Arg1} Arg2={Arg2}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  101       |  0        |  PlayReady-Performance  |  CreateSampleAndBufferUsingPool                                   |          |           |  Arg1={Arg1} Arg2={Arg2} Arg3={Arg3} Arg4={Arg4}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  102       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateWaitingForStart                            |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  103       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateWaitingForStart                            |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  104       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateOtherItemsInQueueStartInternal             |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  105       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateOtherItemsInQueueStartInternal             |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  106       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateResolveWaitingState100msRetry              |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  107       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateResolveWaitingState100msRetry              |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  108       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateOtherItemsInQueueAfterStateChanged         |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  109       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateOtherItemsInQueueAfterStateChanged         |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  110       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateAStateChange                               |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  111       |  0        |  PlayReady-Performance  |  MFTProcessingLoopStateAStateChange                               |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  112       |  0        |  PlayReady-Performance  |  CBlackboxConstructor                                             |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  113       |  0        |  PlayReady-Performance  |  CBlackboxConstructor                                             |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  114       |  0        |  PlayReady-Performance  |  CBlackboxSecureCoreInit                                          |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  115       |  0        |  PlayReady-Performance  |  CBlackboxSecureCoreInit                                          |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  116       |  0        |  PlayReady-Performance  |  CBlackboxGetCertificate                                          |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  117       |  0        |  PlayReady-Performance  |  CBlackboxGetCertificate                                          |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  118       |  0        |  PlayReady-Performance  |  CBlackboxGetBinaryCertificateChain                               |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  119       |  0        |  PlayReady-Performance  |  CBlackboxGetBinaryCertificateChain                               |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  120       |  0        |  PlayReady-Performance  |  CBlackboxHashValue                                               |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  121       |  0        |  PlayReady-Performance  |  CBlackboxHashValue                                               |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  122       |  0        |  PlayReady-Performance  |  CBlackboxCreateDecryptor                                         |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  123       |  0        |  PlayReady-Performance  |  CBlackboxCreateDecryptor                                         |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  124       |  0        |  PlayReady-Performance  |  CBlackboxSign                                                    |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  125       |  0        |  PlayReady-Performance  |  CBlackboxSign                                                    |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  126       |  0        |  PlayReady-Performance  |  CBlackboxPrepareDomainPrivateKeysForStorage                      |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  127       |  0        |  PlayReady-Performance  |  CBlackboxPrepareDomainPrivateKeysForStorage                      |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  128       |  0        |  PlayReady-Performance  |  CBlackboxSafeReleaseKey                                          |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  129       |  0        |  PlayReady-Performance  |  CBlackboxSafeReleaseKey                                          |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  130       |  0        |  PlayReady-Performance  |  CBlackboxGenerateNonce                                           |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  131       |  0        |  PlayReady-Performance  |  CBlackboxGenerateNonce                                           |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  132       |  0        |  PlayReady-Performance  |  CBlackboxCreateGlobalStorePassword                               |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  133       |  0        |  PlayReady-Performance  |  CBlackboxCreateGlobalStorePassword                               |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  134       |  0        |  PlayReady-Performance  |  CBlackboxCreateLicenseStateStorePassword                         |  Start   |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  135       |  0        |  PlayReady-Performance  |  CBlackboxCreateLicenseStateStorePassword                         |  Stop    |           |  Object={Object} HResult={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  136       |  0        |  PlayReady-Performance  |  ProcessSample                                                    |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  137       |  0        |  PlayReady-Performance  |  ProcessSample                                                    |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ptr} hr={HResult}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  138       |  0        |  PlayReady-Performance  |  Lockit                                                           |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_lock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  139       |  0        |  PlayReady-Performance  |  Lockit                                                           |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_lock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  140       |  0        |  PlayReady-Performance  |  AcquireStateLock                                                 |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_AcquireStateLock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  141       |  0        |  PlayReady-Performance  |  AcquireStateLock                                                 |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_AcquireStateLock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  142       |  0        |  PlayReady-Performance  |  ProcessOutput                                                    |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ProcessOutput}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  143       |  0        |  PlayReady-Performance  |  ProcessOutput                                                    |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_ProcessOutput}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  144       |  0        |  PlayReady-Performance  |  OutputLock                                                       |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_OutputLock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  145       |  0        |  PlayReady-Performance  |  OutputLock                                                       |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_OutputLock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  146       |  0        |  PlayReady-Performance  |  AcquireOutputLock                                                |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_AcquireOutputLock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  147       |  0        |  PlayReady-Performance  |  AcquireOutputLock                                                |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_AcquireOutputLock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  148       |  0        |  PlayReady-Performance  |  StateLock                                                        |  Start   |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_StateLock}
+Microsoft-Windows-Media-Protection-PlayReady-Performance  |  Verbose  |  149       |  0        |  PlayReady-Performance  |  StateLock                                                        |  Stop    |           |  CMFTAsyncSimpleBase_ptr={CMFTAsyncSimpleBase_StateLock}

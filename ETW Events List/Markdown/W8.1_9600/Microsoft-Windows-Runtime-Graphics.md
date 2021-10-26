@@ -1,5 +1,5 @@
-Provider                            |  Event ID  |  Channel                                      |  Message
-------------------------------------|------------|-----------------------------------------------|---------
-Microsoft-Windows-Runtime-Graphics  |  1         |  Microsoft-Windows-Runtime-Graphics/Analytic  |
-Microsoft-Windows-Runtime-Graphics  |  2         |  Microsoft-Windows-Runtime-Graphics/Analytic  |
-Microsoft-Windows-Runtime-Graphics  |  3         |  Microsoft-Windows-Runtime-Graphics/Analytic  |
+Provider                            |  Level  |  Event ID  |  Version  |  Channel                                      |  Task               |  Opcode  |  Keyword            |  Message
+------------------------------------|---------|------------|-----------|-----------------------------------------------|---------------------|----------|---------------------|---------
+Microsoft-Windows-Runtime-Graphics  |         |  1         |  0        |  Microsoft-Windows-Runtime-Graphics/Analytic  |  DisplayProperties  |          |  DisplayProperties  |
+Microsoft-Windows-Runtime-Graphics  |         |  2         |  0        |  Microsoft-Windows-Runtime-Graphics/Analytic  |  DisplayProperties  |          |  DisplayProperties  |
+Microsoft-Windows-Runtime-Graphics  |         |  3         |  0        |  Microsoft-Windows-Runtime-Graphics/Analytic  |  DisplayProperties  |          |  DisplayProperties  |

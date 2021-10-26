@@ -1,45 +1,45 @@
-Provider                             |  Event ID  |  Channel                                         |  Message
--------------------------------------|------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Client-Licensing-Platform  |  1         |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  2         |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  3         |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  4         |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  7         |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  8         |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  9         |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  10        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  11        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  12        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  13        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  14        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  15        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  16        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  17        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  18        |  Microsoft-Client-Licensing-Platform/Diagnostic  |
-Microsoft-Client-Licensing-Platform  |  19        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  [ServiceCall] Execute start for id: {ID}
-Microsoft-Client-Licensing-Platform  |  20        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  [ServiceCall] Execute done for id: {ID}
-Microsoft-Client-Licensing-Platform  |  100       |  Microsoft-Client-Licensing-Platform/Admin       |  ClipSVC service is starting.  Caller: {Data}
-Microsoft-Client-Licensing-Platform  |  101       |  Microsoft-Client-Licensing-Platform/Admin       |  ClipSVC service is running.  Version {Data}
-Microsoft-Client-Licensing-Platform  |  102       |  Microsoft-Client-Licensing-Platform/Admin       |
-Microsoft-Client-Licensing-Platform  |  103       |  Microsoft-Client-Licensing-Platform/Admin       |  ClipSVC service initialization failed - result code: {HRESULT}
-Microsoft-Client-Licensing-Platform  |  104       |  Microsoft-Client-Licensing-Platform/Admin       |  ClipSVC was restarted while there is a pending rearm reboot required.  Caller: {Data}
-Microsoft-Client-Licensing-Platform  |  106       |  Microsoft-Client-Licensing-Platform/Admin       |  License successfully uninstalled for package {PackageName} (user {UserId}), license Id {LicenseId}, file Id {AssociateId}
-Microsoft-Client-Licensing-Platform  |  107       |  Microsoft-Client-Licensing-Platform/Admin       |  License successfully uninstalled for file Id {Data}
-Microsoft-Client-Licensing-Platform  |  110       |  Microsoft-Client-Licensing-Platform/Admin       |  License install failed for license type: {Type}Result code: {HRESULT}
-Microsoft-Client-Licensing-Platform  |  111       |  Microsoft-Client-Licensing-Platform/Admin       |  License install failed for license Id {LicenseId}Type: {Type}Package (if available): {PackageName}User Id (if available): {UserId}Result code: {HRESULT}
-Microsoft-Client-Licensing-Platform  |  112       |  Microsoft-Client-Licensing-Platform/Admin       |  License install storage failed for license Id {LicenseId}Type: {Type}Package (if available): {PackageName}User Id(if available): {UserId}Result code: {HRESULT}
-Microsoft-Client-Licensing-Platform  |  115       |  Microsoft-Client-Licensing-Platform/Admin       |  License successfully installed for package {PackageName}.User Id (if available): {UserId}Type: {Type}License Id: {LicenseId}Associate Id: {AssociateId}
-Microsoft-Client-Licensing-Platform  |  116       |  Microsoft-Client-Licensing-Platform/Admin       |  Application license successfully installed.Package: {PackageName}User Id (if available): {UserId}License Id: {LicenseId}Associate Id: {AssociateId}
-Microsoft-Client-Licensing-Platform  |  117       |  Microsoft-Client-Licensing-Platform/Admin       |  Lease successfully installed.License Id: {LicenseId}Associate Id: {AssociateId}Package (if available): {PackageName}UserId (if available): {UserId}
-Microsoft-Client-Licensing-Platform  |  118       |  Microsoft-Client-Licensing-Platform/Admin       |  Device license successfully installed.License Id: {LicenseId}Associate Id: {AssociateId}Device Id: {DeviceId}
-Microsoft-Client-Licensing-Platform  |  150       |  Microsoft-Client-Licensing-Platform/Admin       |  Clip service has been rearmed.  Result code: {HRESULT}
-Microsoft-Client-Licensing-Platform  |  151       |  Microsoft-Client-Licensing-Platform/Admin       |  Failed to launch app {Data} since no applicable licenses were found
-Microsoft-Client-Licensing-Platform  |  152       |  Microsoft-Client-Licensing-Platform/Admin       |
-Microsoft-Client-Licensing-Platform  |  153       |  Microsoft-Client-Licensing-Platform/Admin       |
-Microsoft-Client-Licensing-Platform  |  154       |  Microsoft-Client-Licensing-Platform/Admin       |
-Microsoft-Client-Licensing-Platform  |  155       |  Microsoft-Client-Licensing-Platform/Admin       |
-Microsoft-Client-Licensing-Platform  |  156       |  Microsoft-Client-Licensing-Platform/Admin       |
-Microsoft-Client-Licensing-Platform  |  157       |  Microsoft-Client-Licensing-Platform/Admin       |  The license with Id {LicenseId} has been archived successfully.  PFM if available: {PackageName}
-Microsoft-Client-Licensing-Platform  |  158       |  Microsoft-Client-Licensing-Platform/Admin       |  The license with Id {LicenseId} was not able to be archived successfully.Error code: {HRESULT}PFM if available: {PackageName}
-Microsoft-Client-Licensing-Platform  |  159       |  Microsoft-Client-Licensing-Platform/Admin       |  The lease with Id {LicenseId} has been archived successfully.  PFM if available: {PackageName}
-Microsoft-Client-Licensing-Platform  |  160       |  Microsoft-Client-Licensing-Platform/Admin       |  The license with Id {LicenseId} of type {Type} has been archived successfully.  PFM if available: {PackageName}
+Provider                             |  Level        |  Event ID  |  Version  |  Channel                                         |  Task          |  Opcode  |  Keyword               |  Message
+-------------------------------------|---------------|------------|-----------|--------------------------------------------------|----------------|----------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Client-Licensing-Platform  |  Information  |  1         |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Init  |  Start   |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  2         |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Init  |  Stop    |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  3         |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Stop  |  Start   |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  4         |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Stop  |  Stop    |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  7         |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Start   |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  8         |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Stop    |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  9         |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Start   |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  10        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Stop    |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  11        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Start   |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  12        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Stop    |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  13        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Start   |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  14        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Stop    |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  15        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Start   |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  16        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Stop    |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  17        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Start   |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  18        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Stop    |  Service Perf Keyword  |
+Microsoft-Client-Licensing-Platform  |  Information  |  19        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Start   |  Service Perf Keyword  |  [ServiceCall] Execute start for id: {ID}
+Microsoft-Client-Licensing-Platform  |  Information  |  20        |  0        |  Microsoft-Client-Licensing-Platform/Diagnostic  |  Service_Call  |  Stop    |  Service Perf Keyword  |  [ServiceCall] Execute done for id: {ID}
+Microsoft-Client-Licensing-Platform  |  Information  |  100       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  ClipSVC service is starting.  Caller: {Data}
+Microsoft-Client-Licensing-Platform  |  Information  |  101       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  ClipSVC service is running.  Version {Data}
+Microsoft-Client-Licensing-Platform  |  Information  |  102       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |
+Microsoft-Client-Licensing-Platform  |  Error        |  103       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  ClipSVC service initialization failed - result code: {HRESULT}
+Microsoft-Client-Licensing-Platform  |  Warning      |  104       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  ClipSVC was restarted while there is a pending rearm reboot required.  Caller: {Data}
+Microsoft-Client-Licensing-Platform  |  Information  |  106       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  License successfully uninstalled for package {PackageName} (user {UserId}), license Id {LicenseId}, file Id {AssociateId}
+Microsoft-Client-Licensing-Platform  |  Information  |  107       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  License successfully uninstalled for file Id {Data}
+Microsoft-Client-Licensing-Platform  |  Error        |  110       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  License install failed for license type: {Type}Result code: {HRESULT}
+Microsoft-Client-Licensing-Platform  |  Error        |  111       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  License install failed for license Id {LicenseId}Type: {Type}Package (if available): {PackageName}User Id (if available): {UserId}Result code: {HRESULT}
+Microsoft-Client-Licensing-Platform  |  Error        |  112       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  License install storage failed for license Id {LicenseId}Type: {Type}Package (if available): {PackageName}User Id(if available): {UserId}Result code: {HRESULT}
+Microsoft-Client-Licensing-Platform  |  Information  |  115       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  License successfully installed for package {PackageName}.User Id (if available): {UserId}Type: {Type}License Id: {LicenseId}Associate Id: {AssociateId}
+Microsoft-Client-Licensing-Platform  |  Information  |  116       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  Application license successfully installed.Package: {PackageName}User Id (if available): {UserId}License Id: {LicenseId}Associate Id: {AssociateId}
+Microsoft-Client-Licensing-Platform  |  Information  |  117       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  Lease successfully installed.License Id: {LicenseId}Associate Id: {AssociateId}Package (if available): {PackageName}UserId (if available): {UserId}
+Microsoft-Client-Licensing-Platform  |  Information  |  118       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  Device license successfully installed.License Id: {LicenseId}Associate Id: {AssociateId}Device Id: {DeviceId}
+Microsoft-Client-Licensing-Platform  |  Information  |  150       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  Clip service has been rearmed.  Result code: {HRESULT}
+Microsoft-Client-Licensing-Platform  |  Information  |  151       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  Failed to launch app {Data} since no applicable licenses were found
+Microsoft-Client-Licensing-Platform  |  Information  |  152       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |
+Microsoft-Client-Licensing-Platform  |  Information  |  153       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |
+Microsoft-Client-Licensing-Platform  |  Information  |  154       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |
+Microsoft-Client-Licensing-Platform  |  Information  |  155       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |
+Microsoft-Client-Licensing-Platform  |  Information  |  156       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |
+Microsoft-Client-Licensing-Platform  |  Information  |  157       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  The license with Id {LicenseId} has been archived successfully.  PFM if available: {PackageName}
+Microsoft-Client-Licensing-Platform  |  Information  |  158       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  The license with Id {LicenseId} was not able to be archived successfully.Error code: {HRESULT}PFM if available: {PackageName}
+Microsoft-Client-Licensing-Platform  |  Information  |  159       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  The lease with Id {LicenseId} has been archived successfully.  PFM if available: {PackageName}
+Microsoft-Client-Licensing-Platform  |  Information  |  160       |  0        |  Microsoft-Client-Licensing-Platform/Admin       |                |          |  Service Keyword       |  The license with Id {LicenseId} of type {Type} has been archived successfully.  PFM if available: {PackageName}

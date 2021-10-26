@@ -1,17 +1,17 @@
-Provider                            |  Event ID  |  Channel                                         |  Message
-------------------------------------|------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Kernel-AppCompat  |  1         |  Microsoft-Windows-Kernel-AppCompat/General      |  The executable {ExecutablePath} received an access denied error when trying to modify the registry key {RegistryPath}.
-Microsoft-Windows-Kernel-AppCompat  |  2         |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  3         |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  4         |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  5         |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  6         |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  7         |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  8         |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  9         |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  10        |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  11        |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  12        |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  13        |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  14        |  Microsoft-Windows-Kernel-AppCompat/Performance  |
-Microsoft-Windows-Kernel-AppCompat  |  15        |  Microsoft-Windows-Kernel-AppCompat/Performance  |
+Provider                            |  Level        |  Event ID  |  Version  |  Channel                                         |  Task                 |  Opcode  |  Keyword             |  Message
+------------------------------------|---------------|------------|-----------|--------------------------------------------------|-----------------------|----------|----------------------|------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  1         |  0        |  Microsoft-Windows-Kernel-AppCompat/General      |                       |          |  RegWrpAccessDenied  |  The executable {ExecutablePath} received an access denied error when trying to modify the registry key {RegistryPath}.
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  2         |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatCacheInit      |  Start   |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  3         |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatCacheInit      |  Stop    |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  4         |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatCacheUpdate    |  Start   |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  5         |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatCacheUpdate    |  Stop    |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  6         |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatCacheQuery     |  Start   |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  7         |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatCacheQuery     |  Stop    |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  8         |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatCdbQuery       |  Start   |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  9         |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatCdbQuery       |  Stop    |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  10        |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatMapQuirks      |  Start   |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  11        |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatMapQuirks      |  Stop    |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  12        |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatUserModeQuery  |  Start   |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  13        |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatUserModeQuery  |  Stop    |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  14        |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatSdbQuery       |  Start   |                      |
+Microsoft-Windows-Kernel-AppCompat  |  Information  |  15        |  0        |  Microsoft-Windows-Kernel-AppCompat/Performance  |  CompatSdbQuery       |  Stop    |                      |

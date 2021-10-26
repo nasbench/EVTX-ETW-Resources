@@ -1,101 +1,101 @@
-Provider                      |  Event ID  |  Channel                                  |  Message
-------------------------------|------------|-------------------------------------------|---------------------------------------------------------------------------------
-Microsoft-Windows-USB-USBHUB  |  1         |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Added
-Microsoft-Windows-USB-USBHUB  |  2         |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Removed
-Microsoft-Windows-USB-USBHUB  |  3         |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Information
-Microsoft-Windows-USB-USBHUB  |  10        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Start Enumeration of Port
-Microsoft-Windows-USB-USBHUB  |  11        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration Port Debounce Failed
-Microsoft-Windows-USB-USBHUB  |  12        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Create PDO Failed
-Microsoft-Windows-USB-USBHUB  |  13        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  IoCreateDevice Failed
-Microsoft-Windows-USB-USBHUB  |  14        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Create PnP ID Failed
-Microsoft-Windows-USB-USBHUB  |  15        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration Port Reset Failure
-Microsoft-Windows-USB-USBHUB  |  16        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Port Enabled but not Connected After First Reset
-Microsoft-Windows-USB-USBHUB  |  17        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  First Enumeration Port Reset Timed Out
-Microsoft-Windows-USB-USBHUB  |  18        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Create Device Failed
-Microsoft-Windows-USB-USBHUB  |  19        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Initialize Device Failed
-Microsoft-Windows-USB-USBHUB  |  20        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Get Descriptors Request Failed
-Microsoft-Windows-USB-USBHUB  |  21        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Valdiation of USB Configuration Descriptor Failed
-Microsoft-Windows-USB-USBHUB  |  22        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Validation of USB Device Descriptor Failed
-Microsoft-Windows-USB-USBHUB  |  23        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Request for Microsoft OS Descriptor Failed
-Microsoft-Windows-USB-USBHUB  |  24        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Request for Serial Number String Descriptor Failed
-Microsoft-Windows-USB-USBHUB  |  25        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Build PnP ID failed
-Microsoft-Windows-USB-USBHUB  |  26        |                                           |  Duplicate Serial Number Detected
-Microsoft-Windows-USB-USBHUB  |  27        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration Timed Out Waiting for Previous Instance of USB Device to be Removed
-Microsoft-Windows-USB-USBHUB  |  28        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration Failed Due to Registry Failure
-Microsoft-Windows-USB-USBHUB  |  29        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Retrying Enumeration of Port
-Microsoft-Windows-USB-USBHUB  |  30        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Hub Disconnected During Enumeration of Port
-Microsoft-Windows-USB-USBHUB  |  31        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration Debounce Completed
-Microsoft-Windows-USB-USBHUB  |  32        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  PDO Created for Enumeration
-Microsoft-Windows-USB-USBHUB  |  33        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  First Enumeration Port Reset Complete
-Microsoft-Windows-USB-USBHUB  |  34        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration - CreateDevice Complete
-Microsoft-Windows-USB-USBHUB  |  35        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Second Enumeration Port Reset Complete
-Microsoft-Windows-USB-USBHUB  |  36        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration - InitializeDevice Complete
-Microsoft-Windows-USB-USBHUB  |  37        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration - SetupDevice Complete
-Microsoft-Windows-USB-USBHUB  |  39        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Enumeration of Port Completed
-Microsoft-Windows-USB-USBHUB  |  40        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Reset Recovery of Hub Started
-Microsoft-Windows-USB-USBHUB  |  41        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Reset Recovery of Hub Queued
-Microsoft-Windows-USB-USBHUB  |  49        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Reset Recovery of Hub Completed
-Microsoft-Windows-USB-USBHUB  |  50        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Started Selective Suspend of Hub
-Microsoft-Windows-USB-USBHUB  |  51        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Selective Suspend of Hub Failed to Pause Bus
-Microsoft-Windows-USB-USBHUB  |  59        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Completed Selective Suspend of Hub
-Microsoft-Windows-USB-USBHUB  |  60        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Started Resume of Hub from Selective Suspend
-Microsoft-Windows-USB-USBHUB  |  61        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Resume of Hub Completed
-Microsoft-Windows-USB-USBHUB  |  62        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Propagated Resume of Hub Downstream
-Microsoft-Windows-USB-USBHUB  |  63        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Resumed Port for Hub Resume
-Microsoft-Windows-USB-USBHUB  |  64        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Propagated Resume of Hub Upstream
-Microsoft-Windows-USB-USBHUB  |  70        |                                           |  USB Hub Query Device Relations (BusRelations) IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  71        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Query Device Relations IRP Completed
-Microsoft-Windows-USB-USBHUB  |  80        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Port Attributes
-Microsoft-Windows-USB-USBHUB  |  81        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  ACPI USB Port Capabilities (_UPC)
-Microsoft-Windows-USB-USBHUB  |  82        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  ACPI Physical Device Location (_PLD)
-Microsoft-Windows-USB-USBHUB  |  83        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Query for ACPI USB Port Capabilities (_UPC) Failed
-Microsoft-Windows-USB-USBHUB  |  84        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Query for ACPI Physical Device Location (_PLD) Failed
-Microsoft-Windows-USB-USBHUB  |  100       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Added
-Microsoft-Windows-USB-USBHUB  |  101       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Removed
-Microsoft-Windows-USB-USBHUB  |  102       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Information
-Microsoft-Windows-USB-USBHUB  |  110       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Start IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  111       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Restart of USB Device Failed Due to Device Reset Failure
-Microsoft-Windows-USB-USBHUB  |  112       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Start Device Failed for USB Device Due to Registry Failure
-Microsoft-Windows-USB-USBHUB  |  113       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Unable to Create Symbolic Link for USB Device
-Microsoft-Windows-USB-USBHUB  |  119       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Start IRP Completed
-Microsoft-Windows-USB-USBHUB  |  120       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Set D0 Device Power IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  121       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Set D0 Device Power IRP Completed
-Microsoft-Windows-USB-USBHUB  |  122       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Set Dx Device Power IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  123       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Set Dx Device Power IRP Completed
-Microsoft-Windows-USB-USBHUB  |  130       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION Dispatched
-Microsoft-Windows-USB-USBHUB  |  139       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION Completed
-Microsoft-Windows-USB-USBHUB  |  140       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Wait Wake IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  149       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Wait Wake IRP Completed
-Microsoft-Windows-USB-USBHUB  |  150       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Wait Wake IRP Started
-Microsoft-Windows-USB-USBHUB  |  151       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Wait Wake IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  159       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Wait Wake IRP Completed
-Microsoft-Windows-USB-USBHUB  |  160       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set Dx Device Power IRP Started
-Microsoft-Windows-USB-USBHUB  |  161       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set Dx Device Power IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  169       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set Dx Device Power IRP Completed
-Microsoft-Windows-USB-USBHUB  |  170       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set D0 Device Power IRP Started
-Microsoft-Windows-USB-USBHUB  |  171       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set D0 Device Power IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  172       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Cold Start
-Microsoft-Windows-USB-USBHUB  |  173       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Disconnected During Cold Start
-Microsoft-Windows-USB-USBHUB  |  174       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Disconnected During Cold Start of Hub
-Microsoft-Windows-USB-USBHUB  |  175       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Connected During Cold Start of Hub
-Microsoft-Windows-USB-USBHUB  |  176       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Device Lost Power During Cold Start of Hub
-Microsoft-Windows-USB-USBHUB  |  177       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Needs to be Reset During Cold Start of Hub
-Microsoft-Windows-USB-USBHUB  |  178       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Cold Start Completed
-Microsoft-Windows-USB-USBHUB  |  179       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Warm Start
-Microsoft-Windows-USB-USBHUB  |  180       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Failed to Resume During Warm Start of Hub
-Microsoft-Windows-USB-USBHUB  |  181       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Requires Reset During Warm Start of Hub
-Microsoft-Windows-USB-USBHUB  |  183       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Warm Start Completed
-Microsoft-Windows-USB-USBHUB  |  184       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Lost Power During System Suspend
-Microsoft-Windows-USB-USBHUB  |  185       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Was Disconnected During System Suspend
-Microsoft-Windows-USB-USBHUB  |  189       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set D0 Device Power IRP Completed
-Microsoft-Windows-USB-USBHUB  |  190       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set Sx System Power IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  199       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set Sx System Power IRP Completed
-Microsoft-Windows-USB-USBHUB  |  200       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set S0 System Power IRP Dispatched
-Microsoft-Windows-USB-USBHUB  |  209       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Set S0 System Power IRP Complete
-Microsoft-Windows-USB-USBHUB  |  210       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Exception Logged
-Microsoft-Windows-USB-USBHUB  |  211       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Port Status Change
-Microsoft-Windows-USB-USBHUB  |  220       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Internal Reset Started
-Microsoft-Windows-USB-USBHUB  |  229       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Internal Reset Completed
-Microsoft-Windows-USB-USBHUB  |  230       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Past Exception Logged
-Microsoft-Windows-USB-USBHUB  |  231       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Start IOCTL_INTERNAL_USB_RESET_PORT
-Microsoft-Windows-USB-USBHUB  |  232       |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  Complete IOCTL_INTERNAL_USB_RESET_PORT
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                                  |  Task                                               |  Opcode       |  Keyword      |  Message
+------------------------------|---------------|------------|-----------|-------------------------------------------|-----------------------------------------------------|---------------|---------------|---------------------------------------------------------------------------------
+Microsoft-Windows-USB-USBHUB  |  Information  |  1         |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub                                            |  Add          |  Diagnostics  |  USB Hub Added
+Microsoft-Windows-USB-USBHUB  |  Information  |  2         |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub                                            |  Remove       |  Diagnostics  |  USB Hub Removed
+Microsoft-Windows-USB-USBHUB  |  Information  |  3         |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub                                            |  Information  |  Diagnostics  |  USB Hub Information
+Microsoft-Windows-USB-USBHUB  |  Information  |  10        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Start        |  Diagnostics  |  Start Enumeration of Port
+Microsoft-Windows-USB-USBHUB  |  Error        |  11        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Enumeration Port Debounce Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  12        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Create PDO Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  13        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  IoCreateDevice Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  14        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Create PnP ID Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  15        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  Enumeration Port Reset Failure
+Microsoft-Windows-USB-USBHUB  |  Error        |  16        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Port Enabled but not Connected After First Reset
+Microsoft-Windows-USB-USBHUB  |  Information  |  17        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  First Enumeration Port Reset Timed Out
+Microsoft-Windows-USB-USBHUB  |  Error        |  18        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Create Device Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  19        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Initialize Device Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  20        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Get Descriptors Request Failed
+Microsoft-Windows-USB-USBHUB  |  Information  |  21        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Start        |  Diagnostics  |  Valdiation of USB Configuration Descriptor Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  22        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Validation of USB Device Descriptor Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  23        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Request for Microsoft OS Descriptor Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  24        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Request for Serial Number String Descriptor Failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  25        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Build PnP ID failed
+Microsoft-Windows-USB-USBHUB  |  Error        |  26        |  0        |                                           |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Duplicate Serial Number Detected
+Microsoft-Windows-USB-USBHUB  |  Error        |  27        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Enumeration Timed Out Waiting for Previous Instance of USB Device to be Removed
+Microsoft-Windows-USB-USBHUB  |  Error        |  28        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Enumeration Failed Due to Registry Failure
+Microsoft-Windows-USB-USBHUB  |  Information  |  29        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  Retrying Enumeration of Port
+Microsoft-Windows-USB-USBHUB  |  Critical     |  30        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Error        |  Diagnostics  |  Hub Disconnected During Enumeration of Port
+Microsoft-Windows-USB-USBHUB  |  Information  |  31        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  Enumeration Debounce Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  32        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  PDO Created for Enumeration
+Microsoft-Windows-USB-USBHUB  |  Information  |  33        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  First Enumeration Port Reset Complete
+Microsoft-Windows-USB-USBHUB  |  Information  |  34        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  Enumeration - CreateDevice Complete
+Microsoft-Windows-USB-USBHUB  |  Information  |  35        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  Second Enumeration Port Reset Complete
+Microsoft-Windows-USB-USBHUB  |  Information  |  36        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  Enumeration - InitializeDevice Complete
+Microsoft-Windows-USB-USBHUB  |  Information  |  37        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Information  |  Diagnostics  |  Enumeration - SetupDevice Complete
+Microsoft-Windows-USB-USBHUB  |  Information  |  39        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Enumerate                                  |  Complete     |  Diagnostics  |  Enumeration of Port Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  40        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Reset Recovery                             |  Start        |  Diagnostics  |  Reset Recovery of Hub Started
+Microsoft-Windows-USB-USBHUB  |  Warning      |  41        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Reset Recovery                             |  Queue        |  Diagnostics  |  Reset Recovery of Hub Queued
+Microsoft-Windows-USB-USBHUB  |  Information  |  49        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Reset Recovery                             |  Complete     |  Diagnostics  |  Reset Recovery of Hub Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  50        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Suspend                                    |  Start        |  Diagnostics  |  Started Selective Suspend of Hub
+Microsoft-Windows-USB-USBHUB  |  Information  |  51        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Suspend                                    |  Information  |  Diagnostics  |  Selective Suspend of Hub Failed to Pause Bus
+Microsoft-Windows-USB-USBHUB  |  Information  |  59        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Suspend                                    |  Complete     |  Diagnostics  |  Completed Selective Suspend of Hub
+Microsoft-Windows-USB-USBHUB  |  Information  |  60        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Resume                                     |  Start        |  Diagnostics  |  Started Resume of Hub from Selective Suspend
+Microsoft-Windows-USB-USBHUB  |  Information  |  61        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Resume                                     |  Complete     |  Diagnostics  |  Resume of Hub Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  62        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Resume                                     |  Information  |  Diagnostics  |  Propagated Resume of Hub Downstream
+Microsoft-Windows-USB-USBHUB  |  Information  |  63        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Resume                                     |  Information  |  Diagnostics  |  Resumed Port for Hub Resume
+Microsoft-Windows-USB-USBHUB  |  Information  |  64        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Resume                                     |  Information  |  Diagnostics  |  Propagated Resume of Hub Upstream
+Microsoft-Windows-USB-USBHUB  |  Information  |  70        |  0        |                                           |  USB Hub Query Device Relations IRP - BusRelations  |  Dispatch     |  Diagnostics  |  USB Hub Query Device Relations (BusRelations) IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  71        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Query Device Relations IRP - BusRelations  |  Complete     |  Diagnostics  |  USB Hub Query Device Relations IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  80        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Port Information                           |  Information  |  Diagnostics  |  USB Hub Port Attributes
+Microsoft-Windows-USB-USBHUB  |  Information  |  81        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Port Information                           |  Information  |  Diagnostics  |  ACPI USB Port Capabilities (_UPC)
+Microsoft-Windows-USB-USBHUB  |  Information  |  82        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Port Information                           |  Information  |  Diagnostics  |  ACPI Physical Device Location (_PLD)
+Microsoft-Windows-USB-USBHUB  |  Information  |  83        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Port Information                           |  Information  |  Diagnostics  |  Query for ACPI USB Port Capabilities (_UPC) Failed
+Microsoft-Windows-USB-USBHUB  |  Information  |  84        |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Port Information                           |  Information  |  Diagnostics  |  Query for ACPI Physical Device Location (_PLD) Failed
+Microsoft-Windows-USB-USBHUB  |  Information  |  100       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device                                         |  Add          |  Diagnostics  |  USB Device Added
+Microsoft-Windows-USB-USBHUB  |  Information  |  101       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device                                         |  Remove       |               |  USB Device Removed
+Microsoft-Windows-USB-USBHUB  |  Information  |  102       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device                                         |  Information  |  Diagnostics  |  USB Device Information
+Microsoft-Windows-USB-USBHUB  |  Information  |  110       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Start                                   |  Dispatch     |  Diagnostics  |  USB Device Start IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Error        |  111       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Start                                   |  Error        |  Diagnostics  |  Restart of USB Device Failed Due to Device Reset Failure
+Microsoft-Windows-USB-USBHUB  |  Error        |  112       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Start                                   |  Error        |  Diagnostics  |  Start Device Failed for USB Device Due to Registry Failure
+Microsoft-Windows-USB-USBHUB  |  Error        |  113       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Start                                   |  Error        |  Diagnostics  |  Unable to Create Symbolic Link for USB Device
+Microsoft-Windows-USB-USBHUB  |  Information  |  119       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Start                                   |  Complete     |  Diagnostics  |  USB Device Start IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  120       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Set Power                               |  Dispatch     |  Diagnostics  |  USB Device Set D0 Device Power IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  121       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Set Power                               |  Complete     |  Diagnostics  |  USB Device Set D0 Device Power IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  122       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Set Power                               |  Dispatch     |  Diagnostics  |  USB Device Set Dx Device Power IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  123       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Set Power                               |  Complete     |  Diagnostics  |  USB Device Set Dx Device Power IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  130       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Idle Notification                       |  Dispatch     |  Diagnostics  |  USB Device IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  139       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Idle Notification                       |  Complete     |  Diagnostics  |  USB Device IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  140       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device WaitWake                                |  Dispatch     |  Diagnostics  |  USB Device Wait Wake IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  149       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device WaitWake                                |  Complete     |  Diagnostics  |  USB Device Wait Wake IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  150       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Wait Wake                                  |  Start        |  Diagnostics  |  USB Hub Wait Wake IRP Started
+Microsoft-Windows-USB-USBHUB  |  Information  |  151       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Wait Wake                                  |  Dispatch     |  Diagnostics  |  USB Hub Wait Wake IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  159       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Wait Wake                                  |  Complete     |  Diagnostics  |  USB Hub Wait Wake IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  160       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Start        |  Diagnostics  |  USB Hub Set Dx Device Power IRP Started
+Microsoft-Windows-USB-USBHUB  |  Information  |  161       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Dispatch     |  Diagnostics  |  USB Hub Set Dx Device Power IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  169       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Complete     |  Diagnostics  |  USB Hub Set Dx Device Power IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  170       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Start        |  Diagnostics  |  USB Hub Set D0 Device Power IRP Started
+Microsoft-Windows-USB-USBHUB  |  Information  |  171       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Dispatch     |  Diagnostics  |  USB Hub Set D0 Device Power IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  172       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Start        |  Diagnostics  |  USB Hub Cold Start
+Microsoft-Windows-USB-USBHUB  |  Information  |  173       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Information  |  Diagnostics  |  USB Hub Disconnected During Cold Start
+Microsoft-Windows-USB-USBHUB  |  Information  |  174       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Information  |  Diagnostics  |  USB Device Disconnected During Cold Start of Hub
+Microsoft-Windows-USB-USBHUB  |  Information  |  175       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Information  |  Diagnostics  |  USB Device Connected During Cold Start of Hub
+Microsoft-Windows-USB-USBHUB  |  Information  |  176       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Information  |  Diagnostics  |  Device Lost Power During Cold Start of Hub
+Microsoft-Windows-USB-USBHUB  |  Information  |  177       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Information  |  Diagnostics  |  USB Device Needs to be Reset During Cold Start of Hub
+Microsoft-Windows-USB-USBHUB  |  Information  |  178       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Complete     |  Diagnostics  |  USB Hub Cold Start Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  179       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Start        |  Diagnostics  |  USB Hub Warm Start
+Microsoft-Windows-USB-USBHUB  |  Error        |  180       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Error        |  Diagnostics  |  USB Device Failed to Resume During Warm Start of Hub
+Microsoft-Windows-USB-USBHUB  |  Information  |  181       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Information  |  Diagnostics  |  USB Device Requires Reset During Warm Start of Hub
+Microsoft-Windows-USB-USBHUB  |  Information  |  183       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Complete     |  Diagnostics  |  USB Hub Warm Start Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  184       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Error        |  Diagnostics  |  USB Hub Lost Power During System Suspend
+Microsoft-Windows-USB-USBHUB  |  Information  |  185       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Information  |  Diagnostics  |  USB Hub Was Disconnected During System Suspend
+Microsoft-Windows-USB-USBHUB  |  Information  |  189       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Complete     |  Diagnostics  |  USB Hub Set D0 Device Power IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  190       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Dispatch     |  Diagnostics  |  USB Hub Set Sx System Power IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  199       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Complete     |  Diagnostics  |  USB Hub Set Sx System Power IRP Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  200       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Dispatch     |  Diagnostics  |  USB Hub Set S0 System Power IRP Dispatched
+Microsoft-Windows-USB-USBHUB  |  Information  |  209       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Power                                      |  Complete     |  Diagnostics  |  USB Hub Set S0 System Power IRP Complete
+Microsoft-Windows-USB-USBHUB  |  Information  |  210       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Exception                                  |  Exception    |  Diagnostics  |  USB Hub Exception Logged
+Microsoft-Windows-USB-USBHUB  |  Information  |  211       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Port Status                                |  Information  |  Diagnostics  |  USB Hub Port Status Change
+Microsoft-Windows-USB-USBHUB  |  Information  |  220       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Internal Reset                          |  Start        |  Diagnostics  |  USB Device Internal Reset Started
+Microsoft-Windows-USB-USBHUB  |  Information  |  229       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device Internal Reset                          |  Complete     |  Diagnostics  |  USB Device Internal Reset Completed
+Microsoft-Windows-USB-USBHUB  |  Information  |  230       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Hub Past Exception                             |  Exception    |  Diagnostics  |  USB Hub Past Exception Logged
+Microsoft-Windows-USB-USBHUB  |  Information  |  231       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device IOCTL_INTERNAL_USB_RESET_PORT           |  Start        |  Diagnostics  |  Start IOCTL_INTERNAL_USB_RESET_PORT
+Microsoft-Windows-USB-USBHUB  |  Information  |  232       |  0        |  Microsoft-Windows-USB-USBHUB/Diagnostic  |  USB Device IOCTL_INTERNAL_USB_RESET_PORT           |  Complete     |  Diagnostics  |  Complete IOCTL_INTERNAL_USB_RESET_PORT

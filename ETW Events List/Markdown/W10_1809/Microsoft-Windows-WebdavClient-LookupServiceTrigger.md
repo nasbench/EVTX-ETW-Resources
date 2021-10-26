@@ -1,3 +1,3 @@
-Provider                                             |  Event ID  |  Channel  |  Message
------------------------------------------------------|------------|-----------|---------
-Microsoft-Windows-WebdavClient-LookupServiceTrigger  |  1         |           |
+Provider                                             |  Level  |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------------------------------|---------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-WebdavClient-LookupServiceTrigger  |         |  1         |  0        |           |        |          |           |

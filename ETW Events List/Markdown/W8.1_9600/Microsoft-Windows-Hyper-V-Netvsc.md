@@ -1,19 +1,19 @@
-Provider                          |  Event ID  |  Channel                                      |  Message
-----------------------------------|------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------
-Microsoft-Windows-Hyper-V-Netvsc  |  1         |  System                                       |  The VM and host networking components successfully negotiated protocol version '{Version}'
-Microsoft-Windows-Hyper-V-Netvsc  |  2         |  System                                       |  The VM and host networking components failed to negotiate protocol version '{Version}'
-Microsoft-Windows-Hyper-V-Netvsc  |  3         |  System                                       |  The miniport '{MiniportName}' was successfully initialized
-Microsoft-Windows-Hyper-V-Netvsc  |  4         |  System                                       |  Failed to initialize miniport '{MiniportName}', Status = '{Status}'
-Microsoft-Windows-Hyper-V-Netvsc  |  5         |  System                                       |  Failed to set config parameters on miniport NIC '{MiniportName}', Status = '{Status}'
-Microsoft-Windows-Hyper-V-Netvsc  |  6         |  System                                       |  Miniport NIC '{MiniportName}' is halting
-Microsoft-Windows-Hyper-V-Netvsc  |  7         |  System                                       |  Miniport NIC '{MiniportName}' reset
-Microsoft-Windows-Hyper-V-Netvsc  |  8         |  System                                       |  Miniport NIC '{MiniportName}' hung
-Microsoft-Windows-Hyper-V-Netvsc  |  9         |  System                                       |  Miniport NIC '{MiniportName}' halted
-Microsoft-Windows-Hyper-V-Netvsc  |  10        |  System                                       |  Miniport NIC '{MiniportName}' paused
-Microsoft-Windows-Hyper-V-Netvsc  |  11        |  System                                       |  Miniport NIC '{MiniportName}' restarted
-Microsoft-Windows-Hyper-V-Netvsc  |  12        |  System                                       |  Miniport NIC '{MiniportName}' connected
-Microsoft-Windows-Hyper-V-Netvsc  |  13        |  System                                       |  Miniport NIC '{MiniportName}' disconnected
-Microsoft-Windows-Hyper-V-Netvsc  |  14        |  System                                       |  Miniport NIC '{MiniportName}' network has changed
-Microsoft-Windows-Hyper-V-Netvsc  |  15        |  System                                       |  Microport initialization failed, reason = {Status}
-Microsoft-Windows-Hyper-V-Netvsc  |  16        |  Microsoft-Windows-Hyper-V-NETVSC/Diagnostic  |  NBL {Operation} miniport NIC '{MiniportName}' is dropped. Reason: {DropReason}. Status - {Status}.
-Microsoft-Windows-Hyper-V-Netvsc  |  17        |  Microsoft-Windows-Hyper-V-NETVSC/Diagnostic  |  Failed to send packet at the microport. Reason: {DropReason}. Status - {Status}.
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                      |  Task               |  Opcode  |  Keyword  |  Message
+----------------------------------|---------------|------------|-----------|-----------------------------------------------|---------------------|----------|-----------|-----------------------------------------------------------------------------------------------------
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  1         |  0        |  System                                       |  ProtocolNegotiate  |          |           |  The VM and host networking components successfully negotiated protocol version '{Version}'
+Microsoft-Windows-Hyper-V-Netvsc  |  Error        |  2         |  0        |  System                                       |  ProtocolNegotiate  |          |           |  The VM and host networking components failed to negotiate protocol version '{Version}'
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  3         |  0        |  System                                       |  RndisMPInit        |          |           |  The miniport '{MiniportName}' was successfully initialized
+Microsoft-Windows-Hyper-V-Netvsc  |  Error        |  4         |  0        |  System                                       |  RndisMPInit        |          |           |  Failed to initialize miniport '{MiniportName}', Status = '{Status}'
+Microsoft-Windows-Hyper-V-Netvsc  |  Error        |  5         |  0        |  System                                       |  RndisMPInit        |          |           |  Failed to set config parameters on miniport NIC '{MiniportName}', Status = '{Status}'
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  6         |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' is halting
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  7         |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' reset
+Microsoft-Windows-Hyper-V-Netvsc  |  Warning      |  8         |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' hung
+Microsoft-Windows-Hyper-V-Netvsc  |  Warning      |  9         |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' halted
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  10        |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' paused
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  11        |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' restarted
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  12        |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' connected
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  13        |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' disconnected
+Microsoft-Windows-Hyper-V-Netvsc  |  Information  |  14        |  0        |  System                                       |  RndisStatusChange  |          |           |  Miniport NIC '{MiniportName}' network has changed
+Microsoft-Windows-Hyper-V-Netvsc  |  Error        |  15        |  0        |  System                                       |  MicroportInit      |          |           |  Microport initialization failed, reason = {Status}
+Microsoft-Windows-Hyper-V-Netvsc  |  Error        |  16        |  0        |  Microsoft-Windows-Hyper-V-NETVSC/Diagnostic  |                     |          |           |  NBL {Operation} miniport NIC '{MiniportName}' is dropped. Reason: {DropReason}. Status - {Status}.
+Microsoft-Windows-Hyper-V-Netvsc  |  Error        |  17        |  0        |  Microsoft-Windows-Hyper-V-NETVSC/Diagnostic  |                     |          |           |  Failed to send packet at the microport. Reason: {DropReason}. Status - {Status}.

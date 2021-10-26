@@ -1,11 +1,11 @@
-Provider                         |  Event ID  |  Channel                                     |  Message
----------------------------------|------------|----------------------------------------------|---------
-Microsoft-Windows-DisplaySwitch  |  1         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  2         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  3         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  4         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  5         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  6         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  7         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  8         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  9         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
+Provider                         |  Level        |  Event ID  |  Version  |  Channel                                     |  Task                              |  Opcode  |  Keyword  |  Message
+---------------------------------|---------------|------------|-----------|----------------------------------------------|------------------------------------|----------|-----------|---------
+Microsoft-Windows-DisplaySwitch  |  Information  |  1         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_Application         |  Start   |  Default  |
+Microsoft-Windows-DisplaySwitch  |  Information  |  2         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_Application         |  Stop    |  Default  |
+Microsoft-Windows-DisplaySwitch  |  Information  |  3         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_Application_Mode    |          |  Default  |
+Microsoft-Windows-DisplaySwitch  |  Information  |  4         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_MainWindowShow      |          |  Default  |
+Microsoft-Windows-DisplaySwitch  |  Information  |  5         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_Selection           |          |  Default  |
+Microsoft-Windows-DisplaySwitch  |  Information  |  6         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_CommittingChange    |  Start   |  Default  |
+Microsoft-Windows-DisplaySwitch  |  Information  |  7         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_CommittingChange    |  Stop    |  Default  |
+Microsoft-Windows-DisplaySwitch  |  Information  |  8         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_IsLoadingLTRImages  |          |  Default  |
+Microsoft-Windows-DisplaySwitch  |  Information  |  9         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_TitleText           |          |  Default  |

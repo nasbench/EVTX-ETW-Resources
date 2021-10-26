@@ -1,46 +1,46 @@
-Provider                               |  Event ID  |  Channel                                      |  Message
----------------------------------------|------------|-----------------------------------------------|---------
-Microsoft-Windows-FileHistory-Catalog  |  1         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  2         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  3         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  4         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  5         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  6         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  7         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  8         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  9         |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  10        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  11        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  12        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  13        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  14        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  15        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  16        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  17        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  18        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  19        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  20        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  21        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  22        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  23        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  24        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  25        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  26        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  27        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  28        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  29        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  30        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  31        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  32        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  33        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  34        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  35        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  36        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  37        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  38        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  39        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  40        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  41        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  42        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  43        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
-Microsoft-Windows-FileHistory-Catalog  |  44        |  Microsoft-Windows-FileHistory-Catalog/Debug  |
+Provider                               |  Level  |  Event ID  |  Version  |  Channel                                      |  Task                         |  Opcode  |  Keyword  |  Message
+---------------------------------------|---------|------------|-----------|-----------------------------------------------|-------------------------------|----------|-----------|---------
+Microsoft-Windows-FileHistory-Catalog  |         |  1         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  Attach                       |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  2         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  Attach                       |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  3         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  Detach                       |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  4         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  Detach                       |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  5         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  Create                       |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  6         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  Create                       |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  7         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  AddNamespaceRecord           |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  8         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  AddNamespaceRecord           |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  9         |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  UpdateNamespaceRecord        |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  10        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  UpdateNamespaceRecord        |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  11        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  GetNamespaceRecord           |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  12        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  GetNamespaceRecord           |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  13        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  AddFileRecord                |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  14        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  AddFileRecord                |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  15        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  UpdateFileRecord             |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  16        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  UpdateFileRecord             |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  17        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  GetFileRecord                |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  18        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  GetFileRecord                |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  19        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindNsRecordsByFullPath      |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  20        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindNsRecordsByFullPath      |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  21        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindPointInTimeFolder        |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  22        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindPointInTimeFolder        |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  23        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindNsRecordsByFileRecordId  |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  24        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindNsRecordsByFileRecordId  |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  25        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindFileRecordsByState       |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  26        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindFileRecordsByState       |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  27        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindLibrariesTimeline        |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  28        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindLibrariesTimeline        |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  29        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindLibraryTimeline          |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  30        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindLibraryTimeline          |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  31        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindPointInTimeLibraries     |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  32        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindPointInTimeLibraries     |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  33        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindPointInTimeLibrary       |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  34        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindPointInTimeLibrary       |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  35        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindAllLibraryRecords        |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  36        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindAllLibraryRecords        |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  37        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  Reattach                     |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  38        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  Reattach                     |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  39        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  MoveNext                     |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  40        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  MoveNext                     |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  41        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  MovePrevious                 |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  42        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  MovePrevious                 |  Stop    |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  43        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindNsRecordsByTVisible      |  Start   |           |
+Microsoft-Windows-FileHistory-Catalog  |         |  44        |  0        |  Microsoft-Windows-FileHistory-Catalog/Debug  |  FindNsRecordsByTVisible      |  Stop    |           |

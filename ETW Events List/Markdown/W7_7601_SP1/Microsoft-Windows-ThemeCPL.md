@@ -1,22 +1,22 @@
-Provider                    |  Event ID  |  Channel                                |  Message
-----------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-ThemeCPL  |  0         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  1         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  2         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  3         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  4         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  5         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  6         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  7         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  8         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  9         |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  10        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  11        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  12        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  13        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  14        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  15        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  16        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  17        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  18        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
-Microsoft-Windows-ThemeCPL  |  19        |  Microsoft-Windows-ThemeCPL/Diagnostic  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                |  Task                                          |  Opcode  |  Keyword   |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------|------------------------------------------------|----------|------------|---------
+Microsoft-Windows-ThemeCPL  |  Information  |  0         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_Personalization_Page_Ready           |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  1         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_WallpaperPage_Ready                  |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  2         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_StaticWallpaper_Set                  |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  3         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_DesktopSlideshow_Set                 |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  4         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_HubPageInit                   |  Start   |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  5         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_HubPageInit                   |  Stop    |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  6         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_ThemeSwitch                   |  Start   |  ThemeCPL  |
+Microsoft-Windows-ThemeCPL  |  Information  |  7         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_ThemeSwitch                   |  Stop    |  ThemeCPL  |
+Microsoft-Windows-ThemeCPL  |  Information  |  8         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_ColorCPLAdvancedPropertiesLink       |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  9         |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_WallpaperPageInit                    |  Start   |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  10        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_WallpaperPageInit                    |  Stop    |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  11        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_WallpaperSet                         |  Start   |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  12        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ThemeCPL_WallpaperSet                         |  Stop    |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  13        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_DesktopBackgroundLinkClicked  |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  14        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_WindowColorLinkClicked        |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  15        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_SoundsLinkClicked             |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  16        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_ScreenSaverLinkClicked        |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  17        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  Personalization_OnlineThemesLinkClicked       |          |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  18        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ColorCPL_SetDWMColor                          |  Start   |            |
+Microsoft-Windows-ThemeCPL  |  Information  |  19        |  0        |  Microsoft-Windows-ThemeCPL/Diagnostic  |  ColorCPL_SetDWMColor                          |  Stop    |            |

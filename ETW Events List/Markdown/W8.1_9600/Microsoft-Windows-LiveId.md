@@ -1,170 +1,170 @@
-Provider                  |  Event ID  |  Channel                               |  Message
---------------------------|------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-LiveId  |  1001      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1002      |  Microsoft-Windows-LiveId/Analytic     |  LsaApLogonUserEx2_Stop.Status: {Status}
-Microsoft-Windows-LiveId  |  1003      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1004      |  Microsoft-Windows-LiveId/Analytic     |  SpOnProfileLoaded_Stop.ServiceCalled: {ServiceCalled}	Status: {Status}
-Microsoft-Windows-LiveId  |  1005      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1006      |  Microsoft-Windows-LiveId/Analytic     |  ConnectIdentity_Stop.Status: {Result}
-Microsoft-Windows-LiveId  |  1007      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1008      |  Microsoft-Windows-LiveId/Analytic     |  DisconnectIdentity_Stop.Status: {Result}
-Microsoft-Windows-LiveId  |  1009      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1010      |  Microsoft-Windows-LiveId/Analytic     |  LiveDoCachedLogon_Stop.Status: {Result}
-Microsoft-Windows-LiveId  |  1011      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1012      |  Microsoft-Windows-LiveId/Analytic     |  LiveAuthenticate_Stop.Status: {Status}
-Microsoft-Windows-LiveId  |  1013      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1014      |  Microsoft-Windows-LiveId/Analytic     |  NetworkCall_Stop.Status: {NoOfTargets}
-Microsoft-Windows-LiveId  |  1015      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1016      |  Microsoft-Windows-LiveId/Analytic     |  DeviceAuth_Stop.Status: {TicketsCached}
-Microsoft-Windows-LiveId  |  1017      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1018      |  Microsoft-Windows-LiveId/Analytic     |  UserAuth_Stop.Status: {TicketsCached}
-Microsoft-Windows-LiveId  |  1019      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  1020      |  Microsoft-Windows-LiveId/Analytic     |  PromptForCredentials_Stop.Status: {Result}
-Microsoft-Windows-LiveId  |  1021      |  Microsoft-Windows-LiveId/Operational  |  SignOutUser_RegistryOpenOrReadFailure. RegistryLocation: {RegistryLocation}. Status: {Status}
-Microsoft-Windows-LiveId  |  1022      |  Microsoft-Windows-LiveId/Operational  |  SignOutUser_RegistryWriteFailure. RegistryLocation: {RegistryLocation}. Status: {Status}
-Microsoft-Windows-LiveId  |  2008      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2009      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2010      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2011      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2012      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2013      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2014      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2015      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2016      |  Microsoft-Windows-LiveId/Analytic     |  CommandLinkClicked_Stop.Status: {Result}
-Microsoft-Windows-LiveId  |  2017      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2018      |  Microsoft-Windows-LiveId/Analytic     |  UserImageGetBitmapValue_Stop.Status: {Result}
-Microsoft-Windows-LiveId  |  2019      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2020      |  Microsoft-Windows-LiveId/Analytic     |  CredProvSetSerialization_Stop.Status: {Result}
-Microsoft-Windows-LiveId  |  2021      |  Microsoft-Windows-LiveId/Analytic     |
-Microsoft-Windows-LiveId  |  2022      |  Microsoft-Windows-LiveId/Analytic     |  CredProvGetSerialization_Stop.Status: {Result}
-Microsoft-Windows-LiveId  |  2023      |  Microsoft-Windows-LiveId/Operational  |  Operation: {Operation}Details: {Target}Status: {Result}
-Microsoft-Windows-LiveId  |  2024      |  Microsoft-Windows-LiveId/Operational  |  Operation: {Operation}Details: {Details}Status: {Status}
-Microsoft-Windows-LiveId  |  2025      |  Microsoft-Windows-LiveId/Operational  |  WLIDSvc service failed to start.Function: {Operation}Reason: {Reason}Status: {Result}
-Microsoft-Windows-LiveId  |  2026      |  Microsoft-Windows-LiveId/Analytic     |  Generic telemetry trigger event.PointType: {PointType}AppName: {AppName}ModuleName: {ModuleName}ModuleVersion: {ModuleVersion}FileName: {FileName}FunctionName: {FunctionName}LineNumber: {LineNumber}ErrorCode: {ErrorCode}
-Microsoft-Windows-LiveId  |  2027      |  Microsoft-Windows-LiveId/Analytic     |  User specific telemetry trigger event for CID {cid}.
-Microsoft-Windows-LiveId  |  3000      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3001      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3002      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3003      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3004      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3005      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3006      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3007      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  3009      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  3010      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  3011      |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  3012      |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  3013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4000      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4001      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4002      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4003      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4004      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4005      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4006      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4007      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  4009      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  4010      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  4011      |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  4012      |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  4013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5000      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5001      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5002      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5003      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5004      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5005      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5006      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5007      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  5009      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  5010      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  5011      |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  5012      |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  5013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6000      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6001      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6002      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6003      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6004      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6005      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6006      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6007      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  6009      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  6010      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  6011      |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  6012      |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  6013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7000      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7001      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7002      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7003      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7004      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7005      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7006      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7007      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  7009      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  7010      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  7011      |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  7012      |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  7013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8000      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8001      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8002      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8003      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8004      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8005      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8006      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8007      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  8009      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  8010      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  8011      |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  8012      |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  8013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9000      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9001      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9002      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9003      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9004      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9005      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9006      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9007      |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9008      |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  9009      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  9010      |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  9011      |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  9012      |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  9013      |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10000     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10001     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10002     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10003     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10004     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10005     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10006     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10007     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10008     |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  10009     |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  10010     |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  10011     |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  10012     |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  10013     |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11000     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11001     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11002     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11003     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11004     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11005     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11006     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11007     |                                        |  {description} @{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11008     |                                        |  +{FunctionName}@{FileName}_{LineNumber}
-Microsoft-Windows-LiveId  |  11009     |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  11010     |                                        |  -{FunctionName}={ErrorCode}
-Microsoft-Windows-LiveId  |  11011     |                                        |  -{FunctionName}={Address}
-Microsoft-Windows-LiveId  |  11012     |                                        |  Process name {ProcessName}
-Microsoft-Windows-LiveId  |  11013     |                                        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                               |  Task                         |  Opcode  |  Keyword                   |  Message
+--------------------------|---------------|------------|-----------|----------------------------------------|-------------------------------|----------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-LiveId  |  Information  |  1001      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveSsp Operation            |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1002      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveSsp Operation            |  Stop    |  Analytic                  |  LsaApLogonUserEx2_Stop.Status: {Status}
+Microsoft-Windows-LiveId  |  Information  |  1003      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveSsp Operation            |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1004      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveSsp Operation            |  Stop    |  Analytic                  |  SpOnProfileLoaded_Stop.ServiceCalled: {ServiceCalled}	Status: {Status}
+Microsoft-Windows-LiveId  |  Information  |  1005      |  0        |  Microsoft-Windows-LiveId/Analytic     |  Identity Provider Operation  |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1006      |  0        |  Microsoft-Windows-LiveId/Analytic     |  Identity Provider Operation  |  Stop    |  Analytic                  |  ConnectIdentity_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  1007      |  0        |  Microsoft-Windows-LiveId/Analytic     |  Identity Provider Operation  |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1008      |  0        |  Microsoft-Windows-LiveId/Analytic     |  Identity Provider Operation  |  Stop    |  Analytic                  |  DisconnectIdentity_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  1009      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveSsp Operation            |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1010      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveSsp Operation            |  Stop    |  Analytic                  |  LiveDoCachedLogon_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  1011      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveSsp Operation            |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1012      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveSsp Operation            |  Stop    |  Analytic                  |  LiveAuthenticate_Stop.Status: {Status}
+Microsoft-Windows-LiveId  |  Information  |  1013      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLID Service Operation       |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1014      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLID Service Operation       |  Stop    |  Analytic                  |  NetworkCall_Stop.Status: {NoOfTargets}
+Microsoft-Windows-LiveId  |  Information  |  1015      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1016      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Stop    |  Analytic                  |  DeviceAuth_Stop.Status: {TicketsCached}
+Microsoft-Windows-LiveId  |  Information  |  1017      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1018      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Stop    |  Analytic                  |  UserAuth_Stop.Status: {TicketsCached}
+Microsoft-Windows-LiveId  |  Information  |  1019      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  1020      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Stop    |  Analytic                  |  PromptForCredentials_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  Error        |  1021      |  0        |  Microsoft-Windows-LiveId/Operational  |  LiveId Modern API Operation  |          |  Error Operational         |  SignOutUser_RegistryOpenOrReadFailure. RegistryLocation: {RegistryLocation}. Status: {Status}
+Microsoft-Windows-LiveId  |  Error        |  1022      |  0        |  Microsoft-Windows-LiveId/Operational  |  LiveId Modern API Operation  |          |  Error Operational         |  SignOutUser_RegistryWriteFailure. RegistryLocation: {RegistryLocation}. Status: {Status}
+Microsoft-Windows-LiveId  |  Information  |  2008      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2009      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Stop    |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2010      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2011      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Stop    |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2012      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2013      |  0        |  Microsoft-Windows-LiveId/Analytic     |  LiveId Modern API Operation  |  Stop    |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2014      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLID Service Operation       |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2015      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLIDCredProv Operation       |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2016      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLIDCredProv Operation       |  Stop    |  Analytic                  |  CommandLinkClicked_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  2017      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLIDCredProv Operation       |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2018      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLIDCredProv Operation       |  Stop    |  Analytic                  |  UserImageGetBitmapValue_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  2019      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLIDCredProv Operation       |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2020      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLIDCredProv Operation       |  Stop    |  Analytic                  |  CredProvSetSerialization_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  2021      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLIDCredProv Operation       |  Start   |  Analytic                  |
+Microsoft-Windows-LiveId  |  Information  |  2022      |  0        |  Microsoft-Windows-LiveId/Analytic     |  WLIDCredProv Operation       |  Stop    |  Analytic                  |  CredProvGetSerialization_Stop.Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  2023      |  0        |  Microsoft-Windows-LiveId/Operational  |  WLID Service Operation       |          |  Operational               |  Operation: {Operation}Details: {Target}Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  2024      |  0        |  Microsoft-Windows-LiveId/Operational  |  WLID Service Operation       |          |  Operational               |  Operation: {Operation}Details: {Details}Status: {Status}
+Microsoft-Windows-LiveId  |  Error        |  2025      |  0        |  Microsoft-Windows-LiveId/Operational  |  WLID Service Operation       |          |  Error Operational         |  WLIDSvc service failed to start.Function: {Operation}Reason: {Reason}Status: {Result}
+Microsoft-Windows-LiveId  |  Information  |  2026      |  0        |  Microsoft-Windows-LiveId/Analytic     |                               |          |  Telemetry trigger events  |  Generic telemetry trigger event.PointType: {PointType}AppName: {AppName}ModuleName: {ModuleName}ModuleVersion: {ModuleVersion}FileName: {FileName}FunctionName: {FunctionName}LineNumber: {LineNumber}ErrorCode: {ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  2027      |  0        |  Microsoft-Windows-LiveId/Analytic     |                               |          |  Telemetry trigger events  |  User specific telemetry trigger event for CID {cid}.
+Microsoft-Windows-LiveId  |  Critical     |  3000      |  0        |                                        |                               |          |  livessp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  3001      |  0        |                                        |                               |          |  Error livessp             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  3002      |  0        |                                        |                               |          |  livessp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  3003      |  0        |                                        |                               |          |  livessp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  3004      |  0        |                                        |                               |          |  livessp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  3005      |  0        |                                        |                               |          |  Error livessp             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  3006      |  0        |                                        |                               |          |  livessp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  3007      |  0        |                                        |                               |          |  livessp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  3008      |  0        |                                        |                               |          |  Function livessp          |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  3009      |  0        |                                        |                               |          |  Function livessp          |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  3010      |  0        |                                        |                               |          |  Error livessp             |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  3011      |  0        |                                        |                               |          |  Function livessp          |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  3012      |  0        |                                        |                               |          |  livessp                   |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  3013      |  0        |                                        |                               |          |  Error livessp             |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  4000      |  0        |                                        |                               |          |  wlidcredprov              |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  4001      |  0        |                                        |                               |          |  Error wlidcredprov        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  4002      |  0        |                                        |                               |          |  wlidcredprov              |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  4003      |  0        |                                        |                               |          |  wlidcredprov              |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  4004      |  0        |                                        |                               |          |  wlidcredprov              |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  4005      |  0        |                                        |                               |          |  Error wlidcredprov        |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  4006      |  0        |                                        |                               |          |  wlidcredprov              |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  4007      |  0        |                                        |                               |          |  wlidcredprov              |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  4008      |  0        |                                        |                               |          |  Function wlidcredprov     |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  4009      |  0        |                                        |                               |          |  Function wlidcredprov     |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  4010      |  0        |                                        |                               |          |  Error wlidcredprov        |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  4011      |  0        |                                        |                               |          |  Function wlidcredprov     |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  4012      |  0        |                                        |                               |          |  wlidcredprov              |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  4013      |  0        |                                        |                               |          |  Error wlidcredprov        |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  5000      |  0        |                                        |                               |          |  wlidnsp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  5001      |  0        |                                        |                               |          |  Error wlidnsp             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  5002      |  0        |                                        |                               |          |  wlidnsp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  5003      |  0        |                                        |                               |          |  wlidnsp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  5004      |  0        |                                        |                               |          |  wlidnsp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  5005      |  0        |                                        |                               |          |  Error wlidnsp             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  5006      |  0        |                                        |                               |          |  wlidnsp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  5007      |  0        |                                        |                               |          |  wlidnsp                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  5008      |  0        |                                        |                               |          |  Function wlidnsp          |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  5009      |  0        |                                        |                               |          |  Function wlidnsp          |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  5010      |  0        |                                        |                               |          |  Error wlidnsp             |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  5011      |  0        |                                        |                               |          |  Function wlidnsp          |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  5012      |  0        |                                        |                               |          |  wlidnsp                   |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  5013      |  0        |                                        |                               |          |  Error wlidnsp             |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  6000      |  0        |                                        |                               |          |  wlidsvc                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  6001      |  0        |                                        |                               |          |  Error wlidsvc             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  6002      |  0        |                                        |                               |          |  wlidsvc                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  6003      |  0        |                                        |                               |          |  wlidsvc                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  6004      |  0        |                                        |                               |          |  wlidsvc                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  6005      |  0        |                                        |                               |          |  Error wlidsvc             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  6006      |  0        |                                        |                               |          |  wlidsvc                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  6007      |  0        |                                        |                               |          |  wlidsvc                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  6008      |  0        |                                        |  Function Call                |  Start   |  Function wlidsvc          |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  6009      |  0        |                                        |  Function Call                |  Stop    |  Function wlidsvc          |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  6010      |  0        |                                        |  Function Call                |  Stop    |  Error wlidsvc             |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  6011      |  0        |                                        |  Function Call                |  Stop    |  Function wlidsvc          |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  6012      |  0        |                                        |                               |          |  wlidsvc                   |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  6013      |  0        |                                        |                               |          |  Error wlidsvc             |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  7000      |  0        |                                        |                               |          |  wlidmodern                |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  7001      |  0        |                                        |                               |          |  Error wlidmodern          |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  7002      |  0        |                                        |                               |          |  wlidmodern                |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  7003      |  0        |                                        |                               |          |  wlidmodern                |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  7004      |  0        |                                        |                               |          |  wlidmodern                |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  7005      |  0        |                                        |                               |          |  Error wlidmodern          |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  7006      |  0        |                                        |                               |          |  wlidmodern                |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  7007      |  0        |                                        |                               |          |  wlidmodern                |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  7008      |  0        |                                        |                               |          |  Function wlidmodern       |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  7009      |  0        |                                        |                               |          |  Function wlidmodern       |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  7010      |  0        |                                        |                               |          |  Error wlidmodern          |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  7011      |  0        |                                        |                               |          |  Function wlidmodern       |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  7012      |  0        |                                        |                               |          |  wlidmodern                |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  7013      |  0        |                                        |                               |          |  Error wlidmodern          |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  8000      |  0        |                                        |                               |          |  wlidcli                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  8001      |  0        |                                        |                               |          |  Error wlidcli             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  8002      |  0        |                                        |                               |          |  wlidcli                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  8003      |  0        |                                        |                               |          |  wlidcli                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  8004      |  0        |                                        |                               |          |  wlidcli                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  8005      |  0        |                                        |                               |          |  Error wlidcli             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  8006      |  0        |                                        |                               |          |  wlidcli                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  8007      |  0        |                                        |                               |          |  wlidcli                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  8008      |  0        |                                        |                               |          |  Function wlidcli          |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  8009      |  0        |                                        |                               |          |  Function wlidcli          |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  8010      |  0        |                                        |                               |          |  Error wlidcli             |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  8011      |  0        |                                        |                               |          |  Function wlidcli          |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  8012      |  0        |                                        |                               |          |  wlidcli                   |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  8013      |  0        |                                        |                               |          |  Error wlidcli             |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  9000      |  0        |                                        |                               |          |  wlidprov                  |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  9001      |  0        |                                        |                               |          |  Error wlidprov            |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  9002      |  0        |                                        |                               |          |  wlidprov                  |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  9003      |  0        |                                        |                               |          |  wlidprov                  |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  9004      |  0        |                                        |                               |          |  wlidprov                  |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  9005      |  0        |                                        |                               |          |  Error wlidprov            |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  9006      |  0        |                                        |                               |          |  wlidprov                  |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  9007      |  0        |                                        |                               |          |  wlidprov                  |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  9008      |  0        |                                        |                               |          |  Function wlidprov         |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  9009      |  0        |                                        |                               |          |  Function wlidprov         |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  9010      |  0        |                                        |                               |          |  Error wlidprov            |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  9011      |  0        |                                        |                               |          |  Function wlidprov         |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  9012      |  0        |                                        |                               |          |  wlidprov                  |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  9013      |  0        |                                        |                               |          |  Error wlidprov            |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  10000     |  0        |                                        |                               |          |  wlidbho                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  10001     |  0        |                                        |                               |          |  Error wlidbho             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  10002     |  0        |                                        |                               |          |  wlidbho                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  10003     |  0        |                                        |                               |          |  wlidbho                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  10004     |  0        |                                        |                               |          |  wlidbho                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  10005     |  0        |                                        |                               |          |  Error wlidbho             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  10006     |  0        |                                        |                               |          |  wlidbho                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  10007     |  0        |                                        |                               |          |  wlidbho                   |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  10008     |  0        |                                        |                               |          |  Function wlidbho          |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  10009     |  0        |                                        |                               |          |  Function wlidbho          |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  10010     |  0        |                                        |                               |          |  Error wlidbho             |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  10011     |  0        |                                        |                               |          |  Function wlidbho          |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  10012     |  0        |                                        |                               |          |  wlidbho                   |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  10013     |  0        |                                        |                               |          |  Error wlidbho             |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  11000     |  0        |                                        |                               |          |  TokenProvider             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  11001     |  0        |                                        |                               |          |  Error TokenProvider       |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  11002     |  0        |                                        |                               |          |  TokenProvider             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  11003     |  0        |                                        |                               |          |  TokenProvider             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Critical     |  11004     |  0        |                                        |                               |          |  TokenProvider             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Error        |  11005     |  0        |                                        |                               |          |  Error TokenProvider       |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Warning      |  11006     |  0        |                                        |                               |          |  TokenProvider             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Verbose      |  11007     |  0        |                                        |                               |          |  TokenProvider             |  {description} @{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  11008     |  0        |                                        |                               |          |  Function TokenProvider    |  +{FunctionName}@{FileName}_{LineNumber}
+Microsoft-Windows-LiveId  |  Information  |  11009     |  0        |                                        |                               |          |  Function TokenProvider    |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Error        |  11010     |  0        |                                        |                               |          |  Error TokenProvider       |  -{FunctionName}={ErrorCode}
+Microsoft-Windows-LiveId  |  Information  |  11011     |  0        |                                        |                               |          |  Function TokenProvider    |  -{FunctionName}={Address}
+Microsoft-Windows-LiveId  |  Error        |  11012     |  0        |                                        |                               |          |  TokenProvider             |  Process name {ProcessName}
+Microsoft-Windows-LiveId  |  Error        |  11013     |  0        |                                        |                               |          |  Error TokenProvider       |  IF_FAILEXIT failure: ({Expression}), hr = {ErrorCode}, in {FunctionName} @{FileName}_{LineNumber}

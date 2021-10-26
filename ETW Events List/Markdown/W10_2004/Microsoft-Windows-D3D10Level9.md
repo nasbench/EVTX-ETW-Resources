@@ -1,11 +1,11 @@
-Provider                       |  Event ID  |  Channel                                   |  Message
--------------------------------|------------|--------------------------------------------|---------
-Microsoft-Windows-D3D10Level9  |  1         |  Microsoft-Windows-D3D10Level9/Analytic    |
-Microsoft-Windows-D3D10Level9  |  2         |  Microsoft-Windows-D3D10Level9/Analytic    |
-Microsoft-Windows-D3D10Level9  |  3         |  Microsoft-Windows-D3D10Level9/Analytic    |
-Microsoft-Windows-D3D10Level9  |  4         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
-Microsoft-Windows-D3D10Level9  |  5         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
-Microsoft-Windows-D3D10Level9  |  6         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
-Microsoft-Windows-D3D10Level9  |  7         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
-Microsoft-Windows-D3D10Level9  |  8         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
-Microsoft-Windows-D3D10Level9  |  9         |  Microsoft-Windows-D3D10Level9/PerfTiming  |
+Provider                       |  Level  |  Event ID  |  Version  |  Channel                                   |  Task                  |  Opcode   |  Keyword    |  Message
+-------------------------------|---------|------------|-----------|--------------------------------------------|------------------------|-----------|-------------|---------
+Microsoft-Windows-D3D10Level9  |         |  1         |  0        |  Microsoft-Windows-D3D10Level9/Analytic    |  UnderlyingResource    |  Start    |  Resources  |
+Microsoft-Windows-D3D10Level9  |         |  2         |  0        |  Microsoft-Windows-D3D10Level9/Analytic    |  UnderlyingResource    |  Stop     |  Resources  |
+Microsoft-Windows-D3D10Level9  |         |  3         |  0        |  Microsoft-Windows-D3D10Level9/Analytic    |  UnderlyingResource    |  DCStart  |  Resources  |
+Microsoft-Windows-D3D10Level9  |         |  4         |  0        |  Microsoft-Windows-D3D10Level9/PerfTiming  |  UMD9CreateDevice      |  Start    |  Devices    |
+Microsoft-Windows-D3D10Level9  |         |  5         |  0        |  Microsoft-Windows-D3D10Level9/PerfTiming  |  UMD9CreateDevice      |  Stop     |  Devices    |
+Microsoft-Windows-D3D10Level9  |         |  6         |  0        |  Microsoft-Windows-D3D10Level9/PerfTiming  |  UMD9PostCreateDevice  |  Start    |  Devices    |
+Microsoft-Windows-D3D10Level9  |         |  7         |  0        |  Microsoft-Windows-D3D10Level9/PerfTiming  |  UMD9PostCreateDevice  |  Stop     |  Devices    |
+Microsoft-Windows-D3D10Level9  |         |  8         |  0        |  Microsoft-Windows-D3D10Level9/PerfTiming  |  UMD9ReOpenAdapter     |  Start    |  Devices    |
+Microsoft-Windows-D3D10Level9  |         |  9         |  0        |  Microsoft-Windows-D3D10Level9/PerfTiming  |  UMD9ReOpenAdapter     |  Stop     |  Devices    |

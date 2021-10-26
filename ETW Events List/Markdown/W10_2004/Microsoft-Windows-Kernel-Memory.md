@@ -1,21 +1,21 @@
-Provider                         |  Event ID  |  Channel                                   |  Message
----------------------------------|------------|--------------------------------------------|---------
-Microsoft-Windows-Kernel-Memory  |  1         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  2         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  2         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  2         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  3         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  3         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  3         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  4         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  4         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  5         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  5         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  6         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  6         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  7         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  8         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  9         |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  10        |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  11        |  Microsoft-Windows-Kernel-Memory/Analytic  |
-Microsoft-Windows-Kernel-Memory  |  12        |  Microsoft-Windows-Kernel-Memory/Analytic  |
+Provider                         |  Level        |  Event ID  |  Version  |  Channel                                   |  Task               |  Opcode  |  Keyword                            |  Message
+---------------------------------|---------------|------------|-----------|--------------------------------------------|---------------------|----------|-------------------------------------|---------
+Microsoft-Windows-Kernel-Memory  |  Information  |  1         |  1        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfo            |          |  KERNEL_MEM_KEYWORD_MEMINFO         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  2         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfoWS          |          |  KERNEL_MEM_KEYWORD_MEMINFO_EX      |
+Microsoft-Windows-Kernel-Memory  |  Information  |  2         |  1        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfoWS          |          |  KERNEL_MEM_KEYWORD_MEMINFO_EX      |
+Microsoft-Windows-Kernel-Memory  |  Information  |  2         |  2        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfoWS          |          |  KERNEL_MEM_KEYWORD_MEMINFO_EX      |
+Microsoft-Windows-Kernel-Memory  |  Information  |  3         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfoSessionWS   |          |  KERNEL_MEM_KEYWORD_MEMINFO_EX      |
+Microsoft-Windows-Kernel-Memory  |  Information  |  3         |  1        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfoSessionWS   |          |  KERNEL_MEM_KEYWORD_MEMINFO_EX      |
+Microsoft-Windows-Kernel-Memory  |  Information  |  3         |  2        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfoSessionWS   |          |  KERNEL_MEM_KEYWORD_MEMINFO_EX      |
+Microsoft-Windows-Kernel-Memory  |  Information  |  4         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  WorkingSetOutSwap  |  Start   |  KERNEL_MEM_KEYWORD_WS_SWAP         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  4         |  1        |  Microsoft-Windows-Kernel-Memory/Analytic  |  WorkingSetOutSwap  |  Start   |  KERNEL_MEM_KEYWORD_WS_SWAP         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  5         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  WorkingSetOutSwap  |  Stop    |  KERNEL_MEM_KEYWORD_WS_SWAP         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  5         |  1        |  Microsoft-Windows-Kernel-Memory/Analytic  |  WorkingSetOutSwap  |  Stop    |  KERNEL_MEM_KEYWORD_WS_SWAP         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  6         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  WorkingSetInSwap   |  Start   |  KERNEL_MEM_KEYWORD_WS_SWAP         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  6         |  1        |  Microsoft-Windows-Kernel-Memory/Analytic  |  WorkingSetInSwap   |  Start   |  KERNEL_MEM_KEYWORD_WS_SWAP         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  7         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  WorkingSetInSwap   |  Stop    |  KERNEL_MEM_KEYWORD_WS_SWAP         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  8         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  Acg                |          |  KERNEL_MEM_KEYWORD_ACG             |
+Microsoft-Windows-Kernel-Memory  |  Information  |  9         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  WorkingSetInSwap   |          |  KERNEL_MEM_KEYWORD_WS_SWAP         |
+Microsoft-Windows-Kernel-Memory  |  Information  |  10        |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MdlAllocation      |          |  KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC  |
+Microsoft-Windows-Kernel-Memory  |  Information  |  11        |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  ContAllocation     |          |  KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC  |
+Microsoft-Windows-Kernel-Memory  |  Information  |  12        |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfoNode        |          |  KERNEL_MEM_KEYWORD_MEMINFO_NODE    |

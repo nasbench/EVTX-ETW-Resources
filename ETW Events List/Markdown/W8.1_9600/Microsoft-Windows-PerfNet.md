@@ -1,11 +1,11 @@
-Provider                   |  Event ID    |  Channel  |  Message
----------------------------|--------------|-----------|---------
-Microsoft-Windows-PerfNet  |  2147484648  |           |
-Microsoft-Windows-PerfNet  |  3221226473  |           |
-Microsoft-Windows-PerfNet  |  3221227472  |           |
-Microsoft-Windows-PerfNet  |  3221227473  |           |
-Microsoft-Windows-PerfNet  |  3221227474  |           |
-Microsoft-Windows-PerfNet  |  3221227475  |           |
-Microsoft-Windows-PerfNet  |  3221227476  |           |
-Microsoft-Windows-PerfNet  |  3221227477  |           |
-Microsoft-Windows-PerfNet  |  3221227478  |           |
+Provider                   |  Level  |  Event ID    |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+---------------------------|---------|--------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-PerfNet  |         |  2147484648  |  0        |           |        |          |           |
+Microsoft-Windows-PerfNet  |         |  3221226473  |  0        |           |        |          |           |
+Microsoft-Windows-PerfNet  |         |  3221227472  |  0        |           |        |          |           |
+Microsoft-Windows-PerfNet  |         |  3221227473  |  0        |           |        |          |           |
+Microsoft-Windows-PerfNet  |         |  3221227474  |  0        |           |        |          |           |
+Microsoft-Windows-PerfNet  |         |  3221227475  |  0        |           |        |          |           |
+Microsoft-Windows-PerfNet  |         |  3221227476  |  0        |           |        |          |           |
+Microsoft-Windows-PerfNet  |         |  3221227477  |  0        |           |        |          |           |
+Microsoft-Windows-PerfNet  |         |  3221227478  |  0        |           |        |          |           |

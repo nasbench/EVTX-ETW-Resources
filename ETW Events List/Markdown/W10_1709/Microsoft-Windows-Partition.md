@@ -1,8 +1,8 @@
-Provider                     |  Event ID  |  Channel                                 |  Message
------------------------------|------------|------------------------------------------|------------------------
-Microsoft-Windows-Partition  |  1001      |  Microsoft-Windows-Partition/Diagnostic  |  Operation started.
-Microsoft-Windows-Partition  |  1002      |  Microsoft-Windows-Partition/Diagnostic  |  Operation completed.
-Microsoft-Windows-Partition  |  1003      |  Microsoft-Windows-Partition/Analytic    |
-Microsoft-Windows-Partition  |  1004      |  Microsoft-Windows-Partition/Analytic    |
-Microsoft-Windows-Partition  |  1005      |  Microsoft-Windows-Partition/Analytic    |
-Microsoft-Windows-Partition  |  1006      |  Microsoft-Windows-Partition/Diagnostic  |  For internal use only.
+Provider                     |  Level        |  Event ID  |  Version  |  Channel                                 |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|------------------------------------------|--------|----------|-----------|------------------------
+Microsoft-Windows-Partition  |  Information  |  1001      |  0        |  Microsoft-Windows-Partition/Diagnostic  |        |          |           |  Operation started.
+Microsoft-Windows-Partition  |  Information  |  1002      |  0        |  Microsoft-Windows-Partition/Diagnostic  |        |          |           |  Operation completed.
+Microsoft-Windows-Partition  |  Information  |  1003      |  0        |  Microsoft-Windows-Partition/Analytic    |        |          |  power    |
+Microsoft-Windows-Partition  |  Information  |  1004      |  0        |  Microsoft-Windows-Partition/Analytic    |        |          |  power    |
+Microsoft-Windows-Partition  |  Information  |  1005      |  0        |  Microsoft-Windows-Partition/Analytic    |        |          |  power    |
+Microsoft-Windows-Partition  |  Information  |  1006      |  0        |  Microsoft-Windows-Partition/Diagnostic  |        |          |           |  For internal use only.

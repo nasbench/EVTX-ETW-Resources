@@ -1,12 +1,12 @@
-Provider                                       |  Event ID  |  Channel      |  Message
------------------------------------------------|------------|---------------|------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Management-SecureAssessment  |  100       |  Operational  |  An error was encountered. (error code = {ErrorCode}; function = {Function}; line number = {LineNumber})
-Microsoft-Windows-Management-SecureAssessment  |  200       |  Operational  |  A new lockdown request has been received. (enable lockdown = {Enable}; already locked down = {CurrentlyEnabled})
-Microsoft-Windows-Management-SecureAssessment  |  201       |  Operational  |  Creating a lockdown context for the app. (Create new = {NewContextCreated})
-Microsoft-Windows-Management-SecureAssessment  |  202       |  Operational  |  Enrolling the device succeeded. (enrollment ID = {EnrollmentID})
-Microsoft-Windows-Management-SecureAssessment  |  203       |  Operational  |  Enrolling the device failed. (error = {ErrorCode})
-Microsoft-Windows-Management-SecureAssessment  |  204       |  Operational  |  Lockdown policies were successfully applied. (enrollment ID = {EnrollmentID})
-Microsoft-Windows-Management-SecureAssessment  |  205       |  Operational  |  Lockdown is enforced. (enrollment ID = {EnrollmentID}; caller ID = {CallerID})
-Microsoft-Windows-Management-SecureAssessment  |  206       |  Operational  |  Lockdown request completed successfully. (Enable = {Enable})
-Microsoft-Windows-Management-SecureAssessment  |  207       |  Operational  |
-Microsoft-Windows-Management-SecureAssessment  |  208       |  Operational  |  Unenrollment completed successfully. (enrollment ID = {EnrollmentID})
+Provider                                       |  Level        |  Event ID  |  Version  |  Channel      |  Task      |  Opcode  |  Keyword           |  Message
+-----------------------------------------------|---------------|------------|-----------|---------------|------------|----------|--------------------|------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Management-SecureAssessment  |  Error        |  100       |  0        |  Operational  |            |          |  SecureAssessment  |  An error was encountered. (error code = {ErrorCode}; function = {Function}; line number = {LineNumber})
+Microsoft-Windows-Management-SecureAssessment  |  Information  |  200       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |  A new lockdown request has been received. (enable lockdown = {Enable}; already locked down = {CurrentlyEnabled})
+Microsoft-Windows-Management-SecureAssessment  |  Information  |  201       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |  Creating a lockdown context for the app. (Create new = {NewContextCreated})
+Microsoft-Windows-Management-SecureAssessment  |  Information  |  202       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |  Enrolling the device succeeded. (enrollment ID = {EnrollmentID})
+Microsoft-Windows-Management-SecureAssessment  |  Error        |  203       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |  Enrolling the device failed. (error = {ErrorCode})
+Microsoft-Windows-Management-SecureAssessment  |  Information  |  204       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |  Lockdown policies were successfully applied. (enrollment ID = {EnrollmentID})
+Microsoft-Windows-Management-SecureAssessment  |  Information  |  205       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |  Lockdown is enforced. (enrollment ID = {EnrollmentID}; caller ID = {CallerID})
+Microsoft-Windows-Management-SecureAssessment  |  Information  |  206       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |  Lockdown request completed successfully. (Enable = {Enable})
+Microsoft-Windows-Management-SecureAssessment  |  Information  |  207       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |
+Microsoft-Windows-Management-SecureAssessment  |  Information  |  208       |  0        |  Operational  |  Lockdown  |          |  SecureAssessment  |  Unenrollment completed successfully. (enrollment ID = {EnrollmentID})

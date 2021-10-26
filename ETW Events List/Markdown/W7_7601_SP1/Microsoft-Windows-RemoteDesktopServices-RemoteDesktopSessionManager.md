@@ -1,4 +1,4 @@
-Provider                                                             |  Event ID  |  Channel  |  Message
----------------------------------------------------------------------|------------|-----------|---------
-Microsoft-Windows-RemoteDesktopServices-RemoteDesktopSessionManager  |  1000      |  Admin    |
-Microsoft-Windows-RemoteDesktopServices-RemoteDesktopSessionManager  |  1001      |  Admin    |
+Provider                                                             |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+---------------------------------------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-RemoteDesktopServices-RemoteDesktopSessionManager  |  Information  |  1000      |  0        |  Admin    |        |          |           |
+Microsoft-Windows-RemoteDesktopServices-RemoteDesktopSessionManager  |  Information  |  1001      |  0        |  Admin    |        |          |           |

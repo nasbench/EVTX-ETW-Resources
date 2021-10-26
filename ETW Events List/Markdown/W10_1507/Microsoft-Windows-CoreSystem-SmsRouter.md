@@ -1,8 +1,8 @@
-Provider                                |  Event ID  |  Channel                        |  Message
-----------------------------------------|------------|---------------------------------|---------------------------------------------------------------------------
-Microsoft-Windows-CoreSystem-SmsRouter  |  100       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  101       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  102       |  SmsRouter Debug Channel        |  [SmsRouter::{AnsiStringName}:{LineNumber}] Error {HResultName}: {Context}
-Microsoft-Windows-CoreSystem-SmsRouter  |  103       |  SmsRouter Debug Channel        |  [SmsRouter::{AnsiStringName}:{LineNumber}] {Context}
-Microsoft-Windows-CoreSystem-SmsRouter  |  200       |  SmsRouter Operational Channel  |
-Microsoft-Windows-CoreSystem-SmsRouter  |  201       |  SmsRouter Operational Channel  |
+Provider                                |  Level        |  Event ID  |  Version  |  Channel                        |  Task       |  Opcode  |  Keyword      |  Message
+----------------------------------------|---------------|------------|-----------|---------------------------------|-------------|----------|---------------|---------------------------------------------------------------------------
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  100       |  0        |  SmsRouter Operational Channel  |  SmsRouter  |  Start   |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  101       |  0        |  SmsRouter Operational Channel  |  SmsRouter  |  Stop    |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Error        |  102       |  0        |  SmsRouter Debug Channel        |  SmsRouter  |          |  Error        |  [SmsRouter::{AnsiStringName}:{LineNumber}] Error {HResultName}: {Context}
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  103       |  0        |  SmsRouter Debug Channel        |  SmsRouter  |          |  Performance  |  [SmsRouter::{AnsiStringName}:{LineNumber}] {Context}
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  200       |  0        |  SmsRouter Operational Channel  |  SmsBroker  |  Start   |  Performance  |
+Microsoft-Windows-CoreSystem-SmsRouter  |  Information  |  201       |  0        |  SmsRouter Operational Channel  |  SmsBroker  |  Stop    |  Performance  |

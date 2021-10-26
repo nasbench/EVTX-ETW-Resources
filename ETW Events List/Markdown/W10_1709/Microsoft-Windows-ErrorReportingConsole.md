@@ -1,16 +1,16 @@
-Provider                                 |  Event ID  |  Channel  |  Message
------------------------------------------|------------|-----------|---------
-Microsoft-Windows-ErrorReportingConsole  |  103       |           |
-Microsoft-Windows-ErrorReportingConsole  |  104       |           |
-Microsoft-Windows-ErrorReportingConsole  |  105       |           |
-Microsoft-Windows-ErrorReportingConsole  |  106       |           |
-Microsoft-Windows-ErrorReportingConsole  |  107       |           |
-Microsoft-Windows-ErrorReportingConsole  |  108       |           |
-Microsoft-Windows-ErrorReportingConsole  |  109       |           |
-Microsoft-Windows-ErrorReportingConsole  |  110       |           |
-Microsoft-Windows-ErrorReportingConsole  |  111       |           |
-Microsoft-Windows-ErrorReportingConsole  |  112       |           |
-Microsoft-Windows-ErrorReportingConsole  |  113       |           |
-Microsoft-Windows-ErrorReportingConsole  |  114       |           |
-Microsoft-Windows-ErrorReportingConsole  |  115       |           |
-Microsoft-Windows-ErrorReportingConsole  |  116       |           |
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel  |  Task                                  |  Opcode  |  Keyword  |  Message
+-----------------------------------------|---------------|------------|-----------|-----------|----------------------------------------|----------|-----------|---------
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  103       |  0        |           |  PrsApplicableResponseIndividualCheck  |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  104       |  0        |           |  PrsApplicableResponseIndividualCheck  |  Stop    |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  105       |  0        |           |  PrsCplPageLayout                      |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  106       |  0        |           |  PrsCplPageLayout                      |  Stop    |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  107       |  0        |           |  PrsSolutionRenderTime                 |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  108       |  0        |           |  PrsSolutionRenderTime                 |  Stop    |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  109       |  0        |           |  PrsCheckForSolutions                  |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  110       |  0        |           |  PrsCheckForSolutions                  |  Stop    |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  111       |  0        |           |  PrsReportDbPopulation                 |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  112       |  0        |           |  PrsReportDbPopulation                 |  Stop    |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  113       |  0        |           |  PrsApplicabilityMonitorRepopulation   |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  114       |  0        |           |  PrsApplicabilityMonitorRepopulation   |  Stop    |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  115       |  0        |           |  PrsResponseDownloadTimeOfEvent        |  Start   |           |
+Microsoft-Windows-ErrorReportingConsole  |  Information  |  116       |  0        |           |  PrsResponseDownloadTimeOfEvent        |  Stop    |           |

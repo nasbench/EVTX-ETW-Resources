@@ -1,22 +1,22 @@
-Provider                                      |  Event ID  |  Channel  |  Message
-----------------------------------------------|------------|-----------|---------
-Microsoft-Windows-Diagnostics-LoggingChannel  |  1         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  2         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  3         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  4         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  5         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  6         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  7         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  8         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  9         |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  10        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  11        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  12        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  13        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  14        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  15        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  16        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  17        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  18        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  19        |           |
-Microsoft-Windows-Diagnostics-LoggingChannel  |  20        |           |
+Provider                                      |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword            |  Message
+----------------------------------------------|---------------|------------|-----------|-----------|--------|----------|---------------------|---------
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Critical     |  1         |  0        |           |        |          |  K_LogMsg           |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Error        |  2         |  0        |           |        |          |  K_LogMsg           |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Warning      |  3         |  0        |           |        |          |  K_LogMsg           |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Information  |  4         |  0        |           |        |          |  K_LogMsg           |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Verbose      |  5         |  0        |           |        |          |  K_LogMsg           |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Critical     |  6         |  0        |           |        |          |  K_LogPair          |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Error        |  7         |  0        |           |        |          |  K_LogPair          |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Warning      |  8         |  0        |           |        |          |  K_LogPair          |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Information  |  9         |  0        |           |        |          |  K_LogPair          |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Verbose      |  10        |  0        |           |        |          |  K_LogPair          |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Critical     |  11        |  0        |           |        |  Start   |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Error        |  12        |  0        |           |        |  Start   |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Warning      |  13        |  0        |           |        |  Start   |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Information  |  14        |  0        |           |        |  Start   |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Verbose      |  15        |  0        |           |        |  Start   |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Critical     |  16        |  0        |           |        |  Stop    |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Error        |  17        |  0        |           |        |  Stop    |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Warning      |  18        |  0        |           |        |  Stop    |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Information  |  19        |  0        |           |        |  Stop    |  K_ActivityLogging  |
+Microsoft-Windows-Diagnostics-LoggingChannel  |  Verbose      |  20        |  0        |           |        |  Stop    |  K_ActivityLogging  |

@@ -1,309 +1,309 @@
-Provider                  |  Event ID  |  Channel                               |  Message
---------------------------|------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Win32k  |  1         |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  2         |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  3         |  Microsoft-Windows-Win32k/UIPI         |
-Microsoft-Windows-Win32k  |  4         |  Microsoft-Windows-Win32k/UIPI         |
-Microsoft-Windows-Win32k  |  5         |  Microsoft-Windows-Win32k/UIPI         |
-Microsoft-Windows-Win32k  |  6         |  Microsoft-Windows-Win32k/UIPI         |
-Microsoft-Windows-Win32k  |  7         |  Microsoft-Windows-Win32k/UIPI         |
-Microsoft-Windows-Win32k  |  8         |  Microsoft-Windows-Win32k/UIPI         |
-Microsoft-Windows-Win32k  |  9         |  Microsoft-Windows-Win32k/UIPI         |
-Microsoft-Windows-Win32k  |  10        |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  11        |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  12        |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  13        |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  14        |  Microsoft-Windows-Win32k/Concurrency  |
-Microsoft-Windows-Win32k  |  15        |  Microsoft-Windows-Win32k/Concurrency  |
-Microsoft-Windows-Win32k  |  16        |  Microsoft-Windows-Win32k/Concurrency  |
-Microsoft-Windows-Win32k  |  17        |  Microsoft-Windows-Win32k/Concurrency  |
-Microsoft-Windows-Win32k  |  18        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  19        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  20        |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  21        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  22        |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  23        |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  24        |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  25        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  26        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  27        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  28        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  29        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  30        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  31        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  32        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  33        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  35        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  36        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  37        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  38        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  39        |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  40        |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  41        |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  42        |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  43        |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  44        |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  45        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  46        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  47        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  48        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  49        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  50        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  51        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  52        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  53        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  54        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  55        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  56        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  57        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  58        |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  59        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  60        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  61        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  62        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  63        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  64        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  65        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  66        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  67        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  68        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  69        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  70        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  71        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  72        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  73        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  74        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  75        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  76        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  77        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  78        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  79        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  80        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  81        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  82        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  83        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  84        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  85        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  86        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  87        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  88        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  89        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  91        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  92        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  93        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  94        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  95        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  96        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  97        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  98        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  99        |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  100       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  102       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  103       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  104       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  105       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  106       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  107       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  108       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  109       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  110       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  111       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  112       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  113       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  114       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  115       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  116       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  117       |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  118       |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  119       |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  120       |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  121       |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  122       |  Microsoft-Windows-Win32k/Render       |
-Microsoft-Windows-Win32k  |  123       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  124       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  125       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  126       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  127       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  128       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  129       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  130       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  131       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  132       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  133       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  134       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  135       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  136       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  137       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  138       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  139       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  140       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  141       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  142       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  143       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  144       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  145       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  146       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  147       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  148       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  149       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  150       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  151       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  152       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  153       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  154       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  155       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  156       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  157       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  158       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  159       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  160       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  161       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  162       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  163       |  Microsoft-Windows-Win32k/Contention   |
-Microsoft-Windows-Win32k  |  164       |  Microsoft-Windows-Win32k/Contention   |
-Microsoft-Windows-Win32k  |  165       |  Microsoft-Windows-Win32k/Contention   |
-Microsoft-Windows-Win32k  |  166       |  Microsoft-Windows-Win32k/Contention   |
-Microsoft-Windows-Win32k  |  167       |  Microsoft-Windows-Win32k/Contention   |
-Microsoft-Windows-Win32k  |  168       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  169       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  170       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  171       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  172       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  173       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  174       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  175       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  176       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  177       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  178       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  179       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  180       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  181       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  182       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  183       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  184       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  185       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  186       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  187       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  188       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  189       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  190       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  191       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  192       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  193       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  194       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  195       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  196       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  197       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  198       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  199       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  200       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  201       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  202       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  203       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  204       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  205       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  206       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  207       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  213       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  214       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  215       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  216       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  217       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  218       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  219       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  220       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  221       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  222       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  223       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  224       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  225       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  226       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  227       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  228       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  229       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  230       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  231       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  232       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  233       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  234       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  235       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  236       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  237       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  238       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  239       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  240       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  241       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  242       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  243       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  244       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  245       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  246       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  247       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  248       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  249       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  250       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  251       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  252       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  253       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  254       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  255       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  256       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  257       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  258       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  259       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  260       |  Microsoft-Windows-Win32k/Operational  |  {SourceProcessName} attempted loading a font that is restricted by font loading policy.FontType: {SourceType}FontPath: {FontSourcePath}Blocked: {Blocked}
-Microsoft-Windows-Win32k  |  301       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  400       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  401       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  402       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  403       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  404       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  405       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  406       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  407       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  410       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  411       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  412       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  413       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  414       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  415       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  416       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  417       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  418       |  Microsoft-Windows-Win32k/Power        |  PowerOnGdi
-Microsoft-Windows-Win32k  |  419       |  Microsoft-Windows-Win32k/Power        |  PowerOnGdi
-Microsoft-Windows-Win32k  |  420       |  Microsoft-Windows-Win32k/Power        |  UserResetDisplayDevice
-Microsoft-Windows-Win32k  |  421       |  Microsoft-Windows-Win32k/Power        |  UserResetDisplayDevice
-Microsoft-Windows-Win32k  |  422       |  Microsoft-Windows-Win32k/Power        |  PowerOnMonitor
-Microsoft-Windows-Win32k  |  423       |  Microsoft-Windows-Win32k/Power        |  PowerOnMonitor
-Microsoft-Windows-Win32k  |  424       |  Microsoft-Windows-Win32k/Power        |  DwmSyncFlushForceRenderAndWaitForBatch
-Microsoft-Windows-Win32k  |  425       |  Microsoft-Windows-Win32k/Power        |  DwmSyncFlushForceRenderAndWaitForBatch
-Microsoft-Windows-Win32k  |  426       |  Microsoft-Windows-Win32k/Messages     |
-Microsoft-Windows-Win32k  |  427       |  Microsoft-Windows-Win32k/Operational  |  The following win32k syscall is blocked by Win32k Syscall Filter: {SyscallName}Process Command Line: {ProcessCommandLine}
-Microsoft-Windows-Win32k  |  428       |  Microsoft-Windows-Win32k/Operational  |  The following SystemParametersInfo action was blocked by Win32k Syscall Filter: {SPIAction}
-Microsoft-Windows-Win32k  |  429       |  Microsoft-Windows-Win32k/Power        |  PowerWatchdog
-Microsoft-Windows-Win32k  |  430       |  Microsoft-Windows-Win32k/Power        |  PowerWatchdog
-Microsoft-Windows-Win32k  |  431       |  Microsoft-Windows-Win32k/Power        |  VideoPortCalloutThread
-Microsoft-Windows-Win32k  |  432       |  Microsoft-Windows-Win32k/Power        |  VideoPortCalloutThread
-Microsoft-Windows-Win32k  |  433       |  Microsoft-Windows-Win32k/Power        |  PowerStateCalloutWorker
-Microsoft-Windows-Win32k  |  434       |  Microsoft-Windows-Win32k/Power        |  PowerStateCalloutWorker
-Microsoft-Windows-Win32k  |  435       |  Microsoft-Windows-Win32k/Power        |  PowerEventCalloutWorker
-Microsoft-Windows-Win32k  |  436       |  Microsoft-Windows-Win32k/Power        |  PowerEventCalloutWorker
-Microsoft-Windows-Win32k  |  437       |  Microsoft-Windows-Win32k/Power        |  Insert
-Microsoft-Windows-Win32k  |  438       |  Microsoft-Windows-Win32k/Power        |  Remove
-Microsoft-Windows-Win32k  |  439       |  Microsoft-Windows-Win32k/Power        |  Canceled
-Microsoft-Windows-Win32k  |  440       |  Microsoft-Windows-Win32k/Power        |  Completed
-Microsoft-Windows-Win32k  |  441       |  Microsoft-Windows-Win32k/Power        |  WaitForVideoPortCalloutReady
-Microsoft-Windows-Win32k  |  442       |  Microsoft-Windows-Win32k/Power        |
-Microsoft-Windows-Win32k  |  443       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  444       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  445       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  446       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  447       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  448       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  449       |  Microsoft-Windows-Win32k/Tracing      |
-Microsoft-Windows-Win32k  |  1000      |                                        |
-Microsoft-Windows-Win32k  |  1001      |                                        |
-Microsoft-Windows-Win32k  |  1002      |                                        |
-Microsoft-Windows-Win32k  |  1003      |                                        |
-Microsoft-Windows-Win32k  |  2000      |                                        |
-Microsoft-Windows-Win32k  |  10002     |  Microsoft-Windows-Win32k/Tracing      |
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                               |  Task                                    |  Opcode                     |  Keyword                                       |  Message
+--------------------------|---------------|------------|-----------|----------------------------------------|------------------------------------------|-----------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Win32k  |  Information  |  1         |  0        |  Microsoft-Windows-Win32k/Tracing      |  WindowUpdate                            |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  2         |  0        |  Microsoft-Windows-Win32k/Tracing      |  FocusChange                             |                             |  Focus                                         |
+Microsoft-Windows-Win32k  |  Information  |  3         |  0        |  Microsoft-Windows-Win32k/UIPI         |  UIPIMsgError                            |                             |  UIPI                                          |
+Microsoft-Windows-Win32k  |  Information  |  4         |  0        |  Microsoft-Windows-Win32k/UIPI         |  UIPIHookError                           |                             |  UIPI                                          |
+Microsoft-Windows-Win32k  |  Information  |  5         |  0        |  Microsoft-Windows-Win32k/UIPI         |  UIPIEventHookError                      |                             |  UIPI                                          |
+Microsoft-Windows-Win32k  |  Information  |  6         |  0        |  Microsoft-Windows-Win32k/UIPI         |  UIPIHandleValError                      |                             |  UIPI                                          |
+Microsoft-Windows-Win32k  |  Information  |  7         |  0        |  Microsoft-Windows-Win32k/UIPI         |  UIPIInputError                          |                             |  UIPI                                          |
+Microsoft-Windows-Win32k  |  Information  |  8         |  0        |  Microsoft-Windows-Win32k/UIPI         |  UIPIClipboardError                      |                             |  UIPI                                          |
+Microsoft-Windows-Win32k  |  Information  |  9         |  0        |  Microsoft-Windows-Win32k/UIPI         |  UIPISystemError                         |                             |  UIPI                                          |
+Microsoft-Windows-Win32k  |  Information  |  10        |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |                             |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  11        |  0        |  Microsoft-Windows-Win32k/Power        |  IdleActionExpiration                    |                             |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  12        |  0        |  Microsoft-Windows-Win32k/Power        |  DisplayReqChange                        |                             |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  13        |  0        |  Microsoft-Windows-Win32k/Power        |  DisplayTimeoutReset                     |                             |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  14        |  0        |  Microsoft-Windows-Win32k/Concurrency  |  LockAcquireExclusive                    |                             |  Concurrency                                   |
+Microsoft-Windows-Win32k  |  Information  |  15        |  0        |  Microsoft-Windows-Win32k/Concurrency  |  LockAcquireShared                       |                             |  Concurrency                                   |
+Microsoft-Windows-Win32k  |  Information  |  16        |  0        |  Microsoft-Windows-Win32k/Concurrency  |  LockAcquireSharedStarveExclusive        |                             |  Concurrency                                   |
+Microsoft-Windows-Win32k  |  Information  |  17        |  0        |  Microsoft-Windows-Win32k/Concurrency  |  LockRelease                             |                             |  Concurrency                                   |
+Microsoft-Windows-Win32k  |  Information  |  18        |  0        |  Microsoft-Windows-Win32k/Tracing      |  SwapChainBind                           |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  19        |  0        |  Microsoft-Windows-Win32k/Tracing      |  SwapChainUnBind                         |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  20        |  0        |  Microsoft-Windows-Win32k/Power        |  IdleStatusTracing                       |                             |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  21        |  0        |  Microsoft-Windows-Win32k/Tracing      |  SwapChainSetStats                       |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  22        |  0        |  Microsoft-Windows-Win32k/Power        |  ScreenSaverProcess                      |                             |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  23        |  0        |  Microsoft-Windows-Win32k/Power        |  WinlogonSleepStart                      |                             |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  24        |  0        |  Microsoft-Windows-Win32k/Power        |  WinlogonSleepEnd                        |                             |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  25        |  0        |  Microsoft-Windows-Win32k/Tracing      |  UserActive                              |                             |  UserActivity                                  |
+Microsoft-Windows-Win32k  |  Information  |  26        |  0        |  Microsoft-Windows-Win32k/Tracing      |  FocusedProcessChange                    |                             |  UserActivity                                  |
+Microsoft-Windows-Win32k  |  Information  |  27        |  0        |  Microsoft-Windows-Win32k/Tracing      |  DwmSpriteCreate                         |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  28        |  0        |  Microsoft-Windows-Win32k/Tracing      |  DwmSpriteDestroy                        |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  29        |  0        |  Microsoft-Windows-Win32k/Tracing      |  LogicalSurfCreate                       |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  30        |  0        |  Microsoft-Windows-Win32k/Tracing      |  LogicalSurfDestroy                      |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  31        |  0        |  Microsoft-Windows-Win32k/Tracing      |  LogicalSurfPhysSurfBind                 |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  32        |  0        |  Microsoft-Windows-Win32k/Tracing      |  LogicalSurfPhysSurfUnbind               |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  33        |  0        |  Microsoft-Windows-Win32k/Tracing      |  GdiSysMemToken                          |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  35        |  0        |  Microsoft-Windows-Win32k/Tracing      |  WaitCursor                              |                             |  UIUnresponsiveness                            |
+Microsoft-Windows-Win32k  |  Information  |  36        |  0        |  Microsoft-Windows-Win32k/Tracing      |  ThreadInfoRundown                       |                             |  ThreadRundown                                 |
+Microsoft-Windows-Win32k  |  Information  |  37        |  0        |  Microsoft-Windows-Win32k/Tracing      |  InputProcessDelay                       |                             |  UIUnresponsiveness                            |
+Microsoft-Windows-Win32k  |  Information  |  38        |  0        |  Microsoft-Windows-Win32k/Tracing      |  MessageCheckDelay                       |                             |  UIUnresponsiveness                            |
+Microsoft-Windows-Win32k  |  Information  |  39        |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  NewRendering               |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  40        |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  OldToNewRendering          |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  41        |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  AppRenderingUpdate         |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  42        |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  AppRenderingTightUpdate    |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  43        |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  ValidateWindow             |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  44        |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  InvalidateWindow           |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  45        |  0        |  Microsoft-Windows-Win32k/Tracing      |  ThreadExit                              |                             |  ThreadInfo                                    |
+Microsoft-Windows-Win32k  |  Information  |  46        |  0        |  Microsoft-Windows-Win32k/Tracing      |  BindLogicalSurface                      |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  47        |  0        |  Microsoft-Windows-Win32k/Tracing      |  UnBindLogicalSurface                    |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  48        |  0        |  Microsoft-Windows-Win32k/Tracing      |  BindLogicalSurfaceRH                    |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  49        |  0        |  Microsoft-Windows-Win32k/Tracing      |  DwmSpriteLogicalSurfBind                |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  50        |  0        |  Microsoft-Windows-Win32k/Tracing      |  DwmSpriteLogicalSurfUnBind              |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  51        |  0        |  Microsoft-Windows-Win32k/Tracing      |  LogicalSurfEnableDirtyNotification      |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  52        |  0        |  Microsoft-Windows-Win32k/Tracing      |  PhysicalSurfCreate                      |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  53        |  0        |  Microsoft-Windows-Win32k/Tracing      |  ModifyRgn                               |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  54        |  0        |  Microsoft-Windows-Win32k/Tracing      |  SwapChainGetStats                       |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  55        |  0        |  Microsoft-Windows-Win32k/Tracing      |  SwapChainBindingOpen                    |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  56        |  0        |  Microsoft-Windows-Win32k/Tracing      |  SwapChainBindingRelease                 |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  57        |  0        |  Microsoft-Windows-Win32k/Tracing      |  SwapChainBindingStatus                  |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  58        |  0        |  Microsoft-Windows-Win32k/Tracing      |  DesktopResolutionFailure                |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  59        |  0        |  Microsoft-Windows-Win32k/Messages     |  QueuePostMessage                        |                             |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  60        |  0        |  Microsoft-Windows-Win32k/Messages     |  SendMessage                             |  Start                      |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  61        |  0        |  Microsoft-Windows-Win32k/Messages     |  RetrievePostMessage                     |                             |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  62        |  0        |  Microsoft-Windows-Win32k/Messages     |  RetrieveSendMessage                     |  Start                      |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  63        |  0        |  Microsoft-Windows-Win32k/Messages     |  RetrieveInputMessage                    |                             |  MessagePump ComponentHosting                  |
+Microsoft-Windows-Win32k  |               |  64        |  0        |  Microsoft-Windows-Win32k/Messages     |  RetrievePseudoMessage                   |                             |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  65        |  0        |  Microsoft-Windows-Win32k/Messages     |  WakePump                                |                             |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  66        |  0        |  Microsoft-Windows-Win32k/Messages     |  InputQueueLocked                        |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  67        |  0        |  Microsoft-Windows-Win32k/Messages     |  InputQueueLocked                        |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  68        |  0        |  Microsoft-Windows-Win32k/Messages     |  UserCallback                            |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  69        |  0        |  Microsoft-Windows-Win32k/Messages     |  UserCallback                            |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  70        |  0        |  Microsoft-Windows-Win32k/Messages     |  SendMessage                             |  Stop                       |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  71        |  0        |  Microsoft-Windows-Win32k/Messages     |  SendMessageTimeOutToBlocking            |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  72        |  0        |  Microsoft-Windows-Win32k/Messages     |  InputDeviceRead                         |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  73        |  0        |  Microsoft-Windows-Win32k/Messages     |  InputDeviceRead                         |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  74        |  0        |  Microsoft-Windows-Win32k/Messages     |  MessageInjection                        |  PostGestureInputMessage    |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  75        |  0        |  Microsoft-Windows-Win32k/Messages     |  MessageInjection                        |  PostGestureMessage         |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  76        |  0        |  Microsoft-Windows-Win32k/Messages     |  AppMessagePump                          |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  77        |  0        |  Microsoft-Windows-Win32k/Messages     |  AppMessagePump                          |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  78        |  0        |  Microsoft-Windows-Win32k/Messages     |  WakeRIT                                 |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  79        |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerMotion                           |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  80        |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerMotion                           |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  81        |  0        |  Microsoft-Windows-Win32k/Messages     |  InjectMouse                             |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  82        |  0        |  Microsoft-Windows-Win32k/Messages     |  InjectMouse                             |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  83        |  0        |  Microsoft-Windows-Win32k/Messages     |  RetrieveSendMessage                     |  Stop                       |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  84        |  0        |  Microsoft-Windows-Win32k/Messages     |  GUIProcess                              |  Start                      |  ThreadInfo                                    |
+Microsoft-Windows-Win32k  |  Information  |  85        |  0        |  Microsoft-Windows-Win32k/Messages     |  GUIProcess                              |  Stop                       |  ThreadInfo                                    |
+Microsoft-Windows-Win32k  |  Information  |  86        |  0        |  Microsoft-Windows-Win32k/Messages     |  GUIThread                               |  Start                      |  ThreadInfo                                    |
+Microsoft-Windows-Win32k  |  Information  |  87        |  0        |  Microsoft-Windows-Win32k/Messages     |  GUIThread                               |  Stop                       |  ThreadInfo                                    |
+Microsoft-Windows-Win32k  |  Information  |  88        |  0        |  Microsoft-Windows-Win32k/Messages     |  QueueInputMessage                       |                             |  MessagePump ComponentHosting                  |
+Microsoft-Windows-Win32k  |  Information  |  89        |  0        |  Microsoft-Windows-Win32k/Messages     |  TranslateMessage                        |  Start                      |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  91        |  0        |  Microsoft-Windows-Win32k/Messages     |  TranslateMessage                        |  Stop                       |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  92        |  0        |  Microsoft-Windows-Win32k/Messages     |  DispatchMessage                         |  Start                      |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  93        |  0        |  Microsoft-Windows-Win32k/Messages     |  DispatchMessage                         |  Stop                       |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  94        |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingSpeedHitTest              |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  95        |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingSpeedHitTest              |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  96        |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingWindowHitTest             |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  97        |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingWindowHitTest             |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  98        |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingPointerTarget             |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  99        |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingPointerTarget             |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  100       |  0        |  Microsoft-Windows-Win32k/Messages     |  MessageInjection                        |  InjectTouchEvent           |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  102       |  0        |  Microsoft-Windows-Win32k/Tracing      |                                          |                             |  TimerSurvey                                   |
+Microsoft-Windows-Win32k  |  Information  |  103       |  0        |  Microsoft-Windows-Win32k/Tracing      |                                          |                             |  TimerSurvey                                   |
+Microsoft-Windows-Win32k  |  Information  |  104       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ContactVisualization                    |  Start                      |  UserActivity Rendering                        |
+Microsoft-Windows-Win32k  |  Information  |  105       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ContactVisualization                    |  Stop                       |  UserActivity Rendering                        |
+Microsoft-Windows-Win32k  |  Information  |  106       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingOffset                    |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  107       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingPointerEvent              |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Verbose      |  108       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchTargetingPointerEvent              |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  109       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceRead                       |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  110       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceRead                       |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  111       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceMessage                    |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  112       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceMessage                    |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  113       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceMessage                    |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  114       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceMessage                    |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  115       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceTransformation             |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  116       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceTransformation             |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  117       |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  TranslationUpdate          |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  118       |  0        |  Microsoft-Windows-Win32k/Render       |  TranslationUpdateOffset                 |                             |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  119       |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  TranslationUpdateRectClip  |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  120       |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  UpdateDxAccumFromGDI       |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  121       |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  UpdateDxAccumFromDX        |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  122       |  0        |  Microsoft-Windows-Win32k/Render       |  Rendering                               |  GetDxAccum                 |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  123       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ModifyDxAccumRgn                        |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  124       |  0        |  Microsoft-Windows-Win32k/Tracing      |  LogicalSurfRemovedTranslationFromDirty  |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  125       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceDiscovery                  |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  126       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceDiscovery                  |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  127       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceMessage                    |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  128       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceMessage                    |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  129       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchInjectionEvent                     |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  130       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchInjectionEvent                     |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  131       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCreation                    |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  132       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCreation                    |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  133       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameBuildPartial                |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  134       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameBuildPartial                |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  135       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCommit                      |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  136       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCommit                      |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  137       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCoalesce                    |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  138       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCoalesce                    |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  139       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameMessageGeneration           |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  140       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameMessageGeneration           |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  141       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerMessageRetrieve                  |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  142       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerMessageRetrieve                  |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Verbose      |  143       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerUpdateMessageRetrieve            |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Verbose      |  144       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerUpdateMessageRetrieve            |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  145       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerSetTargetWindows                 |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  146       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerSetTargetWindows                 |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Verbose      |  147       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerUpdateSetTargetWindows           |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Verbose      |  148       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerUpdateSetTargetWindows           |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  149       |  0        |  Microsoft-Windows-Win32k/Messages     |  InputQueueNoRemoveLocker                |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  150       |  0        |  Microsoft-Windows-Win32k/Messages     |  InputQueueLockedPeekRecursion           |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  151       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DCompCommitBatch                        |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  152       |  0        |  Microsoft-Windows-Win32k/Messages     |  DelegateInputUserCallback               |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  153       |  0        |  Microsoft-Windows-Win32k/Messages     |  DelegateInputUserCallback               |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  154       |  0        |  Microsoft-Windows-Win32k/Messages     |  DelegatedInputWorker                    |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  155       |  0        |  Microsoft-Windows-Win32k/Messages     |  DelegatedInputWorker                    |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  156       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerDeviceMessage                    |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  157       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerMessageGeneration                |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  158       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerMessageGeneration                |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  159       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCoalesce                    |                             |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  160       |  0        |  Microsoft-Windows-Win32k/Tracing      |  SmoothRotation                          |  Start                      |  UIUnresponsiveness AutoRotation               |
+Microsoft-Windows-Win32k  |  Information  |  161       |  0        |  Microsoft-Windows-Win32k/Tracing      |  SmoothRotation                          |  Stop                       |  UIUnresponsiveness AutoRotation               |
+Microsoft-Windows-Win32k  |  Information  |  162       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DCompGetBatch                           |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  163       |  0        |  Microsoft-Windows-Win32k/Contention   |  ExclusiveUserCrit                       |                             |  Contention                                    |
+Microsoft-Windows-Win32k  |  Information  |  164       |  0        |  Microsoft-Windows-Win32k/Contention   |  ExclusiveUserCrit                       |                             |  Contention                                    |
+Microsoft-Windows-Win32k  |  Information  |  165       |  0        |  Microsoft-Windows-Win32k/Contention   |  SharedUserCrit                          |                             |  Contention                                    |
+Microsoft-Windows-Win32k  |  Information  |  166       |  0        |  Microsoft-Windows-Win32k/Contention   |  SharedUserCrit                          |                             |  Contention                                    |
+Microsoft-Windows-Win32k  |  Information  |  167       |  0        |  Microsoft-Windows-Win32k/Contention   |  ReleaseUserCrit                         |                             |  Contention                                    |
+Microsoft-Windows-Win32k  |  Information  |  168       |  0        |  Microsoft-Windows-Win32k/Messages     |  SleepInputIdle                          |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  169       |  0        |  Microsoft-Windows-Win32k/Messages     |  WakeInputIdle                           |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  170       |  0        |  Microsoft-Windows-Win32k/Tracing      |  EdgyDetection                           |  Start                      |  UserActivity PointerInput                     |
+Microsoft-Windows-Win32k  |  Information  |  171       |  0        |  Microsoft-Windows-Win32k/Tracing      |  EdgyDetection                           |  Stop                       |  UserActivity PointerInput                     |
+Microsoft-Windows-Win32k  |  Information  |  172       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ImmersiveInputProcessDelay              |                             |  UIUnresponsiveness                            |
+Microsoft-Windows-Win32k  |  Information  |  173       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ImmersiveMessageCheckDelay              |                             |  UIUnresponsiveness                            |
+Microsoft-Windows-Win32k  |  Information  |  174       |  0        |  Microsoft-Windows-Win32k/Messages     |  THQAEvent                               |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  175       |  0        |  Microsoft-Windows-Win32k/Messages     |  THQAEvent                               |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  176       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerPrediction                       |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  177       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerPrediction                       |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  178       |  0        |  Microsoft-Windows-Win32k/Tracing      |  MoveRgn                                 |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  179       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DirtyRgn                                |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  180       |  0        |  Microsoft-Windows-Win32k/Tracing      |  LogicalSurfRemovedTranslationFromMove   |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  181       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DirtyRectUpdate                         |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  182       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TranslationUpdateOffsetDWM              |                             |  Rendering                                     |
+Microsoft-Windows-Win32k  |  Information  |  183       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DwmGetRgn                               |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  184       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCoalesce                    |  Start                      |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  185       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCoalesce                    |  Stop                       |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  186       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCoalesce                    |                             |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  187       |  0        |  Microsoft-Windows-Win32k/Tracing      |  InternalSetTimerCoalescing              |                             |  TimerInfo                                     |
+Microsoft-Windows-Win32k  |  Information  |  188       |  0        |  Microsoft-Windows-Win32k/Tracing      |  InternalSetTimerNoCoalescing            |                             |  TimerInfo                                     |
+Microsoft-Windows-Win32k  |  Information  |  189       |  0        |  Microsoft-Windows-Win32k/Tracing      |  KillTimer                               |                             |  TimerInfo                                     |
+Microsoft-Windows-Win32k  |  Information  |  190       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ProcTimerCoalescing                     |                             |  TimerInfo                                     |
+Microsoft-Windows-Win32k  |  Information  |  191       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ProcTimerNoCoalescing                   |                             |  TimerInfo                                     |
+Microsoft-Windows-Win32k  |  Information  |  192       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DrvChangeDisplaySettings                |  Start                      |                                                |
+Microsoft-Windows-Win32k  |  Information  |  193       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DrvChangeDisplaySettings                |  Stop                       |                                                |
+Microsoft-Windows-Win32k  |  Information  |  194       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ChangeDisplayMode                       |  Start                      |                                                |
+Microsoft-Windows-Win32k  |  Information  |  195       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ChangeDisplayMode                       |  Stop                       |                                                |
+Microsoft-Windows-Win32k  |  Information  |  196       |  0        |  Microsoft-Windows-Win32k/Messages     |  PseudoDevCreation                       |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  197       |  0        |  Microsoft-Windows-Win32k/Messages     |  PseudoDevCreation                       |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  198       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchHWTimeStamp                        |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  199       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCoalesce                    |                             |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  200       |  0        |  Microsoft-Windows-Win32k/Messages     |  PointerFrameCoalesce                    |                             |  PointerInput                                  |
+Microsoft-Windows-Win32k  |  Information  |  201       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TokenCompositionSurfaceObject           |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  202       |  0        |  Microsoft-Windows-Win32k/Tracing      |  CompositionSurfaceObjectUpdate          |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  203       |  0        |  Microsoft-Windows-Win32k/Messages     |  QueueEventMessage                       |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  204       |  0        |  Microsoft-Windows-Win32k/Messages     |  RetrieveQueueEventMessage               |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  205       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ForegroundWindowFullScreen              |  Start                      |  UIUnresponsiveness AutoRotation               |
+Microsoft-Windows-Win32k  |  Information  |  206       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ForegroundWindowFullScreen              |  Stop                       |  UIUnresponsiveness AutoRotation               |
+Microsoft-Windows-Win32k  |  Information  |  207       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ChangeDisplayModeBroadcast              |                             |                                                |
+Microsoft-Windows-Win32k  |  Information  |  213       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ContactVisualization                    |                             |  UserActivity Rendering                        |
+Microsoft-Windows-Win32k  |  Information  |  214       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ChangeDisplayModeDeferral               |                             |                                                |
+Microsoft-Windows-Win32k  |  Information  |  215       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ConvertibleState                        |                             |  UserActivity                                  |
+Microsoft-Windows-Win32k  |  Information  |  216       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DockState                               |                             |  UserActivity                                  |
+Microsoft-Windows-Win32k  |  Information  |  217       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadHWTimeStamp                     |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  218       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TransformAgeDecay                       |                             |                                                |
+Microsoft-Windows-Win32k  |  Information  |  219       |  0        |  Microsoft-Windows-Win32k/Messages     |  WakeDIT                                 |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  220       |  0        |  Microsoft-Windows-Win32k/Messages     |  ArmDitMouseFlush                        |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  221       |  0        |  Microsoft-Windows-Win32k/Messages     |  ProcessQueuedMouseEvents                |  Start                      |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  222       |  0        |  Microsoft-Windows-Win32k/Messages     |  ProcessQueuedMouseEvents                |  Stop                       |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  223       |  0        |  Microsoft-Windows-Win32k/Messages     |  DITSpeedHitTestFailedRevalidation       |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  224       |  0        |  Microsoft-Windows-Win32k/Messages     |  InputRedirection                        |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  225       |  0        |  Microsoft-Windows-Win32k/Messages     |  OnInputXformUpdate                      |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  226       |  0        |  Microsoft-Windows-Win32k/Messages     |  DitWaitForRitDisEngagement              |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  227       |  0        |  Microsoft-Windows-Win32k/Messages     |  RitDisEngaged                           |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  228       |  0        |  Microsoft-Windows-Win32k/Messages     |  DitEngaged                              |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  229       |  0        |  Microsoft-Windows-Win32k/Messages     |  RitReEngaged                            |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  230       |  0        |  Microsoft-Windows-Win32k/Messages     |  DitDisEngaged                           |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  231       |  0        |  Microsoft-Windows-Win32k/Messages     |  DitTerminated                           |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  232       |  0        |  Microsoft-Windows-Win32k/Messages     |  DitShutdown                             |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  233       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadAAP                             |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  234       |  0        |  Microsoft-Windows-Win32k/Messages     |  MouseInputApc                           |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  235       |  0        |  Microsoft-Windows-Win32k/Messages     |  MouseInputCoalesced                     |                             |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  236       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadTypeDiscovered                  |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  237       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadEnabledStatusChange             |  Start                      |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  238       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadEnabledStatusChange             |  Stop                       |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  239       |  0        |  Microsoft-Windows-Win32k/Tracing      |  PTPReadThresholds                       |  Start                      |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  240       |  0        |  Microsoft-Windows-Win32k/Tracing      |  PTPReadThresholds                       |  Stop                       |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  241       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadConfidenceCleared               |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  242       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadConfidenceUpped                 |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  243       |  0        |  Microsoft-Windows-Win32k/Tracing      |  PTPElasticDragMode                      |  Start                      |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  244       |  0        |  Microsoft-Windows-Win32k/Tracing      |  PTPElasticDragMode                      |  Stop                       |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  245       |  0        |  Microsoft-Windows-Win32k/Tracing      |  LegacyTouchPadDetection                 |  Start                      |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  246       |  0        |  Microsoft-Windows-Win32k/Tracing      |  LegacyTouchPadDetection                 |  Stop                       |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  247       |  0        |  Microsoft-Windows-Win32k/Tracing      |  LegacyTouchPadDetection                 |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  248       |  0        |  Microsoft-Windows-Win32k/Tracing      |  LegacyTouchPadDetection                 |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  249       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadCurtainState                    |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  250       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchPadCurtainSize                     |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  251       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchpadStopInertia                     |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  252       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchpadStopInertia                     |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Information  |  253       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TouchpadStopInertia                     |                             |  TouchInput                                    |
+Microsoft-Windows-Win32k  |  Error        |  254       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TrappedAppContainerRender               |                             |  TrappedACRendering                            |
+Microsoft-Windows-Win32k  |  Information  |  255       |  0        |  Microsoft-Windows-Win32k/Tracing      |  CursorSize                              |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  256       |  0        |  Microsoft-Windows-Win32k/Messages     |  DitMmcssWork                            |  Start                      |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  257       |  0        |  Microsoft-Windows-Win32k/Messages     |  DitMmcssWork                            |  Stop                       |  MessagePumpInternalAndInput ComponentHosting  |
+Microsoft-Windows-Win32k  |  Information  |  258       |  0        |  Microsoft-Windows-Win32k/Tracing      |  FocusedProcessChangeGained              |                             |  UserActivity                                  |
+Microsoft-Windows-Win32k  |  Information  |  259       |  0        |  Microsoft-Windows-Win32k/Tracing      |  FocusedProcessChangeLost                |                             |  UserActivity                                  |
+Microsoft-Windows-Win32k  |  Information  |  260       |  0        |  Microsoft-Windows-Win32k/Operational  |  FontLoadAttempt                         |                             |                                                |  {SourceProcessName} attempted loading a font that is restricted by font loading policy.FontType: {SourceType}FontPath: {FontSourcePath}Blocked: {Blocked}
+Microsoft-Windows-Win32k  |  Information  |  301       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TokenStateChanged                       |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  400       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DCompDeferBatch                         |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  401       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchPadHIDProcessing                   |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  402       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchPadHIDProcessing                   |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  403       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchPadWMPointerProcessing             |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  404       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchPadWMPointerProcessing             |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  405       |  0        |  Microsoft-Windows-Win32k/Messages     |  TouchPadGesture                         |                             |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  406       |  0        |  Microsoft-Windows-Win32k/Tracing      |  CopyPointerInputFrame                   |  Start                      |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  407       |  0        |  Microsoft-Windows-Win32k/Tracing      |  CopyPointerInputFrame                   |  Stop                       |  MessagePumpInternalAndInput                   |
+Microsoft-Windows-Win32k  |  Information  |  410       |  0        |  Microsoft-Windows-Win32k/Messages     |  LatencyModeProcessing                   |  Start                      |                                                |
+Microsoft-Windows-Win32k  |  Information  |  411       |  0        |  Microsoft-Windows-Win32k/Messages     |  LatencyModeProcessing                   |  Stop                       |                                                |
+Microsoft-Windows-Win32k  |  Information  |  412       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DCompBeginFrame                         |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  413       |  0        |  Microsoft-Windows-Win32k/Tracing      |  TokenIndependentFlipSkipComplete        |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  414       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DwmManipulationFrameStart               |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  415       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DwmManipulationFrameRouted              |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  416       |  0        |  Microsoft-Windows-Win32k/Tracing      |  ExclusiveUserCritTelemetry              |                             |  Contention                                    |
+Microsoft-Windows-Win32k  |  Information  |  417       |  0        |  Microsoft-Windows-Win32k/Tracing      |  SharedUserCritTelemetry                 |                             |  Contention                                    |
+Microsoft-Windows-Win32k  |  Information  |  418       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |  Start                      |  win32Power                                    |  PowerOnGdi
+Microsoft-Windows-Win32k  |  Information  |  419       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |  Stop                       |  win32Power                                    |  PowerOnGdi
+Microsoft-Windows-Win32k  |  Information  |  420       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |  Start                      |  win32Power                                    |  UserResetDisplayDevice
+Microsoft-Windows-Win32k  |  Information  |  421       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |  Stop                       |  win32Power                                    |  UserResetDisplayDevice
+Microsoft-Windows-Win32k  |  Information  |  422       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |  Start                      |  win32Power                                    |  PowerOnMonitor
+Microsoft-Windows-Win32k  |  Information  |  423       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |  Stop                       |  win32Power                                    |  PowerOnMonitor
+Microsoft-Windows-Win32k  |  Information  |  424       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |  Start                      |  win32Power                                    |  DwmSyncFlushForceRenderAndWaitForBatch
+Microsoft-Windows-Win32k  |  Information  |  425       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerDisplayChange                      |  Stop                       |  win32Power                                    |  DwmSyncFlushForceRenderAndWaitForBatch
+Microsoft-Windows-Win32k  |  Information  |  426       |  0        |  Microsoft-Windows-Win32k/Messages     |  QueueNullPostMessage                    |                             |  MessagePump                                   |
+Microsoft-Windows-Win32k  |  Information  |  427       |  0        |  Microsoft-Windows-Win32k/Operational  |  SyscallFilterMessage                    |                             |                                                |  The following win32k syscall is blocked by Win32k Syscall Filter: {SyscallName}Process Command Line: {ProcessCommandLine}
+Microsoft-Windows-Win32k  |  Information  |  428       |  0        |  Microsoft-Windows-Win32k/Operational  |  SPIBlockedByFiltering                   |                             |                                                |  The following SystemParametersInfo action was blocked by Win32k Syscall Filter: {SPIAction}
+Microsoft-Windows-Win32k  |  Information  |  429       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerWatchdog                           |  Start                      |  win32Power                                    |  PowerWatchdog
+Microsoft-Windows-Win32k  |  Information  |  430       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerWatchdog                           |  Stop                       |  win32Power                                    |  PowerWatchdog
+Microsoft-Windows-Win32k  |  Information  |  431       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Start                      |  win32Power                                    |  VideoPortCalloutThread
+Microsoft-Windows-Win32k  |  Information  |  432       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Stop                       |  win32Power                                    |  VideoPortCalloutThread
+Microsoft-Windows-Win32k  |  Information  |  433       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Start                      |  win32Power                                    |  PowerStateCalloutWorker
+Microsoft-Windows-Win32k  |  Information  |  434       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Stop                       |  win32Power                                    |  PowerStateCalloutWorker
+Microsoft-Windows-Win32k  |  Information  |  435       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Start                      |  win32Power                                    |  PowerEventCalloutWorker
+Microsoft-Windows-Win32k  |  Information  |  436       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Stop                       |  win32Power                                    |  PowerEventCalloutWorker
+Microsoft-Windows-Win32k  |  Information  |  437       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Start                      |  win32Power                                    |  Insert
+Microsoft-Windows-Win32k  |  Information  |  438       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |                             |  win32Power                                    |  Remove
+Microsoft-Windows-Win32k  |  Information  |  439       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |                             |  win32Power                                    |  Canceled
+Microsoft-Windows-Win32k  |  Information  |  440       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Stop                       |  win32Power                                    |  Completed
+Microsoft-Windows-Win32k  |  Information  |  441       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Start                      |  win32Power                                    |  WaitForVideoPortCalloutReady
+Microsoft-Windows-Win32k  |  Information  |  442       |  0        |  Microsoft-Windows-Win32k/Power        |  PowerRequest                            |  Stop                       |  win32Power                                    |
+Microsoft-Windows-Win32k  |  Information  |  443       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DCompResourceMapping                    |                             |                                                |
+Microsoft-Windows-Win32k  |  Information  |  444       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DCompResourcePropertyUpdate             |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  445       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DCompCommandType                        |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  446       |  0        |  Microsoft-Windows-Win32k/Tracing      |  DCompCommandsInBatch                    |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Verbose      |  447       |  0        |  Microsoft-Windows-Win32k/Tracing      |  HighWorkLoadBatchCountUpdatedSubmit     |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Verbose      |  448       |  0        |  Microsoft-Windows-Win32k/Tracing      |  HighWorkLoadBatchCountUpdatedConfirm    |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Verbose      |  449       |  0        |  Microsoft-Windows-Win32k/Tracing      |  HighWorkLoadBatchCountUpdatedPending    |                             |  Updates                                       |
+Microsoft-Windows-Win32k  |  Information  |  1000      |  0        |                                        |                                          |                             |  AuditApiCalls                                 |
+Microsoft-Windows-Win32k  |  Information  |  1001      |  0        |                                        |                                          |                             |  AuditApiCalls                                 |
+Microsoft-Windows-Win32k  |  Information  |  1002      |  0        |                                        |                                          |                             |  AuditApiCalls                                 |
+Microsoft-Windows-Win32k  |  Information  |  1003      |  0        |                                        |                                          |                             |  AuditApiCalls                                 |
+Microsoft-Windows-Win32k  |  Information  |  2000      |  0        |                                        |                                          |                             |                                                |
+Microsoft-Windows-Win32k  |  Information  |  10002     |  0        |  Microsoft-Windows-Win32k/Tracing      |  WindowLayoutChange                      |  Stop                       |                                                |

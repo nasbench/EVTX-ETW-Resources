@@ -1,3 +1,3 @@
-Provider                |  Event ID  |  Channel                             |  Message
-------------------------|------------|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-ASN1  |  1         |  Microsoft-Windows-ASN1/Operational  |  Decoding failed:	Module	{Module}	PDU	{PDU}	Object	{Object}	Status	{Status}	Data length	{TotalEncodedLength}		See Details for the first {EncodedLength} bytes of encoded data.
+Provider                |  Level  |  Event ID  |  Version  |  Channel                             |  Task      |  Opcode  |  Keyword   |  Message
+------------------------|---------|------------|-----------|--------------------------------------|------------|----------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ASN1  |  Error  |  1         |  0        |  Microsoft-Windows-ASN1/Operational  |  Decoding  |          |  Decoding  |  Decoding failed:	Module	{Module}	PDU	{PDU}	Object	{Object}	Status	{Status}	Data length	{TotalEncodedLength}		See Details for the first {EncodedLength} bytes of encoded data.

@@ -1,91 +1,91 @@
-Provider                                   |  Event ID  |  Channel                                             |  Message
--------------------------------------------|------------|------------------------------------------------------|-----------------------------------------------
-Microsoft-Windows-MediaFoundation-PlayAPI  |  0         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_MFPCreateMediaPlayer_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  1         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_MFPCreateMediaPlayer_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  2         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Construct
-Microsoft-Windows-MediaFoundation-PlayAPI  |  3         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Destruct
-Microsoft-Windows-MediaFoundation-PlayAPI  |  4         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Item_Construct
-Microsoft-Windows-MediaFoundation-PlayAPI  |  5         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Item_Destruct
-Microsoft-Windows-MediaFoundation-PlayAPI  |  6         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Play_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  7         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Play_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  8         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Pause_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  9         |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Pause_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  10        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Stop_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  11        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Stop_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  12        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_FrameStep_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  13        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_FrameStep_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  14        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetPosition_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  15        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetPosition_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  16        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetPosition_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  17        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetPosition_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  18        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetDuration_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  19        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetDuration_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  20        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetRate_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  21        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetRate_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  22        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetRate_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  23        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetRate_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  24        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetState_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  25        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetState_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  26        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetTimer_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  27        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetTimer_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  28        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_CreateMediaItemFromURL_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  29        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_CreateMediaItemFromURL_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  30        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_CreateMediaItemFromObject_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  31        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_CreateMediaItemFromObject_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  32        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetMediaItem_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  33        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetMediaItem_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  34        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_ClearMediaItem_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  35        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_ClearMediaItem_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  36        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetMediaItem_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  37        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetMediaItem_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  38        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetVolume_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  39        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetVolume_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  40        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetVolume_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  41        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetVolume_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  42        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetBalance_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  43        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetBalance_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  44        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetBalance_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  45        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetBalance_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  46        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetNativeVideoSize_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  47        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetNativeVideoSize_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  48        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetIdealVideoSize_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  49        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetIdealVideoSize_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  50        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetVideoSourceRect_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  51        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetVideoSourceRect_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  52        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetVideoSourceRect_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  53        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetVideoSourceRect_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  54        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetAspectRatioMode_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  55        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetAspectRatioMode_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  56        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetAspectRatioMode_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  57        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetAspectRatioMode_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  58        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetVideoWindow_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  59        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetVideoWindow_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  60        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_UpdateVideo_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  61        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_UpdateVideo_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  62        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetBorderColor_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  63        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetBorderColor_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  64        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetBorderColor_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  65        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetBorderColor_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  66        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_InsertEffect_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  67        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_InsertEffect_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  68        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_RemoveEffect_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  69        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_RemoveEffect_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  70        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_RemoveAllEffects_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  71        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_RemoveAllEffects_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  72        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Shutdown_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  73        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Shutdown_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  74        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Item_SetStartStopPosition_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  75        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Item_SetStartStopPosition_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  76        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Item_SetStreamSelection_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  77        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Item_SetStreamSelection_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  78        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_CancelTimer_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  79        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_CancelTimer_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  80        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetMute_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  81        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetMute_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  82        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetMute_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  83        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_SetMute_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  84        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetSupportedRates_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  85        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_GetSupportedRates_Leave
-Microsoft-Windows-MediaFoundation-PlayAPI  |  500       |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Callback_Fired
-Microsoft-Windows-MediaFoundation-PlayAPI  |  501       |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Callback_Enter
-Microsoft-Windows-MediaFoundation-PlayAPI  |  502       |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay_Player_Callback_Leave
+Provider                                   |  Level        |  Event ID  |  Version  |  Channel                                             |  Task    |  Opcode              |  Keyword  |  Message
+-------------------------------------------|---------------|------------|-----------|------------------------------------------------------|----------|----------------------|-----------|-----------------------------------------------
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Information  |  0         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_MFPCreateMediaPlayer_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Information  |  1         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_MFPCreateMediaPlayer_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Information  |  2         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Object constructed  |           |  MFPlay_Player_Construct
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Information  |  3         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Object destroyed    |           |  MFPlay_Player_Destruct
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Information  |  4         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Object constructed  |           |  MFPlay_Item_Construct
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Information  |  5         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Object destroyed    |           |  MFPlay_Item_Destruct
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  6         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_Play_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  7         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_Play_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  8         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_Pause_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  9         |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_Pause_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  10        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_Stop_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  11        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_Stop_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  12        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_FrameStep_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  13        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_FrameStep_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  14        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetPosition_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  15        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetPosition_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  16        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetPosition_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  17        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetPosition_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  18        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetDuration_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  19        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetDuration_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  20        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetRate_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  21        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetRate_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  22        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetRate_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  23        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetRate_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  24        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetState_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  25        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetState_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  26        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetTimer_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  27        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetTimer_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  28        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_CreateMediaItemFromURL_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  29        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_CreateMediaItemFromURL_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  30        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_CreateMediaItemFromObject_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  31        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_CreateMediaItemFromObject_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  32        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetMediaItem_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  33        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetMediaItem_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  34        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_ClearMediaItem_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  35        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_ClearMediaItem_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  36        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetMediaItem_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  37        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetMediaItem_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  38        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetVolume_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  39        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetVolume_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  40        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetVolume_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  41        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetVolume_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  42        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetBalance_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  43        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetBalance_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  44        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetBalance_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  45        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetBalance_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  46        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetNativeVideoSize_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  47        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetNativeVideoSize_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  48        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetIdealVideoSize_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  49        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetIdealVideoSize_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  50        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetVideoSourceRect_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  51        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetVideoSourceRect_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  52        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetVideoSourceRect_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  53        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetVideoSourceRect_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  54        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetAspectRatioMode_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  55        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetAspectRatioMode_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  56        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetAspectRatioMode_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  57        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetAspectRatioMode_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  58        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetVideoWindow_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  59        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetVideoWindow_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  60        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_UpdateVideo_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  61        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_UpdateVideo_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  62        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetBorderColor_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  63        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetBorderColor_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  64        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetBorderColor_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  65        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetBorderColor_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  66        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_InsertEffect_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  67        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_InsertEffect_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  68        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_RemoveEffect_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  69        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_RemoveEffect_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  70        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_RemoveAllEffects_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  71        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_RemoveAllEffects_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  72        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_Shutdown_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  73        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_Shutdown_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  74        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Item_SetStartStopPosition_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  75        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Item_SetStartStopPosition_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  76        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Item_SetStreamSelection_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  77        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Item_SetStreamSelection_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  78        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_CancelTimer_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  79        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_CancelTimer_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  80        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetMute_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  81        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetMute_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  82        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_SetMute_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  83        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_SetMute_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  84        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_GetSupportedRates_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  85        |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_GetSupportedRates_Leave
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  500       |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |                      |           |  MFPlay_Player_Callback_Fired
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  501       |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Start               |           |  MFPlay_Player_Callback_Enter
+Microsoft-Windows-MediaFoundation-PlayAPI  |  Verbose      |  502       |  0        |  Microsoft-Windows-MediaFoundation-PlayAPI/Analytic  |  MFPlay  |  Stop                |           |  MFPlay_Player_Callback_Leave

@@ -1,194 +1,194 @@
-Provider                           |  Event ID  |  Channel                              |  Message
------------------------------------|------------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Store-Client-UI  |  1         |                                       |
-Microsoft-Windows-Store-Client-UI  |  2         |                                       |
-Microsoft-Windows-Store-Client-UI  |  3         |                                       |
-Microsoft-Windows-Store-Client-UI  |  4         |                                       |
-Microsoft-Windows-Store-Client-UI  |  5         |                                       |
-Microsoft-Windows-Store-Client-UI  |  7         |                                       |
-Microsoft-Windows-Store-Client-UI  |  101       |                                       |
-Microsoft-Windows-Store-Client-UI  |  103       |                                       |
-Microsoft-Windows-Store-Client-UI  |  105       |                                       |
-Microsoft-Windows-Store-Client-UI  |  107       |                                       |
-Microsoft-Windows-Store-Client-UI  |  108       |                                       |
-Microsoft-Windows-Store-Client-UI  |  109       |                                       |
-Microsoft-Windows-Store-Client-UI  |  111       |                                       |
-Microsoft-Windows-Store-Client-UI  |  113       |                                       |
-Microsoft-Windows-Store-Client-UI  |  115       |                                       |
-Microsoft-Windows-Store-Client-UI  |  117       |                                       |
-Microsoft-Windows-Store-Client-UI  |  119       |                                       |
-Microsoft-Windows-Store-Client-UI  |  121       |                                       |
-Microsoft-Windows-Store-Client-UI  |  123       |                                       |
-Microsoft-Windows-Store-Client-UI  |  125       |                                       |
-Microsoft-Windows-Store-Client-UI  |  127       |                                       |
-Microsoft-Windows-Store-Client-UI  |  129       |                                       |
-Microsoft-Windows-Store-Client-UI  |  131       |                                       |
-Microsoft-Windows-Store-Client-UI  |  133       |                                       |
-Microsoft-Windows-Store-Client-UI  |  135       |                                       |
-Microsoft-Windows-Store-Client-UI  |  137       |                                       |
-Microsoft-Windows-Store-Client-UI  |  138       |                                       |
-Microsoft-Windows-Store-Client-UI  |  139       |                                       |
-Microsoft-Windows-Store-Client-UI  |  141       |                                       |
-Microsoft-Windows-Store-Client-UI  |  143       |                                       |
-Microsoft-Windows-Store-Client-UI  |  145       |                                       |
-Microsoft-Windows-Store-Client-UI  |  147       |                                       |
-Microsoft-Windows-Store-Client-UI  |  149       |                                       |
-Microsoft-Windows-Store-Client-UI  |  151       |                                       |
-Microsoft-Windows-Store-Client-UI  |  153       |                                       |
-Microsoft-Windows-Store-Client-UI  |  155       |                                       |
-Microsoft-Windows-Store-Client-UI  |  157       |                                       |
-Microsoft-Windows-Store-Client-UI  |  159       |                                       |
-Microsoft-Windows-Store-Client-UI  |  201       |                                       |
-Microsoft-Windows-Store-Client-UI  |  202       |                                       |
-Microsoft-Windows-Store-Client-UI  |  203       |                                       |
-Microsoft-Windows-Store-Client-UI  |  204       |                                       |
-Microsoft-Windows-Store-Client-UI  |  205       |                                       |
-Microsoft-Windows-Store-Client-UI  |  206       |                                       |
-Microsoft-Windows-Store-Client-UI  |  207       |                                       |
-Microsoft-Windows-Store-Client-UI  |  208       |                                       |
-Microsoft-Windows-Store-Client-UI  |  209       |                                       |
-Microsoft-Windows-Store-Client-UI  |  210       |                                       |
-Microsoft-Windows-Store-Client-UI  |  211       |                                       |
-Microsoft-Windows-Store-Client-UI  |  212       |                                       |
-Microsoft-Windows-Store-Client-UI  |  213       |                                       |
-Microsoft-Windows-Store-Client-UI  |  214       |                                       |
-Microsoft-Windows-Store-Client-UI  |  215       |                                       |
-Microsoft-Windows-Store-Client-UI  |  216       |                                       |
-Microsoft-Windows-Store-Client-UI  |  217       |                                       |
-Microsoft-Windows-Store-Client-UI  |  218       |                                       |
-Microsoft-Windows-Store-Client-UI  |  227       |                                       |
-Microsoft-Windows-Store-Client-UI  |  228       |                                       |
-Microsoft-Windows-Store-Client-UI  |  229       |                                       |
-Microsoft-Windows-Store-Client-UI  |  230       |                                       |
-Microsoft-Windows-Store-Client-UI  |  231       |                                       |
-Microsoft-Windows-Store-Client-UI  |  232       |                                       |
-Microsoft-Windows-Store-Client-UI  |  233       |                                       |
-Microsoft-Windows-Store-Client-UI  |  234       |                                       |
-Microsoft-Windows-Store-Client-UI  |  401       |                                       |
-Microsoft-Windows-Store-Client-UI  |  402       |                                       |
-Microsoft-Windows-Store-Client-UI  |  403       |                                       |
-Microsoft-Windows-Store-Client-UI  |  404       |                                       |
-Microsoft-Windows-Store-Client-UI  |  405       |                                       |
-Microsoft-Windows-Store-Client-UI  |  406       |                                       |
-Microsoft-Windows-Store-Client-UI  |  407       |                                       |
-Microsoft-Windows-Store-Client-UI  |  408       |                                       |
-Microsoft-Windows-Store-Client-UI  |  409       |                                       |
-Microsoft-Windows-Store-Client-UI  |  410       |                                       |
-Microsoft-Windows-Store-Client-UI  |  411       |                                       |
-Microsoft-Windows-Store-Client-UI  |  412       |                                       |
-Microsoft-Windows-Store-Client-UI  |  413       |                                       |
-Microsoft-Windows-Store-Client-UI  |  415       |                                       |
-Microsoft-Windows-Store-Client-UI  |  417       |                                       |
-Microsoft-Windows-Store-Client-UI  |  501       |                                       |
-Microsoft-Windows-Store-Client-UI  |  502       |                                       |
-Microsoft-Windows-Store-Client-UI  |  503       |                                       |
-Microsoft-Windows-Store-Client-UI  |  504       |                                       |
-Microsoft-Windows-Store-Client-UI  |  601       |                                       |
-Microsoft-Windows-Store-Client-UI  |  603       |                                       |
-Microsoft-Windows-Store-Client-UI  |  604       |                                       |
-Microsoft-Windows-Store-Client-UI  |  605       |                                       |
-Microsoft-Windows-Store-Client-UI  |  703       |                                       |
-Microsoft-Windows-Store-Client-UI  |  704       |                                       |
-Microsoft-Windows-Store-Client-UI  |  709       |                                       |
-Microsoft-Windows-Store-Client-UI  |  710       |                                       |
-Microsoft-Windows-Store-Client-UI  |  713       |                                       |
-Microsoft-Windows-Store-Client-UI  |  714       |                                       |
-Microsoft-Windows-Store-Client-UI  |  715       |                                       |
-Microsoft-Windows-Store-Client-UI  |  717       |                                       |
-Microsoft-Windows-Store-Client-UI  |  719       |                                       |
-Microsoft-Windows-Store-Client-UI  |  720       |                                       |
-Microsoft-Windows-Store-Client-UI  |  721       |                                       |
-Microsoft-Windows-Store-Client-UI  |  722       |                                       |
-Microsoft-Windows-Store-Client-UI  |  723       |                                       |
-Microsoft-Windows-Store-Client-UI  |  725       |                                       |
-Microsoft-Windows-Store-Client-UI  |  726       |                                       |
-Microsoft-Windows-Store-Client-UI  |  727       |                                       |
-Microsoft-Windows-Store-Client-UI  |  728       |                                       |
-Microsoft-Windows-Store-Client-UI  |  801       |                                       |
-Microsoft-Windows-Store-Client-UI  |  802       |                                       |
-Microsoft-Windows-Store-Client-UI  |  803       |                                       |
-Microsoft-Windows-Store-Client-UI  |  804       |                                       |
-Microsoft-Windows-Store-Client-UI  |  807       |                                       |
-Microsoft-Windows-Store-Client-UI  |  808       |                                       |
-Microsoft-Windows-Store-Client-UI  |  809       |                                       |
-Microsoft-Windows-Store-Client-UI  |  810       |                                       |
-Microsoft-Windows-Store-Client-UI  |  812       |                                       |
-Microsoft-Windows-Store-Client-UI  |  813       |                                       |
-Microsoft-Windows-Store-Client-UI  |  814       |                                       |
-Microsoft-Windows-Store-Client-UI  |  815       |                                       |
-Microsoft-Windows-Store-Client-UI  |  816       |                                       |
-Microsoft-Windows-Store-Client-UI  |  817       |                                       |
-Microsoft-Windows-Store-Client-UI  |  897       |                                       |
-Microsoft-Windows-Store-Client-UI  |  898       |                                       |
-Microsoft-Windows-Store-Client-UI  |  899       |                                       |
-Microsoft-Windows-Store-Client-UI  |  901       |                                       |
-Microsoft-Windows-Store-Client-UI  |  902       |                                       |
-Microsoft-Windows-Store-Client-UI  |  903       |                                       |
-Microsoft-Windows-Store-Client-UI  |  904       |                                       |
-Microsoft-Windows-Store-Client-UI  |  905       |                                       |
-Microsoft-Windows-Store-Client-UI  |  906       |                                       |
-Microsoft-Windows-Store-Client-UI  |  907       |                                       |
-Microsoft-Windows-Store-Client-UI  |  908       |                                       |
-Microsoft-Windows-Store-Client-UI  |  909       |                                       |
-Microsoft-Windows-Store-Client-UI  |  910       |                                       |
-Microsoft-Windows-Store-Client-UI  |  911       |                                       |
-Microsoft-Windows-Store-Client-UI  |  912       |                                       |
-Microsoft-Windows-Store-Client-UI  |  913       |                                       |
-Microsoft-Windows-Store-Client-UI  |  914       |                                       |
-Microsoft-Windows-Store-Client-UI  |  915       |                                       |
-Microsoft-Windows-Store-Client-UI  |  916       |                                       |
-Microsoft-Windows-Store-Client-UI  |  917       |                                       |
-Microsoft-Windows-Store-Client-UI  |  918       |                                       |
-Microsoft-Windows-Store-Client-UI  |  951       |  Microsoft-Windows-Store/Operational  |  User clicked {ControlId} from {ParentPath}
-Microsoft-Windows-Store-Client-UI  |  952       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  953       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  954       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  955       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  956       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  958       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  959       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  960       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  961       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  962       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  963       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  964       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  965       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  966       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  967       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  968       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  969       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  970       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  971       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  972       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  973       |  Microsoft-Windows-Store/Operational  |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}Store Client Version: {Store Client Version}Store QFE Version: {Store QFE Version}
-Microsoft-Windows-Store-Client-UI  |  974       |  Microsoft-Windows-Store/Operational  |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}Store Client Version: {Store Client Version}Store QFE Version: {Store QFE Version}Username: {User Name}Machine Name: {Machine Name}
-Microsoft-Windows-Store-Client-UI  |  975       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  976       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  977       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  978       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  979       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  980       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  981       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  982       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  983       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  984       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  985       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  986       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  987       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  988       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  989       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  990       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  991       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  992       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  993       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  994       |  Microsoft-Windows-Store/Operational  |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
-Microsoft-Windows-Store-Client-UI  |  995       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  996       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  997       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  998       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  999       |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  1000      |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  1001      |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  1002      |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  1003      |  Microsoft-Windows-Store/Operational  |  {Message}
-Microsoft-Windows-Store-Client-UI  |  1004      |  Microsoft-Windows-Store/Operational  |  {Message}
+Provider                           |  Level        |  Event ID  |  Version  |  Channel                              |  Task                                  |  Opcode    |  Keyword             |  Message
+-----------------------------------|---------------|------------|-----------|---------------------------------------|----------------------------------------|------------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Store-Client-UI  |  Information  |  1         |  0        |                                       |  Cache_Query                           |  Start     |  Cache               |
+Microsoft-Windows-Store-Client-UI  |  Information  |  2         |  0        |                                       |  Cache_Query                           |  Stop      |  Cache               |
+Microsoft-Windows-Store-Client-UI  |  Information  |  3         |  0        |                                       |  Cache_ProviderQuery                   |  Start     |  Cache               |
+Microsoft-Windows-Store-Client-UI  |  Information  |  4         |  0        |                                       |  Cache_ProviderQuery                   |  Stop      |  Cache               |
+Microsoft-Windows-Store-Client-UI  |  Information  |  5         |  0        |                                       |  Cache_Hit                             |            |  Cache               |
+Microsoft-Windows-Store-Client-UI  |  Information  |  7         |  0        |                                       |  Cache_Miss                            |            |  Cache               |
+Microsoft-Windows-Store-Client-UI  |               |  101       |  0        |                                       |  Framework_Store_Launched              |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  103       |  0        |                                       |  Framework_Navigate                    |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  105       |  0        |                                       |  Framework_Navigate_Failed             |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  107       |  0        |                                       |  Framework_List_Init                   |  Start     |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  108       |  0        |                                       |  Framework_List_Init                   |  Stop      |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  109       |  0        |                                       |  Framework_List_Init_Failed            |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  111       |  0        |                                       |  Framework_Tile_Clicked                |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  113       |  0        |                                       |  Framework_Category_Clicked            |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  115       |  0        |                                       |  Framework_Home_Rendered               |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  117       |  0        |                                       |  Framework_Topic_Rendered              |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  119       |  0        |                                       |  Framework_DataDriven_Rendered         |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  121       |  0        |                                       |  Framework_Category_Rendered           |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  123       |  0        |                                       |  Framework_Search_Rendered             |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  125       |  0        |                                       |  Framework_FilterSort_Selected         |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  127       |  0        |                                       |  Framework_App_Tile_Clicked            |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  129       |  0        |                                       |  Framework_Settings_PageLoad_Complete  |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  131       |  0        |                                       |  Framework_Updates_Navigate            |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  133       |  0        |                                       |  Framework_Reacquire_Navigate          |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  135       |  0        |                                       |  Framework_Results_List_Restored       |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  137       |  0        |                                       |  Framework_FeaturedQuery_Rendered      |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  138       |  0        |                                       |  Framework_PCSFrame_Open               |  Start     |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  139       |  0        |                                       |  Framework_PCSFrame_Open               |  Stop      |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  141       |  0        |                                       |  Framework_Home_Interactive            |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  143       |  0        |                                       |  Framework_Topic_Interactive           |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  145       |  0        |                                       |  Framework_DataDriven_Interactive      |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  147       |  0        |                                       |  Framework_FeaturedQuery_Interactive   |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  149       |  0        |                                       |  Framework_Category_Interactive        |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  151       |  0        |                                       |  Framework_Search_Interactive          |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  153       |  0        |                                       |  Framework_Home_List_Restored          |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  155       |  0        |                                       |  Framework_PageLoaded                  |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  157       |  0        |                                       |  Framework_Show_Error_Page             |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |               |  159       |  0        |                                       |  Framework_Launch_Cancel               |            |  Framework           |
+Microsoft-Windows-Store-Client-UI  |  Information  |  201       |  0        |                                       |  Commerce_CalculateFinalPrice          |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  202       |  0        |                                       |  Commerce_CalculateFinalPrice          |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  203       |  0        |                                       |  Commerce_ConfirmPurchase              |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  204       |  0        |                                       |  Commerce_ConfirmPurchase              |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  205       |  0        |                                       |  Commerce_CreatePaymentAccount         |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  206       |  0        |                                       |  Commerce_CreatePaymentAccount         |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  207       |  0        |                                       |  Commerce_AddPaymentAccount            |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  208       |  0        |                                       |  Commerce_AddPaymentAccount            |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  209       |  0        |                                       |  Commerce_AddPI                        |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  210       |  0        |                                       |  Commerce_AddPI                        |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  211       |  0        |                                       |  Commerce_GetDefaultPI                 |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  212       |  0        |                                       |  Commerce_GetDefaultPI                 |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  213       |  0        |                                       |  Commerce_SetDefaultPI                 |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  214       |  0        |                                       |  Commerce_SetDefaultPI                 |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  215       |  0        |                                       |  Commerce_ResumePurchase               |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  216       |  0        |                                       |  Commerce_ResumePurchase               |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |               |  217       |  0        |                                       |  Commerce_Perftrack_Purchase           |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |               |  218       |  0        |                                       |  Commerce_Perftrack_Purchase           |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |               |  227       |  0        |                                       |  Commerce_Perftrack_Purchase           |            |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  228       |  0        |                                       |  Commerce_CalculateFinalPrice          |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  229       |  0        |                                       |  Commerce_CalculateFinalPrice          |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  230       |  0        |                                       |  Commerce_ConfirmPurchase              |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  231       |  0        |                                       |  Commerce_ConfirmPurchase              |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |               |  232       |  0        |                                       |  Commerce_Perftrack_BulkPurchase       |  Start     |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |               |  233       |  0        |                                       |  Commerce_Perftrack_BulkPurchase       |  Stop      |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |               |  234       |  0        |                                       |  Commerce_Perftrack_BulkPurchase       |            |  Commerce            |
+Microsoft-Windows-Store-Client-UI  |  Information  |  401       |  0        |                                       |  PDP_Open                              |  Start     |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |               |  402       |  0        |                                       |  PDP_Open                              |  Stop      |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  403       |  0        |                                       |  PDP_Close                             |  Start     |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  404       |  0        |                                       |  PDP_Close                             |  Stop      |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  405       |  0        |                                       |  PDP_AcquisitionInitiation             |  Start     |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  406       |  0        |                                       |  PDP_AcquisitionInitiation             |  Stop      |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |               |  407       |  0        |                                       |  PDP_AcquisitionProgress               |  Start     |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  408       |  0        |                                       |  PDP_AcquisitionProgress               |  Stop      |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  409       |  0        |                                       |  PDP_GetMetadata                       |  Start     |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  410       |  0        |                                       |  PDP_GetMetadata                       |  Stop      |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  411       |  0        |                                       |  PDP_GetLicenseInstall                 |  Start     |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  412       |  0        |                                       |  PDP_GetLicenseInstall                 |  Stop      |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  413       |  0        |                                       |  PDP_Acquired_FreeApp                  |            |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  415       |  0        |                                       |  PDP_Tab_Clicked                       |            |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  417       |  0        |                                       |  PDP_Screenshot                        |            |  PDP                 |
+Microsoft-Windows-Store-Client-UI  |  Information  |  501       |  0        |                                       |  InApp_Purchase_Details                |  Start     |  InApp               |
+Microsoft-Windows-Store-Client-UI  |  Information  |  502       |  0        |                                       |  InApp_Purchase_Details                |  Stop      |  InApp               |
+Microsoft-Windows-Store-Client-UI  |  Information  |  503       |  0        |                                       |  InApp_Purchase_Completion             |  Start     |  InApp               |
+Microsoft-Windows-Store-Client-UI  |  Information  |  504       |  0        |                                       |  InApp_Purchase_Completion             |  Stop      |  InApp               |
+Microsoft-Windows-Store-Client-UI  |               |  601       |  0        |                                       |  Search_Invoked                        |            |  Search              |
+Microsoft-Windows-Store-Client-UI  |  Information  |  603       |  0        |                                       |  Search_Typeahead                      |  Start     |  Search              |
+Microsoft-Windows-Store-Client-UI  |  Information  |  604       |  0        |                                       |  Search_Typeahead                      |  Stop      |  Search              |
+Microsoft-Windows-Store-Client-UI  |               |  605       |  0        |                                       |  Search_Canceled                       |            |  Search              |
+Microsoft-Windows-Store-Client-UI  |               |  703       |  0        |                                       |  Acquisition_Install_Product           |  Start     |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |               |  704       |  0        |                                       |  Acquisition_Install_Product           |  Stop      |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  709       |  0        |                                       |  Acquisition_ProgressCallback          |  Start     |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  710       |  0        |                                       |  Acquisition_ProgressCallback          |  Stop      |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  713       |  0        |                                       |  Acquisition_WU_Scan                   |  Start     |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  714       |  0        |                                       |  Acquisition_WU_Scan                   |  Stop      |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  715       |  0        |                                       |  Acquisition_Update_Rendered           |            |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |               |  717       |  0        |                                       |  Acquisition_Reacquire_Rendered        |            |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  719       |  0        |                                       |  Acquisition_WU_Update_Search          |  Start     |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  720       |  0        |                                       |  Acquisition_WU_Update_Search          |  Stop      |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  721       |  0        |                                       |  Acquisition_Checkpoint                |  Start     |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  722       |  0        |                                       |  Acquisition_Checkpoint                |  Stop      |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  723       |  0        |                                       |  Acquisition_Paused                    |            |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  725       |  0        |                                       |  Acquisition_Update_BatchInstall       |  Start     |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  726       |  0        |                                       |  Acquisition_Update_BatchInstall       |  Stop      |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |               |  727       |  0        |                                       |  Acquisition_Applicability_Scan        |  Start     |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |               |  728       |  0        |                                       |  Acquisition_Applicability_Scan        |  Stop      |  Acquisition         |
+Microsoft-Windows-Store-Client-UI  |  Information  |  801       |  0        |                                       |  ParseXml                              |  Start     |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  802       |  0        |                                       |  ParseXml                              |  Stop      |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  803       |  0        |                                       |  CallToBroker                          |  Start     |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  804       |  0        |                                       |  CallToBroker                          |  Stop      |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  807       |  0        |                                       |  InvokeCallback                        |            |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  808       |  0        |                                       |  CreateBroker                          |  Start     |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  809       |  0        |                                       |  CreateBroker                          |  Stop      |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  810       |  0        |                                       |  BadPerfRun                            |            |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  812       |  0        |                                       |  BrokerWorkitem                        |  Start     |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  813       |  0        |                                       |  BrokerWorkitem                        |  Stop      |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  814       |  0        |                                       |  BrokerAPI                             |  Start     |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  815       |  0        |                                       |  BrokerAPI                             |  Stop      |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  816       |  0        |                                       |  ScriptEvent                           |  Start     |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  817       |  0        |                                       |  ScriptEvent                           |  Stop      |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  897       |  0        |                                       |  Generic                               |  Start     |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  898       |  0        |                                       |  Generic                               |  Stop      |  Perf                |
+Microsoft-Windows-Store-Client-UI  |  Information  |  899       |  0        |                                       |  Generic                               |            |  Perf                |
+Microsoft-Windows-Store-Client-UI  |               |  901       |  0        |                                       |  RRR_Display_SubmitReview_Page         |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  902       |  0        |                                       |  RRR_Display_SubmitReview_Page         |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  903       |  0        |                                       |  RRR_Display_SubmitAppProblem_Page     |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  904       |  0        |                                       |  RRR_Display_SubmitAppProblem_Page     |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  905       |  0        |                                       |  RRR_Submit_HelpfulnessVote            |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  906       |  0        |                                       |  RRR_Submit_HelpfulnessVote            |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  907       |  0        |                                       |  RRR_Submit_ReportReview               |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  908       |  0        |                                       |  RRR_Submit_ReportReview               |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  909       |  0        |                                       |  RRR_Submit_Review                     |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  910       |  0        |                                       |  RRR_Submit_Review                     |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  911       |  0        |                                       |  RRR_Submit_AppProblem                 |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  912       |  0        |                                       |  RRR_Submit_AppProblem                 |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  913       |  0        |                                       |  RRR_ReviewList_Sort                   |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  914       |  0        |                                       |  RRR_ReviewList_Sort                   |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |  Information  |  915       |  0        |                                       |  RRR_ReviewList_LoadPage               |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |  Information  |  916       |  0        |                                       |  RRR_ReviewList_LoadPage               |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  917       |  0        |                                       |  RRR_ReviewTab_Click                   |  Start     |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |               |  918       |  0        |                                       |  RRR_ReviewTab_Click                   |  Stop      |  RatingReview        |
+Microsoft-Windows-Store-Client-UI  |  Information  |  951       |  0        |  Microsoft-Windows-Store/Operational  |  User Action                           |            |  UserActions         |  User clicked {ControlId} from {ParentPath}
+Microsoft-Windows-Store-Client-UI  |  Information  |  952       |  0        |  Microsoft-Windows-Store/Operational  |  Native                                |  Info      |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  953       |  0        |  Microsoft-Windows-Store/Operational  |  Native                                |  Verbose   |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Warning      |  954       |  0        |  Microsoft-Windows-Store/Operational  |  Native                                |  Warning   |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Error        |  955       |  0        |  Microsoft-Windows-Store/Operational  |  Native                                |  Error     |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Critical     |  956       |  0        |  Microsoft-Windows-Store/Operational  |  Native                                |  Critical  |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Information  |  958       |  0        |  Microsoft-Windows-Store/Operational  |  Javascript                            |  Info      |  JavaScriptMessages  |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  959       |  0        |  Microsoft-Windows-Store/Operational  |  Javascript                            |  Verbose   |  JavaScriptMessages  |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Warning      |  960       |  0        |  Microsoft-Windows-Store/Operational  |  Javascript                            |  Warning   |  JavaScriptMessages  |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Error        |  961       |  0        |  Microsoft-Windows-Store/Operational  |  Javascript                            |  Error     |  JavaScriptMessages  |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Critical     |  962       |  0        |  Microsoft-Windows-Store/Operational  |  Javascript                            |  Critical  |  JavaScriptMessages  |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Information  |  963       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Broker                  |  Info      |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  964       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Broker                  |  Verbose   |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Warning      |  965       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Broker                  |  Warning   |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Error        |  966       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Broker                  |  Error     |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Critical     |  967       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Broker                  |  Critical  |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Information  |  968       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Shared                  |  Info      |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  969       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Shared                  |  Verbose   |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Warning      |  970       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Shared                  |  Warning   |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Error        |  971       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Shared                  |  Error     |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Critical     |  972       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Shared                  |  Critical  |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Information  |  973       |  0        |  Microsoft-Windows-Store/Operational  |  Store Module Loaded                   |            |  Messages            |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}Store Client Version: {Store Client Version}Store QFE Version: {Store QFE Version}
+Microsoft-Windows-Store-Client-UI  |  Information  |  974       |  0        |  Microsoft-Windows-Store/Operational  |  Store Module Loaded                   |            |  Messages            |  Process Name: {Process Name}Module Name: {Module Name}Build: {Build Name}Store Client Version: {Store Client Version}Store QFE Version: {Store QFE Version}Username: {User Name}Machine Name: {Machine Name}
+Microsoft-Windows-Store-Client-UI  |  Information  |  975       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Licensing               |  Info      |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  976       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Licensing               |  Verbose   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Warning      |  977       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Licensing               |  Warning   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Error        |  978       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Licensing               |  Error     |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Critical     |  979       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Licensing               |  Critical  |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Information  |  980       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Acquire                 |  Info      |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  981       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Acquire                 |  Verbose   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Warning      |  982       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Acquire                 |  Warning   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Error        |  983       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Acquire                 |  Error     |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Critical     |  984       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Acquire                 |  Critical  |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Information  |  985       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Sync                    |  Info      |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  986       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Sync                    |  Verbose   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Warning      |  987       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Sync                    |  Warning   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Error        |  988       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Sync                    |  Error     |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Critical     |  989       |  0        |  Microsoft-Windows-Store/Operational  |  Windows Store Sync                    |  Critical  |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Information  |  990       |  0        |  Microsoft-Windows-Store/Operational  |  Partner Licensing                     |  Info      |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  991       |  0        |  Microsoft-Windows-Store/Operational  |  Partner Licensing                     |  Verbose   |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Warning      |  992       |  0        |  Microsoft-Windows-Store/Operational  |  Partner Licensing                     |  Warning   |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Error        |  993       |  0        |  Microsoft-Windows-Store/Operational  |  Partner Licensing                     |  Error     |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Critical     |  994       |  0        |  Microsoft-Windows-Store/Operational  |  Partner Licensing                     |  Critical  |  Messages            |  {Message}Error: {Error Code}Function: {Function}Source: {Source} ({Line Number})
+Microsoft-Windows-Store-Client-UI  |  Information  |  995       |  0        |  Microsoft-Windows-Store/Operational  |  Unit Testing                          |  Info      |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  996       |  0        |  Microsoft-Windows-Store/Operational  |  Unit Testing                          |  Verbose   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Warning      |  997       |  0        |  Microsoft-Windows-Store/Operational  |  Unit Testing                          |  Warning   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Error        |  998       |  0        |  Microsoft-Windows-Store/Operational  |  Unit Testing                          |  Error     |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Critical     |  999       |  0        |  Microsoft-Windows-Store/Operational  |  Unit Testing                          |  Critical  |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Information  |  1000      |  0        |  Microsoft-Windows-Store/Operational  |  SLS                                   |  Info      |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Verbose      |  1001      |  0        |  Microsoft-Windows-Store/Operational  |  SLS                                   |  Verbose   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Warning      |  1002      |  0        |  Microsoft-Windows-Store/Operational  |  SLS                                   |  Warning   |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Error        |  1003      |  0        |  Microsoft-Windows-Store/Operational  |  SLS                                   |  Error     |  Messages            |  {Message}
+Microsoft-Windows-Store-Client-UI  |  Critical     |  1004      |  0        |  Microsoft-Windows-Store/Operational  |  SLS                                   |  Critical  |  Messages            |  {Message}

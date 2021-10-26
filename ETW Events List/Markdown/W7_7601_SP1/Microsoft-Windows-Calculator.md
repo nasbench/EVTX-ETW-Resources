@@ -1,29 +1,29 @@
-Provider                      |  Event ID  |  Channel                                  |  Message
-------------------------------|------------|-------------------------------------------|-------------------------------------------
-Microsoft-Windows-Calculator  |  1         |  Microsoft-Windows-Calculator/Diagnostic  |  HistoryToggle has started
-Microsoft-Windows-Calculator  |  2         |  Microsoft-Windows-Calculator/Diagnostic  |  History toggle has been closed
-Microsoft-Windows-Calculator  |  3         |  Microsoft-Windows-Calculator/Diagnostic  |  Calculator Command has started
-Microsoft-Windows-Calculator  |  4         |  Microsoft-Windows-Calculator/Diagnostic  |  Calculator Command has been completed
-Microsoft-Windows-Calculator  |  5         |  Microsoft-Windows-Calculator/Diagnostic  |  Launching of app has started
-Microsoft-Windows-Calculator  |  6         |  Microsoft-Windows-Calculator/Diagnostic  |  Launching of app has been closed
-Microsoft-Windows-Calculator  |  7         |  Microsoft-Windows-Calculator/Diagnostic  |  Closing of app has started
-Microsoft-Windows-Calculator  |  8         |  Microsoft-Windows-Calculator/Diagnostic  |  App has been closed
-Microsoft-Windows-Calculator  |  9         |  Microsoft-Windows-Calculator/Diagnostic  |  Reading templates: Start
-Microsoft-Windows-Calculator  |  10        |  Microsoft-Windows-Calculator/Diagnostic  |  Reading templates: Stop
-Microsoft-Windows-Calculator  |  11        |  Microsoft-Windows-Calculator/Diagnostic  |  Loading templates: Start
-Microsoft-Windows-Calculator  |  12        |  Microsoft-Windows-Calculator/Diagnostic  |  Loading templates: Stop
-Microsoft-Windows-Calculator  |  13        |  Microsoft-Windows-Calculator/Diagnostic  |  Initing template manager: Start
-Microsoft-Windows-Calculator  |  14        |  Microsoft-Windows-Calculator/Diagnostic  |  Initing template manager: Stop
-Microsoft-Windows-Calculator  |  15        |  Microsoft-Windows-Calculator/Diagnostic  |  Template formula lookup: Start
-Microsoft-Windows-Calculator  |  16        |  Microsoft-Windows-Calculator/Diagnostic  |  Template formula lookup: Stop
-Microsoft-Windows-Calculator  |  17        |  Microsoft-Windows-Calculator/Debug       |  Template parsing error
-Microsoft-Windows-Calculator  |  18        |  Microsoft-Windows-Calculator/Debug       |  Template validation error
-Microsoft-Windows-Calculator  |  19        |  Microsoft-Windows-Calculator/Diagnostic  |  GetCategories: Start
-Microsoft-Windows-Calculator  |  20        |  Microsoft-Windows-Calculator/Diagnostic  |  GetCategories: Stop
-Microsoft-Windows-Calculator  |  21        |  Microsoft-Windows-Calculator/Debug       |  Unit Conversion error
-Microsoft-Windows-Calculator  |  22        |  Microsoft-Windows-Calculator/Diagnostic  |  Statistics Calculation has started
-Microsoft-Windows-Calculator  |  23        |  Microsoft-Windows-Calculator/Diagnostic  |  Statistics Calculation has been completed
-Microsoft-Windows-Calculator  |  24        |  Microsoft-Windows-Calculator/Diagnostic  |  Recalculation has started
-Microsoft-Windows-Calculator  |  25        |  Microsoft-Windows-Calculator/Diagnostic  |  Recalculation has been completed
-Microsoft-Windows-Calculator  |  26        |  Microsoft-Windows-Calculator/Diagnostic  |  Mode change event has started
-Microsoft-Windows-Calculator  |  27        |  Microsoft-Windows-Calculator/Diagnostic  |  Mode change has been completed
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                                  |  Task                   |  Opcode  |  Keyword     |  Message
+------------------------------|---------------|------------|-----------|-------------------------------------------|-------------------------|----------|--------------|-------------------------------------------
+Microsoft-Windows-Calculator  |  Information  |  1         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  HistoryToggle          |  Start   |  Calculator  |  HistoryToggle has started
+Microsoft-Windows-Calculator  |  Information  |  2         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  HistoryToggle          |  Stop    |  Calculator  |  History toggle has been closed
+Microsoft-Windows-Calculator  |  Information  |  3         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  CalcCommand            |  Start   |  Calculator  |  Calculator Command has started
+Microsoft-Windows-Calculator  |  Information  |  4         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  CalcCommand            |  Stop    |  Calculator  |  Calculator Command has been completed
+Microsoft-Windows-Calculator  |  Information  |  5         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  LaunchingApp           |  Start   |  Calculator  |  Launching of app has started
+Microsoft-Windows-Calculator  |  Information  |  6         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  LaunchingApp           |  Stop    |  Calculator  |  Launching of app has been closed
+Microsoft-Windows-Calculator  |  Information  |  7         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  ClosingApp             |  Start   |  Calculator  |  Closing of app has started
+Microsoft-Windows-Calculator  |  Information  |  8         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  ClosingApp             |  Stop    |  Calculator  |  App has been closed
+Microsoft-Windows-Calculator  |  Information  |  9         |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  TemplateRead           |  Start   |  Calculator  |  Reading templates: Start
+Microsoft-Windows-Calculator  |  Information  |  10        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  TemplateRead           |  Stop    |  Calculator  |  Reading templates: Stop
+Microsoft-Windows-Calculator  |  Information  |  11        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  TemplateLoad           |  Start   |  Calculator  |  Loading templates: Start
+Microsoft-Windows-Calculator  |  Information  |  12        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  TemplateLoad           |  Stop    |  Calculator  |  Loading templates: Stop
+Microsoft-Windows-Calculator  |  Information  |  13        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  TemplateInit           |  Start   |  Calculator  |  Initing template manager: Start
+Microsoft-Windows-Calculator  |  Information  |  14        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  TemplateInit           |  Stop    |  Calculator  |  Initing template manager: Stop
+Microsoft-Windows-Calculator  |  Information  |  15        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  TemplateLookUp         |  Start   |  Calculator  |  Template formula lookup: Start
+Microsoft-Windows-Calculator  |  Information  |  16        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  TemplateLookUp         |  Stop    |  Calculator  |  Template formula lookup: Stop
+Microsoft-Windows-Calculator  |  Error        |  17        |  0        |  Microsoft-Windows-Calculator/Debug       |                         |          |  Calculator  |  Template parsing error
+Microsoft-Windows-Calculator  |  Error        |  18        |  0        |  Microsoft-Windows-Calculator/Debug       |                         |          |  Calculator  |  Template validation error
+Microsoft-Windows-Calculator  |  Information  |  19        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  GetCategories          |  Start   |  Calculator  |  GetCategories: Start
+Microsoft-Windows-Calculator  |  Information  |  20        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  GetCategories          |  Stop    |  Calculator  |  GetCategories: Stop
+Microsoft-Windows-Calculator  |  Error        |  21        |  0        |  Microsoft-Windows-Calculator/Debug       |                         |          |  Calculator  |  Unit Conversion error
+Microsoft-Windows-Calculator  |  Information  |  22        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  StatisticsCalculation  |  Start   |  Calculator  |  Statistics Calculation has started
+Microsoft-Windows-Calculator  |  Information  |  23        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  StatisticsCalculation  |  Stop    |  Calculator  |  Statistics Calculation has been completed
+Microsoft-Windows-Calculator  |  Information  |  24        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  Recalculation          |  Start   |  Calculator  |  Recalculation has started
+Microsoft-Windows-Calculator  |  Information  |  25        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  Recalculation          |  Stop    |  Calculator  |  Recalculation has been completed
+Microsoft-Windows-Calculator  |  Information  |  26        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  ModeChange             |  Start   |  Calculator  |  Mode change event has started
+Microsoft-Windows-Calculator  |  Information  |  27        |  0        |  Microsoft-Windows-Calculator/Diagnostic  |  ModeChange             |  Stop    |  Calculator  |  Mode change has been completed

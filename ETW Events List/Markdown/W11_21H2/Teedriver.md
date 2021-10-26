@@ -1,26 +1,26 @@
-Provider   |  Event ID  |  Channel  |  Message
------------|------------|-----------|---------------------------------------------------------------------------
-Teedriver  |  100       |           |  Function {Function} returned NTSTATUS code {NtStatus}
-Teedriver  |  101       |           |  {FunctionName} Entry
-Teedriver  |  102       |           |  {FunctionName} Exit: Status {status}
-Teedriver  |  103       |           |  D0Entry Start: pwr state {PreviousState}
-Teedriver  |  104       |           |  {FunctionName} Exit with status {status}
-Teedriver  |  105       |           |  D0Exit Start: target state {PreviousState}
-Teedriver  |  106       |           |  {FunctionName} End: Status {status}
-Teedriver  |  107       |           |  {FunctionName} Start
-Teedriver  |  108       |           |  {FunctionName} Exit: status {status}
-Teedriver  |  109       |           |  HalHeciReset entry count {Count}
-Teedriver  |  110       |           |  {message}: Disable Heci Device: CIP Polling Error {status}
-Teedriver  |  111       |           |  {message}: PowerDevIdleExit failed: DOi3 value {register} status {status}
-Teedriver  |  112       |           |  {message} ME_CSR {H_CSR} H_CSR {ME_CSR}
-Teedriver  |  113       |           |  {Function} {Message} {status}
-Teedriver  |  114       |           |  Data Sent Over DMA: Header {header}, Length = {length}
-Teedriver  |  115       |           |  Data Sent Over CB: Header {header}, Length = {length}
-Teedriver  |  116       |           |  EvtDeviceFileCreate Completed: Status {status} Host Id {hostid}
-Teedriver  |  117       |           |  EvtDeviceFileClose Completed: Status {status} Host Id {hostid}
-Teedriver  |  118       |           |  Driver Ready, Finish Handshack with FW
-Teedriver  |  119       |           |  {data1} {data2} {data3} {data4}
-Teedriver  |  120       |           |  {data1} {data2} {data3} {data4}
-Teedriver  |  121       |           |  Start Data Sending Over DMA: Header {header}, Length = {length}
-Teedriver  |  122       |           |  Start Data Sending Over CB: Header {header}, Length = {length}
-Teedriver  |  123       |           |  All Data Received: Header {header}, Length = {length}
+Provider   |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword                     |  Message
+-----------|---------------|------------|-----------|-----------|--------|----------|------------------------------|---------------------------------------------------------------------------
+Teedriver  |               |  100       |  0        |           |        |          |  Default                     |  Function {Function} returned NTSTATUS code {NtStatus}
+Teedriver  |  Information  |  101       |  0        |           |        |          |  Default PlugnPlay ApiTrace  |  {FunctionName} Entry
+Teedriver  |  Information  |  102       |  0        |           |        |          |  Default PlugnPlay ApiTrace  |  {FunctionName} Exit: Status {status}
+Teedriver  |  Information  |  103       |  0        |           |        |          |  Default Power ApiTrace      |  D0Entry Start: pwr state {PreviousState}
+Teedriver  |  Information  |  104       |  0        |           |        |          |  Default Power ApiTrace      |  {FunctionName} Exit with status {status}
+Teedriver  |  Information  |  105       |  0        |           |        |          |  Default Power ApiTrace      |  D0Exit Start: target state {PreviousState}
+Teedriver  |  Information  |  106       |  0        |           |        |          |  Default Power ApiTrace      |  {FunctionName} End: Status {status}
+Teedriver  |  Information  |  107       |  0        |           |        |          |  Default PlugnPlay ApiTrace  |  {FunctionName} Start
+Teedriver  |  Information  |  108       |  0        |           |        |          |  Default PlugnPlay ApiTrace  |  {FunctionName} Exit: status {status}
+Teedriver  |  Information  |  109       |  0        |           |        |          |  Default                     |  HalHeciReset entry count {Count}
+Teedriver  |  Critical     |  110       |  0        |           |        |          |  Default                     |  {message}: Disable Heci Device: CIP Polling Error {status}
+Teedriver  |  Critical     |  111       |  0        |           |        |          |  Default                     |  {message}: PowerDevIdleExit failed: DOi3 value {register} status {status}
+Teedriver  |  Information  |  112       |  0        |           |        |          |  Default                     |  {message} ME_CSR {H_CSR} H_CSR {ME_CSR}
+Teedriver  |  Critical     |  113       |  0        |           |        |          |  Default                     |  {Function} {Message} {status}
+Teedriver  |  Information  |  114       |  0        |           |        |          |  Default                     |  Data Sent Over DMA: Header {header}, Length = {length}
+Teedriver  |  Information  |  115       |  0        |           |        |          |  Default                     |  Data Sent Over CB: Header {header}, Length = {length}
+Teedriver  |  Information  |  116       |  0        |           |        |          |  Default ApiTrace            |  EvtDeviceFileCreate Completed: Status {status} Host Id {hostid}
+Teedriver  |  Information  |  117       |  0        |           |        |          |  Default ApiTrace            |  EvtDeviceFileClose Completed: Status {status} Host Id {hostid}
+Teedriver  |  Information  |  118       |  0        |           |        |          |  Default Power               |  Driver Ready, Finish Handshack with FW
+Teedriver  |  Information  |  119       |  0        |           |        |          |  Default                     |  {data1} {data2} {data3} {data4}
+Teedriver  |  Information  |  120       |  0        |           |        |          |  Default                     |  {data1} {data2} {data3} {data4}
+Teedriver  |  Information  |  121       |  0        |           |        |          |  Default                     |  Start Data Sending Over DMA: Header {header}, Length = {length}
+Teedriver  |  Information  |  122       |  0        |           |        |          |  Default                     |  Start Data Sending Over CB: Header {header}, Length = {length}
+Teedriver  |  Information  |  123       |  0        |           |        |          |  Default                     |  All Data Received: Header {header}, Length = {length}

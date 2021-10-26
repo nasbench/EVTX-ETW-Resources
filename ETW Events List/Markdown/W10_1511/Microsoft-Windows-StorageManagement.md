@@ -1,8 +1,8 @@
-Provider                             |  Event ID  |  Channel                                          |  Message
--------------------------------------|------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-StorageManagement  |  1         |  Microsoft-Windows-StorageManagement/Operational  |  The Windows Storage Provider host service failed to start.  Error Code: {ErrorCode}
-Microsoft-Windows-StorageManagement  |  2         |  Microsoft-Windows-StorageManagement/Debug        |  {Message}{FileName}({LineNumber})
-Microsoft-Windows-StorageManagement  |  3         |  Microsoft-Windows-StorageManagement/Debug        |  {Message} {ErrorCode}{FileName}({LineNumber})
-Microsoft-Windows-StorageManagement  |  4         |  Microsoft-Windows-StorageManagement/Debug        |  {Message}{FileName}({LineNumber})
-Microsoft-Windows-StorageManagement  |  5         |  Microsoft-Windows-StorageManagement/Operational  |  An error has occurred during method execution.Class:		{ClassName}Method:		{MethodName}Error Code:	{ErrorCode}Error Message:{MessageString}
-Microsoft-Windows-StorageManagement  |  6         |  Microsoft-Windows-StorageManagement/Operational  |  An error has occurred during method execution.Class:		{ClassName}Method:		{MethodName}Error Code:	{ErrorCode}
+Provider                             |  Level        |  Event ID  |  Version  |  Channel                                          |  Task  |  Opcode  |  Keyword    |  Message
+-------------------------------------|---------------|------------|-----------|---------------------------------------------------|--------|----------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-StorageManagement  |  Critical     |  1         |  0        |  Microsoft-Windows-StorageManagement/Operational  |        |          |             |  The Windows Storage Provider host service failed to start.  Error Code: {ErrorCode}
+Microsoft-Windows-StorageManagement  |  Information  |  2         |  0        |  Microsoft-Windows-StorageManagement/Debug        |        |          |  EnterExit  |  {Message}{FileName}({LineNumber})
+Microsoft-Windows-StorageManagement  |  Error        |  3         |  0        |  Microsoft-Windows-StorageManagement/Debug        |        |          |             |  {Message} {ErrorCode}{FileName}({LineNumber})
+Microsoft-Windows-StorageManagement  |  Information  |  4         |  0        |  Microsoft-Windows-StorageManagement/Debug        |        |          |             |  {Message}{FileName}({LineNumber})
+Microsoft-Windows-StorageManagement  |  Error        |  5         |  0        |  Microsoft-Windows-StorageManagement/Operational  |        |          |             |  An error has occurred during method execution.Class:		{ClassName}Method:		{MethodName}Error Code:	{ErrorCode}Error Message:{MessageString}
+Microsoft-Windows-StorageManagement  |  Error        |  6         |  0        |  Microsoft-Windows-StorageManagement/Operational  |        |          |             |  An error has occurred during method execution.Class:		{ClassName}Method:		{MethodName}Error Code:	{ErrorCode}

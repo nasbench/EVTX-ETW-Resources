@@ -1,11 +1,11 @@
-Provider                  |  Event ID  |  Channel                              |  Message
---------------------------|------------|---------------------------------------|---------
-Microsoft-Windows-AltTab  |  1         |  Microsoft-Windows-AltTab/Diagnostic  |
-Microsoft-Windows-AltTab  |  2         |  Microsoft-Windows-AltTab/Diagnostic  |
-Microsoft-Windows-AltTab  |  3         |  Microsoft-Windows-AltTab/Diagnostic  |
-Microsoft-Windows-AltTab  |  11        |  Microsoft-Windows-AltTab/Diagnostic  |
-Microsoft-Windows-AltTab  |  12        |  Microsoft-Windows-AltTab/Diagnostic  |
-Microsoft-Windows-AltTab  |  21        |  Microsoft-Windows-AltTab/Diagnostic  |
-Microsoft-Windows-AltTab  |  22        |  Microsoft-Windows-AltTab/Diagnostic  |
-Microsoft-Windows-AltTab  |  31        |  Microsoft-Windows-AltTab/Diagnostic  |
-Microsoft-Windows-AltTab  |  32        |  Microsoft-Windows-AltTab/Diagnostic  |
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                              |  Task               |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|---------------------------------------|---------------------|----------|-----------|---------
+Microsoft-Windows-AltTab  |  Information  |  1         |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_Invoke      |  Start   |           |
+Microsoft-Windows-AltTab  |  Information  |  2         |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_Invoke      |  Stop    |           |
+Microsoft-Windows-AltTab  |  Information  |  3         |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_Invoke      |          |  Default  |
+Microsoft-Windows-AltTab  |  Information  |  11        |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_FocusNext   |  Start   |  Default  |
+Microsoft-Windows-AltTab  |  Information  |  12        |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_FocusNext   |  Stop    |  Default  |
+Microsoft-Windows-AltTab  |  Information  |  21        |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_Paint       |  Start   |  Default  |
+Microsoft-Windows-AltTab  |  Information  |  22        |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_Paint       |  Stop    |  Default  |
+Microsoft-Windows-AltTab  |  Information  |  31        |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_PaintIcons  |  Start   |  Default  |
+Microsoft-Windows-AltTab  |  Information  |  32        |  0        |  Microsoft-Windows-AltTab/Diagnostic  |  AltTab_PaintIcons  |  Stop    |  Default  |

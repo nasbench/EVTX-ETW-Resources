@@ -1,121 +1,121 @@
-Provider                    |  Event ID  |  Channel  |  Message
-----------------------------|------------|-----------|---------
-Microsoft-Windows-Dwm-Core  |  1         |           |
-Microsoft-Windows-Dwm-Core  |  2         |           |
-Microsoft-Windows-Dwm-Core  |  3         |           |
-Microsoft-Windows-Dwm-Core  |  4         |           |
-Microsoft-Windows-Dwm-Core  |  5         |           |
-Microsoft-Windows-Dwm-Core  |  6         |           |
-Microsoft-Windows-Dwm-Core  |  7         |           |
-Microsoft-Windows-Dwm-Core  |  8         |           |
-Microsoft-Windows-Dwm-Core  |  9         |           |
-Microsoft-Windows-Dwm-Core  |  10        |           |
-Microsoft-Windows-Dwm-Core  |  11        |           |
-Microsoft-Windows-Dwm-Core  |  12        |           |
-Microsoft-Windows-Dwm-Core  |  13        |           |
-Microsoft-Windows-Dwm-Core  |  14        |           |
-Microsoft-Windows-Dwm-Core  |  15        |           |
-Microsoft-Windows-Dwm-Core  |  16        |           |
-Microsoft-Windows-Dwm-Core  |  17        |           |
-Microsoft-Windows-Dwm-Core  |  18        |           |
-Microsoft-Windows-Dwm-Core  |  19        |           |
-Microsoft-Windows-Dwm-Core  |  20        |           |
-Microsoft-Windows-Dwm-Core  |  21        |           |
-Microsoft-Windows-Dwm-Core  |  22        |           |
-Microsoft-Windows-Dwm-Core  |  23        |           |
-Microsoft-Windows-Dwm-Core  |  24        |           |
-Microsoft-Windows-Dwm-Core  |  25        |           |
-Microsoft-Windows-Dwm-Core  |  26        |           |
-Microsoft-Windows-Dwm-Core  |  27        |           |
-Microsoft-Windows-Dwm-Core  |  28        |           |
-Microsoft-Windows-Dwm-Core  |  29        |           |
-Microsoft-Windows-Dwm-Core  |  30        |           |
-Microsoft-Windows-Dwm-Core  |  31        |           |
-Microsoft-Windows-Dwm-Core  |  32        |           |
-Microsoft-Windows-Dwm-Core  |  33        |           |
-Microsoft-Windows-Dwm-Core  |  34        |           |
-Microsoft-Windows-Dwm-Core  |  35        |           |
-Microsoft-Windows-Dwm-Core  |  36        |           |
-Microsoft-Windows-Dwm-Core  |  37        |           |
-Microsoft-Windows-Dwm-Core  |  38        |           |
-Microsoft-Windows-Dwm-Core  |  39        |           |
-Microsoft-Windows-Dwm-Core  |  40        |           |
-Microsoft-Windows-Dwm-Core  |  41        |           |
-Microsoft-Windows-Dwm-Core  |  42        |           |
-Microsoft-Windows-Dwm-Core  |  43        |           |
-Microsoft-Windows-Dwm-Core  |  44        |           |
-Microsoft-Windows-Dwm-Core  |  45        |           |
-Microsoft-Windows-Dwm-Core  |  46        |           |
-Microsoft-Windows-Dwm-Core  |  47        |           |
-Microsoft-Windows-Dwm-Core  |  48        |           |
-Microsoft-Windows-Dwm-Core  |  49        |           |
-Microsoft-Windows-Dwm-Core  |  50        |           |
-Microsoft-Windows-Dwm-Core  |  51        |           |
-Microsoft-Windows-Dwm-Core  |  52        |           |
-Microsoft-Windows-Dwm-Core  |  53        |           |
-Microsoft-Windows-Dwm-Core  |  54        |           |
-Microsoft-Windows-Dwm-Core  |  55        |           |
-Microsoft-Windows-Dwm-Core  |  56        |           |
-Microsoft-Windows-Dwm-Core  |  57        |           |
-Microsoft-Windows-Dwm-Core  |  58        |           |
-Microsoft-Windows-Dwm-Core  |  59        |           |
-Microsoft-Windows-Dwm-Core  |  60        |           |
-Microsoft-Windows-Dwm-Core  |  61        |           |
-Microsoft-Windows-Dwm-Core  |  62        |           |
-Microsoft-Windows-Dwm-Core  |  63        |           |
-Microsoft-Windows-Dwm-Core  |  64        |           |
-Microsoft-Windows-Dwm-Core  |  65        |           |
-Microsoft-Windows-Dwm-Core  |  66        |           |
-Microsoft-Windows-Dwm-Core  |  67        |           |
-Microsoft-Windows-Dwm-Core  |  68        |           |
-Microsoft-Windows-Dwm-Core  |  69        |           |
-Microsoft-Windows-Dwm-Core  |  70        |           |
-Microsoft-Windows-Dwm-Core  |  71        |           |
-Microsoft-Windows-Dwm-Core  |  72        |           |
-Microsoft-Windows-Dwm-Core  |  73        |           |
-Microsoft-Windows-Dwm-Core  |  74        |           |
-Microsoft-Windows-Dwm-Core  |  75        |           |
-Microsoft-Windows-Dwm-Core  |  76        |           |
-Microsoft-Windows-Dwm-Core  |  77        |           |
-Microsoft-Windows-Dwm-Core  |  78        |           |
-Microsoft-Windows-Dwm-Core  |  79        |           |
-Microsoft-Windows-Dwm-Core  |  80        |           |
-Microsoft-Windows-Dwm-Core  |  81        |           |
-Microsoft-Windows-Dwm-Core  |  82        |           |
-Microsoft-Windows-Dwm-Core  |  83        |           |
-Microsoft-Windows-Dwm-Core  |  84        |           |
-Microsoft-Windows-Dwm-Core  |  85        |           |
-Microsoft-Windows-Dwm-Core  |  86        |           |
-Microsoft-Windows-Dwm-Core  |  87        |           |
-Microsoft-Windows-Dwm-Core  |  88        |           |
-Microsoft-Windows-Dwm-Core  |  89        |           |
-Microsoft-Windows-Dwm-Core  |  90        |           |
-Microsoft-Windows-Dwm-Core  |  91        |           |
-Microsoft-Windows-Dwm-Core  |  92        |           |
-Microsoft-Windows-Dwm-Core  |  93        |           |
-Microsoft-Windows-Dwm-Core  |  94        |           |
-Microsoft-Windows-Dwm-Core  |  95        |           |
-Microsoft-Windows-Dwm-Core  |  96        |           |
-Microsoft-Windows-Dwm-Core  |  97        |           |
-Microsoft-Windows-Dwm-Core  |  98        |           |
-Microsoft-Windows-Dwm-Core  |  99        |           |
-Microsoft-Windows-Dwm-Core  |  100       |           |
-Microsoft-Windows-Dwm-Core  |  101       |           |
-Microsoft-Windows-Dwm-Core  |  102       |           |
-Microsoft-Windows-Dwm-Core  |  103       |           |
-Microsoft-Windows-Dwm-Core  |  104       |           |
-Microsoft-Windows-Dwm-Core  |  105       |           |
-Microsoft-Windows-Dwm-Core  |  106       |           |
-Microsoft-Windows-Dwm-Core  |  107       |           |
-Microsoft-Windows-Dwm-Core  |  108       |           |
-Microsoft-Windows-Dwm-Core  |  109       |           |
-Microsoft-Windows-Dwm-Core  |  110       |           |
-Microsoft-Windows-Dwm-Core  |  111       |           |
-Microsoft-Windows-Dwm-Core  |  112       |           |
-Microsoft-Windows-Dwm-Core  |  113       |           |
-Microsoft-Windows-Dwm-Core  |  114       |           |
-Microsoft-Windows-Dwm-Core  |  115       |           |
-Microsoft-Windows-Dwm-Core  |  116       |           |
-Microsoft-Windows-Dwm-Core  |  117       |           |
-Microsoft-Windows-Dwm-Core  |  118       |           |
-Microsoft-Windows-Dwm-Core  |  119       |           |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel  |  Task                                                        |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|-----------|--------------------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-Dwm-Core  |  Information  |  1         |  0        |           |  SCHEDULE_FRAMEINFO                                          |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  2         |  0        |           |  SCHEDULE_TIME                                               |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  3         |  0        |           |  SCHEDULE_TUNINGPARAMS                                       |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  4         |  0        |           |  SCHEDULE_STATISTICS                                         |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  5         |  0        |           |  SCHEDULE_RATEINFO                                           |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  6         |  0        |           |  SCHEDULE_WFVB                                               |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  7         |  0        |           |  SCHEDULE_WFVB                                               |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  8         |  0        |           |  SCHEDULE_WFW                                                |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  9         |  0        |           |  SCHEDULE_WFW                                                |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  10        |  0        |           |  SCHEDULE_PROCESS_FRAME                                      |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  11        |  0        |           |  SCHEDULE_PROCESS_FRAME                                      |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  12        |  0        |           |  SCHEDULE_PROCESS_FRAME                                      |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  13        |  0        |           |  SCHEDULE_RENDER                                             |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  14        |  0        |           |  SCHEDULE_RENDER                                             |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  15        |  0        |           |  SCHEDULE_PRESENT                                            |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  16        |  0        |           |  SCHEDULE_PRESENT                                            |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  17        |  0        |           |  SCHEDULE_GETPRESENTCOUNT                                    |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  18        |  0        |           |  SCHEDULE_GETPRESENTCOUNT                                    |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  19        |  0        |           |  SCHEDULE_GETPRESENTSTATS                                    |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  20        |  0        |           |  SCHEDULE_GETPRESENTSTATS                                    |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  21        |  0        |           |  SCHEDULE_GETPRESENTSTATS                                    |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  22        |  0        |           |  SCHEDULE_SCHEME                                             |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  23        |  0        |           |  SCHEDULE_SCHEME                                             |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  24        |  0        |           |  SCHEDULE_GLITCH                                             |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  25        |  0        |           |  SCHEDULE_GLITCH_RECOVERY_ATTEMPT                            |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  26        |  0        |           |  SCHEDULE_RESET                                              |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  27        |  0        |           |  SCHEDULE_RESET                                              |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  28        |  0        |           |  SCHEDULE_QPC_FAILURE                                        |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  29        |  0        |           |  ETWGUID_LAYEREVENT                                          |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  30        |  0        |           |  ETWGUID_LAYEREVENT                                          |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  31        |  0        |           |  ETWGUID_LAYEREVENT                                          |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  32        |  0        |           |  ETWGUID_LAYEREVENT                                          |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  33        |  0        |           |  ETWGUID_VIDEOMIX                                            |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  34        |  0        |           |  ETWGUID_VIDEOMIX                                            |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  35        |  0        |           |  ETWGUID_VIDEOGLITCH                                         |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  36        |  0        |           |  ETWGUID_VIDEOBEGINFRAME                                     |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  37        |  0        |           |  ETWGUID_SWFALLBACK                                          |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  38        |  0        |           |  ETWGUID_NOHWAVAILABLE                                       |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  39        |  0        |           |  ETWGUID_OUTOFVIDEOMEMORY                                    |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  40        |  0        |           |  ETWGUID_GENERICMILEVENT                                     |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  41        |  0        |           |  ETWGUID_BITMAPCOPYEVENT                                     |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  42        |  0        |           |  ETWGUID_COPYFRONTTOBACKBUFFEREVENT                          |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  43        |  0        |           |  ETWGUID_COPYFRONTTOBACKBUFFEREVENT                          |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  44        |  0        |           |  ETWGUID_BITMAPEVENT                                         |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  45        |  0        |           |  ETWGUID_LAYER                                               |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  46        |  0        |           |  ETWGUID_LAYER                                               |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  47        |  0        |           |  ETWGUID_CLIPEVENT                                           |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  48        |  0        |           |  ETWGUID_CLEAREVENT                                          |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  49        |  0        |           |  ETWGUID_CLEAREVENT                                          |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  50        |  0        |           |  ETWGUID_DIRTYREGIONEVENT                                    |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  51        |  0        |           |  ETWGUID_OCCLUSIONEVENT                                      |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  52        |  0        |           |  ETWGUID_OCCLUSIONEVENT                                      |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  53        |  0        |           |  ETWGUID_OCCLUSIONEVENT                                      |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  54        |  0        |           |  ETWGUID_DWMUPDATEWINDOW                                     |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  55        |  0        |           |  ETWGUID_BLUR                                                |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  56        |  0        |           |  ETWGUID_BLUR                                                |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  57        |  0        |           |  ETWGUID_DRAWEVENT                                           |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  58        |  0        |           |  ETWGUID_DRAWEVENT                                           |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  59        |  0        |           |  ETWGUID_DRAWEVENT                                           |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  60        |  0        |           |  ETWGUID_DESKTOPRTCREATE                                     |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  61        |  0        |           |  ETWGUID_DESKTOPRTCREATE                                     |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  62        |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSQUEUEEVENT                        |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  63        |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSQUEUEEVENT                        |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  64        |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSQUEUEEVENT                        |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  65        |  0        |           |  MILEVENT_MEDIA_UCE_PRECOMPUTEEVENT                          |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  66        |  0        |           |  MILEVENT_MEDIA_UCE_PRECOMPUTEEVENT                          |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  67        |  0        |           |  MILEVENT_MEDIA_UCE_RENDEREVENT                              |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  68        |  0        |           |  MILEVENT_MEDIA_UCE_RENDEREVENT                              |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  69        |  0        |           |  MILEVENT_MEDIA_UCE_PRESENTEVENT                             |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  70        |  0        |           |  MILEVENT_MEDIA_UCE_PRESENTEVENT                             |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  71        |  0        |           |  MILEVENT_MEDIA_UCE_WINRESPONSEEVENT                         |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  72        |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSPRESENTHISTORY                    |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  73        |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSPRESENTHISTORY_GetPresentHistory  |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  74        |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSPRESENTHISTORY                    |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  75        |  0        |           |  MILEVENT_MEDIA_UCE_CHECKDEVICESTATE                         |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  76        |  0        |           |  MILEVENT_MEDIA_UCE_CHECKDEVICESTATE                         |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  77        |  0        |           |  MILEVENT_MEDIA_UCE_CHECKDEVICESTATE                         |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  78        |  0        |           |  ETWGUID_FLIPCHAIN                                           |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  79        |  0        |           |  ETWGUID_FLIPCHAIN                                           |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  80        |  0        |           |  ETWGUID_FLIPCHAIN_DURATION                                  |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  81        |  0        |           |  ETWGUID_FLUSHPENDINGDXUPDATES                               |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  82        |  0        |           |  ETWGUID_FLUSHPENDINGDXUPDATES                               |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  83        |  0        |           |  ETWGUID_FLUSHPENDINGDXUPDATES                               |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  84        |  0        |           |  ETWGUID_FLIPCHAIN_DRAW                                      |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  85        |  0        |           |  ETWGUID_FLIPCHAIN_BUFFER                                    |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  86        |  0        |           |  ETWGUID_FLIPCHAIN_GLITCH                                    |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  87        |  0        |           |  ETWGUID_FLIPCHAIN_SETPRESENTPARAMETERS                      |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  88        |  0        |           |  SCHEDULE_VBLANK_LOOP                                        |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  89        |  0        |           |  SCHEDULE_VBLANK_LOOP                                        |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  90        |  0        |           |  RENDER_SWAPCHAIN_BUFFER                                     |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  91        |  0        |           |  CONFIRM_SWAPCHAIN_BUFFER                                    |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  92        |  0        |           |  SCHEDULE_RENDER_LOGICAL_SURFACE                             |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  93        |  0        |           |  GDISPRITE_LOGICALSURFACE_ASSOCIATION                        |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  94        |  0        |           |  WINDOWNODE_GDISPRITE_ASSOCIATION                            |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  95        |  0        |           |  SCHEDULE_ROUNDTRIPREQUEST_STATE                             |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  96        |  0        |           |  SCHEDULE_PRESENTHISTORYTOKEN_FLIP                           |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  97        |  0        |           |  SCHEDULE_PRESENTHISTORYTOKEN_GDI                            |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  98        |  0        |           |  SCHEDULE_PRESENTHISTORYTOKEN_GDISYSMEM                      |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  99        |  0        |           |  SCHEDULE_SWAPCHAIN_APPLYUPDATES                             |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  100       |  0        |           |  SCHEDULE_SWAPCHAIN_APPLYUPDATES                             |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  101       |  0        |           |  SCHEDULE_PRESENTHISTORYTOKEN_BLT                            |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  102       |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSUNCLAIMEDTOKENS                   |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  103       |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSUNCLAIMEDTOKENS                   |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  104       |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSDEFERREDTOKENS                    |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  105       |  0        |           |  MILEVENT_MEDIA_UCE_PROCESSDEFERREDTOKENS                    |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  106       |  0        |           |  ETWGUID_METABITMAPRENDERTARGET_CAPTUREBITS                  |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  107       |  0        |           |  ETWGUID_METABITMAPRENDERTARGET_CAPTUREBITS                  |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  108       |  0        |           |  BIND_SET_LS_IMAGE_ON_WINDOWNODE_TO_NEW                      |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  109       |  0        |           |  BIND_SET_LS_IMAGE_ON_WINDOWNODE_FOR_BOUNDS                  |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  110       |  0        |           |  BIND_GDISPRITEBITMAP_FIRST_TOKEN                            |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  111       |  0        |           |  ETWGUID_FLIPCHAIN                                           |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  112       |  0        |           |  ETWGUID_COPYFRONTTOBACKBUFFEREVENT                          |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  113       |  0        |           |  SCHEDULE_WORK_LOOP                                          |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  114       |  0        |           |  SCHEDULE_WORK_LOOP                                          |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  115       |  0        |           |  MILEVENT_MEDIA_UCE_RENDEREVENT                              |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  116       |  0        |           |  ETWGUID_DWMCLIPWINDOW                                       |  Start   |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  117       |  0        |           |  ETWGUID_DWMCLIPWINDOW                                       |          |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  118       |  0        |           |  ETWGUID_DWMCLIPWINDOW                                       |  Stop    |  DwmCore  |
+Microsoft-Windows-Dwm-Core  |  Information  |  119       |  0        |           |  ETWGUID_PRE_DWMCLIPWINDOW                                   |          |  DwmCore  |

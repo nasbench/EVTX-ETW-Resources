@@ -1,3 +1,3 @@
-Provider                                 |  Event ID  |  Channel  |  Message
------------------------------------------|------------|-----------|---------
-Microsoft-Windows-PnPMgrTriggerProvider  |  1         |           |
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                     |  Keyword                     |  Message
+-----------------------------------------|---------------|------------|-----------|-----------|--------|-----------------------------|------------------------------|---------
+Microsoft-Windows-PnPMgrTriggerProvider  |  Information  |  1         |  0        |           |        |  Opcode_DeviceArrivalEvent  |  Keyword_DeviceArrivalEvent  |

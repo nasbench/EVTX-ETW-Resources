@@ -1,84 +1,84 @@
-Provider                   |  Event ID  |  Channel  |  Message
----------------------------|------------|-----------|---------
-Microsoft-Windows-Dwm-Api  |  1         |           |
-Microsoft-Windows-Dwm-Api  |  2         |           |
-Microsoft-Windows-Dwm-Api  |  3         |           |
-Microsoft-Windows-Dwm-Api  |  4         |           |
-Microsoft-Windows-Dwm-Api  |  5         |           |
-Microsoft-Windows-Dwm-Api  |  6         |           |
-Microsoft-Windows-Dwm-Api  |  7         |           |
-Microsoft-Windows-Dwm-Api  |  8         |           |
-Microsoft-Windows-Dwm-Api  |  9         |           |
-Microsoft-Windows-Dwm-Api  |  10        |           |
-Microsoft-Windows-Dwm-Api  |  11        |           |
-Microsoft-Windows-Dwm-Api  |  12        |           |
-Microsoft-Windows-Dwm-Api  |  13        |           |
-Microsoft-Windows-Dwm-Api  |  14        |           |
-Microsoft-Windows-Dwm-Api  |  15        |           |
-Microsoft-Windows-Dwm-Api  |  16        |           |
-Microsoft-Windows-Dwm-Api  |  17        |           |
-Microsoft-Windows-Dwm-Api  |  18        |           |
-Microsoft-Windows-Dwm-Api  |  19        |           |
-Microsoft-Windows-Dwm-Api  |  20        |           |
-Microsoft-Windows-Dwm-Api  |  21        |           |
-Microsoft-Windows-Dwm-Api  |  22        |           |
-Microsoft-Windows-Dwm-Api  |  23        |           |
-Microsoft-Windows-Dwm-Api  |  24        |           |
-Microsoft-Windows-Dwm-Api  |  25        |           |
-Microsoft-Windows-Dwm-Api  |  26        |           |
-Microsoft-Windows-Dwm-Api  |  27        |           |
-Microsoft-Windows-Dwm-Api  |  28        |           |
-Microsoft-Windows-Dwm-Api  |  29        |           |
-Microsoft-Windows-Dwm-Api  |  30        |           |
-Microsoft-Windows-Dwm-Api  |  31        |           |
-Microsoft-Windows-Dwm-Api  |  32        |           |
-Microsoft-Windows-Dwm-Api  |  33        |           |
-Microsoft-Windows-Dwm-Api  |  34        |           |
-Microsoft-Windows-Dwm-Api  |  35        |           |
-Microsoft-Windows-Dwm-Api  |  36        |           |
-Microsoft-Windows-Dwm-Api  |  37        |           |
-Microsoft-Windows-Dwm-Api  |  38        |           |
-Microsoft-Windows-Dwm-Api  |  39        |           |
-Microsoft-Windows-Dwm-Api  |  40        |           |
-Microsoft-Windows-Dwm-Api  |  41        |           |
-Microsoft-Windows-Dwm-Api  |  42        |           |
-Microsoft-Windows-Dwm-Api  |  43        |           |
-Microsoft-Windows-Dwm-Api  |  44        |           |
-Microsoft-Windows-Dwm-Api  |  45        |           |
-Microsoft-Windows-Dwm-Api  |  46        |           |
-Microsoft-Windows-Dwm-Api  |  47        |           |
-Microsoft-Windows-Dwm-Api  |  48        |           |
-Microsoft-Windows-Dwm-Api  |  49        |           |
-Microsoft-Windows-Dwm-Api  |  50        |           |
-Microsoft-Windows-Dwm-Api  |  51        |           |
-Microsoft-Windows-Dwm-Api  |  52        |           |
-Microsoft-Windows-Dwm-Api  |  53        |           |
-Microsoft-Windows-Dwm-Api  |  54        |           |
-Microsoft-Windows-Dwm-Api  |  55        |           |
-Microsoft-Windows-Dwm-Api  |  56        |           |
-Microsoft-Windows-Dwm-Api  |  57        |           |
-Microsoft-Windows-Dwm-Api  |  58        |           |
-Microsoft-Windows-Dwm-Api  |  59        |           |
-Microsoft-Windows-Dwm-Api  |  60        |           |
-Microsoft-Windows-Dwm-Api  |  61        |           |
-Microsoft-Windows-Dwm-Api  |  62        |           |
-Microsoft-Windows-Dwm-Api  |  63        |           |
-Microsoft-Windows-Dwm-Api  |  64        |           |
-Microsoft-Windows-Dwm-Api  |  65        |           |
-Microsoft-Windows-Dwm-Api  |  66        |           |
-Microsoft-Windows-Dwm-Api  |  67        |           |
-Microsoft-Windows-Dwm-Api  |  68        |           |
-Microsoft-Windows-Dwm-Api  |  69        |           |
-Microsoft-Windows-Dwm-Api  |  70        |           |
-Microsoft-Windows-Dwm-Api  |  71        |           |
-Microsoft-Windows-Dwm-Api  |  72        |           |
-Microsoft-Windows-Dwm-Api  |  73        |           |
-Microsoft-Windows-Dwm-Api  |  74        |           |
-Microsoft-Windows-Dwm-Api  |  75        |           |
-Microsoft-Windows-Dwm-Api  |  76        |           |
-Microsoft-Windows-Dwm-Api  |  77        |           |
-Microsoft-Windows-Dwm-Api  |  78        |           |
-Microsoft-Windows-Dwm-Api  |  79        |           |
-Microsoft-Windows-Dwm-Api  |  80        |           |
-Microsoft-Windows-Dwm-Api  |  81        |           |
-Microsoft-Windows-Dwm-Api  |  82        |           |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel  |  Task                                     |  Opcode  |  Keyword  |  Message
+---------------------------|---------------|------------|-----------|-----------|-------------------------------------------|----------|-----------|---------
+Microsoft-Windows-Dwm-Api  |  Information  |  1         |  0        |           |  ApiEnableBlurBehindWindow                |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  2         |  0        |           |  ApiEnableBlurBehindWindow                |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  3         |  0        |           |  ApiExtendFrameIntoClientArea             |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  4         |  0        |           |  ApiExtendFrameIntoClientArea             |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  5         |  0        |           |  ApiGetColorizationColor                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  6         |  0        |           |  ApiGetColorizationColor                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  7         |  0        |           |  ApiGetCompositionTimingInfo              |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  8         |  0        |           |  ApiGetCompositionTimingInfo              |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  9         |  0        |           |  ApiGetWindowAttribute                    |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  10        |  0        |           |  ApiGetWindowAttribute                    |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  11        |  0        |           |  ApiSetWindowAttribute                    |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  12        |  0        |           |  ApiSetWindowAttribute                    |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  13        |  0        |           |  ApiIsCompositionEnabled                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  14        |  0        |           |  ApiIsCompositionEnabled                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  15        |  0        |           |  ApiRegisterThumbnail                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  16        |  0        |           |  ApiRegisterThumbnail                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  17        |  0        |           |  ApiUnregisterThumbnail                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  18        |  0        |           |  ApiUnregisterThumbnail                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  19        |  0        |           |  ApiUpdateThumbnailProperties             |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  20        |  0        |           |  ApiUpdateThumbnailProperties             |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  21        |  0        |           |  ApiSetPresentParameters                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  22        |  0        |           |  ApiSetPresentParameters                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  23        |  0        |           |  ApiEnableMMCSS                           |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  24        |  0        |           |  ApiEnableMMCSS                           |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  25        |  0        |           |  ApiFlush                                 |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  26        |  0        |           |  ApiFlush                                 |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  27        |  0        |           |  ApiSetIconicThumbnail                    |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  28        |  0        |           |  ApiSetIconicThumbnail                    |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  29        |  0        |           |  ApipAttachMilContent                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  30        |  0        |           |  ApipAttachMilContent                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  31        |  0        |           |  ApipDetachMilContent                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  32        |  0        |           |  ApipDetachMilContent                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  33        |  0        |           |  ApipOpenGraphicsStream                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  34        |  0        |           |  ApipOpenGraphicsStream                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  35        |  0        |           |  ApipCloseGraphicsStream                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  36        |  0        |           |  ApipCloseGraphicsStream                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  37        |  0        |           |  ApipEnumGraphicsStreamClients            |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  38        |  0        |           |  ApipEnumGraphicsStreamClients            |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  39        |  0        |           |  ApipQueryGraphicsStream                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  40        |  0        |           |  ApipQueryGraphicsStream                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  41        |  0        |           |  ApipSetColorizationColor                 |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  42        |  0        |           |  ApipSetColorizationColor                 |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  43        |  0        |           |  ApipStartupViaUserInit                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  44        |  0        |           |  ApipStartupViaUserInit                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  45        |  0        |           |  ApipDxGetWindowSharedSurface             |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  46        |  0        |           |  ApipDxGetWindowSharedSurface             |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  47        |  0        |           |  ApipDxUpdateWindowSharedSurface          |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  48        |  0        |           |  ApipDxUpdateWindowSharedSurface          |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  49        |  0        |           |  ApipEnableComposition                    |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  50        |  0        |           |  ApipEnableComposition                    |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  51        |  0        |           |  ApipQueryThumbnailSourceSize             |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  52        |  0        |           |  ApipQueryThumbnailSourceSize             |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  53        |  0        |           |  ApipGetSpecialWindow                     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  54        |  0        |           |  ApipGetSpecialWindow                     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  55        |  0        |           |  ApipRestartComposition                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  56        |  0        |           |  ApipRestartComposition                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  57        |  0        |           |  ApipIsCompositionCapable                 |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  58        |  0        |           |  ApipIsCompositionCapable                 |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  59        |  0        |           |  ApipGetAssessment                        |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  60        |  0        |           |  ApipGetAssessment                        |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  61        |  0        |           |  ApipGetAssessmentUsage                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  62        |  0        |           |  ApipGetAssessmentUsage                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  63        |  0        |           |  ApipSetAssessmentUsage                   |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  64        |  0        |           |  ApipSetAssessmentUsage                   |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  65        |  0        |           |  ApipSetGraphicsStreamTransformHInt       |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  66        |  0        |           |  ApipSetGraphicsStreamTransformHInt       |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  67        |  0        |           |  ApipEnumGraphicsStreamTransformHInts     |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  68        |  0        |           |  ApipEnumGraphicsStreamTransformHInts     |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  69        |  0        |           |  ApipGetGlobalState                       |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  70        |  0        |           |  ApipGetGlobalState                       |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  71        |  0        |           |  ApiSnapshotIconicThumbnail               |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  72        |  0        |           |  ApiSnapshotIconicThumbnail               |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  73        |  0        |           |  ApipActivateLivePreview                  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  74        |  0        |           |  ApipActivateLivePreview                  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  75        |  0        |           |  ApiSetIconicLivePreviewBitmap            |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  76        |  0        |           |  ApiSetIconicLivePreviewBitmap            |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  77        |  0        |           |  ApiInvalidateIconicBitmaps               |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  78        |  0        |           |  ApiInvalidateIconicBitmaps               |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  79        |  0        |           |  ApipDxUpdateWindowRedirectionBltSurface  |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  80        |  0        |           |  ApipDxUpdateWindowRedirectionBltSurface  |  Stop    |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  81        |  0        |           |  ApipDxSetContentHostingInformation       |  Start   |  DwmApi   |
+Microsoft-Windows-Dwm-Api  |  Information  |  82        |  0        |           |  ApipDxSetContentHostingInformation       |  Stop    |  DwmApi   |

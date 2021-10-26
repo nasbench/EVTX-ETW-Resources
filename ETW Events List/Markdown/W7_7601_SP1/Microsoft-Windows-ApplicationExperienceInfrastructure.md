@@ -1,4 +1,4 @@
-Provider                                               |  Event ID  |  Channel      |  Message
--------------------------------------------------------|------------|---------------|------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-ApplicationExperienceInfrastructure  |  1         |  Application  |  The application ({AppName}, from vendor {VendorName}) has the following problem: {Summary}
-Microsoft-Windows-ApplicationExperienceInfrastructure  |  2         |  Application  |  The application ({AppName}, from vendor {VendorName}) was hard-blocked and raised the following: {Summary}
+Provider                                               |  Level     |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------------------------------|------------|------------|-----------|---------------|--------|----------|-----------|------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-ApplicationExperienceInfrastructure  |  Warning   |  1         |  0        |  Application  |        |  Stop    |           |  The application ({AppName}, from vendor {VendorName}) has the following problem: {Summary}
+Microsoft-Windows-ApplicationExperienceInfrastructure  |  Critical  |  2         |  0        |  Application  |        |          |           |  The application ({AppName}, from vendor {VendorName}) was hard-blocked and raised the following: {Summary}

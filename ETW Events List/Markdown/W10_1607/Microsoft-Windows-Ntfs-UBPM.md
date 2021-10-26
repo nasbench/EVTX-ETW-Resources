@@ -1,3 +1,3 @@
-Provider                     |  Event ID  |  Channel  |  Message
------------------------------|------------|-----------|---------
-Microsoft-Windows-Ntfs-UBPM  |  0         |           |
+Provider                     |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-Ntfs-UBPM  |  Information  |  0         |  0        |           |        |          |           |

@@ -1,3 +1,3 @@
-Provider                                 |  Event ID  |  Channel  |  Message
------------------------------------------|------------|-----------|-----------------------------------------------------------------------------------
-Microsoft-Windows-FunctionDiscoveryHost  |  1000      |  System   |  Registration of the provider {String} failed with the following error: {HRESULT}.
+Provider                                 |  Level  |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword                                     |  Message
+-----------------------------------------|---------|------------|-----------|-----------|--------|----------|----------------------------------------------|-----------------------------------------------------------------------------------
+Microsoft-Windows-FunctionDiscoveryHost  |  Error  |  1000      |  0        |  System   |        |          |  Event originating from the fdphost service  |  Registration of the provider {String} failed with the following error: {HRESULT}.

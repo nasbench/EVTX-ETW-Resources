@@ -1,6 +1,6 @@
-Provider                        |  Event ID  |  Channel                                      |  Message
---------------------------------|------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------
-Microsoft-Windows-KnownFolders  |  1000      |  Microsoft-Windows-Known Folders Operational  |  Error {hrError} occurred while creating known folder {FolderId} with path '{Path}'.
-Microsoft-Windows-KnownFolders  |  1001      |  Microsoft-Windows-Known Folders Operational  |  Error {hrError} occurred while initializing known folder {FolderId} with ini file path '{Path}'.
-Microsoft-Windows-KnownFolders  |  1002      |  Microsoft-Windows-Known Folders Operational  |  Error {hrError} occurred while verifying known folder {FolderId} with path '{Path}'.
-Microsoft-Windows-KnownFolders  |  1003      |  Microsoft-Windows-Known Folders Operational  |  Error {hrError} occurred while initializing known folder {FolderId} with path '{Path}'.
+Provider                        |  Level    |  Event ID  |  Version  |  Channel                                      |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------|-----------|------------|-----------|-----------------------------------------------|--------|----------|-----------|--------------------------------------------------------------------------------------------------
+Microsoft-Windows-KnownFolders  |  Warning  |  1000      |  0        |  Microsoft-Windows-Known Folders Operational  |        |          |           |  Error {hrError} occurred while creating known folder {FolderId} with path '{Path}'.
+Microsoft-Windows-KnownFolders  |  Warning  |  1001      |  0        |  Microsoft-Windows-Known Folders Operational  |        |          |           |  Error {hrError} occurred while initializing known folder {FolderId} with ini file path '{Path}'.
+Microsoft-Windows-KnownFolders  |  Warning  |  1002      |  0        |  Microsoft-Windows-Known Folders Operational  |        |          |           |  Error {hrError} occurred while verifying known folder {FolderId} with path '{Path}'.
+Microsoft-Windows-KnownFolders  |  Warning  |  1003      |  0        |  Microsoft-Windows-Known Folders Operational  |        |          |           |  Error {hrError} occurred while initializing known folder {FolderId} with path '{Path}'.

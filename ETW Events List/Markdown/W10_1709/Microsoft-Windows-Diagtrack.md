@@ -1,36 +1,36 @@
-Provider                     |  Event ID  |  Channel  |  Message
------------------------------|------------|-----------|---------
-Microsoft-Windows-Diagtrack  |  203       |           |
-Microsoft-Windows-Diagtrack  |  203       |           |
-Microsoft-Windows-Diagtrack  |  203       |           |
-Microsoft-Windows-Diagtrack  |  203       |           |
-Microsoft-Windows-Diagtrack  |  203       |           |
-Microsoft-Windows-Diagtrack  |  204       |           |
-Microsoft-Windows-Diagtrack  |  207       |           |
-Microsoft-Windows-Diagtrack  |  209       |           |
-Microsoft-Windows-Diagtrack  |  300       |           |
-Microsoft-Windows-Diagtrack  |  600       |           |
-Microsoft-Windows-Diagtrack  |  601       |           |
-Microsoft-Windows-Diagtrack  |  602       |           |
-Microsoft-Windows-Diagtrack  |  603       |           |
-Microsoft-Windows-Diagtrack  |  606       |           |
-Microsoft-Windows-Diagtrack  |  700       |           |
-Microsoft-Windows-Diagtrack  |  752       |           |
-Microsoft-Windows-Diagtrack  |  755       |           |
-Microsoft-Windows-Diagtrack  |  756       |           |
-Microsoft-Windows-Diagtrack  |  757       |           |
-Microsoft-Windows-Diagtrack  |  758       |           |
-Microsoft-Windows-Diagtrack  |  759       |           |
-Microsoft-Windows-Diagtrack  |  800       |           |
-Microsoft-Windows-Diagtrack  |  900       |           |
-Microsoft-Windows-Diagtrack  |  901       |           |
-Microsoft-Windows-Diagtrack  |  1102      |           |
-Microsoft-Windows-Diagtrack  |  1105      |           |
-Microsoft-Windows-Diagtrack  |  1200      |           |
-Microsoft-Windows-Diagtrack  |  1201      |           |
-Microsoft-Windows-Diagtrack  |  1202      |           |
-Microsoft-Windows-Diagtrack  |  1400      |           |
-Microsoft-Windows-Diagtrack  |  4001      |           |
-Microsoft-Windows-Diagtrack  |  4100      |           |
-Microsoft-Windows-Diagtrack  |  4200      |           |
-Microsoft-Windows-Diagtrack  |  9999      |           |
+Provider                     |  Level        |  Event ID  |  Version  |  Channel  |  Task                                             |  Opcode  |  Keyword           |  Message
+-----------------------------|---------------|------------|-----------|-----------|---------------------------------------------------|----------|--------------------|---------
+Microsoft-Windows-Diagtrack  |  Information  |  203       |  0        |           |  MatchEngine_ScenarioCompleted                    |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Verbose      |  203       |  1        |           |  MatchEngine_ScenarioCompleted                    |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Verbose      |  203       |  2        |           |  MatchEngine_ScenarioCompleted                    |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Verbose      |  203       |  3        |           |  MatchEngine_ScenarioCompleted                    |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Verbose      |  203       |  4        |           |  MatchEngine_ScenarioCompleted                    |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  204       |  0        |           |  MatchEngine_ManifestUpdatePruneScenarioList      |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  207       |  0        |           |  MatchEngine_CompletedManifestUpdate              |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  209       |  0        |           |  MatchEngine_ManifestUpdateMaintainScenarioList   |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  300       |  1        |           |  InFlightScenario_AddMatchedTrigger               |          |  DiagTrack Spew    |
+Microsoft-Windows-Diagtrack  |  Information  |  600       |  0        |           |  ScenarioManager_AcceptScenario                   |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  601       |  0        |           |  ScenarioManager_RejectScenario                   |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Error        |  602       |  0        |           |  ScenarioManager_InvalidScenario                  |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  603       |  0        |           |  ScenarioManager_LoadingScenariosStart            |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  606       |  0        |           |  ScenarioManager_LoadingScenariosStop             |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  700       |  0        |           |  DTSQMLogger_UploadScenario                       |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  752       |  0        |           |  AsimovUploader_AddEvent                          |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  755       |  1        |           |  AsimovUploader_PersistEvent                      |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  756       |  0        |           |  AsimovUploader_UploadEventBuffer                 |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  757       |  0        |           |  AsimovUploader_NormalUploadSucceeded             |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  758       |  0        |           |  AsimovUploader_RealtimeUploadSucceeded           |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  759       |  0        |           |  AsimovUploader_CostDeferredUploadSucceeded       |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  800       |  0        |           |  Filter_FilterEvaluated                           |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  900       |  0        |           |  EscalationEngine_Execute                         |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  901       |  0        |           |  EscalationEngine_ExecuteDenied                   |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  1102      |  0        |           |  EscalationWorkItem_ExecutedAction                |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  1105      |  0        |           |  EscalationWorkItem_EscalationCompleted           |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  1200      |  0        |           |  TraceManager_StartingTrace                       |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  1201      |  0        |           |  TraceManager_StoppingTrace                       |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  1202      |  0        |           |  TraceManager_SnappingTrace                       |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  1400      |  0        |           |  SetupWorkItem_ExecutedAction                     |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  4001      |  0        |           |  ToggleTraceWithCustomFilterAction_CreatedFilter  |          |  DiagTrack Trace   |
+Microsoft-Windows-Diagtrack  |  Information  |  4100      |  1        |           |  SnapTrace_SnappingScenarioInformation            |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  4200      |  0        |           |  TestEvent_RADARAction                            |          |  DiagTrack Status  |
+Microsoft-Windows-Diagtrack  |  Information  |  9999      |  0        |           |  TestEvent_TestEvent                              |          |  DiagTrack Spew    |

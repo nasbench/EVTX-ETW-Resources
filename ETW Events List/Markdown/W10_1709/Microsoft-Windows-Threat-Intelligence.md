@@ -1,12 +1,12 @@
-Provider                               |  Event ID  |  Channel  |  Message
----------------------------------------|------------|-----------|---------
-Microsoft-Windows-Threat-Intelligence  |  1         |           |
-Microsoft-Windows-Threat-Intelligence  |  2         |           |
-Microsoft-Windows-Threat-Intelligence  |  3         |           |
-Microsoft-Windows-Threat-Intelligence  |  4         |           |
-Microsoft-Windows-Threat-Intelligence  |  5         |           |
-Microsoft-Windows-Threat-Intelligence  |  6         |           |
-Microsoft-Windows-Threat-Intelligence  |  7         |           |
-Microsoft-Windows-Threat-Intelligence  |  8         |           |
-Microsoft-Windows-Threat-Intelligence  |  9         |           |
-Microsoft-Windows-Threat-Intelligence  |  10        |           |
+Provider                               |  Level  |  Event ID  |  Version  |  Channel  |  Task                                           |  Opcode  |  Keyword  |  Message
+---------------------------------------|---------|------------|-----------|-----------|-------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-Threat-Intelligence  |         |  1         |  0        |           |  KERNEL_THREATINT_TASK_ALLOCVM_REMOTE           |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  2         |  0        |           |  KERNEL_THREATINT_TASK_PROTECTVM_REMOTE         |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  3         |  0        |           |  KERNEL_THREATINT_TASK_MAPVIEW_REMOTE           |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  4         |  0        |           |  KERNEL_THREATINT_TASK_QUEUEUSERAPC_REMOTE      |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  5         |  0        |           |  KERNEL_THREATINT_TASK_SETTHREADCONTEXT_REMOTE  |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  6         |  0        |           |  KERNEL_THREATINT_TASK_ALLOCVM_LOCAL            |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  7         |  0        |           |  KERNEL_THREATINT_TASK_PROTECTVM_LOCAL          |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  8         |  0        |           |  KERNEL_THREATINT_TASK_MAPVIEW_LOCAL            |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  9         |  0        |           |  KERNEL_THREATINT_TASK_QUEUEUSERAPC_LOCAL       |          |           |
+Microsoft-Windows-Threat-Intelligence  |         |  10        |  0        |           |  KERNEL_THREATINT_TASK_SETTHREADCONTEXT_LOCAL   |          |           |

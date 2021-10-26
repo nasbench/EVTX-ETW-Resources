@@ -1,10 +1,10 @@
-Provider                     |  Event ID  |  Channel                               |  Message
------------------------------|------------|----------------------------------------|---------
-Microsoft-Windows-IME-KRAPI  |  70        |  Microsoft-Windows-IME-KRAPI/Analytic  |
-Microsoft-Windows-IME-KRAPI  |  71        |  Microsoft-Windows-IME-KRAPI/Analytic  |
-Microsoft-Windows-IME-KRAPI  |  72        |  Microsoft-Windows-IME-KRAPI/Analytic  |
-Microsoft-Windows-IME-KRAPI  |  73        |  Microsoft-Windows-IME-KRAPI/Analytic  |
-Microsoft-Windows-IME-KRAPI  |  74        |  Microsoft-Windows-IME-KRAPI/Analytic  |
-Microsoft-Windows-IME-KRAPI  |  75        |  Microsoft-Windows-IME-KRAPI/Analytic  |
-Microsoft-Windows-IME-KRAPI  |  76        |  Microsoft-Windows-IME-KRAPI/Analytic  |
-Microsoft-Windows-IME-KRAPI  |  77        |  Microsoft-Windows-IME-KRAPI/Analytic  |
+Provider                     |  Level        |  Event ID  |  Version  |  Channel                               |  Task                          |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|----------------------------------------|--------------------------------|----------|-----------|---------
+Microsoft-Windows-IME-KRAPI  |  Information  |  70        |  0        |  Microsoft-Windows-IME-KRAPI/Analytic  |  Task ID: IME Candidate Open   |  Start   |           |
+Microsoft-Windows-IME-KRAPI  |  Information  |  71        |  0        |  Microsoft-Windows-IME-KRAPI/Analytic  |  Task ID: IME Candidate Open   |  Stop    |           |
+Microsoft-Windows-IME-KRAPI  |  Information  |  72        |  0        |  Microsoft-Windows-IME-KRAPI/Analytic  |  Task ID: IME KR DictLoad      |  Start   |           |
+Microsoft-Windows-IME-KRAPI  |  Information  |  73        |  0        |  Microsoft-Windows-IME-KRAPI/Analytic  |  Task ID: IME KR DictLoad      |  Stop    |           |
+Microsoft-Windows-IME-KRAPI  |  Information  |  74        |  0        |  Microsoft-Windows-IME-KRAPI/Analytic  |  Task ID: IME Candidate Close  |  Start   |           |
+Microsoft-Windows-IME-KRAPI  |  Information  |  75        |  0        |  Microsoft-Windows-IME-KRAPI/Analytic  |  Task ID: IME Candidate Close  |  Stop    |           |
+Microsoft-Windows-IME-KRAPI  |  Information  |  76        |  0        |  Microsoft-Windows-IME-KRAPI/Analytic  |  Task ID: IME Conversion       |  Start   |           |
+Microsoft-Windows-IME-KRAPI  |  Information  |  77        |  0        |  Microsoft-Windows-IME-KRAPI/Analytic  |  Task ID: IME Conversion       |  Stop    |           |

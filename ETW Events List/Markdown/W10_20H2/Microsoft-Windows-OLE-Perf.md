@@ -1,30 +1,30 @@
-Provider                    |  Event ID  |  Channel                                      |  Message
-----------------------------|------------|-----------------------------------------------|---------
-Microsoft-Windows-OLE-Perf  |  1         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  2         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  3         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  4         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  5         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  6         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  7         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  8         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  9         |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  10        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  11        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  12        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  13        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  14        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  15        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  16        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  17        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  18        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  19        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  20        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  21        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  22        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  23        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  24        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  25        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  26        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  27        |  Microsoft-Windows-OLE/Clipboard-Performance  |
-Microsoft-Windows-OLE-Perf  |  28        |  Microsoft-Windows-OLE/Clipboard-Performance  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                      |  Task                                       |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------------|---------------------------------------------|----------|-----------|---------
+Microsoft-Windows-OLE-Perf  |  Information  |  1         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_Clipboard_GetClipboard                 |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  2         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_Clipboard_GetClipboard                 |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  3         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_Clipboard_SetClipboard                 |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  4         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_Clipboard_SetClipboard                 |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  5         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_Clipboard_Flush                        |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  6         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_Clipboard_Flush                        |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  7         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_Clipboard_IsCurrentClipboard           |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  8         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_Clipboard_IsCurrentClipboard           |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  9         |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DoDragDrop                    |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  10        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DoDragDrop                    |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  11        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_Register                      |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  12        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_Register                      |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  13        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_Unregister                    |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  14        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_Unregister                    |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  15        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_RegisterInternal              |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  16        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_RegisterInternal              |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  17        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_UnregisterInternal            |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  18        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_UnregisterInternal            |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  19        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_CreateDragOperationInternal   |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  20        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_CreateDragOperationInternal   |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  21        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DragOperation_UpdatePosition  |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  22        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DragOperation_UpdatePosition  |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  23        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DragOperation_SetDataObject   |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  24        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DragOperation_SetDataObject   |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  25        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DragOperation_DoDrop          |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  26        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DragOperation_DoDrop          |  Stop    |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  27        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DragOperation_Cancel          |  Start   |           |
+Microsoft-Windows-OLE-Perf  |  Information  |  28        |  0        |  Microsoft-Windows-OLE/Clipboard-Performance  |  OLE_DragDrop_DragOperation_Cancel          |  Stop    |           |

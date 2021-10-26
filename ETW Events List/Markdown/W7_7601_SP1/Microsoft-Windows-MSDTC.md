@@ -1,389 +1,389 @@
-Provider                 |  Event ID    |  Channel  |  Message
--------------------------|--------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-MSDTC  |  1073745921  |           |  MS DTC started with the following settings (OFF = 0 and ON = 1):  Filtering Duplicate events = {param7} Security Configuration:      Network Administration of Transactions = {param1},      Network Clients = {param2},      Inbound Distributed Transactions using Native MSDTC Protocol = {param3},      Outbound Distributed Transactions using Native MSDTC Protocol = {param4},      Transaction Internet Protocol (TIP) = {param5},      XA Transactions = {param6}
-Microsoft-Windows-MSDTC  |  1073745922  |           |  Unable to translate the MS DTC error code to the appropriate MS DTC error message. The MS DTC error code was: {param1}.
-Microsoft-Windows-MSDTC  |  3221229570  |           |  Could not connect to the MS DTC service.
-Microsoft-Windows-MSDTC  |  1073745923  |           |  You do not have permissions to manage the MS DTC on this system. MS DTC administrative functionality will be disabled.
-Microsoft-Windows-MSDTC  |  3221229571  |           |  The MS DTC administrative component has failed to start. You may not have permissions to manage the remote MS DTC, MS DTC does not support the current national language, or the MS DTC service may not be running.
-Microsoft-Windows-MSDTC  |  1073745924  |           |  Microsoft Distributed Transaction Coordinator (MS DTC)
-Microsoft-Windows-MSDTC  |  3221229572  |           |  An exception occurred while processing control requests from the Service Control Manager
-Microsoft-Windows-MSDTC  |  3221229573  |           |  The local MS DTC detected that the MS DTC on {param1} has the same unique identity as the local MS DTC. This means that the two MS DTC will not be able to communicate with each other. This problem typically occurs if one of the systems were cloned using unsupported cloning tools. MS DTC requires that the systems be cloned using supported cloning tools such as SYSPREP. Running 'msdtc -uninstall' and then 'msdtc -install' from the command prompt will fix the problem. Note: Running 'msdtc -uninstall' will result in the system losing all MS DTC configuration information.
-Microsoft-Windows-MSDTC  |  3221229574  |           |  Could not initialize the MS DTC Transaction Manager.
-Microsoft-Windows-MSDTC  |  3221229575  |           |  Out of memory.
-Microsoft-Windows-MSDTC  |  1073745928  |           |  The Microsoft Distributed Transaction Coordinator service was successfully installed.
-Microsoft-Windows-MSDTC  |  1073745929  |           |  The Microsoft Distributed Transaction Coordinator service was successfully removed.
-Microsoft-Windows-MSDTC  |  3221229578  |           |  Could not install the MS DTC service.
-Microsoft-Windows-MSDTC  |  3221229579  |           |  Could not remove the MS DTC service.
-Microsoft-Windows-MSDTC  |  1073745932  |           |  Press Ctrl+C to exit.
-Microsoft-Windows-MSDTC  |  3221229581  |           |  Could not load or initialize the MS DTC trace component.
-Microsoft-Windows-MSDTC  |  1073745934  |           |  Clear trace messages?
-Microsoft-Windows-MSDTC  |  1073745935  |           |  The MS DTC service is stopping.
-Microsoft-Windows-MSDTC  |  3221229584  |           |  Could not start the MS DTC Transaction Manager.
-Microsoft-Windows-MSDTC  |  3221229585  |           |  MS DTC log path not found.
-Microsoft-Windows-MSDTC  |  3221229586  |           |  Could not load the MS DTC Transaction Manager object.
-Microsoft-Windows-MSDTC  |  3221229587  |           |  Could not load the MS DTC name service.
-Microsoft-Windows-MSDTC  |  3221229588  |           |  Could not create an MS DTC name object.
-Microsoft-Windows-MSDTC  |  3221229589  |           |  Could not initialize the MS DTC user interface server object.
-Microsoft-Windows-MSDTC  |  3221229590  |           |  Could not load the MS DTC user interface server object.
-Microsoft-Windows-MSDTC  |  3221229591  |           |  The MS DTC user interface server object does not support the requested interface.
-Microsoft-Windows-MSDTC  |  3221229592  |           |  Could not load the MS DTC user interface name object.
-Microsoft-Windows-MSDTC  |  3221229593  |           |  Could not load the MS DTC Log Manager DLL (MSDTCLOG.DLL).
-Microsoft-Windows-MSDTC  |  3221229594  |           |  The MS DTC log file already exists.
-Microsoft-Windows-MSDTC  |  3221229595  |           |  This operation cannot be performed while the MS DTC service is running.
-Microsoft-Windows-MSDTC  |  1073745948  |           |  MS DTC logging has started.
-Microsoft-Windows-MSDTC  |  3221229596  |           |  Unable to decompress the MS DTC log file. Please ensure that there is sufficient available disk space on the MS DTC log device.
-Microsoft-Windows-MSDTC  |  1073745949  |           |  The MS DTC log file has been decompressed.
-Microsoft-Windows-MSDTC  |  3221229597  |           |  The MS DTC log file is full and cannot accept new log records.
-Microsoft-Windows-MSDTC  |  1073745950  |           |  The MS DTC Log Manager is stopping.
-Microsoft-Windows-MSDTC  |  3221229598  |           |  The MS DTC log file attributes are invalid. The log file must not be read only.
-Microsoft-Windows-MSDTC  |  2147487775  |           |  The MS DTC log file has wrapped.
-Microsoft-Windows-MSDTC  |  3221229599  |           |  The call to MapViewOfFile failed for the MS DTC log file.
-Microsoft-Windows-MSDTC  |  1073745952  |           |  The MS DTC Log Manager has taken a checkpoint.
-Microsoft-Windows-MSDTC  |  1073745953  |           |  The MS DTC log was reset following a system restore operation.
-Microsoft-Windows-MSDTC  |  3221229601  |           |  Could not locate the MS DTC Transaction Manager contact object.
-Microsoft-Windows-MSDTC  |  1073745954  |           |  The MSDTC service and all the services that depend on MSDTC service will be stopped.Do you wish to proceed?
-Microsoft-Windows-MSDTC  |  3221229602  |           |  The MS DTC Transaction Manager contact object does not support custom properties.
-Microsoft-Windows-MSDTC  |  3221229603  |           |  Could not locate the MS DTC user interface server contact object.
-Microsoft-Windows-MSDTC  |  3221229604  |           |  The size of the MS DTC log is invalid.
-Microsoft-Windows-MSDTC  |  3221229605  |           |  Could not find the MS DTC log disk device. Please select a new location for the MS DTC log file.
-Microsoft-Windows-MSDTC  |  1073745958  |           |  An MS DTC log file already exists in the selected directory. Resetting an existing MS DTC log file may cause your databases and other transactional resource managers to become inconsistent. Please review the MS DTC Administrator's Manual before proceeding. Do you wish to reset the existing MS DTC log file?
-Microsoft-Windows-MSDTC  |  3221229607  |           |  Failed to create/reset the MS DTC log file.
-Microsoft-Windows-MSDTC  |  3221229608  |           |  Invalid MS DTC log timer value. Allowed values: [Timer]     5- %\ [Checkpoint]  100- %\ [Flush]   5-1000
-Microsoft-Windows-MSDTC  |  3221229609  |           |  Could not force transaction outcome.
-Microsoft-Windows-MSDTC  |  2147487786  |           |  End of file reached while reading the log.
-Microsoft-Windows-MSDTC  |  3221229610  |           |  The specified transaction bridge CLSID is not a valid GUID. MS DTC is being started but the transaction bridge will be disabled.
-Microsoft-Windows-MSDTC  |  2147487787  |           |  The requested record does not exist in the MS DTC log file.
-Microsoft-Windows-MSDTC  |  3221229611  |           |  An error occured creating the transaction bridge. MS DTC is being started but the transaction bridge will be disabled.
-Microsoft-Windows-MSDTC  |  2147487788  |           |  The maximum number of asynchronous log writes has been exceeded.
-Microsoft-Windows-MSDTC  |  3221229612  |           |  An error occured initializing the transaction bridge. MS DTC is being started but the transaction bridge will be disabled.
-Microsoft-Windows-MSDTC  |  2147487789  |           |  Unknown message type encountered.
-Microsoft-Windows-MSDTC  |  3221229613  |           |  An error occured starting the transaction bridge. MS DTC is being started but the transaction bridge will be disabled.
-Microsoft-Windows-MSDTC  |  1073745966  |           |  A log client has reported taking a checkpoint.
-Microsoft-Windows-MSDTC  |  2147487790  |           |  Message length incorrect.
-Microsoft-Windows-MSDTC  |  1073745967  |           |  MS DTC has detected that a DC Promotion has happened since the last time the MS DTC service was started.
-Microsoft-Windows-MSDTC  |  2147487791  |           |  Bad message value.
-Microsoft-Windows-MSDTC  |  3221229615  |           |  Could not load the MS DTC connection manager object.
-Microsoft-Windows-MSDTC  |  1073745968  |           |  MS DTC has detected that a DC Demotion has happened since the last time the MS DTC service was started.
-Microsoft-Windows-MSDTC  |  2147487792  |           |  Bad message value.
-Microsoft-Windows-MSDTC  |  3221229616  |           |  Could not locate the MS DTC configuration interface.
-Microsoft-Windows-MSDTC  |  2147487793  |           |  Heuristic aborting (RESET) or heuristic mixed COMPARE STATES received from LU Partner "{param1}" for LU Transaction "{param2}" when delivering Committed for MS DTC Transaction Id "{param3}".
-Microsoft-Windows-MSDTC  |  3221229617  |           |  Could not initialize the MS DTC Admin Console General Page
-Microsoft-Windows-MSDTC  |  2147487794  |           |  Heuristic committed or heuristic mixed COMPARE STATES received from LU Partner "{param1}" for LU Transaction "{param2}" when delivering Aborting (RESET) for MS DTC Transaction Id "{param3}".
-Microsoft-Windows-MSDTC  |  3221229618  |           |  Could not connect to the MS DTC statistics component.
-Microsoft-Windows-MSDTC  |  2147487795  |           |  MS DTC has determined that the cluster service is configured but not running when MS DTC was started.  MS DTC will continue to startup but it will not failover.  Additionally, if the cluster service is started then please shut down this instance of MS DTC as it will become unusable. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229619  |           |  Could not connect to the MS DTC transaction list.
-Microsoft-Windows-MSDTC  |  2147487796  |           |  The MS DTC service was started before the cluster service on this cluster node. This service will now be stopped. If MSDTC has been configured to run on a cluster, the MS DTC resource will be brought online by the cluster service when it starts. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229620  |           |  Could not connect to the MS DTC user interface service.
-Microsoft-Windows-MSDTC  |  2147487797  |           |  The MSDTC log file was moved from one disk to another. As a result, the dependency of the MSDTC resource on the disk where the log file used to be located has been removed. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229621  |           |  Transaction not found.
-Microsoft-Windows-MSDTC  |  2147487798  |           |  The MSDTC log file has been moved from one disk to another. As a result, a new dependency on the disk where MSDTC log is now located has been added for the MSDTC resource. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229622  |           |  The transaction is not a child transaction.
-Microsoft-Windows-MSDTC  |  2147487799  |           |  The MSDTC TM could not determine if an incoming connection request is from a remote machine. For security reasons, it will treat this connection request as a remote connection request. If the NetworkClients security option is not enabled, this can cause it to reject this connection attempt. This can cause applications to report that the TM is not available. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229623  |           |  The transaction cannot be forced to abort or commit because the transaction's state is not "In Doubt".
-Microsoft-Windows-MSDTC  |  2147487800  |           |  The MS DTC Service may be hung during startup.  MSDTC will eventually terminate if it cannot startup. Debugging context follows: {param1}
-Microsoft-Windows-MSDTC  |  3221229624  |           |  Either the transaction is not committed or there are resource managers or subordinate MS DTC Transaction Managers still connected.
-Microsoft-Windows-MSDTC  |  3221229625  |           |  Could not resolve the transaction due to an unknown error.
-Microsoft-Windows-MSDTC  |  3221229626  |           |  The MS DTC log file is unreadable. After ensuring that all Resource Managers coordinated by MS DTC have no indoubt transactions, please run "msdtc -resetlog" to reset the log file.
-Microsoft-Windows-MSDTC  |  3221229627  |           |  MS DTC encountered an internal error and is terminating.
-Microsoft-Windows-MSDTC  |  1073745980  |           |  String message: {param1}.
-Microsoft-Windows-MSDTC  |  1073745981  |           |  A version of MS DTC that was previously installed by SQL Server 6.5 has been found and updated.
-Microsoft-Windows-MSDTC  |  3221229629  |           |  Could not stop the MS DTC service or or one of its dependent services.
-Microsoft-Windows-MSDTC  |  3221229630  |           |  Could not open the Windows Service Control Manager.
-Microsoft-Windows-MSDTC  |  3221229631  |           |  Could not open the MS DTC service.
-Microsoft-Windows-MSDTC  |  3221229632  |           |  Invalid command line arguments.
-Microsoft-Windows-MSDTC  |  3221229633  |           |  Insufficient disk space for the MS DTC log file.
-Microsoft-Windows-MSDTC  |  3221229634  |           |  The MS DTC log file is an incompatible version.
-Microsoft-Windows-MSDTC  |  3221229635  |           |  MS DTC log file not found. After ensuring that all Resource Managers coordinated by MS DTC have no indoubt transactions, please run msdtc -resetlog to create the log file.
-Microsoft-Windows-MSDTC  |  3221229636  |           |  Could not establish connection to resolve transaction.
-Microsoft-Windows-MSDTC  |  3221229637  |           |  No transaction is selected.
-Microsoft-Windows-MSDTC  |  3221229638  |           |  The maximum number of active transactions that the MS DTC log file can accomodate has been exceeded. You must increase the size of the MS DTC log file if you wish to initiate more concurrrent transactions.
-Microsoft-Windows-MSDTC  |  3221229639  |           |  Cannot start the MS DTC service. Please see the Windows event log for more information.
-Microsoft-Windows-MSDTC  |  3221229640  |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  Please contact Microsoft Product Support. {param1}
-Microsoft-Windows-MSDTC  |  3221229641  |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  Please contact Microsoft Product Support. {param1}
-Microsoft-Windows-MSDTC  |  3221229642  |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  Please contact Microsoft Product Support. {param1}
-Microsoft-Windows-MSDTC  |  3221229643  |           |  MS DTC Transaction Manager log write failed with error {param1}.
-Microsoft-Windows-MSDTC  |  3221229644  |           |  MS DTC Transaction Manager start failed. GetClassObject on LogMgr returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229645  |           |  MS DTC Transaction Manager start failed. GetCurrentLogRecord returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229646  |           |  MS DTC Transaction Manager start failed. GetCheckpoint returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229647  |           |  MS DTC Transaction Manager start failed. Init on LogRead returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229648  |           |  MS DTC Transaction Manager start failed. LogRead returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229649  |           |  MS DTC Transaction Manager start failed. LogFlush returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229650  |           |  MS DTC Transaction Manager start failed. LogWrite returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229651  |           |  MS DTC Transaction Manager start failed. OpenLogStream for Read returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229652  |           |  MS DTC Transaction Manager start failed. OpenLogStream for Write returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229653  |           |  MS DTC Transaction Manager start failed. QueryInterface on LogStorage returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229654  |           |  MS DTC Transaction Manager start failed. QueryInterface on LogRecordPointer returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229655  |           |  MS DTC Transaction Manager start failed. QueryInterface on TransactionTrackerFactory returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229656  |           |  MS DTC Transaction Manager start failed. SetCheckpoint returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229657  |           |  MS DTC Transaction Manager start failed. LogInit returned error {param1}. This is expected if the corresponding volume has been restored (search for kb article regarding the issue). In all other cases, contact product support.
-Microsoft-Windows-MSDTC  |  3221229658  |           |  MS DTC Transaction Manager start failed. QueryInterface on LogWriteAsynch returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229659  |           |  MS DTC Transaction Manager start failed. Init on LogWriteAsynch returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229660  |           |  MS DTC Transaction Manager start failed. Out of memory.
-Microsoft-Windows-MSDTC  |  3221229661  |           |  MS DTC Transaction Manager start failed. Log record too small.
-Microsoft-Windows-MSDTC  |  3221229662  |           |  MS DTC Transaction Manager start failed. Log record type unknown.
-Microsoft-Windows-MSDTC  |  3221229663  |           |  MS DTC Transaction Manager start failed. Unable to unpack name object, error {param1}.
-Microsoft-Windows-MSDTC  |  3221229664  |           |  MS DTC start failed. Unable to find the MS DTC resource dll.
-Microsoft-Windows-MSDTC  |  3221229665  |           |  A resource manager performed recovery and called ReenlistmentComplete indicating that recovery was complete. However, there is at least one transaction that was enlisted with the resource manager whose state is still "In Doubt"
-Microsoft-Windows-MSDTC  |  3221229666  |           |  The MS DTC Transaction Manager could not create the MS DTC XA Transaction Manager object. MS DTC is being started but the XA Transaction Manager feature will be disabled.
-Microsoft-Windows-MSDTC  |  3221229667  |           |  Could not initialize the MS DTC XA Transaction Manager. MS DTC is being started but the XA Transaction Manager feature will be disabled.
-Microsoft-Windows-MSDTC  |  3221229668  |           |  Could not start the MS DTC XA Transaction Manager. MS DTC is being started but the XA Transaction Manager feature will be disabled.
-Microsoft-Windows-MSDTC  |  3221229669  |           |  Could not locate the MS DTC XA Transaction Manager contact object.
-Microsoft-Windows-MSDTC  |  3221229670  |           |  Could not locate the MS DTC TIP Gateway contact object.
-Microsoft-Windows-MSDTC  |  3221229671  |           |  Could not create the MS DTC TIP Gateway initialization object. MS DTC is being started but the TIP feature will be disabled.
-Microsoft-Windows-MSDTC  |  3221229672  |           |  Failed to initialize the MS DTC TIP Gateway. MS DTC is being started but the TIP feature will be disabled.
-Microsoft-Windows-MSDTC  |  3221229673  |           |  Failed to start the MS DTC TIP Gateway. MS DTC is being started but the TIP feature will be disabled.
-Microsoft-Windows-MSDTC  |  3221229680  |           |  Failed to initialize COM while trying to start MS DTC.
-Microsoft-Windows-MSDTC  |  3221229681  |           |  A critical error occurred in an MS DTC component therefore the process is terminating. The category field identifies the component that encountered the error. Please contact Microsoft Product Support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229682  |           |  Failed to allocate thread local storage in the Asynchronous-Serial Component Runtime. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229683  |           |  Failed to convert the caller provided TIP Transaction URL into a valid MS DTC Transaction Id. This error is unexpected because the TIP Transaction URL indicates that the transaction originated on this system. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229684  |           |  Unable to get the file name for the OLE Transactions Proxy DLL. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229685  |           |  Failed to dynamically load the OLE Transactions Proxy DLL. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229686  |           |  The "DllGetTransactionManagerCore" function is missing from the OLE Transactions Proxy DLL. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229687  |           |  Failed to connection to the registry on the remote MS DTC Transaction Manager's system. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229688  |           |  Failed to open the registry key containing the list of transaction managers. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229689  |           |  Failed to read the name of the default transaction manager from the registry. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229696  |           |  Failed to open the registry key containing the name of the OLE Transactions Proxy DLL. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229697  |           |  Failed to read the name of the OLE Transactions Proxy DLL from the registry. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229698  |           |  Failed to start MS DTC via the MS DTC Proxy DLL. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229699  |           |  Unable to start MS DTC because initialization of cluster support failed.
-Microsoft-Windows-MSDTC  |  3221229700  |           |  MS DTC TIP Gateway internal error. {param1}
-Microsoft-Windows-MSDTC  |  3221229701  |           |  MS DTC TIP Gateway illegal transition. {param1}
-Microsoft-Windows-MSDTC  |  3221229702  |           |  MS DTC TIP Gateway invalid value. {param1}
-Microsoft-Windows-MSDTC  |  3221229703  |           |  MS DTC TIP Gateway encountered error {param1} calling CoCreateInstance on class id "{param2}" {param3}, interface "{param4}" {param5}
-Microsoft-Windows-MSDTC  |  3221229704  |           |  MS DTC TIP Gateway encountered error {param1} calling CoGetClassObject on class id "{param2}" {param3}, interface "{param4}" {param5}
-Microsoft-Windows-MSDTC  |  3221229705  |           |  An MS DTC component was unable to allocate memory for a critical operation. That component is terminating. The category field identifies the component that failed. Please restart MS DTC if it does not restart automatically. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229712  |           |  The MS DTC Transaction Manager sent a TIP "ABORT COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL "{param2}"; MS DTC TIP Transaction URL "{param3}".
-Microsoft-Windows-MSDTC  |  3221229713  |           |  The MS DTC Transaction Manager sent a TIP "ABORT COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param2}"; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
-Microsoft-Windows-MSDTC  |  3221229714  |           |  The MS DTC Transaction Manager sent a TIP "PUSH COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL {param2}; MS DTC TIP Transaction URL "{param3}".
-Microsoft-Windows-MSDTC  |  3221229715  |           |  The MS DTC Transaction Manager sent a TIP "PUSH COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. Transaction specifics: External Transaction Manager Id {param2}; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
-Microsoft-Windows-MSDTC  |  3221229716  |           |  The MS DTC Transaction Manager sent a TIP "PREPARE COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. The transaction has been aborted. Transaction specifics: External TM ID {param1}; External Transaction URL "{param2}"; MS DTC TIP Transaction URL "{param3}".
-Microsoft-Windows-MSDTC  |  3221229717  |           |  The MS DTC Transaction Manager sent a TIP "PREPARE COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param2}"; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
-Microsoft-Windows-MSDTC  |  3221229718  |           |  The MS DTC Transaction Manager sent a TIP "COMMIT, QUERY, or RECONNECT COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. Transaction specifics: External Transaction Manager Id {param2}; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
-Microsoft-Windows-MSDTC  |  3221229719  |           |  The MS DTC Transaction Manager sent a TIP "COMMIT, QUERY, or RECONNECT COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. Transaction specifics: External Transaction Manager Id "{param2}"; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
-Microsoft-Windows-MSDTC  |  3221229720  |           |  The MS DTC Transaction Manager received a TIP "ERROR COMMAND" for an Active transaction that is being coordinated by another transaction manager. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL "{param2}"; MS DTC TIP Transaction URL "{param3}".
-Microsoft-Windows-MSDTC  |  3221229721  |           |  The MS DTC Transaction Manager received an unknown or unexpected TIP command ({param1}) for an Active transaction that is being coordinated by another transaction manager. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param2}"; External Transaction Id "{param3}"; MS DTC TIP Transaction URL "{param4}".
-Microsoft-Windows-MSDTC  |  3221229824  |           |  The MS DTC Transaction Manager received a TIP "ERROR COMMAND" for a "Prepared" transaction that is being coordinated by another transaction manager. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL "{param2}"; MS DTC TIP Transaction URL "{param3}".
-Microsoft-Windows-MSDTC  |  3221229825  |           |  The MS DTC Transaction Manager received an unknown or unexpected TIP command ({param1}) for a "Prepared" transaction that is being coordinated by another transaction manager. Transaction specifics: External TM ID {param2}; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
-Microsoft-Windows-MSDTC  |  3221229826  |           |  Unable to initialize Winsock. MS DTC is being started but some MS DTC features will be disabled.
-Microsoft-Windows-MSDTC  |  3221229827  |           |  An MS DTC component has generated an exception. Error Specifics: {param1}{__binLength}
-Microsoft-Windows-MSDTC  |  3221229828  |           |  Failed to initialize the MS DTC Communication Manager.  Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229829  |           |  MS DTC is unable to communicate with MS DTC on a remote system. No common RPC protocol is supported between the two systems. Please ensure that one or more of the following RPC protocols are common to both systems: TCP/IP, SPX, or NetBEUI.  Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229830  |           |  The MS DTC Connection Manager is unable to register with RPC to use one of LRPC, TCP/IP, or UDP/IP. Please ensure that RPC is configured properly. If "ServerTcpPort" registry key is configured(DWORD value under the HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC for local DTC instance or under cluster hive for clustered DTC instance), please verify if the configured port is valid and the port is not already in use by a different component. Error Specifics:{param1}
-Microsoft-Windows-MSDTC  |  3221229831  |           |  MS DTC is unable to communicate with MS DTC on a remote system. MS DTC on the primary system established an RPC binding with MS DTC on the secondary system. However, the secondary system did not create the reverse RPC binding to the primary MS DTC system before the timeout period expired. Please ensure that there is network connectivity between the two systems.  Error Specifics:{param1}
-Microsoft-Windows-MSDTC  |  3221229832  |           |  MS DTC was not able to allocate a console.
-Microsoft-Windows-MSDTC  |  3221229833  |           |  An incompletely initialized MS DTC log file was detected. After ensuring that all Resource Managers coordinated by MS DTC have no indoubt transactions, please run msdtc -resetlog to reset the log file.
-Microsoft-Windows-MSDTC  |  3221229834  |           |  Illegal transition caused fatal error: Event={param1} File={param2} Line={param3}.
-Microsoft-Windows-MSDTC  |  3221229835  |           |  Out of memory caused fatal error: Object={param1} File={param2} Line={param3}.
-Microsoft-Windows-MSDTC  |  3221229839  |           |  Unexpected event occurred on synchronization object: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  3221229840  |           |  Unexpected error occured in the MS DTC XA Transaction Manager : File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  3221229842  |           |  MS DTC was unable to bind to the TIP socket. This failure may have occurred because some other application is using the TIP socket. MS DTC will continue to start but TIP features will be unavailable. If you require TIP, please make the socket available and restart MS DTC.
-Microsoft-Windows-MSDTC  |  3221229843  |           |  The MS DTC Transaction Manager sent a TIP "PULL COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL {param2}; MS DTC TIP Transaction URL "{param3}".
-Microsoft-Windows-MSDTC  |  3221229844  |           |  The MS DTC Transaction Manager sent a TIP "PULL COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. Transaction specifics: External Transaction Manager Id {param2}; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
-Microsoft-Windows-MSDTC  |  3221229845  |           |  MS DTC does not currently support either TIP or XA on 64 bit platforms. MS DTC will continue to start but TIP and XA features will be unavailable.
-Microsoft-Windows-MSDTC  |  3221229846  |           |  The MS DTC Transaction Manager received a TIP "ERROR COMMAND" for an Active transaction that was created with the "BEGIN COMMAND" and is being controlled by another transaction manager. The transaction has been aborted. Transaction specifics: External Transaction Manager URL "{param1}"; MS DTC TIP Transaction URL "{param2}".
-Microsoft-Windows-MSDTC  |  3221229847  |           |  The MS DTC Transaction Manager received an unknown or unexpected TIP command ({param1}) for an Active transaction that was created with the "BEGIN COMMAND" and is being controlled by another transaction manager. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param2}"; MS DTC TIP Transaction URL "{param2}".
-Microsoft-Windows-MSDTC  |  3221229848  |           |  The application could not connect to MSDTC because of insufficient permissions. Please make sure that the identity under which the application is running has permission to access the cluster. Please refer to MSCS documentation on how to grant permissions. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229849  |           |  Running "msdtc -remove" is no longer supported.  To un-install MSDTC please contact product support. To configure this system to use a remote MSDTC as the coordinator please use the Component Services Explorer.
-Microsoft-Windows-MSDTC  |  3221229850  |           |  MS DTC setup has determined that the existing cluster resource for MS DTC is not configured correctly. Setup cannot continue to upgrade the installation.  Please contact product support or delete the existing MS DTC resource and re-run setup via comclust.exe. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229851  |           |  MS DTC setup has determined that the existing cluster resource for MS DTC is of a newer version. Setup cannot continue to upgrade the installation. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229852  |           |  MS DTC setup has determined that the installation of MS DTC on this node used to be a part of cluster that had a newer version of MS DTC installed. Setup cannot continue to upgrade the installation. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229853  |           |  MS DTC was unable to determine the version of the data associated with cluster support in the local registry.  MS DTC cannot continue to startup.  Please contact Microsoft Product Support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229854  |           |  MS DTC was unable to determine the version of the data associated with MS DTC cluster resource.  MS DTC cannot continue to startup.  Please contact Microsoft Product Support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229855  |           |  MS DTC was unable to determine the state of the cluster service on this machine.  MS DTC cannot continue to startup.  Please contact Microsoft Product Support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229856  |           |  MS DTC was unable to start because the installation was not configured to run on a cluster.  Please create a MS DTC resource through cluster administrator. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229857  |           |  MS DTC cannot start on this cluster node because the MS DTC resource is currently owned by another node in the cluster. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229858  |           |  MS DTC cannot start because it failed to initialize the log file for its first usage after a cluster install. Please try to restart MS DTC.  If the problem persists please contact Microsoft Product Support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229859  |           |  MS DTC setup timed out while waiting for another copy of MS DTC setup to finish populating the shared cluster registry. Please re-run comclus.exe on this node when the other setup completes.  If there is not other MS DTC setup running then please delete the MS DTC cluster resource and re-run comclust.exe. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229860  |           |  msdtc -resetlog did not succeed because the log file is located on a shared disk owned by another node.
-Microsoft-Windows-MSDTC  |  3221229861  |           |  MS DTC setup failed to populate the shared cluster registry. The DTC resource will not be able to come online.Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229862  |           |  MS DTC setup failed to populate the shared cluster registry with information about MSDTC's log.The DTC resource will not be able to come online.Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229863  |           |  MS DTC setup failed to populate the local registry with information from the shared cluster registry. Applications that use MSDTC may not work correctly as a result of this error. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229864  |           |  MS DTC setup was unable to turn off auto start for the MSDTC service. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229865  |           |  Information about the MSDTC resource has not been configured correctly in the shared cluster registry. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229866  |           |  MS DTC's log information has not been configured correctly in the shared cluster registry. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229867  |           |  MSDTC detected that MSDTC related information in the local registry is different from that in the shared cluster registry. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229868  |           |  The MSDTC resource does not have the required dependency on a resource of type Network Name. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229869  |           |  The MSDTC resource does not have the required dependency on a resource of type Physical Disk. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229870  |           |  MS DTC's cluster resource dll attempted to wait on an internal event. This wait failed. The MS DTC resource will not be able to come online because of this error. If the problem persists please contact Microsoft Product Support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229871  |           |  Could not establish connection to trace transaction.
-Microsoft-Windows-MSDTC  |  3221229872  |           |  No transaction is selected.
-Microsoft-Windows-MSDTC  |  3221229873  |           |  Transaction not found.
-Microsoft-Windows-MSDTC  |  3221229874  |           |  The version of the transaction manager is not compatible for this feature.
-Microsoft-Windows-MSDTC  |  3221229875  |           |  The attempt to dump the transaction to a trace file failed.
-Microsoft-Windows-MSDTC  |  3221229876  |           |  MS DTC Tracing infrastructure : the initialization of the tracing infrastructure failed. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229877  |           |  MS DTC Tracing infrastructure : the attempt to create a new trace session failed. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229878  |           |  MS DTC Tracing infrastructure : the attempt to stop the existing trace session failed. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229879  |           |  MS DTC Tracing infrastructure : the attempt to flush the existing trace data failed. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229880  |           |  MS DTC Tracing infrastructure : the attempt to update the maximum buffer count of the existing trace session failed. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229881  |           |  MS DTC Tracing infrastructure : the infrastructure has reported that the number of trace events that have been lost until now is equal to {param1}.
-Microsoft-Windows-MSDTC  |  3221229882  |           |  MS DTC Tracing infrastructure : the thread launched to update the trace settings has failed. Any changes to the trace settings made using the "Tracing Options" dialog box might not take the desired effect. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229883  |           |  MS DTC Tracing infrastructure : the attempt to set the trace specific registry settings failed. Any tracing specific functionality will be disabled. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229884  |           |  Failed to create a new trace session.
-Microsoft-Windows-MSDTC  |  3221229885  |           |  Failed to stop the existing trace session.
-Microsoft-Windows-MSDTC  |  3221229886  |           |  Failed to flush the existing trace data.
-Microsoft-Windows-MSDTC  |  3221229887  |           |  Failed to update the maximum buffer count of the existing trace session.
-Microsoft-Windows-MSDTC  |  3221229888  |           |  Failed to update all the trace settings in the registry.
-Microsoft-Windows-MSDTC  |  3221229889  |           |  Failed to load all the trace settings from the registry.
-Microsoft-Windows-MSDTC  |  3221229890  |           |  MS DTC Transaction Manager start failed. GetSecurityConfiguration returned error {param1}.
-Microsoft-Windows-MSDTC  |  3221229891  |           |  MS DTC failed to load the system restore information. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229892  |           |  MS DTC failed to process a system restore event. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229893  |           |  MS DTC failed to save the system restore information. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  1073746246  |           |  MS DTC has processed a system restore event. As a result the transaction log has been reset and the identity of the transaction manager has been changed.
-Microsoft-Windows-MSDTC  |  3221229896  |           |  MS DTC Tracing infrastructure : the attempt to create the trace directory failed. Any tracing specific functionality will be disabled. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229897  |           |  MS DTC Tracing infrastructure : the infrastructure has reported that an attempt to trace an event has failed cause of lack of enough buffer space. The tracing infrastructure will retry tracing this event. The total number of times this has happened so far is equal to {param1}. Increasing the max number of memory buffers might rectify the situation.
-Microsoft-Windows-MSDTC  |  3221229898  |           |  Failed to read the needed name objects from the registry. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229899  |           |  Failed to initialize the needed name objects. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229900  |           |  Failed to stop MSDTC service or one of its dependent services. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229901  |           |  Failed to set the security attributes on the MS DTC service. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229903  |           |  Failed to stop the MS DTC service. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229904  |           |  Failed to restart the MS DTC service. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229905  |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  An unknown message type was received.  Please contact Microsoft Product Support. {param1}
-Microsoft-Windows-MSDTC  |  3221229906  |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  An incorrect message length was received.  Please contact Microsoft Product Support. {param1}
-Microsoft-Windows-MSDTC  |  3221229907  |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  A bad message value was received.  Please contact Microsoft Product Support. {param1}
-Microsoft-Windows-MSDTC  |  3221229908  |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  An unexpected message type was received.  Please contact Microsoft Product Support. {param1}
-Microsoft-Windows-MSDTC  |  3221229909  |           |  The account that the MS DTC service is running under is invalid. This can happen if the service account information has been changed using the Services snap-in in Microsoft Management Console (MMC). MS DTC service will continue to start. Please make sure that the MS DTC service account information is updated using the Component Services Explorer.
-Microsoft-Windows-MSDTC  |  3221229910  |           |  Failed to set the MS DTC service account information in the registry. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229911  |           |  Failed to verify MS DTC service account information. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  3221229912  |           |  The MS DTC Service is terminating because it didnt startup in a timely manner.  This may be because MS DTC took too long to recover its log file.  Try increasing the startup timeout by specifying a larger "MaxRecoveryTimePerMbInMinutes" DWORD value under the HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC registry key.  The default for this value is 3 (minutes). Debugging context follows: {param1}
-Microsoft-Windows-MSDTC  |  3221229913  |           |  A MS DTC component has encountered an internal error. The process is being terminated. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229914  |           |  MS DTC was unable to start because this version of dtc is less than the least valid version allowable specified in the cluster database. This can happen if a higher incompatible version of MS DTC was installed on another node of the cluster. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229915  |           |  MS DTC was unable to start because this version of dtc is not compatible with the version of MS DTC installed on another node of the cluster. This can happen if an incompatible version of MS DTC was installed on another node of the cluster. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229916  |           |  The XA Transaction Manager is in an inconsistent state and cannot proceed. XA transactions will not take place. Please contact Microsoft Product Support. {param1}
-Microsoft-Windows-MSDTC  |  3221229917  |           |  The XA Transaction Manager cannot load the requested XA Dll ({param1}) since a registry entry is required for this operation. Please create a string value in the registry under HKLM\Software\Microsoft\MSDTC\XADLL where the value name is the name of the dll in the format dllname.dll and the value is the full path of the Dll. If you are not sure about the name or path of your XA Dll then please check the documentation for your XA provider. If this machine is part of a cluster please note that this registry entry needs to be made for each node in the cluster. {param2}
-Microsoft-Windows-MSDTC  |  3221229918  |           |  Entering MSDTC log storage warning limits.
-Microsoft-Windows-MSDTC  |  1073746271  |           |  Leaving MSDTC log storage warning limits.
-Microsoft-Windows-MSDTC  |  3221229920  |           |  KTMRM service failed to load the system restore information. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229921  |           |  KTMRM service failed to process a system restore. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229924  |           |  Attempt to freeze the transaction manager failed. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229925  |           |  Attempt to thaw the transaction manager failed. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229926  |           |  Failed to prepare MSDTC for imaging. Sysprep phase: "{param1}" failed with error: {param2}
-Microsoft-Windows-MSDTC  |  3221229927  |           |  Unexpected error (0x{param1}!%08x!) when connecting to the Kernel Transaction Manager.
-Microsoft-Windows-MSDTC  |  3221229928  |           |  Unable to create a communication channel to the Kernel Transaction Manager.  The attempt failed with error: 0x{param1}!%08x!
-Microsoft-Windows-MSDTC  |  3221229929  |           |  MSDTC was unable to migrate its log during Windows upgrade. The attempt failed with error: {param1}.
-Microsoft-Windows-MSDTC  |  3221229930  |           |  MSDTC encountered an error during migration of contact identifiers. The attempt failed with error: {param1}.
-Microsoft-Windows-MSDTC  |  3221229931  |           |  MSDTC encountered an error during Windows upgrade. Error specifics: {param1}.
-Microsoft-Windows-MSDTC  |  3221229932  |           |  The KtmRm service has encountered an internal error. The service is being shutdown. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221229933  |           |  The MSDTC service cannot start because its contact identifiers are either missing, inaccessible, or corrupt. Running 'msdtc -uninstall' and then 'msdtc -install' from the command prompt will fix the problem. Note: Running 'msdtc -uninstall' will result in the system losing all MSDTC configuration information. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  1073795072  |           |  XACT_S_ASYNC
-Microsoft-Windows-MSDTC  |  3221278720  |           |  XACT_E_ALREADYOTHERSINGLEPHASE
-Microsoft-Windows-MSDTC  |  1073795073  |           |  XACT_S_DEFECT
-Microsoft-Windows-MSDTC  |  3221278721  |           |  XACT_E_CANTRETAIN
-Microsoft-Windows-MSDTC  |  1073795074  |           |  XACT_S_READONLY
-Microsoft-Windows-MSDTC  |  3221278722  |           |  XACT_E_COMMITFAILED
-Microsoft-Windows-MSDTC  |  1073795075  |           |  XACT_S_SOMENORETAIN
-Microsoft-Windows-MSDTC  |  3221278723  |           |  XACT_E_COMMITPREVENTED
-Microsoft-Windows-MSDTC  |  1073795076  |           |  XACT_S_OKINFORM
-Microsoft-Windows-MSDTC  |  2147536900  |           |  The maximum number of asynchronous checkpoints has been exceeded.
-Microsoft-Windows-MSDTC  |  3221278724  |           |  XACT_E_HEURISTICABORT
-Microsoft-Windows-MSDTC  |  1073795077  |           |  XACT_S_MADECHANGESCONTENT
-Microsoft-Windows-MSDTC  |  2147536901  |           |  The maximum number of log buffers in use has been reached.
-Microsoft-Windows-MSDTC  |  3221278725  |           |  XACT_E_HEURISTICCOMMIT
-Microsoft-Windows-MSDTC  |  1073795078  |           |  XACT_S_MADECHANGESINFORM
-Microsoft-Windows-MSDTC  |  2147536902  |           |  Cannot stop MS DTC. The user interface is not connected to the MS DTC service.
-Microsoft-Windows-MSDTC  |  3221278726  |           |  XACT_E_HEURISTICDAMAGE
-Microsoft-Windows-MSDTC  |  1073795079  |           |  XACT_S_ALLNORETAIN
-Microsoft-Windows-MSDTC  |  2147536903  |           |  Cannot start MS DTC. The user interface is not connected to the MS DTC service.
-Microsoft-Windows-MSDTC  |  3221278727  |           |  XACT_E_HEURISTICDANGER
-Microsoft-Windows-MSDTC  |  1073795080  |           |  XACT_S_ABORTING
-Microsoft-Windows-MSDTC  |  2147536904  |           |  MS DTC detected dirty log pages on recovery, and is reconstructing state from other pages
-Microsoft-Windows-MSDTC  |  3221278728  |           |  XACT_E_ISOLATIONLEVEL
-Microsoft-Windows-MSDTC  |  1073795081  |           |  XACT_S_SINGLEPHASE
-Microsoft-Windows-MSDTC  |  2147536905  |           |  MS DTC's attempt to check if the machine is a Domain Controller failed. MS DTC will continue to function, but may use incorrect security settings. Error Specifics: {param1}
-Microsoft-Windows-MSDTC  |  3221278729  |           |  XACT_E_NOASYNC
-Microsoft-Windows-MSDTC  |  3221278730  |           |  XACT_E_NOENLIST
-Microsoft-Windows-MSDTC  |  3221278731  |           |  XACT_E_NOISORETAIN
-Microsoft-Windows-MSDTC  |  3221278732  |           |  XACT_E_NORESOURCE
-Microsoft-Windows-MSDTC  |  3221278733  |           |  XACT_E_NOTCURRENT
-Microsoft-Windows-MSDTC  |  3221278734  |           |  XACT_E_NOTRANSACTION
-Microsoft-Windows-MSDTC  |  3221278735  |           |  XACT_E_NOTSUPPORTED
-Microsoft-Windows-MSDTC  |  1073795088  |           |  XACT_S_LASTRESOURCEMANAGER
-Microsoft-Windows-MSDTC  |  3221278736  |           |  XACT_E_UNKNOWNRMGRID
-Microsoft-Windows-MSDTC  |  3221278737  |           |  XACT_E_WRONGSTATE
-Microsoft-Windows-MSDTC  |  3221278738  |           |  XACT_E_WRONGUOW
-Microsoft-Windows-MSDTC  |  2147536915  |           |  Received unknown connection manager message type: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  3221278739  |           |  XACT_E_XTIONEXISTS
-Microsoft-Windows-MSDTC  |  3221278740  |           |  XACT_E_NOIMPORTOBJECT
-Microsoft-Windows-MSDTC  |  3221278741  |           |  XACT_E_INVALIDCOOKIE
-Microsoft-Windows-MSDTC  |  3221278742  |           |  XACT_E_INDOUBT
-Microsoft-Windows-MSDTC  |  3221278743  |           |  XACT_E_NOTIMEOUT
-Microsoft-Windows-MSDTC  |  2147536920  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_rollback function. The call to the xa_rollback function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  3221278744  |           |  XACT_E_ALREADYINPROGRESS
-Microsoft-Windows-MSDTC  |  3221278745  |           |  XACT_E_ABORTED
-Microsoft-Windows-MSDTC  |  2147536922  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_commit function. The call to the xa_commit function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  3221278746  |           |  XACT_E_LOGFULL
-Microsoft-Windows-MSDTC  |  3221278747  |           |  XACT_E_TMNOTAVAILABLE
-Microsoft-Windows-MSDTC  |  3221278748  |           |  XACT_E_CONNECTION_DOWN
-Microsoft-Windows-MSDTC  |  3221278749  |           |  XACT_E_CONNECTION_DENIED
-Microsoft-Windows-MSDTC  |  3221278750  |           |  XACT_E_REENLISTTIMEOUT
-Microsoft-Windows-MSDTC  |  3221278751  |           |  XACT_E_TIP_CONNECT_FAILED
-Microsoft-Windows-MSDTC  |  3221278752  |           |  XACT_E_TIP_PROTOCOL_ERROR
-Microsoft-Windows-MSDTC  |  2147536929  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_open function. The call to the xa_open function failed with an unexpected return code: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  3221278753  |           |  XACT_E_TIP_PULL_FAILED
-Microsoft-Windows-MSDTC  |  1073795106  |           |  Copyright 1996 - 2000 Microsoft Corporation. All rights reserved.
-Microsoft-Windows-MSDTC  |  3221278754  |           |  XACT_E_DEST_TMNOTAVAILABLE
-Microsoft-Windows-MSDTC  |  1073795107  |           |  DTC Security Configuration values (OFF = 0 and ON = 1):  Network Administration of Transactions = {param1},  Network Clients = {param2},   Inbound Distributed Transactions using Native MSDTC Protocol = {param3},      Outbound Distributed Transactions using Native MSDTC Protocol = {param4},   Transaction Internet Protocol (TIP) = {param5},   XA Transactions = {param6},   SNA LU 6.2 Transactions = {param7}
-Microsoft-Windows-MSDTC  |  3221278755  |           |  XACT_E_TIP_DISABLED
-Microsoft-Windows-MSDTC  |  1073795108  |           |  During the MS DTC installation, the attempt to delete the dtclog directory failed. This was done since the location of the log directory has been changed to msdtc. This can happen if the dtclog directory is not empty. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  2147536932  |           |  The XA Transaction Manager attempted to load the XA resource manager DLL. The call to LOADLIBRARY for the XA resource manager DLL failed: DLL={param1}, HR={param4}, File={param2} Line={param3}.
-Microsoft-Windows-MSDTC  |  3221278756  |           |  XACT_E_NETWORK_TX_DISABLED
-Microsoft-Windows-MSDTC  |  1073795109  |           |  MS DTC setup has determined that the existing cluster resource for MS DTC is of a newer version. Therefore no upgrade of the installation is necessary. {param1}
-Microsoft-Windows-MSDTC  |  2147536933  |           |  The XA Transaction Manager attempted to locate the "GetXaSwitch" function in the XA resource manager DLL. The "GetXaSwitch" function is missing from the XA resource manager DLL: File={param1}, HR={param3}, Line={param2}.
-Microsoft-Windows-MSDTC  |  3221278757  |           |  XACT_E_PARTNER_NETWORK_TX_DISABLED
-Microsoft-Windows-MSDTC  |  2147536934  |           |  The XA Transaction Manager called the "GetXaSwitch" function in the XA resource manager DLL. The call to the "GetXaSwitch" function failed: File={param1}, HR={param3}, Line={param2}.
-Microsoft-Windows-MSDTC  |  3221278758  |           |  XACT_E_XA_TX_DISABLED
-Microsoft-Windows-MSDTC  |  2147536935  |           |  MS DTC transaction outcome is unexpected.  Outcome is {param3}: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  3221278759  |           |  XACT_E_UNABLE_TO_READ_DTC_CONFIG
-Microsoft-Windows-MSDTC  |  2147536936  |           |  The MS DTC XA Transaction Manager was unable to perform recovery: File={param1}, HR={param3}, Line={param2}.
-Microsoft-Windows-MSDTC  |  3221278760  |           |  XACT_E_UNABLE_TO_LOAD_DTC_PROXY_DLL
-Microsoft-Windows-MSDTC  |  3221278762  |           |  XACT_E_PUSH_COMM_FAILURE
-Microsoft-Windows-MSDTC  |  3221278763  |           |  XACT_E_PULL_COMM_FAILURE
-Microsoft-Windows-MSDTC  |  2147536942  |           |  Heuristic Damage for XID=(TRID,XATM,XARM)%\ MS DTC Transaction Id "{param1}" %\ XA Transaction Manager ={param2} %\ XA Resource Manager  ={param3} %\ Data Source Name     ={param4}.
-Microsoft-Windows-MSDTC  |  2147536943  |           |  Heuristic Commit for XID=(TRID,XATM,XARM)%\ MS DTC Transaction Id "{param1}" %\ XA Transaction Manager={param2} %\ XA Resource Manager  ={param3} %\ Data Source Name     ={param4}.
-Microsoft-Windows-MSDTC  |  2147536944  |           |  Heuristic Rollback for XID=(TRID,XATM,XARM)%\ MS DTC Transaction Id "{param1}" %\ XA Transaction Manager={param2} %\ XA Resource Manager  ={param3} %\ Data Source Name     ={param4}.
-Microsoft-Windows-MSDTC  |  2147536945  |           |  The XA Transaction Manager attempted to perform recovery with the XA resource manager. The XA resource manager reported that recovery was unsuccessful. DSN = {param1}.
-Microsoft-Windows-MSDTC  |  2147536946  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_open function. The call to the xa_open function failed with a user exception: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536947  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_close function. The call to the xa_close function failed with a user exception: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536948  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_recover function. The call to the xa_recover function failed with a user exception: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536949  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_commit function. The call to the xa_commit function failed with a user exception: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536950  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_rollback function. The call to the xa_rollback function failed with a user exception: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536951  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_prepare function. The call to the xa_prepare function failed with a user exception: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536952  |           |  The XA Transaction Manager called the "GetXaSwitch" function in the XA resource manager DLL. The call to the "GetXaSwitch" function failed with a user exception: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536953  |           |  The MS DTC XA Transaction Manager could not enroll with the MS DTC Transaction Manager on behalf of the XA resource manager. DSN={param1} File={param2} Line={param3}.
-Microsoft-Windows-MSDTC  |  2147536960  |           |  The MS DTC XA Transaction Manager failed during initialization. It was unable to locate one or more of the LSA functions it requires from the ADVAPI32.DLL: File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536963  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_commit function. The call to the xa_commit function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536964  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_rollback function. The call to the xa_rollback function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536965  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_prepare function. The call to the xa_prepare function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536966  |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_commit function with the TMONEPHASE flag set. The call to the xa_commit function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536967  |           |  The value of XaTmMinWarmRecoveryInterval is greater than the value of XaTmMaxWarmRecoveryInterval. MS DTC will ignore the specified values and use the system default values instead.
-Microsoft-Windows-MSDTC  |  2147536968  |           |  During MS DTC installation, the attempt to preserve the old log file failed. The MS DTC installation will continue, however any information present in the old log file will get lost. Internal Information : {param1}.
-Microsoft-Windows-MSDTC  |  2147536969  |           |  MS DTC has received an invalid message. Event specific Information: {param1}.
-Microsoft-Windows-MSDTC  |  2147536970  |           |  The connection manager in a MS DTC component has received an invalid message. Event specific Information: {param1}.
-Microsoft-Windows-MSDTC  |  2147536971  |           |  The MS DTC XA Transaction Manager failed attempting to decrypt information in a log record.({param3}): File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536972  |           |  The MS DTC XA Transaction Manager failed attempting to encrypt information in a log record.({param3}): File={param1} Line={param2}.
-Microsoft-Windows-MSDTC  |  2147536973  |           |  KtmRm has received an invalid message. Event specific Information: {param1}.
-Microsoft-Windows-MSDTC  |  3221278848  |           |  XACT_E_CLERKNOTFOUND
-Microsoft-Windows-MSDTC  |  3221278849  |           |  XACT_E_CLERKEXISTS
-Microsoft-Windows-MSDTC  |  3221278850  |           |  XACT_E_RECOVERYINPROGRESS
-Microsoft-Windows-MSDTC  |  3221278851  |           |  XACT_E_TRANSACTIONCLOSED
-Microsoft-Windows-MSDTC  |  3221278852  |           |  XACT_E_INVALIDLSN
-Microsoft-Windows-MSDTC  |  3221278853  |           |  XACT_E_REPLAYREQUEST
-Microsoft-Windows-MSDTC  |  3221278976  |           |  XACT_E_CONNECTION_REQUEST_DENIED
-Microsoft-Windows-MSDTC  |  3221278977  |           |  XACT_E_TOOMANY_ENLISTMENTS
-Microsoft-Windows-MSDTC  |  3221278978  |           |  XACT_E_DUPLICATE_GUID
-Microsoft-Windows-MSDTC  |  3221278979  |           |  XACT_E_NOTSINGLEPHASE
-Microsoft-Windows-MSDTC  |  3221278980  |           |  XACT_E_RECOVERYALREADYDONE
-Microsoft-Windows-MSDTC  |  3221278981  |           |  XACT_E_PROTOCOL
-Microsoft-Windows-MSDTC  |  3221278982  |           |  XACT_E_RM_FAILURE
-Microsoft-Windows-MSDTC  |  3221278983  |           |  XACT_E_RECOVERY_FAILED
-Microsoft-Windows-MSDTC  |  3221278984  |           |  XACT_E_LU_NOT_FOUND
-Microsoft-Windows-MSDTC  |  3221278985  |           |  XACT_E_DUPLICATE_LU
-Microsoft-Windows-MSDTC  |  3221278986  |           |  XACT_E_LU_NOT_CONNECTED
-Microsoft-Windows-MSDTC  |  3221278987  |           |  XACT_E_DUPLICATE_TRANSID
-Microsoft-Windows-MSDTC  |  3221278988  |           |  XACT_E_LU_BUSY
-Microsoft-Windows-MSDTC  |  3221278989  |           |  XACT_E_LU_NO_RECOVERY_PROCESS
-Microsoft-Windows-MSDTC  |  3221278990  |           |  XACT_E_LU_DOWN
-Microsoft-Windows-MSDTC  |  3221278991  |           |  XACT_E_LU_RECOVERING
-Microsoft-Windows-MSDTC  |  3221278992  |           |  XACT_E_LU_RECOVERY_MISMATCH
-Microsoft-Windows-MSDTC  |  3221278993  |           |  XACT_E_RM_UNAVAILABLE
-Microsoft-Windows-MSDTC  |  3221278994  |           |  XACT_E_LRMRECOVERYALREADYDONE : Either the ILastResourceManager::TransactionOutcome or ILastResourceManager::LRMRecoveryDone API was called after calling ILastResourceManager::LRMRecoveryDone
-Microsoft-Windows-MSDTC  |  3221278995  |           |  XACT_E_NOLASTRESOURCEINTERFACE : Resource Manager called PrepareRequestDone with hres as XACT_S_LASTRESOURCEMANAGER, but the QI for IID_ITransactionLastResourceAsync failed
+Provider                 |  Level  |  Event ID    |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------|---------|--------------|-----------|-----------|--------|----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-MSDTC  |         |  1073745921  |  0        |           |        |          |           |  MS DTC started with the following settings (OFF = 0 and ON = 1):  Filtering Duplicate events = {param7} Security Configuration:      Network Administration of Transactions = {param1},      Network Clients = {param2},      Inbound Distributed Transactions using Native MSDTC Protocol = {param3},      Outbound Distributed Transactions using Native MSDTC Protocol = {param4},      Transaction Internet Protocol (TIP) = {param5},      XA Transactions = {param6}
+Microsoft-Windows-MSDTC  |         |  1073745922  |  0        |           |        |          |           |  Unable to translate the MS DTC error code to the appropriate MS DTC error message. The MS DTC error code was: {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229570  |  0        |           |        |          |           |  Could not connect to the MS DTC service.
+Microsoft-Windows-MSDTC  |         |  1073745923  |  0        |           |        |          |           |  You do not have permissions to manage the MS DTC on this system. MS DTC administrative functionality will be disabled.
+Microsoft-Windows-MSDTC  |         |  3221229571  |  0        |           |        |          |           |  The MS DTC administrative component has failed to start. You may not have permissions to manage the remote MS DTC, MS DTC does not support the current national language, or the MS DTC service may not be running.
+Microsoft-Windows-MSDTC  |         |  1073745924  |  0        |           |        |          |           |  Microsoft Distributed Transaction Coordinator (MS DTC)
+Microsoft-Windows-MSDTC  |         |  3221229572  |  0        |           |        |          |           |  An exception occurred while processing control requests from the Service Control Manager
+Microsoft-Windows-MSDTC  |         |  3221229573  |  0        |           |        |          |           |  The local MS DTC detected that the MS DTC on {param1} has the same unique identity as the local MS DTC. This means that the two MS DTC will not be able to communicate with each other. This problem typically occurs if one of the systems were cloned using unsupported cloning tools. MS DTC requires that the systems be cloned using supported cloning tools such as SYSPREP. Running 'msdtc -uninstall' and then 'msdtc -install' from the command prompt will fix the problem. Note: Running 'msdtc -uninstall' will result in the system losing all MS DTC configuration information.
+Microsoft-Windows-MSDTC  |         |  3221229574  |  0        |           |        |          |           |  Could not initialize the MS DTC Transaction Manager.
+Microsoft-Windows-MSDTC  |         |  3221229575  |  0        |           |        |          |           |  Out of memory.
+Microsoft-Windows-MSDTC  |         |  1073745928  |  0        |           |        |          |           |  The Microsoft Distributed Transaction Coordinator service was successfully installed.
+Microsoft-Windows-MSDTC  |         |  1073745929  |  0        |           |        |          |           |  The Microsoft Distributed Transaction Coordinator service was successfully removed.
+Microsoft-Windows-MSDTC  |         |  3221229578  |  0        |           |        |          |           |  Could not install the MS DTC service.
+Microsoft-Windows-MSDTC  |         |  3221229579  |  0        |           |        |          |           |  Could not remove the MS DTC service.
+Microsoft-Windows-MSDTC  |         |  1073745932  |  0        |           |        |          |           |  Press Ctrl+C to exit.
+Microsoft-Windows-MSDTC  |         |  3221229581  |  0        |           |        |          |           |  Could not load or initialize the MS DTC trace component.
+Microsoft-Windows-MSDTC  |         |  1073745934  |  0        |           |        |          |           |  Clear trace messages?
+Microsoft-Windows-MSDTC  |         |  1073745935  |  0        |           |        |          |           |  The MS DTC service is stopping.
+Microsoft-Windows-MSDTC  |         |  3221229584  |  0        |           |        |          |           |  Could not start the MS DTC Transaction Manager.
+Microsoft-Windows-MSDTC  |         |  3221229585  |  0        |           |        |          |           |  MS DTC log path not found.
+Microsoft-Windows-MSDTC  |         |  3221229586  |  0        |           |        |          |           |  Could not load the MS DTC Transaction Manager object.
+Microsoft-Windows-MSDTC  |         |  3221229587  |  0        |           |        |          |           |  Could not load the MS DTC name service.
+Microsoft-Windows-MSDTC  |         |  3221229588  |  0        |           |        |          |           |  Could not create an MS DTC name object.
+Microsoft-Windows-MSDTC  |         |  3221229589  |  0        |           |        |          |           |  Could not initialize the MS DTC user interface server object.
+Microsoft-Windows-MSDTC  |         |  3221229590  |  0        |           |        |          |           |  Could not load the MS DTC user interface server object.
+Microsoft-Windows-MSDTC  |         |  3221229591  |  0        |           |        |          |           |  The MS DTC user interface server object does not support the requested interface.
+Microsoft-Windows-MSDTC  |         |  3221229592  |  0        |           |        |          |           |  Could not load the MS DTC user interface name object.
+Microsoft-Windows-MSDTC  |         |  3221229593  |  0        |           |        |          |           |  Could not load the MS DTC Log Manager DLL (MSDTCLOG.DLL).
+Microsoft-Windows-MSDTC  |         |  3221229594  |  0        |           |        |          |           |  The MS DTC log file already exists.
+Microsoft-Windows-MSDTC  |         |  3221229595  |  0        |           |        |          |           |  This operation cannot be performed while the MS DTC service is running.
+Microsoft-Windows-MSDTC  |         |  1073745948  |  0        |           |        |          |           |  MS DTC logging has started.
+Microsoft-Windows-MSDTC  |         |  3221229596  |  0        |           |        |          |           |  Unable to decompress the MS DTC log file. Please ensure that there is sufficient available disk space on the MS DTC log device.
+Microsoft-Windows-MSDTC  |         |  1073745949  |  0        |           |        |          |           |  The MS DTC log file has been decompressed.
+Microsoft-Windows-MSDTC  |         |  3221229597  |  0        |           |        |          |           |  The MS DTC log file is full and cannot accept new log records.
+Microsoft-Windows-MSDTC  |         |  1073745950  |  0        |           |        |          |           |  The MS DTC Log Manager is stopping.
+Microsoft-Windows-MSDTC  |         |  3221229598  |  0        |           |        |          |           |  The MS DTC log file attributes are invalid. The log file must not be read only.
+Microsoft-Windows-MSDTC  |         |  2147487775  |  0        |           |        |          |           |  The MS DTC log file has wrapped.
+Microsoft-Windows-MSDTC  |         |  3221229599  |  0        |           |        |          |           |  The call to MapViewOfFile failed for the MS DTC log file.
+Microsoft-Windows-MSDTC  |         |  1073745952  |  0        |           |        |          |           |  The MS DTC Log Manager has taken a checkpoint.
+Microsoft-Windows-MSDTC  |         |  1073745953  |  0        |           |        |          |           |  The MS DTC log was reset following a system restore operation.
+Microsoft-Windows-MSDTC  |         |  3221229601  |  0        |           |        |          |           |  Could not locate the MS DTC Transaction Manager contact object.
+Microsoft-Windows-MSDTC  |         |  1073745954  |  0        |           |        |          |           |  The MSDTC service and all the services that depend on MSDTC service will be stopped.Do you wish to proceed?
+Microsoft-Windows-MSDTC  |         |  3221229602  |  0        |           |        |          |           |  The MS DTC Transaction Manager contact object does not support custom properties.
+Microsoft-Windows-MSDTC  |         |  3221229603  |  0        |           |        |          |           |  Could not locate the MS DTC user interface server contact object.
+Microsoft-Windows-MSDTC  |         |  3221229604  |  0        |           |        |          |           |  The size of the MS DTC log is invalid.
+Microsoft-Windows-MSDTC  |         |  3221229605  |  0        |           |        |          |           |  Could not find the MS DTC log disk device. Please select a new location for the MS DTC log file.
+Microsoft-Windows-MSDTC  |         |  1073745958  |  0        |           |        |          |           |  An MS DTC log file already exists in the selected directory. Resetting an existing MS DTC log file may cause your databases and other transactional resource managers to become inconsistent. Please review the MS DTC Administrator's Manual before proceeding. Do you wish to reset the existing MS DTC log file?
+Microsoft-Windows-MSDTC  |         |  3221229607  |  0        |           |        |          |           |  Failed to create/reset the MS DTC log file.
+Microsoft-Windows-MSDTC  |         |  3221229608  |  0        |           |        |          |           |  Invalid MS DTC log timer value. Allowed values: [Timer]     5- %\ [Checkpoint]  100- %\ [Flush]   5-1000
+Microsoft-Windows-MSDTC  |         |  3221229609  |  0        |           |        |          |           |  Could not force transaction outcome.
+Microsoft-Windows-MSDTC  |         |  2147487786  |  0        |           |        |          |           |  End of file reached while reading the log.
+Microsoft-Windows-MSDTC  |         |  3221229610  |  0        |           |        |          |           |  The specified transaction bridge CLSID is not a valid GUID. MS DTC is being started but the transaction bridge will be disabled.
+Microsoft-Windows-MSDTC  |         |  2147487787  |  0        |           |        |          |           |  The requested record does not exist in the MS DTC log file.
+Microsoft-Windows-MSDTC  |         |  3221229611  |  0        |           |        |          |           |  An error occured creating the transaction bridge. MS DTC is being started but the transaction bridge will be disabled.
+Microsoft-Windows-MSDTC  |         |  2147487788  |  0        |           |        |          |           |  The maximum number of asynchronous log writes has been exceeded.
+Microsoft-Windows-MSDTC  |         |  3221229612  |  0        |           |        |          |           |  An error occured initializing the transaction bridge. MS DTC is being started but the transaction bridge will be disabled.
+Microsoft-Windows-MSDTC  |         |  2147487789  |  0        |           |        |          |           |  Unknown message type encountered.
+Microsoft-Windows-MSDTC  |         |  3221229613  |  0        |           |        |          |           |  An error occured starting the transaction bridge. MS DTC is being started but the transaction bridge will be disabled.
+Microsoft-Windows-MSDTC  |         |  1073745966  |  0        |           |        |          |           |  A log client has reported taking a checkpoint.
+Microsoft-Windows-MSDTC  |         |  2147487790  |  0        |           |        |          |           |  Message length incorrect.
+Microsoft-Windows-MSDTC  |         |  1073745967  |  0        |           |        |          |           |  MS DTC has detected that a DC Promotion has happened since the last time the MS DTC service was started.
+Microsoft-Windows-MSDTC  |         |  2147487791  |  0        |           |        |          |           |  Bad message value.
+Microsoft-Windows-MSDTC  |         |  3221229615  |  0        |           |        |          |           |  Could not load the MS DTC connection manager object.
+Microsoft-Windows-MSDTC  |         |  1073745968  |  0        |           |        |          |           |  MS DTC has detected that a DC Demotion has happened since the last time the MS DTC service was started.
+Microsoft-Windows-MSDTC  |         |  2147487792  |  0        |           |        |          |           |  Bad message value.
+Microsoft-Windows-MSDTC  |         |  3221229616  |  0        |           |        |          |           |  Could not locate the MS DTC configuration interface.
+Microsoft-Windows-MSDTC  |         |  2147487793  |  0        |           |        |          |           |  Heuristic aborting (RESET) or heuristic mixed COMPARE STATES received from LU Partner "{param1}" for LU Transaction "{param2}" when delivering Committed for MS DTC Transaction Id "{param3}".
+Microsoft-Windows-MSDTC  |         |  3221229617  |  0        |           |        |          |           |  Could not initialize the MS DTC Admin Console General Page
+Microsoft-Windows-MSDTC  |         |  2147487794  |  0        |           |        |          |           |  Heuristic committed or heuristic mixed COMPARE STATES received from LU Partner "{param1}" for LU Transaction "{param2}" when delivering Aborting (RESET) for MS DTC Transaction Id "{param3}".
+Microsoft-Windows-MSDTC  |         |  3221229618  |  0        |           |        |          |           |  Could not connect to the MS DTC statistics component.
+Microsoft-Windows-MSDTC  |         |  2147487795  |  0        |           |        |          |           |  MS DTC has determined that the cluster service is configured but not running when MS DTC was started.  MS DTC will continue to startup but it will not failover.  Additionally, if the cluster service is started then please shut down this instance of MS DTC as it will become unusable. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229619  |  0        |           |        |          |           |  Could not connect to the MS DTC transaction list.
+Microsoft-Windows-MSDTC  |         |  2147487796  |  0        |           |        |          |           |  The MS DTC service was started before the cluster service on this cluster node. This service will now be stopped. If MSDTC has been configured to run on a cluster, the MS DTC resource will be brought online by the cluster service when it starts. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229620  |  0        |           |        |          |           |  Could not connect to the MS DTC user interface service.
+Microsoft-Windows-MSDTC  |         |  2147487797  |  0        |           |        |          |           |  The MSDTC log file was moved from one disk to another. As a result, the dependency of the MSDTC resource on the disk where the log file used to be located has been removed. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229621  |  0        |           |        |          |           |  Transaction not found.
+Microsoft-Windows-MSDTC  |         |  2147487798  |  0        |           |        |          |           |  The MSDTC log file has been moved from one disk to another. As a result, a new dependency on the disk where MSDTC log is now located has been added for the MSDTC resource. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229622  |  0        |           |        |          |           |  The transaction is not a child transaction.
+Microsoft-Windows-MSDTC  |         |  2147487799  |  0        |           |        |          |           |  The MSDTC TM could not determine if an incoming connection request is from a remote machine. For security reasons, it will treat this connection request as a remote connection request. If the NetworkClients security option is not enabled, this can cause it to reject this connection attempt. This can cause applications to report that the TM is not available. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229623  |  0        |           |        |          |           |  The transaction cannot be forced to abort or commit because the transaction's state is not "In Doubt".
+Microsoft-Windows-MSDTC  |         |  2147487800  |  0        |           |        |          |           |  The MS DTC Service may be hung during startup.  MSDTC will eventually terminate if it cannot startup. Debugging context follows: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229624  |  0        |           |        |          |           |  Either the transaction is not committed or there are resource managers or subordinate MS DTC Transaction Managers still connected.
+Microsoft-Windows-MSDTC  |         |  3221229625  |  0        |           |        |          |           |  Could not resolve the transaction due to an unknown error.
+Microsoft-Windows-MSDTC  |         |  3221229626  |  0        |           |        |          |           |  The MS DTC log file is unreadable. After ensuring that all Resource Managers coordinated by MS DTC have no indoubt transactions, please run "msdtc -resetlog" to reset the log file.
+Microsoft-Windows-MSDTC  |         |  3221229627  |  0        |           |        |          |           |  MS DTC encountered an internal error and is terminating.
+Microsoft-Windows-MSDTC  |         |  1073745980  |  0        |           |        |          |           |  String message: {param1}.
+Microsoft-Windows-MSDTC  |         |  1073745981  |  0        |           |        |          |           |  A version of MS DTC that was previously installed by SQL Server 6.5 has been found and updated.
+Microsoft-Windows-MSDTC  |         |  3221229629  |  0        |           |        |          |           |  Could not stop the MS DTC service or or one of its dependent services.
+Microsoft-Windows-MSDTC  |         |  3221229630  |  0        |           |        |          |           |  Could not open the Windows Service Control Manager.
+Microsoft-Windows-MSDTC  |         |  3221229631  |  0        |           |        |          |           |  Could not open the MS DTC service.
+Microsoft-Windows-MSDTC  |         |  3221229632  |  0        |           |        |          |           |  Invalid command line arguments.
+Microsoft-Windows-MSDTC  |         |  3221229633  |  0        |           |        |          |           |  Insufficient disk space for the MS DTC log file.
+Microsoft-Windows-MSDTC  |         |  3221229634  |  0        |           |        |          |           |  The MS DTC log file is an incompatible version.
+Microsoft-Windows-MSDTC  |         |  3221229635  |  0        |           |        |          |           |  MS DTC log file not found. After ensuring that all Resource Managers coordinated by MS DTC have no indoubt transactions, please run msdtc -resetlog to create the log file.
+Microsoft-Windows-MSDTC  |         |  3221229636  |  0        |           |        |          |           |  Could not establish connection to resolve transaction.
+Microsoft-Windows-MSDTC  |         |  3221229637  |  0        |           |        |          |           |  No transaction is selected.
+Microsoft-Windows-MSDTC  |         |  3221229638  |  0        |           |        |          |           |  The maximum number of active transactions that the MS DTC log file can accomodate has been exceeded. You must increase the size of the MS DTC log file if you wish to initiate more concurrrent transactions.
+Microsoft-Windows-MSDTC  |         |  3221229639  |  0        |           |        |          |           |  Cannot start the MS DTC service. Please see the Windows event log for more information.
+Microsoft-Windows-MSDTC  |         |  3221229640  |  0        |           |        |          |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  Please contact Microsoft Product Support. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229641  |  0        |           |        |          |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  Please contact Microsoft Product Support. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229642  |  0        |           |        |          |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  Please contact Microsoft Product Support. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229643  |  0        |           |        |          |           |  MS DTC Transaction Manager log write failed with error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229644  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. GetClassObject on LogMgr returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229645  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. GetCurrentLogRecord returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229646  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. GetCheckpoint returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229647  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. Init on LogRead returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229648  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. LogRead returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229649  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. LogFlush returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229650  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. LogWrite returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229651  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. OpenLogStream for Read returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229652  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. OpenLogStream for Write returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229653  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. QueryInterface on LogStorage returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229654  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. QueryInterface on LogRecordPointer returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229655  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. QueryInterface on TransactionTrackerFactory returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229656  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. SetCheckpoint returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229657  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. LogInit returned error {param1}. This is expected if the corresponding volume has been restored (search for kb article regarding the issue). In all other cases, contact product support.
+Microsoft-Windows-MSDTC  |         |  3221229658  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. QueryInterface on LogWriteAsynch returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229659  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. Init on LogWriteAsynch returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229660  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. Out of memory.
+Microsoft-Windows-MSDTC  |         |  3221229661  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. Log record too small.
+Microsoft-Windows-MSDTC  |         |  3221229662  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. Log record type unknown.
+Microsoft-Windows-MSDTC  |         |  3221229663  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. Unable to unpack name object, error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229664  |  0        |           |        |          |           |  MS DTC start failed. Unable to find the MS DTC resource dll.
+Microsoft-Windows-MSDTC  |         |  3221229665  |  0        |           |        |          |           |  A resource manager performed recovery and called ReenlistmentComplete indicating that recovery was complete. However, there is at least one transaction that was enlisted with the resource manager whose state is still "In Doubt"
+Microsoft-Windows-MSDTC  |         |  3221229666  |  0        |           |        |          |           |  The MS DTC Transaction Manager could not create the MS DTC XA Transaction Manager object. MS DTC is being started but the XA Transaction Manager feature will be disabled.
+Microsoft-Windows-MSDTC  |         |  3221229667  |  0        |           |        |          |           |  Could not initialize the MS DTC XA Transaction Manager. MS DTC is being started but the XA Transaction Manager feature will be disabled.
+Microsoft-Windows-MSDTC  |         |  3221229668  |  0        |           |        |          |           |  Could not start the MS DTC XA Transaction Manager. MS DTC is being started but the XA Transaction Manager feature will be disabled.
+Microsoft-Windows-MSDTC  |         |  3221229669  |  0        |           |        |          |           |  Could not locate the MS DTC XA Transaction Manager contact object.
+Microsoft-Windows-MSDTC  |         |  3221229670  |  0        |           |        |          |           |  Could not locate the MS DTC TIP Gateway contact object.
+Microsoft-Windows-MSDTC  |         |  3221229671  |  0        |           |        |          |           |  Could not create the MS DTC TIP Gateway initialization object. MS DTC is being started but the TIP feature will be disabled.
+Microsoft-Windows-MSDTC  |         |  3221229672  |  0        |           |        |          |           |  Failed to initialize the MS DTC TIP Gateway. MS DTC is being started but the TIP feature will be disabled.
+Microsoft-Windows-MSDTC  |         |  3221229673  |  0        |           |        |          |           |  Failed to start the MS DTC TIP Gateway. MS DTC is being started but the TIP feature will be disabled.
+Microsoft-Windows-MSDTC  |         |  3221229680  |  0        |           |        |          |           |  Failed to initialize COM while trying to start MS DTC.
+Microsoft-Windows-MSDTC  |         |  3221229681  |  0        |           |        |          |           |  A critical error occurred in an MS DTC component therefore the process is terminating. The category field identifies the component that encountered the error. Please contact Microsoft Product Support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229682  |  0        |           |        |          |           |  Failed to allocate thread local storage in the Asynchronous-Serial Component Runtime. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229683  |  0        |           |        |          |           |  Failed to convert the caller provided TIP Transaction URL into a valid MS DTC Transaction Id. This error is unexpected because the TIP Transaction URL indicates that the transaction originated on this system. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229684  |  0        |           |        |          |           |  Unable to get the file name for the OLE Transactions Proxy DLL. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229685  |  0        |           |        |          |           |  Failed to dynamically load the OLE Transactions Proxy DLL. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229686  |  0        |           |        |          |           |  The "DllGetTransactionManagerCore" function is missing from the OLE Transactions Proxy DLL. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229687  |  0        |           |        |          |           |  Failed to connection to the registry on the remote MS DTC Transaction Manager's system. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229688  |  0        |           |        |          |           |  Failed to open the registry key containing the list of transaction managers. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229689  |  0        |           |        |          |           |  Failed to read the name of the default transaction manager from the registry. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229696  |  0        |           |        |          |           |  Failed to open the registry key containing the name of the OLE Transactions Proxy DLL. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229697  |  0        |           |        |          |           |  Failed to read the name of the OLE Transactions Proxy DLL from the registry. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229698  |  0        |           |        |          |           |  Failed to start MS DTC via the MS DTC Proxy DLL. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229699  |  0        |           |        |          |           |  Unable to start MS DTC because initialization of cluster support failed.
+Microsoft-Windows-MSDTC  |         |  3221229700  |  0        |           |        |          |           |  MS DTC TIP Gateway internal error. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229701  |  0        |           |        |          |           |  MS DTC TIP Gateway illegal transition. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229702  |  0        |           |        |          |           |  MS DTC TIP Gateway invalid value. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229703  |  0        |           |        |          |           |  MS DTC TIP Gateway encountered error {param1} calling CoCreateInstance on class id "{param2}" {param3}, interface "{param4}" {param5}
+Microsoft-Windows-MSDTC  |         |  3221229704  |  0        |           |        |          |           |  MS DTC TIP Gateway encountered error {param1} calling CoGetClassObject on class id "{param2}" {param3}, interface "{param4}" {param5}
+Microsoft-Windows-MSDTC  |         |  3221229705  |  0        |           |        |          |           |  An MS DTC component was unable to allocate memory for a critical operation. That component is terminating. The category field identifies the component that failed. Please restart MS DTC if it does not restart automatically. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229712  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "ABORT COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL "{param2}"; MS DTC TIP Transaction URL "{param3}".
+Microsoft-Windows-MSDTC  |         |  3221229713  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "ABORT COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param2}"; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
+Microsoft-Windows-MSDTC  |         |  3221229714  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "PUSH COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL {param2}; MS DTC TIP Transaction URL "{param3}".
+Microsoft-Windows-MSDTC  |         |  3221229715  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "PUSH COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. Transaction specifics: External Transaction Manager Id {param2}; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
+Microsoft-Windows-MSDTC  |         |  3221229716  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "PREPARE COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. The transaction has been aborted. Transaction specifics: External TM ID {param1}; External Transaction URL "{param2}"; MS DTC TIP Transaction URL "{param3}".
+Microsoft-Windows-MSDTC  |         |  3221229717  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "PREPARE COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param2}"; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
+Microsoft-Windows-MSDTC  |         |  3221229718  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "COMMIT, QUERY, or RECONNECT COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. Transaction specifics: External Transaction Manager Id {param2}; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
+Microsoft-Windows-MSDTC  |         |  3221229719  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "COMMIT, QUERY, or RECONNECT COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. Transaction specifics: External Transaction Manager Id "{param2}"; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
+Microsoft-Windows-MSDTC  |         |  3221229720  |  0        |           |        |          |           |  The MS DTC Transaction Manager received a TIP "ERROR COMMAND" for an Active transaction that is being coordinated by another transaction manager. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL "{param2}"; MS DTC TIP Transaction URL "{param3}".
+Microsoft-Windows-MSDTC  |         |  3221229721  |  0        |           |        |          |           |  The MS DTC Transaction Manager received an unknown or unexpected TIP command ({param1}) for an Active transaction that is being coordinated by another transaction manager. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param2}"; External Transaction Id "{param3}"; MS DTC TIP Transaction URL "{param4}".
+Microsoft-Windows-MSDTC  |         |  3221229824  |  0        |           |        |          |           |  The MS DTC Transaction Manager received a TIP "ERROR COMMAND" for a "Prepared" transaction that is being coordinated by another transaction manager. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL "{param2}"; MS DTC TIP Transaction URL "{param3}".
+Microsoft-Windows-MSDTC  |         |  3221229825  |  0        |           |        |          |           |  The MS DTC Transaction Manager received an unknown or unexpected TIP command ({param1}) for a "Prepared" transaction that is being coordinated by another transaction manager. Transaction specifics: External TM ID {param2}; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
+Microsoft-Windows-MSDTC  |         |  3221229826  |  0        |           |        |          |           |  Unable to initialize Winsock. MS DTC is being started but some MS DTC features will be disabled.
+Microsoft-Windows-MSDTC  |         |  3221229827  |  0        |           |        |          |           |  An MS DTC component has generated an exception. Error Specifics: {param1}{__binLength}
+Microsoft-Windows-MSDTC  |         |  3221229828  |  0        |           |        |          |           |  Failed to initialize the MS DTC Communication Manager.  Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229829  |  0        |           |        |          |           |  MS DTC is unable to communicate with MS DTC on a remote system. No common RPC protocol is supported between the two systems. Please ensure that one or more of the following RPC protocols are common to both systems: TCP/IP, SPX, or NetBEUI.  Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229830  |  0        |           |        |          |           |  The MS DTC Connection Manager is unable to register with RPC to use one of LRPC, TCP/IP, or UDP/IP. Please ensure that RPC is configured properly. If "ServerTcpPort" registry key is configured(DWORD value under the HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC for local DTC instance or under cluster hive for clustered DTC instance), please verify if the configured port is valid and the port is not already in use by a different component. Error Specifics:{param1}
+Microsoft-Windows-MSDTC  |         |  3221229831  |  0        |           |        |          |           |  MS DTC is unable to communicate with MS DTC on a remote system. MS DTC on the primary system established an RPC binding with MS DTC on the secondary system. However, the secondary system did not create the reverse RPC binding to the primary MS DTC system before the timeout period expired. Please ensure that there is network connectivity between the two systems.  Error Specifics:{param1}
+Microsoft-Windows-MSDTC  |         |  3221229832  |  0        |           |        |          |           |  MS DTC was not able to allocate a console.
+Microsoft-Windows-MSDTC  |         |  3221229833  |  0        |           |        |          |           |  An incompletely initialized MS DTC log file was detected. After ensuring that all Resource Managers coordinated by MS DTC have no indoubt transactions, please run msdtc -resetlog to reset the log file.
+Microsoft-Windows-MSDTC  |         |  3221229834  |  0        |           |        |          |           |  Illegal transition caused fatal error: Event={param1} File={param2} Line={param3}.
+Microsoft-Windows-MSDTC  |         |  3221229835  |  0        |           |        |          |           |  Out of memory caused fatal error: Object={param1} File={param2} Line={param3}.
+Microsoft-Windows-MSDTC  |         |  3221229839  |  0        |           |        |          |           |  Unexpected event occurred on synchronization object: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221229840  |  0        |           |        |          |           |  Unexpected error occured in the MS DTC XA Transaction Manager : File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221229842  |  0        |           |        |          |           |  MS DTC was unable to bind to the TIP socket. This failure may have occurred because some other application is using the TIP socket. MS DTC will continue to start but TIP features will be unavailable. If you require TIP, please make the socket available and restart MS DTC.
+Microsoft-Windows-MSDTC  |         |  3221229843  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "PULL COMMAND" to another transaction manager and received a TIP "ERROR COMMAND" in response. Transaction specifics: External Transaction Manager Id "{param1}"; External Transaction URL {param2}; MS DTC TIP Transaction URL "{param3}".
+Microsoft-Windows-MSDTC  |         |  3221229844  |  0        |           |        |          |           |  The MS DTC Transaction Manager sent a TIP "PULL COMMAND" to another transaction manager and received an unknown or unexpected TIP command ({param1}) in response. Transaction specifics: External Transaction Manager Id {param2}; External Transaction URL "{param3}"; MS DTC TIP Transaction URL "{param4}".
+Microsoft-Windows-MSDTC  |         |  3221229845  |  0        |           |        |          |           |  MS DTC does not currently support either TIP or XA on 64 bit platforms. MS DTC will continue to start but TIP and XA features will be unavailable.
+Microsoft-Windows-MSDTC  |         |  3221229846  |  0        |           |        |          |           |  The MS DTC Transaction Manager received a TIP "ERROR COMMAND" for an Active transaction that was created with the "BEGIN COMMAND" and is being controlled by another transaction manager. The transaction has been aborted. Transaction specifics: External Transaction Manager URL "{param1}"; MS DTC TIP Transaction URL "{param2}".
+Microsoft-Windows-MSDTC  |         |  3221229847  |  0        |           |        |          |           |  The MS DTC Transaction Manager received an unknown or unexpected TIP command ({param1}) for an Active transaction that was created with the "BEGIN COMMAND" and is being controlled by another transaction manager. The transaction has been aborted. Transaction specifics: External Transaction Manager Id "{param2}"; MS DTC TIP Transaction URL "{param2}".
+Microsoft-Windows-MSDTC  |         |  3221229848  |  0        |           |        |          |           |  The application could not connect to MSDTC because of insufficient permissions. Please make sure that the identity under which the application is running has permission to access the cluster. Please refer to MSCS documentation on how to grant permissions. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229849  |  0        |           |        |          |           |  Running "msdtc -remove" is no longer supported.  To un-install MSDTC please contact product support. To configure this system to use a remote MSDTC as the coordinator please use the Component Services Explorer.
+Microsoft-Windows-MSDTC  |         |  3221229850  |  0        |           |        |          |           |  MS DTC setup has determined that the existing cluster resource for MS DTC is not configured correctly. Setup cannot continue to upgrade the installation.  Please contact product support or delete the existing MS DTC resource and re-run setup via comclust.exe. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229851  |  0        |           |        |          |           |  MS DTC setup has determined that the existing cluster resource for MS DTC is of a newer version. Setup cannot continue to upgrade the installation. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229852  |  0        |           |        |          |           |  MS DTC setup has determined that the installation of MS DTC on this node used to be a part of cluster that had a newer version of MS DTC installed. Setup cannot continue to upgrade the installation. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229853  |  0        |           |        |          |           |  MS DTC was unable to determine the version of the data associated with cluster support in the local registry.  MS DTC cannot continue to startup.  Please contact Microsoft Product Support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229854  |  0        |           |        |          |           |  MS DTC was unable to determine the version of the data associated with MS DTC cluster resource.  MS DTC cannot continue to startup.  Please contact Microsoft Product Support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229855  |  0        |           |        |          |           |  MS DTC was unable to determine the state of the cluster service on this machine.  MS DTC cannot continue to startup.  Please contact Microsoft Product Support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229856  |  0        |           |        |          |           |  MS DTC was unable to start because the installation was not configured to run on a cluster.  Please create a MS DTC resource through cluster administrator. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229857  |  0        |           |        |          |           |  MS DTC cannot start on this cluster node because the MS DTC resource is currently owned by another node in the cluster. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229858  |  0        |           |        |          |           |  MS DTC cannot start because it failed to initialize the log file for its first usage after a cluster install. Please try to restart MS DTC.  If the problem persists please contact Microsoft Product Support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229859  |  0        |           |        |          |           |  MS DTC setup timed out while waiting for another copy of MS DTC setup to finish populating the shared cluster registry. Please re-run comclus.exe on this node when the other setup completes.  If there is not other MS DTC setup running then please delete the MS DTC cluster resource and re-run comclust.exe. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229860  |  0        |           |        |          |           |  msdtc -resetlog did not succeed because the log file is located on a shared disk owned by another node.
+Microsoft-Windows-MSDTC  |         |  3221229861  |  0        |           |        |          |           |  MS DTC setup failed to populate the shared cluster registry. The DTC resource will not be able to come online.Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229862  |  0        |           |        |          |           |  MS DTC setup failed to populate the shared cluster registry with information about MSDTC's log.The DTC resource will not be able to come online.Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229863  |  0        |           |        |          |           |  MS DTC setup failed to populate the local registry with information from the shared cluster registry. Applications that use MSDTC may not work correctly as a result of this error. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229864  |  0        |           |        |          |           |  MS DTC setup was unable to turn off auto start for the MSDTC service. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229865  |  0        |           |        |          |           |  Information about the MSDTC resource has not been configured correctly in the shared cluster registry. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229866  |  0        |           |        |          |           |  MS DTC's log information has not been configured correctly in the shared cluster registry. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229867  |  0        |           |        |          |           |  MSDTC detected that MSDTC related information in the local registry is different from that in the shared cluster registry. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229868  |  0        |           |        |          |           |  The MSDTC resource does not have the required dependency on a resource of type Network Name. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229869  |  0        |           |        |          |           |  The MSDTC resource does not have the required dependency on a resource of type Physical Disk. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229870  |  0        |           |        |          |           |  MS DTC's cluster resource dll attempted to wait on an internal event. This wait failed. The MS DTC resource will not be able to come online because of this error. If the problem persists please contact Microsoft Product Support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229871  |  0        |           |        |          |           |  Could not establish connection to trace transaction.
+Microsoft-Windows-MSDTC  |         |  3221229872  |  0        |           |        |          |           |  No transaction is selected.
+Microsoft-Windows-MSDTC  |         |  3221229873  |  0        |           |        |          |           |  Transaction not found.
+Microsoft-Windows-MSDTC  |         |  3221229874  |  0        |           |        |          |           |  The version of the transaction manager is not compatible for this feature.
+Microsoft-Windows-MSDTC  |         |  3221229875  |  0        |           |        |          |           |  The attempt to dump the transaction to a trace file failed.
+Microsoft-Windows-MSDTC  |         |  3221229876  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the initialization of the tracing infrastructure failed. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229877  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the attempt to create a new trace session failed. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229878  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the attempt to stop the existing trace session failed. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229879  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the attempt to flush the existing trace data failed. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229880  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the attempt to update the maximum buffer count of the existing trace session failed. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229881  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the infrastructure has reported that the number of trace events that have been lost until now is equal to {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229882  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the thread launched to update the trace settings has failed. Any changes to the trace settings made using the "Tracing Options" dialog box might not take the desired effect. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229883  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the attempt to set the trace specific registry settings failed. Any tracing specific functionality will be disabled. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229884  |  0        |           |        |          |           |  Failed to create a new trace session.
+Microsoft-Windows-MSDTC  |         |  3221229885  |  0        |           |        |          |           |  Failed to stop the existing trace session.
+Microsoft-Windows-MSDTC  |         |  3221229886  |  0        |           |        |          |           |  Failed to flush the existing trace data.
+Microsoft-Windows-MSDTC  |         |  3221229887  |  0        |           |        |          |           |  Failed to update the maximum buffer count of the existing trace session.
+Microsoft-Windows-MSDTC  |         |  3221229888  |  0        |           |        |          |           |  Failed to update all the trace settings in the registry.
+Microsoft-Windows-MSDTC  |         |  3221229889  |  0        |           |        |          |           |  Failed to load all the trace settings from the registry.
+Microsoft-Windows-MSDTC  |         |  3221229890  |  0        |           |        |          |           |  MS DTC Transaction Manager start failed. GetSecurityConfiguration returned error {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229891  |  0        |           |        |          |           |  MS DTC failed to load the system restore information. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229892  |  0        |           |        |          |           |  MS DTC failed to process a system restore event. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229893  |  0        |           |        |          |           |  MS DTC failed to save the system restore information. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  1073746246  |  0        |           |        |          |           |  MS DTC has processed a system restore event. As a result the transaction log has been reset and the identity of the transaction manager has been changed.
+Microsoft-Windows-MSDTC  |         |  3221229896  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the attempt to create the trace directory failed. Any tracing specific functionality will be disabled. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229897  |  0        |           |        |          |           |  MS DTC Tracing infrastructure : the infrastructure has reported that an attempt to trace an event has failed cause of lack of enough buffer space. The tracing infrastructure will retry tracing this event. The total number of times this has happened so far is equal to {param1}. Increasing the max number of memory buffers might rectify the situation.
+Microsoft-Windows-MSDTC  |         |  3221229898  |  0        |           |        |          |           |  Failed to read the needed name objects from the registry. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229899  |  0        |           |        |          |           |  Failed to initialize the needed name objects. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229900  |  0        |           |        |          |           |  Failed to stop MSDTC service or one of its dependent services. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229901  |  0        |           |        |          |           |  Failed to set the security attributes on the MS DTC service. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229903  |  0        |           |        |          |           |  Failed to stop the MS DTC service. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229904  |  0        |           |        |          |           |  Failed to restart the MS DTC service. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229905  |  0        |           |        |          |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  An unknown message type was received.  Please contact Microsoft Product Support. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229906  |  0        |           |        |          |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  An incorrect message length was received.  Please contact Microsoft Product Support. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229907  |  0        |           |        |          |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  A bad message value was received.  Please contact Microsoft Product Support. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229908  |  0        |           |        |          |           |  The MS DTC Transaction Manager is in an inconsistent state and cannot proceed.  An unexpected message type was received.  Please contact Microsoft Product Support. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229909  |  0        |           |        |          |           |  The account that the MS DTC service is running under is invalid. This can happen if the service account information has been changed using the Services snap-in in Microsoft Management Console (MMC). MS DTC service will continue to start. Please make sure that the MS DTC service account information is updated using the Component Services Explorer.
+Microsoft-Windows-MSDTC  |         |  3221229910  |  0        |           |        |          |           |  Failed to set the MS DTC service account information in the registry. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229911  |  0        |           |        |          |           |  Failed to verify MS DTC service account information. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229912  |  0        |           |        |          |           |  The MS DTC Service is terminating because it didnt startup in a timely manner.  This may be because MS DTC took too long to recover its log file.  Try increasing the startup timeout by specifying a larger "MaxRecoveryTimePerMbInMinutes" DWORD value under the HKEY_LOCAL_MACHINE\Software\Microsoft\MSDTC registry key.  The default for this value is 3 (minutes). Debugging context follows: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229913  |  0        |           |        |          |           |  A MS DTC component has encountered an internal error. The process is being terminated. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229914  |  0        |           |        |          |           |  MS DTC was unable to start because this version of dtc is less than the least valid version allowable specified in the cluster database. This can happen if a higher incompatible version of MS DTC was installed on another node of the cluster. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229915  |  0        |           |        |          |           |  MS DTC was unable to start because this version of dtc is not compatible with the version of MS DTC installed on another node of the cluster. This can happen if an incompatible version of MS DTC was installed on another node of the cluster. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229916  |  0        |           |        |          |           |  The XA Transaction Manager is in an inconsistent state and cannot proceed. XA transactions will not take place. Please contact Microsoft Product Support. {param1}
+Microsoft-Windows-MSDTC  |         |  3221229917  |  0        |           |        |          |           |  The XA Transaction Manager cannot load the requested XA Dll ({param1}) since a registry entry is required for this operation. Please create a string value in the registry under HKLM\Software\Microsoft\MSDTC\XADLL where the value name is the name of the dll in the format dllname.dll and the value is the full path of the Dll. If you are not sure about the name or path of your XA Dll then please check the documentation for your XA provider. If this machine is part of a cluster please note that this registry entry needs to be made for each node in the cluster. {param2}
+Microsoft-Windows-MSDTC  |         |  3221229918  |  0        |           |        |          |           |  Entering MSDTC log storage warning limits.
+Microsoft-Windows-MSDTC  |         |  1073746271  |  0        |           |        |          |           |  Leaving MSDTC log storage warning limits.
+Microsoft-Windows-MSDTC  |         |  3221229920  |  0        |           |        |          |           |  KTMRM service failed to load the system restore information. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229921  |  0        |           |        |          |           |  KTMRM service failed to process a system restore. As a result, the service is exiting. Please try restarting the service, if the service fails to start, contact product support. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229924  |  0        |           |        |          |           |  Attempt to freeze the transaction manager failed. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229925  |  0        |           |        |          |           |  Attempt to thaw the transaction manager failed. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229926  |  0        |           |        |          |           |  Failed to prepare MSDTC for imaging. Sysprep phase: "{param1}" failed with error: {param2}
+Microsoft-Windows-MSDTC  |         |  3221229927  |  0        |           |        |          |           |  Unexpected error (0x{param1}!%08x!) when connecting to the Kernel Transaction Manager.
+Microsoft-Windows-MSDTC  |         |  3221229928  |  0        |           |        |          |           |  Unable to create a communication channel to the Kernel Transaction Manager.  The attempt failed with error: 0x{param1}!%08x!
+Microsoft-Windows-MSDTC  |         |  3221229929  |  0        |           |        |          |           |  MSDTC was unable to migrate its log during Windows upgrade. The attempt failed with error: {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229930  |  0        |           |        |          |           |  MSDTC encountered an error during migration of contact identifiers. The attempt failed with error: {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229931  |  0        |           |        |          |           |  MSDTC encountered an error during Windows upgrade. Error specifics: {param1}.
+Microsoft-Windows-MSDTC  |         |  3221229932  |  0        |           |        |          |           |  The KtmRm service has encountered an internal error. The service is being shutdown. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221229933  |  0        |           |        |          |           |  The MSDTC service cannot start because its contact identifiers are either missing, inaccessible, or corrupt. Running 'msdtc -uninstall' and then 'msdtc -install' from the command prompt will fix the problem. Note: Running 'msdtc -uninstall' will result in the system losing all MSDTC configuration information. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  1073795072  |  0        |           |        |          |           |  XACT_S_ASYNC
+Microsoft-Windows-MSDTC  |         |  3221278720  |  0        |           |        |          |           |  XACT_E_ALREADYOTHERSINGLEPHASE
+Microsoft-Windows-MSDTC  |         |  1073795073  |  0        |           |        |          |           |  XACT_S_DEFECT
+Microsoft-Windows-MSDTC  |         |  3221278721  |  0        |           |        |          |           |  XACT_E_CANTRETAIN
+Microsoft-Windows-MSDTC  |         |  1073795074  |  0        |           |        |          |           |  XACT_S_READONLY
+Microsoft-Windows-MSDTC  |         |  3221278722  |  0        |           |        |          |           |  XACT_E_COMMITFAILED
+Microsoft-Windows-MSDTC  |         |  1073795075  |  0        |           |        |          |           |  XACT_S_SOMENORETAIN
+Microsoft-Windows-MSDTC  |         |  3221278723  |  0        |           |        |          |           |  XACT_E_COMMITPREVENTED
+Microsoft-Windows-MSDTC  |         |  1073795076  |  0        |           |        |          |           |  XACT_S_OKINFORM
+Microsoft-Windows-MSDTC  |         |  2147536900  |  0        |           |        |          |           |  The maximum number of asynchronous checkpoints has been exceeded.
+Microsoft-Windows-MSDTC  |         |  3221278724  |  0        |           |        |          |           |  XACT_E_HEURISTICABORT
+Microsoft-Windows-MSDTC  |         |  1073795077  |  0        |           |        |          |           |  XACT_S_MADECHANGESCONTENT
+Microsoft-Windows-MSDTC  |         |  2147536901  |  0        |           |        |          |           |  The maximum number of log buffers in use has been reached.
+Microsoft-Windows-MSDTC  |         |  3221278725  |  0        |           |        |          |           |  XACT_E_HEURISTICCOMMIT
+Microsoft-Windows-MSDTC  |         |  1073795078  |  0        |           |        |          |           |  XACT_S_MADECHANGESINFORM
+Microsoft-Windows-MSDTC  |         |  2147536902  |  0        |           |        |          |           |  Cannot stop MS DTC. The user interface is not connected to the MS DTC service.
+Microsoft-Windows-MSDTC  |         |  3221278726  |  0        |           |        |          |           |  XACT_E_HEURISTICDAMAGE
+Microsoft-Windows-MSDTC  |         |  1073795079  |  0        |           |        |          |           |  XACT_S_ALLNORETAIN
+Microsoft-Windows-MSDTC  |         |  2147536903  |  0        |           |        |          |           |  Cannot start MS DTC. The user interface is not connected to the MS DTC service.
+Microsoft-Windows-MSDTC  |         |  3221278727  |  0        |           |        |          |           |  XACT_E_HEURISTICDANGER
+Microsoft-Windows-MSDTC  |         |  1073795080  |  0        |           |        |          |           |  XACT_S_ABORTING
+Microsoft-Windows-MSDTC  |         |  2147536904  |  0        |           |        |          |           |  MS DTC detected dirty log pages on recovery, and is reconstructing state from other pages
+Microsoft-Windows-MSDTC  |         |  3221278728  |  0        |           |        |          |           |  XACT_E_ISOLATIONLEVEL
+Microsoft-Windows-MSDTC  |         |  1073795081  |  0        |           |        |          |           |  XACT_S_SINGLEPHASE
+Microsoft-Windows-MSDTC  |         |  2147536905  |  0        |           |        |          |           |  MS DTC's attempt to check if the machine is a Domain Controller failed. MS DTC will continue to function, but may use incorrect security settings. Error Specifics: {param1}
+Microsoft-Windows-MSDTC  |         |  3221278729  |  0        |           |        |          |           |  XACT_E_NOASYNC
+Microsoft-Windows-MSDTC  |         |  3221278730  |  0        |           |        |          |           |  XACT_E_NOENLIST
+Microsoft-Windows-MSDTC  |         |  3221278731  |  0        |           |        |          |           |  XACT_E_NOISORETAIN
+Microsoft-Windows-MSDTC  |         |  3221278732  |  0        |           |        |          |           |  XACT_E_NORESOURCE
+Microsoft-Windows-MSDTC  |         |  3221278733  |  0        |           |        |          |           |  XACT_E_NOTCURRENT
+Microsoft-Windows-MSDTC  |         |  3221278734  |  0        |           |        |          |           |  XACT_E_NOTRANSACTION
+Microsoft-Windows-MSDTC  |         |  3221278735  |  0        |           |        |          |           |  XACT_E_NOTSUPPORTED
+Microsoft-Windows-MSDTC  |         |  1073795088  |  0        |           |        |          |           |  XACT_S_LASTRESOURCEMANAGER
+Microsoft-Windows-MSDTC  |         |  3221278736  |  0        |           |        |          |           |  XACT_E_UNKNOWNRMGRID
+Microsoft-Windows-MSDTC  |         |  3221278737  |  0        |           |        |          |           |  XACT_E_WRONGSTATE
+Microsoft-Windows-MSDTC  |         |  3221278738  |  0        |           |        |          |           |  XACT_E_WRONGUOW
+Microsoft-Windows-MSDTC  |         |  2147536915  |  0        |           |        |          |           |  Received unknown connection manager message type: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221278739  |  0        |           |        |          |           |  XACT_E_XTIONEXISTS
+Microsoft-Windows-MSDTC  |         |  3221278740  |  0        |           |        |          |           |  XACT_E_NOIMPORTOBJECT
+Microsoft-Windows-MSDTC  |         |  3221278741  |  0        |           |        |          |           |  XACT_E_INVALIDCOOKIE
+Microsoft-Windows-MSDTC  |         |  3221278742  |  0        |           |        |          |           |  XACT_E_INDOUBT
+Microsoft-Windows-MSDTC  |         |  3221278743  |  0        |           |        |          |           |  XACT_E_NOTIMEOUT
+Microsoft-Windows-MSDTC  |         |  2147536920  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_rollback function. The call to the xa_rollback function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221278744  |  0        |           |        |          |           |  XACT_E_ALREADYINPROGRESS
+Microsoft-Windows-MSDTC  |         |  3221278745  |  0        |           |        |          |           |  XACT_E_ABORTED
+Microsoft-Windows-MSDTC  |         |  2147536922  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_commit function. The call to the xa_commit function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221278746  |  0        |           |        |          |           |  XACT_E_LOGFULL
+Microsoft-Windows-MSDTC  |         |  3221278747  |  0        |           |        |          |           |  XACT_E_TMNOTAVAILABLE
+Microsoft-Windows-MSDTC  |         |  3221278748  |  0        |           |        |          |           |  XACT_E_CONNECTION_DOWN
+Microsoft-Windows-MSDTC  |         |  3221278749  |  0        |           |        |          |           |  XACT_E_CONNECTION_DENIED
+Microsoft-Windows-MSDTC  |         |  3221278750  |  0        |           |        |          |           |  XACT_E_REENLISTTIMEOUT
+Microsoft-Windows-MSDTC  |         |  3221278751  |  0        |           |        |          |           |  XACT_E_TIP_CONNECT_FAILED
+Microsoft-Windows-MSDTC  |         |  3221278752  |  0        |           |        |          |           |  XACT_E_TIP_PROTOCOL_ERROR
+Microsoft-Windows-MSDTC  |         |  2147536929  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_open function. The call to the xa_open function failed with an unexpected return code: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221278753  |  0        |           |        |          |           |  XACT_E_TIP_PULL_FAILED
+Microsoft-Windows-MSDTC  |         |  1073795106  |  0        |           |        |          |           |  Copyright 1996 - 2000 Microsoft Corporation. All rights reserved.
+Microsoft-Windows-MSDTC  |         |  3221278754  |  0        |           |        |          |           |  XACT_E_DEST_TMNOTAVAILABLE
+Microsoft-Windows-MSDTC  |         |  1073795107  |  0        |           |        |          |           |  DTC Security Configuration values (OFF = 0 and ON = 1):  Network Administration of Transactions = {param1},  Network Clients = {param2},   Inbound Distributed Transactions using Native MSDTC Protocol = {param3},      Outbound Distributed Transactions using Native MSDTC Protocol = {param4},   Transaction Internet Protocol (TIP) = {param5},   XA Transactions = {param6},   SNA LU 6.2 Transactions = {param7}
+Microsoft-Windows-MSDTC  |         |  3221278755  |  0        |           |        |          |           |  XACT_E_TIP_DISABLED
+Microsoft-Windows-MSDTC  |         |  1073795108  |  0        |           |        |          |           |  During the MS DTC installation, the attempt to delete the dtclog directory failed. This was done since the location of the log directory has been changed to msdtc. This can happen if the dtclog directory is not empty. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  2147536932  |  0        |           |        |          |           |  The XA Transaction Manager attempted to load the XA resource manager DLL. The call to LOADLIBRARY for the XA resource manager DLL failed: DLL={param1}, HR={param4}, File={param2} Line={param3}.
+Microsoft-Windows-MSDTC  |         |  3221278756  |  0        |           |        |          |           |  XACT_E_NETWORK_TX_DISABLED
+Microsoft-Windows-MSDTC  |         |  1073795109  |  0        |           |        |          |           |  MS DTC setup has determined that the existing cluster resource for MS DTC is of a newer version. Therefore no upgrade of the installation is necessary. {param1}
+Microsoft-Windows-MSDTC  |         |  2147536933  |  0        |           |        |          |           |  The XA Transaction Manager attempted to locate the "GetXaSwitch" function in the XA resource manager DLL. The "GetXaSwitch" function is missing from the XA resource manager DLL: File={param1}, HR={param3}, Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221278757  |  0        |           |        |          |           |  XACT_E_PARTNER_NETWORK_TX_DISABLED
+Microsoft-Windows-MSDTC  |         |  2147536934  |  0        |           |        |          |           |  The XA Transaction Manager called the "GetXaSwitch" function in the XA resource manager DLL. The call to the "GetXaSwitch" function failed: File={param1}, HR={param3}, Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221278758  |  0        |           |        |          |           |  XACT_E_XA_TX_DISABLED
+Microsoft-Windows-MSDTC  |         |  2147536935  |  0        |           |        |          |           |  MS DTC transaction outcome is unexpected.  Outcome is {param3}: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221278759  |  0        |           |        |          |           |  XACT_E_UNABLE_TO_READ_DTC_CONFIG
+Microsoft-Windows-MSDTC  |         |  2147536936  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager was unable to perform recovery: File={param1}, HR={param3}, Line={param2}.
+Microsoft-Windows-MSDTC  |         |  3221278760  |  0        |           |        |          |           |  XACT_E_UNABLE_TO_LOAD_DTC_PROXY_DLL
+Microsoft-Windows-MSDTC  |         |  3221278762  |  0        |           |        |          |           |  XACT_E_PUSH_COMM_FAILURE
+Microsoft-Windows-MSDTC  |         |  3221278763  |  0        |           |        |          |           |  XACT_E_PULL_COMM_FAILURE
+Microsoft-Windows-MSDTC  |         |  2147536942  |  0        |           |        |          |           |  Heuristic Damage for XID=(TRID,XATM,XARM)%\ MS DTC Transaction Id "{param1}" %\ XA Transaction Manager ={param2} %\ XA Resource Manager  ={param3} %\ Data Source Name     ={param4}.
+Microsoft-Windows-MSDTC  |         |  2147536943  |  0        |           |        |          |           |  Heuristic Commit for XID=(TRID,XATM,XARM)%\ MS DTC Transaction Id "{param1}" %\ XA Transaction Manager={param2} %\ XA Resource Manager  ={param3} %\ Data Source Name     ={param4}.
+Microsoft-Windows-MSDTC  |         |  2147536944  |  0        |           |        |          |           |  Heuristic Rollback for XID=(TRID,XATM,XARM)%\ MS DTC Transaction Id "{param1}" %\ XA Transaction Manager={param2} %\ XA Resource Manager  ={param3} %\ Data Source Name     ={param4}.
+Microsoft-Windows-MSDTC  |         |  2147536945  |  0        |           |        |          |           |  The XA Transaction Manager attempted to perform recovery with the XA resource manager. The XA resource manager reported that recovery was unsuccessful. DSN = {param1}.
+Microsoft-Windows-MSDTC  |         |  2147536946  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_open function. The call to the xa_open function failed with a user exception: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536947  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_close function. The call to the xa_close function failed with a user exception: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536948  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_recover function. The call to the xa_recover function failed with a user exception: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536949  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_commit function. The call to the xa_commit function failed with a user exception: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536950  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_rollback function. The call to the xa_rollback function failed with a user exception: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536951  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_prepare function. The call to the xa_prepare function failed with a user exception: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536952  |  0        |           |        |          |           |  The XA Transaction Manager called the "GetXaSwitch" function in the XA resource manager DLL. The call to the "GetXaSwitch" function failed with a user exception: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536953  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager could not enroll with the MS DTC Transaction Manager on behalf of the XA resource manager. DSN={param1} File={param2} Line={param3}.
+Microsoft-Windows-MSDTC  |         |  2147536960  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager failed during initialization. It was unable to locate one or more of the LSA functions it requires from the ADVAPI32.DLL: File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536963  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_commit function. The call to the xa_commit function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536964  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_rollback function. The call to the xa_rollback function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536965  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_prepare function. The call to the xa_prepare function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536966  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager called the XA resource manager's xa_commit function with the TMONEPHASE flag set. The call to the xa_commit function failed with an unexpected return code ({param3}): File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536967  |  0        |           |        |          |           |  The value of XaTmMinWarmRecoveryInterval is greater than the value of XaTmMaxWarmRecoveryInterval. MS DTC will ignore the specified values and use the system default values instead.
+Microsoft-Windows-MSDTC  |         |  2147536968  |  0        |           |        |          |           |  During MS DTC installation, the attempt to preserve the old log file failed. The MS DTC installation will continue, however any information present in the old log file will get lost. Internal Information : {param1}.
+Microsoft-Windows-MSDTC  |         |  2147536969  |  0        |           |        |          |           |  MS DTC has received an invalid message. Event specific Information: {param1}.
+Microsoft-Windows-MSDTC  |         |  2147536970  |  0        |           |        |          |           |  The connection manager in a MS DTC component has received an invalid message. Event specific Information: {param1}.
+Microsoft-Windows-MSDTC  |         |  2147536971  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager failed attempting to decrypt information in a log record.({param3}): File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536972  |  0        |           |        |          |           |  The MS DTC XA Transaction Manager failed attempting to encrypt information in a log record.({param3}): File={param1} Line={param2}.
+Microsoft-Windows-MSDTC  |         |  2147536973  |  0        |           |        |          |           |  KtmRm has received an invalid message. Event specific Information: {param1}.
+Microsoft-Windows-MSDTC  |         |  3221278848  |  0        |           |        |          |           |  XACT_E_CLERKNOTFOUND
+Microsoft-Windows-MSDTC  |         |  3221278849  |  0        |           |        |          |           |  XACT_E_CLERKEXISTS
+Microsoft-Windows-MSDTC  |         |  3221278850  |  0        |           |        |          |           |  XACT_E_RECOVERYINPROGRESS
+Microsoft-Windows-MSDTC  |         |  3221278851  |  0        |           |        |          |           |  XACT_E_TRANSACTIONCLOSED
+Microsoft-Windows-MSDTC  |         |  3221278852  |  0        |           |        |          |           |  XACT_E_INVALIDLSN
+Microsoft-Windows-MSDTC  |         |  3221278853  |  0        |           |        |          |           |  XACT_E_REPLAYREQUEST
+Microsoft-Windows-MSDTC  |         |  3221278976  |  0        |           |        |          |           |  XACT_E_CONNECTION_REQUEST_DENIED
+Microsoft-Windows-MSDTC  |         |  3221278977  |  0        |           |        |          |           |  XACT_E_TOOMANY_ENLISTMENTS
+Microsoft-Windows-MSDTC  |         |  3221278978  |  0        |           |        |          |           |  XACT_E_DUPLICATE_GUID
+Microsoft-Windows-MSDTC  |         |  3221278979  |  0        |           |        |          |           |  XACT_E_NOTSINGLEPHASE
+Microsoft-Windows-MSDTC  |         |  3221278980  |  0        |           |        |          |           |  XACT_E_RECOVERYALREADYDONE
+Microsoft-Windows-MSDTC  |         |  3221278981  |  0        |           |        |          |           |  XACT_E_PROTOCOL
+Microsoft-Windows-MSDTC  |         |  3221278982  |  0        |           |        |          |           |  XACT_E_RM_FAILURE
+Microsoft-Windows-MSDTC  |         |  3221278983  |  0        |           |        |          |           |  XACT_E_RECOVERY_FAILED
+Microsoft-Windows-MSDTC  |         |  3221278984  |  0        |           |        |          |           |  XACT_E_LU_NOT_FOUND
+Microsoft-Windows-MSDTC  |         |  3221278985  |  0        |           |        |          |           |  XACT_E_DUPLICATE_LU
+Microsoft-Windows-MSDTC  |         |  3221278986  |  0        |           |        |          |           |  XACT_E_LU_NOT_CONNECTED
+Microsoft-Windows-MSDTC  |         |  3221278987  |  0        |           |        |          |           |  XACT_E_DUPLICATE_TRANSID
+Microsoft-Windows-MSDTC  |         |  3221278988  |  0        |           |        |          |           |  XACT_E_LU_BUSY
+Microsoft-Windows-MSDTC  |         |  3221278989  |  0        |           |        |          |           |  XACT_E_LU_NO_RECOVERY_PROCESS
+Microsoft-Windows-MSDTC  |         |  3221278990  |  0        |           |        |          |           |  XACT_E_LU_DOWN
+Microsoft-Windows-MSDTC  |         |  3221278991  |  0        |           |        |          |           |  XACT_E_LU_RECOVERING
+Microsoft-Windows-MSDTC  |         |  3221278992  |  0        |           |        |          |           |  XACT_E_LU_RECOVERY_MISMATCH
+Microsoft-Windows-MSDTC  |         |  3221278993  |  0        |           |        |          |           |  XACT_E_RM_UNAVAILABLE
+Microsoft-Windows-MSDTC  |         |  3221278994  |  0        |           |        |          |           |  XACT_E_LRMRECOVERYALREADYDONE : Either the ILastResourceManager::TransactionOutcome or ILastResourceManager::LRMRecoveryDone API was called after calling ILastResourceManager::LRMRecoveryDone
+Microsoft-Windows-MSDTC  |         |  3221278995  |  0        |           |        |          |           |  XACT_E_NOLASTRESOURCEINTERFACE : Resource Manager called PrepareRequestDone with hres as XACT_S_LASTRESOURCEMANAGER, but the QI for IID_ITransactionLastResourceAsync failed

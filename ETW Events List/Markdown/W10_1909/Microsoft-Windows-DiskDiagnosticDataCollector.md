@@ -1,5 +1,5 @@
-Provider                                       |  Event ID  |  Channel                                                    |  Message
------------------------------------------------|------------|-------------------------------------------------------------|---------
-Microsoft-Windows-DiskDiagnosticDataCollector  |  1         |  Microsoft-Windows-DiskDiagnosticDataCollector/Operational  |
-Microsoft-Windows-DiskDiagnosticDataCollector  |  2         |  Microsoft-Windows-DiskDiagnosticDataCollector/Operational  |
-Microsoft-Windows-DiskDiagnosticDataCollector  |  3         |  Microsoft-Windows-DiskDiagnosticDataCollector/Operational  |
+Provider                                       |  Level        |  Event ID  |  Version  |  Channel                                                    |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------------------------|---------------|------------|-----------|-------------------------------------------------------------|--------|----------|-----------|---------
+Microsoft-Windows-DiskDiagnosticDataCollector  |  Information  |  1         |  0        |  Microsoft-Windows-DiskDiagnosticDataCollector/Operational  |        |          |           |
+Microsoft-Windows-DiskDiagnosticDataCollector  |  Information  |  2         |  0        |  Microsoft-Windows-DiskDiagnosticDataCollector/Operational  |        |          |           |
+Microsoft-Windows-DiskDiagnosticDataCollector  |  Information  |  3         |  0        |  Microsoft-Windows-DiskDiagnosticDataCollector/Operational  |        |          |           |

@@ -1,9 +1,9 @@
-Provider                                        |  Event ID    |  Channel  |  Message
-------------------------------------------------|--------------|-----------|----------------------------------------------------------------------------------------------------
-Microsoft-Windows-NdisImPlatformSysEvtProvider  |  2147500641  |           |  Creating Team {Team} failed. Status = {Status}.
-Microsoft-Windows-NdisImPlatformSysEvtProvider  |  2147500642  |           |  Binding to Member Adapter {Member} failed. Status = {Status}.
-Microsoft-Windows-NdisImPlatformSysEvtProvider  |  2147500643  |           |  TeamNic {TeamNic} failed to initialize. Status = {Status}.
-Microsoft-Windows-NdisImPlatformSysEvtProvider  |  2147500644  |           |  Creating TeamNic {TeamNic} for Team {Team} failed. Status = {Status}.
-Microsoft-Windows-NdisImPlatformSysEvtProvider  |  2147500645  |           |  Allocating port for Member {Member} on TeamNic {TeamNic} failed. Status = {Status}.
-Microsoft-Windows-NdisImPlatformSysEvtProvider  |  2147500646  |           |  Creating internal binding between Member {Member} and TeamNic {TeamNic} failed. Status = {Status}.
-Microsoft-Windows-NdisImPlatformSysEvtProvider  |  2147500647  |           |  NdisImPlatform(LBFO) driver failed to load. Status = {Status}.
+Provider                                        |  Level  |  Event ID    |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+------------------------------------------------|---------|--------------|-----------|-----------|--------|----------|-----------|----------------------------------------------------------------------------------------------------
+Microsoft-Windows-NdisImPlatformSysEvtProvider  |         |  2147500641  |  0        |           |        |          |           |  Creating Team {Team} failed. Status = {Status}.
+Microsoft-Windows-NdisImPlatformSysEvtProvider  |         |  2147500642  |  0        |           |        |          |           |  Binding to Member Adapter {Member} failed. Status = {Status}.
+Microsoft-Windows-NdisImPlatformSysEvtProvider  |         |  2147500643  |  0        |           |        |          |           |  TeamNic {TeamNic} failed to initialize. Status = {Status}.
+Microsoft-Windows-NdisImPlatformSysEvtProvider  |         |  2147500644  |  0        |           |        |          |           |  Creating TeamNic {TeamNic} for Team {Team} failed. Status = {Status}.
+Microsoft-Windows-NdisImPlatformSysEvtProvider  |         |  2147500645  |  0        |           |        |          |           |  Allocating port for Member {Member} on TeamNic {TeamNic} failed. Status = {Status}.
+Microsoft-Windows-NdisImPlatformSysEvtProvider  |         |  2147500646  |  0        |           |        |          |           |  Creating internal binding between Member {Member} and TeamNic {TeamNic} failed. Status = {Status}.
+Microsoft-Windows-NdisImPlatformSysEvtProvider  |         |  2147500647  |  0        |           |        |          |           |  NdisImPlatform(LBFO) driver failed to load. Status = {Status}.

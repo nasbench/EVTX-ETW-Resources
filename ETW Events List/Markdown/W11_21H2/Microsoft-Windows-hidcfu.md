@@ -1,10 +1,10 @@
-Provider                  |  Event ID  |  Channel                               |  Message
---------------------------|------------|----------------------------------------|---------
-Microsoft-Windows-hidcfu  |  1         |  Microsoft-Windows-hidcfu/Operational  |
-Microsoft-Windows-hidcfu  |  2         |  Microsoft-Windows-hidcfu/Operational  |
-Microsoft-Windows-hidcfu  |  3         |  Microsoft-Windows-hidcfu/Operational  |
-Microsoft-Windows-hidcfu  |  4         |  Microsoft-Windows-hidcfu/Operational  |
-Microsoft-Windows-hidcfu  |  5         |  Microsoft-Windows-hidcfu/Operational  |
-Microsoft-Windows-hidcfu  |  6         |  Microsoft-Windows-hidcfu/Operational  |
-Microsoft-Windows-hidcfu  |  7         |  Microsoft-Windows-hidcfu/Operational  |
-Microsoft-Windows-hidcfu  |  8         |  Microsoft-Windows-hidcfu/Operational  |
+Provider                  |  Level              |  Event ID  |  Version  |  Channel                               |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------|---------------------|------------|-----------|----------------------------------------|--------|----------|-----------|---------
+Microsoft-Windows-hidcfu  |  win:Error          |  1         |  0        |  Microsoft-Windows-hidcfu/Operational  |        |          |           |
+Microsoft-Windows-hidcfu  |  win:Warning        |  2         |  0        |  Microsoft-Windows-hidcfu/Operational  |        |          |           |
+Microsoft-Windows-hidcfu  |  win:Warning        |  3         |  0        |  Microsoft-Windows-hidcfu/Operational  |        |          |           |
+Microsoft-Windows-hidcfu  |  win:Critical       |  4         |  0        |  Microsoft-Windows-hidcfu/Operational  |        |          |           |
+Microsoft-Windows-hidcfu  |  win:Error          |  5         |  0        |  Microsoft-Windows-hidcfu/Operational  |        |          |           |
+Microsoft-Windows-hidcfu  |  win:Warning        |  6         |  0        |  Microsoft-Windows-hidcfu/Operational  |        |          |           |
+Microsoft-Windows-hidcfu  |  win:Informational  |  7         |  0        |  Microsoft-Windows-hidcfu/Operational  |        |          |           |
+Microsoft-Windows-hidcfu  |  win:Verbose        |  8         |  0        |  Microsoft-Windows-hidcfu/Operational  |        |          |           |

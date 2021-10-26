@@ -1,98 +1,98 @@
-Provider                                     |  Event ID  |  Channel                                                   |  Message
----------------------------------------------|------------|------------------------------------------------------------|----------------------------------------------------------------
-Microsoft-Windows-HomeGroup-ListenerService  |  1         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  2         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  3         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  4         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  5         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  6         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  7         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  8         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  9         |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  10        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  11        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  12        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  13        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  14        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  15        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  16        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  17        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  18        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  19        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  20        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  21        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  22        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  23        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  24        |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  101       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  102       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  103       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  104       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  105       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  106       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  107       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  108       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  109       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  110       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  111       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  112       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  113       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  114       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  115       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  116       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  117       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  118       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  119       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  120       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  201       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  202       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  203       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  204       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  205       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  206       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  207       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  208       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  209       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  210       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  211       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  212       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  213       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  301       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  302       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  303       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  304       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  305       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  306       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  307       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  308       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  309       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  310       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  311       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  312       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  313       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  314       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  315       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  316       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  317       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  318       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  319       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  320       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  321       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  322       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  323       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  324       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  325       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  326       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  327       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  328       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  401       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  402       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  403       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  404       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  405       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  406       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  407       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  408       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  409       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  410       |  Microsoft-Windows-HomeGroup-ListenerService               |
-Microsoft-Windows-HomeGroup-ListenerService  |  1000      |  Microsoft-Windows-HomeGroup Listener Service/Operational  |  Failed to get/set keys.  Details: {Error}, Function: {Message}
+Provider                                     |  Level        |  Event ID  |  Version  |  Channel                                                   |  Task                                                              |  Opcode  |  Keyword  |  Message
+---------------------------------------------|---------------|------------|-----------|------------------------------------------------------------|--------------------------------------------------------------------|----------|-----------|----------------------------------------------------------------
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  1         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HomeGroupCreated                  |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  2         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HomeGroupCreated                  |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  3         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HomeGroupDeparted                 |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  4         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HomeGroupDeparted                 |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  5         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HomeGroupMachineConnected         |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  6         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HomeGroupMachineConnected         |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  7         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HomeGroupUserAddedOrRemoved       |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  8         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HomeGroupUserAddedOrRemoved       |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  9         |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_BroadcastLoggedInUsers            |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  10        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_BroadcastLoggedInUsers            |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  11        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_BroadcastAlphaRecord              |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  12        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_BroadcastAlphaRecord              |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  13        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_ReadPersistedAlpha                |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  14        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_ReadPersistedAlpha                |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  15        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_PersistAlpha                      |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  16        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_PersistAlpha                      |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  17        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_StuffCredsForRemoteMachines       |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  18        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_StuffCredsForRemoteMachines       |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  19        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_ImpersonateAndStuffCreds          |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  20        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_ImpersonateAndStuffCreds          |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  21        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HandleAlphaRecord                 |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  22        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_HandleAlphaRecord                 |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  23        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_RemoteMachineDeparted             |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  24        |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Alpha_RemoteMachineDeparted             |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  101       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupCreated                |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  102       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupCreated                |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  103       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupDeparted               |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  104       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupDeparted               |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  105       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupUserAddedOrRemoved     |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  106       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupUserAddedOrRemoved     |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  107       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupUpdateSharing          |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  108       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupUpdateSharing          |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  109       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_ShareKFsForImpersonatedUser     |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  110       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_ShareKFsForImpersonatedUser     |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  111       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_ImpersonateAndShare             |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  112       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_ImpersonateAndShare             |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  113       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_SharingThreadProc               |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  114       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_SharingThreadProc               |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  115       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_UnshareKFsForImpersonatedUser   |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  116       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_UnshareKFsForImpersonatedUser   |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  117       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupMachineConnected       |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  118       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_HomeGroupMachineConnected       |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  119       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_RemoteMachineDeparted           |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  120       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Sharing_RemoteMachineDeparted           |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  201       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupCreated               |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  202       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupCreated               |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  203       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupDeparted              |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  204       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupDeparted              |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  205       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupMachineConnected      |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  206       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupMachineConnected      |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  207       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupMachineDisconnected   |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  208       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupMachineDisconnected   |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  209       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupUserAddedOrRemoved    |          |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  210       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HandleRecord                   |          |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  211       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_Task_Status_Change             |          |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  212       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupUpdateSharing         |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  213       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Printing_HomeGroupUpdateSharing         |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  301       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HomeGroupCreated               |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  302       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HomeGroupCreated               |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  303       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HomeGroupDeparted              |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  304       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HomeGroupDeparted              |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  305       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HomeGroupMachineConnected      |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  306       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HomeGroupMachineConnected      |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  307       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HomeGroupUserAddedOrRemoved    |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  308       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HomeGroupUserAddedOrRemoved    |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  309       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_BroadcastSigningKeysRecord     |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  310       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_BroadcastSigningKeysRecord     |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  311       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_ReadPersistedSigningKeys       |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  312       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_ReadPersistedSigningKeys       |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  313       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_PersistSigningKeys             |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  314       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_PersistSigningKeys             |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  315       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HandleSigningKeysRecord        |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  316       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_Security_HandleSigningKeysRecord        |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  317       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupCreated             |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  318       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupCreated             |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  319       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupDeparted            |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  320       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupDeparted            |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  321       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupMachineJoined       |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  322       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupMachineJoined       |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  323       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupUserAddedOrRemoved  |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  324       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupUserAddedOrRemoved  |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  325       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupUserJoined          |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  326       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupUserJoined          |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  327       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupUserDeparted        |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  328       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HomeGroupUserDeparted        |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  401       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HACreateNetwork              |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  402       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HACreateNetwork              |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  403       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HAJoinCurrentMachine         |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  404       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HAJoinCurrentMachine         |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  405       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HADepartCurrentMachine       |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  406       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HADepartCurrentMachine       |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  407       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HAJoinCurrentUser            |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  408       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HAJoinCurrentUser            |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  409       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HADepartCurrentUser          |  Start   |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Information  |  410       |  0        |  Microsoft-Windows-HomeGroup-ListenerService               |  HomeGroup_ListenerService_HomeAccess_HADepartCurrentUser          |  Stop    |           |
+Microsoft-Windows-HomeGroup-ListenerService  |  Error        |  1000      |  0        |  Microsoft-Windows-HomeGroup Listener Service/Operational  |                                                                    |          |           |  Failed to get/set keys.  Details: {Error}, Function: {Message}

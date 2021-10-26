@@ -1,16 +1,16 @@
-Provider                   |  Event ID  |  Channel                             |  Message
----------------------------|------------|--------------------------------------|-----------------------------------------------------------------------------------------------------
-Microsoft-Windows-Sysprep  |  1001      |  Microsoft-Windows-Sysprep/Analytic  |  Executing sysprep providers from registry location "{BasePath}" during {Phase}.
-Microsoft-Windows-Sysprep  |  1002      |  Microsoft-Windows-Sysprep/Analytic  |  Finished executing sysprep providers with status {ErrorCode}.
-Microsoft-Windows-Sysprep  |  2001      |  Microsoft-Windows-Sysprep/Analytic  |  Calling external function "{FunctionName}" from "{DllName}".
-Microsoft-Windows-Sysprep  |  2002      |  Microsoft-Windows-Sysprep/Analytic  |  External function returned with status {DllName}.
-Microsoft-Windows-Sysprep  |  3001      |  Microsoft-Windows-Sysprep/Analytic  |  Loading meta-data file "{ActionFilePath}".
-Microsoft-Windows-Sysprep  |  3002      |  Microsoft-Windows-Sysprep/Analytic  |  Loading of meta-data file "{ActionFilePath}" completed.
-Microsoft-Windows-Sysprep  |  4001      |  Microsoft-Windows-Sysprep/Analytic  |  Creating action list for component "{ComponentName}".
-Microsoft-Windows-Sysprep  |  4002      |  Microsoft-Windows-Sysprep/Analytic  |  Action list for component "{ComponentName}" created.
-Microsoft-Windows-Sysprep  |  5001      |  Microsoft-Windows-Sysprep/Analytic  |  Deleting file(s) "{FilePattern}" from directory "{DirectoryPath}".
-Microsoft-Windows-Sysprep  |  5002      |  Microsoft-Windows-Sysprep/Analytic  |  File deletion of "{FilePattern}" from directory "{DirectoryPath}" returned with status {ErrorCode}.
-Microsoft-Windows-Sysprep  |  6001      |  Microsoft-Windows-Sysprep/Analytic  |  Deleting directory "{DirectoryPath}".
-Microsoft-Windows-Sysprep  |  6002      |  Microsoft-Windows-Sysprep/Analytic  |  Directory deletion for "{DirectoryPath}" returned with status {ErrorCode}.
-Microsoft-Windows-Sysprep  |  7001      |  Microsoft-Windows-Sysprep/Analytic  |  Starting execution of phase "{Phase}".
-Microsoft-Windows-Sysprep  |  7002      |  Microsoft-Windows-Sysprep/Analytic  |  Execution of phase returned status {ErrorCode}.
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                             |  Task                                    |  Opcode  |  Keyword              |  Message
+---------------------------|---------------|------------|-----------|--------------------------------------|------------------------------------------|----------|-----------------------|-----------------------------------------------------------------------------------------------------
+Microsoft-Windows-Sysprep  |  Information  |  1001      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  RunRegistryDlls                         |  Start   |  Performance Sysprep  |  Executing sysprep providers from registry location "{BasePath}" during {Phase}.
+Microsoft-Windows-Sysprep  |  Information  |  1002      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  RunRegistryDlls                         |  Stop    |  Performance Sysprep  |  Finished executing sysprep providers with status {ErrorCode}.
+Microsoft-Windows-Sysprep  |  Information  |  2001      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Call External Provider Function         |  Start   |  Performance Sysprep  |  Calling external function "{FunctionName}" from "{DllName}".
+Microsoft-Windows-Sysprep  |  Information  |  2002      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Call External Provider Function         |  Stop    |  Performance Sysprep  |  External function returned with status {DllName}.
+Microsoft-Windows-Sysprep  |  Information  |  3001      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Load action meta-data file              |  Start   |  Performance Sysprep  |  Loading meta-data file "{ActionFilePath}".
+Microsoft-Windows-Sysprep  |  Information  |  3002      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Load action meta-data file              |  Stop    |  Performance Sysprep  |  Loading of meta-data file "{ActionFilePath}" completed.
+Microsoft-Windows-Sysprep  |  Information  |  4001      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Create list of actions for a component  |  Start   |  Performance Sysprep  |  Creating action list for component "{ComponentName}".
+Microsoft-Windows-Sysprep  |  Information  |  4002      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Create list of actions for a component  |  Stop    |  Performance Sysprep  |  Action list for component "{ComponentName}" created.
+Microsoft-Windows-Sysprep  |  Information  |  5001      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Deleting file(s) of a pattern           |  Start   |  Performance Sysprep  |  Deleting file(s) "{FilePattern}" from directory "{DirectoryPath}".
+Microsoft-Windows-Sysprep  |  Information  |  5002      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Deleting file(s) of a pattern           |  Stop    |  Performance Sysprep  |  File deletion of "{FilePattern}" from directory "{DirectoryPath}" returned with status {ErrorCode}.
+Microsoft-Windows-Sysprep  |  Information  |  6001      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Delete a directory                      |  Start   |  Performance Sysprep  |  Deleting directory "{DirectoryPath}".
+Microsoft-Windows-Sysprep  |  Information  |  6002      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Delete a directory                      |  Stop    |  Performance Sysprep  |  Directory deletion for "{DirectoryPath}" returned with status {ErrorCode}.
+Microsoft-Windows-Sysprep  |  Information  |  7001      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Execute an entire phase                 |  Start   |  Performance Sysprep  |  Starting execution of phase "{Phase}".
+Microsoft-Windows-Sysprep  |  Information  |  7002      |  0        |  Microsoft-Windows-Sysprep/Analytic  |  Execute an entire phase                 |  Stop    |  Performance Sysprep  |  Execution of phase returned status {ErrorCode}.

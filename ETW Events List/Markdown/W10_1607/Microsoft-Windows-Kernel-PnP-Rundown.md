@@ -1,5 +1,5 @@
-Provider                              |  Event ID  |  Channel  |  Message
---------------------------------------|------------|-----------|---------
-Microsoft-Windows-Kernel-PnP-Rundown  |  1         |           |
-Microsoft-Windows-Kernel-PnP-Rundown  |  2         |           |
-Microsoft-Windows-Kernel-PnP-Rundown  |  3         |           |
+Provider                              |  Level        |  Event ID  |  Version  |  Channel  |  Task                        |  Opcode  |  Keyword     |  Message
+--------------------------------------|---------------|------------|-----------|-----------|------------------------------|----------|--------------|---------
+Microsoft-Windows-Kernel-PnP-Rundown  |  Information  |  1         |  0        |           |  ConnectionResourceConsumer  |          |  SleepStudy  |
+Microsoft-Windows-Kernel-PnP-Rundown  |  Information  |  2         |  0        |           |  ParentPdo                   |          |  SleepStudy  |
+Microsoft-Windows-Kernel-PnP-Rundown  |  Information  |  3         |  0        |           |  ParentDevNode               |          |  SleepStudy  |

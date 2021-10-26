@@ -1,4 +1,4 @@
-Provider                                     |  Event ID  |  Channel                                                 |  Message
----------------------------------------------|------------|----------------------------------------------------------|---------
-Microsoft-Windows-DesktopWindowManager-Diag  |  1         |  Microsoft-Windows-DesktopWindowManager-Diag/Diagnostic  |
-Microsoft-Windows-DesktopWindowManager-Diag  |  2         |  Microsoft-Windows-DesktopWindowManager-Diag/Diagnostic  |
+Provider                                     |  Level        |  Event ID  |  Version  |  Channel                                                 |  Task                                    |  Opcode  |  Keyword                   |  Message
+---------------------------------------------|---------------|------------|-----------|----------------------------------------------------------|------------------------------------------|----------|----------------------------|---------
+Microsoft-Windows-DesktopWindowManager-Diag  |  Information  |  1         |  0        |  Microsoft-Windows-DesktopWindowManager-Diag/Diagnostic  |  DesktopWindowManager_DiagStats          |          |  DesktopWindowManager-WDI  |
+Microsoft-Windows-DesktopWindowManager-Diag  |  Information  |  2         |  0        |  Microsoft-Windows-DesktopWindowManager-Diag/Diagnostic  |  DesktopWindowManager_DWMResponsiveness  |          |  DesktopWindowManager-WDI  |

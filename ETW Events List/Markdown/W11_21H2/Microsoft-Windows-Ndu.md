@@ -1,21 +1,21 @@
-Provider               |  Event ID  |  Channel                           |  Message
------------------------|------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Ndu  |  2001      |  Microsoft-Windows-Ndu/Diagnostic  |  {_DebugString}
-Microsoft-Windows-Ndu  |  2002      |  Microsoft-Windows-Ndu/Diagnostic  |  {_FunctionName} Failed with {_Status}
-Microsoft-Windows-Ndu  |  2003      |  Microsoft-Windows-Ndu/Diagnostic  |  Interface (Luid:{_IfLuid}) added to per-interface list for proc {_ProcNum} at active index {_ListIndex}
-Microsoft-Windows-Ndu  |  2004      |  Microsoft-Windows-Ndu/Diagnostic  |  {_Direction} Flow (Id:{_FlowHandle}) established. ExePath: {_ExePath} SvcTag:{_SvcTag} PkgName:{_PkgName} UserId:{_UserId} Pid: {_Pid}
-Microsoft-Windows-Ndu  |  2005      |  Microsoft-Windows-Ndu/Diagnostic  |  Flow Context (Flow Id:{_FlowHandle}) Refcount{_RefDeref}
-Microsoft-Windows-Ndu  |  2006      |  Microsoft-Windows-Ndu/Diagnostic  |  Updated Interface Stats IfLuid:{_IfLuid} ProfileId:{_ProfileId} BytesSent:{_BytesSent} BytesRecvd:{_BytesRecvd}
-Microsoft-Windows-Ndu  |  2007      |  Microsoft-Windows-Ndu/Diagnostic  |  Updated Flow Stats (Flow Id:{_FlowHandle}) IfLuid:{_IfLuid} BytesSent:{_BytesSent} BytesRecvd:{_BytesRecvd}
-Microsoft-Windows-Ndu  |  2008      |  Microsoft-Windows-Ndu/Diagnostic  |  Registration for quota exceeded notification. ExePath: {_ExePath} SvcTag:{_SvcTag} PkgName:{_PkgName} UserId:{_UserId} Cookie: {_Cookie} Quota: {_Quota}
-Microsoft-Windows-Ndu  |  2009      |  Microsoft-Windows-Ndu/Diagnostic  |  Unregistered from quota exceeded notification. Cookie: {_Cookie}
-Microsoft-Windows-Ndu  |  2010      |  Microsoft-Windows-Ndu/Diagnostic  |  Registration for byte count limit. Luid: {_IfLuid} ProfileId:{_ProfileId} Limit: {_BytesLimit}
-Microsoft-Windows-Ndu  |  2011      |  Microsoft-Windows-Ndu/Diagnostic  |  Unregistered from byte count limit notification. Luid: {_IfLuid} ProfileId:{_ProfileId}
-Microsoft-Windows-Ndu  |  2012      |  Microsoft-Windows-Ndu/Diagnostic  |  {_DebugString}
-Microsoft-Windows-Ndu  |  2013      |  Microsoft-Windows-Ndu/Diagnostic  |  {_DebugString}
-Microsoft-Windows-Ndu  |  2014      |  Microsoft-Windows-Ndu/Diagnostic  |  IfLuid:{_IfLuid} ProfileId:{_ProfileId} BytesSent:{_BytesSent} BytesRecvd:{_BytesRecvd} IsCosted: {_IsCosted}
-Microsoft-Windows-Ndu  |  2015      |  Microsoft-Windows-Ndu/Diagnostic  |
-Microsoft-Windows-Ndu  |  2016      |  Microsoft-Windows-Ndu/Diagnostic  |
-Microsoft-Windows-Ndu  |  2017      |  Microsoft-Windows-Ndu/Diagnostic  |  NduMergeSmbStatsList: Not transferred InterfaceLuid and ProfileId to Smb stats because there is no one-and-only-one file transfer service (SMB) in the system. SystemSMB count:{_SystemSmbCount} InContainer:{_IsContainer};
-Microsoft-Windows-Ndu  |  2018      |  Microsoft-Windows-Ndu/Diagnostic  |  ProfileIdTracker::GetProfileIdForInterface: Profile Id not found. Luid: {_IfLuid}
-Microsoft-Windows-Ndu  |  2019      |  Microsoft-Windows-Ndu/Diagnostic  |  NduGetHostSid::UMgrEnumerateSessionUsers could not find SessionId: {_SessionId}
+Provider               |  Level        |  Event ID  |  Version  |  Channel                           |  Task                   |  Opcode  |  Keyword            |  Message
+-----------------------|---------------|------------|-----------|------------------------------------|-------------------------|----------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Ndu  |  Information  |  2001      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduDebugTrace          |          |  NduDebugTrace      |  {_DebugString}
+Microsoft-Windows-Ndu  |  Error        |  2002      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduDebugTrace          |          |  NduDebugTrace      |  {_FunctionName} Failed with {_Status}
+Microsoft-Windows-Ndu  |  Information  |  2003      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  PerInterfaceStats      |          |  PerInterfaceStats  |  Interface (Luid:{_IfLuid}) added to per-interface list for proc {_ProcNum} at active index {_ListIndex}
+Microsoft-Windows-Ndu  |  Information  |  2004      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  PerFlowStats           |          |  PerFlowStats       |  {_Direction} Flow (Id:{_FlowHandle}) established. ExePath: {_ExePath} SvcTag:{_SvcTag} PkgName:{_PkgName} UserId:{_UserId} Pid: {_Pid}
+Microsoft-Windows-Ndu  |  Verbose      |  2005      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  PerFlowStats           |          |  PerFlowStats       |  Flow Context (Flow Id:{_FlowHandle}) Refcount{_RefDeref}
+Microsoft-Windows-Ndu  |  Verbose      |  2006      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  PerInterfaceStats      |          |  PerInterfaceStats  |  Updated Interface Stats IfLuid:{_IfLuid} ProfileId:{_ProfileId} BytesSent:{_BytesSent} BytesRecvd:{_BytesRecvd}
+Microsoft-Windows-Ndu  |  Verbose      |  2007      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  PerFlowStats           |          |  PerFlowStats       |  Updated Flow Stats (Flow Id:{_FlowHandle}) IfLuid:{_IfLuid} BytesSent:{_BytesSent} BytesRecvd:{_BytesRecvd}
+Microsoft-Windows-Ndu  |  Information  |  2008      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  TokenTracking          |          |  TokenTracking      |  Registration for quota exceeded notification. ExePath: {_ExePath} SvcTag:{_SvcTag} PkgName:{_PkgName} UserId:{_UserId} Cookie: {_Cookie} Quota: {_Quota}
+Microsoft-Windows-Ndu  |  Information  |  2009      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  TokenTracking          |          |  TokenTracking      |  Unregistered from quota exceeded notification. Cookie: {_Cookie}
+Microsoft-Windows-Ndu  |  Information  |  2010      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  PerInterfaceStats      |          |  PerInterfaceStats  |  Registration for byte count limit. Luid: {_IfLuid} ProfileId:{_ProfileId} Limit: {_BytesLimit}
+Microsoft-Windows-Ndu  |  Information  |  2011      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  PerInterfaceStats      |          |  PerInterfaceStats  |  Unregistered from byte count limit notification. Luid: {_IfLuid} ProfileId:{_ProfileId}
+Microsoft-Windows-Ndu  |  Verbose      |  2012      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduDebugTrace          |          |  NduDebugTrace      |  {_DebugString}
+Microsoft-Windows-Ndu  |  Error        |  2013      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduDebugTrace          |          |  NduDebugTrace      |  {_DebugString}
+Microsoft-Windows-Ndu  |  Information  |  2014      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  PerInterfaceStats      |          |  PerInterfaceStats  |  IfLuid:{_IfLuid} ProfileId:{_ProfileId} BytesSent:{_BytesSent} BytesRecvd:{_BytesRecvd} IsCosted: {_IsCosted}
+Microsoft-Windows-Ndu  |  Information  |  2015      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduPowerDebug          |          |  NduPowerDebug      |
+Microsoft-Windows-Ndu  |  Information  |  2016      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduPowerQueueWorkItem  |          |  NduPowerDebug      |
+Microsoft-Windows-Ndu  |  Information  |  2017      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduDebugTrace          |          |  NduDebugTrace      |  NduMergeSmbStatsList: Not transferred InterfaceLuid and ProfileId to Smb stats because there is no one-and-only-one file transfer service (SMB) in the system. SystemSMB count:{_SystemSmbCount} InContainer:{_IsContainer};
+Microsoft-Windows-Ndu  |  Information  |  2018      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduDebugTrace          |          |  NduDebugTrace      |  ProfileIdTracker::GetProfileIdForInterface: Profile Id not found. Luid: {_IfLuid}
+Microsoft-Windows-Ndu  |  Information  |  2019      |  0        |  Microsoft-Windows-Ndu/Diagnostic  |  NduDebugTrace          |          |  NduDebugTrace      |  NduGetHostSid::UMgrEnumerateSessionUsers could not find SessionId: {_SessionId}

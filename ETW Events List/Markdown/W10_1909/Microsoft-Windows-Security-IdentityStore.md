@@ -1,29 +1,29 @@
-Provider                                  |  Event ID  |  Channel                                               |  Message
-------------------------------------------|------------|--------------------------------------------------------|---------
-Microsoft-Windows-Security-IdentityStore  |  1         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  2         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  3         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  4         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  5         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  6         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  7         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  8         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  9         |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  10        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  11        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  12        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  13        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  14        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  15        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  16        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  17        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  18        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  19        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  20        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  21        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  22        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  23        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  24        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  25        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  26        |  Microsoft-Windows-Security-IdentityStore/Performance  |
-Microsoft-Windows-Security-IdentityStore  |  27        |  Microsoft-Windows-Security-IdentityStore/Performance  |
+Provider                                  |  Level        |  Event ID  |  Version  |  Channel                                               |  Task                   |  Opcode  |  Keyword  |  Message
+------------------------------------------|---------------|------------|-----------|--------------------------------------------------------|-------------------------|----------|-----------|---------
+Microsoft-Windows-Security-IdentityStore  |  Information  |  1         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  CreateConnectedUser    |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  2         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  CreateConnectedUser    |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  3         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  CreateConnectedUser    |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  4         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  5         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  6         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  7         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  8         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  9         |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  10        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  11        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  12        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  13        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  14        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  15        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  16        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  17        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  18        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  19        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  20        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  21        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  IdentityQuery          |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  22        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  CreateConnectedUser    |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  23        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  CreateConnectedUser    |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  24        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  CreateConnectedUser    |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  25        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  CreateConnectedUser    |  Stop    |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  26        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Start   |           |
+Microsoft-Windows-Security-IdentityStore  |  Information  |  27        |  0        |  Microsoft-Windows-Security-IdentityStore/Performance  |  ConnectDisconnectUser  |  Stop    |           |

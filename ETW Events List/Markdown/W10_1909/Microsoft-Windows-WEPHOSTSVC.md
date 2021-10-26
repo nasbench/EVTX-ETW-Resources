@@ -1,6 +1,6 @@
-Provider                      |  Event ID  |  Channel      |  Message
-------------------------------|------------|---------------|--------------------------------------------------------
-Microsoft-Windows-WEPHOSTSVC  |  1         |  Operational  |  Service stopped with a failure: error code {ErrorCode}
-Microsoft-Windows-WEPHOSTSVC  |  2         |  Operational  |  Could not load 3rd Party Dll : error code {ErrorCode}
-Microsoft-Windows-WEPHOSTSVC  |  300       |  Operational  |
-Microsoft-Windows-WEPHOSTSVC  |  301       |  Operational  |
+Provider                      |  Level        |  Event ID  |  Version  |  Channel      |  Task          |  Opcode  |  Keyword  |  Message
+------------------------------|---------------|------------|-----------|---------------|----------------|----------|-----------|--------------------------------------------------------
+Microsoft-Windows-WEPHOSTSVC  |  Critical     |  1         |  0        |  Operational  |  TASK_SERVICE  |          |           |  Service stopped with a failure: error code {ErrorCode}
+Microsoft-Windows-WEPHOSTSVC  |  Critical     |  2         |  0        |  Operational  |  TASK_SERVICE  |          |           |  Could not load 3rd Party Dll : error code {ErrorCode}
+Microsoft-Windows-WEPHOSTSVC  |  Information  |  300       |  0        |  Operational  |  TASK_SERVICE  |  Start   |           |
+Microsoft-Windows-WEPHOSTSVC  |  Information  |  301       |  0        |  Operational  |  TASK_SERVICE  |  Stop    |           |

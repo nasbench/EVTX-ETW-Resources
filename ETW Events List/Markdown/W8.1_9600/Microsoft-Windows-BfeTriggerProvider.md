@@ -1,4 +1,4 @@
-Provider                              |  Event ID  |  Channel  |  Message
---------------------------------------|------------|-----------|---------
-Microsoft-Windows-BfeTriggerProvider  |  1         |           |
-Microsoft-Windows-BfeTriggerProvider  |  2         |           |
+Provider                              |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                         |  Keyword                         |  Message
+--------------------------------------|---------------|------------|-----------|-----------|--------|---------------------------------|----------------------------------|---------
+Microsoft-Windows-BfeTriggerProvider  |  Information  |  1         |  0        |           |        |  Opcode_FirewallPortOpenEvent   |  Keyword_FirewallPortOpenEvent   |
+Microsoft-Windows-BfeTriggerProvider  |  Information  |  2         |  0        |           |        |  Opcode_FirewallPortCloseEvent  |  Keyword_FirewallPortCloseEvent  |

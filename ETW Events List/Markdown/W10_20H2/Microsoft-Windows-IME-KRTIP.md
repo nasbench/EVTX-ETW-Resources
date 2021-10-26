@@ -1,3 +1,3 @@
-Provider                     |  Event ID  |  Channel                               |  Message
------------------------------|------------|----------------------------------------|----------------------------------------
-Microsoft-Windows-IME-KRTIP  |  10        |  Microsoft-Windows-IME-KRTIP/Analytic  |  EAIME_IME_KOR_HWKBD_CandUIProcess_Info
+Provider                     |  Level        |  Event ID  |  Version  |  Channel                               |  Task                                  |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|----------------------------------------|----------------------------------------|----------|-----------|----------------------------------------
+Microsoft-Windows-IME-KRTIP  |  Information  |  10        |  0        |  Microsoft-Windows-IME-KRTIP/Analytic  |  Task ID: IME_KOR_HWKBD_CandUIProcess  |          |           |  EAIME_IME_KOR_HWKBD_CandUIProcess_Info

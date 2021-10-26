@@ -1,8 +1,8 @@
-Provider                               |  Event ID  |  Channel                                           |  Message
----------------------------------------|------------|----------------------------------------------------|---------
-Microsoft-Windows-Power-Meter-Polling  |  1         |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |
-Microsoft-Windows-Power-Meter-Polling  |  2         |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |
-Microsoft-Windows-Power-Meter-Polling  |  3         |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |
-Microsoft-Windows-Power-Meter-Polling  |  4         |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |
-Microsoft-Windows-Power-Meter-Polling  |  5         |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |
-Microsoft-Windows-Power-Meter-Polling  |  6         |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |
+Provider                               |  Level        |  Event ID  |  Version  |  Channel                                           |  Task                   |  Opcode  |  Keyword  |  Message
+---------------------------------------|---------------|------------|-----------|----------------------------------------------------|-------------------------|----------|-----------|---------
+Microsoft-Windows-Power-Meter-Polling  |  Information  |  1         |  0        |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |  PowerMeterRundown      |          |           |
+Microsoft-Windows-Power-Meter-Polling  |  Information  |  2         |  0        |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |  EnergyMeterRundown     |          |           |
+Microsoft-Windows-Power-Meter-Polling  |  Information  |  3         |  0        |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |  PowerMeterData         |          |           |
+Microsoft-Windows-Power-Meter-Polling  |  Information  |  4         |  0        |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |  EnergyMeterData        |          |           |
+Microsoft-Windows-Power-Meter-Polling  |  Information  |  5         |  0        |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |  SamplingPeriodRundown  |          |           |
+Microsoft-Windows-Power-Meter-Polling  |  Information  |  6         |  0        |  Microsoft-Windows-Power-Meter-Polling/Diagnostic  |  SamplingPeriodChange   |          |           |

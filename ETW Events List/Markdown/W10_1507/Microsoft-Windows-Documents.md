@@ -1,495 +1,495 @@
-Provider                     |  Event ID  |  Channel      |  Message
------------------------------|------------|---------------|---------
-Microsoft-Windows-Documents  |  1001      |  Performance  |
-Microsoft-Windows-Documents  |  1002      |  Performance  |
-Microsoft-Windows-Documents  |  1003      |  Performance  |
-Microsoft-Windows-Documents  |  1004      |  Performance  |
-Microsoft-Windows-Documents  |  1005      |  Performance  |
-Microsoft-Windows-Documents  |  1006      |  Performance  |
-Microsoft-Windows-Documents  |  1007      |  Performance  |
-Microsoft-Windows-Documents  |  1008      |  Performance  |
-Microsoft-Windows-Documents  |  1009      |  Performance  |
-Microsoft-Windows-Documents  |  1010      |  Performance  |
-Microsoft-Windows-Documents  |  1011      |  Performance  |
-Microsoft-Windows-Documents  |  1012      |  Performance  |
-Microsoft-Windows-Documents  |  1013      |  Performance  |
-Microsoft-Windows-Documents  |  1014      |  Performance  |
-Microsoft-Windows-Documents  |  1015      |  Performance  |
-Microsoft-Windows-Documents  |  1016      |  Performance  |
-Microsoft-Windows-Documents  |  1017      |  Performance  |
-Microsoft-Windows-Documents  |  1018      |  Performance  |
-Microsoft-Windows-Documents  |  1019      |  Performance  |
-Microsoft-Windows-Documents  |  1020      |  Performance  |
-Microsoft-Windows-Documents  |  1021      |  Performance  |
-Microsoft-Windows-Documents  |  1022      |  Performance  |
-Microsoft-Windows-Documents  |  1023      |  Performance  |
-Microsoft-Windows-Documents  |  1024      |  Performance  |
-Microsoft-Windows-Documents  |  1025      |  Performance  |
-Microsoft-Windows-Documents  |  1026      |  Performance  |
-Microsoft-Windows-Documents  |  1027      |  Performance  |
-Microsoft-Windows-Documents  |  1028      |  Performance  |
-Microsoft-Windows-Documents  |  1029      |  Performance  |
-Microsoft-Windows-Documents  |  1030      |  Performance  |
-Microsoft-Windows-Documents  |  1031      |  Performance  |
-Microsoft-Windows-Documents  |  1032      |  Performance  |
-Microsoft-Windows-Documents  |  1200      |  Performance  |
-Microsoft-Windows-Documents  |  1201      |  Performance  |
-Microsoft-Windows-Documents  |  1202      |  Performance  |
-Microsoft-Windows-Documents  |  1203      |  Performance  |
-Microsoft-Windows-Documents  |  1204      |  Performance  |
-Microsoft-Windows-Documents  |  1205      |  Performance  |
-Microsoft-Windows-Documents  |  1206      |  Performance  |
-Microsoft-Windows-Documents  |  1207      |  Performance  |
-Microsoft-Windows-Documents  |  1208      |  Performance  |
-Microsoft-Windows-Documents  |  1209      |  Performance  |
-Microsoft-Windows-Documents  |  1210      |  Performance  |
-Microsoft-Windows-Documents  |  1211      |  Performance  |
-Microsoft-Windows-Documents  |  1212      |  Performance  |
-Microsoft-Windows-Documents  |  1213      |  Performance  |
-Microsoft-Windows-Documents  |  1214      |  Performance  |
-Microsoft-Windows-Documents  |  1215      |  Performance  |
-Microsoft-Windows-Documents  |  1216      |  Performance  |
-Microsoft-Windows-Documents  |  1217      |  Performance  |
-Microsoft-Windows-Documents  |  1218      |  Performance  |
-Microsoft-Windows-Documents  |  1219      |  Performance  |
-Microsoft-Windows-Documents  |  1500      |  Performance  |
-Microsoft-Windows-Documents  |  1501      |  Performance  |
-Microsoft-Windows-Documents  |  1502      |  Performance  |
-Microsoft-Windows-Documents  |  1503      |  Performance  |
-Microsoft-Windows-Documents  |  1504      |  Performance  |
-Microsoft-Windows-Documents  |  1505      |  Performance  |
-Microsoft-Windows-Documents  |  1506      |  Performance  |
-Microsoft-Windows-Documents  |  1507      |  Performance  |
-Microsoft-Windows-Documents  |  1508      |  Performance  |
-Microsoft-Windows-Documents  |  1509      |  Performance  |
-Microsoft-Windows-Documents  |  1510      |  Performance  |
-Microsoft-Windows-Documents  |  1511      |  Performance  |
-Microsoft-Windows-Documents  |  1512      |  Performance  |
-Microsoft-Windows-Documents  |  1513      |  Performance  |
-Microsoft-Windows-Documents  |  1514      |  Performance  |
-Microsoft-Windows-Documents  |  1515      |  Performance  |
-Microsoft-Windows-Documents  |  1516      |  Performance  |
-Microsoft-Windows-Documents  |  1517      |  Performance  |
-Microsoft-Windows-Documents  |  1518      |  Performance  |
-Microsoft-Windows-Documents  |  1519      |  Performance  |
-Microsoft-Windows-Documents  |  1520      |  Performance  |
-Microsoft-Windows-Documents  |  1521      |  Performance  |
-Microsoft-Windows-Documents  |  1522      |  Performance  |
-Microsoft-Windows-Documents  |  1523      |  Performance  |
-Microsoft-Windows-Documents  |  1524      |  Performance  |
-Microsoft-Windows-Documents  |  1525      |  Performance  |
-Microsoft-Windows-Documents  |  1526      |  Performance  |
-Microsoft-Windows-Documents  |  1527      |  Performance  |
-Microsoft-Windows-Documents  |  1528      |  Performance  |
-Microsoft-Windows-Documents  |  1529      |  Performance  |
-Microsoft-Windows-Documents  |  1530      |  Performance  |
-Microsoft-Windows-Documents  |  1531      |  Performance  |
-Microsoft-Windows-Documents  |  1532      |  Performance  |
-Microsoft-Windows-Documents  |  1533      |  Performance  |
-Microsoft-Windows-Documents  |  1600      |  Performance  |
-Microsoft-Windows-Documents  |  1601      |  Performance  |
-Microsoft-Windows-Documents  |  1602      |  Performance  |
-Microsoft-Windows-Documents  |  1603      |  Performance  |
-Microsoft-Windows-Documents  |  1604      |  Performance  |
-Microsoft-Windows-Documents  |  1605      |  Performance  |
-Microsoft-Windows-Documents  |  1606      |  Performance  |
-Microsoft-Windows-Documents  |  1607      |  Performance  |
-Microsoft-Windows-Documents  |  1608      |  Performance  |
-Microsoft-Windows-Documents  |  1609      |  Performance  |
-Microsoft-Windows-Documents  |  1610      |  Performance  |
-Microsoft-Windows-Documents  |  1611      |  Performance  |
-Microsoft-Windows-Documents  |  1612      |  Performance  |
-Microsoft-Windows-Documents  |  1613      |  Performance  |
-Microsoft-Windows-Documents  |  1614      |  Performance  |
-Microsoft-Windows-Documents  |  1615      |  Performance  |
-Microsoft-Windows-Documents  |  1616      |  Performance  |
-Microsoft-Windows-Documents  |  1617      |  Performance  |
-Microsoft-Windows-Documents  |  1618      |  Performance  |
-Microsoft-Windows-Documents  |  1619      |  Performance  |
-Microsoft-Windows-Documents  |  1620      |  Performance  |
-Microsoft-Windows-Documents  |  1621      |  Performance  |
-Microsoft-Windows-Documents  |  1622      |  Performance  |
-Microsoft-Windows-Documents  |  1623      |  Performance  |
-Microsoft-Windows-Documents  |  1624      |  Performance  |
-Microsoft-Windows-Documents  |  1625      |  Performance  |
-Microsoft-Windows-Documents  |  1626      |  Performance  |
-Microsoft-Windows-Documents  |  1627      |  Performance  |
-Microsoft-Windows-Documents  |  1628      |  Performance  |
-Microsoft-Windows-Documents  |  1629      |  Performance  |
-Microsoft-Windows-Documents  |  1630      |  Performance  |
-Microsoft-Windows-Documents  |  1631      |  Performance  |
-Microsoft-Windows-Documents  |  1632      |  Performance  |
-Microsoft-Windows-Documents  |  1633      |  Performance  |
-Microsoft-Windows-Documents  |  1634      |  Performance  |
-Microsoft-Windows-Documents  |  1635      |  Performance  |
-Microsoft-Windows-Documents  |  1636      |  Performance  |
-Microsoft-Windows-Documents  |  1637      |  Performance  |
-Microsoft-Windows-Documents  |  1638      |  Performance  |
-Microsoft-Windows-Documents  |  1639      |  Performance  |
-Microsoft-Windows-Documents  |  1640      |  Performance  |
-Microsoft-Windows-Documents  |  1641      |  Performance  |
-Microsoft-Windows-Documents  |  1642      |  Performance  |
-Microsoft-Windows-Documents  |  1643      |  Performance  |
-Microsoft-Windows-Documents  |  1644      |  Performance  |
-Microsoft-Windows-Documents  |  1645      |  Performance  |
-Microsoft-Windows-Documents  |  1646      |  Performance  |
-Microsoft-Windows-Documents  |  1647      |  Performance  |
-Microsoft-Windows-Documents  |  1648      |  Performance  |
-Microsoft-Windows-Documents  |  1649      |  Performance  |
-Microsoft-Windows-Documents  |  1700      |  Performance  |
-Microsoft-Windows-Documents  |  1701      |  Performance  |
-Microsoft-Windows-Documents  |  1702      |  Performance  |
-Microsoft-Windows-Documents  |  1703      |  Performance  |
-Microsoft-Windows-Documents  |  1704      |  Performance  |
-Microsoft-Windows-Documents  |  1705      |  Performance  |
-Microsoft-Windows-Documents  |  1706      |  Performance  |
-Microsoft-Windows-Documents  |  1707      |  Performance  |
-Microsoft-Windows-Documents  |  1708      |  Performance  |
-Microsoft-Windows-Documents  |  1709      |  Performance  |
-Microsoft-Windows-Documents  |  1710      |  Performance  |
-Microsoft-Windows-Documents  |  1711      |  Performance  |
-Microsoft-Windows-Documents  |  1712      |  Performance  |
-Microsoft-Windows-Documents  |  1713      |  Performance  |
-Microsoft-Windows-Documents  |  1714      |  Performance  |
-Microsoft-Windows-Documents  |  1715      |  Performance  |
-Microsoft-Windows-Documents  |  1716      |  Performance  |
-Microsoft-Windows-Documents  |  1717      |  Performance  |
-Microsoft-Windows-Documents  |  1718      |  Performance  |
-Microsoft-Windows-Documents  |  1719      |  Performance  |
-Microsoft-Windows-Documents  |  1720      |  Performance  |
-Microsoft-Windows-Documents  |  1721      |  Performance  |
-Microsoft-Windows-Documents  |  1722      |  Performance  |
-Microsoft-Windows-Documents  |  1723      |  Performance  |
-Microsoft-Windows-Documents  |  1724      |  Performance  |
-Microsoft-Windows-Documents  |  1725      |  Performance  |
-Microsoft-Windows-Documents  |  1726      |  Performance  |
-Microsoft-Windows-Documents  |  1727      |  Performance  |
-Microsoft-Windows-Documents  |  1728      |  Performance  |
-Microsoft-Windows-Documents  |  1729      |  Performance  |
-Microsoft-Windows-Documents  |  1730      |  Performance  |
-Microsoft-Windows-Documents  |  1731      |  Performance  |
-Microsoft-Windows-Documents  |  1732      |  Performance  |
-Microsoft-Windows-Documents  |  1733      |  Performance  |
-Microsoft-Windows-Documents  |  1734      |  Performance  |
-Microsoft-Windows-Documents  |  1735      |  Performance  |
-Microsoft-Windows-Documents  |  1736      |  Performance  |
-Microsoft-Windows-Documents  |  1737      |  Performance  |
-Microsoft-Windows-Documents  |  1738      |  Performance  |
-Microsoft-Windows-Documents  |  1739      |  Performance  |
-Microsoft-Windows-Documents  |  1740      |  Performance  |
-Microsoft-Windows-Documents  |  1741      |  Performance  |
-Microsoft-Windows-Documents  |  1742      |  Performance  |
-Microsoft-Windows-Documents  |  1743      |  Performance  |
-Microsoft-Windows-Documents  |  1744      |  Performance  |
-Microsoft-Windows-Documents  |  1745      |  Performance  |
-Microsoft-Windows-Documents  |  1746      |  Performance  |
-Microsoft-Windows-Documents  |  1747      |  Performance  |
-Microsoft-Windows-Documents  |  1748      |  Performance  |
-Microsoft-Windows-Documents  |  1749      |  Performance  |
-Microsoft-Windows-Documents  |  1750      |  Performance  |
-Microsoft-Windows-Documents  |  1751      |  Performance  |
-Microsoft-Windows-Documents  |  1800      |  Performance  |
-Microsoft-Windows-Documents  |  1801      |  Performance  |
-Microsoft-Windows-Documents  |  1850      |  Performance  |
-Microsoft-Windows-Documents  |  1851      |  Performance  |
-Microsoft-Windows-Documents  |  1852      |  Performance  |
-Microsoft-Windows-Documents  |  1853      |  Performance  |
-Microsoft-Windows-Documents  |  1854      |  Performance  |
-Microsoft-Windows-Documents  |  1855      |  Performance  |
-Microsoft-Windows-Documents  |  1856      |  Performance  |
-Microsoft-Windows-Documents  |  1857      |  Performance  |
-Microsoft-Windows-Documents  |  1858      |  Performance  |
-Microsoft-Windows-Documents  |  1859      |  Performance  |
-Microsoft-Windows-Documents  |  1860      |  Performance  |
-Microsoft-Windows-Documents  |  1861      |  Performance  |
-Microsoft-Windows-Documents  |  1862      |  Performance  |
-Microsoft-Windows-Documents  |  1863      |  Performance  |
-Microsoft-Windows-Documents  |  2001      |  Performance  |
-Microsoft-Windows-Documents  |  2002      |  Performance  |
-Microsoft-Windows-Documents  |  2003      |  Performance  |
-Microsoft-Windows-Documents  |  2004      |  Performance  |
-Microsoft-Windows-Documents  |  2005      |  Performance  |
-Microsoft-Windows-Documents  |  2006      |  Performance  |
-Microsoft-Windows-Documents  |  2007      |  Performance  |
-Microsoft-Windows-Documents  |  2008      |  Performance  |
-Microsoft-Windows-Documents  |  2009      |  Performance  |
-Microsoft-Windows-Documents  |  2010      |  Performance  |
-Microsoft-Windows-Documents  |  2011      |  Performance  |
-Microsoft-Windows-Documents  |  2012      |  Performance  |
-Microsoft-Windows-Documents  |  2013      |  Performance  |
-Microsoft-Windows-Documents  |  2014      |  Performance  |
-Microsoft-Windows-Documents  |  2015      |  Performance  |
-Microsoft-Windows-Documents  |  2016      |  Performance  |
-Microsoft-Windows-Documents  |  2017      |  Performance  |
-Microsoft-Windows-Documents  |  2018      |  Performance  |
-Microsoft-Windows-Documents  |  2019      |  Performance  |
-Microsoft-Windows-Documents  |  2020      |  Performance  |
-Microsoft-Windows-Documents  |  2021      |  Performance  |
-Microsoft-Windows-Documents  |  2022      |  Performance  |
-Microsoft-Windows-Documents  |  2023      |  Performance  |
-Microsoft-Windows-Documents  |  2024      |  Performance  |
-Microsoft-Windows-Documents  |  2025      |  Performance  |
-Microsoft-Windows-Documents  |  2026      |  Performance  |
-Microsoft-Windows-Documents  |  2027      |  Performance  |
-Microsoft-Windows-Documents  |  2028      |  Performance  |
-Microsoft-Windows-Documents  |  2029      |  Performance  |
-Microsoft-Windows-Documents  |  2030      |  Performance  |
-Microsoft-Windows-Documents  |  2031      |  Performance  |
-Microsoft-Windows-Documents  |  2032      |  Performance  |
-Microsoft-Windows-Documents  |  2033      |  Performance  |
-Microsoft-Windows-Documents  |  2034      |  Performance  |
-Microsoft-Windows-Documents  |  2035      |  Performance  |
-Microsoft-Windows-Documents  |  2036      |  Performance  |
-Microsoft-Windows-Documents  |  2037      |  Performance  |
-Microsoft-Windows-Documents  |  2038      |  Performance  |
-Microsoft-Windows-Documents  |  2039      |  Performance  |
-Microsoft-Windows-Documents  |  2040      |  Performance  |
-Microsoft-Windows-Documents  |  2041      |  Performance  |
-Microsoft-Windows-Documents  |  2042      |  Performance  |
-Microsoft-Windows-Documents  |  2043      |  Performance  |
-Microsoft-Windows-Documents  |  2044      |  Performance  |
-Microsoft-Windows-Documents  |  2101      |  Performance  |
-Microsoft-Windows-Documents  |  2102      |  Performance  |
-Microsoft-Windows-Documents  |  2103      |  Performance  |
-Microsoft-Windows-Documents  |  2104      |  Performance  |
-Microsoft-Windows-Documents  |  2105      |  Performance  |
-Microsoft-Windows-Documents  |  2106      |  Performance  |
-Microsoft-Windows-Documents  |  2107      |  Performance  |
-Microsoft-Windows-Documents  |  2108      |  Performance  |
-Microsoft-Windows-Documents  |  2109      |  Performance  |
-Microsoft-Windows-Documents  |  2110      |  Performance  |
-Microsoft-Windows-Documents  |  3000      |  Performance  |
-Microsoft-Windows-Documents  |  3001      |  Performance  |
-Microsoft-Windows-Documents  |  3002      |  Performance  |
-Microsoft-Windows-Documents  |  3003      |  Performance  |
-Microsoft-Windows-Documents  |  3004      |  Performance  |
-Microsoft-Windows-Documents  |  3005      |  Performance  |
-Microsoft-Windows-Documents  |  3006      |  Performance  |
-Microsoft-Windows-Documents  |  3007      |  Performance  |
-Microsoft-Windows-Documents  |  3008      |  Performance  |
-Microsoft-Windows-Documents  |  3009      |  Performance  |
-Microsoft-Windows-Documents  |  3050      |  Performance  |
-Microsoft-Windows-Documents  |  3051      |  Performance  |
-Microsoft-Windows-Documents  |  3052      |  Performance  |
-Microsoft-Windows-Documents  |  3053      |  Performance  |
-Microsoft-Windows-Documents  |  3054      |  Performance  |
-Microsoft-Windows-Documents  |  3055      |  Performance  |
-Microsoft-Windows-Documents  |  3056      |  Performance  |
-Microsoft-Windows-Documents  |  3057      |  Performance  |
-Microsoft-Windows-Documents  |  3058      |  Performance  |
-Microsoft-Windows-Documents  |  3059      |  Performance  |
-Microsoft-Windows-Documents  |  3060      |  Performance  |
-Microsoft-Windows-Documents  |  3061      |  Performance  |
-Microsoft-Windows-Documents  |  3100      |  Performance  |
-Microsoft-Windows-Documents  |  3101      |  Performance  |
-Microsoft-Windows-Documents  |  3102      |  Performance  |
-Microsoft-Windows-Documents  |  3103      |  Performance  |
-Microsoft-Windows-Documents  |  3150      |  Performance  |
-Microsoft-Windows-Documents  |  3151      |  Performance  |
-Microsoft-Windows-Documents  |  3175      |  Performance  |
-Microsoft-Windows-Documents  |  3176      |  Performance  |
-Microsoft-Windows-Documents  |  3177      |  Performance  |
-Microsoft-Windows-Documents  |  3178      |  Performance  |
-Microsoft-Windows-Documents  |  3179      |  Performance  |
-Microsoft-Windows-Documents  |  3180      |  Performance  |
-Microsoft-Windows-Documents  |  3181      |  Performance  |
-Microsoft-Windows-Documents  |  3182      |  Performance  |
-Microsoft-Windows-Documents  |  3183      |  Performance  |
-Microsoft-Windows-Documents  |  3184      |  Performance  |
-Microsoft-Windows-Documents  |  3185      |  Performance  |
-Microsoft-Windows-Documents  |  3186      |  Performance  |
-Microsoft-Windows-Documents  |  3201      |  Performance  |
-Microsoft-Windows-Documents  |  3202      |  Performance  |
-Microsoft-Windows-Documents  |  3251      |  Performance  |
-Microsoft-Windows-Documents  |  3252      |  Performance  |
-Microsoft-Windows-Documents  |  3300      |  Performance  |
-Microsoft-Windows-Documents  |  3301      |  Performance  |
-Microsoft-Windows-Documents  |  3302      |  Performance  |
-Microsoft-Windows-Documents  |  3303      |  Performance  |
-Microsoft-Windows-Documents  |  3304      |  Performance  |
-Microsoft-Windows-Documents  |  3305      |  Performance  |
-Microsoft-Windows-Documents  |  3306      |  Performance  |
-Microsoft-Windows-Documents  |  3307      |  Performance  |
-Microsoft-Windows-Documents  |  3308      |  Performance  |
-Microsoft-Windows-Documents  |  3309      |  Performance  |
-Microsoft-Windows-Documents  |  4001      |  Performance  |
-Microsoft-Windows-Documents  |  4002      |  Performance  |
-Microsoft-Windows-Documents  |  4003      |  Performance  |
-Microsoft-Windows-Documents  |  4004      |  Performance  |
-Microsoft-Windows-Documents  |  4005      |  Performance  |
-Microsoft-Windows-Documents  |  4006      |  Performance  |
-Microsoft-Windows-Documents  |  4007      |  Performance  |
-Microsoft-Windows-Documents  |  4008      |  Performance  |
-Microsoft-Windows-Documents  |  4009      |  Performance  |
-Microsoft-Windows-Documents  |  4010      |  Performance  |
-Microsoft-Windows-Documents  |  4011      |  Performance  |
-Microsoft-Windows-Documents  |  4012      |  Performance  |
-Microsoft-Windows-Documents  |  4013      |  Performance  |
-Microsoft-Windows-Documents  |  4014      |  Performance  |
-Microsoft-Windows-Documents  |  4015      |  Performance  |
-Microsoft-Windows-Documents  |  4016      |  Performance  |
-Microsoft-Windows-Documents  |  4017      |  Performance  |
-Microsoft-Windows-Documents  |  4018      |  Performance  |
-Microsoft-Windows-Documents  |  4021      |  Performance  |
-Microsoft-Windows-Documents  |  4022      |  Performance  |
-Microsoft-Windows-Documents  |  4023      |  Performance  |
-Microsoft-Windows-Documents  |  4024      |  Performance  |
-Microsoft-Windows-Documents  |  4025      |  Performance  |
-Microsoft-Windows-Documents  |  4026      |  Performance  |
-Microsoft-Windows-Documents  |  5000      |  Performance  |
-Microsoft-Windows-Documents  |  5001      |  Performance  |
-Microsoft-Windows-Documents  |  5002      |  Performance  |
-Microsoft-Windows-Documents  |  5003      |  Performance  |
-Microsoft-Windows-Documents  |  5004      |  Performance  |
-Microsoft-Windows-Documents  |  5005      |  Performance  |
-Microsoft-Windows-Documents  |  5006      |  Performance  |
-Microsoft-Windows-Documents  |  5007      |  Performance  |
-Microsoft-Windows-Documents  |  5008      |  Performance  |
-Microsoft-Windows-Documents  |  5009      |  Performance  |
-Microsoft-Windows-Documents  |  5010      |  Performance  |
-Microsoft-Windows-Documents  |  5011      |  Performance  |
-Microsoft-Windows-Documents  |  5012      |  Performance  |
-Microsoft-Windows-Documents  |  5013      |  Performance  |
-Microsoft-Windows-Documents  |  5014      |  Performance  |
-Microsoft-Windows-Documents  |  5015      |  Performance  |
-Microsoft-Windows-Documents  |  5016      |  Performance  |
-Microsoft-Windows-Documents  |  5017      |  Performance  |
-Microsoft-Windows-Documents  |  6001      |  Performance  |
-Microsoft-Windows-Documents  |  6002      |  Performance  |
-Microsoft-Windows-Documents  |  6003      |  Performance  |
-Microsoft-Windows-Documents  |  6004      |  Performance  |
-Microsoft-Windows-Documents  |  6005      |  Performance  |
-Microsoft-Windows-Documents  |  6006      |  Performance  |
-Microsoft-Windows-Documents  |  6007      |  Performance  |
-Microsoft-Windows-Documents  |  6008      |  Performance  |
-Microsoft-Windows-Documents  |  6021      |  Performance  |
-Microsoft-Windows-Documents  |  6022      |  Performance  |
-Microsoft-Windows-Documents  |  6023      |  Performance  |
-Microsoft-Windows-Documents  |  6024      |  Performance  |
-Microsoft-Windows-Documents  |  6025      |  Performance  |
-Microsoft-Windows-Documents  |  6026      |  Performance  |
-Microsoft-Windows-Documents  |  6027      |  Performance  |
-Microsoft-Windows-Documents  |  6028      |  Performance  |
-Microsoft-Windows-Documents  |  6029      |  Performance  |
-Microsoft-Windows-Documents  |  6030      |  Performance  |
-Microsoft-Windows-Documents  |  6031      |  Performance  |
-Microsoft-Windows-Documents  |  6032      |  Performance  |
-Microsoft-Windows-Documents  |  6101      |  Performance  |
-Microsoft-Windows-Documents  |  6102      |  Performance  |
-Microsoft-Windows-Documents  |  6103      |  Performance  |
-Microsoft-Windows-Documents  |  6104      |  Performance  |
-Microsoft-Windows-Documents  |  6105      |  Performance  |
-Microsoft-Windows-Documents  |  6106      |  Performance  |
-Microsoft-Windows-Documents  |  6107      |  Performance  |
-Microsoft-Windows-Documents  |  6108      |  Performance  |
-Microsoft-Windows-Documents  |  6109      |  Performance  |
-Microsoft-Windows-Documents  |  6110      |  Performance  |
-Microsoft-Windows-Documents  |  6111      |  Performance  |
-Microsoft-Windows-Documents  |  6112      |  Performance  |
-Microsoft-Windows-Documents  |  6113      |  Performance  |
-Microsoft-Windows-Documents  |  6114      |  Performance  |
-Microsoft-Windows-Documents  |  6115      |  Performance  |
-Microsoft-Windows-Documents  |  6116      |  Performance  |
-Microsoft-Windows-Documents  |  6117      |  Performance  |
-Microsoft-Windows-Documents  |  6118      |  Performance  |
-Microsoft-Windows-Documents  |  6119      |  Performance  |
-Microsoft-Windows-Documents  |  6120      |  Performance  |
-Microsoft-Windows-Documents  |  6121      |  Performance  |
-Microsoft-Windows-Documents  |  6122      |  Performance  |
-Microsoft-Windows-Documents  |  6123      |  Performance  |
-Microsoft-Windows-Documents  |  6124      |  Performance  |
-Microsoft-Windows-Documents  |  6201      |  Performance  |
-Microsoft-Windows-Documents  |  6202      |  Performance  |
-Microsoft-Windows-Documents  |  6203      |  Performance  |
-Microsoft-Windows-Documents  |  6204      |  Performance  |
-Microsoft-Windows-Documents  |  6205      |  Performance  |
-Microsoft-Windows-Documents  |  6206      |  Performance  |
-Microsoft-Windows-Documents  |  6301      |  Performance  |
-Microsoft-Windows-Documents  |  6302      |  Performance  |
-Microsoft-Windows-Documents  |  6303      |  Performance  |
-Microsoft-Windows-Documents  |  6304      |  Performance  |
-Microsoft-Windows-Documents  |  6305      |  Performance  |
-Microsoft-Windows-Documents  |  6306      |  Performance  |
-Microsoft-Windows-Documents  |  6307      |  Performance  |
-Microsoft-Windows-Documents  |  6308      |  Performance  |
-Microsoft-Windows-Documents  |  6309      |  Performance  |
-Microsoft-Windows-Documents  |  6310      |  Performance  |
-Microsoft-Windows-Documents  |  7001      |  Performance  |
-Microsoft-Windows-Documents  |  7002      |  Performance  |
-Microsoft-Windows-Documents  |  7003      |  Performance  |
-Microsoft-Windows-Documents  |  7004      |  Performance  |
-Microsoft-Windows-Documents  |  7005      |  Performance  |
-Microsoft-Windows-Documents  |  7006      |  Performance  |
-Microsoft-Windows-Documents  |  7007      |  Performance  |
-Microsoft-Windows-Documents  |  7008      |  Performance  |
-Microsoft-Windows-Documents  |  7009      |  Performance  |
-Microsoft-Windows-Documents  |  7010      |  Performance  |
-Microsoft-Windows-Documents  |  7011      |  Performance  |
-Microsoft-Windows-Documents  |  7012      |  Performance  |
-Microsoft-Windows-Documents  |  7013      |  Performance  |
-Microsoft-Windows-Documents  |  7014      |  Performance  |
-Microsoft-Windows-Documents  |  7017      |  Performance  |
-Microsoft-Windows-Documents  |  7018      |  Performance  |
-Microsoft-Windows-Documents  |  7019      |  Performance  |
-Microsoft-Windows-Documents  |  7020      |  Performance  |
-Microsoft-Windows-Documents  |  7021      |  Performance  |
-Microsoft-Windows-Documents  |  7022      |  Performance  |
-Microsoft-Windows-Documents  |  7023      |  Performance  |
-Microsoft-Windows-Documents  |  7024      |  Performance  |
-Microsoft-Windows-Documents  |  7025      |  Performance  |
-Microsoft-Windows-Documents  |  7026      |  Performance  |
-Microsoft-Windows-Documents  |  7027      |  Performance  |
-Microsoft-Windows-Documents  |  7028      |  Performance  |
-Microsoft-Windows-Documents  |  7029      |  Performance  |
-Microsoft-Windows-Documents  |  7030      |  Performance  |
-Microsoft-Windows-Documents  |  7031      |  Performance  |
-Microsoft-Windows-Documents  |  7032      |  Performance  |
-Microsoft-Windows-Documents  |  7033      |  Performance  |
-Microsoft-Windows-Documents  |  7034      |  Performance  |
-Microsoft-Windows-Documents  |  7035      |  Performance  |
-Microsoft-Windows-Documents  |  7036      |  Performance  |
-Microsoft-Windows-Documents  |  7037      |  Performance  |
-Microsoft-Windows-Documents  |  7038      |  Performance  |
-Microsoft-Windows-Documents  |  7039      |  Performance  |
-Microsoft-Windows-Documents  |  7040      |  Performance  |
-Microsoft-Windows-Documents  |  7041      |  Performance  |
-Microsoft-Windows-Documents  |  7042      |  Performance  |
-Microsoft-Windows-Documents  |  7043      |  Performance  |
-Microsoft-Windows-Documents  |  7044      |  Performance  |
-Microsoft-Windows-Documents  |  7045      |  Performance  |
-Microsoft-Windows-Documents  |  7046      |  Performance  |
-Microsoft-Windows-Documents  |  7047      |  Performance  |
-Microsoft-Windows-Documents  |  7048      |  Performance  |
-Microsoft-Windows-Documents  |  7049      |  Performance  |
-Microsoft-Windows-Documents  |  7050      |  Performance  |
-Microsoft-Windows-Documents  |  7051      |  Performance  |
-Microsoft-Windows-Documents  |  7052      |  Performance  |
-Microsoft-Windows-Documents  |  7053      |  Performance  |
-Microsoft-Windows-Documents  |  7054      |  Performance  |
-Microsoft-Windows-Documents  |  7055      |  Performance  |
-Microsoft-Windows-Documents  |  7056      |  Performance  |
-Microsoft-Windows-Documents  |  7057      |  Performance  |
-Microsoft-Windows-Documents  |  7058      |  Performance  |
-Microsoft-Windows-Documents  |  7059      |  Performance  |
-Microsoft-Windows-Documents  |  7060      |  Performance  |
-Microsoft-Windows-Documents  |  7061      |  Performance  |
-Microsoft-Windows-Documents  |  7062      |  Performance  |
-Microsoft-Windows-Documents  |  7063      |  Performance  |
-Microsoft-Windows-Documents  |  7064      |  Performance  |
-Microsoft-Windows-Documents  |  7065      |  Performance  |
-Microsoft-Windows-Documents  |  7066      |  Performance  |
-Microsoft-Windows-Documents  |  7067      |  Performance  |
-Microsoft-Windows-Documents  |  7068      |  Performance  |
-Microsoft-Windows-Documents  |  7069      |  Performance  |
-Microsoft-Windows-Documents  |  8000      |  Performance  |
-Microsoft-Windows-Documents  |  8001      |  Performance  |
-Microsoft-Windows-Documents  |  8002      |  Performance  |
-Microsoft-Windows-Documents  |  8003      |  Performance  |
-Microsoft-Windows-Documents  |  8004      |  Performance  |
-Microsoft-Windows-Documents  |  8005      |  Performance  |
-Microsoft-Windows-Documents  |  8006      |  Performance  |
-Microsoft-Windows-Documents  |  8007      |  Performance  |
-Microsoft-Windows-Documents  |  8008      |  Performance  |
-Microsoft-Windows-Documents  |  8009      |  Performance  |
-Microsoft-Windows-Documents  |  8100      |  Performance  |
-Microsoft-Windows-Documents  |  8101      |  Performance  |
+Provider                     |  Level        |  Event ID  |  Version  |  Channel      |  Task                                                           |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|---------------|-----------------------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-Documents  |  Information  |  1001      |  0        |  Performance  |  DocPerf_Task_PrintDocument                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1002      |  0        |  Performance  |  DocPerf_Task_PrintDocument                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1003      |  0        |  Performance  |  DocPerf_Task_SpoolDocument                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1004      |  0        |  Performance  |  DocPerf_Task_SpoolDocument                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1005      |  0        |  Performance  |  DocPerf_Task_DespoolDocument                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1006      |  0        |  Performance  |  DocPerf_Task_DespoolDocument                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1007      |  0        |  Performance  |  DocPerf_Task_OpenPrinter2                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1008      |  0        |  Performance  |  DocPerf_Task_OpenPrinter2                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1009      |  0        |  Performance  |  DocPerf_Task_GetPrinter                                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1010      |  0        |  Performance  |  DocPerf_Task_GetPrinter                                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1011      |  0        |  Performance  |  DocPerf_Task_EnumPrinters                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1012      |  0        |  Performance  |  DocPerf_Task_EnumPrinters                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1013      |  0        |  Performance  |  DocPerf_Task_AddPrinterConnection                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1014      |  0        |  Performance  |  DocPerf_Task_AddPrinterConnection                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1015      |  0        |  Performance  |  DocPerf_Task_AddPrinter                                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1016      |  0        |  Performance  |  DocPerf_Task_AddPrinter                                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1017      |  0        |  Performance  |  DocPerf_Task_AddPrinterDriverEx                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1018      |  0        |  Performance  |  DocPerf_Task_AddPrinterDriverEx                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1019      |  0        |  Performance  |  DocPerf_Task_NetworkRecovery                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1020      |  0        |  Performance  |  DocPerf_Task_NetworkRecovery                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1021      |  0        |  Performance  |  DocPerf_Task_NameCacheAdd                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1022      |  0        |  Performance  |  DocPerf_Task_NameCacheAdd                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1023      |  0        |  Performance  |  DocPerf_Task_AddressResolution                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1024      |  0        |  Performance  |  DocPerf_Task_AddressResolution                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1025      |  0        |  Performance  |  DocPerf_Task_GetPrintProcessorCapabilities                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1026      |  0        |  Performance  |  DocPerf_Task_GetPrintProcessorCapabilities                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1027      |  0        |  Performance  |  DocPerf_Task_PhaseOneInit                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1028      |  0        |  Performance  |  DocPerf_Task_PhaseOneInit                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1029      |  0        |  Performance  |  DocPerf_Task_PhaseTwoInit                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1030      |  0        |  Performance  |  DocPerf_Task_PhaseTwoInit                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1031      |  0        |  Performance  |  DocPerf_Task_LocalProviderInit                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1032      |  0        |  Performance  |  DocPerf_Task_LocalProviderInit                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1200      |  0        |  Performance  |  DocPerf_Task_DrvDeviceCapabilities                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1201      |  0        |  Performance  |  DocPerf_Task_DrvDeviceCapabilities                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1202      |  0        |  Performance  |  DocPerf_Task_DrvConvertDevmode                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1203      |  0        |  Performance  |  DocPerf_Task_DrvConvertDevmode                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1204      |  0        |  Performance  |  DocPerf_Task_DrvUpgradePrinter                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1205      |  0        |  Performance  |  DocPerf_Task_DrvUpgradePrinter                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1206      |  0        |  Performance  |  DocPerf_Task_DrvDriverEvent                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1207      |  0        |  Performance  |  DocPerf_Task_DrvDriverEvent                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1208      |  0        |  Performance  |  DocPerf_Task_PrintProcOpen                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1209      |  0        |  Performance  |  DocPerf_Task_PrintProcOpen                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1210      |  0        |  Performance  |  DocPerf_Task_PrintProcPrintDoc                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1211      |  0        |  Performance  |  DocPerf_Task_PrintProcPrintDoc                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1212      |  0        |  Performance  |  DocPerf_Task_PrintProcClose                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1213      |  0        |  Performance  |  DocPerf_Task_PrintProcClose                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1214      |  0        |  Performance  |  DocPerf_Task_PrintProcControl                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1215      |  0        |  Performance  |  DocPerf_Task_PrintProcControl                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1216      |  0        |  Performance  |  DocPerf_Task_PrintProcGetCaps                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1217      |  0        |  Performance  |  DocPerf_Task_PrintProcGetCaps                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1218      |  0        |  Performance  |  DocPerf_Task_PrintProcEnumDatatypes                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1219      |  0        |  Performance  |  DocPerf_Task_PrintProcEnumDatatypes                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1500      |  0        |  Performance  |  DocPerf_Task_Wia_LoadUnloadDrivers                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1501      |  0        |  Performance  |  DocPerf_Task_Wia_LoadUnloadDrivers                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1502      |  0        |  Performance  |  DocPerf_Task_Wia_EnumerateDevices                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1503      |  0        |  Performance  |  DocPerf_Task_Wia_EnumerateDevices                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1504      |  0        |  Performance  |  DocPerf_Task_Wia_ProcessDeviceArrival                          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1505      |  0        |  Performance  |  DocPerf_Task_Wia_ProcessDeviceArrival                          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1506      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceInit                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1507      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceInit                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1508      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceRefresh                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1509      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceRefresh                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1510      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceStop                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1511      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceStop                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1512      |  0        |  Performance  |  DocPerf_Task_Wia_ServicePause                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1513      |  0        |  Performance  |  DocPerf_Task_Wia_ServicePause                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1514      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceContinue                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1515      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceContinue                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1516      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceShutdown                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1517      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceShutdown                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1518      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceInterrogate                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1519      |  0        |  Performance  |  DocPerf_Task_Wia_ServiceInterrogate                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1520      |  0        |  Performance  |  DocPerf_Task_Wia_Event_Handler                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1521      |  0        |  Performance  |  DocPerf_Task_Wia_Event_Handler                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1522      |  0        |  Performance  |  DocPerf_Task_Wia_CmdLine_Event_Handler                         |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1523      |  0        |  Performance  |  DocPerf_Task_Wia_CmdLine_Event_Handler                         |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1524      |  0        |  Performance  |  DocPerf_Task_Wia_Com_Event_Handler                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1525      |  0        |  Performance  |  DocPerf_Task_Wia_Com_Event_Handler                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1526      |  0        |  Performance  |  DocPerf_Task_ScanRT_FromIdAsync                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1527      |  0        |  Performance  |  DocPerf_Task_ScanRT_FromIdAsync                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1528      |  0        |  Performance  |  DocPerf_Task_ScanRT_Preview                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1529      |  0        |  Performance  |  DocPerf_Task_ScanRT_Preview                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1530      |  0        |  Performance  |  DocPerf_Task_ScanRT_ScanToFolder                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1531      |  0        |  Performance  |  DocPerf_Task_ScanRT_ScanToFolder                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1532      |  0        |  Performance  |  DocPerf_Task_ScanRT_ScanToFolder_ProgressCallback              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1533      |  0        |  Performance  |  DocPerf_Task_ScanRT_ScanToFolder_ProgressCallback              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1600      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Submit                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1601      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Submit                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1602      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Cancel                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1603      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Cancel                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1604      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_JobId                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1605      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_JobId                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1606      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_PageCompleted                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1607      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_PageCompleted                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1608      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_DocumentCompleted               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1609      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_DocumentCompleted               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1610      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_JobCompleted                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1611      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_JobCompleted                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1612      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_JobAborted                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1613      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_JobAborted                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1614      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_Error                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1615      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Callback_Error                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1616      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_CreateXGC                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1617      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_CreateXGC                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1618      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XGCStartDocument               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1619      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XGCStartDocument               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1620      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XGCPrintPage                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1621      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XGCPrintPage                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1622      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateFixedPage           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1623      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateFixedPage           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1624      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateImage               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1625      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateImage               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1626      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateFont                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1627      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateFont                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1628      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreatePrintTicket         |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1629      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreatePrintTicket         |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1630      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateColorProfile        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1631      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateColorProfile        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1632      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateDictionary          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1633      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_XpsOMCreateDictionary          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1634      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_PTMergePrintTicket             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1635      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_PTMergePrintTicket             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1636      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_WritePrinter                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1637      |  0        |  Performance  |  DocPerf_Task_XpsPrint_Dependent_WritePrinter                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1638      |  0        |  Performance  |  DocPerf_Task_XpsPrint_CollectPage                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1639      |  0        |  Performance  |  DocPerf_Task_XpsPrint_CollectPage                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1640      |  0        |  Performance  |  DocPerf_Task_XpsPrint_WriteXPSOMToPrinter                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1641      |  0        |  Performance  |  DocPerf_Task_XpsPrint_WriteXPSOMToPrinter                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1642      |  0        |  Performance  |  DocPerf_Task_XpsPrint_XpsDrv_ConvertPageMarkup                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1643      |  0        |  Performance  |  DocPerf_Task_XpsPrint_XpsDrv_ConvertPageMarkup                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1644      |  0        |  Performance  |  DocPerf_Task_XpsPrint_XpsDrv_ConvertImageResource              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1645      |  0        |  Performance  |  DocPerf_Task_XpsPrint_XpsDrv_ConvertImageResource              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1646      |  0        |  Performance  |  DocPerf_Task_XpsPrint_XpsDrv_ConvertResourceDictionary         |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1647      |  0        |  Performance  |  DocPerf_Task_XpsPrint_XpsDrv_ConvertResourceDictionary         |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1648      |  0        |  Performance  |  DocPerf_Task_XpsPrint_API_EnterExit                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1649      |  0        |  Performance  |  DocPerf_Task_XpsPrint_API_EnterExit                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1700      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinter                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1701      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinter                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1702      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinter_SplAPI                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1703      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinter_SplAPI                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1704      |  0        |  Performance  |  DocPerf_Task_PS_SetPrinter                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1705      |  0        |  Performance  |  DocPerf_Task_PS_SetPrinter                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1706      |  0        |  Performance  |  DocPerf_Task_PS_SetPrinter_SplAPI                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1707      |  0        |  Performance  |  DocPerf_Task_PS_SetPrinter_SplAPI                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1708      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinter                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1709      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinter                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1710      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinter_SplAPI                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1711      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinter_SplAPI                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1712      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinter                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1713      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinter                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1714      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinter_SplAPI                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1715      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinter_SplAPI                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1716      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinterDriver                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1717      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinterDriver                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1718      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinterDriver_SplAPI                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1719      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinterDriver_SplAPI                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1720      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinterDriver                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1721      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinterDriver                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1722      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinterDriver_SplAPI                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1723      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinterDriver_SplAPI                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1724      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinterDriver                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1725      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinterDriver                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1726      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinterDriver_SplAPI                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1727      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinterDriver_SplAPI                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1728      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinterPort                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1729      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinterPort                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1730      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinterPort_SplAPI                          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1731      |  0        |  Performance  |  DocPerf_Task_PS_GetPrinterPort_SplAPI                          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1732      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinterPort                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1733      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinterPort                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1734      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinterPort_SplAPI                          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1735      |  0        |  Performance  |  DocPerf_Task_PS_AddPrinterPort_SplAPI                          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1736      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinterPort                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1737      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinterPort                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1738      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinterPort_SplAPI                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1739      |  0        |  Performance  |  DocPerf_Task_PS_RemovePrinterPort_SplAPI                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1740      |  0        |  Performance  |  DocPerf_Task_PS_GetPrintConfig                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1741      |  0        |  Performance  |  DocPerf_Task_PS_GetPrintConfig                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1742      |  0        |  Performance  |  DocPerf_Task_PS_SetPrintConfig                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1743      |  0        |  Performance  |  DocPerf_Task_PS_SetPrintConfig                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1744      |  0        |  Performance  |  DocPerf_Task_PS_GetPrintJob                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1745      |  0        |  Performance  |  DocPerf_Task_PS_GetPrintJob                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1746      |  0        |  Performance  |  DocPerf_Task_PS_GetPrintJob_SplAPI                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1747      |  0        |  Performance  |  DocPerf_Task_PS_GetPrintJob_SplAPI                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1748      |  0        |  Performance  |  DocPerf_Task_PS_SetPrintJob                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1749      |  0        |  Performance  |  DocPerf_Task_PS_SetPrintJob                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1750      |  0        |  Performance  |  DocPerf_Task_PS_SetPrintJob_SplAPI                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1751      |  0        |  Performance  |  DocPerf_Task_PS_SetPrintJob_SplAPI                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1800      |  0        |  Performance  |  DocPerf_Task_WinspoolFunction                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1801      |  0        |  Performance  |  DocPerf_Task_WinspoolFunction                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1850      |  0        |  Performance  |  DocPerf_Task_PrintTicket_CloseProvider                         |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1851      |  0        |  Performance  |  DocPerf_Task_PrintTicket_CloseProvider                         |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1852      |  0        |  Performance  |  DocPerf_Task_PrintTicket_ConvertDevModeToPrintTicket           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1853      |  0        |  Performance  |  DocPerf_Task_PrintTicket_ConvertDevModeToPrintTicket           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1854      |  0        |  Performance  |  DocPerf_Task_PrintTicket_ConvertPrintTicketToDevMode           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1855      |  0        |  Performance  |  DocPerf_Task_PrintTicket_ConvertPrintTicketToDevMode           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1856      |  0        |  Performance  |  DocPerf_Task_PrintTicket_GetPrintCapabilities                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1857      |  0        |  Performance  |  DocPerf_Task_PrintTicket_GetPrintCapabilities                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1858      |  0        |  Performance  |  DocPerf_Task_PrintTicket_MergeAndValidatePrintTicket           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1859      |  0        |  Performance  |  DocPerf_Task_PrintTicket_MergeAndValidatePrintTicket           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1860      |  0        |  Performance  |  DocPerf_Task_PrintTicket_OpenProvider                          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1861      |  0        |  Performance  |  DocPerf_Task_PrintTicket_OpenProvider                          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1862      |  0        |  Performance  |  DocPerf_Task_PrintTicket_QuerySchemaVersionSupport             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  1863      |  0        |  Performance  |  DocPerf_Task_PrintTicket_QuerySchemaVersionSupport             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2001      |  0        |  Performance  |  DocPerf_Task_Xgc_StartDocument                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2002      |  0        |  Performance  |  DocPerf_Task_Xgc_StartDocument                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2003      |  0        |  Performance  |  DocPerf_Task_Xgc_EndDocument                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2004      |  0        |  Performance  |  DocPerf_Task_Xgc_EndDocument                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2005      |  0        |  Performance  |  DocPerf_Task_Xgc_PrintPage                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2006      |  0        |  Performance  |  DocPerf_Task_Xgc_PrintPage                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2007      |  0        |  Performance  |  DocPerf_Task_Xgc_AbortDocument                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2008      |  0        |  Performance  |  DocPerf_Task_Xgc_AbortDocument                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2009      |  0        |  Performance  |  DocPerf_Task_Xgc_StartPage                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2010      |  0        |  Performance  |  DocPerf_Task_Xgc_StartPage                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2011      |  0        |  Performance  |  DocPerf_Task_Xgc_EndPage                                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2012      |  0        |  Performance  |  DocPerf_Task_Xgc_EndPage                                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2013      |  0        |  Performance  |  DocPerf_Task_Xgc_TreeFlattening                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2014      |  0        |  Performance  |  DocPerf_Task_Xgc_TreeFlattening                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2015      |  0        |  Performance  |  DocPerf_Task_Xgc_AlphaFlattening                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2016      |  0        |  Performance  |  DocPerf_Task_Xgc_AlphaFlattening                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2017      |  0        |  Performance  |  DocPerf_Task_Xgc_RenderXgcTree                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2018      |  0        |  Performance  |  DocPerf_Task_Xgc_RenderXgcTree                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2019      |  0        |  Performance  |  DocPerf_Task_XpsRas_CreateRasterizer                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2020      |  0        |  Performance  |  DocPerf_Task_XpsRas_CreateRasterizer                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2021      |  0        |  Performance  |  DocPerf_Task_XpsRas_RasterizeRect                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2022      |  0        |  Performance  |  DocPerf_Task_XpsRas_RasterizeRect                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2023      |  0        |  Performance  |  DocPerf_Task_Mxdc_PrintDoc                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2024      |  0        |  Performance  |  DocPerf_Task_Mxdc_PrintDoc                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2025      |  0        |  Performance  |  DocPerf_Task_Mxdc_PrintPage                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2026      |  0        |  Performance  |  DocPerf_Task_Mxdc_PrintPage                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2027      |  0        |  Performance  |  DocPerf_Task_Mxdc_AnalyzeContentTree                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2028      |  0        |  Performance  |  DocPerf_Task_Mxdc_AnalyzeContentTree                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2029      |  0        |  Performance  |  DocPerf_Task_Mxdc_PageHasRopContent                            |          |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2030      |  0        |  Performance  |  DocPerf_Task_Mxdc_PageHasRopRasterization                      |          |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2031      |  0        |  Performance  |  DocPerf_Task_Mxdc_Serialization                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2032      |  0        |  Performance  |  DocPerf_Task_Mxdc_Serialization                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2033      |  0        |  Performance  |  DocPerf_Task_FilterRender                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2034      |  0        |  Performance  |  DocPerf_Task_FilterRender                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2035      |  0        |  Performance  |  DocPerf_Task_Mxdc_ConvertHdPhotoToJpegXR                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2036      |  0        |  Performance  |  DocPerf_Task_Mxdc_ConvertHdPhotoToJpegXR                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2037      |  0        |  Performance  |  DocPerf_Task_Mxdc_ConvertResourceDictionary                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2038      |  0        |  Performance  |  DocPerf_Task_Mxdc_ConvertResourceDictionary                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2039      |  0        |  Performance  |  DocPerf_Task_Mxdc_ConvertPageMarkup                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2040      |  0        |  Performance  |  DocPerf_Task_Mxdc_ConvertPageMarkup                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2041      |  0        |  Performance  |  DocPerf_Task_Mxdc_Thumbnail_Generation                         |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2042      |  0        |  Performance  |  DocPerf_Task_Mxdc_Thumbnail_Generation                         |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2043      |  0        |  Performance  |  DocPerf_Task_Mxdc_DDI_EnterExit                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2044      |  0        |  Performance  |  DocPerf_Task_Mxdc_DDI_EnterExit                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2101      |  0        |  Performance  |  DocPerf_Task_PFPM_PrintDocument                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2102      |  0        |  Performance  |  DocPerf_Task_PFPM_PrintDocument                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2103      |  0        |  Performance  |  DocPerf_Task_PFPM_ConvertHdPhotoToJpegXR                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2104      |  0        |  Performance  |  DocPerf_Task_PFPM_ConvertHdPhotoToJpegXR                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2105      |  0        |  Performance  |  DocPerf_Task_PFPM_ConvertResourceDictionary                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2106      |  0        |  Performance  |  DocPerf_Task_PFPM_ConvertResourceDictionary                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2107      |  0        |  Performance  |  DocPerf_Task_PFPM_ConvertPageMarkup                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2108      |  0        |  Performance  |  DocPerf_Task_PFPM_ConvertPageMarkup                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2109      |  0        |  Performance  |  DocPerf_Task_PFPM_API_EnterExit                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  2110      |  0        |  Performance  |  DocPerf_Task_PFPM_API_EnterExit                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3000      |  0        |  Performance  |  DocPerf_Task_SmcN_WriteAD                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3001      |  0        |  Performance  |  DocPerf_Task_SmcN_WriteAD                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3002      |  0        |  Performance  |  DocPerf_Task_SmcN_ReadAD                                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3003      |  0        |  Performance  |  DocPerf_Task_SmcN_ReadAD                                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3004      |  0        |  Performance  |  DocPerf_Task_SmcN_ValidateScanTicket                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3005      |  0        |  Performance  |  DocPerf_Task_SmcN_ValidateScanTicket                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3006      |  0        |  Performance  |  DocPerf_Task_SmcN_ValidateScanServer                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3007      |  0        |  Performance  |  DocPerf_Task_SmcN_ValidateScanServer                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3008      |  0        |  Performance  |  DocPerf_Task_SmcN_ValidateNetShare                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3009      |  0        |  Performance  |  DocPerf_Task_SmcN_ValidateNetShare                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3050      |  0        |  Performance  |  DocPerf_Task_Smc_App                                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3051      |  0        |  Performance  |  DocPerf_Task_Smc_App                                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3052      |  0        |  Performance  |  DocPerf_Task_Smc_ScannerDiscover                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3053      |  0        |  Performance  |  DocPerf_Task_Smc_ScannerDiscover                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3054      |  0        |  Performance  |  DocPerf_Task_Smc_LoadPSPs                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3055      |  0        |  Performance  |  DocPerf_Task_Smc_LoadPSPs                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3056      |  0        |  Performance  |  DocPerf_Task_Smc_GetScannerProps                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3057      |  0        |  Performance  |  DocPerf_Task_Smc_GetScannerProps                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3058      |  0        |  Performance  |  DocPerf_Task_Smc_ShowPSPs                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3059      |  0        |  Performance  |  DocPerf_Task_Smc_ShowPSPs                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3060      |  0        |  Performance  |  DocPerf_Task_Smc_DeletePSP                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3061      |  0        |  Performance  |  DocPerf_Task_Smc_DeletePSP                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3100      |  0        |  Performance  |  DocPerf_Task_SDP_SetDefaultPrinter                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3101      |  0        |  Performance  |  DocPerf_Task_SDP_SetDefaultPrinter                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3102      |  0        |  Performance  |  DocPerf_Task_SDP_GetDefaultPrinter                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3103      |  0        |  Performance  |  DocPerf_Task_SDP_GetDefaultPrinter                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3150      |  0        |  Performance  |  DocPerf_Task_DeviceCenter_FDQuery                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3151      |  0        |  Performance  |  DocPerf_Task_DeviceCenter_FDQuery                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3175      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ServerAddPrinter                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3176      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ServerAddPrinter                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3177      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ServerRemovePrinter                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3178      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ServerRemovePrinter                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3179      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ServerJoin                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3180      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ServerJoin                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3181      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ServerDepart                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3182      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ServerDepart                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3183      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ClientAddPrinter                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3184      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ClientAddPrinter                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3185      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ClientRemovePrinter                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3186      |  0        |  Performance  |  DocPerf_Task_HomeGroup_ClientRemovePrinter                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3201      |  0        |  Performance  |  DocPerf_Task_PrintUI_PrintFolderEnumeration                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3202      |  0        |  Performance  |  DocPerf_Task_PrintUI_PrintFolderEnumeration                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3251      |  0        |  Performance  |  DocPerf_Task_PrintUI_PrintDialog                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3252      |  0        |  Performance  |  DocPerf_Task_PrintUI_PrintDialog                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3300      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_ADSearch                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3301      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_ADSearch                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3302      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_BTSearch                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3303      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_BTSearch                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3304      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_IPSearch                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3305      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_IPSearch                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3306      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_SharesSearch                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3307      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_SharesSearch                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3308      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_WSDSearch                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  3309      |  0        |  Performance  |  DocPerf_Task_PrintUI_NetSearch_WSDSearch                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4001      |  0        |  Performance  |  DocPerf_Task_Xps_LoadPackage                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4002      |  0        |  Performance  |  DocPerf_Task_Xps_LoadPackage                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4003      |  0        |  Performance  |  DocPerf_Task_Xps_LoadPage                                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4004      |  0        |  Performance  |  DocPerf_Task_Xps_LoadPage                                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4005      |  0        |  Performance  |  DocPerf_Task_Xps_WritePackage                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4006      |  0        |  Performance  |  DocPerf_Task_Xps_WritePackage                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4007      |  0        |  Performance  |  DocPerf_Task_Xps_WriteStreaming                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4008      |  0        |  Performance  |  DocPerf_Task_Xps_WriteStreaming                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4009      |  0        |  Performance  |  DocPerf_Task_Xps_WriteAddPage                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4010      |  0        |  Performance  |  DocPerf_Task_Xps_WriteAddPage                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4011      |  0        |  Performance  |  DocPerf_Task_Xps_Sign                                          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4012      |  0        |  Performance  |  DocPerf_Task_Xps_Sign                                          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4013      |  0        |  Performance  |  DocPerf_Task_Xps_VerifySignature                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4014      |  0        |  Performance  |  DocPerf_Task_Xps_VerifySignature                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4015      |  0        |  Performance  |  DocPerf_Task_Xps_LoadRequests                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4016      |  0        |  Performance  |  DocPerf_Task_Xps_LoadRequests                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4017      |  0        |  Performance  |  DocPerf_Task_Xps_ParsePage                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4018      |  0        |  Performance  |  DocPerf_Task_Xps_ParsePage                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4021      |  0        |  Performance  |  DocPerf_Task_Xps_ProcessPackage                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4022      |  0        |  Performance  |  DocPerf_Task_Xps_ProcessPackage                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4023      |  0        |  Performance  |  DocPerf_Task_Xps_ProcessPage                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4024      |  0        |  Performance  |  DocPerf_Task_Xps_ProcessPage                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4025      |  0        |  Performance  |  DocPerf_Task_Xps_GetByPartName                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  4026      |  0        |  Performance  |  DocPerf_Task_Xps_GetByPartName                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5000      |  0        |  Performance  |  DocPerf_Task_Opc_OM_LoadPackage                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5001      |  0        |  Performance  |  DocPerf_Task_Opc_OM_LoadPackage                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5002      |  0        |  Performance  |  DocPerf_Task_Opc_OM_Package_Validate                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5003      |  0        |  Performance  |  DocPerf_Task_Opc_OM_Package_Validate                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5004      |  0        |  Performance  |  DocPerf_Task_Opc_OM_GetParts                                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5005      |  0        |  Performance  |  DocPerf_Task_Opc_OM_GetParts                                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5006      |  0        |  Performance  |  DocPerf_Task_Opc_OM_GetRelationships                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5007      |  0        |  Performance  |  DocPerf_Task_Opc_OM_GetRelationships                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5008      |  0        |  Performance  |  DocPerf_Task_Opc_OM_SavePackage                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5009      |  0        |  Performance  |  DocPerf_Task_Opc_OM_SavePackage                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5010      |  0        |  Performance  |  DocPerf_Task_Opc_OM_Write_TempFile                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5011      |  0        |  Performance  |  DocPerf_Task_Opc_OM_Write_TempFile                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5012      |  0        |  Performance  |  DocPerf_Task_Opc_Signature_Validate                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5013      |  0        |  Performance  |  DocPerf_Task_Opc_Signature_Validate                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5014      |  0        |  Performance  |  DocPerf_Task_Opc_Signature_Sign                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5015      |  0        |  Performance  |  DocPerf_Task_Opc_Signature_Sign                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5016      |  0        |  Performance  |  DocPerf_Task_Opc_Signature_ParseXml                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  5017      |  0        |  Performance  |  DocPerf_Task_Opc_Signature_ParseXml                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6001      |  0        |  Performance  |  DocPerf_Task_Scan_CreatePostScanJob                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6002      |  0        |  Performance  |  DocPerf_Task_Scan_CreatePostScanJob                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6003      |  0        |  Performance  |  DocPerf_Task_Scan_SendImage                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6004      |  0        |  Performance  |  DocPerf_Task_Scan_SendImage                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6005      |  0        |  Performance  |  DocPerf_Task_Scan_EndPostScanJob                               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6006      |  0        |  Performance  |  DocPerf_Task_Scan_EndPostScanJob                               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6007      |  0        |  Performance  |  DocPerf_Task_Scan_ProcessPostScanJob                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6008      |  0        |  Performance  |  DocPerf_Task_Scan_ProcessPostScanJob                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6021      |  0        |  Performance  |  DocPerf_Task_Scan_Service_Startup                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6022      |  0        |  Performance  |  DocPerf_Task_Scan_Service_Startup                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6023      |  0        |  Performance  |  DocPerf_Task_Scan_Email_Filter                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6024      |  0        |  Performance  |  DocPerf_Task_Scan_Email_Filter                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6025      |  0        |  Performance  |  DocPerf_Task_Scan_FileShare_Filter                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6026      |  0        |  Performance  |  DocPerf_Task_Scan_FileShare_Filter                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6027      |  0        |  Performance  |  DocPerf_Task_Scan_FileShare_File_Upload                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6028      |  0        |  Performance  |  DocPerf_Task_Scan_FileShare_File_Upload                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6029      |  0        |  Performance  |  DocPerf_Task_Scan_SharePoint_Filter                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6030      |  0        |  Performance  |  DocPerf_Task_Scan_SharePoint_Filter                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6031      |  0        |  Performance  |  DocPerf_Task_Scan_SharePoint_File_Upload                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6032      |  0        |  Performance  |  DocPerf_Task_Scan_SharePoint_File_Upload                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6101      |  0        |  Performance  |  DocPerf_Task_Setup_InstallDriverFromCurrentInf                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6102      |  0        |  Performance  |  DocPerf_Task_Setup_InstallDriverFromCurrentInf                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6103      |  0        |  Performance  |  DocPerf_Task_Setup_SplUploadPrinterDriverPackage               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6104      |  0        |  Performance  |  DocPerf_Task_Setup_SplUploadPrinterDriverPackage               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6105      |  0        |  Performance  |  DocPerf_Task_Setup_SplInstallPrinterDriverFromPackage          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6106      |  0        |  Performance  |  DocPerf_Task_Setup_SplInstallPrinterDriverFromPackage          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6107      |  0        |  Performance  |  DocPerf_Task_Setup_PnPPrinterInstall                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6108      |  0        |  Performance  |  DocPerf_Task_Setup_PnPPrinterInstall                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6109      |  0        |  Performance  |  DocPerf_Task_Setup_StagePackageDriver                          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6110      |  0        |  Performance  |  DocPerf_Task_Setup_StagePackageDriver                          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6111      |  0        |  Performance  |  DocPerf_Task_Setup_InstallPackageDriver                        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6112      |  0        |  Performance  |  DocPerf_Task_Setup_InstallPackageDriver                        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6113      |  0        |  Performance  |  DocPerf_Task_Setup_DetectRemotePrinterHardwareID               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6114      |  0        |  Performance  |  DocPerf_Task_Setup_DetectRemotePrinterHardwareID               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6115      |  0        |  Performance  |  DocPerf_Task_Setup_FillWindowsUpdateCatalog                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6116      |  0        |  Performance  |  DocPerf_Task_Setup_FillWindowsUpdateCatalog                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6117      |  0        |  Performance  |  DocPerf_Task_Setup_FindDriverFromWindowsUpdate                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6118      |  0        |  Performance  |  DocPerf_Task_Setup_FindDriverFromWindowsUpdate                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6119      |  0        |  Performance  |  DocPerf_Task_Setup_InstallPrinterDriverFromTheWeb              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6120      |  0        |  Performance  |  DocPerf_Task_Setup_InstallPrinterDriverFromTheWeb              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6121      |  0        |  Performance  |  DocPerf_Task_Setup_DownloadDriverFromWindowsUpdate             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6122      |  0        |  Performance  |  DocPerf_Task_Setup_DownloadDriverFromWindowsUpdate             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6123      |  0        |  Performance  |  DocPerf_Task_Setup_FindDriverFromDriverStore                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6124      |  0        |  Performance  |  DocPerf_Task_Setup_FindDriverFromDriverStore                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6201      |  0        |  Performance  |  DocPerf_Task_USBMon_BidiQuery                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6202      |  0        |  Performance  |  DocPerf_Task_USBMon_BidiQuery                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6203      |  0        |  Performance  |  DocPerf_Task_USBMon_LoadBidiExtensions                         |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6204      |  0        |  Performance  |  DocPerf_Task_USBMon_LoadBidiExtensions                         |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6205      |  0        |  Performance  |  DocPerf_Task_USBMon_CancelDoc                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6206      |  0        |  Performance  |  DocPerf_Task_USBMon_CancelDoc                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6301      |  0        |  Performance  |  DocPerf_Task_WSDMon_BackupPort                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6302      |  0        |  Performance  |  DocPerf_Task_WSDMon_BackupPort                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6303      |  0        |  Performance  |  DocPerf_Task_WSDMon_RestorePort                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6304      |  0        |  Performance  |  DocPerf_Task_WSDMon_RestorePort                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6305      |  0        |  Performance  |  DocPerf_Task_WSDMon_BackupServiceId                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6306      |  0        |  Performance  |  DocPerf_Task_WSDMon_BackupServiceId                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6307      |  0        |  Performance  |  DocPerf_Task_WSDMon_BackupDeviceId                             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6308      |  0        |  Performance  |  DocPerf_Task_WSDMon_BackupDeviceId                             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6309      |  0        |  Performance  |  DocPerf_Task_WSDMon_CancelDoc                                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  6310      |  0        |  Performance  |  DocPerf_Task_WSDMon_CancelDoc                                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7001      |  0        |  Performance  |  DocPerf_Task_XpsViewer_TWinMain                                |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7002      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Mainframe_OpenPackage                   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7003      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Render_RenderHilites                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7004      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Mainframe_OnDestroy                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7005      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Mainframe_OnDestroy                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7006      |  0        |  Performance  |  DocPerf_Task_XpsViewer_TWinMain                                |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7007      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Find_PageIndexing                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7008      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Find_PageIndexing                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7009      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Find_FindNext                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7010      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Find_FindNext                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7011      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Find_FindAll                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7012      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Find_FindAll                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7013      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Thumbnails_SetPagesPerBlock             |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7014      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Thumbnails_SetPagesPerBlock             |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7017      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Thumbnails_LoadingPages                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7018      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Thumbnails_LoadingPages                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7019      |  0        |  Performance  |  DocPerf_Task_XpsViewer_View_OnPaint                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7020      |  0        |  Performance  |  DocPerf_Task_XpsViewer_View_OnPaint                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7021      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Thumbnails_LoadPageTexture              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7022      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Thumbnails_LoadPageTexture              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7023      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Thumbnails_LoadHighDetailPageTexture    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7024      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Thumbnails_LoadHighDetailPageTexture    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7025      |  0        |  Performance  |  DocPerf_Task_XpsViewer_PackageLoader_ParsePage                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7026      |  0        |  Performance  |  DocPerf_Task_XpsViewer_PackageLoader_ParsePage                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7027      |  0        |  Performance  |  DocPerf_Task_XpsViewer_View_SetScrollBars                      |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7028      |  0        |  Performance  |  DocPerf_Task_XpsViewer_View_SetScrollBars                      |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7029      |  0        |  Performance  |  DocPerf_Task_ShellExt_PartHolder_Save                          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7030      |  0        |  Performance  |  DocPerf_Task_ShellExt_PartHolder_Save                          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7031      |  0        |  Performance  |  DocPerf_Task_XpsViewer_MainframeBase_ExecuteCopy               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7032      |  0        |  Performance  |  DocPerf_Task_XpsViewer_MainframeBase_ExecuteCopy               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7033      |  0        |  Performance  |  DocPerf_Task_XpsViewer_PackageLoader_OnPageLoaded_ProcessPage  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7034      |  0        |  Performance  |  DocPerf_Task_XpsViewer_PackageLoader_OnPageLoaded_ProcessPage  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7035      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Mainframe_OpenPackage                   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7036      |  0        |  Performance  |  DocPerf_Task_XpsViewer_MainframeBase_ExecuteInvokeFileSaveAs   |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7037      |  0        |  Performance  |  DocPerf_Task_XpsViewer_MainframeBase_ExecuteInvokeFileSaveAs   |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7038      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Viewer_LoadingPages                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7039      |  0        |  Performance  |  DocPerf_Task_XpsViewer_Viewer_LoadingPages                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7040      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_LoadDigSig                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7041      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_LoadDigSig                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7042      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_RequestDigSig                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7043      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_RequestDigSig                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7044      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_SignDigSig                       |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7045      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_SignDigSig                       |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7046      |  0        |  Performance  |  DocPerf_Task_XpsViewer_RM_Save                                 |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7047      |  0        |  Performance  |  DocPerf_Task_XpsViewer_RM_Save                                 |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7048      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_SaveAndReload_SavePackage        |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7049      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_SaveAndReload_SavePackage        |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7050      |  0        |  Performance  |  DocPerf_Task_XpsViewer_SelectContent                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7051      |  0        |  Performance  |  DocPerf_Task_XpsViewer_SelectContent                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7052      |  0        |  Performance  |  DocPerf_Task_XpsViewer_PrintDocument                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7053      |  0        |  Performance  |  DocPerf_Task_XpsViewer_PrintDocument                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7054      |  0        |  Performance  |  DocPerf_Task_XpsViewer_PrintPrepare                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7055      |  0        |  Performance  |  DocPerf_Task_XpsViewer_PrintPrepare                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7056      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_CosignDigSig                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7057      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_CosignDigSig                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7058      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_RemoveRequest                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7059      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_RemoveRequest                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7060      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_RemoveSignature                  |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7061      |  0        |  Performance  |  DocPerf_Task_XpsViewer_DigSig_RemoveSignature                  |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7062      |  0        |  Performance  |  DocPerf_Task_XpsViewer_MainframeBase_DisplayMessageID          |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7063      |  0        |  Performance  |  DocPerf_Task_XpsViewer_MainframeBase_DisplayMessageID          |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7064      |  0        |  Performance  |  DocPerf_Task_XpsViewer_MainframeBase_OpenPackage               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7065      |  0        |  Performance  |  DocPerf_Task_XpsViewer_MainframeBase_OpenPackage               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7066      |  0        |  Performance  |  DocPerf_Task_XpsViewer_ReportBadPage                           |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7067      |  0        |  Performance  |  DocPerf_Task_XpsViewer_ReportBadPage                           |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7068      |  0        |  Performance  |  DocPerf_Task_XpsViewer_ReportPreviewDocumentType               |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  7069      |  0        |  Performance  |  DocPerf_Task_XpsViewer_ReportPreviewDocumentType               |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8000      |  0        |  Performance  |  DocPerf_Task_GetPrintCapabilities                              |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8001      |  0        |  Performance  |  DocPerf_Task_GetPrintCapabilities                              |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8002      |  0        |  Performance  |  DocPerf_Task_GetPrintTicket                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8003      |  0        |  Performance  |  DocPerf_Task_GetPrintTicket                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8004      |  0        |  Performance  |  DocPerf_Task_DriverUpgrade                                     |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8005      |  0        |  Performance  |  DocPerf_Task_DriverUpgrade                                     |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8006      |  0        |  Performance  |  DocPerf_Task_GetPTPCFeature                                    |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8007      |  0        |  Performance  |  DocPerf_Task_GetPTPCFeature                                    |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8008      |  0        |  Performance  |  DocPerf_Task_PrintJob_RequestCancel                            |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8009      |  0        |  Performance  |  DocPerf_Task_PrintJob_RequestCancel                            |  Stop    |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8100      |  0        |  Performance  |  DocPerf_Task_PrintConfig_DDI_EnterExit                         |  Start   |  DocPerf  |
+Microsoft-Windows-Documents  |  Information  |  8101      |  0        |  Performance  |  DocPerf_Task_PrintConfig_DDI_EnterExit                         |  Stop    |  DocPerf  |

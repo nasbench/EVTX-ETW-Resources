@@ -1,25 +1,25 @@
-Provider                     |  Event ID  |  Channel                                                           |  Message
------------------------------|------------|--------------------------------------------------------------------|-----------------------
-Microsoft-Windows-InstallUX  |  0         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  1         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  2         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  3         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  4         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  5         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  6         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  7         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  8         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  9         |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  10        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  11        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  12        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  13        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  14        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  15        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  16        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  17        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  18        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  19        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  20        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  21        |  This is the analytic channel for Windows Install UX Performance.  |
-Microsoft-Windows-InstallUX  |  2005      |  System                                                            |  New Setup information
+Provider                     |  Level        |  Event ID  |  Version  |  Channel                                                           |  Task                  |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|--------------------------------------------------------------------|------------------------|----------|-----------|-----------------------
+Microsoft-Windows-InstallUX  |  Information  |  0         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  1         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  2         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  3         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  4         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  5         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  6         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  7         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  8         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  9         |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  10        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  11        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  12        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  13        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  14        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  15        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  16        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  17        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  18        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  19        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  20        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Start   |           |
+Microsoft-Windows-InstallUX  |  Information  |  21        |  0        |  This is the analytic channel for Windows Install UX Performance.  |  Install Windows Task  |  Stop    |           |
+Microsoft-Windows-InstallUX  |  Information  |  2005      |  0        |  System                                                            |  Install Windows Task  |          |           |  New Setup information

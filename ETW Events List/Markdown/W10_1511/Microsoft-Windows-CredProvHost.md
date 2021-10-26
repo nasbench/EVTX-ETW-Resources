@@ -1,5 +1,5 @@
-Provider                        |  Event ID  |  Channel                               |  Message
---------------------------------|------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-CredProvHost  |  1         |  Microsoft-Windows-CredProvHost/Debug  |  CredProvHost has encountered an error in file {FileName}, function {FunctionName}, line {LineNumber}: {ErrorCode}.
-Microsoft-Windows-CredProvHost  |  2         |  Microsoft-Windows-CredProvHost/Debug  |
-Microsoft-Windows-CredProvHost  |  3         |  Microsoft-Windows-CredProvHost/Debug  |
+Provider                        |  Level        |  Event ID  |  Version  |  Channel                               |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------|---------------|------------|-----------|----------------------------------------|--------|----------|-----------|--------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-CredProvHost  |  Error        |  1         |  0        |  Microsoft-Windows-CredProvHost/Debug  |        |          |           |  CredProvHost has encountered an error in file {FileName}, function {FunctionName}, line {LineNumber}: {ErrorCode}.
+Microsoft-Windows-CredProvHost  |  Information  |  2         |  0        |  Microsoft-Windows-CredProvHost/Debug  |        |          |           |
+Microsoft-Windows-CredProvHost  |  Information  |  3         |  0        |  Microsoft-Windows-CredProvHost/Debug  |        |          |           |

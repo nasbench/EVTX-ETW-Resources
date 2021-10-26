@@ -1,16 +1,16 @@
-Provider                   |  Event ID  |  Channel                                |  Message
----------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-DxgKrnl  |  1         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
-Microsoft-Windows-DxgKrnl  |  2         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
-Microsoft-Windows-DxgKrnl  |  3         |  Microsoft-Windows-DxgKrnl/Diagnostic   |
-Microsoft-Windows-DxgKrnl  |  5         |                                         |
-Microsoft-Windows-DxgKrnl  |  6         |                                         |
-Microsoft-Windows-DxgKrnl  |  7         |                                         |
-Microsoft-Windows-DxgKrnl  |  8         |                                         |
-Microsoft-Windows-DxgKrnl  |  9         |                                         |
-Microsoft-Windows-DxgKrnl  |  10        |                                         |
-Microsoft-Windows-DxgKrnl  |  11        |                                         |
-Microsoft-Windows-DxgKrnl  |  16        |                                         |
-Microsoft-Windows-DxgKrnl  |  10000     |  Microsoft-Windows-DxgKrnl/Performance  |
-Microsoft-Windows-DxgKrnl  |  10001     |  Microsoft-Windows-DxgKrnl/Performance  |
-Microsoft-Windows-DxgKrnl  |  10002     |  Microsoft-Windows-DxgKrnl/Performance  |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                                |  Task                                         |  Opcode  |  Keyword              |  Message
+---------------------------|---------------|------------|-----------|-----------------------------------------|-----------------------------------------------|----------|-----------------------|---------
+Microsoft-Windows-DxgKrnl  |  Information  |  1         |  0        |  Microsoft-Windows-DxgKrnl/Diagnostic   |  HighPagingLevel                              |          |  DxgKrnl DxgKrnl_WDI  |
+Microsoft-Windows-DxgKrnl  |  Information  |  2         |  0        |  Microsoft-Windows-DxgKrnl/Diagnostic   |  ExcessiveMemoryTransfer                      |          |  DxgKrnl DxgKrnl_WDI  |
+Microsoft-Windows-DxgKrnl  |               |  3         |  0        |  Microsoft-Windows-DxgKrnl/Diagnostic   |                                               |          |  DxgKrnl_WDI          |
+Microsoft-Windows-DxgKrnl  |  Information  |  5         |  0        |                                         |                                               |          |                       |
+Microsoft-Windows-DxgKrnl  |  Information  |  6         |  0        |                                         |                                               |  Stop    |                       |
+Microsoft-Windows-DxgKrnl  |  Information  |  7         |  0        |                                         |                                               |          |                       |
+Microsoft-Windows-DxgKrnl  |  Information  |  8         |  0        |                                         |                                               |          |                       |
+Microsoft-Windows-DxgKrnl  |  Information  |  9         |  0        |                                         |                                               |          |                       |
+Microsoft-Windows-DxgKrnl  |  Information  |  10        |  0        |                                         |                                               |          |                       |
+Microsoft-Windows-DxgKrnl  |  Information  |  11        |  0        |                                         |                                               |          |                       |
+Microsoft-Windows-DxgKrnl  |  Information  |  16        |  0        |                                         |                                               |          |                       |
+Microsoft-Windows-DxgKrnl  |  Information  |  10000     |  0        |  Microsoft-Windows-DxgKrnl/Performance  |  PerfTrack_DMM_Hotplug_Monitor_Set_VideoMode  |  Start   |  DxgKrnl              |
+Microsoft-Windows-DxgKrnl  |  Information  |  10001     |  0        |  Microsoft-Windows-DxgKrnl/Performance  |  PerfTrack_DMM_Hotplug_Monitor_Set_VideoMode  |  Stop    |  DxgKrnl              |
+Microsoft-Windows-DxgKrnl  |  Information  |  10002     |  0        |  Microsoft-Windows-DxgKrnl/Performance  |  PerfTrack_DMM_Hotplug_Monitor_Set_VideoMode  |  Stop    |  DxgKrnl              |

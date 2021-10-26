@@ -1,7 +1,7 @@
-Provider                  |  Event ID  |  Channel                       |  Message
---------------------------|------------|--------------------------------|--------------------------------------------------------------------------
-Microsoft-Windows-WinMDE  |  1         |  Microsoft-Windows-WinMDE/MDE  |  HttpListener@{Object} object created
-Microsoft-Windows-WinMDE  |  2         |  Microsoft-Windows-WinMDE/MDE  |  HttpListener@{Object} object destroyed
-Microsoft-Windows-WinMDE  |  3         |  Microsoft-Windows-WinMDE/MDE  |  HttpListener@{Object} HTTP request received
-Microsoft-Windows-WinMDE  |  4         |  Microsoft-Windows-WinMDE/MDE  |  HttpListener@{Object} sending HTTP response entity body ({Value} chunks)
-Microsoft-Windows-WinMDE  |  5         |  Microsoft-Windows-WinMDE/MDE  |  NetStreamSink_SampleRequests @{Object} {Value} requests
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                       |  Task                          |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|--------------------------------|--------------------------------|----------|-----------|--------------------------------------------------------------------------
+Microsoft-Windows-WinMDE  |  Information  |  1         |  0        |  Microsoft-Windows-WinMDE/MDE  |  HTTP Listener                 |  Start   |           |  HttpListener@{Object} object created
+Microsoft-Windows-WinMDE  |  Information  |  2         |  0        |  Microsoft-Windows-WinMDE/MDE  |  HTTP Listener                 |  Stop    |           |  HttpListener@{Object} object destroyed
+Microsoft-Windows-WinMDE  |  Information  |  3         |  0        |  Microsoft-Windows-WinMDE/MDE  |  HTTP Listener                 |          |           |  HttpListener@{Object} HTTP request received
+Microsoft-Windows-WinMDE  |  Information  |  4         |  0        |  Microsoft-Windows-WinMDE/MDE  |  HTTP Listener                 |          |           |  HttpListener@{Object} sending HTTP response entity body ({Value} chunks)
+Microsoft-Windows-WinMDE  |  Verbose      |  5         |  0        |  Microsoft-Windows-WinMDE/MDE  |  NetStreamSink_SampleRequests  |          |           |  NetStreamSink_SampleRequests @{Object} {Value} requests

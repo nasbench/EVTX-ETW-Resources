@@ -1,108 +1,108 @@
-Provider                               |  Event ID  |  Channel                                            |  Message
----------------------------------------|------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-WindowsUpdateClient  |  16        |  System                                             |
-Microsoft-Windows-WindowsUpdateClient  |  17        |  System                                             |  Installation Ready: The following updates are downloaded and ready for installation. To install the updates, an administrator should log on to this computer and Windows will prompt with further instructions: {updatelist}
-Microsoft-Windows-WindowsUpdateClient  |  18        |  System                                             |  Installation Ready: The following updates are downloaded and ready for installation. This computer is currently scheduled to install these updates on {schedinstalldate} at {schedinstalltime}: {updatelist}
-Microsoft-Windows-WindowsUpdateClient  |  19        |  System                                             |  Installation Successful: Windows successfully installed the following update: {updateTitle}
-Microsoft-Windows-WindowsUpdateClient  |  19        |  System                                             |  Installation Successful: Windows successfully installed the following update: {updateTitle}
-Microsoft-Windows-WindowsUpdateClient  |  20        |  System                                             |  Installation Failure: Windows failed to install the following update with error {errorCode}: {updateTitle}.
-Microsoft-Windows-WindowsUpdateClient  |  20        |  System                                             |  Installation Failure: Windows failed to install the following update with error {errorCode}: {updateTitle}.
-Microsoft-Windows-WindowsUpdateClient  |  21        |  System                                             |  Restart Required: To complete the installation of the following updates, the computer must be restarted. Until this computer has been restarted, Windows cannot search for or download new updates: {updatelist}
-Microsoft-Windows-WindowsUpdateClient  |  22        |  System                                             |  Restart Required: To complete the installation of the following updates, the computer will be restarted within {restarttime} minutes: {updatelist}
-Microsoft-Windows-WindowsUpdateClient  |  23        |  System                                             |  Uninstallation Successful: Windows successfully uninstalled the following update: {updateTitle}
-Microsoft-Windows-WindowsUpdateClient  |  23        |  System                                             |  Uninstallation Successful: Windows successfully uninstalled the following update: {updateTitle}
-Microsoft-Windows-WindowsUpdateClient  |  24        |  System                                             |  Uninstallation Failure: Windows failed to uninstall the following update with error {errorCode}: {updatelist}
-Microsoft-Windows-WindowsUpdateClient  |  24        |  System                                             |  Uninstallation Failure: Windows failed to uninstall the following update with error {errorCode}: {updatelist}
-Microsoft-Windows-WindowsUpdateClient  |  25        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update failed to check for updates with error {errorCode}.
-Microsoft-Windows-WindowsUpdateClient  |  25        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update failed to check for updates with error {errorCode}.
-Microsoft-Windows-WindowsUpdateClient  |  26        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update successfully found {updateCount} updates.
-Microsoft-Windows-WindowsUpdateClient  |  26        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update successfully found {updateCount} updates.
-Microsoft-Windows-WindowsUpdateClient  |  27        |  System                                             |
-Microsoft-Windows-WindowsUpdateClient  |  28        |  System                                             |
-Microsoft-Windows-WindowsUpdateClient  |  29        |  Microsoft-Windows-WindowsUpdateClient/Operational  |
-Microsoft-Windows-WindowsUpdateClient  |  30        |  Microsoft-Windows-WindowsUpdateClient/Operational  |
-Microsoft-Windows-WindowsUpdateClient  |  31        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update failed to download an update.
-Microsoft-Windows-WindowsUpdateClient  |  32        |  System                                             |  Windows Update cannot connect to the server. Please check the connection to server {serverName}.
-Microsoft-Windows-WindowsUpdateClient  |  33        |  System                                             |  Windows Update was unable to connect to proxy server {serverName} because valid credentials (user name and password) were required, but were either not available or were incorrect. Please check your proxy credentials, and then try searching again for updates.
-Microsoft-Windows-WindowsUpdateClient  |  34        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  The Windows Update Client Core component failed to install a self-update with error {errorCode}.
-Microsoft-Windows-WindowsUpdateClient  |  35        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  The Windows Update Client Auxillary component failed to install a self-update with error {errorCode}.
-Microsoft-Windows-WindowsUpdateClient  |  36        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  The Windows Update Client Core component was successfully updated from version {version1} to version {version2}.
-Microsoft-Windows-WindowsUpdateClient  |  37        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  The Windows Update Client Auxillary was successfully updated from version {version1} to version {version2}.
-Microsoft-Windows-WindowsUpdateClient  |  38        |  Microsoft-Windows-WindowsUpdateClient/Operational  |
-Microsoft-Windows-WindowsUpdateClient  |  39        |  Microsoft-Windows-WindowsUpdateClient/Operational  |
-Microsoft-Windows-WindowsUpdateClient  |  40        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  An update was detected.
-Microsoft-Windows-WindowsUpdateClient  |  40        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  An update was detected.
-Microsoft-Windows-WindowsUpdateClient  |  41        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  An update was downloaded.
-Microsoft-Windows-WindowsUpdateClient  |  42        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  There has been a change in the health of Windows Update.
-Microsoft-Windows-WindowsUpdateClient  |  43        |  System                                             |  Installation Started: Windows has started installing the following update: {updateTitle}
-Microsoft-Windows-WindowsUpdateClient  |  43        |  System                                             |  Installation Started: Windows has started installing the following update: {updateTitle}
-Microsoft-Windows-WindowsUpdateClient  |  44        |  System                                             |  Windows Update started downloading an update.
-Microsoft-Windows-WindowsUpdateClient  |  101       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  102       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  103       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  104       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  105       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  106       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  107       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  108       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  109       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  110       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  111       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  112       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  113       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  114       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  115       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  116       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  118       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  119       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  120       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  121       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  122       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  123       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  124       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  125       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  126       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  127       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  128       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  129       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  130       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  131       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  200       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  201       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  202       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  203       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  204       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  205       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  206       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  207       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  208       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  209       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  210       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  211       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  212       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  213       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  214       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  215       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  216       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  217       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  218       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  219       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  220       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  221       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  222       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  223       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  224       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  225       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  226       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  227       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  228       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  229       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  230       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  231       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  232       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  233       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  234       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  235       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  236       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  237       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
-Microsoft-Windows-WindowsUpdateClient  |  238       |  Microsoft-Windows-WindowsUpdateClient/Analytic     |
+Provider                               |  Level        |  Event ID  |  Version  |  Channel                                            |  Task                  |  Opcode             |  Keyword                    |  Message
+---------------------------------------|---------------|------------|-----------|-----------------------------------------------------|------------------------|---------------------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-WindowsUpdateClient  |  Warning      |  16        |  0        |  System                                             |  Automatic Updates     |  Check for Updates  |  Connection                 |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  17        |  0        |  System                                             |  Automatic Updates     |  Download           |  Download Success           |  Installation Ready: The following updates are downloaded and ready for installation. To install the updates, an administrator should log on to this computer and Windows will prompt with further instructions: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  18        |  0        |  System                                             |  Automatic Updates     |  Download           |  Download Success           |  Installation Ready: The following updates are downloaded and ready for installation. This computer is currently scheduled to install these updates on {schedinstalldate} at {schedinstalltime}: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  19        |  0        |  System                                             |  Windows Update Agent  |  Installation       |  Installation Success       |  Installation Successful: Windows successfully installed the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  19        |  1        |  System                                             |  Windows Update Agent  |  Installation       |  Installation Success       |  Installation Successful: Windows successfully installed the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  Error        |  20        |  0        |  System                                             |  Windows Update Agent  |  Installation       |  Installation Failure       |  Installation Failure: Windows failed to install the following update with error {errorCode}: {updateTitle}.
+Microsoft-Windows-WindowsUpdateClient  |  Error        |  20        |  1        |  System                                             |  Windows Update Agent  |  Installation       |  Installation Failure       |  Installation Failure: Windows failed to install the following update with error {errorCode}: {updateTitle}.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  21        |  0        |  System                                             |  Automatic Updates     |  Reboot             |  Reboot                     |  Restart Required: To complete the installation of the following updates, the computer must be restarted. Until this computer has been restarted, Windows cannot search for or download new updates: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  22        |  0        |  System                                             |  Automatic Updates     |  Reboot             |  Reboot                     |  Restart Required: To complete the installation of the following updates, the computer will be restarted within {restarttime} minutes: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  23        |  0        |  System                                             |  Windows Update Agent  |  Uninstallation     |  Installation Success       |  Uninstallation Successful: Windows successfully uninstalled the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  23        |  1        |  System                                             |  Windows Update Agent  |  Uninstallation     |  Installation Success       |  Uninstallation Successful: Windows successfully uninstalled the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  Error        |  24        |  0        |  System                                             |  Windows Update Agent  |  Uninstallation     |  Installation Failure       |  Uninstallation Failure: Windows failed to uninstall the following update with error {errorCode}: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  Error        |  24        |  1        |  System                                             |  Windows Update Agent  |  Uninstallation     |  Installation Failure       |  Uninstallation Failure: Windows failed to uninstall the following update with error {errorCode}: {updatelist}
+Microsoft-Windows-WindowsUpdateClient  |  Error        |  25        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  Check for Updates  |  Check for Updates Failure  |  Windows Update failed to check for updates with error {errorCode}.
+Microsoft-Windows-WindowsUpdateClient  |  Error        |  25        |  1        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  Check for Updates  |  Check for Updates Failure  |  Windows Update failed to check for updates with error {errorCode}.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  26        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  Check for Updates  |  Check for Updates Success  |  Windows Update successfully found {updateCount} updates.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  26        |  1        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  Check for Updates  |  Check for Updates Success  |  Windows Update successfully found {updateCount} updates.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  27        |  0        |  System                                             |  Windows Update Agent  |  State Change       |  State                      |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  28        |  0        |  System                                             |  Windows Update Agent  |  State Change       |  State                      |
+Microsoft-Windows-WindowsUpdateClient  |  Warning      |  29        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  State Change       |  Connection                 |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  30        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  State Change       |  Connection                 |
+Microsoft-Windows-WindowsUpdateClient  |  Error        |  31        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  Download           |  Download Failure           |  Windows Update failed to download an update.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  32        |  0        |  System                                             |  Windows Update Agent  |  State Change       |  Connection                 |  Windows Update cannot connect to the server. Please check the connection to server {serverName}.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  33        |  0        |  System                                             |  Windows Update Agent  |  State Change       |  Connection                 |  Windows Update was unable to connect to proxy server {serverName} because valid credentials (user name and password) were required, but were either not available or were incorrect. Please check your proxy credentials, and then try searching again for updates.
+Microsoft-Windows-WindowsUpdateClient  |  Warning      |  34        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  SelfUpdate         |  Failure SelfUpdate         |  The Windows Update Client Core component failed to install a self-update with error {errorCode}.
+Microsoft-Windows-WindowsUpdateClient  |  Warning      |  35        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  SelfUpdate         |  Failure SelfUpdate         |  The Windows Update Client Auxillary component failed to install a self-update with error {errorCode}.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  36        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  SelfUpdate         |  Success SelfUpdate         |  The Windows Update Client Core component was successfully updated from version {version1} to version {version2}.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  37        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  SelfUpdate         |  Success SelfUpdate         |  The Windows Update Client Auxillary was successfully updated from version {version1} to version {version2}.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  38        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  State Change       |  State Service              |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  39        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  State Change       |  State Service              |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  40        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  State Change       |  Check for Updates          |  An update was detected.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  40        |  1        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  State Change       |  Check for Updates          |  An update was detected.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  41        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Windows Update Agent  |  Download           |  Download Success           |  An update was downloaded.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  42        |  0        |  Microsoft-Windows-WindowsUpdateClient/Operational  |  Automatic Updates     |  Other              |  State Health               |  There has been a change in the health of Windows Update.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  43        |  0        |  System                                             |  Windows Update Agent  |  Installation       |  Installation Started       |  Installation Started: Windows has started installing the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  43        |  1        |  System                                             |  Windows Update Agent  |  Installation       |  Installation Started       |  Installation Started: Windows has started installing the following update: {updateTitle}
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  44        |  0        |  System                                             |  Windows Update Agent  |  Download           |  Download Started           |  Windows Update started downloading an update.
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  101       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  102       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  103       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  104       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  105       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  106       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  107       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  108       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  109       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  110       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  111       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  112       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  113       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  114       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  115       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  116       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  118       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  119       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  120       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  121       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  122       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  123       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  124       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  125       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  126       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  127       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  128       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  129       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  130       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  131       |  4        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |  Performance                |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  200       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  201       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  202       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  203       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  204       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  205       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  206       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  207       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  208       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  209       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  210       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  211       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  212       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  213       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  214       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  215       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  216       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  217       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  218       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  219       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  220       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  221       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  222       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  223       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  224       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  225       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  226       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  227       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  228       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  229       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  230       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  231       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  232       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  233       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  234       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  235       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  236       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Start              |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  237       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |                     |                             |
+Microsoft-Windows-WindowsUpdateClient  |  Information  |  238       |  0        |  Microsoft-Windows-WindowsUpdateClient/Analytic     |  Windows Update Agent  |  Stop               |                             |

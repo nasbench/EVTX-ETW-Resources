@@ -1,3 +1,3 @@
-Provider                         |  Event ID  |  Channel                                   |  Message
----------------------------------|------------|--------------------------------------------|---------
-Microsoft-Windows-Kernel-Memory  |  1         |  Microsoft-Windows-Kernel-Memory/Analytic  |
+Provider                         |  Level        |  Event ID  |  Version  |  Channel                                   |  Task     |  Opcode  |  Keyword                     |  Message
+---------------------------------|---------------|------------|-----------|--------------------------------------------|-----------|----------|------------------------------|---------
+Microsoft-Windows-Kernel-Memory  |  Information  |  1         |  0        |  Microsoft-Windows-Kernel-Memory/Analytic  |  MemInfo  |          |  KERNEL_MEM_KEYWORD_MEMINFO  |

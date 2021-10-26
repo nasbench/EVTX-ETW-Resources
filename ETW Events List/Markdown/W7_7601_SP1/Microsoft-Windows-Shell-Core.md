@@ -1,1662 +1,1662 @@
-Provider                      |  Event ID  |  Channel                                  |  Message
-------------------------------|------------|-------------------------------------------|---------
-Microsoft-Windows-Shell-Core  |  1         |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2         |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3         |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  4         |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  101       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  102       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  103       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  104       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  105       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  106       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  107       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  108       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  109       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  110       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  111       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  112       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  113       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  114       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  115       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  501       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  502       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  503       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  504       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  505       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  506       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  507       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  508       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  509       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  510       |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1001      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1002      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1003      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1004      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1005      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1006      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1007      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1008      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1011      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1012      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1013      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1014      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1015      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1016      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1017      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1018      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1019      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1020      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1021      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1022      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1023      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1024      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1025      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1026      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1027      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1028      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1029      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1031      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1033      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1035      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1037      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1038      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1039      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1040      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1041      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1042      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1043      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1044      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1045      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1046      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1047      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1048      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1049      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1050      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1051      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1054      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1055      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1056      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1057      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1058      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1059      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1062      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1063      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1064      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1065      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1066      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1067      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1068      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1069      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1070      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1071      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1072      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1073      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1074      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1075      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1076      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1077      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1078      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1079      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1080      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1081      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1082      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1083      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1084      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1085      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1086      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1087      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1088      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1089      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1090      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1091      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1092      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1093      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1094      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1095      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1096      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1097      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1098      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1099      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1100      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1101      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1102      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1103      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1104      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1105      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1106      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1107      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1108      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1109      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1110      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1111      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1112      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1113      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1114      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1115      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1116      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1117      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1118      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1119      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1120      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1121      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1122      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1123      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1124      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1125      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1126      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1127      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1128      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1129      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1130      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1131      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1132      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1133      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1134      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1135      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1401      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1402      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1403      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1404      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1405      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1406      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1409      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1410      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1411      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1412      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1413      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1414      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1415      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1417      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  1419      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2001      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2002      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2003      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2004      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2005      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2006      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2007      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2008      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2009      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2010      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2011      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2012      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2013      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2014      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2015      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2017      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2019      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2021      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2022      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2023      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2024      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2025      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2027      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2029      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2031      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2033      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2035      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2037      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2039      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2041      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2043      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2045      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2047      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2049      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2050      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2051      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2052      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2053      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2054      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2055      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2056      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2057      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2058      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2059      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2060      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2061      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2062      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2063      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2064      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2065      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2066      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2067      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2069      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2070      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2071      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  2072      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3001      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3002      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3003      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3004      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3005      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3006      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3007      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3009      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3010      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3011      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3012      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3013      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3014      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3015      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  3016      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  4001      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  4003      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  4005      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  5001      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  5002      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  5003      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  5004      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  5005      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6001      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6002      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6201      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6202      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6203      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6204      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6205      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6206      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6207      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6208      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6209      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6210      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6211      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6212      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6501      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6502      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6503      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6504      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6505      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6506      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6507      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6508      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6509      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6510      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6511      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6512      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6513      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6514      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6515      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6516      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6517      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  6518      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  7001      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  7002      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  7003      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  7004      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  7005      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  7006      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  8001      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  8002      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  8003      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  8004      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  8005      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  8006      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9501      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9503      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9505      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9506      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9509      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9510      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9511      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9512      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9513      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9515      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9517      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9519      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9521      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9523      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9525      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9526      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9527      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9529      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9531      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9533      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9535      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9539      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9541      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9543      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9545      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9547      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9549      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9551      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9553      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9555      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9557      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9559      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9560      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9561      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9563      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9565      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9567      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9568      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9569      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9571      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9573      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9575      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9577      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9581      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9583      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9585      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9587      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9589      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9591      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9593      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9595      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9597      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9599      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9601      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9602      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9603      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9604      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9607      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9608      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9609      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9610      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9611      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9612      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9613      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9615      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9617      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9619      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9621      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9622      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9623      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9625      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9626      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9627      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9628      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9629      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9630      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9631      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9633      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9635      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9655      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9657      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9659      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9661      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9701      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9702      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9703      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9704      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9705      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9706      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9707      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9708      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9709      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9710      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9711      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9712      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9713      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9801      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9802      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9803      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9804      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9805      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9806      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9808      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9810      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9901      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9902      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9903      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9904      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9905      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  9906      |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  10001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  10002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11010     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11014     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11015     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11016     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  11017     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12102     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12103     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12104     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12105     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12106     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12107     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12108     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12109     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12110     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12111     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12112     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12113     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  12114     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13008     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13102     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13501     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13502     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13503     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13505     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13507     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13509     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13511     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13513     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13515     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  13517     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14008     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14501     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14502     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14503     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14504     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14505     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14506     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14507     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14508     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14509     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14510     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14511     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14512     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14513     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14514     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14515     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14516     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14517     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14518     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14519     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14520     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14521     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14522     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14523     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14524     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14525     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14526     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14527     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14528     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14529     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14530     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14531     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14532     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14533     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14534     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14535     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14536     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14537     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14538     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14539     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14540     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14541     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14542     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14543     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14544     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14545     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14546     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14547     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14548     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14549     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14550     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14551     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14552     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14553     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14554     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14555     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14556     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14557     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14558     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14559     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14560     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14561     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14563     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  14564     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15501     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15502     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15503     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15504     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15505     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15506     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15507     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15508     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15509     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15510     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15511     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15512     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15513     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15514     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15515     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15516     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15517     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15518     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15519     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  15520     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16501     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16502     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16503     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16504     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16505     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16506     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16507     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16508     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16509     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16510     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16511     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16512     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16513     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16514     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16600     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16601     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16602     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16603     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16604     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16605     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16606     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16607     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16608     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16609     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16610     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16611     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16612     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16613     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16614     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16615     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16616     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16617     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16618     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16619     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16620     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16621     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16700     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16701     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16702     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16703     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16704     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16705     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16706     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16707     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16708     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16709     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16710     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16711     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16712     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16713     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16714     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16715     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16716     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16717     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16718     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16719     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16720     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16721     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16722     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16723     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16724     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16725     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16726     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16727     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16728     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16729     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16801     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16803     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16804     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16805     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16807     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16809     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16811     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16813     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16815     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16817     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16901     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16902     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16903     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16904     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16905     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16906     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  16907     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17008     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17010     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17103     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17105     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17107     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17109     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17111     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17113     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17115     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17117     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17119     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17121     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17501     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17502     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17503     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17504     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17505     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17506     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17507     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17508     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17509     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17510     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17511     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17512     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17513     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17514     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17515     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17516     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17517     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  17518     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18008     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18010     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18012     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18015     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18017     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18018     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18501     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18503     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18505     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18506     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18507     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18508     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18509     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18511     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18512     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18513     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18514     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18515     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18516     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18517     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18518     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18519     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18520     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18521     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18522     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18523     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18524     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18525     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18526     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18527     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18528     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18529     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18530     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18531     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18532     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18533     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18534     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18535     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18536     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18537     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18538     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18539     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18540     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18541     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18547     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18548     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18549     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18550     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18551     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18552     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18553     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18554     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18555     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18556     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18557     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18558     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18559     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18560     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18561     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18563     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18565     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18567     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18568     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18569     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18570     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18571     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18573     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18575     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18576     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18577     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18578     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18579     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18580     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18581     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18582     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18583     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18584     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18585     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18586     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18587     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18588     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18589     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18590     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18591     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18592     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18593     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18594     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18595     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18596     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18597     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18598     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18599     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18600     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18601     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18602     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18603     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18604     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18605     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18606     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18607     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18608     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18609     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18610     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18611     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18612     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18613     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18614     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18615     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18616     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18617     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18618     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18619     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18620     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18621     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18622     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18623     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18624     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18625     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18626     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18627     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18628     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18629     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18630     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18631     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18632     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18633     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18634     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18635     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18636     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18637     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18638     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18639     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18640     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18641     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18642     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18643     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18644     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18645     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18646     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18647     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18648     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18649     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18650     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18651     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18652     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18653     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18654     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18657     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18658     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18659     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18660     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18661     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18663     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18664     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18665     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18669     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18675     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18676     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18677     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18678     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18679     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18680     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18681     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18682     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18683     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18684     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18685     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18686     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18687     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18688     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18689     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18690     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18691     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18692     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18693     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18694     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18695     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18696     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18697     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18698     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18699     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18700     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18701     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18702     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18703     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18705     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18707     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18708     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18709     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18710     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18711     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18712     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18713     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18714     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18715     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18716     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18717     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18718     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18719     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18720     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18721     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18722     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18723     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18724     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18725     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18726     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18727     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18728     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18729     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18730     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18731     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18732     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18733     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18734     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18735     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18736     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18737     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18738     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18739     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18740     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18741     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18742     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18743     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18745     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18747     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18749     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18751     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18752     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18753     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18755     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18761     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18762     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18763     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18764     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18765     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18766     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18767     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18768     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18769     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18770     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18771     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18773     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18775     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18776     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18777     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18778     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18779     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18780     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18781     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18782     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18783     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18784     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18787     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18788     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18789     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18790     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18791     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18792     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18793     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18794     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18795     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18796     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18797     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18798     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18801     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18802     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18803     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18804     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18805     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18806     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18807     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18809     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18810     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18811     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18812     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18813     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18814     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18815     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18816     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18817     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18818     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18819     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18821     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18823     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18825     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18826     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18827     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18828     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18829     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18830     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18831     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18832     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18833     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18834     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18837     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18838     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18841     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18843     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18844     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18845     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18847     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18848     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18849     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18850     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18851     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18852     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18853     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18855     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18857     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18858     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18859     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18860     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18861     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18862     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18863     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18864     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18865     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18867     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18868     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18869     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18870     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18871     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18873     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18875     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18877     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18878     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18879     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18880     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18881     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18882     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18883     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18884     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18885     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18886     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18887     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18888     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18889     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18901     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18902     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18903     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18905     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18907     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18909     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18911     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18913     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18915     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18917     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18918     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18919     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18920     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18921     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18922     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18923     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18924     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18925     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18927     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18929     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18931     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18932     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18933     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18934     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18935     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18936     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18937     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  18939     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19201     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19203     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19205     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19207     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19209     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19211     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19401     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19403     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19405     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19407     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19409     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19411     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19413     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19415     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19417     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19419     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19421     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19423     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19425     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19427     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19429     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19431     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19433     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19435     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19437     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19439     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19441     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19443     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19501     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19502     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19503     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19504     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19601     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19602     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19603     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19604     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19605     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19606     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19607     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19608     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19611     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19613     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19615     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19617     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19619     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19621     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19623     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19625     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19627     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19801     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19803     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19804     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  19805     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20015     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20017     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20019     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20021     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20023     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20025     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20027     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20029     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20031     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20033     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20035     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20037     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20039     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20041     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20043     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20045     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20047     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20049     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20051     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20053     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20055     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20057     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20059     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20061     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20063     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20065     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20066     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20067     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20068     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20069     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20070     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20071     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20072     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20073     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20075     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20076     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20100     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20102     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20103     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20104     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20105     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20106     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20107     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20108     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20109     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20111     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  20112     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21015     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21017     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  21018     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22014     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22015     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22017     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22018     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22019     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22020     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22021     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22022     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22023     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22025     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22026     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22027     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22028     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22029     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22030     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22031     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22032     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22033     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22034     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22035     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22036     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22037     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22038     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22039     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22040     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22041     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22042     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22043     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22044     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22045     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22046     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22047     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22048     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22049     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22050     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22051     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22052     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22053     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22054     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22055     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22056     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22057     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22058     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22059     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22060     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22061     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22062     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22063     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22064     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22065     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22066     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22067     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22068     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22069     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22070     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22071     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22072     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22073     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  22074     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23008     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23010     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23012     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23110     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23111     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23201     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23203     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  23205     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  26001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  26002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  26003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  26004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  26005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  26006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  26007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27008     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27010     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27012     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27014     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27015     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27016     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27017     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27018     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27019     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27020     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27021     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27022     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27023     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27024     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27025     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27026     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27027     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27028     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27029     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27030     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27031     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27032     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27033     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27034     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27035     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27036     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27037     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27038     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27039     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27040     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27041     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27042     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27043     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27044     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27045     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27046     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27047     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27048     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27049     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27050     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27051     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27052     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27053     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27054     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27055     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27056     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27057     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27058     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27059     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27060     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27061     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27062     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27063     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27064     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27077     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27078     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27079     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27080     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27081     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27082     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27083     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27084     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27085     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27086     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27087     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27088     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27089     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27090     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27091     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27092     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27093     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27094     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27095     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27096     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27097     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27098     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27099     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27100     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27102     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27103     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27104     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27105     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27106     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27107     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27108     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27109     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27110     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27111     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27112     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27113     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27114     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27115     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27116     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27117     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27118     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27119     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27120     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27121     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27122     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27123     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27124     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27125     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27126     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27127     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27128     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27141     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27142     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27143     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27144     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27145     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27146     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27147     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27148     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27149     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27151     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27152     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27153     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27154     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27155     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27156     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27157     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27158     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27159     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27160     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27161     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27162     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27163     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27164     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27165     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27166     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27167     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27168     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27169     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27170     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27171     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27172     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27173     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27174     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27175     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27176     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27177     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27178     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27179     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27180     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27181     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27182     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27183     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27184     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27185     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27186     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27187     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27188     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27189     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27190     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27191     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27192     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27193     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27194     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27195     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27196     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27197     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27198     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27199     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27200     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27201     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27202     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27203     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27204     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27205     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27206     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27207     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27208     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27209     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27210     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27211     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27212     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27213     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27214     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27215     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27216     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27217     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27218     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27221     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27222     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27223     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27224     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27226     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27227     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27228     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27229     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27230     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27231     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27232     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27233     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  27234     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28008     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28010     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28012     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28014     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28015     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28017     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28018     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28019     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28020     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28021     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28022     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28103     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  28105     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50102     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50103     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50104     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50105     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50106     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50107     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50108     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50201     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50202     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50203     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50204     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50205     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50206     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50207     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50208     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50209     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50210     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  50211     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60000     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60001     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60002     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60003     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60004     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60005     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60006     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60007     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60008     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60009     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60010     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60011     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60012     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60013     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60014     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60015     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60016     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60017     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60018     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60019     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60020     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60021     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60022     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60023     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60025     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60026     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60027     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60028     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60029     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60030     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60031     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60032     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60033     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60034     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60035     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60036     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60037     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60101     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60102     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60103     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60104     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60105     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60106     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60107     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60108     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60109     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60110     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60111     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60112     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60113     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60114     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60115     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60116     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60117     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60118     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60119     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60120     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60201     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60202     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60203     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60204     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60205     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60206     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60213     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60214     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60301     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60302     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60303     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60304     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60305     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60306     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60307     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60308     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60309     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60310     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60311     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60312     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60401     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60501     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60503     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60601     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60603     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60604     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60605     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60606     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60607     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60609     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60610     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60611     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60612     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60613     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60614     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60615     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60616     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60617     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60618     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60619     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60620     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60621     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60622     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60623     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60624     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60625     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60626     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60627     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60628     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60629     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60631     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60632     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60633     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60634     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60635     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60636     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60637     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60638     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60639     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60640     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60641     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60643     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60644     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60645     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60646     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60647     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60648     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60649     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60650     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60651     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60652     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60653     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60655     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60657     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60659     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60661     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60701     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60702     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60703     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60704     |  Microsoft-Windows-Shell-Core/Diagnostic  |
-Microsoft-Windows-Shell-Core  |  60705     |  Microsoft-Windows-Shell-Core/Diagnostic  |
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                                  |  Task                                                          |  Opcode  |  Keyword                     |  Message
+------------------------------|---------------|------------|-----------|-------------------------------------------|----------------------------------------------------------------|----------|------------------------------|---------
+Microsoft-Windows-Shell-Core  |  Information  |  1         |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AggregatePropertyProvider_GetValue                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2         |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AggregatePropertyProvider_GetValue                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3         |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AggregatePropertyProvider_GetValueObject                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  4         |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AggregatePropertyProvider_GetValueObject                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  101       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoplayCPL_PopulateUI                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  102       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoplayCPL_PopulateUI                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  103       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoplayCPL_Create                                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  104       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoplayCPL_Create                                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  105       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoplayCPL_LayoutInitialized                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  106       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoplayCPL_LayoutInitialized                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  107       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DeskCPL_ShowDialog                                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  108       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DeskCPL_ShowDialog                                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  109       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DeskCPL_ShowDialog                                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  110       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DeskCPL_ShowDialog                                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  111       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DeskCPL_DisplayDialog                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  112       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DeskCPL_DisplayDialog                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  113       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  MainCPL_CPLAppletInvoked                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  114       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  MainCPL_CPLAppletInvoked                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  115       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  MainCPL_DialogPaint                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  501       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_Controls_Rendering                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  502       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_Controls_Rendering                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  503       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_FilterConditions_Rendering                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  504       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_FilterConditions_Rendering                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  505       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_Filter_ChangeNotify                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  506       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_Filter_ChangeNotify                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  507       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_Filters_Rendering                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  508       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_Filters_Rendering                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  509       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_Scopes_Rendering                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  510       |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoListEditor_Scopes_Rendering                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1001      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_QueryDefaultLocation                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1002      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_QueryDefaultLocation                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1003      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_QueryResultsDisplayed                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1004      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_QueryResultsDisplayed                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1005      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_QueryResultsExecuted                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1006      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_QueryResultsExecuted                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1007      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_QueryResultsStacked                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1008      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_QueryResultsStacked                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1011      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_GetRemoteFolderPath                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1012      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_GetRemoteFolderPath                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1013      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_LoadFromXML                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1014      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_LoadFromXML                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1015      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_LoadFromStream                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1016      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_LoadFromStream                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1017      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_LoadComponentChain                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1018      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_LoadComponentChain                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1019      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_GetWorkgroupNetInfo                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1020      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_GetWorkgroupNetInfo                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1021      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_MSSQuery                                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1022      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_MSSQuery                                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1023      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_ProcessNextBatch                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1024      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_ProcessNextBatch                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1025      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_MergeEnumToView                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1026      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_MergeEnumToView                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1027      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_MSSQueryAddResultsToQueue                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1028      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  AutoLists_MSSQueryAddResultsToQueue                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1029      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  InfoBar_Click_Count_AddToIndex                                |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  1031      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  InfoBar_Display_Count_Grep                                    |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  1033      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  InfoBar_Display_Count_Indexer_Busy                            |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  1035      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  InfoBar_Display_Count_Indexer_Disabled                        |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  1037      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  InfoBar_NonIndexed_Location_Count                             |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  1038      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CreateResultSets                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1039      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CreateResultSets                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1040      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CreateSession                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1041      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CreateSession                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1042      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CreateCommand                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1043      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CreateCommand                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1044      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CommandExecute                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1045      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CommandExecute                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1046      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetGetCount                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1047      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetGetCount                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1048      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetGetRows                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1049      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetGetRows                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1050      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetGetData                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1051      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetGetData                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1054      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ItemBindHandler                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1055      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ItemBindHandler                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1056      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ExtractProperties                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1057      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ExtractProperties                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1058      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetGetReferencedRowset                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1059      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetGetReferencedRowset                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1062      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GetDataSourceProperties                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1063      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GetDataSourceProperties                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1064      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_SetDataSourceProperties                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1065      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_SetDataSourceProperties                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1066      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GetRowsetProperties                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1067      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GetRowsetProperties                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1068      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetFindIndex                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1069      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetFindIndex                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1070      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetCountForGroup                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1071      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RowsetCountForGroup                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1072      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionImmediateIndex                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1073      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionImmediateIndex                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1074      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionLeafIndex                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1075      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionLeafIndex                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1076      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMImmediateIndex                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1077      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMImmediateIndex                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1078      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMLeafIndex                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1079      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMLeafIndex                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1080      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionMemberOfGroup                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1081      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionMemberOfGroup                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1082      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionCount                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1083      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionCount                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1084      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionCountCached                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1085      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionCountTaskPending                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1086      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CountTask                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1087      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CountTask                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1088      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CountTaskQueued                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1089      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CountTaskCancelled                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1090      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionGetItem                                   |  Start   |  ItemCollection              |
+Microsoft-Windows-Shell-Core  |  Information  |  1091      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionGetItem                                   |  Stop    |  ItemCollection              |
+Microsoft-Windows-Shell-Core  |  Information  |  1092      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CollectionGetResultCached                           |          |  ItemCollection              |
+Microsoft-Windows-Shell-Core  |  Information  |  1093      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GetResultTask                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1094      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GetResultTask                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1095      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GetResultTaskQueued                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1096      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GetResultTaskCancelled                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1097      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMNotification                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1098      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMNotification                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1099      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMNotificationArrival                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1100      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMRealization                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1101      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMRealization                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1102      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMRealizationCancelled                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1103      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMRealization                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1104      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMGetGroupManager                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1105      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_RSMGetGroupManager                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1106      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetRealize                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1107      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetRealize                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1108      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetProcessBatch                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1109      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetProcessBatch                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1110      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetEnum                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1111      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetEnum                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1112      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetWaitForResults                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1113      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetWaitForResults                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1114      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetFilterResults                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1115      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetFilterResults                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1116      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetSortResults                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1117      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetSortResults                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1118      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetGroupResults                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1119      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetGroupResults                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1120      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetMergeBatch                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1121      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ResultSetMergeBatch                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1122      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GenerateSnippet                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1123      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_GenerateSnippet                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1124      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CalculateStackThumbnailCacheId                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1125      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_CalculateStackThumbnailCacheId                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1126      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_BuildStackThumbnail                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1127      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_BuildStackThumbnail                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1128      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ReuseFirstBatch                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1129      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ReuseFirstBatch                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1130      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ReuseCached                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1131      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_ReuseCached                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1132      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_StackThumbnails_Rendering                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1133      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_StackThumbnails_Rendering                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1134      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_StackThumbnails_PickPictures                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1135      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DataLayer_StackThumbnails_PickPictures                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1401      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_RowsetInitialize                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1402      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_RowsetInitialize                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1403      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_GetRowsAt                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1404      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_GetRowsAt                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1405      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_FillCachedPage                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1406      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_FillCachedPage                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1409      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_NormalizeResultsPage                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1410      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_NormalizeResultsPage                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1411      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_ParseResultsPage                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1412      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_ParseResultsPage                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1413      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_PreConnect                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1414      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_PreConnect                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1415      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_Http_Response                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1417      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_Description_Installed                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  1419      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  OpenSearch_Provider_Queried                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2001      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_CBrowserFrame_CreateInstance                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2002      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_CBrowserFrame_CreateInstance                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2003      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_CBrowserFrame_Close                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2004      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_CBrowserFrame_Close                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2005      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FeedViewer_PreviewStream                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2006      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FeedViewer_PreviewStream                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2007      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_CloseTab                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2008      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_CloseTab                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2009      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_SwitchTabs                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2010      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_SwitchTabs                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2011      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_CloseOtherTabs                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2012      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_CloseOtherTabs                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2013      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_SHOpenFolderWindow                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2014      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_SHOpenFolderWindow                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2015      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FrameMessagePump_Return                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2017      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FrameMessagePump_Back                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2019      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FrameMessagePump_Next                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2021      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FrameMessagePump_Prior                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2022      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FrameMessagePump_KeyDown                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2023      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FrameMessagePump_LButtonAction                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2024      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FrameMessagePump_RButtonAction                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2025      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_AddTabButton                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2027      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_TabReadyForNavigate                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2029      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Tabs_AddTabAPI                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2031      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_CAddressEditBox_OnEndEditA                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2033      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Breadcrumb_Dropdown_Click                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2035      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Breadcrumb_Dropdown_Show                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2037      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_WndProcBS_Restore                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2039      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_WndProcBS_Minimize                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2041      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_WndProcBS_Maximize                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2043      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_CShellBrowser2_BrowseObject                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2045      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Back_Button_Clicked                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2047      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Forward_Button_Clicked                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2049      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_NavBar_CreateBands                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2050      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_NavBar_CreateBands                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2051      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AddressBand_PositionChildWindows                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2052      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AddressBand_PositionChildWindows                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2053      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_SearchControl_PositionChildWindows                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2054      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_SearchControl_PositionChildWindows                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2055      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AddressBand_OnBackgroundStateChanged                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2056      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AddressBand_OnBackgroundStateChanged                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2057      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AutoComplete_StartCompletion                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2058      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AutoComplete_StartCompletion                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2059      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AutoComplete_UpdateCompletion                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2060      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AutoComplete_UpdateCompletion                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2061      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AutoComplete_StartSearch                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2062      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AutoComplete_StartSearch                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2063      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AutoComplete_OnSearchComplete                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2064      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AutoComplete_OnSearchComplete                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2065      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AddressEditBox_ParsePath                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2066      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_AddressEditBox_ParsePath                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2067      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_FrameMessagePump_Activate                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2069      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Browser_Navigate                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2070      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Browser_Navigate                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2071      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Breadcrumb_RebuildToolbar                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  2072      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Browseui_Breadcrumb_RebuildToolbar                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3001      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_CommandLinks_Create                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3002      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_CommandLinks_Create                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3003      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_CommandLinks_Rendering                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3004      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_CommandLinks_Rendering                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3005      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comctl32_ImageList_Draw                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3006      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comctl32_ImageList_Draw                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3007      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_PropertyPage_CreatePropertySheetPage                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3009      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_TaskDialog_Open                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3010      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_TaskDialog_Open                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3011      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_Wizard_Open                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3012      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_Wizard_Open                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3013      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_Wizard_UserDismiss                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3014      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ComCtl32_Wizard_UserDismiss                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3015      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comctl32_ImageList_Rebuild                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  3016      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comctl32_ImageList_Rebuild                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  4001      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTray_MessageLoop_LButtonAction                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  4003      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTray_MessageLoop_Return                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  4005      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTray_Responsiveness                                          |          |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  5001      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comdlg32_FileDialog_Ready                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  5002      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comdlg32_FileDialog_Ready                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  5003      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comdlg32_FileDialog_FrameFirstVisible                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  5004      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comdlg32_FileDialog_FrameFirstRedraw                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  5005      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Comdlg32_FileDialog_FrameFirstRedraw                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6001      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommandModule_ChangeNotify                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6002      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommandModule_ChangeNotify                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6201      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_Extract                                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6202      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_Extract                                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6203      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_FastExtract                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6204      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_FastExtract                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6205      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_CacheLookup                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6206      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_CacheLookup                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6207      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_Adornment                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6208      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_Adornment                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6209      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_ExtractNoCache                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6210      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_ExtractNoCache                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6211      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_FolderThumbnailRender                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6212      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnails_FolderThumbnailRender                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6501      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_ApplyProperties                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6502      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_ApplyProperties                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6503      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_ControlsChangeNotify                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6504      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_ControlsChangeNotify                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6505      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_DetectSlowNetworkLocation                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6506      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_DetectSlowNetworkLocation                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6507      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_ExecuteOpen                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6508      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_ExecuteOpen                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6509      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_Open                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6510      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_Open                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6511      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_PlacesBar_Rendering                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6512      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_PlacesBar_Rendering                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6513      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_PopulateControls                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6514      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_PopulateControls                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  6515      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_SQM                                          |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  6516      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_SQM                                          |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  6517      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_SQM                                          |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  6518      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CommonFileDialog_SQM                                          |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  7001      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ConflictResolution_CRUD_Open                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  7002      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ConflictResolution_CRUD_Open                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  7003      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ConflictResolution_Rendering                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  7004      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ConflictResolution_Rendering                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  7005      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ConflictResolution_UserIgnoreChangeNotify                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  7006      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ConflictResolution_UserIgnoreChangeNotify                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  8001      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DetailsPropertyPage_AddPages                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  8002      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DetailsPropertyPage_AddPages                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  8003      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DetailsPropertyPage_Open                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  8004      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DetailsPropertyPage_Open                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  8005      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DetailsPropertyPage_Save                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  8006      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DetailsPropertyPage_Save                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9501      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Open                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9503      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Ready                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9505      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_AllProgram_Folder_Open                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9506      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_AllProgram_Folder_Open                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9509      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_AllPrograms_Show                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9510      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_AllPrograms_Show                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9511      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_Cascade_Show                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9512      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_Cascade_Show                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9513      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_OpenBox_Char                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9515      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_OpenBox_Launch                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9517      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_OpenBox_SearchReady                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9519      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Scenario                                   |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  9521      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Scenario                                   |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  9523      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_OpenBox_TopMatchReady                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9525      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_ControlPanel_Launch                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9526      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_ControlPanel_Launch                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9527      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Favorites_Launch                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9529      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_RecentItems_Launch                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9531      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Help_Launch                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9533      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Network_Launch                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9535      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Printers_Launch                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9539      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_SPAD_Launch                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9541      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_AdminTools_Launch                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9543      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Run_Launch                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9545      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_MFU_Launch                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9547      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Pinned_Launch                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9549      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_ConnectTo_Launch                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9551      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_AllPrograms_BackButton                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9553      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_OpenComputer                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9555      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_OpenDocuments                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9557      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_OpenMusic                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9559      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_OpenPictures                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9560      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_NavigateDataSource                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9561      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Visible_Menu_Items                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9563      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Mode                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9565      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Pinned_Item_Added                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9567      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Pinned_Item_Removed                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9568      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Pinned_Items_Rearranged                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9569      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_AllPrograms_Launched                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9571      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Pinned_Count                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9573      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_MFU_Count                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9575      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_AllPrograms_Folder_Opened                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9577      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartPane_AllPrograms_Count                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9581      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_NetworkCons_Launch                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9583      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_Is_Mobile_PC                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9585      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_Is_Joined_To_Domain                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9587      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Cascading_Menu_Items                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9589      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_User_Account_Type                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9591      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_Breadcrumbbar_Selected_Navigation                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9593      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_Breadcrumbbar_Edited_Navigation                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9595      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_WordWheel_Activated                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9597      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_OpenProfile                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9599      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_Help_Launched                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9601      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_InitializingExplorer                                 |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9602      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_InitializingExplorer                                 |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9603      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_CreateTray                                           |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9604      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_CreateTray                                           |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9607      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_CreateTrayWindow                                     |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9608      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_CreateTrayWindow                                     |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9609      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_InitStartButton                                      |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9610      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_InitStartButton                                      |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9611      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_CreateDesktop                                        |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9612      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_CreateDesktop                                        |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9613      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_InitInstrumentation                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9615      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_FolderSettings                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9617      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_Start                                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9619      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Games_Launch                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9621      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_MessageLoop                                          |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9622      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_MessageLoop                                          |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9623      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_KickedOffDelayedBootWork                             |          |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9625      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_PlaySoundRequest                                     |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9626      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_PlaySoundRequest                                     |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9627      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_PlaySoundExecute                                     |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9628      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_PlaySoundExecute                                     |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9629      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_PlaySoundWait                                        |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9630      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_PlaySoundWait                                        |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9631      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_SessionChangeMessage                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9633      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_PowerMessage                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9635      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_PowerBroadcastMessage                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9655      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Internet_Launch                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9657      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_RecordedTV_Launch                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9659      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Videos_Launch                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9661      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_Homegroup_Launch                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9701      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ProcessRunOnceEx                                     |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9702      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ProcessRunOnceEx                                     |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9703      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ProcessRunOnce                                       |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9704      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ProcessRunOnce                                       |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9705      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_EnumeratingRunKey                                    |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9706      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_EnumeratingRunKey                                    |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9707      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ExecutingFromRunKey                                  |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9708      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ExecutingFromRunKey                                  |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9709      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ExecutingFromRunKeyAsJob                             |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9710      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ExecutingFromRunKeyAsJob                             |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9711      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ExecutingFromStartupMenu                             |  Start   |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9712      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_ExecutingFromStartupMenu                             |  Stop    |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9713      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartupAppName                                       |          |  Shell StartupPerf           |
+Microsoft-Windows-Shell-Core  |  Information  |  9801      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_MinimizeAllThread                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9802      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_RunDialog                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9803      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_RunDialog                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9804      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_StartMenu_AppTile_Hover                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9805      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_DestinationList_Close                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9806      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Explorer_DestinationList_Launch                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9808      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  EXPLORER_NAVIGATE                                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9810      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  EXPLORER_DRAG_DROP                                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9901      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchFolder_StartMenu_BaseQuery                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9902      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchFolder_StartMenu_BaseQuery                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9903      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_FirstPage_RealizeGroupPass1                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9904      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_FirstPage_RealizeGroupPass1                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9905      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_FirstPage_RealizeGroupPass2                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  9906      |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_FirstPage_RealizeGroupPass2                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  10001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerTemplates_ChangeNotify                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  10002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerTemplates_ChangeNotify                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_ApplyingFilter                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_PopulateFilters                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_PopulateFilters                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_Show                                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_Show                                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_UserCheckedFilter                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_InsertFilters                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11010     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_InsertFilters                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_InsertFilters                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ListViewPopup_SetRedraw                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11014     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ListViewPopup_SetRedraw                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11015     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ListViewPopup_SizeToContent                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11016     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ListViewPopup_SizeToContent                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  11017     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilterControl_Stack                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHRegisterValidateTemplate                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo                                    |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  12102     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo                                    |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  12103     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_Authenticode                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12104     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_Authenticode                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12105     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_Catalog                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12106     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_Catalog                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12107     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_WinVerifyTrust                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12108     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_WinVerifyTrust                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12109     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_VersionInfo                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12110     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_VersionInfo                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12111     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_OSCheck                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12112     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_OSCheck                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12113     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_CheckChainToMSRoot                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  12114     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shlwapi_SHGetSignatureInfo_CheckChainToMSRoot                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NamespaceControl_ChangeNotify                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NamespaceControl_ChangeNotify                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NamespaceControl_Expand                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NamespaceControl_Expand                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NamespaceControl_Plus_Calculation                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NamespaceControl_Plus_Calculation                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NamespaceControl_Rendering                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13008     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NamespaceControl_Rendering                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Feed_Search                                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13102     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Feed_Search                                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13501     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_UserDismiss                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13502     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_UserDismiss                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13503     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_Launch                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13505     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_Displayed                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13507     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_While_Busy                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13509     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_While_Inactive                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13511     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_Dismissed                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13513     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_TimedOut                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13515     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_Settings                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  13517     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Notification_WrenchDismissed                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_CommitChange                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_CommitChange                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_UpdateSelection                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_UpdateSelection                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_MetadataExtractorDoWork                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_MetadataExtractorDoWork                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_MetadataExtractorDispatch                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14008     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_MetadataExtractorDispatch                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PreviewPane_SQM                                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14501     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_BaseControl_Create                                 |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14502     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_BaseControl_Create                                 |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14503     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_BaseControl_WindowlessDraw                         |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14504     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_BaseControl_WindowlessDraw                         |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14505     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_CalendarControl_Create                             |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14506     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_CalendarControl_Create                             |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14507     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_CalendarControl_GetValue                           |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14508     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_CalendarControl_GetValue                           |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14509     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_CalendarControl_SetValue                           |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14510     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_CalendarControl_SetValue                           |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14511     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DrawPercentFull_WindowlessDraw                     |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14512     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DrawPercentFull_WindowlessDraw                     |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14513     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DrawProgressBar_WindowlessDraw                     |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14514     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DrawProgressBar_WindowlessDraw                     |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14515     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DropListControl_Create                             |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14516     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DropListControl_Create                             |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14517     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DropListControl_GetValue                           |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14518     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DropListControl_GetValue                           |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14519     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DropListControl_SetValue                           |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14520     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_DropListControl_SetValue                           |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14521     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MVPControl_Create                                  |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14522     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MVPControl_Create                                  |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14523     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MVPControl_GetValue                                |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14524     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MVPControl_GetValue                                |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14525     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MVPControl_SetValue                                |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14526     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MVPControl_SetValue                                |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14527     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MVPControl_WindowlessDraw                          |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14528     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MVPControl_WindowlessDraw                          |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14529     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiLineEditControl_Create                        |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14530     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiLineEditControl_Create                        |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14531     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiLineEditControl_GetValue                      |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14532     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiLineEditControl_GetValue                      |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14533     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiLineEditControl_SetValue                      |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14534     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiLineEditControl_SetValue                      |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14535     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_NavDropDownControl_Create                          |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14536     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_NavDropDownControl_Create                          |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14537     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_NavDropDownControl_GetValue                        |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14538     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_NavDropDownControl_GetValue                        |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14539     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_NavDropDownControl_SetValue                        |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14540     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_NavDropDownControl_SetValue                        |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14541     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_RatingsControl_Create                              |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14542     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_RatingsControl_Create                              |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14543     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_RatingsControl_GetValue                            |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14544     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_RatingsControl_GetValue                            |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14545     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_RatingsControl_SetValue                            |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14546     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_RatingsControl_SetValue                            |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14547     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_RatingsControl_WindowlessDraw                      |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14548     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_RatingsControl_WindowlessDraw                      |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14549     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_SingleLineEditControl_Create                       |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14550     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_SingleLineEditControl_Create                       |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14551     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_SingleLineEditControl_GetValue                     |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14552     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_SingleLineEditControl_GetValue                     |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14553     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_SingleLineEditControl_SetValue                     |  Start   |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14554     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_SingleLineEditControl_SetValue                     |  Stop    |  Controls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  14555     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiComplete_Populate                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14556     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiComplete_Populate                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14557     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiComplete_Query                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14558     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiComplete_Query                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14559     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiComplete_Match                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14560     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_MultiComplete_Match                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  14561     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_PropVariantChangeType_Coercion                     |          |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  14563     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_PropVariantHelper_Coercion                         |          |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  14564     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Properties_VariantHelper_Coercion                             |          |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyApply_DoOperation                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  15002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyApply_DoOperation                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  15003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyApply_SHApplyPropertiesToItem                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  15004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyApply_SHApplyPropertiesToItem                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  15501     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_FormatForDisplay                          |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15502     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_FormatForDisplay                          |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15503     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_SHFormatForDisplay                        |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15504     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_SHFormatForDisplay                        |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15505     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_SHGetPropertyDescription                  |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15506     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_SHGetPropertyDescription                  |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15507     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_SHGetPropertyDescriptionByName            |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15508     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_SHGetPropertyDescriptionByName            |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15509     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_SHGetPropertyDescriptionListFromString    |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15510     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_SHGetPropertyDescriptionListFromString    |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15511     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_CoerceToCanonicalValue                    |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15512     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_CoerceToCanonicalValue                    |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15513     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_IsValueCanonical                          |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15514     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyDescription_IsValueCanonical                          |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15515     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertySchema_LoadFromSavedBinaryForm                        |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15516     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertySchema_LoadFromSavedBinaryForm                        |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15517     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertySchema_SaveAsBinaryForm                               |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15518     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertySchema_SaveAsBinaryForm                               |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15519     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SemanticType_PSGetSemanticTypeByName                          |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  15520     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SemanticType_PSGetSemanticTypeByName                          |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16501     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyProvider_Commit                                       |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16502     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyProvider_Commit                                       |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16503     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyProvider_GetValue                                     |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16504     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyProvider_GetValue                                     |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16505     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyProvider_GetValueObject                               |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16506     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyProvider_GetValueObject                               |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16507     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyProvider_SetValue                                     |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16508     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyProvider_SetValue                                     |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16509     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyStoreOverPropertySetStorage_GetValue                  |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16510     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyStoreOverPropertySetStorage_GetValue                  |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16511     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyStoreOverPropertySetStorage_SetValue                  |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16512     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyStoreOverPropertySetStorage_SetValue                  |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16513     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyStoreOverPropertySetStorage_Commit                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16514     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PropertyStoreOverPropertySetStorage_Commit                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16600     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetPropertyHandler                   |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16601     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetPropertyHandler                   |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16602     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetInnateStore                       |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16603     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetInnateStore                       |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16604     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetFallbackStore                     |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16605     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetFallbackStore                     |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16606     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetDesktopIniStore                   |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16607     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetDesktopIniStore                   |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16608     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderInnateStore_GetValue                                |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16609     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderInnateStore_GetValue                                |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16610     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderInnateStore_GetCount                                |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16611     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderInnateStore_GetCount                                |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16612     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderInnateStore_GetAt                                   |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16613     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderInnateStore_GetAt                                   |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16614     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderFallbackStore_GetValue                              |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16615     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderFallbackStore_GetValue                              |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16616     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderFallbackStore_GetCount                              |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16617     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderFallbackStore_GetCount                              |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16618     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderFallbackStore_GetAt                                 |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16619     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolderFallbackStore_GetAt                                 |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16620     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FilePropertyStoreFactory_GetPropertyHandler                   |          |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16621     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileFolder_UseItemCacheContext                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16700     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_GetPropertyStore                                    |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16701     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_GetPropertyStore                                    |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16702     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_GetPropertyStoreForKeys                             |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16703     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_GetPropertyStoreForKeys                             |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16704     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_GetPropertyStoreWithCreateObject                    |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16705     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_GetPropertyStoreWithCreateObject                    |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16706     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_GetPropertyDescriptionList                          |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16707     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_GetPropertyDescriptionList                          |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16708     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_CreatePropertyProviderHelper                        |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16709     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItem_CreatePropertyProviderHelper                        |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16710     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItemArray_GetPropertyStore                               |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16711     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItemArray_GetPropertyStore                               |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16712     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItemArray_GetPropertyDescriptionList                     |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16713     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellItemArray_GetPropertyDescriptionList                     |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16714     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CachedShellItem_GetPropertyStore                              |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16715     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CachedShellItem_GetPropertyStore                              |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16716     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemFallbackStore_GetValue                                    |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16717     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemFallbackStore_GetValue                                    |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16718     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemFallbackStore_GetCount                                    |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16719     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemFallbackStore_GetCount                                    |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16720     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemFallbackStore_GetAt                                       |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16721     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemFallbackStore_GetAt                                       |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16722     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemStoreOverFolder_GetValue                                  |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16723     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemStoreOverFolder_GetValue                                  |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16724     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemStoreOverFolder_GetValueFromDetailsEx                     |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16725     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemStoreOverFolder_GetValueFromDetailsEx                     |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16726     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemStoreOverFolder_GetCount                                  |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16727     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemStoreOverFolder_GetCount                                  |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16728     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemStoreOverFolder_GetAt                                     |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16729     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemStoreOverFolder_GetAt                                     |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  16801     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_SQM_CreateLibrary                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16803     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_SQM_AddFolder                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16804     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_SQM_AddFolder                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16805     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_Location_Count                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16807     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_InUsersRoot_Count                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16809     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_Save_Location                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16811     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_Add_Location                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16813     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_Remove_Location                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16815     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Library_Has_Reordered_Locations                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16817     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Add_Library_Location_EntryPoint                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16901     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PHLocationCreator_ScanSearchRoots                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16902     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PHLocationCreator_ScanSearchRoots                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16903     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PHLocationCreator_CreateSearchRootLocations                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16904     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PHLocationCreator_CreateSearchRootLocations                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16905     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PHLocationCreator_RemoveSearchRootLocations                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16906     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PHLocationCreator_RemoveSearchRootLocations                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  16907     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PHLocationCreator_SQM_CreateLibrary                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Scope_Flatten                                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Scope_Flatten                                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ScopePicker_Open                                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ScopePicker_Open                                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ScopePicker_Folders_Rendering                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ScopePicker_Folders_Rendering                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Scope_Load_From_XML                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17008     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Scope_Load_From_XML                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Scope_Load_From_Stream                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17010     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Scope_Load_From_Stream                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_Minimize                                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17103     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_Minimize                                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17105     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_MinimizeWorker                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17107     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_MinimizeWorker                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17109     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_Restore                                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17111     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_Restore                                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17113     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_RestoreWorker                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17115     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_RestoreWorker                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17117     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_MinimizeWorker                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17119     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_MinimizeEnabled                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17121     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shake_DetectionCount                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  17501     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_ResolveSids                                  |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17502     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_ResolveSids                                  |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17503     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_ResolveStringSid                             |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17504     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_ResolveStringSid                             |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17505     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_SHResolveUserNames                           |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17506     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_SHResolveUserNames                           |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17507     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_FriendlyNameLookup                           |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17508     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_FriendlyNameLookup                           |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17509     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_SingleSidToNameLookup                        |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17510     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_SingleSidToNameLookup                        |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17511     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_MultipleSidsToNamesLookup                    |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17512     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_MultipleSidsToNamesLookup                    |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17513     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_CachedFriendlyNameLookup                     |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17514     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ResolveUserNames_CachedFriendlyNameLookup                     |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17515     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  GetCorrectOwnerSid_Lookup                                     |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17516     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  GetCorrectOwnerSid_Lookup                                     |  Stop    |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17517     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  GetCorrectOwnerSid_LookupFromRegistry                         |  Start   |  Properties                  |
+Microsoft-Windows-Shell-Core  |  Information  |  17518     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  GetCorrectOwnerSid_LookupFromRegistry                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_BaseBrowser_DocumentComplete                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_BaseBrowser_ExplorerWindowReady                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_BaseBrowser_Navigate                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_BaseBrowser_Navigate                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_PanningTool_ScrollElementBy                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18008     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_PanningTool_ScrollElementBy                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_PanningTool_GetPanningProperties                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18010     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_PanningTool_GetPanningProperties                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_PanningTool_SinglePan                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18012     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_PanningTool_Change_PanningMode                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shdocvw_BaseBrowser_Explorer_Search_Query_Stream              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18015     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_FrameFirstVisible                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18017     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_FrameFirstRedraw                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18018     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ExplorerFrame_FrameFirstRedraw                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18501     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoListEditor_CommitSearch                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18503     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoListEditor_Displayed                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18505     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoListEditor_FillScopes                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18506     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoListEditor_FillScopes                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18507     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoListEditor_GetPropertyList                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18508     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoListEditor_GetPropertyList                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18509     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoListEditor_LaunchSearch                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18511     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_IDynamicHWHandler                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18512     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_IDynamicHWHandler                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18513     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_IHWNotificationHandler                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18514     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_IHWNotificationHandler                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18515     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_IQueryCancelAutoPlay                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18516     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_IQueryCancelAutoPlay                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18517     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_Logic                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18518     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_Logic                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18519     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_Prompt_Show                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18520     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_Prompt_Show                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18521     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_Sniff                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18522     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_Sniff                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18523     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_LButtonAction                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18524     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_ShellReady                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18525     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CExplorerBrowser_BrowseObjectInternal                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18526     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CExplorerBrowser_BrowseObjectInternal                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18527     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CFindCmd_DoSearch                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18528     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CFindCmd_DoSearch                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18529     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CGrepQuery_Crawl                                      |  Start   |  Grep                        |
+Microsoft-Windows-Shell-Core  |  Information  |  18530     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CGrepQuery_Crawl                                      |  Stop    |  Grep                        |
+Microsoft-Windows-Shell-Core  |  Information  |  18531     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CommandModule_SelectionChange                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18532     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CommandModule_SelectionChange                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18533     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_CategoryView_Init                        |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  18534     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_CategoryView_Init                        |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  18535     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_CategoryView_LoadTasks                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18536     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_CategoryView_LoadTasks                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18537     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_CategoryView_Search                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18538     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_CategoryView_Search                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18539     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_NavPane_Init                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18540     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_NavPane_Init                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18541     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PinnedApplications_SQMStream                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18547     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_AutoSizeColumns                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18548     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_AutoSizeColumns                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18549     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Enumeration                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18550     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Enumeration                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18551     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Filter                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18552     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Filter                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18553     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Filter_Generation                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18554     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Filter_Generation                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18555     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_FirstBatch                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18556     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_FirstBatch                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18557     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Group                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18558     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Group                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18559     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Initial_Sort                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18560     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Initial_Sort                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18561     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_ListViewDone                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18563     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_PropertiesDone                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18565     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_RightClickContextMenu                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18567     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Stack                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18568     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Stack                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18569     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Thumbnail_Extract                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18570     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Thumbnail_Extract                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18571     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CollectionLock_GetSingleQueueItem                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18573     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CollectionLock_GetQueueItems                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18575     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Thumbnail_Update                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18576     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Thumbnail_Update                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18577     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Thumbnail_Updateview                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18578     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Thumbnail_Updateview                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18579     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_ViewModeChange                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18580     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_ViewModeChange                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18581     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_Defview_Sort                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18582     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_Defview_Sort                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18583     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_GeneratingContextMenu                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18584     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_GeneratingContextMenu                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18585     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_InvokingContextMenu                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18586     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_InvokingContextMenu                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18587     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolderManager_GetEnumKnownFolders                |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18588     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolderManager_GetEnumKnownFolders                |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18589     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolder_GetLocation                               |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18590     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolder_GetLocation                               |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18591     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolder_GetPath                                   |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18592     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolder_GetPath                                   |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18593     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolder_SetPath                                   |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18594     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolder_SetPath                                   |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18595     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_List_Add                                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18596     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_List_Add                                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18597     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_List_Enum                                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18598     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_List_Enum                                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18599     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_List_Remove                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18600     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_List_Remove                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18601     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18602     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18603     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_DeviceArrived              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18604     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_DeviceArrived              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18605     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_DeviceRemoved              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18606     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_DeviceRemoved              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18607     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_DeviceUpdated              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18608     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_DeviceUpdated              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18609     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_MountPointArrived          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18610     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_MountPointArrived          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18611     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_MountPointRemoved          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18612     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_MountPointRemoved          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18613     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeArrived              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18614     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeArrived              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18615     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeDismounted           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18616     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeDismounted           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18617     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeMounted              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18618     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeMounted              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18619     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeRemoved              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18620     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeRemoved              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18621     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeUpdated              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18622     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_SHHardwareEvent_VolumeUpdated              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18623     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18624     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18625     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_MediaArrival                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18626     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_MediaArrival                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18627     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_MediaRemoval                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18628     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_MediaRemoval                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18629     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_MountPointArrival           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18630     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_MountPointArrival           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18631     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_MountPointRemoval           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18632     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_MountPointRemoval           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18633     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_NetShareArrival             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18634     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_NetShareArrival             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18635     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_NetShareRemoval             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18636     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_WMDeviceChange_NetShareRemoval             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18637     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PSC_Autolist_Show                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18638     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PSC_Autolist_Show                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18639     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PSC_Explorer_Template_Change                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18640     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PSC_Explorer_Template_Change                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18641     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHGetFolderLocation                                   |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18642     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHGetFolderLocation                                   |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18643     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHGetFolderLocationEx                                 |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18644     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHGetFolderLocationEx                                 |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18645     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHGetFolderPath                                       |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18646     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHGetFolderPath                                       |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18647     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHGetFolderPathEx                                     |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18648     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHGetFolderPathEx                                     |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18649     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHSetFolderPath                                       |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18650     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHSetFolderPath                                       |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18651     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHSetFolderPathEx                                     |  Start   |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18652     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHSetFolderPathEx                                     |  Stop    |  APICalls                    |
+Microsoft-Windows-Shell-Core  |  Information  |  18653     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Keydown                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18654     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_NoIShellFolder2                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18657     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_SQM_LinkClicked                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18658     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_SQM_ViewMode                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18659     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_FloppyOrCD_Launch                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18660     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_SQM_ViewChange                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18661     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ExplorerBrowser_Ready                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18663     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_HighQualityStretch                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18664     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_HighQualityStretch                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18665     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Scroll                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18669     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Filtering_Clicked                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18675     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_Search_Index_Enabled                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18676     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_List_LaunchInBasket                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18677     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemThumbnail_SetItems                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18678     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemThumbnail_SetItems                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18679     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemThumbnail_Prefetch                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18680     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemThumbnail_Prefetch                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18681     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemThumbnail_Draw                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18682     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemThumbnail_Draw                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18683     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_ParseDisplayName                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18684     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_ParseDisplayName                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18685     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_ParseUNCName                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18686     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_ParseUNCName                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18687     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_SHWNetGetResourceInformationAlloc           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18688     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_SHWNetGetResourceInformationAlloc           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18689     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_WNetGetResourceParent                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18690     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_WNetGetResourceParent                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18691     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_WNetUseConnection                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18692     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NetFolder_WNetUseConnection                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18693     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Property_Extraction                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18694     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Property_Extraction                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18695     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Property_Extract                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18696     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Property_Extract                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18697     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Property_ReadAsOneBatch                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18698     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Property_ReadAsOneBatch                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18699     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_GetEnumerator                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18700     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_GetEnumerator                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18701     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Thumbnail_EnumLookup                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18702     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_Thumbnail_EnumLookup                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18703     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_Autoplay_Master_Switch                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18705     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_Autoplay_Default_Handler                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18707     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_WaitForNextResult               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18708     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_WaitForNextResult               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18709     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Programs                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18710     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Programs                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18711     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Programs_Grep                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18712     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Programs_Grep                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18713     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Programs_Run                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18714     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Programs_Run                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18715     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Programs_ControlPanels          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18716     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Programs_ControlPanels          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18717     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Internet                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18718     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Internet                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18719     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Internet_Run                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18720     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Internet_Run                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18721     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Internet_Favorites              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18722     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Internet_Favorites              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18723     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Internet_History                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18724     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Internet_History                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18725     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Files                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18726     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Files                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18727     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Files_Recent                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18728     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Files_Recent                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18729     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Files_DisplayName               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18730     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Files_DisplayName               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18731     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Files_FullText                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18732     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Files_FullText                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18733     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Communications                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18734     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Communications                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18735     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Communications_Contacts         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18736     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Communications_Contacts         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18737     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Communications_FullText         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18738     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_StartMenuQueryFactory_Communications_FullText         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18739     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_IsElevationRequired                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18740     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_IsElevationRequired                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18741     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_IndexInfoCache_Refresh                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18742     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_IndexInfoCache_Refresh                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18743     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_FireFolderChanged                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18745     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_FireContentsChanged                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18747     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DUIFrame_SendContentsChanged                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18749     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DUIFrame_SendFolderChanged                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18751     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHExtCoCreateInstance_Valid                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18752     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_AddColumn                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18753     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemStore_ExtractProperty                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18755     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemStore_ExtractProperty                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18761     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolderManager_Redirect                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18762     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolderManager_Redirect                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18763     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolderManager_Redirect_Copy                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18764     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_KnownFolderManager_Redirect_Copy                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18765     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_DesktopIconLayoutRestore              |  Start   |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  18766     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_DesktopIconLayoutRestore              |  Stop    |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  18767     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_DesktopIconLayoutRestore              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18768     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_DesktopAutoArrange                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18769     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_DesktopAlignToGrid                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18770     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_DesktopIconSize                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18771     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PrivProf_CacheCount                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18773     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CollectionLock_InsertQueueItem                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18775     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CGrepQuery_EvaluateItem                               |  Start   |  Grep                        |
+Microsoft-Windows-Shell-Core  |  Information  |  18776     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CGrepQuery_EvaluateItem                               |  Stop    |  Grep                        |
+Microsoft-Windows-Shell-Core  |  Information  |  18777     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CConditionEvaluator_DoesItemMatchCondition            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18778     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CConditionEvaluator_DoesItemMatchCondition            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18779     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CGrepConditionEvaluator_DoesContentMatchCondition     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18780     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CGrepConditionEvaluator_DoesContentMatchCondition     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18781     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_GrepDoesItemMatchCondition                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18782     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_GrepDoesItemMatchCondition                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18783     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SubCommandMenu_Enumerate                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18784     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SubCommandMenu_Enumerate                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18787     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_InitLocalDrives                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18788     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_MountPoint_InitLocalDrives                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18789     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDesktopBrowser_WallpaperAnimation_Setup                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18790     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDesktopBrowser_WallpaperAnimation_Setup                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18791     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDesktopBrowser_WallpaperAnimation_Cleanup                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18792     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDesktopBrowser_WallpaperAnimation_Cleanup                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18793     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_SortyBy                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18794     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_IconPositions                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18795     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_WindowRegItem                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18796     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_NonWindowRegItem                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18797     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_ItemCount                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18798     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_UsageTime                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18801     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_FileOperation                              |  Start   |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18802     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_FileOperation                              |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18803     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_OverallOperation                           |  Start   |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18804     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_OverallOperation                           |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18805     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_OverallTransfer                            |  Start   |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18806     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_OverallTransfer                            |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18807     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_ConfirmedDelete                            |          |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18809     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_WillRecycleToBin                           |  Start   |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18810     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_WillRecycleToBin                           |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18811     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_RecycleItem                                |  Start   |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18812     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_RecycleItem                                |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18813     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_FileOpen                                   |  Start   |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18814     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_FileOpen                                   |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18815     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_CallMoveFile                               |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18816     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_CallMoveFile                               |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18817     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CommonPlaces_Drop                                     |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  18818     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ReadingPaneModule_Load                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18819     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ReadingPaneModule_Load                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18821     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_LinkTracking                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18823     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_SQMStream                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18825     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_Commit                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18826     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_Commit                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18827     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_Load                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18828     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_Load                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18829     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_LoadRemoved                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18830     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_LoadRemoved                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18831     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_RemoveDest                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18832     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_RemoveDest                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18833     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_FireEvent                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18834     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_FireEvent                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18837     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_SetEntry                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18838     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_SetEntry                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18841     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_GarbageCollectScheduled                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18843     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_GarbageCollect                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18844     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_GarbageCollect                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18845     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_SnapRValuesScheduled                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18847     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_SnapRValues                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18848     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_SnapRValues                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18849     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_DeleteEntry                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18850     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_DeleteEntry                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18851     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_RenameEntry                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18852     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_RenameEntry                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18853     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_ReplaceNMaxCandidate                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18855     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_RebuildSessionScheduled                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18857     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_RebuildSession                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18858     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_UA_RebuildSession                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18859     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_GetList                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18860     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_GetList                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18861     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_AddUsagePoint                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18862     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_AddUsagePoint                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18863     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_PinItem                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18864     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_PinItem                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18865     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DragDropHelper_UpdateLayeredWindow                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18867     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_IsPinned                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18868     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_IsPinned                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18869     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_CalculateDecay                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18870     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_CalculateDecay                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18871     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoDestList_GarbageCollecting                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18873     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_BrowserProgressAggregator_Register                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18875     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_BrowserProgressAggregator_Unregister                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18877     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_FilterDestByAssoc                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18878     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_FilterDestByAssoc                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18879     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_AppendCategory                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18880     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppDestList_Custom_AppendCategory                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18881     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_CreateNewCollection                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18882     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_CreateNewCollection                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18883     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_ExecStop                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18884     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_ExecStop                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18885     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_ExecRefresh                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18886     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DefView_ExecRefresh                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18887     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_UAC_CopyEngine_Elevation                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18888     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemThumbnail_Prefetch_Dispatch                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18889     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ItemThumbnail_Prefetch_Dispatch                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18901     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_FileCreate                                 |  Start   |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18902     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_FileCreate                                 |  Stop    |  CopyEngine                  |
+Microsoft-Windows-Shell-Core  |  Information  |  18903     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_ProgressUpdate                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18905     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_FileOperation_Info                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18907     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_ProgressUpdateSkipped                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18909     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_ProgressData                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18911     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_ProgressEstimate                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18913     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_ProgressSpeed                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18915     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CopyEngine_MoveAsCopyDelete                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18917     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DragDropHelper_AddInfoToWindow                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18918     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DragDropHelper_AddInfoToWindow                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18919     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DragDropHelper_ExtractThumbnail                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18920     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DragDropHelper_ExtractThumbnail                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18921     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SHDoDragDrop_Drop                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18922     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_DXP                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18923     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_DXP                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18924     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_DXP                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18925     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_DXP                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18927     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PerfMarker1                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18929     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PerfMarker2                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18931     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PerfMarker3                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18932     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_PerfMarker3                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18933     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NewMenu_Folder                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18934     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NewMenu_Shortcut                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18935     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_NewMenu_Other                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18936     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DesktopContextMenu_Personalize                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18937     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_DesktopContextMenu_Display                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  18939     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_SCFFileUsage_SQM                                      |          |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  19001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellTraceId_TaskScheduler_ResumeTask                         |  Start   |  Tasks                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellTraceId_TaskScheduler_ResumeTask                         |  Stop    |  Tasks                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellTraceId_TaskScheduler_RunTask                            |  Start   |  Tasks                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellTraceId_TaskScheduler_RunTask                            |  Stop    |  Tasks                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellTraceId_TaskScheduler_PurgeTasks                         |          |  Tasks                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellTraceId_TaskScheduler_AddIdleTask                        |          |  Tasks                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellTraceId_TaskScheduler_AddTask                            |          |  Tasks                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_RecentDoc_Processed                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19201     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  LUA_Elevation_Attempts                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19203     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  LUA_Elevation_Attempts                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19205     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  LUA_Elevation_Attempts                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19207     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  LUA_Elevation_Attempts                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19209     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  LUA_Elevation_Attempts                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19211     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  LUA_Elevation_Attempts                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19401     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_LookupFileClassInt                             |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19403     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_LookupFileClassInt                             |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19405     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_LookupFileClassString                          |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19407     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_LookupFileClassString                          |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19409     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_LookupFileClassHandler                         |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19411     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_LookupFileClassHandler                         |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19413     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_SetFileClassInt                                |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19415     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_SetFileClassInt                                |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19417     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_SetFileClassString                             |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19419     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_SetFileClassString                             |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19421     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_SetFileClassHandler                            |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19423     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  FileClassStore_SetFileClassHandler                            |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19425     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_LookupIcon                                          |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19427     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_LookupIcon                                          |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19429     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_AddIcon                                             |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19431     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_AddIcon                                             |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19433     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_RemoveIcon                                          |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19435     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_RemoveIcon                                          |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19437     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_GetFileOverlayInfo                                  |  Start   |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19439     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_GetFileOverlayInfo                                  |  Stop    |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19441     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_CacheMiss                                           |          |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19443     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IconCache_ScaleImage                                          |          |  FileClassStoreAndIconCache  |
+Microsoft-Windows-Shell-Core  |  Information  |  19501     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDesktopFolder_ParseDisplayName                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19502     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDesktopFolder_ParseDisplayName                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19503     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDesktopFolder_GetDisplayNameOf                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19504     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDesktopFolder_GetDisplayNameOf                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19601     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_HomePage_Init                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19602     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_HomePage_Init                            |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  19603     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_LoadApplets                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19604     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_LoadApplets                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19605     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_LoadTasks                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19606     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_LoadTasks                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19607     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_Search                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19608     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_Search                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19611     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_Search_NoResults                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19613     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_SearchResults_Applet                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19615     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_SearchResults_Task                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19617     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_TaskStateCondition                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19619     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_NavPane_Mode                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19621     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_NavPane_TransitionAnimation              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19623     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_NavPane_LinkAdded                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19625     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_TypeAheadSearch_Timeout                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19627     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_ControlPanel_TypeAheadSearch_NotFound                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19801     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShowDesktop_Usage                                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19803     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShowDesktop_RaiseDesktop                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19804     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShowDesktop_RaiseDesktop                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  19805     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShowDesktop_RegistryWrite                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_OpenContextMenu                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_OpenContextMenu                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_PinItemToMenu                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_PinItemToMenu                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Fill_MenuCache                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Fill_MenuCache                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Left_Control_Button_Split_Open                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Right_Control_Button_Split_Open                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Left_Control_Button_Label                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Right_Control_Button_Label                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20015     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Logoff_Usage_Stream                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20017     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Username_Clicked                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20019     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_UserTile_Clicked                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20021     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_Usage                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20023     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_AllPrograms_Search_Usage                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20025     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_TopResult_Launch                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20027     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Advanced_Search_Launch                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20029     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_Result_Launch                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20031     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_UNC_Path                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20033     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_WordWheel_Activated                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20035     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_Computer_Count                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20037     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_Internet_Count                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20039     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_URL_Count                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20041     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_Dropdown_Count                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20043     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Search_Group_Usage                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20045     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Applications_Launched                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20047     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Rearranging_StartMenuTaskbar                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20049     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Pinned_Applications                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20051     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  DestinationRemoval_StartMenuTaskbar                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20053     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Pinned_Destinations_StartMenuTaskbar                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20055     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Destination_Menu_Usage_StartMenuTaskbar                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20057     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Start_Menu_Recent_Items_Menu                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20059     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_MFU_Application_Removal                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20061     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Application_Launches_StartMenuTaskbar                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20063     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TurnOffUsageTrackingStartMenuTaskbar                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20065     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_DestinationList_Prepopulate                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20066     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_DestinationList_Prepopulate                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20067     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_DestinationList_Refresh                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20068     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_DestinationList_Refresh                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20069     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_DestinationList_EnumData                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20070     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_DestinationList_EnumData                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20071     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Destination_Menu_Action_StartMenuTaskbar                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20072     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Destination_Menu_Layout_StartMenuTaskbar                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20073     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Destination_Removal_StartMenuTaskbar                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20075     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Animation                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20076     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_Animation                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20100     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TaskbarAndStartMenuCPL_Launch                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TaskbarAndStartMenuCPL_Launch                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20102     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenuCPL_Load                                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20103     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenuCPL_Load                                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20104     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenuCPL_Apply                                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20105     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenuCPL_Apply                                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20106     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TaskbarCPL_Load                                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20107     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TaskbarCPL_Load                                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20108     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TaskbarCPL_Apply                                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20109     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TaskbarCPL_Apply                                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20111     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_ByUsage_EnumItems                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  20112     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StartMenu_ByUsage_EnumItems                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_ChangeNotify                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_ChangeNotify                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_UserClickedChevon_ChangeNotify                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_UserClickedChevon_ChangeNotify                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_OverflowShown                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_OverflowShown                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_IconAdded                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_IconRemoved                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_IconModified                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_SystemPromote                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21015     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_ShowBalloon                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21017     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_RearrangeIcon                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  21018     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SystemTray_RearrangeIcon                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_GroupState_ChangeNotify                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_GroupState_ChangeNotify                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_LockState_ChangeNotify                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_LockState_ChangeNotify                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Click                                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StarterEdition_AppLimitViolations                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Settings                                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Location                                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Size                                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Quicklaunch_Item_Launch                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22014     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  New_Taskbar_Pinned_Items_Rearranged                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22015     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Glomming_Enabled                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22017     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Quicklaunch_Enabled                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22018     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_RegisterThumbnail                                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22019     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_RegisterThumbnail                                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22020     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ShowThumbnail                                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22021     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ShowThumbnail                                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22022     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Glomming_Count                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22023     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Window_Count                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22025     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_SetProgress                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22026     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_SetProgress                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22027     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_SetProgressState                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22028     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ButtonGroup_Added                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22029     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ButtonGroup_GlomStateChange                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22030     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ButtonGroup_Removed                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22031     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Window_Added                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22032     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Window_Active                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22033     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Window_Removed                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22034     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_HoverUIShow                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22035     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Item_Created                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22036     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Item_Destroyed                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22037     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Group_Created                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22038     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Group_Destroyed                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22039     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Group_AddItem                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22040     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Group_RemoveItem                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22041     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Animation                                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22042     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Animation                                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22043     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_AnimFrame                                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22044     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_AnimFrame                                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22045     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ComputeLayout                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22046     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Compute_Row_Layout                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22047     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ButtonGroup_Rearranged                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22048     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Switcher_Context_Menu                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22049     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Scrolling_Stream                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22050     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Window_Picker_Triggers                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22051     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnail_Window_Picker_Interaction_Stream                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22052     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Legacy_Glom_Interaction_Stream                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22053     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Compute_Column_Layout                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22054     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Taskband_Icon_Size                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22055     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Progress_Bars_Customers                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22056     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Progress_Bars_Glom_Count                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22057     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Progress_Bars_Paused_Count                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22058     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ThumbBar_AddButtons                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22059     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ThumbBar_UpdateButton                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22060     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ThumbBar_Create                                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22061     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ThumbBar_Create                                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22062     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_ThumbBar_Click                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22063     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_OverlayIcon                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22064     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_Item_Flashing                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22065     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_OpenWindowContextMenu                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22066     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_OpenWindowContextMenu                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22067     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_UserActivityTracker                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22068     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_RunAsAdmin_ShiftCtrl_Count                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22069     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_NewInstanceContextMenu_Count                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22070     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_NewInstanceContextMenu_RunAsAdmin_Count               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22071     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_DeskbandStream                                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22072     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Thumbnail_Toolbar_Stream                                      |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22073     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Taskbar_NumberOfRows                                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  22074     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ApplicationOverlays                                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ViewControl_UserSplitButtonClick                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ViewControl_UserSplitButtonClick                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ViewControl_UserViewModeSelect                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ViewControl_UserViewModeSelect                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ViewControl_ViewModeChangeNotify                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ViewControl_ViewModeChangeNotify                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ViewControl_SQMStream                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23008     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TopView_Usage                                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TopView_Save                                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23010     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ViewMode_Change                                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Sort_Change                                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23012     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Stack_Change                                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Group_Change                                                  |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  WordWheel_UserKeypress_ChangeNotify                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23110     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SendTo_Populate                                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23111     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SendTo_Populate                                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23201     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Glass_Colorization                                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23203     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Glass_Composition_Enabled                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  23205     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Glass_Theme_Active                                            |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  26001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTrackEvents_OperationEventStart                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  26002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTrackEvents_OperationQueueInfo                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  26003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTrackEvents_StartTimedOperation                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  26004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTrackEvents_StartTimedOperation                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  26005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTrackEvents_StopTimedOperation                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  26006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTrackEvents_StopTimedOperation                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  26007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CTrackEvents_OperationEventEnd                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_DesktopBackgroundCpl                                |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_DesktopBackgroundCpl                                |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_ColorSchemeCpl                                      |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_ColorSchemeCpl                                      |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_AllPrograms_Show                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_AllPrograms_Show                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_AllPrograms_BackButton                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27008     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_AllPrograms_BackButton                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_ShowItem                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27010     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_ShowItem                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_SearchItem                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27012     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_SearchItem                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_LogOffMenu                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27014     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_LogOffMenu                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27015     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_TopMatchReady                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27016     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_TopMatchReady                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27017     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_Local_PageDisplayed       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27018     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_Local_PageDisplayed       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27019     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_Local_PageCompleted       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27020     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_Local_PageCompleted       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27021     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_Network_PageDisplayed     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27022     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_Network_PageDisplayed     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27023     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_Network_PageCompleted     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27024     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_Network_PageCompleted     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27025     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_OpenSearch_PageDisplayed  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27026     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_OpenSearch_PageDisplayed  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27027     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_OpenSearch_PageCompleted  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27028     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_DocumentsLibrary_OpenSearch_PageCompleted  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27029     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_Local_PageDisplayed        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27030     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_Local_PageDisplayed        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27031     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_Local_PageCompleted        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27032     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_Local_PageCompleted        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27033     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_Network_PageDisplayed      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27034     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_Network_PageDisplayed      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27035     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_Network_PageCompleted      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27036     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_Network_PageCompleted      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27037     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_OpenSearch_PageDisplayed   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27038     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_OpenSearch_PageDisplayed   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27039     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_OpenSearch_PageCompleted   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27040     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_PicturesLibrary_OpenSearch_PageCompleted   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27041     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_Local_PageDisplayed           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27042     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_Local_PageDisplayed           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27043     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_Local_PageCompleted           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27044     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_Local_PageCompleted           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27045     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_Network_PageDisplayed         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27046     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_Network_PageDisplayed         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27047     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_Network_PageCompleted         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27048     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_Network_PageCompleted         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27049     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_OpenSearch_PageDisplayed      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27050     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_OpenSearch_PageDisplayed      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27051     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_OpenSearch_PageCompleted      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27052     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_MusicLibrary_OpenSearch_PageCompleted      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27053     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_Local_PageDisplayed          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27054     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_Local_PageDisplayed          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27055     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_Local_PageCompleted          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27056     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_Local_PageCompleted          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27057     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_Network_PageDisplayed        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27058     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_Network_PageDisplayed        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27059     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_Network_PageCompleted        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27060     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_Network_PageCompleted        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27061     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_OpenSearch_PageDisplayed     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27062     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_OpenSearch_PageDisplayed     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27063     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_OpenSearch_PageCompleted     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27064     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_VideosLibrary_OpenSearch_PageCompleted     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27077     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_UsersFiles_PageDisplayed                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27078     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_UsersFiles_PageDisplayed                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27079     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_UsersFiles_PageCompleted                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27080     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_UsersFiles_PageCompleted                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27081     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_Local_PageDisplayed            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27082     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_Local_PageDisplayed            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27083     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_Local_PageCompleted            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27084     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_Local_PageCompleted            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27085     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_Network_PageDisplayed          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27086     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_Network_PageDisplayed          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27087     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_Network_PageCompleted          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27088     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_Network_PageCompleted          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27089     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_OpenSearch_PageDisplayed       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27090     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_OpenSearch_PageDisplayed       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27091     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_OpenSearch_PageCompleted       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27092     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_DocumentsLibrary_OpenSearch_PageCompleted       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27093     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_Local_PageDisplayed             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27094     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_Local_PageDisplayed             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27095     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_Local_PageCompleted             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27096     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_Local_PageCompleted             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27097     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_Network_PageDisplayed           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27098     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_Network_PageDisplayed           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27099     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_Network_PageCompleted           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27100     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_Network_PageCompleted           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_OpenSearch_PageDisplayed        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27102     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_OpenSearch_PageDisplayed        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27103     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_OpenSearch_PageCompleted        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27104     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_PicturesLibrary_OpenSearch_PageCompleted        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27105     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_Local_PageDisplayed                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27106     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_Local_PageDisplayed                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27107     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_Local_PageCompleted                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27108     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_Local_PageCompleted                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27109     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_Network_PageDisplayed              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27110     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_Network_PageDisplayed              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27111     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_Network_PageCompleted              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27112     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_Network_PageCompleted              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27113     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_OpenSearch_PageDisplayed           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27114     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_OpenSearch_PageDisplayed           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27115     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_OpenSearch_PageCompleted           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27116     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_MusicLibrary_OpenSearch_PageCompleted           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27117     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_Local_PageDisplayed               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27118     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_Local_PageDisplayed               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27119     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_Local_PageCompleted               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27120     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_Local_PageCompleted               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27121     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_Network_PageDisplayed             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27122     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_Network_PageDisplayed             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27123     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_Network_PageCompleted             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27124     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_Network_PageCompleted             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27125     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_OpenSearch_PageDisplayed          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27126     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_OpenSearch_PageDisplayed          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27127     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_OpenSearch_PageCompleted          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27128     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_VideosLibrary_OpenSearch_PageCompleted          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27141     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_UsersFiles_PageDisplayed                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27142     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_UsersFiles_PageDisplayed                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27143     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_UsersFiles_PageCompleted                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27144     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_CFD_UsersFiles_PageCompleted                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27145     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Search_PageDisplayed                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27146     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Search_PageDisplayed                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27147     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Search_PageCompleted                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27148     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Search_PageCompleted                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27149     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Taskbar_Launch                                      |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27151     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HoverUI_FadeIn                                      |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27152     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HoverUI_FadeIn                                      |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27153     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_ControlPanel                              |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27154     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_ControlPanel                              |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27155     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Pictures                                  |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27156     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Pictures                                  |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27157     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Music                                     |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27158     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Music                                     |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27159     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Documents                                 |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27160     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_Documents                                 |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27161     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_SearchBox_CharactersTyped                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27162     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_SearchBox_CharactersTyped                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27163     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Taskbar_DestinationList_Up                          |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27164     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Taskbar_DestinationList_Up                          |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27165     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_DestinationList_Up                        |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27166     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartMenu_DestinationList_Up                        |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27167     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_NetworkFileFolderView                      |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27168     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_NetworkFileFolderView                      |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27169     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_NetworkFolderHighDPI                       |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27170     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_NetworkFolderHighDPI                       |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27171     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_LocalFolderHighDPI                         |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27172     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_LocalFolderHighDPI                         |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27173     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_FrameClose                                 |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27174     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_FrameClose                                 |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27175     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_GroupedView                      |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27176     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_GroupedView                      |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27177     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_StackedView                      |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27178     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_StackedView                      |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27179     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_ThumbnailView                    |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27180     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_ThumbnailView                    |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27181     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchGroupedView                |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27182     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchGroupedView                |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27183     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchStackedView                |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27184     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchStackedView                |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27185     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchThumbnailView              |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27186     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchThumbnailView              |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27187     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchGrepView                   |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27188     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchGrepView                   |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27189     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_OpenSearchView                   |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27190     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_OpenSearchView                   |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27191     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_EnumeratesTypeValues                     |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27192     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_EnumeratesTypeValues                     |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27193     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_ListEnumeratesRange                      |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27194     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_ListEnumeratesRange                      |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27195     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_MRUEnumerateValues                       |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27196     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_MRUEnumerateValues                       |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27197     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_MRUListEnumeratesRanges                  |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27198     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_MRUListEnumeratesRanges                  |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27199     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_MRUControlRenders                        |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27200     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_MRUControlRenders                        |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27201     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUsersEnumerateInView                 |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27202     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUsersEnumerateInView                 |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27203     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUsersEnumerateInNavPane              |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27204     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUsersEnumerateInNavPane              |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27205     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUsersLibsEnumInView                  |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27206     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUsersLibsEnumInView                  |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27207     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUserLibraryViewPerceivedComplete     |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27208     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUserLibraryViewPerceivedComplete     |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27209     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_OpenSearch_QueryServer                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27210     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_OpenSearch_QueryServer                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27211     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_ItemsView_PageScroll                       |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27212     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_ItemsView_PageScroll                       |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27213     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Shell32_CopyEngine_CancelDlg                        |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27214     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Shell32_CopyEngine_CancelDlg                        |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27215     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_LibraryLocation_AddedToLib                          |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27216     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_LibraryLocation_AddedToLib                          |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27217     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_InspectorGadget                                     |          |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27218     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_InspectorWindow                                     |          |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27221     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_FilterSuggestInitial                     |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27222     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_FilterSuggestInitial                     |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27223     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_FilterSuggestFinal                       |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27224     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_FilterMenu_FilterSuggestFinal                       |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27226     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Taskbar_Launch_Explorer                             |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27227     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_StartPane_TopMatchReady                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  27228     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchIndexedView                |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27229     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_Templates_SearchIndexedView                |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27230     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_ExplorerStartToDesktopReady                |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27231     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_Explorer_ExplorerStartToDesktopReady                |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27232     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUserLibraryViewWindowReady           |  Start   |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27233     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  PerfTrack_HomeGroup_OtherUserLibraryViewWindowReady           |  Stop    |  Shell WDI                   |
+Microsoft-Windows-Shell-Core  |  Information  |  27234     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Delayed_Filter_Contents                                       |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetAppIDForShortcut                       |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetAppIDForShortcut                       |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetAppIDForWindow                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetAppIDForWindow                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetAppIDForProcess                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetAppIDForProcess                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetShortcutForProcess                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28008     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetShortcutForProcess                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetBestShortcutForAppID                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28010     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetBestShortcutForAppID                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetBestShortcutAndAppIDForAppPath         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28012     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GetBestShortcutAndAppIDForAppPath         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_CanPinApp                                 |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28014     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_CanPinApp                                 |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28015     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_CanPinApp                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28017     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_Scan                                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28018     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_Scan                                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28019     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_ExtractShortcutPathFromPEB                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28020     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_ExtractShortcutPathFromPEB                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28021     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GenerateShortcutFromWindowProperties      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28022     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AppResolver_GenerateShortcutFromWindowProperties      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_WindowPropStore_SetValue                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28103     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_WindowPropStore_GetValue                              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  28105     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_WindowPropStore_ValueRemoved                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellLib_AdjustImage                                          |  Start   |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  50002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShellLib_AdjustImage                                          |  Stop    |                              |
+Microsoft-Windows-Shell-Core  |  Information  |  50101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShutdownUX_ShowMenu                                           |  Start   |  ShutdownUX                  |
+Microsoft-Windows-Shell-Core  |  Information  |  50102     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShutdownUX_ShowMenu                                           |  Stop    |  ShutdownUX                  |
+Microsoft-Windows-Shell-Core  |  Information  |  50103     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShutdownUX_DefaultButtonPress                                 |  Start   |  ShutdownUX                  |
+Microsoft-Windows-Shell-Core  |  Information  |  50104     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShutdownUX_DefaultButtonPress                                 |  Stop    |  ShutdownUX                  |
+Microsoft-Windows-Shell-Core  |  Information  |  50105     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShutdownUX_SelectMenuItem                                     |  Start   |  ShutdownUX                  |
+Microsoft-Windows-Shell-Core  |  Information  |  50106     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShutdownUX_SelectMenuItem                                     |  Stop    |  ShutdownUX                  |
+Microsoft-Windows-Shell-Core  |  Information  |  50107     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShutdownUX_StartMenuCriticalPath                              |  Start   |  ShutdownUX                  |
+Microsoft-Windows-Shell-Core  |  Information  |  50108     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ShutdownUX_StartMenuCriticalPath                              |  Stop    |  ShutdownUX                  |
+Microsoft-Windows-Shell-Core  |  Information  |  50201     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_SQM_PrepareDisc_Launch                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50202     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_SQM_PrepareDisc_Mastered                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50203     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_SQM_PrepareDisc_LiveFS                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50204     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_SQM_Mastered_Session                                   |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50205     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_SQM_SessionOpenOnEject_Multi                           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50206     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_SQM_SessionOpenOnEject_Single                          |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50207     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_SQM_IsoBurn_Session                                    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50208     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_SQM_CloseSession_Command                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50209     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_IsoBurn_Launch                                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50210     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_IsoBurn_Task                                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  50211     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  CDBurn_IsoBurn_Task                                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60000     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_HistoryBrokerStartup                                       |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60001     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_HistoryBrokerStartup                                       |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60002     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_HistoryBrokerShutdown                                      |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60003     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_HistoryBrokerShutdown                                      |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60004     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_AddToHistory                                               |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60005     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_AddToHistory                                               |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60006     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_QueryHistory                                               |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60007     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_QueryHistory                                               |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60008     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_EnumHistoryRecords                                         |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60009     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_EnumHistoryRecords                                         |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60010     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_LegacyHistoryAdd                                           |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60011     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_LegacyHistoryAdd                                           |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60012     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_LegacyHistoryQuery                                         |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60013     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_LegacyHistoryQuery                                         |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60014     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_LegacyHistoryEnum                                          |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60015     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_LegacyHistoryEnum                                          |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60016     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_CreateThumbnail                                            |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60017     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_CreateThumbnail                                            |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60018     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ScaleThumbnail                                             |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60019     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ScaleThumbnail                                             |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60020     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_CompressThumbnail                                          |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60021     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_CompressThumbnail                                          |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60022     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_GenerateThumbnail                                          |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60023     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_GenerateThumbnail                                          |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60025     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_LButtonAction                                              |          |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60026     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionCreate                                            |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60027     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionCreate                                            |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60028     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionSetSite                                           |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60029     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionSetSite                                           |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60030     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionShowDW                                            |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60031     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionShowDW                                            |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60032     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionCloseDW                                           |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60033     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionCloseDW                                           |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60034     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionSetSiteNull                                       |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60035     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionSetSiteNull                                       |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60036     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionRelease                                           |  Start   |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60037     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  IE_ExtensionRelease                                           |  Stop    |  InternetExplorer            |
+Microsoft-Windows-Shell-Core  |  Information  |  60101     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_ParseText                                     |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60102     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_ParseText                                     |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60103     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_Resolve                                       |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60104     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_Resolve                                       |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60105     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_InitQueryParser                               |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60106     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_InitQueryParser                               |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60107     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_RestateQuery                                  |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60108     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_RestateQuery                                  |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60109     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_CreateSchemaBinary                            |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60110     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_CreateSchemaBinary                            |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60111     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_LoadSchemaBinary                              |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60112     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_LoadSchemaBinary                              |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60113     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_SaveSchemaBinary                              |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60114     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_SaveSchemaBinary                              |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60115     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_FindMatches                                   |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60116     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_FindMatches                                   |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60117     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_CreateWordBreaker                             |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60118     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_CreateWordBreaker                             |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60119     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_InitWordBreaker                               |  Start   |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60120     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  StructuredQuery_InitWordBreaker                               |  Stop    |  StructuredQuery             |
+Microsoft-Windows-Shell-Core  |  Information  |  60201     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchBox_ColorAQS                                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60202     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchBox_ColorAQS                                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60203     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchBox_Popup_Show                                          |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60204     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchBox_Popup_Show                                          |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60205     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchBox_MRU_Populate                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60206     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchBox_MRU_Populate                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60213     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchBox_MRU_Populate                                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60214     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  SearchBox_MRU_Populate                                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60301     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Draw_All                                            |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60302     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Draw_All                                            |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60303     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Calculate_Scopes                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60304     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Calculate_Scopes                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60305     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Calculate_Search_File_Contents                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60306     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Calculate_Search_File_Contents                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60307     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Calculate_Search_Subfolders                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60308     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Calculate_Search_Subfolders                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60309     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Start_New_Search                                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60310     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Start_New_Search                                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60311     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Internet_Rollover                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60312     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  TryHarder_Internet_Rollover                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60401     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NetworkUX_NewNetCountMaxReached                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60501     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NAVPANE_ACTION                                                |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60503     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  NAVIGATIONPANE_ITEMCOUNTS                                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60601     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_BatchFirstEvent                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60603     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_BatchTimer                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60604     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_BatchTimer                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60605     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_FlushBatch                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60606     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_FlushBatch                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60607     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_EndBatching                             |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60609     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_NotifyContentsChanged                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60610     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_NotifyContentsChanged                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60611     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_PreProcessEventQueue                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60612     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_PreProcessEventQueue                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60613     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItem_OnItemEvent                                  |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60614     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItem_OnItemEvent                                  |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60615     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UICollection_OnCollectionEvent                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60616     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UICollection_OnCollectionEvent                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60617     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_Paint                                   |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60618     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_Paint                                   |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60619     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_LineScroller_RealizeContent                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60620     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_LineScroller_RealizeContent                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60621     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_LineScroller_LayoutPass                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60622     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_LineScroller_LayoutPass                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60623     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_LineScroller_DesiredSizePass                        |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60624     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_LineScroller_DesiredSizePass                        |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60625     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_ItemDevirtualizer_ForegroundFullDevirtualization    |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60626     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIColumnHeader_SortColumn                           |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60627     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIColumnHeader_SortColumn                           |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60628     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_SelectionState_SelectionChange                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60629     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_SelectionState_SelectionChange                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60631     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_SetupAnimation                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60632     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_SetupAnimation                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60633     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_FinishAnimationSetup               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60634     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_FinishAnimationSetup               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60635     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_AllocateHBITMAP                    |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60636     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_AllocateHBITMAP                    |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60637     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_AnimationLoop                      |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60638     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_AnimationLoop                      |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60639     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_Paint                              |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60640     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_AnimationManager_Paint                              |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60641     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_SQM                                                 |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60643     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_Prefetch                                |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60644     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_Prefetch                                |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60645     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_PreparePrefetch                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60646     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_PreparePrefetch                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60647     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_BlockRedraw                             |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60648     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_BlockRedraw                             |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60649     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_RunFirstPageResults                     |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60650     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_RunFirstPageResults                     |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60651     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_ItemDevirtualizer_FullDevirtualization              |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60652     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_ItemDevirtualizer_PartialDevirtualization           |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60653     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_FirstPage_UpdateCountReport                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60655     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_StartBatchTimer                         |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60657     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  ItemsView_UIItemsView_PostEvent                               |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60659     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CDesktopBrowser_PaintWallpaper                        |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60661     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_CWallpaperWindow_CaptureWallpaper                     |          |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60701     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell_DesktopBackgroundSlideshow_Tick                         |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60702     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell_DesktopBackgroundSlideshow_Tick                         |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60703     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_Prompt_Visible                               |  Start   |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60704     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell32_AutoPlay_Prompt_Visible                               |  Stop    |  Shell                       |
+Microsoft-Windows-Shell-Core  |  Information  |  60705     |  0        |  Microsoft-Windows-Shell-Core/Diagnostic  |  Shell_DesktopBackgroundSlideshow_Workitem                     |          |  Shell                       |

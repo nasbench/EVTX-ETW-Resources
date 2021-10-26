@@ -1,20 +1,20 @@
-Provider                    |  Event ID  |  Channel                                |  Message
-----------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-WWAN-CFE  |  1         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  2         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  3         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  4         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  5         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  6         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  7         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  8         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  9         |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  10        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  11        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  12        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  13        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  14        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  15        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  16        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  17        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
-Microsoft-Windows-WWAN-CFE  |  18        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                |  Task                                 |  Opcode  |  Keyword           |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------|---------------------------------------|----------|--------------------|---------
+Microsoft-Windows-WWAN-CFE  |  Information  |  1         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Subscription_Page                    |          |  Wwan-Performance  |
+Microsoft-Windows-WWAN-CFE  |  Information  |  2         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Roaming_Settings_Page                |          |  Wwan-Performance  |
+Microsoft-Windows-WWAN-CFE  |  Information  |  3         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Connecting_Page                      |          |  Wwan-Performance  |
+Microsoft-Windows-WWAN-CFE  |  Information  |  4         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Launch_Browser                       |          |  Wwan-Performance  |
+Microsoft-Windows-WWAN-CFE  |  Information  |  5         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Launch_MBAE                          |          |  Wwan-Performance  |
+Microsoft-Windows-WWAN-CFE  |  Information  |  6         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  L2_Connect_Duration                  |  Start   |                    |
+Microsoft-Windows-WWAN-CFE  |  Information  |  7         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  L2_Connect_Duration                  |  Stop    |                    |
+Microsoft-Windows-WWAN-CFE  |  Information  |  8         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  CreateProfile_UserInput_Duration     |  Start   |  Wwan-Performance  |
+Microsoft-Windows-WWAN-CFE  |  Information  |  9         |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  CreateProfile_UserInput_Duration     |  Stop    |  Wwan-Performance  |
+Microsoft-Windows-WWAN-CFE  |  Information  |  10        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Task_SetHomeProvider                 |  Start   |                    |
+Microsoft-Windows-WWAN-CFE  |  Information  |  11        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Task_SetHomeProvider                 |  Stop    |                    |
+Microsoft-Windows-WWAN-CFE  |  Error        |  12        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Task_SetHomeProvider                 |  Stop    |                    |
+Microsoft-Windows-WWAN-CFE  |  Error        |  13        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Task_SetHomeProvider                 |  Stop    |                    |
+Microsoft-Windows-WWAN-CFE  |  Information  |  14        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Task_WwanApnDatabaseParsingDuration  |  Start   |                    |
+Microsoft-Windows-WWAN-CFE  |  Information  |  15        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  Task_WwanApnDatabaseParsingDuration  |  Stop    |                    |
+Microsoft-Windows-WWAN-CFE  |  Information  |  16        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  L2_Connect_Duration                  |  Stop    |                    |
+Microsoft-Windows-WWAN-CFE  |  Information  |  17        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  L2_Connect_Duration                  |  Stop    |                    |
+Microsoft-Windows-WWAN-CFE  |  Information  |  18        |  0        |  Microsoft-Windows-WWAN-CFE/Diagnostic  |  WWAN_CFE_FAIL                        |          |  Wwan-Performance  |

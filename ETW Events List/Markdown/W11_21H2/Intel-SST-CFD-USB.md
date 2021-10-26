@@ -1,12 +1,12 @@
-Provider           |  Event ID  |  Channel                     |  Message
--------------------|------------|------------------------------|-------------------------------
-Intel-SST-CFD-USB  |  301       |  Intel-SST-CFD-USB/IntelSST  |
-Intel-SST-CFD-USB  |  302       |  Intel-SST-CFD-USB/IntelSST  |
-Intel-SST-CFD-USB  |  303       |  Intel-SST-CFD-USB/IntelSST  |
-Intel-SST-CFD-USB  |  304       |  Intel-SST-CFD-USB/IntelSST  |
-Intel-SST-CFD-USB  |  305       |  Intel-SST-CFD-USB/IntelSST  |
-Intel-SST-CFD-USB  |  306       |  Intel-SST-CFD-USB/IntelSST  |
-Intel-SST-CFD-USB  |  307       |  Intel-SST-CFD-USB/IntelSST  |
-Intel-SST-CFD-USB  |  308       |  Intel-SST-CFD-USB/IntelSST  |
-Intel-SST-CFD-USB  |  309       |  Intel-SST-CFD-USB/IntelSST  |  Begin of entering power state
-Intel-SST-CFD-USB  |  310       |  Intel-SST-CFD-USB/IntelSST  |  End of entering power state
+Provider           |  Level        |  Event ID  |  Version  |  Channel                     |  Task           |  Opcode  |  Keyword  |  Message
+-------------------|---------------|------------|-----------|------------------------------|-----------------|----------|-----------|-------------------------------
+Intel-SST-CFD-USB  |  Information  |  301       |  0        |  Intel-SST-CFD-USB/IntelSST  |  Driver-Entry   |  Start   |           |
+Intel-SST-CFD-USB  |  Information  |  302       |  0        |  Intel-SST-CFD-USB/IntelSST  |  Driver-Entry   |  Stop    |           |
+Intel-SST-CFD-USB  |  Information  |  303       |  0        |  Intel-SST-CFD-USB/IntelSST  |  Driver-Unload  |  Start   |           |
+Intel-SST-CFD-USB  |  Information  |  304       |  0        |  Intel-SST-CFD-USB/IntelSST  |  Driver-Unload  |  Stop    |           |
+Intel-SST-CFD-USB  |  Information  |  305       |  0        |  Intel-SST-CFD-USB/IntelSST  |  DeviceAdd      |  Start   |           |
+Intel-SST-CFD-USB  |  Information  |  306       |  0        |  Intel-SST-CFD-USB/IntelSST  |  DeviceAdd      |  Stop    |           |
+Intel-SST-CFD-USB  |  Information  |  307       |  0        |  Intel-SST-CFD-USB/IntelSST  |  DeviceStart    |  Start   |           |
+Intel-SST-CFD-USB  |  Information  |  308       |  0        |  Intel-SST-CFD-USB/IntelSST  |  DeviceStart    |  Stop    |           |
+Intel-SST-CFD-USB  |  Information  |  309       |  0        |  Intel-SST-CFD-USB/IntelSST  |  Power          |  Start   |           |  Begin of entering power state
+Intel-SST-CFD-USB  |  Information  |  310       |  0        |  Intel-SST-CFD-USB/IntelSST  |  Power          |  Stop    |           |  End of entering power state

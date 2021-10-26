@@ -1,57 +1,57 @@
-Provider                                          |  Event ID  |  Channel  |  Message
---------------------------------------------------|------------|-----------|---------
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  1         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  2         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  3         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  4         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  5         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  6         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  7         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  8         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  9         |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  10        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  11        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  12        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  13        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  14        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  15        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  16        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  17        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  18        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  19        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  20        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  21        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  22        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  23        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  24        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  25        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  26        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  27        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  28        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  29        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  30        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  31        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  32        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  33        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  34        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  35        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  36        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  37        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  38        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  39        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  40        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  41        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  42        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  43        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  44        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  45        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  46        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  47        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  48        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  49        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  50        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  51        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  52        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  53        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  54        |           |
-Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  55        |           |
+Provider                                          |  Level        |  Event ID  |  Version  |  Channel  |  Task                                 |  Opcode  |  Keyword  |  Message
+--------------------------------------------------|---------------|------------|-----------|-----------|---------------------------------------|----------|-----------|---------
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  1         |  0        |           |  NinputWmPointer                      |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  2         |  0        |           |  NinputWmPointer                      |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  3         |  0        |           |  NinputScrollerInitialize             |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  4         |  0        |           |  NinputScrollerInitialize             |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  5         |  0        |           |  NinputScrollerInitializeListView     |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  6         |  0        |           |  NinputScrollerInitializeListView     |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  7         |  0        |           |  NinputScrollerInitializeGeneric      |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  8         |  0        |           |  NinputScrollerInitializeGeneric      |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  9         |  0        |           |  NinputScrollerOnVerticalScrollBar    |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  10        |  0        |           |  NinputScrollerOnHorizontalScrollBar  |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  11        |  0        |           |  NinputSendWmGestureGlobal            |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  12        |  0        |           |  NinputSendWmGestureGlobal            |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  13        |  0        |           |  NinputSendWmGesture                  |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  14        |  0        |           |  NinputSendWmGesture                  |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  15        |  0        |           |  NinputSendMouse                      |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  16        |  0        |           |  NinputSendMouse                      |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  17        |  0        |           |  NinputSendWmTouch                    |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  18        |  0        |           |  NinputSendWmTouch                    |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  19        |  0        |           |  NinputConfiguration                  |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  20        |  0        |           |  NinputConfiguration                  |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  21        |  0        |           |  NinputConfiguration                  |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  22        |  0        |           |  NinputConfiguration                  |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  23        |  0        |           |  NinputConfiguration                  |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  24        |  0        |           |  NinputWmGestureGlobal                |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  25        |  0        |           |  NinputWmGestureGlobal                |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  26        |  0        |           |  NinputWmGesture                      |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  27        |  0        |           |  NinputWmGesture                      |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  28        |  0        |           |  NinputWmFlick                        |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  29        |  0        |           |  NinputWmFlick                        |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  30        |  0        |           |  NinputScrollerOnTimer                |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  31        |  0        |           |  NinputScrollerOnTimer                |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  32        |  0        |           |  NinputSendMouse                      |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  33        |  0        |           |  NinputWmPointer                      |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  34        |  0        |           |  NinputICDetectInteraction            |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  35        |  0        |           |  NinputICDetectInteraction            |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  36        |  0        |           |  NinputICCreate                       |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  37        |  0        |           |  NinputICCreate                       |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  38        |  0        |           |  NinputICDestroy                      |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  39        |  0        |           |  NinputICDestroy                      |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  40        |  0        |           |  NinputICProcessPointer               |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  41        |  0        |           |  NinputICProcessPointer               |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  42        |  0        |           |  NinputWmPointer                      |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  43        |  0        |           |  NinputSendWmGesture                  |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  44        |  0        |           |  NinputICProcessInertia               |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  45        |  0        |           |  NinputICProcessInertia               |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  46        |  0        |           |  NinputICStop                         |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  47        |  0        |           |  NinputICStop                         |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  48        |  0        |           |  NinputICOutputCallback               |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  49        |  0        |           |  NinputICOutputCallback               |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  50        |  0        |           |  NinputTouchpadInertiaStop            |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  51        |  0        |           |  NinputMouseWheel                     |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  52        |  0        |           |  NinputMouseWheel                     |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  53        |  0        |           |  NinputConfigurePTPScrolling          |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  54        |  0        |           |  NinputConfigurePTPScrolling          |          |           |
+Microsoft-Windows-TabletPC-Platform-Input-Ninput  |  Information  |  55        |  0        |           |  NinputConfigurePTPScrolling          |          |           |

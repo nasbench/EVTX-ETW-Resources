@@ -1,6 +1,6 @@
-Provider                                           |  Event ID  |  Channel  |  Message
----------------------------------------------------|------------|-----------|---------
-Microsoft-Windows-TabletPC-Platform-Manipulations  |  1         |           |
-Microsoft-Windows-TabletPC-Platform-Manipulations  |  2         |           |
-Microsoft-Windows-TabletPC-Platform-Manipulations  |  3         |           |
-Microsoft-Windows-TabletPC-Platform-Manipulations  |  4         |           |
+Provider                                           |  Level        |  Event ID  |  Version  |  Channel  |  Task                                  |  Opcode  |  Keyword  |  Message
+---------------------------------------------------|---------------|------------|-----------|-----------|----------------------------------------|----------|-----------|---------
+Microsoft-Windows-TabletPC-Platform-Manipulations  |  Information  |  1         |  0        |           |  TABLET_MANIPULATIONS_Inertia_Create   |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Manipulations  |  Information  |  2         |  0        |           |  TABLET_MANIPULATIONS_Inertia_Create   |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Manipulations  |  Information  |  3         |  0        |           |  TABLET_MANIPULATIONS_Inertia_Process  |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Manipulations  |  Information  |  4         |  0        |           |  TABLET_MANIPULATIONS_Inertia_Process  |  Stop    |           |

@@ -1,48 +1,48 @@
-Provider                                   |  Event ID  |  Channel                                               |  Message
--------------------------------------------|------------|--------------------------------------------------------|---------
-Microsoft-Windows-Shell-LockScreenContent  |  1         |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  2         |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  10        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  11        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  12        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  13        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  20        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  21        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  22        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  23        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  24        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  25        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  26        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  30        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  31        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  32        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  34        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  35        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  36        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  37        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  38        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  39        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  40        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  42        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  43        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  44        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  45        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  46        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  47        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  48        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  49        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  50        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  51        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  52        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  53        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  54        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  55        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  56        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  57        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  58        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  59        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  60        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  61        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  62        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  63        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
-Microsoft-Windows-Shell-LockScreenContent  |  64        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |
+Provider                                   |  Level        |  Event ID  |  Version  |  Channel                                               |  Task                                                                 |  Opcode  |  Keyword            |  Message
+-------------------------------------------|---------------|------------|-----------|--------------------------------------------------------|-----------------------------------------------------------------------|----------|---------------------|---------
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  1         |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Setup                                              |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  2         |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Setup                                              |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  10        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Repository_Initialize                              |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  11        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Repository_Initialize                              |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  12        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Repository_GetImage                                |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  13        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Repository_GetImage                                |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  20        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Manager_Initialize                                 |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  21        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Manager_Initialize                                 |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  22        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Manager_PrepareForTransition                       |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  23        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Manager_PrepareForTransition                       |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  24        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Manager_StartSlideShow                             |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  25        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Manager_StopSlideShow                              |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  26        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Slideshow_SlideshowManager_Destroyed               |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  30        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_DoLayout                                           |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  31        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_DoLayout                                           |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  32        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_TimerTick                                          |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  34        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_SlideTransition                                    |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  35        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_SlideTransition                                    |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  36        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_RandomLayoutGenerated                              |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  37        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_ScheduleAnimation_Transition                       |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  38        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_ScheduleAnimation_Transition                       |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  39        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_ScheduleAnimation_Ambient                          |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  40        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_ScheduleAnimation_Ambient                          |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  42        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_SlideshowSlideCache_Initialize                     |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  43        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_SlideshowSlideCache_Initialize                     |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  44        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_SlideshowSlideCache_Setup                          |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  45        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_SlideshowSlideCache_Setup                          |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  46        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Repository_DisableConstraints                      |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  47        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_IngestImageItem                             |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  48        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_Refresh                                     |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  49        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Repository_InitializeBuckets_RecalculatingBuckets  |          |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  50        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_ThumbnailFetch                                     |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  51        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_ThumbnailFetch                                     |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  52        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_Initialize                                  |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  53        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_Initialize                                  |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  54        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_CreateIItemCollection                       |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  55        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_CreateIItemCollection                       |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  56        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Slide_Initialize                                   |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  57        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Slide_Initialize                                   |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  58        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_GenerateAvailableItems                      |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  59        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_GenerateAvailableItems                      |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  60        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Cache_AddSlideToMonitorCache                       |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  61        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Cache_AddSlideToMonitorCache                       |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  62        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Repository_InitializeBuckets                       |  Start   |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  63        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Repository_InitializeBuckets                       |  Stop    |  LockScreenContent  |
+Microsoft-Windows-Shell-LockScreenContent  |  Information  |  64        |  0        |  Microsoft-Windows-Shell-LockScreenContent/Diagnostic  |  LockScreenContent_Bucket_ImageVerification                           |          |  LockScreenContent  |

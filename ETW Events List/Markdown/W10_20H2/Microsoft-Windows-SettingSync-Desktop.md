@@ -1,37 +1,37 @@
-Provider                               |  Event ID  |  Channel                                    |  Message
----------------------------------------|------------|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-SettingSync-Desktop  |  5001      |  Microsoft-Windows-SettingSync/Operational  |  The system failed to request a sync for collection {CollectionId} (operation: {Operation}, Result: {HRESULT}).
-Microsoft-Windows-SettingSync-Desktop  |  5002      |  Microsoft-Windows-SettingSync/Operational  |  The setting unit {SettingUnitId} for collection {CollectionId} is invalid. (operation: {Operation}, Result: {HRESULT}).
-Microsoft-Windows-SettingSync-Desktop  |  5003      |  Microsoft-Windows-SettingSync/Operational  |  Starting or stopping setting change publisher for {CollectionId} failed. (Result: {HRESULT})
-Microsoft-Windows-SettingSync-Desktop  |  5004      |  Microsoft-Windows-SettingSync/Operational  |  Failed to create process "{CollectionId}" (Result: {HRESULT}).
-Microsoft-Windows-SettingSync-Desktop  |  5005      |  Microsoft-Windows-SettingSync/Operational  |  Starting the setting monitor SSO failed.  (Message: {Message}, Result: {HRESULT})
-Microsoft-Windows-SettingSync-Desktop  |  5006      |  Microsoft-Windows-SettingSync/Operational  |  Starting the WNF listener failed.  (Message: {Message}, Result: {HRESULT})
-Microsoft-Windows-SettingSync-Desktop  |  5007      |  Microsoft-Windows-SettingSync/Operational  |  {Message}
-Microsoft-Windows-SettingSync-Desktop  |  5008      |  Microsoft-Windows-SettingSync/Operational  |  {Message}
-Microsoft-Windows-SettingSync-Desktop  |  5009      |  Microsoft-Windows-SettingSync/Operational  |  {Message}
-Microsoft-Windows-SettingSync-Desktop  |  6001      |  Microsoft-Windows-SettingSync/Debug        |  The sync provider requested that {CollectionId} not upload now.  It will retry the upload later.
-Microsoft-Windows-SettingSync-Desktop  |  6002      |  Microsoft-Windows-SettingSync/Debug        |  Starting or stopping setting change publisher for {CollectionId} failed. (Result: {HRESULT})
-Microsoft-Windows-SettingSync-Desktop  |  6501      |  Microsoft-Windows-SettingSync/Debug        |  Wnf event callback failure. State Name: {Message}. HRESULT: {HRESULT}.
-Microsoft-Windows-SettingSync-Desktop  |  6502      |  Microsoft-Windows-SettingSync/Debug        |  StartLayoutSync - Load layout data from stream. (HRESULT: {HRESULT})
-Microsoft-Windows-SettingSync-Desktop  |  6503      |  Microsoft-Windows-SettingSync/Debug        |  PicturePasswordPicture image validation failed (HRESULT: {HRESULT})
-Microsoft-Windows-SettingSync-Desktop  |  6504      |  Microsoft-Windows-SettingSync/Debug        |
-Microsoft-Windows-SettingSync-Desktop  |  6505      |  Microsoft-Windows-SettingSync/Debug        |
-Microsoft-Windows-SettingSync-Desktop  |  6506      |  Microsoft-Windows-SettingSync/Debug        |
-Microsoft-Windows-SettingSync-Desktop  |  6507      |  Microsoft-Windows-SettingSync/Debug        |
-Microsoft-Windows-SettingSync-Desktop  |  6508      |  Microsoft-Windows-SettingSync/Debug        |
-Microsoft-Windows-SettingSync-Desktop  |  6509      |  Microsoft-Windows-SettingSync/Debug        |  {Message}
-Microsoft-Windows-SettingSync-Desktop  |  6510      |  Microsoft-Windows-SettingSync/Debug        |  {Message}
-Microsoft-Windows-SettingSync-Desktop  |  6511      |  Microsoft-Windows-SettingSync/Debug        |  {Message}
-Microsoft-Windows-SettingSync-Desktop  |  6512      |  Microsoft-Windows-SettingSync/Debug        |  Monitor SSO {Message} blocked. SSF monitors not required as uploads are blocked by removal policy.
-Microsoft-Windows-SettingSync-Desktop  |  7001      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7002      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7003      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7004      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7005      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7006      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7007      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7008      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7009      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7010      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7011      |  Microsoft-Windows-SettingSync/Analytic     |
-Microsoft-Windows-SettingSync-Desktop  |  7012      |  Microsoft-Windows-SettingSync/Analytic     |
+Provider                               |  Level        |  Event ID  |  Version  |  Channel                                    |  Task                                |  Opcode  |  Keyword          |  Message
+---------------------------------------|---------------|------------|-----------|---------------------------------------------|--------------------------------------|----------|-------------------|-------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-SettingSync-Desktop  |  Error        |  5001      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  The system failed to request a sync for collection {CollectionId} (operation: {Operation}, Result: {HRESULT}).
+Microsoft-Windows-SettingSync-Desktop  |  Warning      |  5002      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  The setting unit {SettingUnitId} for collection {CollectionId} is invalid. (operation: {Operation}, Result: {HRESULT}).
+Microsoft-Windows-SettingSync-Desktop  |  Error        |  5003      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  Starting or stopping setting change publisher for {CollectionId} failed. (Result: {HRESULT})
+Microsoft-Windows-SettingSync-Desktop  |  Error        |  5004      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  Failed to create process "{CollectionId}" (Result: {HRESULT}).
+Microsoft-Windows-SettingSync-Desktop  |  Error        |  5005      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  Starting the setting monitor SSO failed.  (Message: {Message}, Result: {HRESULT})
+Microsoft-Windows-SettingSync-Desktop  |  Error        |  5006      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  Starting the WNF listener failed.  (Message: {Message}, Result: {HRESULT})
+Microsoft-Windows-SettingSync-Desktop  |  Error        |  5007      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  {Message}
+Microsoft-Windows-SettingSync-Desktop  |  Warning      |  5008      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  {Message}
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  5009      |  0        |  Microsoft-Windows-SettingSync/Operational  |                                      |          |                   |  {Message}
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  6001      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  The sync provider requested that {CollectionId} not upload now.  It will retry the upload later.
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  6002      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  Starting or stopping setting change publisher for {CollectionId} failed. (Result: {HRESULT})
+Microsoft-Windows-SettingSync-Desktop  |  Warning      |  6501      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  Wnf event callback failure. State Name: {Message}. HRESULT: {HRESULT}.
+Microsoft-Windows-SettingSync-Desktop  |  Verbose      |  6502      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  StartLayoutSync - Load layout data from stream. (HRESULT: {HRESULT})
+Microsoft-Windows-SettingSync-Desktop  |  Error        |  6503      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  PicturePasswordPicture image validation failed (HRESULT: {HRESULT})
+Microsoft-Windows-SettingSync-Desktop  |  Verbose      |  6504      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |
+Microsoft-Windows-SettingSync-Desktop  |  Verbose      |  6505      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  6506      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  6507      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  6508      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |
+Microsoft-Windows-SettingSync-Desktop  |  Error        |  6509      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  {Message}
+Microsoft-Windows-SettingSync-Desktop  |  Warning      |  6510      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  {Message}
+Microsoft-Windows-SettingSync-Desktop  |  Verbose      |  6511      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  {Message}
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  6512      |  0        |  Microsoft-Windows-SettingSync/Debug        |                                      |          |                   |  Monitor SSO {Message} blocked. SSF monitors not required as uploads are blocked by removal policy.
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7001      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_SettingProfileHandler_OnLoad   |  Start   |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7002      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_SettingProfileHandler_OnLoad   |  Stop    |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7003      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_MouseSettingHandler_GetUnit    |  Start   |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7004      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_MouseSettingHandler_GetUnit    |  Stop    |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7005      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_MouseSettingHandler_ApplyUnit  |  Start   |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7006      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_MouseSettingHandler_ApplyUnit  |  Stop    |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7007      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_SyncRequestedByLocalSystem     |  Stop    |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7008      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_MicroImageCompression          |  Start   |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7009      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_MicroImageCompression          |  Stop    |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7010      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_MicroImageScale                |  Start   |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7011      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_MicroImageCompression          |  Stop    |  RoamingSettings  |
+Microsoft-Windows-SettingSync-Desktop  |  Information  |  7012      |  0        |  Microsoft-Windows-SettingSync/Analytic     |  Perf_BackupRequestedByLocalSystem   |  Stop    |  RoamingSettings  |

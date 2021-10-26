@@ -1,16 +1,16 @@
-Provider                      |  Event ID  |  Channel                                |  Message
-------------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-IME-TCCORE  |  31        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  32        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  33        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  34        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  35        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  36        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  37        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  38        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  51        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  52        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  53        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  54        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  55        |  Microsoft-Windows-IME-TCCORE/Analytic  |
-Microsoft-Windows-IME-TCCORE  |  56        |  Microsoft-Windows-IME-TCCORE/Analytic  |
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                                |  Task                               |  Opcode          |  Keyword  |  Message
+------------------------------|---------------|------------|-----------|-----------------------------------------|-------------------------------------|------------------|-----------|---------
+Microsoft-Windows-IME-TCCORE  |  Information  |  31        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME Candidate Open        |  Start           |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  32        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME Candidate Open        |  Stop            |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  33        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME PromptCandidate Open  |  Start           |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  34        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME PromptCandidate Open  |  Stop            |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  35        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME Conversion            |  Start           |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  36        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME Conversion            |  Stop            |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  37        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME Typing                |  Start           |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  38        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME Typing                |  Stop            |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  51        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME LM Decoding           |  Decode1Start    |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  52        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME LM Decoding           |  Decode1End      |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  53        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME LM Decoding           |  LexSearchStart  |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  54        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME LM Decoding           |  LexSearchEnd    |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  55        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME LM Decoding           |  SearchStart     |           |
+Microsoft-Windows-IME-TCCORE  |  Information  |  56        |  0        |  Microsoft-Windows-IME-TCCORE/Analytic  |  Task ID: IME LM Decoding           |  SearchEnd       |           |

@@ -1,5 +1,5 @@
-Provider                           |  Event ID  |  Channel  |  Message
------------------------------------|------------|-----------|---------
-Microsoft-Windows-WLAN-BMRHandler  |  0         |           |
-Microsoft-Windows-WLAN-BMRHandler  |  1         |           |
-Microsoft-Windows-WLAN-BMRHandler  |  2         |           |
+Provider                           |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-WLAN-BMRHandler  |  Error        |  0         |  1        |           |        |          |           |
+Microsoft-Windows-WLAN-BMRHandler  |  Information  |  1         |  1        |           |        |          |           |
+Microsoft-Windows-WLAN-BMRHandler  |  Verbose      |  2         |  1        |           |        |          |           |

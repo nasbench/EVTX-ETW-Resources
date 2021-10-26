@@ -1,27 +1,27 @@
-Provider                                      |  Event ID  |  Channel                                       |  Message
-----------------------------------------------|------------|------------------------------------------------|---------
-Microsoft-Windows-COM-RundownInstrumentation  |  1         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  2         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  3         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  4         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  5         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  6         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  7         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  8         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  9         |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  10        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  11        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  12        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  13        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  14        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  15        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  16        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  17        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  18        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  19        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  20        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  21        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  22        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  23        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  24        |  Microsoft-Windows-COM/RundownInstrumentation  |
-Microsoft-Windows-COM-RundownInstrumentation  |  25        |  Microsoft-Windows-COM/RundownInstrumentation  |
+Provider                                      |  Level        |  Event ID  |  Version  |  Channel                                       |  Task                    |  Opcode  |  Keyword                 |  Message
+----------------------------------------------|---------------|------------|-----------|------------------------------------------------|--------------------------|----------|--------------------------|---------
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  1         |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  2         |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  3         |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  4         |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  5         |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  6         |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  7         |  1        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  8         |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  9         |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  10        |  1        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  11        |  1        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  12        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  13        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  14        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  15        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  16        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  17        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  18        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  19        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  20        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  21        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  22        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  23        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  24        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |
+Microsoft-Windows-COM-RundownInstrumentation  |  Information  |  25        |  0        |  Microsoft-Windows-COM/RundownInstrumentation  |  RundownInstrumentation  |          |  RundownInstrumentation  |

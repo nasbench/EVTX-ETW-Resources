@@ -1,12 +1,12 @@
-Provider                  |  Event ID  |  Channel  |  Message
---------------------------|------------|-----------|---------
-Microsoft-Windows-BootUX  |  1000      |           |
-Microsoft-Windows-BootUX  |  1001      |           |
-Microsoft-Windows-BootUX  |  1002      |           |
-Microsoft-Windows-BootUX  |  1003      |           |
-Microsoft-Windows-BootUX  |  1004      |           |
-Microsoft-Windows-BootUX  |  1005      |           |
-Microsoft-Windows-BootUX  |  1006      |           |
-Microsoft-Windows-BootUX  |  1007      |           |
-Microsoft-Windows-BootUX  |  1008      |           |
-Microsoft-Windows-BootUX  |  1009      |           |
+Provider                  |  Level        |  Event ID  |  Version  |  Channel  |  Task              |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|-----------|--------------------|----------|-----------|---------
+Microsoft-Windows-BootUX  |  Information  |  1000      |  0        |           |  LaunchUX          |  Start   |           |
+Microsoft-Windows-BootUX  |  Information  |  1001      |  0        |           |  LaunchUX          |  Stop    |           |
+Microsoft-Windows-BootUX  |  Information  |  1002      |  0        |           |  SwapPage          |  Start   |           |
+Microsoft-Windows-BootUX  |  Information  |  1003      |  0        |           |  SwapPage          |  Stop    |           |
+Microsoft-Windows-BootUX  |  Information  |  1004      |  0        |           |                    |          |           |
+Microsoft-Windows-BootUX  |  Information  |  1005      |  0        |           |                    |          |           |
+Microsoft-Windows-BootUX  |  Information  |  1006      |  0        |           |  UserInteraction   |  Start   |           |
+Microsoft-Windows-BootUX  |  Information  |  1007      |  0        |           |  UserInteraction   |  Stop    |           |
+Microsoft-Windows-BootUX  |  Information  |  1008      |  0        |           |  PageConstruction  |  Start   |           |
+Microsoft-Windows-BootUX  |  Information  |  1009      |  0        |           |  PageConstruction  |  Stop    |           |

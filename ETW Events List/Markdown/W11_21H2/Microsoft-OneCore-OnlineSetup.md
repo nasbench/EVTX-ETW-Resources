@@ -1,8 +1,8 @@
-Provider                       |  Event ID  |  Channel                           |  Message
--------------------------------|------------|------------------------------------|-----------------------------------------------------------
-Microsoft-OneCore-OnlineSetup  |  1001      |  Microsoft-OneCore-Setup/Analytic  |  Setup.exe is running with command line "{CommandLine}".
-Microsoft-OneCore-OnlineSetup  |  1002      |  Microsoft-OneCore-Setup/Analytic  |  Setup.exe exiting with status {ErrorCode}.
-Microsoft-OneCore-OnlineSetup  |  2001      |  Microsoft-OneCore-Setup/Analytic  |  Executing unattend settings pass "{Pass}".
-Microsoft-OneCore-OnlineSetup  |  2002      |  Microsoft-OneCore-Setup/Analytic  |  Finished executing unattend pass with status {ErrorCode}.
-Microsoft-OneCore-OnlineSetup  |  2003      |  Microsoft-OneCore-Setup/Analytic  |  Failed to execute unattend pass with status {ErrorCode}.
-Microsoft-OneCore-OnlineSetup  |  2004      |  Microsoft-OneCore-Setup/Analytic  |  Using unattend file "{FilePath}" for pass "{Pass}".
+Provider                       |  Level        |  Event ID  |  Version  |  Channel                           |  Task                      |  Opcode  |  Keyword      |  Message
+-------------------------------|---------------|------------|-----------|------------------------------------|----------------------------|----------|---------------|-----------------------------------------------------------
+Microsoft-OneCore-OnlineSetup  |  Information  |  1001      |  0        |  Microsoft-OneCore-Setup/Analytic  |  Run Setup Specialization  |  Start   |  Performance  |  Setup.exe is running with command line "{CommandLine}".
+Microsoft-OneCore-OnlineSetup  |  Information  |  1002      |  0        |  Microsoft-OneCore-Setup/Analytic  |  Run Setup Specialization  |  Stop    |  Performance  |  Setup.exe exiting with status {ErrorCode}.
+Microsoft-OneCore-OnlineSetup  |  Information  |  2001      |  0        |  Microsoft-OneCore-Setup/Analytic  |  Setup Process Unattend    |  Start   |  Performance  |  Executing unattend settings pass "{Pass}".
+Microsoft-OneCore-OnlineSetup  |  Information  |  2002      |  0        |  Microsoft-OneCore-Setup/Analytic  |  Setup Process Unattend    |  Stop    |  Performance  |  Finished executing unattend pass with status {ErrorCode}.
+Microsoft-OneCore-OnlineSetup  |  Information  |  2003      |  0        |  Microsoft-OneCore-Setup/Analytic  |  Setup Process Unattend    |  Stop    |  Performance  |  Failed to execute unattend pass with status {ErrorCode}.
+Microsoft-OneCore-OnlineSetup  |  Information  |  2004      |  0        |  Microsoft-OneCore-Setup/Analytic  |  Setup Process Unattend    |          |  Diagnostic   |  Using unattend file "{FilePath}" for pass "{Pass}".

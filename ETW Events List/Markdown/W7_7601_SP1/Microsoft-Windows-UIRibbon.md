@@ -1,35 +1,35 @@
-Provider                    |  Event ID  |  Channel                                |  Message
-----------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-UIRibbon  |  1         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  2         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  3         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  4         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  5         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  6         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  7         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  8         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  9         |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  10        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  11        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  12        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  13        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  14        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  15        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  16        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  17        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  18        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  19        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  20        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  21        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  22        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  23        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  24        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  25        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  26        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  27        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  28        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  29        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  30        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  31        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  32        |  Microsoft-Windows-UIRibbon/Diagnostic  |
-Microsoft-Windows-UIRibbon  |  33        |  Microsoft-Windows-UIRibbon/Diagnostic  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                |  Task                               |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------|-------------------------------------|----------|-----------|---------
+Microsoft-Windows-UIRibbon  |  Information  |  1         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  NetUIPaint                         |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  2         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  NetUIPaint                         |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  3         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  RibbonTabActivated                 |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  4         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  RibbonToggled                      |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  5         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  NetUIMouseEnter                    |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  6         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  NetUIMouseLeave                    |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  7         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  NetUIMouseButtonDown               |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  8         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  NetUIMouseButtonUp                 |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  9         |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  RibbonResized                      |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  10        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  NetUIContainerCreated              |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  11        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicRender                       |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  12        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicRender                       |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  13        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicUiaGetObject                 |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  14        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicUiaGetObject                 |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  15        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicTreeWalker                   |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  16        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicTreeWalker                   |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  17        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicRaiseRoutedEvent             |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  18        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicRaiseRoutedEvent             |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  19        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicRaisePropertyChangeEvent     |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  20        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicRaisePropertyChangeEvent     |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  21        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicUiaElementProviderFromPoint  |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  22        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicUiaElementProviderFromPoint  |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  23        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicUiaGetPropertyValue          |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  24        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  ScenicUiaGetPropertyValue          |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  25        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  RibbonSqm                          |          |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  26        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  FontControlsInitializeFMS          |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  27        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  FontControlsInitializeFMS          |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  28        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  FontControlsEnumeration            |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  29        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  FontControlsEnumeration            |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  30        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  FontControlsGenerateBitmaps        |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  31        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  FontControlsGenerateBitmaps        |  Stop    |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  32        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  FontControlsGalleryLoadItems       |  Start   |  Default  |
+Microsoft-Windows-UIRibbon  |  Information  |  33        |  0        |  Microsoft-Windows-UIRibbon/Diagnostic  |  FontControlsGalleryLoadItems       |  Stop    |  Default  |

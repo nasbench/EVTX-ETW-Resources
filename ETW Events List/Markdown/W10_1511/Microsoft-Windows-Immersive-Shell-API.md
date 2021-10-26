@@ -1,157 +1,157 @@
-Provider                               |  Event ID  |  Channel                                        |  Message
----------------------------------------|------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Immersive-Shell-API  |  1601      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1602      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1603      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1604      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1605      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1606      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1607      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1608      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1609      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1610      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1611      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1612      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1613      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1614      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1615      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1616      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1617      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1618      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1619      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1621      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1622      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1623      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1624      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1625      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1626      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1627      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1629      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1630      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1631      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1633      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1634      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1635      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1636      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1637      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1638      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1639      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1640      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1641      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1642      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1643      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1644      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1645      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1646      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1647      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1648      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1649      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1650      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1651      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1652      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1653      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1654      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1655      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1656      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1657      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher is starting to publish a roamed layout ({Scenario}).
-Microsoft-Windows-Immersive-Shell-API  |  1658      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher has completed the publish operation with return code {Result} after {FailedAttempts} failing attempts.
-Microsoft-Windows-Immersive-Shell-API  |  1659      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher received a request to publish a roamed layout for scenario {Scenario}
-Microsoft-Windows-Immersive-Shell-API  |  1660      |  Microsoft-Windows-CoreApplication/Operational  |  Publish processed the request to publish a roamed layout with return code {Result}
-Microsoft-Windows-Immersive-Shell-API  |  1661      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher loaded the remote layout with return code {Result}
-Microsoft-Windows-Immersive-Shell-API  |  1662      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher merged local and remote layouts with return code {Result}
-Microsoft-Windows-Immersive-Shell-API  |  1663      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher has started to update the data layer with a payload containing {ItemCount} items and {GroupCount} groups.
-Microsoft-Windows-Immersive-Shell-API  |  1664      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher complete the update of the data layer with return code {Result}.
-Microsoft-Windows-Immersive-Shell-API  |  1665      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher attempted to commit the data layer change. The return code was {Result}. The priority was {LowPriority} (true = low, false = normal).
-Microsoft-Windows-Immersive-Shell-API  |  1666      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher loaded the local layout with return code {Result}
-Microsoft-Windows-Immersive-Shell-API  |  1670      |  Microsoft-Windows-CoreApplication/Operational  |
-Microsoft-Windows-Immersive-Shell-API  |  1671      |  Microsoft-Windows-CoreApplication/Operational  |
-Microsoft-Windows-Immersive-Shell-API  |  1672      |  Microsoft-Windows-CoreApplication/Operational  |  Publisher is running with cloud priority mode enabled ({CloudPriorityModeEnabled})
-Microsoft-Windows-Immersive-Shell-API  |  1800      |  Microsoft-Windows-CoreApplication/Operational  |  AppLayoutItem - {AppID}, location={TileSize}, order={TileType}, size={PackageFullName}, typeFlags={ShortcutLocation}
-Microsoft-Windows-Immersive-Shell-API  |  1802      |  Microsoft-Windows-CoreApplication/Operational  |  AppLaunch - {AppID}, location={PackageFullName}
-Microsoft-Windows-Immersive-Shell-API  |  1804      |  Microsoft-Windows-CoreApplication/Operational  |  AppSurfaceResize - menu({widthMenu}, {heightMenu}), monitor({widthMonitor}, {heightMonitor}), grid({widthGrid}, {heightGrid}), dpi={monitorDPI}, ppi={monitorPPI}
-Microsoft-Windows-Immersive-Shell-API  |  1961      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1962      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1963      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1964      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1971      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  1972      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2000      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2001      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2002      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2003      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2004      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2005      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2006      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2007      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2008      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2009      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2010      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2011      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2012      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2013      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2014      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2015      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2016      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2017      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2018      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2019      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2020      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2021      |  Microsoft-Windows-CoreApplication/Diagnostic   |
-Microsoft-Windows-Immersive-Shell-API  |  2041      |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplication - Quiesce - PSM called PsmDoStateChange
-Microsoft-Windows-Immersive-Shell-API  |  2042      |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplication - Suspend - Calling PsmBlockUnblock ({BlockUnblockBool}) for ASTA {ThreadId}
-Microsoft-Windows-Immersive-Shell-API  |  2043      |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplication - Resume - Calling PsmBlockUnblock ({BlockUnblockBool}) for ASTA {ThreadId}
-Microsoft-Windows-Immersive-Shell-API  |  2044      |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplication - Quiesce - called PsmWaitForAppResume
-Microsoft-Windows-Immersive-Shell-API  |  2045      |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplication - ViewInitialize - IsMain {IsMainView} PID {Pid} TID {ThreadId}
-Microsoft-Windows-Immersive-Shell-API  |  2046      |  Microsoft-Windows-CoreApplication/Tracing      |
-Microsoft-Windows-Immersive-Shell-API  |  2047      |  Microsoft-Windows-CoreApplication/Tracing      |
-Microsoft-Windows-Immersive-Shell-API  |  2101      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2102      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2104      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2105      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2106      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2108      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2109      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2111      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2112      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2114      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2115      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2116      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2117      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2118      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2119      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2120      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2121      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2122      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2123      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2124      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2125      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2126      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2127      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2128      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2129      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2130      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2131      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2132      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2133      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2134      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2135      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2136      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2137      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2138      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2139      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2140      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  2141      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6000      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6001      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6002      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6003      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6004      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6005      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6200      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6201      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6202      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6203      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6300      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6301      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6302      |  Microsoft-Windows-TWinAPI/Diagnostic           |
-Microsoft-Windows-Immersive-Shell-API  |  6303      |  Microsoft-Windows-TWinAPI/Diagnostic           |
+Provider                               |  Level        |  Event ID  |  Version  |  Channel                                        |  Task                                                         |  Opcode  |  Keyword              |  Message
+---------------------------------------|---------------|------------|-----------|-------------------------------------------------|---------------------------------------------------------------|----------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1601      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_GetItem                                       |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1602      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_GetItem                                       |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1603      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_EnumItems                                     |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1604      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_EnumItems                                     |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1605      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Modify                                        |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1606      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Modify                                        |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1607      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_AppendNewItem                                 |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1608      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_AppendNewItem                                 |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1609      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_MoveItemAfter                                 |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1610      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_MoveItemAfter                                 |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1611      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_MoveGroup                                     |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1612      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_MoveGroup                                     |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1613      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Commit                                        |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1614      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Commit                                        |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1615      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_RemoveItem                                    |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1616      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_RemoveItem                                    |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1617      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_PurgeRemovedItems                             |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1618      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_PurgeRemovedItems                             |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1619      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_PurgeRemovedItems                             |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1621      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_EnsureCache                                   |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1622      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_EnsureCache                                   |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1623      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_EnsureCache                                   |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1624      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_EnsureCache                                   |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1625      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Load                                          |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1626      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Load                                          |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1627      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Load                                          |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1629      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Save                                          |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1630      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Save                                          |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1631      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Save                                          |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1633      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_StoreBackup                                   |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1634      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_StoreBackup                                   |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1635      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Rebalance                                     |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1636      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Rebalance                                     |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1637      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Rebalance                                     |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1638      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_ChangeItemTileSize                            |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1639      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_ChangeItemTileSize                            |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1640      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_ChangeItemView                                |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1641      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_ChangeItemView                                |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1642      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_ChangeItemAppState                            |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1643      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_ChangeItemAppState                            |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1644      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_ReplaceItem                                   |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1645      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_ReplaceItem                                   |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1646      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_SetGroupName                                  |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1647      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_SetGroupName                                  |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1648      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_EnforceCapOnItemTileSize                      |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1649      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_EnforceCapOnItemTileSize                      |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1650      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |                                                               |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1651      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Commit                                        |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1652      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_Commit                                        |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1653      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_UpdateGroupInfo                               |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1654      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_UpdateGroupInfo                               |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1655      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_GetGroupInfo                                  |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1656      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ItemStateStore_GetGroupInfo                                  |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1657      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_Publish                                            |  Start   |                       |  Publisher is starting to publish a roamed layout ({Scenario}).
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1658      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_Publish                                            |  Stop    |                       |  Publisher has completed the publish operation with return code {Result} after {FailedAttempts} failing attempts.
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1659      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_RequestPublish                                     |  Start   |                       |  Publisher received a request to publish a roamed layout for scenario {Scenario}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1660      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_RequestPublish                                     |  Stop    |                       |  Publish processed the request to publish a roamed layout with return code {Result}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1661      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_LoadRemoteLayout                                   |          |                       |  Publisher loaded the remote layout with return code {Result}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1662      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_Merge                                              |          |                       |  Publisher merged local and remote layouts with return code {Result}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1663      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_Update                                             |  Start   |                       |  Publisher has started to update the data layer with a payload containing {ItemCount} items and {GroupCount} groups.
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1664      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_Update                                             |  Stop    |                       |  Publisher complete the update of the data layer with return code {Result}.
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1665      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_Commit                                             |          |                       |  Publisher attempted to commit the data layer change. The return code was {Result}. The priority was {LowPriority} (true = low, false = normal).
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1666      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_LoadStateStore                                     |          |                       |  Publisher loaded the local layout with return code {Result}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1670      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  TileNotificatons_EnabledForApp_DataLayer                     |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1671      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  TileNotificatons_DisabledForApp_DataLayer                    |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1672      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  Publisher_Merge                                              |          |                       |  Publisher is running with cloud priority mode enabled ({CloudPriorityModeEnabled})
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1800      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  AppLayoutItem                                                |          |  ElizaPrototype       |  AppLayoutItem - {AppID}, location={TileSize}, order={TileType}, size={PackageFullName}, typeFlags={ShortcutLocation}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1802      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  AppLaunch                                                    |          |  ElizaPrototype       |  AppLaunch - {AppID}, location={PackageFullName}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1804      |  0        |  Microsoft-Windows-CoreApplication/Operational  |  AppSurfaceResize                                             |          |  ElizaPrototype       |  AppSurfaceResize - menu({widthMenu}, {heightMenu}), monitor({widthMonitor}, {heightMonitor}), grid({widthGrid}, {heightGrid}), dpi={monitorDPI}, ppi={monitorPPI}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1961      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ActionSpacePaneDismiss                                       |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1962      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ActionSpacePaneDismiss                                       |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1963      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ActionSpacePaneDismiss                                       |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1964      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ActionSpacePaneDismiss                                       |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1971      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ActionSpacePaneReflow                                        |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  1972      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ActionSpacePaneReflow                                        |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2000      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationActivation                                    |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2001      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationActivation                                    |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2002      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationSuspension                                    |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2003      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationSuspension                                    |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2004      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationExit                                          |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2005      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationExit                                          |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2006      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationRegistration                                  |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2007      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationRegistration                                  |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2008      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationInitialization                                |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2009      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationInitialization                                |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2010      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationViewProviderLoad                              |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2011      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationViewProviderLoad                              |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2012      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationViewProviderInitialization                    |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2013      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationViewProviderInitialization                    |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2014      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationActivationHandlers                            |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2015      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationActivationHandlers                            |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2016      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationSuspendHandlers                               |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2017      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationSuspendHandlers                               |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2018      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationResumeHandlers                                |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2019      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationResumeHandlers                                |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2020      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationCreateNewView                                 |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2021      |  0        |  Microsoft-Windows-CoreApplication/Diagnostic   |  CoreApplicationCreateNewView                                 |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2041      |  0        |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplicationPsmDoStateChange                              |          |                       |  CoreApplication - Quiesce - PSM called PsmDoStateChange
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2042      |  0        |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplicationQuiescePsmBlockUnblockASTA                    |          |                       |  CoreApplication - Suspend - Calling PsmBlockUnblock ({BlockUnblockBool}) for ASTA {ThreadId}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2043      |  0        |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplicationResumePsmBlockUnblockASTA                     |          |                       |  CoreApplication - Resume - Calling PsmBlockUnblock ({BlockUnblockBool}) for ASTA {ThreadId}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2044      |  0        |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplicationQuiesceWaitForAppResume                       |          |                       |  CoreApplication - Quiesce - called PsmWaitForAppResume
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2045      |  0        |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplicationViewInitializationProcessAndThread            |          |                       |  CoreApplication - ViewInitialize - IsMain {IsMainView} PID {Pid} TID {ThreadId}
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2046      |  0        |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplicationSuspendingDeferral                            |  Start   |  Suspending Deferral  |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2047      |  0        |  Microsoft-Windows-CoreApplication/Tracing      |  CoreApplicationSuspendingDeferral                            |  Stop    |  Suspending Deferral  |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2101      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_Show                                   |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2102      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_Show                                   |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2104      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_DispatchCommand                        |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2105      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_DispatchCommand                        |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2106      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_DispatchCommand                        |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2108      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_QueryCommands                          |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2109      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_QueryCommands                          |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2111      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_RequestCommands                        |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2112      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_RequestCommands                        |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2114      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_CommandsRequestedEventHandler          |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2115      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveSettingsPane_CommandsRequestedEventHandler          |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2116      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_Show                           |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2117      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_Show                           |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2118      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchProviderCommand        |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2119      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchProviderCommand        |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2120      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchProviderCommand        |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2121      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchAccountCommand         |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2122      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchAccountCommand         |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2123      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchAccountCommand         |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2124      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchCredentialCommand      |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2125      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchCredentialCommand      |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2126      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchCredentialCommand      |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2127      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchCommand                |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2128      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchCommand                |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2129      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_DispatchCommand                |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2130      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_QueryProviderCommands          |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2131      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_QueryProviderCommands          |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2132      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_QueryAccountCommands           |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2133      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_QueryAccountCommands           |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2134      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_QueryCredentialCommands        |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2135      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_QueryCredentialCommands        |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2136      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_QueryCommands                  |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2137      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_QueryCommands                  |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2138      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_RequestCommands                |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2139      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_RequestCommands                |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2140      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_CommandsRequestedEventHandler  |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  2141      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  ImmersiveAccountsSettingsPane_CommandsRequestedEventHandler  |          |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6000      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  SearchPane_API_GetForCurrentView                             |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6001      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  SearchPane_API_GetForCurrentView                             |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6002      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  SearchPane_API_TypeAhead_AsyncImageDownload                  |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6003      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  SearchPane_API_TypeAhead_AsyncImageDownload                  |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6004      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  SearchPane_API_TypeAhead_DeferralComplete                    |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6005      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  SearchPane_API_TypeAhead_DeferralComplete                    |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6200      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  DataTransferManager_API_AppReturnData                        |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6201      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  DataTransferManager_API_AppReturnData                        |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6202      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  PerfTrack_ShareCharm_TimeToApp                               |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6203      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  PerfTrack_ShareCharm_TimeToApp                               |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6300      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  LaunchAsync                                                  |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6301      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  LaunchAsync                                                  |  Stop    |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6302      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  LaunchAsyncOperation                                         |  Start   |                       |
+Microsoft-Windows-Immersive-Shell-API  |  Information  |  6303      |  0        |  Microsoft-Windows-TWinAPI/Diagnostic           |  LaunchAsyncOperation                                         |  Stop    |                       |

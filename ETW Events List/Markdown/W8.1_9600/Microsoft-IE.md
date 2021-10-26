@@ -1,514 +1,514 @@
-Provider      |  Event ID  |  Channel  |  Message
---------------|------------|-----------|---------
-Microsoft-IE  |  1         |           |
-Microsoft-IE  |  2         |           |
-Microsoft-IE  |  3         |           |
-Microsoft-IE  |  4         |           |
-Microsoft-IE  |  5         |           |
-Microsoft-IE  |  6         |           |
-Microsoft-IE  |  7         |           |
-Microsoft-IE  |  8         |           |
-Microsoft-IE  |  9         |           |
-Microsoft-IE  |  10        |           |
-Microsoft-IE  |  32        |           |
-Microsoft-IE  |  33        |           |
-Microsoft-IE  |  34        |           |
-Microsoft-IE  |  35        |           |
-Microsoft-IE  |  36        |           |
-Microsoft-IE  |  37        |           |
-Microsoft-IE  |  38        |           |
-Microsoft-IE  |  39        |           |
-Microsoft-IE  |  40        |           |
-Microsoft-IE  |  41        |           |
-Microsoft-IE  |  42        |           |
-Microsoft-IE  |  43        |           |
-Microsoft-IE  |  44        |           |
-Microsoft-IE  |  45        |           |
-Microsoft-IE  |  46        |           |
-Microsoft-IE  |  47        |           |
-Microsoft-IE  |  48        |           |
-Microsoft-IE  |  49        |           |
-Microsoft-IE  |  50        |           |
-Microsoft-IE  |  51        |           |
-Microsoft-IE  |  52        |           |
-Microsoft-IE  |  53        |           |
-Microsoft-IE  |  54        |           |
-Microsoft-IE  |  55        |           |
-Microsoft-IE  |  56        |           |
-Microsoft-IE  |  57        |           |
-Microsoft-IE  |  58        |           |
-Microsoft-IE  |  59        |           |
-Microsoft-IE  |  60        |           |
-Microsoft-IE  |  61        |           |
-Microsoft-IE  |  62        |           |
-Microsoft-IE  |  63        |           |
-Microsoft-IE  |  64        |           |
-Microsoft-IE  |  65        |           |
-Microsoft-IE  |  66        |           |
-Microsoft-IE  |  67        |           |
-Microsoft-IE  |  68        |           |
-Microsoft-IE  |  69        |           |
-Microsoft-IE  |  70        |           |
-Microsoft-IE  |  71        |           |
-Microsoft-IE  |  72        |           |
-Microsoft-IE  |  73        |           |
-Microsoft-IE  |  74        |           |
-Microsoft-IE  |  75        |           |
-Microsoft-IE  |  76        |           |
-Microsoft-IE  |  77        |           |
-Microsoft-IE  |  78        |           |
-Microsoft-IE  |  79        |           |
-Microsoft-IE  |  80        |           |
-Microsoft-IE  |  81        |           |
-Microsoft-IE  |  82        |           |
-Microsoft-IE  |  83        |           |
-Microsoft-IE  |  84        |           |
-Microsoft-IE  |  85        |           |
-Microsoft-IE  |  86        |           |
-Microsoft-IE  |  87        |           |
-Microsoft-IE  |  88        |           |
-Microsoft-IE  |  89        |           |
-Microsoft-IE  |  90        |           |
-Microsoft-IE  |  91        |           |
-Microsoft-IE  |  92        |           |
-Microsoft-IE  |  100       |           |
-Microsoft-IE  |  101       |           |
-Microsoft-IE  |  102       |           |
-Microsoft-IE  |  103       |           |
-Microsoft-IE  |  104       |           |
-Microsoft-IE  |  105       |           |
-Microsoft-IE  |  106       |           |
-Microsoft-IE  |  107       |           |
-Microsoft-IE  |  108       |           |
-Microsoft-IE  |  109       |           |
-Microsoft-IE  |  110       |           |
-Microsoft-IE  |  111       |           |
-Microsoft-IE  |  112       |           |
-Microsoft-IE  |  113       |           |
-Microsoft-IE  |  114       |           |
-Microsoft-IE  |  115       |           |
-Microsoft-IE  |  116       |           |
-Microsoft-IE  |  117       |           |
-Microsoft-IE  |  118       |           |
-Microsoft-IE  |  119       |           |
-Microsoft-IE  |  120       |           |
-Microsoft-IE  |  121       |           |
-Microsoft-IE  |  122       |           |
-Microsoft-IE  |  123       |           |
-Microsoft-IE  |  123       |           |
-Microsoft-IE  |  124       |           |
-Microsoft-IE  |  124       |           |
-Microsoft-IE  |  125       |           |
-Microsoft-IE  |  126       |           |
-Microsoft-IE  |  127       |           |
-Microsoft-IE  |  128       |           |
-Microsoft-IE  |  129       |           |
-Microsoft-IE  |  130       |           |
-Microsoft-IE  |  131       |           |
-Microsoft-IE  |  132       |           |
-Microsoft-IE  |  133       |           |
-Microsoft-IE  |  134       |           |
-Microsoft-IE  |  135       |           |
-Microsoft-IE  |  136       |           |
-Microsoft-IE  |  137       |           |
-Microsoft-IE  |  138       |           |
-Microsoft-IE  |  139       |           |
-Microsoft-IE  |  140       |           |
-Microsoft-IE  |  141       |           |
-Microsoft-IE  |  142       |           |
-Microsoft-IE  |  143       |           |
-Microsoft-IE  |  144       |           |
-Microsoft-IE  |  145       |           |
-Microsoft-IE  |  146       |           |
-Microsoft-IE  |  147       |           |
-Microsoft-IE  |  148       |           |
-Microsoft-IE  |  150       |           |
-Microsoft-IE  |  151       |           |
-Microsoft-IE  |  152       |           |
-Microsoft-IE  |  153       |           |
-Microsoft-IE  |  154       |           |
-Microsoft-IE  |  155       |           |
-Microsoft-IE  |  156       |           |
-Microsoft-IE  |  157       |           |
-Microsoft-IE  |  158       |           |
-Microsoft-IE  |  159       |           |
-Microsoft-IE  |  160       |           |
-Microsoft-IE  |  161       |           |
-Microsoft-IE  |  162       |           |
-Microsoft-IE  |  163       |           |
-Microsoft-IE  |  164       |           |
-Microsoft-IE  |  165       |           |
-Microsoft-IE  |  166       |           |
-Microsoft-IE  |  167       |           |
-Microsoft-IE  |  168       |           |
-Microsoft-IE  |  169       |           |
-Microsoft-IE  |  170       |           |
-Microsoft-IE  |  171       |           |
-Microsoft-IE  |  172       |           |
-Microsoft-IE  |  173       |           |
-Microsoft-IE  |  174       |           |
-Microsoft-IE  |  175       |           |
-Microsoft-IE  |  176       |           |
-Microsoft-IE  |  177       |           |
-Microsoft-IE  |  178       |           |
-Microsoft-IE  |  179       |           |
-Microsoft-IE  |  180       |           |
-Microsoft-IE  |  181       |           |
-Microsoft-IE  |  182       |           |
-Microsoft-IE  |  183       |           |
-Microsoft-IE  |  184       |           |
-Microsoft-IE  |  185       |           |
-Microsoft-IE  |  186       |           |
-Microsoft-IE  |  187       |           |
-Microsoft-IE  |  188       |           |
-Microsoft-IE  |  189       |           |
-Microsoft-IE  |  190       |           |
-Microsoft-IE  |  191       |           |
-Microsoft-IE  |  192       |           |
-Microsoft-IE  |  193       |           |
-Microsoft-IE  |  194       |           |
-Microsoft-IE  |  195       |           |
-Microsoft-IE  |  196       |           |
-Microsoft-IE  |  197       |           |
-Microsoft-IE  |  198       |           |
-Microsoft-IE  |  199       |           |
-Microsoft-IE  |  200       |           |
-Microsoft-IE  |  201       |           |
-Microsoft-IE  |  201       |           |
-Microsoft-IE  |  202       |           |
-Microsoft-IE  |  202       |           |
-Microsoft-IE  |  203       |           |
-Microsoft-IE  |  203       |           |
-Microsoft-IE  |  204       |           |
-Microsoft-IE  |  205       |           |
-Microsoft-IE  |  206       |           |
-Microsoft-IE  |  207       |           |
-Microsoft-IE  |  208       |           |
-Microsoft-IE  |  209       |           |
-Microsoft-IE  |  210       |           |
-Microsoft-IE  |  211       |           |
-Microsoft-IE  |  212       |           |
-Microsoft-IE  |  213       |           |
-Microsoft-IE  |  214       |           |
-Microsoft-IE  |  215       |           |
-Microsoft-IE  |  216       |           |
-Microsoft-IE  |  217       |           |
-Microsoft-IE  |  218       |           |
-Microsoft-IE  |  219       |           |
-Microsoft-IE  |  220       |           |
-Microsoft-IE  |  221       |           |
-Microsoft-IE  |  222       |           |
-Microsoft-IE  |  223       |           |
-Microsoft-IE  |  224       |           |
-Microsoft-IE  |  225       |           |
-Microsoft-IE  |  226       |           |
-Microsoft-IE  |  227       |           |
-Microsoft-IE  |  228       |           |
-Microsoft-IE  |  229       |           |
-Microsoft-IE  |  230       |           |
-Microsoft-IE  |  235       |           |
-Microsoft-IE  |  236       |           |
-Microsoft-IE  |  237       |           |
-Microsoft-IE  |  238       |           |
-Microsoft-IE  |  239       |           |
-Microsoft-IE  |  240       |           |
-Microsoft-IE  |  241       |           |
-Microsoft-IE  |  242       |           |
-Microsoft-IE  |  243       |           |
-Microsoft-IE  |  244       |           |
-Microsoft-IE  |  245       |           |
-Microsoft-IE  |  246       |           |
-Microsoft-IE  |  247       |           |
-Microsoft-IE  |  248       |           |
-Microsoft-IE  |  249       |           |
-Microsoft-IE  |  250       |           |
-Microsoft-IE  |  251       |           |
-Microsoft-IE  |  252       |           |
-Microsoft-IE  |  253       |           |
-Microsoft-IE  |  254       |           |
-Microsoft-IE  |  255       |           |
-Microsoft-IE  |  338       |           |
-Microsoft-IE  |  339       |           |
-Microsoft-IE  |  340       |           |
-Microsoft-IE  |  341       |           |
-Microsoft-IE  |  342       |           |
-Microsoft-IE  |  343       |           |
-Microsoft-IE  |  348       |           |
-Microsoft-IE  |  349       |           |
-Microsoft-IE  |  350       |           |
-Microsoft-IE  |  351       |           |
-Microsoft-IE  |  352       |           |
-Microsoft-IE  |  353       |           |
-Microsoft-IE  |  354       |           |
-Microsoft-IE  |  355       |           |
-Microsoft-IE  |  356       |           |
-Microsoft-IE  |  357       |           |
-Microsoft-IE  |  358       |           |
-Microsoft-IE  |  359       |           |
-Microsoft-IE  |  360       |           |
-Microsoft-IE  |  361       |           |
-Microsoft-IE  |  362       |           |
-Microsoft-IE  |  363       |           |
-Microsoft-IE  |  364       |           |
-Microsoft-IE  |  365       |           |
-Microsoft-IE  |  366       |           |
-Microsoft-IE  |  367       |           |
-Microsoft-IE  |  368       |           |
-Microsoft-IE  |  369       |           |
-Microsoft-IE  |  370       |           |
-Microsoft-IE  |  375       |           |
-Microsoft-IE  |  383       |           |
-Microsoft-IE  |  384       |           |
-Microsoft-IE  |  385       |           |
-Microsoft-IE  |  386       |           |
-Microsoft-IE  |  387       |           |
-Microsoft-IE  |  388       |           |
-Microsoft-IE  |  389       |           |
-Microsoft-IE  |  390       |           |
-Microsoft-IE  |  391       |           |
-Microsoft-IE  |  392       |           |
-Microsoft-IE  |  393       |           |
-Microsoft-IE  |  394       |           |
-Microsoft-IE  |  395       |           |
-Microsoft-IE  |  396       |           |
-Microsoft-IE  |  397       |           |
-Microsoft-IE  |  398       |           |
-Microsoft-IE  |  399       |           |
-Microsoft-IE  |  400       |           |
-Microsoft-IE  |  401       |           |
-Microsoft-IE  |  402       |           |
-Microsoft-IE  |  403       |           |
-Microsoft-IE  |  404       |           |
-Microsoft-IE  |  405       |           |
-Microsoft-IE  |  406       |           |
-Microsoft-IE  |  407       |           |
-Microsoft-IE  |  408       |           |
-Microsoft-IE  |  409       |           |
-Microsoft-IE  |  410       |           |
-Microsoft-IE  |  411       |           |
-Microsoft-IE  |  412       |           |
-Microsoft-IE  |  413       |           |
-Microsoft-IE  |  414       |           |
-Microsoft-IE  |  415       |           |
-Microsoft-IE  |  430       |           |
-Microsoft-IE  |  431       |           |
-Microsoft-IE  |  432       |           |
-Microsoft-IE  |  433       |           |
-Microsoft-IE  |  434       |           |
-Microsoft-IE  |  435       |           |
-Microsoft-IE  |  436       |           |
-Microsoft-IE  |  437       |           |
-Microsoft-IE  |  438       |           |
-Microsoft-IE  |  439       |           |
-Microsoft-IE  |  440       |           |
-Microsoft-IE  |  441       |           |
-Microsoft-IE  |  442       |           |
-Microsoft-IE  |  443       |           |
-Microsoft-IE  |  444       |           |
-Microsoft-IE  |  445       |           |
-Microsoft-IE  |  446       |           |
-Microsoft-IE  |  447       |           |
-Microsoft-IE  |  448       |           |
-Microsoft-IE  |  449       |           |
-Microsoft-IE  |  450       |           |
-Microsoft-IE  |  451       |           |
-Microsoft-IE  |  452       |           |
-Microsoft-IE  |  453       |           |
-Microsoft-IE  |  456       |           |
-Microsoft-IE  |  457       |           |
-Microsoft-IE  |  458       |           |
-Microsoft-IE  |  459       |           |
-Microsoft-IE  |  460       |           |
-Microsoft-IE  |  461       |           |
-Microsoft-IE  |  462       |           |
-Microsoft-IE  |  463       |           |
-Microsoft-IE  |  464       |           |
-Microsoft-IE  |  465       |           |
-Microsoft-IE  |  466       |           |
-Microsoft-IE  |  467       |           |
-Microsoft-IE  |  468       |           |
-Microsoft-IE  |  469       |           |
-Microsoft-IE  |  470       |           |
-Microsoft-IE  |  471       |           |
-Microsoft-IE  |  472       |           |
-Microsoft-IE  |  473       |           |
-Microsoft-IE  |  474       |           |
-Microsoft-IE  |  475       |           |
-Microsoft-IE  |  476       |           |
-Microsoft-IE  |  477       |           |
-Microsoft-IE  |  478       |           |
-Microsoft-IE  |  479       |           |
-Microsoft-IE  |  480       |           |
-Microsoft-IE  |  481       |           |
-Microsoft-IE  |  482       |           |
-Microsoft-IE  |  483       |           |
-Microsoft-IE  |  484       |           |
-Microsoft-IE  |  485       |           |
-Microsoft-IE  |  486       |           |
-Microsoft-IE  |  487       |           |
-Microsoft-IE  |  488       |           |
-Microsoft-IE  |  489       |           |
-Microsoft-IE  |  490       |           |
-Microsoft-IE  |  491       |           |
-Microsoft-IE  |  492       |           |
-Microsoft-IE  |  493       |           |
-Microsoft-IE  |  494       |           |
-Microsoft-IE  |  495       |           |
-Microsoft-IE  |  496       |           |
-Microsoft-IE  |  497       |           |
-Microsoft-IE  |  498       |           |
-Microsoft-IE  |  499       |           |
-Microsoft-IE  |  500       |           |
-Microsoft-IE  |  501       |           |
-Microsoft-IE  |  502       |           |
-Microsoft-IE  |  503       |           |
-Microsoft-IE  |  504       |           |
-Microsoft-IE  |  505       |           |
-Microsoft-IE  |  506       |           |
-Microsoft-IE  |  507       |           |
-Microsoft-IE  |  508       |           |
-Microsoft-IE  |  509       |           |
-Microsoft-IE  |  510       |           |
-Microsoft-IE  |  511       |           |
-Microsoft-IE  |  512       |           |
-Microsoft-IE  |  513       |           |
-Microsoft-IE  |  514       |           |
-Microsoft-IE  |  515       |           |
-Microsoft-IE  |  516       |           |
-Microsoft-IE  |  517       |           |
-Microsoft-IE  |  518       |           |
-Microsoft-IE  |  519       |           |
-Microsoft-IE  |  520       |           |
-Microsoft-IE  |  521       |           |
-Microsoft-IE  |  522       |           |
-Microsoft-IE  |  523       |           |
-Microsoft-IE  |  524       |           |
-Microsoft-IE  |  525       |           |
-Microsoft-IE  |  526       |           |
-Microsoft-IE  |  527       |           |
-Microsoft-IE  |  528       |           |
-Microsoft-IE  |  528       |           |
-Microsoft-IE  |  529       |           |
-Microsoft-IE  |  529       |           |
-Microsoft-IE  |  530       |           |
-Microsoft-IE  |  530       |           |
-Microsoft-IE  |  531       |           |
-Microsoft-IE  |  531       |           |
-Microsoft-IE  |  532       |           |
-Microsoft-IE  |  533       |           |
-Microsoft-IE  |  534       |           |
-Microsoft-IE  |  535       |           |
-Microsoft-IE  |  536       |           |
-Microsoft-IE  |  537       |           |
-Microsoft-IE  |  538       |           |
-Microsoft-IE  |  539       |           |
-Microsoft-IE  |  540       |           |
-Microsoft-IE  |  541       |           |
-Microsoft-IE  |  542       |           |
-Microsoft-IE  |  543       |           |
-Microsoft-IE  |  544       |           |
-Microsoft-IE  |  545       |           |
-Microsoft-IE  |  546       |           |
-Microsoft-IE  |  547       |           |
-Microsoft-IE  |  548       |           |
-Microsoft-IE  |  549       |           |
-Microsoft-IE  |  550       |           |
-Microsoft-IE  |  551       |           |
-Microsoft-IE  |  552       |           |
-Microsoft-IE  |  553       |           |
-Microsoft-IE  |  554       |           |
-Microsoft-IE  |  555       |           |
-Microsoft-IE  |  556       |           |
-Microsoft-IE  |  557       |           |
-Microsoft-IE  |  558       |           |
-Microsoft-IE  |  559       |           |
-Microsoft-IE  |  560       |           |
-Microsoft-IE  |  561       |           |
-Microsoft-IE  |  562       |           |
-Microsoft-IE  |  563       |           |
-Microsoft-IE  |  564       |           |
-Microsoft-IE  |  565       |           |
-Microsoft-IE  |  566       |           |
-Microsoft-IE  |  567       |           |
-Microsoft-IE  |  568       |           |
-Microsoft-IE  |  571       |           |
-Microsoft-IE  |  572       |           |
-Microsoft-IE  |  573       |           |
-Microsoft-IE  |  574       |           |
-Microsoft-IE  |  575       |           |
-Microsoft-IE  |  576       |           |
-Microsoft-IE  |  577       |           |
-Microsoft-IE  |  578       |           |
-Microsoft-IE  |  579       |           |
-Microsoft-IE  |  580       |           |
-Microsoft-IE  |  581       |           |
-Microsoft-IE  |  582       |           |
-Microsoft-IE  |  583       |           |
-Microsoft-IE  |  584       |           |
-Microsoft-IE  |  585       |           |
-Microsoft-IE  |  586       |           |
-Microsoft-IE  |  587       |           |
-Microsoft-IE  |  588       |           |
-Microsoft-IE  |  589       |           |
-Microsoft-IE  |  590       |           |
-Microsoft-IE  |  591       |           |
-Microsoft-IE  |  592       |           |
-Microsoft-IE  |  593       |           |
-Microsoft-IE  |  594       |           |
-Microsoft-IE  |  595       |           |
-Microsoft-IE  |  596       |           |
-Microsoft-IE  |  597       |           |
-Microsoft-IE  |  598       |           |
-Microsoft-IE  |  599       |           |
-Microsoft-IE  |  600       |           |
-Microsoft-IE  |  601       |           |
-Microsoft-IE  |  602       |           |
-Microsoft-IE  |  603       |           |
-Microsoft-IE  |  604       |           |
-Microsoft-IE  |  605       |           |
-Microsoft-IE  |  606       |           |
-Microsoft-IE  |  607       |           |
-Microsoft-IE  |  608       |           |
-Microsoft-IE  |  609       |           |
-Microsoft-IE  |  610       |           |
-Microsoft-IE  |  611       |           |
-Microsoft-IE  |  612       |           |
-Microsoft-IE  |  613       |           |
-Microsoft-IE  |  614       |           |
-Microsoft-IE  |  615       |           |
-Microsoft-IE  |  616       |           |
-Microsoft-IE  |  617       |           |
-Microsoft-IE  |  618       |           |
-Microsoft-IE  |  619       |           |
-Microsoft-IE  |  620       |           |
-Microsoft-IE  |  621       |           |
-Microsoft-IE  |  622       |           |
-Microsoft-IE  |  623       |           |
-Microsoft-IE  |  624       |           |
-Microsoft-IE  |  625       |           |
-Microsoft-IE  |  626       |           |
-Microsoft-IE  |  627       |           |
-Microsoft-IE  |  628       |           |
-Microsoft-IE  |  629       |           |
-Microsoft-IE  |  630       |           |
-Microsoft-IE  |  631       |           |
-Microsoft-IE  |  632       |           |
-Microsoft-IE  |  633       |           |
-Microsoft-IE  |  634       |           |
-Microsoft-IE  |  635       |           |
-Microsoft-IE  |  636       |           |
-Microsoft-IE  |  637       |           |
-Microsoft-IE  |  638       |           |
-Microsoft-IE  |  639       |           |
-Microsoft-IE  |  640       |           |
-Microsoft-IE  |  641       |           |
-Microsoft-IE  |  642       |           |
-Microsoft-IE  |  643       |           |
-Microsoft-IE  |  644       |           |
-Microsoft-IE  |  645       |           |
-Microsoft-IE  |  740       |           |
-Microsoft-IE  |  741       |           |
-Microsoft-IE  |  742       |           |
-Microsoft-IE  |  743       |           |
-Microsoft-IE  |  744       |           |
-Microsoft-IE  |  745       |           |
+Provider      |  Level        |  Event ID  |  Version  |  Channel  |  Task                                                           |  Opcode  |  Keyword                              |  Message
+--------------|---------------|------------|-----------|-----------|-----------------------------------------------------------------|----------|---------------------------------------|---------
+Microsoft-IE  |               |  1         |  0        |           |  Mshtml_CDoc_OnPaint                                            |  Start   |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  2         |  0        |           |  Mshtml_CDoc_OnPaint                                            |  Stop    |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  3         |  0        |           |  Mshtml_CMarkup_Layout                                          |  Start   |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  4         |  0        |           |  Mshtml_CMarkup_Layout                                          |  Stop    |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  5         |  0        |           |  Mshtml_CMarkup_BackgroundLayout                                |          |  primarynav                           |
+Microsoft-IE  |               |  6         |  0        |           |  Mshtml_CMarkup_OnLoadStatusDone                                |          |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  7         |  0        |           |  Mshtml_CMarkup_DOMContentLoadedEvent_Start                     |  Start   |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  8         |  0        |           |  Mshtml_CMarkup_DOMContentLoadedEvent_Stop                      |  Stop    |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  9         |  0        |           |  Mshtml_CMarkup_LoadEvent_Start                                 |  Start   |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  10        |  0        |           |  Mshtml_CMarkup_LoadEvent_Stop                                  |  Stop    |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  32        |  0        |           |  Mshtml_CFormElement_DoSubmit                                   |          |  primarynav                           |
+Microsoft-IE  |               |  33        |  0        |           |  Mshtml_CDoc_ExecuteScriptURL                                   |          |  primarynav                           |
+Microsoft-IE  |               |  34        |  0        |           |  AntiPhishing_Evaluate                                          |  Start   |  primarynav ap                        |
+Microsoft-IE  |               |  35        |  0        |           |  AntiPhishing_Evaluate                                          |  Stop    |  primarynav ap                        |
+Microsoft-IE  |               |  36        |  0        |           |  AntiPhishing_ProcessingComplete                                |          |  primarynav ap                        |
+Microsoft-IE  |               |  37        |  0        |           |  Mshtml_CDwnBindData_OnProgress                                 |  Start   |  primarynav                           |
+Microsoft-IE  |               |  38        |  0        |           |  Mshtml_CDwnBindData_OnProgress                                 |  Stop    |  primarynav                           |
+Microsoft-IE  |               |  39        |  0        |           |  Mshtml_CDwnBindData_Bind                                       |  Start   |  primarynav                           |
+Microsoft-IE  |               |  40        |  0        |           |  Mshtml_CDwnBindData_Bind                                       |  Stop    |  primarynav                           |
+Microsoft-IE  |               |  41        |  0        |           |  Mshtml_CHtmPre_Suspend                                         |          |  primarynav                           |
+Microsoft-IE  |               |  42        |  0        |           |  Mshtml_CHtmPre_SpeculativeRejected                             |          |  primarynav                           |
+Microsoft-IE  |               |  43        |  0        |           |  Mshtml_CHtmPre_ScriptStart                                     |          |  primarynav                           |
+Microsoft-IE  |               |  44        |  0        |           |  Mshtml_HtmPost_PostManKillTimer                                |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  45        |  0        |           |  Mshtml_HtmPost_PostManSetTimer                                 |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  46        |  0        |           |  Mshtml_HtmPost_PostManOnTimer                                  |  Start   |  subsystem mshtml pageloadbreakdown   |
+Microsoft-IE  |               |  47        |  0        |           |  Mshtml_HtmPost_PostManOnTimer                                  |  Stop    |  subsystem mshtml pageloadbreakdown   |
+Microsoft-IE  |               |  48        |  0        |           |  Mshtml_HtmPost_SetFlag                                         |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  49        |  0        |           |  Mshtml_HtmPost_ClearFlag                                       |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  50        |  0        |           |  Mshtml_HtmPost_AbandonTimeslice                                |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  51        |  0        |           |  Mshtml_HtmPost_YieldToPreparser                                |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  52        |  0        |           |  Mshtml_HtmPost_YieldToPreparser                                |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  53        |  0        |           |  Mshtml_HtmPost_OnPostDone                                      |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  54        |  0        |           |  Mshtml_CScriptElement_CommitCode                               |          |  primarynav                           |
+Microsoft-IE  |               |  55        |  0        |           |  Mshtml_CHtmRootParseCtx_ElementsAdded                          |          |  subsystem                            |
+Microsoft-IE  |               |  56        |  0        |           |  Mshtml_CMarkup_InvalDoc                                        |          |  subsystem                            |
+Microsoft-IE  |               |  57        |  0        |           |  Mshtml_NotifyGoesInteractive                                   |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  58        |  0        |           |  Mshtml_NotifyGoesInteractive                                   |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  59        |  0        |           |  Mshtml_CMarkup_SwitchMarkup                                    |  Start   |  subsystem pageloadbreakdown          |
+Microsoft-IE  |               |  60        |  0        |           |  Mshtml_CMarkup_SwitchMarkup                                    |  Stop    |  subsystem pageloadbreakdown          |
+Microsoft-IE  |               |  61        |  0        |           |  Mshtml_CMarkup_UnloadContents                                  |  Start   |  subsystem pageloadbreakdown          |
+Microsoft-IE  |               |  62        |  0        |           |  Mshtml_CMarkup_UnloadContents                                  |  Stop    |  subsystem pageloadbreakdown          |
+Microsoft-IE  |               |  63        |  0        |           |  Mshtml_InitImageSizeCache                                      |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  64        |  0        |           |  Mshtml_InitImageSizeCache                                      |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  65        |  0        |           |  Mshtml_CDoc_Running2InplaceInvalDoc                            |          |  subsystem                            |
+Microsoft-IE  |               |  66        |  0        |           |  Mshtml_CView_InvalidateRect                                    |          |  subsystem                            |
+Microsoft-IE  |               |  67        |  0        |           |  Mshtml_CView_InvalidateRgn                                     |          |  subsystem                            |
+Microsoft-IE  |               |  68        |  0        |           |  Mshtml_CDoc_Invalidate                                         |          |  subsystem                            |
+Microsoft-IE  |               |  69        |  0        |           |  Mshtml_CHTMLoad_Write                                          |          |  primarynav                           |
+Microsoft-IE  |               |  70        |  0        |           |  Mshtml_CWindow_SuperNavigate2                                  |  Start   |  primarynav                           |
+Microsoft-IE  |               |  71        |  0        |           |  Mshtml_CWindow_SuperNavigate2                                  |  Stop    |  primarynav                           |
+Microsoft-IE  |               |  72        |  0        |           |  Mshtml_CImgHelper_RequestLayout                                |          |  primarynav                           |
+Microsoft-IE  |               |  73        |  0        |           |  Mshtml_HtmPre_Run                                              |  Start   |  primarynav mshtml pageloadbreakdown  |
+Microsoft-IE  |               |  74        |  0        |           |  Mshtml_HtmPre_Run                                              |  Stop    |  primarynav mshtml pageloadbreakdown  |
+Microsoft-IE  |               |  75        |  0        |           |  Mshtml_CImgTaskExec                                            |  Start   |  primarynav                           |
+Microsoft-IE  |               |  76        |  0        |           |  Mshtml_CImgTaskExec                                            |  Stop    |  primarynav                           |
+Microsoft-IE  |               |  77        |  0        |           |  Mshtml_CImgTask_ReadYield                                      |  Start   |  primarynav                           |
+Microsoft-IE  |               |  78        |  0        |           |  Mshtml_CImgTask_ReadYield                                      |  Stop    |  primarynav                           |
+Microsoft-IE  |               |  79        |  0        |           |  Mshtml_CDwnTaskExec_ThreadExecBail                             |          |  primarynav                           |
+Microsoft-IE  |               |  80        |  0        |           |  Mshtml_CDwnTaskExec_ThreadExecRun                              |  Start   |  primarynav                           |
+Microsoft-IE  |               |  81        |  0        |           |  Mshtml_CDwnTaskExec_ThreadExecRun                              |  Stop    |  primarynav                           |
+Microsoft-IE  |               |  82        |  0        |           |  Mshtml_CWindow_Script                                          |  Start   |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  83        |  0        |           |  Mshtml_CWindow_Script                                          |  Stop    |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  84        |  0        |           |  Mshtml_CWindow_CommitCodeLight                                 |  Start   |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  85        |  0        |           |  Mshtml_CWindow_CommitCodeLight                                 |  Stop    |  primarynav pageloadbreakdown         |
+Microsoft-IE  |               |  86        |  0        |           |  Mshtml_HtmPost_PostManExecute                                  |  Start   |  primarynav mshtml pageloadbreakdown  |
+Microsoft-IE  |               |  87        |  0        |           |  Mshtml_HtmPost_PostManExecute                                  |  Stop    |  primarynav mshtml pageloadbreakdown  |
+Microsoft-IE  |               |  88        |  0        |           |  Mshtml_HtmPost_Exec                                            |  Start   |  primarynav mshtml pageloadbreakdown  |
+Microsoft-IE  |               |  89        |  0        |           |  Mshtml_HtmPost_Exec                                            |  Stop    |  primarynav mshtml pageloadbreakdown  |
+Microsoft-IE  |               |  90        |  0        |           |  Mshtml_CImgTask_Init                                           |          |  primarynav                           |
+Microsoft-IE  |               |  91        |  0        |           |  Mshtml_OnQuiescence                                            |          |  primarynav mshtml                    |
+Microsoft-IE  |               |  92        |  0        |           |  Mshtml_OffscreenBufferCreated                                  |          |  primarynav mshtml                    |
+Microsoft-IE  |               |  100       |  0        |           |  Mshtml_CDoc_PaintRect                                          |          |  subsystem                            |
+Microsoft-IE  |               |  101       |  0        |           |  Mshtml_CElement_HandleMouseHoverForStyle                       |  Start   |  subsystem                            |
+Microsoft-IE  |               |  102       |  0        |           |  Mshtml_CElement_HandleMouseHoverForStyle                       |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  103       |  0        |           |  Mshtml_CStorage_GetItem                                        |  Start   |  subsystem                            |
+Microsoft-IE  |               |  104       |  0        |           |  Mshtml_CStorage_GetItem                                        |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  105       |  0        |           |  Mshtml_CStorage_SetItem                                        |  Start   |  subsystem                            |
+Microsoft-IE  |               |  106       |  0        |           |  Mshtml_CStorage_SetItem                                        |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  107       |  0        |           |  Mshtml_CStorage_RemoveItem                                     |  Start   |  subsystem                            |
+Microsoft-IE  |               |  108       |  0        |           |  Mshtml_CStorage_RemoveItem                                     |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  109       |  0        |           |  Mshtml_CStorageHelper_CommitToDisk                             |  Start   |  subsystem                            |
+Microsoft-IE  |               |  110       |  0        |           |  Mshtml_CStorageHelper_CommitToDisk                             |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  111       |  0        |           |  Mshtml_CStorageHelper_MergeFromDisk                            |  Start   |  subsystem                            |
+Microsoft-IE  |               |  112       |  0        |           |  Mshtml_CStorageHelper_MergeFromDisk                            |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  113       |  0        |           |  Mshtml_CStorageListHelper_Load                                 |  Start   |  subsystem                            |
+Microsoft-IE  |               |  114       |  0        |           |  Mshtml_CStorageListHelper_Load                                 |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  115       |  0        |           |  Mshtml_CStorageListHelper_Save                                 |  Start   |  subsystem                            |
+Microsoft-IE  |               |  116       |  0        |           |  Mshtml_CStorageListHelper_Save                                 |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  117       |  0        |           |  Mshtml_DOM_Marshalling_GetDispID                               |  Start   |  marshalling                          |
+Microsoft-IE  |               |  118       |  0        |           |  Mshtml_DOM_Marshalling_GetDispID                               |  Stop    |  marshalling                          |
+Microsoft-IE  |               |  119       |  0        |           |  Mshtml_DOM_Marshalling_InvokeEx                                |  Start   |  marshalling                          |
+Microsoft-IE  |               |  120       |  0        |           |  Mshtml_DOM_Marshalling_InvokeEx                                |  Stop    |  marshalling                          |
+Microsoft-IE  |               |  121       |  0        |           |  Mshtml_DOM_Marshalling_Native                                  |  Start   |  marshalling                          |
+Microsoft-IE  |               |  122       |  0        |           |  Mshtml_DOM_Marshalling_Native                                  |  Stop    |  marshalling                          |
+Microsoft-IE  |               |  123       |  0        |           |  Mshtml_CSS_Parser                                              |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  123       |  1        |           |  Mshtml_CSS_Parser                                              |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  124       |  0        |           |  Mshtml_CSS_Parser                                              |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  124       |  1        |           |  Mshtml_CSS_Parser                                              |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  125       |  0        |           |  Mshtml_FormatCalculation_ComputeFormats                        |  Start   |  verbose                              |
+Microsoft-IE  |               |  126       |  0        |           |  Mshtml_FormatCalculation_ComputeFormats                        |  Stop    |  verbose                              |
+Microsoft-IE  |               |  127       |  0        |           |  JScript_GC                                                     |  Start   |  jscript                              |
+Microsoft-IE  |               |  128       |  0        |           |  JScript_GC                                                     |  Stop    |  jscript                              |
+Microsoft-IE  |               |  129       |  0        |           |  JScript_Parse                                                  |  Start   |  jscript                              |
+Microsoft-IE  |               |  130       |  0        |           |  JScript_Parse                                                  |  Stop    |  jscript                              |
+Microsoft-IE  |               |  131       |  0        |           |  JScript_Run                                                    |  Start   |  jscript_verbose pageloadbreakdown    |
+Microsoft-IE  |               |  132       |  0        |           |  JScript_Run                                                    |  Stop    |  jscript_verbose pageloadbreakdown    |
+Microsoft-IE  |               |  133       |  0        |           |  Mshtml_Collections_EnsureAry                                   |  Start   |  verbose                              |
+Microsoft-IE  |               |  134       |  0        |           |  Mshtml_Collections_EnsureAry                                   |  Stop    |  verbose                              |
+Microsoft-IE  |               |  135       |  0        |           |  Mshtml_DOM_Expando                                             |  Start   |  marshalling                          |
+Microsoft-IE  |               |  136       |  0        |           |  Mshtml_DOM_Expando                                             |  Stop    |  marshalling                          |
+Microsoft-IE  |               |  137       |  0        |           |  Mshtml_View_RenderView                                         |  Start   |  subsystem mshtml pageloadbreakdown   |
+Microsoft-IE  |               |  138       |  0        |           |  Mshtml_View_RenderView                                         |  Stop    |  subsystem mshtml pageloadbreakdown   |
+Microsoft-IE  |               |  139       |  0        |           |  Mshtml_View_OnViewQ                                            |          |  mshtml                               |
+Microsoft-IE  |               |  140       |  0        |           |  Mshtml_View_OnViewD                                            |          |  mshtml                               |
+Microsoft-IE  |               |  141       |  0        |           |  Mshtml_PrivacIE_BlockUrl                                       |  Start   |  subsystem privacie                   |
+Microsoft-IE  |               |  142       |  0        |           |  Mshtml_PrivacIE_BlockUrl                                       |  Stop    |  subsystem privacie                   |
+Microsoft-IE  |               |  143       |  0        |           |  Mshtml_PrivacIE_AddUrlToDB                                     |  Start   |  subsystem privacie                   |
+Microsoft-IE  |               |  144       |  0        |           |  Mshtml_PrivacIE_AddUrlToDB                                     |  Stop    |  subsystem privacie                   |
+Microsoft-IE  |               |  145       |  0        |           |  Mshtml_PrivacIE_AddToUserList                                  |  Start   |  subsystem privacie                   |
+Microsoft-IE  |               |  146       |  0        |           |  Mshtml_PrivacIE_AddToUserList                                  |  Stop    |  subsystem privacie                   |
+Microsoft-IE  |               |  147       |  0        |           |  Mshtml_PrivacIE_AddWebFilter                                   |  Start   |  subsystem privacie                   |
+Microsoft-IE  |               |  148       |  0        |           |  Mshtml_PrivacIE_AddWebFilter                                   |  Stop    |  subsystem privacie                   |
+Microsoft-IE  |               |  150       |  0        |           |  Mshtml_DOM_CustomSiteEvent                                     |          |  extended mshtml pagemark             |
+Microsoft-IE  |               |  151       |  0        |           |  Mshtml_Ole_OleLayout_Draw                                      |  Start   |  extended mshtml                      |
+Microsoft-IE  |               |  152       |  0        |           |  Mshtml_Ole_OleLayout_Draw                                      |  Stop    |  extended mshtml                      |
+Microsoft-IE  |               |  153       |  0        |           |  Mshtml_ScrollEvent                                             |          |  extended mshtml                      |
+Microsoft-IE  |               |  154       |  0        |           |  Mshtml_ZoomEvent                                               |          |  extended mshtml                      |
+Microsoft-IE  |               |  155       |  0        |           |  Mshtml_PrintPreview                                            |  Start   |  extended mshtml                      |
+Microsoft-IE  |               |  156       |  0        |           |  Mshtml_PrintPreview                                            |  Stop    |  extended mshtml                      |
+Microsoft-IE  |               |  157       |  0        |           |  Mshtml_CWindow_ExecScript                                      |  Start   |  primarynav mshtml                    |
+Microsoft-IE  |               |  158       |  0        |           |  Mshtml_CWindow_ExecScript                                      |  Stop    |  primarynav mshtml                    |
+Microsoft-IE  |               |  159       |  0        |           |  Mshtml_CssLayout_BuildBlocks                                   |  Start   |  extended mshtml                      |
+Microsoft-IE  |               |  160       |  0        |           |  Mshtml_CssLayout_BuildBlocks                                   |  Stop    |  extended mshtml                      |
+Microsoft-IE  |               |  161       |  0        |           |  Mshtml_CssLayout_BuildLayout                                   |  Start   |  extended mshtml                      |
+Microsoft-IE  |               |  162       |  0        |           |  Mshtml_CssLayout_BuildLayout                                   |  Stop    |  extended mshtml                      |
+Microsoft-IE  |               |  163       |  0        |           |  Mshtml_CssLayout_BuildDisplay                                  |  Start   |  verbose                              |
+Microsoft-IE  |               |  164       |  0        |           |  Mshtml_CssLayout_BuildDisplay                                  |  Stop    |  verbose                              |
+Microsoft-IE  |               |  165       |  0        |           |  Mshtml_XmlPre_Run                                              |  Start   |  primarynav mshtml                    |
+Microsoft-IE  |               |  166       |  0        |           |  Mshtml_XmlPre_Run                                              |  Stop    |  primarynav mshtml                    |
+Microsoft-IE  |               |  167       |  0        |           |  Mshtml_Render_Present                                          |          |  extended mshtml                      |
+Microsoft-IE  |               |  168       |  0        |           |  JScript_ByteCodeGen                                            |  Start   |  jscript                              |
+Microsoft-IE  |               |  169       |  0        |           |  JScript_ByteCodeGen                                            |  Stop    |  jscript                              |
+Microsoft-IE  |               |  170       |  0        |           |  JScript_NativeCodeGen                                          |  Start   |  jscript                              |
+Microsoft-IE  |               |  171       |  0        |           |  JScript_NativeCodeGen                                          |  Stop    |  jscript                              |
+Microsoft-IE  |               |  172       |  0        |           |  JScript_NativeCodeGenDelay                                     |  Start   |  jscript                              |
+Microsoft-IE  |               |  173       |  0        |           |  JScript_NativeCodeGenDelay                                     |  Stop    |  jscript                              |
+Microsoft-IE  |               |  174       |  0        |           |  JScript_CallOut                                                |  Start   |  jscript_verbose                      |
+Microsoft-IE  |               |  175       |  0        |           |  JScript_CallOut                                                |  Stop    |  jscript_verbose                      |
+Microsoft-IE  |               |  176       |  0        |           |  Mshtml_Dx_DeviceCreate                                         |  Start   |  extended mshtml pageloadbreakdown    |
+Microsoft-IE  |               |  177       |  0        |           |  Mshtml_Dx_DeviceCreate                                         |  Stop    |  extended mshtml pageloadbreakdown    |
+Microsoft-IE  |               |  178       |  0        |           |  Mshtml_Dx_TargetSurfaceEnsure                                  |  Start   |  subsystem pageloadbreakdown          |
+Microsoft-IE  |               |  179       |  0        |           |  Mshtml_Dx_TargetSurfaceEnsure                                  |  Stop    |  subsystem pageloadbreakdown          |
+Microsoft-IE  |               |  180       |  0        |           |  Mshtml_CImgTask_Decoded                                        |          |  primarynav                           |
+Microsoft-IE  |               |  181       |  0        |           |  Mshtml_CImgCacheEntry_Attach                                   |          |  subsystem                            |
+Microsoft-IE  |               |  182       |  0        |           |  Mshtml_CImgCacheEntry_PrepareToRender                          |          |  subsystem                            |
+Microsoft-IE  |               |  183       |  0        |           |  Mshtml_CImgCacheEntry_RemoveFromWS                             |          |  subsystem                            |
+Microsoft-IE  |               |  184       |  0        |           |  Mshtml_CImgCacheEntry_Destroy                                  |          |  subsystem                            |
+Microsoft-IE  |               |  185       |  0        |           |  Mshtml_CDwnInfo_CacheHit                                       |          |  subsystem                            |
+Microsoft-IE  |               |  186       |  0        |           |  Mshtml_Image_Draw                                              |          |  subsystem pageloadbreakdown          |
+Microsoft-IE  |               |  187       |  0        |           |  Mshtml_CImgInfo_Destroy                                        |          |  subsystem                            |
+Microsoft-IE  |               |  188       |  0        |           |  Mshtml_Print_Document                                          |  Start   |  subsystem                            |
+Microsoft-IE  |               |  189       |  0        |           |  Mshtml_Print_Document                                          |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  190       |  0        |           |  Mshtml_Print_Page                                              |  Start   |  subsystem                            |
+Microsoft-IE  |               |  191       |  0        |           |  Mshtml_Print_Page                                              |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  192       |  0        |           |  Mshtml_Scroll_SetOffset                                        |  Start   |  scroll                               |
+Microsoft-IE  |               |  193       |  0        |           |  Mshtml_Scroll_SetOffset                                        |  Stop    |  scroll                               |
+Microsoft-IE  |               |  194       |  0        |           |  Mshtml_Scroll_Frame                                            |          |  scroll                               |
+Microsoft-IE  |               |  195       |  0        |           |  Mshtml_Scroll_WaitForNextFrame                                 |  Start   |  scroll                               |
+Microsoft-IE  |               |  196       |  0        |           |  Mshtml_Scroll_WaitForNextFrame                                 |  Stop    |  scroll                               |
+Microsoft-IE  |               |  197       |  0        |           |  Mshtml_SAM_Allocate                                            |          |  verbose                              |
+Microsoft-IE  |               |  198       |  0        |           |  Mshtml_SAM_Free                                                |          |  verbose                              |
+Microsoft-IE  |               |  199       |  0        |           |  Mshtml_SAM_Segment_Create                                      |          |  verbose                              |
+Microsoft-IE  |               |  200       |  0        |           |  Mshtml_SAM_Segment_Delete                                      |          |  verbose                              |
+Microsoft-IE  |               |  201       |  0        |           |  Mshtml_AlignedTimer_Setup                                      |          |  paintbeat                            |
+Microsoft-IE  |               |  201       |  1        |           |  Mshtml_AlignedTimer_Setup                                      |          |  paintbeat                            |
+Microsoft-IE  |               |  202       |  0        |           |  Mshtml_AlignedTimer_Kill                                       |          |  paintbeat                            |
+Microsoft-IE  |               |  202       |  1        |           |  Mshtml_AlignedTimer_Kill                                       |          |  paintbeat                            |
+Microsoft-IE  |               |  203       |  0        |           |  Mshtml_AlignedTimer_Fire                                       |          |  paintbeat                            |
+Microsoft-IE  |               |  203       |  1        |           |  Mshtml_AlignedTimer_Fire                                       |          |  paintbeat                            |
+Microsoft-IE  |               |  204       |  0        |           |  Mshtml_AlignedBeat_Setup                                       |          |  paintbeat                            |
+Microsoft-IE  |               |  205       |  0        |           |  Mshtml_AlignedBeat_Kill                                        |          |  paintbeat                            |
+Microsoft-IE  |               |  206       |  0        |           |  Mshtml_AlignedBeat_Fire                                        |  Start   |  paintbeat                            |
+Microsoft-IE  |               |  207       |  0        |           |  Mshtml_AlignedBeat_Watchdog                                    |          |  paintbeat                            |
+Microsoft-IE  |               |  208       |  0        |           |  Mshtml_AlignedBeat_VSync                                       |          |  paintbeat                            |
+Microsoft-IE  |               |  209       |  0        |           |  Mshtml_AlignedBeat_VSyncStatus                                 |          |  paintbeat                            |
+Microsoft-IE  |               |  210       |  0        |           |  Mshtml_MsPerformance_FullyLoaded                               |          |  primarynav                           |
+Microsoft-IE  |               |  211       |  0        |           |  Mshtml_MsPerformance_Mark                                      |          |  primarynav                           |
+Microsoft-IE  |               |  212       |  0        |           |  Mshtml_MsPerformance_Measure                                   |          |  verbose                              |
+Microsoft-IE  |               |  213       |  0        |           |  Mshtml_AttachIDispImage                                        |          |  subsystem                            |
+Microsoft-IE  |               |  214       |  0        |           |  Mshtml_DetachIDispImage                                        |          |  subsystem                            |
+Microsoft-IE  |               |  215       |  0        |           |  Mshtml_LowPriMethodCall_Watchdog                               |          |  subsystem                            |
+Microsoft-IE  |               |  216       |  0        |           |  Mshtml_MediaEngine_Created                                     |          |  mediaengine                          |
+Microsoft-IE  |               |  217       |  0        |           |  Mshtml_MediaEngine_Play                                        |  Start   |  mediaengine                          |
+Microsoft-IE  |               |  218       |  0        |           |  Mshtml_MediaEngine_Play                                        |  Stop    |  mediaengine                          |
+Microsoft-IE  |               |  219       |  0        |           |  Mshtml_MediaEngine_Pause                                       |  Start   |  mediaengine                          |
+Microsoft-IE  |               |  220       |  0        |           |  Mshtml_MediaEngine_Pause                                       |  Stop    |  mediaengine                          |
+Microsoft-IE  |               |  221       |  0        |           |  Mshtml_MediaEngine_Seek                                        |  Start   |  mediaengine                          |
+Microsoft-IE  |               |  222       |  0        |           |  Mshtml_MediaEngine_Seek                                        |  Stop    |  mediaengine                          |
+Microsoft-IE  |               |  223       |  0        |           |  Mshtml_MediaEngine_Ended                                       |          |  mediaengine                          |
+Microsoft-IE  |               |  224       |  0        |           |  Mshtml_MediaEngine_PlaybackRateChange                          |          |  mediaengine                          |
+Microsoft-IE  |               |  225       |  0        |           |  Mshtml_MediaEngine_StreamInfo                                  |          |  mediaengine                          |
+Microsoft-IE  |               |  226       |  0        |           |  Mshtml_MediaEngine_VideoMediaType                              |          |  mediaengine                          |
+Microsoft-IE  |               |  227       |  0        |           |  Mshtml_MediaEngine_AudioMediaType                              |          |  mediaengine                          |
+Microsoft-IE  |               |  228       |  0        |           |  Mshtml_MediaEngine_VideoFramePresented                         |          |  mediaengine                          |
+Microsoft-IE  |               |  229       |  0        |           |  Mshtml_MediaEngine_VideoFrameDropped                           |          |  mediaengine                          |
+Microsoft-IE  |               |  230       |  0        |           |  Mshtml_MediaEngine_VideoQualityMessage                         |          |  mediaengine                          |
+Microsoft-IE  |               |  235       |  0        |           |  Mshtml_MediaEngine_AudioDataPresented                          |          |  mediaengine                          |
+Microsoft-IE  |               |  236       |  0        |           |  Mshtml_MediaEngine_VSyncTick                                   |          |  mediaengine                          |
+Microsoft-IE  |               |  237       |  0        |           |  Mshtml_MediaEngine_Destroyed                                   |          |  mediaengine                          |
+Microsoft-IE  |               |  238       |  0        |           |  Mshtml_CImgTask_LazyDecoded                                    |          |  subsystem                            |
+Microsoft-IE  |               |  239       |  0        |           |  Mshtml_CImgInfo_ForcedDecoding                                 |          |  subsystem                            |
+Microsoft-IE  |               |  240       |  0        |           |  Mshtml_CPaintController_NotReadyToPaint                        |          |  subsystem                            |
+Microsoft-IE  |               |  241       |  0        |           |  Mshtml_AlignedBeat_Fire                                        |  Stop    |  paintbeat                            |
+Microsoft-IE  |               |  242       |  0        |           |  Mshtml_CTimerMan_Wait                                          |  Start   |  paintbeat                            |
+Microsoft-IE  |               |  243       |  0        |           |  Mshtml_CTimerMan_Wait                                          |  Stop    |  paintbeat                            |
+Microsoft-IE  |               |  244       |  0        |           |  Mshtml_CHighFreqScheduler_Fire                                 |  Start   |  paintbeat                            |
+Microsoft-IE  |               |  245       |  0        |           |  Mshtml_CHighFreqScheduler_Fire                                 |  Stop    |  paintbeat                            |
+Microsoft-IE  |               |  246       |  0        |           |  Mshtml_CPaintController_CanNotPaintNow                         |          |  subsystem                            |
+Microsoft-IE  |               |  247       |  0        |           |  Mshtml_CMarkup_QME                                             |          |  primarynav                           |
+Microsoft-IE  |               |  248       |  0        |           |  Mshtml_IViewObjectPresentSite_Present                          |          |  subsystem                            |
+Microsoft-IE  |               |  249       |  0        |           |  Mshtml_IViewObjectPresentNotifySite_RequestFrame               |          |  subsystem                            |
+Microsoft-IE  |               |  250       |  0        |           |  Mshtml_MediaEngine_TransferVideoFrame                          |  Start   |  mediaengine                          |
+Microsoft-IE  |               |  251       |  0        |           |  Mshtml_MediaEngine_TransferVideoFrame                          |  Stop    |  mediaengine                          |
+Microsoft-IE  |               |  252       |  0        |           |  Mshtml_GlyphRun_Draw                                           |          |  subsystem pageloadbreakdown          |
+Microsoft-IE  |               |  253       |  0        |           |  Mshtml_Image_Offer                                             |          |  subsystem                            |
+Microsoft-IE  |               |  254       |  0        |           |  Mshtml_Image_Reclaim                                           |          |  subsystem                            |
+Microsoft-IE  |               |  255       |  0        |           |  Mshtml_Image_Reclaim_Fail                                      |          |  subsystem                            |
+Microsoft-IE  |               |  338       |  0        |           |  Mshtml_CTouchHelper_HandleTouchMessage                         |  Start   |  mshtml touch                         |
+Microsoft-IE  |               |  339       |  0        |           |  Mshtml_CTouchHelper_HandleTouchMessage                         |  Stop    |  mshtml touch                         |
+Microsoft-IE  |               |  340       |  0        |           |  Mshtml_CTouchHelper_DispatchTouchEvent                         |  Start   |  mshtml touch                         |
+Microsoft-IE  |               |  341       |  0        |           |  Mshtml_CTouchHelper_DispatchTouchEvent                         |  Stop    |  mshtml touch                         |
+Microsoft-IE  |               |  342       |  0        |           |  Mshtml_Animations_Update                                       |  Start   |  animation                            |
+Microsoft-IE  |               |  343       |  0        |           |  Mshtml_Animations_Update                                       |  Stop    |  animation                            |
+Microsoft-IE  |               |  348       |  0        |           |  Mshtml_MediaElement_PlayPause                                  |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  349       |  0        |           |  Mshtml_MediaElement_PlayPause                                  |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  350       |  0        |           |  Mshtml_MediaElement_PlayPause                                  |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  351       |  0        |           |  Mshtml_MediaElement_PlayPause                                  |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  352       |  0        |           |  Mshtml_MediaElement_VolumeChange                               |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  353       |  0        |           |  Mshtml_MediaElement_VolumeChange                               |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  354       |  0        |           |  Mshtml_MediaElement_VolumeChange                               |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  355       |  0        |           |  Mshtml_MediaElement_VolumeChange                               |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  356       |  0        |           |  Mshtml_MediaElement_Seek                                       |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  357       |  0        |           |  Mshtml_MediaElement_Seek                                       |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  358       |  0        |           |  Mshtml_MediaElement_Seek                                       |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  359       |  0        |           |  Mshtml_MediaElement_Seek                                       |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  360       |  0        |           |  Mshtml_MediaElement_Seek                                       |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  361       |  0        |           |  Mshtml_MediaElement_Zoom                                       |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  362       |  0        |           |  Mshtml_MediaElement_Zoom                                       |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  363       |  0        |           |  Mshtml_MediaElement_Zoom                                       |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  364       |  0        |           |  Mshtml_MediaElement_Zoom                                       |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  365       |  0        |           |  Mshtml_CElement_HandleMouseForActiveStyle                      |  Start   |  subsystem                            |
+Microsoft-IE  |               |  366       |  0        |           |  Mshtml_CElement_HandleMouseForActiveStyle                      |  Stop    |  subsystem                            |
+Microsoft-IE  |               |  367       |  0        |           |  Mshtml_HTMLSpell_InitSpeller                                   |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  368       |  0        |           |  Mshtml_HTMLSpell_InitSpeller                                   |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  369       |  0        |           |  Mshtml_HTMLSpell_SpellCheckingEngine                           |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  370       |  0        |           |  Mshtml_HTMLSpell_SpellCheckingEngine                           |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  375       |  0        |           |  Mshtml_CElement_GetTooltipText                                 |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  383       |  0        |           |  Mshtml_Composition_LayerManager_Initialize                     |  Start   |  composition                          |
+Microsoft-IE  |               |  384       |  0        |           |  Mshtml_Composition_LayerManager_Initialize                     |  Stop    |  composition                          |
+Microsoft-IE  |               |  385       |  0        |           |  Mshtml_Composition_Destination_PreRender                       |  Start   |  composition                          |
+Microsoft-IE  |               |  386       |  0        |           |  Mshtml_Composition_Destination_PreRender                       |  Stop    |  composition                          |
+Microsoft-IE  |               |  387       |  0        |           |  Mshtml_Composition_Destination_RenderLayer                     |  Start   |  composition                          |
+Microsoft-IE  |               |  388       |  0        |           |  Mshtml_Composition_Destination_RenderLayer                     |  Stop    |  composition                          |
+Microsoft-IE  |               |  389       |  0        |           |  Mshtml_Composition_Create_Layer                                |  Start   |  composition                          |
+Microsoft-IE  |               |  390       |  0        |           |  Mshtml_Composition_Create_Layer                                |  Stop    |  composition                          |
+Microsoft-IE  |               |  391       |  0        |           |  Mshtml_Composition_Destroy_Layer_Group                         |  Start   |  composition                          |
+Microsoft-IE  |               |  392       |  0        |           |  Mshtml_Composition_Destroy_Layer_Group                         |  Stop    |  composition                          |
+Microsoft-IE  |               |  393       |  0        |           |  Mshtml_Composition_Destroy_All_Layers                          |  Start   |  composition                          |
+Microsoft-IE  |               |  394       |  0        |           |  Mshtml_Composition_Destroy_All_Layers                          |  Stop    |  composition                          |
+Microsoft-IE  |               |  395       |  0        |           |  Mshtml_Composition_Update_Implicit_Layers                      |  Start   |  composition                          |
+Microsoft-IE  |               |  396       |  0        |           |  Mshtml_Composition_Update_Implicit_Layers                      |  Stop    |  composition                          |
+Microsoft-IE  |               |  397       |  0        |           |  Mshtml_Composition_Layer_Invalidate                            |          |  subsystem composition                |
+Microsoft-IE  |               |  398       |  0        |           |  Mshtml_CTouchHelper_DispatchGestureEvent                       |  Start   |  mshtml touch                         |
+Microsoft-IE  |               |  399       |  0        |           |  Mshtml_CTouchHelper_DispatchGestureEvent                       |  Stop    |  mshtml touch                         |
+Microsoft-IE  |               |  400       |  0        |           |  Mshtml_CTouchHelper_DispatchGestureEvent                       |  Start   |  mshtml touch                         |
+Microsoft-IE  |               |  401       |  0        |           |  Mshtml_CTouchHelper_DispatchGestureEvent                       |  Stop    |  mshtml touch                         |
+Microsoft-IE  |               |  402       |  0        |           |  Mshtml_CTouchHelper_DispatchGestureEvent                       |  Start   |  mshtml touch                         |
+Microsoft-IE  |               |  403       |  0        |           |  Mshtml_CTouchHelper_DispatchGestureEvent                       |  Stop    |  mshtml touch                         |
+Microsoft-IE  |               |  404       |  0        |           |  Mshtml_MediaElement_PlayTo_Connect                             |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  405       |  0        |           |  Mshtml_MediaElement_PlayTo_Connect                             |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  406       |  0        |           |  Mshtml_MediaElement_PlayTo_Disconnect                          |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  407       |  0        |           |  Mshtml_MediaElement_PlayTo_Disconnect                          |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  408       |  0        |           |  Mshtml_Animations_Animating                                    |  Start   |  animation                            |
+Microsoft-IE  |               |  409       |  0        |           |  Mshtml_Animations_Animating                                    |  Stop    |  animation                            |
+Microsoft-IE  |               |  410       |  0        |           |  Mshtml_Animations_Transitioning                                |  Start   |  animation                            |
+Microsoft-IE  |               |  411       |  0        |           |  Mshtml_Animations_Transitioning                                |  Stop    |  animation                            |
+Microsoft-IE  |               |  412       |  0        |           |  Mshtml_HTMLSpell_Notify                                        |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  413       |  0        |           |  Mshtml_HTMLSpell_Notify                                        |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  414       |  0        |           |  Mshtml_HTMLSpell_CreateSpeller                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  415       |  0        |           |  Mshtml_HTMLSpell_CreateSpeller                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  430       |  0        |           |  Mshtml_SetTimeout_Url                                          |          |  paintbeat                            |
+Microsoft-IE  |               |  431       |  0        |           |  Mshtml_FormsTimer_Set                                          |          |  paintbeat                            |
+Microsoft-IE  |               |  432       |  0        |           |  Mshtml_FormsTimer_Reset                                        |          |  paintbeat                            |
+Microsoft-IE  |               |  433       |  0        |           |  Mshtml_FormsTimer_Kill                                         |          |  paintbeat                            |
+Microsoft-IE  |               |  434       |  0        |           |  Mshtml_FormsTimer_OnTimer                                      |          |  paintbeat                            |
+Microsoft-IE  |               |  435       |  0        |           |  Mshtml_MediaElement_Loading                                    |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  436       |  0        |           |  Mshtml_MediaElement_Loading                                    |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  437       |  0        |           |  Mshtml_MediaElement_Visualization                              |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  438       |  0        |           |  Mshtml_MediaElement_Visualization                              |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  439       |  0        |           |  Mshtml_MediaElement_Buffering                                  |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  440       |  0        |           |  Mshtml_TouchSelection_GripperShown                             |          |  mshtml touch                         |
+Microsoft-IE  |               |  441       |  0        |           |  Mshtml_TouchSelection_GripperHidden                            |          |  mshtml touch                         |
+Microsoft-IE  |               |  442       |  0        |           |  Mshtml_TouchSelection_CaretShown                               |          |  mshtml touch                         |
+Microsoft-IE  |               |  443       |  0        |           |  Mshtml_TouchSelection_CaretHidden                              |          |  mshtml touch                         |
+Microsoft-IE  |               |  444       |  0        |           |  Mshtml_TouchSelection_CaretPlacement                           |  Start   |  mshtml touch                         |
+Microsoft-IE  |               |  445       |  0        |           |  Mshtml_TouchSelection_CaretPlacement                           |  Stop    |  mshtml touch                         |
+Microsoft-IE  |               |  446       |  0        |           |  Mshtml_TouchSelection_TouchSelectionManipulation_Initiation    |  Start   |  mshtml touch                         |
+Microsoft-IE  |               |  447       |  0        |           |  Mshtml_TouchSelection_TouchSelectionManipulation_Initiation    |  Stop    |  mshtml touch                         |
+Microsoft-IE  |               |  448       |  0        |           |  Mshtml_TouchSelection_TouchSelectionManipulation_Completion    |  Start   |  mshtml touch                         |
+Microsoft-IE  |               |  449       |  0        |           |  Mshtml_TouchSelection_TouchSelectionManipulation_Completion    |  Stop    |  mshtml touch                         |
+Microsoft-IE  |               |  450       |  0        |           |  Mshtml_HTMLSpell_ShowContextMenu                               |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  451       |  0        |           |  Mshtml_HTMLSpell_ShowContextMenu                               |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  452       |  0        |           |  Mshtml_HTMLSpell_ContextMenuInvoke                             |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  453       |  0        |           |  Mshtml_HTMLSpell_ContextMenuInvoke                             |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  456       |  0        |           |  Mshtml_Composition_Scrollbar_Paint                             |          |  composition                          |
+Microsoft-IE  |               |  457       |  0        |           |  Mshtml_OleSite_Immersive_Incompatible                          |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  458       |  0        |           |  Mshtml_UrlAction_ActiveX_Immersive_Incompatible                |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  459       |  0        |           |  Mshtml_MediaElement_FrameStep                                  |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  460       |  0        |           |  Mshtml_MediaElement_FrameStep                                  |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  461       |  0        |           |  Mshtml_MediaElement_FrameStep                                  |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  462       |  0        |           |  Mshtml_IndependentAnimation_Start                              |  Start   |  animation                            |
+Microsoft-IE  |               |  463       |  0        |           |  Mshtml_IndependentAnimation_Stop                               |  Stop    |  animation                            |
+Microsoft-IE  |               |  464       |  0        |           |  Mshtml_IndependentAnimation_Candidacy_Failure                  |          |  animation                            |
+Microsoft-IE  |               |  465       |  0        |           |  Mshtml_Composition_Layer_PaintRect                             |          |  subsystem composition                |
+Microsoft-IE  |               |  466       |  0        |           |  Mshtml_PredictedView_Update                                    |          |  composition                          |
+Microsoft-IE  |               |  467       |  0        |           |  Mshtml_MediaElement_EndOfMedia                                 |          |  subsystem mshtml                     |
+Microsoft-IE  |               |  468       |  0        |           |  Mshtml_CActiveScriptHolder_Construct                           |          |  mshtml                               |
+Microsoft-IE  |               |  469       |  0        |           |  Mshtml_CActiveScriptHolder_Close                               |          |  mshtml                               |
+Microsoft-IE  |               |  470       |  0        |           |  Mshtml_CJScript9Holder_TypeSystem_Init                         |  Start   |  mshtml                               |
+Microsoft-IE  |               |  471       |  0        |           |  Mshtml_CJScript9Holder_TypeSystem_Init                         |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  472       |  0        |           |  Mshtml_CScriptCollection_WebOC_FirstScriptExecutionEvent       |  Start   |  mshtml                               |
+Microsoft-IE  |               |  473       |  0        |           |  Mshtml_CScriptCollection_WebOC_FirstScriptExecutionEvent       |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  474       |  0        |           |  Mshtml_CScriptCollection_DevToolbar_FirstScriptExecutionEvent  |  Start   |  mshtml                               |
+Microsoft-IE  |               |  475       |  0        |           |  Mshtml_CScriptCollection_DevToolbar_FirstScriptExecutionEvent  |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  476       |  0        |           |  Mshtml_CActiveScriptHolder_WebPlatform_NewScriptEngineEvent    |  Start   |  mshtml                               |
+Microsoft-IE  |               |  477       |  0        |           |  Mshtml_CActiveScriptHolder_WebPlatform_NewScriptEngineEvent    |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  478       |  0        |           |  JScript_Parse                                                  |          |  jscript_verbose                      |
+Microsoft-IE  |               |  479       |  0        |           |  Mshtml_CView_HitTest_InActiveView                              |          |  mshtml                               |
+Microsoft-IE  |               |  480       |  0        |           |  Mshtml_CView_HitTest_MessageContext                            |  Start   |  mshtml                               |
+Microsoft-IE  |               |  481       |  0        |           |  Mshtml_CView_HitTest_MessageContext                            |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  482       |  0        |           |  Mshtml_CView_ExecuteInvalidationTasks                          |  Start   |  mshtml                               |
+Microsoft-IE  |               |  483       |  0        |           |  Mshtml_CView_ExecuteInvalidationTasks                          |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  484       |  0        |           |  Mshtml_DisplayTreeOpen                                         |  Start   |  verbose                              |
+Microsoft-IE  |               |  485       |  0        |           |  Mshtml_DisplayTreeOpen                                         |  Stop    |  verbose                              |
+Microsoft-IE  |               |  486       |  0        |           |  Mshtml_CDirectManipulationHandler_TouchHandler_Configuration   |          |  verbose                              |
+Microsoft-IE  |               |  487       |  0        |           |  Mshtml_CDoc_OnMouseMessage                                     |  Start   |  mshtml                               |
+Microsoft-IE  |               |  488       |  0        |           |  Mshtml_CDoc_OnMouseMessage                                     |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  489       |  0        |           |  Mshtml_IndependentHitTest                                      |  Start   |  mshtml                               |
+Microsoft-IE  |               |  490       |  0        |           |  Mshtml_IndependentHitTest                                      |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  491       |  0        |           |  Mshtml_IndependentHitTestInfo                                  |          |  mshtml                               |
+Microsoft-IE  |               |  492       |  0        |           |  Mshtml_DocumentSuspend                                         |          |  primarynav                           |
+Microsoft-IE  |               |  493       |  0        |           |  Mshtml_Animations_Animating                                    |  Stop    |  animation                            |
+Microsoft-IE  |               |  494       |  0        |           |  Mshtml_Animations_Transitioning                                |  Stop    |  animation                            |
+Microsoft-IE  |               |  495       |  0        |           |  Mshtml_JsCache_SaveEntry                                       |          |  mshtml                               |
+Microsoft-IE  |               |  496       |  0        |           |  Mshtml_Composition_Create_ImplicitLayer                        |          |  composition                          |
+Microsoft-IE  |               |  497       |  0        |           |  Mshtml_Composition_Max_ImplicitLayers_Exceeded                 |          |  composition                          |
+Microsoft-IE  |               |  498       |  0        |           |  Mshtml_HoverDeferral_Undeferred                                |          |  mshtml                               |
+Microsoft-IE  |               |  499       |  0        |           |  Mshtml_Composition_Destination_PreRender                       |          |  composition                          |
+Microsoft-IE  |               |  500       |  0        |           |  Mshtml_Composition_Create_SBLayer                              |          |  composition                          |
+Microsoft-IE  |               |  501       |  0        |           |  Mshtml_Composition_Create_SBLayer_Surface                      |          |  composition                          |
+Microsoft-IE  |               |  502       |  0        |           |  Mshtml_Composition_Destroy_SBLayer                             |          |  composition                          |
+Microsoft-IE  |               |  503       |  0        |           |  Mshtml_Composition_Trim_SBLayer                                |          |  composition                          |
+Microsoft-IE  |               |  504       |  0        |           |  Mshtml_Composition_Destination_Invalid_Region                  |          |  composition                          |
+Microsoft-IE  |               |  505       |  0        |           |  Mshtml_CDoc_PaintRect                                          |          |  composition                          |
+Microsoft-IE  |               |  506       |  0        |           |  Mshtml_Composition_Scroller_PVR                                |          |  composition                          |
+Microsoft-IE  |               |  507       |  0        |           |  FlipAhead_UpdateTarget                                         |  Start   |  flipahead                            |
+Microsoft-IE  |               |  508       |  0        |           |  FlipAhead_UpdateTarget                                         |  Stop    |  flipahead                            |
+Microsoft-IE  |               |  509       |  0        |           |  FlipAhead_UpdateTarget                                         |          |  flipahead                            |
+Microsoft-IE  |               |  510       |  0        |           |  FlipAhead_InvokeTarget                                         |          |  flipahead                            |
+Microsoft-IE  |               |  511       |  0        |           |  Mshtml_Animations_HighQualityScale_Limited                     |          |  animation                            |
+Microsoft-IE  |               |  512       |  0        |           |  Mshtml_CView_ExecuteInvalidationTasks_Stats                    |          |  verbose invalidation                 |
+Microsoft-IE  |               |  513       |  0        |           |  Mshtml_XML_Http_Request_Open_Sync_On_UI_Thread                 |          |  mshtml                               |
+Microsoft-IE  |               |  514       |  0        |           |  Mshtml_Composition_Layer_Candidacy_Failure                     |          |  composition                          |
+Microsoft-IE  |               |  515       |  0        |           |  Mshtml_Composition_Layer_Dependent_Subtree                     |          |  composition                          |
+Microsoft-IE  |               |  516       |  0        |           |  Mshtml_Composition_Layer_Reverted                              |          |  composition_verbose                  |
+Microsoft-IE  |               |  517       |  0        |           |  Mshtml_MediaElement_FullScreen                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  518       |  0        |           |  Mshtml_MediaElement_FullScreen                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  519       |  0        |           |  Mshtml_MediaElement_FullScreen                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  520       |  0        |           |  Mshtml_MediaElement_FullScreen                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  521       |  0        |           |  Mshtml_Animations_Timer                                        |  Start   |  composition_verbose                  |
+Microsoft-IE  |               |  522       |  0        |           |  Mshtml_Animations_Timer                                        |  Stop    |  composition_verbose                  |
+Microsoft-IE  |               |  523       |  0        |           |  Mshtml_Animations_Instance                                     |  Start   |  composition_verbose                  |
+Microsoft-IE  |               |  524       |  0        |           |  Mshtml_Animations_Instance                                     |  Stop    |  composition_verbose                  |
+Microsoft-IE  |               |  525       |  0        |           |  Mshtml_Canvas_Operation                                        |          |  canvas                               |
+Microsoft-IE  |               |  526       |  0        |           |  Mshtml_EventDebug_DOM_Event_Dispatch                           |  Start   |  eventsandtimers                      |
+Microsoft-IE  |               |  527       |  0        |           |  Mshtml_EventDebug_DOM_Event_Dispatch                           |  Stop    |  eventsandtimers                      |
+Microsoft-IE  |               |  528       |  0        |           |  Mshtml_EventDebug_DOM_Event_Invoke_Callback                    |  Start   |  eventsandtimers                      |
+Microsoft-IE  |               |  528       |  1        |           |  Mshtml_EventDebug_DOM_Event_Invoke_Callback                    |  Start   |  eventsandtimers                      |
+Microsoft-IE  |               |  529       |  0        |           |  Mshtml_EventDebug_DOM_Event_Invoke_Callback                    |  Stop    |  eventsandtimers                      |
+Microsoft-IE  |               |  529       |  1        |           |  Mshtml_EventDebug_DOM_Event_Invoke_Callback                    |  Stop    |  eventsandtimers                      |
+Microsoft-IE  |               |  530       |  0        |           |  Mshtml_EventDebug_Timer_Invoke_Callback                        |  Start   |  eventsandtimers                      |
+Microsoft-IE  |               |  530       |  1        |           |  Mshtml_EventDebug_Timer_Invoke_Callback                        |  Start   |  eventsandtimers                      |
+Microsoft-IE  |               |  531       |  0        |           |  Mshtml_EventDebug_Timer_Invoke_Callback                        |  Stop    |  eventsandtimers                      |
+Microsoft-IE  |               |  531       |  1        |           |  Mshtml_EventDebug_Timer_Invoke_Callback                        |  Stop    |  eventsandtimers                      |
+Microsoft-IE  |               |  532       |  0        |           |  Mshtml_DynamicDependencyTracker                                |          |  DDT                                  |
+Microsoft-IE  |               |  533       |  0        |           |  Mshtml_DynamicDependencyTracker                                |  Start   |  DDT                                  |
+Microsoft-IE  |               |  534       |  0        |           |  Mshtml_DynamicDependencyTracker                                |  Stop    |  DDT                                  |
+Microsoft-IE  |               |  535       |  0        |           |  Mshtml_DynamicDependencyTracker                                |          |  DDT                                  |
+Microsoft-IE  |               |  536       |  0        |           |  Mshtml_DMTouchTarget_SetContentRect                            |          |  mshtml                               |
+Microsoft-IE  |               |  537       |  0        |           |  Mshtml_DMTouchTarget_UpdateContentRectForBusyState             |          |  mshtml                               |
+Microsoft-IE  |               |  538       |  0        |           |  Mshtml_DispNode_Description                                    |          |  composition                          |
+Microsoft-IE  |               |  539       |  0        |           |  Mshtml_Prefetching                                             |          |  mshtml                               |
+Microsoft-IE  |               |  540       |  0        |           |  Mshtml_Prefetching                                             |  Start   |  mshtml                               |
+Microsoft-IE  |               |  541       |  0        |           |  Mshtml_Prefetching                                             |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  542       |  0        |           |  Mshtml_Prefetching                                             |          |  mshtml                               |
+Microsoft-IE  |               |  543       |  0        |           |  Mshtml_Prerendering                                            |          |  mshtml                               |
+Microsoft-IE  |               |  544       |  0        |           |  Mshtml_Prerendering                                            |          |  mshtml                               |
+Microsoft-IE  |               |  545       |  0        |           |  Mshtml_Prerendering                                            |          |  mshtml                               |
+Microsoft-IE  |               |  546       |  0        |           |  Mshtml_Prerendering                                            |          |  mshtml                               |
+Microsoft-IE  |               |  547       |  0        |           |  Mshtml_Prerendering                                            |          |  mshtml                               |
+Microsoft-IE  |               |  548       |  0        |           |  Mshtml_Prerendering                                            |          |  mshtml                               |
+Microsoft-IE  |               |  549       |  0        |           |  Mshtml_Composition_IR_Enabled                                  |          |  subsystem composition                |
+Microsoft-IE  |               |  550       |  0        |           |  Mshtml_Composition_IR_Disabled                                 |          |  subsystem composition                |
+Microsoft-IE  |               |  551       |  0        |           |  Mshtml_Prerendering                                            |  Start   |  mshtml                               |
+Microsoft-IE  |               |  552       |  0        |           |  Mshtml_Prerendering                                            |  Stop    |  mshtml                               |
+Microsoft-IE  |  Information  |  553       |  0        |           |  WPGeneralTracing                                               |          |  generaltracing                       |
+Microsoft-IE  |               |  554       |  0        |           |  Mshtml_Scheduler_API                                           |          |  scheduler_api jscript_verbose        |
+Microsoft-IE  |               |  555       |  0        |           |  Mshtml_RenderTask_Queued                                       |          |  subsystem composition                |
+Microsoft-IE  |               |  556       |  0        |           |  Mshtml_RenderTask_Processing                                   |  Start   |  subsystem composition                |
+Microsoft-IE  |               |  557       |  0        |           |  Mshtml_RenderTask_Processing                                   |  Stop    |  subsystem composition                |
+Microsoft-IE  |               |  558       |  0        |           |  Mshtml_RenderTask_RenderThreadStateUpdate                      |          |  subsystem composition                |
+Microsoft-IE  |               |  559       |  0        |           |  Mshtml_FormatDetection                                         |  Start   |  mshtml                               |
+Microsoft-IE  |               |  560       |  0        |           |  Mshtml_FormatDetection                                         |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  561       |  0        |           |  Mshtml_FormatDetection_LanguageChange                          |          |  verbose                              |
+Microsoft-IE  |               |  562       |  0        |           |  Mshtml_FormatDetection_EntityFound                             |          |  verbose                              |
+Microsoft-IE  |               |  563       |  0        |           |  Mshtml_FormatDetection_TextExtraction                          |  Start   |  mshtml                               |
+Microsoft-IE  |               |  564       |  0        |           |  Mshtml_FormatDetection_TextExtraction                          |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  565       |  0        |           |  Mshtml_FormatDetection_EntityExtraction                        |  Start   |  mshtml                               |
+Microsoft-IE  |               |  566       |  0        |           |  Mshtml_FormatDetection_EntityExtraction                        |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  567       |  0        |           |  Mshtml_FormatDetection_EntityHighlighting                      |  Start   |  mshtml                               |
+Microsoft-IE  |               |  568       |  0        |           |  Mshtml_FormatDetection_EntityHighlighting                      |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  571       |  0        |           |  Mshtml_TravelLogPrerendering                                   |          |  mshtml                               |
+Microsoft-IE  |               |  572       |  0        |           |  Mshtml_TravelLogPrerendering                                   |          |  mshtml                               |
+Microsoft-IE  |               |  573       |  0        |           |  Mshtml_TravelLogPrerendering                                   |          |  mshtml                               |
+Microsoft-IE  |               |  574       |  0        |           |  Mshtml_BFCache                                                 |          |  mshtml                               |
+Microsoft-IE  |               |  575       |  0        |           |  Mshtml_EventDebug_XmlHttpRequest_Open                          |          |  eventsandtimers                      |
+Microsoft-IE  |               |  576       |  0        |           |  Mshtml_EventDebug_XmlHttpRequest_Relate                        |          |  eventsandtimers                      |
+Microsoft-IE  |               |  577       |  0        |           |  Mshtml_ElementRundown                                          |  Start   |  element_rundown mshtml               |
+Microsoft-IE  |               |  578       |  0        |           |  Mshtml_ElementRundown                                          |  Stop    |  element_rundown mshtml               |
+Microsoft-IE  |               |  579       |  0        |           |  Mshtml_EventDebug_MediaQuery_Invoke_Callback                   |  Start   |  eventsandtimers mshtml               |
+Microsoft-IE  |               |  580       |  0        |           |  Mshtml_EventDebug_MediaQuery_Invoke_Callback                   |  Stop    |  eventsandtimers mshtml               |
+Microsoft-IE  |               |  581       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  582       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  583       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  584       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  585       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  586       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  587       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  588       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  589       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  590       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  591       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  592       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  593       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Start   |  subsystem mshtml                     |
+Microsoft-IE  |               |  594       |  0        |           |  Mshtml_Media_TextTrack_Parsing                                 |  Stop    |  subsystem mshtml                     |
+Microsoft-IE  |               |  595       |  0        |           |  Mshtml_View_LinkHighlightShow                                  |  Start   |  subsystem mshtml touch               |
+Microsoft-IE  |               |  596       |  0        |           |  Mshtml_View_LinkHighlightShow                                  |  Stop    |  subsystem mshtml touch               |
+Microsoft-IE  |               |  597       |  0        |           |  Mshtml_View_LinkHighlightHide                                  |  Start   |  subsystem mshtml touch               |
+Microsoft-IE  |               |  598       |  0        |           |  Mshtml_View_LinkHighlightHide                                  |  Stop    |  subsystem mshtml touch               |
+Microsoft-IE  |               |  599       |  0        |           |  Mshtml_View_LinkHighlightStartFromNormalEvent                  |  Start   |  subsystem mshtml touch               |
+Microsoft-IE  |               |  600       |  0        |           |  Mshtml_View_LinkHighlightStartFromNormalEvent                  |  Stop    |  subsystem mshtml touch               |
+Microsoft-IE  |               |  601       |  0        |           |  Mshtml_View_LinkHighlightStartFromQueryContinue                |  Start   |  subsystem mshtml touch               |
+Microsoft-IE  |               |  602       |  0        |           |  Mshtml_View_LinkHighlightStartFromQueryContinue                |  Stop    |  subsystem mshtml touch               |
+Microsoft-IE  |               |  603       |  0        |           |  Mshtml_View_LinkHighlightTimerPaint                            |  Stop    |  subsystem mshtml touch               |
+Microsoft-IE  |               |  604       |  0        |           |  Mshtml_View_LinkHighlightTimerPaint                            |  Stop    |  subsystem mshtml touch               |
+Microsoft-IE  |               |  605       |  0        |           |  Mshtml_View_LinkHighlightPointerUpdateCancel                   |  Stop    |  subsystem mshtml touch               |
+Microsoft-IE  |               |  606       |  0        |           |  Mshtml_View_LinkHighlightPointerUpdateCancel                   |  Stop    |  subsystem mshtml touch               |
+Microsoft-IE  |               |  607       |  0        |           |  Mshtml_Phone_DoubleTap                                         |  Start   |  verbose                              |
+Microsoft-IE  |               |  608       |  0        |           |  Mshtml_Phone_DoubleTap                                         |  Stop    |  verbose                              |
+Microsoft-IE  |               |  609       |  0        |           |  Mshtml_CDoc_Navigation                                         |          |  primarynav mshtml                    |
+Microsoft-IE  |               |  610       |  0        |           |  Mshtml_WebWorker                                               |          |  mshtml                               |
+Microsoft-IE  |               |  611       |  0        |           |  Mshtml_WebWorker                                               |  Start   |  mshtml                               |
+Microsoft-IE  |               |  612       |  0        |           |  Mshtml_WebWorker                                               |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  613       |  0        |           |  Mshtml_MessagePort                                             |          |  mshtml                               |
+Microsoft-IE  |               |  614       |  0        |           |  Mshtml_MessagePort                                             |  Start   |  mshtml                               |
+Microsoft-IE  |               |  615       |  0        |           |  Mshtml_MessagePort                                             |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  616       |  0        |           |  Mshtml_RenderTask_ApplyPSP                                     |  Start   |  subsystem composition                |
+Microsoft-IE  |               |  617       |  0        |           |  Mshtml_RenderTask_ApplyPSP                                     |  Stop    |  subsystem composition                |
+Microsoft-IE  |               |  618       |  0        |           |  Mshtml_CDoc_PrepareForSetVisible                               |  Start   |  mshtml                               |
+Microsoft-IE  |               |  619       |  0        |           |  Mshtml_CDoc_PrepareForSetVisible                               |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  620       |  0        |           |  Mshtml_CDoc_OnSuspendDocument                                  |  Start   |  mshtml                               |
+Microsoft-IE  |               |  621       |  0        |           |  Mshtml_CDoc_OnSuspendDocument                                  |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  622       |  0        |           |  Mshtml_CDoc_OnUserVisibilityChanged                            |  Start   |  mshtml                               |
+Microsoft-IE  |               |  623       |  0        |           |  Mshtml_CDoc_OnUserVisibilityChanged                            |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  624       |  0        |           |  Mshtml_SetStyle                                                |          |  verbose                              |
+Microsoft-IE  |               |  625       |  0        |           |  Mshtml_ReadingMode_ExtractContent                              |  Start   |  mshtml                               |
+Microsoft-IE  |               |  626       |  0        |           |  Mshtml_ReadingMode_ExtractContent                              |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  627       |  0        |           |  Mshtml_ReadingMode_ExtractTitle                                |  Start   |  mshtml                               |
+Microsoft-IE  |               |  628       |  0        |           |  Mshtml_ReadingMode_ExtractTitle                                |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  629       |  0        |           |  Mshtml_ReadingMode_ExtractArticleBody                          |  Start   |  mshtml                               |
+Microsoft-IE  |               |  630       |  0        |           |  Mshtml_ReadingMode_ExtractArticleBody                          |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  631       |  0        |           |  Mshtml_ReadingMode_ExtractProperties                           |  Start   |  mshtml                               |
+Microsoft-IE  |               |  632       |  0        |           |  Mshtml_ReadingMode_ExtractProperties                           |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  633       |  0        |           |  Mshtml_ReadingMode_ExtractImages                               |  Start   |  mshtml                               |
+Microsoft-IE  |               |  634       |  0        |           |  Mshtml_ReadingMode_ExtractImages                               |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  635       |  0        |           |  Mshtml_ReadingMode_NotifyControllerOfContent                   |  Start   |  mshtml                               |
+Microsoft-IE  |               |  636       |  0        |           |  Mshtml_ReadingMode_NotifyControllerOfContent                   |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  637       |  0        |           |  Mshtml_CGarbageTracker_CollectGarbage                          |          |  mshtml                               |
+Microsoft-IE  |               |  638       |  0        |           |  Mshtml_CDoc_PrepareForResize                                   |  Start   |  mshtml                               |
+Microsoft-IE  |               |  639       |  0        |           |  Mshtml_CDoc_PrepareForResize                                   |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  640       |  0        |           |  Mshtml_CDoc_HostPaintUpdateNotification                        |  Start   |  mshtml                               |
+Microsoft-IE  |               |  641       |  0        |           |  Mshtml_CDoc_HostPaintUpdateNotification                        |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  642       |  0        |           |  Mshtml_CDoc_HostPaintUpdateNotification_IgnoredRequest         |          |  mshtml                               |
+Microsoft-IE  |               |  643       |  0        |           |  Mshtml_EventDebug_MutationObserverCallback                     |  Start   |  eventsandtimers                      |
+Microsoft-IE  |               |  644       |  0        |           |  Mshtml_EventDebug_MutationObserverCallback                     |  Stop    |  eventsandtimers                      |
+Microsoft-IE  |               |  645       |  0        |           |  Mshtml_EventDebug_MutationObserverCallback                     |          |  eventsandtimers                      |
+Microsoft-IE  |               |  740       |  0        |           |  Mshtml_MemoryProtector_ReclaimMemoryWithoutProtection          |  Start   |  mshtml                               |
+Microsoft-IE  |               |  741       |  0        |           |  Mshtml_MemoryProtector_ReclaimMemoryWithoutProtection          |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  742       |  0        |           |  Mshtml_MemoryProtector_SyncMark                                |  Start   |  mshtml                               |
+Microsoft-IE  |               |  743       |  0        |           |  Mshtml_MemoryProtector_SyncMark                                |  Stop    |  mshtml                               |
+Microsoft-IE  |               |  744       |  0        |           |  Mshtml_MemoryProtector_ReclaimUnmarked                         |  Start   |  mshtml                               |
+Microsoft-IE  |               |  745       |  0        |           |  Mshtml_MemoryProtector_ReclaimUnmarked                         |  Stop    |  mshtml                               |

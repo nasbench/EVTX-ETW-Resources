@@ -1,9 +1,9 @@
-Provider                     |  Event ID  |  Channel  |  Message
------------------------------|------------|-----------|-------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Partition  |  1001      |           |  Operation started.
-Microsoft-Windows-Partition  |  1002      |           |  Operation completed.
-Microsoft-Windows-Partition  |  1003      |           |
-Microsoft-Windows-Partition  |  1004      |           |
-Microsoft-Windows-Partition  |  1005      |           |
-Microsoft-Windows-Partition  |  1006      |           |  For internal use only.
-Microsoft-Windows-Partition  |  1007      |           |  Spaceport status: {SpStatus}, output operation status: {OperationStatus} and Wnf status: {WnfStatus}.
+Provider                     |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|-------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Partition  |  Information  |  1001      |  0        |           |        |          |           |  Operation started.
+Microsoft-Windows-Partition  |  Information  |  1002      |  0        |           |        |          |           |  Operation completed.
+Microsoft-Windows-Partition  |  Information  |  1003      |  0        |           |        |          |  power    |
+Microsoft-Windows-Partition  |  Information  |  1004      |  0        |           |        |          |  power    |
+Microsoft-Windows-Partition  |  Information  |  1005      |  0        |           |        |          |  power    |
+Microsoft-Windows-Partition  |  Information  |  1006      |  4        |           |        |          |           |  For internal use only.
+Microsoft-Windows-Partition  |  Information  |  1007      |  0        |           |        |          |           |  Spaceport status: {SpStatus}, output operation status: {OperationStatus} and Wnf status: {WnfStatus}.

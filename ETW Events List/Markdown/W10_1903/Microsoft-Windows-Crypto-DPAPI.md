@@ -1,15 +1,15 @@
-Provider                        |  Event ID  |  Channel                                      |  Message
---------------------------------|------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Crypto-DPAPI  |  1         |  Microsoft-Windows-Crypto-DPAPI/Operational   |  DPAPI created Master key. 	GUID:	{MasterKeyGUID} 	User Storage Area:	{UserStorage}
-Microsoft-Windows-Crypto-DPAPI  |  2         |  Microsoft-Windows-Crypto-DPAPI/Operational   |  DPAPI deleted Master key. 	GUID:	{MasterKeyGUID} 	User Storage Area:	{UserStorage}
-Microsoft-Windows-Crypto-DPAPI  |  3         |  Microsoft-Windows-Crypto-DPAPI/Operational   |  Master key access failed. 	GUID:			{MasterKeyGUID} 	Success:			{Success} 	Last error:		{LastError} 	Master key disposition:	{LastError}
-Microsoft-Windows-Crypto-DPAPI  |  4         |  Microsoft-Windows-Crypto-DPAPI/Operational   |  Password Change triggered. 	Status:	{Status}
-Microsoft-Windows-Crypto-DPAPI  |  5         |  Microsoft-Windows-Crypto-DPAPI/Operational   |
-Microsoft-Windows-Crypto-DPAPI  |  4097      |  Microsoft-Windows-Crypto-DPAPI/BackUpKeySvc  |
-Microsoft-Windows-Crypto-DPAPI  |  4098      |  Microsoft-Windows-Crypto-DPAPI/BackUpKeySvc  |
-Microsoft-Windows-Crypto-DPAPI  |  8193      |  Microsoft-Windows-Crypto-DPAPI/Debug         |  System credentials creation in LSASS failed.  	Status:	{Status}
-Microsoft-Windows-Crypto-DPAPI  |  8194      |  Microsoft-Windows-Crypto-DPAPI/Debug         |  DPAPI Master key file open failed. 	FileName:	{FileName} 	Access:	{Access}
-Microsoft-Windows-Crypto-DPAPI  |  8195      |  Microsoft-Windows-Crypto-DPAPI/Debug         |
-Microsoft-Windows-Crypto-DPAPI  |  8196      |  Microsoft-Windows-Crypto-DPAPI/Debug         |
-Microsoft-Windows-Crypto-DPAPI  |  8197      |  Microsoft-Windows-Crypto-DPAPI/Debug         |  DPAPI Protect failed . 	Status:	{Status} 	ReasonForFailure:	{ReasonForFailure}
-Microsoft-Windows-Crypto-DPAPI  |  8198      |  Microsoft-Windows-Crypto-DPAPI/Operational   |  DPAPI Unprotect failed . 	Status:	{Status} 	ReasonForFailure:	{ReasonForFailure}
+Provider                        |  Level        |  Event ID  |  Version  |  Channel                                      |  Task                       |  Opcode  |  Keyword                    |  Message
+--------------------------------|---------------|------------|-----------|-----------------------------------------------|-----------------------------|----------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Crypto-DPAPI  |  Information  |  1         |  0        |  Microsoft-Windows-Crypto-DPAPI/Operational   |  Master Key Operation       |          |  Master Key Operation       |  DPAPI created Master key. 	GUID:	{MasterKeyGUID} 	User Storage Area:	{UserStorage}
+Microsoft-Windows-Crypto-DPAPI  |  Information  |  2         |  0        |  Microsoft-Windows-Crypto-DPAPI/Operational   |  Master Key Operation       |          |  Master Key Operation       |  DPAPI deleted Master key. 	GUID:	{MasterKeyGUID} 	User Storage Area:	{UserStorage}
+Microsoft-Windows-Crypto-DPAPI  |  Information  |  3         |  0        |  Microsoft-Windows-Crypto-DPAPI/Operational   |  Master Key Operation       |          |  Master Key Operation       |  Master key access failed. 	GUID:			{MasterKeyGUID} 	Success:			{Success} 	Last error:		{LastError} 	Master key disposition:	{LastError}
+Microsoft-Windows-Crypto-DPAPI  |  Information  |  4         |  0        |  Microsoft-Windows-Crypto-DPAPI/Operational   |  Master Key Operation       |          |  Master Key Operation       |  Password Change triggered. 	Status:	{Status}
+Microsoft-Windows-Crypto-DPAPI  |  Information  |  5         |  0        |  Microsoft-Windows-Crypto-DPAPI/Operational   |  Master Key Operation       |          |  Master Key Operation       |
+Microsoft-Windows-Crypto-DPAPI  |  Information  |  4097      |  0        |  Microsoft-Windows-Crypto-DPAPI/BackUpKeySvc  |  BackUp Service Operation   |          |  BackUp Service Operation   |
+Microsoft-Windows-Crypto-DPAPI  |  Information  |  4098      |  0        |  Microsoft-Windows-Crypto-DPAPI/BackUpKeySvc  |  BackUp Service Operation   |          |  BackUp Service Operation   |
+Microsoft-Windows-Crypto-DPAPI  |  Error        |  8193      |  0        |  Microsoft-Windows-Crypto-DPAPI/Debug         |  Master Key Operation       |          |  Master Key Operation       |  System credentials creation in LSASS failed.  	Status:	{Status}
+Microsoft-Windows-Crypto-DPAPI  |  Error        |  8194      |  0        |  Microsoft-Windows-Crypto-DPAPI/Debug         |  Master Key Operation       |          |  Master Key Operation       |  DPAPI Master key file open failed. 	FileName:	{FileName} 	Access:	{Access}
+Microsoft-Windows-Crypto-DPAPI  |  Error        |  8195      |  0        |  Microsoft-Windows-Crypto-DPAPI/Debug         |  Master Key Operation       |          |  Master Key Operation       |
+Microsoft-Windows-Crypto-DPAPI  |  Error        |  8196      |  0        |  Microsoft-Windows-Crypto-DPAPI/Debug         |  Master Key Operation       |          |  Master Key Operation       |
+Microsoft-Windows-Crypto-DPAPI  |  Error        |  8197      |  0        |  Microsoft-Windows-Crypto-DPAPI/Debug         |  Data Protection Operation  |          |  Data Protection Operation  |  DPAPI Protect failed . 	Status:	{Status} 	ReasonForFailure:	{ReasonForFailure}
+Microsoft-Windows-Crypto-DPAPI  |  Error        |  8198      |  0        |  Microsoft-Windows-Crypto-DPAPI/Operational   |  Data Protection Operation  |          |  Data Protection Operation  |  DPAPI Unprotect failed . 	Status:	{Status} 	ReasonForFailure:	{ReasonForFailure}

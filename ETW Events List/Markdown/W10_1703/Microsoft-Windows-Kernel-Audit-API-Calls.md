@@ -1,10 +1,10 @@
-Provider                                  |  Event ID  |  Channel  |  Message
-------------------------------------------|------------|-----------|---------
-Microsoft-Windows-Kernel-Audit-API-Calls  |  1         |           |
-Microsoft-Windows-Kernel-Audit-API-Calls  |  2         |           |
-Microsoft-Windows-Kernel-Audit-API-Calls  |  3         |           |
-Microsoft-Windows-Kernel-Audit-API-Calls  |  4         |           |
-Microsoft-Windows-Kernel-Audit-API-Calls  |  5         |           |
-Microsoft-Windows-Kernel-Audit-API-Calls  |  6         |           |
-Microsoft-Windows-Kernel-Audit-API-Calls  |  7         |           |
-Microsoft-Windows-Kernel-Audit-API-Calls  |  8         |           |
+Provider                                  |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+------------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  1         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  2         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  3         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  4         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  5         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  6         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  7         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  8         |  0        |           |        |          |           |

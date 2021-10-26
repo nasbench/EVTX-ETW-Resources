@@ -1,23 +1,23 @@
-Provider                          |  Event ID  |  Channel                                        |  Message
-----------------------------------|------------|-------------------------------------------------|-----------------------------------------------------
-Microsoft-Windows-WWAN-UI-EVENTS  |  1001      |  Mobile Broadband UI Event Diagnostics Channel  |  Mobile Broadband UI generic error
-Microsoft-Windows-WWAN-UI-EVENTS  |  1002      |  Mobile Broadband UI Event Diagnostics Channel  |  Mobile Broadband UI notification Event
-Microsoft-Windows-WWAN-UI-EVENTS  |  1003      |  Mobile Broadband UI Event Diagnostics Channel  |  Show new network in UI
-Microsoft-Windows-WWAN-UI-EVENTS  |  10011     |  Mobile Broadband UI Event Diagnostics Channel  |  Start Connecting
-Microsoft-Windows-WWAN-UI-EVENTS  |  10012     |  Mobile Broadband UI Event Diagnostics Channel  |  Complete Connecting
-Microsoft-Windows-WWAN-UI-EVENTS  |  10021     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Connection UI started
-Microsoft-Windows-WWAN-UI-EVENTS  |  10022     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Connection UI completed
-Microsoft-Windows-WWAN-UI-EVENTS  |  10031     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Connection Tab started
-Microsoft-Windows-WWAN-UI-EVENTS  |  10032     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Connection Tab completed
-Microsoft-Windows-WWAN-UI-EVENTS  |  10041     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Roaming Tab started
-Microsoft-Windows-WWAN-UI-EVENTS  |  10042     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Roaming Tab completed
-Microsoft-Windows-WWAN-UI-EVENTS  |  10043     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Roaming Tab with data started
-Microsoft-Windows-WWAN-UI-EVENTS  |  10044     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Roaming Tab with data completed
-Microsoft-Windows-WWAN-UI-EVENTS  |  10051     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Security Tab started
-Microsoft-Windows-WWAN-UI-EVENTS  |  10052     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Security Tab completed
-Microsoft-Windows-WWAN-UI-EVENTS  |  10053     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Security Tab with Dynamic data started
-Microsoft-Windows-WWAN-UI-EVENTS  |  10054     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Security Tab with Dynamic data completed
-Microsoft-Windows-WWAN-UI-EVENTS  |  10061     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Advanced Tab started
-Microsoft-Windows-WWAN-UI-EVENTS  |  10062     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Advanced Tab completed
-Microsoft-Windows-WWAN-UI-EVENTS  |  10071     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Profile UI started
-Microsoft-Windows-WWAN-UI-EVENTS  |  10072     |  Mobile Broadband UI Event Diagnostics Channel  |  Display of Profile UI completed
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                        |  Task                                    |  Opcode  |  Keyword  |  Message
+----------------------------------|---------------|------------|-----------|-------------------------------------------------|------------------------------------------|----------|-----------|-----------------------------------------------------
+Microsoft-Windows-WWAN-UI-EVENTS  |  Error        |  1001      |  0        |  Mobile Broadband UI Event Diagnostics Channel  |                                          |          |           |  Mobile Broadband UI generic error
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  1002      |  0        |  Mobile Broadband UI Event Diagnostics Channel  |                                          |          |           |  Mobile Broadband UI notification Event
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  1003      |  0        |  Mobile Broadband UI Event Diagnostics Channel  |                                          |          |           |  Show new network in UI
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10011     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Connect Task                            |  Start   |           |  Start Connecting
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10012     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Connect Task                            |  Stop    |           |  Complete Connecting
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10021     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Connection UI task              |  Start   |           |  Display of Connection UI started
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10022     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Connection UI task              |  Stop    |           |  Display of Connection UI completed
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10031     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Connection Tab task             |  Start   |           |  Display of Connection Tab started
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10032     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Connection Tab task             |  Stop    |           |  Display of Connection Tab completed
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10041     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Roaming Tab task                |  Start   |           |  Display of Roaming Tab started
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10042     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Roaming Tab task                |  Stop    |           |  Display of Roaming Tab completed
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10043     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Roaming Tab dynamic data task   |  Start   |           |  Display of Roaming Tab with data started
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10044     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Roaming Tab dynamic data task   |  Stop    |           |  Display of Roaming Tab with data completed
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10051     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Security Tab task               |  Start   |           |  Display of Security Tab started
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10052     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Security Tab task               |  Stop    |           |  Display of Security Tab completed
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10053     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Security Tab Dynamic data task  |  Start   |           |  Display of Security Tab with Dynamic data started
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10054     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Security Tab Dynamic data task  |  Stop    |           |  Display of Security Tab with Dynamic data completed
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10061     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Advanced Tab task               |  Start   |           |  Display of Advanced Tab started
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10062     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Advanced Tab task               |  Stop    |           |  Display of Advanced Tab completed
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10071     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Profile UI task                 |  Start   |           |  Display of Profile UI started
+Microsoft-Windows-WWAN-UI-EVENTS  |  Information  |  10072     |  0        |  Mobile Broadband UI Event Diagnostics Channel  |  Display Profile UI task                 |  Stop    |           |  Display of Profile UI completed

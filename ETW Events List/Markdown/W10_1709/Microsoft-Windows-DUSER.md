@@ -1,74 +1,74 @@
-Provider                 |  Event ID  |  Channel                             |  Message
--------------------------|------------|--------------------------------------|---------
-Microsoft-Windows-DUSER  |  1         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  2         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  3         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  4         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  5         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  6         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  7         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  8         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  9         |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  10        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  11        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  12        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  13        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  14        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  15        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  16        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  17        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  18        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  19        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  20        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  21        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  22        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  24        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  25        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  26        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  27        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  28        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  29        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  30        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  31        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  32        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  33        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  34        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  35        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  36        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  37        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  38        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  39        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  40        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  41        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  42        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  43        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  44        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  45        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  46        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  47        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  48        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  49        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  50        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  51        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  52        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  53        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  54        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  55        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  56        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  65        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  66        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  67        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  68        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  71        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  72        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  75        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  76        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  77        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  78        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  79        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  80        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  81        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  82        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  83        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  84        |  Microsoft-Windows-DUSER/Diagnostic  |
-Microsoft-Windows-DUSER  |  85        |  Microsoft-Windows-DUSER/Diagnostic  |
+Provider                 |  Level        |  Event ID  |  Version  |  Channel                             |  Task                                           |  Opcode  |  Keyword       |  Message
+-------------------------|---------------|------------|-----------|--------------------------------------|-------------------------------------------------|----------|----------------|---------
+Microsoft-Windows-DUSER  |  Information  |  1         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Paint                                    |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  2         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Paint                                    |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  3         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_SyncAdaptors                             |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  4         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_SyncAdaptors                             |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  5         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ResetInvalid                             |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  6         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ResetInvalid                             |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  7         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_EndDrawBitBlt                            |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  8         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_EndDrawBitBlt                            |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  9         |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Input                                    |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  10        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Input                                    |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  11        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Input                                    |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  12        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayeredCreateVisuals                     |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  13        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayeredRemoveVisuals                     |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  14        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayeredDestructVisuals                   |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  15        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DestroyPendingDCVisuals                  |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  16        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DestroyPendingDCVisuals                  |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  17        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ForceDestroyDCVisual                     |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  18        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_RemoveAndDestroyDCVisual                 |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  19        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DrawLayeredGadget                        |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  20        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DrawLayeredGadget                        |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  21        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayeredGetBitmap                         |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  22        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayeredSetContent                        |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  24        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayerGadget                              |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  25        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayerGadget                              |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  26        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayerGadgetLoop                          |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  27        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LayerGadgetLoop                          |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  28        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_CreateCompatibleBitmap                   |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  29        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_CreateCompatibleBitmap                   |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  30        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_InitProperties                           |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  31        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_InitProperties                           |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  32        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_AddChildVisual                           |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  33        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_AddChildVisual                           |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  34        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_MoveChildrenToParent                     |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  35        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_MoveChildrenToParent                     |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  36        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_MoveChildrenToParent                     |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  37        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Reparent                                 |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  38        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Reparent                                 |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  39        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Reparent                                 |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  40        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_AddWAMTransitions                        |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  41        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_AddWAMTransitions                        |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  42        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_CreateCubicBezierLinearVectorTransition  |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  43        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ScheduleWAMStoryboard                    |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  44        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ScheduleWAMStoryboard                    |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  45        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_GetCurve                                 |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  46        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DCompCommit                              |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  47        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DCompCommit                              |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  48        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DCompCommit                              |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  49        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DrawDirtyLayers                          |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  50        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_CommitFromWMPaint                        |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  51        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ScheduleTransitions                      |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  52        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ScheduleTransitions                      |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  53        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_WAMDelay                                 |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  54        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_WAMDelay                                 |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  55        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Input                                    |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  56        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_TransitionComplete                       |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  65        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_IntervalAcquireRegion                    |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  66        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_IntervalAcquireRegion                    |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  67        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_IntervalReleaseRegion                    |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  68        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_IntervalReleaseRegion                    |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  71        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_CreateSurface                            |          |  DUserSurface  |
+Microsoft-Windows-DUSER  |  Information  |  72        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_DestroySurface                           |          |  DUserSurface  |
+Microsoft-Windows-DUSER  |  Information  |  75        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ProcessPendingStoryboards                |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  76        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_TransitionScheduled                      |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  77        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_InitializeDCompTransforms                |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  78        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ModifyDCompTransform                     |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  79        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_RunDUIPVLAnimation                       |  Start   |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  80        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_RunDUIPVLAnimation                       |  Stop    |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  81        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_AllocateStagingBuffer                    |          |  DUserSurface  |
+Microsoft-Windows-DUSER  |  Information  |  82        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_ReleaseStagingBuffer                     |          |  DUserSurface  |
+Microsoft-Windows-DUSER  |  Information  |  83        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_LeafNodeOpacity_PossibleLayerPush        |          |  Default       |
+Microsoft-Windows-DUSER  |  Information  |  84        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_StagingBufferCopy                        |          |  DUserSurface  |
+Microsoft-Windows-DUSER  |  Information  |  85        |  0        |  Microsoft-Windows-DUSER/Diagnostic  |  DUser_Input                                    |          |  Default       |

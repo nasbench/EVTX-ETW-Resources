@@ -1,210 +1,210 @@
-Provider                               |  Event ID  |  Channel                      |  Message
----------------------------------------|------------|-------------------------------|---------
-Microsoft-Windows-TabletPC-InputPanel  |  1         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  2         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  3         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  4         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  5         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  6         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  7         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  8         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  9         |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  10        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  11        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  12        |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  13        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  14        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  15        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  16        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  17        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  18        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  19        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  20        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  21        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  22        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  23        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  24        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  25        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  26        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  27        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  28        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  29        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  30        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  31        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  32        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  33        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  34        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  35        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  36        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  37        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  38        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  39        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  40        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  41        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  42        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  43        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  44        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  45        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  46        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  47        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  48        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  49        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  50        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  51        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  52        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  53        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  54        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  55        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  56        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  57        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  58        |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  59        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  60        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  61        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  62        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  63        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  64        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  65        |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  66        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  67        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  68        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  69        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  70        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  71        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  72        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  73        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  74        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  75        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  76        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  77        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  78        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  79        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  80        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  81        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  82        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  83        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  84        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  85        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  86        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  87        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  88        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  89        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  90        |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  91        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  92        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  93        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  94        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  95        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  96        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  97        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  98        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  99        |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  100       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  101       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  102       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  103       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  104       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  105       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  106       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  107       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  108       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  109       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  110       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  111       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  112       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  113       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  114       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  115       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  116       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  117       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  118       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  119       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  120       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  121       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  122       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  123       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  124       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  125       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  126       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  127       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  128       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  129       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  130       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  131       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  132       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  133       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  134       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  135       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  136       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  137       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  138       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  139       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  140       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  141       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  142       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  143       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  144       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  145       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  146       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  147       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  148       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  149       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  150       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  151       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  152       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  153       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  154       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  155       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  156       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  157       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  158       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  159       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  160       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  161       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  162       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  163       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  164       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  165       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  166       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  167       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  168       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  169       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  170       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  171       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  172       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  173       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  174       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  175       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  176       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  177       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  178       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  179       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  180       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  181       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  182       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  183       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  184       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  185       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  186       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  187       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  188       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  189       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  190       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  191       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  192       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  193       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  194       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  195       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  196       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  197       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  198       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  199       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  200       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  201       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  202       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  203       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  204       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  205       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  206       |  TabletPC_InputPanel_Channel  |
-Microsoft-Windows-TabletPC-InputPanel  |  207       |                               |
-Microsoft-Windows-TabletPC-InputPanel  |  208       |  TabletPC_InputPanel_Channel  |
+Provider                               |  Level        |  Event ID  |  Version  |  Channel                      |  Task                                        |  Opcode  |  Keyword                      |  Message
+---------------------------------------|---------------|------------|-----------|-------------------------------|----------------------------------------------|----------|-------------------------------|---------
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  1         |  0        |  TabletPC_InputPanel_Channel  |  FSLoader_LoadKeyboardDef                    |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  2         |  0        |  TabletPC_InputPanel_Channel  |  FSLoader_LoadKeyboardDef                    |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  3         |  0        |  TabletPC_InputPanel_Channel  |  FSLoader_LoadKeyDef                         |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  4         |  0        |  TabletPC_InputPanel_Channel  |  FSLoader_LoadKeyDef                         |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  5         |  0        |  TabletPC_InputPanel_Channel  |  KBMonitor_SessionChange                     |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  6         |  0        |  TabletPC_InputPanel_Channel  |  KBMonitor_SessionChange                     |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  7         |  0        |  TabletPC_InputPanel_Channel  |  KBMonitor_DeviceChange                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  8         |  0        |  TabletPC_InputPanel_Channel  |  KBMonitor_DeviceChange                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  9         |  0        |  TabletPC_InputPanel_Channel  |  KBMonitor_Initialize                        |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  10        |  0        |  TabletPC_InputPanel_Channel  |  KBMonitor_Initialize                        |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  11        |  0        |  TabletPC_InputPanel_Channel  |  KSGenerator_KeyPress                        |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  12        |  0        |                               |  KSGenerator_KeyPress                        |  Stop    |                               |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  13        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_Initialize                       |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  14        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_Initialize                       |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  15        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_ActivateHKL                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  16        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_ActivateHKL                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  17        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_ReleaseKeys                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  18        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_ReleaseKeys                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  19        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_KeyDown                          |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  20        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_KeyDown                          |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  21        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_KeyUp                            |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  22        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_KeyUp                            |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  23        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_SessionActivated                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  24        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_SessionActivated                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  25        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_KBDeviceChange                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  26        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_KBDeviceChange                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  27        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_KeyAction                        |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  28        |  0        |  TabletPC_InputPanel_Channel  |  StateModel_KeyAction                        |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  29        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_KeyBoardKeyPaint                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  30        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_KeyBoardKeyPaint                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  31        |  0        |  TabletPC_InputPanel_Channel  |  KeyState_Hover                              |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  32        |  0        |  TabletPC_InputPanel_Channel  |  KeyState_Hover                              |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  33        |  0        |  TabletPC_InputPanel_Channel  |  KeyState_Pressed                            |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  34        |  0        |  TabletPC_InputPanel_Channel  |  KeyState_Pressed                            |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  35        |  0        |  TabletPC_InputPanel_Channel  |  KeyState_PressedHover                       |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  36        |  0        |  TabletPC_InputPanel_Channel  |  KeyState_PressedHover                       |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  37        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_UserInput                        |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  38        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_UserInput                        |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  39        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_KeyBoardLKeyPaint                |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  40        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_KeyBoardLKeyPaint                |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  41        |  0        |  TabletPC_InputPanel_Channel  |  LKeyState_Hover                             |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  42        |  0        |  TabletPC_InputPanel_Channel  |  LKeyState_Hover                             |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  43        |  0        |  TabletPC_InputPanel_Channel  |  LKeyState_Pressed                           |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  44        |  0        |  TabletPC_InputPanel_Channel  |  LKeyState_Pressed                           |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  45        |  0        |  TabletPC_InputPanel_Channel  |  LKeyState_PressedHover                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  46        |  0        |  TabletPC_InputPanel_Channel  |  LKeyState_PressedHover                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  47        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_KeyBoardInnerKeyPaint            |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  48        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_KeyBoardInnerKeyPaint            |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  49        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_Initialize                       |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  50        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_Initialize                       |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  51        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_ActivateLayout                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  52        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_ActivateLayout                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  53        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_ActivateLayoutCreation           |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  54        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_ActivateLayoutCreation           |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  55        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_ThemeChange                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  56        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_ThemeChange                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  57        |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_Show                           |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  58        |  0        |                               |  SoftKeyboard_Show                           |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  59        |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_Hide                           |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  60        |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_Hide                           |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  61        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_PasswordMode                     |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  62        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_PasswordMode                     |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  63        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_Resize                           |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  64        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_Resize                           |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  65        |  0        |                               |  SoftKeyboard_KeyPress                       |  Start   |                               |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  66        |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_KeyPress                       |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  67        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_ApplyLabels                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  68        |  0        |  TabletPC_InputPanel_Channel  |  KeyboardUI_ApplyLabels                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  69        |  0        |  TabletPC_InputPanel_Channel  |  MainSkin_Initialize                         |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  70        |  0        |  TabletPC_InputPanel_Channel  |  MainSkin_Initialize                         |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  71        |  0        |  TabletPC_InputPanel_Channel  |  AuxSkin_Initialize                          |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  72        |  0        |  TabletPC_InputPanel_Channel  |  AuxSkin_Initialize                          |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  73        |  0        |  TabletPC_InputPanel_Channel  |  QuickSkin_Initialize                        |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  74        |  0        |  TabletPC_InputPanel_Channel  |  QuickSkin_Initialize                        |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  75        |  0        |  TabletPC_InputPanel_Channel  |  NumSkin_Initialize                          |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  76        |  0        |  TabletPC_InputPanel_Channel  |  NumSkin_Initialize                          |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  77        |  0        |  TabletPC_InputPanel_Channel  |  SymSkin_Initialize                          |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  78        |  0        |  TabletPC_InputPanel_Channel  |  SymSkin_Initialize                          |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  79        |  0        |  TabletPC_InputPanel_Channel  |  WebSkin_Initialize                          |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  80        |  0        |  TabletPC_InputPanel_Channel  |  WebSkin_Initialize                          |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  81        |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_ChangeLanguage                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  82        |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_ChangeLanguage                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  83        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ContextInitTagData                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  84        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ContextInitTagData                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  85        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ContextBuildWordList                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  86        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ContextBuildWordList                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  87        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ShowInvocationHandleOnBoot           |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  88        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ShowInvocationHandleOnBoot           |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  89        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Painting_Handwriting                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  90        |  0        |                               |  TabTip_Painting_Handwriting                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  91        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_LanguageChanged                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  92        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_LanguageChanged                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  93        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AutogrowHorizLinedInput              |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  94        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AutogrowHorizLinedInput              |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  95        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AutogrowHorizBoxedInput              |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  96        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AutogrowHorizBoxedInput              |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  97        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AutogrowVertLinedInput               |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  98        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AutogrowVertLinedInput               |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  99        |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AutogrowVertBoxedInput               |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  100       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AutogrowVertBoxedInput               |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  101       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OpenPostInsCorrectionComb            |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  102       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OpenPostInsCorrectionComb            |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  103       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ShowHoverTarget                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  104       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ShowHoverTarget                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  105       |  0        |                               |  TabTip_OpenByHoverTarget_Keyboard           |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  106       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OpenByHoverTarget_Keyboard           |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  107       |  0        |                               |  TabTip_OpenByInvocationHandle_Keyboard      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  108       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OpenByInvocationHandle_Keyboard      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  109       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_UnDocking                            |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  110       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_UnDocking                            |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  111       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Docking                              |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  112       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Docking                              |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  113       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_SwitchToLinedInput                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  114       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_SwitchToLinedInput                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  115       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_SwitchToBoxedInput                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  116       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_SwitchToBoxedInput                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  117       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_SwitchToSKB                          |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  118       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_SwitchToSKB                          |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  119       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OpenPreInsCorrectionComb             |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  120       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OpenPreInsCorrectionComb             |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  121       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ExpandInvocationHandle               |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  122       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ExpandInvocationHandle               |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  123       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_InsertWritingPad                     |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  124       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_InsertWritingPad                     |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  125       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ScratchOutWritingPad                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  126       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ScratchOutWritingPad                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  127       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_RecoLinedInput                       |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  128       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_RecoLinedInput                       |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  129       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_BackOfPenEraseLinedInput             |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  130       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_BackOfPenEraseLinedInput             |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  131       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_InsertBoxedInput                     |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  132       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_InsertBoxedInput                     |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  133       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_RecoBoxedInput                       |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  134       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_RecoBoxedInput                       |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  135       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_BackOfPenEraseBoxedInput             |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  136       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_BackOfPenEraseBoxedInput             |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  137       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ScratchOutBoxedInput                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  138       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ScratchOutBoxedInput                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  139       |  0        |  TabletPC_InputPanel_Channel  |  KBMonitor_KeyAction                         |          |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  140       |  0        |  TabletPC_InputPanel_Channel  |  KSGenerator_Send                            |          |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  141       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_HandwritingLayoutChanged             |          |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  142       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_HandwritingRecognition               |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  143       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_HandwritingRecognition               |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  144       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_PredictionSelected                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  145       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_PredictionSelected                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  146       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_GetPredictionBaseText                |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  147       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_GetPredictionBaseText                |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  148       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ExpandCorrectionAnimation            |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  149       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ExpandCorrectionAnimation            |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  150       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_CollapseCorrectionAnimation          |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  151       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_CollapseCorrectionAnimation          |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  152       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ShrinkBoxAnimation                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  153       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ShrinkBoxAnimation                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  154       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ProtectedBoxAnimation                |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  155       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ProtectedBoxAnimation                |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  156       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ReflowAnimation                      |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  157       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ReflowAnimation                      |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  158       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ReflectCorrectionDataToView          |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  159       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ReflectCorrectionDataToView          |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  160       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ScrollLineAnimation                  |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  161       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ScrollLineAnimation                  |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  162       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AddWordToDictionary                  |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  163       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_AddWordToDictionary                  |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  164       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_RemoveWordFromDictionary             |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  165       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_RemoveWordFromDictionary             |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  166       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_GesturePaletteAnimation              |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  167       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_GesturePaletteAnimation              |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  168       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_InsertBoxAnimation                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  169       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_InsertBoxAnimation                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  170       |  0        |                               |  TabTip_ShowHandwritingTemplate              |  Start   |                               |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  171       |  0        |                               |  TabTip_ShowHandwritingTemplate              |  Stop    |                               |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  172       |  0        |                               |  TabTip_HideHandwritingTemplate              |  Start   |                               |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  173       |  0        |                               |  TabTip_HideHandwritingTemplate              |  Stop    |                               |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  174       |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_ChangeWebButtons               |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  175       |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_ChangeWebButtons               |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  176       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ProcessSmartCorrection               |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  177       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ProcessSmartCorrection               |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  178       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ReflectCorrectionBlobDataToRichEdit  |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  179       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_ReflectCorrectionBlobDataToRichEdit  |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  180       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Load                                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  181       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Load                                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  182       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Exit                                 |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  183       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Exit                                 |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  184       |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_KeyGlowAnimation               |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  185       |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_KeyGlowAnimation               |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  186       |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_KeyGlowAnimation               |          |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  187       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_SlideAnimation_Keyboard              |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  188       |  0        |                               |  TabTip_SlideAnimation_Keyboard              |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  189       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Log                                  |          |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  190       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OptionsDialogOpen                    |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  191       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OptionsDialogOpen                    |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  192       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OptionsDialogClose                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  193       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OptionsDialogClose                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  194       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_TextInsertionInApp                   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  195       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_TextInsertionInApp                   |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  196       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_DRTCustomEvent                       |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  197       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_DRTCustomEvent                       |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  198       |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_ModeBias_WebButtons            |          |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  199       |  0        |  TabletPC_InputPanel_Channel  |  SoftKeyboard_ModeBias_NotWebButtons         |          |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  200       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_GestureRecognized                    |          |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  201       |  0        |                               |  TabTip_SlideAnimation_Handwriting           |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  202       |  0        |                               |  TabTip_Painting_Keyboard                    |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  203       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_SlideAnimation_Handwriting           |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  204       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_Painting_Keyboard                    |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  205       |  0        |                               |  TabTip_OpenByHoverTarget_Handwriting        |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  206       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OpenByHoverTarget_Handwriting        |  Stop    |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  207       |  0        |                               |  TabTip_OpenByInvocationHandle_Handwriting   |  Start   |  TabletPC_InputPanel_Keyword  |
+Microsoft-Windows-TabletPC-InputPanel  |  Information  |  208       |  0        |  TabletPC_InputPanel_Channel  |  TabTip_OpenByInvocationHandle_Handwriting   |  Stop    |  TabletPC_InputPanel_Keyword  |

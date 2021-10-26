@@ -1,5 +1,5 @@
-Provider                      |  Event ID  |  Channel      |  Message
-------------------------------|------------|---------------|-------------------------------------------------------------------------------------------------
-Microsoft-Windows-RetailDemo  |  100       |  Admin        |
-Microsoft-Windows-RetailDemo  |  101       |  Admin        |
-Microsoft-Windows-RetailDemo  |  200       |  Operational  |  Retail Demo service has caught an exception {HRESULT} (State: {ErrorState} Phase: {ErrorPhase})
+Provider                      |  Level        |  Event ID  |  Version  |  Channel      |  Task                         |  Opcode  |  Keyword  |  Message
+------------------------------|---------------|------------|-----------|---------------|-------------------------------|----------|-----------|-------------------------------------------------------------------------------------------------
+Microsoft-Windows-RetailDemo  |  Information  |  100       |  0        |  Admin        |  RetailDemo_Service_Lifetime  |  Start   |  Service  |
+Microsoft-Windows-RetailDemo  |  Information  |  101       |  0        |  Admin        |  RetailDemo_Service_Lifetime  |  Stop    |  Service  |
+Microsoft-Windows-RetailDemo  |  Error        |  200       |  0        |  Operational  |  RetailDemo_Service_Error     |          |           |  Retail Demo service has caught an exception {HRESULT} (State: {ErrorState} Phase: {ErrorPhase})

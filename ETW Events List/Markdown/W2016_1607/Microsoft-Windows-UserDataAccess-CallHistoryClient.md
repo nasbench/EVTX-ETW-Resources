@@ -1,8 +1,8 @@
-Provider                                            |  Event ID  |  Channel  |  Message
-----------------------------------------------------|------------|-----------|-------------------------------------------------------------------------------------
-Microsoft-Windows-UserDataAccess-CallHistoryClient  |  1         |           |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
-Microsoft-Windows-UserDataAccess-CallHistoryClient  |  2         |           |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
-Microsoft-Windows-UserDataAccess-CallHistoryClient  |  3         |           |  Object {p:{ObjPtr}, type:{ObjType}, id:{ObjId}} property {PropCode} not yet fetched
-Microsoft-Windows-UserDataAccess-CallHistoryClient  |  4         |           |  Async RPC call failed with {RpcCode} (output value {OldCode})
-Microsoft-Windows-UserDataAccess-CallHistoryClient  |  5         |           |  Start cancelling task. Remote: {P1}
-Microsoft-Windows-UserDataAccess-CallHistoryClient  |  6         |           |  Task Cancelled. Remote: {P1}
+Provider                                            |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword         |  Message
+----------------------------------------------------|---------------|------------|-----------|-----------|--------|----------|------------------|-------------------------------------------------------------------------------------
+Microsoft-Windows-UserDataAccess-CallHistoryClient  |  Error        |  1         |  0        |           |        |          |  Error           |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-UserDataAccess-CallHistoryClient  |  Warning      |  2         |  0        |           |        |          |                  |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
+Microsoft-Windows-UserDataAccess-CallHistoryClient  |  Information  |  3         |  0        |           |        |          |  Error           |  Object {p:{ObjPtr}, type:{ObjType}, id:{ObjId}} property {PropCode} not yet fetched
+Microsoft-Windows-UserDataAccess-CallHistoryClient  |  Error        |  4         |  0        |           |        |          |  Error           |  Async RPC call failed with {RpcCode} (output value {OldCode})
+Microsoft-Windows-UserDataAccess-CallHistoryClient  |  Information  |  5         |  0        |           |        |          |  CommsDataModel  |  Start cancelling task. Remote: {P1}
+Microsoft-Windows-UserDataAccess-CallHistoryClient  |  Information  |  6         |  0        |           |        |          |  CommsDataModel  |  Task Cancelled. Remote: {P1}

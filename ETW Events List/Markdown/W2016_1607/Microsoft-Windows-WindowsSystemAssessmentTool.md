@@ -1,16 +1,16 @@
-Provider                                       |  Event ID  |  Channel                                                    |  Message
------------------------------------------------|------------|-------------------------------------------------------------|----------------------------------------------------
-Microsoft-Windows-WindowsSystemAssessmentTool  |  0         |                                                             |  {TestV1} {TestV2} {TestV3} {TestV4}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  1         |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  WinSAT Application Start: {StartTimeOfDay}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  2         |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  WinSAT Application Command Line {CommandLine}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  3         |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  WinSAT Application Stop: {ExitCode}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  4         |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  ERROR: {CantMsg}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  5         |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  COM ERROR: {Source} {Interface}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  6         |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  ERROR: {ErrorMsg}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  7         |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  ERROR: {FailingHresult} {ErrorMsg}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  8         |                                                             |  {Message}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  9         |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  {PhaseID}:{Description}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  10        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  {PhaseID}
-Microsoft-Windows-WindowsSystemAssessmentTool  |  11        |                                                             |  Main watch dog timeout - terminating process
-Microsoft-Windows-WindowsSystemAssessmentTool  |  12        |                                                             |  Assessment watch dog timeout - terminating process
-Microsoft-Windows-WindowsSystemAssessmentTool  |  13        |                                                             |  Short watch dog timeout - terminating process
+Provider                                       |  Level        |  Event ID  |  Version  |  Channel                                                    |  Task         |  Opcode  |  Keyword  |  Message
+-----------------------------------------------|---------------|------------|-----------|-------------------------------------------------------------|---------------|----------|-----------|----------------------------------------------------
+Microsoft-Windows-WindowsSystemAssessmentTool  |  Information  |  0         |  0        |                                                             |  Application  |          |           |  {TestV1} {TestV2} {TestV3} {TestV4}
+Microsoft-Windows-WindowsSystemAssessmentTool  |               |  1         |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |  Start   |           |  WinSAT Application Start: {StartTimeOfDay}
+Microsoft-Windows-WindowsSystemAssessmentTool  |               |  2         |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |          |           |  WinSAT Application Command Line {CommandLine}
+Microsoft-Windows-WindowsSystemAssessmentTool  |               |  3         |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |  Stop    |           |  WinSAT Application Stop: {ExitCode}
+Microsoft-Windows-WindowsSystemAssessmentTool  |               |  4         |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |          |           |  ERROR: {CantMsg}
+Microsoft-Windows-WindowsSystemAssessmentTool  |               |  5         |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |          |           |  COM ERROR: {Source} {Interface}
+Microsoft-Windows-WindowsSystemAssessmentTool  |               |  6         |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |          |           |  ERROR: {ErrorMsg}
+Microsoft-Windows-WindowsSystemAssessmentTool  |               |  7         |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |          |           |  ERROR: {FailingHresult} {ErrorMsg}
+Microsoft-Windows-WindowsSystemAssessmentTool  |  Information  |  8         |  0        |                                                             |  Application  |          |           |  {Message}
+Microsoft-Windows-WindowsSystemAssessmentTool  |  Information  |  9         |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |          |           |  {PhaseID}:{Description}
+Microsoft-Windows-WindowsSystemAssessmentTool  |  Information  |  10        |  0        |  Microsoft-Windows-WindowsSystemAssessmentTool/Operational  |  Application  |          |           |  {PhaseID}
+Microsoft-Windows-WindowsSystemAssessmentTool  |  Information  |  11        |  0        |                                                             |  Application  |          |           |  Main watch dog timeout - terminating process
+Microsoft-Windows-WindowsSystemAssessmentTool  |  Information  |  12        |  0        |                                                             |  Application  |          |           |  Assessment watch dog timeout - terminating process
+Microsoft-Windows-WindowsSystemAssessmentTool  |  Information  |  13        |  0        |                                                             |  Application  |          |           |  Short watch dog timeout - terminating process

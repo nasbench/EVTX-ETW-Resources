@@ -1,7 +1,7 @@
-Provider                             |  Event ID  |  Channel                                         |  Message
--------------------------------------|------------|--------------------------------------------------|---------
-Microsoft-Windows-OOBE-Machine-Core  |  5004      |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |
-Microsoft-Windows-OOBE-Machine-Core  |  5041      |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |
-Microsoft-Windows-OOBE-Machine-Core  |  5042      |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |
-Microsoft-Windows-OOBE-Machine-Core  |  5043      |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |
-Microsoft-Windows-OOBE-Machine-Core  |  5044      |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |
+Provider                             |  Level        |  Event ID  |  Version  |  Channel                                         |  Task                |  Opcode  |  Keyword  |  Message
+-------------------------------------|---------------|------------|-----------|--------------------------------------------------|----------------------|----------|-----------|---------
+Microsoft-Windows-OOBE-Machine-Core  |  Information  |  5004      |  0        |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |  ServiceStartResult  |          |  msoobe   |
+Microsoft-Windows-OOBE-Machine-Core  |  Information  |  5041      |  0        |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |  MandatoryTasks      |  Start   |  msoobe   |
+Microsoft-Windows-OOBE-Machine-Core  |  Information  |  5042      |  0        |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |  MandatoryTasks      |  Stop    |  msoobe   |
+Microsoft-Windows-OOBE-Machine-Core  |  Information  |  5043      |  0        |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |  Finalize            |  Start   |  msoobe   |
+Microsoft-Windows-OOBE-Machine-Core  |  Information  |  5044      |  0        |  Microsoft-Windows-OOBE-Machine-Core/Diagnostic  |  Finalize            |  Stop    |  msoobe   |

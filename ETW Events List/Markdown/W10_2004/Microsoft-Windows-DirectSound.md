@@ -1,4 +1,4 @@
-Provider                       |  Event ID  |  Channel                              |  Message
--------------------------------|------------|---------------------------------------|--------------------------------------------------------------------------
-Microsoft-Windows-DirectSound  |  0         |  Microsoft-Windows-DirectSound/Debug  |  A DirectSound Stream Switch has started.
-Microsoft-Windows-DirectSound  |  1         |  Microsoft-Windows-DirectSound/Debug  |  A DirectSound Stream Switch has completed with status {hr} ({hrString}).
+Provider                       |  Level        |  Event ID  |  Version  |  Channel                              |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------|---------------|------------|-----------|---------------------------------------|--------|----------|-----------|--------------------------------------------------------------------------
+Microsoft-Windows-DirectSound  |  Information  |  0         |  0        |  Microsoft-Windows-DirectSound/Debug  |        |          |           |  A DirectSound Stream Switch has started.
+Microsoft-Windows-DirectSound  |  Information  |  1         |  0        |  Microsoft-Windows-DirectSound/Debug  |        |          |           |  A DirectSound Stream Switch has completed with status {hr} ({hrString}).

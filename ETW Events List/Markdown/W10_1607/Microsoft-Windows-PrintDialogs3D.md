@@ -1,59 +1,59 @@
-Provider                          |  Event ID  |  Channel                                    |  Message
-----------------------------------|------------|---------------------------------------------|---------
-Microsoft-Windows-PrintDialogs3D  |  1         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  2         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  3         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  4         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  5         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  6         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  7         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  8         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  9         |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  10        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  11        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  12        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  13        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  14        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  15        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  16        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  17        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  18        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  19        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  20        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  21        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  22        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  23        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  24        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  25        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  26        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  27        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  28        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  29        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  30        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  31        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  32        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  33        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  34        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  35        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  36        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  37        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  38        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  39        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  40        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  41        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  42        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  43        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  44        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  45        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  46        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  47        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  48        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  49        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  50        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  51        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  52        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  53        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  54        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  55        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  56        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
-Microsoft-Windows-PrintDialogs3D  |  57        |  Microsoft-Windows-PrintDialogs3D/Analytic  |
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                    |  Task                                                 |  Opcode  |  Keyword  |  Message
+----------------------------------|---------------|------------|-----------|---------------------------------------------|-------------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-PrintDialogs3D  |  Information  |  1         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_Dll                                   |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  2         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_Dll                                   |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  3         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_Factory                               |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  4         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_Factory                               |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  5         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_ShowPrintPreferencesDlg               |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  6         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_ShowPrintPreferencesDlg               |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  7         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_CreateXPSPrintPreviewHandlerFromFile  |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  8         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_CreateXPSPrintPreviewHandlerFromFile  |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  9         |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_CreateXPSPrintPreviewHandlerFromOM    |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  10        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_CreateXPSPrintPreviewHandlerFromOM    |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  11        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_Print                                 |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  12        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_Print                                 |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  13        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_MoreOptions                           |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  14        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_MoreOptions                           |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  15        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewRender                         |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  16        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewRender                         |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  17        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewCreateDeviceResource           |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  18        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewCreateDeviceResource           |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  19        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_StartPreview                          |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  20        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_StartPreview                          |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  21        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerCreate                  |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  22        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerCreate                  |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  23        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerEndPage                 |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  24        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerEndPage                 |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  25        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerStart                   |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  26        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerStart                   |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  27        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerRetrieveImage           |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  28        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerRetrieveImage           |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  29        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerDoPreviewWork           |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  30        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewManagerDoPreviewWork           |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  31        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_StartPrintExperience                  |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  32        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_StartPrintExperience                  |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  33        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_ShowSelectorUI                        |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  34        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_ShowSelectorUI                        |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  35        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_ChangeSetting                         |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  36        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_ChangeSetting                         |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  37        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewNextPage                       |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  38        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewNextPage                       |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  39        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewPrevPage                       |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  40        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewPrevPage                       |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  41        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |                                                       |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  42        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_BindPrinter                           |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  43        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_BindPrinter                           |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  44        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_EnsureDocSource                       |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  45        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_EnsureDocSource                       |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  46        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_Paginate                              |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  47        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_Paginate                              |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  48        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_MakePage                              |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  49        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_MakePage                              |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  50        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewAddPage                        |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  51        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewAddPage                        |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  52        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewTransferPage                   |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  53        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PreviewTransferPage                   |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  54        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PaginateRequest                       |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  55        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_PaginateRequest                       |  Stop    |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  56        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_MakePageRequest                       |  Start   |           |
+Microsoft-Windows-PrintDialogs3D  |  Information  |  57        |  0        |  Microsoft-Windows-PrintDialogs3D/Analytic  |  PrintDialogs3D_MakePageRequest                       |  Stop    |           |

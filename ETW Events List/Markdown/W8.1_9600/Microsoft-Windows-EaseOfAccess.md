@@ -1,38 +1,38 @@
-Provider                        |  Event ID  |  Channel                                    |  Message
---------------------------------|------------|---------------------------------------------|---------
-Microsoft-Windows-EaseOfAccess  |  1         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  2         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  3         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  4         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  5         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  6         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  7         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  8         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  9         |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  10        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  11        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  12        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  13        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  14        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  15        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  16        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  17        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  18        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  19        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  20        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  21        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  22        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  23        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  24        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  25        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  26        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  27        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  28        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  29        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  30        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  31        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  32        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  33        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  34        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  35        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
-Microsoft-Windows-EaseOfAccess  |  36        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |
+Provider                        |  Level        |  Event ID  |  Version  |  Channel                                    |  Task                         |  Opcode  |  Keyword              |  Message
+--------------------------------|---------------|------------|-----------|---------------------------------------------|-------------------------------|----------|-----------------------|---------
+Microsoft-Windows-EaseOfAccess  |  Information  |  1         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_LaunchApp            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  2         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_LaunchApp            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  3         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_ChangeZoomLevel      |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  4         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_ChangeZoomLevel      |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  5         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_ChangeFocus          |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  6         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_ChangeFocus          |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  7         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  UtilMan_LaunchApp            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  8         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  UtilMan_LaunchApp            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  9         |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  SetHC_EnableHighContrast     |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  10        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  SetHC_EnableHighContrast     |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  11        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  CPL_InitializePage           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  12        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  CPL_InitializePage           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  13        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  CPL_CommitChanges            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  14        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  CPL_CommitChanges            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  15        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_LaunchSettings       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  16        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_LaunchSettings       |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  17        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_ModeSwitch           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  18        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_ModeSwitch           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  19        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_Context              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  20        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_Context              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  21        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_PanningSwitch        |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  22        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_PanningSwitch        |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  23        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_HandleTouch          |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  24        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_HandleTouch          |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  25        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_HandledTouchPan      |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  26        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_HandledTouchZoom     |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  27        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_TouchBladeShowHide   |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  28        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_TouchBladeShowHide   |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  29        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_TouchBladeShowHide   |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  30        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_TouchBladeShowHide   |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  31        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_TouchBladeShowHide   |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  32        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_TouchBladeShowHide   |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  33        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_TouchBladeShowHide   |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  34        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_TouchBladeShowHide   |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  35        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_CloseButtonShowHide  |          |  PerfInstrumentation  |
+Microsoft-Windows-EaseOfAccess  |  Information  |  36        |  0        |  Microsoft-Windows-EaseOfAccess/Diagnostic  |  Magnify_CloseButtonShowHide  |          |  PerfInstrumentation  |

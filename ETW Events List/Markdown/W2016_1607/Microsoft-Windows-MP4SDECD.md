@@ -1,27 +1,27 @@
-Provider                    |  Event ID  |  Channel                   |  Message
-----------------------------|------------|----------------------------|---------
-Microsoft-Windows-MP4SDECD  |  0         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  1         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  2         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  3         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  4         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  5         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  6         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  7         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  8         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  9         |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  10        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  11        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  12        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  13        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  14        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  15        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  16        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  17        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  18        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  19        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  20        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  21        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  22        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  23        |  WINDOWS_MP4SDECD_CHANNEL  |
-Microsoft-Windows-MP4SDECD  |  24        |  WINDOWS_MP4SDECD_CHANNEL  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                   |  Task                        |  Opcode  |  Keyword  |  Message
+----------------------------|---------------|------------|-----------|----------------------------|------------------------------|----------|-----------|---------
+Microsoft-Windows-MP4SDECD  |  Information  |  0         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_Decoder            |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  1         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_Decoder            |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  2         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_Init               |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  3         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_Init               |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  4         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_setExtendedFormat  |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  5         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_setExtendedFormat  |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  6         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessInput       |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  7         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessInput       |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  8         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessInput       |          |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  9         |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  10        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  11        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  12        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  13        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  14        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  15        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  16        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  17        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Start   |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  18        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_ProcessOutput      |  Stop    |           |
+Microsoft-Windows-MP4SDECD  |  Verbose      |  19        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_MFSetRate          |          |           |
+Microsoft-Windows-MP4SDECD  |  Verbose      |  20        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_Discontinuity      |          |           |
+Microsoft-Windows-MP4SDECD  |  Verbose      |  21        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_Flush              |          |           |
+Microsoft-Windows-MP4SDECD  |  Verbose      |  22        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_NullOutput         |          |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  23        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_QM                 |          |           |
+Microsoft-Windows-MP4SDECD  |  Information  |  24        |  0        |  WINDOWS_MP4SDECD_CHANNEL  |  MP4SDECD_QM                 |          |           |

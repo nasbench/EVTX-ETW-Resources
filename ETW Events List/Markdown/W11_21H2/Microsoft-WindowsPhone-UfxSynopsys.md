@@ -1,13 +1,13 @@
-Provider                            |  Event ID  |  Channel  |  Message
-------------------------------------|------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-WindowsPhone-UfxSynopsys  |  100       |           |  Failed with status {Status} in file {File} on line {Line}
-Microsoft-WindowsPhone-UfxSynopsys  |  101       |           |  READ {Offset} {Value}
-Microsoft-WindowsPhone-UfxSynopsys  |  102       |           |  WRITE {Offset} {Value}
-Microsoft-WindowsPhone-UfxSynopsys  |  200       |           |  TRANSFER {Stage}: {Endpoint} ({PhysicalEndpoint}), RQ: {Request}, DMA: {Transaction}, BytesReq: {BytesRequested}, BytesProg: {BytesProgrammed}, BytesTrans: {BytesTransferred}, SG: {SgProgrammed}/{Stage}0, TRB:{Stage}1/{Stage}2
-Microsoft-WindowsPhone-UfxSynopsys  |  201       |           |  TRB: {Endpoint} ({PhysicalEndpoint}) -- ({Index}) {Word1} {Word2} {Word3} {Word4}
-Microsoft-WindowsPhone-UfxSynopsys  |  202       |           |  COMMAND {Name}: {Endpoint} ({PhysicalEndpoint}) -- {Command} {Parameter0} {Parameter1} {Parameter2}
-Microsoft-WindowsPhone-UfxSynopsys  |  301       |           |  Endpoint Information
-Microsoft-WindowsPhone-UfxSynopsys  |  302       |           |  Charger Detection Error
-Microsoft-WindowsPhone-UfxSynopsys  |  303       |           |  Failed to determine port type
-Microsoft-WindowsPhone-UfxSynopsys  |  304       |           |  Register Information
-Microsoft-WindowsPhone-UfxSynopsys  |  305       |           |  Connected Standby: {ConnectedStandby}, Idle Residency: {IdleResidency}, Device Power State: {DevicePowerState}, Connected: {Connected}, Port Type: {UsbPortType}, USB Device State: {UsbDeviceState}
+Provider                            |  Level        |  Event ID  |  Version  |  Channel  |  Task                         |  Opcode  |  Keyword     |  Message
+------------------------------------|---------------|------------|-----------|-----------|-------------------------------|----------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-WindowsPhone-UfxSynopsys  |  Error        |  100       |  0        |           |  FailedNtStatus               |          |  Error       |  Failed with status {Status} in file {File} on line {Line}
+Microsoft-WindowsPhone-UfxSynopsys  |  Verbose      |  101       |  0        |           |  RegisterRead                 |          |  Registers   |  READ {Offset} {Value}
+Microsoft-WindowsPhone-UfxSynopsys  |  Verbose      |  102       |  0        |           |  RegisterWrite                |          |  Registers   |  WRITE {Offset} {Value}
+Microsoft-WindowsPhone-UfxSynopsys  |  Information  |  200       |  0        |           |  Transfer                     |          |  Endpoint    |  TRANSFER {Stage}: {Endpoint} ({PhysicalEndpoint}), RQ: {Request}, DMA: {Transaction}, BytesReq: {BytesRequested}, BytesProg: {BytesProgrammed}, BytesTrans: {BytesTransferred}, SG: {SgProgrammed}/{Stage}0, TRB:{Stage}1/{Stage}2
+Microsoft-WindowsPhone-UfxSynopsys  |  Verbose      |  201       |  0        |           |  Transfer                     |          |  Endpoint    |  TRB: {Endpoint} ({PhysicalEndpoint}) -- ({Index}) {Word1} {Word2} {Word3} {Word4}
+Microsoft-WindowsPhone-UfxSynopsys  |  Verbose      |  202       |  0        |           |  Transfer                     |          |  Endpoint    |  COMMAND {Name}: {Endpoint} ({PhysicalEndpoint}) -- {Command} {Parameter0} {Parameter1} {Parameter2}
+Microsoft-WindowsPhone-UfxSynopsys  |  Information  |  301       |  0        |           |  EndpointInformation          |          |  Diagnostic  |  Endpoint Information
+Microsoft-WindowsPhone-UfxSynopsys  |  Error        |  302       |  0        |           |  ChargerDetectionError        |          |  Diagnostic  |  Charger Detection Error
+Microsoft-WindowsPhone-UfxSynopsys  |  Error        |  303       |  0        |           |  DeterminePortTypeFailed      |          |  Diagnostic  |  Failed to determine port type
+Microsoft-WindowsPhone-UfxSynopsys  |  Information  |  304       |  0        |           |  RegisterInformation          |          |  Diagnostic  |  Register Information
+Microsoft-WindowsPhone-UfxSynopsys  |  Information  |  305       |  0        |           |  ConnectedStandbyInformation  |          |  Diagnostic  |  Connected Standby: {ConnectedStandby}, Idle Residency: {IdleResidency}, Device Power State: {DevicePowerState}, Connected: {Connected}, Port Type: {UsbPortType}, USB Device State: {UsbDeviceState}

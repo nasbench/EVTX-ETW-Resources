@@ -1,23 +1,23 @@
-Provider               |  Event ID  |  Channel  |  Message
------------------------|------------|-----------|---------
-Microsoft-Windows-SEC  |  1         |           |
-Microsoft-Windows-SEC  |  2         |           |
-Microsoft-Windows-SEC  |  3         |           |
-Microsoft-Windows-SEC  |  4         |           |
-Microsoft-Windows-SEC  |  5         |           |
-Microsoft-Windows-SEC  |  6         |           |
-Microsoft-Windows-SEC  |  7         |           |
-Microsoft-Windows-SEC  |  8         |           |
-Microsoft-Windows-SEC  |  9         |           |
-Microsoft-Windows-SEC  |  10        |           |
-Microsoft-Windows-SEC  |  11        |           |
-Microsoft-Windows-SEC  |  12        |           |
-Microsoft-Windows-SEC  |  13        |           |
-Microsoft-Windows-SEC  |  16        |           |
-Microsoft-Windows-SEC  |  17        |           |
-Microsoft-Windows-SEC  |  18        |           |
-Microsoft-Windows-SEC  |  19        |           |
-Microsoft-Windows-SEC  |  20        |           |
-Microsoft-Windows-SEC  |  21        |           |
-Microsoft-Windows-SEC  |  22        |           |
-Microsoft-Windows-SEC  |  23        |           |
+Provider               |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword           |  Message
+-----------------------|---------------|------------|-----------|-----------|--------|----------|--------------------|---------
+Microsoft-Windows-SEC  |  Information  |  1         |  0        |           |        |          |  CreateProcess     |
+Microsoft-Windows-SEC  |  Warning      |  2         |  0        |           |        |          |                    |
+Microsoft-Windows-SEC  |  Information  |  3         |  0        |           |        |          |                    |
+Microsoft-Windows-SEC  |  Information  |  4         |  0        |           |        |          |  CreateFile        |
+Microsoft-Windows-SEC  |  Information  |  5         |  0        |           |        |          |  RenameFile        |
+Microsoft-Windows-SEC  |  Information  |  6         |  0        |           |        |          |  DeleteFile        |
+Microsoft-Windows-SEC  |  Information  |  7         |  0        |           |        |          |  ModifyFile        |
+Microsoft-Windows-SEC  |  Information  |  8         |  0        |           |        |          |  CreateKey         |
+Microsoft-Windows-SEC  |  Information  |  9         |  0        |           |        |          |  DeleteKey         |
+Microsoft-Windows-SEC  |  Information  |  10        |  0        |           |        |          |  RenameKey         |
+Microsoft-Windows-SEC  |  Information  |  11        |  0        |           |        |          |  RestoreKey        |
+Microsoft-Windows-SEC  |  Information  |  12        |  0        |           |        |          |  ReplaceKey        |
+Microsoft-Windows-SEC  |  Information  |  13        |  0        |           |        |          |  SetValue          |
+Microsoft-Windows-SEC  |  Information  |  16        |  0        |           |        |          |  DeleteValue       |
+Microsoft-Windows-SEC  |  Information  |  17        |  0        |           |        |          |  DocumentOpen      |
+Microsoft-Windows-SEC  |  Information  |  18        |  0        |           |        |          |  RemoteThread      |
+Microsoft-Windows-SEC  |  Information  |  19        |  0        |           |        |          |  OpenProcess       |
+Microsoft-Windows-SEC  |  Information  |  20        |  0        |           |        |          |  OpenDesktop       |
+Microsoft-Windows-SEC  |  Information  |  21        |  0        |           |        |          |  VolumeWrite       |
+Microsoft-Windows-SEC  |  Information  |  22        |  0        |           |        |          |  TerminateProcess  |
+Microsoft-Windows-SEC  |  Information  |  23        |  0        |           |        |          |  LoadModule        |

@@ -1,3 +1,3 @@
-Provider                          |  Event ID  |  Channel                                              |  Message
-----------------------------------|------------|-------------------------------------------------------|---------
-Microsoft-Windows-WinINet-Config  |  5600      |  Microsoft-Windows-WinINet-Config/ProxyConfigChanged  |
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                              |  Task  |  Opcode  |  Keyword  |  Message
+----------------------------------|---------------|------------|-----------|-------------------------------------------------------|--------|----------|-----------|---------
+Microsoft-Windows-WinINet-Config  |  Information  |  5600      |  0        |  Microsoft-Windows-WinINet-Config/ProxyConfigChanged  |        |          |           |

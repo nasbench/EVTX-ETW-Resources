@@ -1,25 +1,25 @@
-Provider|Event ID|Channel|Message
-Microsoft-Windows-Network-Setup|100|Microsoft-Windows-Network-Setup/Diagnostic|
-Microsoft-Windows-Network-Setup|101|Microsoft-Windows-Network-Setup/Diagnostic|
-Microsoft-Windows-Network-Setup|102|Microsoft-Windows-Network-Setup/Diagnostic|The Network Setup service failed to start with error {Code}
-Microsoft-Windows-Network-Setup|110|Microsoft-Windows-Network-Setup/Diagnostic|
-Microsoft-Windows-Network-Setup|111|Microsoft-Windows-Network-Setup/Diagnostic|
-Microsoft-Windows-Network-Setup|112|Microsoft-Windows-Network-Setup/Diagnostic|
-Microsoft-Windows-Network-Setup|113|Microsoft-Windows-Network-Setup/Diagnostic|
-Microsoft-Windows-Network-Setup|200|Microsoft-Windows-Network-Setup/Diagnostic|A new transaction has started
-Microsoft-Windows-Network-Setup|201|Microsoft-Windows-Network-Setup/Diagnostic|A transaction has been closed
-Microsoft-Windows-Network-Setup|202|Microsoft-Windows-Network-Setup/Diagnostic|Network Setup has begun calculating new driver bindings
-Microsoft-Windows-Network-Setup|203|Microsoft-Windows-Network-Setup/Diagnostic|Network Setup has finished calculating new driver bindings
-Microsoft-Windows-Network-Setup|204|Microsoft-Windows-Network-Setup/Diagnostic|Network Setup has begun committing changes to the registry
-Microsoft-Windows-Network-Setup|205|Microsoft-Windows-Network-Setup/Diagnostic|Network Setup has finished committing changes to the registry
-Microsoft-Windows-Network-Setup|300|Microsoft-Windows-Network-Setup/Diagnostic|Begin API {Api} on transaction {TransactionGuid}
-Microsoft-Windows-Network-Setup|301|Microsoft-Windows-Network-Setup/Diagnostic|End API {Api} on transaction {TransactionGuid}
-Microsoft-Windows-Network-Setup|400|Microsoft-Windows-Network-Setup/Diagnostic|Begin calling into plug-in {PluginName}
-Microsoft-Windows-Network-Setup|401|Microsoft-Windows-Network-Setup/Diagnostic|End calling into plug-in
-Microsoft-Windows-Network-Setup|500|Microsoft-Windows-Network-Setup/Diagnostic|Begin operation {OperationType} on {ObjectType} in transaction {TransactionGuid}: {ObjectId} on {PropertyBufferSize}:{PropertyBuffer}
-Microsoft-Windows-Network-Setup|501|Microsoft-Windows-Network-Setup/Diagnostic|Operation {TransactionGuid} ended with code {Code}
-Microsoft-Windows-Network-Setup|600|Microsoft-Windows-Network-Setup/Diagnostic|Begin API {Api}
-Microsoft-Windows-Network-Setup|601|Microsoft-Windows-Network-Setup/Diagnostic|End API with status code {Code}
-Microsoft-Windows-Network-Setup|700|Microsoft-Windows-Network-Setup/Diagnostic|Invoking API {ComponentId} on Notify Object for {TransactionGuid}
-Microsoft-Windows-Network-Setup|701|Microsoft-Windows-Network-Setup/Diagnostic|The Notify Object returned with status: {Code}
-Microsoft-Windows-Network-Setup|702|Microsoft-Windows-Network-Setup/Diagnostic|An error occurred while invoking the Notify Object. The call was aborted with status: {Code}.
+Provider|Level|Event ID|Version|Channel|Task|Opcode|Keyword|Message
+Microsoft-Windows-Network-Setup|Information|100|0|Microsoft-Windows-Network-Setup/Diagnostic|Run service|Start||
+Microsoft-Windows-Network-Setup|Information|101|0|Microsoft-Windows-Network-Setup/Diagnostic|Run service|||
+Microsoft-Windows-Network-Setup|Error|102|0|Microsoft-Windows-Network-Setup/Diagnostic|Run service|||The Network Setup service failed to start with error {Code}
+Microsoft-Windows-Network-Setup|Information|110|0|Microsoft-Windows-Network-Setup/Diagnostic|Run service|||
+Microsoft-Windows-Network-Setup|Information|111|0|Microsoft-Windows-Network-Setup/Diagnostic|Run service|||
+Microsoft-Windows-Network-Setup|Information|112|0|Microsoft-Windows-Network-Setup/Diagnostic|Run service|||
+Microsoft-Windows-Network-Setup|Information|113|0|Microsoft-Windows-Network-Setup/Diagnostic|Run service|Stop||
+Microsoft-Windows-Network-Setup|Information|200|0|Microsoft-Windows-Network-Setup/Diagnostic|Transaction|Start||A new transaction has started
+Microsoft-Windows-Network-Setup|Information|201|0|Microsoft-Windows-Network-Setup/Diagnostic|Transaction|Stop||A transaction has been closed
+Microsoft-Windows-Network-Setup|Information|202|0|Microsoft-Windows-Network-Setup/Diagnostic|Calculate bindings|Start||Network Setup has begun calculating new driver bindings
+Microsoft-Windows-Network-Setup|Information|203|0|Microsoft-Windows-Network-Setup/Diagnostic|Calculate bindings|Stop||Network Setup has finished calculating new driver bindings
+Microsoft-Windows-Network-Setup|Information|204|0|Microsoft-Windows-Network-Setup/Diagnostic|Commit changes|Start||Network Setup has begun committing changes to the registry
+Microsoft-Windows-Network-Setup|Information|205|0|Microsoft-Windows-Network-Setup/Diagnostic|Commit changes|Stop||Network Setup has finished committing changes to the registry
+Microsoft-Windows-Network-Setup|Information|300|0|Microsoft-Windows-Network-Setup/Diagnostic|External API|Start||Begin API {Api} on transaction {TransactionGuid}
+Microsoft-Windows-Network-Setup|Information|301|0|Microsoft-Windows-Network-Setup/Diagnostic|External API|Stop||End API {Api} on transaction {TransactionGuid}
+Microsoft-Windows-Network-Setup|Information|400|0|Microsoft-Windows-Network-Setup/Diagnostic|Plug-in callback|Start||Begin calling into plug-in {PluginName}
+Microsoft-Windows-Network-Setup|Information|401|0|Microsoft-Windows-Network-Setup/Diagnostic|Plug-in callback|Stop||End calling into plug-in
+Microsoft-Windows-Network-Setup|Information|500|0|Microsoft-Windows-Network-Setup/Diagnostic|Operation|Start||Begin operation {OperationType} on {ObjectType} in transaction {TransactionGuid}: {ObjectId} on {PropertyBufferSize}:{PropertyBuffer}
+Microsoft-Windows-Network-Setup|Information|501|0|Microsoft-Windows-Network-Setup/Diagnostic|Operation|Stop||Operation {TransactionGuid} ended with code {Code}
+Microsoft-Windows-Network-Setup|Information|600|0|Microsoft-Windows-Network-Setup/Diagnostic|INetCfg API|Start||Begin API {Api}
+Microsoft-Windows-Network-Setup|Information|601|0|Microsoft-Windows-Network-Setup/Diagnostic|INetCfg API|Stop||End API with status code {Code}
+Microsoft-Windows-Network-Setup|Information|700|0|Microsoft-Windows-Network-Setup/Diagnostic|INetCfg Notify Object|Start||Invoking API {ComponentId} on Notify Object for {TransactionGuid}
+Microsoft-Windows-Network-Setup|Information|701|0|Microsoft-Windows-Network-Setup/Diagnostic|INetCfg Notify Object|Stop||The Notify Object returned with status: {Code}
+Microsoft-Windows-Network-Setup|Warning|702|0|Microsoft-Windows-Network-Setup/Diagnostic|INetCfg Notify Object|Stop||An error occurred while invoking the Notify Object. The call was aborted with status: {Code}.

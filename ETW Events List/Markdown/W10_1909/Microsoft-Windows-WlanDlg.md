@@ -1,4 +1,4 @@
-Provider                   |  Event ID  |  Channel                             |  Message
----------------------------|------------|--------------------------------------|---------
-Microsoft-Windows-WlanDlg  |  8001      |  Microsoft-Windows-WlanDlg/Analytic  |
-Microsoft-Windows-WlanDlg  |  8002      |  Microsoft-Windows-WlanDlg/Analytic  |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                             |  Task             |  Opcode  |  Keyword  |  Message
+---------------------------|---------------|------------|-----------|--------------------------------------|-------------------|----------|-----------|---------
+Microsoft-Windows-WlanDlg  |  Information  |  8001      |  0        |  Microsoft-Windows-WlanDlg/Analytic  |  KeyPage_Shown    |  Stop    |           |
+Microsoft-Windows-WlanDlg  |  Information  |  8002      |  0        |  Microsoft-Windows-WlanDlg/Analytic  |  Leaving_KeyPage  |  Start   |           |

@@ -1,68 +1,68 @@
-Provider                   |  Event ID  |  Channel                               |  Message
----------------------------|------------|----------------------------------------|---------
-Microsoft-Windows-UxTheme  |  1         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  2         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  3         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  4         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  5         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  6         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  7         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  8         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  9         |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  11        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  13        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  15        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  17        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  19        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  21        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  23        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  26        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  27        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  28        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  29        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  30        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  31        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  32        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  33        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  34        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  36        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  37        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  38        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  39        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  40        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  41        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  42        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  43        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  44        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  45        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  46        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  47        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  48        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  49        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  50        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  51        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  52        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  53        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  54        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  55        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  56        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  57        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  58        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  59        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  60        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  61        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  62        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  63        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  64        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  65        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  66        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  67        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  68        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  69        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  70        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  71        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  72        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  73        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  74        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  75        |  Microsoft-Windows-UxTheme/Diagnostic  |
-Microsoft-Windows-UxTheme  |  76        |  Microsoft-Windows-UxTheme/Diagnostic  |
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                               |  Task                                                 |  Opcode           |  Keyword  |  Message
+---------------------------|---------------|------------|-----------|----------------------------------------|-------------------------------------------------------|-------------------|-----------|---------
+Microsoft-Windows-UxTheme  |  Information  |  1         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_SwitchTheme                          |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  2         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_SwitchTheme                          |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  3         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_IsThemePartDefined                   |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  4         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_IsThemePartDefined                   |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  5         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_GetCurrentThemeName                  |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  6         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_GetCurrentThemeName                  |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  7         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_GetThemeFont                         |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  8         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_GetThemeFont                         |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  9         |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  BufferedPaint_ThreadContention                       |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  11        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  BufferedPaint_PruningBuffers                         |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  13        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Shake_PreMovingMessageHandler                        |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  15        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Shake_PreMovingMessageHandler                        |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  17        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Shake_PreMovingMessageHandler                        |  WindowPosition   |           |
+Microsoft-Windows-UxTheme  |  Information  |  19        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Shake_PreMovingMessageHandler                        |  WindowDeltaTime  |           |
+Microsoft-Windows-UxTheme  |  Information  |  21        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Shake_PreMovingMessageHandler                        |  Trigger          |           |
+Microsoft-Windows-UxTheme  |  Information  |  23        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  ThemesAndMetric_ThemeWindow                          |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  26        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_SetInput                                |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  27        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_SetInput                                |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  28        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_SetContact                              |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  29        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_SetContact                              |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  30        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_EnumTargets                             |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  31        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_EnumTargets                             |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  32        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessInput_RegionUpdate               |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  33        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessInput_RegionUpdate               |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  34        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessInput_MotionUpdate               |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  36        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessInputInteraction                 |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  37        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessInputInteraction                 |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  38        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_LayerCommit                             |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  39        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Running                                 |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  40        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Running                                 |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  41        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Inertia                                 |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  42        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Inertia                                 |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  43        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DManipTrigger                           |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  44        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_UpdateTransform                         |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  45        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ViewportAbandon                         |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  46        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ViewportAbandon                         |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  47        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DCompCompositorOnViewportStatusChanged  |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  48        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DCompCompositorOnViewportStatusChanged  |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  49        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DCompCompositorOnViewportUpdated        |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  50        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DCompCompositorOnViewportUpdated        |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  51        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DCompCompositorOnContentUpdated         |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  52        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DCompCompositorOnContentUpdated         |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  53        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DCompCompositorUpdate                   |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  54        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_DCompCompositorUpdate                   |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  55        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ManagerActivate                         |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  56        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ManagerActivate                         |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  57        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ManagerDeactivate                       |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  58        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ManagerDeactivate                       |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  59        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ManagerCreateViewport                   |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  60        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ManagerCreateViewport                   |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  61        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ImplicitHitTest                         |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  62        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ImplicitHitTest                         |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  63        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessBufferedQueue                    |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  64        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessBufferedQueue                    |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  65        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessAutoInput                        |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  66        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ProcessAutoInput                        |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  67        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Behaviors                               |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  68        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Behaviors                               |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  69        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Behaviors                               |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  70        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Behaviors                               |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  71        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Prediction                              |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  72        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_Inertia                                 |                   |           |
+Microsoft-Windows-UxTheme  |  Information  |  73        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ParametricMotion                        |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  74        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ParametricMotion                        |  Stop             |           |
+Microsoft-Windows-UxTheme  |  Information  |  75        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ParametricMotion                        |  Start            |           |
+Microsoft-Windows-UxTheme  |  Information  |  76        |  0        |  Microsoft-Windows-UxTheme/Diagnostic  |  Manipulation_ParametricMotion                        |  Stop             |           |

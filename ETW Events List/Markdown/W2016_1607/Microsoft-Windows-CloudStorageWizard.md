@@ -1,16 +1,16 @@
-Provider                              |  Event ID  |  Channel                                           |  Message
---------------------------------------|------------|----------------------------------------------------|---------
-Microsoft-Windows-CloudStorageWizard  |  5001      |  Microsoft-Windows-CloudStorageWizard/Operational  |
-Microsoft-Windows-CloudStorageWizard  |  5002      |  Microsoft-Windows-CloudStorageWizard/Operational  |
-Microsoft-Windows-CloudStorageWizard  |  5003      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5004      |  Microsoft-Windows-CloudStorageWizard/Operational  |
-Microsoft-Windows-CloudStorageWizard  |  5005      |  Microsoft-Windows-CloudStorageWizard/Operational  |
-Microsoft-Windows-CloudStorageWizard  |  5006      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5007      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5008      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5009      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5010      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5011      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5012      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5013      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
-Microsoft-Windows-CloudStorageWizard  |  5014      |  Microsoft-Windows-CloudStorageWizard/Analytic     |
+Provider                              |  Level        |  Event ID  |  Version  |  Channel                                           |  Task                          |  Opcode  |  Keyword             |  Message
+--------------------------------------|---------------|------------|-----------|----------------------------------------------------|--------------------------------|----------|----------------------|---------
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5001      |  0        |  Microsoft-Windows-CloudStorageWizard/Operational  |  ShowWizard                    |  Start   |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5002      |  0        |  Microsoft-Windows-CloudStorageWizard/Operational  |  ShowWizard                    |  Stop    |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5003      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  ShowWizard                    |  Start   |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5004      |  0        |  Microsoft-Windows-CloudStorageWizard/Operational  |  ShowWizard                    |  Stop    |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5005      |  0        |  Microsoft-Windows-CloudStorageWizard/Operational  |  UserInteraction               |          |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5006      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  ShowBrowser                   |          |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5007      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  ShowWizard                    |  Start   |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5008      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  ShowWizard                    |  Stop    |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5009      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  Authentication                |  Start   |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5010      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  Authentication                |  Stop    |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5011      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  Authentication_WaitForUser    |  Start   |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5012      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  Authentication_WaitForUser    |  Stop    |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5013      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  Authentication_RequestTicket  |  Start   |  CloudStorageWizard  |
+Microsoft-Windows-CloudStorageWizard  |  Information  |  5014      |  0        |  Microsoft-Windows-CloudStorageWizard/Analytic     |  Authentication_RequestTicket  |  Stop    |  CloudStorageWizard  |

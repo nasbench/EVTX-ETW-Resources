@@ -1,13 +1,13 @@
-Provider                              |  Event ID  |  Channel                                     |  Message
---------------------------------------|------------|----------------------------------------------|------------------------------------------------------------------------------------
-Microsoft-Windows-Hyper-V-ComputeLib  |  100       |  Microsoft-Windows-Hyper-V-Compute-Analytic  |  {TraceData}
-Microsoft-Windows-Hyper-V-ComputeLib  |  101       |  Microsoft-Windows-Hyper-V-Compute-Analytic  |  {TraceData}
-Microsoft-Windows-Hyper-V-ComputeLib  |  102       |  Microsoft-Windows-Hyper-V-Compute-Analytic  |  {TraceData}
-Microsoft-Windows-Hyper-V-ComputeLib  |  103       |  Microsoft-Windows-Hyper-V-Compute-Analytic  |  {TraceData}
-Microsoft-Windows-Hyper-V-ComputeLib  |  1000      |  Microsoft-Windows-Hyper-V-Compute-Admin     |  Creating compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
-Microsoft-Windows-Hyper-V-ComputeLib  |  1001      |  Microsoft-Windows-Hyper-V-Compute-Admin     |  Starting compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
-Microsoft-Windows-Hyper-V-ComputeLib  |  1002      |  Microsoft-Windows-Hyper-V-Compute-Admin     |  Terminating compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
-Microsoft-Windows-Hyper-V-ComputeLib  |  1003      |  Microsoft-Windows-Hyper-V-Compute-Admin     |  Execute command in compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
-Microsoft-Windows-Hyper-V-ComputeLib  |  1004      |  Microsoft-Windows-Hyper-V-Compute-Admin     |  Creating process in compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
-Microsoft-Windows-Hyper-V-ComputeLib  |  1005      |  Microsoft-Windows-Hyper-V-Compute-Admin     |  Resizing the console in compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
-Microsoft-Windows-Hyper-V-ComputeLib  |  1006      |  Microsoft-Windows-Hyper-V-Compute-Admin     |  Failed to modify resource on compute system '{Id}' : {ErrorMessage} ({ErrorCode})
+Provider                              |  Level        |  Event ID  |  Version  |  Channel                                     |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------------|---------------|------------|-----------|----------------------------------------------|--------|----------|-----------|------------------------------------------------------------------------------------
+Microsoft-Windows-Hyper-V-ComputeLib  |  Information  |  100       |  0        |  Microsoft-Windows-Hyper-V-Compute-Analytic  |        |          |           |  {TraceData}
+Microsoft-Windows-Hyper-V-ComputeLib  |  Warning      |  101       |  0        |  Microsoft-Windows-Hyper-V-Compute-Analytic  |        |          |           |  {TraceData}
+Microsoft-Windows-Hyper-V-ComputeLib  |  Error        |  102       |  0        |  Microsoft-Windows-Hyper-V-Compute-Analytic  |        |          |           |  {TraceData}
+Microsoft-Windows-Hyper-V-ComputeLib  |  Critical     |  103       |  0        |  Microsoft-Windows-Hyper-V-Compute-Analytic  |        |          |           |  {TraceData}
+Microsoft-Windows-Hyper-V-ComputeLib  |  Error        |  1000      |  0        |  Microsoft-Windows-Hyper-V-Compute-Admin     |        |          |           |  Creating compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
+Microsoft-Windows-Hyper-V-ComputeLib  |  Error        |  1001      |  0        |  Microsoft-Windows-Hyper-V-Compute-Admin     |        |          |           |  Starting compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
+Microsoft-Windows-Hyper-V-ComputeLib  |  Error        |  1002      |  0        |  Microsoft-Windows-Hyper-V-Compute-Admin     |        |          |           |  Terminating compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
+Microsoft-Windows-Hyper-V-ComputeLib  |  Error        |  1003      |  0        |  Microsoft-Windows-Hyper-V-Compute-Admin     |        |          |           |  Execute command in compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
+Microsoft-Windows-Hyper-V-ComputeLib  |  Error        |  1004      |  0        |  Microsoft-Windows-Hyper-V-Compute-Admin     |        |          |           |  Creating process in compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
+Microsoft-Windows-Hyper-V-ComputeLib  |  Error        |  1005      |  0        |  Microsoft-Windows-Hyper-V-Compute-Admin     |        |          |           |  Resizing the console in compute system '{Id}' failed: {ErrorMessage} ({ErrorCode})
+Microsoft-Windows-Hyper-V-ComputeLib  |  Error        |  1006      |  0        |  Microsoft-Windows-Hyper-V-Compute-Admin     |        |          |           |  Failed to modify resource on compute system '{Id}' : {ErrorMessage} ({ErrorCode})

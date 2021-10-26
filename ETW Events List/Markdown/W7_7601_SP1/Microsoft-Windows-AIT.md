@@ -1,9 +1,9 @@
-Provider               |  Event ID  |  Channel  |  Message
------------------------|------------|-----------|---------
-Microsoft-Windows-AIT  |  1         |           |
-Microsoft-Windows-AIT  |  2         |           |
-Microsoft-Windows-AIT  |  3         |           |
-Microsoft-Windows-AIT  |  4         |           |
-Microsoft-Windows-AIT  |  5         |           |
-Microsoft-Windows-AIT  |  6         |           |
-Microsoft-Windows-AIT  |  7         |           |
+Provider               |  Level        |  Event ID  |  Version  |  Channel  |  Task                    |  Opcode  |  Keyword  |  Message
+-----------------------|---------------|------------|-----------|-----------|--------------------------|----------|-----------|---------
+Microsoft-Windows-AIT  |  Information  |  1         |  0        |           |  AitFeature              |          |           |
+Microsoft-Windows-AIT  |  Information  |  2         |  0        |           |  AitParentAitFeature     |          |           |
+Microsoft-Windows-AIT  |  Information  |  3         |  0        |           |  AitAppInfo              |          |           |
+Microsoft-Windows-AIT  |  Information  |  4         |  0        |           |  AitSystemUsageByParent  |          |           |
+Microsoft-Windows-AIT  |  Information  |  5         |  0        |           |  AitModuleInfo           |          |           |
+Microsoft-Windows-AIT  |  Information  |  6         |  0        |           |  AitSystemUsageByStack   |          |           |
+Microsoft-Windows-AIT  |  Information  |  7         |  0        |           |  AitProcessEnd           |          |           |

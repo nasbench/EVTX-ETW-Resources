@@ -1,5 +1,5 @@
-Provider                    |  Event ID  |  Channel                                 |  Message
-----------------------------|------------|------------------------------------------|----------------------------------
-Microsoft-Windows-StorDiag  |  1         |  Microsoft-Windows-StorDiag/Operational  |  ClassPnP IO request complete
-Microsoft-Windows-StorDiag  |  2         |  Microsoft-Windows-StorDiag/Operational  |  ClassPnP Enqueue Idle IO request
-Microsoft-Windows-StorDiag  |  3         |  Microsoft-Windows-StorDiag/Operational  |  ClassPnP Boost Idle IO request
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                 |  Task                              |  Opcode                   |  Keyword         |  Message
+----------------------------|---------------|------------|-----------|------------------------------------------|------------------------------------|---------------------------|------------------|----------------------------------
+Microsoft-Windows-StorDiag  |  Information  |  1         |  1        |  Microsoft-Windows-StorDiag/Operational  |  ClassPnP IO request complete      |  ClassPnP_IO_End          |  ClassPnPAllIO   |  ClassPnP IO request complete
+Microsoft-Windows-StorDiag  |  Information  |  2         |  1        |  Microsoft-Windows-StorDiag/Operational  |  ClassPnP Enqueue Idle IO request  |  ClassPnP_Enqueue_IdleIO  |  ClassPnPIdleIO  |  ClassPnP Enqueue Idle IO request
+Microsoft-Windows-StorDiag  |  Information  |  3         |  1        |  Microsoft-Windows-StorDiag/Operational  |  ClassPnP Boost Idle IO request    |  ClassPnP_Boost_IdleIO    |  ClassPnPIdleIO  |  ClassPnP Boost Idle IO request

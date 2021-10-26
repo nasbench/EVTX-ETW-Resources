@@ -1,77 +1,77 @@
-Provider             |  Event ID  |  Channel                           |  Message
----------------------|------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------
-Intel-iaLPSS2-GPIO2  |  1001      |  iaLPSS_GPIO2 Debug channel        |  ERROR: {Message} - STATUS: {Status}
-Intel-iaLPSS2-GPIO2  |  1002      |  iaLPSS_GPIO2 Debug channel        |  INFO: {Message}
-Intel-iaLPSS2-GPIO2  |  1003      |  iaLPSS_GPIO2 Debug channel        |  [{Message}] -->
-Intel-iaLPSS2-GPIO2  |  1004      |  iaLPSS_GPIO2 Debug channel        |  [{Message}] -&lt;--
-Intel-iaLPSS2-GPIO2  |  1005      |  iaLPSS_GPIO2 Debug channel        |  [{Message}] -&lt;-- Status = {Status}
-Intel-iaLPSS2-GPIO2  |  1011      |  iaLPSS_GPIO2 Performance channel  |  DriverEntry Start
-Intel-iaLPSS2-GPIO2  |  1012      |  iaLPSS_GPIO2 Performance channel  |  DriverEntry End
-Intel-iaLPSS2-GPIO2  |  1013      |  iaLPSS_GPIO2 Debug channel        |  Driver ERROR: WdfDriverCreate() returned status:{Status}
-Intel-iaLPSS2-GPIO2  |  1014      |  iaLPSS_GPIO2 Debug channel        |  Driver ERROR: GPIO_CLX_RegisterClient() returned status:{Status}
-Intel-iaLPSS2-GPIO2  |  1015      |  iaLPSS_GPIO2 Performance channel  |  DriverUnload Start
-Intel-iaLPSS2-GPIO2  |  1016      |  iaLPSS_GPIO2 Performance channel  |  DriverUnload End
-Intel-iaLPSS2-GPIO2  |  1017      |  iaLPSS_GPIO2 Debug channel        |  Driver ERROR: GPIO_CLX_UnregisterClient() returned status:{Status}
-Intel-iaLPSS2-GPIO2  |  1018      |  iaLPSS_GPIO2 Debug channel        |  Driver ERROR: CheckSupportedOs() returned status:{Status}
-Intel-iaLPSS2-GPIO2  |  1021      |  iaLPSS_GPIO2 Performance channel  |  DeviceAdd Start
-Intel-iaLPSS2-GPIO2  |  1022      |  iaLPSS_GPIO2 Performance channel  |  DeviceAdd End
-Intel-iaLPSS2-GPIO2  |  1023      |  iaLPSS_GPIO2 Debug channel        |  Device ERROR: GPIO_CLX_ProcessAddDevicePreDeviceCreate() returned status:{Status}
-Intel-iaLPSS2-GPIO2  |  1024      |  iaLPSS_GPIO2 Debug channel        |  Device ERROR: GPIO_CLX_ProcessAddDevicePostDeviceCreate() returned status:{Status}
-Intel-iaLPSS2-GPIO2  |  1025      |  iaLPSS_GPIO2 Debug channel        |  Device ERROR: WdfDeviceCreate() returned status:{Status}
-Intel-iaLPSS2-GPIO2  |  1026      |  iaLPSS_GPIO2 Debug channel        |  Device HW profile FOUND: Instance:{Instance} Version:{Version} Revision:{Revision} Mode:{Mode}
-Intel-iaLPSS2-GPIO2  |  1027      |  iaLPSS_GPIO2 Debug channel        |  Device HW profile ERROR: Instance:{Instance} Version:{Version} Revision:{Revision} Mode:{Mode}
-Intel-iaLPSS2-GPIO2  |  1031      |  iaLPSS_GPIO2 Debug channel        |  GpioCx DDI: {Message}
-Intel-iaLPSS2-GPIO2  |  1032      |  iaLPSS_GPIO2 Debug channel        |  GpioCx DDI ERROR: Controller Context invalid
-Intel-iaLPSS2-GPIO2  |  1033      |  iaLPSS_GPIO2 Debug channel        |  GpioCx DDI ERROR: Controller Object invalid
-Intel-iaLPSS2-GPIO2  |  1034      |  iaLPSS_GPIO2 Debug channel        |  GpioCx DDI ERROR: Controller Object allocate error
-Intel-iaLPSS2-GPIO2  |  1101      |  iaLPSS_GPIO2 Debug channel        |  ERROR: Invalid bank number: {BankNo}
-Intel-iaLPSS2-GPIO2  |  1102      |  iaLPSS_GPIO2 Debug channel        |  {BankName}: ERROR: Invalid pin number: {PinNo}
-Intel-iaLPSS2-GPIO2  |  1103      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: ERROR: Invalid pin ownership: {PinOwnership}
-Intel-iaLPSS2-GPIO2  |  1104      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: ERROR: Invalid pin mode: {PinMode}
-Intel-iaLPSS2-GPIO2  |  1107      |  iaLPSS_GPIO2 Performance channel  |  PrepareController Start
-Intel-iaLPSS2-GPIO2  |  1108      |  iaLPSS_GPIO2 Performance channel  |  PrepareController End
-Intel-iaLPSS2-GPIO2  |  1109      |  iaLPSS_GPIO2 Debug channel        |  PrepareController ERROR: Can't allocate pin table
-Intel-iaLPSS2-GPIO2  |  1110      |  iaLPSS_GPIO2 Debug channel        |  PrepareController ERROR: Can't initialize GPIO layout - STATUS:{Status}
-Intel-iaLPSS2-GPIO2  |  1111      |  iaLPSS_GPIO2 Debug channel        |  PrepareController MBAR{MBAR} mapped: PA:{PA} LEN:{LEN} VA:{VA}
-Intel-iaLPSS2-GPIO2  |  1112      |  iaLPSS_GPIO2 Debug channel        |  PrepareController ERROR: Too many MBAR resources IDX:{MBAR} PA:{PA} LEN:{LEN} - STATUS:{Status}
-Intel-iaLPSS2-GPIO2  |  1113      |  iaLPSS_GPIO2 Debug channel        |  PrepareController ERROR: Can't map MMIO for MBAR{MBAR} PA:{PA} LEN:{LEN} - STATUS:{Status}
-Intel-iaLPSS2-GPIO2  |  1114      |  iaLPSS_GPIO2 Debug channel        |  PrepareController INTERRUPT VEC:{Vector}
-Intel-iaLPSS2-GPIO2  |  1115      |  iaLPSS_GPIO2 Debug channel        |  PrepareController ERROR: Incorrect resource count. MMIO:{MBAR_current} (exp. {MBAR_expected}) INT:{INT_current} (exp. {INT_expected}) - STATUS:{Status}
-Intel-iaLPSS2-GPIO2  |  1116      |  iaLPSS_GPIO2 Performance channel  |  ReleaseController Start
-Intel-iaLPSS2-GPIO2  |  1117      |  iaLPSS_GPIO2 Performance channel  |  ReleaseController End
-Intel-iaLPSS2-GPIO2  |  1118      |  iaLPSS_GPIO2 Debug channel        |  Controller queried for properties
-Intel-iaLPSS2-GPIO2  |  1119      |  iaLPSS_GPIO2 Debug channel        |  Controller started
-Intel-iaLPSS2-GPIO2  |  1120      |  iaLPSS_GPIO2 Debug channel        |  Controller stopped
-Intel-iaLPSS2-GPIO2  |  1121      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: ERROR: Interrupt configuration not supported: {IntMode} {IntPolartity}
-Intel-iaLPSS2-GPIO2  |  1122      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Interrupt configured to: {IntMode} {IntPolartity}
-Intel-iaLPSS2-GPIO2  |  1123      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: WARNING: Pull configuration not supported: {PullMode} - using default
-Intel-iaLPSS2-GPIO2  |  1124      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pull configured to: {PullMode}
-Intel-iaLPSS2-GPIO2  |  1125      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Interrupt enabled
-Intel-iaLPSS2-GPIO2  |  1126      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Interrupt disabled
-Intel-iaLPSS2-GPIO2  |  1127      |  iaLPSS_GPIO2 Debug channel        |  {BankName}: Interrupts mask set to:{MaskSet} (requested:{MaskRequested}, failed:{MaskFailed})
-Intel-iaLPSS2-GPIO2  |  1128      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Interrupt unmasked
-Intel-iaLPSS2-GPIO2  |  1129      |  iaLPSS_GPIO2 Debug channel        |  {BankName}: Interrupts queried active:{Active} (raw:{ActiveRaw}, mask:{ActiveMask})
-Intel-iaLPSS2-GPIO2  |  1130      |  iaLPSS_GPIO2 Debug channel        |  {BankName}: Interrupts queried enabled:{Enabled}
-Intel-iaLPSS2-GPIO2  |  1131      |  iaLPSS_GPIO2 Debug channel        |  {BankName}: Interrupts status cleared with mask:{MaskSet} (requested:{MaskRequested}, failed:{MaskFailed})
-Intel-iaLPSS2-GPIO2  |  1132      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: ERROR: Pin already connected in mode {PinIoMode}
-Intel-iaLPSS2-GPIO2  |  1133      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: ERROR: Pin not connected
-Intel-iaLPSS2-GPIO2  |  1134      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin output set {PinState}
-Intel-iaLPSS2-GPIO2  |  1135      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin output pre-set {PinState}
-Intel-iaLPSS2-GPIO2  |  1136      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin input get {PinState}
-Intel-iaLPSS2-GPIO2  |  1137      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: WARNING: Pin mode '{PinIoMode}' not supported. Buffer enable state not changed.
-Intel-iaLPSS2-GPIO2  |  1138      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin connected in mode {PinIoMode}
-Intel-iaLPSS2-GPIO2  |  1139      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: ERROR: Pin connected in mode {PinIoModeCurrent} while disconnect request for mode {PinIoModeRequested}
-Intel-iaLPSS2-GPIO2  |  1140      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin disconnected - output buffer disabled
-Intel-iaLPSS2-GPIO2  |  1141      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin disconnected - output buffer left enabled
-Intel-iaLPSS2-GPIO2  |  1142      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin disconnected - input buffer disabled
-Intel-iaLPSS2-GPIO2  |  1143      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin disconnected - input buffer left enabled
-Intel-iaLPSS2-GPIO2  |  1144      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: WARNING: Pin mode '{PinIoMode}' not supported. Disconnecting input and output.
-Intel-iaLPSS2-GPIO2  |  1150      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin context restored
-Intel-iaLPSS2-GPIO2  |  1151      |  iaLPSS_GPIO2 Debug channel        |  {BankName}: Bank context restored
-Intel-iaLPSS2-GPIO2  |  1152      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Pin context saved
-Intel-iaLPSS2-GPIO2  |  1153      |  iaLPSS_GPIO2 Debug channel        |  {BankName}: Bank context saved
-Intel-iaLPSS2-GPIO2  |  1200      |  iaLPSS_GPIO2 Debug channel        |  ERROR: Invalid special function number
-Intel-iaLPSS2-GPIO2  |  1201      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Mask APIC interrupt
-Intel-iaLPSS2-GPIO2  |  1202      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: Unmask APIC interrupt
-Intel-iaLPSS2-GPIO2  |  1203      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: WriteGpioIo
-Intel-iaLPSS2-GPIO2  |  1204      |  iaLPSS_GPIO2 Debug channel        |  {BankName}_{PinNo}: ReadGpioIo
+Provider             |  Level        |  Event ID  |  Version  |  Channel                           |  Task                              |  Opcode  |  Keyword  |  Message
+---------------------|---------------|------------|-----------|------------------------------------|------------------------------------|----------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------
+Intel-iaLPSS2-GPIO2  |  Error        |  1001      |  0        |  iaLPSS_GPIO2 Debug channel        |                                    |          |           |  ERROR: {Message} - STATUS: {Status}
+Intel-iaLPSS2-GPIO2  |  Information  |  1002      |  0        |  iaLPSS_GPIO2 Debug channel        |                                    |          |           |  INFO: {Message}
+Intel-iaLPSS2-GPIO2  |  Information  |  1003      |  0        |  iaLPSS_GPIO2 Debug channel        |                                    |          |           |  [{Message}] -->
+Intel-iaLPSS2-GPIO2  |  Information  |  1004      |  0        |  iaLPSS_GPIO2 Debug channel        |                                    |          |           |  [{Message}] -&lt;--
+Intel-iaLPSS2-GPIO2  |  Information  |  1005      |  0        |  iaLPSS_GPIO2 Debug channel        |                                    |          |           |  [{Message}] -&lt;-- Status = {Status}
+Intel-iaLPSS2-GPIO2  |  Information  |  1011      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Driver routines      |  Start   |           |  DriverEntry Start
+Intel-iaLPSS2-GPIO2  |  Information  |  1012      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Driver routines      |  Stop    |           |  DriverEntry End
+Intel-iaLPSS2-GPIO2  |  Error        |  1013      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Driver ERROR: WdfDriverCreate() returned status:{Status}
+Intel-iaLPSS2-GPIO2  |  Error        |  1014      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Driver ERROR: GPIO_CLX_RegisterClient() returned status:{Status}
+Intel-iaLPSS2-GPIO2  |  Information  |  1015      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Driver routines      |  Start   |           |  DriverUnload Start
+Intel-iaLPSS2-GPIO2  |  Information  |  1016      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Driver routines      |  Stop    |           |  DriverUnload End
+Intel-iaLPSS2-GPIO2  |  Error        |  1017      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Driver ERROR: GPIO_CLX_UnregisterClient() returned status:{Status}
+Intel-iaLPSS2-GPIO2  |  Error        |  1018      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Driver ERROR: CheckSupportedOs() returned status:{Status}
+Intel-iaLPSS2-GPIO2  |  Information  |  1021      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Driver routines      |  Start   |           |  DeviceAdd Start
+Intel-iaLPSS2-GPIO2  |  Information  |  1022      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Driver routines      |  Stop    |           |  DeviceAdd End
+Intel-iaLPSS2-GPIO2  |  Error        |  1023      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Device ERROR: GPIO_CLX_ProcessAddDevicePreDeviceCreate() returned status:{Status}
+Intel-iaLPSS2-GPIO2  |  Error        |  1024      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Device ERROR: GPIO_CLX_ProcessAddDevicePostDeviceCreate() returned status:{Status}
+Intel-iaLPSS2-GPIO2  |  Error        |  1025      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Device ERROR: WdfDeviceCreate() returned status:{Status}
+Intel-iaLPSS2-GPIO2  |  Information  |  1026      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Device HW profile FOUND: Instance:{Instance} Version:{Version} Revision:{Revision} Mode:{Mode}
+Intel-iaLPSS2-GPIO2  |  Error        |  1027      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Driver routines      |          |           |  Device HW profile ERROR: Instance:{Instance} Version:{Version} Revision:{Revision} Mode:{Mode}
+Intel-iaLPSS2-GPIO2  |  Information  |  1031      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioCx DDI calls     |          |           |  GpioCx DDI: {Message}
+Intel-iaLPSS2-GPIO2  |  Error        |  1032      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioCx DDI calls     |          |           |  GpioCx DDI ERROR: Controller Context invalid
+Intel-iaLPSS2-GPIO2  |  Error        |  1033      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioCx DDI calls     |          |           |  GpioCx DDI ERROR: Controller Object invalid
+Intel-iaLPSS2-GPIO2  |  Information  |  1034      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioCx DDI calls     |          |           |  GpioCx DDI ERROR: Controller Object allocate error
+Intel-iaLPSS2-GPIO2  |  Error        |  1101      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  ERROR: Invalid bank number: {BankNo}
+Intel-iaLPSS2-GPIO2  |  Error        |  1102      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  {BankName}: ERROR: Invalid pin number: {PinNo}
+Intel-iaLPSS2-GPIO2  |  Error        |  1103      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  {BankName}_{PinNo}: ERROR: Invalid pin ownership: {PinOwnership}
+Intel-iaLPSS2-GPIO2  |  Error        |  1104      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  {BankName}_{PinNo}: ERROR: Invalid pin mode: {PinMode}
+Intel-iaLPSS2-GPIO2  |  Information  |  1107      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Controller routines  |  Start   |           |  PrepareController Start
+Intel-iaLPSS2-GPIO2  |  Information  |  1108      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Controller routines  |  Stop    |           |  PrepareController End
+Intel-iaLPSS2-GPIO2  |  Error        |  1109      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  PrepareController ERROR: Can't allocate pin table
+Intel-iaLPSS2-GPIO2  |  Error        |  1110      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  PrepareController ERROR: Can't initialize GPIO layout - STATUS:{Status}
+Intel-iaLPSS2-GPIO2  |  Information  |  1111      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  PrepareController MBAR{MBAR} mapped: PA:{PA} LEN:{LEN} VA:{VA}
+Intel-iaLPSS2-GPIO2  |  Error        |  1112      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  PrepareController ERROR: Too many MBAR resources IDX:{MBAR} PA:{PA} LEN:{LEN} - STATUS:{Status}
+Intel-iaLPSS2-GPIO2  |  Error        |  1113      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  PrepareController ERROR: Can't map MMIO for MBAR{MBAR} PA:{PA} LEN:{LEN} - STATUS:{Status}
+Intel-iaLPSS2-GPIO2  |  Information  |  1114      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  PrepareController INTERRUPT VEC:{Vector}
+Intel-iaLPSS2-GPIO2  |  Information  |  1115      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  PrepareController ERROR: Incorrect resource count. MMIO:{MBAR_current} (exp. {MBAR_expected}) INT:{INT_current} (exp. {INT_expected}) - STATUS:{Status}
+Intel-iaLPSS2-GPIO2  |  Information  |  1116      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Controller routines  |  Start   |           |  ReleaseController Start
+Intel-iaLPSS2-GPIO2  |  Information  |  1117      |  0        |  iaLPSS_GPIO2 Performance channel  |  iaLPSS_GPIO2 Controller routines  |  Stop    |           |  ReleaseController End
+Intel-iaLPSS2-GPIO2  |  Information  |  1118      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  Controller queried for properties
+Intel-iaLPSS2-GPIO2  |  Information  |  1119      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  Controller started
+Intel-iaLPSS2-GPIO2  |  Information  |  1120      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  Controller stopped
+Intel-iaLPSS2-GPIO2  |  Error        |  1121      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: ERROR: Interrupt configuration not supported: {IntMode} {IntPolartity}
+Intel-iaLPSS2-GPIO2  |  Information  |  1122      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: Interrupt configured to: {IntMode} {IntPolartity}
+Intel-iaLPSS2-GPIO2  |  Warning      |  1123      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: WARNING: Pull configuration not supported: {PullMode} - using default
+Intel-iaLPSS2-GPIO2  |  Information  |  1124      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: Pull configured to: {PullMode}
+Intel-iaLPSS2-GPIO2  |  Information  |  1125      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: Interrupt enabled
+Intel-iaLPSS2-GPIO2  |  Information  |  1126      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: Interrupt disabled
+Intel-iaLPSS2-GPIO2  |  Information  |  1127      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}: Interrupts mask set to:{MaskSet} (requested:{MaskRequested}, failed:{MaskFailed})
+Intel-iaLPSS2-GPIO2  |  Information  |  1128      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: Interrupt unmasked
+Intel-iaLPSS2-GPIO2  |  Information  |  1129      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}: Interrupts queried active:{Active} (raw:{ActiveRaw}, mask:{ActiveMask})
+Intel-iaLPSS2-GPIO2  |  Information  |  1130      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}: Interrupts queried enabled:{Enabled}
+Intel-iaLPSS2-GPIO2  |  Information  |  1131      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}: Interrupts status cleared with mask:{MaskSet} (requested:{MaskRequested}, failed:{MaskFailed})
+Intel-iaLPSS2-GPIO2  |  Error        |  1132      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: ERROR: Pin already connected in mode {PinIoMode}
+Intel-iaLPSS2-GPIO2  |  Error        |  1133      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: ERROR: Pin not connected
+Intel-iaLPSS2-GPIO2  |  Information  |  1134      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: Pin output set {PinState}
+Intel-iaLPSS2-GPIO2  |  Information  |  1135      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: Pin output pre-set {PinState}
+Intel-iaLPSS2-GPIO2  |  Information  |  1136      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: Pin input get {PinState}
+Intel-iaLPSS2-GPIO2  |  Warning      |  1137      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: WARNING: Pin mode '{PinIoMode}' not supported. Buffer enable state not changed.
+Intel-iaLPSS2-GPIO2  |  Information  |  1138      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: Pin connected in mode {PinIoMode}
+Intel-iaLPSS2-GPIO2  |  Error        |  1139      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: ERROR: Pin connected in mode {PinIoModeCurrent} while disconnect request for mode {PinIoModeRequested}
+Intel-iaLPSS2-GPIO2  |  Information  |  1140      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: Pin disconnected - output buffer disabled
+Intel-iaLPSS2-GPIO2  |  Information  |  1141      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: Pin disconnected - output buffer left enabled
+Intel-iaLPSS2-GPIO2  |  Information  |  1142      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: Pin disconnected - input buffer disabled
+Intel-iaLPSS2-GPIO2  |  Information  |  1143      |  0        |  iaLPSS_GPIO2 Debug channel        |                                    |          |           |  {BankName}_{PinNo}: Pin disconnected - input buffer left enabled
+Intel-iaLPSS2-GPIO2  |  Warning      |  1144      |  0        |  iaLPSS_GPIO2 Debug channel        |                                    |          |           |  {BankName}_{PinNo}: WARNING: Pin mode '{PinIoMode}' not supported. Disconnecting input and output.
+Intel-iaLPSS2-GPIO2  |  Verbose      |  1150      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  {BankName}_{PinNo}: Pin context restored
+Intel-iaLPSS2-GPIO2  |  Information  |  1151      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  {BankName}: Bank context restored
+Intel-iaLPSS2-GPIO2  |  Verbose      |  1152      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  {BankName}_{PinNo}: Pin context saved
+Intel-iaLPSS2-GPIO2  |  Information  |  1153      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 Controller routines  |          |           |  {BankName}: Bank context saved
+Intel-iaLPSS2-GPIO2  |  Error        |  1200      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  ERROR: Invalid special function number
+Intel-iaLPSS2-GPIO2  |  Information  |  1201      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: Mask APIC interrupt
+Intel-iaLPSS2-GPIO2  |  Information  |  1202      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioInt routines     |          |           |  {BankName}_{PinNo}: Unmask APIC interrupt
+Intel-iaLPSS2-GPIO2  |  Information  |  1203      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: WriteGpioIo
+Intel-iaLPSS2-GPIO2  |  Information  |  1204      |  0        |  iaLPSS_GPIO2 Debug channel        |  iaLPSS_GPIO2 GpioIo routines      |          |           |  {BankName}_{PinNo}: ReadGpioIo

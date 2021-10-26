@@ -1,280 +1,280 @@
-Provider                           |  Event ID  |  Channel  |  Message
------------------------------------|------------|-----------|---------
-Microsoft-Windows-IE-F12-Provider  |  101       |           |
-Microsoft-Windows-IE-F12-Provider  |  102       |           |
-Microsoft-Windows-IE-F12-Provider  |  103       |           |
-Microsoft-Windows-IE-F12-Provider  |  104       |           |
-Microsoft-Windows-IE-F12-Provider  |  105       |           |
-Microsoft-Windows-IE-F12-Provider  |  106       |           |
-Microsoft-Windows-IE-F12-Provider  |  107       |           |
-Microsoft-Windows-IE-F12-Provider  |  108       |           |
-Microsoft-Windows-IE-F12-Provider  |  109       |           |
-Microsoft-Windows-IE-F12-Provider  |  110       |           |
-Microsoft-Windows-IE-F12-Provider  |  111       |           |
-Microsoft-Windows-IE-F12-Provider  |  112       |           |
-Microsoft-Windows-IE-F12-Provider  |  113       |           |
-Microsoft-Windows-IE-F12-Provider  |  114       |           |
-Microsoft-Windows-IE-F12-Provider  |  115       |           |
-Microsoft-Windows-IE-F12-Provider  |  116       |           |
-Microsoft-Windows-IE-F12-Provider  |  117       |           |
-Microsoft-Windows-IE-F12-Provider  |  118       |           |
-Microsoft-Windows-IE-F12-Provider  |  119       |           |
-Microsoft-Windows-IE-F12-Provider  |  120       |           |
-Microsoft-Windows-IE-F12-Provider  |  201       |           |
-Microsoft-Windows-IE-F12-Provider  |  202       |           |
-Microsoft-Windows-IE-F12-Provider  |  203       |           |
-Microsoft-Windows-IE-F12-Provider  |  204       |           |
-Microsoft-Windows-IE-F12-Provider  |  205       |           |
-Microsoft-Windows-IE-F12-Provider  |  206       |           |
-Microsoft-Windows-IE-F12-Provider  |  207       |           |
-Microsoft-Windows-IE-F12-Provider  |  208       |           |
-Microsoft-Windows-IE-F12-Provider  |  209       |           |
-Microsoft-Windows-IE-F12-Provider  |  210       |           |
-Microsoft-Windows-IE-F12-Provider  |  211       |           |
-Microsoft-Windows-IE-F12-Provider  |  212       |           |
-Microsoft-Windows-IE-F12-Provider  |  213       |           |
-Microsoft-Windows-IE-F12-Provider  |  214       |           |
-Microsoft-Windows-IE-F12-Provider  |  215       |           |
-Microsoft-Windows-IE-F12-Provider  |  216       |           |
-Microsoft-Windows-IE-F12-Provider  |  217       |           |
-Microsoft-Windows-IE-F12-Provider  |  218       |           |
-Microsoft-Windows-IE-F12-Provider  |  219       |           |
-Microsoft-Windows-IE-F12-Provider  |  220       |           |
-Microsoft-Windows-IE-F12-Provider  |  301       |           |
-Microsoft-Windows-IE-F12-Provider  |  302       |           |
-Microsoft-Windows-IE-F12-Provider  |  303       |           |
-Microsoft-Windows-IE-F12-Provider  |  304       |           |
-Microsoft-Windows-IE-F12-Provider  |  305       |           |
-Microsoft-Windows-IE-F12-Provider  |  306       |           |
-Microsoft-Windows-IE-F12-Provider  |  307       |           |
-Microsoft-Windows-IE-F12-Provider  |  308       |           |
-Microsoft-Windows-IE-F12-Provider  |  309       |           |
-Microsoft-Windows-IE-F12-Provider  |  310       |           |
-Microsoft-Windows-IE-F12-Provider  |  311       |           |
-Microsoft-Windows-IE-F12-Provider  |  312       |           |
-Microsoft-Windows-IE-F12-Provider  |  313       |           |
-Microsoft-Windows-IE-F12-Provider  |  314       |           |
-Microsoft-Windows-IE-F12-Provider  |  315       |           |
-Microsoft-Windows-IE-F12-Provider  |  316       |           |
-Microsoft-Windows-IE-F12-Provider  |  317       |           |
-Microsoft-Windows-IE-F12-Provider  |  318       |           |
-Microsoft-Windows-IE-F12-Provider  |  319       |           |
-Microsoft-Windows-IE-F12-Provider  |  320       |           |
-Microsoft-Windows-IE-F12-Provider  |  321       |           |
-Microsoft-Windows-IE-F12-Provider  |  322       |           |
-Microsoft-Windows-IE-F12-Provider  |  323       |           |
-Microsoft-Windows-IE-F12-Provider  |  324       |           |
-Microsoft-Windows-IE-F12-Provider  |  325       |           |
-Microsoft-Windows-IE-F12-Provider  |  326       |           |
-Microsoft-Windows-IE-F12-Provider  |  327       |           |
-Microsoft-Windows-IE-F12-Provider  |  328       |           |
-Microsoft-Windows-IE-F12-Provider  |  329       |           |
-Microsoft-Windows-IE-F12-Provider  |  330       |           |
-Microsoft-Windows-IE-F12-Provider  |  331       |           |
-Microsoft-Windows-IE-F12-Provider  |  332       |           |
-Microsoft-Windows-IE-F12-Provider  |  333       |           |
-Microsoft-Windows-IE-F12-Provider  |  334       |           |
-Microsoft-Windows-IE-F12-Provider  |  335       |           |
-Microsoft-Windows-IE-F12-Provider  |  336       |           |
-Microsoft-Windows-IE-F12-Provider  |  337       |           |
-Microsoft-Windows-IE-F12-Provider  |  338       |           |
-Microsoft-Windows-IE-F12-Provider  |  339       |           |
-Microsoft-Windows-IE-F12-Provider  |  340       |           |
-Microsoft-Windows-IE-F12-Provider  |  341       |           |
-Microsoft-Windows-IE-F12-Provider  |  342       |           |
-Microsoft-Windows-IE-F12-Provider  |  343       |           |
-Microsoft-Windows-IE-F12-Provider  |  344       |           |
-Microsoft-Windows-IE-F12-Provider  |  345       |           |
-Microsoft-Windows-IE-F12-Provider  |  346       |           |
-Microsoft-Windows-IE-F12-Provider  |  347       |           |
-Microsoft-Windows-IE-F12-Provider  |  348       |           |
-Microsoft-Windows-IE-F12-Provider  |  349       |           |
-Microsoft-Windows-IE-F12-Provider  |  350       |           |
-Microsoft-Windows-IE-F12-Provider  |  351       |           |
-Microsoft-Windows-IE-F12-Provider  |  352       |           |
-Microsoft-Windows-IE-F12-Provider  |  353       |           |
-Microsoft-Windows-IE-F12-Provider  |  354       |           |
-Microsoft-Windows-IE-F12-Provider  |  355       |           |
-Microsoft-Windows-IE-F12-Provider  |  356       |           |
-Microsoft-Windows-IE-F12-Provider  |  357       |           |
-Microsoft-Windows-IE-F12-Provider  |  358       |           |
-Microsoft-Windows-IE-F12-Provider  |  359       |           |
-Microsoft-Windows-IE-F12-Provider  |  360       |           |
-Microsoft-Windows-IE-F12-Provider  |  361       |           |
-Microsoft-Windows-IE-F12-Provider  |  362       |           |
-Microsoft-Windows-IE-F12-Provider  |  363       |           |
-Microsoft-Windows-IE-F12-Provider  |  364       |           |
-Microsoft-Windows-IE-F12-Provider  |  365       |           |
-Microsoft-Windows-IE-F12-Provider  |  366       |           |
-Microsoft-Windows-IE-F12-Provider  |  367       |           |
-Microsoft-Windows-IE-F12-Provider  |  368       |           |
-Microsoft-Windows-IE-F12-Provider  |  369       |           |
-Microsoft-Windows-IE-F12-Provider  |  370       |           |
-Microsoft-Windows-IE-F12-Provider  |  371       |           |
-Microsoft-Windows-IE-F12-Provider  |  372       |           |
-Microsoft-Windows-IE-F12-Provider  |  373       |           |
-Microsoft-Windows-IE-F12-Provider  |  374       |           |
-Microsoft-Windows-IE-F12-Provider  |  375       |           |
-Microsoft-Windows-IE-F12-Provider  |  376       |           |
-Microsoft-Windows-IE-F12-Provider  |  377       |           |
-Microsoft-Windows-IE-F12-Provider  |  378       |           |
-Microsoft-Windows-IE-F12-Provider  |  379       |           |
-Microsoft-Windows-IE-F12-Provider  |  380       |           |
-Microsoft-Windows-IE-F12-Provider  |  381       |           |
-Microsoft-Windows-IE-F12-Provider  |  382       |           |
-Microsoft-Windows-IE-F12-Provider  |  383       |           |
-Microsoft-Windows-IE-F12-Provider  |  384       |           |
-Microsoft-Windows-IE-F12-Provider  |  385       |           |
-Microsoft-Windows-IE-F12-Provider  |  386       |           |
-Microsoft-Windows-IE-F12-Provider  |  387       |           |
-Microsoft-Windows-IE-F12-Provider  |  388       |           |
-Microsoft-Windows-IE-F12-Provider  |  401       |           |
-Microsoft-Windows-IE-F12-Provider  |  402       |           |
-Microsoft-Windows-IE-F12-Provider  |  403       |           |
-Microsoft-Windows-IE-F12-Provider  |  404       |           |
-Microsoft-Windows-IE-F12-Provider  |  405       |           |
-Microsoft-Windows-IE-F12-Provider  |  406       |           |
-Microsoft-Windows-IE-F12-Provider  |  407       |           |
-Microsoft-Windows-IE-F12-Provider  |  408       |           |
-Microsoft-Windows-IE-F12-Provider  |  409       |           |
-Microsoft-Windows-IE-F12-Provider  |  410       |           |
-Microsoft-Windows-IE-F12-Provider  |  411       |           |
-Microsoft-Windows-IE-F12-Provider  |  412       |           |
-Microsoft-Windows-IE-F12-Provider  |  413       |           |
-Microsoft-Windows-IE-F12-Provider  |  414       |           |
-Microsoft-Windows-IE-F12-Provider  |  415       |           |
-Microsoft-Windows-IE-F12-Provider  |  416       |           |
-Microsoft-Windows-IE-F12-Provider  |  417       |           |
-Microsoft-Windows-IE-F12-Provider  |  418       |           |
-Microsoft-Windows-IE-F12-Provider  |  419       |           |
-Microsoft-Windows-IE-F12-Provider  |  420       |           |
-Microsoft-Windows-IE-F12-Provider  |  421       |           |
-Microsoft-Windows-IE-F12-Provider  |  422       |           |
-Microsoft-Windows-IE-F12-Provider  |  423       |           |
-Microsoft-Windows-IE-F12-Provider  |  424       |           |
-Microsoft-Windows-IE-F12-Provider  |  425       |           |
-Microsoft-Windows-IE-F12-Provider  |  426       |           |
-Microsoft-Windows-IE-F12-Provider  |  427       |           |
-Microsoft-Windows-IE-F12-Provider  |  428       |           |
-Microsoft-Windows-IE-F12-Provider  |  429       |           |
-Microsoft-Windows-IE-F12-Provider  |  430       |           |
-Microsoft-Windows-IE-F12-Provider  |  431       |           |
-Microsoft-Windows-IE-F12-Provider  |  432       |           |
-Microsoft-Windows-IE-F12-Provider  |  433       |           |
-Microsoft-Windows-IE-F12-Provider  |  434       |           |
-Microsoft-Windows-IE-F12-Provider  |  501       |           |
-Microsoft-Windows-IE-F12-Provider  |  502       |           |
-Microsoft-Windows-IE-F12-Provider  |  503       |           |
-Microsoft-Windows-IE-F12-Provider  |  504       |           |
-Microsoft-Windows-IE-F12-Provider  |  505       |           |
-Microsoft-Windows-IE-F12-Provider  |  506       |           |
-Microsoft-Windows-IE-F12-Provider  |  507       |           |
-Microsoft-Windows-IE-F12-Provider  |  508       |           |
-Microsoft-Windows-IE-F12-Provider  |  509       |           |
-Microsoft-Windows-IE-F12-Provider  |  510       |           |
-Microsoft-Windows-IE-F12-Provider  |  511       |           |
-Microsoft-Windows-IE-F12-Provider  |  512       |           |
-Microsoft-Windows-IE-F12-Provider  |  513       |           |
-Microsoft-Windows-IE-F12-Provider  |  514       |           |
-Microsoft-Windows-IE-F12-Provider  |  515       |           |
-Microsoft-Windows-IE-F12-Provider  |  516       |           |
-Microsoft-Windows-IE-F12-Provider  |  517       |           |
-Microsoft-Windows-IE-F12-Provider  |  518       |           |
-Microsoft-Windows-IE-F12-Provider  |  519       |           |
-Microsoft-Windows-IE-F12-Provider  |  520       |           |
-Microsoft-Windows-IE-F12-Provider  |  521       |           |
-Microsoft-Windows-IE-F12-Provider  |  522       |           |
-Microsoft-Windows-IE-F12-Provider  |  523       |           |
-Microsoft-Windows-IE-F12-Provider  |  524       |           |
-Microsoft-Windows-IE-F12-Provider  |  525       |           |
-Microsoft-Windows-IE-F12-Provider  |  526       |           |
-Microsoft-Windows-IE-F12-Provider  |  527       |           |
-Microsoft-Windows-IE-F12-Provider  |  528       |           |
-Microsoft-Windows-IE-F12-Provider  |  529       |           |
-Microsoft-Windows-IE-F12-Provider  |  530       |           |
-Microsoft-Windows-IE-F12-Provider  |  531       |           |
-Microsoft-Windows-IE-F12-Provider  |  532       |           |
-Microsoft-Windows-IE-F12-Provider  |  533       |           |
-Microsoft-Windows-IE-F12-Provider  |  534       |           |
-Microsoft-Windows-IE-F12-Provider  |  535       |           |
-Microsoft-Windows-IE-F12-Provider  |  536       |           |
-Microsoft-Windows-IE-F12-Provider  |  537       |           |
-Microsoft-Windows-IE-F12-Provider  |  538       |           |
-Microsoft-Windows-IE-F12-Provider  |  539       |           |
-Microsoft-Windows-IE-F12-Provider  |  540       |           |
-Microsoft-Windows-IE-F12-Provider  |  541       |           |
-Microsoft-Windows-IE-F12-Provider  |  542       |           |
-Microsoft-Windows-IE-F12-Provider  |  543       |           |
-Microsoft-Windows-IE-F12-Provider  |  544       |           |
-Microsoft-Windows-IE-F12-Provider  |  545       |           |
-Microsoft-Windows-IE-F12-Provider  |  546       |           |
-Microsoft-Windows-IE-F12-Provider  |  547       |           |
-Microsoft-Windows-IE-F12-Provider  |  548       |           |
-Microsoft-Windows-IE-F12-Provider  |  549       |           |
-Microsoft-Windows-IE-F12-Provider  |  550       |           |
-Microsoft-Windows-IE-F12-Provider  |  551       |           |
-Microsoft-Windows-IE-F12-Provider  |  552       |           |
-Microsoft-Windows-IE-F12-Provider  |  601       |           |
-Microsoft-Windows-IE-F12-Provider  |  602       |           |
-Microsoft-Windows-IE-F12-Provider  |  701       |           |
-Microsoft-Windows-IE-F12-Provider  |  702       |           |
-Microsoft-Windows-IE-F12-Provider  |  703       |           |
-Microsoft-Windows-IE-F12-Provider  |  704       |           |
-Microsoft-Windows-IE-F12-Provider  |  705       |           |
-Microsoft-Windows-IE-F12-Provider  |  706       |           |
-Microsoft-Windows-IE-F12-Provider  |  707       |           |
-Microsoft-Windows-IE-F12-Provider  |  708       |           |
-Microsoft-Windows-IE-F12-Provider  |  709       |           |
-Microsoft-Windows-IE-F12-Provider  |  710       |           |
-Microsoft-Windows-IE-F12-Provider  |  711       |           |
-Microsoft-Windows-IE-F12-Provider  |  712       |           |
-Microsoft-Windows-IE-F12-Provider  |  713       |           |
-Microsoft-Windows-IE-F12-Provider  |  714       |           |
-Microsoft-Windows-IE-F12-Provider  |  715       |           |
-Microsoft-Windows-IE-F12-Provider  |  716       |           |
-Microsoft-Windows-IE-F12-Provider  |  717       |           |
-Microsoft-Windows-IE-F12-Provider  |  718       |           |
-Microsoft-Windows-IE-F12-Provider  |  801       |           |
-Microsoft-Windows-IE-F12-Provider  |  802       |           |
-Microsoft-Windows-IE-F12-Provider  |  901       |           |
-Microsoft-Windows-IE-F12-Provider  |  902       |           |
-Microsoft-Windows-IE-F12-Provider  |  903       |           |
-Microsoft-Windows-IE-F12-Provider  |  904       |           |
-Microsoft-Windows-IE-F12-Provider  |  905       |           |
-Microsoft-Windows-IE-F12-Provider  |  906       |           |
-Microsoft-Windows-IE-F12-Provider  |  907       |           |
-Microsoft-Windows-IE-F12-Provider  |  908       |           |
-Microsoft-Windows-IE-F12-Provider  |  909       |           |
-Microsoft-Windows-IE-F12-Provider  |  910       |           |
-Microsoft-Windows-IE-F12-Provider  |  911       |           |
-Microsoft-Windows-IE-F12-Provider  |  912       |           |
-Microsoft-Windows-IE-F12-Provider  |  913       |           |
-Microsoft-Windows-IE-F12-Provider  |  914       |           |
-Microsoft-Windows-IE-F12-Provider  |  915       |           |
-Microsoft-Windows-IE-F12-Provider  |  916       |           |
-Microsoft-Windows-IE-F12-Provider  |  917       |           |
-Microsoft-Windows-IE-F12-Provider  |  918       |           |
-Microsoft-Windows-IE-F12-Provider  |  921       |           |
-Microsoft-Windows-IE-F12-Provider  |  922       |           |
-Microsoft-Windows-IE-F12-Provider  |  923       |           |
-Microsoft-Windows-IE-F12-Provider  |  924       |           |
-Microsoft-Windows-IE-F12-Provider  |  925       |           |
-Microsoft-Windows-IE-F12-Provider  |  926       |           |
-Microsoft-Windows-IE-F12-Provider  |  927       |           |
-Microsoft-Windows-IE-F12-Provider  |  928       |           |
-Microsoft-Windows-IE-F12-Provider  |  929       |           |
-Microsoft-Windows-IE-F12-Provider  |  930       |           |
-Microsoft-Windows-IE-F12-Provider  |  931       |           |
-Microsoft-Windows-IE-F12-Provider  |  932       |           |
-Microsoft-Windows-IE-F12-Provider  |  933       |           |
-Microsoft-Windows-IE-F12-Provider  |  934       |           |
-Microsoft-Windows-IE-F12-Provider  |  935       |           |
-Microsoft-Windows-IE-F12-Provider  |  936       |           |
-Microsoft-Windows-IE-F12-Provider  |  937       |           |
-Microsoft-Windows-IE-F12-Provider  |  938       |           |
-Microsoft-Windows-IE-F12-Provider  |  939       |           |
-Microsoft-Windows-IE-F12-Provider  |  940       |           |
-Microsoft-Windows-IE-F12-Provider  |  941       |           |
-Microsoft-Windows-IE-F12-Provider  |  942       |           |
-Microsoft-Windows-IE-F12-Provider  |  943       |           |
-Microsoft-Windows-IE-F12-Provider  |  944       |           |
+Provider                           |  Level        |  Event ID  |  Version  |  Channel  |  Task                                               |  Opcode  |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|-----------|-----------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-IE-F12-Provider  |  Information  |  101       |  0        |           |  Timeline_Zoom                                      |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  102       |  0        |           |  Timeline_Zoom                                      |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  103       |  0        |           |  Timeline_Grid_Sort                                 |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  104       |  0        |           |  Timeline_Grid_Sort                                 |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  105       |  0        |           |  Timeline_LoadGraphs                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  106       |  0        |           |  Timeline_LoadGraphs                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  107       |  0        |           |  Timeline_Grid_Scrolled                             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  108       |  0        |           |  Timeline_Grid_Filtered                             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  109       |  0        |           |  Timeline_Selection_Updated                         |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  110       |  0        |           |  Timeline_Selection_Updated                         |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  111       |  0        |           |  Timeline_GridUpdatedForFilterBackground            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  112       |  0        |           |  Timeline_GridUpdatedForFilterBackground            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  113       |  0        |           |  Timeline_GridUpdatedForFilterNetwork               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  114       |  0        |           |  Timeline_GridUpdatedForFilterNetwork               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  115       |  0        |           |  Timeline_GridUpdatedForFilterMeasure               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  116       |  0        |           |  Timeline_GridUpdatedForFilterMeasure               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  117       |  0        |           |  Timeline_GridUpdatedForFilterFrames                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  118       |  0        |           |  Timeline_GridUpdatedForFilterFrames                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  119       |  0        |           |  Timeline_GridUpdatedForFilterName                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  120       |  0        |           |  Timeline_GridUpdatedForFilterName                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  201       |  0        |           |  Memory_TakeSnapshot                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  202       |  0        |           |  Memory_TakeSnapshot                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  203       |  1        |           |  Memory_CompareSnapshot                             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  204       |  1        |           |  Memory_CompareSnapshot                             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  205       |  1        |           |  Memory_ViewSnapshot                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  206       |  1        |           |  Memory_ViewSnapshot                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  207       |  0        |           |  Memory_Grid_Sort                                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  208       |  0        |           |  Memory_Grid_Sort                                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  209       |  0        |           |  Memory_DisplayFirstLevelSnapshotData               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  210       |  0        |           |  Memory_DisplayFirstLevelSnapshotData               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  211       |  0        |           |  Memory_ToolReady                                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  212       |  0        |           |  Memory_ToolReady                                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  213       |  0        |           |  Memory_GridFilterUIResponse                        |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  214       |  0        |           |  Memory_GridFilterUIResponse                        |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  215       |  0        |           |  Memory_UpdateObjectReferenceGraph                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  216       |  0        |           |  Memory_UpdateObjectReferenceGraph                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  217       |  0        |           |  Memory_ProcessingSnapshot                          |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  218       |  0        |           |  Memory_ProcessingSnapshot                          |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  219       |  0        |           |  Memory_ProcessingDiffSnapshot                      |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  220       |  0        |           |  Memory_ProcessingDiffSnapshot                      |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  301       |  0        |           |  Debugger_StepOver                                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  302       |  0        |           |  Debugger_StepInto                                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  303       |  0        |           |  Debugger_StepOut                                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  304       |  0        |           |  Debugger_OnBreak                                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  305       |  0        |           |  Debugger_OnBreak                                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  306       |  0        |           |  Debugger_PrettyPrint                               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  307       |  0        |           |  Debugger_PrettyPrint                               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  308       |  0        |           |  Debugger_OpenDocument                              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  309       |  0        |           |  Debugger_OpenDocument                              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  310       |  0        |           |  Debugger_CloseDocument                             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  311       |  0        |           |  Debugger_CloseDocument                             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  312       |  0        |           |  Debugger_SwitchDocument                            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  313       |  0        |           |  Debugger_SwitchDocument                            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  314       |  0        |           |  Debugger_RevealRange                               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  315       |  0        |           |  Debugger_RevealRange                               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  316       |  0        |           |  Debugger_CallstackController_GoTo                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  317       |  0        |           |  Debugger_CallstackController_GoTo                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  318       |  0        |           |  Debugger_BreakpointController_SetAllEnabledStates  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  319       |  0        |           |  Debugger_BreakpointController_SetAllEnabledStates  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  320       |  0        |           |  Debugger_EditorWindow_NavigateTo                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  321       |  0        |           |  Debugger_EditorWindow_NavigateTo                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  322       |  0        |           |  Debugger_Editor_SetModel                           |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  323       |  0        |           |  Debugger_Editor_SetModel                           |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  324       |  0        |           |  Debugger_Editor_CreateModel                        |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  325       |  0        |           |  Debugger_Editor_CreateModel                        |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  326       |  0        |           |  Debugger_Editor_Create                             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  327       |  0        |           |  Debugger_Editor_Create                             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  328       |  0        |           |  Debugger_Editor_Layout                             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  329       |  0        |           |  Debugger_Editor_Layout                             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  330       |  0        |           |  Debugger_Editor_ChangeViewZones                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  331       |  0        |           |  Debugger_Editor_ChangeViewZones                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  332       |  0        |           |  Debugger_Editor_RevealPosition                     |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  333       |  0        |           |  Debugger_Editor_RevealPosition                     |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  334       |  0        |           |  Debugger_Editor_SaveViewState                      |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  335       |  0        |           |  Debugger_Editor_SaveViewState                      |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  336       |  0        |           |  Debugger_Editor_RestoreViewState                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  337       |  0        |           |  Debugger_Editor_RestoreViewState                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  338       |  0        |           |  Debugger_EditorWindow_CreateDataTipFromPosition    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  339       |  0        |           |  Debugger_EditorWindow_CreateDataTipFromPosition    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  340       |  0        |           |  Debugger_BreakpointController_SetEnabledState      |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  341       |  0        |           |  Debugger_BreakpointController_SetEnabledState      |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  342       |  0        |           |  Debugger_BreakpointController_BreakpointChanged    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  343       |  0        |           |  Debugger_BreakpointController_BreakpointChanged    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  344       |  0        |           |  Debugger_BreakpointWindow_BreakpointChanged        |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  345       |  0        |           |  Debugger_BreakpointWindow_BreakpointChanged        |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  346       |  0        |           |  Debugger_WatchWindowView_RefreshView               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  347       |  0        |           |  Debugger_WatchWindowView_RefreshView               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  348       |  0        |           |  Debugger_StepDocument                              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  349       |  0        |           |  Debugger_ToggleJMC                                 |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  350       |  0        |           |  Debugger_ToggleJMC                                 |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  351       |  0        |           |  Debugger_ToggleCallstackLibraryFrames              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  352       |  0        |           |  Debugger_ToggleCallstackLibraryFrames              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  353       |  0        |           |  Debugger_SpecifyUrlAsJMCType                       |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  354       |  0        |           |  Debugger_SpecifyUrlAsJMCType                       |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  355       |  0        |           |  Debugger_Persistence_DataLoad                      |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  356       |  0        |           |  Debugger_Persistence_DataLoad                      |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  357       |  0        |           |  Debugger_Persistence_AddBreakpoints                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  358       |  0        |           |  Debugger_Persistence_AddBreakpoints                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  359       |  0        |           |  Debugger_Persistence_AddWatches                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  360       |  0        |           |  Debugger_Persistence_AddWatches                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  361       |  0        |           |  Debugger_Persistence_TabOpen                       |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  362       |  0        |           |  Debugger_Persistence_TabOpen                       |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  363       |  0        |           |  Debugger_Persistence_SaveState                     |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  364       |  0        |           |  Debugger_Persistence_SaveState                     |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  365       |  0        |           |  Debugger_SourceMap_ToggleSourceMap                 |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  366       |  0        |           |  Debugger_SourceMap_ToggleSourceMap                 |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  367       |  0        |           |  Debugger_SourceMap_ParseSourceMapAsync             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  368       |  0        |           |  Debugger_SourceMap_ParseSourceMapAsync             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  369       |  0        |           |  Debugger_Editor_GetOrCreateMode                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  370       |  0        |           |  Debugger_Editor_GetOrCreateMode                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  371       |  0        |           |  Debugger_OnAddDocuments                            |          |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  372       |  1        |           |  Debugger_Intellisense_ListBox_Build                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  373       |  1        |           |  Debugger_Intellisense_ListBox_Build                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  374       |  1        |           |  Debugger_Intellisense_ListBox_Reset                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  375       |  1        |           |  Debugger_Intellisense_ListBox_Reset                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  376       |  1        |           |  Debugger_Intellisense_Menu_Filter                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  377       |  1        |           |  Debugger_Intellisense_Menu_Filter                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  378       |  1        |           |  Debugger_Intellisense_Menu_Layout                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  379       |  1        |           |  Debugger_Intellisense_Menu_Layout                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  380       |  1        |           |  Debugger_Intellisense_Provider_Get_Expression      |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  381       |  1        |           |  Debugger_Intellisense_Provider_Get_Expression      |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  382       |  0        |           |  Debugger_Intellisense_Provider_Update              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  383       |  0        |           |  Debugger_Intellisense_Provider_Update              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  384       |  0        |           |  Debugger_Intellisense_Provider_Get_Items           |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  385       |  0        |           |  Debugger_Intellisense_Provider_Get_Items           |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  386       |  0        |           |  Debugger_AsyncStackProvider_GetFrames              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  387       |  0        |           |  Debugger_AsyncStackProvider_GetFrames              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  388       |  0        |           |  Debugger_AsyncStackProvider_GetFrames              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  401       |  0        |           |  Console_Window_Create                              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  402       |  0        |           |  Console_Window_Create                              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  403       |  0        |           |  Console_Attach                                     |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  404       |  0        |           |  Console_Attach                                     |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  405       |  0        |           |  Console_Message                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  406       |  0        |           |  Console_Message                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  407       |  0        |           |  Console_Input                                      |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  408       |  0        |           |  Console_Input                                      |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  409       |  0        |           |  Console_Output                                     |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  410       |  0        |           |  Console_Output                                     |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  411       |  0        |           |  Console_Output_Render                              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  412       |  0        |           |  Console_Output_Render                              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  413       |  0        |           |  Console_Item_Toggle                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  414       |  0        |           |  Console_Item_Toggle                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  415       |  0        |           |  Console_HtmlLines_Expand                           |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  416       |  0        |           |  Console_HtmlLines_Expand                           |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  417       |  0        |           |  Console_Context_Menu_Loading                       |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  418       |  0        |           |  Console_Context_Menu_Loading                       |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  419       |  0        |           |  Console_Scroll                                     |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  420       |  0        |           |  Console_Scroll                                     |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  421       |  1        |           |  Console_Intellisense_ListBox_Build                 |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  422       |  1        |           |  Console_Intellisense_ListBox_Build                 |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  423       |  1        |           |  Console_Intellisense_ListBox_Reset                 |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  424       |  1        |           |  Console_Intellisense_ListBox_Reset                 |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  425       |  1        |           |  Console_Intellisense_Menu_Filter                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  426       |  1        |           |  Console_Intellisense_Menu_Filter                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  427       |  1        |           |  Console_Intellisense_Menu_Layout                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  428       |  1        |           |  Console_Intellisense_Menu_Layout                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  429       |  1        |           |  Console_Intellisense_Provider_Get_Expression       |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  430       |  1        |           |  Console_Intellisense_Provider_Get_Expression       |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  431       |  0        |           |  Console_Intellisense_Provider_Update               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  432       |  0        |           |  Console_Intellisense_Provider_Update               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  433       |  0        |           |  Console_Intellisense_Provider_Get_Items            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  434       |  0        |           |  Console_Intellisense_Provider_Get_Items            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  501       |  0        |           |  Dom_Window_Create                                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  502       |  0        |           |  Dom_Window_Create                                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  503       |  0        |           |  Dom_ExpandNode                                     |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  504       |  0        |           |  Dom_ExpandNode                                     |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  505       |  0        |           |  Dom_UndoRedo                                       |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  506       |  0        |           |  Dom_UndoRedo                                       |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  507       |  0        |           |  Dom_DragDrop                                       |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  508       |  0        |           |  Dom_DragDrop                                       |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  509       |  0        |           |  Dom_AddAttribute                                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  510       |  0        |           |  Dom_AddAttribute                                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  511       |  0        |           |  Dom_Intellisense                                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  512       |  0        |           |  Dom_Intellisense                                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  513       |  0        |           |  Dom_SelectElement                                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  514       |  0        |           |  Dom_SelectElement                                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  515       |  0        |           |  Dom_CutElement                                     |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  516       |  0        |           |  Dom_CutElement                                     |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  517       |  0        |           |  Dom_PasteElement                                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  518       |  0        |           |  Dom_PasteElement                                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  519       |  0        |           |  Dom_CollapseElement                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  520       |  0        |           |  Dom_CollapseElement                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  521       |  0        |           |  Dom_StylesTabLoad                                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  522       |  0        |           |  Dom_StylesTabLoad                                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  523       |  0        |           |  Dom_StylesTab_Intellisense                         |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  524       |  0        |           |  Dom_StylesTab_Intellisense                         |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  525       |  0        |           |  Dom_TreeItemExpand                                 |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  526       |  0        |           |  Dom_TreeItemExpand                                 |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  527       |  0        |           |  Dom_ComputedTabLoad                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  528       |  0        |           |  Dom_ComputedTabLoad                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  529       |  0        |           |  Dom_ChangesTabLoad                                 |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  530       |  0        |           |  Dom_ChangesTabLoad                                 |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  531       |  0        |           |  Dom_LayoutTabLoad                                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  532       |  0        |           |  Dom_LayoutTabLoad                                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  533       |  0        |           |  Dom_EventsTabLoad                                  |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  534       |  0        |           |  Dom_EventsTabLoad                                  |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  535       |  0        |           |  Dom_TreeItemCollapse                               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  536       |  0        |           |  Dom_TreeItemCollapse                               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  537       |  0        |           |  Dom_Search                                         |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  538       |  0        |           |  Dom_Search                                         |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  539       |  0        |           |  Dom_RemoteInjection                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  540       |  0        |           |  Dom_RemoteInjection                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  541       |  0        |           |  Dom_EnterEditAsHtml                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  542       |  0        |           |  Dom_EnterEditAsHtml                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  543       |  0        |           |  Dom_CommitEditAsHtml                               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  544       |  0        |           |  Dom_CommitEditAsHtml                               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  545       |  0        |           |  Dom_CommitEditAttribute                            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  546       |  0        |           |  Dom_CommitEditAttribute                            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  547       |  0        |           |  Dom_ShowColorPicker                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  548       |  0        |           |  Dom_ShowColorPicker                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  549       |  0        |           |  Dom_HideColorPicker                                |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  550       |  0        |           |  Dom_HideColorPicker                                |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  551       |  0        |           |  Dom_SetColorUsingColorPicker                       |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  552       |  0        |           |  Dom_SetColorUsingColorPicker                       |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  601       |  0        |           |  Emulation_Window_Create                            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  602       |  0        |           |  Emulation_Window_Create                            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  701       |  0        |           |  Generic_Debug_1                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  702       |  0        |           |  Generic_Debug_1                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  703       |  0        |           |  Generic_Debug_2                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  704       |  0        |           |  Generic_Debug_2                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  705       |  0        |           |  Generic_Debug_3                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  706       |  0        |           |  Generic_Debug_3                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  707       |  0        |           |  Generic_Debug_4                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  708       |  0        |           |  Generic_Debug_4                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  709       |  0        |           |  Generic_Debug_5                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  710       |  0        |           |  Generic_Debug_5                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  711       |  0        |           |  Generic_Debug_6                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  712       |  0        |           |  Generic_Debug_6                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  713       |  0        |           |  Generic_Debug_7                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  714       |  0        |           |  Generic_Debug_7                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  715       |  0        |           |  Generic_Debug_8                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  716       |  0        |           |  Generic_Debug_8                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  717       |  0        |           |  Generic_Debug_9                                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  718       |  0        |           |  Generic_Debug_9                                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  801       |  0        |           |  Header_InitializeTabs                              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  802       |  0        |           |  Header_InitializeTabs                              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  901       |  0        |           |  Shell_Load                                         |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  902       |  0        |           |  Shell_Load                                         |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  903       |  0        |           |  Shell_LaunchTool                                   |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  904       |  0        |           |  Shell_LaunchTool                                   |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  905       |  0        |           |  Shell_LaunchTool_Header                            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  906       |  0        |           |  Shell_LaunchTool_Header                            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  907       |  0        |           |  Shell_LaunchTool_Network                           |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  908       |  0        |           |  Shell_LaunchTool_Network                           |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  909       |  0        |           |  Shell_LaunchTool_Profiler                          |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  910       |  0        |           |  Shell_LaunchTool_Profiler                          |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  911       |  0        |           |  Shell_LaunchTool_Console                           |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  912       |  0        |           |  Shell_LaunchTool_Console                           |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  913       |  0        |           |  Shell_LaunchTool_Dom                               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  914       |  0        |           |  Shell_LaunchTool_Dom                               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  915       |  0        |           |  Shell_LaunchTool_Debugger                          |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  916       |  0        |           |  Shell_LaunchTool_Debugger                          |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  917       |  0        |           |  Shell_LaunchTool_Emulation                         |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  918       |  0        |           |  Shell_LaunchTool_Emulation                         |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  921       |  0        |           |  Shell_LaunchTool_Memory                            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  922       |  0        |           |  Shell_LaunchTool_Memory                            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  923       |  0        |           |  Shell_LaunchTool_VisualProfiler                    |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  924       |  0        |           |  Shell_LaunchTool_VisualProfiler                    |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  925       |  0        |           |  Shell_LaunchTool_Popup                             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  926       |  0        |           |  Shell_LaunchTool_Popup                             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  927       |  0        |           |  Shell_ShowTool_Network                             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  928       |  0        |           |  Shell_ShowTool_Network                             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  929       |  0        |           |  Shell_ShowTool_Profiler                            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  930       |  0        |           |  Shell_ShowTool_Profiler                            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  931       |  0        |           |  Shell_ShowTool_Console                             |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  932       |  0        |           |  Shell_ShowTool_Console                             |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  933       |  0        |           |  Shell_ShowTool_Dom                                 |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  934       |  0        |           |  Shell_ShowTool_Dom                                 |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  935       |  0        |           |  Shell_ShowTool_Debugger                            |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  936       |  0        |           |  Shell_ShowTool_Debugger                            |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  937       |  0        |           |  Shell_ShowTool_Emulation                           |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  938       |  0        |           |  Shell_ShowTool_Emulation                           |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  939       |  0        |           |  Shell_ShowTool_Popup                               |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  940       |  0        |           |  Shell_ShowTool_Popup                               |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  941       |  0        |           |  Shell_ShowTool_Memory                              |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  942       |  0        |           |  Shell_ShowTool_Memory                              |  Stop    |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  943       |  0        |           |  Shell_ShowTool_VisualProfiler                      |  Start   |           |
+Microsoft-Windows-IE-F12-Provider  |  Information  |  944       |  0        |           |  Shell_ShowTool_VisualProfiler                      |  Stop    |           |

@@ -1,3 +1,3 @@
-Provider                        |  Event ID  |  Channel                                 |  Message
---------------------------------|------------|------------------------------------------|---------
-Microsoft-Windows-Build-RegDll  |  100       |  Microsoft-Windows-Regsvr32/Operational  |
+Provider                        |  Level        |  Event ID  |  Version  |  Channel                                 |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------|---------------|------------|-----------|------------------------------------------|--------|----------|-----------|---------
+Microsoft-Windows-Build-RegDll  |  Information  |  100       |  0        |  Microsoft-Windows-Regsvr32/Operational  |        |          |           |

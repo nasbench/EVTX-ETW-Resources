@@ -1,12 +1,12 @@
-Provider                         |  Event ID  |  Channel                                     |  Message
----------------------------------|------------|----------------------------------------------|---------
-Microsoft-Windows-DisplaySwitch  |  1         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  2         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  3         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  4         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  5         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  6         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  7         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  8         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  9         |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
-Microsoft-Windows-DisplaySwitch  |  10        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |
+Provider                         |  Level        |  Event ID  |  Version  |  Channel                                     |  Task                                     |  Opcode  |  Keyword  |  Message
+---------------------------------|---------------|------------|-----------|----------------------------------------------|-------------------------------------------|----------|-----------|---------
+Microsoft-Windows-DisplaySwitch  |  Information  |  1         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_Application                |  Start   |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  2         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_Application                |  Stop    |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  3         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_CreateAndShow              |  Start   |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  4         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  DisplaySwitch_CreateAndShow              |  Stop    |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  5         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  ProjectionUI_Initialization              |  Start   |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  6         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  ProjectionUI_Initialization              |  Stop    |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  7         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  ProjectionUI_Selector_CreateAndShow      |  Start   |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  8         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  ProjectionUI_Selector_CreateAndShow      |  Stop    |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  9         |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  ProjectionUI_Confirmation_CreateAndShow  |  Start   |           |
+Microsoft-Windows-DisplaySwitch  |  Information  |  10        |  0        |  Microsoft-Windows-DisplaySwitch/Diagnostic  |  ProjectionUI_Confirmation_CreateAndShow  |  Stop    |           |

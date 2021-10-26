@@ -1,9 +1,9 @@
-Provider                 |  Event ID  |  Channel                              |  Message
--------------------------|------------|---------------------------------------|-------------------------------------------------------------------------------------
-Microsoft-Windows-VHDMP  |  1         |  Microsoft-Windows-VHDMP/Operational  |  The VHD {VhdFileName} has come online (surfaced) as disk number {VhdDiskNumber}.
-Microsoft-Windows-VHDMP  |  2         |  Microsoft-Windows-VHDMP/Operational  |  The VHD {VhdFileName} has been removed (unsurfaced) as disk number {VhdDiskNumber}.
-Microsoft-Windows-VHDMP  |  3         |  Microsoft-Windows-VHDMP/Operational  |  Failed to surface VHD {VhdFileName}. Error status {Status}.
-Microsoft-Windows-VHDMP  |  4         |  Microsoft-Windows-VHDMP/Operational  |  Failed to surface VHD {VhdFileName}. Surface attempt was cancelled.
-Microsoft-Windows-VHDMP  |  5         |  Microsoft-Windows-VHDMP/Operational  |  Failed to {VhdMetaOps} VHD {VhdFileName}. Error status {Status}.
-Microsoft-Windows-VHDMP  |  6         |  Microsoft-Windows-VHDMP/Operational  |  Failed to {VhdIoType} VHD {VhdFileName}. Error status {Status}.
-Microsoft-Windows-VHDMP  |  7         |                                       |
+Provider                 |  Level        |  Event ID  |  Version  |  Channel                              |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------|---------------|------------|-----------|---------------------------------------|--------|----------|-----------|-------------------------------------------------------------------------------------
+Microsoft-Windows-VHDMP  |  Information  |  1         |  0        |  Microsoft-Windows-VHDMP/Operational  |        |          |           |  The VHD {VhdFileName} has come online (surfaced) as disk number {VhdDiskNumber}.
+Microsoft-Windows-VHDMP  |  Information  |  2         |  0        |  Microsoft-Windows-VHDMP/Operational  |        |          |           |  The VHD {VhdFileName} has been removed (unsurfaced) as disk number {VhdDiskNumber}.
+Microsoft-Windows-VHDMP  |  Error        |  3         |  0        |  Microsoft-Windows-VHDMP/Operational  |        |          |           |  Failed to surface VHD {VhdFileName}. Error status {Status}.
+Microsoft-Windows-VHDMP  |  Error        |  4         |  0        |  Microsoft-Windows-VHDMP/Operational  |        |          |           |  Failed to surface VHD {VhdFileName}. Surface attempt was cancelled.
+Microsoft-Windows-VHDMP  |  Error        |  5         |  0        |  Microsoft-Windows-VHDMP/Operational  |        |          |           |  Failed to {VhdMetaOps} VHD {VhdFileName}. Error status {Status}.
+Microsoft-Windows-VHDMP  |  Error        |  6         |  0        |  Microsoft-Windows-VHDMP/Operational  |        |          |           |  Failed to {VhdIoType} VHD {VhdFileName}. Error status {Status}.
+Microsoft-Windows-VHDMP  |  Information  |  7         |  0        |                                       |        |          |           |

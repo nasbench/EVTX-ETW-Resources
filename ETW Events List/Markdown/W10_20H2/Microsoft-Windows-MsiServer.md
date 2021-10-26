@@ -1,436 +1,436 @@
-Provider                     |  Event ID  |  Channel  |  Message
------------------------------|------------|-----------|---------
-Microsoft-Windows-MsiServer  |  1000      |           |
-Microsoft-Windows-MsiServer  |  1001      |           |
-Microsoft-Windows-MsiServer  |  1002      |           |
-Microsoft-Windows-MsiServer  |  1003      |           |
-Microsoft-Windows-MsiServer  |  1004      |           |
-Microsoft-Windows-MsiServer  |  1005      |           |
-Microsoft-Windows-MsiServer  |  1007      |           |
-Microsoft-Windows-MsiServer  |  1008      |           |
-Microsoft-Windows-MsiServer  |  1012      |           |
-Microsoft-Windows-MsiServer  |  1013      |           |
-Microsoft-Windows-MsiServer  |  1014      |           |
-Microsoft-Windows-MsiServer  |  1015      |           |
-Microsoft-Windows-MsiServer  |  1016      |           |
-Microsoft-Windows-MsiServer  |  1017      |           |
-Microsoft-Windows-MsiServer  |  1018      |           |
-Microsoft-Windows-MsiServer  |  1019      |           |
-Microsoft-Windows-MsiServer  |  1020      |           |
-Microsoft-Windows-MsiServer  |  1021      |           |
-Microsoft-Windows-MsiServer  |  1022      |           |
-Microsoft-Windows-MsiServer  |  1023      |           |
-Microsoft-Windows-MsiServer  |  1024      |           |
-Microsoft-Windows-MsiServer  |  1025      |           |
-Microsoft-Windows-MsiServer  |  1026      |           |
-Microsoft-Windows-MsiServer  |  1027      |           |
-Microsoft-Windows-MsiServer  |  1028      |           |
-Microsoft-Windows-MsiServer  |  1029      |           |
-Microsoft-Windows-MsiServer  |  1030      |           |
-Microsoft-Windows-MsiServer  |  1031      |           |
-Microsoft-Windows-MsiServer  |  1032      |           |
-Microsoft-Windows-MsiServer  |  1033      |           |
-Microsoft-Windows-MsiServer  |  1034      |           |
-Microsoft-Windows-MsiServer  |  1035      |           |
-Microsoft-Windows-MsiServer  |  1036      |           |
-Microsoft-Windows-MsiServer  |  1037      |           |
-Microsoft-Windows-MsiServer  |  1038      |           |
-Microsoft-Windows-MsiServer  |  1039      |           |
-Microsoft-Windows-MsiServer  |  1040      |           |
-Microsoft-Windows-MsiServer  |  1041      |           |
-Microsoft-Windows-MsiServer  |  1042      |           |
-Microsoft-Windows-MsiServer  |  1043      |           |
-Microsoft-Windows-MsiServer  |  10005     |           |
-Microsoft-Windows-MsiServer  |  10032     |           |
-Microsoft-Windows-MsiServer  |  10033     |           |
-Microsoft-Windows-MsiServer  |  11101     |           |
-Microsoft-Windows-MsiServer  |  11301     |           |
-Microsoft-Windows-MsiServer  |  11302     |           |
-Microsoft-Windows-MsiServer  |  11303     |           |
-Microsoft-Windows-MsiServer  |  11304     |           |
-Microsoft-Windows-MsiServer  |  11305     |           |
-Microsoft-Windows-MsiServer  |  11306     |           |
-Microsoft-Windows-MsiServer  |  11307     |           |
-Microsoft-Windows-MsiServer  |  11308     |           |
-Microsoft-Windows-MsiServer  |  11309     |           |
-Microsoft-Windows-MsiServer  |  11310     |           |
-Microsoft-Windows-MsiServer  |  11311     |           |
-Microsoft-Windows-MsiServer  |  11312     |           |
-Microsoft-Windows-MsiServer  |  11313     |           |
-Microsoft-Windows-MsiServer  |  11314     |           |
-Microsoft-Windows-MsiServer  |  11315     |           |
-Microsoft-Windows-MsiServer  |  11316     |           |
-Microsoft-Windows-MsiServer  |  11317     |           |
-Microsoft-Windows-MsiServer  |  11318     |           |
-Microsoft-Windows-MsiServer  |  11319     |           |
-Microsoft-Windows-MsiServer  |  11320     |           |
-Microsoft-Windows-MsiServer  |  11321     |           |
-Microsoft-Windows-MsiServer  |  11322     |           |
-Microsoft-Windows-MsiServer  |  11323     |           |
-Microsoft-Windows-MsiServer  |  11324     |           |
-Microsoft-Windows-MsiServer  |  11325     |           |
-Microsoft-Windows-MsiServer  |  11326     |           |
-Microsoft-Windows-MsiServer  |  11327     |           |
-Microsoft-Windows-MsiServer  |  11328     |           |
-Microsoft-Windows-MsiServer  |  11329     |           |
-Microsoft-Windows-MsiServer  |  11330     |           |
-Microsoft-Windows-MsiServer  |  11331     |           |
-Microsoft-Windows-MsiServer  |  11332     |           |
-Microsoft-Windows-MsiServer  |  11333     |           |
-Microsoft-Windows-MsiServer  |  11334     |           |
-Microsoft-Windows-MsiServer  |  11335     |           |
-Microsoft-Windows-MsiServer  |  11336     |           |
-Microsoft-Windows-MsiServer  |  11401     |           |
-Microsoft-Windows-MsiServer  |  11402     |           |
-Microsoft-Windows-MsiServer  |  11403     |           |
-Microsoft-Windows-MsiServer  |  11404     |           |
-Microsoft-Windows-MsiServer  |  11405     |           |
-Microsoft-Windows-MsiServer  |  11406     |           |
-Microsoft-Windows-MsiServer  |  11407     |           |
-Microsoft-Windows-MsiServer  |  11408     |           |
-Microsoft-Windows-MsiServer  |  11409     |           |
-Microsoft-Windows-MsiServer  |  11410     |           |
-Microsoft-Windows-MsiServer  |  11500     |           |
-Microsoft-Windows-MsiServer  |  11501     |           |
-Microsoft-Windows-MsiServer  |  11502     |           |
-Microsoft-Windows-MsiServer  |  11503     |           |
-Microsoft-Windows-MsiServer  |  11601     |           |
-Microsoft-Windows-MsiServer  |  11602     |           |
-Microsoft-Windows-MsiServer  |  11603     |           |
-Microsoft-Windows-MsiServer  |  11604     |           |
-Microsoft-Windows-MsiServer  |  11605     |           |
-Microsoft-Windows-MsiServer  |  11606     |           |
-Microsoft-Windows-MsiServer  |  11607     |           |
-Microsoft-Windows-MsiServer  |  11608     |           |
-Microsoft-Windows-MsiServer  |  11701     |           |
-Microsoft-Windows-MsiServer  |  11702     |           |
-Microsoft-Windows-MsiServer  |  11703     |           |
-Microsoft-Windows-MsiServer  |  11704     |           |
-Microsoft-Windows-MsiServer  |  11705     |           |
-Microsoft-Windows-MsiServer  |  11706     |           |
-Microsoft-Windows-MsiServer  |  11707     |           |
-Microsoft-Windows-MsiServer  |  11708     |           |
-Microsoft-Windows-MsiServer  |  11709     |           |
-Microsoft-Windows-MsiServer  |  11710     |           |
-Microsoft-Windows-MsiServer  |  11711     |           |
-Microsoft-Windows-MsiServer  |  11712     |           |
-Microsoft-Windows-MsiServer  |  11713     |           |
-Microsoft-Windows-MsiServer  |  11714     |           |
-Microsoft-Windows-MsiServer  |  11715     |           |
-Microsoft-Windows-MsiServer  |  11716     |           |
-Microsoft-Windows-MsiServer  |  11717     |           |
-Microsoft-Windows-MsiServer  |  11718     |           |
-Microsoft-Windows-MsiServer  |  11719     |           |
-Microsoft-Windows-MsiServer  |  11720     |           |
-Microsoft-Windows-MsiServer  |  11721     |           |
-Microsoft-Windows-MsiServer  |  11722     |           |
-Microsoft-Windows-MsiServer  |  11723     |           |
-Microsoft-Windows-MsiServer  |  11724     |           |
-Microsoft-Windows-MsiServer  |  11725     |           |
-Microsoft-Windows-MsiServer  |  11726     |           |
-Microsoft-Windows-MsiServer  |  11727     |           |
-Microsoft-Windows-MsiServer  |  11728     |           |
-Microsoft-Windows-MsiServer  |  11729     |           |
-Microsoft-Windows-MsiServer  |  11730     |           |
-Microsoft-Windows-MsiServer  |  11731     |           |
-Microsoft-Windows-MsiServer  |  11732     |           |
-Microsoft-Windows-MsiServer  |  11801     |           |
-Microsoft-Windows-MsiServer  |  11802     |           |
-Microsoft-Windows-MsiServer  |  11803     |           |
-Microsoft-Windows-MsiServer  |  11804     |           |
-Microsoft-Windows-MsiServer  |  11805     |           |
-Microsoft-Windows-MsiServer  |  11806     |           |
-Microsoft-Windows-MsiServer  |  11807     |           |
-Microsoft-Windows-MsiServer  |  11901     |           |
-Microsoft-Windows-MsiServer  |  11902     |           |
-Microsoft-Windows-MsiServer  |  11903     |           |
-Microsoft-Windows-MsiServer  |  11904     |           |
-Microsoft-Windows-MsiServer  |  11905     |           |
-Microsoft-Windows-MsiServer  |  11906     |           |
-Microsoft-Windows-MsiServer  |  11907     |           |
-Microsoft-Windows-MsiServer  |  11908     |           |
-Microsoft-Windows-MsiServer  |  11909     |           |
-Microsoft-Windows-MsiServer  |  11910     |           |
-Microsoft-Windows-MsiServer  |  11911     |           |
-Microsoft-Windows-MsiServer  |  11912     |           |
-Microsoft-Windows-MsiServer  |  11913     |           |
-Microsoft-Windows-MsiServer  |  11914     |           |
-Microsoft-Windows-MsiServer  |  11915     |           |
-Microsoft-Windows-MsiServer  |  11916     |           |
-Microsoft-Windows-MsiServer  |  11917     |           |
-Microsoft-Windows-MsiServer  |  11918     |           |
-Microsoft-Windows-MsiServer  |  11919     |           |
-Microsoft-Windows-MsiServer  |  11920     |           |
-Microsoft-Windows-MsiServer  |  11921     |           |
-Microsoft-Windows-MsiServer  |  11922     |           |
-Microsoft-Windows-MsiServer  |  11923     |           |
-Microsoft-Windows-MsiServer  |  11924     |           |
-Microsoft-Windows-MsiServer  |  11925     |           |
-Microsoft-Windows-MsiServer  |  11926     |           |
-Microsoft-Windows-MsiServer  |  11927     |           |
-Microsoft-Windows-MsiServer  |  11928     |           |
-Microsoft-Windows-MsiServer  |  11929     |           |
-Microsoft-Windows-MsiServer  |  11930     |           |
-Microsoft-Windows-MsiServer  |  11931     |           |
-Microsoft-Windows-MsiServer  |  11932     |           |
-Microsoft-Windows-MsiServer  |  11933     |           |
-Microsoft-Windows-MsiServer  |  11934     |           |
-Microsoft-Windows-MsiServer  |  11935     |           |
-Microsoft-Windows-MsiServer  |  11936     |           |
-Microsoft-Windows-MsiServer  |  11937     |           |
-Microsoft-Windows-MsiServer  |  11938     |           |
-Microsoft-Windows-MsiServer  |  11939     |           |
-Microsoft-Windows-MsiServer  |  11940     |           |
-Microsoft-Windows-MsiServer  |  11941     |           |
-Microsoft-Windows-MsiServer  |  11942     |           |
-Microsoft-Windows-MsiServer  |  11943     |           |
-Microsoft-Windows-MsiServer  |  11944     |           |
-Microsoft-Windows-MsiServer  |  11945     |           |
-Microsoft-Windows-MsiServer  |  11946     |           |
-Microsoft-Windows-MsiServer  |  20000     |           |
-Microsoft-Windows-MsiServer  |  20001     |           |
-Microsoft-Windows-MsiServer  |  20002     |           |
-Microsoft-Windows-MsiServer  |  20003     |           |
-Microsoft-Windows-MsiServer  |  20004     |           |
-Microsoft-Windows-MsiServer  |  20005     |           |
-Microsoft-Windows-MsiServer  |  20006     |           |
-Microsoft-Windows-MsiServer  |  20007     |           |
-Microsoft-Windows-MsiServer  |  20008     |           |
-Microsoft-Windows-MsiServer  |  20009     |           |
-Microsoft-Windows-MsiServer  |  20010     |           |
-Microsoft-Windows-MsiServer  |  20011     |           |
-Microsoft-Windows-MsiServer  |  20012     |           |
-Microsoft-Windows-MsiServer  |  20013     |           |
-Microsoft-Windows-MsiServer  |  20014     |           |
-Microsoft-Windows-MsiServer  |  20015     |           |
-Microsoft-Windows-MsiServer  |  20016     |           |
-Microsoft-Windows-MsiServer  |  20017     |           |
-Microsoft-Windows-MsiServer  |  20018     |           |
-Microsoft-Windows-MsiServer  |  20019     |           |
-Microsoft-Windows-MsiServer  |  20020     |           |
-Microsoft-Windows-MsiServer  |  20021     |           |
-Microsoft-Windows-MsiServer  |  20022     |           |
-Microsoft-Windows-MsiServer  |  20023     |           |
-Microsoft-Windows-MsiServer  |  20032     |           |
-Microsoft-Windows-MsiServer  |  20033     |           |
-Microsoft-Windows-MsiServer  |  21101     |           |
-Microsoft-Windows-MsiServer  |  21301     |           |
-Microsoft-Windows-MsiServer  |  21302     |           |
-Microsoft-Windows-MsiServer  |  21303     |           |
-Microsoft-Windows-MsiServer  |  21304     |           |
-Microsoft-Windows-MsiServer  |  21305     |           |
-Microsoft-Windows-MsiServer  |  21306     |           |
-Microsoft-Windows-MsiServer  |  21307     |           |
-Microsoft-Windows-MsiServer  |  21308     |           |
-Microsoft-Windows-MsiServer  |  21309     |           |
-Microsoft-Windows-MsiServer  |  21310     |           |
-Microsoft-Windows-MsiServer  |  21311     |           |
-Microsoft-Windows-MsiServer  |  21312     |           |
-Microsoft-Windows-MsiServer  |  21313     |           |
-Microsoft-Windows-MsiServer  |  21314     |           |
-Microsoft-Windows-MsiServer  |  21315     |           |
-Microsoft-Windows-MsiServer  |  21316     |           |
-Microsoft-Windows-MsiServer  |  21317     |           |
-Microsoft-Windows-MsiServer  |  21318     |           |
-Microsoft-Windows-MsiServer  |  21319     |           |
-Microsoft-Windows-MsiServer  |  21320     |           |
-Microsoft-Windows-MsiServer  |  21321     |           |
-Microsoft-Windows-MsiServer  |  21322     |           |
-Microsoft-Windows-MsiServer  |  21323     |           |
-Microsoft-Windows-MsiServer  |  21324     |           |
-Microsoft-Windows-MsiServer  |  21325     |           |
-Microsoft-Windows-MsiServer  |  21326     |           |
-Microsoft-Windows-MsiServer  |  21327     |           |
-Microsoft-Windows-MsiServer  |  21328     |           |
-Microsoft-Windows-MsiServer  |  21329     |           |
-Microsoft-Windows-MsiServer  |  21330     |           |
-Microsoft-Windows-MsiServer  |  21331     |           |
-Microsoft-Windows-MsiServer  |  21332     |           |
-Microsoft-Windows-MsiServer  |  21333     |           |
-Microsoft-Windows-MsiServer  |  21334     |           |
-Microsoft-Windows-MsiServer  |  21335     |           |
-Microsoft-Windows-MsiServer  |  21336     |           |
-Microsoft-Windows-MsiServer  |  21401     |           |
-Microsoft-Windows-MsiServer  |  21402     |           |
-Microsoft-Windows-MsiServer  |  21403     |           |
-Microsoft-Windows-MsiServer  |  21404     |           |
-Microsoft-Windows-MsiServer  |  21405     |           |
-Microsoft-Windows-MsiServer  |  21406     |           |
-Microsoft-Windows-MsiServer  |  21407     |           |
-Microsoft-Windows-MsiServer  |  21408     |           |
-Microsoft-Windows-MsiServer  |  21409     |           |
-Microsoft-Windows-MsiServer  |  21410     |           |
-Microsoft-Windows-MsiServer  |  21500     |           |
-Microsoft-Windows-MsiServer  |  21501     |           |
-Microsoft-Windows-MsiServer  |  21502     |           |
-Microsoft-Windows-MsiServer  |  21503     |           |
-Microsoft-Windows-MsiServer  |  21601     |           |
-Microsoft-Windows-MsiServer  |  21602     |           |
-Microsoft-Windows-MsiServer  |  21603     |           |
-Microsoft-Windows-MsiServer  |  21604     |           |
-Microsoft-Windows-MsiServer  |  21605     |           |
-Microsoft-Windows-MsiServer  |  21606     |           |
-Microsoft-Windows-MsiServer  |  21607     |           |
-Microsoft-Windows-MsiServer  |  21608     |           |
-Microsoft-Windows-MsiServer  |  21609     |           |
-Microsoft-Windows-MsiServer  |  21610     |           |
-Microsoft-Windows-MsiServer  |  21611     |           |
-Microsoft-Windows-MsiServer  |  21701     |           |
-Microsoft-Windows-MsiServer  |  21702     |           |
-Microsoft-Windows-MsiServer  |  21703     |           |
-Microsoft-Windows-MsiServer  |  21704     |           |
-Microsoft-Windows-MsiServer  |  21705     |           |
-Microsoft-Windows-MsiServer  |  21706     |           |
-Microsoft-Windows-MsiServer  |  21707     |           |
-Microsoft-Windows-MsiServer  |  21708     |           |
-Microsoft-Windows-MsiServer  |  21709     |           |
-Microsoft-Windows-MsiServer  |  21710     |           |
-Microsoft-Windows-MsiServer  |  21711     |           |
-Microsoft-Windows-MsiServer  |  21712     |           |
-Microsoft-Windows-MsiServer  |  21713     |           |
-Microsoft-Windows-MsiServer  |  21714     |           |
-Microsoft-Windows-MsiServer  |  21715     |           |
-Microsoft-Windows-MsiServer  |  21716     |           |
-Microsoft-Windows-MsiServer  |  21717     |           |
-Microsoft-Windows-MsiServer  |  21718     |           |
-Microsoft-Windows-MsiServer  |  21719     |           |
-Microsoft-Windows-MsiServer  |  21720     |           |
-Microsoft-Windows-MsiServer  |  21721     |           |
-Microsoft-Windows-MsiServer  |  21722     |           |
-Microsoft-Windows-MsiServer  |  21723     |           |
-Microsoft-Windows-MsiServer  |  21724     |           |
-Microsoft-Windows-MsiServer  |  21725     |           |
-Microsoft-Windows-MsiServer  |  21726     |           |
-Microsoft-Windows-MsiServer  |  21727     |           |
-Microsoft-Windows-MsiServer  |  21728     |           |
-Microsoft-Windows-MsiServer  |  21729     |           |
-Microsoft-Windows-MsiServer  |  21730     |           |
-Microsoft-Windows-MsiServer  |  21731     |           |
-Microsoft-Windows-MsiServer  |  21732     |           |
-Microsoft-Windows-MsiServer  |  21733     |           |
-Microsoft-Windows-MsiServer  |  21801     |           |
-Microsoft-Windows-MsiServer  |  21802     |           |
-Microsoft-Windows-MsiServer  |  21803     |           |
-Microsoft-Windows-MsiServer  |  21804     |           |
-Microsoft-Windows-MsiServer  |  21805     |           |
-Microsoft-Windows-MsiServer  |  21806     |           |
-Microsoft-Windows-MsiServer  |  21807     |           |
-Microsoft-Windows-MsiServer  |  21901     |           |
-Microsoft-Windows-MsiServer  |  21902     |           |
-Microsoft-Windows-MsiServer  |  21903     |           |
-Microsoft-Windows-MsiServer  |  21904     |           |
-Microsoft-Windows-MsiServer  |  21905     |           |
-Microsoft-Windows-MsiServer  |  21906     |           |
-Microsoft-Windows-MsiServer  |  21907     |           |
-Microsoft-Windows-MsiServer  |  21908     |           |
-Microsoft-Windows-MsiServer  |  21909     |           |
-Microsoft-Windows-MsiServer  |  21910     |           |
-Microsoft-Windows-MsiServer  |  21911     |           |
-Microsoft-Windows-MsiServer  |  21912     |           |
-Microsoft-Windows-MsiServer  |  21913     |           |
-Microsoft-Windows-MsiServer  |  21914     |           |
-Microsoft-Windows-MsiServer  |  21915     |           |
-Microsoft-Windows-MsiServer  |  21916     |           |
-Microsoft-Windows-MsiServer  |  21917     |           |
-Microsoft-Windows-MsiServer  |  21918     |           |
-Microsoft-Windows-MsiServer  |  21919     |           |
-Microsoft-Windows-MsiServer  |  21920     |           |
-Microsoft-Windows-MsiServer  |  21921     |           |
-Microsoft-Windows-MsiServer  |  21922     |           |
-Microsoft-Windows-MsiServer  |  21923     |           |
-Microsoft-Windows-MsiServer  |  21924     |           |
-Microsoft-Windows-MsiServer  |  21925     |           |
-Microsoft-Windows-MsiServer  |  21926     |           |
-Microsoft-Windows-MsiServer  |  21927     |           |
-Microsoft-Windows-MsiServer  |  21928     |           |
-Microsoft-Windows-MsiServer  |  21929     |           |
-Microsoft-Windows-MsiServer  |  21930     |           |
-Microsoft-Windows-MsiServer  |  21931     |           |
-Microsoft-Windows-MsiServer  |  21932     |           |
-Microsoft-Windows-MsiServer  |  21933     |           |
-Microsoft-Windows-MsiServer  |  21934     |           |
-Microsoft-Windows-MsiServer  |  21935     |           |
-Microsoft-Windows-MsiServer  |  21936     |           |
-Microsoft-Windows-MsiServer  |  21937     |           |
-Microsoft-Windows-MsiServer  |  21938     |           |
-Microsoft-Windows-MsiServer  |  21939     |           |
-Microsoft-Windows-MsiServer  |  21940     |           |
-Microsoft-Windows-MsiServer  |  21941     |           |
-Microsoft-Windows-MsiServer  |  21942     |           |
-Microsoft-Windows-MsiServer  |  21943     |           |
-Microsoft-Windows-MsiServer  |  21944     |           |
-Microsoft-Windows-MsiServer  |  21945     |           |
-Microsoft-Windows-MsiServer  |  21946     |           |
-Microsoft-Windows-MsiServer  |  30001     |           |
-Microsoft-Windows-MsiServer  |  30002     |           |
-Microsoft-Windows-MsiServer  |  30003     |           |
-Microsoft-Windows-MsiServer  |  30004     |           |
-Microsoft-Windows-MsiServer  |  30005     |           |
-Microsoft-Windows-MsiServer  |  30006     |           |
-Microsoft-Windows-MsiServer  |  30007     |           |
-Microsoft-Windows-MsiServer  |  30008     |           |
-Microsoft-Windows-MsiServer  |  30009     |           |
-Microsoft-Windows-MsiServer  |  30010     |           |
-Microsoft-Windows-MsiServer  |  30011     |           |
-Microsoft-Windows-MsiServer  |  30012     |           |
-Microsoft-Windows-MsiServer  |  30013     |           |
-Microsoft-Windows-MsiServer  |  30014     |           |
-Microsoft-Windows-MsiServer  |  30015     |           |
-Microsoft-Windows-MsiServer  |  30016     |           |
-Microsoft-Windows-MsiServer  |  30017     |           |
-Microsoft-Windows-MsiServer  |  30018     |           |
-Microsoft-Windows-MsiServer  |  30019     |           |
-Microsoft-Windows-MsiServer  |  30020     |           |
-Microsoft-Windows-MsiServer  |  30021     |           |
-Microsoft-Windows-MsiServer  |  30022     |           |
-Microsoft-Windows-MsiServer  |  30023     |           |
-Microsoft-Windows-MsiServer  |  30024     |           |
-Microsoft-Windows-MsiServer  |  30025     |           |
-Microsoft-Windows-MsiServer  |  30026     |           |
-Microsoft-Windows-MsiServer  |  30027     |           |
-Microsoft-Windows-MsiServer  |  30028     |           |
-Microsoft-Windows-MsiServer  |  30029     |           |
-Microsoft-Windows-MsiServer  |  30030     |           |
-Microsoft-Windows-MsiServer  |  30031     |           |
-Microsoft-Windows-MsiServer  |  30032     |           |
-Microsoft-Windows-MsiServer  |  30033     |           |
-Microsoft-Windows-MsiServer  |  30034     |           |
-Microsoft-Windows-MsiServer  |  30035     |           |
-Microsoft-Windows-MsiServer  |  30036     |           |
-Microsoft-Windows-MsiServer  |  30037     |           |
-Microsoft-Windows-MsiServer  |  30038     |           |
-Microsoft-Windows-MsiServer  |  30039     |           |
-Microsoft-Windows-MsiServer  |  30040     |           |
-Microsoft-Windows-MsiServer  |  30041     |           |
-Microsoft-Windows-MsiServer  |  30042     |           |
-Microsoft-Windows-MsiServer  |  30043     |           |
-Microsoft-Windows-MsiServer  |  30044     |           |
-Microsoft-Windows-MsiServer  |  30045     |           |
-Microsoft-Windows-MsiServer  |  30046     |           |
-Microsoft-Windows-MsiServer  |  30047     |           |
-Microsoft-Windows-MsiServer  |  30048     |           |
-Microsoft-Windows-MsiServer  |  30049     |           |
-Microsoft-Windows-MsiServer  |  30050     |           |
-Microsoft-Windows-MsiServer  |  30051     |           |
-Microsoft-Windows-MsiServer  |  30052     |           |
-Microsoft-Windows-MsiServer  |  30053     |           |
-Microsoft-Windows-MsiServer  |  30054     |           |
-Microsoft-Windows-MsiServer  |  30055     |           |
-Microsoft-Windows-MsiServer  |  30056     |           |
-Microsoft-Windows-MsiServer  |  30057     |           |
-Microsoft-Windows-MsiServer  |  30058     |           |
-Microsoft-Windows-MsiServer  |  30059     |           |
-Microsoft-Windows-MsiServer  |  30060     |           |
-Microsoft-Windows-MsiServer  |  30061     |           |
-Microsoft-Windows-MsiServer  |  30062     |           |
-Microsoft-Windows-MsiServer  |  30063     |           |
-Microsoft-Windows-MsiServer  |  30064     |           |
-Microsoft-Windows-MsiServer  |  30065     |           |
-Microsoft-Windows-MsiServer  |  30066     |           |
-Microsoft-Windows-MsiServer  |  30067     |           |
-Microsoft-Windows-MsiServer  |  30068     |           |
-Microsoft-Windows-MsiServer  |  30069     |           |
-Microsoft-Windows-MsiServer  |  30070     |           |
-Microsoft-Windows-MsiServer  |  30071     |           |
-Microsoft-Windows-MsiServer  |  30072     |           |
-Microsoft-Windows-MsiServer  |  30073     |           |
+Provider                     |  Level    |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------|-----------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-MsiServer  |  Verbose  |  1000      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1001      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1002      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1003      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1004      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1005      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1007      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1008      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1012      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1013      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1014      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1015      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1016      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1017      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1018      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1019      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1020      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1021      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1022      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1023      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1024      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1025      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1026      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1027      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1028      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1029      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1030      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1031      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1032      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1033      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1034      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1035      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1036      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1037      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1038      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1039      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1040      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1041      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1042      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  1043      |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  10005     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  10032     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  10033     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11101     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11301     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11302     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11303     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11304     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11305     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11306     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11307     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11308     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11309     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11310     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11311     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11312     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11313     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11314     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11315     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11316     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11317     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11318     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11319     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11320     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11321     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11322     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11323     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11324     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11325     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11326     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11327     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11328     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11329     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11330     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11331     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11332     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11333     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11334     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11335     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11336     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11401     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11402     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11403     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11404     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11405     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11406     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11407     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11408     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11409     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11410     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11500     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11501     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11502     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11503     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11601     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11602     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11603     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11604     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11605     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11606     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11607     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11608     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11701     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11702     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11703     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11704     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11705     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11706     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11707     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11708     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11709     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11710     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11711     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11712     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11713     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11714     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11715     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11716     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11717     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11718     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11719     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11720     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11721     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11722     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11723     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11724     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11725     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11726     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11727     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11728     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11729     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11730     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11731     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11732     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11801     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11802     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11803     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11804     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11805     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11806     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11807     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11901     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11902     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11903     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11904     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11905     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11906     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11907     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11908     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11909     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11910     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11911     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11912     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11913     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11914     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11915     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11916     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11917     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11918     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11919     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11920     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11921     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11922     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11923     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11924     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11925     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11926     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11927     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11928     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11929     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11930     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11931     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11932     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11933     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11934     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11935     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11936     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11937     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11938     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11939     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11940     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11941     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11942     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11943     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11944     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11945     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  11946     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20000     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20001     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20002     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20003     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20004     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20005     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20006     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20007     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20008     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20009     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20010     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20011     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20012     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20013     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20014     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20015     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20016     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20017     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20018     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20019     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20020     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20021     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20022     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20023     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20032     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  20033     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21101     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21301     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21302     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21303     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21304     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21305     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21306     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21307     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21308     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21309     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21310     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21311     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21312     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21313     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21314     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21315     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21316     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21317     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21318     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21319     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21320     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21321     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21322     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21323     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21324     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21325     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21326     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21327     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21328     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21329     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21330     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21331     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21332     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21333     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21334     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21335     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21336     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21401     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21402     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21403     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21404     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21405     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21406     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21407     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21408     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21409     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21410     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21500     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21501     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21502     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21503     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21601     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21602     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21603     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21604     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21605     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21606     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21607     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21608     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21609     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21610     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21611     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21701     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21702     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21703     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21704     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21705     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21706     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21707     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21708     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21709     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21710     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21711     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21712     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21713     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21714     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21715     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21716     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21717     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21718     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21719     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21720     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21721     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21722     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21723     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21724     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21725     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21726     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21727     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21728     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21729     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21730     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21731     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21732     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21733     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21801     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21802     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21803     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21804     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21805     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21806     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21807     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21901     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21902     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21903     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21904     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21905     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21906     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21907     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21908     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21909     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21910     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21911     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21912     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21913     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21914     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21915     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21916     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21917     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21918     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21919     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21920     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21921     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21922     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21923     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21924     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21925     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21926     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21927     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21928     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21929     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21930     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21931     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21932     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21933     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21934     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21935     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21936     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21937     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21938     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21939     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21940     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21941     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21942     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21943     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21944     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21945     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  21946     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30001     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30002     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30003     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30004     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30005     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30006     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30007     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30008     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30009     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30010     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30011     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30012     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30013     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30014     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30015     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30016     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30017     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30018     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30019     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30020     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30021     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30022     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30023     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30024     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30025     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30026     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30027     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30028     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30029     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30030     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30031     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30032     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30033     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30034     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30035     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30036     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30037     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30038     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30039     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30040     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30041     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30042     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30043     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30044     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30045     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30046     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30047     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30048     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30049     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30050     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30051     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30052     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30053     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30054     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30055     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30056     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30057     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30058     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30059     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30060     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30061     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30062     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30063     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30064     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30065     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30066     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30067     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30068     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30069     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30070     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30071     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30072     |  0        |           |        |          |           |
+Microsoft-Windows-MsiServer  |  Verbose  |  30073     |  0        |           |        |          |           |

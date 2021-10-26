@@ -1,3 +1,3 @@
-Provider                                         |  Event ID  |  Channel                                                     |  Message
--------------------------------------------------|------------|--------------------------------------------------------------|---------
-Microsoft-Windows-OOBE-Machine-Plugins-Wireless  |  5111      |  Microsoft-Windows-OOBE-Machine-Plugins-Wireless/Diagnostic  |
+Provider                                         |  Level        |  Event ID  |  Version  |  Channel                                                     |  Task                          |  Opcode  |  Keyword  |  Message
+-------------------------------------------------|---------------|------------|-----------|--------------------------------------------------------------|--------------------------------|----------|-----------|---------
+Microsoft-Windows-OOBE-Machine-Plugins-Wireless  |  Information  |  5111      |  0        |  Microsoft-Windows-OOBE-Machine-Plugins-Wireless/Diagnostic  |  WirelessPageVisibilityResult  |          |  msoobe   |

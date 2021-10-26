@@ -1,7 +1,7 @@
-Provider                                        |  Event ID  |  Channel                                    |  Message
-------------------------------------------------|------------|---------------------------------------------|--------------
-Microsoft-Windows-StorageManagement-WSP-Health  |  8448      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
-Microsoft-Windows-StorageManagement-WSP-Health  |  8449      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
-Microsoft-Windows-StorageManagement-WSP-Health  |  8450      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
-Microsoft-Windows-StorageManagement-WSP-Health  |  8451      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
-Microsoft-Windows-StorageManagement-WSP-Health  |  8452      |  Microsoft-Windows-StorageManagement/Debug  |  {Parameter1}
+Provider                                        |  Level        |  Event ID  |  Version  |  Channel                                    |  Task    |  Opcode  |  Keyword  |  Message
+------------------------------------------------|---------------|------------|-----------|---------------------------------------------|----------|----------|-----------|--------------
+Microsoft-Windows-StorageManagement-WSP-Health  |  Critical     |  8448      |  0        |  Microsoft-Windows-StorageManagement/Debug  |  Health  |          |           |  {Parameter1}
+Microsoft-Windows-StorageManagement-WSP-Health  |  Error        |  8449      |  0        |  Microsoft-Windows-StorageManagement/Debug  |  Health  |          |           |  {Parameter1}
+Microsoft-Windows-StorageManagement-WSP-Health  |  Warning      |  8450      |  0        |  Microsoft-Windows-StorageManagement/Debug  |  Health  |          |           |  {Parameter1}
+Microsoft-Windows-StorageManagement-WSP-Health  |  Information  |  8451      |  0        |  Microsoft-Windows-StorageManagement/Debug  |  Health  |          |           |  {Parameter1}
+Microsoft-Windows-StorageManagement-WSP-Health  |  Verbose      |  8452      |  0        |  Microsoft-Windows-StorageManagement/Debug  |  Health  |          |           |  {Parameter1}

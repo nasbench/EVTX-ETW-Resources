@@ -1,3 +1,3 @@
-Provider                 |  Event ID  |  Channel  |  Message
--------------------------|------------|-----------|---------
-Microsoft-Windows-CDROM  |  100       |           |
+Provider                 |  Level        |  Event ID  |  Version  |  Channel  |  Task          |  Opcode  |  Keyword  |  Message
+-------------------------|---------------|------------|-----------|-----------|----------------|----------|-----------|---------
+Microsoft-Windows-CDROM  |  Information  |  100       |  0        |           |  CDROM_DRIVER  |          |           |

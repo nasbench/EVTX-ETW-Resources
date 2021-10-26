@@ -1,5 +1,5 @@
-Provider                 |  Event ID  |  Channel                              |  Message
--------------------------|------------|---------------------------------------|---------
-Microsoft-Windows-CDROM  |  100       |                                       |
-Microsoft-Windows-CDROM  |  103       |  Microsoft-Windows-CDROM/Operational  |
-Microsoft-Windows-CDROM  |  104       |  Microsoft-Windows-CDROM/Operational  |
+Provider                 |  Level        |  Event ID  |  Version  |  Channel                              |  Task                                      |  Opcode  |  Keyword  |  Message
+-------------------------|---------------|------------|-----------|---------------------------------------|--------------------------------------------|----------|-----------|---------
+Microsoft-Windows-CDROM  |  Information  |  100       |  0        |                                       |  CDROM_DRIVER                              |          |           |
+Microsoft-Windows-CDROM  |  Information  |  103       |  0        |  Microsoft-Windows-CDROM/Operational  |  Setting device power for Zero Power ODD.  |  Start   |           |
+Microsoft-Windows-CDROM  |  Information  |  104       |  0        |  Microsoft-Windows-CDROM/Operational  |  Setting device power for Zero Power ODD.  |  Stop    |           |

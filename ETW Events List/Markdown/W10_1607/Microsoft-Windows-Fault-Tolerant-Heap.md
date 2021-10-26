@@ -1,5 +1,5 @@
-Provider                               |  Event ID  |  Channel                                            |  Message
----------------------------------------|------------|-----------------------------------------------------|---------------------------
-Microsoft-Windows-Fault-Tolerant-Heap  |  1001      |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |
-Microsoft-Windows-Fault-Tolerant-Heap  |  1002      |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |
-Microsoft-Windows-Fault-Tolerant-Heap  |  1003      |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |  FaultTolerantHeap Enabled
+Provider                               |  Level        |  Event ID  |  Version  |  Channel                                            |  Task              |  Opcode                                                                |  Keyword                                                            |  Message
+---------------------------------------|---------------|------------|-----------|-----------------------------------------------------|--------------------|------------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------
+Microsoft-Windows-Fault-Tolerant-Heap  |  Information  |  1001      |  0        |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |  Lifecycle Events  |  Events logged when the FTH (fault tolerant heap) service is started.  |  Events related to lifecycle of FTH (Fault tolerant heap) service.  |
+Microsoft-Windows-Fault-Tolerant-Heap  |  Information  |  1002      |  0        |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |  Lifecycle Events  |  Events logged when the FTH (fault tolerant heap) service is stopped.  |  Events related to lifecycle of FTH (Fault tolerant heap) service.  |
+Microsoft-Windows-Fault-Tolerant-Heap  |  Information  |  1003      |  0        |  Microsoft-Windows-Fault-Tolerant-Heap/Operational  |                    |                                                                        |  Events related to lifecycle of FTH (Fault tolerant heap) service.  |  FaultTolerantHeap Enabled

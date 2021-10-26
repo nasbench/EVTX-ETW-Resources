@@ -1,20 +1,20 @@
-Provider|Event ID|Channel|Message
-Microsoft-Windows-OverlayFilter|24832|System|The filter failed to open the integrity file for {FileNameBuffer} (data source {DataSourceId}) with status {Status}.
-Microsoft-Windows-OverlayFilter|24833|System|The filter failed to validate block {BlockNumber} of length {BlockLength} from {FileNameBuffer}.
-Microsoft-Windows-OverlayFilter|24834|System|The filter failed to validate a read from {FileNameBuffer} at file offset {FileOffset} of length {ReadSize}.
-Microsoft-Windows-OverlayFilter|24835|System|The task is enumerating Volume {volume}
-Microsoft-Windows-OverlayFilter|24836|System|The task has failed to report integrity file generation completion to BitLocker. HRESULT = {hr}
-Microsoft-Windows-OverlayFilter|24837|System|The task has created integrity file {wimHashFile} for file {wimFile}
-Microsoft-Windows-OverlayFilter|24838|System|The task has completed generation of integrity file {wimHashFile} for file {wimFile}
-Microsoft-Windows-OverlayFilter|24839|System|The task has deleted integrity file {wimHashFile} for file {wimFile}
-Microsoft-Windows-OverlayFilter|24840|System|The task is resuming generation of integrity file {filename} at file offset {offset}
-Microsoft-Windows-OverlayFilter|24841|System|The task has paused generation of integrity file {filename} at file offset {offset}
-Microsoft-Windows-OverlayFilter|24842|System|The task has failed to identify encryption/decryption state. HRESULT = {hr}
-Microsoft-Windows-OverlayFilter|24843|System|The task has failed to generate integrity file {wimHashFile} for file {wimFile}. HRESULT = {hr}
-Microsoft-Windows-OverlayFilter|24844|System|The task has failed to delete integrity file {wimHashFile} for file {wimFile}. HRESULT = {hr}
-Microsoft-Windows-OverlayFilter|24845|System|The task has failed to read file at {wimHashFile}. HRESULT = {hr}
-Microsoft-Windows-OverlayFilter|24846|System|The task has failed to write file at {wimHashFile}. HRESULT = {hr}
-Microsoft-Windows-OverlayFilter|24847|System|The filter opened the integrity file for {FileNameBuffer} (data source {DataSourceId}).
-Microsoft-Windows-OverlayFilter|24848|System|The filter did not open the integrity file for {FileNameBuffer} (data source {DataSourceId}) because it is not ready.
-Microsoft-Windows-OverlayFilter|24849|System|The task is generating integrity files
-Microsoft-Windows-OverlayFilter|24850|System|The task is deleting integrity files
+Provider|Level|Event ID|Version|Channel|Task|Opcode|Keyword|Message
+Microsoft-Windows-OverlayFilter|Critical|24832|0|System|WIM integrity verification|IntegrityFileOpen||The filter failed to open the integrity file for {FileNameBuffer} (data source {DataSourceId}) with status {Status}.
+Microsoft-Windows-OverlayFilter|Critical|24833|0|System|WIM integrity verification|IntegrityBlockVerificationFailure||The filter failed to validate block {BlockNumber} of length {BlockLength} from {FileNameBuffer}.
+Microsoft-Windows-OverlayFilter|Critical|24834|0|System|WIM integrity verification|IntegrityInvalidBlock||The filter failed to validate a read from {FileNameBuffer} at file offset {FileOffset} of length {ReadSize}.
+Microsoft-Windows-OverlayFilter|Information|24835|0|System|The Windows Overlay Task|EnumVolume||The task is enumerating Volume {volume}
+Microsoft-Windows-OverlayFilter|Error|24836|0|System|The Windows Overlay Task|ReportHashGenerationToBitlockerError||The task has failed to report integrity file generation completion to BitLocker. HRESULT = {hr}
+Microsoft-Windows-OverlayFilter|Information|24837|0|System|The Windows Overlay Task|CreateHashFile||The task has created integrity file {wimHashFile} for file {wimFile}
+Microsoft-Windows-OverlayFilter|Information|24838|0|System|The Windows Overlay Task|CompleteHashFile||The task has completed generation of integrity file {wimHashFile} for file {wimFile}
+Microsoft-Windows-OverlayFilter|Information|24839|0|System|The Windows Overlay Task|DeleteHashFile||The task has deleted integrity file {wimHashFile} for file {wimFile}
+Microsoft-Windows-OverlayFilter|Information|24840|0|System|The Windows Overlay Task|ResumeHashFile||The task is resuming generation of integrity file {filename} at file offset {offset}
+Microsoft-Windows-OverlayFilter|Information|24841|0|System|The Windows Overlay Task|PauseHashFile||The task has paused generation of integrity file {filename} at file offset {offset}
+Microsoft-Windows-OverlayFilter|Error|24842|0|System|The Windows Overlay Task|ActionError||The task has failed to identify encryption/decryption state. HRESULT = {hr}
+Microsoft-Windows-OverlayFilter|Error|24843|0|System|The Windows Overlay Task|GenerateHashFileError||The task has failed to generate integrity file {wimHashFile} for file {wimFile}. HRESULT = {hr}
+Microsoft-Windows-OverlayFilter|Error|24844|0|System|The Windows Overlay Task|DeleteHashFileError||The task has failed to delete integrity file {wimHashFile} for file {wimFile}. HRESULT = {hr}
+Microsoft-Windows-OverlayFilter|Error|24845|0|System|The Windows Overlay Task|FileReadError||The task has failed to read file at {wimHashFile}. HRESULT = {hr}
+Microsoft-Windows-OverlayFilter|Error|24846|0|System|The Windows Overlay Task|FileWriteError||The task has failed to write file at {wimHashFile}. HRESULT = {hr}
+Microsoft-Windows-OverlayFilter|Information|24847|0|System|WIM integrity verification|IntegrityFileOpen||The filter opened the integrity file for {FileNameBuffer} (data source {DataSourceId}).
+Microsoft-Windows-OverlayFilter|Information|24848|0|System|WIM integrity verification|IntegrityFileOpen||The filter did not open the integrity file for {FileNameBuffer} (data source {DataSourceId}) because it is not ready.
+Microsoft-Windows-OverlayFilter|Information|24849|0|System|The Windows Overlay Task|ActionGenerateHashes||The task is generating integrity files
+Microsoft-Windows-OverlayFilter|Information|24850|0|System|The Windows Overlay Task|ActionDeleteHashes||The task is deleting integrity files

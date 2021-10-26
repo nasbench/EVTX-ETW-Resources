@@ -1,38 +1,38 @@
-Provider                            |  Event ID  |  Channel                                        |  Message
-------------------------------------|------------|-------------------------------------------------|---------
-Microsoft-Windows-UIAutomationCore  |  1         |  Microsoft-Windows-UIAutomationCore/Diagnostic  |
-Microsoft-Windows-UIAutomationCore  |  2         |  Microsoft-Windows-UIAutomationCore/Diagnostic  |
-Microsoft-Windows-UIAutomationCore  |  3         |  Microsoft-Windows-UIAutomationCore/Diagnostic  |
-Microsoft-Windows-UIAutomationCore  |  4         |  Microsoft-Windows-UIAutomationCore/Diagnostic  |
-Microsoft-Windows-UIAutomationCore  |  5         |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  6         |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  7         |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  8         |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  9         |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  10        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  11        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  12        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  13        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  14        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  15        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  16        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  17        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  18        |  Microsoft-Windows-UIAutomationCore/Debug       |
-Microsoft-Windows-UIAutomationCore  |  101       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  102       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  103       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  104       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  105       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  106       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  107       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  108       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  109       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  110       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  111       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  112       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  113       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  114       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  115       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  116       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  117       |  Microsoft-Windows-UIAutomationCore/Perf        |
-Microsoft-Windows-UIAutomationCore  |  118       |  Microsoft-Windows-UIAutomationCore/Perf        |
+Provider                            |  Level        |  Event ID  |  Version  |  Channel                                        |  Task                                 |  Opcode  |  Keyword              |  Message
+------------------------------------|---------------|------------|-----------|-------------------------------------------------|---------------------------------------|----------|-----------------------|---------
+Microsoft-Windows-UIAutomationCore  |  Information  |  1         |  0        |  Microsoft-Windows-UIAutomationCore/Diagnostic  |  UIAutomationCore_ProviderErrors      |          |                       |
+Microsoft-Windows-UIAutomationCore  |  Information  |  2         |  0        |  Microsoft-Windows-UIAutomationCore/Diagnostic  |  UIAutomationCore_IAccessibleErrors   |          |                       |
+Microsoft-Windows-UIAutomationCore  |  Information  |  3         |  0        |  Microsoft-Windows-UIAutomationCore/Diagnostic  |  UIAutomationCore_OtherErrors         |          |                       |
+Microsoft-Windows-UIAutomationCore  |  Information  |  4         |  0        |  Microsoft-Windows-UIAutomationCore/Diagnostic  |  UIAutomationCore_ClientApiErrors     |          |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  5         |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_ClientApiCall       |  Start   |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  6         |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_ClientApiCall       |  Stop    |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  7         |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_ClientCallback      |  Start   |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  8         |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_ClientCallback      |  Stop    |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  9         |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_UiaProviderCall     |  Start   |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  10        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_UiaProviderCall     |  Stop    |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  11        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_IAccProviderCall    |  Start   |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  12        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_IAccProviderCall    |  Stop    |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  13        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_MSAABridgeCall      |  Start   |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  14        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_MSAABridgeCall      |  Stop    |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  15        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_InboundMessage      |  Start   |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  16        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_InboundMessage      |  Stop    |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  17        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_OutboundMessage     |  Start   |                       |
+Microsoft-Windows-UIAutomationCore  |  Verbose      |  18        |  0        |  Microsoft-Windows-UIAutomationCore/Debug       |  UIAutomationCore_OutboundMessage     |  Stop    |                       |
+Microsoft-Windows-UIAutomationCore  |  Information  |  101       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Property_Retrieval  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  102       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Property_Retrieval  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  103       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Cache_Request       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  104       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Cache_Request       |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  105       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_HitTest    |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  106       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_HitTest    |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  107       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_Focused    |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  108       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_Focused    |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  109       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_Selected   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  110       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Retrieve_Selected   |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  111       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Event_Registration  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  112       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_Event_Registration  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  113       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_GetClickablePoint   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  114       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_GetClickablePoint   |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  115       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_TreeWalkerNavigate  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  116       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_TreeWalkerNavigate  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  117       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_BuildUpdatedCache   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-UIAutomationCore  |  Information  |  118       |  0        |  Microsoft-Windows-UIAutomationCore/Perf        |  UIAutomationCore_BuildUpdatedCache   |  Stop    |  PerfInstrumentation  |

@@ -1,8 +1,8 @@
-Provider                               |  Event ID  |  Channel                                           |  Message
----------------------------------------|------------|----------------------------------------------------|------------------------------------------------------------------
-Microsoft-Windows-ProcessStateManager  |  1         |  Microsoft-Windows-ProcessStateManager/Diagnostic  |  Application {PsmKey} state changed from {OldState} to {NewState}
-Microsoft-Windows-ProcessStateManager  |  2         |                                                    |
-Microsoft-Windows-ProcessStateManager  |  3         |                                                    |
-Microsoft-Windows-ProcessStateManager  |  4         |  Microsoft-Windows-ProcessStateManager/Diagnostic  |
-Microsoft-Windows-ProcessStateManager  |  100       |                                                    |
-Microsoft-Windows-ProcessStateManager  |  101       |  Microsoft-Windows-ProcessStateManager/Diagnostic  |
+Provider                               |  Level        |  Event ID  |  Version  |  Channel                                           |  Task            |  Opcode  |  Keyword         |  Message
+---------------------------------------|---------------|------------|-----------|----------------------------------------------------|------------------|----------|------------------|------------------------------------------------------------------
+Microsoft-Windows-ProcessStateManager  |  Information  |  1         |  0        |  Microsoft-Windows-ProcessStateManager/Diagnostic  |  StateChange     |          |  StateChange     |  Application {PsmKey} state changed from {OldState} to {NewState}
+Microsoft-Windows-ProcessStateManager  |  Information  |  2         |  0        |                                                    |  PolicySuspend   |          |  Policy          |
+Microsoft-Windows-ProcessStateManager  |  Information  |  3         |  0        |                                                    |  PolicyResume    |          |  Policy          |
+Microsoft-Windows-ProcessStateManager  |  Information  |  4         |  0        |  Microsoft-Windows-ProcessStateManager/Diagnostic  |  PriorityChange  |          |  PriorityChange  |
+Microsoft-Windows-ProcessStateManager  |  Information  |  100       |  0        |                                                    |  StateChange     |  DCStop  |  StateChange     |
+Microsoft-Windows-ProcessStateManager  |  Information  |  101       |  0        |  Microsoft-Windows-ProcessStateManager/Diagnostic  |  PriorityChange  |  DCStop  |  PriorityChange  |

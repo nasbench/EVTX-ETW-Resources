@@ -1,10 +1,10 @@
-Provider                     |  Event ID  |  Channel                    |  Message
------------------------------|------------|-----------------------------|---------
-Microsoft-Windows-MFH264Enc  |  1         |  WINDOWS_MFH264Enc_CHANNEL  |
-Microsoft-Windows-MFH264Enc  |  2         |  WINDOWS_MFH264Enc_CHANNEL  |
-Microsoft-Windows-MFH264Enc  |  3         |  WINDOWS_MFH264Enc_CHANNEL  |
-Microsoft-Windows-MFH264Enc  |  4         |  WINDOWS_MFH264Enc_CHANNEL  |
-Microsoft-Windows-MFH264Enc  |  5         |  WINDOWS_MFH264Enc_CHANNEL  |
-Microsoft-Windows-MFH264Enc  |  6         |  WINDOWS_MFH264Enc_CHANNEL  |
-Microsoft-Windows-MFH264Enc  |  7         |  WINDOWS_MFH264Enc_CHANNEL  |
-Microsoft-Windows-MFH264Enc  |  8         |  WINDOWS_MFH264Enc_CHANNEL  |
+Provider                     |  Level        |  Event ID  |  Version  |  Channel                    |  Task                     |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|-----------------------------|---------------------------|----------|-----------|---------
+Microsoft-Windows-MFH264Enc  |  Information  |  1         |  0        |  WINDOWS_MFH264Enc_CHANNEL  |  MFH264Enc_EncodeSession  |  Start   |           |
+Microsoft-Windows-MFH264Enc  |  Information  |  2         |  0        |  WINDOWS_MFH264Enc_CHANNEL  |  MFH264Enc_EncodeSession  |  Stop    |           |
+Microsoft-Windows-MFH264Enc  |  Information  |  3         |  0        |  WINDOWS_MFH264Enc_CHANNEL  |  MFH264Enc_TrackSample    |  Start   |           |
+Microsoft-Windows-MFH264Enc  |  Information  |  4         |  0        |  WINDOWS_MFH264Enc_CHANNEL  |  MFH264Enc_TrackSample    |  Stop    |           |
+Microsoft-Windows-MFH264Enc  |  Information  |  5         |  0        |  WINDOWS_MFH264Enc_CHANNEL  |  MFH264Enc_WorkItem       |  Start   |           |
+Microsoft-Windows-MFH264Enc  |  Information  |  6         |  0        |  WINDOWS_MFH264Enc_CHANNEL  |  MFH264Enc_WorkItem       |  Stop    |           |
+Microsoft-Windows-MFH264Enc  |  Information  |  7         |  0        |  WINDOWS_MFH264Enc_CHANNEL  |  MFH264Enc_RateControl    |          |           |
+Microsoft-Windows-MFH264Enc  |  Information  |  8         |  0        |  WINDOWS_MFH264Enc_CHANNEL  |  MFH264Enc_RateControl    |          |           |

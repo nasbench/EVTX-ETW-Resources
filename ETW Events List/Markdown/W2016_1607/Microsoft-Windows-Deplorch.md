@@ -1,7 +1,7 @@
-Provider                    |  Event ID  |  Channel                              |  Message
-----------------------------|------------|---------------------------------------|---------------------------------------------------------------------
-Microsoft-Windows-Deplorch  |  1001      |  Microsoft-Windows-Deplorch/Analytic  |
-Microsoft-Windows-Deplorch  |  1002      |  Microsoft-Windows-Deplorch/Analytic  |  Finished starting system services with status {ErrorCode}.
-Microsoft-Windows-Deplorch  |  2001      |  Microsoft-Windows-Deplorch/Analytic  |  Running user-provided script: "{CommandLine}".
-Microsoft-Windows-Deplorch  |  2002      |  Microsoft-Windows-Deplorch/Analytic  |  Successfully executed script: "{Command}". Exit code is {ExitCode}.
-Microsoft-Windows-Deplorch  |  2003      |  Microsoft-Windows-Deplorch/Analytic  |  Failed to execute script: "{Command}".Exit code is {ExitCode}.
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                              |  Task                      |  Opcode  |  Keyword      |  Message
+----------------------------|---------------|------------|-----------|---------------------------------------|----------------------------|----------|---------------|---------------------------------------------------------------------
+Microsoft-Windows-Deplorch  |  Information  |  1001      |  0        |  Microsoft-Windows-Deplorch/Analytic  |  Start System Services     |  Start   |  Performance  |
+Microsoft-Windows-Deplorch  |  Information  |  1002      |  0        |  Microsoft-Windows-Deplorch/Analytic  |  Start System Services     |  Stop    |  Performance  |  Finished starting system services with status {ErrorCode}.
+Microsoft-Windows-Deplorch  |  Information  |  2001      |  0        |  Microsoft-Windows-Deplorch/Analytic  |  Run user-provided script  |  Start   |  Performance  |  Running user-provided script: "{CommandLine}".
+Microsoft-Windows-Deplorch  |  Information  |  2002      |  0        |  Microsoft-Windows-Deplorch/Analytic  |  Run user-provided script  |  Stop    |  Performance  |  Successfully executed script: "{Command}". Exit code is {ExitCode}.
+Microsoft-Windows-Deplorch  |  Information  |  2003      |  0        |  Microsoft-Windows-Deplorch/Analytic  |  Run user-provided script  |  Stop    |  Performance  |  Failed to execute script: "{Command}".Exit code is {ExitCode}.

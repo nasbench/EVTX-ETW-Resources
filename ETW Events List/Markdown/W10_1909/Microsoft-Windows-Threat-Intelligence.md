@@ -1,32 +1,32 @@
-Provider                               |  Event ID  |  Channel                                         |  Message
----------------------------------------|------------|--------------------------------------------------|---------
-Microsoft-Windows-Threat-Intelligence  |  1         |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  2         |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  3         |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  4         |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  5         |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  6         |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  7         |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  8         |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  11        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  12        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  13        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  14        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  15        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  16        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  17        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  18        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  19        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  20        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  21        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  22        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  23        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  24        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  25        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  26        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  27        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  28        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  29        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  30        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  31        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
-Microsoft-Windows-Threat-Intelligence  |  32        |  Microsoft-Windows-Threat-Intelligence/Analytic  |
+Provider                               |  Level        |  Event ID  |  Version  |  Channel                                         |  Task                                         |  Opcode  |  Keyword                                                         |  Message
+---------------------------------------|---------------|------------|-----------|--------------------------------------------------|-----------------------------------------------|----------|------------------------------------------------------------------|---------
+Microsoft-Windows-Threat-Intelligence  |  Information  |  1         |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_ALLOCVM                |          |  KERNEL_THREATINT_KEYWORD_ALLOCVM_REMOTE                         |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  2         |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_PROTECTVM              |          |  KERNEL_THREATINT_KEYWORD_PROTECTVM_REMOTE                       |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  3         |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_MAPVIEW                |          |  KERNEL_THREATINT_KEYWORD_MAPVIEW_REMOTE                         |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  4         |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_QUEUEUSERAPC           |          |  KERNEL_THREATINT_KEYWORD_QUEUEUSERAPC_REMOTE                    |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  5         |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_SETTHREADCONTEXT       |          |  KERNEL_THREATINT_KEYWORD_SETTHREADCONTEXT_REMOTE                |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  6         |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_ALLOCVM                |          |  KERNEL_THREATINT_KEYWORD_ALLOCVM_LOCAL                          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  7         |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_PROTECTVM              |          |  KERNEL_THREATINT_KEYWORD_PROTECTVM_LOCAL                        |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  8         |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_MAPVIEW                |          |  KERNEL_THREATINT_KEYWORD_MAPVIEW_LOCAL                          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  11        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_READVM                 |          |  KERNEL_THREATINT_KEYWORD_READVM_LOCAL                           |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  12        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_WRITEVM                |          |  KERNEL_THREATINT_KEYWORD_WRITEVM_LOCAL                          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  13        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_READVM                 |          |  KERNEL_THREATINT_KEYWORD_READVM_REMOTE                          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  14        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_WRITEVM                |          |  KERNEL_THREATINT_KEYWORD_WRITEVM_REMOTE                         |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  15        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_SUSPENDRESUME_THREAD   |          |  KERNEL_THREATINT_KEYWORD_SUSPEND_THREAD                         |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  16        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_SUSPENDRESUME_THREAD   |          |  KERNEL_THREATINT_KEYWORD_RESUME_THREAD                          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  17        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_SUSPENDRESUME_PROCESS  |          |  KERNEL_THREATINT_KEYWORD_SUSPEND_PROCESS                        |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  18        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_SUSPENDRESUME_PROCESS  |          |  KERNEL_THREATINT_KEYWORD_RESUME_PROCESS                         |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  19        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_SUSPENDRESUME_PROCESS  |          |  KERNEL_THREATINT_KEYWORD_FREEZE_PROCESS                         |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  20        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_SUSPENDRESUME_PROCESS  |          |  KERNEL_THREATINT_KEYWORD_THAW_PROCESS                           |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  21        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_ALLOCVM                |          |  KERNEL_THREATINT_KEYWORD_ALLOCVM_REMOTE_KERNEL_CALLER           |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  22        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_PROTECTVM              |          |  KERNEL_THREATINT_KEYWORD_PROTECTVM_REMOTE_KERNEL_CALLER         |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  23        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_MAPVIEW                |          |  KERNEL_THREATINT_KEYWORD_MAPVIEW_REMOTE_KERNEL_CALLER           |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  24        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_QUEUEUSERAPC           |          |  KERNEL_THREATINT_KEYWORD_QUEUEUSERAPC_REMOTE_KERNEL_CALLER      |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  25        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_SETTHREADCONTEXT       |          |  KERNEL_THREATINT_KEYWORD_SETTHREADCONTEXT_REMOTE_KERNEL_CALLER  |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  26        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_ALLOCVM                |          |  KERNEL_THREATINT_KEYWORD_ALLOCVM_LOCAL_KERNEL_CALLER            |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  27        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_PROTECTVM              |          |  KERNEL_THREATINT_KEYWORD_PROTECTVM_LOCAL_KERNEL_CALLER          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  28        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_MAPVIEW                |          |  KERNEL_THREATINT_KEYWORD_MAPVIEW_LOCAL_KERNEL_CALLER            |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  29        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_DRIVER_DEVICE          |          |  KERNEL_THREATINT_KEYWORD_DRIVER_EVENTS                          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  30        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_DRIVER_DEVICE          |          |  KERNEL_THREATINT_KEYWORD_DRIVER_EVENTS                          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  31        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_DRIVER_DEVICE          |          |  KERNEL_THREATINT_KEYWORD_DEVICE_EVENTS                          |
+Microsoft-Windows-Threat-Intelligence  |  Information  |  32        |  0        |  Microsoft-Windows-Threat-Intelligence/Analytic  |  KERNEL_THREATINT_TASK_DRIVER_DEVICE          |          |  KERNEL_THREATINT_KEYWORD_DEVICE_EVENTS                          |

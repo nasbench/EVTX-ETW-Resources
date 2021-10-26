@@ -1,3 +1,3 @@
-Provider                |  Event ID  |  Channel                             |  Message
-------------------------|------------|--------------------------------------|------------------------
-Microsoft-Windows-Disk  |  1         |  Microsoft-Windows-Disk/Operational  |  Disk Cache Information
+Provider                |  Level        |  Event ID  |  Version  |  Channel                             |  Task                    |  Opcode               |  Keyword    |  Message
+------------------------|---------------|------------|-----------|--------------------------------------|--------------------------|-----------------------|-------------|------------------------
+Microsoft-Windows-Disk  |  Information  |  1         |  1        |  Microsoft-Windows-Disk/Operational  |  Disk Cache Information  |  OpCodeDiskCacheInfo  |  DiskCache  |  Disk Cache Information

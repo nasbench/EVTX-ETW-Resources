@@ -1,243 +1,243 @@
-Provider           |  Event ID  |  Channel  |  Message
--------------------|------------|-----------|---------
-Microsoft-JScript  |  1         |           |
-Microsoft-JScript  |  2         |           |
-Microsoft-JScript  |  3         |           |
-Microsoft-JScript  |  4         |           |
-Microsoft-JScript  |  5         |           |
-Microsoft-JScript  |  6         |           |
-Microsoft-JScript  |  7         |           |
-Microsoft-JScript  |  8         |           |
-Microsoft-JScript  |  9         |           |
-Microsoft-JScript  |  10        |           |
-Microsoft-JScript  |  11        |           |
-Microsoft-JScript  |  12        |           |
-Microsoft-JScript  |  13        |           |
-Microsoft-JScript  |  14        |           |
-Microsoft-JScript  |  15        |           |
-Microsoft-JScript  |  16        |           |
-Microsoft-JScript  |  17        |           |
-Microsoft-JScript  |  18        |           |
-Microsoft-JScript  |  19        |           |
-Microsoft-JScript  |  20        |           |
-Microsoft-JScript  |  21        |           |
-Microsoft-JScript  |  22        |           |
-Microsoft-JScript  |  23        |           |
-Microsoft-JScript  |  24        |           |
-Microsoft-JScript  |  25        |           |
-Microsoft-JScript  |  26        |           |
-Microsoft-JScript  |  27        |           |
-Microsoft-JScript  |  28        |           |
-Microsoft-JScript  |  29        |           |
-Microsoft-JScript  |  30        |           |
-Microsoft-JScript  |  31        |           |
-Microsoft-JScript  |  32        |           |
-Microsoft-JScript  |  33        |           |
-Microsoft-JScript  |  34        |           |
-Microsoft-JScript  |  35        |           |
-Microsoft-JScript  |  36        |           |
-Microsoft-JScript  |  37        |           |
-Microsoft-JScript  |  38        |           |
-Microsoft-JScript  |  39        |           |
-Microsoft-JScript  |  40        |           |
-Microsoft-JScript  |  41        |           |
-Microsoft-JScript  |  42        |           |
-Microsoft-JScript  |  43        |           |
-Microsoft-JScript  |  44        |           |
-Microsoft-JScript  |  45        |           |
-Microsoft-JScript  |  46        |           |
-Microsoft-JScript  |  47        |           |
-Microsoft-JScript  |  48        |           |
-Microsoft-JScript  |  49        |           |
-Microsoft-JScript  |  50        |           |
-Microsoft-JScript  |  51        |           |
-Microsoft-JScript  |  52        |           |
-Microsoft-JScript  |  53        |           |
-Microsoft-JScript  |  54        |           |
-Microsoft-JScript  |  55        |           |
-Microsoft-JScript  |  56        |           |
-Microsoft-JScript  |  57        |           |
-Microsoft-JScript  |  58        |           |
-Microsoft-JScript  |  59        |           |
-Microsoft-JScript  |  60        |           |
-Microsoft-JScript  |  61        |           |
-Microsoft-JScript  |  62        |           |
-Microsoft-JScript  |  63        |           |
-Microsoft-JScript  |  64        |           |
-Microsoft-JScript  |  65        |           |
-Microsoft-JScript  |  66        |           |
-Microsoft-JScript  |  67        |           |
-Microsoft-JScript  |  68        |           |
-Microsoft-JScript  |  69        |           |
-Microsoft-JScript  |  70        |           |
-Microsoft-JScript  |  71        |           |
-Microsoft-JScript  |  72        |           |
-Microsoft-JScript  |  73        |           |
-Microsoft-JScript  |  74        |           |
-Microsoft-JScript  |  75        |           |
-Microsoft-JScript  |  76        |           |
-Microsoft-JScript  |  77        |           |
-Microsoft-JScript  |  78        |           |
-Microsoft-JScript  |  79        |           |
-Microsoft-JScript  |  80        |           |
-Microsoft-JScript  |  81        |           |
-Microsoft-JScript  |  82        |           |
-Microsoft-JScript  |  83        |           |
-Microsoft-JScript  |  84        |           |
-Microsoft-JScript  |  85        |           |
-Microsoft-JScript  |  86        |           |
-Microsoft-JScript  |  87        |           |
-Microsoft-JScript  |  88        |           |
-Microsoft-JScript  |  89        |           |
-Microsoft-JScript  |  90        |           |
-Microsoft-JScript  |  91        |           |
-Microsoft-JScript  |  92        |           |
-Microsoft-JScript  |  93        |           |
-Microsoft-JScript  |  94        |           |
-Microsoft-JScript  |  95        |           |
-Microsoft-JScript  |  96        |           |
-Microsoft-JScript  |  97        |           |
-Microsoft-JScript  |  98        |           |
-Microsoft-JScript  |  99        |           |
-Microsoft-JScript  |  100       |           |
-Microsoft-JScript  |  101       |           |
-Microsoft-JScript  |  102       |           |
-Microsoft-JScript  |  103       |           |
-Microsoft-JScript  |  104       |           |
-Microsoft-JScript  |  105       |           |
-Microsoft-JScript  |  106       |           |
-Microsoft-JScript  |  107       |           |
-Microsoft-JScript  |  108       |           |
-Microsoft-JScript  |  109       |           |
-Microsoft-JScript  |  110       |           |
-Microsoft-JScript  |  111       |           |
-Microsoft-JScript  |  112       |           |
-Microsoft-JScript  |  113       |           |
-Microsoft-JScript  |  114       |           |
-Microsoft-JScript  |  115       |           |
-Microsoft-JScript  |  116       |           |
-Microsoft-JScript  |  117       |           |
-Microsoft-JScript  |  118       |           |
-Microsoft-JScript  |  119       |           |
-Microsoft-JScript  |  120       |           |
-Microsoft-JScript  |  121       |           |
-Microsoft-JScript  |  122       |           |
-Microsoft-JScript  |  123       |           |
-Microsoft-JScript  |  124       |           |
-Microsoft-JScript  |  125       |           |
-Microsoft-JScript  |  126       |           |
-Microsoft-JScript  |  127       |           |
-Microsoft-JScript  |  128       |           |
-Microsoft-JScript  |  129       |           |
-Microsoft-JScript  |  130       |           |
-Microsoft-JScript  |  131       |           |
-Microsoft-JScript  |  132       |           |
-Microsoft-JScript  |  133       |           |
-Microsoft-JScript  |  134       |           |
-Microsoft-JScript  |  135       |           |
-Microsoft-JScript  |  136       |           |
-Microsoft-JScript  |  137       |           |
-Microsoft-JScript  |  138       |           |
-Microsoft-JScript  |  139       |           |
-Microsoft-JScript  |  140       |           |
-Microsoft-JScript  |  141       |           |
-Microsoft-JScript  |  142       |           |
-Microsoft-JScript  |  143       |           |
-Microsoft-JScript  |  144       |           |
-Microsoft-JScript  |  145       |           |
-Microsoft-JScript  |  146       |           |
-Microsoft-JScript  |  147       |           |
-Microsoft-JScript  |  148       |           |
-Microsoft-JScript  |  149       |           |
-Microsoft-JScript  |  150       |           |
-Microsoft-JScript  |  151       |           |
-Microsoft-JScript  |  152       |           |
-Microsoft-JScript  |  153       |           |
-Microsoft-JScript  |  154       |           |
-Microsoft-JScript  |  155       |           |
-Microsoft-JScript  |  156       |           |
-Microsoft-JScript  |  157       |           |
-Microsoft-JScript  |  158       |           |
-Microsoft-JScript  |  159       |           |
-Microsoft-JScript  |  160       |           |
-Microsoft-JScript  |  161       |           |
-Microsoft-JScript  |  162       |           |
-Microsoft-JScript  |  163       |           |
-Microsoft-JScript  |  164       |           |
-Microsoft-JScript  |  165       |           |
-Microsoft-JScript  |  166       |           |
-Microsoft-JScript  |  167       |           |
-Microsoft-JScript  |  168       |           |
-Microsoft-JScript  |  169       |           |
-Microsoft-JScript  |  170       |           |
-Microsoft-JScript  |  171       |           |
-Microsoft-JScript  |  172       |           |
-Microsoft-JScript  |  173       |           |
-Microsoft-JScript  |  174       |           |
-Microsoft-JScript  |  175       |           |
-Microsoft-JScript  |  176       |           |
-Microsoft-JScript  |  177       |           |
-Microsoft-JScript  |  178       |           |
-Microsoft-JScript  |  179       |           |
-Microsoft-JScript  |  180       |           |
-Microsoft-JScript  |  181       |           |
-Microsoft-JScript  |  182       |           |
-Microsoft-JScript  |  183       |           |
-Microsoft-JScript  |  184       |           |
-Microsoft-JScript  |  185       |           |
-Microsoft-JScript  |  186       |           |
-Microsoft-JScript  |  187       |           |
-Microsoft-JScript  |  188       |           |
-Microsoft-JScript  |  189       |           |
-Microsoft-JScript  |  190       |           |
-Microsoft-JScript  |  191       |           |
-Microsoft-JScript  |  192       |           |
-Microsoft-JScript  |  193       |           |
-Microsoft-JScript  |  194       |           |
-Microsoft-JScript  |  195       |           |
-Microsoft-JScript  |  196       |           |
-Microsoft-JScript  |  197       |           |
-Microsoft-JScript  |  198       |           |
-Microsoft-JScript  |  199       |           |
-Microsoft-JScript  |  200       |           |
-Microsoft-JScript  |  201       |           |
-Microsoft-JScript  |  202       |           |
-Microsoft-JScript  |  203       |           |
-Microsoft-JScript  |  204       |           |
-Microsoft-JScript  |  205       |           |
-Microsoft-JScript  |  206       |           |
-Microsoft-JScript  |  207       |           |
-Microsoft-JScript  |  208       |           |
-Microsoft-JScript  |  209       |           |
-Microsoft-JScript  |  210       |           |
-Microsoft-JScript  |  211       |           |
-Microsoft-JScript  |  212       |           |
-Microsoft-JScript  |  213       |           |
-Microsoft-JScript  |  214       |           |
-Microsoft-JScript  |  215       |           |
-Microsoft-JScript  |  216       |           |
-Microsoft-JScript  |  217       |           |
-Microsoft-JScript  |  218       |           |
-Microsoft-JScript  |  219       |           |
-Microsoft-JScript  |  220       |           |
-Microsoft-JScript  |  221       |           |
-Microsoft-JScript  |  222       |           |
-Microsoft-JScript  |  223       |           |
-Microsoft-JScript  |  224       |           |
-Microsoft-JScript  |  225       |           |
-Microsoft-JScript  |  226       |           |
-Microsoft-JScript  |  227       |           |
-Microsoft-JScript  |  228       |           |
-Microsoft-JScript  |  229       |           |
-Microsoft-JScript  |  230       |           |
-Microsoft-JScript  |  231       |           |
-Microsoft-JScript  |  232       |           |
-Microsoft-JScript  |  233       |           |
-Microsoft-JScript  |  234       |           |
-Microsoft-JScript  |  235       |           |
-Microsoft-JScript  |  236       |           |
-Microsoft-JScript  |  237       |           |
-Microsoft-JScript  |  238       |           |
-Microsoft-JScript  |  239       |           |
-Microsoft-JScript  |  240       |           |
-Microsoft-JScript  |  241       |           |
+Provider           |  Level        |  Event ID  |  Version  |  Channel  |  Task                                                    |  Opcode                               |  Keyword                          |  Message
+-------------------|---------------|------------|-----------|-----------|----------------------------------------------------------|---------------------------------------|-----------------------------------|---------
+Microsoft-JScript  |  Information  |  1         |  0        |           |  MethodRundown                                           |  DCStartInit                          |  JScriptStartRundown              |
+Microsoft-JScript  |  Information  |  2         |  0        |           |  MethodRundown                                           |  DCStartComplete                      |  JScriptStartRundown              |
+Microsoft-JScript  |  Information  |  3         |  0        |           |  MethodRundown                                           |  DCEndInit                            |  JScriptEndRundown                |
+Microsoft-JScript  |  Information  |  4         |  0        |           |  MethodRundown                                           |  DCEndComplete                        |  JScriptEndRundown                |
+Microsoft-JScript  |  Information  |  5         |  0        |           |  MethodRundown                                           |  MethodDCStart                        |  JScriptStartRundown              |
+Microsoft-JScript  |  Information  |  6         |  0        |           |  MethodRundown                                           |  MethodDCEnd                          |  JScriptEndRundown                |
+Microsoft-JScript  |  Information  |  7         |  0        |           |  ScriptContextRundown                                    |  ScriptContextDCStart                 |  JScriptStartRundown              |
+Microsoft-JScript  |  Information  |  8         |  0        |           |  ScriptContextRundown                                    |  ScriptContextDCEnd                   |  JScriptEndRundown                |
+Microsoft-JScript  |  Information  |  9         |  0        |           |  MethodRuntime                                           |  MethodLoad                           |  JScriptRuntime                   |
+Microsoft-JScript  |  Information  |  10        |  0        |           |  MethodRuntime                                           |  MethodUnload                         |  JScriptRuntime                   |
+Microsoft-JScript  |  Information  |  11        |  0        |           |  ScriptContextRuntime                                    |  ScriptContextLoad                    |  JScriptRuntime                   |
+Microsoft-JScript  |  Information  |  12        |  0        |           |  ScriptContextRuntime                                    |  ScriptContextUnload                  |  JScriptRuntime                   |
+Microsoft-JScript  |               |  13        |  0        |           |  Jscript_Projection_ResolveType                          |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  14        |  0        |           |  Jscript_Projection_ResolveType                          |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  15        |  0        |           |  Jscript_Projection_ConstructRuntimeClass                |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  16        |  0        |           |  Jscript_Projection_ConstructRuntimeClass                |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  17        |  0        |           |  Jscript_Projection_MethodCall                           |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  18        |  0        |           |  Jscript_Projection_MethodCall                           |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  19        |  0        |           |  Jscript_Projection_RawMethodCall                        |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  20        |  0        |           |  Jscript_Projection_RawMethodCall                        |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  21        |  0        |           |  Jscript_Projection_InvokesJsDelegate                    |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  22        |  0        |           |  Jscript_Projection_InvokesJsDelegate                    |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  23        |  0        |           |  Jscript_Projection_InvokeNativeDelegate                 |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  24        |  0        |           |  Jscript_Projection_InvokeNativeDelegate                 |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  25        |  0        |           |  Jscript_Projection_AddEventListener                     |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  26        |  0        |           |  Jscript_Projection_AddEventListener                     |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  27        |  0        |           |  Jscript_Projection_RemoveEventListener                  |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  28        |  0        |           |  Jscript_Projection_RemoveEventListener                  |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  29        |  0        |           |  Jscript_Projection_GetTypeMetaDataInformation           |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  30        |  0        |           |  Jscript_Projection_GetTypeMetaDataInformation           |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  31        |  0        |           |  Jscript_Projection_SetEventHandler                      |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  32        |  0        |           |  Jscript_Projection_SetEventHandler                      |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  33        |  0        |           |  Jscript_Projection_RemoveAllEventsAndEventHandlers      |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  34        |  0        |           |  Jscript_Projection_RemoveAllEventsAndEventHandlers      |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  35        |  0        |           |  Jscript_Projection_InvokeEvent                          |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  36        |  0        |           |  Jscript_Projection_InvokeEvent                          |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  37        |  0        |           |  Jscript_Projection_InvokeEventEvParamPrep               |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  38        |  0        |           |  Jscript_Projection_InvokeEventEvParamPrep               |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |  Information  |  39        |  0        |           |  ScriptContextRundown                                    |  SourceDCStart                        |  JScriptStartRundown              |
+Microsoft-JScript  |  Information  |  40        |  0        |           |  ScriptContextRundown                                    |  SourceDCEnd                          |  JScriptEndRundown                |
+Microsoft-JScript  |  Information  |  41        |  0        |           |  ScriptContextRuntime                                    |  SourceLoad                           |  JScriptRuntime                   |
+Microsoft-JScript  |  Information  |  42        |  0        |           |  ScriptContextRuntime                                    |  SourceUnload                         |  JScriptRuntime                   |
+Microsoft-JScript  |               |  43        |  0        |           |  Jscript_Projection_GetExprFromConcreteTypeName          |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  44        |  0        |           |  Jscript_Projection_GetExprFromConcreteTypeName          |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  45        |  0        |           |  Jscript_Projection_GetTypeFromTypeNameParts             |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  46        |  0        |           |  Jscript_Projection_GetTypeFromTypeNameParts             |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  47        |  0        |           |  Jscript_Projection_ReferenceOrArrayGetValue             |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  48        |  0        |           |  Jscript_Projection_ReferenceOrArrayGetValue             |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  49        |  0        |           |  Jscript_Projection_PropertyValueVarFromGRCN             |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  50        |  0        |           |  Jscript_Projection_PropertyValueVarFromGRCN             |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  51        |  0        |           |  Jscript_Projection_VarFromGRCN                          |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  52        |  0        |           |  Jscript_Projection_VarFromGRCN                          |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  53        |  0        |           |  Jscript_Projection_WriteIReference                      |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  54        |  0        |           |  Jscript_Projection_WriteIReference                      |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  55        |  0        |           |  Jscript_Projection_WriteInspectable                     |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  56        |  0        |           |  Jscript_Projection_WriteInspectable                     |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  57        |  0        |           |  Jscript_Projection_GetNonArrayTypeAsPropertyValue       |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  58        |  0        |           |  Jscript_Projection_GetNonArrayTypeAsPropertyValue       |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  59        |  0        |           |  Jscript_Projection_GetNonArrayBasicTypeAsPropertyValue  |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  60        |  0        |           |  Jscript_Projection_GetNonArrayBasicTypeAsPropertyValue  |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  61        |  0        |           |  Jscript_Projection_GetTypedArrayAsPropertyValue         |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  62        |  0        |           |  Jscript_Projection_GetTypedArrayAsPropertyValue         |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  63        |  0        |           |  Jscript_Projection_GetBasicTypedArrayAsPropertyValue    |  Start                                |  JScriptProjection                |
+Microsoft-JScript  |               |  64        |  0        |           |  Jscript_Projection_GetBasicTypedArrayAsPropertyValue    |  Stop                                 |  JScriptProjection                |
+Microsoft-JScript  |               |  65        |  0        |           |  ParseMethod                                             |  Start                                |  JScriptFrontend                  |
+Microsoft-JScript  |               |  66        |  0        |           |  ParseMethod                                             |  Stop                                 |  JScriptFrontend                  |
+Microsoft-JScript  |               |  67        |  0        |           |  GenerateBytecodeMethod                                  |                                       |  JScriptFrontend                  |
+Microsoft-JScript  |               |  68        |  0        |           |  Jscript_GC_ResetMarks                                   |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  69        |  0        |           |  Jscript_GC_ResetMarks                                   |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  70        |  0        |           |  Jscript_GC_ScanRoots                                    |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  71        |  0        |           |  Jscript_GC_ScanRoots                                    |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  72        |  0        |           |  Jscript_GC_ScanStack                                    |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  73        |  0        |           |  Jscript_GC_ScanStack                                    |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  74        |  0        |           |  Jscript_GC_Mark                                         |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  75        |  0        |           |  Jscript_GC_Mark                                         |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  76        |  0        |           |  Jscript_GC_Rescan                                       |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  77        |  0        |           |  Jscript_GC_Rescan                                       |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  78        |  0        |           |  Jscript_GC_Sweep                                        |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  79        |  0        |           |  Jscript_GC_Sweep                                        |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  80        |  0        |           |  Jscript_GC_SetupBackgroundSweep                         |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  81        |  0        |           |  Jscript_GC_SetupBackgroundSweep                         |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  82        |  0        |           |  Jscript_GC_BackgroundSweep                              |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  83        |  0        |           |  Jscript_GC_BackgroundSweep                              |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  84        |  0        |           |  Jscript_GC_TransferSweptObjects                         |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  85        |  0        |           |  Jscript_GC_TransferSweptObjects                         |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  86        |  0        |           |  Jscript_GC_Dispose                                      |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  87        |  0        |           |  Jscript_GC_Dispose                                      |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  88        |  0        |           |  Jscript_GC_BackgroundMark                               |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  89        |  0        |           |  Jscript_GC_BackgroundMark                               |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  90        |  0        |           |  Jscript_GC_ResetWriteWatch                              |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  91        |  0        |           |  Jscript_GC_ResetWriteWatch                              |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  92        |  0        |           |  Jscript_Profile_Persistence                             |  Save                                 |  JScriptProfile                   |
+Microsoft-JScript  |               |  93        |  0        |           |  ScriptContextRuntime                                    |  ScriptContextOnStartupComplete       |  JScriptProfile                   |
+Microsoft-JScript  |               |  94        |  0        |           |  Jscript_Profile_Persistence                             |  Load                                 |  JScriptProfile                   |
+Microsoft-JScript  |               |  95        |  0        |           |  Jscript_Backend_Inline                                  |                                       |  JscriptBackend                   |
+Microsoft-JScript  |               |  96        |  0        |           |  Jscript_Method_Jit                                      |  Start                                |  JscriptJit                       |
+Microsoft-JScript  |               |  97        |  0        |           |  Jscript_Method_Jit                                      |  Stop                                 |  JscriptJit                       |
+Microsoft-JScript  |               |  98        |  0        |           |  Jscript_Method_Jit                                      |  Queue                                |  JscriptJit                       |
+Microsoft-JScript  |               |  99        |  0        |           |  Jscript_Method_Jit                                      |  Dequeue                              |  JscriptJit                       |
+Microsoft-JScript  |               |  100       |  0        |           |  Jscript_GC_IdleCollect                                  |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  101       |  0        |           |  Jscript_GC_IdleCollect                                  |                                       |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  102       |  0        |           |  Jscript_GC_IdleCollect                                  |                                       |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  103       |  0        |           |  Jscript_GC_IdleCollect                                  |                                       |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  104       |  0        |           |  Jscript_GC_IdleCollect                                  |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  105       |  0        |           |  Jscript_Page_Allocator_Size                             |  UsedPageSize                         |  JScriptMemoryTracing             |
+Microsoft-JScript  |  Information  |  106       |  0        |           |  Jscript_Recycler_Allocation                             |  Free_Memory                          |  JScriptObjectCleanup             |
+Microsoft-JScript  |  Information  |  107       |  0        |           |  Jscript_Recycler_Allocation                             |  Free_Memory_Block                    |  JScriptObjectCleanup             |
+Microsoft-JScript  |  Information  |  108       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_Object                      |  JScriptObjectAllocation          |
+Microsoft-JScript  |  Information  |  109       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_Array                       |  JScriptObjectAllocation          |
+Microsoft-JScript  |  Information  |  110       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_Function                    |  JScriptObjectAllocation          |
+Microsoft-JScript  |  Information  |  111       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_DOM_Object                  |  JScriptObjectAllocation          |
+Microsoft-JScript  |  Information  |  112       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_JSProxy_Object        |  JScriptObjectAllocation          |
+Microsoft-JScript  |  Information  |  113       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_PixelArray                  |  JScriptObjectAllocation          |
+Microsoft-JScript  |  Information  |  114       |  0        |           |  Jscript_Recycler_Allocation                             |  External_AddRef                      |  JScriptExternalReferenceAddRef   |
+Microsoft-JScript  |  Information  |  115       |  0        |           |  Jscript_Recycler_Allocation                             |  External_Release                     |  JScriptExternalReferenceRelease  |
+Microsoft-JScript  |               |  116       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_RuntimeClass_Object   |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  117       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_Namespace_Object      |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  118       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_Struct_Object         |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  119       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_Enum_Object           |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  120       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_TypedArray_Object     |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  121       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_Delegate_Object       |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  122       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_EventHandler_Object   |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  123       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_Collections_Object    |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  124       |  0        |           |  Jscript_Recycler_Allocation                             |  Allocate_WinRT_PropertyValue_Object  |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  125       |  0        |           |  Jscript_Recycler_Allocation                             |  Free_WinRT_Delegate_Object           |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  126       |  0        |           |  Jscript_Recycler_Allocation                             |  Free_WinRT_EventHandler_Object       |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  127       |  0        |           |  Jscript_Recycler_Allocation                             |  Free_WinRT_Collections_Object        |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  128       |  0        |           |  Jscript_Recycler_Allocation                             |  Free_WinRT_PropertyValue_Object      |  JScriptObjectAllocation          |
+Microsoft-JScript  |               |  129       |  0        |           |  Jscript_GC_SweepWeakRef                                 |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  130       |  0        |           |  Jscript_GC_SweepWeakRef                                 |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  131       |  0        |           |  Jscript_GC_ProcessTrackedObject                         |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  132       |  0        |           |  Jscript_GC_ProcessTrackedObject                         |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  133       |  0        |           |  Jscript_GC_ProcessClientTrackedObject                   |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  134       |  0        |           |  Jscript_GC_ProcessClientTrackedObject                   |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  135       |  0        |           |  Jscript_GC_BackgroundZeroPage                           |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  136       |  0        |           |  Jscript_GC_BackgroundZeroPage                           |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  137       |  0        |           |  Jscript_GC_FlushZeroPage                                |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  138       |  0        |           |  Jscript_GC_FlushZeroPage                                |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  139       |  0        |           |  Jscript_GC_DecommitConcurrentCollectPageAllocator       |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  140       |  0        |           |  Jscript_GC_DecommitConcurrentCollectPageAllocator       |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  141       |  0        |           |  Jscript_GC_SweepPartialReusePage                        |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  142       |  0        |           |  Jscript_GC_SweepPartialReusePage                        |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  143       |  0        |           |  Jscript_GC_BackgroundRescan                             |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  144       |  0        |           |  Jscript_GC_BackgroundRescan                             |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  145       |  0        |           |  Jscript_GC_BackgroundResetWriteWatch                    |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  146       |  0        |           |  Jscript_GC_BackgroundResetWriteWatch                    |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  147       |  0        |           |  Jscript_GC_BackgroundScanRoots                          |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  148       |  0        |           |  Jscript_GC_BackgroundScanRoots                          |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  149       |  0        |           |  Jscript_GC_BackgroundResetMarks                         |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  150       |  0        |           |  Jscript_GC_BackgroundResetMarks                         |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  151       |  0        |           |  Jscript_GC_RescanMarkWait                               |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  152       |  0        |           |  Jscript_GC_RescanMarkWait                               |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  153       |  0        |           |  Jscript_GC_SynchronousMarkWait                          |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  154       |  0        |           |  Jscript_GC_SynchronousMarkWait                          |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  155       |  0        |           |  Jscript_GC_FinishConcurrentWait                         |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  156       |  0        |           |  Jscript_GC_FinishConcurrentWait                         |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  157       |  0        |           |  Jscript_GC_EndMarkOnLowMemory                           |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  158       |  0        |           |  Jscript_GC_EndMarkOnLowMemory                           |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  159       |  0        |           |  Jscript_AsyncCausality_StackTrace                       |                                       |  JScriptAsyncCausality            |
+Microsoft-JScript  |               |  160       |  0        |           |  JScript_ByteCodeDeserialize                             |  Start                                |  JScriptByteCode                  |
+Microsoft-JScript  |               |  161       |  0        |           |  JScript_ByteCodeDeserialize                             |  Stop                                 |  JScriptByteCode                  |
+Microsoft-JScript  |               |  162       |  0        |           |  Jscript_Hosting_BinaryInconsistency                     |                                       |  JScriptHosting                   |
+Microsoft-JScript  |               |  163       |  0        |           |  Jscript_Hosting_BinaryConsistencyInfo                   |                                       |  JScriptHosting                   |
+Microsoft-JScript  |               |  164       |  0        |           |  Jscript_StackTrace                                      |                                       |  JScriptStackTrace                |
+Microsoft-JScript  |               |  165       |  0        |           |  Jscript_AsyncCausality_StackTrace                       |                                       |  JScriptAsyncCausality_V2         |
+Microsoft-JScript  |               |  166       |  0        |           |  Jscript_Host_Native                                     |                                       |  JscriptJit                       |
+Microsoft-JScript  |               |  167       |  0        |           |  Jscript_Host_Native                                     |                                       |  JscriptJit                       |
+Microsoft-JScript  |               |  168       |  0        |           |  Jscript_SourceMapping                                   |                                       |  JScriptSourceMapping             |
+Microsoft-JScript  |               |  169       |  0        |           |  Jscript_GC_ParallelMark                                 |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  170       |  0        |           |  Jscript_GC_ParallelMark                                 |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  171       |  0        |           |  Jscript_GC_BackgroundParallelMark                       |  Start                                |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  172       |  0        |           |  Jscript_GC_BackgroundParallelMark                       |  Stop                                 |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  173       |  0        |           |  Memprotect_GC_ResetMarks                                |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  174       |  0        |           |  Memprotect_GC_ResetMarks                                |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  175       |  0        |           |  Memprotect_GC_ScanRoots                                 |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  176       |  0        |           |  Memprotect_GC_ScanRoots                                 |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  177       |  0        |           |  Memprotect_GC_ScanStack                                 |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  178       |  0        |           |  Memprotect_GC_ScanStack                                 |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  179       |  0        |           |  Memprotect_GC_Mark                                      |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  180       |  0        |           |  Memprotect_GC_Mark                                      |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  181       |  0        |           |  Memprotect_GC_Rescan                                    |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  182       |  0        |           |  Memprotect_GC_Rescan                                    |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  183       |  0        |           |  Memprotect_GC_Sweep                                     |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  184       |  0        |           |  Memprotect_GC_Sweep                                     |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  185       |  0        |           |  Memprotect_GC_SetupBackgroundSweep                      |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  186       |  0        |           |  Memprotect_GC_SetupBackgroundSweep                      |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  187       |  0        |           |  Memprotect_GC_BackgroundSweep                           |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  188       |  0        |           |  Memprotect_GC_BackgroundSweep                           |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  189       |  0        |           |  Memprotect_GC_TransferSweptObjects                      |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  190       |  0        |           |  Memprotect_GC_TransferSweptObjects                      |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  191       |  0        |           |  Memprotect_GC_Dispose                                   |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  192       |  0        |           |  Memprotect_GC_Dispose                                   |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  193       |  0        |           |  Memprotect_GC_BackgroundMark                            |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  194       |  0        |           |  Memprotect_GC_BackgroundMark                            |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  195       |  0        |           |  Memprotect_GC_ResetWriteWatch                           |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  196       |  0        |           |  Memprotect_GC_ResetWriteWatch                           |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  197       |  0        |           |  Memprotect_GC_IdleCollect                               |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  198       |  0        |           |  Memprotect_GC_IdleCollect                               |                                       |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  199       |  0        |           |  Memprotect_GC_IdleCollect                               |                                       |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  200       |  0        |           |  Memprotect_GC_IdleCollect                               |                                       |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  201       |  0        |           |  Memprotect_GC_IdleCollect                               |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  202       |  0        |           |  Memprotect_GC_SweepWeakRef                              |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  203       |  0        |           |  Memprotect_GC_SweepWeakRef                              |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  204       |  0        |           |  Memprotect_GC_ProcessTrackedObject                      |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  205       |  0        |           |  Memprotect_GC_ProcessTrackedObject                      |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  206       |  0        |           |  Memprotect_GC_ProcessClientTrackedObject                |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  207       |  0        |           |  Memprotect_GC_ProcessClientTrackedObject                |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  208       |  0        |           |  Memprotect_GC_BackgroundZeroPage                        |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  209       |  0        |           |  Memprotect_GC_BackgroundZeroPage                        |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  210       |  0        |           |  Memprotect_GC_FlushZeroPage                             |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  211       |  0        |           |  Memprotect_GC_FlushZeroPage                             |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  212       |  0        |           |  Memprotect_GC_DecommitConcurrentCollectPageAllocator    |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  213       |  0        |           |  Memprotect_GC_DecommitConcurrentCollectPageAllocator    |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  214       |  0        |           |  Memprotect_GC_SweepPartialReusePage                     |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  215       |  0        |           |  Memprotect_GC_SweepPartialReusePage                     |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  216       |  0        |           |  Memprotect_GC_BackgroundRescan                          |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  217       |  0        |           |  Memprotect_GC_BackgroundRescan                          |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  218       |  0        |           |  Memprotect_GC_BackgroundResetWriteWatch                 |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  219       |  0        |           |  Memprotect_GC_BackgroundResetWriteWatch                 |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  220       |  0        |           |  Memprotect_GC_BackgroundScanRoots                       |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  221       |  0        |           |  Memprotect_GC_BackgroundScanRoots                       |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  222       |  0        |           |  Memprotect_GC_BackgroundResetMarks                      |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  223       |  0        |           |  Memprotect_GC_BackgroundResetMarks                      |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  224       |  0        |           |  Memprotect_GC_RescanMarkWait                            |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  225       |  0        |           |  Memprotect_GC_RescanMarkWait                            |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  226       |  0        |           |  Memprotect_GC_SynchronousMarkWait                       |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  227       |  0        |           |  Memprotect_GC_SynchronousMarkWait                       |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  228       |  0        |           |  Memprotect_GC_FinishConcurrentWait                      |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  229       |  0        |           |  Memprotect_GC_FinishConcurrentWait                      |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  230       |  0        |           |  Memprotect_GC_EndMarkOnLowMemory                        |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  231       |  0        |           |  Memprotect_GC_EndMarkOnLowMemory                        |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  232       |  0        |           |  Memprotect_GC_ParallelMark                              |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  233       |  0        |           |  Memprotect_GC_ParallelMark                              |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  234       |  0        |           |  Memprotect_GC_BackgroundParallelMark                    |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  235       |  0        |           |  Memprotect_GC_BackgroundParallelMark                    |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  236       |  0        |           |  Memprotect_GC                                           |  Start                                |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  237       |  0        |           |  Memprotect_GC                                           |  Stop                                 |  MemProtectGarbageCollection      |
+Microsoft-JScript  |               |  238       |  0        |           |  Memprotect_GC_Allocation                                |                                       |  MemProtectObjectAllocation       |
+Microsoft-JScript  |               |  239       |  0        |           |  Memprotect_GC_Unroot                                    |                                       |  MemProtectObjectAllocation       |
+Microsoft-JScript  |               |  240       |  0        |           |  Jscript_GC_Init                                         |                                       |  JScriptGarbageCollection         |
+Microsoft-JScript  |               |  241       |  0        |           |  Memprotect_GC_Heap_Size                                 |                                       |  MemProtectHeapSize               |

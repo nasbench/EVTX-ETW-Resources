@@ -1,238 +1,238 @@
-Provider                       |  Event ID  |  Channel  |  Message
--------------------------------|------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Kernel-Boot  |  1         |           |  System was booted in {Width}x{Height}@{BitsPerPixel}bpp.
-Microsoft-Windows-Kernel-Boot  |  2         |           |  BootUX screen was displayed in {Width}x{Height}@{BitsPerPixel}bpp.
-Microsoft-Windows-Kernel-Boot  |  3         |           |  Video bit transfer rate is {BytesPerMs} bytes per ms.
-Microsoft-Windows-Kernel-Boot  |  4         |           |  Boot library accessed file {FileName} on Device {DeviceID}. Read {BytesRead} bytes and wrote {BytesWritten} bytes.
-Microsoft-Windows-Kernel-Boot  |  5         |           |  File IO for boot application {ApplicationGuid}: Total Bytes Read = {BytesRead}, Total Bytes Written = {BytesWritten}.
-Microsoft-Windows-Kernel-Boot  |  6         |           |  Image {ImageName} failed IntegrityCheck reason is {Reason}. Image flags are {ImageFlags}. Error ignored due to debugger {ErrorIgnored}.
-Microsoft-Windows-Kernel-Boot  |  7         |           |  Bootmgr duration is {BootmgrTime} milliseconds.
-Microsoft-Windows-Kernel-Boot  |  8         |           |  Image {ImageName} is not self-signed.
-Microsoft-Windows-Kernel-Boot  |  9         |           |  A device ({DriveNumber}) that was enumerated by the BIOS was inaccessible to the boot environment.
-Microsoft-Windows-Kernel-Boot  |  10        |  System   |  The system firmware has allocated a memory region previously determined to be unreliable. This has the potential to cause system instability and/or data corruption.
-Microsoft-Windows-Kernel-Boot  |  11        |           |  The time elapsed before Bootmgr, based on the TSC, is {PreBootMgrTime} ms.
-Microsoft-Windows-Kernel-Boot  |  12        |           |  Variable {UefiVariableName} requires {Size} bytes and was set with status {Status}.
-Microsoft-Windows-Kernel-Boot  |  13        |           |  Element {Element} of application {ApplicationGuid} was not in policy.
-Microsoft-Windows-Kernel-Boot  |  14        |           |  A Secure Boot Policy update resulted in status {Status}.
-Microsoft-Windows-Kernel-Boot  |  15        |           |  A Secure Boot Revocation List update resulted in status {Status}.
-Microsoft-Windows-Kernel-Boot  |  16        |  System   |  Windows failed to resume from hibernate with error status {FailureStatus}.
-Microsoft-Windows-Kernel-Boot  |  16        |  System   |  Windows failed to resume from hibernate with error status {FailureStatus}.
-Microsoft-Windows-Kernel-Boot  |  17        |  System   |  The boot manager multi OS selection screen was displayed.
-Microsoft-Windows-Kernel-Boot  |  18        |  System   |  There are {EntryCount} boot options on this system.
-Microsoft-Windows-Kernel-Boot  |  19        |  System   |  There are {ToolsCount} boot tool options on this system.
-Microsoft-Windows-Kernel-Boot  |  20        |  System   |  The last shutdown's success status was {LastShutdownGood}. The last boot's success status was {LastBootGood}.
-Microsoft-Windows-Kernel-Boot  |  20        |  System   |  The last shutdown's success status was {LastShutdownGood}. The last boot's success status was {LastBootGood}.
-Microsoft-Windows-Kernel-Boot  |  21        |  System   |  The OS loader advanced options menu was displayed and the user selected option {OptionSelected}.
-Microsoft-Windows-Kernel-Boot  |  22        |  System   |  The OS loader edit options menu was displayed.
-Microsoft-Windows-Kernel-Boot  |  23        |  System   |  The Windows key was pressed during boot.
-Microsoft-Windows-Kernel-Boot  |  24        |  System   |  The F8 key was pressed during boot.
-Microsoft-Windows-Kernel-Boot  |  25        |  System   |  The boot menu policy was {BootMenuPolicy}.
-Microsoft-Windows-Kernel-Boot  |  26        |  System   |  A one-time boot sequence was used during this boot.
-Microsoft-Windows-Kernel-Boot  |  27        |  System   |  The boot type was {BootType}.
-Microsoft-Windows-Kernel-Boot  |  27        |  System   |  The boot type was {BootType}.
-Microsoft-Windows-Kernel-Boot  |  28        |           |
-Microsoft-Windows-Kernel-Boot  |  29        |  System   |  Windows failed fast startup with error status {FailureStatus}.
-Microsoft-Windows-Kernel-Boot  |  29        |  System   |  Windows failed fast startup with error status {FailureStatus}.
-Microsoft-Windows-Kernel-Boot  |  30        |  System   |  The firmware reported boot metrics.
-Microsoft-Windows-Kernel-Boot  |  31        |           |  Initialization of the firmware crypto hash provider resulted in status {Status}.
-Microsoft-Windows-Kernel-Boot  |  32        |  System   |  The bootmgr spent {BitlockerUserInputTime} ms waiting for user input.
-Microsoft-Windows-Kernel-Boot  |  33        |           |  The firmware update capsule ({ImageName}) failed to load with status {ImageLoadStatus}.
-Microsoft-Windows-Kernel-Boot  |  34        |           |  The PE/COFF image firmware update capsule ({PeImageName}) failed to load with status {PeImageLoadStatus}.
-Microsoft-Windows-Kernel-Boot  |  35        |           |  The Efi UpdateCapsule failed to apply updates with status {UpdateCapsuleStatus}.
-Microsoft-Windows-Kernel-Boot  |  36        |           |  Firmware update supported status is {UpdateSupportedStatus}. The BitLocker device flags are {DeviceFlags} and the PCR bitmap is {PcrBitmap}.
-Microsoft-Windows-Kernel-Boot  |  37        |           |  The firmware update capsule ({ImageName}) code integrity check failed with status {ImageLoadStatus}.
-Microsoft-Windows-Kernel-Boot  |  38        |           |  Windows failed to load the required system file {ImageName} with error status {ImageLoadStatus}.
-Microsoft-Windows-Kernel-Boot  |  39        |           |  Windows failed to load the system registry file {HiveName} with error status {HiveLoadStatus}.
-Microsoft-Windows-Kernel-Boot  |  40        |           |  Windows failed to initialize the ACPI with error status {Status}.
-Microsoft-Windows-Kernel-Boot  |  41        |           |  Windows failed to load with error status {Status}.
-Microsoft-Windows-Kernel-Boot  |  42        |           |  Windows failed to load image {FailedPath} imported from {Path} with error status {Status}.
-Microsoft-Windows-Kernel-Boot  |  43        |           |  Windows failed to import {Import} from image {Path} with error status {Status}.
-Microsoft-Windows-Kernel-Boot  |  44        |           |  Windows failed to provision VSM Identity Key. Unsealing cached copy status: {CachedCopyStatus}. New key generation status: {IdkGenerationStatus}. Measuring to PCR status: {MeasuringStatus}. Sealing and caching status: {SealingAndCachingStatus}.
-Microsoft-Windows-Kernel-Boot  |  45        |           |  VSM Identity Key Provisioning. Unsealing cached copy status: {CachedCopyStatus}. New key generation status: {IdkGenerationStatus}. Measuring to PCR status: {MeasuringStatus}. Sealing and caching status: {SealingAndCachingStatus}.
-Microsoft-Windows-Kernel-Boot  |  46        |           |  Retrieving the driver list took {RetrieveDriverListTime} milliseconds.
-Microsoft-Windows-Kernel-Boot  |  47        |           |  Loading the drivers took {LoadDriversTime} milliseconds.
-Microsoft-Windows-Kernel-Boot  |  48        |           |  Loading hive {Path} took {LoadHiveTime} milliseconds.
-Microsoft-Windows-Kernel-Boot  |  49        |           |  Windows system integrity policy does not allow to load the required system file {ImageName} with error status {SiPolicyStatus}.
-Microsoft-Windows-Kernel-Boot  |  50        |           |  Windows failed to provision VSM Master Encryption Key. Using cached copy status: {CachedCopyStatus}. Unsealing cached copy status: {UnsealingCachedCopyStatus}. New key generation status: {KeyGenerationAndSaveStatus}. Sealing status: {SealingStatus}. TPM PCR mask: {TpmPcrMask}. Protector-assisted unseal status: {ProtectorAssistedUnsealStatus}. Protector-assisted re-seal status: {ProtectorAssistedResealStatus}. Protector update status: {ProtectorSealUpdateStatus}. Tpm Counter validation status: {TpmCounterOpStatus}. Tpm Counter creation status: {CachedCopyStatus}0. Backup sealed blob used: {CachedCopyStatus}1.
-Microsoft-Windows-Kernel-Boot  |  51        |           |  VSM Master Encryption Key Provisioning. Using cached copy status: {CachedCopyStatus}. Unsealing cached copy status: {UnsealingCachedCopyStatus}. New key generation status: {KeyGenerationAndSaveStatus}. Sealing status: {SealingStatus}. TPM PCR mask: {TpmPcrMask}. Protector-assisted unseal status: {ProtectorAssistedUnsealStatus}. Protector-assisted re-seal status: {ProtectorAssistedResealStatus}. Protector update status: {ProtectorSealUpdateStatus}. Tpm Counter validation status: {TpmCounterOpStatus}. Tpm Counter creation status: {CachedCopyStatus}0. Backup sealed blob used: {CachedCopyStatus}1.
-Microsoft-Windows-Kernel-Boot  |  52        |           |  The time elapsed loading {ApplicationIdentifier} was {ApplicationLoadTime} ms.
-Microsoft-Windows-Kernel-Boot  |  53        |           |  The time elapsed executing {ApplicationIdentifier} was {ApplicationExecutionTime} ms.
-Microsoft-Windows-Kernel-Boot  |  54        |           |  Building chunk table for WIM compressed file {FileName} failed with status: {Status}
-Microsoft-Windows-Kernel-Boot  |  55        |           |  Soft Restart failed to prepare target Operating System. Operation status: {Status} failure point: {FailurePoint}
-Microsoft-Windows-Kernel-Boot  |  56        |           |  Boot application failed to process persistent data with status: {Status}
-Microsoft-Windows-Kernel-Boot  |  57        |           |  Windows failed to provision the TPM Storage Root Key with error status:{TpmSrkProvisioningStatus}. Reading SrkPolicy status: {TpmSrkPolicyReadStatus}. SrkSymKeyPolicy value: {TpmSrkSymKeyPolicyValue}. TPM symmetric key capability: {TpmSrkSymKeyCapability}. AES bits used: {TpmSrkAesBitsUsed}. SrkAsymKeyPolicy value: {TpmSrkAsymKeyPolicyValue}. TPM asymmetric key capability: {TpmSrkAsymKeyCapability}. Rsa bits used: {TpmSrkRsaBitsUsed}.
-Microsoft-Windows-Kernel-Boot  |  58        |           |  Windows successfully provisioned the TPM Storage Root Key. This operation took {TpmSrkProvisioningTime} milliseconds. Reading SrkPolicy status: {TpmSrkPolicyReadStatus}. SrkSymKeyPolicy value: {TpmSrkSymKeyPolicyValue}. TPM symmetric key capability: {TpmSrkSymKeyCapability}. AES bits used: {TpmSrkAesBitsUsed}. SrkAsymKeyPolicy value: {TpmSrkAsymKeyPolicyValue}. TPM asymmetric key capability: {TpmSrkAsymKeyCapability}. Rsa bits used: {TpmSrkRsaBitsUsed}.
-Microsoft-Windows-Kernel-Boot  |  59        |           |  Windows failed to provision TPM binding information with error status:{TpmBindingProvisioningStatus}.
-Microsoft-Windows-Kernel-Boot  |  60        |           |
-Microsoft-Windows-Kernel-Boot  |  61        |           |
-Microsoft-Windows-Kernel-Boot  |  62        |           |  Previous error detected while attempting to execute Measured Launch Environment. TXT error code: {TxtErrorCode}.
-Microsoft-Windows-Kernel-Boot  |  63        |           |
-Microsoft-Windows-Kernel-Boot  |  64        |           |
-Microsoft-Windows-Kernel-Boot  |  65        |           |
-Microsoft-Windows-Kernel-Boot  |  66        |           |
-Microsoft-Windows-Kernel-Boot  |  67        |           |
-Microsoft-Windows-Kernel-Boot  |  68        |           |
-Microsoft-Windows-Kernel-Boot  |  69        |           |
-Microsoft-Windows-Kernel-Boot  |  70        |           |
-Microsoft-Windows-Kernel-Boot  |  71        |           |
-Microsoft-Windows-Kernel-Boot  |  72        |           |
-Microsoft-Windows-Kernel-Boot  |  73        |           |  Firmware provided SINIT ACM not used. {TxtStatus}
-Microsoft-Windows-Kernel-Boot  |  74        |           |  Windows failed to provision DRTM-bound VSM Master Encryption Key . Using cached copy status: {CachedCopyStatus}. New key generation status: {KeyGenerationStatus}. Sealing status: {SealAndSaveStatus}. UEFI keys provided to Secure Kernel status: {UEFIKeysStatus}.
-Microsoft-Windows-Kernel-Boot  |  75        |           |  Windows successfully provisioned DRTM-bound VSM Master Encryption Key. Using cached copy status: {CachedCopyStatus}. New key generation status: {KeyGenerationStatus}. Sealing status: {SealAndSaveStatus}. UEFI keys provided to Secure Kernel status: {UEFIKeysStatus}.
-Microsoft-Windows-Kernel-Boot  |  76        |           |
-Microsoft-Windows-Kernel-Boot  |  77        |           |
-Microsoft-Windows-Kernel-Boot  |  78        |           |
-Microsoft-Windows-Kernel-Boot  |  79        |           |
-Microsoft-Windows-Kernel-Boot  |  80        |           |  FASR Platform Verification. FASR cert present: {IsFasrCertPresent}. FASR cert signature validation status: {ValidateFasrCertSignatureStatus}. BootmgrAuthorityEventCount: {BootmgrAuthorityEventCount}. VerifiedMicrosoftAuthority: {VerifiedMicrosoftAuthority}. FASR PCR values validation status: {ValidateFasrPcrValuesStatus}. PCR mismatch index: {PcrMismatchIndex}. FASR cert size: {FasrCertSize}. FASR cert: {FasrCertWithoutSignature}. FASR signature size: {FasrSignatureSize}. FASR signature: {IsFasrCertPresent}0.
-Microsoft-Windows-Kernel-Boot  |  100       |           |
-Microsoft-Windows-Kernel-Boot  |  100       |           |
-Microsoft-Windows-Kernel-Boot  |  101       |           |
-Microsoft-Windows-Kernel-Boot  |  102       |           |
-Microsoft-Windows-Kernel-Boot  |  102       |           |
-Microsoft-Windows-Kernel-Boot  |  102       |           |
-Microsoft-Windows-Kernel-Boot  |  103       |           |
-Microsoft-Windows-Kernel-Boot  |  104       |           |
-Microsoft-Windows-Kernel-Boot  |  105       |           |
-Microsoft-Windows-Kernel-Boot  |  106       |           |
-Microsoft-Windows-Kernel-Boot  |  107       |           |
-Microsoft-Windows-Kernel-Boot  |  108       |           |
-Microsoft-Windows-Kernel-Boot  |  109       |           |
-Microsoft-Windows-Kernel-Boot  |  110       |           |
-Microsoft-Windows-Kernel-Boot  |  111       |           |
-Microsoft-Windows-Kernel-Boot  |  112       |           |
-Microsoft-Windows-Kernel-Boot  |  113       |           |
-Microsoft-Windows-Kernel-Boot  |  114       |           |
-Microsoft-Windows-Kernel-Boot  |  115       |  System   |  Soft reboot cancellation started: {FreePersistentPages}
-Microsoft-Windows-Kernel-Boot  |  116       |  System   |  Soft reboot cancellation finished: {Status}.
-Microsoft-Windows-Kernel-Boot  |  117       |           |
-Microsoft-Windows-Kernel-Boot  |  118       |           |
-Microsoft-Windows-Kernel-Boot  |  119       |           |
-Microsoft-Windows-Kernel-Boot  |  120       |           |
-Microsoft-Windows-Kernel-Boot  |  121       |           |
-Microsoft-Windows-Kernel-Boot  |  122       |           |
-Microsoft-Windows-Kernel-Boot  |  123       |           |
-Microsoft-Windows-Kernel-Boot  |  124       |  System   |  The virtualization-based security enablement policy check at phase {Phase} failed with status: {Status}
-Microsoft-Windows-Kernel-Boot  |  126       |           |
-Microsoft-Windows-Kernel-Boot  |  127       |           |
-Microsoft-Windows-Kernel-Boot  |  128       |           |
-Microsoft-Windows-Kernel-Boot  |  129       |           |
-Microsoft-Windows-Kernel-Boot  |  130       |           |
-Microsoft-Windows-Kernel-Boot  |  131       |           |
-Microsoft-Windows-Kernel-Boot  |  132       |           |
-Microsoft-Windows-Kernel-Boot  |  133       |           |
-Microsoft-Windows-Kernel-Boot  |  133       |           |
-Microsoft-Windows-Kernel-Boot  |  134       |           |
-Microsoft-Windows-Kernel-Boot  |  135       |           |
-Microsoft-Windows-Kernel-Boot  |  136       |           |  Soft Restart failed to complete with status: {Status} due to {OutstandingCount} outstanding unclaimed allocations
-Microsoft-Windows-Kernel-Boot  |  136       |           |  Soft Restart failed to complete with status: {Status} due to {OutstandingCount} outstanding unclaimed allocations
-Microsoft-Windows-Kernel-Boot  |  137       |           |
-Microsoft-Windows-Kernel-Boot  |  138       |           |
-Microsoft-Windows-Kernel-Boot  |  138       |           |
-Microsoft-Windows-Kernel-Boot  |  138       |           |
-Microsoft-Windows-Kernel-Boot  |  139       |           |  Soft Restart failed to restore memory partition {Identifier} with status: {Status}
-Microsoft-Windows-Kernel-Boot  |  140       |           |
-Microsoft-Windows-Kernel-Boot  |  141       |           |
-Microsoft-Windows-Kernel-Boot  |  141       |           |
-Microsoft-Windows-Kernel-Boot  |  142       |           |  Soft Restart failed to register with Soft Restart extension. The versions are not compatible.
-Microsoft-Windows-Kernel-Boot  |  143       |           |
-Microsoft-Windows-Kernel-Boot  |  144       |           |
-Microsoft-Windows-Kernel-Boot  |  145       |           |
-Microsoft-Windows-Kernel-Boot  |  146       |           |  Soft Restart failed to establish connection with secure load with status: {Status}
-Microsoft-Windows-Kernel-Boot  |  147       |           |
-Microsoft-Windows-Kernel-Boot  |  148       |           |
-Microsoft-Windows-Kernel-Boot  |  149       |           |
-Microsoft-Windows-Kernel-Boot  |  150       |           |
-Microsoft-Windows-Kernel-Boot  |  150       |           |
-Microsoft-Windows-Kernel-Boot  |  151       |           |
-Microsoft-Windows-Kernel-Boot  |  151       |           |
-Microsoft-Windows-Kernel-Boot  |  151       |           |
-Microsoft-Windows-Kernel-Boot  |  152       |           |
-Microsoft-Windows-Kernel-Boot  |  153       |  System   |  Virtualization-based security (policies: {VsmPolicy}) is {EnableDisableReason}.
-Microsoft-Windows-Kernel-Boot  |  154       |           |  Boot Policy Migration used an authenticated variable.  Status: {Status}
-Microsoft-Windows-Kernel-Boot  |  155       |           |  Boot Policy Migration used an unauthenticated variable.  Status: {Status}
-Microsoft-Windows-Kernel-Boot  |  156       |  System   |  Virtualization-based security (policies: {VsmPolicy}) is {EnableDisableReason} with status: {Status}
-Microsoft-Windows-Kernel-Boot  |  157       |           |  Info: {DiagCode} Status: {Status}
-Microsoft-Windows-Kernel-Boot  |  158       |           |  Error: {DiagCode} Status: {Status}
-Microsoft-Windows-Kernel-Boot  |  159       |           |
-Microsoft-Windows-Kernel-Boot  |  160       |           |
-Microsoft-Windows-Kernel-Boot  |  161       |           |
-Microsoft-Windows-Kernel-Boot  |  162       |           |
-Microsoft-Windows-Kernel-Boot  |  163       |           |
-Microsoft-Windows-Kernel-Boot  |  164       |           |
-Microsoft-Windows-Kernel-Boot  |  165       |           |
-Microsoft-Windows-Kernel-Boot  |  166       |           |
-Microsoft-Windows-Kernel-Boot  |  167       |           |
-Microsoft-Windows-Kernel-Boot  |  168       |           |
-Microsoft-Windows-Kernel-Boot  |  169       |           |
-Microsoft-Windows-Kernel-Boot  |  169       |           |
-Microsoft-Windows-Kernel-Boot  |  170       |           |  Measured Boot Measurement Failure. Status: {Status}
-Microsoft-Windows-Kernel-Boot  |  171       |           |  TPM Measurement Failure. Status: {Status}
-Microsoft-Windows-Kernel-Boot  |  172       |           |  Failure to close TCG log. Status: {Status}
-Microsoft-Windows-Kernel-Boot  |  173       |           |
-Microsoft-Windows-Kernel-Boot  |  174       |           |
-Microsoft-Windows-Kernel-Boot  |  175       |           |
-Microsoft-Windows-Kernel-Boot  |  176       |           |
-Microsoft-Windows-Kernel-Boot  |  177       |           |
-Microsoft-Windows-Kernel-Boot  |  178       |           |
-Microsoft-Windows-Kernel-Boot  |  179       |           |
-Microsoft-Windows-Kernel-Boot  |  180       |           |
-Microsoft-Windows-Kernel-Boot  |  181       |           |  Soft Restart driver failed to register itself as a filter with status: {Status}
-Microsoft-Windows-Kernel-Boot  |  182       |           |
-Microsoft-Windows-Kernel-Boot  |  183       |           |
-Microsoft-Windows-Kernel-Boot  |  184       |           |
-Microsoft-Windows-Kernel-Boot  |  185       |           |  Soft Restart driver failed to store BCD store when BCDCache is enabled with status: {Status}
-Microsoft-Windows-Kernel-Boot  |  200       |           |  A command was submitted to the TPM.Command code: {CommandCode}.Response code: {ResponseCode}.Elapsed time: {ResponseMilliseconds}ms.
-Microsoft-Windows-Kernel-Boot  |  201       |           |  A command was submitted to the TPM.Command code: {CommandCode}.Response code: {ResponseCode}.Elapsed time: {ResponseMilliseconds}ms.
-Microsoft-Windows-Kernel-Boot  |  202       |           |  A command could not be submitted to the TPM.Command code: {CommandCode}.Error code: {ErrorCode}.Elapsed time: {ResponseMilliseconds}ms.
-Microsoft-Windows-Kernel-Boot  |  203       |           |  A command could not be submitted to the TPM.Command code: {CommandCode}.Error code: {ErrorCode}.Elapsed time: {ResponseMilliseconds}ms.
-Microsoft-Windows-Kernel-Boot  |  204       |           |  The TPM was found not to be useable for BitLocker. Flags: {FveGlobalDataFlags}.
-Microsoft-Windows-Kernel-Boot  |  205       |           |
-Microsoft-Windows-Kernel-Boot  |  206       |           |
-Microsoft-Windows-Kernel-Boot  |  207       |           |  Measured Boot library was initialized. Phase: {Phase}, StatusCode: {StatusCode}.
-Microsoft-Windows-Kernel-Boot  |  208       |           |  Measured Boot library encountered a failure and entered insecure state. InitState: {InitState}, StatusCode: {StatusCode}, Failure Address: {FailureAddress}, Reference Address: {ReferenceAddress}, Reason: {ReasonCode}.
-Microsoft-Windows-Kernel-Boot  |  209       |           |  DRTM Security Version Number check failed. SvnCounterId: {SvnCounterId}, StatusCode: {StatusCode}, Svn Value: {SvnValue}, Previous SVN Value: {PrevSvnValue}.
-Microsoft-Windows-Kernel-Boot  |  210       |           |  Intel TXT SENTER time: {SinitTimeMs} ms.
-Microsoft-Windows-Kernel-Boot  |  211       |           |
-Microsoft-Windows-Kernel-Boot  |  212       |           |  File modification detected after load: {PathLength}.
-Microsoft-Windows-Kernel-Boot  |  213       |           |  Registry modification detected after load: {PathLength}.
-Microsoft-Windows-Kernel-Boot  |  214       |  System   |  Soft reboot prepare started (complete requested: {TryComplete}).
-Microsoft-Windows-Kernel-Boot  |  215       |  System   |  Soft reboot prepare finished: {Status}.
-Microsoft-Windows-Kernel-Boot  |  216       |  System   |
-Microsoft-Windows-Kernel-Boot  |  217       |  System   |  Soft reboot complete prepare finished: {Status}.
-Microsoft-Windows-Kernel-Boot  |  218       |  System   |  Soft reboot call to {Function} failed: {Status} (checkpoint: {Checkpoint}).
-Microsoft-Windows-Kernel-Boot  |  219       |           |  Intel TXT prepared. ACM date: {AcmDateMonth}/{AcmDateDay}/{AcmDateYear}.
-Microsoft-Windows-Kernel-Boot  |  220       |           |  System Guard enabled but not supported. Reason: {TxtStatus}
-Microsoft-Windows-Kernel-Boot  |  221       |  System   |
-Microsoft-Windows-Kernel-Boot  |  222       |  System   |  SMM configuration failed validation. Reason: {TxtStatus}
-Microsoft-Windows-Kernel-Boot  |  223       |           |
-Microsoft-Windows-Kernel-Boot  |  224       |           |
-Microsoft-Windows-Kernel-Boot  |  225       |           |  VBS is configured to disallow trustlets.
-Microsoft-Windows-Kernel-Boot  |  226       |           |
-Microsoft-Windows-Kernel-Boot  |  227       |           |
-Microsoft-Windows-Kernel-Boot  |  228       |           |
-Microsoft-Windows-Kernel-Boot  |  229       |           |
-Microsoft-Windows-Kernel-Boot  |  230       |           |
-Microsoft-Windows-Kernel-Boot  |  231       |           |  Boot menu timer canceled due to key press.
-Microsoft-Windows-Kernel-Boot  |  232       |           |
-Microsoft-Windows-Kernel-Boot  |  233       |           |
-Microsoft-Windows-Kernel-Boot  |  234       |           |
-Microsoft-Windows-Kernel-Boot  |  235       |           |  Windows boot environment failed to initialize TPM device. StatusCode: {StatusCode}, Position: {Position}.
-Microsoft-Windows-Kernel-Boot  |  236       |           |  SMM isolation level decreased. Reason: {TxtStatus}
-Microsoft-Windows-Kernel-Boot  |  237       |           |  Hardware memory mirroring is not supported. MirrorStatus: {MirrorStatus}
-Microsoft-Windows-Kernel-Boot  |  238       |  System   |  EFI time zone bias: {EfiTimeZoneBias}. Daylight flags: {EfiDaylightFlags}.
-Microsoft-Windows-Kernel-Boot  |  238       |  System   |  EFI time zone bias: {EfiTimeZoneBias}. Daylight flags: {EfiDaylightFlags}. Firmware time: {EfiTime}.
-Microsoft-Windows-Kernel-Boot  |  239       |           |
-Microsoft-Windows-Kernel-Boot  |  240       |           |
-Microsoft-Windows-Kernel-Boot  |  241       |           |
-Microsoft-Windows-Kernel-Boot  |  242       |  System   |  SMM isolation detected. Level: {IsolationLevel}
-Microsoft-Windows-Kernel-Boot  |  243       |           |  Hardware memory mirroring support is enabled.
-Microsoft-Windows-Kernel-Boot  |  244       |           |
-Microsoft-Windows-Kernel-Boot  |  245       |           |
-Microsoft-Windows-Kernel-Boot  |  246       |           |
-Microsoft-Windows-Kernel-Boot  |  247       |  System   |  Windows boot environment failed load the HSP firmware. StatusCode: {Status}, Reason: {FailureReason}
-Microsoft-Windows-Kernel-Boot  |  248       |           |  Previous error detected while attempting to execute Measured Launch Environment. Source: {Source} Error code: {Status}.
-Microsoft-Windows-Kernel-Boot  |  249       |           |
-Microsoft-Windows-Kernel-Boot  |  250       |           |
-Microsoft-Windows-Kernel-Boot  |  251       |           |
-Microsoft-Windows-Kernel-Boot  |  252       |           |
-Microsoft-Windows-Kernel-Boot  |  253       |           |
+Provider                       |  Level        |  Event ID  |  Version  |  Channel  |  Task                                  |  Opcode                      |  Keyword                         |  Message
+-------------------------------|---------------|------------|-----------|-----------|----------------------------------------|------------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Kernel-Boot  |  Information  |  1         |  0        |           |  FirmwareResolution                    |                              |                                  |  System was booted in {Width}x{Height}@{BitsPerPixel}bpp.
+Microsoft-Windows-Kernel-Boot  |  Information  |  2         |  0        |           |  BootEnvResolution                     |                              |                                  |  BootUX screen was displayed in {Width}x{Height}@{BitsPerPixel}bpp.
+Microsoft-Windows-Kernel-Boot  |  Information  |  3         |  0        |           |                                        |                              |                                  |  Video bit transfer rate is {BytesPerMs} bytes per ms.
+Microsoft-Windows-Kernel-Boot  |  Information  |  4         |  0        |           |  BootFileAccess                        |                              |                                  |  Boot library accessed file {FileName} on Device {DeviceID}. Read {BytesRead} bytes and wrote {BytesWritten} bytes.
+Microsoft-Windows-Kernel-Boot  |  Information  |  5         |  0        |           |  BootTotalIo                           |                              |                                  |  File IO for boot application {ApplicationGuid}: Total Bytes Read = {BytesRead}, Total Bytes Written = {BytesWritten}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  6         |  0        |           |  ImageIntegrityCheck                   |                              |                                  |  Image {ImageName} failed IntegrityCheck reason is {Reason}. Image flags are {ImageFlags}. Error ignored due to debugger {ErrorIgnored}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  7         |  0        |           |  BootManager                           |                              |                                  |  Bootmgr duration is {BootmgrTime} milliseconds.
+Microsoft-Windows-Kernel-Boot  |  Warning      |  8         |  0        |           |  ImageHashCheck                        |                              |                                  |  Image {ImageName} is not self-signed.
+Microsoft-Windows-Kernel-Boot  |  Warning      |  9         |  0        |           |                                        |                              |                                  |  A device ({DriveNumber}) that was enumerated by the BIOS was inaccessible to the boot environment.
+Microsoft-Windows-Kernel-Boot  |  Error        |  10        |  0        |  System   |                                        |                              |                                  |  The system firmware has allocated a memory region previously determined to be unreliable. This has the potential to cause system instability and/or data corruption.
+Microsoft-Windows-Kernel-Boot  |  Information  |  11        |  0        |           |  PreBoot                               |                              |                                  |  The time elapsed before Bootmgr, based on the TSC, is {PreBootMgrTime} ms.
+Microsoft-Windows-Kernel-Boot  |  Information  |  12        |  0        |           |  SecureBootVariableUsage               |                              |                                  |  Variable {UefiVariableName} requires {Size} bytes and was set with status {Status}.
+Microsoft-Windows-Kernel-Boot  |  Warning      |  13        |  0        |           |                                        |                              |                                  |  Element {Element} of application {ApplicationGuid} was not in policy.
+Microsoft-Windows-Kernel-Boot  |  Information  |  14        |  0        |           |                                        |                              |                                  |  A Secure Boot Policy update resulted in status {Status}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  15        |  0        |           |                                        |                              |                                  |  A Secure Boot Revocation List update resulted in status {Status}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  16        |  0        |  System   |                                        |                              |                                  |  Windows failed to resume from hibernate with error status {FailureStatus}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  16        |  1        |  System   |                                        |                              |                                  |  Windows failed to resume from hibernate with error status {FailureStatus}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  17        |  0        |  System   |                                        |                              |                                  |  The boot manager multi OS selection screen was displayed.
+Microsoft-Windows-Kernel-Boot  |  Information  |  18        |  0        |  System   |  BootmgrEntryCount                     |                              |                                  |  There are {EntryCount} boot options on this system.
+Microsoft-Windows-Kernel-Boot  |  Information  |  19        |  0        |  System   |                                        |                              |                                  |  There are {ToolsCount} boot tool options on this system.
+Microsoft-Windows-Kernel-Boot  |  Information  |  20        |  0        |  System   |  DirtyBootShutdown                     |                              |                                  |  The last shutdown's success status was {LastShutdownGood}. The last boot's success status was {LastBootGood}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  20        |  1        |  System   |  DirtyBootShutdown                     |                              |                                  |  The last shutdown's success status was {LastShutdownGood}. The last boot's success status was {LastBootGood}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  21        |  0        |  System   |                                        |                              |                                  |  The OS loader advanced options menu was displayed and the user selected option {OptionSelected}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  22        |  0        |  System   |                                        |                              |                                  |  The OS loader edit options menu was displayed.
+Microsoft-Windows-Kernel-Boot  |  Information  |  23        |  0        |  System   |                                        |                              |                                  |  The Windows key was pressed during boot.
+Microsoft-Windows-Kernel-Boot  |  Information  |  24        |  0        |  System   |                                        |                              |                                  |  The F8 key was pressed during boot.
+Microsoft-Windows-Kernel-Boot  |  Information  |  25        |  0        |  System   |  BootMenuPolicy                        |                              |                                  |  The boot menu policy was {BootMenuPolicy}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  26        |  0        |  System   |                                        |                              |                                  |  A one-time boot sequence was used during this boot.
+Microsoft-Windows-Kernel-Boot  |  Information  |  27        |  0        |  System   |  BootType                              |                              |                                  |  The boot type was {BootType}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  27        |  1        |  System   |  BootType                              |                              |                                  |  The boot type was {BootType}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  28        |  0        |           |                                        |                              |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  29        |  0        |  System   |                                        |                              |                                  |  Windows failed fast startup with error status {FailureStatus}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  29        |  1        |  System   |                                        |                              |                                  |  Windows failed fast startup with error status {FailureStatus}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  30        |  0        |  System   |  FirmwareBootData                      |                              |                                  |  The firmware reported boot metrics.
+Microsoft-Windows-Kernel-Boot  |  Information  |  31        |  0        |           |                                        |                              |                                  |  Initialization of the firmware crypto hash provider resulted in status {Status}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  32        |  0        |  System   |  UserInputTime                         |                              |                                  |  The bootmgr spent {BitlockerUserInputTime} ms waiting for user input.
+Microsoft-Windows-Kernel-Boot  |  Error        |  33        |  0        |           |                                        |                              |                                  |  The firmware update capsule ({ImageName}) failed to load with status {ImageLoadStatus}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  34        |  0        |           |                                        |                              |                                  |  The PE/COFF image firmware update capsule ({PeImageName}) failed to load with status {PeImageLoadStatus}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  35        |  0        |           |                                        |                              |                                  |  The Efi UpdateCapsule failed to apply updates with status {UpdateCapsuleStatus}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  36        |  0        |           |                                        |                              |                                  |  Firmware update supported status is {UpdateSupportedStatus}. The BitLocker device flags are {DeviceFlags} and the PCR bitmap is {PcrBitmap}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  37        |  0        |           |                                        |                              |                                  |  The firmware update capsule ({ImageName}) code integrity check failed with status {ImageLoadStatus}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  38        |  0        |           |  ImageLoadFailure                      |                              |                                  |  Windows failed to load the required system file {ImageName} with error status {ImageLoadStatus}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  39        |  0        |           |                                        |                              |                                  |  Windows failed to load the system registry file {HiveName} with error status {HiveLoadStatus}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  40        |  0        |           |                                        |                              |                                  |  Windows failed to initialize the ACPI with error status {Status}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  41        |  0        |           |                                        |                              |                                  |  Windows failed to load with error status {Status}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  42        |  0        |           |                                        |                              |                                  |  Windows failed to load image {FailedPath} imported from {Path} with error status {Status}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  43        |  0        |           |                                        |                              |                                  |  Windows failed to import {Import} from image {Path} with error status {Status}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  44        |  0        |           |                                        |                              |                                  |  Windows failed to provision VSM Identity Key. Unsealing cached copy status: {CachedCopyStatus}. New key generation status: {IdkGenerationStatus}. Measuring to PCR status: {MeasuringStatus}. Sealing and caching status: {SealingAndCachingStatus}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  45        |  0        |           |  VsmIdkProvisioningStatus              |                              |                                  |  VSM Identity Key Provisioning. Unsealing cached copy status: {CachedCopyStatus}. New key generation status: {IdkGenerationStatus}. Measuring to PCR status: {MeasuringStatus}. Sealing and caching status: {SealingAndCachingStatus}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  46        |  0        |           |  RetrieveDriverListTime                |                              |                                  |  Retrieving the driver list took {RetrieveDriverListTime} milliseconds.
+Microsoft-Windows-Kernel-Boot  |  Information  |  47        |  0        |           |  LoadDrivers                           |                              |                                  |  Loading the drivers took {LoadDriversTime} milliseconds.
+Microsoft-Windows-Kernel-Boot  |  Information  |  48        |  0        |           |  LoadHive                              |                              |                                  |  Loading hive {Path} took {LoadHiveTime} milliseconds.
+Microsoft-Windows-Kernel-Boot  |  Error        |  49        |  0        |           |  SiPolicyFailure                       |                              |                                  |  Windows system integrity policy does not allow to load the required system file {ImageName} with error status {SiPolicyStatus}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  50        |  0        |           |  VsmLKeyProvisioningStatus             |                              |                                  |  Windows failed to provision VSM Master Encryption Key. Using cached copy status: {CachedCopyStatus}. Unsealing cached copy status: {UnsealingCachedCopyStatus}. New key generation status: {KeyGenerationAndSaveStatus}. Sealing status: {SealingStatus}. TPM PCR mask: {TpmPcrMask}. Protector-assisted unseal status: {ProtectorAssistedUnsealStatus}. Protector-assisted re-seal status: {ProtectorAssistedResealStatus}. Protector update status: {ProtectorSealUpdateStatus}. Tpm Counter validation status: {TpmCounterOpStatus}. Tpm Counter creation status: {CachedCopyStatus}0. Backup sealed blob used: {CachedCopyStatus}1.
+Microsoft-Windows-Kernel-Boot  |  Information  |  51        |  0        |           |  VsmLKeyProvisioningStatus             |                              |                                  |  VSM Master Encryption Key Provisioning. Using cached copy status: {CachedCopyStatus}. Unsealing cached copy status: {UnsealingCachedCopyStatus}. New key generation status: {KeyGenerationAndSaveStatus}. Sealing status: {SealingStatus}. TPM PCR mask: {TpmPcrMask}. Protector-assisted unseal status: {ProtectorAssistedUnsealStatus}. Protector-assisted re-seal status: {ProtectorAssistedResealStatus}. Protector update status: {ProtectorSealUpdateStatus}. Tpm Counter validation status: {TpmCounterOpStatus}. Tpm Counter creation status: {CachedCopyStatus}0. Backup sealed blob used: {CachedCopyStatus}1.
+Microsoft-Windows-Kernel-Boot  |  Information  |  52        |  0        |           |  BootAppLoadTime                       |                              |                                  |  The time elapsed loading {ApplicationIdentifier} was {ApplicationLoadTime} ms.
+Microsoft-Windows-Kernel-Boot  |  Information  |  53        |  0        |           |  BootApplicationExecution              |                              |                                  |  The time elapsed executing {ApplicationIdentifier} was {ApplicationExecutionTime} ms.
+Microsoft-Windows-Kernel-Boot  |  Error        |  54        |  0        |           |                                        |                              |                                  |  Building chunk table for WIM compressed file {FileName} failed with status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Error        |  55        |  0        |           |  PrepareTargetFailure                  |                              |                                  |  Soft Restart failed to prepare target Operating System. Operation status: {Status} failure point: {FailurePoint}
+Microsoft-Windows-Kernel-Boot  |  Error        |  56        |  0        |           |                                        |                              |                                  |  Boot application failed to process persistent data with status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Error        |  57        |  0        |           |                                        |                              |                                  |  Windows failed to provision the TPM Storage Root Key with error status:{TpmSrkProvisioningStatus}. Reading SrkPolicy status: {TpmSrkPolicyReadStatus}. SrkSymKeyPolicy value: {TpmSrkSymKeyPolicyValue}. TPM symmetric key capability: {TpmSrkSymKeyCapability}. AES bits used: {TpmSrkAesBitsUsed}. SrkAsymKeyPolicy value: {TpmSrkAsymKeyPolicyValue}. TPM asymmetric key capability: {TpmSrkAsymKeyCapability}. Rsa bits used: {TpmSrkRsaBitsUsed}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  58        |  0        |           |                                        |                              |                                  |  Windows successfully provisioned the TPM Storage Root Key. This operation took {TpmSrkProvisioningTime} milliseconds. Reading SrkPolicy status: {TpmSrkPolicyReadStatus}. SrkSymKeyPolicy value: {TpmSrkSymKeyPolicyValue}. TPM symmetric key capability: {TpmSrkSymKeyCapability}. AES bits used: {TpmSrkAesBitsUsed}. SrkAsymKeyPolicy value: {TpmSrkAsymKeyPolicyValue}. TPM asymmetric key capability: {TpmSrkAsymKeyCapability}. Rsa bits used: {TpmSrkRsaBitsUsed}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  59        |  0        |           |                                        |                              |                                  |  Windows failed to provision TPM binding information with error status:{TpmBindingProvisioningStatus}.
+Microsoft-Windows-Kernel-Boot  |  Warning      |  60        |  0        |           |  InvalidNfitTable                      |                              |                                  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  61        |  0        |           |  MeasuredLaunch                        |  TxtLaunchPrepared           |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  62        |  0        |           |  MeasuredLaunch                        |  PreviousTxtError            |                                  |  Previous error detected while attempting to execute Measured Launch Environment. TXT error code: {TxtErrorCode}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  63        |  0        |           |  MeasuredLaunch                        |  InvalidTxtSinitRange        |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  64        |  0        |           |  MeasuredLaunch                        |  InvalidTxtHeapRange         |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  65        |  0        |           |  MeasuredLaunch                        |  MleLoadFailure              |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  66        |  0        |           |  MeasuredLaunch                        |  MissingRsdpTable            |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  67        |  0        |           |  MeasuredLaunch                        |  NoSinitAcm                  |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  68        |  0        |           |  MeasuredLaunch                        |  InvalidTxtHeapBiosDataSize  |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  69        |  0        |           |  MeasuredLaunch                        |  MleHeaderTooOld             |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  70        |  0        |           |  MeasuredLaunch                        |  ComputePmrRangesFailure     |                                  |
+Microsoft-Windows-Kernel-Boot  |  Warning      |  71        |  0        |           |  FileOpen                              |  OpenFailure                 |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  72        |  0        |           |  MeasuredLaunch                        |  PrepareLcpFailure           |                                  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  73        |  0        |           |  MeasuredLaunch                        |  TxtRejectedFirmwareAcm      |                                  |  Firmware provided SINIT ACM not used. {TxtStatus}
+Microsoft-Windows-Kernel-Boot  |  Error        |  74        |  0        |           |  VsmLKeyProvisioningStatus             |                              |                                  |  Windows failed to provision DRTM-bound VSM Master Encryption Key . Using cached copy status: {CachedCopyStatus}. New key generation status: {KeyGenerationStatus}. Sealing status: {SealAndSaveStatus}. UEFI keys provided to Secure Kernel status: {UEFIKeysStatus}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  75        |  0        |           |  VsmLKeyProvisioningStatus             |                              |                                  |  Windows successfully provisioned DRTM-bound VSM Master Encryption Key. Using cached copy status: {CachedCopyStatus}. New key generation status: {KeyGenerationStatus}. Sealing status: {SealAndSaveStatus}. UEFI keys provided to Secure Kernel status: {UEFIKeysStatus}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  76        |  0        |           |  BootDebugger                          |  BdEnabled                   |                                  |
+Microsoft-Windows-Kernel-Boot  |  Warning      |  77        |  0        |           |  BootDebugger                          |  BdInitFailure               |                                  |
+Microsoft-Windows-Kernel-Boot  |  Warning      |  78        |  0        |           |  KernelDebugger                        |  KdInitFailure               |                                  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  79        |  0        |           |  KernelDebugger                        |  KdEnabled                   |                                  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  80        |  1        |           |  VsmLKeyProvisioningStatus             |                              |                                  |  FASR Platform Verification. FASR cert present: {IsFasrCertPresent}. FASR cert signature validation status: {ValidateFasrCertSignatureStatus}. BootmgrAuthorityEventCount: {BootmgrAuthorityEventCount}. VerifiedMicrosoftAuthority: {VerifiedMicrosoftAuthority}. FASR PCR values validation status: {ValidateFasrPcrValuesStatus}. PCR mismatch index: {PcrMismatchIndex}. FASR cert size: {FasrCertSize}. FASR cert: {FasrCertWithoutSignature}. FASR signature size: {FasrSignatureSize}. FASR signature: {IsFasrCertPresent}0.
+Microsoft-Windows-Kernel-Boot  |  Information  |  100       |  0        |           |  InitializeLibrary                     |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  100       |  1        |           |  InitializeLibrary                     |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  101       |  0        |           |  InitializeLibrary                     |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  102       |  0        |           |  PrepareTarget                         |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  102       |  1        |           |  PrepareTarget                         |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  102       |  2        |           |  PrepareTarget                         |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  103       |  0        |           |  PrepareTarget                         |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  104       |  0        |           |  RebuildKernelMemoryMap                |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  105       |  0        |           |  RebuildKernelMemoryMap                |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  106       |  0        |           |  PersistMemory                         |  Start                       |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Information  |  107       |  0        |           |  PersistMemory                         |  Stop                        |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Error        |  108       |  0        |           |  FatalError                            |                              |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  109       |  0        |           |  CleanupPageDatabase                   |  Start                       |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  110       |  0        |           |  CleanupPageDatabase                   |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  111       |  0        |           |  FreePersistedMemory                   |  Start                       |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Information  |  112       |  0        |           |  FreePersistedMemory                   |  Stop                        |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Information  |  113       |  0        |           |  ClaimPersistedMemory                  |  Start                       |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Information  |  114       |  0        |           |  ClaimPersistedMemory                  |  Stop                        |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Warning      |  115       |  0        |  System   |  CancelBoot                            |  Start                       |  SoftRestart                     |  Soft reboot cancellation started: {FreePersistentPages}
+Microsoft-Windows-Kernel-Boot  |  Warning      |  116       |  0        |  System   |  CancelBoot                            |  Stop                        |  SoftRestart                     |  Soft reboot cancellation finished: {Status}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  117       |  0        |           |  AttachPersistentPageDatabase          |  Start                       |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  118       |  0        |           |  AttachPersistentPageDatabase          |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  119       |  0        |           |  MemoryBlockRundown                    |                              |  MemoryBlockRundown              |
+Microsoft-Windows-Kernel-Boot  |  Information  |  120       |  0        |           |  BuildKernelMemoryMap                  |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  121       |  0        |           |  BuildKernelMemoryMap                  |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  122       |  0        |           |  GetMemoryMap                          |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  123       |  0        |           |  GetMemoryMap                          |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  124       |  0        |  System   |  VsmPolicyFailure                      |                              |                                  |  The virtualization-based security enablement policy check at phase {Phase} failed with status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Information  |  126       |  0        |           |  AllocatePhysicalPagesForMdl           |  Start                       |  SoftRestart PhysicalMemory      |
+Microsoft-Windows-Kernel-Boot  |  Information  |  127       |  0        |           |  AllocatePhysicalPagesForMdl           |  Stop                        |  SoftRestart PhysicalMemory      |
+Microsoft-Windows-Kernel-Boot  |  Information  |  128       |  0        |           |  ExecuteTransition                     |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  129       |  0        |           |  DisconnectHypervisor                  |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  130       |  0        |           |  MemoryMapRundown                      |                              |  MemoryMapRundown                |
+Microsoft-Windows-Kernel-Boot  |  Information  |  131       |  0        |           |  MemoryMapRundown                      |  Start                       |  MemoryMapRundown                |
+Microsoft-Windows-Kernel-Boot  |  Information  |  132       |  0        |           |  MemoryMapRundown                      |  Stop                        |  MemoryMapRundown                |
+Microsoft-Windows-Kernel-Boot  |  Error        |  133       |  0        |           |  PhysicalPageAllocationFailure         |                              |  SoftRestart PhysicalMemory      |
+Microsoft-Windows-Kernel-Boot  |  Error        |  133       |  1        |           |  PhysicalPageAllocationFailure         |                              |  SoftRestart PhysicalMemory      |
+Microsoft-Windows-Kernel-Boot  |  Information  |  134       |  0        |           |  WaitForPartitionsRestored             |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  135       |  0        |           |  WaitForPartitionsRestored             |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  136       |  0        |           |  CleanupPageDatabase                   |                              |  SoftRestart MemoryPreservation  |  Soft Restart failed to complete with status: {Status} due to {OutstandingCount} outstanding unclaimed allocations
+Microsoft-Windows-Kernel-Boot  |  Error        |  136       |  1        |           |  CleanupPageDatabase                   |                              |  SoftRestart MemoryPreservation  |  Soft Restart failed to complete with status: {Status} due to {OutstandingCount} outstanding unclaimed allocations
+Microsoft-Windows-Kernel-Boot  |  Information  |  137       |  0        |           |  MemoryPartitionRestore                |  Start                       |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  138       |  0        |           |  MemoryPartitionRestore                |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  138       |  1        |           |  MemoryPartitionRestore                |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  138       |  2        |           |  MemoryPartitionRestore                |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  139       |  0        |           |  MemoryPartitionRestore                |                              |  SoftRestart MemoryPreservation  |  Soft Restart failed to restore memory partition {Identifier} with status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Information  |  140       |  0        |           |  PersistMemoryPartition                |  Start                       |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  141       |  0        |           |  PersistMemoryPartition                |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  141       |  1        |           |  PersistMemoryPartition                |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  142       |  0        |           |  RegisterLoader                        |                              |  SoftRestart                     |  Soft Restart failed to register with Soft Restart extension. The versions are not compatible.
+Microsoft-Windows-Kernel-Boot  |  Information  |  143       |  0        |           |  MemoryPartitionsRestored              |                              |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  144       |  0        |           |  QueryStatistics                       |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  145       |  0        |           |  QueryStatistics                       |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  146       |  0        |           |  ConnectSecureLoader                   |                              |  SoftRestart                     |  Soft Restart failed to establish connection with secure load with status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Information  |  147       |  0        |           |  FreePersistedMemoryBlock              |  Start                       |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Information  |  148       |  0        |           |  FreePersistedMemoryBlock              |  Stop                        |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Information  |  149       |  0        |           |  PrepareNotification                   |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  150       |  0        |           |  PrepareNotification                   |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  150       |  1        |           |  PrepareNotification                   |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  151       |  0        |           |  PartitionInitialAddMemory             |  Start                       |  MemoryPartitions                |
+Microsoft-Windows-Kernel-Boot  |  Information  |  151       |  1        |           |  PartitionInitialAddMemory             |  Start                       |  MemoryPartitions                |
+Microsoft-Windows-Kernel-Boot  |  Information  |  151       |  2        |           |  PartitionInitialAddMemory             |  Start                       |  MemoryPartitions                |
+Microsoft-Windows-Kernel-Boot  |  Information  |  152       |  0        |           |  PartitionInitialAddMemory             |  Stop                        |  MemoryPartitions                |
+Microsoft-Windows-Kernel-Boot  |  Information  |  153       |  0        |  System   |  VsmPolicyEnablement                   |                              |                                  |  Virtualization-based security (policies: {VsmPolicy}) is {EnableDisableReason}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  154       |  0        |           |  BootPolicyMigration                   |                              |                                  |  Boot Policy Migration used an authenticated variable.  Status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Warning      |  155       |  0        |           |  BootPolicyMigration                   |                              |                                  |  Boot Policy Migration used an unauthenticated variable.  Status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Warning      |  156       |  0        |  System   |                                        |                              |                                  |  Virtualization-based security (policies: {VsmPolicy}) is {EnableDisableReason} with status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Information  |  157       |  0        |           |  BootDiag                              |                              |                                  |  Info: {DiagCode} Status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Error        |  158       |  0        |           |  BootDiag                              |                              |                                  |  Error: {DiagCode} Status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Information  |  159       |  0        |           |  RemoveEnclavePages                    |  Start                       |  MemoryPreservation              |
+Microsoft-Windows-Kernel-Boot  |  Information  |  160       |  0        |           |  CancelNotification                    |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  161       |  0        |           |  CancelNotification                    |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  162       |  0        |           |  GetFirmwareBootDevice                 |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  163       |  0        |           |  NormalizeBootOptionList               |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  164       |  0        |           |  CreateLibraryParameters               |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  165       |  0        |           |  InitializeLibrary                     |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  166       |  0        |           |  CreateDevices                         |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  167       |  0        |           |  SoftRestartHostCapability             |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  168       |  0        |           |  EnumerateEnclavePages                 |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  169       |  0        |           |  InitializeMeasurementContext          |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  169       |  1        |           |  InitializeMeasurementContext          |  InitializationFailure       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  170       |  0        |           |  KsrMeasurement                        |                              |  SoftRestart                     |  Measured Boot Measurement Failure. Status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Error        |  171       |  0        |           |  TpmMeasurement                        |                              |  SoftRestart                     |  TPM Measurement Failure. Status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Error        |  172       |  0        |           |  CloseMeasurementLog                   |                              |  SoftRestart                     |  Failure to close TCG log. Status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Error        |  173       |  0        |           |  CommitPendingEvents                   |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  174       |  0        |           |  CapTpmPcr                             |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  175       |  0        |           |  CapTpmPcr                             |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  176       |  0        |           |  InitializeLibrary                     |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  177       |  0        |           |  EfiVariableAccess                     |  GetEfiVariable              |  EfiVariables                    |
+Microsoft-Windows-Kernel-Boot  |  Information  |  178       |  0        |           |  EfiVariableAccess                     |  SetEfiVariable              |  EfiVariables                    |
+Microsoft-Windows-Kernel-Boot  |  Error        |  179       |  0        |           |  GetFirmwareInformation                |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  180       |  0        |           |  VerifyBootEntry                       |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Warning      |  181       |  0        |           |  RegisterFilter                        |                              |  SoftRestart                     |  Soft Restart driver failed to register itself as a filter with status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Error        |  182       |  0        |           |  IoSpaceMemory                         |  EnumerateFailure            |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  183       |  0        |           |  BadMemoryPages                        |  ListInitializationFailure   |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Warning      |  184       |  0        |           |  InitializeMeasurementContext          |  MeasurementsDisabled        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  185       |  0        |           |  PersistBcdFailure                     |                              |  SoftRestart                     |  Soft Restart driver failed to store BCD store when BCDCache is enabled with status: {Status}
+Microsoft-Windows-Kernel-Boot  |  Information  |  200       |  0        |           |  TpmCommandResponse                    |                              |                                  |  A command was submitted to the TPM.Command code: {CommandCode}.Response code: {ResponseCode}.Elapsed time: {ResponseMilliseconds}ms.
+Microsoft-Windows-Kernel-Boot  |  Information  |  201       |  0        |           |  TpmCommandResponse                    |                              |                                  |  A command was submitted to the TPM.Command code: {CommandCode}.Response code: {ResponseCode}.Elapsed time: {ResponseMilliseconds}ms.
+Microsoft-Windows-Kernel-Boot  |  Error        |  202       |  0        |           |  TpmSubmitError                        |                              |                                  |  A command could not be submitted to the TPM.Command code: {CommandCode}.Error code: {ErrorCode}.Elapsed time: {ResponseMilliseconds}ms.
+Microsoft-Windows-Kernel-Boot  |  Error        |  203       |  0        |           |  TpmSubmitError                        |                              |                                  |  A command could not be submitted to the TPM.Command code: {CommandCode}.Error code: {ErrorCode}.Elapsed time: {ResponseMilliseconds}ms.
+Microsoft-Windows-Kernel-Boot  |  Error        |  204       |  0        |           |  TpmBitLockerUsage                     |                              |                                  |  The TPM was found not to be useable for BitLocker. Flags: {FveGlobalDataFlags}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  205       |  0        |           |  EFICapsuleCreation                    |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  206       |  0        |           |  EFICapsuleCreation                    |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  207       |  0        |           |  BootSI                                |  InitStatus                  |                                  |  Measured Boot library was initialized. Phase: {Phase}, StatusCode: {StatusCode}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  208       |  0        |           |  BootSI                                |  EnterInsecureState          |                                  |  Measured Boot library encountered a failure and entered insecure state. InitState: {InitState}, StatusCode: {StatusCode}, Failure Address: {FailureAddress}, Reference Address: {ReferenceAddress}, Reason: {ReasonCode}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  209       |  0        |           |  BootSI                                |  DrtmSvnCheck                |                                  |  DRTM Security Version Number check failed. SvnCounterId: {SvnCounterId}, StatusCode: {StatusCode}, Svn Value: {SvnValue}, Previous SVN Value: {PrevSvnValue}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  210       |  0        |           |  MeasuredLaunch                        |  SinitPerformance            |                                  |  Intel TXT SENTER time: {SinitTimeMs} ms.
+Microsoft-Windows-Kernel-Boot  |  Error        |  211       |  0        |           |  MiniFilterStartFailure                |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  212       |  0        |           |  FileModification                      |                              |  SoftRestart                     |  File modification detected after load: {PathLength}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  213       |  0        |           |  RegistryModification                  |                              |  SoftRestart                     |  Registry modification detected after load: {PathLength}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  214       |  0        |  System   |  SoftReboot                            |  Start                       |  SoftRestart                     |  Soft reboot prepare started (complete requested: {TryComplete}).
+Microsoft-Windows-Kernel-Boot  |  Information  |  215       |  0        |  System   |  SoftReboot                            |  Stop                        |  SoftRestart                     |  Soft reboot prepare finished: {Status}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  216       |  0        |  System   |  SoftReboot                            |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  217       |  0        |  System   |  SoftReboot                            |  Stop                        |  SoftRestart                     |  Soft reboot complete prepare finished: {Status}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  218       |  0        |  System   |  SoftReboot                            |                              |  SoftRestart MemoryPreservation  |  Soft reboot call to {Function} failed: {Status} (checkpoint: {Checkpoint}).
+Microsoft-Windows-Kernel-Boot  |  Information  |  219       |  0        |           |  MeasuredLaunch                        |  TxtInformation              |                                  |  Intel TXT prepared. ACM date: {AcmDateMonth}/{AcmDateDay}/{AcmDateYear}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  220       |  0        |           |  MeasuredLaunch                        |  DrtmNotSupported            |                                  |  System Guard enabled but not supported. Reason: {TxtStatus}
+Microsoft-Windows-Kernel-Boot  |  Error        |  221       |  0        |  System   |  MeasuredLaunch                        |  DrtmDriversNotSupportVbs    |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  222       |  0        |  System   |  MeasuredLaunch                        |  PpamFailure                 |                                  |  SMM configuration failed validation. Reason: {TxtStatus}
+Microsoft-Windows-Kernel-Boot  |  Error        |  223       |  0        |           |  IoSpaceMemory                         |  AllocationFailure           |                                  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  224       |  0        |           |  IoSpaceMemory                         |  Allocation                  |                                  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  225       |  0        |           |  VsmBootNoSecretsMode                  |                              |                                  |  VBS is configured to disallow trustlets.
+Microsoft-Windows-Kernel-Boot  |  Information  |  226       |  0        |           |  FinalizeMemoryMap                     |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  227       |  0        |           |  FinalizeMemoryMap                     |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  228       |  0        |           |  FinalizeMemoryMap                     |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  229       |  0        |           |  RegisterHvloaderPersistenceInterface  |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  230       |  0        |           |  LoadHvloaderForPersistence            |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  231       |  0        |           |  BootMenuTimerCanceled                 |                              |                                  |  Boot menu timer canceled due to key press.
+Microsoft-Windows-Kernel-Boot  |  Information  |  232       |  0        |           |  MemoryPartitionFreeUnusedMemory       |  Start                       |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  233       |  0        |           |  MemoryPartitionFreeUnusedMemory       |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  234       |  0        |           |  MemoryPartitionRestoreStats           |                              |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  235       |  0        |           |  BootTpm                               |  TpmInit                     |                                  |  Windows boot environment failed to initialize TPM device. StatusCode: {StatusCode}, Position: {Position}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  236       |  0        |           |  MeasuredLaunch                        |  SmmLevelCheck               |                                  |  SMM isolation level decreased. Reason: {TxtStatus}
+Microsoft-Windows-Kernel-Boot  |  Error        |  237       |  0        |           |  MemoryMirroring                       |  NotSupported                |                                  |  Hardware memory mirroring is not supported. MirrorStatus: {MirrorStatus}
+Microsoft-Windows-Kernel-Boot  |  Information  |  238       |  0        |  System   |  EfiTimeZoneInformation                |                              |                                  |  EFI time zone bias: {EfiTimeZoneBias}. Daylight flags: {EfiDaylightFlags}.
+Microsoft-Windows-Kernel-Boot  |  Information  |  238       |  1        |  System   |  EfiTimeZoneInformation                |                              |                                  |  EFI time zone bias: {EfiTimeZoneBias}. Daylight flags: {EfiDaylightFlags}. Firmware time: {EfiTime}.
+Microsoft-Windows-Kernel-Boot  |  Warning      |  239       |  0        |           |  MemoryAllocation                      |  BlMmAllocationFailure       |                                  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  240       |  0        |           |  FinalizeNotification                  |  Start                       |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  241       |  0        |           |  FinalizeNotification                  |  Stop                        |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  242       |  0        |  System   |  MeasuredLaunch                        |  SmmIsolation                |                                  |  SMM isolation detected. Level: {IsolationLevel}
+Microsoft-Windows-Kernel-Boot  |  Information  |  243       |  0        |           |  MemoryMirroring                       |  Enabled                     |                                  |  Hardware memory mirroring support is enabled.
+Microsoft-Windows-Kernel-Boot  |  Information  |  244       |  0        |           |  MeasuredLaunch                        |  TxtSmmIsolationPerf         |                                  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  245       |  0        |           |  UnpersistMemoryPartition              |  Start                       |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Information  |  246       |  0        |           |  UnpersistMemoryPartition              |  Stop                        |  SoftRestart MemoryPreservation  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  247       |  0        |  System   |  BootTpm                               |  HspLoadFailure              |                                  |  Windows boot environment failed load the HSP firmware. StatusCode: {Status}, Reason: {FailureReason}
+Microsoft-Windows-Kernel-Boot  |  Error        |  248       |  0        |           |  MeasuredLaunch                        |  PreviousAmdSlError          |                                  |  Previous error detected while attempting to execute Measured Launch Environment. Source: {Source} Error code: {Status}.
+Microsoft-Windows-Kernel-Boot  |  Error        |  249       |  0        |           |  BindImportsFailure                    |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Error        |  250       |  0        |           |  SlabAllocationFailure                 |                              |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  251       |  0        |           |  QuerySystemInformationFailure         |                              |  SoftRestart                     |
+Microsoft-Windows-Kernel-Boot  |  Information  |  252       |  0        |           |  BootmgrBltDisplayMenu                 |                              |                                  |
+Microsoft-Windows-Kernel-Boot  |  Error        |  253       |  0        |           |  HotPatch                              |  HotPatchApplyFailure        |                                  |

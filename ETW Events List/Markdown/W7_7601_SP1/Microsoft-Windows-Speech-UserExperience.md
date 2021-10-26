@@ -1,85 +1,85 @@
-Provider                                 |  Event ID  |  Channel                                             |  Message
------------------------------------------|------------|------------------------------------------------------|---------
-Microsoft-Windows-Speech-UserExperience  |  1         |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  2         |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  3         |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  4         |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  11        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  12        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  13        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  14        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  17        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  18        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  19        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  20        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  21        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  22        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  31        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  32        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  33        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  34        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  35        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  36        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  41        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  42        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  43        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  44        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  51        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  52        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  53        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  54        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  55        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  61        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  62        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  63        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  64        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  65        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  68        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  69        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  71        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  72        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  81        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  82        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  83        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  84        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  91        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  92        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  101       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  102       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  103       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  104       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  105       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  106       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  107       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  108       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  109       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  110       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  111       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  112       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  113       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  114       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  115       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  116       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  117       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  118       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  119       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  120       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  121       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  122       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  123       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  125       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  126       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  127       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  128       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  129       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  130       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  131       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  132       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  133       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  134       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  135       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  136       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  137       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  138       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  139       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
-Microsoft-Windows-Speech-UserExperience  |  140       |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |
+Provider                                 |  Level        |  Event ID  |  Version  |  Channel                                             |  Task                                         |  Opcode  |  Keyword              |  Message
+-----------------------------------------|---------------|------------|-----------|------------------------------------------------------|-----------------------------------------------|----------|-----------------------|---------
+Microsoft-Windows-Speech-UserExperience  |  Information  |  1         |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  MSAA_CmdScraping                             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  2         |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  MSAA_CmdScraping                             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  3         |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  MSAA_PopulateGrammar                         |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  4         |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  MSAA_PopulateGrammar                         |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  11        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  ConfigUI_LaunchPronWizard                    |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  12        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  ConfigUI_LaunchPronWizard                    |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  13        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  ConfigUI_PronWizardRecord                    |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  14        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  ConfigUI_PronWizardRecord                    |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  17        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Hub_StartListening                           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  18        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Hub_StartListening                           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  19        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Hub_Misreco                                  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  20        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Hub_Misreco                                  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  21        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Correction_LaunchAlternatesPanel             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  22        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Correction_LaunchAlternatesPanel             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  31        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_Command                            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  32        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_Command                            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  33        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_ProcessingClientViewChange         |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  34        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_ProcessingClientViewChange         |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  35        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_ActivateInsertion                  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  36        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_ActivateInsertion                  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  41        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisNumUI_ShowNumbers                         |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  42        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisNumUI_ShowNumbers                         |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  43        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisNumUI_ShowNumbersCmdDis                   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  44        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisNumUI_ShowNumbersDctDis                   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  51        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisPanel_StartAppDis                         |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  52        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisPanel_SwitchAppDis                        |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  53        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisPanel_LaunchPanel                         |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  54        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisPanel_MediaPlayerDis                      |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  55        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  DisPanel_MediaPlayerDis                      |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  61        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxUI_Initialize                            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  62        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxUI_Initialize                            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  63        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxUI_Visible                               |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  64        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxUI_Shutdown                              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  65        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxUI_Shutdown                              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  68        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxUI_TextFeedback                          |          |                       |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  69        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxUI_Scraping                              |          |                       |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  71        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  WMP_PlayMusic                                |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  72        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  WMP_PlayMusic                                |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  81        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  LaunchApp_IssueLaunchCommand                 |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  82        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  LaunchApp_IssueLaunchCommand                 |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  83        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  LaunchApp_BuildGrammar                       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  84        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  LaunchApp_BuildGrammar                       |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  91        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Topwindow_SwitchToUnambiguousApp             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  92        |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Topwindow_SwitchToUnambiguousApp             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  101       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_LaunchFTUE                              |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  102       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_LaunchFTUE                              |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  103       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_WelcomeToSelectMicNavigation            |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  104       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_WelcomeToSelectMicNavigation            |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  105       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_SelectMicToMicPlacementNavigation       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  106       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_SelectMicToMicPlacementNavigation       |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  107       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_MicPlacementToAdjustVolNavigation       |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  108       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_MicPlacementToAdjustVolNavigation       |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  109       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_AdjustVolToMicSetupCompleteNavigation   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  110       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_AdjustVolToMicSetupCompleteNavigation   |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  111       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_MicSetupCompleteToDocHarvestNavigation  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  112       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_MicSetupCompleteToDocHarvestNavigation  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  113       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_DocHarvestToSpeechRefCardNavigation     |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  114       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_DocHarvestToSpeechRefCardNavigation     |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  115       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_SpeechRefCardToRunAtStartupNavigation   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  116       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_SpeechRefCardToRunAtStartupNavigation   |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  117       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_RunAtStartupToFTUECongratsNavigation    |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  118       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_RunAtStartupToFTUECongratsNavigation    |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  119       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_FTUECongratsToLaunchTutorialNavigation  |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  120       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  FTUE_FTUECongratsToLaunchTutorialNavigation  |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  121       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Tutorial_QuitTutorialToSpeechUXLaunch        |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  122       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Tutorial_QuitTutorialToSpeechUXLaunch        |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  123       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  MSAA_Performance                             |          |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  125       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxCPL_PageLoad                             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  126       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  SpuxCPL_PageLoad                             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  127       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_ShowStage                          |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  128       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_ShowStage                          |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  129       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_SetStage                           |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  130       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_SetStage                           |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  131       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_Typing                             |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  132       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_Typing                             |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  133       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_HideStage                          |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  134       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_HideStage                          |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  135       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_Scratchpad                         |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  136       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_Scratchpad                         |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  137       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_CancelScratchpad                   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  138       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_CancelScratchpad                   |  Stop    |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  139       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_InsertScratchpad                   |  Start   |  PerfInstrumentation  |
+Microsoft-Windows-Speech-UserExperience  |  Information  |  140       |  0        |  Microsoft-Windows-Speech-UserExperience/Diagnostic  |  Dictation_InsertScratchpad                   |  Stop    |  PerfInstrumentation  |

@@ -1,132 +1,132 @@
-Provider                              |  Event ID  |  Channel  |  Message
---------------------------------------|------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-WindowsPhone-CoreMessaging  |  1000      |           |  CoreUI ETW - Initialized (pid={hex})
-Microsoft-WindowsPhone-CoreMessaging  |  1001      |           |  CoreUI ETW - Uninitialized (pid={hex})
-Microsoft-WindowsPhone-CoreMessaging  |  1050      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  2900      |           |  CoreUI Service server-thread started (serviceType={coreUIServiceType})
-Microsoft-WindowsPhone-CoreMessaging  |  2901      |           |  CoreUI Service server-thread exiting (serviceType={coreUIServiceType})
-Microsoft-WindowsPhone-CoreMessaging  |  2902      |           |  CoreUI InitializeService called (serviceType={coreUIServiceType})
-Microsoft-WindowsPhone-CoreMessaging  |  2903      |           |  CoreUI UninitializeService called (serviceType={coreUIServiceType})
-Microsoft-WindowsPhone-CoreMessaging  |  2904      |           |  CoreUI ServiceObjectCreated called (serviceType={coreUIServiceType})
-Microsoft-WindowsPhone-CoreMessaging  |  2905      |           |  CoreUI ServiceObjectDestroyed called (serviceType={coreUIServiceType})
-Microsoft-WindowsPhone-CoreMessaging  |  2906      |           |  CoreUI UpdateServiceStatus called (serviceType={coreUIServiceType})
-Microsoft-WindowsPhone-CoreMessaging  |  2907      |           |  CoreUI ServiceObjectServiceMain called (serviceType={coreUIServiceType})
-Microsoft-WindowsPhone-CoreMessaging  |  2908      |           |  CoreUI CoreUI ServiceMain called with unknown service name {pwsz}
-Microsoft-WindowsPhone-CoreMessaging  |  3100      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3101      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3102      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3103      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3106      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3107      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3110      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3111      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3210      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3211      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3214      |           |  Dispatcher - DispatchItem - Start (internalPriority={InternalPriority})
-Microsoft-WindowsPhone-CoreMessaging  |  3215      |           |  Dispatcher - DispatchItem - Stop (internalPriority={InternalPriority})
-Microsoft-WindowsPhone-CoreMessaging  |  3216      |           |  Dispatcher - WakeLevel - UpdateWakeLevel (bits={unParam} old={InternalPriority} new={InternalPriority2})
-Microsoft-WindowsPhone-CoreMessaging  |  3220      |           |  Dispatcher - DoWait - Start (timeout={hex})
-Microsoft-WindowsPhone-CoreMessaging  |  3221      |           |  Dispatcher - DoWait - Stop (status={unParam} handle={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  3222      |           |  Dispatcher - CallDispatchCallback - Start (awake={fBool} reference={unParam})
-Microsoft-WindowsPhone-CoreMessaging  |  3223      |           |  Dispatcher - CallDispatchCallback - Stop            (timeout={unParam})
-Microsoft-WindowsPhone-CoreMessaging  |  3224      |           |  UserAdapter - ScheduleDispatch (threadid={unParam} userPriority={UserPriority})
-Microsoft-WindowsPhone-CoreMessaging  |  3225      |           |  UserAdapter - HostModeRun - Start (runMode={RunMode} stopping={fBool})
-Microsoft-WindowsPhone-CoreMessaging  |  3226      |           |  UserAdapter - HostModeRun - Stop (stopCookie={param})
-Microsoft-WindowsPhone-CoreMessaging  |  3227      |           |  UserAdapter - OnUserDispatch - Start (priority={UserPriority})
-Microsoft-WindowsPhone-CoreMessaging  |  3228      |           |  UserAdapter - OnUserDispatch - Stop (discarded? {fBool})
-Microsoft-WindowsPhone-CoreMessaging  |  3229      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3230      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3231      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3232      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3300      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3301      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3310      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3311      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3400      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3401      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3402      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3403      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3404      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3405      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3406      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3407      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3408      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3409      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3410      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3411      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3412      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3413      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3414      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3415      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3418      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3419      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3420      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3421      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3424      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3425      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3426      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3427      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3428      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3429      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3430      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3431      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3432      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3433      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3434      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3435      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3436      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3437      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3438      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3439      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3440      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3441      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3442      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3443      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3444      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3445      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3446      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3447      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3450      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3451      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3452      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3453      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3454      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  3455      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  4000      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  4001      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  4010      |           |  Messaging - CreateConnection - Start (destProcessId={unParam}; destThreadId={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4011      |           |  Messaging - CreateConnection - Stop (destProcessId={unParam}; destThreadId={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4020      |           |  Messaging - AllocatedMessage (externalPriority={ExternalPriority}; size={unParam}; destProcessId={hex}; destThreadId={hex2})
-Microsoft-WindowsPhone-CoreMessaging  |  4021      |           |  Messaging - Message stream dirty (processId={hex} threadId={hex2})
-Microsoft-WindowsPhone-CoreMessaging  |  4022      |           |  Messaging - FlushPendingStreams - Start (externalPriority={ExternalPriority})
-Microsoft-WindowsPhone-CoreMessaging  |  4023      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  4030      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  4031      |           |  Messaging - LocalReceive - Statistics (messages={unParam}; size={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4041      |           |  Messaging - InterconnectSend - Statistics (buffers={unParam}; size={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4042      |           |  Messaging - InterconnectFlush - Start (externalPriority={ExternalPriority}; destProcessId={unParam}; destThreadId={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4043      |           |  Messaging - InterconnectFlush - Stop (externalPriority={ExternalPriority}; destProcessId={unParam}; destThreadId={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4044      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  4045      |           |  Messaging - InterconnectReceive - Statistics (senderTid={unParam}; messages={unParam2}; size={unParam3})
-Microsoft-WindowsPhone-CoreMessaging  |  4051      |           |  Messaging - AlpcSend - Statistics (buffers={unParam}; size={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4052      |           |  Messaging - AlpcFlush - Start (externalPriority={ExternalPriority}; destProcessId={unParam}; destThreadId={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4053      |           |  Messaging - AlpcFlush - Stop (externalPriority={ExternalPriority}; destProcessId={unParam}; destThreadId={unParam2})
-Microsoft-WindowsPhone-CoreMessaging  |  4054      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  4055      |           |  Messaging - AlpcReceive - Statistics (senderPid={unParam}; senderTid={unParam2}; messages={unParam3}; size={unParam4})
-Microsoft-WindowsPhone-CoreMessaging  |  5050      |           |  Formatting - Message Method ({pwsz})
-Microsoft-WindowsPhone-CoreMessaging  |  5051      |           |
-Microsoft-WindowsPhone-CoreMessaging  |  7000      |           |  CoreMessagingRegistrar ObjectRegistered '{pwsz}' (type {RegisteredObjectType} scope {RegistrarScope} pid {hex} tid {hex2})
-Microsoft-WindowsPhone-CoreMessaging  |  7001      |           |  CoreMessagingRegistrar ObjectRevoked '{pwsz}' (type {RegisteredObjectType} scope {RegistrarScope} pid {hex} tid {hex2} Orphaned={fBool})
-Microsoft-WindowsPhone-CoreMessaging  |  7002      |           |  CoreUI server disconnected pid {hex} tid {hex2} id {guid}
-Microsoft-WindowsPhone-CoreMessaging  |  7003      |           |  Conversation {pwsz} has run out of PeerID handles to allocate
-Microsoft-WindowsPhone-CoreMessaging  |  7004      |           |  Client connection to conversation '{pwsz}' failed, max clients already connected
-Microsoft-WindowsPhone-CoreMessaging  |  8000      |           |  NtAssociateWaitCompletionPacket succeeded: packet {ptr1} target {ptr2} context {ptr3}
-Microsoft-WindowsPhone-CoreMessaging  |  8001      |           |  NtAssociateWaitCompletionPacket failed, packet {ptr1} port {ptr2} handle {ptr3} status {hex}
-Microsoft-WindowsPhone-CoreMessaging  |  8002      |           |  NtCancelWaitCompletionPacket results: packet {ptr} status {hex} signaled {fBool1} canceled {fBool2}
-Microsoft-WindowsPhone-CoreMessaging  |  8003      |           |  Created RegisteredWait: packet {ptr1} target {ptr2} cloned {fBool}
-Microsoft-WindowsPhone-CoreMessaging  |  8004      |           |  UserAdapter HandleCompletion: packet {ptr1} target {ptr2}
-Microsoft-WindowsPhone-CoreMessaging  |  20000     |           |  CoreUI SelfHostError - ThrownException (type={pwsz}; hr={hex}; message={pwsz2})
-Microsoft-WindowsPhone-CoreMessaging  |  20001     |           |  CoreMessagingRegistrar Object '{pwsz}' not found (type={RegisteredObjectType}; scope={RegistrarScope})
-Microsoft-WindowsPhone-CoreMessaging  |  20002     |           |  CoreUI Connection failed to pid {hex} tid {hex2} id {guid}
-Microsoft-WindowsPhone-CoreMessaging  |  20003     |           |  CoreUI forcibly disconnecting client pid {hex} tid {hex2}
-Microsoft-WindowsPhone-CoreMessaging  |  20004     |           |  CoreUI NtAlpcConnectPort '{pwsz}' failed with hr={hresult}
-Microsoft-WindowsPhone-CoreMessaging  |  20005     |           |  CoreMessagingRegistrar Conversation '{pwsz}' not found
+Provider                              |  Level        |  Event ID  |  Version  |  Channel  |  Task                                                              |  Opcode  |  Keyword                      |  Message
+--------------------------------------|---------------|------------|-----------|-----------|--------------------------------------------------------------------|----------|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  1000      |  0        |           |  ETW_Init                                                          |          |  Performance                  |  CoreUI ETW - Initialized (pid={hex})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  1001      |  0        |           |  ETW_Uninit                                                        |          |  Performance                  |  CoreUI ETW - Uninitialized (pid={hex})
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  1050      |  0        |           |  System_OutOfMemory                                                |          |  Error                        |
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2900      |  0        |           |  CoreUIService_ServerThread_Started                                |          |  CoreMessaging CoreUIService  |  CoreUI Service server-thread started (serviceType={coreUIServiceType})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2901      |  0        |           |  CoreUIService_ServerThread_Exiting                                |          |  CoreMessaging CoreUIService  |  CoreUI Service server-thread exiting (serviceType={coreUIServiceType})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2902      |  0        |           |  CoreUIService_InitializeService                                   |          |  CoreMessaging CoreUIService  |  CoreUI InitializeService called (serviceType={coreUIServiceType})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2903      |  0        |           |  CoreUIService_UninitializeService                                 |          |  CoreMessaging CoreUIService  |  CoreUI UninitializeService called (serviceType={coreUIServiceType})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2904      |  0        |           |  CoreUIService_ServiceObjectCreated                                |          |  CoreMessaging CoreUIService  |  CoreUI ServiceObjectCreated called (serviceType={coreUIServiceType})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2905      |  0        |           |  CoreUIService_ServiceObjectDestroyed                              |          |  CoreMessaging CoreUIService  |  CoreUI ServiceObjectDestroyed called (serviceType={coreUIServiceType})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2906      |  0        |           |  CoreUIService_UpdateServiceStatus                                 |          |  CoreMessaging CoreUIService  |  CoreUI UpdateServiceStatus called (serviceType={coreUIServiceType})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2907      |  0        |           |  CoreUIService_ServiceObjectServiceMain                            |          |  CoreMessaging CoreUIService  |  CoreUI ServiceObjectServiceMain called (serviceType={coreUIServiceType})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  2908      |  0        |           |  CoreUIService_CoreUIServiceMain_UnknownService                    |          |  CoreMessaging CoreUIService  |  CoreUI CoreUI ServiceMain called with unknown service name {pwsz}
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3100      |  0        |           |  Session_CoreUICreate                                              |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3101      |  0        |           |  Session_CoreUICreate                                              |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3102      |  0        |           |  Session_CoreUICreate_InitializeCnContext                          |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3103      |  0        |           |  Session_CoreUICreate_InitializeCnContext                          |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3106      |  0        |           |  Session_CoreUICreate_ExportSession                                |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3107      |  0        |           |  Session_CoreUICreate_ExportSession                                |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3110      |  0        |           |  Session_ConstructThreadContext                                    |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3111      |  0        |           |  Session_ConstructThreadContext                                    |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3210      |  0        |           |  Dispatcher_DispatchLoop                                           |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3211      |  0        |           |  Dispatcher_DispatchLoop                                           |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3214      |  0        |           |  Dispatcher_DispatchItem                                           |  Start   |                               |  Dispatcher - DispatchItem - Start (internalPriority={InternalPriority})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3215      |  0        |           |  Dispatcher_DispatchItem                                           |  Stop    |                               |  Dispatcher - DispatchItem - Stop (internalPriority={InternalPriority})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3216      |  0        |           |  Dispatcher_WakeLevel_UpdateWakeLevel                              |          |                               |  Dispatcher - WakeLevel - UpdateWakeLevel (bits={unParam} old={InternalPriority} new={InternalPriority2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3220      |  0        |           |  Dispatcher_DoWait                                                 |  Start   |                               |  Dispatcher - DoWait - Start (timeout={hex})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3221      |  0        |           |  Dispatcher_DoWait                                                 |  Stop    |                               |  Dispatcher - DoWait - Stop (status={unParam} handle={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3222      |  0        |           |  Dispatcher_CallDispatchCallback                                   |  Start   |                               |  Dispatcher - CallDispatchCallback - Start (awake={fBool} reference={unParam})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3223      |  0        |           |  Dispatcher_CallDispatchCallback                                   |  Stop    |                               |  Dispatcher - CallDispatchCallback - Stop            (timeout={unParam})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3224      |  0        |           |  Adapter_ScheduleDispatch                                          |          |                               |  UserAdapter - ScheduleDispatch (threadid={unParam} userPriority={UserPriority})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3225      |  0        |           |  Adapter_HostModeRun                                               |  Start   |                               |  UserAdapter - HostModeRun - Start (runMode={RunMode} stopping={fBool})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3226      |  0        |           |  Adapter_HostModeRun                                               |  Stop    |                               |  UserAdapter - HostModeRun - Stop (stopCookie={param})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3227      |  0        |           |  Adapter_OnUserDispatch                                            |  Start   |                               |  UserAdapter - OnUserDispatch - Start (priority={UserPriority})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3228      |  0        |           |  Adapter_OnUserDispatch                                            |  Stop    |                               |  UserAdapter - OnUserDispatch - Stop (discarded? {fBool})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3229      |  0        |           |  Adapter_IntegratedLoopWait                                        |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3230      |  0        |           |  Adapter_IntegratedLoopWait                                        |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  3231      |  0        |           |  Adapter_PostMessageError_QueueFull                                |          |  Error                        |
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  3232      |  0        |           |  Adapter_KernelPostMessageError                                    |          |  Error                        |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3300      |  0        |           |  RegistrarClient_Initialize                                        |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3301      |  0        |           |  RegistrarClient_Initialize                                        |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3310      |  0        |           |  RegistrarClient_ConnectToRegistrarServer                          |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3311      |  0        |           |  RegistrarClient_ConnectToRegistrarServer                          |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3400      |  0        |           |  RemoteRegistrarClient_Connect                                     |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3401      |  0        |           |  RemoteRegistrarClient_Connect                                     |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3402      |  0        |           |  RemoteRegistrarClient_RegisterThread                              |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3403      |  0        |           |  RemoteRegistrarClient_RegisterThread                              |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3404      |  0        |           |  RemoteRegistrarClient_RegisterAlpcPort                            |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3405      |  0        |           |  RemoteRegistrarClient_RegisterAlpcPort                            |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3406      |  0        |           |  RemoteRegistrarClient_UnregisterAlpcPort                          |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3407      |  0        |           |  RemoteRegistrarClient_UnregisterAlpcPort                          |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3408      |  0        |           |  RemoteRegistrarClient_PrepareConnection                           |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3409      |  0        |           |  RemoteRegistrarClient_PrepareConnection                           |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3410      |  0        |           |  RemoteRegistrarClient_CloseConnection                             |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3411      |  0        |           |  RemoteRegistrarClient_CloseConnection                             |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3412      |  0        |           |  RemoteRegistrarClient_CompleteCrossProcConnection                 |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3413      |  0        |           |  RemoteRegistrarClient_CompleteCrossProcConnection                 |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3414      |  0        |           |  RemoteRegistrarClient_CrossProcClientDisconnected                 |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3415      |  0        |           |  RemoteRegistrarClient_CrossProcClientDisconnected                 |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3418      |  0        |           |  RemoteRegistrarClient_RegisterObject                              |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3419      |  0        |           |  RemoteRegistrarClient_RegisterObject                              |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3420      |  0        |           |  RemoteRegistrarClient_UnregisterObject                            |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3421      |  0        |           |  RemoteRegistrarClient_UnregisterObject                            |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3424      |  0        |           |  RemoteRegistrarClient_FindObject                                  |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3425      |  0        |           |  RemoteRegistrarClient_FindObject                                  |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3426      |  0        |           |  RemoteRegistrarClient_CompleteLocalConnection                     |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3427      |  0        |           |  RemoteRegistrarClient_CompleteLocalConnection                     |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3428      |  0        |           |  RemoteRegistrarClient_LocalClientDisconnected                     |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3429      |  0        |           |  RemoteRegistrarClient_LocalClientDisconnected                     |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3430      |  0        |           |  RemoteRegistrarClient_GetOrCreateReverseConnectionPortID          |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3431      |  0        |           |  RemoteRegistrarClient_GetOrCreateReverseConnectionPortID          |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3432      |  0        |           |  RemoteRegistrarClient_UnregisterReverseConnectionPort             |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3433      |  0        |           |  RemoteRegistrarClient_UnregisterReverseConnectionPort             |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3434      |  0        |           |  RemoteRegistrarClient_FindConversationServer                      |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3435      |  0        |           |  RemoteRegistrarClient_FindConversationServer                      |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3436      |  0        |           |  RemoteRegistrarClient_RegisterConversation                        |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3437      |  0        |           |  RemoteRegistrarClient_RegisterConversation                        |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3438      |  0        |           |  RemoteRegistrarClient_ReleaseConversationServer                   |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3439      |  0        |           |  RemoteRegistrarClient_ReleaseConversationServer                   |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3440      |  0        |           |  RemoteRegistrarClient_RegisterConversationClient                  |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3441      |  0        |           |  RemoteRegistrarClient_RegisterConversationClient                  |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3442      |  0        |           |  RemoteRegistrarClient_ConnectPendingConversationClient            |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3443      |  0        |           |  RemoteRegistrarClient_ConnectPendingConversationClient            |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3444      |  0        |           |  RemoteRegistrarClient_RegisterPendingConversationClientForServer  |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3445      |  0        |           |  RemoteRegistrarClient_RegisterPendingConversationClientForServer  |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3446      |  0        |           |  RemoteRegistrarClient_ReleaseConversationClientConnection         |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3447      |  0        |           |  RemoteRegistrarClient_ReleaseConversationClientConnection         |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3450      |  0        |           |  RemoteRegistrarClient_FindPendingConversationClient               |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3451      |  0        |           |  RemoteRegistrarClient_FindPendingConversationClient               |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3452      |  0        |           |  RemoteRegistrarClient_FindCrossProcConnection                     |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3453      |  0        |           |  RemoteRegistrarClient_FindCrossProcConnection                     |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3454      |  0        |           |  RemoteRegistrarClient_ReleaseConversationClient                   |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  3455      |  0        |           |  RemoteRegistrarClient_ReleaseConversationClient                   |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4000      |  0        |           |  Messaging_ConstructMessageSession                                 |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4001      |  0        |           |  Messaging_ConstructMessageSession                                 |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4010      |  0        |           |  Messaging_CreateConnection                                        |  Start   |                               |  Messaging - CreateConnection - Start (destProcessId={unParam}; destThreadId={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4011      |  0        |           |  Messaging_CreateConnection                                        |  Stop    |                               |  Messaging - CreateConnection - Stop (destProcessId={unParam}; destThreadId={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4020      |  0        |           |  Messaging_AllocatedMessage                                        |          |                               |  Messaging - AllocatedMessage (externalPriority={ExternalPriority}; size={unParam}; destProcessId={hex}; destThreadId={hex2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4021      |  0        |           |  Messaging_StreamDirty                                             |          |                               |  Messaging - Message stream dirty (processId={hex} threadId={hex2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4022      |  0        |           |  Messaging_FlushPendingStreams                                     |  Start   |                               |  Messaging - FlushPendingStreams - Start (externalPriority={ExternalPriority})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4023      |  0        |           |  Messaging_FlushPendingStreams                                     |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4030      |  0        |           |  Messaging_LocalReceive                                            |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4031      |  0        |           |  Messaging_LocalReceive                                            |  Stop    |                               |  Messaging - LocalReceive - Statistics (messages={unParam}; size={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4041      |  0        |           |  Messaging_InterconnectSend                                        |          |                               |  Messaging - InterconnectSend - Statistics (buffers={unParam}; size={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4042      |  0        |           |  Messaging_InterconnectFlush                                       |  Start   |                               |  Messaging - InterconnectFlush - Start (externalPriority={ExternalPriority}; destProcessId={unParam}; destThreadId={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4043      |  0        |           |  Messaging_InterconnectFlush                                       |  Stop    |                               |  Messaging - InterconnectFlush - Stop (externalPriority={ExternalPriority}; destProcessId={unParam}; destThreadId={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4044      |  0        |           |  Messaging_InterconnectReceive                                     |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4045      |  0        |           |  Messaging_InterconnectReceive                                     |  Stop    |                               |  Messaging - InterconnectReceive - Statistics (senderTid={unParam}; messages={unParam2}; size={unParam3})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4051      |  0        |           |  Messaging_AlpcSend                                                |          |                               |  Messaging - AlpcSend - Statistics (buffers={unParam}; size={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4052      |  0        |           |  Messaging_AlpcFlush                                               |  Start   |                               |  Messaging - AlpcFlush - Start (externalPriority={ExternalPriority}; destProcessId={unParam}; destThreadId={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4053      |  0        |           |  Messaging_AlpcFlush                                               |  Stop    |                               |  Messaging - AlpcFlush - Stop (externalPriority={ExternalPriority}; destProcessId={unParam}; destThreadId={unParam2})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4054      |  0        |           |  Messaging_AlpcReceive                                             |  Start   |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  4055      |  0        |           |  Messaging_AlpcReceive                                             |  Stop    |                               |  Messaging - AlpcReceive - Statistics (senderPid={unParam}; senderTid={unParam2}; messages={unParam3}; size={unParam4})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  5050      |  0        |           |  Formatting_MessageMethod                                          |  Start   |                               |  Formatting - Message Method ({pwsz})
+Microsoft-WindowsPhone-CoreMessaging  |  Verbose      |  5051      |  0        |           |  Formatting_MessageMethod                                          |  Stop    |                               |
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  7000      |  0        |           |  SelfHostInfo_ObjectRegistered                                     |          |                               |  CoreMessagingRegistrar ObjectRegistered '{pwsz}' (type {RegisteredObjectType} scope {RegistrarScope} pid {hex} tid {hex2})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  7001      |  0        |           |  SelfHostInfo_ObjectRevoked                                        |          |                               |  CoreMessagingRegistrar ObjectRevoked '{pwsz}' (type {RegisteredObjectType} scope {RegistrarScope} pid {hex} tid {hex2} Orphaned={fBool})
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  7002      |  0        |           |  SelfHostInfo_ConnectionSevered                                    |          |                               |  CoreUI server disconnected pid {hex} tid {hex2} id {guid}
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  7003      |  0        |           |  SelfHostInfo_OutOfConversationPeerHandles                         |          |                               |  Conversation {pwsz} has run out of PeerID handles to allocate
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  7004      |  0        |           |  SelfHostInfo_MaxConversationClientsConnected                      |          |                               |  Client connection to conversation '{pwsz}' failed, max clients already connected
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  8000      |  0        |           |  IoCompletionPort                                                  |          |                               |  NtAssociateWaitCompletionPacket succeeded: packet {ptr1} target {ptr2} context {ptr3}
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  8001      |  0        |           |  IoCompletionPort                                                  |          |                               |  NtAssociateWaitCompletionPacket failed, packet {ptr1} port {ptr2} handle {ptr3} status {hex}
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  8002      |  0        |           |  IoCompletionPort                                                  |          |                               |  NtCancelWaitCompletionPacket results: packet {ptr} status {hex} signaled {fBool1} canceled {fBool2}
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  8003      |  0        |           |  IoCompletionPort                                                  |          |                               |  Created RegisteredWait: packet {ptr1} target {ptr2} cloned {fBool}
+Microsoft-WindowsPhone-CoreMessaging  |  Information  |  8004      |  0        |           |  IoCompletionPort                                                  |          |                               |  UserAdapter HandleCompletion: packet {ptr1} target {ptr2}
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  20000     |  0        |           |  SelfHostError_ThrownException                                     |          |                               |  CoreUI SelfHostError - ThrownException (type={pwsz}; hr={hex}; message={pwsz2})
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  20001     |  0        |           |  SelfHostError_ObjectNotFound                                      |          |                               |  CoreMessagingRegistrar Object '{pwsz}' not found (type={RegisteredObjectType}; scope={RegistrarScope})
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  20002     |  0        |           |  SelfHostError_ConnectionFailed                                    |          |                               |  CoreUI Connection failed to pid {hex} tid {hex2} id {guid}
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  20003     |  0        |           |  SelfHostError_DisconnectClient                                    |          |                               |  CoreUI forcibly disconnecting client pid {hex} tid {hex2}
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  20004     |  0        |           |  SelfHostError_AlpcConnectionFailed                                |          |                               |  CoreUI NtAlpcConnectPort '{pwsz}' failed with hr={hresult}
+Microsoft-WindowsPhone-CoreMessaging  |  Error        |  20005     |  0        |           |  SelfHostError_ConversationNotFound                                |          |                               |  CoreMessagingRegistrar Conversation '{pwsz}' not found

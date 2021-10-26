@@ -1,9 +1,9 @@
-Provider                             |  Event ID  |  Channel                                    |  Message
--------------------------------------|------------|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Hyper-V-CrashDump  |  1500      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
-Microsoft-Windows-Hyper-V-CrashDump  |  1510      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
-Microsoft-Windows-Hyper-V-CrashDump  |  1520      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
-Microsoft-Windows-Hyper-V-CrashDump  |  1530      |  Microsoft-Windows-Hyper-V-Worker-Analytic  |  [Virtual machine {VmId}] {TraceData}
-Microsoft-Windows-Hyper-V-CrashDump  |  40000     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  [Virtual machine {VmId}] '{VmName}' device {Device} - A fatal error occured while processing a protocol message from the guest.
-Microsoft-Windows-Hyper-V-CrashDump  |  40001     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  [Virtual machine {VmId}] '{VmName}' A guest crash dump was successfully written to {DumpFile}.
-Microsoft-Windows-Hyper-V-CrashDump  |  40002     |  Microsoft-Windows-Hyper-V-Worker-Admin     |  [Virtual machine {VmId}] '{VmName}' A guest crash dump was started but did not complete successfully.
+Provider                             |  Level        |  Event ID  |  Version  |  Channel                                    |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------------|---------------|------------|-----------|---------------------------------------------|--------|----------|-----------|---------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Hyper-V-CrashDump  |  Information  |  1500      |  0        |  Microsoft-Windows-Hyper-V-Worker-Analytic  |        |          |           |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-CrashDump  |  Warning      |  1510      |  0        |  Microsoft-Windows-Hyper-V-Worker-Analytic  |        |          |           |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-CrashDump  |  Error        |  1520      |  0        |  Microsoft-Windows-Hyper-V-Worker-Analytic  |        |          |           |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-CrashDump  |  Critical     |  1530      |  0        |  Microsoft-Windows-Hyper-V-Worker-Analytic  |        |          |           |  [Virtual machine {VmId}] {TraceData}
+Microsoft-Windows-Hyper-V-CrashDump  |  Critical     |  40000     |  0        |  Microsoft-Windows-Hyper-V-Worker-Admin     |        |          |           |  [Virtual machine {VmId}] '{VmName}' device {Device} - A fatal error occured while processing a protocol message from the guest.
+Microsoft-Windows-Hyper-V-CrashDump  |  Critical     |  40001     |  0        |  Microsoft-Windows-Hyper-V-Worker-Admin     |        |          |           |  [Virtual machine {VmId}] '{VmName}' A guest crash dump was successfully written to {DumpFile}.
+Microsoft-Windows-Hyper-V-CrashDump  |  Critical     |  40002     |  0        |  Microsoft-Windows-Hyper-V-Worker-Admin     |        |          |           |  [Virtual machine {VmId}] '{VmName}' A guest crash dump was started but did not complete successfully.

@@ -1,3 +1,3 @@
-Provider                             |  Event ID  |  Channel  |  Message
--------------------------------------|------------|-----------|---------
-Microsoft-Windows-Kernel-Tm-Trigger  |  1         |           |
+Provider                             |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-Kernel-Tm-Trigger  |  Information  |  1         |  0        |           |        |          |           |

@@ -1,8 +1,8 @@
-Provider                      |  Event ID  |  Channel                                |  Message
-------------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-CoreWindow  |  1001      |  Microsoft-Windows-CoreWindow/Analytic  |
-Microsoft-Windows-CoreWindow  |  1002      |  Microsoft-Windows-CoreWindow/Analytic  |
-Microsoft-Windows-CoreWindow  |  1003      |  Microsoft-Windows-CoreWindow/Analytic  |
-Microsoft-Windows-CoreWindow  |  1004      |  Microsoft-Windows-CoreWindow/Analytic  |
-Microsoft-Windows-CoreWindow  |  1005      |  Microsoft-Windows-CoreWindow/Analytic  |
-Microsoft-Windows-CoreWindow  |  1006      |  Microsoft-Windows-CoreWindow/Analytic  |
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                                |  Task              |  Opcode  |  Keyword      |  Message
+------------------------------|---------------|------------|-----------|-----------------------------------------|--------------------|----------|---------------|---------
+Microsoft-Windows-CoreWindow  |  Information  |  1001      |  0        |  Microsoft-Windows-CoreWindow/Analytic  |  CreateCoreWindow  |  Start   |  Performance  |
+Microsoft-Windows-CoreWindow  |  Information  |  1002      |  0        |  Microsoft-Windows-CoreWindow/Analytic  |  CreateCoreWindow  |  Stop    |  Performance  |
+Microsoft-Windows-CoreWindow  |  Information  |  1003      |  0        |  Microsoft-Windows-CoreWindow/Analytic  |  PointerDown       |  Start   |  Performance  |
+Microsoft-Windows-CoreWindow  |  Information  |  1004      |  0        |  Microsoft-Windows-CoreWindow/Analytic  |  PointerDown       |  Stop    |  Performance  |
+Microsoft-Windows-CoreWindow  |  Information  |  1005      |  0        |  Microsoft-Windows-CoreWindow/Analytic  |  PointerEnter      |  Start   |  Performance  |
+Microsoft-Windows-CoreWindow  |  Information  |  1006      |  0        |  Microsoft-Windows-CoreWindow/Analytic  |  PointerEnter      |  Stop    |  Performance  |

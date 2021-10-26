@@ -1,21 +1,21 @@
-Provider                                |  Event ID  |  Channel                                            |  Message
-----------------------------------------|------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-UserModePowerService  |  1         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  2         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  3         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  4         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  5         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  7         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  8         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  9         |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  10        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  11        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  12        |  System                                             |  Process {ProcessPath} (process ID:{ProcessPid}) reset policy scheme from {OldSchemeGuid} to {NewSchemeGuid}
-Microsoft-Windows-UserModePowerService  |  13        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  14        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  15        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  16        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  17        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  18        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  19        |  Microsoft-Windows-UserModePowerService/Diagnostic  |
-Microsoft-Windows-UserModePowerService  |  22        |  System                                             |  Reapply power settings upon completion of the provisioning engine's turn {Turn}
+Provider                                |  Level        |  Event ID  |  Version  |  Channel                                            |  Task                          |  Opcode  |  Keyword      |  Message
+----------------------------------------|---------------|------------|-----------|-----------------------------------------------------|--------------------------------|----------|---------------|-------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-UserModePowerService  |  Information  |  1         |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownPlatformRole           |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  2         |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownPowerScheme            |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  3         |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownAcPowerSetting         |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  4         |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownDcPowerSetting         |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  5         |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  AdaptiveDimTimeout            |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  7         |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |                                |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  8         |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownBatteryInformation     |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  9         |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownBatteryStatus          |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  10        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownBrightnessCapability   |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  11        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownPowerSource            |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  12        |  0        |  System                                             |  PowerSchemeChanged            |          |               |  Process {ProcessPath} (process ID:{ProcessPid}) reset policy scheme from {OldSchemeGuid} to {NewSchemeGuid}
+Microsoft-Windows-UserModePowerService  |  Information  |  13        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  PowerMeterData                |          |  PowerMeter   |
+Microsoft-Windows-UserModePowerService  |  Information  |  14        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  PowerMeterMetaData            |          |  PowerMeter   |
+Microsoft-Windows-UserModePowerService  |  Information  |  15        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownOverrideConfiguration  |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  16        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownOverridePowerSetting   |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  17        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  RundownPowerProfileSetting    |          |               |
+Microsoft-Windows-UserModePowerService  |  Information  |  18        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  EnergyMeterData               |          |  EnergyMeter  |
+Microsoft-Windows-UserModePowerService  |  Information  |  19        |  0        |  Microsoft-Windows-UserModePowerService/Diagnostic  |  EnergyMeterMetaData           |          |  EnergyMeter  |
+Microsoft-Windows-UserModePowerService  |  Information  |  22        |  0        |  System                                             |  ProvEngineTurnApply           |          |               |  Reapply power settings upon completion of the provisioning engine's turn {Turn}

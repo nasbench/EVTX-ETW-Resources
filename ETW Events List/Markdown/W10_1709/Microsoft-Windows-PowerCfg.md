@@ -1,22 +1,22 @@
-Provider                    |  Event ID  |  Channel                                |  Message
-----------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-PowerCfg  |  101       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  102       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  103       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  104       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  105       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  106       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  107       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  108       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  109       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  110       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  111       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  112       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  113       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  114       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  115       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  116       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  117       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  118       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  119       |  Microsoft-Windows-PowerCfg/Diagnostic  |
-Microsoft-Windows-PowerCfg  |  120       |  Microsoft-Windows-PowerCfg/Diagnostic  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                |  Task                              |  Opcode  |  Keyword   |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------|------------------------------------|----------|------------|---------
+Microsoft-Windows-PowerCfg  |  Information  |  101       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_LoadAdvancedUI           |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  102       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_LoadAdvancedUI           |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  103       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_SelectPlan               |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  104       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_SelectPlan               |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  105       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_SaveAll                  |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  106       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_SaveAll                  |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  107       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_SettingInit              |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  108       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_SettingInit              |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  109       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_ShowHelp                 |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  110       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_ShowHelp                 |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  111       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_ExpandOrContractSetting  |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  112       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_ExpandOrContractSetting  |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  113       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_HoverSetting             |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  114       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_HoverSetting             |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  115       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_SpinnerOverrideTime      |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  116       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_SpinnerOverrideTime      |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  117       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_ComboOverrideTime        |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  118       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_ComboOverrideTime        |  Stop    |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  119       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_ShowGroupPolicy          |  Start   |  PowerCpl  |
+Microsoft-Windows-PowerCfg  |  Information  |  120       |  0        |  Microsoft-Windows-PowerCfg/Diagnostic  |  PowerCpl_ShowGroupPolicy          |  Stop    |  PowerCpl  |

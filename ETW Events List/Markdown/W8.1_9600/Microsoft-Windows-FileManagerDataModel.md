@@ -1,131 +1,131 @@
-Provider                                |  Event ID  |  Channel                                             |  Message
-----------------------------------------|------------|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-FileManagerDataModel  |  1         |  Microsoft-Windows-FileManagerDataModel/Operational  |  Error message: {UnicodeString}
-Microsoft-Windows-FileManagerDataModel  |  2         |  Microsoft-Windows-FileManagerDataModel/Operational  |  Warning message: {UnicodeString}
-Microsoft-Windows-FileManagerDataModel  |  3         |  Microsoft-Windows-FileManagerDataModel/Operational  |  Information message: {UnicodeString}
-Microsoft-Windows-FileManagerDataModel  |  4         |                                                      |  Information message: {UnicodeString}
-Microsoft-Windows-FileManagerDataModel  |  5         |                                                      |  Warning message: {UnicodeString}
-Microsoft-Windows-FileManagerDataModel  |  6         |                                                      |  Error message: {UnicodeString}
-Microsoft-Windows-FileManagerDataModel  |  7         |                                                      |  backtrace from {MethodName}, trace: {Backtrace}
-Microsoft-Windows-FileManagerDataModel  |  100       |                                                      |  RegisterEventHandlers threw {HresultValue}. If E_ACCESSDENIED, a Guest account could be a readon of this failure.
-Microsoft-Windows-FileManagerDataModel  |  101       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  102       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  103       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  104       |                                                      |  Status while getting the user identity: {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  105       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  106       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  107       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  108       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  109       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  110       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  111       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  200       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  201       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  202       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  204       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  205       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  300       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  301       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  302       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  400       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  401       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  402       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  403       |                                                      |  Pause state changing: [{CurrentState}] => [{RequestedState}]
-Microsoft-Windows-FileManagerDataModel  |  404       |                                                      |  Pause state changed: {Boolean}
-Microsoft-Windows-FileManagerDataModel  |  405       |                                                      |  Internal Pause state changed: {Boolean}
-Microsoft-Windows-FileManagerDataModel  |  406       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  407       |                                                      |  ExecuteSyncPauseRequest status: {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  408       |                                                      |  Calling Sync Engine {Boolean}...
-Microsoft-Windows-FileManagerDataModel  |  409       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  410       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  411       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  412       |                                                      |  Registering SyncEngine callback object
-Microsoft-Windows-FileManagerDataModel  |  413       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  414       |                                                      |  Setting selective sync options for rootFolderId={UnicodeString}
-Microsoft-Windows-FileManagerDataModel  |  415       |                                                      |  Selective Sync option for ItemId = {ItemId}, state = {State}
-Microsoft-Windows-FileManagerDataModel  |  416       |                                                      |  Cleaning up SyncEngineManager requests list, {Integer} requests
-Microsoft-Windows-FileManagerDataModel  |  417       |                                                      |  EndSetSelectiveSync called, cookie:{Cookie}, result: {Result}
-Microsoft-Windows-FileManagerDataModel  |  418       |                                                      |  Couldn't start the SyncEngine, hr = {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  419       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  420       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  421       |                                                      |  BeginRefreshSync stopped: {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  422       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  423       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  424       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  425       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  426       |                                                      |  Sync Engine callback is no longer valid: {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  500       |                                                      |  FileSyncBlockedReason: {Integer}
-Microsoft-Windows-FileManagerDataModel  |  501       |                                                      |  FileSyncBlocked event fired: {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  502       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  503       |                                                      |  AuthenticationErrorEvent fired: [{HresultValue}]
-Microsoft-Windows-FileManagerDataModel  |  600       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  601       |                                                      |  Retrieve fast properties store. Extrinsic property store could not be created, errorCode: {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  700       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  701       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  702       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  703       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  704       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  705       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  706       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  707       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  708       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  709       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  710       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  711       |                                                      |  In StartGetRunningOperations, _pollingInProgress is {Boolean}.
-Microsoft-Windows-FileManagerDataModel  |  712       |                                                      |  Enabling/Disabling toast notificiations: {Boolean}
-Microsoft-Windows-FileManagerDataModel  |  713       |                                                      |  Setting new polling frequency to {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  714       |                                                      |  Handling interrupt [{Guid}]
-Microsoft-Windows-FileManagerDataModel  |  800       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  801       |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  900       |                                                      |  Location {UnicodeString} is a fastlocation, generating scope.
-Microsoft-Windows-FileManagerDataModel  |  1000      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1001      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1002      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1003      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1004      |                                                      |  Terminating operation [{Guid}]
-Microsoft-Windows-FileManagerDataModel  |  1005      |                                                      |  Operations are destroyed on {Boolean}
-Microsoft-Windows-FileManagerDataModel  |  1006      |                                                      |  New polling rate: {Integer} milliseconds
-Microsoft-Windows-FileManagerDataModel  |  1007      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1008      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1009      |                                                      |  Processing {Integer} operations
-Microsoft-Windows-FileManagerDataModel  |  1010      |                                                      |  {Integer} operations were processed
-Microsoft-Windows-FileManagerDataModel  |  1100      |                                                      |  NetworkStatusChanged event received when EventsEnabled = {Boolean}
-Microsoft-Windows-FileManagerDataModel  |  1101      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1102      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1103      |                                                      |  Setting EventsEnabled: {Boolean}
-Microsoft-Windows-FileManagerDataModel  |  1200      |                                                      |  Sync status from indexer for {Path} is {Status}, hr = {HResult}
-Microsoft-Windows-FileManagerDataModel  |  1201      |                                                      |  Notify change for property {PropertyName} with override property {OverridePropertyName}
-Microsoft-Windows-FileManagerDataModel  |  1202      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1203      |                                                      |  Global SyncEngineStatus: GlobalErroState [{GlobalError}] GlobalSyncState[{GlobalSyncState}]
-Microsoft-Windows-FileManagerDataModel  |  1204      |                                                      |  Global SyncEngineStatus: GlobalErroState [{GlobalError}] GlobalSyncState[{GlobalSyncState}]
-Microsoft-Windows-FileManagerDataModel  |  1205      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1206      |                                                      |  Could not check whether item is marked for offline availability for {This}, result: [{HResult}]
-Microsoft-Windows-FileManagerDataModel  |  1207      |                                                      |  Erasing entry for property {UnicodeString}
-Microsoft-Windows-FileManagerDataModel  |  1208      |                                                      |  Failed to retrieve IShellItem, hr = {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  1300      |                                                      |  Listening to shell change status: {Id}, on window id: {HResult}
-Microsoft-Windows-FileManagerDataModel  |  1301      |                                                      |  Stopped listening to shell change notifications, handler={Integer}
-Microsoft-Windows-FileManagerDataModel  |  1302      |                                                      |  Updating status to: {Integer}
-Microsoft-Windows-FileManagerDataModel  |  1303      |                                                      |  Stopping timer for window: {Integer}
-Microsoft-Windows-FileManagerDataModel  |  1304      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1305      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1306      |                                                      |  OnTileAvailabilityCheckTimerTick: Updating tile status
-Microsoft-Windows-FileManagerDataModel  |  1307      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1308      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1309      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1310      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1400      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1401      |                                                      |  Timer tick with refresh = [{UnicodeString}]
-Microsoft-Windows-FileManagerDataModel  |  1402      |                                                      |  Firing SyncEngineStatus event: currentError: {CurrentError}, currentSyncStatu: {CurrentSyncStatus}, currentTransferStatus: {CurrentSyncStatus}
-Microsoft-Windows-FileManagerDataModel  |  1403      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1404      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1500      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1501      |                                                      |  HealthMonitor's GetSyncEngineStatus stopped {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  1502      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1503      |                                                      |  HealthMonitor's GetIndexerStatus stopped {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  1504      |                                                      |  HealthMonitor will start in {Integer} seconds
-Microsoft-Windows-FileManagerDataModel  |  1505      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  1506      |                                                      |  HealthMonitor stopped: {HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  1600      |                                                      |  PerformanceTimer::Start failed with hr={HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  1601      |                                                      |  PerformanceTimer::GetDuration failed with hr={HresultValue}
-Microsoft-Windows-FileManagerDataModel  |  1700      |                                                      |
-Microsoft-Windows-FileManagerDataModel  |  60000     |                                                      |
+Provider                                |  Level        |  Event ID  |  Version  |  Channel                                             |  Task                                      |  Opcode  |  Keyword           |  Message
+----------------------------------------|---------------|------------|-----------|------------------------------------------------------|--------------------------------------------|----------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-FileManagerDataModel  |  Error        |  1         |  0        |  Microsoft-Windows-FileManagerDataModel/Operational  |  LogTask                                   |          |  Default           |  Error message: {UnicodeString}
+Microsoft-Windows-FileManagerDataModel  |  Warning      |  2         |  0        |  Microsoft-Windows-FileManagerDataModel/Operational  |  LogTask                                   |          |  Default           |  Warning message: {UnicodeString}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  3         |  0        |  Microsoft-Windows-FileManagerDataModel/Operational  |  LogTask                                   |          |  Default           |  Information message: {UnicodeString}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  4         |  0        |                                                      |  LogTask                                   |          |  Default           |  Information message: {UnicodeString}
+Microsoft-Windows-FileManagerDataModel  |  Warning      |  5         |  0        |                                                      |  LogTask                                   |          |  Default           |  Warning message: {UnicodeString}
+Microsoft-Windows-FileManagerDataModel  |  Error        |  6         |  0        |                                                      |  LogTask                                   |          |  Default           |  Error message: {UnicodeString}
+Microsoft-Windows-FileManagerDataModel  |  Warning      |  7         |  0        |                                                      |  LogTask                                   |          |  Default           |  backtrace from {MethodName}, trace: {Backtrace}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  100       |  0        |                                                      |  Authentication                            |  Stop    |  Authentication    |  RegisterEventHandlers threw {HresultValue}. If E_ACCESSDENIED, a Guest account could be a readon of this failure.
+Microsoft-Windows-FileManagerDataModel  |  Information  |  101       |  0        |                                                      |  OfflineSyncEngineNotification             |          |  Offline           |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  102       |  0        |                                                      |  Authentication                            |  Start   |  Authentication    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  103       |  0        |                                                      |  Authentication                            |  Start   |  Authentication    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  104       |  0        |                                                      |  Authentication                            |  Stop    |  Authentication    |  Status while getting the user identity: {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  105       |  0        |                                                      |  RemoteOperations                          |  Start   |  RemoteOperations  |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  106       |  0        |                                                      |  RemoteOperations                          |  Stop    |  RemoteOperations  |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  107       |  0        |                                                      |  RemoteOperations                          |  Start   |  RemoteOperations  |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  108       |  0        |                                                      |  RemoteOperations                          |  Stop    |  RemoteOperations  |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  109       |  0        |                                                      |  RemoteOperations                          |  Start   |  RemoteOperations  |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  110       |  0        |                                                      |  RemoteOperations                          |  Stop    |  RemoteOperations  |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  111       |  0        |                                                      |  SyncEngineManagerStartNotifyUserBrowsing  |          |  Startup           |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  200       |  0        |                                                      |  SyncDataProvider                          |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  201       |  0        |                                                      |  SyncDataProvider                          |  Stop    |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  202       |  0        |                                                      |  SyncDataProvider                          |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  204       |  0        |                                                      |  SyncDataProvider                          |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  205       |  0        |                                                      |  SyncDataProvider                          |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  300       |  0        |                                                      |  ShellDataProvider                         |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  301       |  0        |                                                      |  ShellDataProvider                         |  Stop    |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  302       |  0        |                                                      |  ShellDataProvider                         |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  400       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  401       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  402       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  403       |  0        |                                                      |  SyncEngineManager                         |          |                    |  Pause state changing: [{CurrentState}] => [{RequestedState}]
+Microsoft-Windows-FileManagerDataModel  |  Information  |  404       |  0        |                                                      |  SyncEngineManager                         |          |                    |  Pause state changed: {Boolean}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  405       |  0        |                                                      |  SyncEngineManager                         |          |                    |  Internal Pause state changed: {Boolean}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  406       |  0        |                                                      |  SyncEngineManager                         |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  407       |  0        |                                                      |  SyncEngineManager                         |  Stop    |                    |  ExecuteSyncPauseRequest status: {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  408       |  0        |                                                      |  SyncEngineManager                         |          |                    |  Calling Sync Engine {Boolean}...
+Microsoft-Windows-FileManagerDataModel  |  Information  |  409       |  0        |                                                      |  SyncEngineManager                         |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  410       |  0        |                                                      |  SyncEngineManager                         |  Stop    |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  411       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  412       |  0        |                                                      |  SyncEngineManager                         |  Stop    |                    |  Registering SyncEngine callback object
+Microsoft-Windows-FileManagerDataModel  |  Information  |  413       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  414       |  0        |                                                      |  SyncEngineManager                         |  Start   |                    |  Setting selective sync options for rootFolderId={UnicodeString}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  415       |  0        |                                                      |  SyncEngineManager                         |  Start   |                    |  Selective Sync option for ItemId = {ItemId}, state = {State}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  416       |  0        |                                                      |  SyncEngineManager                         |  Start   |                    |  Cleaning up SyncEngineManager requests list, {Integer} requests
+Microsoft-Windows-FileManagerDataModel  |  Information  |  417       |  0        |                                                      |  SyncEngineManager                         |  Start   |                    |  EndSetSelectiveSync called, cookie:{Cookie}, result: {Result}
+Microsoft-Windows-FileManagerDataModel  |  Error        |  418       |  0        |                                                      |  SyncEngineManager                         |          |                    |  Couldn't start the SyncEngine, hr = {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  419       |  0        |                                                      |  SyncEngineManager                         |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  420       |  0        |                                                      |  SyncEngineManager                         |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Error        |  421       |  0        |                                                      |  SyncEngineManager                         |  Stop    |                    |  BeginRefreshSync stopped: {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  422       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  423       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  424       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  425       |  0        |                                                      |  SyncEngineManager                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  426       |  0        |                                                      |  SyncEngineManager                         |          |                    |  Sync Engine callback is no longer valid: {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  500       |  0        |                                                      |  AuthenticationManager                     |          |                    |  FileSyncBlockedReason: {Integer}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  501       |  0        |                                                      |  AuthenticationManager                     |          |                    |  FileSyncBlocked event fired: {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  502       |  0        |                                                      |  AuthenticationManager                     |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Error        |  503       |  0        |                                                      |  AuthenticationManager                     |          |                    |  AuthenticationErrorEvent fired: [{HresultValue}]
+Microsoft-Windows-FileManagerDataModel  |  Information  |  600       |  0        |                                                      |  BindableShellItem                         |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Warning      |  601       |  0        |                                                      |  BindableShellItem                         |          |                    |  Retrieve fast properties store. Extrinsic property store could not be created, errorCode: {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  700       |  0        |                                                      |  BulkOperationManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  701       |  0        |                                                      |  BulkOperationManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  702       |  0        |                                                      |  BulkOperationManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  703       |  0        |                                                      |  BulkOperationManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  704       |  0        |                                                      |  BulkOperationManager                      |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  705       |  0        |                                                      |  BulkOperationManager                      |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  706       |  0        |                                                      |  BulkOperationManager                      |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  707       |  0        |                                                      |  BulkOperationManager                      |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  708       |  0        |                                                      |  BulkOperationManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  709       |  0        |                                                      |  BulkOperationManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  710       |  0        |                                                      |  BulkOperationManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  711       |  0        |                                                      |  BulkOperationManager                      |          |                    |  In StartGetRunningOperations, _pollingInProgress is {Boolean}.
+Microsoft-Windows-FileManagerDataModel  |  Information  |  712       |  0        |                                                      |  BulkOperationManager                      |          |                    |  Enabling/Disabling toast notificiations: {Boolean}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  713       |  0        |                                                      |  BulkOperationManager                      |          |                    |  Setting new polling frequency to {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  714       |  0        |                                                      |  BulkOperationManager                      |  Start   |                    |  Handling interrupt [{Guid}]
+Microsoft-Windows-FileManagerDataModel  |  Information  |  800       |  0        |                                                      |  DuplicateDetectionManager                 |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  801       |  0        |                                                      |  DuplicateDetectionManager                 |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  900       |  0        |                                                      |  LocalDataProvider                         |          |                    |  Location {UnicodeString} is a fastlocation, generating scope.
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1000      |  0        |                                                      |  LocalOperationsDataSource                 |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1001      |  0        |                                                      |  LocalOperationsDataSource                 |  Stop    |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1002      |  0        |                                                      |  LocalOperationsDataSource                 |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1003      |  0        |                                                      |  LocalOperationsDataSource                 |  Stop    |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1004      |  0        |                                                      |  LocalOperationsDataSource                 |          |                    |  Terminating operation [{Guid}]
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1005      |  0        |                                                      |  LocalOperationsDataSource                 |          |                    |  Operations are destroyed on {Boolean}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1006      |  0        |                                                      |  LocalOperationsDataSource                 |          |                    |  New polling rate: {Integer} milliseconds
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1007      |  0        |                                                      |  LocalOperationsDataSource                 |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1008      |  0        |                                                      |  LocalOperationsDataSource                 |  Stop    |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1009      |  0        |                                                      |  LocalOperationsDataSource                 |          |                    |  Processing {Integer} operations
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1010      |  0        |                                                      |  LocalOperationsDataSource                 |  Stop    |                    |  {Integer} operations were processed
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1100      |  0        |                                                      |  NetworkStatusManager                      |          |                    |  NetworkStatusChanged event received when EventsEnabled = {Boolean}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1101      |  0        |                                                      |  NetworkStatusManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1102      |  0        |                                                      |  NetworkStatusManager                      |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1103      |  0        |                                                      |  NetworkStatusManager                      |          |                    |  Setting EventsEnabled: {Boolean}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1200      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |  Sync status from indexer for {Path} is {Status}, hr = {HResult}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1201      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |  Notify change for property {PropertyName} with override property {OverridePropertyName}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1202      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1203      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |  Global SyncEngineStatus: GlobalErroState [{GlobalError}] GlobalSyncState[{GlobalSyncState}]
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1204      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |  Global SyncEngineStatus: GlobalErroState [{GlobalError}] GlobalSyncState[{GlobalSyncState}]
+Microsoft-Windows-FileManagerDataModel  |  Warning      |  1205      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Warning      |  1206      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |  Could not check whether item is marked for offline availability for {This}, result: [{HResult}]
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1207      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |  Erasing entry for property {UnicodeString}
+Microsoft-Windows-FileManagerDataModel  |  Error        |  1208      |  0        |                                                      |  OverrideCustomPropertyProvider            |          |                    |  Failed to retrieve IShellItem, hr = {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1300      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |  Listening to shell change status: {Id}, on window id: {HResult}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1301      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |  Stopped listening to shell change notifications, handler={Integer}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1302      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |  Updating status to: {Integer}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1303      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |  Stopping timer for window: {Integer}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1304      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1305      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1306      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |  OnTileAvailabilityCheckTimerTick: Updating tile status
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1307      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1308      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1309      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1310      |  0        |                                                      |  ShellChangeNotificationHandler            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1400      |  0        |                                                      |  SyncEngineStatusProvider                  |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1401      |  0        |                                                      |  SyncEngineStatusProvider                  |          |                    |  Timer tick with refresh = [{UnicodeString}]
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1402      |  0        |                                                      |  SyncEngineStatusProvider                  |          |                    |  Firing SyncEngineStatus event: currentError: {CurrentError}, currentSyncStatu: {CurrentSyncStatus}, currentTransferStatus: {CurrentSyncStatus}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1403      |  0        |                                                      |  SyncEngineStatusProvider                  |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1404      |  0        |                                                      |  SyncEngineStatusProvider                  |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1500      |  0        |                                                      |  HealthMonitor                             |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1501      |  0        |                                                      |  HealthMonitor                             |  Stop    |                    |  HealthMonitor's GetSyncEngineStatus stopped {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1502      |  0        |                                                      |  HealthMonitor                             |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1503      |  0        |                                                      |  HealthMonitor                             |  Stop    |                    |  HealthMonitor's GetIndexerStatus stopped {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1504      |  0        |                                                      |  HealthMonitor                             |  Start   |                    |  HealthMonitor will start in {Integer} seconds
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1505      |  0        |                                                      |  HealthMonitor                             |  Start   |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1506      |  0        |                                                      |  HealthMonitor                             |  Stop    |                    |  HealthMonitor stopped: {HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Warning      |  1600      |  0        |                                                      |  PerformanceTimer                          |          |                    |  PerformanceTimer::Start failed with hr={HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Warning      |  1601      |  0        |                                                      |  PerformanceTimer                          |          |                    |  PerformanceTimer::GetDuration failed with hr={HresultValue}
+Microsoft-Windows-FileManagerDataModel  |  Information  |  1700      |  0        |                                                      |                                            |          |                    |
+Microsoft-Windows-FileManagerDataModel  |  Information  |  60000     |  0        |                                                      |                                            |          |                    |

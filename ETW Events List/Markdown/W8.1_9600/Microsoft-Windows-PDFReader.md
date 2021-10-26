@@ -1,229 +1,229 @@
-Provider                     |  Event ID  |  Channel                             |  Message
------------------------------|------------|--------------------------------------|---------
-Microsoft-Windows-PDFReader  |  1         |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  2         |  Microsoft-Windows-glcnd/Admin       |
-Microsoft-Windows-PDFReader  |  3         |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  4         |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  15        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  16        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  17        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  18        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  19        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  20        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  21        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  22        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  31        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  32        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  33        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  34        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  35        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  44        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  45        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  46        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  47        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  58        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  59        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  60        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  61        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  62        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  63        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  64        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  65        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  66        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  67        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  68        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  69        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  70        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  71        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  72        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  73        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  74        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  75        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  76        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  77        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  78        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  79        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  87        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  88        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  89        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  90        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  91        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  92        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  93        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  94        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  95        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  96        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  97        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  98        |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  99        |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  100       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  101       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  102       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  103       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  104       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  105       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  106       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  107       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  108       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  109       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  110       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  111       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  112       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  113       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  114       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  115       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  116       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  117       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  118       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  119       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  120       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  121       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  124       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  125       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  126       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  127       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  128       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  129       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  130       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  131       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  133       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  134       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  135       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  136       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  137       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  138       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  139       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  140       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  141       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  142       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  143       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  144       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  145       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  146       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  147       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  148       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  149       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  150       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  151       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  152       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  153       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  154       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  155       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  156       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  157       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  158       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  159       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  160       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  161       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  162       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  163       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  164       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  165       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  166       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  167       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  170       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  171       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  172       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  177       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  178       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  179       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  180       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  181       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  182       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  183       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  184       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  185       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  186       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  187       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  188       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  189       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  190       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  191       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  192       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  193       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  194       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  195       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  196       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  197       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  198       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  199       |  Microsoft-Windows-glcnd/Admin       |
-Microsoft-Windows-PDFReader  |  200       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  201       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  202       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  203       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  204       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  206       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  207       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  208       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  209       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  210       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  211       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  212       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  213       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  214       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  215       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  216       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  217       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  218       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  219       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  220       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  221       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  222       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  223       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  224       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  225       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  226       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  227       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  228       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  229       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  230       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  231       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  232       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  233       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  234       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  235       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  236       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  237       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  238       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  239       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  240       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  241       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  242       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  245       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  246       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  247       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  248       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  249       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  250       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  251       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  252       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  253       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  254       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  255       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  256       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  257       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  258       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  259       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  260       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  261       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  262       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  263       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  264       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  265       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  266       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  267       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  268       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  269       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  270       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  272       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  273       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  274       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  275       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  276       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  277       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  278       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  279       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  280       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  281       |  Microsoft-Windows-glcnd/Diagnostic  |
-Microsoft-Windows-PDFReader  |  282       |  Microsoft-Windows-glcnd/Debug       |
-Microsoft-Windows-PDFReader  |  283       |  Microsoft-Windows-glcnd/Debug       |
+Provider                     |  Level              |  Event ID  |  Version  |  Channel                             |  Task                      |  Opcode     |  Keyword  |  Message
+-----------------------------|---------------------|------------|-----------|--------------------------------------|----------------------------|-------------|-----------|---------
+Microsoft-Windows-PDFReader  |  win:Informational  |  1         |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Error          |  2         |  0        |  Microsoft-Windows-glcnd/Admin       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  3         |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadFile                  |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  4         |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadFile                  |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  15        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadImage                 |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  16        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadImage                 |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  17        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  EmbededColorProfile       |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  18        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  EmbededColorProfile       |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  19        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplyDecodeArray          |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  20        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplyDecodeArray          |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  21        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplyDctDecodeArray       |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  22        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplyDctDecodeArray       |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  31        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SetImagePixels            |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  32        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SetImagePixels            |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  33        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateMaskArray           |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  34        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateMaskArray           |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Error          |  35        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  44        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageBuild                 |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  45        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageBuild                 |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  46        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  FontResourceLoad          |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  47        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  FontResourceLoad          |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  58        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TriggerChangeLayout       |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  59        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TriggerChangeLayout       |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  60        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ChangeLayout              |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  61        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ChangeLayout              |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  62        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  StepZoom                  |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  63        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  StepZoom                  |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  64        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SmoothZoom                |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  65        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SmoothZoom                |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  66        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Resize                    |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  67        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Resize                    |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  68        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  69        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  70        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBarShow            |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  71        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBarShow            |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  72        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBarHide            |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  73        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CommandBarHide            |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  74        |  0        |  Microsoft-Windows-glcnd/Debug       |  RotatePages               |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  75        |  0        |  Microsoft-Windows-glcnd/Debug       |  RotatePages               |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  76        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  77        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  78        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Find.Action               |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  79        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Find.Action               |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  87        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  88        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  89        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Scroll                    |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  90        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Scroll                    |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  91        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Error          |  92        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  93        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  94        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  95        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  96        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  97        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  98        |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  99        |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageRender                |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  100       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageRender                |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  101       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LaunchURI                 |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  102       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  103       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  104       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  105       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  106       |  0        |  Microsoft-Windows-glcnd/Debug       |  PopulateSummaryPane       |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  107       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageAsyncPrint            |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  108       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageAsyncPrint            |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  109       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Save                      |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  110       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  Save                      |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  111       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightCreate           |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  112       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightDelete           |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  113       |  0        |  Microsoft-Windows-glcnd/Debug       |  ManipulateView            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  114       |  0        |  Microsoft-Windows-glcnd/Debug       |  ManipulateView            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  115       |  0        |  Microsoft-Windows-glcnd/Debug       |  Flyout                    |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  116       |  0        |  Microsoft-Windows-glcnd/Debug       |  Flyout                    |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  117       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  118       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadFormFields            |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  119       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LoadFormFields            |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Error          |  120       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  121       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  LaunchURI                 |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  124       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplicationLaunch         |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  125       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplicationLaunch         |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  126       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplicationRehydrate      |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  127       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ApplicationRehydrate      |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  128       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SelectionRendering        |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  129       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SelectionRendering        |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  130       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  WordSelection             |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  131       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  WordSelection             |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  133       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  134       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  135       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  136       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  137       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageAsyncPrintPreview     |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  138       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageAsyncPrintPreview     |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  139       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  140       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ScrollToDestination       |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  141       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ScrollToDestination       |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  142       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightCreate           |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  143       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightDelete           |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  144       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightRender           |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  145       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  HighlightRender           |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  146       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  WindowsSearch.Show        |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  147       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  WindowsSearch.Show        |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  148       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ThumbnailHandler.Show     |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  149       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ThumbnailHandler.Show     |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  150       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocSummary                |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  151       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocSummary                |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  152       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  153       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  154       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  155       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentPrintJob          |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  156       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentPrintJob          |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  157       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  158       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  159       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PreviewHandler            |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  160       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PreviewHandler            |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  161       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  RenderView                |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  162       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  RenderView                |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  163       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  164       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SemanticZoom              |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  165       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SemanticZoom              |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  166       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageResourceUpdate        |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  167       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PageResourceUpdate        |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  170       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentViewCopy          |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  171       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentViewCopy          |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  172       |  0        |  Microsoft-Windows-glcnd/Debug       |  ManipulationDelta         |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  177       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  178       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  179       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  180       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  181       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  182       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  183       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  184       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InkRendering              |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  185       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InkRendering              |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  186       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InkUpdate                 |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  187       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InkUpdate                 |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  188       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  UpdateViewState           |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  189       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  UpdateViewState           |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  190       |  0        |  Microsoft-Windows-glcnd/Debug       |  AsyncRenderViewRequest    |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  191       |  0        |  Microsoft-Windows-glcnd/Debug       |  AsyncRenderViewRequest    |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  192       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DrawingsurfaceDrawEvent   |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  193       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DrawingsurfaceDrawEvent   |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  194       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocViewAnimation          |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  195       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocViewAnimation          |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  196       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  FileAccessed              |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  197       |  0        |  Microsoft-Windows-glcnd/Debug       |  IncrementalRender         |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  198       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocSummary                |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Error          |  199       |  0        |  Microsoft-Windows-glcnd/Admin       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  200       |  0        |  Microsoft-Windows-glcnd/Debug       |  PageView                  |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  201       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SemanticZoomViewChanging  |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  202       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SemanticZoomViewChanging  |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  203       |  0        |  Microsoft-Windows-glcnd/Debug       |  PickerFileSelected        |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  204       |  0        |  Microsoft-Windows-glcnd/Debug       |  PickerFileSelected        |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  206       |  0        |  Microsoft-Windows-glcnd/Debug       |  InteractiveControl        |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  207       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PrintPreview              |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  208       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  PrintPreview              |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  209       |  0        |  Microsoft-Windows-glcnd/Debug       |  JumpToDestination         |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  210       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  211       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TextCopy                  |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  212       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TextCopy                  |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  213       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  214       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  215       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  216       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InteractiveControlRender  |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  217       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InteractiveControlRender  |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  218       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  219       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  220       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  221       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  222       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  223       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  224       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  225       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  226       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  227       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  228       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  229       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  230       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  231       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  232       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  233       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  234       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  235       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  236       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  237       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  238       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  239       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  240       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  241       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  242       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  245       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  246       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  247       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  248       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  249       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  250       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SwitchTo                  |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  251       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SwitchTo                  |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  252       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  SwitchTo                  |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  253       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  TileRender                |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  254       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  255       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  256       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ExecuteJavascript         |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  257       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ExecuteJavascript         |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  258       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  VerifySignature           |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  259       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  VerifySignature           |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  260       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  VerifyCertificate         |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  261       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  VerifyCertificate         |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  262       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  263       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  264       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  265       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  266       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentNavBarShow        |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  267       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentNavBarShow        |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  268       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentNavBarHide        |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  269       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  DocumentNavBarHide        |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  270       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  272       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  273       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateWindow              |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  274       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateWindow              |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  275       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CreateWindow              |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  276       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CloseDocument             |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  277       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CloseDocument             |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  278       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CloseWindow               |  win:Start  |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  279       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  CloseWindow               |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  280       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ContextMenuShow           |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Informational  |  281       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  ContextMenuHide           |  win:Stop   |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  282       |  0        |  Microsoft-Windows-glcnd/Debug       |  MRU                       |             |  Reader   |
+Microsoft-Windows-PDFReader  |  win:Verbose        |  283       |  0        |  Microsoft-Windows-glcnd/Debug       |  MRU                       |             |  Reader   |

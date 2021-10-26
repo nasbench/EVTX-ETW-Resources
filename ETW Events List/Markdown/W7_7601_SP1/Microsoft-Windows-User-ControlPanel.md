@@ -1,8 +1,8 @@
-Provider                             |  Event ID  |  Channel                                                      |  Message
--------------------------------------|------------|---------------------------------------------------------------|---------
-Microsoft-Windows-User-ControlPanel  |  6001      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6002      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6003      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6004      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6005      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
-Microsoft-Windows-User-ControlPanel  |  6006      |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |
+Provider                             |  Level        |  Event ID  |  Version  |  Channel                                                      |  Task                 |  Opcode  |  Keyword  |  Message
+-------------------------------------|---------------|------------|-----------|---------------------------------------------------------------|-----------------------|----------|-----------|---------
+Microsoft-Windows-User-ControlPanel  |  Information  |  6001      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Initialization_Core  |  Start   |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6002      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Initialization_Core  |  Stop    |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6003      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Initialization_Page  |  Start   |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6004      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Initialization_Page  |  Stop    |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6005      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Settings_UserCreate  |  Start   |           |
+Microsoft-Windows-User-ControlPanel  |  Information  |  6006      |  0        |  Microsoft-Windows-User Control Panel Performance/Diagnostic  |  Settings_UserCreate  |  Stop    |           |

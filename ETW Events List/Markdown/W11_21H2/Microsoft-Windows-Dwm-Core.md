@@ -1,319 +1,319 @@
-Provider                    |  Event ID  |  Channel                                |  Message
-----------------------------|------------|-----------------------------------------|---------
-Microsoft-Windows-Dwm-Core  |  1         |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  2         |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  6         |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  7         |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  8         |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  9         |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  10        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  11        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  12        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  13        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  14        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  15        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  16        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  19        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  21        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  24        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  25        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  26        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  27        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  29        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  30        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  31        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  32        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  33        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  34        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  35        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  40        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  41        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  42        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  43        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  44        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  45        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  46        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  49        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  50        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  51        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  54        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  55        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  56        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  57        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  58        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  59        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  60        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  61        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  62        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  63        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  64        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  65        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  66        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  67        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  68        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  79        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  80        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  83        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  84        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  85        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  87        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  88        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  91        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  94        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  95        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  96        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  97        |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  100       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  110       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  111       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  112       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  113       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  114       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  133       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  134       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  135       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  136       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  137       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  138       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  139       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  140       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  141       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  144       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  145       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  146       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  147       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  148       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  151       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  152       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  153       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  154       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  157       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  158       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  163       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  164       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  165       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  166       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  168       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  169       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  172       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  173       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  175       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  180       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  181       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  182       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  183       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  185       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  186       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  187       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  189       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  192       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  193       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  194       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  195       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  196       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  197       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  201       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  202       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  203       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  204       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  205       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  206       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  208       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  209       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  210       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  211       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  212       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  214       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  215       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  216       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  217       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  218       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  219       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  220       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  221       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  222       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  223       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  224       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  225       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  230       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  231       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  235       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  236       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  237       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  238       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  239       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  240       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  246       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  247       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  248       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  249       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  253       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  254       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  255       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  259       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  260       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  265       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  266       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  267       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  268       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  269       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  270       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  271       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  272       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  273       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  274       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  275       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  276       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  277       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  278       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  284       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  285       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  286       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  287       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  288       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  289       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  290       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  291       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  292       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  293       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  294       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  295       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  296       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  297       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  298       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  299       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  300       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  301       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  302       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  303       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  304       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  309       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  310       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  311       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  313       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  314       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  315       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  316       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  317       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  318       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  319       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  320       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  321       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  322       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  323       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  324       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  333       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  334       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  335       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  336       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  342       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  343       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  344       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  345       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  346       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  347       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  348       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  349       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  350       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  351       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  352       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  353       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  354       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  355       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  356       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  363       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  364       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  365       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  366       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  367       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  368       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  371       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  373       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  374       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  375       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  376       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  377       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  378       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  379       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  380       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  381       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  382       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  383       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  385       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  386       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  387       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  388       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  389       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  390       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  391       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  392       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  393       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  394       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  395       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  396       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  397       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  398       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  399       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  400       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  401       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  402       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  403       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  404       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  405       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  406       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  409       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  410       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  411       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  412       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  413       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  414       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  415       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  416       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  417       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  418       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  419       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  420       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  421       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  422       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  423       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  424       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  425       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  426       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  427       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  428       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  429       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  430       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  431       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  432       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  433       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  434       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  435       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  436       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  437       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  438       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  439       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  440       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  441       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  442       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  443       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  444       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  445       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  446       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  447       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  448       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  449       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  450       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  451       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  452       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  453       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  454       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  455       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  456       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  457       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  458       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  459       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  460       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  461       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  462       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  464       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
-Microsoft-Windows-Dwm-Core  |  465       |  Microsoft-Windows-Dwm-Core/Diagnostic  |
+Provider                    |  Level        |  Event ID  |  Version  |  Channel                                |  Task                                                              |  Opcode  |  Keyword                                         |  Message
+----------------------------|---------------|------------|-----------|-----------------------------------------|--------------------------------------------------------------------|----------|--------------------------------------------------|---------
+Microsoft-Windows-Dwm-Core  |  Information  |  1         |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_FRAMEINFO                                                |          |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  2         |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_TIME                                                     |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  6         |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_WFVB                                                     |  Start   |  DwmFrameRate                                    |
+Microsoft-Windows-Dwm-Core  |  Information  |  7         |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_WFVB                                                     |  Stop    |  DwmFrameRate                                    |
+Microsoft-Windows-Dwm-Core  |  Information  |  8         |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_WFW                                                      |  Start   |  DwmFrameRate                                    |
+Microsoft-Windows-Dwm-Core  |  Information  |  9         |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_WFW                                                      |  Stop    |  DwmFrameRate                                    |
+Microsoft-Windows-Dwm-Core  |  Information  |  10        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PROCESS_FRAME                                            |  Start   |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  11        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PROCESS_FRAME                                            |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  12        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PROCESS_FRAME                                            |  Stop    |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  13        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_RENDER                                                   |  Start   |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  14        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_RENDER                                                   |  Stop    |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  15        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PRESENT                                                  |  Start   |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  16        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PRESENT                                                  |  Stop    |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  19        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_GETPRESENTSTATS                                          |  Start   |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  21        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_GETPRESENTSTATS                                          |  Stop    |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  24        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_GLITCH                                                   |          |  FrameDrawInconsistencyInformation               |
+Microsoft-Windows-Dwm-Core  |  Information  |  25        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_GLITCH_RECOVERY_ATTEMPT                                  |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  26        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_RESET                                                    |  Start   |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  27        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_RESET                                                    |  Stop    |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  29        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_PUSH_INTERNAL_LAYER_EVENT                                 |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  30        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_PUSH_INTERNAL_LAYER_EVENT                                 |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  31        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_POP_INTERNAL_LAYER_EVENT                                  |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  32        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_POP_INTERNAL_LAYER_EVENT                                  |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  33        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_BITMAPCOPYEVENT                                           |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  34        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_COPYFRONTTOBACKBUFFEREVENT                                |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  35        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_COPYFRONTTOBACKBUFFEREVENT                                |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  40        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_CLEAREVENT                                                |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  41        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_CLEAREVENT                                                |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  42        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DIRTYREGIONEVENT                                          |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Information  |  43        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_OCCLUSIONEVENT                                            |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  44        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_OCCLUSIONEVENT                                            |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  45        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_OCCLUSIONEVENT                                            |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  46        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DWMUPDATEWINDOW                                           |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  49        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DRAWEVENT                                                 |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  50        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DRAWEVENT                                                 |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  51        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DRAWEVENT                                                 |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  54        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSQUEUEEVENT                              |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  55        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSQUEUEEVENT                              |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  56        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSQUEUEEVENT                              |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  57        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PRECOMPUTEEVENT                                |  Start   |  DwmFrameRate                                    |
+Microsoft-Windows-Dwm-Core  |  Information  |  58        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PRECOMPUTEEVENT                                |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  59        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_RENDEREVENT                                    |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  60        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_RENDEREVENT                                    |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  61        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PRESENTEVENT                                   |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  62        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PRESENTEVENT                                   |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  63        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSPRESENTHISTORY                          |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  64        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSPRESENTHISTORY_GetPresentHistory        |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  65        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSPRESENTHISTORY                          |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  66        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_CHECKDEVICESTATE                               |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  67        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_CHECKDEVICESTATE                               |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  68        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_CHECKDEVICESTATE                               |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  79        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_VBLANK_LOOP                                              |  Start   |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  80        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_VBLANK_LOOP                                              |  Stop    |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  83        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  GDISPRITE_LOGICALSURFACE_ASSOCIATION                              |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  84        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  WINDOWNODE_GDISPRITE_ASSOCIATION                                  |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  85        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_ROUNDTRIPREQUEST_STATE                                   |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  87        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PRESENTHISTORYTOKEN_GDI                                  |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  88        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PRESENTHISTORYTOKEN_GDISYSMEM                            |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  91        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PRESENTHISTORYTOKEN_BLT                                  |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  94        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSDEFERREDTOKENS                          |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  95        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSDEFERREDTOKENS                          |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  96        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_MAGNIFIERRENDERTARGET_CAPTUREBITS                         |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  97        |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_MAGNIFIERRENDERTARGET_CAPTUREBITS                         |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  100       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  BIND_GDISPRITEBITMAP_FIRST_TOKEN                                  |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  110       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_UPDATE_TIMES                                             |  Start   |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  111       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_UPDATE_TIMES                                             |  Stop    |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  112       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  UCE_PROCESSANIMATERESOURCES                                       |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  113       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  UCE_PROCESSANIMATERESOURCES                                       |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  114       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_UPDATE_FRAME_INDEXES                                     |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  133       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DCOMPEVENT_RESOURCE                                               |          |  FrameVisualization DwmInput                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  134       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DCOMPEVENT_ANIMATION_INITIAL_VALUE                                |          |  Animations                                      |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  135       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DCOMPEVENT_ANIMATION_UPDATE_VALUE                                 |          |  Animations                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  136       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DCOMPEVENT_END_ANIMATION                                          |          |  Animations                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  137       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_NEW_EFFECTIVE_REFRESH_PERIOD_DELTAS                      |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  138       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_NEW_EFFECTIVE_REFRESH_PERIOD                             |          |  DwmFrameRate                                    |
+Microsoft-Windows-Dwm-Core  |  Information  |  139       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_DXGI_STATUS_OCCLUDED                                     |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  140       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_DXGI_OCCLUSION_EVENT                                     |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  141       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_DXGI_PRESENT_SUCCEEDED                                   |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  144       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DIRECTFLIP_TRANSITIONEVENT                                |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  145       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DIRECTFLIP_PRESENTEVENT                                   |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  146       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DIRECTFLIP_SUPPORTEVENT                                   |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  147       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  Pinning_CompSurfInfoPin                                           |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  148       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  Pinning_CompSurfInfoUnpin                                         |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  151       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_RENDEROPT_DISCARDRESOURCEEVENT                            |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  152       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_RENDEROPT_TILEABLECOPYEVENT                               |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  153       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OPEN_SHARED_TEXTURE_EVENT                                         |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  154       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OPEN_SHARED_TEXTURE_EVENT                                         |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  157       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  PROCESS_COMPOSITION_SURFACE_UPDATE_EVENT                          |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  158       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  PROCESS_COMPOSITION_SURFACE_UPDATE_EVENT                          |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  163       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_PUSH_EXTERNAL_LAYER_EVENT                                 |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  164       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_PUSH_EXTERNAL_LAYER_EVENT                                 |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  165       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_POP_EXTERNAL_LAYER_EVENT                                  |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  166       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_POP_EXTERNAL_LAYER_EVENT                                  |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  168       |  1        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ANIMATION_ANALYSIS_DEBUG_EVENT                                    |          |  LowOverheadSmoothnessTracking                   |
+Microsoft-Windows-Dwm-Core  |  Information  |  169       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_RENDERTIME                                               |          |  FrameDrawInconsistencyInformation               |
+Microsoft-Windows-Dwm-Core  |  Information  |  172       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_GLITCH_DETECTED                                          |          |  FrameDrawInconsistencyInformation DwmFrameRate  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  173       |  1        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  TOUCH_FIRST_FRAME_EVENT                                           |          |  LowOverheadSmoothnessTracking DwmInput          |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  175       |  3        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  TOUCH_LAST_FRAME_EVENT                                            |          |  LowOverheadSmoothnessTracking DwmInput          |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  180       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DRAWING_CONTEXT_FRAME                                     |  Start   |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  181       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DRAWING_CONTEXT_FRAME                                     |  Stop    |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  182       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DRAWING_CONTEXT_STATE                                     |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  183       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_COMPOSITION_SURFACE_DRAW                                  |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  185       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_CVI_UPDATE                                                |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  186       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DIRECTFLIP_CANDIDATERECORDEVENT                           |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  187       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DIRECTFLIP_CANDIDATEOVERWRITEVENT                         |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  189       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_TIMEADJUSTED_BETWEENFRAMES                               |          |  FrameDrawInconsistencyInformation               |
+Microsoft-Windows-Dwm-Core  |  Information  |  192       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_CLEAR_D2D_CACHES                                         |  Start   |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  193       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_CLEAR_D2D_CACHES                                         |  Stop    |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  194       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSSURFACEUPDATES                          |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  195       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MILEVENT_MEDIA_UCE_PROCESSSURFACEUPDATES                          |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  196       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_SURFACEUPDATE                                            |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  197       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_RENDEROPT_DISCARDVIEWEVENT                                |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  201       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_DERIVEDISPLAYSET                                         |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  202       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_RETIREFRAME                                              |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  203       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_GETPRESENTSTATS1                                         |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  204       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_PRESENT_STATS_DELTAS                                     |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  205       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  RENDER_CVIPASS                                                    |  Start   |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  206       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  RENDER_CVIPASS                                                    |  Stop    |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  208       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HIT_TEST                                                          |  Start   |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  209       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HIT_TEST                                                          |  Stop    |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  210       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HIT_TEST_TREE_WALK                                                |  Start   |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  211       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HIT_TEST_TREE_WALK                                                |  Stop    |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  212       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INPUT_SINK                                                        |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  214       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DETECT_TOPLEVELWINDOW_DESTROY                                     |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  215       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_GETCAPS                                                   |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  216       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_RECORDCANDIDATE                                           |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  217       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_CHECKOCCLUSION                                            |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  218       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_CHECKSUPPORT                                              |  Start   |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  219       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_CHECKSUPPORT                                              |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  220       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_CHECKSUPPORT                                              |  Stop    |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  221       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_CANDIDATECOLLECTION                                       |  Start   |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  222       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_CANDIDATECOLLECTION                                       |  Stop    |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  223       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_PRESENT                                                   |  Start   |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  224       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_PRESENT                                                   |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  225       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  OVERLAY_PRESENT                                                   |  Stop    |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  230       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DETECT_REMOTEAPPMODE_SWITCH                                       |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  231       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DETECT_DESKTOP_ENDOFUPDATES                                       |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  235       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_PRIMITIVE_GROUP_DRAW                                      |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  236       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_D2DLAYERCREATEREASON                                      |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  237       |  1        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  TELEMETRY_ANIMATION_PERFORMANCE_ANALYSIS_EVENT                    |          |  LowOverheadSmoothnessTracking                   |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  238       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ANIMATION_FIRST_FRAME_EVENT                                       |          |  LowOverheadSmoothnessTracking                   |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  239       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ANIMATION_LAST_FRAME_EVENT                                        |          |  LowOverheadSmoothnessTracking                   |
+Microsoft-Windows-Dwm-Core  |  Information  |  240       |  2        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  TELEMETRY_AGGREGATED_VSYNC_ANALYSIS_EVENT                         |          |  LowOverheadSmoothnessTracking                   |
+Microsoft-Windows-Dwm-Core  |  Information  |  246       |  1        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DEBUG_FRAME_COUNTER                                               |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  247       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_SETINDEPENDENTFLIPINFO                                    |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  248       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_PRIMITIVE_GROUP_SELF_OCCLUSION_INFO                       |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Information  |  249       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INPUT_SINK_TRANSFORM_UPDATE                                       |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  253       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_RTCAPTURE                                                 |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  254       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_RTCAPTURE                                                 |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  255       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_RTCAPTURE_GETBITS                                         |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  259       |  1        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  TELEMETRY_ANIMATION_TTFF_ANALYSIS_EVENT                           |          |  LowOverheadSmoothnessTracking                   |
+Microsoft-Windows-Dwm-Core  |  Information  |  260       |  1        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  TELEMETRY_AGGREGATED_TTFF_ANALYSIS_EVENT                          |          |  LowOverheadSmoothnessTracking                   |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  265       |  1        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DCOMPEVENT_PRIMITIVEGROUP_UPDATE                                  |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Information  |  266       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_THREAD_STARTUP                                       |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  267       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_THREAD_CLEANUP                                       |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  268       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_FRAME_RECEIVED                                       |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  269       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_FRAME_QUEUED                                         |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  270       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_FRAME_DEQUEUED                                       |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  271       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INTERACTION_CREATED                                               |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  272       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INTERACTION_VISUAL_UPDATE                                         |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  273       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INTERACTION_TOUCH_CONFIGURATION_CHANGED                           |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  274       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INTERACTION_DESTROYED                                             |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  275       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_CONTEXT_CREATED                                      |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  276       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_CONTEXT_DESTROYED                                    |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  277       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_CONTEXT_NEW_CONTACT                                  |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  278       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_CONTEXT_CONTACT_DEPARTED                             |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  284       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ADVANCED_DIRECTFLIP_RECORDCANDIDATE                               |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  285       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ADVANCED_DIRECTFLIP_CREATERESTOREBUFFER                           |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  286       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ADVANCED_DIRECTFLIP_SAVECONTENT                                   |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  287       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ADVANCED_DIRECTFLIP_RESTORECONTENT                                |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  288       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ADVANCED_DIRECTFLIP_CANCEL                                        |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  289       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DISPLAYSURFACE_SWAPCHAINCANDIDATE                                 |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  290       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DISPLAYSURFACE_REJECTCANDIDATE                                    |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  291       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DISPLAYSURFACE_CANDIDATEATTRIBUTES                                |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  292       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MANIPULATION_POINTER_BUFFERED                                     |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  293       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_PUBLISH_SEB_NOTIFICATION                                  |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  294       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MIDMANIPULATION_UPDATE_INTERACTION_ADDITION                       |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  295       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MIDMANIPULATION_UPDATE_INTERACTION_REMOVAL                        |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  296       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MIDMANIPULATION_UPDATE_VISUAL_ADDITION                            |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  297       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MIDMANIPULATION_UPDATE_VISUAL_REMOVAL                             |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  298       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MIDMANIPULATION_UPDATE_VISUAL_PROP                                |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  299       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MIDMANIPULATION_UPDATE_CAPTURE_CONTACT                            |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  300       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INTERACTION_TOUCHPAD_CONFIGURATION_CHANGED                        |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  301       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INTERACTION_PEN_CONFIGURATION_CHANGED                             |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  302       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INTERACTION_MOUSE_CONFIGURATION_CHANGED                           |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  303       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_FRAME_VSYNCDEADLINES                                     |          |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  304       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_PRESENT                                                   |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  309       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_NEW_NOMINAL_REFRESH_PERIOD                               |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  310       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_HW_PROTECTION_TEMPDISABLE                                 |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  311       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ENDFRAME_DRAWLIST_BATCH_STATS                                     |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  313       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ENDFRAME_PRIMITIVE_GROUP_STATS                                    |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  314       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ENDFRAME_TESSELLATED_PRIMITIVES_STATS                             |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  315       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ENDFRAME_HW_DRAWLIST_CACHE_STATS                                  |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  316       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ENDFRAME_WARP_DRAWLIST_CACHE_STATS                                |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  317       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  PROCESS_EXPRESSIONS                                               |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  318       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  PROCESS_EXPRESSIONS                                               |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  319       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  EXPRESSION_OUTPUTVALUE                                            |  Start   |  Animations                                      |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  320       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  EXPRESSION_OUTPUTVALUE                                            |  Stop    |  Animations                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  321       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  MIDMANIPULATION_UPDATE_CAPTURE_MANIPULATION                       |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  322       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CHANNELANIMATIONS_ACTIVE                                          |          |  AnimationScreenOff ProcessAttribution           |
+Microsoft-Windows-Dwm-Core  |  Information  |  323       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CHANNELBATCHES_PROCESSED                                          |          |  ProcessAttribution                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  324       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_HW_PROTECTED_ENTITY_CHANGE                                |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  333       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_VISUAL_RENDERCONTENT                                      |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  334       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_DIRTY_ADDRECT                                             |          |  FrameVisualization                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  335       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ETWGUID_VISUAL_RENDERCONTENT                                      |          |  FrameVisualizationExtra                         |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  336       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ADVANCED_DIRECTFLIP_NORESTORE_RECORDCANDIDATE                     |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  342       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HOLOGRAPHICCLIENT_TEXTUREUPDATECOUNT                              |          |  DwmHolographic                                  |
+Microsoft-Windows-Dwm-Core  |  Information  |  343       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HOLOGRAPHICCLIENT_TEXTUREUPDATEWAITFAILED                         |          |  DwmHolographic                                  |
+Microsoft-Windows-Dwm-Core  |  Information  |  344       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HOLOGRAPHICINTEROPTARGET_RENDER                                   |          |  DwmHolographic                                  |
+Microsoft-Windows-Dwm-Core  |  Information  |  345       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HOLOGRAPHICINTEROPTARGET_WAITONINCOMINGFAILED                     |          |  DwmHolographic                                  |
+Microsoft-Windows-Dwm-Core  |  Information  |  346       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HOLOGRAPHICINTEROPTARGET_SYNCPOSTED                               |          |  DwmHolographic                                  |
+Microsoft-Windows-Dwm-Core  |  Information  |  347       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HOLOGRAPHICINTEROPTARGET_RENDERCOMPLETE                           |          |  DwmHolographic                                  |
+Microsoft-Windows-Dwm-Core  |  Information  |  348       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HOLOGRAPHICINTEROPTARGET_TIMEINQUEUE                              |          |  DwmHolographic                                  |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  349       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SHADERS_EFFECT_COMPILE                                            |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  350       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SHADERS_EFFECT_COMPILE                                            |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  351       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SHADERS_D3DSHADER_LINK                                            |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  352       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SHADERS_D3DSHADER_LINK                                            |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  353       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SHADERS_D3DSHADER_LINK                                            |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  354       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SHADERS_D3DSHADER_CREATE                                          |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  355       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SHADERS_D3DSHADER_CREATE                                          |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  356       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SHADERS_EFFECT_COMPILE                                            |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  363       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_FRAMESCHEDULED                                    |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  364       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_FRAMECOMPLETED                                    |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  365       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_FRAMEDISPATCH                                     |  Start   |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  366       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_FRAMEDISPATCH                                     |  Stop    |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  367       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_FRAMEDISPATCHCANCELED                             |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  368       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_WAKEUPEVENTCREATED                                |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  371       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMMANDS_COUNT                                                    |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Error        |  373       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  BRUSH_DRAW                                                        |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Error        |  374       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  BRUSH_DRAW                                                        |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Error        |  375       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  BRUSH_DRAW                                                        |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Error        |  376       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  BRUSH_DRAW                                                        |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  377       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_FRAMEDROPPED                                      |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  378       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  INTERACTION_MOUSEWHEEL_CONFIGURATION_CHANGED                      |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  379       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_PRERENDER                                         |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  380       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_PRESCHEDULE                                       |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  381       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_THREADWAKEUP                                      |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  382       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_WORKERHANG                                        |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  383       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_INCOMPATIBLE                                      |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  385       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULED_COMPOSITION_REASON                                      |          |  Scheduling                                      |
+Microsoft-Windows-Dwm-Core  |  Information  |  386       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  UNPRESENTED_FRAME                                                 |          |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  387       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  PROCESS_ATTRIBUTION                                               |          |  ProcessAttribution                              |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  388       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMMAND_PROCESSED_ONBEHALF                                        |          |  ProcessAttribution                              |
+Microsoft-Windows-Dwm-Core  |  Information  |  389       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CHANNEL_OPENED_FOR_PROCESS                                        |          |  ProcessAttribution                              |
+Microsoft-Windows-Dwm-Core  |  Information  |  390       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CHANNEL_CLOSED_FOR_PROCESS                                        |          |  ProcessAttribution                              |
+Microsoft-Windows-Dwm-Core  |  Information  |  391       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_GPUFINISHED                                       |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  392       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_DRAWINFO                                          |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  393       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_TELEMETRYDROPPED                                  |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  394       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  P3D_BUILDING_BSPTREE                                              |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  395       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  P3D_BUILDING_BSPTREE                                              |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  396       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  P3D_BUILDING_POLYGONLIST                                          |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  397       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  P3D_BUILDING_POLYGONLIST                                          |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  398       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  P3D_RENDERING                                                     |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  399       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  P3D_RENDERING                                                     |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  400       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DIAGTRACK_TRIGGER                                                 |          |  DwmDiagTrack                                    |
+Microsoft-Windows-Dwm-Core  |  Information  |  401       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_RENDERBLOCKED                                     |  Start   |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  402       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_RENDERBLOCKED                                     |  Stop    |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  403       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_SCRIBBLEBLOCKED                                   |  Start   |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  404       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_SCRIBBLEBLOCKED                                   |  Stop    |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  405       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  DCOMPEVENT_RESOURCE_OPEN                                          |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Verbose      |  406       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  VISUAL_SET_INTERACTION                                            |          |  DwmInput                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  409       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HWDEVICE                                                          |  Start   |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  410       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  HWDEVICE                                                          |  Stop    |  Composition                                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  411       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_EARLYCOPY                                         |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  412       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_ACTIVE                                            |  Start   |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  413       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_ACTIVE                                            |  Stop    |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  414       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  LEGACYSWAPCHAIN_BUFFERFLIP                                        |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  415       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  REGISTER_VAIL_STROKE_ON_HOST                                      |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  416       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  UNREGISTER_VAIL_STROKE_ON_HOST                                    |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  417       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  ENQUEUE_SCRIBBLE_ON_HOST                                          |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  418       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA                         |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  419       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA_FILLED_REUSE            |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  420       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA_NEW_FROM_GUEST          |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  421       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA_FILLED_FOUND_ON_NEW     |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  422       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA_FILLED_USE_FIRST        |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  423       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA_FILLED_NOT_FOUND_REUSE  |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  424       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA_CLEANUP                 |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  425       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_CREATED                                    |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  426       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_SUCCESSFULLY_REGISTERED                    |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  427       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_DESTROYED                                  |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  428       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA_DROPED_FROM_GUEST       |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  429       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CustomDurationRejectMonitorConfiguration                          |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  430       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CustomDurationRejectPlaneFullscreenTest                           |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  431       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CustomDurationRejectDesktopPlaneEnabledTest                       |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  432       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CustomDurationComputeSupportedDuration                            |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  433       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CustomDurationUseCachedDuration                                   |          |  Overlays                                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  434       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_FENCEWAIT                                         |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  435       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_FENCESIGNAL                                       |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  436       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_POSTRENDER                                        |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  437       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_WAKEUPEVENTREADY                                  |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  438       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_BUFFERDECISION                                    |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  439       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_SOURCEACTIVE                                      |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  440       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_DROPSOURCE                                        |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  441       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_SOURCEUPDATE                                      |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  442       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SYNCHRONOUSSUPERWETINK_LOOKUPPERFRAMEDATA_FILLED_NON_EXACT        |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  443       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_THREADWAKEUP_RAW                                  |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  444       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_DRAWSKIPPED                                       |          |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  445       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_DRAWASWETINK                                      |  Start   |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  446       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  COMPUTESCRIBBLE_DRAWASWETINK                                      |  Stop    |  ComputeScribble                                 |
+Microsoft-Windows-Dwm-Core  |  Information  |  447       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_VSYNC_QPC_SMOOTHING                                      |          |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  448       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_VSYNC_QPC_SMOOTHING_RESET                                |          |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  449       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  SCHEDULE_VSYNC_QPC_SMOOTHING_UPDATE                               |          |  DetailedFrameInformation                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  450       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  RENDERTARGET_RENDERSKIPPED                                        |          |  Composition ComputeScribble                     |
+Microsoft-Windows-Dwm-Core  |  Information  |  451       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CurrentFrameId                                                    |          |  Composition DwmFrameRate                        |
+Microsoft-Windows-Dwm-Core  |  Information  |  452       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  Pinning_AdvanceUnpin                                              |          |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  453       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  Pinning_D3DPin                                                    |  Start   |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  454       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  Pinning_D3DPin                                                    |  Stop    |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  455       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  Pinning_D3DUnpin                                                  |  Start   |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  456       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  Pinning_D3DUnpin                                                  |  Stop    |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  457       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  Pinning_OutstandingUnpinCount                                     |          |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  458       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CompSurfInfo_Binding                                              |  Start   |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  459       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CompSurfInfo_Binding                                              |  Stop    |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  460       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CompSurfInfo_ForceUpdateRealization                               |  Start   |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  461       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CompSurfInfo_ForceUpdateRealization                               |  Stop    |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  462       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CustomDurationIterationResult                                     |  Stop    |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  464       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CompSurfInfo_ScanoutIncompatible                                  |          |  Composition Overlays                            |
+Microsoft-Windows-Dwm-Core  |  Information  |  465       |  0        |  Microsoft-Windows-Dwm-Core/Diagnostic  |  CompSurfInfo_ReuseRealization                                     |          |  Composition Overlays                            |
