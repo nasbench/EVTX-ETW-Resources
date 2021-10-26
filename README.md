@@ -18,12 +18,13 @@ This is a repository that contains a bunch of resources to learn and understand 
     - [Talks](#talks)
     - [Books](#books)
     - [Other Github Projects w/ ETW Content](#other-github-projects-w-etw-content)
+  - [Contributing](#contributing)
 
 ## Structure
 
-- [ETW Providers Manifests](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Providers%20Manifests)
-- [Examples](https://github.com/nasbench/ETW-Resources/tree/main/Examples)
-- [ETW Events List](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Events%20List)
+- [ETW Providers Manifests](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Providers%20Manifests) - List of ETW XML manifests from different versions of Windows.
+- [Examples](https://github.com/nasbench/ETW-Resources/tree/main/Examples) - Example scripts to collect ETW events using different libraries.
+- [ETW Events List](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Events%20List) - List of all ETW events extracted from the currently dumped ETW providers.
 
 ## Blogs / Research (<https://nasbench.medium.com/>)
 
@@ -101,3 +102,14 @@ The following are blogs and articles published by the wider security community d
 
 - [OSSEM Data Dictionaries](https://github.com/OTRF/OSSEM-DD)
 - [ETW Providers Docs](https://github.com/repnz/etw-providers-docs)
+
+## Contributing
+
+If you want to contribute to this project simply follow these steps:
+
+1- Download the latest version of [WEPExplorer](https://github.com/lallousx86/WinTools/tree/master/WEPExplorer)
+2- Download the latest version of [Auto Keyboard Presser](https://www.autosofted.com/auto_keyboard_presser/)
+3- Follow the steps in the GIF below
+
+4- Fork the repo and upload your files
+5- Make a PR and receive our eternal thanks
