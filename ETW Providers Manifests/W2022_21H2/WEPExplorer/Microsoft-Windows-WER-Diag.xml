@@ -1,0 +1,132 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WER-Diag</Name>
+        <Metadata>
+            <Guid>{AD8AA069-A01B-40A0-BA40-948D1D8DEDC5}</Guid>
+            <ResourceFilePath>C:\Windows\system32\werfault.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\werfault.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=werfault.exe&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WER-Diagnostics</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>WDI Diag</Message>
+                    <Name>win:WDIDiag</Name>
+                    <Value>1125899906842624</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Possible disk corruption detected for executable image %1, causing application %2 to stop working with exception %3, status code %4. Initiating further diagnostics.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorruptedFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CrashedAppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExceptionStatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Possible heap corruption detected (exception code %1). Initiating further diagnostics.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExceptionCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Possible crash in an unloaded dll detected. Initiating further diagnostics.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleNameLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string" length="ModuleNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Crash on launch is detected. Initiating further diagnostics.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StartTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CrashTimeFromStart" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+CFG violation is detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Is64Bit" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CallReturnAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CallReturnModName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallReturnModOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CallReturnInstructionBytesLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CallReturnInstructionBytes" inType="win:Binary" outType="xs:hexBinary" length="CallReturnInstructionBytesLength"/>
+  <data name="CallReturnBaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CallReturnRegionSize" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CallReturnState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CallReturnProtect" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CallReturnType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetModName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetModOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetInstructionBytesLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetInstructionBytes" inType="win:Binary" outType="xs:hexBinary" length="TargetInstructionBytesLength"/>
+  <data name="TargetBaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetRegionSize" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetProtect" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,47 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UserAccessLogging</Name>
+        <Metadata>
+            <Guid>{7009DE1B-8648-4797-BCF4-CF0B4A7EC148}</Guid>
+            <ResourceFilePath>C:\Windows\system32\ualapi.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath></MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=ualapi.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RoleGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Address" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RoleGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Address" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

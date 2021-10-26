@@ -1,0 +1,73 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Network-ExecutionContext</Name>
+        <Metadata>
+            <Guid>{0075E1AB-E1D1-5D1F-35F5-DA36FB4F41B1}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\ExecutionContext.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\ExecutionContext.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.75&amp;FileName=ExecutionContext.sys&amp;FileVer=10.0.20348.75</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Task_Scheduling</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Opcode_Polling</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_ExceededLimit</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>Task_Scheduling</Task>
+                <Opcode>Opcode_Polling</Opcode>
+                <Keyword>Keyword_ExceededLimit</Keyword>
+                <Message><![CDATA[
+Nic %1 (%2) executed more than %3 miliseconds continuously at DISPATCH for %4 times in last %5 miliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="IfName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeWarningInSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExceededCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastIntervalInSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
