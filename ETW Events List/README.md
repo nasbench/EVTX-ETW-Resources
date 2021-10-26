@@ -22,16 +22,27 @@ Options:
   -p PROVIDERSPATH, --path=PROVIDERSPATH
                         Path to the folder containing the ETW providers
                         manifests
+  -f PROVIDERSFILE, --file=PROVIDERSFILE
+                        Path to an ETW manifest file
+  -n FOLDERNAME, --name=FOLDERNAME
+                        Name for the folder that'll contain the results
 ```
 
-Here is an example on how to use the script
+## Examples
+
+- Generate CSVs / MDs from single file
 
 ```python
-python etw-to-csv.py -p /home/lab/etw-providers/w10_20h2
+python etw-to-csv.py -f "/etw-providers/W10_20H2/WEPExplorer/Microsoft-Windows-Kernel-Process.xml" -n "W10_20H2"
 ```
 
-The script will generates both a **`CSV`** and a **`Markdown`** version for each ETW Manifest.
+- Generate CSVs / MDs from single file
+
+```python
+python etw-to-csv.py -p "/etw-providers/W10_20H2/WEPExplorer/" -n "W10_20H2"
+```
 
 ## TODO
 
 - [x] ~~Modify the script to be able to generate CSV and Markdown from a single ETW manifest instead of a folder.~~
+- [x] ~~Add new parameter for file parsing and folder creation.~~
