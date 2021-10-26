@@ -107,9 +107,11 @@ The following are blogs and articles published by the wider security community d
 
 If you want to contribute to this project simply follow these steps:
 
-1- Download the latest version of [WEPExplorer](https://github.com/lallousx86/WinTools/tree/master/WEPExplorer)
-2- Download the latest version of [Auto Keyboard Presser](https://www.autosofted.com/auto_keyboard_presser/)
-3- Follow the steps in the GIF below
+- Download the latest version of [WEPExplorer](https://github.com/lallousx86/WinTools/tree/master/WEPExplorer)
+- Download the latest version of [Auto Keyboard Presser](https://www.autosofted.com/auto_keyboard_presser/)
+- Follow the steps in the GIF below
 
-4- Fork the repo and upload your files
-5- Make a PR and receive our eternal thanks
+![MUCHGIF](https://user-images.githubusercontent.com/8741929/138963332-9d59bbfa-09b4-43c4-8958-4c4f98b1a2ca.gif)
+
+- Fork the repo and upload your files
+- Make a PR and receive our eternal thanks
