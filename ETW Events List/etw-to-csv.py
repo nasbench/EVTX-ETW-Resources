@@ -3,13 +3,13 @@ from optparse import OptionParser
 import os
 import csvtomd
 
-def convertCsvToMD(fileName):
+def convertCsvToMD(fileName, folderName):
 
-    with open(fileName + ".csv", "r") as f:
+    with open(folderName + "/CSV/" + fileName + ".csv", "r") as f:
         table = csvtomd.csv_to_table(f, "|")
     
     if table:
-        with open(fileName + ".md", "w") as f:
+        with open(folderName + "/Markdown/" + fileName + ".md", "w") as f:
             f.write(
                 csvtomd.md_table(table, padding=2)
             )
@@ -63,7 +63,12 @@ def parse_etw_xml(file_path):
             event_dict['eid'] = event[0].text
             event_dict['channel'] = ""
             event_dict['message'] = ""
-
+            event_dict['version'] = ""
+            event_dict['level'] = ""
+            event_dict['task'] = ""
+            event_dict['opcode'] = ""
+            event_dict['keyword'] = ""
+            
             for data in event:
                 if data.tag == "Channel":
                     event_dict['channel'] = data.text
@@ -71,6 +76,17 @@ def parse_etw_xml(file_path):
                     event_dict['message'] = data.text.replace("\n","")
                 elif data.tag == "Template":
                     event_dict['template'] = data.text.replace("\n", "")
+                elif data.tag == "Version":
+                    event_dict['version'] = data.text.replace("\n", "")
+                elif data.tag == "Level":
+                    event_dict['level'] = data.text.replace("\n", "")
+                elif data.tag == "Task":
+                    event_dict['task'] = data.text.replace("\n", "")
+                elif data.tag == "Opcode":
+                    event_dict['opcode'] = data.text.replace("\n", "")
+                elif data.tag == "Keyword":
+                    event_dict['keyword'] = data.text.replace("\n", "")
+
 
             events_list.append(event_dict)
         
@@ -97,38 +113,65 @@ def fixMessage(message, template):
     
     return message
 
+def converterStart(parsed_provider, folderName):
+    header = "Provider|Level|Event ID|Version|Channel|Task|Opcode|Keyword|Message"
+    with open(folderName + "/CSV/" + parsed_provider["provider_name"] + ".csv", "w") as f:
+        f.write(header)
+        f.write("\n")
+        for i in parsed_provider["events"]:
+            fixed_message = ""
+            if i['template'] != "":
+                fixed_message = fixMessage(i['message'], i['template'])
+            s = parsed_provider["provider_name"] + "|" + i["level"] + "|" + i["eid"] + "|" + i["version"] + "|" + i["channel"] + "|" + i["task"] + "|" + i["opcode"] + "|" + i["keyword"] + "|" + fixed_message
+            f.write(s)
+            f.write("\n")
+    convertCsvToMD(parsed_provider["provider_name"], folderName)
 
 if __name__ == "__main__":
     parser = OptionParser()
-    parser.add_option("-p", "--path", dest="providersPath", help="Path to the folder containing the ETW providers manifests")    
+    parser.add_option("-p", "--path", dest="providersPath", help="Path to the folder containing the ETW providers manifests")
+    parser.add_option("-f", "--file", dest="providersFile", help="Path to an ETW manifest file")
+    parser.add_option("-n", "--name", dest="folderName", help="Name for the folder that'll contain the results")
     (options, args) = parser.parse_args()
     if not options.providersPath:
-        parser.error("Please provide a valid path")
+        if not options.providersFile:
+            parser.error("Please provide a valid path")
+    elif options.providersFile:
+        parser.error("Only one option can be chosen at a time")
+
+    if not options.folderName:
+        parser.error("Please provider a folder name")
 
     # We collect the arguments from the user
     providersPath = options.providersPath
+    providersFile = options.providersFile
+    folderName = options.folderName
 
-    # We call the "getListOfFiles" to generate a list of file paths
-    listOfProviders = getListOfFiles(providersPath)
-    listOfParsedProviders = []
+    if not os.path.exists(folderName):
+        os.mkdir(folderName)
+    else:
+        print("Folder name already exists")
+        exit()
+    
+    os.mkdir(folderName + "/" + "CSV")
+    os.mkdir(folderName + "/" + "Markdown")
 
-    # We then parse and convert each file into a dict and append them to a list we call "list Of Parsed Providers"
-    for provider in listOfProviders:
-        parsed = parse_etw_xml(provider)
-        if parsed != "Empty Provider":
-            listOfParsedProviders.append(parsed)
+    if providersPath:
+        # We call the "getListOfFiles" to generate a list of file paths
+        listOfProviders = getListOfFiles(providersPath)
+        listOfParsedProviders = []
 
-    # We then start to generate the CSV file
-    for p in listOfParsedProviders:
-        header = "Provider|Event ID|Channel|Message"
-        with open(p["provider_name"] + ".csv", "w") as f:
-            f.write(header)
-            f.write("\n")
-            for i in p["events"]:
-                fixed_message = ""
-                if i['template'] != "":
-                    fixed_message = fixMessage(i['message'], i['template'])
-                s = p["provider_name"] + "|" + i["eid"] + "|" + i["channel"] + "|" + fixed_message
-                f.write(s)
-                f.write("\n")
-        convertCsvToMD(p["provider_name"])
+        # We then parse and convert each file into a dict and append them to a list we call "list Of Parsed Providers"
+        for provider in listOfProviders:
+            parsed = parse_etw_xml(provider)
+            if parsed != "Empty Provider":
+                listOfParsedProviders.append(parsed)
+
+        # We then start to generate the CSV file
+        for p in listOfParsedProviders:
+            converterStart(p, folderName)
+    elif providersFile:
+        parsed = parse_etw_xml(providersFile)
+        if parsed == "Empty Provider":
+            print("The provider manifest is empty. Nothing to convert")
+        converterStart(parsed, folderName)
