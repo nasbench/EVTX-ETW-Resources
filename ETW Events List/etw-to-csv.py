@@ -6,7 +6,7 @@ import csvtomd
 def convertCsvToMD(fileName, folderName):
 
     with open(folderName + "/CSV/" + fileName + ".csv", "r") as f:
-        table = csvtomd.csv_to_table(f, "|")
+        table = csvtomd.csv_to_table(f, ",")
     
     if table:
         with open(folderName + "/Markdown/" + fileName + ".md", "w") as f:
@@ -73,19 +73,19 @@ def parse_etw_xml(file_path):
                 if data.tag == "Channel":
                     event_dict['channel'] = data.text
                 elif data.tag == "Message":
-                    event_dict['message'] = data.text.replace("\n","")
+                    event_dict['message'] = data.text.replace("\n","").replace(",", ";") #Replacing the "," with ";" just so the CSV behave nicely
                 elif data.tag == "Template":
-                    event_dict['template'] = data.text.replace("\n", "")
+                    event_dict['template'] = data.text.replace("\n", "").replace(",", ";")
                 elif data.tag == "Version":
-                    event_dict['version'] = data.text.replace("\n", "")
+                    event_dict['version'] = data.text.replace("\n", "").replace(",", ";")
                 elif data.tag == "Level":
-                    event_dict['level'] = data.text.replace("\n", "")
+                    event_dict['level'] = data.text.replace("\n", "").replace(",", ";")
                 elif data.tag == "Task":
-                    event_dict['task'] = data.text.replace("\n", "")
+                    event_dict['task'] = data.text.replace("\n", "").replace(",", ";")
                 elif data.tag == "Opcode":
-                    event_dict['opcode'] = data.text.replace("\n", "")
+                    event_dict['opcode'] = data.text.replace("\n", "").replace(",", ";")
                 elif data.tag == "Keyword":
-                    event_dict['keyword'] = data.text.replace("\n", "")
+                    event_dict['keyword'] = data.text.replace("\n", "").replace(",", ";")
 
 
             events_list.append(event_dict)
@@ -114,7 +114,7 @@ def fixMessage(message, template):
     return message
 
 def converterStart(parsed_provider, folderName):
-    header = "Provider|Level|Event ID|Version|Channel|Task|Opcode|Keyword|Message"
+    header = "Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message"
     with open(folderName + "/CSV/" + parsed_provider["provider_name"] + ".csv", "w") as f:
         f.write(header)
         f.write("\n")
@@ -122,7 +122,7 @@ def converterStart(parsed_provider, folderName):
             fixed_message = ""
             if i['template'] != "":
                 fixed_message = fixMessage(i['message'], i['template'])
-            s = parsed_provider["provider_name"] + "|" + i["level"] + "|" + i["eid"] + "|" + i["version"] + "|" + i["channel"] + "|" + i["task"] + "|" + i["opcode"] + "|" + i["keyword"] + "|" + fixed_message
+            s = parsed_provider["provider_name"] + "," + i["level"] + "," + i["eid"] + "," + i["version"] + "," + i["channel"] + "," + i["task"] + "," + i["opcode"] + "," + i["keyword"] + "," + fixed_message
             f.write(s)
             f.write("\n")
     convertCsvToMD(parsed_provider["provider_name"], folderName)
