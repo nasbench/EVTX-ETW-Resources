@@ -10,8 +10,8 @@ Microsoft-Windows-CertPolEng  |  Information  |  6         |  0        |  Operat
 Microsoft-Windows-CertPolEng  |  Information  |  7         |  0        |  Operation log  |        |          |           |
 Microsoft-Windows-CertPolEng  |  Information  |  8         |  0        |  Operation log  |        |          |           |
 Microsoft-Windows-CertPolEng  |  Information  |  9         |  0        |  Operation log  |        |          |           |  Total number of TrustRoot Found {Number}
-Microsoft-Windows-CertPolEng  |  Information  |  10        |  0        |  Operation log  |        |          |           |  Target name is {TargetName}, HostName is {HostName}
-Microsoft-Windows-CertPolEng  |  Information  |  11        |  0        |  Operation log  |        |          |           |  PSTGetCertificate called, number of select criteria are {NumOfCriteria}, bIsClient parameter is {bClient}
+Microsoft-Windows-CertPolEng  |  Information  |  10        |  0        |  Operation log  |        |          |           |  Target name is {TargetName}; HostName is {HostName}
+Microsoft-Windows-CertPolEng  |  Information  |  11        |  0        |  Operation log  |        |          |           |  PSTGetCertificate called; number of select criteria are {NumOfCriteria}; bIsClient parameter is {bClient}
 Microsoft-Windows-CertPolEng  |  Information  |  12        |  0        |  Operation log  |        |          |           |  Opening Machine Store? Value: {Number}
 Microsoft-Windows-CertPolEng  |  Information  |  13        |  0        |  Operation log  |        |          |           |
 Microsoft-Windows-CertPolEng  |  Information  |  14        |  0        |  Operation log  |        |          |           |  Unable to find Provider From Certificate: Error {LastError}
@@ -30,18 +30,18 @@ Microsoft-Windows-CertPolEng  |  Error        |  26        |  0        |  Operat
 Microsoft-Windows-CertPolEng  |  Warning      |  27        |  0        |  Operation log  |        |          |           |  CProviderEntry::ReadInfoFromRegistry LRPC Entrypoint is missing for provider {Provider}. Error code {LastError}
 Microsoft-Windows-CertPolEng  |  Error        |  28        |  0        |  Operation log  |        |          |           |  Failed to Open Provider Root Key {Number}
 Microsoft-Windows-CertPolEng  |  Error        |  29        |  0        |  Operation log  |        |          |           |  Failed to Query Provider Root Key {Number}
-Microsoft-Windows-CertPolEng  |  Warning      |  30        |  0        |  Operation log  |        |          |           |  Failed to Query SubKey {SubKey}, Error {LastError}
+Microsoft-Windows-CertPolEng  |  Warning      |  30        |  0        |  Operation log  |        |          |           |  Failed to Query SubKey {SubKey}; Error {LastError}
 Microsoft-Windows-CertPolEng  |  Error        |  31        |  0        |  Operation log  |        |          |           |  Invalid Provider GUID {SubKey}. {LastError}
-Microsoft-Windows-CertPolEng  |  Error        |  32        |  0        |  Operation log  |        |          |           |  CertVerifyCertificateChainPolicy Failed Status is {LastError}, ChainIndex {ChainIndex}, lElementIndex {lElementIndex}
+Microsoft-Windows-CertPolEng  |  Error        |  32        |  0        |  Operation log  |        |          |           |  CertVerifyCertificateChainPolicy Failed Status is {LastError}; ChainIndex {ChainIndex}; lElementIndex {lElementIndex}
 Microsoft-Windows-CertPolEng  |  Error        |  33        |  0        |  Operation log  |        |          |           |  Failed to open LSA Registry Root Key {Number}
 Microsoft-Windows-CertPolEng  |  Information  |  34        |  0        |  Operation log  |        |          |           |
 Microsoft-Windows-CertPolEng  |  Error        |  35        |  0        |  Operation log  |        |          |           |  Failed to open {StoreName} certificate store. Error {LastError}
-Microsoft-Windows-CertPolEng  |  Error        |  36        |  0        |  Operation log  |        |          |           |  Failed to validate certificate. Hash length doesn't match. Source hash Length {Source}, calculated hash length {Calculated}
+Microsoft-Windows-CertPolEng  |  Error        |  36        |  0        |  Operation log  |        |          |           |  Failed to validate certificate. Hash length doesn't match. Source hash Length {Source}; calculated hash length {Calculated}
 Microsoft-Windows-CertPolEng  |  Error        |  37        |  0        |  Operation log  |        |          |           |
 Microsoft-Windows-CertPolEng  |  Information  |  38        |  0        |  Operation log  |        |          |           |
-Microsoft-Windows-CertPolEng  |  Error        |  39        |  0        |  Operation log  |        |          |           |  The client name doesn't match the UPN. UPN is {UPN}, client name is {ClientName}
+Microsoft-Windows-CertPolEng  |  Error        |  39        |  0        |  Operation log  |        |          |           |  The client name doesn't match the UPN. UPN is {UPN}; client name is {ClientName}
 Microsoft-Windows-CertPolEng  |  Information  |  40        |  0        |  Operation log  |        |          |           |  The client name is {psz}
-Microsoft-Windows-CertPolEng  |  Information  |  41        |  0        |  Operation log  |        |          |           |  The client name matched the UPN. UPN is {UPN}, client name is {ClientName}
+Microsoft-Windows-CertPolEng  |  Information  |  41        |  0        |  Operation log  |        |          |           |  The client name matched the UPN. UPN is {UPN}; client name is {ClientName}
 Microsoft-Windows-CertPolEng  |  Information  |  42        |  0        |  Operation log  |        |          |           |
 Microsoft-Windows-CertPolEng  |  Error        |  43        |  0        |  Operation log  |        |          |           |
 Microsoft-Windows-CertPolEng  |  Error        |  44        |  0        |  Operation log  |        |          |           |

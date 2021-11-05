@@ -6,7 +6,7 @@ Microsoft-Windows-MCCS-AccountAccessor  |  Information  |  100       |  0       
 Microsoft-Windows-MCCS-AccountAccessor  |  Information  |  101       |  0        |           |  SPERF_TAG_AA_LOAD  |  Stop    |  Performance  |
 Microsoft-Windows-MCCS-AccountAccessor  |  Information  |  102       |  0        |           |  SPERF_TAG_AA_SAVE  |  Start   |  Performance  |
 Microsoft-Windows-MCCS-AccountAccessor  |  Information  |  103       |  0        |           |  SPERF_TAG_AA_SAVE  |  Stop    |  Performance  |
-Microsoft-Windows-MCCS-AccountAccessor  |  Information  |  151       |  0        |           |                     |          |               |  Being called to delete account {P1_Dword}, Is remote: {P2_Boolean}.
+Microsoft-Windows-MCCS-AccountAccessor  |  Information  |  151       |  0        |           |                     |          |               |  Being called to delete account {P1_Dword}; Is remote: {P2_Boolean}.
 Microsoft-Windows-MCCS-AccountAccessor  |  Error        |  201       |  0        |           |                     |          |  Error        |  Missing property {P1_Dword} in PopImap account creation
 Microsoft-Windows-MCCS-AccountAccessor  |  Error        |  202       |  0        |           |                     |          |  Error        |  Should not delete property {P1_Dword} in PopImap account modification
 Microsoft-Windows-MCCS-AccountAccessor  |  Information  |  221       |  0        |           |                     |          |               |  PopImapAccountAccessor: Filling in default Dav info for account {P1_Dword}

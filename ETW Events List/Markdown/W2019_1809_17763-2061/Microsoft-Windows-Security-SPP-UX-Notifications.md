@@ -1,0 +1,3 @@
+Provider                                         |  Level    |  Event ID  |  Version  |  Channel                                                       |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------------------------|-----------|------------|-----------|----------------------------------------------------------------|--------|----------|-----------|-------------------------------------------------------------------------------------
+Microsoft-Windows-Security-SPP-UX-Notifications  |  Warning  |  100       |  0        |  Microsoft-Windows-Security-SPP-UX-Notifications/ActionCenter  |        |          |           |  SLUI event written to notify Security and Maintenance of change in activation state

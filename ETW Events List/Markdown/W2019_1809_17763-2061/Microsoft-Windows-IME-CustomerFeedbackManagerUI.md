@@ -1,0 +1,4 @@
+Provider                                         |  Level        |  Event ID  |  Version  |  Channel                                                   |  Task                                               |  Opcode  |  Keyword  |  Message
+-------------------------------------------------|---------------|------------|-----------|------------------------------------------------------------|-----------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-IME-CustomerFeedbackManagerUI  |  Information  |  12        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManagerUI/Analytic  |  Task ID: IME CustomerFeedbackManagerUI SendReport  |  Start   |           |
+Microsoft-Windows-IME-CustomerFeedbackManagerUI  |  Information  |  13        |  0        |  Microsoft-Windows-IME-CustomerFeedbackManagerUI/Analytic  |  Task ID: IME CustomerFeedbackManagerUI SendReport  |  Stop    |           |

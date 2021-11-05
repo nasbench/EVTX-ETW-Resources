@@ -162,7 +162,7 @@ Microsoft-Windows-PDFReader  |  Information  |  212       |  0        |  Microso
 Microsoft-Windows-PDFReader  |  Information  |  213       |  0        |  Microsoft-Windows-glcnd/Debug       |                            |          |  Reader   |
 Microsoft-Windows-PDFReader  |  Information  |  214       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
 Microsoft-Windows-PDFReader  |  Information  |  215       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |
-Microsoft-Windows-PDFReader  |  Information  |  216       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InteractiveControlRender  |  Start   |  Reader   |  Form, ink or highlight control render start
+Microsoft-Windows-PDFReader  |  Information  |  216       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InteractiveControlRender  |  Start   |  Reader   |  Form; ink or highlight control render start
 Microsoft-Windows-PDFReader  |  Information  |  217       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |  InteractiveControlRender  |  Stop    |  Reader   |
 Microsoft-Windows-PDFReader  |  Information  |  218       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Render Tile Request Created
 Microsoft-Windows-PDFReader  |  Information  |  219       |  0        |  Microsoft-Windows-glcnd/Diagnostic  |                            |          |  Reader   |  Sezo Static Thumbnail Cached

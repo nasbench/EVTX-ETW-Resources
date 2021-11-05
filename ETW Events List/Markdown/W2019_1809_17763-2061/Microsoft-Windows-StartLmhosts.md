@@ -1,0 +1,3 @@
+Provider                        |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode               |  Keyword               |  Message
+--------------------------------|---------------|------------|-----------|-----------|--------|-----------------------|------------------------|---------
+Microsoft-Windows-StartLmhosts  |  Information  |  1         |  0        |           |        |  Opcode_StartLmhosts  |  Keyword_StartLmhosts  |

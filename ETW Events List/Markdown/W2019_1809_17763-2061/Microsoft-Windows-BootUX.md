@@ -1,0 +1,12 @@
+Provider                  |  Level        |  Event ID  |  Version  |  Channel  |  Task              |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|-----------|--------------------|----------|-----------|---------
+Microsoft-Windows-BootUX  |  Information  |  1000      |  0        |           |  LaunchUX          |  Start   |           |
+Microsoft-Windows-BootUX  |  Information  |  1001      |  0        |           |  LaunchUX          |  Stop    |           |
+Microsoft-Windows-BootUX  |  Information  |  1002      |  0        |           |  SwapPage          |  Start   |           |
+Microsoft-Windows-BootUX  |  Information  |  1003      |  0        |           |  SwapPage          |  Stop    |           |
+Microsoft-Windows-BootUX  |  Information  |  1004      |  0        |           |                    |          |           |
+Microsoft-Windows-BootUX  |  Information  |  1005      |  0        |           |                    |          |           |
+Microsoft-Windows-BootUX  |  Information  |  1006      |  0        |           |  UserInteraction   |  Start   |           |
+Microsoft-Windows-BootUX  |  Information  |  1007      |  0        |           |  UserInteraction   |  Stop    |           |
+Microsoft-Windows-BootUX  |  Information  |  1008      |  0        |           |  PageConstruction  |  Start   |           |
+Microsoft-Windows-BootUX  |  Information  |  1009      |  0        |           |  PageConstruction  |  Stop    |           |

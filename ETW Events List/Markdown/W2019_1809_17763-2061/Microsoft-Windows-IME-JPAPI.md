@@ -1,0 +1,24 @@
+Provider                     |  Level        |  Event ID  |  Version  |  Channel                               |  Task                         |  Opcode  |  Keyword  |  Message
+-----------------------------|---------------|------------|-----------|----------------------------------------|-------------------------------|----------|-----------|---------
+Microsoft-Windows-IME-JPAPI  |  Information  |  31        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Candidate Open  |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  32        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Candidate Open  |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  35        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Conversion      |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  36        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Conversion      |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  37        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Typing          |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  38        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Typing          |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  39        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME GetComment      |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  40        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME GetComment      |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  41        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Activate        |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  42        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Activate        |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  43        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Determine       |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  44        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Determine       |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  50        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Commands        |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  51        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Commands        |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  52        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Commands        |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  53        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Commands        |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  54        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Commands        |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  55        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME Commands        |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  60        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME API             |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  61        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME API             |  Stop    |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  62        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME API             |  Start   |           |
+Microsoft-Windows-IME-JPAPI  |  Information  |  63        |  0        |  Microsoft-Windows-IME-JPAPI/Analytic  |  Task ID: IME API             |  Stop    |           |

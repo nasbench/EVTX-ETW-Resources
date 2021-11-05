@@ -1,0 +1,3 @@
+Provider                             |  Level    |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------------|-----------|------------|-----------|---------------|--------|----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Video-For-Windows  |  Warning  |  1         |  0        |  Application  |        |          |           |  The file {FileName} could not be processed by the application {ApplicationName} because it requires Indeo® Decoders of type {ContentType}

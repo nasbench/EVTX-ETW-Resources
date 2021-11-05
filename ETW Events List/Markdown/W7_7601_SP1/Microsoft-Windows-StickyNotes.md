@@ -105,13 +105,13 @@ Microsoft-Windows-StickyNotes  |  Error        |  102       |  0        |  Micro
 Microsoft-Windows-StickyNotes  |  Information  |  103       |  0        |  Microsoft-Windows-StickyNotes/Debug       |                      |          |  StickyNotes  |  Creating Version File
 Microsoft-Windows-StickyNotes  |  Information  |  104       |  0        |  Microsoft-Windows-StickyNotes/Debug       |                      |          |  StickyNotes  |  Opening Stream
 Microsoft-Windows-StickyNotes  |  Error        |  105       |  0        |  Microsoft-Windows-StickyNotes/Admin       |                      |          |  StickyNotes  |
-Microsoft-Windows-StickyNotes  |  Information  |  106       |  0        |  Microsoft-Windows-StickyNotes/Debug       |                      |          |  StickyNotes  |  An Erorr occured while saved the NoteModel, Queueing it to save it after some time
+Microsoft-Windows-StickyNotes  |  Information  |  106       |  0        |  Microsoft-Windows-StickyNotes/Debug       |                      |          |  StickyNotes  |  An Erorr occured while saved the NoteModel; Queueing it to save it after some time
 Microsoft-Windows-StickyNotes  |  Error        |  107       |  0        |  Microsoft-Windows-StickyNotes/Debug       |                      |          |  StickyNotes  |  Failed to save NoteModel from the Save Queue
 Microsoft-Windows-StickyNotes  |  Information  |  108       |  0        |  Microsoft-Windows-StickyNotes/Admin       |                      |          |  StickyNotes  |
 Microsoft-Windows-StickyNotes  |  Information  |  109       |  0        |  Microsoft-Windows-StickyNotes/Admin       |                      |          |  StickyNotes  |
 Microsoft-Windows-StickyNotes  |  Information  |  110       |  0        |  Microsoft-Windows-StickyNotes/Admin       |                      |          |  StickyNotes  |
 Microsoft-Windows-StickyNotes  |  Information  |  111       |  0        |  Microsoft-Windows-StickyNotes/Admin       |                      |          |  StickyNotes  |
-Microsoft-Windows-StickyNotes  |  Error        |  112       |  0        |  Microsoft-Windows-StickyNotes/Admin       |                      |          |  StickyNotes  |  Unexpected Error has occured, Application is going to Quit
+Microsoft-Windows-StickyNotes  |  Error        |  112       |  0        |  Microsoft-Windows-StickyNotes/Admin       |                      |          |  StickyNotes  |  Unexpected Error has occured; Application is going to Quit
 Microsoft-Windows-StickyNotes  |  Information  |  113       |  0        |  Microsoft-Windows-StickyNotes/Diagnostic  |  PeelNote            |  Start   |  StickyNotes  |
 Microsoft-Windows-StickyNotes  |  Information  |  114       |  0        |  Microsoft-Windows-StickyNotes/Diagnostic  |  PeelNote            |  Stop    |  StickyNotes  |
 Microsoft-Windows-StickyNotes  |  Error        |  115       |  0        |  Microsoft-Windows-StickyNotes/Admin       |                      |          |  StickyNotes  |

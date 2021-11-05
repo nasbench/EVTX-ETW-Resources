@@ -1,5 +1,5 @@
 Provider                               |  Level        |  Event ID  |  Version  |  Channel                                      |  Task  |  Opcode  |  Keyword  |  Message
 ---------------------------------------|---------------|------------|-----------|-----------------------------------------------|--------|----------|-----------|-----------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-CredentialProviders  |  Error        |  1         |  0        |  Microsoft-Windows-CredentialProviders/Debug  |        |          |           |  CredProvs has encountered an error in file {FileName}, function {FunctionName}, line {LineNumber}: {ErrorCode}.
+Microsoft-Windows-CredentialProviders  |  Error        |  1         |  0        |  Microsoft-Windows-CredentialProviders/Debug  |        |          |           |  CredProvs has encountered an error in file {FileName}; function {FunctionName}; line {LineNumber}: {ErrorCode}.
 Microsoft-Windows-CredentialProviders  |  Information  |  2         |  0        |  Microsoft-Windows-CredentialProviders/Debug  |        |          |           |
 Microsoft-Windows-CredentialProviders  |  Information  |  3         |  0        |  Microsoft-Windows-CredentialProviders/Debug  |        |          |           |

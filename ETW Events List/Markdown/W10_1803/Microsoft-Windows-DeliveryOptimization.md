@@ -1,3 +1,3 @@
 Provider                                |  Level    |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
 ----------------------------------------|-----------|------------|-----------|---------------|--------|----------|-----------|---------------------------------------------------------------------------------------------------------
-Microsoft-Windows-DeliveryOptimization  |  Warning  |  0         |  0        |  Application  |        |          |           |  The policy '{policyName}' was set with the value '{policyValue}', which is invalid and will be ignored.
+Microsoft-Windows-DeliveryOptimization  |  Warning  |  0         |  0        |  Application  |        |          |           |  The policy '{policyName}' was set with the value '{policyValue}'; which is invalid and will be ignored.

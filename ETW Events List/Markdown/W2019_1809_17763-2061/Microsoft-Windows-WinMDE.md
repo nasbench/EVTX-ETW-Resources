@@ -1,0 +1,10 @@
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                       |  Task                          |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|--------------------------------|--------------------------------|----------|-----------|--------------------------------------------------------------------------
+Microsoft-Windows-WinMDE  |  Information  |  1         |  0        |  Microsoft-Windows-WinMDE/MDE  |  HTTP Listener                 |  Start   |           |  HttpListener@{Object} object created
+Microsoft-Windows-WinMDE  |  Information  |  2         |  0        |  Microsoft-Windows-WinMDE/MDE  |  HTTP Listener                 |  Stop    |           |  HttpListener@{Object} object destroyed
+Microsoft-Windows-WinMDE  |  Information  |  3         |  0        |  Microsoft-Windows-WinMDE/MDE  |  HTTP Listener                 |          |           |  HttpListener@{Object} HTTP request received
+Microsoft-Windows-WinMDE  |  Information  |  4         |  0        |  Microsoft-Windows-WinMDE/MDE  |  HTTP Listener                 |          |           |  HttpListener@{Object} sending HTTP response entity body ({Value} chunks)
+Microsoft-Windows-WinMDE  |  Verbose      |  5         |  0        |  Microsoft-Windows-WinMDE/MDE  |  NetStreamSink_SampleRequests  |          |           |  NetStreamSink_SampleRequests @{Object} {Value} requests
+Microsoft-Windows-WinMDE  |  Verbose      |  6         |  0        |  Microsoft-Windows-WinMDE/MDE  |  RtspSink_SetWorkQueueTask     |          |           |  RtspSink_SetWorkQueue @{Object} {StreamIndex} requests
+Microsoft-Windows-WinMDE  |  Verbose      |  7         |  0        |  Microsoft-Windows-WinMDE/MDE  |  RtspSink_ProcessSampleTask    |  Start   |           |  RtspSink_ProcessSample_Start @{Object}
+Microsoft-Windows-WinMDE  |  Verbose      |  8         |  0        |  Microsoft-Windows-WinMDE/MDE  |  RtspSink_ProcessSampleTask    |  Stop    |           |  RtspSink_ProcessSample_Stop @{Object}

@@ -8,7 +8,7 @@ Microsoft-Windows-UserDataAccess-UserDataUtils  |  Information  |  102       |  
 Microsoft-Windows-UserDataAccess-UserDataUtils  |  Information  |  103       |  0        |           |         |          |  ServiceBase  |  Service: {Prop_Trace_UnicodeString} has entered the running state
 Microsoft-Windows-UserDataAccess-UserDataUtils  |  Information  |  104       |  0        |           |         |          |  ServiceBase  |  Service: {Prop_Trace_UnicodeString} is shutting down
 Microsoft-Windows-UserDataAccess-UserDataUtils  |  Information  |  105       |  0        |           |         |          |  ServiceBase  |  Service: {P1_UnicodeString} received control: {P1_UInt32}
-Microsoft-Windows-UserDataAccess-UserDataUtils  |  Error        |  301       |  0        |           |         |          |  Error        |  CHSPinYinHelper Init failed: HRESULT: {P1_HexInt32}, CreateFile: {Prop_Handle}, CreateFileMapping: {Prop_Handle2}
+Microsoft-Windows-UserDataAccess-UserDataUtils  |  Error        |  301       |  0        |           |         |          |  Error        |  CHSPinYinHelper Init failed: HRESULT: {P1_HexInt32}; CreateFile: {Prop_Handle}; CreateFileMapping: {Prop_Handle2}
 Microsoft-Windows-UserDataAccess-UserDataUtils  |  Warning      |  401       |  0        |           |         |          |               |  Unknown photo type: {P1_UnicodeString}. Default to be binary.
 Microsoft-Windows-UserDataAccess-UserDataUtils  |  Warning      |  402       |  0        |           |         |          |               |  Unknown photo binary encoding type: {P1_UnicodeString}. Default to be base64.
 Microsoft-Windows-UserDataAccess-UserDataUtils  |  Warning      |  403       |  0        |           |         |          |               |

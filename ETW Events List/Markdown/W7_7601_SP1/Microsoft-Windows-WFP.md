@@ -1,7 +1,7 @@
 Provider               |  Level        |  Event ID  |  Version  |  Channel                            |  Task  |  Opcode  |  Keyword  |  Message
 -----------------------|---------------|------------|-----------|-------------------------------------|--------|----------|-----------|------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-WFP  |  Information  |  1001      |  0        |  Microsoft-Windows-WFP/Analytic     |        |          |           |  WFP: Packet Dropped - Filter Run-Time ID: {Timestamp}4, Layer Run-Time ID: {Timestamp}5
-Microsoft-Windows-WFP  |  Information  |  1003      |  0        |  Microsoft-Windows-WFP/Analytic     |        |          |           |  IPsec: Packet Dropped - Error Code: {FailureStatus}, Filter Run-Time ID: {Timestamp}2, Layer Run-Time ID: {Timestamp}3
+Microsoft-Windows-WFP  |  Information  |  1001      |  0        |  Microsoft-Windows-WFP/Analytic     |        |          |           |  WFP: Packet Dropped - Filter Run-Time ID: {Timestamp}4; Layer Run-Time ID: {Timestamp}5
+Microsoft-Windows-WFP  |  Information  |  1003      |  0        |  Microsoft-Windows-WFP/Analytic     |        |          |           |  IPsec: Packet Dropped - Error Code: {FailureStatus}; Filter Run-Time ID: {Timestamp}2; Layer Run-Time ID: {Timestamp}3
 Microsoft-Windows-WFP  |  Information  |  1005      |  0        |  Microsoft-Windows-IKE/Operational  |        |          |           |  IPsec: Main Mode Failure
 Microsoft-Windows-WFP  |  Information  |  1007      |  0        |  Microsoft-Windows-IKE/Operational  |        |          |           |  IPsec: Quick Mode Failure
 Microsoft-Windows-WFP  |  Information  |  1009      |  0        |  Microsoft-Windows-IKE/Operational  |        |          |           |  IPsec: Extended Mode Failure
@@ -22,4 +22,4 @@ Microsoft-Windows-WFP  |  Information  |  1025      |  0        |  Microsoft-Win
 Microsoft-Windows-WFP  |  Information  |  1026      |  0        |  Microsoft-Windows-IKEDBG/Debug     |        |          |           |  WFP: User Mode Error
 Microsoft-Windows-WFP  |  Information  |  1027      |  0        |  Microsoft-Windows-IKEDBG/Debug     |        |          |           |  An IPsec quick mode security association ended.
 Microsoft-Windows-WFP  |  Information  |  1028      |  0        |  Microsoft-Windows-IKEDBG/Debug     |        |          |           |  An IPsec quick mode security association was established.
-Microsoft-Windows-WFP  |  Information  |  1029      |  0        |  Microsoft-Windows-WFP/Analytic     |        |          |           |  WFP: Packet Dropped - Filter Run-Time ID: {Timestamp}0, Layer Run-Time ID: {Timestamp}1
+Microsoft-Windows-WFP  |  Information  |  1029      |  0        |  Microsoft-Windows-WFP/Analytic     |        |          |           |  WFP: Packet Dropped - Filter Run-Time ID: {Timestamp}0; Layer Run-Time ID: {Timestamp}1

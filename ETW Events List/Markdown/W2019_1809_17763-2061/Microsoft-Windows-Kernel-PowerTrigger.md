@@ -1,0 +1,3 @@
+Provider                               |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword        |  Message
+---------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------------|---------
+Microsoft-Windows-Kernel-PowerTrigger  |  Information  |  1         |  0        |           |        |          |  potrg:Trigger  |

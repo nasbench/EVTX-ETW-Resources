@@ -27,13 +27,13 @@ Microsoft-Windows-PerfNet  |  Information  |  4099      |  1        |           
 Microsoft-Windows-PerfNet  |  Verbose      |  4100      |  1        |               |        |          |  Debug    |  Entered the CollectTcpIpPerformanceData routine.
 Microsoft-Windows-PerfNet  |  Information  |  4105      |  1        |               |        |          |  Debug    |  The CollectNbtPerformanceData routine returned an error. The error status is in the data section.
 Microsoft-Windows-PerfNet  |  Warning      |  4106      |  1        |               |        |          |  Debug    |
-Microsoft-Windows-PerfNet  |  Error        |  4108      |  1        |               |        |          |  Debug    |  The SnmpMgrRequest call requesting the TCP, IP, UDP and Interface Counters returned an error. The ErrorStatus and ErrorIndex values are shown in Data.
+Microsoft-Windows-PerfNet  |  Error        |  4108      |  1        |               |        |          |  Debug    |  The SnmpMgrRequest call requesting the TCP; IP; UDP and Interface Counters returned an error. The ErrorStatus and ErrorIndex values are shown in Data.
 Microsoft-Windows-PerfNet  |  Error        |  4110      |  1        |               |        |          |  Debug    |  The SnmpMgrRequest call requesting ICMP Counters returned an error. The ErrorStatus and ErrorIndex values are shown in Data.
 Microsoft-Windows-PerfNet  |  Verbose      |  4111      |  1        |               |        |          |  Debug    |
 Microsoft-Windows-PerfNet  |  Warning      |  4112      |  1        |               |        |          |  Debug    |  The buffer is not large enough to store the Network Interface data. The returned data contains the available and required buffer size.
 Microsoft-Windows-PerfNet  |  Error        |  4113      |  1        |               |        |          |  Debug    |  The SnmpGet (GETNEXT) request returned an error while processing the Net Interface instances. The ErrorStatus and ErrorIndex are shown in Data.
 Microsoft-Windows-PerfNet  |  Verbose      |  4114      |  1        |               |        |          |  Debug    |
-Microsoft-Windows-PerfNet  |  Warning      |  4116      |  1        |               |        |          |  Debug    |  The buffer is not large enough to store the Network Protocol (IP, ICMP, TCP & UDP) data. The returned data contains the available and required buffer size.
+Microsoft-Windows-PerfNet  |  Warning      |  4116      |  1        |               |        |          |  Debug    |  The buffer is not large enough to store the Network Protocol (IP; ICMP; TCP & UDP) data. The returned data contains the available and required buffer size.
 Microsoft-Windows-PerfNet  |  Warning      |  4121      |  1        |  Application  |        |          |  Debug    |
 Microsoft-Windows-PerfNet  |  Information  |  4199      |  1        |               |        |          |  Debug    |
 Microsoft-Windows-PerfNet  |  Verbose      |  4200      |  1        |               |        |          |  Debug    |

@@ -1,0 +1,19 @@
+Provider                                               |  Level        |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------------------------------|---------------|------------|-----------|---------------|--------|----------|-----------|----------------------------------------------------------------------------------------------
+Microsoft-User Experience Virtualization-SQM Uploader  |  Information  |  1         |  0        |  Operational  |        |  Start   |           |
+Microsoft-User Experience Virtualization-SQM Uploader  |  Information  |  2         |  0        |  Operational  |        |          |           |
+Microsoft-User Experience Virtualization-SQM Uploader  |  Error        |  3         |  0        |  Debug        |        |          |           |  An error occurred while initializing COM.Error: {hresult}
+Microsoft-User Experience Virtualization-SQM Uploader  |  Error        |  4         |  0        |  Debug        |        |          |           |  An error occurred while uploading the SQM data files.Error: {WString1}
+Microsoft-User Experience Virtualization-SQM Uploader  |  Information  |  5         |  0        |  Operational  |        |          |           |
+Microsoft-User Experience Virtualization-SQM Uploader  |  Verbose      |  6         |  0        |  Debug        |        |          |           |  SQM data file {filename} was successfully uploaded (HTTP response {http}).
+Microsoft-User Experience Virtualization-SQM Uploader  |  Warning      |  7         |  0        |  Debug        |        |          |           |  There was an error ({hr}) uploading SQM data file {filename} (HTTP response {http})
+Microsoft-User Experience Virtualization-SQM Uploader  |  Error        |  8         |  0        |  Operational  |        |          |           |  There was an error uploading the SQM data files.SQMAPI error code: {error}
+Microsoft-User Experience Virtualization-SQM Uploader  |  Information  |  9         |  0        |  Operational  |        |          |           |
+Microsoft-User Experience Virtualization-SQM Uploader  |  Error        |  10        |  0        |  Debug        |        |          |           |  An error of type std::exception occurred while uploading the SQM data files.Error: {String1}
+Microsoft-User Experience Virtualization-SQM Uploader  |  Error        |  11        |  0        |  Debug        |        |          |           |
+Microsoft-User Experience Virtualization-SQM Uploader  |  Information  |  12        |  0        |  Operational  |        |          |           |  {uint32} SQM data file(s) will be uploaded.
+Microsoft-User Experience Virtualization-SQM Uploader  |  Information  |  13        |  0        |  Debug        |        |          |           |  SQM data files matching the following pattern will be uploaded: "{WString1}"
+Microsoft-User Experience Virtualization-SQM Uploader  |  Critical     |  14        |  0        |  Debug        |        |          |           |  The SQM library could not be initialized due to the following error: {error}
+Microsoft-User Experience Virtualization-SQM Uploader  |  Warning      |  108       |  0        |  Debug        |        |          |           |
+Microsoft-User Experience Virtualization-SQM Uploader  |  Information  |  268       |  0        |  Operational  |        |          |           |
+Microsoft-User Experience Virtualization-SQM Uploader  |               |  2566      |  0        |  Debug        |        |          |           |

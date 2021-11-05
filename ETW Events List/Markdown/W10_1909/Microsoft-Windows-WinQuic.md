@@ -1,13 +1,13 @@
 Provider                   |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword                      |  Message
 ---------------------------|---------------|------------|-----------|-----------|--------|----------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-WinQuic  |  Information  |  1         |  0        |           |        |          |  ut:Connection                |  [conn][{Connection}] Begin, IsServer={IsServer}
+Microsoft-Windows-WinQuic  |  Information  |  1         |  0        |           |        |          |  ut:Connection                |  [conn][{Connection}] Begin; IsServer={IsServer}
 Microsoft-Windows-WinQuic  |  Information  |  2         |  0        |           |        |          |  ut:Connection                |  [conn][{Connection}] End
 Microsoft-Windows-WinQuic  |  Information  |  3         |  0        |           |        |          |  ut:Connection                |  [conn][{Connection}] Handshake complete
 Microsoft-Windows-WinQuic  |  Information  |  4         |  0        |           |        |          |  ut:Connection ut:Scheduling  |  [conn][{Connection}] Scheduling: {State}
 Microsoft-Windows-WinQuic  |  Verbose      |  5         |  0        |           |        |          |  ut:Connection ut:Scheduling  |  [conn][{Connection}] Execute: {Type}
 Microsoft-Windows-WinQuic  |  Verbose      |  6         |  0        |           |        |          |  ut:Connection ut:Scheduling  |  [conn][{Connection}] Execute: {Type}
 Microsoft-Windows-WinQuic  |  Verbose      |  7         |  0        |           |        |          |  ut:Connection ut:Scheduling  |  [conn][{Connection}] Execute: {Type}
-Microsoft-Windows-WinQuic  |  Information  |  100       |  0        |           |        |          |  ut:Stream                    |  [strm][{Stream}] Begin, Conn={Connection} ID={ID}
+Microsoft-Windows-WinQuic  |  Information  |  100       |  0        |           |        |          |  ut:Stream                    |  [strm][{Stream}] Begin; Conn={Connection} ID={ID}
 Microsoft-Windows-WinQuic  |  Information  |  101       |  0        |           |        |          |  ut:Stream                    |  [strm][{Stream}] End
 Microsoft-Windows-WinQuic  |  Verbose      |  1000      |  0        |           |        |          |  ut:Connection ut:DataFlow    |  [conn][{Connection}] FS: BytesSent={BytesSent} InFlight={BytesInFlight} InFlightMax={BytesInFlightMax} CWnd={CongestionWindow} SSThresh={SlowStartThreshold} InRecov={IsInRecovery} ConnFC={ConnectionFlowControl} StreamFC={StreamFlowControl} ISB={Connection}0 PostedBytes={Connection}1 SRtt={Connection}2
 Microsoft-Windows-WinQuic  |  Information  |  1001      |  0        |           |        |          |  ut:Connection ut:DataFlow    |  [conn][{Connection}] BLOCKED: {Reason}

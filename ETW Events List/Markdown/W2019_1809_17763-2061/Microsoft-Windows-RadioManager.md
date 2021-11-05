@@ -1,0 +1,4 @@
+Provider                        |  Level        |  Event ID  |  Version  |  Channel                                  |  Task                |  Opcode  |  Keyword  |  Message
+--------------------------------|---------------|------------|-----------|-------------------------------------------|----------------------|----------|-----------|---------
+Microsoft-Windows-RadioManager  |  Information  |  8001      |  0        |  Microsoft-Windows-RadioManager/Analytic  |  SystemRadioTurnOn   |  Stop    |           |
+Microsoft-Windows-RadioManager  |  Information  |  8002      |  0        |  Microsoft-Windows-RadioManager/Analytic  |  SystemRadioTurnOff  |  Stop    |           |

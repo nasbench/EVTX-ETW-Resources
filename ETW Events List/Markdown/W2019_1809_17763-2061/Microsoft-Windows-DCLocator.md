@@ -1,0 +1,11 @@
+Provider                     |  Level  |  Event ID  |  Version  |  Channel                            |  Task  |  Opcode  |  Keyword        |  Message
+-----------------------------|---------|------------|-----------|-------------------------------------|--------|----------|-----------------|---------
+Microsoft-Windows-DCLocator  |         |  1         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  misc           |
+Microsoft-Windows-DCLocator  |         |  2         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  mailslot       |
+Microsoft-Windows-DCLocator  |         |  3         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  site           |
+Microsoft-Windows-DCLocator  |         |  4         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  critical       |
+Microsoft-Windows-DCLocator  |         |  5         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  session_setup  |
+Microsoft-Windows-DCLocator  |         |  6         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  dns            |
+Microsoft-Windows-DCLocator  |         |  7         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  dns_more       |
+Microsoft-Windows-DCLocator  |         |  8         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  mailslot_text  |
+Microsoft-Windows-DCLocator  |         |  9         |  0        |  Microsoft-Windows-DCLocator/Debug  |        |          |  site_more      |

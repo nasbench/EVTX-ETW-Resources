@@ -1,0 +1,14 @@
+Provider                            |  Level        |  Event ID  |  Version  |  Channel                                 |  Task  |  Opcode  |  Keyword    |  Message
+------------------------------------|---------------|------------|-----------|------------------------------------------|--------|----------|-------------|-------------------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-AxInstallService  |  Information  |  1         |  0        |  Microsoft-Windows-AxInstallService/Log  |        |          |  Policy     |  {Message}
+Microsoft-Windows-AxInstallService  |  Error        |  2         |  0        |  Microsoft-Windows-AxInstallService/Log  |        |          |  Policy     |  {Message}
+Microsoft-Windows-AxInstallService  |  Information  |  3         |  0        |  Microsoft-Windows-AxInstallService/Log  |        |          |  Download   |  {Message}
+Microsoft-Windows-AxInstallService  |  Error        |  4         |  0        |  Microsoft-Windows-AxInstallService/Log  |        |          |  Download   |  {Message}
+Microsoft-Windows-AxInstallService  |  Information  |  5         |  0        |  Microsoft-Windows-AxInstallService/Log  |        |          |  Url Cache  |  {Message}
+Microsoft-Windows-AxInstallService  |  Error        |  6         |  0        |  Microsoft-Windows-AxInstallService/Log  |        |          |  Url Cache  |  {Message}
+Microsoft-Windows-AxInstallService  |  Information  |  7         |  0        |  Microsoft-Windows-AxInstallService/Log  |        |          |  General    |  {Message}
+Microsoft-Windows-AxInstallService  |  Error        |  8         |  0        |  Microsoft-Windows-AxInstallService/Log  |        |          |  General    |  {Message}
+Microsoft-Windows-AxInstallService  |  Error        |  4097      |  0        |  Application                             |        |          |             |  Attempt to install control {URL} failed. The host URL {HostName} is not in policy
+Microsoft-Windows-AxInstallService  |  Information  |  4098      |  0        |  Application                             |        |          |             |  The ActiveX control {URL} from host URL {HostName} passed all policy checks.
+Microsoft-Windows-AxInstallService  |  Error        |  4099      |  0        |  Application                             |        |          |             |  Attempt to install control {URL} failed. The policy settings for host URL {HostName} do not allow the control to be installed
+Microsoft-Windows-AxInstallService  |  Error        |  4100      |  0        |  Application                             |        |          |             |  Failed to download control {URL} from host URL {HostName}

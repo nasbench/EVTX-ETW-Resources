@@ -1,0 +1,17 @@
+Provider                 |  Level        |  Event ID  |  Version  |  Channel  |  Task                          |  Opcode  |  Keyword  |  Message
+-------------------------|---------------|------------|-----------|-----------|--------------------------------|----------|-----------|--------------------------------------------------------------------------------------------
+Microsoft-Windows-MMCSS  |  Information  |  1         |  1        |           |  Scheduler_Priority_Change     |          |           |  Thread priority of ({ProcessID}.{ThreadID}) in task {TaskIndex} has changed to {Priority}.
+Microsoft-Windows-MMCSS  |  Information  |  2         |  1        |           |  Scheduler_Wakeup              |          |           |  Scheduler woke up for reason {Reason}.
+Microsoft-Windows-MMCSS  |  Information  |  3         |  1        |           |  Scheduler_Sleep               |          |           |  Scheduler thread slept.
+Microsoft-Windows-MMCSS  |  Information  |  5         |  1        |           |  Service_Start                 |          |           |  MMCSS Service started.
+Microsoft-Windows-MMCSS  |  Information  |  6         |  1        |           |  Service_Stop                  |          |           |  MMCSS Service stopped.
+Microsoft-Windows-MMCSS  |  Information  |  7         |  1        |           |  Thread_Join                   |          |           |  Thread joined MMCSS Task {TaskName}
+Microsoft-Windows-MMCSS  |  Information  |  8         |  1        |           |  Thread_Leave                  |          |           |  Thread left MMCSS
+Microsoft-Windows-MMCSS  |  Information  |  12        |  1        |           |  TaskIndex_Yield               |          |           |  TaskIndex {TaskIndex} yielded for {Duration} hectons
+Microsoft-Windows-MMCSS  |  Information  |  13        |  1        |           |  TaskIndex_YieldCancel         |          |           |  TaskIndex {TaskIndex} canceled a registered yield
+Microsoft-Windows-MMCSS  |  Information  |  14        |  1        |           |  Set_MultimediaMode            |          |           |  TaskIndex {TaskIndex} sets multimedia mode to {ThreadTag}
+Microsoft-Windows-MMCSS  |  Information  |  15        |  1        |           |  TaskIndex_DeadlineExpired     |          |           |  TaskIndex {TaskIndex} deadline Expired
+Microsoft-Windows-MMCSS  |  Information  |  16        |  1        |           |  TurboEngaged                  |          |           |  Notify Power Manger to engage turbo mode ({TurboEngaged})
+Microsoft-Windows-MMCSS  |  Information  |  17        |  1        |           |  ThreadBuffering               |  Start   |           |  Thread Buffering Start ({ThreadID})
+Microsoft-Windows-MMCSS  |  Information  |  18        |  1        |           |  ThreadBuffering               |  Stop    |           |  Thread Buffering Stop ({ThreadID})
+Microsoft-Windows-MMCSS  |  Information  |  19        |  1        |           |  TaskIndex_PreDeadlineExpired  |          |           |  TaskIndex {TaskIndex} predeadline Expired

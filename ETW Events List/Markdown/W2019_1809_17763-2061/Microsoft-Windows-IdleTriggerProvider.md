@@ -1,0 +1,3 @@
+Provider                               |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                   |  Keyword                   |  Message
+---------------------------------------|---------------|------------|-----------|-----------|--------|---------------------------|----------------------------|---------
+Microsoft-Windows-IdleTriggerProvider  |  Information  |  1         |  0        |           |        |  Opcode_IdleTriggerEvent  |  Keyword_IdleTriggerEvent  |

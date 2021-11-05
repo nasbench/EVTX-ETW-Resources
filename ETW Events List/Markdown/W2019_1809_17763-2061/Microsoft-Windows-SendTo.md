@@ -1,0 +1,9 @@
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                              |  Task                     |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|---------------------------------------|---------------------------|----------|-----------|---------
+Microsoft-Windows-SendTo  |  Information  |  1         |  0        |  Microsoft-Windows-SendTo/Diagnostic  |  SendTo_DllLoaded         |          |           |
+Microsoft-Windows-SendTo  |  Information  |  2         |  0        |  Microsoft-Windows-SendTo/Diagnostic  |  SendTo_DllUnloaded       |          |           |
+Microsoft-Windows-SendTo  |  Information  |  3         |  0        |  Microsoft-Windows-SendTo/Diagnostic  |  SendTo_Email             |  Start   |           |
+Microsoft-Windows-SendTo  |  Information  |  4         |  0        |  Microsoft-Windows-SendTo/Diagnostic  |  SendTo_Email             |  Stop    |           |
+Microsoft-Windows-SendTo  |  Information  |  5         |  0        |  Microsoft-Windows-SendTo/Diagnostic  |  SendTo_EmailCancel       |  Start   |           |
+Microsoft-Windows-SendTo  |  Information  |  6         |  0        |  Microsoft-Windows-SendTo/Diagnostic  |  SendTo_EmailCancel       |  Stop    |           |
+Microsoft-Windows-SendTo  |  Information  |  7         |  0        |  Microsoft-Windows-SendTo/Diagnostic  |  SendTo_PagesInitialized  |          |           |

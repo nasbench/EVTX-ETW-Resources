@@ -3,10 +3,10 @@ Provider                            |  Level        |  Event ID  |  Version  |  
 Microsoft-Windows-MiStreamProvider  |  Information  |  1000      |  0        |  Operational  |  Lifetime    |  Start   |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1001      |  0        |  Operational  |  Lifetime    |  Stop    |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1010      |  0        |  Operational  |  Lifetime    |  Start   |           |
-Microsoft-Windows-MiStreamProvider  |  Error        |  1011      |  0        |  Operational  |  Lifetime    |          |           |  Collect error. Error code: {error}, Message: {message}
+Microsoft-Windows-MiStreamProvider  |  Error        |  1011      |  0        |  Operational  |  Lifetime    |          |           |  Collect error. Error code: {error}; Message: {message}
 Microsoft-Windows-MiStreamProvider  |  Information  |  1012      |  0        |  Operational  |  Lifetime    |  Stop    |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1013      |  0        |  Operational  |  Lifetime    |  Start   |           |
-Microsoft-Windows-MiStreamProvider  |  Error        |  1014      |  0        |  Operational  |  Lifetime    |          |           |  Collect pipeline error. Error code: {error}, Message: {message}
+Microsoft-Windows-MiStreamProvider  |  Error        |  1014      |  0        |  Operational  |  Lifetime    |          |           |  Collect pipeline error. Error code: {error}; Message: {message}
 Microsoft-Windows-MiStreamProvider  |  Information  |  1015      |  0        |  Operational  |  Lifetime    |  Start   |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1016      |  0        |  Operational  |  Lifetime    |  Stop    |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1017      |  0        |  Operational  |  Lifetime    |  Start   |           |
@@ -14,14 +14,14 @@ Microsoft-Windows-MiStreamProvider  |  Information  |  1018      |  0        |  
 Microsoft-Windows-MiStreamProvider  |  Information  |  1019      |  0        |  Operational  |  Lifetime    |  Start   |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1020      |  0        |  Operational  |  Lifetime    |  Stop    |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1030      |  0        |  Operational  |  Lifetime    |  Start   |           |
-Microsoft-Windows-MiStreamProvider  |  Error        |  1031      |  0        |  Operational  |  Lifetime    |          |           |  Push error. Error code: {error}, Message: {message}
+Microsoft-Windows-MiStreamProvider  |  Error        |  1031      |  0        |  Operational  |  Lifetime    |          |           |  Push error. Error code: {error}; Message: {message}
 Microsoft-Windows-MiStreamProvider  |  Information  |  1032      |  0        |  Operational  |  Lifetime    |  Stop    |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1033      |  0        |  Operational  |  Lifetime    |  Start   |           |
-Microsoft-Windows-MiStreamProvider  |  Error        |  1034      |  0        |  Operational  |  Lifetime    |          |           |  Push pipeline error. Error code: {error}, Message: {message}
+Microsoft-Windows-MiStreamProvider  |  Error        |  1034      |  0        |  Operational  |  Lifetime    |          |           |  Push pipeline error. Error code: {error}; Message: {message}
 Microsoft-Windows-MiStreamProvider  |  Information  |  1035      |  0        |  Operational  |  Lifetime    |  Start   |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1036      |  0        |  Operational  |  Lifetime    |  Stop    |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1040      |  0        |  Operational  |  Lifetime    |  Start   |           |
-Microsoft-Windows-MiStreamProvider  |  Error        |  1041      |  0        |  Operational  |  Lifetime    |          |           |  Flush error. Error code: {error}, Message: {message}
+Microsoft-Windows-MiStreamProvider  |  Error        |  1041      |  0        |  Operational  |  Lifetime    |          |           |  Flush error. Error code: {error}; Message: {message}
 Microsoft-Windows-MiStreamProvider  |  Information  |  1042      |  0        |  Operational  |  Lifetime    |  Stop    |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1050      |  0        |  Operational  |  Flush       |  Start   |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1051      |  0        |  Operational  |  Flush       |  Stop    |           |
@@ -39,11 +39,11 @@ Microsoft-Windows-MiStreamProvider  |  Information  |  1501      |  0        |  
 Microsoft-Windows-MiStreamProvider  |  Information  |  1502      |  0        |  Operational  |  HttpClient  |  Start   |           |
 Microsoft-Windows-MiStreamProvider  |  Information  |  1503      |  0        |  Debug        |  HttpClient  |  Start   |           |
 Microsoft-Windows-MiStreamProvider  |  Error        |  1504      |  0        |  Debug        |  HttpClient  |          |           |
-Microsoft-Windows-MiStreamProvider  |  Error        |  1505      |  0        |  Operational  |  HttpClient  |          |           |  Failed to read file. Error: {error}, File: {fileName}
+Microsoft-Windows-MiStreamProvider  |  Error        |  1505      |  0        |  Operational  |  HttpClient  |          |           |  Failed to read file. Error: {error}; File: {fileName}
 Microsoft-Windows-MiStreamProvider  |  Error        |  1506      |  0        |  Operational  |  HttpClient  |          |           |  Failed to add headers to HTTP request. Error: {error}
 Microsoft-Windows-MiStreamProvider  |  Error        |  1507      |  0        |  Operational  |  HttpClient  |          |           |  Failed to load certificates. Error: {error}
 Microsoft-Windows-MiStreamProvider  |  Error        |  1508      |  0        |  Operational  |  HttpClient  |          |           |  Failed to send Http request. Error: {error}
-Microsoft-Windows-MiStreamProvider  |  Error        |  1509      |  0        |  Operational  |  HttpClient  |          |           |  Failed to delete file. Error: {error}, File: {fileName}
+Microsoft-Windows-MiStreamProvider  |  Error        |  1509      |  0        |  Operational  |  HttpClient  |          |           |  Failed to delete file. Error: {error}; File: {fileName}
 Microsoft-Windows-MiStreamProvider  |  Error        |  1510      |  0        |  Operational  |  HttpClient  |          |           |  Invalid status received from server. Error: {error}
 Microsoft-Windows-MiStreamProvider  |  Error        |  1511      |  0        |  Operational  |  HttpClient  |          |           |  callback status request error. Error: {error}
 Microsoft-Windows-MiStreamProvider  |  Error        |  1512      |  0        |  Operational  |  HttpClient  |          |           |  Failed to write file stream. Error: {error}

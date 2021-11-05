@@ -9,7 +9,7 @@ Microsoft-Windows-RasServer  |         |  50006     |  0        |           |   
 Microsoft-Windows-RasServer  |         |  50007     |  0        |           |        |          |           |  IPMGM was unable to create a semaphore. The data is the error code.
 Microsoft-Windows-RasServer  |         |  50008     |  0        |           |        |          |           |  IPMGM has started successfully.
 Microsoft-Windows-RasServer  |         |  50009     |  0        |           |        |          |           |  IPMGM could not schedule a task to be executed. This may have been caused by a memory allocation failure. The data is the error code.
-Microsoft-Windows-RasServer  |         |  50010     |  0        |           |        |          |           |  IPMGM could not find the protocol component ({param1}, {param2})
+Microsoft-Windows-RasServer  |         |  50010     |  0        |           |        |          |           |  IPMGM could not find the protocol component ({param1}; {param2})
 Microsoft-Windows-RasServer  |         |  50011     |  0        |           |        |          |           |  Protocol component has already registered with IPMGM
 Microsoft-Windows-RasServer  |         |  50012     |  0        |           |        |          |           |  IPMGM failed to register the protocol component. The data is in the error code.
 Microsoft-Windows-RasServer  |         |  50013     |  0        |           |        |          |           |  The protocol component that is attempting to deregister is currently enabled on one or more interfaces.

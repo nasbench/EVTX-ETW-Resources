@@ -1,0 +1,26 @@
+Provider                           |  Level        |  Event ID  |  Version  |  Channel                                 |  Task                     |  Opcode    |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|------------------------------------------|---------------------------|------------|-----------|---------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Schannel-Events  |  Information  |  257       |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  AcquireCredentialHandle  |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  258       |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  AcquireCredentialHandle  |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  513       |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  AcceptSecurityContext    |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  514       |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  AcceptSecurityContext    |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  769       |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  MemoryAllocation         |  Allocate  |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  770       |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  MemoryAllocation         |  Free      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1025      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1026      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1027      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1028      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1029      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1030      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1031      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1032      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1033      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1034      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  CAPI2Calls               |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1281      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  PKCrypto                 |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1282      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  PKCrypto                 |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1283      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  PKCrypto                 |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1284      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  PKCrypto                 |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1537      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  FreeCredentialHandle     |  Start     |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1538      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  FreeCredentialHandle     |  Stop      |           |
+Microsoft-Windows-Schannel-Events  |  Information  |  1793      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  DeleteSecurityContext    |  Start     |           |  A TLS Security Context handle is being deleted.   Context handle: {ContextHandle}   Target name: {TargetName}
+Microsoft-Windows-Schannel-Events  |  Information  |  1794      |  0        |  Microsoft-Windows-Schannel-Events/Perf  |  DeleteSecurityContext    |  Stop      |           |

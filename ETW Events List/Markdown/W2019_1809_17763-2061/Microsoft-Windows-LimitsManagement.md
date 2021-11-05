@@ -1,0 +1,16 @@
+Provider                            |  Level        |  Event ID  |  Version  |  Channel                                        |  Task                     |  Opcode  |  Keyword  |  Message
+------------------------------------|---------------|------------|-----------|-------------------------------------------------|---------------------------|----------|-----------|---------
+Microsoft-Windows-LimitsManagement  |  Information  |  1         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MonitorEnumerated        |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  2         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MonitorRundown           |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  3         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MonitorValueChange       |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  4         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MonitorMitigatingChange  |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  5         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MonitorThresholdChange   |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  6         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MonitorRemoved           |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  7         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MitigationEvent          |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  8         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  PolicyEnumerated         |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  9         |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  PolicyRundown            |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  10        |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  PolicyRemoved            |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  11        |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MitigationEnumerated     |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  12        |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MitigationRundown        |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  13        |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MitigationValueChange    |          |           |
+Microsoft-Windows-LimitsManagement  |  Information  |  14        |  0        |  Microsoft-Windows-LimitsManagement/Diagnostic  |  MitigationRemoved        |          |           |

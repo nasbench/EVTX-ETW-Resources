@@ -1,0 +1,5 @@
+Provider                       |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+-------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-Winsock-SQM  |  Information  |  5         |  0        |           |        |          |           |
+Microsoft-Windows-Winsock-SQM  |  Information  |  10        |  0        |           |        |          |           |
+Microsoft-Windows-Winsock-SQM  |  Information  |  11        |  0        |           |        |          |           |

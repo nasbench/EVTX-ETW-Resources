@@ -17,8 +17,8 @@ Microsoft-Windows-MapControls  |  Information  |  5012      |  0        |       
 Microsoft-Windows-MapControls  |  Verbose      |  5020      |  0        |           |  Route-Initialize               |          |  Queries                    |  Route Initialize
 Microsoft-Windows-MapControls  |  Verbose      |  5021      |  0        |           |  RouteLeg-Initialize            |          |  Queries                    |  RouteLeg Initialize
 Microsoft-Windows-MapControls  |  Verbose      |  5022      |  0        |           |  RouteManeuver-Initialize       |          |  Queries                    |  RouteManeuver Initialize
-Microsoft-Windows-MapControls  |  Information  |  5023      |  0        |           |  Route-Serialize                |          |  Serialization              |  Route Serialize. [{Hr}], [{LegCount}]
-Microsoft-Windows-MapControls  |  Information  |  5024      |  0        |           |  Route-Deserialize              |          |  Serialization              |  Route Deserialize. [{Hr}], [{LegCount}]
+Microsoft-Windows-MapControls  |  Information  |  5023      |  0        |           |  Route-Serialize                |          |  Serialization              |  Route Serialize. [{Hr}]; [{LegCount}]
+Microsoft-Windows-MapControls  |  Information  |  5024      |  0        |           |  Route-Deserialize              |          |  Serialization              |  Route Deserialize. [{Hr}]; [{LegCount}]
 Microsoft-Windows-MapControls  |  Information  |  5025      |  0        |           |  Route-Serialize                |  Start   |  Performance Serialization  |
 Microsoft-Windows-MapControls  |  Information  |  5026      |  0        |           |  Route-Deserialize              |  Stop    |  Performance Serialization  |
 Microsoft-Windows-MapControls  |  Information  |  5027      |  0        |           |  Route-Deserialize              |  Start   |  Performance Serialization  |
@@ -27,9 +27,9 @@ Microsoft-Windows-MapControls  |  Information  |  11001     |  0        |       
 Microsoft-Windows-MapControls  |  Information  |  11002     |  0        |           |  PointerEvent                   |          |  Touch                      |
 Microsoft-Windows-MapControls  |  Information  |  11003     |  0        |           |  PointerEvent                   |          |  Touch                      |
 Microsoft-Windows-MapControls  |  Information  |  11004     |  0        |           |  PointerEvent                   |          |  Touch                      |
-Microsoft-Windows-MapControls  |  Information  |  11042     |  0        |           |  JupiterMapOverlay              |          |                             |  [JupiterMapOverlay] UI positioned: ({dipX}, {dipY})
-Microsoft-Windows-MapControls  |  Information  |  11043     |  0        |           |  JupiterMapOverlay              |          |                             |  [JupiterMapOverlay] DComp positioned: ({dipX}, {dipY})
-Microsoft-Windows-MapControls  |  Information  |  11044     |  0        |           |  JupiterMapOverlay              |          |                             |  [JupiterMapOverlay] Hit test positioned: ({dipX}, {dipY})
+Microsoft-Windows-MapControls  |  Information  |  11042     |  0        |           |  JupiterMapOverlay              |          |                             |  [JupiterMapOverlay] UI positioned: ({dipX}; {dipY})
+Microsoft-Windows-MapControls  |  Information  |  11043     |  0        |           |  JupiterMapOverlay              |          |                             |  [JupiterMapOverlay] DComp positioned: ({dipX}; {dipY})
+Microsoft-Windows-MapControls  |  Information  |  11044     |  0        |           |  JupiterMapOverlay              |          |                             |  [JupiterMapOverlay] Hit test positioned: ({dipX}; {dipY})
 Microsoft-Windows-MapControls  |  Information  |  11045     |  0        |           |  JupiterMapOverlay              |  Start   |                             |
 Microsoft-Windows-MapControls  |  Information  |  11046     |  0        |           |  JupiterMapOverlay              |  Stop    |                             |
 Microsoft-Windows-MapControls  |  Information  |  11047     |  0        |           |  JupiterMapOverlay              |          |                             |

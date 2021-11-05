@@ -3,7 +3,7 @@ Provider                   |  Level        |  Event ID  |  Version  |  Channel  
 Microsoft-Windows-MosHost  |  Information  |  1         |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  {String1}
 Microsoft-Windows-MosHost  |  Information  |  2         |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  {String1} {String2}
 Microsoft-Windows-MosHost  |  Error        |  3         |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  {Message} Error: {ErrorCode}
-Microsoft-Windows-MosHost  |  Information  |  10        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  Framework State: {State}, HRESULT: {HRESULT}
+Microsoft-Windows-MosHost  |  Information  |  10        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |  Framework State: {State}; HRESULT: {HRESULT}
 Microsoft-Windows-MosHost  |  Information  |  20        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
 Microsoft-Windows-MosHost  |  Information  |  21        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |
 Microsoft-Windows-MosHost  |  Information  |  30        |  0        |  Microsoft-Windows-MosHost/Operational  |  MosHost  |          |  API              |

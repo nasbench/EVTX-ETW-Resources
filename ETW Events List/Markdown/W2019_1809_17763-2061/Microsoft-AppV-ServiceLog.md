@@ -1,0 +1,5 @@
+Provider                   |  Level    |  Event ID  |  Version  |  Channel                      |  Task               |  Opcode               |  Keyword              |  Message
+---------------------------|-----------|------------|-----------|-------------------------------|---------------------|-----------------------|-----------------------|--------------------------------
+Microsoft-AppV-ServiceLog  |  Verbose  |  1         |  0        |  Microsoft-AppV-Client/Debug  |                     |                       |  Debug Out Messages.  |  {stringValue1}
+Microsoft-AppV-ServiceLog  |  Verbose  |  2         |  0        |  Microsoft-AppV-Client/Debug  |  Debug AppV Client  |  AppV Client Service  |  Debug Out Messages.  |  {WString1}
+Microsoft-AppV-ServiceLog  |  Verbose  |  3         |  0        |  Microsoft-AppV-Client/Debug  |  Debug AppV Client  |  AppV Client Service  |  Debug Out Messages.  |  {Message} [{Function}; {Line}]

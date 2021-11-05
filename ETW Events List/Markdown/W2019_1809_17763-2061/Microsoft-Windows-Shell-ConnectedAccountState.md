@@ -1,0 +1,3 @@
+Provider                                       |  Level        |  Event ID  |  Version  |  Channel                                                     |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------------------------|---------------|------------|-----------|--------------------------------------------------------------|--------|----------|-----------|-------------------------
+Microsoft-Windows-Shell-ConnectedAccountState  |  Information  |  100       |  0        |  Microsoft-Windows-Shell-ConnectedAccountState/ActionCenter  |        |          |           |  Connected Account State

@@ -1,0 +1,4 @@
+Provider                                        |  Level    |  Event ID  |  Version  |  Channel                                               |  Task  |  Opcode  |  Keyword  |  Message
+------------------------------------------------|-----------|------------|-----------|--------------------------------------------------------|--------|----------|-----------|------------------------
+Microsoft-User Experience Virtualization-Admin  |  Verbose  |  0         |  0        |  Microsoft-User Experience Virtualization-Admin/Debug  |        |  Start   |           |  --> {String}
+Microsoft-User Experience Virtualization-Admin  |  Verbose  |  1         |  0        |  Microsoft-User Experience Virtualization-Admin/Debug  |        |  Stop    |           |  <-- {String} [{Ulong}]

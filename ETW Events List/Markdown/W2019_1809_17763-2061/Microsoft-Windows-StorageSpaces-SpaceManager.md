@@ -1,0 +1,4 @@
+Provider                                      |  Level        |  Event ID  |  Version  |  Channel                                                  |  Task  |  Opcode  |  Keyword  |  Message
+----------------------------------------------|---------------|------------|-----------|-----------------------------------------------------------|--------|----------|-----------|-------------------
+Microsoft-Windows-StorageSpaces-SpaceManager  |  Information  |  100       |  0        |  Microsoft-Windows-StorageSpaces-SpaceManager/Diagnostic  |        |          |           |  For internal use.
+Microsoft-Windows-StorageSpaces-SpaceManager  |  Information  |  101       |  0        |  Microsoft-Windows-StorageSpaces-SpaceManager/Diagnostic  |        |          |           |  For internal use.

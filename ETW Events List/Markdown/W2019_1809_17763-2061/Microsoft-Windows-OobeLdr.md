@@ -1,0 +1,10 @@
+Provider                   |  Level        |  Event ID  |  Version  |  Channel                             |  Task                      |  Opcode  |  Keyword      |  Message
+---------------------------|---------------|------------|-----------|--------------------------------------|----------------------------|----------|---------------|-----------------------------------------------------------
+Microsoft-Windows-OobeLdr  |  Information  |  1001      |  0        |  Microsoft-Windows-OobeLdr/Analytic  |  Run OobeLdr               |  Start   |  Performance  |  OobeLdr.exe is running with command line "{CommandLine}".
+Microsoft-Windows-OobeLdr  |  Information  |  1002      |  0        |  Microsoft-Windows-OobeLdr/Analytic  |  Run OobeLdr               |  Stop    |  Performance  |  OobeLdr.exe exiting with status {ErrorCode}.
+Microsoft-Windows-OobeLdr  |  Information  |  2001      |  0        |  Microsoft-Windows-OobeLdr/Analytic  |  OobeLdr Process Unattend  |  Start   |  Performance  |  Executing unattend settings pass "{Pass}".
+Microsoft-Windows-OobeLdr  |  Information  |  2002      |  0        |  Microsoft-Windows-OobeLdr/Analytic  |  OobeLdr Process Unattend  |  Stop    |  Performance  |  Finished executing unattend pass with status {ErrorCode}.
+Microsoft-Windows-OobeLdr  |  Information  |  2003      |  0        |  Microsoft-Windows-OobeLdr/Analytic  |  OobeLdr Process Unattend  |  Stop    |  Performance  |  Failed to execute unattend pass with status {ErrorCode}.
+Microsoft-Windows-OobeLdr  |  Information  |  2004      |  0        |  Microsoft-Windows-OobeLdr/Analytic  |  OobeLdr Process Unattend  |          |  Diagnostic   |  Using unattend file "{FilePath}" for pass "{Pass}".
+Microsoft-Windows-OobeLdr  |  Information  |  3001      |  0        |  Microsoft-Windows-OobeLdr/Analytic  |  Launch Oobe               |  Start   |  Performance  |
+Microsoft-Windows-OobeLdr  |  Information  |  3002      |  0        |  Microsoft-Windows-OobeLdr/Analytic  |  Launch Oobe               |  Stop    |  Performance  |  Oobe exited with status {ErrorCode}.

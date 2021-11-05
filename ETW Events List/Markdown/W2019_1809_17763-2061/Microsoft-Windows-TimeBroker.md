@@ -1,0 +1,6 @@
+Provider                      |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword     |  Message
+------------------------------|---------------|------------|-----------|-----------|--------|----------|--------------|------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-TimeBroker  |  Verbose      |  1         |  1        |  Debug    |        |          |  EventState  |  Event ID {BrokeredEventId} changed state from {OldState} to {NewState}
+Microsoft-Windows-TimeBroker  |  Verbose      |  2         |  1        |  Debug    |        |          |  EventState  |  Event ID {BrokeredEventId} is set to fire between {StartTime} and {EndTime}
+Microsoft-Windows-TimeBroker  |  Information  |  3         |  1        |  Debug    |        |          |  API         |  TimeBroker CreateEvent called for Event ID {BrokeredEventId} with Event Type {EventType} returned {Status}
+Microsoft-Windows-TimeBroker  |  Information  |  4         |  1        |  Debug    |        |          |  API         |  TimeBroker DeleteEvent called for Event ID {BrokeredEventId} and returned {Status}

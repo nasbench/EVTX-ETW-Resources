@@ -1,0 +1,10 @@
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                            |  Task                     |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|-------------------------------------|---------------------------|----------|-----------|-------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Sdstor  |  Information  |  100       |  0        |  Microsoft-Windows-Sdstor/Analytic  |  Io                       |          |           |  Request servicing time taken by SD stack.
+Microsoft-Windows-Sdstor  |  Information  |  101       |  0        |  Microsoft-Windows-Sdstor/Analytic  |  Packed Command           |          |           |  Packed Command Read Received.Total Count: {PackedCommandCount}Number of Packed Irps: {NumIrpsPacked}
+Microsoft-Windows-Sdstor  |  Information  |  102       |  0        |  Microsoft-Windows-Sdstor/Analytic  |  Packed Command           |          |           |  Packed Command Write Received.Total Count: {PackedCommandCount}Number of Packed Irps: {NumIrpsPacked}
+Microsoft-Windows-Sdstor  |  Information  |  103       |  0        |  Microsoft-Windows-Sdstor/Analytic  |  High Priority Interrupt  |          |           |  HPI Timer Queued
+Microsoft-Windows-Sdstor  |  Information  |  104       |  0        |  Microsoft-Windows-Sdstor/Analytic  |  High Priority Interrupt  |          |           |  HPI Irp Sent
+Microsoft-Windows-Sdstor  |  Information  |  105       |  0        |  Microsoft-Windows-Sdstor/Analytic  |  High Priority Interrupt  |          |           |  HPI Irp Completed (0x{ResultCode})
+Microsoft-Windows-Sdstor  |  Information  |  106       |  0        |  Microsoft-Windows-Sdstor/Analytic  |  Flush                    |          |           |  Flush received
+Microsoft-Windows-Sdstor  |  Information  |  107       |  0        |  Microsoft-Windows-Sdstor/Analytic  |  Discard                  |          |           |  Discard received (LBA {LBA} Length {Length})

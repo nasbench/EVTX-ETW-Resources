@@ -1,0 +1,10 @@
+Provider                                  |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+------------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  1         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  2         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  3         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  4         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  5         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  6         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  7         |  0        |           |        |          |           |
+Microsoft-Windows-Kernel-Audit-API-Calls  |  Information  |  8         |  0        |           |        |          |           |

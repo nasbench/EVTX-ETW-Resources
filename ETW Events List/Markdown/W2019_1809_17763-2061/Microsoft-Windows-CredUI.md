@@ -1,0 +1,6 @@
+Provider                  |  Level        |  Event ID  |  Version  |  Channel                              |  Task                               |  Opcode  |  Keyword  |  Message
+--------------------------|---------------|------------|-----------|---------------------------------------|-------------------------------------|----------|-----------|---------
+Microsoft-Windows-CredUI  |  Information  |  12001     |  0        |  Microsoft-Windows-CredUI/Diagnostic  |  CredUIPromptForWindowsCredentials  |  Start   |           |
+Microsoft-Windows-CredUI  |  Information  |  12002     |  0        |  Microsoft-Windows-CredUI/Diagnostic  |  CredUIPromptForWindowsCredentials  |  Stop    |           |
+Microsoft-Windows-CredUI  |  Information  |  12003     |  0        |  Microsoft-Windows-CredUI/Diagnostic  |  CredUIPromptForCredentials         |  Start   |           |
+Microsoft-Windows-CredUI  |  Information  |  12004     |  0        |  Microsoft-Windows-CredUI/Diagnostic  |  CredUIPromptForCredentials         |  Stop    |           |

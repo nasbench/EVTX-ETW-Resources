@@ -13,8 +13,8 @@ Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  107       |  0        |
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  109       |  0        |           |         |          |           |  NetworkHelper::HttpTransport: Http Status error: Handle: {P1_UInt32} Error: {P2_UInt32}
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  110       |  0        |           |         |          |           |  NetworkHelper::HttpTransport: CmSetRequirement({P1_String}) Failure: Handle: {P2_UInt32} Error: {P3_UInt32}
 Microsoft-Windows-MCCS-NetworkHelper  |  Error        |  111       |  0        |           |         |          |  Error    |  NetworkHelper::CrackUrl Failure. HR: {P1_UInt32} Url: {P2_String}
-Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  201       |  0        |           |         |          |           |  Set PDC Active:{P1_Boolean}, invalid CCT state:{P2_Int32}
-Microsoft-Windows-MCCS-NetworkHelper  |  Information  |  202       |  0        |           |         |          |           |  Triggering PDC for sender {P1_String}, IsActive {P2_Boolean}, ActivationCount {P2_Int32}
+Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  201       |  0        |           |         |          |           |  Set PDC Active:{P1_Boolean}; invalid CCT state:{P2_Int32}
+Microsoft-Windows-MCCS-NetworkHelper  |  Information  |  202       |  0        |           |         |          |           |  Triggering PDC for sender {P1_String}; IsActive {P2_Boolean}; ActivationCount {P2_Int32}
 Microsoft-Windows-MCCS-NetworkHelper  |  Information  |  203       |  0        |           |         |          |           |  Triggered CCT for sender {P1_String}
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  204       |  0        |           |         |          |           |
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  205       |  0        |           |         |          |           |

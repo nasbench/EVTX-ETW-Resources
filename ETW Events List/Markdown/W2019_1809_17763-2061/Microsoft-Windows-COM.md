@@ -1,0 +1,3 @@
+Provider               |  Level        |  Event ID  |  Version  |  Channel                         |  Task  |  Opcode  |  Keyword                    |  Message
+-----------------------|---------------|------------|-----------|----------------------------------|--------|----------|-----------------------------|-------------------------------
+Microsoft-Windows-COM  |  Information  |  1         |  0        |  Microsoft-Windows-COM/Analytic  |        |          |  Deprecated COM interfaces  |  Deprecated COM CLSID {CLSID}.

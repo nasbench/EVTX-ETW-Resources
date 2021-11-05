@@ -1,0 +1,3 @@
+Provider                                          |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                         |  Keyword                         |  Message
+--------------------------------------------------|---------------|------------|-----------|-----------|--------|---------------------------------|----------------------------------|---------
+Microsoft-Windows-Directory-Services-SAM-Utility  |  Information  |  1         |  0        |           |        |  Opcode_SamDatabaseChangeEvent  |  Keyword_SamDatabaseChangeEvent  |

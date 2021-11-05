@@ -28,7 +28,7 @@ Microsoft-Windows-Telephony-PhoneOm  |  Verbose      |  215       |  0        | 
 Microsoft-Windows-Telephony-PhoneOm  |  Verbose      |  216       |  0        |           |  SimSecChangePin                  |  Start   |  Performance  |
 Microsoft-Windows-Telephony-PhoneOm  |  Verbose      |  217       |  0        |           |  SimSecChangePin                  |  Stop    |  Performance  |
 Microsoft-Windows-Telephony-PhoneOm  |  Verbose      |  218       |  0        |           |  StartCall                        |  Start   |  Performance  |
-Microsoft-Windows-Telephony-PhoneOm  |  Warning      |  219       |  0        |           |                                   |          |               |  PhoneOM.dll unloading, but Phone API initialize/uninitialize calls mismatched.  InitCount: {P1_UInt32}
+Microsoft-Windows-Telephony-PhoneOm  |  Warning      |  219       |  0        |           |                                   |          |               |  PhoneOM.dll unloading; but Phone API initialize/uninitialize calls mismatched.  InitCount: {P1_UInt32}
 Microsoft-Windows-Telephony-PhoneOm  |  Verbose      |  220       |  0        |           |  SimSecChangePin2                 |  Start   |  Performance  |
 Microsoft-Windows-Telephony-PhoneOm  |  Verbose      |  221       |  0        |           |  SimSecChangePin2                 |  Stop    |  Performance  |
 Microsoft-Windows-Telephony-PhoneOm  |  Verbose      |  222       |  0        |           |  SimSecUnblockPin2                |  Start   |  Performance  |
@@ -37,10 +37,10 @@ Microsoft-Windows-Telephony-PhoneOm  |  Information  |  224       |  0        | 
 Microsoft-Windows-Telephony-PhoneOm  |  Information  |  225       |  0        |           |                                   |          |               |  Phone listener removed.  HPHONELISTENER: {Pointer}
 Microsoft-Windows-Telephony-PhoneOm  |  Information  |  226       |  0        |           |                                   |          |               |  Phone listener detected service restart.  HPHONELISTENER: {Pointer}
 Microsoft-Windows-Telephony-PhoneOm  |  Information  |  227       |  0        |           |                                   |          |               |  Phone listener lost notification.  HPHONELISTENER: {Pointer}
-Microsoft-Windows-Telephony-PhoneOm  |  Error        |  228       |  0        |           |                                   |          |  Error        |  Phone listener failed to retrieve notification.  HPHONELISTENER: {Pointer}, result: {Result}
+Microsoft-Windows-Telephony-PhoneOm  |  Error        |  228       |  0        |           |                                   |          |  Error        |  Phone listener failed to retrieve notification.  HPHONELISTENER: {Pointer}; result: {Result}
 Microsoft-Windows-Telephony-PhoneOm  |  Information  |  229       |  0        |           |                                   |          |  PhoneOM      |  Phone Api: {Api}
-Microsoft-Windows-Telephony-PhoneOm  |  Information  |  230       |  0        |           |                                   |          |  PhoneOM      |  Phone Api: {Api}, call {Call}
-Microsoft-Windows-Telephony-PhoneOm  |  Information  |  231       |  0        |           |                                   |          |  PhoneOM      |  Phone Api: {Api}, call {Call}, call2 {Call2}
-Microsoft-Windows-Telephony-PhoneOm  |  Information  |  232       |  0        |           |                                   |          |  PhoneOM      |  Phone Api: {Api}, line {Line}
+Microsoft-Windows-Telephony-PhoneOm  |  Information  |  230       |  0        |           |                                   |          |  PhoneOM      |  Phone Api: {Api}; call {Call}
+Microsoft-Windows-Telephony-PhoneOm  |  Information  |  231       |  0        |           |                                   |          |  PhoneOM      |  Phone Api: {Api}; call {Call}; call2 {Call2}
+Microsoft-Windows-Telephony-PhoneOm  |  Information  |  232       |  0        |           |                                   |          |  PhoneOM      |  Phone Api: {Api}; line {Line}
 Microsoft-Windows-Telephony-PhoneOm  |  Error        |  233       |  0        |           |                                   |          |  PhoneOM      |
 Microsoft-Windows-Telephony-PhoneOm  |  Information  |  234       |  0        |           |                                   |          |  PhoneOM      |  LoadLocalizedAccountFriendlyName: No aumid found for line {Line}.

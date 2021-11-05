@@ -6,4 +6,4 @@ Microsoft-Windows-Partition  |  Information  |  1003      |  0        |         
 Microsoft-Windows-Partition  |  Information  |  1004      |  0        |           |        |          |  power    |
 Microsoft-Windows-Partition  |  Information  |  1005      |  0        |           |        |          |  power    |
 Microsoft-Windows-Partition  |  Information  |  1006      |  4        |           |        |          |           |  For internal use only.
-Microsoft-Windows-Partition  |  Information  |  1007      |  0        |           |        |          |           |  Spaceport status: {SpStatus}, output operation status: {OperationStatus} and Wnf status: {WnfStatus}.
+Microsoft-Windows-Partition  |  Information  |  1007      |  0        |           |        |          |           |  Spaceport status: {SpStatus}; output operation status: {OperationStatus} and Wnf status: {WnfStatus}.

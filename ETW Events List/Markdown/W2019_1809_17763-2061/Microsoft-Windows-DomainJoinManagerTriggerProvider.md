@@ -1,0 +1,4 @@
+Provider                                            |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                    |  Keyword                    |  Message
+----------------------------------------------------|---------------|------------|-----------|-----------|--------|----------------------------|-----------------------------|---------
+Microsoft-Windows-DomainJoinManagerTriggerProvider  |  Information  |  1         |  0        |           |        |  Opcode_DomainJoinEvent    |  Keyword_DomainJoinEvent    |
+Microsoft-Windows-DomainJoinManagerTriggerProvider  |  Information  |  2         |  0        |           |        |  Opcode_DomainUnjoinEvent  |  Keyword_DomainUnjoinEvent  |

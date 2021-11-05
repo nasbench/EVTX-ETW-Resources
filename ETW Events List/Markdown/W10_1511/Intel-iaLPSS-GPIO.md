@@ -18,7 +18,7 @@ Intel-iaLPSS-GPIO  |  Information  |  1030      |  1        |  Analytic Channel 
 Intel-iaLPSS-GPIO  |  Information  |  1040      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |          |           |  Query Stop {WDFDEVICE}
 Intel-iaLPSS-GPIO  |  Information  |  1041      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |  Start   |           |  Surprise Removal {WDFDEVICE}
 Intel-iaLPSS-GPIO  |  Information  |  1042      |  1        |  Analytic Channel  |  Enumeration of GPIOx driver  |          |           |
-Intel-iaLPSS-GPIO  |  Information  |  1045      |  1        |  Analytic Channel  |  Gpio IO operations           |          |           |  ConnectIO BankId = {BankId}, PinCount = {PinCount}, ConnectMode = {ConnectMode}, PullConfiguration = {PullConfig}
-Intel-iaLPSS-GPIO  |  Information  |  1046      |  1        |  Analytic Channel  |  Gpio IO operations           |          |           |  DisconnectIO BankId = {BankId}, PinCount = {PinCount}, DisconnectMode = {DisconnectMode}
+Intel-iaLPSS-GPIO  |  Information  |  1045      |  1        |  Analytic Channel  |  Gpio IO operations           |          |           |  ConnectIO BankId = {BankId}; PinCount = {PinCount}; ConnectMode = {ConnectMode}; PullConfiguration = {PullConfig}
+Intel-iaLPSS-GPIO  |  Information  |  1046      |  1        |  Analytic Channel  |  Gpio IO operations           |          |           |  DisconnectIO BankId = {BankId}; PinCount = {PinCount}; DisconnectMode = {DisconnectMode}
 Intel-iaLPSS-GPIO  |  Information  |  1048      |  0        |  Analytic Channel  |  Gpio IO operations           |          |           |  ReadIoPins BankID:{BankID} PinValues:{PinValues}
 Intel-iaLPSS-GPIO  |  Information  |  1049      |  0        |  Analytic Channel  |  Gpio IO operations           |          |           |  WriteIoPins BankID:{BankID} SetValue:{SetValue} ClearValue:{ClearValue}

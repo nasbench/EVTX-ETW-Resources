@@ -1,0 +1,6 @@
+Provider                           |  Level        |  Event ID  |  Version  |  Channel                                     |  Task  |  Opcode  |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|----------------------------------------------|--------|----------|-----------|----------------------------------------------
+Microsoft-Windows-WinINet-Capture  |  Information  |  2001      |  0        |  Microsoft-Windows-WinINet-Capture/Analytic  |        |          |           |  The WinINet request header buffer captured
+Microsoft-Windows-WinINet-Capture  |  Information  |  2002      |  0        |  Microsoft-Windows-WinINet-Capture/Analytic  |        |          |           |  The WinINet request payload buffer captured
+Microsoft-Windows-WinINet-Capture  |  Information  |  2003      |  0        |  Microsoft-Windows-WinINet-Capture/Analytic  |        |          |           |  The WinINet response header buffer captured
+Microsoft-Windows-WinINet-Capture  |  Information  |  2004      |  0        |  Microsoft-Windows-WinINet-Capture/Analytic  |        |          |           |  The WinINet response payload buffer captured

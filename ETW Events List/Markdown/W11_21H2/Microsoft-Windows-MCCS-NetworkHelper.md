@@ -12,14 +12,14 @@ Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  107       |  0        |
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  109       |  0        |           |        |          |           |  NetworkHelper::HttpTransport: Http Status error: Handle: {P1_UInt32} Error: {P2_UInt32}
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  110       |  0        |           |        |          |           |  NetworkHelper::HttpTransport: CmSetRequirement({P1_String}) Failure: Handle: {P2_UInt32} Error: {P3_UInt32}
 Microsoft-Windows-MCCS-NetworkHelper  |  Error        |  111       |  0        |           |        |          |  Error    |  NetworkHelper::CrackUrl Failure. HR: {P1_UInt32} Url: {P2_String}
-Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  201       |  0        |           |        |          |           |  Set PDC Active:{P1_Boolean}, invalid CCT state:{P2_Int32}
-Microsoft-Windows-MCCS-NetworkHelper  |  Information  |  202       |  0        |           |        |          |           |  Triggering PDC for sender: {P1_String}, Activate: {P2_Boolean}, Task: {P3_String}, ActivationHandle: {P4_Handle}
+Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  201       |  0        |           |        |          |           |  Set PDC Active:{P1_Boolean}; invalid CCT state:{P2_Int32}
+Microsoft-Windows-MCCS-NetworkHelper  |  Information  |  202       |  0        |           |        |          |           |  Triggering PDC for sender: {P1_String}; Activate: {P2_Boolean}; Task: {P3_String}; ActivationHandle: {P4_Handle}
 Microsoft-Windows-MCCS-NetworkHelper  |  Information  |  203       |  0        |           |        |          |           |  Triggered CCT for sender {P1_String}
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  205       |  0        |           |        |          |           |
 Microsoft-Windows-MCCS-NetworkHelper  |  Information  |  206       |  0        |           |        |          |           |  Released CCT for sender {P1_String}; Attained CCT {P2_Boolean}
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  207       |  0        |           |        |          |           |  Invalid CCT state: {P1_Int32}
 Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  208       |  0        |           |        |          |           |
-Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  209       |  0        |           |        |          |           |  PDC not renewed due to lack of progress, allowing low power state. ActivationHandle: {Message}
+Microsoft-Windows-MCCS-NetworkHelper  |  Warning      |  209       |  0        |           |        |          |           |  PDC not renewed due to lack of progress; allowing low power state. ActivationHandle: {Message}
 Microsoft-Windows-MCCS-NetworkHelper  |  Verbose      |  4005      |  0        |           |        |          |  Debug    |  Http: {Prop_ptr}: WINHTTP_CALLBACK_STATUS_{Prop_ansi}
 Microsoft-Windows-MCCS-NetworkHelper  |  Verbose      |  4006      |  0        |           |        |          |  Debug    |  Http: {Prop_ptr}: WINHTTP_CALLBACK_STATUS_{Prop_ansi}: Bytes received:{Prop_int}
 Microsoft-Windows-MCCS-NetworkHelper  |  Verbose      |  4007      |  0        |           |        |          |  Debug    |  Http: {Prop_ptr}: WINHTTP_CALLBACK_STATUS_{Prop_ansi}: Socket: {Prop_hexint}

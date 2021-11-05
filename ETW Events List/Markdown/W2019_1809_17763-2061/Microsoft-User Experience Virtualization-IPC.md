@@ -1,0 +1,3 @@
+Provider                                      |  Level        |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
+----------------------------------------------|---------------|------------|-----------|---------------|--------|----------|-----------|------------
+Microsoft-User Experience Virtualization-IPC  |  Information  |  100       |  0        |  Operational  |        |          |           |  {_String1}

@@ -10,7 +10,7 @@ Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Error        |  8       
 Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Error        |  9         |  0        |  Analytic     |        |          |           |  {message}
 Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Error        |  32        |  0        |  Analytic     |        |          |           |  Failed to create Physical Device Object for device {objectPointer}.
 Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Error        |  34        |  0        |  Analytic     |        |          |           |  Driver for device {objectPointer} failed to load. Timeout period has expired.
-Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Warning      |  35        |  0        |  Admin        |        |          |           |  Device {deviceName} is not supported on this machine, a generic driver is loaded.
+Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Warning      |  35        |  0        |  Admin        |        |          |           |  Device {deviceName} is not supported on this machine; a generic driver is loaded.
 Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Warning      |  36        |  0        |  Admin        |        |          |           |  Redirection of additional supported devices is disabled by policy.
 Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Information  |  37        |  0        |  Operational  |        |          |           |  Device {deviceName} is successfully installed
 Microsoft-Windows-TerminalServices-ServerUSBDevices  |  Information  |  38        |  0        |  Debug        |        |          |           |  Client requests to redirect device {objectPointer}.  NtStatus = {ntStatus}.

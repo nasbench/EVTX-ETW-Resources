@@ -1,0 +1,3 @@
+Provider                      |  Level        |  Event ID  |  Version  |  Channel  |  Task     |  Opcode  |  Keyword  |  Message
+------------------------------|---------------|------------|-----------|-----------|-----------|----------|-----------|---------
+Microsoft-Windows-NetworkGCW  |  Information  |  8001      |  0        |           |  ShowGCW  |  Stop    |           |

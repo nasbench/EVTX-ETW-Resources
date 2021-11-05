@@ -1,0 +1,3 @@
+Provider                   |  Level        |  Event ID  |  Version  |  Channel           |  Task  |  Opcode  |  Keyword                           |  Message
+---------------------------|---------------|------------|-----------|--------------------|--------|----------|------------------------------------|----------------------
+Microsoft-Windows-HttpLog  |  Information  |  1         |  0        |  HTTP Log Channel  |        |          |  Flagged on all HTTP transactions  |  HTTP transaction log

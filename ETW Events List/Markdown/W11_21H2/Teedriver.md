@@ -14,13 +14,13 @@ Teedriver  |  Critical     |  110       |  0        |           |        |      
 Teedriver  |  Critical     |  111       |  0        |           |        |          |  Default                     |  {message}: PowerDevIdleExit failed: DOi3 value {register} status {status}
 Teedriver  |  Information  |  112       |  0        |           |        |          |  Default                     |  {message} ME_CSR {H_CSR} H_CSR {ME_CSR}
 Teedriver  |  Critical     |  113       |  0        |           |        |          |  Default                     |  {Function} {Message} {status}
-Teedriver  |  Information  |  114       |  0        |           |        |          |  Default                     |  Data Sent Over DMA: Header {header}, Length = {length}
-Teedriver  |  Information  |  115       |  0        |           |        |          |  Default                     |  Data Sent Over CB: Header {header}, Length = {length}
+Teedriver  |  Information  |  114       |  0        |           |        |          |  Default                     |  Data Sent Over DMA: Header {header}; Length = {length}
+Teedriver  |  Information  |  115       |  0        |           |        |          |  Default                     |  Data Sent Over CB: Header {header}; Length = {length}
 Teedriver  |  Information  |  116       |  0        |           |        |          |  Default ApiTrace            |  EvtDeviceFileCreate Completed: Status {status} Host Id {hostid}
 Teedriver  |  Information  |  117       |  0        |           |        |          |  Default ApiTrace            |  EvtDeviceFileClose Completed: Status {status} Host Id {hostid}
-Teedriver  |  Information  |  118       |  0        |           |        |          |  Default Power               |  Driver Ready, Finish Handshack with FW
+Teedriver  |  Information  |  118       |  0        |           |        |          |  Default Power               |  Driver Ready; Finish Handshack with FW
 Teedriver  |  Information  |  119       |  0        |           |        |          |  Default                     |  {data1} {data2} {data3} {data4}
 Teedriver  |  Information  |  120       |  0        |           |        |          |  Default                     |  {data1} {data2} {data3} {data4}
-Teedriver  |  Information  |  121       |  0        |           |        |          |  Default                     |  Start Data Sending Over DMA: Header {header}, Length = {length}
-Teedriver  |  Information  |  122       |  0        |           |        |          |  Default                     |  Start Data Sending Over CB: Header {header}, Length = {length}
-Teedriver  |  Information  |  123       |  0        |           |        |          |  Default                     |  All Data Received: Header {header}, Length = {length}
+Teedriver  |  Information  |  121       |  0        |           |        |          |  Default                     |  Start Data Sending Over DMA: Header {header}; Length = {length}
+Teedriver  |  Information  |  122       |  0        |           |        |          |  Default                     |  Start Data Sending Over CB: Header {header}; Length = {length}
+Teedriver  |  Information  |  123       |  0        |           |        |          |  Default                     |  All Data Received: Header {header}; Length = {length}

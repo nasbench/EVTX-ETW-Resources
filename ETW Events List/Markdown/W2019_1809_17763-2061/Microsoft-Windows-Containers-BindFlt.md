@@ -1,0 +1,6 @@
+Provider                              |  Level        |  Event ID  |  Version  |  Channel                                           |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------------|---------------|------------|-----------|----------------------------------------------------|--------|----------|-----------|-----------------------------------------------------------------------------------------
+Microsoft-Windows-Containers-BindFlt  |  Error        |  1         |  0        |  Microsoft-Windows-Containers-BindFlt/Operational  |        |          |           |  BINDFLT filter registratiion failed with error message: {NTStatus}
+Microsoft-Windows-Containers-BindFlt  |  Information  |  2         |  0        |  Microsoft-Windows-Containers-BindFlt/Operational  |        |          |           |
+Microsoft-Windows-Containers-BindFlt  |  Error        |  3         |  0        |  Microsoft-Windows-Containers-BindFlt/Operational  |        |          |           |  BINDFLT filter failed to attach to volume '{VolumeName}' with error message: {NTStatus}
+Microsoft-Windows-Containers-BindFlt  |  Information  |  4         |  0        |  Microsoft-Windows-Containers-BindFlt/Operational  |        |          |           |

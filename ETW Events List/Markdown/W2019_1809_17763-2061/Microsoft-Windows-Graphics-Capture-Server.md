@@ -1,0 +1,4 @@
+Provider                                   |  Level        |  Event ID  |  Version  |  Channel  |  Task             |  Opcode  |  Keyword        |  Message
+-------------------------------------------|---------------|------------|-----------|-----------|-------------------|----------|-----------------|---------
+Microsoft-Windows-Graphics-Capture-Server  |  Information  |  1         |  0        |           |  CAPTURE_STARTED  |          |  CaptureServer  |
+Microsoft-Windows-Graphics-Capture-Server  |  Information  |  2         |  0        |           |  CAPTURE_STOPPED  |          |  CaptureServer  |

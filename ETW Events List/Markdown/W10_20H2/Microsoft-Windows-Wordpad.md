@@ -35,7 +35,7 @@ Microsoft-Windows-Wordpad  |  Information  |  32        |  0        |  Microsoft
 Microsoft-Windows-Wordpad  |  Information  |  33        |  0        |  Microsoft-Windows-Wordpad/Diagnostic  |  Wordpad_Zoom                |  Start   |           |
 Microsoft-Windows-Wordpad  |  Information  |  34        |  0        |  Microsoft-Windows-Wordpad/Diagnostic  |  Wordpad_Zoom                |  Stop    |           |
 Microsoft-Windows-Wordpad  |  Error        |  35        |  0        |  Microsoft-Windows-Wordpad/Debug       |                              |          |           |  ParseError:{StringParam}.
-Microsoft-Windows-Wordpad  |  Error        |  36        |  0        |  Microsoft-Windows-Wordpad/Debug       |                              |          |           |  ParseError: HResult: {StringParam}, Error: {HResultParam}.
+Microsoft-Windows-Wordpad  |  Error        |  36        |  0        |  Microsoft-Windows-Wordpad/Debug       |                              |          |           |  ParseError: HResult: {StringParam}; Error: {HResultParam}.
 Microsoft-Windows-Wordpad  |  Error        |  37        |  0        |  Microsoft-Windows-Wordpad/Debug       |                              |          |           |  ParseError:{HResultParam}.
 Microsoft-Windows-Wordpad  |  Error        |  38        |  0        |  Microsoft-Windows-Wordpad/Debug       |                              |          |           |  UnSupported Element:{StringParam}.
 Microsoft-Windows-Wordpad  |  Information  |  39        |  0        |  Microsoft-Windows-Wordpad/Diagnostic  |  Wordpad_Docx_Odt_Save       |  Start   |           |

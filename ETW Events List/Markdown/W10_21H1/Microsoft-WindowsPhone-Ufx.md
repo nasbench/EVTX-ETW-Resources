@@ -7,11 +7,11 @@ Microsoft-WindowsPhone-Ufx  |  Verbose      |  103       |  0        |          
 Microsoft-WindowsPhone-Ufx  |  Error        |  104       |  0        |           |  FailedCall     |          |  Error         |  {Function}: {Message} ({IntParam})
 Microsoft-WindowsPhone-Ufx  |  Verbose      |  105       |  0        |           |  IoctlRequest   |          |  UfxBus        |  {Index}: Handling IOCTL {IOCTL}
 Microsoft-WindowsPhone-Ufx  |  Information  |  106       |  0        |           |  Debug          |          |  Debug         |  {Function}: {Message}
-Microsoft-WindowsPhone-Ufx  |  Information  |  107       |  0        |           |  Setup          |          |  Setup         |  Description: {Description}, Direction: {Direction}, Type: {Type}, Recipient: {Recipient}, Request: {Request}, wValue: {wValue}, wIndex: {wIndex}, wLength: {wLength}
+Microsoft-WindowsPhone-Ufx  |  Information  |  107       |  0        |           |  Setup          |          |  Setup         |  Description: {Description}; Direction: {Direction}; Type: {Type}; Recipient: {Recipient}; Request: {Request}; wValue: {wValue}; wIndex: {wIndex}; wLength: {wLength}
 Microsoft-WindowsPhone-Ufx  |  Information  |  108       |  0        |           |  StateMachine   |          |  StateMachine  |  Created Machine {Machine}
 Microsoft-WindowsPhone-Ufx  |  Information  |  109       |  0        |           |  StateMachine   |          |  StateMachine  |  {Type} {State} on Machine {Machine}
-Microsoft-WindowsPhone-Ufx  |  Information  |  110       |  0        |           |  StateMachine   |          |  StateMachine  |  Enqueue ({Type}, {Event}, {Payload}) to Machine {Machine}
-Microsoft-WindowsPhone-Ufx  |  Information  |  111       |  0        |           |  StateMachine   |          |  StateMachine  |  Dequeue ({Event}, {Payload}) on Machine {Machine}
+Microsoft-WindowsPhone-Ufx  |  Information  |  110       |  0        |           |  StateMachine   |          |  StateMachine  |  Enqueue ({Type}; {Event}; {Payload}) to Machine {Machine}
+Microsoft-WindowsPhone-Ufx  |  Information  |  111       |  0        |           |  StateMachine   |          |  StateMachine  |  Dequeue ({Event}; {Payload}) on Machine {Machine}
 Microsoft-WindowsPhone-Ufx  |  Information  |  112       |  0        |           |  StateMachine   |          |  StateMachine  |  Action {ActionName} on Machine {Machine}
 Microsoft-WindowsPhone-Ufx  |  Information  |  113       |  0        |           |  StateMachine   |          |  StateMachine  |  Unhandled ({Event}) on Machine {Machine}. Pop to {ToState}
 Microsoft-WindowsPhone-Ufx  |  Information  |  114       |  0        |           |  StateMachine   |          |  StateMachine  |  Exception Machine {Machine}: {Exception}

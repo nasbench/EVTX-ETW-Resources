@@ -1,0 +1,30 @@
+Provider                           |  Level        |  Event ID  |  Version  |  Channel                                       |  Task                        |  Opcode  |  Keyword  |  Message
+-----------------------------------|---------------|------------|-----------|------------------------------------------------|------------------------------|----------|-----------|---------
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  1         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_ExtractFile       |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  2         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_ExtractFile       |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  3         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_DeleteFile        |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  4         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_DeleteFile        |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  5         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_WizardExtractAll  |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  6         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_WizardExtractAll  |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  7         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_CountFiles        |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  8         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_CountFiles        |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  9         |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_QueryCM           |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  10        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_QueryCM           |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  11        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_CheckEncrypted    |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  12        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_CheckEncrypted    |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  13        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_BuildEnumerator   |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  14        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_BuildEnumerator   |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  15        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_DropIn            |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  16        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_DropIn            |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  17        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_OpenItem          |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  18        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_OpenItem          |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  19        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_RemoveItem        |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  20        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_RemoveItem        |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  21        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_RenameItem        |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  22        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_RenameItem        |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  23        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_ApplyProps        |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  24        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_ApplyProps        |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  25        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_LeaveFolder       |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  26        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_LeaveFolder       |  Stop    |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  27        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_AESCheck          |  Start   |           |
+Microsoft-Windows-Shell-ZipFolder  |  Information  |  28        |  0        |  Microsoft-Windows-Shell-ZipFolder/Diagnostic  |  ZipFolder_AESCheck          |  Stop    |           |

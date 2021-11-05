@@ -1,7 +1,7 @@
 Provider                      |  Level        |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
 ------------------------------|---------------|------------|-----------|---------------|--------|----------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Microsoft-Windows-Forwarding  |  Information  |  100       |  0        |  Operational  |        |          |           |  The subscription {Id} is created successfully.
-Microsoft-Windows-Forwarding  |  Warning      |  101       |  0        |  Operational  |        |          |           |  The subscription {Id} is created, but one or more channels in the query could not be read at this time.
+Microsoft-Windows-Forwarding  |  Warning      |  101       |  0        |  Operational  |        |          |           |  The subscription {Id} is created; but one or more channels in the query could not be read at this time.
 Microsoft-Windows-Forwarding  |  Error        |  102       |  0        |  Operational  |        |          |           |
 Microsoft-Windows-Forwarding  |  Error        |  102       |  1        |  Operational  |        |          |           |  The subscription {Id} can not be created. The error code is {ErrorCode}.
 Microsoft-Windows-Forwarding  |  Information  |  103       |  0        |  Operational  |        |          |           |  The subscription {Id} is unsubscribed.

@@ -1,0 +1,5 @@
+Provider                                    |  Level    |  Event ID  |  Version  |  Channel                                                |  Task  |  Opcode  |  Keyword  |  Message
+--------------------------------------------|-----------|------------|-----------|---------------------------------------------------------|--------|----------|-----------|-------------------------------------------------
+Microsoft-Windows-Ras-NdisWanPacketCapture  |  Verbose  |  5001      |  0        |  Microsoft-Windows-Ras-NdisWanPacketCapture/Diagnostic  |        |          |           |  Sending NDIS Wan Packet ({FragmentSize} bytes)
+Microsoft-Windows-Ras-NdisWanPacketCapture  |  Verbose  |  5002      |  0        |  Microsoft-Windows-Ras-NdisWanPacketCapture/Diagnostic  |        |          |           |  Reciving NDIS Wan Packet ({FragmentSize} bytes)
+Microsoft-Windows-Ras-NdisWanPacketCapture  |  Verbose  |  5003      |  0        |  Microsoft-Windows-Ras-NdisWanPacketCapture/Diagnostic  |        |          |           |  Event: {param1}

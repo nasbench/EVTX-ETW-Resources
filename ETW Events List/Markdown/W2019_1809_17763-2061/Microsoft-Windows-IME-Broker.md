@@ -1,0 +1,6 @@
+Provider                      |  Level        |  Event ID  |  Version  |  Channel                                |  Task                    |  Opcode  |  Keyword  |  Message
+------------------------------|---------------|------------|-----------|-----------------------------------------|--------------------------|----------|-----------|---------
+Microsoft-Windows-IME-Broker  |  Information  |  1         |  0        |  Microsoft-Windows-IME-Broker/Analytic  |  Task ID: IMJP Learning  |  Start   |           |
+Microsoft-Windows-IME-Broker  |  Information  |  2         |  0        |  Microsoft-Windows-IME-Broker/Analytic  |  Task ID: IMJP Learning  |  Stop    |           |
+Microsoft-Windows-IME-Broker  |  Information  |  3         |  0        |  Microsoft-Windows-IME-Broker/Analytic  |  Task ID: IMJP Learning  |  Start   |           |
+Microsoft-Windows-IME-Broker  |  Information  |  4         |  0        |  Microsoft-Windows-IME-Broker/Analytic  |  Task ID: IMJP Learning  |  Stop    |           |

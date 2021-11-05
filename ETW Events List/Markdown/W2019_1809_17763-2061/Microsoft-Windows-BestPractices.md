@@ -1,0 +1,10 @@
+Provider                         |  Level        |  Event ID  |  Version  |  Channel      |  Task              |  Opcode  |  Keyword  |  Message
+---------------------------------|---------------|------------|-----------|---------------|--------------------|----------|-----------|-----------------------------------------------------------------
+Microsoft-Windows-BestPractices  |  Information  |  0         |  0        |  Operational  |  Model Invocation  |          |           |
+Microsoft-Windows-BestPractices  |  Information  |  1         |  0        |  Operational  |  Model Invocation  |          |           |
+Microsoft-Windows-BestPractices  |  Information  |  2         |  0        |  Operational  |  Model Invocation  |          |           |  Started scan of model '{String}' submodel '{String2}'
+Microsoft-Windows-BestPractices  |  Information  |  3         |  0        |  Operational  |  Model Invocation  |          |           |  Finished starting scan of model '{String}' submodel '{String2}'
+Microsoft-Windows-BestPractices  |  Error        |  4         |  0        |  Operational  |  Model Invocation  |          |           |  {String}
+Microsoft-Windows-BestPractices  |  Information  |  5         |  0        |  Operational  |  Model Invocation  |          |           |
+Microsoft-Windows-BestPractices  |  Information  |  6         |  0        |  Operational  |  Model Invocation  |          |           |
+Microsoft-Windows-BestPractices  |  Information  |  7         |  0        |  Operational  |  Model Invocation  |          |           |

@@ -1,0 +1,12 @@
+Provider                          |  Level        |  Event ID  |  Version  |  Channel                                    |  Task                     |  Opcode  |  Keyword  |  Message
+----------------------------------|---------------|------------|-----------|---------------------------------------------|---------------------------|----------|-----------|---------
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1001      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  GetThumbnailProvider     |  Start   |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1002      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  GetThumbnailProvider     |  Stop    |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1003      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  Browse                   |  Start   |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1004      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  Browse                   |  Stop    |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1005      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  Search                   |  Start   |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1006      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  Search                   |  Stop    |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1007      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  Results2ShellProperties  |  Start   |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1008      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  Results2ShellProperties  |  Stop    |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1009      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  Discover                 |          |           |
+Microsoft-Windows-DLNA-Namespace  |  Information  |  1010      |  0        |  Microsoft-Windows-DLNA-Namespace/Analytic  |  Add                      |          |           |

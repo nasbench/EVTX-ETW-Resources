@@ -1,0 +1,6 @@
+Provider                                       |  Level        |  Event ID  |  Version  |  Channel                          |  Task                                |  Opcode  |  Keyword  |  Message
+-----------------------------------------------|---------------|------------|-----------|-----------------------------------|--------------------------------------|----------|-----------|---------
+Microsoft-Windows-FirstUX-PerfInstrumentation  |  Information  |  0         |  0        |  Setup splash window performance  |  Setup splash window initialization  |  Start   |           |
+Microsoft-Windows-FirstUX-PerfInstrumentation  |  Information  |  1         |  0        |  Setup splash window performance  |  Setup splash window initialization  |  Stop    |           |
+Microsoft-Windows-FirstUX-PerfInstrumentation  |  Information  |  2         |  0        |  Setup splash window performance  |  Setup splash window initialization  |  Start   |           |
+Microsoft-Windows-FirstUX-PerfInstrumentation  |  Information  |  3         |  0        |  Setup splash window performance  |  Setup splash window initialization  |  Stop    |           |

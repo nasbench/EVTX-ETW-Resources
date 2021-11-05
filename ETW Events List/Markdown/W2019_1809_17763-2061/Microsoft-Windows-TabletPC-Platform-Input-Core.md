@@ -1,0 +1,8 @@
+Provider                                        |  Level        |  Event ID  |  Version  |  Channel  |  Task                                           |  Opcode  |  Keyword  |  Message
+------------------------------------------------|---------------|------------|-----------|-----------|-------------------------------------------------|----------|-----------|---------
+Microsoft-Windows-TabletPC-Platform-Input-Core  |  Information  |  69        |  0        |           |  TABLET_INPUT_OverPan_SlideWindow               |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Core  |  Information  |  70        |  0        |           |  TABLET_INPUT_OverPan_SlideWindow               |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Core  |  Information  |  71        |  0        |           |  TABLET_INPUT_OverPan_SnapBack                  |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Core  |  Information  |  72        |  0        |           |  TABLET_INPUT_OverPan_SnapBack                  |  Stop    |           |
+Microsoft-Windows-TabletPC-Platform-Input-Core  |  Information  |  73        |  0        |           |  TABLET_INPUT_OverPan_SlideWindow_WithMomentum  |  Start   |           |
+Microsoft-Windows-TabletPC-Platform-Input-Core  |  Information  |  74        |  0        |           |  TABLET_INPUT_OverPan_SlideWindow_WithMomentum  |  Stop    |           |

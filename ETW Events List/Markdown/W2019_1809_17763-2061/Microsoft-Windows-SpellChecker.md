@@ -1,0 +1,37 @@
+Provider                        |  Level        |  Event ID  |  Version  |  Channel                                          |  Task                         |  Opcode  |  Keyword  |  Message
+--------------------------------|---------------|------------|-----------|---------------------------------------------------|-------------------------------|----------|-----------|-----------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-SpellChecker  |  Information  |  1         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Modify Wordlist              |  Start   |           |  Add word start
+Microsoft-Windows-SpellChecker  |  Information  |  2         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Modify Wordlist              |  Stop    |           |  Add word complete
+Microsoft-Windows-SpellChecker  |  Information  |  3         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Check spelling               |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  4         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Check spelling               |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  5         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setup                        |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  6         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setup                        |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  7         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Get Suggestions              |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  8         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Get Suggestions              |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  9         |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Check spelling               |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  10        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Check spelling               |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  11        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |                               |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  12        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |                               |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  13        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Get Suggestions              |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  14        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Get Suggestions              |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  15        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Check spelling               |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  16        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Check spelling               |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  17        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Modify Wordlist              |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  18        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Modify Wordlist              |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  19        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setup                        |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  20        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setup                        |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  21        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setup                        |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  22        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setup                        |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  23        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setting and Getting Options  |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  24        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setting and Getting Options  |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  25        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setting and Getting Options  |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  26        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setting and Getting Options  |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  27        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Teardown                     |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  28        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Teardown                     |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  29        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Teardown                     |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  30        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Teardown                     |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Information  |  31        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setting and Getting Options  |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  32        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Setting and Getting Options  |  Stop    |           |
+Microsoft-Windows-SpellChecker  |  Error        |  33        |  0        |  Application                                      |  Setup                        |          |           |  Failed to add hardcoded change pair "{First} -> {Second}" to engine: {hr}. The spell checker will still be available.
+Microsoft-Windows-SpellChecker  |  Information  |  34        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Check spelling               |  Start   |           |
+Microsoft-Windows-SpellChecker  |  Information  |  35        |  0        |  Microsoft Windows Spellchecker Analytic Channel  |  Check spelling               |  Stop    |           |

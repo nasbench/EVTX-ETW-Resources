@@ -1,0 +1,10 @@
+Provider                            |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
+------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------------------------------------------------------------------------------------------------------------------
+Microsoft-Windows-Bluetooth-Policy  |  Information  |  1         |  0        |           |        |          |           |  A Bluetooth policy has changed.  Policy {PolicyPath}\{PolicyName} has value of: {PolicyValue}
+Microsoft-Windows-Bluetooth-Policy  |  Information  |  2         |  0        |           |        |          |           |  Bluetooth radio enablement has been {PolicyState} due to policy {PolicyPath}\{PolicyName}.
+Microsoft-Windows-Bluetooth-Policy  |  Information  |  3         |  0        |           |        |          |           |  Bluetooth radio has {PolicyState} advertising due to policy {PolicyPath}\{PolicyName}.
+Microsoft-Windows-Bluetooth-Policy  |  Information  |  4         |  0        |           |        |          |           |  Bluetooth radio has {PolicyState} discoverability due to policy {PolicyPath}\{PolicyName}.
+Microsoft-Windows-Bluetooth-Policy  |  Information  |  5         |  0        |           |        |          |           |  Bluetooth radio has {PolicyState} radio name as {RadioName} due to policy {PolicyPath}\{PolicyName}.
+Microsoft-Windows-Bluetooth-Policy  |  Information  |  6         |  0        |           |        |          |           |  Process {Service} has attempted to pair to radio {BtAddr}.
+Microsoft-Windows-Bluetooth-Policy  |  Information  |  7         |  0        |           |        |          |           |  Bluetooth has {Accepted} service {ServiceGuid} on remote device {BtAddr} due to policy {PolicyPath}\{PolicyName}...
+Microsoft-Windows-Bluetooth-Policy  |  Information  |  8         |  0        |           |        |          |           |  Bluetooth has {Accepted} PSM {Psm} on remote device {BtAddr} due to policy {PolicyPath}\{PolicyName}...
