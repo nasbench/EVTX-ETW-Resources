@@ -5,11 +5,11 @@ import csvtomd
 
 def convertCsvToMD(fileName, folderName):
 
-    with open(folderName + "/CSV/" + fileName + ".csv", "r") as f:
+    with open("CSV/" + folderName + "/" + fileName + ".csv", "r") as f:
         table = csvtomd.csv_to_table(f, ",")
     
     if table:
-        with open(folderName + "/Markdown/" + fileName + ".md", "w") as f:
+        with open("Markdown/" + folderName + "/" + fileName + ".md", "w") as f:
             f.write(
                 csvtomd.md_table(table, padding=2)
             )
@@ -73,7 +73,8 @@ def parse_etw_xml(file_path):
                 if data.tag == "Channel":
                     event_dict['channel'] = data.text
                 elif data.tag == "Message":
-                    event_dict['message'] = data.text.replace("\n","").replace(",", ";") #Replacing the "," with ";" just so the CSV behave nicely
+                    #Replacing the "," with ";" and removing double quotes just so the CSV behave nicely
+                    event_dict['message'] = data.text.replace("\n","").replace(",", ";") .replace("\"", "'")
                 elif data.tag == "Template":
                     event_dict['template'] = data.text.replace("\n", "").replace(",", ";")
                 elif data.tag == "Version":
@@ -115,7 +116,7 @@ def fixMessage(message, template):
 
 def converterStart(parsed_provider, folderName):
     header = "Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message"
-    with open(folderName + "/CSV/" + parsed_provider["provider_name"] + ".csv", "w") as f:
+    with open("CSV/" + folderName + "/" + parsed_provider["provider_name"] + ".csv", "w") as f:
         f.write(header)
         f.write("\n")
         for i in parsed_provider["events"]:
@@ -126,6 +127,30 @@ def converterStart(parsed_provider, folderName):
             f.write(s)
             f.write("\n")
     convertCsvToMD(parsed_provider["provider_name"], folderName)
+
+def merge_csv(folderName):
+    header = "Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message"
+    path_to_csv_folder = "CSV/" + folderName + "/"
+    listOfFile = os.listdir(path_to_csv_folder)
+    listOfCsvs = list()
+    for entry in listOfFile:
+        # Create full path
+        fullPath = os.path.join(path_to_csv_folder, entry)
+        # If entry is a directory then get the list of files in this directory 
+        if os.path.isdir(fullPath):
+            listOfCsvs = listOfCsvs + getListOfFiles(fullPath)
+        else:
+            listOfCsvs.append(fullPath) 
+    
+    with open("CSV/" + folderName + "/!All_" + folderName + "_ETW_Events.csv", "w+") as mergeall:
+        mergeall.write(header)
+        mergeall.write("\n")
+        for csv in listOfCsvs:
+            with open(csv, "r") as f:
+                f.readline()
+                all_lines = f.readlines()
+                for i in all_lines:
+                    mergeall.write(i)
 
 if __name__ == "__main__":
     parser = OptionParser()
@@ -142,19 +167,32 @@ if __name__ == "__main__":
     if not options.folderName:
         parser.error("Please provider a folder name")
 
+    # Create seperate CSV and MD folders
+    if not os.path.exists("CSV"):
+        os.mkdir("CSV")
+    else:
+        print("CSV folder already exists")
+    if not os.path.exists("Markdown"):
+        os.mkdir("Markdown")
+    else:
+        print("Markdown folder already exists")
+
     # We collect the arguments from the user
     providersPath = options.providersPath
     providersFile = options.providersFile
     folderName = options.folderName
 
-    if not os.path.exists(folderName):
-        os.mkdir(folderName)
+    if not os.path.exists("Markdown/" + folderName):
+        os.mkdir("Markdown/" + folderName)
     else:
-        print("Folder name already exists")
-        exit()
-    
-    os.mkdir(folderName + "/" + "CSV")
-    os.mkdir(folderName + "/" + "Markdown")
+        os.rmdir("Markdown/" + folderName)
+        os.mkdir("Markdown/" + folderName)
+
+    if not os.path.exists("CSV/" + folderName):
+        os.mkdir("CSV/" + folderName)
+    else:
+        os.rmdir("CSV/" + folderName)
+        os.mkdir("CSV/" + folderName)
 
     if providersPath:
         # We call the "getListOfFiles" to generate a list of file paths
@@ -170,8 +208,10 @@ if __name__ == "__main__":
         # We then start to generate the CSV file
         for p in listOfParsedProviders:
             converterStart(p, folderName)
+        merge_csv(folderName)
     elif providersFile:
         parsed = parse_etw_xml(providersFile)
         if parsed == "Empty Provider":
             print("The provider manifest is empty. Nothing to convert")
         converterStart(parsed, folderName)
+        merge_csv(folderName)
