@@ -1,8 +1,8 @@
 Provider                 |  Level        |  Event ID  |  Version  |  Channel                           |  Task                    |  Opcode  |  Keyword      |  Message
 -------------------------|---------------|------------|-----------|------------------------------------|--------------------------|----------|---------------|-----------------------------------------------------------
-Microsoft-Windows-Audit  |  Information  |  1001      |  0        |  Microsoft-Windows-Audit/Analytic  |  Run Audit               |  Start   |  Performance  |  Audit.exe launched with command line "{CommandLine}".
+Microsoft-Windows-Audit  |  Information  |  1001      |  0        |  Microsoft-Windows-Audit/Analytic  |  Run Audit               |  Start   |  Performance  |  Audit.exe launched with command line '{CommandLine}'.
 Microsoft-Windows-Audit  |  Information  |  1002      |  0        |  Microsoft-Windows-Audit/Analytic  |  Run Audit               |  Stop    |  Performance  |  Audit.exe exiting with status {ErrorCode}.
-Microsoft-Windows-Audit  |  Information  |  2001      |  0        |  Microsoft-Windows-Audit/Analytic  |  Audit Process Unattend  |  Start   |  Performance  |  Executing unattend settings pass "{Pass}".
+Microsoft-Windows-Audit  |  Information  |  2001      |  0        |  Microsoft-Windows-Audit/Analytic  |  Audit Process Unattend  |  Start   |  Performance  |  Executing unattend settings pass '{Pass}'.
 Microsoft-Windows-Audit  |  Information  |  2002      |  0        |  Microsoft-Windows-Audit/Analytic  |  Audit Process Unattend  |  Stop    |  Performance  |  Finished executing unattend pass with status {ErrorCode}.
 Microsoft-Windows-Audit  |  Information  |  2003      |  0        |  Microsoft-Windows-Audit/Analytic  |  Audit Process Unattend  |  Stop    |  Performance  |  Failed to execute unattend pass with status {ErrorCode}.
-Microsoft-Windows-Audit  |  Information  |  2004      |  0        |  Microsoft-Windows-Audit/Analytic  |  Audit Process Unattend  |          |  Diagnostic   |  Using unattend file "{FilePath}" for pass "{Pass}".
+Microsoft-Windows-Audit  |  Information  |  2004      |  0        |  Microsoft-Windows-Audit/Analytic  |  Audit Process Unattend  |          |  Diagnostic   |  Using unattend file '{FilePath}' for pass '{Pass}'.
