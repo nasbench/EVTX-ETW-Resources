@@ -100,9 +100,9 @@ The following are blogs and articles published by the wider security community d
 
 ### Other Github Projects w/ ETW Content
 
-- [OSSEM Data Dictionaries](https://github.com/OTRF/OSSEM-DD)
-- [ETW Providers Docs](https://github.com/repnz/etw-providers-docs)
-- [Windows 10 ETW Events](https://github.com/jdu2600/Windows10EtwEvents)
+- [OSSEM Data Dictionaries](https://github.com/OTRF/OSSEM-DD) by [OTRF](https://github.com/OTRF)
+- [ETW Providers Docs](https://github.com/repnz/etw-providers-docs) by [repnz](https://github.com/repnz)
+- [Windows 10 ETW Events](https://github.com/jdu2600/Windows10EtwEvents) by [jdu2600](https://github.com/jdu2600)
 
 ## Contributing
 
