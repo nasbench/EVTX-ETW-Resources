@@ -1,11 +1,11 @@
-# ETW Resources
+# EVTX/ETW Resources
 
-This is a repository that contains a bunch of resources to learn and understand ETW (Event Tracing for Windows)
+This is a repository that contains a bunch of resources to learn and understand EVTX/ETW (Event Tracing for Windows)
 
-## Contents
+## Content
 
-- [ETW Resources](#etw-resources)
-  - [Contents](#contents)
+- [EVTX/ETW Resources](#evtxetw-resources)
+  - [Content](#content)
   - [Structure](#structure)
   - [Blogs / Research (<https://nasbench.medium.com/>)](#blogs--research-httpsnasbenchmediumcom)
   - [Tools](#tools)
