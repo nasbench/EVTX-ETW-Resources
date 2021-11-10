@@ -84,6 +84,7 @@ The following are blogs and articles published by the wider security community d
 - [Bypassing the Microsoft-Windows-Threat-Intelligence Kernel APC Injection Sensor](https://medium.com/@philiptsukerman/bypassing-the-microsoft-windows-threat-intelligence-kernel-apc-injection-sensor-92266433e0b0)
 - [Data Source Analysis and Dynamic Windows RE using WPP and TraceLogging](https://posts.specterops.io/data-source-analysis-and-dynamic-windows-re-using-wpp-and-tracelogging-e465f8b653f7)
 - [Detecting Parent PID Spoofing](https://blog.f-secure.com/detecting-parent-pid-spoofing/)
+- [Veni, No Vidi, No Vici: Attacks on ETW Blind EDR Sensors](https://www.blackhat.com/eu-21/briefings/schedule/index.html#veni-no-vidi-no-vici-attacks-on-etw-blind-edr-sensors-24842)
 
 ### Talks
 
