@@ -1,0 +1,823 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkAccessProtection</Name>
+        <Metadata>
+            <Guid>{4EF850D8-BF30-4E64-A917-EE21B9BE1F0A}</Guid>
+            <ResourceFilePath>C:\Windows\system32\qagentrt.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\qagentrt.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16384&amp;FileName=qagentrt.dll&amp;FileVer=6.2.9200.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Network Access Protection</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-NetworkAccessProtection/Operational</Message>
+                    <Path>Microsoft-Windows-NetworkAccessProtection/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-NetworkAccessProtection/WHC</Message>
+                    <Path>Microsoft-Windows-NetworkAccessProtection/WHC</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The System Health Agent %1 is installed but not registered with the NAP agent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The System Health Agent %1 attempted to initialize, but failed because it has initialized already.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The System Health Agent %1 attempted to uninitialize but failed because it was not initialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The System Health Agent %1 successfully initialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The System Health Agent %1 successfully uninitialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The enforcement client %1 attempted to initialize but failed because it is not registered with the NAP agent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The enforcement client %1 attempted to initialize but failed because it has already initialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The enforcement client %1 attempted to uninitialize but failed because it was not initialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The enforcement client %1 successfully initialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The enforcement client %1 successfully uninitialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Call to %2 on System Health Agent %1 failed with error %3.
+Contact the administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The enforcement client %1 failed the call to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to load the peripheral component %1. The error code was %2.
+Contact the administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PeripheralName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A Statement of Health with correlation ID %1 could not be created because the maximum size of the connection is too small.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A Statement of Health Request with correlation ID %1 could not include the following System Health Agents in the statement of Health: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OverflowingShas" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A packet has been received with an unexpected correlation of %1 instead of %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationIdReceived" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationIdExpected" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Statement of Health Response received configuration for the following SHAs that are not installed on this computer: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+System Isolation State Change.
+ Previous : 
+    State          : %1 (%2)
+    Probation Time : %3
+    Help URL       : %4
+ Current : 
+    State          : %5 (%6)
+    Probation Time : %7
+    Help URL       : %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentIsolationState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentIsolationStateNumeric" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CurrentProbationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CurrentFixupUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousIsolationState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousIsolationStateNumeric" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PreviousProbationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PreviousFixupUrl" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The server was not available to service the request (%3). This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Blackout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The server denied access to the request (%3). This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Blackout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The request failed with the error code (%3). This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Blackout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent successfully acquired a certificate for the request with the correlation-id %2 from %1.
+The certificate can be identified by its thumbprint of %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent successfully deleted the certificate with the thumbprint of %1.
+The certificate has expired or the health state of the client has changed or a replacement certificate has been acquired.
+Contact the administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to delete the certificate with the thumbprint of %1.
+The certificate could not be found or the Network Access Protection Agent has insufficient privileges to delete the certificate (%2).
+Contact the administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The client loaded NAP group policy.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The NAP service has started.
+NAP has the following information for this computer:
+ Computer name is %1.
+Domain status is: %2.
+The OS SKU is: %4.
+The service pack version is: %6.
+The processor type is: %5.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainJoined" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Build" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OSSKU" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorType" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The NAP service has started.
+NAP has the following information for this computer:
+ Computer name is %1.
+Domain status is: %2.
+The build number is: %3.
+The OS SKU is: %4.
+The service pack version is: %5.
+The processor type is: %6.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainJoined" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Build" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OSSKU" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Statement of Health with correlation ID %1 was received from the System Health Agent %2. 
+ The duration to check the client's health was %3 ms.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SHAId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Statement of Health with correlation ID %1 was sent to the enforcment client %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QECId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Statement of Health Response with correlation ID %1 was received from the enforcement client %2.
+The current client state is %3. 
+ The following SHAs report this client non-compliant: %4
+ The following error categories were encountered: %5
+ The probation expiration time is: %6
+ The help URL is: %7
+ The duration of health check was %8 ms.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QECId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Shas" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FCS" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProbationExpiry" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Help" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The System Health Agent %1 has returned an error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SHAId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection agent failed to initialize the following enrollment configuration.
+    HRA Group           : %1
+    CSP Name            : %2
+    Key Specification   : %3
+    Key Length          : %4
+    Signature Algorithm : %5
+The intialization failed with the error code (%6).
+Contact the HRA administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Group" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CSP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeySpec" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The server was not available to service the request (%3).
+Contact the HRA administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The server denied access to the request (%3).
+Contact the HRA administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to acquire a certificate for the request with the correlation-id %2 from %1.
+The request failed with the error code (%3).
+Contact the HRA administrator for more information.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection agent failed to get a certificate for the request with correlation-id %2 from %1.
+The server presented a certificate that is not trusted for Enterprise authentication. This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Blackout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection agent failed to get a certificate for the request with correlation-id %2 from %1.
+The validation of the server certificate for SSL resulted in an error %3, the certificate is not appropriate for SSL. This server will not be tried again for %4 minutes.
+Contact the HRA administrator for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Blackout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection agent failed to get a certificate for the request with correlation-id %2 from %1.
+The server presented a certificate that is not trusted for Enterprise authentication.
+Contact the HRA administrator for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection agent failed to get a certificate for the request with correlation-id %2 from %1.
+The validation of the server certificate for SSL resulted in an error %3, the certificate is not appropriate for SSL.
+Contact the HRA administrator for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent was unable to determine which HRAs to request a health certificate from.
+A network change or if GP is configured, a configuration change will prompt further attempts to acquire a health certificate. Otherwise no further attempts will be made.
+Contact the HRA administrator for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent has dynamically discovered the following HRAs for this network (using the query %1):
+%2
+The DNS servers in your configuration at the time this discovery took place included:
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Urls" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dns" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+System Isolation State Change. Extended State details:
+ Previous : 
+    Extended State          : %1 (%2)
+ Current : 
+    Extended State          : %3 (%4)
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentExtendedIsolationState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentExtendedIsolationStateNumeric" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PreviousExtendedIsolationState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousExtendedIsolationStateNumeric" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Statement of Health Response with correlation ID %1 was just received from the enforcement client %2.
+The extended state in that Statement of Health Response was %3.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QECId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExtendedHealthState" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent failed to deposit a certificate for the request with the correlation-id %2 from %1.
+ValidityPeriod of the certificate is below threshold (%3).
+Contact the HRA administrator for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Blackout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Network Access Protection Agent received a Statement of Health Response with correlation ID %1, that specified a probation end time of %2. The probation end time is in the past, which indicates improper synchronization of the clocks on this machine and the server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProbationExpiry" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkAccessProtection/WHC</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending Health Information to WHC: %2(%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentIsolationState" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

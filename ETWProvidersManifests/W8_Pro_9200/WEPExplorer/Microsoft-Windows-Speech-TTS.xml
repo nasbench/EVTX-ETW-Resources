@@ -1,0 +1,183 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Speech-TTS</Name>
+        <Metadata>
+            <Guid>{74DCC47A-846E-4C98-9E2C-80043ED82B15}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Speech\Engines\TTS\MSTTSEngine.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Speech\Engines\TTS\MSTTSEngine.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-Speech-TTS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TTS/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>LoadVoice</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UnloadVoice</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Speak</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FirstWave</Name>
+                    <Value>7</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PerfInstrumentation</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PerfDiagnostics</Name>
+                    <Value>131072</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TTS/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>LoadVoice</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TTS/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>LoadVoice</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TTS/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>UnloadVoice</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TTS/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>UnloadVoice</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TTS/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Speak</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpokenText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TTS/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Speak</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TTS/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Speak</Task>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

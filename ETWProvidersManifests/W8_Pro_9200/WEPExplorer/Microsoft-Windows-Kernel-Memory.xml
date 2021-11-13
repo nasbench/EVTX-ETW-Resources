@@ -1,0 +1,219 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Memory</Name>
+        <Metadata>
+            <Guid>{D1D93EF7-E1F2-4F45-9943-03D245FE6C00}</Guid>
+            <ResourceFilePath>C:\Windows\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16384&amp;FileName=advapi32.dll&amp;FileVer=6.2.9200.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-Memory/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MemInfo</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MemInfoWS</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MemInfoSessionWS</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WorkingSetOutSwap</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WorkingSetInSwap</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>KERNEL_MEM_KEYWORD_MEMINFO</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>KERNEL_MEM_KEYWORD_MEMINFO_EX</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>KERNEL_MEM_KEYWORD_WS_SWAP</Name>
+                    <Value>128</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-Memory/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MemInfo</Task>
+                <Keyword>KERNEL_MEM_KEYWORD_MEMINFO</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PriorityLevels" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ZeroPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FreePageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModifiedPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModifiedNoWritePageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BadPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StandbyPageCounts" inType="win:Pointer" outType="win:HexInt64" count="PriorityLevels"/>
+  <data name="RepurposedPageCounts" inType="win:Pointer" outType="win:HexInt64" count="PriorityLevels"/>
+  <data name="ModifiedPageCountPageFile" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PagedPoolPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NonPagedPoolPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MdlPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CommitPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Memory/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MemInfoWS</Task>
+                <Keyword>KERNEL_MEM_KEYWORD_MEMINFO_EX</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="WSCommitInfo" count="Count">
+    <data name="ProcessID" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="WorkingSetPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="CommitPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="VirtualSizeInPages" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="PrivateWorkingSetPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Memory/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MemInfoSessionWS</Task>
+                <Keyword>KERNEL_MEM_KEYWORD_MEMINFO_EX</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SessionWSCommitInfo" count="Count">
+    <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="WorkingSetPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="CommitPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="PagedPoolPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="PrivateWorkingSetPageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Memory/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WorkingSetOutSwap</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>KERNEL_MEM_KEYWORD_WS_SWAP</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Memory/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WorkingSetOutSwap</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>KERNEL_MEM_KEYWORD_WS_SWAP</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PagesProcessed" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Memory/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WorkingSetInSwap</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>KERNEL_MEM_KEYWORD_WS_SWAP</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Memory/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WorkingSetInSwap</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>KERNEL_MEM_KEYWORD_WS_SWAP</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

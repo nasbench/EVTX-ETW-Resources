@@ -1,0 +1,631 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-LiveId</Name>
+        <Metadata>
+            <Guid>{05F02597-FE85-4E67-8542-69567AB8FD4F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wlidres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wlidres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16384&amp;FileName=wlidres.dll&amp;FileVer=6.2.9200.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-LiveId/Analytic</Message>
+                    <Path>Microsoft-Windows-LiveId/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-LiveId/Operational</Message>
+                    <Path>Microsoft-Windows-LiveId/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WLID Service Operation</Message>
+                    <Name>WLIDService</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>LiveSsp Operation</Message>
+                    <Name>LiveSsp</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>Identity Provider Operation</Message>
+                    <Name>IdentityProvider</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>LiveId Modern API Operation</Message>
+                    <Name>LiveIdModernApi</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>WLIDCredProv Operation</Message>
+                    <Name>WLIDCredProv</Name>
+                    <Value>105</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveSsp Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+LsaApLogonUserEx2_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveSsp Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+LsaApLogonUserEx2_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveSsp Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SpOnProfileLoaded_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveSsp Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SpOnProfileLoaded_Stop.
+ServiceCalled: %1
+	Status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceCalled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Identity Provider Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ConnectIdentity_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Identity Provider Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ConnectIdentity_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Identity Provider Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DisconnectIdentity_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Identity Provider Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DisconnectIdentity_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveSsp Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+LiveDoCachedLogon_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveSsp Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+LiveDoCachedLogon_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveSsp Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+LiveAuthenticate_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveSsp Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+LiveAuthenticate_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NetworkCall_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+NetworkCall_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NoOfTargets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DeviceAuth_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DeviceAuth_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TicketsCached" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Result" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+UserAuth_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+UserAuth_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TicketsCached" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Result" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PromptForCredentials_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PromptForCredentials_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DeviceAuthAsync_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DeviceAuthAsync_Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+UserAuthAsync_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+UserAuthAsync_Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SignOutAsync_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SignOutAsync_Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WLIDSvcReady]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+CommandLinkClicked_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+CommandLinkClicked_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+UserImageGetBitmapValue_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+UserImageGetBitmapValue_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+CredProvSetSerialization_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+CredProvSetSerialization_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+CredProvGetSerialization_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+CredProvGetSerialization_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Message><![CDATA[
+Operation: %1
+Details: %2
+Status: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Message><![CDATA[
+Operation: %1
+Details: %2
+Status: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Details" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Error</Level>
+                <Task>WLID Service Operation</Task>
+                <Message><![CDATA[
+WLIDSvc service failed to start.
+Function: %1
+Reason: %2
+Status: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

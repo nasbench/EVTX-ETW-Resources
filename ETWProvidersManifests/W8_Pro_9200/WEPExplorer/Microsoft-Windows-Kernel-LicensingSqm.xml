@@ -1,0 +1,48 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-LicensingSqm</Name>
+        <Metadata>
+            <Guid>{A0AF438F-4431-41CB-A675-A265050EE947}</Guid>
+            <ResourceFilePath>C:\Windows\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16384&amp;FileName=advapi32.dll&amp;FileVer=6.2.9200.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>SQM</Message>
+                    <Name>win:SQM</Name>
+                    <Value>2251799813685248</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmDWORDDatapointValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
