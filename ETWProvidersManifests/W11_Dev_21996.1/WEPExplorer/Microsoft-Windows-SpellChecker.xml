@@ -1,0 +1,538 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SpellChecker</Name>
+        <Metadata>
+            <Guid>{B2FCD41F-9A40-4150-8C92-B224B7D8C8AA}</Guid>
+            <ResourceFilePath>%systemroot%\System32\MsSpellCheckingFacility.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\System32\MsSpellCheckingFacility.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=MsSpellCheckingFacility.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft Windows Spellchecker Analytic Channel</Message>
+                    <Path>Microsoft-Windows-SpellChecker/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>2</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Check spelling</Message>
+                    <Name>CsapiCheckSpelling</Name>
+                    <Guid>{DB9124DC-66F7-484B-9AF3-53AA4207B1CA}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Modify Wordlist</Message>
+                    <Name>CsapiModifyWordlist</Name>
+                    <Guid>{E6E081B6-C3A0-45AF-A049-5EEDB55961D5}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Get Suggestions</Message>
+                    <Name>CsapiGetSuggestions</Name>
+                    <Guid>{22178B67-4D37-4E3E-83B0-901995216917}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Setup</Message>
+                    <Name>CsapiSetup</Name>
+                    <Guid>{40E57B8B-DE76-4E76-939E-E2108746AC43}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Teardown</Message>
+                    <Name>CsapiTeardown</Name>
+                    <Guid>{3725097C-DEF3-409B-A3C4-2758747AE075}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Setting and Getting Options</Message>
+                    <Name>CsapiOptions</Name>
+                    <Guid>{699D27FD-BCB3-48C9-8357-0EC872FAC1D3}</Guid>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Modify Wordlist</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Add word start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WordlistType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Modify Wordlist</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Add word complete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WordlistType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Check spelling</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Check start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Check spelling</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Check complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Create SpellChecker start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Create SpellChecker complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Get Suggestions</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Suggest start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Get Suggestions</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Suggest complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Check spelling</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+EnumSpellingError Next Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Check spelling</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EnumSpellingError Next Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SupportedLanguages complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SupportedLanguages start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Get Suggestions</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi Suggest start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Get Suggestions</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi Suggest Complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Check spelling</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi Check Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Check spelling</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi Check complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Modify Wordlist</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi Add word start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Modify Wordlist</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi Add Word complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi Initialize SpellChecker start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi Initialize SpellChecker complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi open lexicon start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi OpenLexicon complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setting and Getting Options</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi Get options start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setting and Getting Options</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi Get options complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setting and Getting Options</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi Set options start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setting and Getting Options</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi Set options complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Teardown</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi terminate spell checker start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Teardown</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi terminate spell checker complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Teardown</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Csapi close lexicon start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Teardown</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Csapi close lexicon complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setting and Getting Options</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+EnumOptionDescription next OptionDescription start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Setting and Getting Options</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EnumOptionDescription next OptionDescription stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+Failed to add hardcoded change pair "%1 -> %2" to engine: %3. The spell checker will still be available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="First" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Second" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Check spelling</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Comprehensive check start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Spellchecker Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Check spelling</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Comprehensive check complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,233 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DLNA-Namespace</Name>
+        <Metadata>
+            <Guid>{D38FB874-33E4-4DCF-911E-1B53BB106D53}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\dlnashext.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\dlnashext.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=dlnashext.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft DLNA Namespace</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DLNA-Namespace/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>GetThumbnailProvider</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Browse</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Search</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Results2ShellProperties</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Discover</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Add</Name>
+                    <Value>106</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>GetThumbnailProvider</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResultParam" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>GetThumbnailProvider</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResultParam" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Browse</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsBrowseDirectChildren" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Filter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SortCriteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StartingOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsToRetrieve" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsReturned" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsMatched" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResultParam" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Browse</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsBrowseDirectChildren" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Filter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SortCriteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StartingOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsToRetrieve" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsReturned" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsMatched" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResultParam" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Search</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SearchCriteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Filter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SortCriteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StartingOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsToRetrieve" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsReturned" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsMatched" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResultParam" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Search</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SearchCriteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Filter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SortCriteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StartingOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsToRetrieve" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsReturned" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumItemsMatched" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResultParam" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Results2ShellProperties</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Results2ShellProperties</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Discover</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DLNA-Namespace/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Add</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

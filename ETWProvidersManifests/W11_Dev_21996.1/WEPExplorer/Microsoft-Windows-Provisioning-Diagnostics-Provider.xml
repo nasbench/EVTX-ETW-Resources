@@ -1,0 +1,1378 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Provisioning-Diagnostics-Provider</Name>
+        <Metadata>
+            <Guid>{ED8B9BD3-F66E-4FF2-B86B-75C7925F72A9}</Guid>
+            <ResourceFilePath>%systemroot%\system32\provdiagnostics.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\provdiagnostics.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=provdiagnostics.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Provisioning-Diagnostics-Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Admin</Message>
+                    <Path>Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>AutoPilot</Message>
+                    <Path>Microsoft-Windows-Provisioning-Diagnostics-Provider/AutoPilot</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-Provisioning-Diagnostics-Provider/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>ManagementService</Message>
+                    <Path>Microsoft-Windows-Provisioning-Diagnostics-Provider/ManagementService</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>None</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Configuring ProvXML with category '%1'.
+
+ProvXML data:
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ProvXML category '%1' completed successfully. %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ProvXML category '%1' failed with '%2' at CSP node '%3'. %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Setting %1 was ignored because it was not available on this OS build]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Applying package '%1' ID: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Package '%1' has completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Package '%1' failed with '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Skipping package '%1' ID: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Registry specified search path is invalid: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+InitiateSystemShutdownEx succeeded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+InitiateSystemShutdownEx failed. HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Start RebootSystem ...]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+InitiateSystemShutdownEx succeeded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+InitiateSystemShutdownEx failed. HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AddPackage initiated, pathCount = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AddPackage succeeded, targetPath = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AddPackage failed. HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RemovePackage initiated, package id = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RemovePackage succeeded, package id = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+RemovePackage failed. HRESULT = %1, package id = %2, at stage = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Uint1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RemovePackageMetadata succeeded, package id = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+RemovePackageMetadata failed. HRESULT = %1, package id = %2, at stage = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Uint1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RemoveResourceManagerPackageMetadataForCsp succeeded, package id = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+RemoveResourceManagerPackageMetadataForCsp failed. HRESULT = %1, package id = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ApplyKnownPackages initiated, turn = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+ApplyKnownPackages succeeded, turn = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ApplyKnownPackages failed. turn = %1, HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GetLastProvisioningResultsAsync succeeded, resultCount = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+GetLastProvisioningResultsAsync failed. HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GetLastProvisioningCommandResultsAsync succeeded, resultCount = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+GetLastProvisioningCommandResultsAsync. HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Settings detail.
+source = %1.
+packageIdToDelete = %2.
+packagePathsToAdd = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RegisterForCspAlerts succeeded. EnrollmentId = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+RegisterForCspAlerts Failed. HResult = %1, EnrollmentId = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>93</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+UpdatePendingResultInternal succeeded. PackageId = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>94</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+UpdatePendingResultInternal Failed. HResult = %1, PackageId = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+AutoPilot policy [%1] not found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotGetPolicyDwordByName succeeded:  policy name = %1; policy value = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotGetPolicyDwordByName error:  policy name = %2; HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotGetPolicyStringByName succeeded:  policy name = %1; policy value = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotGetPolicyStringByName error:  policy name = %2; HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotDisable succeeded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotDisable error:  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilot state = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotIsDisabled error:  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotGetOobeSettingsOverride succeeded:  OOBE setting = %1; state = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotGetOobeSettingsOverride error:  OOBE setting = %2; HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotRetrieveSettings succeeded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotRetrieveSettings error:  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilot reported the DLL was unloaded while there were %1 outstanding calls.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotRetrieveSettings was skipped because this version of Windows does not support Azure Active Directory join.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Autopilot discovery failed to find a valid MDM.  Confirm that the AAD tenant is properly provisioned and licensed for exactly one MDM.  HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager started the MSA service for TPM attestation identity.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager started the TPM task to update TPM attestation.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager reported TPM task is complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager reported the state changed from %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InitialState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UpdateState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager failed to start MSA service.  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>155</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager failed to start TPM task.  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>156</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager reported that MSA TPM is not configured for hardware TPM attestation even though the profile indicates it is required.  AutoPilot cannot proceed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>157</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager reported that TPM attestation lasted %1 microseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>160</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotRetrieveSettings beginning acquisition.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>161</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager retrieve settings succeeded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>162</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager determined download is not required and the device is not provisioned.  Clean or reset the device to change this.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>163</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager determined download is not required and the device is already provisioned.  Clean or reset the device to change this.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>164</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager determined Internet is available to attempt policy download.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>165</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+AutoPilotManager determined Internet is not available; policy download will queue when available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>166</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager reported Internet is now available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>167</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager reported Internet is still not available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>168</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager reported MSA TPM device identity was updated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>169</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager set TPM identity confirmed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>170</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager set AutoPilot profile as available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>171</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager failed to set TPM identity confirmed.  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>172</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager failed to set AutoPilot profile as available.  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>173</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager failed to register for network availability.  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>174</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager failed to register for device identity availability.  HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>175</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager failed to register for device identity task update.  HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>176</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MSA TPM keystate has been updated.  New server state = %1, new client state = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uint1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Uint2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>177</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+TPM attestation retry is being attempted.  Current retry attempt %1 of %2 maximum]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uint1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Uint2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>178</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager began device enrollment with internal state %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>179</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager began device enrollment phase %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>180</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager failed during device enrollment phase %1.  HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>181</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager completed device enrollment phase %1.  HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>182</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager reported that the retry timer event was set to %1 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>183</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager reported that the retry timer event occurred]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>184</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager failed to register for MSA keystate update availability.  HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager device enrollment reported an initialization failure.  HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager device enrollment reported a blocking failure.  Overall error %2, last reported stage %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AutoPilotManager device enrollment failed during stage %1 with error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilotManager device enrollment succeeded.  Last valid stage: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AutoPilot configuration file path: %1 
+Expanded path:%2 
+File path source:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to load AutoPilot configuration file, HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to parse AutoPilot configuration file, HRESULT = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>313</Id>
+                <Version>0</Version>
+                <Channel>AutoPilot</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Invalid ZtdCorrelationId found in Autopilot configuration file, HRESULT = %1. ZtdCorrelationId: '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Management service starting.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Management service started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Management service failed to start.  HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Management service failed to register.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Management service shutdown.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Management service WIL error was reported.
+HRESULT: %1
+File: %2, line %3
+Message: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Management service call %1 is deprecated!]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Management service cleared the local Autopilot cached state.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Management service failed to clear the local Autopilot cached state.  HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>ManagementService</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Device rename has been blocked through MDM because machine is domain joined]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

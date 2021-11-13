@@ -1,0 +1,540 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SharedAccess_NAT</Name>
+        <Metadata>
+            <Guid>{A6F32731-9A38-4159-A220-3D9B7FC5FE5D}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\ipnathlp.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\ipnathlp.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=ipnathlp.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SharedAccess_NAT</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>4294967295</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>30001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator was unable to check whether the IP address %1 is in use on the network for local IP address %2. This error may indicate lack of support for address-resolution on the network, or an error condition on the local machine. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator was unable to bind to the IP address %1. This error may indicate a problem with TCP/IP networking. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator was unable to allocate %1 bytes of memory. This may indicate that the system is low on virtual memory, or that the memory-manager has encountered an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator received a message containing an unrecognized code (%1). The message was neither a BOOTP request nor a BOOTP reply, and was ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator has detected a DHCP server with IP address %1 on the same network as the interface with IP address %2. The allocator has disabled itself on the interface to avoid confusing DHCP clients.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator encountered a network error while attempting to detect existing DHCP servers on the network of the interface with IP address %1. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator received a message smaller than the minimum message size. The message has been discarded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator received a message whose format was invalid. The message has been discarded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator encountered a network error while attempting to reply on IP address %1 to a request from a client. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator received a DHCP message containing an unrecognized message type (%1) in the DHCP message type option field. The message has been discarded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator encountered a network error while attempting to receive messages on the interface with IP address %1. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator detected network address translation (NAT) enabled on the interface with index '%1'. The allocator has disabled itself on the interface to avoid confusing DHCP clients.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP allocator has disabled itself on IP address %1, since the IP address is outside the %2/%3 scope from which addresses are being allocated to DHCP clients. To enable the DHCP allocator on this IP address, change the scope to include the IP address, or change the IP address to fall within the scope.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30999</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+end.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent detected network address translation (NAT) enabled on the interface with index '%1'. The agent has disabled itself on the interface to avoid confusing clients.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to bind to the IP address %1. This error may indicate a problem with TCP/IP networking. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent encountered a network error while attempting to receive messages on the interface with IP address %1. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to allocate %1 bytes of memory. This may indicate that the system is low on virtual memory, or that the memory manager has encountered an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent encountered a network error while attempting to forward a response to a client from a name resolution server on the interface with IP address %1. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent encountered a network error while attempting to forward a query from the client %1 to the server %2 on the interface with IP address %3. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to register for notification of changes to the local list of DNS and WINS servers. This may indicate that system resources are low. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to read the local list of name resolution servers from the registry. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to resolve a query from %1 after consulting all entries in the local list of name resolution servers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to initiate a demand dial connection on the default interface while trying to resolve a query from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to resolve a query because no list of name resolution servers is configured locally and no interface is configured as the default for name resolution.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent encountered an error while obtaining the local list of name resolution servers. Some DNS or WINS servers may be inaccessible to clients on the local network. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to register for notification of changes to the ICS Domain suffix string. This may indicate that system resources are low. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31014</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent was unable to read the ICS Domain suffix string from the registry. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS proxy agent received a message smaller than the minimum message size. The message has been discarded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31999</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+end.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Address Translator (NAT) was unable to update the local address resolution table to respond to requests for IP address %1 and mask %2. Address resolution may fail to operate for addresses in the given range. This error may indicate a problem with TCP/IP networking, or it may indicate lack of support for address resolution in the underlying network interface. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Address Translator (NAT) was unable to allocate %1 bytes. This may indicate that the system is low on virtual memory, or that the memory manager has encountered an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Address Translator (NAT) was unable to request an operation of the kernel-mode translation module. This may indicate misconfiguration, insufficient resources, or an internal error. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Address Translator (NAT) was unable to load the kernel-mode translation module. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Address Translator (NAT) was unable to unload the kernel-mode translation module. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Internet Connection Sharing service could not start because another process has taken control of the kernel-mode translation module.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Connection Sharing component could not start because another process has taken control of the kernel-mode translation module.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Address Translator (NAT) was unable to expand the wildcard  mappings. This may indicate misconfiguration, insufficient resources, or an internal error. The data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32999</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+end.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The ICS_IPV6 failed to configure IPv6 stack.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The ICS_IPV6 was unable to allocate %1 bytes of memory. This may indicate that the system is low on virtual memory, or that the memory manager has encountered an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The ICS_IPV6 was unable to allocate %1 bytes of memory. This may indicate that the system is low on virtual memory, or that the memory manager has encountered an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The ICS_IPV6 was unable to allocate %1 bytes of memory. This may indicate that the system is low on virtual memory, or that the memory manager has encountered an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The ICS_IPV6 was unable to allocate %1 bytes of memory. This may indicate that the system is low on virtual memory, or that the memory manager has encountered an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The ICS_IPV6 was unable to allocate %1 bytes of memory. This may indicate that the system is low on virtual memory, or that the memory manager has encountered an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to create registry key "System\\CurrentControlSet\\Services\\Tcpip6\\Parameters".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34999</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+end.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
