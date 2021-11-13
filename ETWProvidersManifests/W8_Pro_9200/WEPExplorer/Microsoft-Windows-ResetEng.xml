@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ResetEng</Name>
+        <Metadata>
+            <Guid>{A4445C76-ED85-C8A3-02C1-532A38614A9E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\reseteng.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\reseteng.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16384&amp;FileName=reseteng.dll&amp;FileVer=6.2.9200.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-ResetEng</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4500</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The system has been successfully restored to original condition.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4502</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+Attempt to restore the system to original condition has failed. Changes to the system have been undone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

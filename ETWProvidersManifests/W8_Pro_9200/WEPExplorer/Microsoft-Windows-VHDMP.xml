@@ -1,0 +1,253 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-VHDMP</Name>
+        <Metadata>
+            <Guid>{E2816346-87F4-4F85-95C3-0C79409AA89D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\vhdmp.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\vhdmp.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage>Microsoft-Windows-VHDMP</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-VHDMP/Operational</Message>
+                    <Path>Microsoft-Windows-VHDMP/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>SQM</Message>
+                    <Name>win:SQM</Name>
+                    <Value>2251799813685248</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The VHD %1 has come online (surfaced) as disk number %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VhdDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The VHD %1 has been removed (unsurfaced) as disk number %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VhdDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to surface VHD %1. Error status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to surface VHD %1. Surface attempt was cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to %1 VHD %2. Error status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VhdMetaOps" inType="win:AnsiString" outType="xs:string"/>
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Operation failed on VHD %2. %1 Error status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VhdIoType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmStreamRowLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SqmStreamRow" count="SqmStreamRowLength">
+    <data name="SqmTypeEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmDWORDEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmStringEntry" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change Tracking has been enabled for the VHD %1 (%2) with log file %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualDisk" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change Tracking has been disabled for the VHD %1 (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualDisk" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Change Tracking for the VHD %1 to the log file %2 has been stopped due to the error %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VirtualDisk" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Flushing of the header of the log file %1 has failed due to error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Flushing of the buffers to the log file %1 has failed due to error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Opening the log file %1 for tracking has failed due to error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VHDMP/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Offline changes are detected for VHD %2. Log file: %1, VHD time: %4, Log file time: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VhdFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="VHDFileTime" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LogFileTime" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

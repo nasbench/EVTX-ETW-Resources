@@ -1,0 +1,376 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Winsrv</Name>
+        <Metadata>
+            <Guid>{9D55B53D-449B-4824-A637-24F9D69AA02F}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\winsrv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\winsrv.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=winsrv.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Winsrv</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Winsrv/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ThreadShutdown</Name>
+                    <Value>12001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ThreadShutdown_SentMessage</Name>
+                    <Value>12003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>TerminateProcess</Name>
+                    <Value>12005</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WaitForProcess</Name>
+                    <Value>12007</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ShutdownProcess</Name>
+                    <Value>12009</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NotificationEvent</Name>
+                    <Value>12010</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Perf</Name>
+                    <Value>256</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following application attempted to veto the shutdown: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following application was terminated because it was hung: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ThreadShutdown</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12001</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ThreadShutdown</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ThreadShutdown</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Command" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12002</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ThreadShutdown</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Command" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ThreadShutdown_SentMessage</Task>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12003</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ThreadShutdown_SentMessage</Task>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>TerminateProcess</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12005</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>TerminateProcess</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>TerminateProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12006</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>TerminateProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TerminateStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WaitForProcess</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12007</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WaitForProcess</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WaitForProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WaitStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12008</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WaitForProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WaitStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12009</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownProcess</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12010</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12011</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NotificationEvent</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12012</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Winsrv/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NotificationEvent</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

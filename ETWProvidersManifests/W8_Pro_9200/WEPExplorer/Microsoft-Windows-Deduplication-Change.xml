@@ -1,0 +1,1209 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Deduplication-Change</Name>
+        <Metadata>
+            <Guid>{1D5E499D-739C-45A6-A3E1-8CBE0A352BEB}</Guid>
+            <ResourceFilePath>C:\Windows\System32\ddputils.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\ddputils.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16384&amp;FileName=ddputils.dll&amp;FileVer=6.2.9200.16384</HelpLink>
+            <PublisherMessage>Data Deduplication Change Events</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>16384</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Create chunk container (%1 - %2.%3.ccc)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16385</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Create chunk container completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16386</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Copy chunk container (%1 - %2.%3.ccc)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16387</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Copy chunk container completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16388</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete chunk container (%1 - %2.%3.ccc)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16389</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete chunk container completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16390</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rename chunk container (%1 - %2.%3.ccc%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="InvalidFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16391</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rename chunk container completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16392</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Flush chunk container (%1 - %2.%3.ccc)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16393</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Flush chunk container completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16394</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rollback chunk container (%1 - %2.%3.ccc)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16395</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rollback chunk container completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16396</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Mark chunk container (%1 - %2.%3.ccc) read-only]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16397</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Mark chunk container read-only completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16398</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write chunk container (%1 - %2.%3.ccc) redirection table at offset %4 (Entries: StartIndex %5, Count %6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ContainerOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Entries" count="EntryCount">
+    <data name="LocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16399</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write chunk container redirection table completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16400</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write chunk container (%5 - %6.%7.ccc) header at offset %8 (Header: USN %9, VDL %10, #Chunk %11, NextLocalId %12, Flags %13, LastAppendTime %14, BackupRedirectionTableOfset %15, LastReconciliationLocalId %16)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VersionChecksum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ContainerOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UpdateSequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ValidDataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ChunkCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NextLocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LastAppendTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BackupRedirectionTableOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastReconciliationLocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Checksum" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16401</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write chunk container header completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16402</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert data chunk header to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorupted %6, DataSize %7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsBatched" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsCorrupted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Header">
+    <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="VersionChecksum" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="LocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="BodySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PropertySetType" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="PropertySetSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="BodyChecksumSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="ChecksumSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="CompressionFormat" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="CompressionEngine" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="HashInfo" inType="win:Binary" outType="xs:hexBinary" length="32"/>
+    <data name="DataCheckSum" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="HeaderCheckSum" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16403</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert data chunk header completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16404</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert data chunk body to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsBatched" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsCorrupted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16405</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert data chunk body completed %1 with ChunkId %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ChunkId" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16408</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write delete log (%5 - %6.%7.delete.log) header]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VersionChecksum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LogNumber" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Checksum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileExtension" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16409</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write delete log header completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16410</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Append delete log (%1 - %2.%3.delete.log) entries at offset %4 (Entries: StartIndex %5, Count %6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LogNumber" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileExtension" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeleteLogOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Entries" count="EntryCount">
+    <data name="LocalId" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="Checksum" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16411</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Append delete log entries completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16412</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete delete log (%1 - %2.%3.delete.log)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LogNumber" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileExtension" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16413</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete delete log completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16414</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rename delete log (%1 - %2.%3.delete.log)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LogNumber" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileExtension" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16415</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rename delete log completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16416</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write chunk container bitmap (%1 - %2) for chunk container (%1 - %3.%4) (Bitmap: BitLength %5, StartIndex %6, Count %7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BitLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Entries" inType="win:Binary" outType="xs:hexBinary" length="EntryCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16417</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write chunk container bitmap completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16418</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete chunk container bitmap (%1 - %2) for chunk container (%1 - %3.%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16419</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete chunk container bitmap completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16420</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write merge log (%5 - %6.%7.merge.log) header]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VersionChecksum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LogNumber" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Checksum" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16421</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write merge log header completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16422</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert hotspot chunk header to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsBatched" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsCorrupted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Header">
+    <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="VersionChecksum" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="LocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="BodySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PropertySetType" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="PropertySetSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="BodyChecksumSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="ChecksumSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="CompressionFormat" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="CompressionEngine" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="HashInfo" inType="win:Binary" outType="xs:hexBinary" length="32"/>
+    <data name="OriginalChunkLocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="OriginalChunkContainerId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="OriginalChunkOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="OriginalChunkGeneration" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="DataCheckSum" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="HeaderCheckSum" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16423</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert hotspot chunk header completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16424</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert hotspot chunk body to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsBatched" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsCorrupted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16425</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert hotspot chunk body completed %1 with ChunkId %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ChunkId" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16426</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert stream map chunk header to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsBatched" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsCorrupted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Header">
+    <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="VersionChecksum" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="LocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="BodySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PropertySetType" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="PropertySetSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="BodyChecksumSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="ChecksumSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Locality" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="PreviousChunkLocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PreviousChunkContainerId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PreviousChunkOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PreviousChunkGeneration" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="HashInfo" inType="win:Binary" outType="xs:hexBinary" length="32"/>
+    <data name="DataCheckSum" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="HeaderCheckSum" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16427</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert stream map chunk header completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16428</Id>
+                <Version>3</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert stream map chunk body to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7) (Entries: StartIndex %8, Count %9)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsBatched" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsCorrupted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Entries" count="EntryCount">
+    <data name="ChunkId" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+    <data name="EndOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="HashInfo" inType="win:Binary" outType="xs:hexBinary" length="32"/>
+    <data name="ChunkBodySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Reserved" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16429</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert stream map chunk body completed %1 with ChunkId %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ChunkId" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16430</Id>
+                <Version>2</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Append merge log (%1 - %2.%3.merge.log) entries at offset %4 (Entries: StartIndex %5, Count %6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LogNumber" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MergeLogOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Entries" count="EntryCount">
+    <data name="OldChunkIdUniquePart" inType="win:Binary" outType="xs:hexBinary" length="8"/>
+    <data name="NewChunkId" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+    <data name="NewChunkBodySize" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="Checksum" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16431</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Append merge log entries completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16432</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete merge log (%1 - %2.%3.merge.log)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LogNumber" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16433</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete merge log completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16434</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Flush merge log (%1 - %2.%3.merge.log)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LogNumber" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16435</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Flush merge log completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16436</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Update file list entries (Remove: %1, Add: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EntryToRemove" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EntryToAdd" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16437</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Update file list entries completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16438</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Set dedup reparse point on %2 (FileId %1) (ReparsePoint: SizeBackedByChunkStore %3, StreamMapInfoSize %4, StreamMapInfo %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SizeBackedByChunkStore" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamMapInfoSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StreamMapInfo" inType="win:Binary" outType="xs:hexBinary" length="StreamMapInfoSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16439</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Set dedup reparse point completed %1 (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ReparsePointSet" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16440</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Set dedup zero data on %2 (FileId %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16441</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Set dedup zero data completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16442</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Flush reparse point files]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16443</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Flush reparse point files completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16444</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Set sparse on file id %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16445</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Set sparse completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16446</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+FSCTL_SET_ZERO_DATA on file id %1 at offset %2 and BeyondFinalZero %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Offset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="BeyondFinalZero" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16447</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+FSCTL_SET_ZERO_DATA completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16448</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rename chunk container bitmap (%1 - %2) for chunk container (%1 - %3.%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16449</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rename chunk container bitmap completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16450</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert padding chunk header to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorupted %6, DataSize %7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsBatched" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsCorrupted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Header">
+    <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="VersionChecksum" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="LocalId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="BodySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PropertySetType" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="PropertySetSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="BodyChecksumSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="ChecksumSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="DataCheckSum" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="HeaderCheckSum" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16451</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert padding chunk header completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16452</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert padding chunk body to chunk container (%1 - %2.%3.ccc) at offset %4 (Chunk: IsBatched %5 IsCorrupted %6, DataSize %7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsBatched" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsCorrupted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16453</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert padding chunk body completed %1 with ChunkId %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ChunkId" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16454</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert batch of chunks to chunk container (%1 - %2.%3.ccc) at offset %4 (BatchChunkCount %5, BatchDataSize %6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="WriteOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BatchChunkCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BatchDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16455</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Insert batch of chunks completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16456</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write chunk container directory (%1 - %2) for chunk container (%1 - %3.%4) (Directory: EntryCount %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileCopyLevel" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TotalEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Entries" count="EntryCount">
+    <data name="ChunkOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16457</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write chunk container directory completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16458</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete chunk container directory (%1 - %2) for chunk container (%1 - %3.%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileCopyLevel" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16459</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete chunk container directory completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16460</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rename chunk container directory (%1 - %2) for chunk container (%1 - %3.%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChunkStoreType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContainerId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Generation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileCopyLevel" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16461</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Rename chunk container directory completed %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

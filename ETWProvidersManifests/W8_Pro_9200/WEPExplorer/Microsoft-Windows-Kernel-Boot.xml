@@ -1,0 +1,574 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Boot</Name>
+        <Metadata>
+            <Guid>{15CA44FF-4D7A-4BAA-BBA5-0998955E531E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16384&amp;FileName=advapi32.dll&amp;FileVer=6.2.9200.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Boot</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-Boot/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>SQM</Message>
+                    <Name>win:SQM</Name>
+                    <Value>2251799813685248</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+System was booted in %1x%2@%3bpp.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BitsPerPixel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BootUX screen was displayed in %1x%2@%3bpp.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BitsPerPixel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Video bit transfer rate is %1 bytes per ms.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BytesPerMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Boot library accessed file %2 on Device %1. Read %3 bytes and wrote %4 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BytesRead" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesWritten" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+File IO for boot application %1: Total Bytes Read = %2, Total Bytes Written = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BytesRead" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesWritten" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Image %1 failed IntegrityCheck reason is %3. Image flags are %2. Error ignored due to debugger %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Reason" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorIgnored" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Bootmgr duration is %1 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BootmgrTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Image %1 is not self-signed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A device (%1) that was enumerated by the BIOS was inaccessible to the boot environment.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriveNumber" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The system firmware has allocated a memory region previously determined to be unreliable. This has the potential to cause system instability and/or data corruption.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FwStartPage" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="FwPageCount" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="FwMemoryType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FwMemoryAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BlStartPage" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="BlPageCount" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="BlMemoryType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BlMemoryAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The time elapsed before Bootmgr, based on the TSC, is %1 ms.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreBootMgrTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Variable %1 requires %2 bytes and was set with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UefiVariableName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Element %2 of application %1 was not in policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Element" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Secure Boot Policy update resulted in status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Secure Boot Revocation List update resulted in status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows failed to resume from hibernate with error status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailureStatus" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="FailureMsgId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The boot manager multi OS selection screen was displayed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+There are %1 boot options on this system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EntryCount" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+There are %1 boot tool options on this system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ToolsCount" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The last shutdown's success status was %1. The last boot's success status was %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LastShutdownGood" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LastBootGood" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The OS loader advanced options menu was displayed and the user selected option %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OptionSelected" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The OS loader edit options menu was displayed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows key was pressed during boot.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The F8 key was pressed during boot.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The boot menu policy was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BootMenuPolicy" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A one-time boot sequence was used during this boot.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The boot type was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BootType" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmStreamRowLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SqmStreamRow" count="SqmStreamRowLength">
+    <data name="SqmTypeEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmDWORDEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmStringEntry" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows failed fast startup with error status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailureStatus" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="FailureMsgId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The firmware reported boot metrics.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResetEndStart" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LoadOSImageStart" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StartOSImageStart" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ExitBootServicesEntry" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ExitBootServicesExit" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Initialization of the firmware crypto hash provider resulted in status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The bootmgr spent %1 ms waiting for user input.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BitlockerUserInputTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The firmware update capsule (%1) failed to load with status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageLoadStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The PE/COFF image firmware update capsule (%1) failed to load with status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PeImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeImageLoadStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Efi UpdateCapsule failed to apply updates with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UpdateCapsuleStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Firmware update supported status is %3. The BitLocker device flags are %1 and the PCR bitmap is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PcrBitmap" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UpdateSupportedStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The firmware update capsule (%1) code integrity check failed with status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageLoadStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
