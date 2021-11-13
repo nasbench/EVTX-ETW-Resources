@@ -1,0 +1,106 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Dump</Name>
+        <Metadata>
+            <Guid>{17D2A329-4539-5F4D-3435-F510634CE3B9}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Dump</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-Dump/Operational</Message>
+                    <Path>Microsoft-Windows-Kernel-Dump/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>CrashDump Policy</Message>
+                    <Name>DUMP_TASK_CRASHDUMP_POLICY</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Policy Operation Failed</Message>
+                    <Name>CrashDumpPolicyOperationFailure</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Policy Value Changed</Message>
+                    <Name>CrashDumpPolicyValueChanged</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>CrashDump disabled on boot</Message>
+                    <Name>CrashDumpDisabledOnBootByPolicy</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CrashDump Policy</Task>
+                <Opcode>Policy Operation Failed</Opcode>
+                <Message><![CDATA[
+AllowCrashDump policy: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CrashDump Policy</Task>
+                <Opcode>Policy Value Changed</Opcode>
+                <Message><![CDATA[
+AllowCrashDump policy value changed (AllowCrashDump = %1). Configure crash dump. NT status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CrashDump Policy</Task>
+                <Opcode>CrashDump disabled on boot</Opcode>
+                <Message><![CDATA[
+CrashDump disabled on boot by policy (AllowCrashDump = %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

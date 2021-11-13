@@ -1,0 +1,358 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-HttpEvent</Name>
+        <Metadata>
+            <Guid>{7B6BC78C-898B-4170-BBF8-1A469EA43FC5}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\http.sys</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\system32\drivers\http.sys</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\http.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=http.sys&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-HttpEvent</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221240472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to create log file %2. Make sure that the logging directory is correct and this computer has write access to that directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to create the log file for site W3SVC%2. Make sure that the logging directory for the site is correct and this computer has write access to that directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiteId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to write to the log file %2 for site W3SVC%3. Disk may be full. If this is a network path, make sure that network connectivity is not broken.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiteId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to create the centralized binary log file. Make sure that the logging directory is correct and this computer has write access to that directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to write to the centralized binary log file %2. Disk may be full. If this is a network path, make sure that network connectivity is not broken.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240477</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to bind to the underlying transport for %2. The IP Listen-Only list may contain a reference to an interface which may not exist on this machine.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Owner of the log file or directory %2 is invalid. This could be because another user has already created the log file or the directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756831</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Reservation for namespace identified by URL prefix %2 was successfully added.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756832</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Reservation for namespace identified by URL prefix %2 was successfully deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240481</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while initializing namespace reservations.  The error status code is contained within the returned data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occured while initializing namespace reservation identified by URL prefix %2.  The error status code is contained within the returned data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240483</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to create the error log file. Make sure that the error logging directory is correct.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240484</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to write to the error log file. Disk may be full. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240485</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error logging configuration failed. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240486</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to convert IP Listen-Only list entry %2.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756839</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to convert all entries on IP Listen-Only list.  Driver will listen on all available interfaces.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240488</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to initialize the security package %2 for server side authentication.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SecurityPackage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240489</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to create the centralized W3C log file. Make sure that the logging directory is correct and this computer has write access to that directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240490</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to write to the centralized W3C log file %2. Disk may be full. If this is a network path, make sure that network connectivity is not broken.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498667</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The host %2 has gone down as a result of the change in the IP Listen-Only list.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Host" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498668</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The host %2 has come up as a result of the change in the IP Listen-Only list.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Host" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240493</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while using SSL configuration for endpoint %2.  The error status code is contained within the returned data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Endpoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240494</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Http.sys failed to process a CPU hot-add event. Status: %2 .]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498948</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SSL Certificate Settings deleted for endpoint : %2 .]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Endpoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498949</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SSL Certificate Settings created by an admin process for endpoint : %2 .]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Endpoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498950</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SSL Certificate Settings updated by an admin process for endpoint : %2 .]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Endpoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
