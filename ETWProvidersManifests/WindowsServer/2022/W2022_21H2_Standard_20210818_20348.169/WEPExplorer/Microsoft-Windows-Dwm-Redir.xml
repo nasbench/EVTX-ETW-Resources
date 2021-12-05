@@ -1,0 +1,300 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Dwm-Redir</Name>
+        <Metadata>
+            <Guid>{7D99F6A4-1BEC-4C09-9703-3AAA8148347F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dwmredir.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dwmredir.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=dwmredir.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Dwm-Redir</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Dwm-Redir/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirGetSharedHandle</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirUpdateSharedSurface</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirAsyncFlush</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirDxResize</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirDwmUpdate</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirSetLivePreviewExcludeHwnd</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirProcessLogicalSurface</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirVisualCreateDefaultInteraction</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirProcessLPCMessage</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RedirUpdateWindowRegion</Name>
+                    <Value>12</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DwmRedir</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DwmInput</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DwmInputPerf</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RedirGetSharedHandle</Task>
+                <Keyword>DwmRedir</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlipChain" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SerialNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuffersEmpty" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IndexUnconfirmed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hSurface" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RedirUpdateSharedSurface</Task>
+                <Keyword>DwmRedir</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlipChain" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SerialNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuffersEmpty" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IndexUnconfirmed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hSurface" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RedirAsyncFlush</Task>
+                <Keyword>DwmRedir</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="AsyncFlushType" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RedirDxResize</Task>
+                <Keyword>DwmRedir</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hwnd" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="xSizeOld" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ySizeOld" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="formatOld" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="xSizeNew" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ySizeNew" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="formatNew" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RedirDwmUpdate</Task>
+                <Keyword>DwmRedir</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hwnd" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MessageId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RedirSetLivePreviewExcludeHwnd</Task>
+                <Keyword>DwmRedir</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fExcludedFromLivePreview" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RedirProcessLogicalSurface</Task>
+                <Keyword>DwmRedir</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="logicalSurfaceHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="spriteHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="windowHandle" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RedirVisualCreateDefaultInteraction</Task>
+                <Keyword>DwmInput</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="visualHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="interactionHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="visualInternalHandleAndChannel" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="interactionInternalHandleAndChannel" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Task>RedirProcessLPCMessage</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DwmRedir DwmInput DwmInputPerf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Enum" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Task>RedirProcessLPCMessage</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DwmRedir DwmInput DwmInputPerf</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Enum" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Dwm-Redir/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Task>RedirUpdateWindowRegion</Task>
+                <Keyword>DwmRedir</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RgnType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RectStartIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RectEndIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalRectCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
