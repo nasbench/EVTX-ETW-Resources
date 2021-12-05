@@ -1,0 +1,238 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorageManagement</Name>
+        <Metadata>
+            <Guid>{7E58E69A-E361-4F06-B880-AD2F4B64C944}</Guid>
+            <ResourceFilePath>storagewmi.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>storagewmi.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1554&amp;FileName=storagewmi.dll&amp;FileVer=10.0.17763.1554</HelpLink>
+            <PublisherMessage>Microsoft-Windows-StorageManagement</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageManagement/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageManagement/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>EnterExit</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>EnterExit</Keyword>
+                <Message><![CDATA[
+%1
+%2(%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1 %2
+%3(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1
+%2(%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An error has occurred during method execution.                    
+Class: %1                    
+Method: %2                    
+Error Code: %3                    
+Error Message: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MessageString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An error has occurred during method execution.                   
+Class: %1                   
+Method: %2                   
+Error Code: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Windows Storage Provider host service failed to start.                    
+Error Code: %1                    
+Operation: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Storage Provider host service was started successfully.                    
+Start time (milliseconds): %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartTime_msecs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Storage Management WMI Provider was loaded.                    
+Load time (milliseconds): %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoadTime_msecs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Windows Storage Management WMI enumeration operation was performed.                   
+Class: %1                   
+ResultCount: %2                   
+Operation time (milliseconds): %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OperationTime_msecs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Windows Storage Management WMI get instance operation was performed.                   
+Class: %1                   
+Operation time (milliseconds): %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OperationTime_msecs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Windows Storage Management WMI method operation was performed.                   
+Class: %1                   
+Method: %2                   
+Operation time (milliseconds): %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OperationTime_msecs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
