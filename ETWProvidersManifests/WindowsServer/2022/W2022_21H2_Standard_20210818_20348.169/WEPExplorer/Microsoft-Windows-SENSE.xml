@@ -1,0 +1,2034 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SENSE</Name>
+        <Metadata>
+            <Guid>{FAE96D09-ADE1-5223-0098-AF7B67348531}</Guid>
+            <ResourceFilePath>C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.7740.20348.1&amp;FileName=MsSense.exe&amp;FileVer=10.7740.20348.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SENSE/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Trigger</Name>
+                    <Value>8</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Service is starting (Version %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Service is shutting down.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service failed to start. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Contacted server %1 times, all succeeded, URI: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Contacted server %1 times, all failed, URI: %2. Last HTTP error code: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Service failed to clean configuration settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service failed to change its start type. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Onboarding or re-onboarding of Windows Defender Advanced Threat Protection service completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+New cloud configuration failed to apply, version: %1. Also failed to apply last known good configuration, version %2. Also failed to apply the default configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="parameter2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection machine ID calculated: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection cannot calculate machine ID. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection cannot start command channel with URL: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OOBE (Windows Welcome) is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OOBE (Windows Welcome) has not yet completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Cannot wait for OOBE (Windows Welcome) to complete. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Service failed to reset health status in the registry. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service failed to set the onboarding status in the registry. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to enable Windows Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Connected User Experiences and Telemetry service registration failed with failure code: %1. Requested disk quota in MB: %2, Requested daily upload quota in MB: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="diskSizeQuotaValue" inType="win:Int32" outType="xs:int"/>
+  <data name="dailyUploadQuotaValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="errorType" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to disable Windows Defender Advanced Threat Protection mode in Windows Defender. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Connected User Experiences and Telemetry service unregistration failed. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service failed to request to stop itself after offboarding process. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection service failed to persist SENSE GUID. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Communication quotas are updated. Disk quota in MB: %1, daily upload quota in MB: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="diskSizeQuotaValue" inType="win:Int32" outType="xs:int"/>
+  <data name="dailyUploadQuotaValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Connected User Experiences and Telemetry service registration succeeded with completion code: %1. Requested disk quota in MB: %2, requested daily upload quota in MB: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="diskSizeQuotaValue" inType="win:Int32" outType="xs:int"/>
+  <data name="dailyUploadQuotaValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Module: %1, Quota: {%2} {%3}, Percentage of quota utilization: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="module" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="quotaValue" inType="win:Int32" outType="xs:int"/>
+  <data name="quotaValueUnit" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="percentageValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Network connection is identified as low. Windows Defender Advanced Threat Protection will contact the server every %1 seconds. Metered connection: %2, internet available: %3, free network available: %4, proxy is defined by GP: %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pollingInterval" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="meteredConnectionState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="internetAvailabilityState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="freeNetworkAvailabilityState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="proxyDefined" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Network connection is identified as normal. Windows Defender Advanced Threat Protection will contact the server every %1 seconds. Metered connection: %2, internet available: %3, free network available: %4, proxy is defined by GP: %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pollingInterval" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="meteredConnectionState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="internetAvailabilityState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="freeNetworkAvailabilityState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="proxyDefined" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Battery state is identified as low. Windows Defender Advanced Threat Protection will contact the server every %1 seconds. AC state: %2, battery saver mode : %3, battery low state: %4, battery critical state: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pollingInterval" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="acPowerState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="batterySavingState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="batteryLowState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="batteryCriticalState" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Battery state is identified as normal. Windows Defender Advanced Threat Protection will contact the server every %1 seconds. AC state: %2, battery saver mode : %3, battery low state: %4, battery critical state: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pollingInterval" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="acPowerState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="batterySavingState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="batteryLowState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="batteryCriticalState" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Component failed to perform action. Component: %1, Action: %2, Exception Type: %3, Exception message: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Component" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ExceptionMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Component failed to perform action. Component: %1, Action: %2, Exception Type: %3, Exception Error: %4, Exception message: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Component" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ExceptionErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ExceptionMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Offboarding of Windows Defender Advanced Threat Protection service completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to register and to start the event trace session [%1]. Error code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceSessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to register and start the event trace session [%1] due to lack of resources. Error code: %2. This is most likely because there are too many active event trace sessions. The service will retry in 1 minute.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceSessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully registered and started the event trace session - recovered after previous failed attempts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to add a provider [%1] to event trace session [%2]. Error code: %3. This means that events from this provider will not be reported.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TraceSessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Invalid cloud configuration command received and ignored. Version: %1, status: %2, error code: %3, message: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HRESULT" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+New cloud configuration applied successfully. Version: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+New cloud configuration failed to apply, version: %1. Successfully applied the last known good configuration, version %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="parameter2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+New cloud configuration failed to apply, version: %1. Also failed to apply last known good configuration, version %2. Successfully applied the default configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="parameter2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Cloud configuration loaded from persistent storage, version: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Global (per-pattern) state changed. State: %1, pattern: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Value2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Value3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create the Secure ETW autologger. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to remove the Secure ETW autologger. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Trigger</Keyword>
+                <Message><![CDATA[
+Capturing a snapshot of the machine for troubleshooting purposes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Starting command: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to run command %1, error: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Data collection command parameters are invalid: SasUri: %1, compressionLevel: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SasUri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompressionLevel" inType="win:Int16" outType="xs:short"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to start Connected User Experiences and Telemetry service. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActualStartType" inType="win:Int16" outType="xs:short"/>
+  <data name="ExpectedStartType" inType="win:Int16" outType="xs:short"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Starting stopped external service. Name: %1, exit code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to load Microsoft Security Events Component Minifilter driver. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Policy update: Latency mode - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Contacted server %1 times, failed %2 times and succeeded %3 times. URI: %4. Last HTTP error code: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="UInt2" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="UInt3" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The start type of the service is unexpected. Service name: %1, actual start type: %2, expected start type: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActualStartType" inType="win:Int16" outType="xs:short"/>
+  <data name="ExpectedStartType" inType="win:Int16" outType="xs:short"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The service is stopped. Service name: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Policy update: Allow sample collection - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Succeeded to run command: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tried to send first full machine profile report. Result code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sense starting for platform: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="platformBitMask" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Device tag in registry exceeds length limit. Tag name: %2. Length limit: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Device tag name in registry exceeds length limit. Tag name: %2. Length limit: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Number of customer tags in registry exceeds limit. Limit: %1 tags.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully applied protection on Connected User Experiences and Telemetry service]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>78</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully removed protection from Connected User Experiences and Telemetry service]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>79</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to apply protection on Connected User Experiences and Telemetry service. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to remove protection from Connected User Experiences and Telemetry service. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create Windows Defender Advanced Threat Protection ETW autologger. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to remove Windows Defender Advanced Threat Protection ETW autologger. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Cyber event may be dropped because its size [%1 bytes] exceeded max size [%2 bytes] or close to it.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealValue" inType="win:Int32" outType="xs:int"/>
+  <data name="quotaValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>84</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Set Windows Defender Antivirus running mode. Force passive mode: %1, result code: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="forcePassiveMode" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>85</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to trigger Windows Defender Advanced Threat Protection Incident Response executable. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>86</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Starting again stopped external service that should be up. Name: %1, exit code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>87</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Cannot start the external service. Name: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>88</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Updating the start type of external service again. Name: %1, actual start type: %2, expected start type: %3, exit code: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActualStartType" inType="win:Int16" outType="xs:short"/>
+  <data name="ExpectedStartType" inType="win:Int16" outType="xs:short"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>89</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Cannot update the start type of external service. Name: %1, actual start type: %2, expected start type: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActualStartType" inType="win:Int16" outType="xs:short"/>
+  <data name="ExpectedStartType" inType="win:Int16" outType="xs:short"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to configure System Guard Runtime Monitor to connect to cloud service in geo-region %1. Failure code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to remove System Guard Runtime Monitor geo-region information. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Stopping sending sensor cyber data quota because data quota is exceed. Will resume sending once quota period passes. State Mask: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt2" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>93</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Resuming sending sensor cyber data. State Mask: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt2" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>94</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Classification Engine executable has started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>95</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Classification Engine executable has ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>96</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Classification Engine Init has called. Result code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+There are connectivity issues to the Cloud for the DLP scenario]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The connectivity to the Cloud for the DLP scenario has been restored]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Sense has encoutered the following error while communicating with server: (%1). Result: (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Classification Engine executable failed to start. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Network Detection and Response executable failed to start. Failure code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Network Detection and Response executable has started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Network Detection and Response executable has ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Screenshot Audit executable has started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Screenshot Audit executable has ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Screenshot Audit init has called from user session %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Screenshot Audit executable failed to start from user session %1. Failure code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Screenshot Audit user session logon event for session id: %1, session name: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Defender Advanced Threat Protection Screenshot Audit user session logoff event for session id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1800</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Node's Value. NodeId: (%1), TokenName: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1801</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CSP: Failed to Get Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1802</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+CSP: Get Node's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1803</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Last Connected value complete. Result (%1), IsDefault: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Boolean1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1804</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Org ID value complete. Result: (%1), IsDefault: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Boolean1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1805</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Sense Is Running value complete. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1806</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Onboarding State value complete. Result: (%1), IsDefault: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Boolean1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1807</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Onboarding value complete. Onboarding Blob Hash: (%1), IsDefault: (%2), Onboarding State: (%3), Onboarding State IsDefault: (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="onboardingBlobHash" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="isDefaultOnboardingBlob" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="onboardingState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="isDefaultOnboardingState" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1808</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Offboarding value complete. Offboarding Blob Hash: (%1), IsDefault: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="offboardingBlobHash" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="isDefaultOffboardingBlob" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1809</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Sample Sharing value complete. Result: (%1), IsDefault: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Boolean1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1810</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Onboarding process. Started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1811</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Onboarding process. Delete Offboarding blob complete. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1812</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Onboarding process. Write Onboarding blob complete. Result: (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1813</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Onboarding process. The service started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1814</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Onboarding process. Pending service running state complete. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1815</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Set Sample Sharing value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="previousSampleCollectionValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="newSampleSharing" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1816</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Offboarding process. Delete Onboarding blob complete. Result (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1817</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Offboarding process. Write Offboarding blob complete. Result (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1818</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Set Node's Value started. NodeId: (%1), TokenName: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1819</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1820</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+CSP: Set Node's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1821</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Set Telemetry Reporting Frequency started. New value: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1822</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Set Telemetry Reporting Frequency complete. Previous value: (%1), IsDefault: (%2), New value: (%3), Result: (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="previousLatencyMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="newLatencyMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1823</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Telemetry Reporting Frequency complete. Value: (%1), Registry Value: (%2), IsDefault: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Boolean1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1824</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Group Ids complete. Value: (%1), IsDefault: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Boolean1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1825</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CSP: Set Group Ids exceeded allowed limit. Allowed: (%1), Actual: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UInt2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1826</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Set Group Ids complete. Value: (%1), Result: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1827</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Onboarding process. Service is running: (%1), Previous Onboarding Blob Hash: (%2), IsDefault: (%3), Onboarding State: (%4), Onboarding State IsDefault: (%5), New Onboarding Blob Hash: (%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="isServiceRunningAlready" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="previousOnboardingBlobHash" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="isDefaultOnboardingBlob" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="onboardingState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="isDefaultOnboardingState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="newOnboardingBlobHash" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1828</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Onboarding process. Service is running: (%1), Previous Offboarding Blob Hash: (%2), IsDefault: (%3), Onboarding State: (%4), Onboarding State IsDefault: (%5), New Offboarding Blob Hash: (%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="isServiceRunning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="previousOffboardingBlobHash" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="isDefaultOffboardingBlob" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="onboardingState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="isDefaultOnboardingState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="newOffboardingBlobHash" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1829</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CSP: Failed to Set Sample Sharing Value. Requested Value: (%1), Allowed Values between (%2) and (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestedValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="minimumAllowedValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="maximumAllowedValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1830</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CSP: Failed to Set Telemetry Reporting Frequency Value. Requested Value: (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1831</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+CSP: Get Sense is running. Service is configured as delay-start, and hasn't started yet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1832</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Device Tagging Group complete. Value: (%1), IsDefault: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Boolean1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1833</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Device Tagging Criticality value complete. In Registry: (%1), IsDefault: (%2), Conversion Succeeded: (%3), Result: (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="registryValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="conversionSucceeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Result" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1834</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Get Device Tagging Identification Method value complete. In Registry: (%1), IsDefault: (%2), Conversion Succeeded: (%3), Result: (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="registryValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="conversionSucceeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Result" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1835</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Set Device Tagging Group complete. Value: (%1), Result: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1836</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CSP: Set Device Tagging Group exceeded allowed limit. Allowed: (%1), Actual: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UInt2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1837</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Set Device Tagging Criticality value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="previousCriticalityValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="newCriticalityValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1838</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CSP: Failed to Set Device Tagging Criticality Value. Requested Value: (%1), Allowed Values between (%2) and (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestedValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="minimumAllowedValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="maximumAllowedValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1839</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+CSP: Set Device Tagging Identification Method value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="previousIdMethodValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="newIdMethodValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1840</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SENSE/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestedValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="minimumAllowedValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="maximumAllowedValue" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,214 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Mprddm</Name>
+        <Metadata>
+            <Guid>{3A5BEF13-D0F7-4E7F-9EC8-5E707DF711D0}</Guid>
+            <ResourceFilePath>C:\Windows\system32\mprddm.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\mprddm.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=mprddm.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Notification Channel</Message>
+                    <Path>Microsoft-Windows-Mprddm/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Log Always</Message>
+                    <Name>win:LogAlways</Name>
+                    <Value>0</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>None</Message>
+                    <Name>win:None</Name>
+                    <Value>0</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Used for debugging purposes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="debugString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Message><![CDATA[
+Connect Notification for a VPN connection]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="connectionID" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="userName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="remoteIPv4Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="remoteIPv6Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ispAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="deviceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tunnelType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="portName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="authenticationProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="authenticationData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="eapTypeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="embeddedEapTypeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="quarantineState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connectionStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="isS2SConnection" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="routingDomainId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Message><![CDATA[
+Disconnect Notification for a VPN connection]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="connectionID" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="userName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="remoteIPv4Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="remoteIPv6Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ispAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="portName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="bytesIn" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesOut" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="disconnectTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="isS2SConnection" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Unable to get DHCP address]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Able to get DHCP address]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+No static IP address available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Very few static IP addresses available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Static IP addresses available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WAN Miniports not available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WAN Miniports available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+All ports exhausted]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Very few ports available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Notification Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Ports available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

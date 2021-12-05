@@ -1,0 +1,2256 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Quic</Name>
+        <Metadata>
+            <Guid>{FF15E657-4F26-570E-88AB-0796B258D11C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\msquic.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\msquic.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20QUIC&amp;ProdVer=0.0.0.0&amp;FileName=msquic.sys&amp;FileVer=1.0.0.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Global</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Registration</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Configuration</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Worker</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Listener</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Binding</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Connection</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Stream</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Datapath</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Registration</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Listener</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Worker</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Binding</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Connection</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Stream</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:UDP</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Packet</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:TLS</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Platform</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Api</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Log</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Scheduling</Name>
+                    <Value>536870912</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:DataFlow</Name>
+                    <Value>1073741824</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:LowVolume</Name>
+                    <Value>2147483648</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] Initialized, PartitionCount=%1 DatapathFeatures=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PartitionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DatapathFeatures" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] Uninitialized]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] AddRef]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] Release]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] Shared server state initializing]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+Allocation of '%1' failed. (%2 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Desc" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ByteCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] Rundown, PartitionCount=%1 DatapathFeatures=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PartitionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DatapathFeatures" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] ERROR, %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] ERROR, %1, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] ASSERT, %2:%1 - %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:Api</Keyword>
+                <Message><![CDATA[
+[ api] Enter %1 (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:Api</Keyword>
+                <Message><![CDATA[
+[ api] Exit]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:Api</Keyword>
+                <Message><![CDATA[
+[ api] Exit %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:Api</Keyword>
+                <Message><![CDATA[
+[ api] Waiting on operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] Perf counters Rundown]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfCountersLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PerfCounters" inType="win:Binary" outType="xs:hexBinary" length="PerfCountersLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ lib] New SendRetryEnabled state, %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Registration</Opcode>
+                <Keyword>ut:Registration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ reg][%1] Created, AppName=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AppName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Registration</Opcode>
+                <Keyword>ut:Registration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ reg][%1] Destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Registration</Opcode>
+                <Keyword>ut:Registration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ reg][%1] Cleaning up]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Registration</Opcode>
+                <Keyword>ut:Registration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ reg][%1] Rundown, AppName=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AppName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Registration</Opcode>
+                <Keyword>ut:Registration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ reg][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Registration</Opcode>
+                <Keyword>ut:Registration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ reg][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Registration</Opcode>
+                <Keyword>ut:Registration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ reg][%1] Shutting down connections, Flags=%2, ErrorCode=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2048</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] Created, IdealProc=%2 Owner=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IdealProcessor" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2049</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2050</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2051</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:Scheduling ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] IsActive = %2, Arg = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsActive" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Arg" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2052</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:Scheduling ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] QueueDelay = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QueueDelay" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2053</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] Destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2054</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] Cleaning up]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2055</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2056</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Worker</Opcode>
+                <Keyword>ut:Worker ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[wrkr][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3072</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Configuration</Opcode>
+                <Keyword>ut:Configuration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[cnfg][%1] Created, Registration=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3073</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Configuration</Opcode>
+                <Keyword>ut:Configuration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[cnfg][%1] Destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3074</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Configuration</Opcode>
+                <Keyword>ut:Configuration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[cnfg][%1] Cleaning up]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3076</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Configuration</Opcode>
+                <Keyword>ut:Configuration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[cnfg][%1] Rundown, Registration=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3077</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Configuration</Opcode>
+                <Keyword>ut:Configuration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[cnfg][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3078</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Configuration</Opcode>
+                <Keyword>ut:Configuration ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[cnfg][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4096</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Listener</Opcode>
+                <Keyword>ut:Listener ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[list][%1] Created, Registration=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4097</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Listener</Opcode>
+                <Keyword>ut:Listener ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[list][%1] Destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4098</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Listener</Opcode>
+                <Keyword>ut:Listener ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[list][%1] Started, Binding=%2, LocalAddr=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Addr" inType="win:Binary" outType="win:SocketAddress" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4099</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Listener</Opcode>
+                <Keyword>ut:Listener ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[list][%1] Stopped]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Listener</Opcode>
+                <Keyword>ut:Listener ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[list][%1] Rundown, Registration=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4101</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Listener</Opcode>
+                <Keyword>ut:Listener ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[list][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4102</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Listener</Opcode>
+                <Keyword>ut:Listener ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[list][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5120</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Created, IsServer=%2, CorrelationId=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsServer" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CorrelationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5121</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5122</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Handshake complete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5123</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Scheduling: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5124</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Execute: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5125</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Execute: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5126</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Execute: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5127</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] New Local IP: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Addr" inType="win:Binary" outType="win:SocketAddress" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5128</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] New Remote IP: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Addr" inType="win:Binary" outType="win:SocketAddress" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5129</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Removed Local IP: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Addr" inType="win:Binary" outType="win:SocketAddress" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5130</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Removed Remote IP: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Addr" inType="win:Binary" outType="win:SocketAddress" length="AddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5131</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Scheduling ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Assigned worker: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Worker" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5132</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Handshake start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5133</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Registered with %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5134</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Unregistered from %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Registration" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5135</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Transport Shutdown: %2 (Remote=%3) (QS=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsRemoteShutdown" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="IsQuicStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5136</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] App Shutdown: %2 (Remote=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsRemoteShutdown" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5137</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Initialize complete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5138</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Handle closed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5139</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Version = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5140</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] OUT: BytesSent=%2 InFlight=%3 InFlightMax=%4 CWnd=%5 SSThresh=%6 ConnFC=%7 ISB=%8 PostedBytes=%9 SRtt=%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BytesSent" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesInFlight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesInFlightMax" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CongestionWindow" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SlowStartThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionFlowControl" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IdealBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PostedBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SmoothedRtt" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5141</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] Send Blocked Flags: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReasonFlags" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5142</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] IN: BytesRecv=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BytesReceived" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5143</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] CUBIC: SlowStartThreshold=%2 K=%3 WindowMax=%4 WindowLastMax=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SlowStartThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="K" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WindowMax" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WindowLastMax" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5144</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] Congestion event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5145</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:DataFlow ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Persistent congestion event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5146</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] Recovery complete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5147</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Rundown, IsServer=%2, CorrelationId=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsServer" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CorrelationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5148</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] (SeqNum=%2) New Source CID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CidLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Cid" inType="win:Binary" outType="xs:hexBinary" length="CidLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5149</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] (SeqNum=%2) New Destination CID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CidLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Cid" inType="win:Binary" outType="xs:hexBinary" length="CidLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5150</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] (SeqNum=%2) Removed Source CID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CidLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Cid" inType="win:Binary" outType="xs:hexBinary" length="CidLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5151</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] (SeqNum=%2) Removed Destination CID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CidLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Cid" inType="win:Binary" outType="xs:hexBinary" length="CidLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5152</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection</Keyword>
+                <Message><![CDATA[
+[conn][%1] Setting loss detection %2 timer for %3 ms. (ProbeCount=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DelayMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProbeCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5153</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection</Keyword>
+                <Message><![CDATA[
+[conn][%1] Cancelling loss detection timer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5154</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Packet</Keyword>
+                <Message><![CDATA[
+[conn][%1] DROP packet Dst=%3 Src=%5 Reason=%6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5155</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Packet</Keyword>
+                <Message><![CDATA[
+[conn][%1] DROP packet Dst=%4 Src=%6 Reason=%7, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5156</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5157</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5158</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] New packet keys created successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5159</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Key phase change (locally initiated=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsLocallyInitiated" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5160</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] STATS: SRtt=%2 CongestionCount=%3 PersistentCongestionCount=%4 SendTotalBytes=%5 RecvTotalBytes=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SmoothedRtt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CongestionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PersistentCongestionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendTotalBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecvTotalBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5161</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Shutdown complete, PeerFailedToAcknowledged=%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5162</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Read Key Updated, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NewValue" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5163</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] Write Key Updated, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NewValue" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5164</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Packet</Keyword>
+                <Message><![CDATA[
+[conn][%1][TX][%2] %3 (%4 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Number" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Type" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5165</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Packet</Keyword>
+                <Message><![CDATA[
+[conn][%1][RX][%2] %3 (%4 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Number" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Type" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5166</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Packet</Keyword>
+                <Message><![CDATA[
+[conn][%1][TX][%2] %3 Lost: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Number" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Type" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reason" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5167</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Packet</Keyword>
+                <Message><![CDATA[
+[conn][%1][TX][%2] %3 ACKed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Number" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Type" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5168</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Log</Keyword>
+                <Message><![CDATA[
+[conn][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5169</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Log</Keyword>
+                <Message><![CDATA[
+[conn][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5170</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Log</Keyword>
+                <Message><![CDATA[
+[conn][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5171</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Log</Keyword>
+                <Message><![CDATA[
+[conn][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5172</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Queueing send flush, reason=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5173</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] OUT: StreamFC=%2 StreamSendWindow=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamFlowControl" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamSendWindow" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5174</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[conn][%1] STATS: SendTotalPackets=%2 SendSuspectedLostPackets=%3 SendSpuriousLostPackets=%4 RecvTotalPackets=%5 RecvReorderedPackets=%6 RecvDroppedPackets=%7 RecvDuplicatePackets=%8 RecvDecryptionFailures=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SendTotalPackets" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SendSuspectedLostPackets" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SendSpuriousLostPackets" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecvTotalPackets" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecvReorderedPackets" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecvDroppedPackets" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecvDuplicatePackets" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecvDecryptionFailures" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5175</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:Connection</Keyword>
+                <Message><![CDATA[
+[conn][%1] Server app accepted resumption ticket]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6144</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[strm][%1] Created, Conn=%2 ID=%3 IsLocal=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsLocalOwned" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6145</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[strm][%1] Destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6146</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[strm][%1] Send Blocked Flags: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReasonFlags" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6147</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[strm][%1] Rundown, Conn=%2 ID=%3 IsLocal=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsLocalOwned" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6148</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[strm][%1] Send State: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6149</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[strm][%1] Recv State: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6150</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[strm][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6151</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[strm][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6152</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:Log</Keyword>
+                <Message><![CDATA[
+[strm][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6153</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:Log</Keyword>
+                <Message><![CDATA[
+[strm][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6154</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:Log</Keyword>
+                <Message><![CDATA[
+[strm][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6155</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Stream</Opcode>
+                <Keyword>ut:Stream ut:Log</Keyword>
+                <Message><![CDATA[
+[strm][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7168</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[bind][%1] Created, Udp=%2 LocalAddr=%4 RemoteAddr=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DatapathBinding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7169</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[bind][%1] Rundown, Udp=%2 LocalAddr=%4 RemoteAddr=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DatapathBinding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7170</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[bind][%1] Destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7171</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[bind][%1] Cleaning up]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7172</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:Packet</Keyword>
+                <Message><![CDATA[
+[bind][%1] DROP packet Dst=%3 Src=%5 Reason=%6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7173</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:Packet</Keyword>
+                <Message><![CDATA[
+[bind][%1] DROP packet Dst=%4 Src=%6 Reason=%7, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Owner" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7174</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[bind][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7175</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[bind][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7176</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Binding</Opcode>
+                <Keyword>ut:Binding ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[bind][%1] Execute: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8192</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:TLS ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ tls][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8193</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:TLS ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ tls][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8194</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Connection</Opcode>
+                <Keyword>ut:TLS</Keyword>
+                <Message><![CDATA[
+[ tls][%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9217</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Datapath</Opcode>
+                <Keyword>ut:UDP ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[ udp][%1] Send %2 bytes in %3 buffers (segment=%4) Dst=%6 Src=%8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UdpBinding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TotalSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="SegmentSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9218</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Datapath</Opcode>
+                <Keyword>ut:UDP ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[ udp][%1] Recv %2 bytes (segment=%3) Src=%5 Dst=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UdpBinding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TotalSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9219</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Datapath</Opcode>
+                <Keyword>ut:UDP ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ udp][%1] ERROR, %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UdpBinding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9220</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Datapath</Opcode>
+                <Keyword>ut:UDP ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ udp][%1] ERROR, %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UdpBinding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrStr" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9221</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Datapath</Opcode>
+                <Keyword>ut:UDP ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ udp][%1] Created, local=%3, remote=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UdpBinding" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LocalAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9222</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Datapath</Opcode>
+                <Keyword>ut:UDP ut:LowVolume</Keyword>
+                <Message><![CDATA[
+[ udp][%1] Destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UdpBinding" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10240</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:Log</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10241</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:Log</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10242</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:Log</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10243</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Global</Opcode>
+                <Keyword>ut:Log</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

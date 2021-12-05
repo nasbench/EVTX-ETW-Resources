@@ -1,0 +1,1046 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PersistentMemory-Nvdimm</Name>
+        <Metadata>
+            <Guid>{A7F2235F-BE51-51ED-DECF-F4498812A9A2}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\nvdimm.sys</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\drivers\nvdimm.sys</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\nvdimm.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=nvdimm.sys&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-Nvdimm/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-Nvdimm/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>201</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 failed to start. %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NVDIMM %1 started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered an error that may have caused data loss.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaselineUnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+The driver could not confirm that the NVDIMM %1 is healthy. Consider backing up your data to another disk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NtStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered an error while transferring your data to or from persistent media (see the Details tab for more information). Some of your data may have been lost.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.                    
+                    
+This NVDIMM may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %3                    
+Manufacturer: %4                    
+Model Number: %5                    
+Serial Number: %6                    
+Location: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SaveFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RestoreFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PlatformFlushFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ArmFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TechnologySpecificDetails" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered an error that makes it unable to save your data if your computer shuts down. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.                    
+                    
+This NVDIMM may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %3                    
+Manufacturer: %4                    
+Model Number: %5                    
+Serial Number: %6                    
+Location: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SaveFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RestoreFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PlatformFlushFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ArmFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TechnologySpecificDetails" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM-N %1 encountered a serious problem that may cause data saved to this NVDIMM-N to be lost when the computer shuts down or restarts. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.                    
+                    
+This NVDIMM-N may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %3                    
+Manufacturer: %4                    
+Model Number: %5                    
+Serial Number: %6                    
+Location: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LostPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThresholdExceeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PersistenceRestored" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BelowWarningThreshold" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VoltageRegulatorFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VddLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VppLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VttLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_DramNotInSelfRefresh" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_ControllerHardwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NvmControllerError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NotEnoughEnergyForSave" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_InvalidFirmwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_ConfigDataError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NoEnergySourcePresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourcePolicyNotSet" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourceHardwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourceHealthAssessmentError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EncodedModuleTemperature" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorThreshold_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorThreshold_EnergySourceLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorThreshold_EnergySourceTemperatureError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_NvmLifetimeWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_EnergySourceLifetimeWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_EnergySourceTemperatureWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvmLifetimePercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncorrectableMemoryErrorCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CorrectableMemoryErrorAboveThresholdEventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastBackup_TriggerInformation" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LastBackup_SaveFailureInformation" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The problem with NVDIMM-N %1 was resolved. Data saved to this NVDIMM-N is no longer at risk.                    
+                    
+This NVDIMM-N may be located using the following information:                    
+                    
+Slot number: %3                    
+Manufacturer: %4                    
+Model Number: %5                    
+Serial Number: %6                    
+Location: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LostPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThresholdExceeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PersistenceRestored" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BelowWarningThreshold" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VoltageRegulatorFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VddLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VppLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VttLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_DramNotInSelfRefresh" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_ControllerHardwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NvmControllerError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NotEnoughEnergyForSave" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_InvalidFirmwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_ConfigDataError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NoEnergySourcePresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourcePolicyNotSet" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourceHardwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourceHealthAssessmentError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EncodedModuleTemperature" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorThreshold_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorThreshold_EnergySourceLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorThreshold_EnergySourceTemperatureError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_NvmLifetimeWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_EnergySourceLifetimeWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_EnergySourceTemperatureWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvmLifetimePercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncorrectableMemoryErrorCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CorrectableMemoryErrorAboveThresholdEventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastBackup_TriggerInformation" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LastBackup_SaveFailureInformation" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NVDIMM-N %1 is in a degraded health state and may soon encounter serious problems. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.                    
+                    
+This NVDIMM-N may need to be replaced. It can be located using the following information:                    
+                    
+Slot number: %3                    
+Manufacturer: %4                    
+Model Number: %5                    
+Serial Number: %6                    
+Location: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LostPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThresholdExceeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PersistenceRestored" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BelowWarningThreshold" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VoltageRegulatorFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VddLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VppLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VttLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_DramNotInSelfRefresh" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_ControllerHardwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NvmControllerError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NotEnoughEnergyForSave" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_InvalidFirmwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_ConfigDataError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NoEnergySourcePresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourcePolicyNotSet" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourceHardwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourceHealthAssessmentError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EncodedModuleTemperature" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorThreshold_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorThreshold_EnergySourceLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorThreshold_EnergySourceTemperatureError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_NvmLifetimeWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_EnergySourceLifetimeWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_EnergySourceTemperatureWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvmLifetimePercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncorrectableMemoryErrorCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CorrectableMemoryErrorAboveThresholdEventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastBackup_TriggerInformation" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LastBackup_SaveFailureInformation" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NVDIMM-N %1 has encountered %7 uncorrectable memory error(s). Uncorrectable memory errors can cause system instability and data loss. Consider replacing this NVDIMM-N.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.                    
+                    
+This NVDIMM-N can be located using the following information:                    
+                    
+Slot number: %3                    
+Manufacturer: %4                    
+Model Number: %5                    
+Serial Number: %6                    
+Location: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemoryEventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The warning threshold for correctable memory errors on NVDIMM-N %1 has been exceeded. A large number of correctable memory errors increases the likelihood of an uncorrectable memory error in the future and reduces system performance. Contact your hardware vendor to determine if this NVDIMM-N needs to be replaced.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.                    
+                    
+This NVDIMM-N can be located using the following information:                    
+                    
+Slot number: %3                    
+Manufacturer: %4                    
+Model Number: %5                    
+Serial Number: %6                    
+Location: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemoryEventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NVDIMM %1 notified the driver that its health state changed. See the Details tab for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LostPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThresholdExceeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PersistenceRestored" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BelowWarningThreshold" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VoltageRegulatorFailed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VddLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VppLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_VttLost" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_DramNotInSelfRefresh" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_ControllerHardwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NvmControllerError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NotEnoughEnergyForSave" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_InvalidFirmwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_ConfigDataError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_NoEnergySourcePresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourcePolicyNotSet" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourceHardwareError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ModuleHealth_EnergySourceHealthAssessmentError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EncodedModuleTemperature" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorThreshold_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorThreshold_EnergySourceLifetimeError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorThreshold_EnergySourceTemperatureError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_NvmLifetimeWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_EnergySourceLifetimeWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WarningThreshold_EnergySourceTemperatureWarning" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvmLifetimePercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncorrectableMemoryErrorCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CorrectableMemoryErrorAboveThresholdEventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastBackup_TriggerInformation" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LastBackup_SaveFailureInformation" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The driver for NVDIMM %1 encountered an internal error. The information in the Details tab might help Microsoft or your platform vendor to diagnose the problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered a serious problem. All data that was saved to this NVDIMM may be lost when the computer shuts down or restarts. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The problem with NVDIMM %1 was resolved. Data that was saved to this NVDIMM will not be lost when the computer shuts down or restarts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered a serious problem. Data that was recently saved to this NVDIMM may be lost when the computer shuts down or restarts. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The problem with NVDIMM %1 was resolved. Data that was saved to this NVDIMM will not be lost when the computer shuts down or restarts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>404</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered a critical problem. Windows may not be able to read or write to this NVDIMM.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>405</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The critical problem with NVDIMM %1 was resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>406</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NVDIMM %1 is in a degraded health state and may soon encounter serious problems. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>407</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NVDIMM %1 notified the driver that its health state changed. See the Details tab for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NVDIMM %1 notified the driver that its health state changed. See the Details tab for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>502</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 is in a critically unhealthy state and your data may be lost. Consider backing up your data to another disk.                   
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>503</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NVDIMM %1 is in a critically degraded state and may need to be replaced soon. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>504</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NVDIMM %1's temperature is too high. To protect itself, the NVDIMM might be running slower than usual. If the temperature does not decrease, the system might shut down and some of your data may be lost.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>505</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NVDIMM %1 is in a degraded state and may need to be replaced soon. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>506</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NVDIMM %1 is now healthy again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>507</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The energy source protecting NVDIMM %1 stopped working. The data saved to this NVDIMM may be lost when the computer shuts down or restarts. Consider backing up your data to another disk.                    
+                    
+In PowerShell, run Get-PmemPhysicalDevice for more information and Get-PmemDisk to see which disks are affected by this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>508</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The energy source protecting NVDIMM %1 is working again. The data saved to this NVDIMM is no longer at risk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>509</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NVDIMM %1 is locked and you won't be able to access its contents. Contact your platform vendor to learn how you can unlock the NVDIMM.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SecurityState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>900</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-Nvdimm/Diagnostic</Channel>
+                <Message><![CDATA[
+NVDIMM %1 logged:             
+             
+ %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

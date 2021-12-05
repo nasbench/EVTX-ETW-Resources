@@ -1,0 +1,265 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NDF-HelperClassDiscovery</Name>
+        <Metadata>
+            <Guid>{FC3BC8A7-2F61-449C-A8B4-22AC22058F92}</Guid>
+            <ResourceFilePath>C:\Windows\system32\netdiagfx.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\netdiagfx.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=netdiagfx.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-NDF-HelperClassDiscovery</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnostics-Networking/Debug</Message>
+                    <Path>Microsoft-Windows-NDF-HelperClassDiscovery/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Load Helper Class</Message>
+                    <Name>LoadHelperClass</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Registry</Message>
+                    <Name>Registry</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+The component name '%2' for the first party helper class '%1' is a duplicate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+The component name '%2' for the extension helper class '%1' is a duplicate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+'%1' is a duplicate third party helper class]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+'%1' is a duplicate first party extension helper class]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+'%1' is a duplicate first party helper class]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+The duplicate '%1' extension helper class was replaced]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+The duplicate '%1' helper class was replaced]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+Helper class '%1' with the duplicate component name '%2' was replaced]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+Encountered error '%1' loading helper class with component name '%3' (location=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+Encountered error '%1' loading extension helper class '%3' (location=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+Encountered error '%1' loading helper class '%3' (location=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Load Helper Class</Task>
+                <Message><![CDATA[
+Encountered error '%1' loading third party non-extension helper class '%3' (location=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Error</Level>
+                <Task>Registry</Task>
+                <Message><![CDATA[
+Failed to load '%3' value '%4' (error=%1 location=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyOrValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Registry</Task>
+                <Message><![CDATA[
+Warning: Could not load '%3' value '%4' (error=%1 location=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyOrValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

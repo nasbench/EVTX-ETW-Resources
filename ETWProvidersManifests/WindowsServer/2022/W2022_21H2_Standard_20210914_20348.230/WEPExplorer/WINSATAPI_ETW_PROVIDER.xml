@@ -1,0 +1,219 @@
+<Providers>
+    <Provider>
+        <Name>WINSATAPI_ETW_PROVIDER</Name>
+        <Metadata>
+            <Guid>{617853D6-728B-4B59-8A78-C3A9A5EADE92}</Guid>
+            <ResourceFilePath>C:\Windows\system32\WinSATAPI.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\WinSATAPI.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=WinSATAPI.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Log Always</Message>
+                    <Name>win:LogAlways</Name>
+                    <Value>0</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Application</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Application</Task>
+                <Message><![CDATA[
+%1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TestV1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TestV2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TestV3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TestV4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Task>Application</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WinSAT Application Start: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartTimeOfDay" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Task>Application</Task>
+                <Message><![CDATA[
+WinSAT Application Command Line %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandLineSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string" length="CommandLineSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Task>Application</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WinSAT Application Stop: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Task>Application</Task>
+                <Message><![CDATA[
+ERROR: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CantMsgSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CantMsg" inType="win:UnicodeString" outType="xs:string" length="CantMsgSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Task>Application</Task>
+                <Message><![CDATA[
+COM ERROR: %4 %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailingHresult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FailingInterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Source" inType="win:UnicodeString" outType="xs:string" length="SourceSize"/>
+  <data name="InfterfaceSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string" length="InfterfaceSize"/>
+  <data name="ErrorMsgSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ErrorMsg" inType="win:UnicodeString" outType="xs:string" length="ErrorMsgSize"/>
+  <data name="CantMsgSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CantMsg" inType="win:UnicodeString" outType="xs:string" length="CantMsgSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Task>Application</Task>
+                <Message><![CDATA[
+ERROR: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMsgSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ErrorMsg" inType="win:UnicodeString" outType="xs:string" length="ErrorMsgSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Task>Application</Task>
+                <Message><![CDATA[
+ERROR: %1 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailingHresult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorMsgSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ErrorMsg" inType="win:UnicodeString" outType="xs:string" length="ErrorMsgSize"/>
+  <data name="CantMsgSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CantMsg" inType="win:UnicodeString" outType="xs:string" length="CantMsgSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Application</Task>
+                <Message><![CDATA[
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string" length="MessageSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Application</Task>
+                <Message><![CDATA[
+%1:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhaseID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DescriptionSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string" length="DescriptionSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Application</Task>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhaseID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

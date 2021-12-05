@@ -1,0 +1,637 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DfsSvc</Name>
+        <Metadata>
+            <Guid>{7DA4FE0E-FD42-4708-9AA5-89B77A224885}</Guid>
+            <ResourceFilePath>C:\Windows\system32\netevent.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\netevent.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=netevent.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DfsSvc</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1073756142</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dfs received a referral request for "%2".  The return code is in the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756324</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+NetrDfsEnum received an enumeration.  The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756325</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+NetrDfsEnumEx received an enumeration.  The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239975</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dfs could not create reparse point for directory %1 under directory %2. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="childDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="parentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239976</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Share %1 mapped to %2 does not support reparse points. Upgrade Filesystem and retry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239977</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Share %1 mapped to %2 directory overlaps an existing root. The DFS Root will not be created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="directory" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756332</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS re-established a connection to the PDC to initiate Domain DFS operations.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239981</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Root %1 has too many errors. No further eventlogs will be logged on this root.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239982</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not initialize winsock library. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239983</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not initialize security library. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239984</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not create DFS support thread. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239985</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not initialize IP site cache. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239986</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not synchronize all DFS roots. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239987</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not create event handle. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239988</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not get required computer information. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239989</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not get required cluster information. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239990</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not get required DC information. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239991</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not initialize prefix table. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239992</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not initialize DFS namespace.The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239993</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not Register DFS Namespaces. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239994</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not initialize User/kernel communication package. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239995</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not contact any DC for Domain DFS operations. This operation will be retried periodically.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221239996</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not initialize site support table. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498174</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not contact the %1 Active Directory. DFS will be using cached data. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756353</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS has connected to the %1 Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dc" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS could not access its private data from the Active Directory. Please manually check network connectivity, security access, and/or consistency of DFS information in the Active Directory. This error occurred on root %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756355</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS server has finished initializing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756356</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS has recovered from an error and is able to read its private data from the Active Directory. Root %1 is now able to read information from the Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756357</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS has finished building all namespaces.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498182</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS Root %1 failed during initialization. The root will not be available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS does not support multiple roots on Standard server SKU. Please cleanup the roots or upgrade.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498184</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS is unable to return the entire list of trusted domains to the client. There are too many trusted domains.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756361</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS is requesting the client for a larger buffer for trusted domain information. Some Win98 clients may not be able to access DFS namespaces.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498186</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS was unable to move all matching links of root: %1 for path %2 to new path %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="oldPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="newPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS was unable to resynchronize this root target for root: %1. This may lead to inaccessability of portions of the DFS namespace.  Please verify the share %1 has all the link directories created for the DFS links. This error may occur if there are directories  on this share that may be preventing creation of links.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS was unable to delete link: %2  for root: %1 during a link move operation. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="share" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498189</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS link %1 was marked incorrectly as a DFS root. The DFS namespace is operational on this server. If this namespace is hosted on servers running Windows Server 2003 prior to Service Pack 2 (SP2), or if the server is running Windows 2000 Server, the namespace might not be fully functional on those servers.  Please consult the Microsoft Knowledge Base for more information on correcting this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DFSLink" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498190</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DFS metadata object %1 is empty in the metadata for DFS root %2. The DFS namespace is operational on this server. If this namespace is hosted on servers running Windows Server 2003 prior to Service Pack 2 (SP2), or if the server is running Windows 2000 Server, the namespace might not be fully functional on those servers.  Please consult the Microsoft Knowledge Base for more information on correcting this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DFSLink" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DFSRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The list of folder targets for the following Distributed File System (DFS) folder is corrupt. DFS folder: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DFSLinkDN" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A Distributed File System (DFS) folder with folder targets was created that contains other DFS folders. This can occur if two administrators on different namespace servers create conflicting folder structures at approximately the same time. Namespace: %1 DFS folder 1: %2 DFS folder 2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DFSNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DFSLink1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DFSLink2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A Distributed File System (DFS) folder with folder targets was created that contains other DFS folders. This can occur if two administrators on different namespace servers create conflicting folder structures at approximately the same time. Namespace: %1 DFS folder: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DFSNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DFSLink1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240018</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dfs successfully created the reparse point for directory %1 under directory %2. This operation had previously failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="childDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="parentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240019</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A Distributed File System (DFS) folder was created with conflicting descriptions. This can occur if two administrators on different namespace servers create conflicting folder structures at approximately the same time. Namespace: %1 DFS folder path: %2 DFS folder 1: %3 DFS folder 2: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DFSNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DFSFolderPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DFSLinkDN1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DFSLinkDN2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DFS Namespace service could not initialize the trusted domain information on this domain controller, but it will periodically retry the operation. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756373</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DFS Namespace service successfully initialized the trusted domain information on this domain controller.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221240022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DFS Namespace service could not initialize cross forest trust information on this domain controller, but it will periodically retry the operation. The return code is in the record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756375</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DFS Namespace service successfully initialized cross forest trust information on this domain controller.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756376</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DFS Namespaces service has successfully initialized the following namespace: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DFSRoot" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147498201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DFS Namespaces service failed to initialize the shared folder that hosts the namespace root. Shared folder: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SMBShare" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073756378</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DFS Namespaces service has successfully initialized the shared folder that hosts the namespace root. Shared folder: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SMBShare" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
