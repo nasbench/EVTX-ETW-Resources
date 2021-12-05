@@ -1,0 +1,640 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorageSpaces-Api</Name>
+        <Metadata>
+            <Guid>{BCF0C6A7-6130-5208-F27D-FA77A91F12DF}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\spaceport.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\spaceport.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageSpaces-Api/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The pool was created successfully.                    
+Function: %1                    
+Pool Id: %2                    
+Name: %3                    
+Compatible Version: %4                    
+Drive Ids: %5                    
+Duration: %6 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompatibleVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create the pool.                    
+Function: %1                    
+Pool Id: %2                    
+Name: %3                    
+Compatible Version: %4                    
+Drive Ids: %5                    
+Callee: %6                    
+Error: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompatibleVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The pool was deleted successfully.                    
+Function: %1                    
+Pool Id: %2                    
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to delete the pool.                    
+Function: %1                    
+Pool Id: %2                    
+Callee: %3                    
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to refresh the pool.                    
+Function: %1                    
+Pool Id: %2                    
+Callee: %3                    
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Maintenance was set on the drives successfully.                    
+Function: %1                    
+Pool Id: %2                    
+Enable: %3                    
+Timeout: %4 s                    
+Drive Ids: %5                    
+Duration: %6 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Enable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TimeoutInSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set maintenance on the drives.                    
+Function: %1                    
+Pool Id: %2                    
+Enable: %3                    
+Timeout: %4 s                    
+Drive Ids: %5                    
+Callee: %6                    
+Error: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Enable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TimeoutInSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Maintenance was set on the drive successfully.                    
+Function: %1                    
+Pool Id: %2                    
+Enable: %3                    
+Timeout: %4 s                    
+Drive Id: %5                    
+Duration: %6 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Enable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TimeoutInSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriveId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set maintenance on the drive.                    
+Function: %1                    
+Pool Id: %2                    
+Enable: %3                    
+Timeout: %4 s                    
+Drive Id: %5                    
+Callee: %6                    
+Error: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Enable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TimeoutInSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriveId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The drives were added successfully.                    
+Function: %1                    
+Pool Id: %2                    
+Drive Ids: %3                    
+Duration: %4 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to add the drives.                    
+Function: %1                    
+Pool Id: %2                    
+Drive Ids: %3                    
+Callee: %4                    
+Error: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The drives were removed successfully.                    
+Function: %1                    
+Pool Id: %2                    
+Drive Ids: %3                    
+Duration: %4 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to remove the drives.                    
+Function: %1                    
+Pool Id: %2                    
+Drive Ids: %3                    
+Callee: %4                    
+Error: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Failed to refresh the drive.                    
+Function: %1                    
+Drive Id: %2                    
+Callee: %3                    
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The drive was reset successfully.                    
+Function: %1                    
+Drive Id: %2                    
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to reset the drive.                    
+Function: %1                    
+Drive Id: %2                    
+Callee: %3                    
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The drive was prepared successfully.                    
+Function: %1                    
+Drive Id: %2                    
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to prepare the drive.                    
+Function: %1                    
+Drive Id: %2                    
+Callee: %3                    
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The drive was unprepared successfully.                    
+Function: %1                    
+Drive Id: %2                    
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to unprepare the drive.                    
+Function: %1                    
+Drive Id: %2                    
+Callee: %3                    
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The space was created successfully.                    
+Function: %1                    
+Pool Id: %2                    
+Space Id: %3                    
+Name: %4                    
+Usage: %5                    
+Duration: %6 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create the space.                    
+Function: %1                    
+Pool Id: %2                    
+Space Id: %3                    
+Name: %4                    
+Usage: %5                    
+Callee: %6                    
+Error: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The space was deleted successfully.                    
+Function: %1                    
+Space Id: %2                    
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to delete the space.                    
+Function: %1                    
+Space Id: %2                    
+Callee: %3                    
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The space was attached successfully.                    
+Function: %1                    
+Space Id: %2                    
+Owner Id: %3                    
+Duration: %4 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Owner" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to attach the space.                    
+Function: %1                    
+Space Id: %2                    
+Owner Id: %3                    
+Callee: %4                    
+Error: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Owner" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The space was detached successfully.                    
+Function: %1                    
+Space Id: %2                    
+Owner Id: %3                    
+Duration: %4 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Owner" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Api/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to detach the space.                    
+Function: %1                    
+Space Id: %2                    
+Owner Id: %3                    
+Callee: %4                    
+Error: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Owner" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

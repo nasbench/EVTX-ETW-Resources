@@ -1,0 +1,382 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Devices-Background</Name>
+        <Metadata>
+            <Guid>{64EF2B1C-4AE1-4E64-8599-1636E441EC88}</Guid>
+            <ResourceFilePath>C:\Windows\system32\deviceaccess.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\deviceaccess.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1697&amp;FileName=deviceaccess.dll&amp;FileVer=10.0.17763.1697</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Devices-Background</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Devices-Background/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Application initiated device servicing/update task</Message>
+                    <Name>DeviceServicingTask</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Application initiated device background task</Message>
+                    <Name>DeviceUseTask</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DeviceTriggerPerformance</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DeviceAttemptAssociationAudit</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Application initiated device servicing/update task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+%2 requested task %1 to service device %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Application initiated device servicing/update task</Task>
+                <Message><![CDATA[
+Task %1 started servicing device %3 (process %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TaskProcessID" inType="win:Int32" outType="xs:int"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>Application initiated device servicing/update task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Task %1 canceled servicing of device %3 because: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Application initiated device servicing/update task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Task %1 finished servicing device %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Duration" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>Application initiated device servicing/update task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Task %1 request was denied.  %2 cannot service device %4 because: %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>Application initiated device servicing/update task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Task %1 request failed.  %2 cannot service %4 because: %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Application initiated device background task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+%2 requested task %1 to access device to access device %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Application initiated device background task</Task>
+                <Message><![CDATA[
+Task %1 started accessing device %3 (process %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TaskProcessID" inType="win:Int32" outType="xs:int"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>Application initiated device background task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Task %1 canceled access of device %3 because: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Application initiated device background task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Task %1 finished accessing device %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Duration" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>Application initiated device background task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Task %1 request was denied.  %2 cannot access device %4 in the background because: %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>Application initiated device background task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Task %1 request failed.  %2 cannot access device %4 in the background because: %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>DeviceTriggerPerformance</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>DeviceTriggerPerformance</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>DeviceTriggerPerformance</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arguments" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Background/Operational</Channel>
+                <Level>Information</Level>
+                <Task>DeviceAttemptAssociationAudit</Task>
+                <Message><![CDATA[
+Package %1 is attempting to associate with %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="packageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="aepId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
