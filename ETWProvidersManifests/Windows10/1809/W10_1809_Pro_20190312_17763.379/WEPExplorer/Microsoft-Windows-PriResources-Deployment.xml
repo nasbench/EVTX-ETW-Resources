@@ -1,0 +1,125 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PriResources-Deployment</Name>
+        <Metadata>
+            <Guid>{9213C3E1-0D6C-52DD-78EA-F3B082111406}</Guid>
+            <ResourceFilePath>C:\Windows\system32\MrmDeploy.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\MrmDeploy.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=MrmDeploy.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PriResources-Deployment/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PriResources-Deployment/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MrmDeploy_APIs_Task</Name>
+                    <Value>2000</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MrmDeploy_MergeAppResources_Task</Name>
+                    <Value>2001</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PriResources-Deployment/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>MrmDeploy_APIs_Task</Task>
+                <Opcode>win:Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PriResources-Deployment/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>MrmDeploy_APIs_Task</Task>
+                <Opcode>win:Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PriResources-Deployment/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>MrmDeploy_MergeAppResources_Task</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReferenceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PriResources-Deployment/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>MrmDeploy_MergeAppResources_Task</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReferenceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

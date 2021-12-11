@@ -1,0 +1,986 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Energy-Estimation-Engine</Name>
+        <Metadata>
+            <Guid>{DDCC3826-A68A-4E0D-BCFD-9C06C27C6948}</Guid>
+            <ResourceFilePath>C:\Windows\system32\eeprov.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\eeprov.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.194&amp;FileName=eeprov.dll&amp;FileVer=10.0.17763.194</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Energy-Estimation-Engine</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Energy-Estimation-Engine/Trace</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Energy-Estimation-Engine/EventLog</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>InitializeProvider</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UninitializeProvider</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>QueryStats</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MergeStats</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>IndexToAppId</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>IndexToUserId</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>QueryColumnInfo</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FreeMemory</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DisplayEnergy</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AppInteractivityState</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AisResidencyDelta</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>EnergyNotification</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StandbyActivationTime</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StandbyDripsTime</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UnknownEnergy</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CommittedStats</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ProcessTagEnergyEstimate</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RpcSetProcessTag</Name>
+                    <Value>18</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>EnergyEstimate</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>CpuPowerInfo</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>ProcessInfo</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>AppPerfInfo</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>EnergyDelta</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>MonitorPowerState</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>PolicyBrightness</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>ActualBrightness</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>ResidualEnergy</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>BatteryState</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>MapProcessToApp</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>AppForegroundTime</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>EnergyNotification</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>StandbyActivationTime</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>StandbyDripsTime</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>UnknownEnergy</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CodePath</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SystemInformation</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>EnergyEstimation</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ProcessTag</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CommitEnergy</Name>
+                    <Value>16</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/EventLog</Channel>
+                <Level>Information</Level>
+                <Task>InitializeProvider</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>InitializeProvider</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/EventLog</Channel>
+                <Level>Information</Level>
+                <Task>UninitializeProvider</Task>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>MergeStats</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>MergeStats</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>IndexToAppId</Task>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>IndexToUserId</Task>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryColumnInfo</Task>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>FreeMemory</Task>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>EnergyEstimate</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CpuEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SocEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DisplayEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MbbEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OtherEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecordFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>MergeStats</Task>
+                <Opcode>EnergyEstimate</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CpuEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SocEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DisplayEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MbbEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OtherEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecordFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>CpuPowerInfo</Opcode>
+                <Keyword>SystemInformation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CpuId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentFrequency" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LastBusyFrequency" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Energy" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>ProcessInfo</Opcode>
+                <Keyword>SystemInformation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UniqueProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumberOfThreads" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CycleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ReadOperationCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesRead" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WriteOperationCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesWritten" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkTailEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MBBTailEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkTxRxBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MBBTxRxBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BucketCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="BucketedCycles" count="BucketCount">
+    <data name="FrequencyBucket" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="EfficiencyClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Cycles" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+  <data name="WindowInformation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForegroundReportTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>AppPerfInfo</Opcode>
+                <Keyword>SystemInformation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ForegroundCycleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BackgroundCycleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundActiveTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundBytesRead" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundBytesWritten" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BackgroundBytesRead" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BackgroundBytesWritten" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BucketCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="ForegroundCycles" count="BucketCount">
+    <data name="FrequencyBucket" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="EfficiencyClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Cycles" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+  <data name="ForegroundDiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundNetworkTailEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundMBBTailEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundNetworkTxRxBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundMBBTxRxBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <struct name="BackgroundCycles" count="BucketCount">
+    <data name="FrequencyBucket" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="EfficiencyClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Cycles" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+  <data name="BackgroundDiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BackgroundNetworkTailEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BackgroundMBBTailEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BackgroundNetworkTxRxBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BackgroundMBBTxRxBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>EnergyDelta</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergyDelta" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>EnergyDelta</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnergyDelta" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>DisplayEnergy</Task>
+                <Opcode>MonitorPowerState</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreviousState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CurrentState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>DisplayEnergy</Task>
+                <Opcode>PolicyBrightness</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreviousValue" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CurrentValue" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>DisplayEnergy</Task>
+                <Opcode>ActualBrightness</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreviousValue" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CurrentValue" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>ResidualEnergy</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BatteryDrain" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EstimatedEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ResidualEnergy" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>ResidualEnergy</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AgeInSec" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="AdjustedEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ResidualEnergy" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>BatteryState</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StateFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Rate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EstimatedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>MapProcessToApp</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UniqueProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>AppForegroundTime</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>AppForegroundTime</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForegroundTimeDelta" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>AppInteractivityState</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="InteractivityState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>AppInteractivityState</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="InteractivityState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>AisResidencyDelta</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="FcousTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VisibleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MinimizedTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DirtyGenerated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DirtyPropagated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompositorRendered" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>AisResidencyDelta</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueApplicationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FcousTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VisibleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MinimizedTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DirtyGenerated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DirtyPropagated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompositorRendered" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>EnergyNotification</Task>
+                <Opcode>EnergyNotification</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Cookie" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackgroundScreenOffmJ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackgroundScreenOnmJ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForegroundScreenOffmJ" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ForegroundScreenOnmJ" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Keyword>CodePath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SruWorkItemType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProviderState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeviceState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>StandbyActivationTime</Task>
+                <Opcode>StandbyActivationTime</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PdcClientId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastSnapValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CurrSnapValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Delta" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>StandbyDripsTime</Task>
+                <Opcode>StandbyDripsTime</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LastStandbyTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CurrStandbyTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DeltaStandbyTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastDripsTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CurrDripsTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DeltaDripsTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastActivationTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CurrActivationTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DeltaActivationTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>UnknownEnergy</Task>
+                <Opcode>UnknownEnergy</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StandbyDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NonDripsDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PdcDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BIDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TargetedBIEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ActualBIEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="UnknownEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ScaleFactor" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Policy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DripsPowerFloorMilliWatts" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonDripsPenaltyMilliWatts" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>QueryStats</Task>
+                <Opcode>EnergyEstimate</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CpuEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SocEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DisplayEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MbbEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LossEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OtherEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EmiEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForInternalUse" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TimeInMSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecordFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecordMeasured" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InteractivityState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Committed" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>MergeStats</Task>
+                <Opcode>EnergyEstimate</Opcode>
+                <Keyword>EnergyEstimation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CpuEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SocEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DisplayEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MbbEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LossEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OtherEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EmiEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ForInternalUse" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TimeInMSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecordFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecordMeasured" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InteractivityState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Committed" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>CommittedStats</Task>
+                <Opcode>EnergyEstimate</Opcode>
+                <Keyword>CommitEnergy</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LossEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="UnknownEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RecordFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InteractivityState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>ProcessTagEnergyEstimate</Task>
+                <Keyword>ProcessTag</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Tag" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CpuEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MbbEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Time" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecordFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Energy-Estimation-Engine/Trace</Channel>
+                <Level>Information</Level>
+                <Task>RpcSetProcessTag</Task>
+                <Keyword>ProcessTag</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CreateTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Tag" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkTailEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MBBTailEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NetworkTxRxBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MBBTxRxBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BucketCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="BucketedCycles" count="BucketCount">
+    <data name="FrequencyBucket" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="EfficiencyClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Cycles" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

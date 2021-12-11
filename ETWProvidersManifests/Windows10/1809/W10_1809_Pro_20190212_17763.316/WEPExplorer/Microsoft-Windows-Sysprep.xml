@@ -1,0 +1,346 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Sysprep</Name>
+        <Metadata>
+            <Guid>{75EBC33E-77B8-4BA8-9474-4F4A9DB2F5C6}</Guid>
+            <ResourceFilePath>C:\Windows\system32\sysprep\sysprep.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\sysprep\sysprep.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=sysprep.exe&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Sysprep</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Sysprep/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Setup</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>RunRegistryDlls</Message>
+                    <Name>tskRunRegistryDlls</Name>
+                    <Guid>{B2F1C8AA-2B6A-4140-AD69-AC1A794DFACF}</Guid>
+                    <Value>1000</Value>
+                </Task>
+                <Task>
+                    <Message>Call External Provider Function</Message>
+                    <Name>tskCallSysprepFunction</Name>
+                    <Guid>{799DE0B7-0599-45BF-B601-B4B7CECB7B0B}</Guid>
+                    <Value>2000</Value>
+                </Task>
+                <Task>
+                    <Message>Load action meta-data file</Message>
+                    <Name>tskLoadActionMetadata</Name>
+                    <Guid>{9DFFCD2E-6380-4249-9139-C5DC3CA9AEAA}</Guid>
+                    <Value>3000</Value>
+                </Task>
+                <Task>
+                    <Message>Create list of actions for a component</Message>
+                    <Name>tskCreateActionList</Name>
+                    <Guid>{E83C1B67-14A6-4859-B46F-CFB88F0DB5A6}</Guid>
+                    <Value>4000</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting file(s) of a pattern</Message>
+                    <Name>tskDeleteFile</Name>
+                    <Guid>{150390B0-2A95-45D4-A95B-50AB18C43DC5}</Guid>
+                    <Value>5000</Value>
+                </Task>
+                <Task>
+                    <Message>Delete a directory</Message>
+                    <Name>tskDeleteDirectory</Name>
+                    <Guid>{4E6EAC7E-74A7-4BED-8AF3-465176A542B4}</Guid>
+                    <Value>6000</Value>
+                </Task>
+                <Task>
+                    <Message>Execute an entire phase</Message>
+                    <Name>tskExecuteFullPhase</Name>
+                    <Guid>{943408EE-D8FE-4B53-A357-52D801BF3194}</Guid>
+                    <Value>7000</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>keyPerformance</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Sysprep</Message>
+                    <Name>keySysprep</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RunRegistryDlls</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Executing sysprep providers from registry location "%1" during %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BasePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Phase" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RunRegistryDlls</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Finished executing sysprep providers with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Call External Provider Function</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Calling external function "%2" from "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Call External Provider Function</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+External function returned with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Load action meta-data file</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Loading meta-data file "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Load action meta-data file</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Loading of meta-data file "%1" completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Create list of actions for a component</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Creating action list for component "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Create list of actions for a component</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Action list for component "%1" created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Deleting file(s) of a pattern</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Deleting file(s) "%2" from directory "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DirectoryPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePattern" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Deleting file(s) of a pattern</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+File deletion of "%2" from directory "%1" returned with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DirectoryPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePattern" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Delete a directory</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Deleting directory "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DirectoryPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Delete a directory</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Directory deletion for "%1" returned with status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DirectoryPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Execute an entire phase</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Starting execution of phase "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Phase" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sysprep/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Execute an entire phase</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance Sysprep</Keyword>
+                <Message><![CDATA[
+Execution of phase returned status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

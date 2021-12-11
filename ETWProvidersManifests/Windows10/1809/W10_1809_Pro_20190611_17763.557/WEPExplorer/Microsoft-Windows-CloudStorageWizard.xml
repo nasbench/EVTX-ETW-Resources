@@ -1,0 +1,280 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CloudStorageWizard</Name>
+        <Metadata>
+            <Guid>{9FC66DD7-98C7-4B83-8293-46A18439B03B}</Guid>
+            <ResourceFilePath>C:\Windows\system32\CloudStorageWizard.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\CloudStorageWizard.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=CloudStorageWizard.exe&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-CloudStorageWizard</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-CloudStorageWizard/Operational</Message>
+                    <Path>Microsoft-Windows-CloudStorageWizard/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-CloudStorageWizard/Analytic</Message>
+                    <Path>Microsoft-Windows-CloudStorageWizard/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ShowWizard</Name>
+                    <Value>6001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UserInteraction</Name>
+                    <Value>6002</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ShowBrowser</Name>
+                    <Value>6003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Authentication</Name>
+                    <Value>6004</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Authentication_WaitForUser</Name>
+                    <Value>6005</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Authentication_RequestTicket</Name>
+                    <Value>6006</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CloudStorageWizard</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Operational</Channel>
+                <Level>Information</Level>
+                <Task>ShowWizard</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Operational</Channel>
+                <Level>Information</Level>
+                <Task>ShowWizard</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ShowWizard</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Operational</Channel>
+                <Level>Information</Level>
+                <Task>ShowWizard</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Operational</Channel>
+                <Level>Information</Level>
+                <Task>UserInteraction</Task>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Button" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ShowBrowser</Task>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ShowWizard</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ShowWizard</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authentication</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authentication</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authentication_WaitForUser</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authentication_WaitForUser</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authentication_RequestTicket</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStorageWizard/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authentication_RequestTicket</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>CloudStorageWizard</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
