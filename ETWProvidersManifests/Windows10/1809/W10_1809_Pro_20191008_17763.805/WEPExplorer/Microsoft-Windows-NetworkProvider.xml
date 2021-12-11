@@ -1,0 +1,410 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkProvider</Name>
+        <Metadata>
+            <Guid>{1E9A4978-78C2-441E-8858-75B5D1326BC5}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\mup.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\mup.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=mup.sys&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-NetworkProvider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-NetworkProvider/Operational</Message>
+                    <Path>Microsoft-Windows-NetworkProvider/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>UNC Hardening Configuration</Message>
+                    <Name>UncHardeningConfiguration</Name>
+                    <Value>11</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Unsupported Registry Value Type</Message>
+                    <Name>UnsupportedRegistryValueType</Name>
+                    <Value>11</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Invalid UNC Path</Message>
+                    <Name>InvalidUncPath</Name>
+                    <Value>12</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Unsupported UNC Path</Message>
+                    <Name>UnsupportedUncPath</Name>
+                    <Value>13</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Invalid Syntax</Message>
+                    <Name>InvalidSyntax</Name>
+                    <Value>14</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Unsupported Property Name</Message>
+                    <Name>UnsupportedPropertyName</Name>
+                    <Value>15</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Unsupported Property Value</Message>
+                    <Name>UnsupportedPropertyValue</Name>
+                    <Value>16</Value>
+                    <Task>11</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>UNC Hardening</Message>
+                    <Name>UncHardening</Name>
+                    <Value>256</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Unsupported Registry Value Type</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Ignoring UNC Hardening Configuration Entry: Unsupported registry value type.
+
+Registry Value Path: %2@%4
+
+Registry Value Type: %5
+
+Guidance:
+UNC Hardening configuration only supports registry values of types REG_SZ and REG_MULTI_SZ.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryKeyLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RegistryKey" inType="win:UnicodeString" outType="xs:string" length="RegistryKeyLength"/>
+  <data name="RegistryValueNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RegistryValueName" inType="win:UnicodeString" outType="xs:string" length="RegistryValueNameLength"/>
+  <data name="RegistryValueType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Invalid UNC Path</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Ignoring UNC Hardening Configuration Entry: Unable to parse UNC Path.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Guidance:
+The registry value name is not a valid UNC path.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Unsupported UNC Path</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Ignoring UNC Hardening Configuration Entry: Unsupported UNC Path.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Guidance:
+UNC Hardening is only supported at server or share granularity. If only a fraction of the resources available on a share require additional security, consider relocating contents that require additional security to a different share.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Unsupported Property Name</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Ignoring UNC Hardening Configuration Property: Unsupported property name.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Property Name: %6
+
+Property Value: %7
+
+Guidance:
+The specified property name does not match a UNC Hardening property supported on the current version of Windows and will be ignored.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+  <data name="PropertyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PropertyName" inType="win:UnicodeString" outType="xs:string" length="PropertyNameLength"/>
+  <data name="PropertyValue" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Unsupported Property Name</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Ignoring UNC Hardening Configuration Property: Unsupported property name.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Property Name: %6
+
+Property Value: '%8'
+
+Guidance:
+The specified property name does not match a UNC Hardening property supported on the current version of Windows and will be ignored.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+  <data name="PropertyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PropertyName" inType="win:UnicodeString" outType="xs:string" length="PropertyNameLength"/>
+  <data name="PropertyValueLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PropertyValue" inType="win:UnicodeString" outType="xs:string" length="PropertyValueLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Unsupported Property Value</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Ignoring UNC Hardening Configuration Property: Unsupported property value.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Property Name: %6
+
+Property Value: '%8'
+
+Guidance:
+The specified property name expects a boolean value should be assigned a value of 0 (disabled) or 1 (enabled).
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+  <data name="PropertyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PropertyName" inType="win:UnicodeString" outType="xs:string" length="PropertyNameLength"/>
+  <data name="PropertyValueLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PropertyValue" inType="win:UnicodeString" outType="xs:string" length="PropertyValueLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Invalid Syntax</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Unable to parse UNC Hardening Configuration Entry: Unknown Error.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Guidance:
+The UNC Hardening configuration for the path contains invalid syntax and may be ignored.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Invalid Syntax</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Unable to parse UNC Hardening Configuration Entry: Unexpected token.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Expected Token: %5
+
+Found Token: %7
+
+Guidance: The UNC Hardening configuration for the path contains invalid syntax and may be ignored.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+  <data name="ExpectedToken" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FoundTokenLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FoundToken" inType="win:UnicodeString" outType="xs:string" length="FoundTokenLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Invalid Syntax</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Unable to parse UNC Hardening Configuration Entry: Unable to parse integer.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Expected Token: %5
+
+Found Token: %7
+
+Guidance: The UNC Hardening configuration for the path contains invalid syntax and may be ignored. The value found token was parsed as an integer, but was found to contain illegal digits.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+  <data name="ExpectedToken" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FoundTokenLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FoundToken" inType="win:UnicodeString" outType="xs:string" length="FoundTokenLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Task>UNC Hardening Configuration</Task>
+                <Opcode>Invalid Syntax</Opcode>
+                <Keyword>UNC Hardening</Keyword>
+                <Message><![CDATA[
+Unable to parse UNC Hardening Configuration Entry: Unable to parse string.
+
+UNC Path: %2
+
+UNC Hardening Configuration: %4
+
+Expected Token: %5
+
+Found Token: %7
+
+Guidance: The UNC Hardening configuration for the path contains invalid syntax and may be ignored. The value found token was parsed as an string, but was not terminated or exceeded the maximum allowable string length.
+
+For details on configuring Windows computers to require additional security when accessing specific UNC paths, visit http://support.microsoft.com/kb/3000483.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UncPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="UncPath" inType="win:UnicodeString" outType="xs:string" length="UncPathLength"/>
+  <data name="UncHardeningConfigurationLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UncHardeningConfiguration" inType="win:UnicodeString" outType="xs:string" length="UncHardeningConfigurationLength"/>
+  <data name="ExpectedToken" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FoundTokenLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FoundToken" inType="win:UnicodeString" outType="xs:string" length="FoundTokenLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
