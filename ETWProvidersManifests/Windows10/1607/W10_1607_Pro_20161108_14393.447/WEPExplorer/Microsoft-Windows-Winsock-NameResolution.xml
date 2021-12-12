@@ -1,0 +1,330 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Winsock-NameResolution</Name>
+        <Metadata>
+            <Guid>{55404E71-4DB9-4DEB-A5F5-8F86E46DDE56}</Guid>
+            <ResourceFilePath>C:\Windows\system32\ws2_32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\ws2_32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ws2_32.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Winsock NameResolution Event</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Winsock NameResolution Event/Operational</Message>
+                    <Path>Microsoft-Windows-Winsock-NameResolution/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>WinsockGai</Name>
+                    <Value>1000</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+GetAddrInfoW is called for queryName %1, serviceName %2, flags %4, family %5, socketType %6, protocol %7 and seq %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Family" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+GetAddrInfoW is completed for queryName %1 with status %2 and result %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+GetAddrInfoExW is called for queryName %1, serviceName %2, nameSpace %4, nameSpace GUID %5, flags %6, family %7, socketType %8, protocol %9, interface index %10, timeOut %11, asyncWithCallBack %12, asyncWithOverlapped %13 and seq %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NameSpace" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NameSpaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Family" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeOutInSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncWithCallback" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncWithOverlapped" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+GetAddrInfoExW asynchronous query is pending for queryName: %1 with cancel Handle %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CancelHandle" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+GetAddrInfoExW is completed for queryName %1 with status %2 and result %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+GetAddrInfoExCancel is called for  query %1 and seq %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CancelHandle" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+NSPLookupServiceBegin is called for provider %1, queryName %2, serviceGUID %3, interface index %4 and control flags %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="QueryName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+NSPLookupServiceBegin is completed for provider %1, queryName %2 serviceGUID %3, interface index %4, control flags %5 and lookup handle %6 with status %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="QueryName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LookupHandle" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+NSPLookupServiceNext is called for provider %1, control Flags %2 and lookup handle %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LookupHandle" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+NSPLookupServiceNext is completed for provider %1, control Flags %2 and lookup Handle %3 with status %4 and result %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LookupHandle" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+NSPLookupServiceEnd is called for provider %1 and lookup handle %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LookupHandle" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+NSPLookupServiceEnd completed for provider %1 and lookup handle %2 with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LookupHandle" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+GetAddrInfoExW info.  queryName %1, serviceName %2, nameSpace %4, nameSpace GUID %5, flags %6, family %7, socketType %8, protocol %9, interface index %10, timeOut %11, asyncWithCallBack %12, asyncWithOverlapped %13, error %14 and seq %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NameSpace" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NameSpaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Family" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeOutInSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncWithCallback" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncWithOverlapped" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Error" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+Wsa Startup. seq: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+Wsa Cleanup. seq: %1.  Refcount: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Winsock NameResolution Event/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WinsockGai</Task>
+                <Message><![CDATA[
+NSJOB info.  seq %1.  Refcount: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

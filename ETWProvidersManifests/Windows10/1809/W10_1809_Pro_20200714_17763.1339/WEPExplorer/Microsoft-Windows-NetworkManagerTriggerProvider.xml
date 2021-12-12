@@ -1,0 +1,76 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkManagerTriggerProvider</Name>
+        <Metadata>
+            <Guid>{9B307223-4E4D-4BF5-9BE8-995CD8E7420B}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\afd.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\afd.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=afd.sys&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Opcode_FirstAddressArrivalEvent</Name>
+                    <Value>100</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Opcode_LastAddressRemovalEvent</Name>
+                    <Value>101</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_FirstAddressArrivalEvent</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_LastAddressRemovalEvent</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Opcode_FirstAddressArrivalEvent</Opcode>
+                <Keyword>Keyword_FirstAddressArrivalEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkChangeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Opcode_LastAddressRemovalEvent</Opcode>
+                <Keyword>Keyword_LastAddressRemovalEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkChangeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,829 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DeviceSetupManager</Name>
+        <Metadata>
+            <Guid>{FCBB06BB-6A2A-46E3-ABAA-246CB4E508B2}</Guid>
+            <ResourceFilePath>C:\Windows\System32\DeviceSetupManager.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\DeviceSetupManager.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=DeviceSetupManager.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DeviceSetupManager</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DeviceSetupManager/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DeviceSetupManager/Admin</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DeviceSetupManager/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DeviceSetupManager/Analytic</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>DeviceSetupTask</Name>
+                    <Value>500</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DownloadDriverTask</Name>
+                    <Value>501</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BuildDriverListTask</Name>
+                    <Value>502</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>InstallDriverTask</Name>
+                    <Value>503</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MetadataInstallTask</Name>
+                    <Value>504</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SearchWindowsUpdate</Name>
+                    <Value>7022</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DownloadFromWindowsUpdate</Name>
+                    <Value>7023</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>DeviceUxReady</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>DeviceSetupComplete</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DSM service start, mode is %1, last session (or boot) was %2 seconds ago]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_CoreServiceMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Event_Window_Seconds" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DSM Service shutting down. Service uptime was %1 seconds, active worktime was %2 MilliSeconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_UpTime_Seconds" inType="win:Int64" outType="xs:long"/>
+  <data name="Prop_WorkTime_MilliSeconds" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DSM Service dll has loaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DSM Service dll is unloading.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+DSM Service failed to start, result=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DSM Service is entering a retry sequence because soft (retryable) errors were encountered]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DSM Service is leaving the retry state, there have been %1 retry cycles in this session]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_RetryCycleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The DSM service has entered service state '%1']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_CoreServiceState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The DSM service has entered service mode '%1']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_CoreServiceMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job (%2) has started for device container '%1', type=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Prop_JobId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_JobType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job (%2) has completed for device container '%1', status=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Prop_JobId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_JobStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Device '%1' (%2) has been serviced, processed %3 tasks, wrote %4 properties, active worktime was %5 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ContainerId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Prop_TaskCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Prop_PropertyCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Prop_WorkTime_MilliSeconds" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Driver update %1 has been downloaded from Windows Update, download time was %2 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_MilliSeconds" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Driver install failed, result=%2 for devnode '%1']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DevnodeId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Access to drivers on Windows Update was blocked by policy]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The DSM service was delayed by %1 seconds for a driver query/download/install on device '%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Seconds" inType="win:Int32" outType="xs:int"/>
+  <data name="Prop_DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>124</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Driver %1 was installed on device %2, install time was %3 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_DeviceInstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_MilliSeconds" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>125</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Installation of a driver on device %1 was blocked by PnP restriction policy]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DevnodeId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Metadata package %1 has been staged for container %2, time was %3 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_MetadataPackageId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ContainerId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Prop_StageTimeMilliSeconds" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Metadata staging failed, result=%2 for container '%1']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The device '%1' with container ID %2, has been removed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ContainerId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The device '%1' with container ID %2, failed to respond to a device remove request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ContainerId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Removal of device node '%1' failed with error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DevnodeId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A connection to the Windows Update service could not be established.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A connection to the Windows Metadata and Internet Services (WMIS) could not be established.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Network List Manager reports no connectivity to the internet.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Network List Manager reports connection to the internet has been established.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Registered the handler %3 for the app %2 to handle notifications from the device container %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_NotificationHandler" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A handler for the app %2 was already registered for the device container %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>222</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The device container %1 and the app %2 specify background task information, but we failed to register with error %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>223</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Unregistered for the Print background task after uninstalling the app %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>224</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Unregistered for the Mobile Operator background task after uninstalling the app %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>230</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Made the request to the store to download the app %2 for device %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>231</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully installed the app %2 from the store for device %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>232</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+There was an error trying to install app %2 from the store for device %1.  This operation will be retried when the device is reconnected or the user logs on again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>233</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+There was an error trying to install app %2 from the store for device %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_PackageId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>DeviceUxReady</Opcode>
+                <Message><![CDATA[
+The device container '%1' has entered the ready state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>DeviceSetupComplete</Opcode>
+                <Message><![CDATA[
+Device setup for container '%1' has been completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Device metadata that contains an extension namespace has been parsed for container '%1', ExtensionNamespace = '%2', Culture = '%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ServiceInfoNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_CultureCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DeviceSetupTask</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DeviceSetupTask</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DownloadDriverTask</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DevnodeId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DownloadDriverTask</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DevnodeId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>404</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>BuildDriverListTask</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_PackagePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>405</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>BuildDriverListTask</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_PackagePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>406</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>InstallDriverTask</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DevnodeId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>407</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>InstallDriverTask</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_DevnodeId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>408</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MetadataInstallTask</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>409</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MetadataInstallTask</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ContainerId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7710</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SearchWindowsUpdate</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ENTER: Searching WU for driver updates.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7711</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SearchWindowsUpdate</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EXIT: Searching WU for driver updates.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7712</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DownloadFromWindowsUpdate</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ENTER: Downloading driver update from WU.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7713</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceSetupManager/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DownloadFromWindowsUpdate</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EXIT: Downloading driver update from WU.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

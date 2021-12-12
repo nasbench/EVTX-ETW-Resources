@@ -1,0 +1,97 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-KnownFolders</Name>
+        <Metadata>
+            <Guid>{8939299F-2315-4C5C-9B91-ABB86AA0627D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\windows.storage.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\windows.storage.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=windows.storage.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Known Folders</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Known Folders/Operational</Message>
+                    <Path>Microsoft-Windows-Known Folders API Service</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Known Folders/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error %1 occurred while creating known folder %2 with path '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hrError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FolderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Known Folders/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error %1 occurred while initializing known folder %2 with ini file path '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hrError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FolderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Known Folders/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error %1 occurred while verifying known folder %2 with path '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hrError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FolderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Known Folders/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error %1 occurred while initializing known folder %2 with path '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hrError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FolderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

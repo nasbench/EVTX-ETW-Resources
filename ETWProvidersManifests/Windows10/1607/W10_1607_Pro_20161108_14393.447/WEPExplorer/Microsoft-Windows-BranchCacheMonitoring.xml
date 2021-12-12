@@ -1,0 +1,569 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BranchCacheMonitoring</Name>
+        <Metadata>
+            <Guid>{A2F55524-8EBC-45FD-88E4-A1B39F169E08}</Guid>
+            <ResourceFilePath>C:\Windows\system32\peerdistsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\peerdistsvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=peerdistsvc.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-BranchCacheMonitoring</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-BranchCacheMonitoring/Analytic</Message>
+                    <Path>Microsoft-Windows-BranchCacheMonitoring/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Component %1 has arrived as a BranchCache Monitoring provider]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registrar" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Component %1 has departed as a BranchCache Monitoring provider]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registrar" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MS-PCCRR Statistics Snapshot]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CompletedDataDownloads" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SuccessfulDataDownloads" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MaxObservedSimultaneousDownloads" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AverageDownloadByteRate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletedDataUploads" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SuccessfulDataUploads" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MaxObservedSimultaneousUploads" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AverageServingLatency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxObservedServingLatency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentAverageInboundRequestFrequency" inType="win:Double" outType="xs:double"/>
+  <data name="MaxObservedAverageInboundRequestFrequency" inType="win:Double" outType="xs:double"/>
+  <data name="AverageDiscoveryTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AttemptedNetworkDiscoveries" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AttemptedV1NetworkDiscoveries" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AttemptedV2NetworkDiscoveries" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SuccessfulNetworkDiscoveries" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SuccessfulV1NetworkDiscoveries" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SuccessfulV2NetworkDiscoveries" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SuppressedDiscoveries" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PreDiscoveries" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CurrentAverageInboundDiscoveryFrequency" inType="win:Double" outType="xs:double"/>
+  <data name="MaxObservedAverageInboundDiscoveryFrequency" inType="win:Double" outType="xs:double"/>
+  <data name="TotalBytesServed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRetrieved" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Segment Id=%5 has been published for Content Id=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContentId" inType="win:Binary" outType="xs:hexBinary" length="ContentIdSize"/>
+  <data name="StringContentId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="SegmentOffsetInContent" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SegmentSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Content Information has been added for Segment Id=%5 of Content Id=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContentId" inType="win:Binary" outType="xs:hexBinary" length="ContentIdSize"/>
+  <data name="StringContentId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="SegmentOffsetInContent" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SegmentSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Content Data has been added for Segment Id=%5 of Content Id=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContentId" inType="win:Binary" outType="xs:hexBinary" length="ContentIdSize"/>
+  <data name="StringContentId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="DataOffsetInSegment" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A StreamRead has been initiated at Content Offset %6, Segment Offset %7 for Segment Id=%5 of Content Id=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContentId" inType="win:Binary" outType="xs:hexBinary" length="ContentIdSize"/>
+  <data name="StringContentId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="ContentOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SegmentOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Bytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A BlockRead has been initiated at Content Offset %6, Segment Offset %7 for Segment Id=%5 of Content Id=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContentId" inType="win:Binary" outType="xs:hexBinary" length="ContentIdSize"/>
+  <data name="StringContentId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="ContentOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SegmentOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Bytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Discovery Request for Segment Id=%2 has been received from peer %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Discovery Request for Segment Id=%2 has been sent to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Discovery Response for Segment Id=%2 has been received from peer %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Discovery Response for Segment Id=%2 has been sent to peer %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+No discovery response for Segment Id=%2 has been received in time to be used for downloading data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A late discovery response has been received for Segment Id=%2 from peer %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A block request for block ID=%3 of Segment=%2 has been received from peer %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="BlockId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A block request for block ID=%3 of Segment=%2 has been sent to peer %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="BlockId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A block response for block ID=%3 of Segment=%2 with size=%4 has been received from peer %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="BlockId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A block response for block ID=%3 of Segment=%2 with size=%4 has been sent to peer %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SegmentIdSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SegmentId" inType="win:Binary" outType="xs:hexBinary" length="SegmentIdSize"/>
+  <data name="BlockId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Inbound Non-PeerDist HTTP request for URL %2 from client at address IPv4=%3 IPv6=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIPv4Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="ClientIPv6Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="RangeRequest" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RangeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstRangeOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FirstRangeLenght" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Inbound PeerDist HTTP request for URL %2 from client at address IPv4=%3 IPv6=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIPv4Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="ClientIPv6Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="PeerDistMinContentInformationVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PeerDistMaxContentInformationVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PCCRTPProtocolVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RangeRequest" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RangeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstRangeOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FirstRangeLenght" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Inbound PeerDist Missing Data HTTP request for URL %2 from client at address IPv4=%3 IPv6=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIPv4Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="ClientIPv6Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="RangeRequest" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RangeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstRangeOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FirstRangeLenght" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Inbound PeerDist Hash HTTP request for URL %2 from client at address IPv4=%3 IPv6=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIPv4Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="ClientIPv6Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="PeerDistMinContentInformationVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PeerDistMaxContentInformationVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PCCRTPProtocolVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RangeRequest" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RangeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstRangeOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FirstRangeLenght" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Outbound Non-PeerDist HTTP response for URL %2 from client at address IPv4=%3 IPv6=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIPv4Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="ClientIPv6Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="RangeRequest" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RangeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstRangeOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FirstRangeLenght" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HTTPProtocolMajorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HTTPProtocolMinorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HTTPStatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="OriginalContentLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EncodedContentLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Outbound PeerDist encoded HTTP response for URL %2 from client at address IPv4=%3 IPv6=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIPv4Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="ClientIPv6Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="PeerDistMinContentInformationVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PeerDistMaxContentInformationVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PCCRTPProtocolVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RangeRequest" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RangeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstRangeOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FirstRangeLenght" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HTTPProtocolMajorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HTTPProtocolMinorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HTTPStatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="OriginalContentLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EncodedContentLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Outbound PeerDist encoded HTTP response to a PeerDist Hash-only request for URL %2 from client at address IPv4=%3 IPv6=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIPv4Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="ClientIPv6Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="PeerDistMinContentInformationVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PeerDistMaxContentInformationVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PCCRTPProtocolVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RangeRequest" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RangeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstRangeOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FirstRangeLenght" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HTTPProtocolMajorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HTTPProtocolMinorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HTTPStatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="OriginalContentLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EncodedContentLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheMonitoring/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Outbound HTTP response to a PeerDist Missing Data request for URL %2 from client at address IPv4=%3 IPv6=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIPv4Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="ClientIPv6Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="RangeRequest" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RangeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FirstRangeOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FirstRangeLenght" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HTTPProtocolMajorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HTTPProtocolMinorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HTTPStatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="OriginalContentLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EncodedContentLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
