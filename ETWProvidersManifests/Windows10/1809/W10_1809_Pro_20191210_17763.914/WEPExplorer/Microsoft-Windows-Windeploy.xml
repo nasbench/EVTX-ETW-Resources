@@ -1,0 +1,158 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Windeploy</Name>
+        <Metadata>
+            <Guid>{75EBC33E-C8AE-4F93-9CA1-683A53E20CB6}</Guid>
+            <ResourceFilePath>C:\Windows\system32\oobe\windeploy.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\oobe\windeploy.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=windeploy.exe&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Windeploy</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Windeploy/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Setup</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Run Windeploy</Message>
+                    <Name>tskRunWindeploy</Name>
+                    <Guid>{4081FD79-E0CF-4565-9064-5F11A4D682C7}</Guid>
+                    <Value>1000</Value>
+                </Task>
+                <Task>
+                    <Message>Launch and wait for external process</Message>
+                    <Name>tskLaunchAndWaitFor</Name>
+                    <Guid>{07DC4E47-7C5C-40B5-A20D-C86E54FB1E19}</Guid>
+                    <Value>2000</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>keyPerformance</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Telemetry</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Windeploy/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Run Windeploy</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Windeploy.exe is running.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Windeploy/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Run Windeploy</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Windeploy.exe exiting with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Windeploy/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Launch and wait for external process</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Launching "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Windeploy/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Launch and wait for external process</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+External process exited with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Windeploy/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Launch and wait for external process</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Failed to start external process with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

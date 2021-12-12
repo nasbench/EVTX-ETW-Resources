@@ -1,0 +1,1192 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CertificateServicesClient-CertEnroll</Name>
+        <Metadata>
+            <Guid>{54164045-7C50-4905-963F-E5BC1EEF0CCA}</Guid>
+            <ResourceFilePath>C:\Windows\system32\certenroll.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\certenroll.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=certenroll.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-CertificateServicesClient-CertEnroll</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1113194500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 could not access local resources or retrieve %2 certificate template information (%3).  Enrollment was not performed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 could not find any valid certificate templates.  Enrollment was not performed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678150</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 could not find a valid certificate template to match %2.  Enrollment was not performed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678153</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 was denied by %3 when retrieving the pending request for a %2 certificate with request ID %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 archived or deleted, from the Personal certificate store, certificates that have expired, or been revoked or superseded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936331</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 could not find a certification authority in the enterprise.  Enrollment was not performed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678157</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to enroll for a %2 certificate with request ID %4 from %3 (%5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39452686</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 received a %2 certificate with request ID %4 from %3 when retrieving pending requests.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936335</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to retrieve certificate template information from the Policy Server. Enrollment was not performed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678160</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to renew a %2 certificate with request ID %4 from %3 (%6). The certificate which failed to renew is %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertificateThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936337</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to enroll for a %2 certificate from certification authority %3 (%4). Another certification authority will be contacted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936338</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to renew a %2 certificate from certification authority %3 (%4). Another certification authority will be contacted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194515</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 successfully received a %2 certificate with request ID %4 from certification authority %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194516</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 successfully renewed a %2 certificate with request ID %4 from certification authority %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39452693</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 attempted to enroll for a %2 certificate with request ID %4 from certification authority %3.  The request is pending.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39452694</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 attempted to renew a %2 certificate with request ID %4 from certification authority %3.  The request is pending.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194521</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to update the %2 certificate in the Personal certificate store due to one of the following: 
+ 	Cannot find %2 certificate template from Active Directory.
+ 	Enrollment access to this template is not allowed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194523</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 was cancelled by the user.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194526</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 was cancelled by the user when requesting a %2 certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194528</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 attempted to retrieve a %2 certificate from %3.  The certificate request is still pending.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194529</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 deleted certificates that have expired, or have been revoked or superseded from the user object in Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678179</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 detected that the DNS name in the %2 certificate does not match the DNS name of the local computer.  A new enrollment for a %2 certificate will be attempted in %3 hours.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HourNumber" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678180</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 detected that the DNS name in the %2 certificate does not match the DNS name of the local computer.  No more enrollments for %2 certificates will be attempted until the current certificate is revoked or expires because the same error has occurred %3 times.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumberTimes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936358</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 cannot enroll or renew %2 certificate because user interaction is required on the %2 template in Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194537</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+To prevent simultaneous renewal or enrollment from another computer, certificate enrollment for %1 to renew or enroll for a %2 certificate has been skipped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936362</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 for the %2 template must be performed by using the machine context.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936363</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to find a smart card reader for the %2 template.  Enrollment will not be performed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936364</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to open the user interface (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678189</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to create an enrollment request for a %2 certificate (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936366</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 could not enroll for a %2 certificate.  Read or enrollment access is not allowed for this template.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936367</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 could not enroll for a %2 certificate.  A valid certification authority cannot be found to issue this template.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936368</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 could not enroll for a %2 certificate.  Signature requirements for the certificate cannot be met.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936370</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to install the certificate response for a %2 certificate with request ID %3 (%4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936371</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 for the %2 certificate must be performed under the user context.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936372</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The CA certificate for %3 is not trusted. Certificate enrollment for %1 for a %2 certificate failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CAName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936373</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to retrieve a %2 certificate from certification authority %3 with request ID %4, and the error returned from the server is %5.  Another certification authority will be contacted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936374</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to retrieve a pending %2 certificate with request ID %4 from certification authority %3 (%5). The enrollment process will be attempted again later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936375</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 for the %2 template could not find specified CSPs on the local machine.  Enrollment will not be performed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194552</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 for the template %2 was not performed because this template has been superseded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936377</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%2" provider was not loaded because initialization failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Failure" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936378</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%3" algorithm for the "%2" provider was not loaded because initialization failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Algorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Failure" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936379</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not determine the signature algorithm for %2 to sign an enrollment request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HashAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublicKeyAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HashLookupAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublicKeyLookupAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureAlgorithmPreferred" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Pkcs7Signature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AlternateSignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NullSignature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936380</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not find a registered public key algorithm OID for %2 for an enrollment request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HashAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublicKeyAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HashLookupAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublicKeyLookupAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureAlgorithmPreferred" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Pkcs7Signature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AlternateSignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NullSignature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936381</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not find a registered signature algorithm OID for %1 and %2 to sign an enrollment request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HashAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublicKeyAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HashLookupAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublicKeyLookupAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureAlgorithmPreferred" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Pkcs7Signature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AlternateSignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NullSignature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936382</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not encode signature parameters for a %2 signature for an enrollment request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HashAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublicKeyAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HashLookupAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublicKeyLookupAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureAlgorithmPreferred" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Pkcs7Signature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AlternateSignatureAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NullSignature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936383</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Enrollment Policy Server %2 returned an error when retrieving templates for %1: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FaultString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936384</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 successfully load policy from policy server %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936385</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 is successfully authenticated by policy server %2 using authentication mechanism %5 (Credential: %4). Policy Id: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Credential" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936386</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 is successfully authenticated by enrollment server %2 using authentication mechanism %5 (Credential: %4). Policy Id: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Credential" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936387</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to load policy from policy servers with ID  %2 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936388</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed in authentication to policy servers with ID %2  (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936390</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed because no valid policy can be obtained from policy servers with ID %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936391</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed in adding credential to Vault for %2 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936392</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed because the loaded policy from the policy server %2 is invalid (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936393</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate auto enrollment for %1 cannot be done because the policy server %2 turns it off.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936394</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed to load policy from policy server %2 with ID  %3 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936395</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed in authentication to policy server %2 with ID  %3 (%6). Authentication mechanism was %5 (Credential: %4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Credential" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936396</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed in authentication to enrollment server %2 (%6). Policy Id: %3. Authentication mechanism was %5 (Credential: %4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Credential" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936397</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 cannot enroll from user configured enrollment policy server since it is disabled by group policy]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936398</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 sent a request for template %2 to a ROBO certificate enrollment server %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936399</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 sent a request for template %2 to a ANONYMOUS certificate enrollment server %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936400</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 cannot enroll for a %2 certificate because the certificate enrollment server %3 is ROBO and only renewal is supported]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936401</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 cannot enroll for a %2 certificate because the certificate enrollment server %3 is ANONYMOUS and only renewal is supported]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CA" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936402</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 failed in authentication to all urls for enrollment server associated with policy id: %2 (%4). Failed to enroll for template: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936403</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 cannot find a credential that meets the selection criteria for url %2 with id %3 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936404</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The credential for URL %2 has been updated from certificate (%4) to certificate (%3) in context %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewCertificate" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldCertificate" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936405</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate enrollment for %1 for the %2 template could not perform attestation due to an error with the cryptographic hardware using the provider: %3. Request Id: %4.%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TpmError" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KspName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678230</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SCEP Certificate enrollment initialization for %1 via %2 failed:
+
+%3
+Method: %4
+Stage: %5
+%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Stage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678231</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SCEP Certificate enrollment for %1 via %2 failed:
+
+%3
+Method: %4
+Stage: %5
+%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Stage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194584</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SCEP Certificate enrollment for %1 via %2 succeeded:
+
+%3
+Method: %4
+Stage: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Stage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678233</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not find a Logon Certificate Template for %1
+Template: %2
+State: %3
+Process: %4
+%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678234</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Found multiple Logon Certificate Templates for %1
+Templates: %2
+State: %3
+Process: %4
+%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194587</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully found Logon Certificate Template for %1
+Template: %2
+State: %3
+Process: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678236</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Logon Certificate Request creation for %1 failed for the %2 template for key %3
+%4
+Process: %5
+%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194589</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Logon Certificate Request creation for %1 succeeded for the %2 template for key %3
+Request thumbprint: %4
+Process: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678238</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to install Logon Certificate for %1 failed
+Request thumbprint: %2
+Thumbprint: %3
+%4
+Process: %5
+%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194591</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully installed Logon Certificate for %1
+Request thumbprint: %2
+Thumbprint: %3
+Process: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678240</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to remove Logon Certificate request for %1
+Request thumbprint: %2
+Process: %3
+%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936417</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully removed Logon Certificate request for %1
+Request thumbprint: %2
+Process: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678242</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to import PFX Certificate for %1
+Flags: %2
+Provider: %3
+Container: %4
+Process: %5
+%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Flags" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Container" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
