@@ -1,0 +1,1236 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UserDataAccess-UnifiedStore</Name>
+        <Metadata>
+            <Guid>{56F519AB-9DF6-4345-8491-A4BA21AC825B}</Guid>
+            <ResourceFilePath>unistore.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>unistore.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=unistore.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Trace</Message>
+                    <Name>tracemessage</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UNIFIED_STORE_VOLUME_MOUNT</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>UnifiedStore_OnBoot_UpdateIndexes</Name>
+                    <Value>12</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Unified_Store</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Notification</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RPC</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ChangeTracking</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Debug</Message>
+                    <Name>debug</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Warning</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>StateTransition</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Telemetry</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+Error: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error Propagated: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Info: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+Error: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Error Propagated: %1 Location: %2 Line Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>Trace</Task>
+                <Keyword>Debug</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tombstone cleanup completed: store [%1], iterations [%2], duration [%3 s]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Terminated suspended app [%2]: result [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_INT" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+App lost change tracking [%1]: current rev [%2], deleted item rev [%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Arg2" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Arg3" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Updating DB LCID, Invalidating all open sessions and handles]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Unified store lock was held for %1 seconds. ReleaseFunc = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_UInt64" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Prop_Hex_UInt32" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Unified store lock type %1 was not released even after %2 seconds. Lock Owner Process Id: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+CeSeekDatabaseEx failed, Handle: %1, HR: %2 SeekType: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UINT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+CeWriteRecordProps failed, Handle: %1, HR: %2, OIDRecord: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UINT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+CeReadRecordPropsEx failed, Handle: %1, HR: %2, Flags: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UINT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Closed handle before refcount was 0, Handle: %1, Outstanding refCount: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_INT" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Missed Event Notification Dispatched]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3009</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Mutex acquire failed, WaitResult = %1, HR = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Hex_UInt32" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Deserialize Knowledge failed, HR = %1, cbKnowledge = %2, cbKnowledgeLogged = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_FullKnowledgeSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_LoggedKnowledgeSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_Knowledge" inType="win:Binary" outType="xs:hexBinary" length="Prop_LoggedKnowledgeSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Opening Table %1 without any index.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_UInt32" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Restriction Type = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_UInt32" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+PropertyRestriction: Operation %1, Property id %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+BitMaskRestriction: Operation %1, Property id %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3015</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Seeked and read %1 rows before finding row with matching index]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_UInt32" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3016</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Count %1: Property ids: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Array" inType="win:UInt32" outType="xs:unsignedInt" count="Count"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3017</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+MountDeviceVolume Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3018</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Notification</Keyword>
+                <Message><![CDATA[
+Remote notification dispatched, Event type: %1, Object type: %2, Object Id: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UINT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3019</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Notification</Keyword>
+                <Message><![CDATA[
+Remote notification published, Event type: %1, Object type: %2, Object Id: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UINT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3020</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Missed Event Notification Published]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3021</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+UnifiedStore delete store id = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_UInt32" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3022</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+UnifiedStore delete folder types = %1, store = %2, id = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UINT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3023</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Table: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Trace_UnicodeString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3024</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Failed to commit transaction, attempting rollback recovery (error %1, session %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3025</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Failed to rollback transaction (error %1, session %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3026</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Recovery complete (error %1, session %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3027</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Failed to open table handle]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3028</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Unified_Store RPC</Keyword>
+                <Message><![CDATA[
+Unified Store RPC Call: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3029</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Failed to set property ID %1, error %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3030</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Process %1 underflowed its suspend/resume count, now is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3031</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Process %1 suspended its message queue, count %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3032</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Process %1 resumed its message queue, count %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3033</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Process with rundown identifier %1 aborted %2 transactions]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3034</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Client process %1 has lost events]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3035</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Client process %1 has resumed fetching events]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3036</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Property should be added in schema. table: %1, id: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3037</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Advisee in service process (vtable %1) has lost events]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3038</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Notification Queue lost events]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3039</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Final transaction rollback attempt failed, Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3040</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Closing active table id: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3041</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UNIFIED_STORE_VOLUME_MOUNT</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Unified_Store</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3042</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UNIFIED_STORE_VOLUME_MOUNT</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Unified_Store</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3043</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Unified store process identifier %1 created for process]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3044</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Process exit callback for process with identifier %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3045</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Unified store rundown for process %1 with identifier %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3046</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Store id: %1 Supported Types changed to: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3047</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+DBSession::_UpgradeDatabase Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3048</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+JetAttachDatabase Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3049</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Upgrading database, lcidChanged: %1, storeVersionChanged: %2, isIndexCorrupt: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UINT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3050</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Creating Missing indexes, table ID: %1, count: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3051</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Number of indexes changed unexpectedly, table ID: %1, numExistingIndex: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_Prop2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3052</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+The database was corrupted, and recovered]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3053</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+Simulation of database corruption]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3070</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+Attempting to defragment scope knowledge. Partner id: %1, scope id: %2, exceptions: %3 positive and %4 negative, min vector size: %5, max vector size: %6, starting tick count: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg6" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg7" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3071</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+Defragmented scope knowledge. Partner id: %1, scope id: %2, original size: %3, defragmented size: %4, exceptions: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg4" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg5" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3072</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+Done defragmenting scope knowledge. Partner id: %1, scope id: %2, succeeded: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3073</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+Attempting to defragment partner knowledge. Partner id: %1, size: %2, defragmentation threshold: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3074</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+The knowledge for partner id %1 has %2 scopes, %3 positive exceptions, %4 negative exceptions, min vector size: %5 and max vector size: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg3" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Arg4" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Arg5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg6" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3075</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+Successfully defragmented %2 scopes out of %3 for partner id %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3076</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+Defragmented partner knowledge. Partner id: %1, original size: %2, defragmented size: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3077</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+Done defragmenting partner knowledge. Partner id: %1, succeeded: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3078</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+Failed to reduce the knowledge size for partner id %1 below %2%% of the maximum size (size: %3, maximum size: %4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3079</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+The knowledge size for partner id %1 exceeds %3%% of the maximum size (size: %2, maximum size: %4). The synchronization may exhibit degraded performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+The knowledge size for partner id %1 exceeds %3%% of the maximum size (size: %2, maximum size: %4). The synchronization may start failing if the knowledge size keeps increasing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Arg4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Error Unified_Store ChangeTracking</Keyword>
+                <Message><![CDATA[
+The knowledge size for partner id %1 exceeds the maximum size (size: %2, maximum size: %3). The synchronization will fail]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Arg1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Arg3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Closing stale notify context %2 on behalf of rundown id %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Rundown" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+Closing stale object %2 on behalf of rundown id %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Rundown" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3110</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+[store upgrade] The current store version is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3112</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+[store upgrade] Performing upgrade task %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3113</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Unified_Store</Keyword>
+                <Message><![CDATA[
+[store upgrade] %1 appointments updated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Prop" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UnifiedStore_OnBoot_UpdateIndexes</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>UnifiedStore_OnBoot_UpdateIndexes</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
