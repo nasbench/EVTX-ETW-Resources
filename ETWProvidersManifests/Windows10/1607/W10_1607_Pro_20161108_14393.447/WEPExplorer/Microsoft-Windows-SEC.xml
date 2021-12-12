@@ -1,0 +1,547 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SEC</Name>
+        <Metadata>
+            <Guid>{16C6501A-FF2D-46EA-868D-8F96CB0CB52D}</Guid>
+            <ResourceFilePath>C:\Windows\System32\Drivers\mssecflt.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\Drivers\mssecflt.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=mssecflt.sys&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SEC</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CreateProcess</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>TerminateProcess</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>OpenProcess</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RemoteThread</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>LoadModule</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>OpenDesktop</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CreateFile</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ModifyFile</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DeleteFile</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RenameFile</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CreateKey</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RenameKey</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RestoreKey</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ReplaceKey</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DeleteKey</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SetValue</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DeleteValue</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VolumeWrite</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ImageHashes</Name>
+                    <Value>524288</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DocumentOpen</Name>
+                    <Value>1048576</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>CreateProcess</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CreatorProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CreatorProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="CreatorProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageSHA256" inType="win:Binary" outType="xs:hexBinary" length="32"/>
+  <data name="ImageSHA1" inType="win:Binary" outType="xs:hexBinary" length="20"/>
+  <data name="ImageMD5" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="PartialCRC1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PartialCRC2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PartialCRC3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MotW" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IntegrityLevel" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TokenElevationType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Elevated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Impersonation" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SubjectLogonId" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverUnloadTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverLoadTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>CreateFile</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileAttributes" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Dispositon" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>RenameFile</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileAttributes" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>DeleteFile</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileAttributes" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ModifyFile</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileAttributes" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>CreateKey</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>DeleteKey</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>RenameKey</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>RestoreKey</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hive" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ReplaceKey</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hive" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewHive" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>SetValue</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValueDataType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="OldValueDataSize" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="OldValueCopiedSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OldValueData" inType="win:Binary" outType="xs:hexBinary" length="OldValueCopiedSize"/>
+  <data name="NewValueDataType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NewValueDataSize" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NewValueCopiedSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NewValueData" inType="win:Binary" outType="xs:hexBinary" length="NewValueCopiedSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>DeleteValue</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DataType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ValueDataSize" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ValueCopiedSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ValueData" inType="win:Binary" outType="xs:hexBinary" length="ValueCopiedSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>DocumentOpen</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DocumentName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>RemoteThread</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TargetProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TargetProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="TargetProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>OpenProcess</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TargetProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TargetProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="TargetProcess" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Access" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>OpenDesktop</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Desktop" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Access" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Duplicate" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Kernel" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>VolumeWrite</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolWriteOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolWriteSize" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="SystemVolume" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>TerminateProcess</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>LoadModule</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessTime" inType="win:Int64" outType="xs:long"/>
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SessionId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MotW" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ImageSHA256" inType="win:Binary" outType="xs:hexBinary" length="32"/>
+  <data name="ImageSHA1" inType="win:Binary" outType="xs:hexBinary" length="20"/>
+  <data name="ImageMD5" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="PartialCRC1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PartialCRC2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PartialCRC3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SystemModeImage" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
