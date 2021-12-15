@@ -1,0 +1,80 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MemoryDiagnostics-Schedule</Name>
+        <Metadata>
+            <Guid>{73E9C9DE-A148-41F7-B1DB-4DA051FDC327}</Guid>
+            <ResourceFilePath>C:\Windows\System32\mdsched.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\mdsched.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10240.16384&amp;FileName=mdsched.exe&amp;FileVer=10.0.10240.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MemoryDiagnostics-Schedule</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Memory Diagnostic scheduled the testing of the computer's memory to run immediately]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LaunchType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScheduleType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Memory Diagnostic scheduled the testing of the computer's memory to run the next time the computer starts]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LaunchType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScheduleType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Memory Diagnostic could not schedule the testing of the computer's memory]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LaunchType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScheduleType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

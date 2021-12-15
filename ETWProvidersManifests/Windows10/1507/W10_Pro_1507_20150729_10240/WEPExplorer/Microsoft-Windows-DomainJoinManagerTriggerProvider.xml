@@ -1,0 +1,76 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DomainJoinManagerTriggerProvider</Name>
+        <Metadata>
+            <Guid>{5B004607-1087-4F16-B10E-979685A8D131}</Guid>
+            <ResourceFilePath>C:\Windows\system32\lsasrv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\lsasrv.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10240.16384&amp;FileName=lsasrv.dll&amp;FileVer=10.0.10240.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Opcode_DomainJoinEvent</Name>
+                    <Value>100</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Opcode_DomainUnjoinEvent</Name>
+                    <Value>101</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_DomainJoinEvent</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_DomainUnjoinEvent</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Opcode_DomainJoinEvent</Opcode>
+                <Keyword>Keyword_DomainJoinEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainMembershipChangeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Opcode_DomainUnjoinEvent</Opcode>
+                <Keyword>Keyword_DomainUnjoinEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainMembershipChangeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,165 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-KRAPI</Name>
+        <Metadata>
+            <Guid>{7562948E-2671-4DDA-8F8F-BF945EF984A1}</Guid>
+            <ResourceFilePath>C:\Windows\system32\IME\IMEKR\imkrapi.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\IME\IMEKR\imkrapi.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IME-KRAPI</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-IME-KRAPI/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Task ID: IME Candidate Open</Message>
+                    <Name>IME_CandOpen</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Task ID: IME Candidate Close</Message>
+                    <Name>IME_CandClose</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Task ID: IME Conversion</Message>
+                    <Name>IME_Conversion</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>Task ID: IME KR DictLoad</Message>
+                    <Name>IME_KR_DictLoad</Name>
+                    <Value>104</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IME-KRAPI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task ID: IME Candidate Open</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+EAIME_HanjaGetCandListStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IME-KRAPI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task ID: IME Candidate Open</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EAIME_HanjaGetCandListEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IME-KRAPI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task ID: IME KR DictLoad</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+EAIME_HanjaDictLoadStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IME-KRAPI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task ID: IME KR DictLoad</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EAIME_HanjaDictLoadEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IME-KRAPI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task ID: IME Candidate Close</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+EAIME_HanjaFinalizeCandStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IME-KRAPI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task ID: IME Candidate Close</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EAIME_HanjaFinalizeCandEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IME-KRAPI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task ID: IME Conversion</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+EAIME_HanjaConvStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IME-KRAPI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task ID: IME Conversion</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EAIME_HanjaConvEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
