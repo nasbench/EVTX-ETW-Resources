@@ -1,0 +1,548 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Ncasvc</Name>
+        <Metadata>
+            <Guid>{126DED58-A28D-4113-8E7A-59D7444B2AF1}</Guid>
+            <ResourceFilePath>C:\Windows\system32\ncasvc.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\ncasvc.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\ncasvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=ncasvc.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Ncasvc</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Ncasvc/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>NcaSvc_PerfTrack_InternetConnected_ActionableState</Name>
+                    <Value>10001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NcaSvc_PerfTrack_InternetConnected_ResolveName</Name>
+                    <Value>10003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NcaSvc_PerfTrack_InternetConnected_DAConnected</Name>
+                    <Value>10005</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NcaSvc_PerfTrack_SmartcardRequired_SmartcardEntered</Name>
+                    <Value>10007</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NcaSvc_PerfTrack_SmartcardEntered_DAConnected</Name>
+                    <Value>10009</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NcaSvc_PerfTrack_NAPRequired_DAConnected</Name>
+                    <Value>10011</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NcaSvc_PerfTrack_InternetConnected_DTESucceeded</Name>
+                    <Value>10013</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA service status changed. New Status: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA status update. New Status: (%1, %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Substatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA API Activity Start, function: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiFunction" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA API Activity End, function: (%1), error: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiFunction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Evidence Collector Update, evcoll: (%1), old: (%2), new: (%3). User:(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EvColl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Old" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="New" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="UserId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Probe Start, type: (%1), resource: (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Probe End, type: (%1), resource: (%2), result: (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Probe Callback, type: (%1), code: (%2), error: (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Code" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Error" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA %1 Configuration Update started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA %1 Configuration Update complete.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Module %1 Initialization started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Module %1 Initialization complete with error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Module %1 Shutdown started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Module %1 Shutdown complete.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NCA Trigger %1. Details: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Info" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_InternetConnected_ActionableState</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_InternetConnected_ActionableState</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_InternetConnected_ResolveName</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_InternetConnected_ResolveName</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_InternetConnected_DAConnected</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_InternetConnected_DAConnected</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_SmartcardRequired_SmartcardEntered</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_SmartcardRequired_SmartcardEntered</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_SmartcardEntered_DAConnected</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_SmartcardEntered_DAConnected</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_NAPRequired_DAConnected</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_NAPRequired_DAConnected</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_InternetConnected_DTESucceeded</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ncasvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NcaSvc_PerfTrack_InternetConnected_DTESucceeded</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+NCA PerfTrack Scenario Event. MachineId: %1, SessionId: %2, DeploymentId: %3, StopState: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MachineIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeploymentIdentifier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StopState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,287 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-International-RegionalOptionsControlPanel</Name>
+        <Metadata>
+            <Guid>{C6BF6832-F7BD-4151-AC21-753CE4707453}</Guid>
+            <ResourceFilePath>C:\Windows\system32\intl.cpl</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\intl.cpl</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=intl.cpl&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-International-RegionalOptionsControlPanel</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-International-RegionalOptionsControlPanel/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Region and Language control panel</Message>
+                    <Name>RLOUI</Name>
+                    <Value>30</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>RLOUI operations</Message>
+                    <Name>Operation</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>15000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user changed their user locale to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user reset all customizations for the user locale "%1" to the system default.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user changed the user locale setting "%1" to "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LCType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user changed their alternate sort to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user changed their calendar to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user changed their TwoDigitYearMax to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user changed their location preference (GeoID) to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15007</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The system locale was changed to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15008</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user chose to copy their settings to the default user account.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user chose to copy their settings to the system accounts.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user has changed their UI Language to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15011</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user has changed their UI Language fallback order to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+Failed to change UI Language to "%1". Status code is: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+Failed to change UI Language fallback order to "%1". Status code is: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The system locale could not be changed to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Region and Language control panel</Task>
+                <Opcode>RLOUI operations</Opcode>
+                <Message><![CDATA[
+The user does not have permission to change the calendar.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

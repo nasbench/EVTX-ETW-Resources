@@ -1,0 +1,111 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AuthenticationProvider</Name>
+        <Metadata>
+            <Guid>{DDDC1D91-51A1-4A8D-95B5-350C4EE3D809}</Guid>
+            <ResourceFilePath>C:\Windows\System32\lsasrv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\lsasrv.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=lsasrv.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Authentication</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Authentication/ProtectedUser-Client</Message>
+                    <Path>Microsoft-Windows-Authentication/ProtectedUser-Client</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Authentication/ProtectedUserFailures-DomainController</Message>
+                    <Path>Microsoft-Windows-Authentication/ProtectedUserFailures-DomainController</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Authentication/ProtectedUserSuccesses-DomainController</Message>
+                    <Path>Microsoft-Windows-Authentication/ProtectedUserSuccesses-DomainController</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController</Message>
+                    <Path>Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/ProtectedUser-Client</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The security package does not cache the credentials needed to authenticate to the server.
+
+Package Name:	%1
+User Name:	%2
+Domain Name:	%3
+Server Name:	%4
+Protected User:	%5
+Error Code:	%6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectedUser" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/ProtectedUser-Client</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The security package does not cache the user's sign on credentials.
+
+Package Name:	%1
+User Name:	%2
+Domain Name:	%3
+Protected User:	%4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectedUser" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

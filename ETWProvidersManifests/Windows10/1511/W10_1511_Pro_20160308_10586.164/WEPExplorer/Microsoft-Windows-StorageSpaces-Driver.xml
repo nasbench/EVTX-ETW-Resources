@@ -1,0 +1,1259 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorageSpaces-Driver</Name>
+        <Metadata>
+            <Guid>{595F7F52-C90A-4026-A125-8EB5E083F15E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\spaceport.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\spaceport.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageSpaces-Driver/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageSpaces-Driver/Performance</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Io</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Flush</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Dsm</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Log</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Destage</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ReadCache</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Majority of the physical disks of storage pool %1 failed a configuration update, which caused the pool to go into a failed state. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The capacity consumption of the storage pool %1 has exceeded the threshold limit set on the pool. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The capacity consumption of the storage pool %1 is now below the threshold limit set on the pool. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows was unable to read the disk header for physical disk %1. If you know the disk is still usable, then resetting the disk health by using command line or GUI may clear this failure condition and enable you to reassign the disk to its storage pool. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Physical disk %1 has invalid meta-data. Resetting the health status, using command line or GUI, might resolve the issue. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Physical disk %1 failed an IO operation. Return Code: %2. Additional related events may be found in the System event log for Disk %3.                  
+                  
+This disk may need to be replaced. To view its reliability counters, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "%1" } | Get-StorageReliabilityCounter                  
+                  
+This disk may be located using the following information:                  
+                  
+Drive Manufacturer: %4                  
+Drive Model Number: %5                  
+Drive Serial Number: %6                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "%1" }                  
+                  
+If this disk is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: %7                  
+Enclosure Model Number: %8                  
+Enclosure Serial Number: %9                  
+Enclosure Slot: %10                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "%1" } | Enable-PhysicalDiskIndication]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="DeviceNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="DriveManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DriveModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DriveSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Slot" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Physical disk %1 is reporting an impending failure. Sense Code (KEY ASC/ASCQ): %2 %3/%4. Additional related events may be found in the System event log for Disk %5.                  
+                  
+This disk may need to be replaced. To view its reliability counters, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "%1" } | Get-StorageReliabilityCounter                  
+                  
+This disk may be located using the following information:                  
+                  
+Drive Manufacturer: %6                  
+Drive Model Number: %7                  
+Drive Serial Number: %8                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "%1" }                  
+                  
+If this disk is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: %9                  
+Enclosure Model Number: %10                  
+Enclosure Serial Number: %11                  
+Enclosure Slot: %12                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "%1" } | Enable-PhysicalDiskIndication]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Key" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Asc" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Ascq" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="DeviceNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="DriveManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DriveModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DriveSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Slot" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows lost communication with physical disk %1. This can occur if a cable failed or was disconnected, or if the disk itself failed.                  
+                  
+This disk may be located using the following information:                  
+                  
+Drive Manufacturer: %2                  
+Drive Model Number: %3                  
+Drive Serial Number: %4                  
+                  
+If this disk is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: %5                  
+Enclosure Model Number: %6                  
+Enclosure Serial Number: %7                  
+Enclosure Slot: %8                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "%1" }                  
+                  
+To view the virtual disks affected, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "%1" } | Get-VirtualDisk]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DriveManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DriveModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DriveSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Slot" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Physical disk %1 was auto-retired.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Reason" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Physical disk %1 failed to read the configuration or returned corrupt data for virtual disk %2. As a result the in-memory configuration may not be the most recent copy of configuration. Return Code: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id1" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Id2" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+All pool disks failed to read the configuration or returned corrupt data for virtual disk %1. As a result the virtual disk will not attach. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Majority of the pool disks hosting space meta-data for virtual disk %1 failed a space meta-data update, which caused the storage pool to go in failed state. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Drives hosting data for virtual disk %1 have failed or are missing. As a result, no copy of data is available at offset %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ColumnData" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The virtual disk %1 is in a degraded state. This can happen when a physical disk hosting the virtual disk fails, is disconnected, or experiences a write error.                  
+                  
+Windows will attempt to repair the virtual disk. No action is needed at this time.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Virtual disk %1 is now healthy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The attempt to map, or allocate more storage for, the virtual disk %1 has failed. This is because there was a write failure involved in the updating the virtual disk metadata. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The attempt to unmap or trim the virtual disk %1 has failed. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Virtual disk %1 was detached due to an unexpected error. Return Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The attempt to allocate more storage for the virtual disk %1 has failed.                  
+                  
+Check the available capacity of the virutual disk; you may need to add additional                  
+physical capacity to the pool.                  
+                  
+Once you have resolved the condition listed above,                  
+you can online the disk by using the following commands in PowerShell:                  
+                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match "%1" } | Get-Disk | Set-Disk -IsReadOnly $false                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match "%1" } | Get-Disk | Set-Disk -IsOffline  $false]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Virtual disk %1 requires a data integrity scan.                  
+                  
+Data on the disk is out-of-sync and a data integrity scan is required.                  
+To start the scan, run the following command:                  
+                  
+Get-ScheduledTask -TaskName "Data Integrity Scan for Crash Recovery" | Start-ScheduledTask                  
+                  
+Once you have resolved the condition listed above,                  
+you can online the disk by using the following commands in PowerShell:                  
+                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match "%1" } | Get-Disk | Set-Disk -IsReadOnly $false                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match "%1" } | Get-Disk | Set-Disk -IsOffline  $false]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Virtual disk %1 has failed a write operation to all its copies.                  
+                  
+You can online the disk by using the following commands in PowerShell:                  
+                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match "%1" } | Get-Disk | Set-Disk -IsReadOnly $false                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match "%1" } | Get-Disk | Set-Disk -IsOffline  $false]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>313</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Virtual disk %1 could not be repaired because there is not enough free space in the storage pool.                  
+                  
+Replace any failed or disconnected physical disks. The virtual disk will then be repaired automatically or you can repair it by running this command in PowerShell:                  
+Get-VirtualDisk | ?{ $_.ObjectId -Match "%1" } | Repair-VirtualDisk]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A path to storage enclosure %1 has been detected. The number of available paths is %2.                  
+This enclosure may be located using the following information:                  
+                  
+Manufacturer: %3                  
+Model Number: %4                  
+Serial Number: %5                  
+Firmware Version: %6                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-StorageEnclosure | ?{ $_.ObjectId -Match "%1" }]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:Int32" outType="xs:int"/>
+  <data name="EnclosureManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureRevision" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A path to storage enclosure %1 has been removed. The number of remaining paths is %2.                  
+This enclosure may be located using the following information:                  
+                  
+Manufacturer: %3                  
+Model Number: %4                  
+Serial Number: %5                  
+Firmware Version: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:Int32" outType="xs:int"/>
+  <data name="EnclosureManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureRevision" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The health of storage enclosure %1 has changed from %2 to %3.                  
+This enclosure may be located using the following information:                  
+                  
+Manufacturer: %4                  
+Model Number: %5                  
+Serial Number: %6                  
+Firmware Version: %7                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-StorageEnclosure | ?{ $_.ObjectId -Match "%1" }]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldHealth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewHealth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnclosureManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureRevision" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A storage enclosure failed to initialize. Return Code: %1.                  
+This enclosure may be located using the following information:                  
+                  
+Manufacturer: %2                  
+Model Number: %3                  
+Serial Number: %4                  
+Firmware Version: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="EnclosureManufacturer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureSerial" inType="win:AnsiString" outType="xs:string"/>
+  <data name="EnclosureRevision" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Transaction" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Transaction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Transaction" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Transaction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Operation started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Operation completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BytesProcessed" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Offset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NvmeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SsdCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HddCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AddCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoveCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailureCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriveIds" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SpaceOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ColumnToReallocate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CopyToReallocate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ColumnMissingFdInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CopyMissingFdInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TotalPathsCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PresentPathsCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigurationData" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TotalPathsCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PresentPathsCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigurationData" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Io</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Offset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Operation" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="State" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Io</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Latency" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Flush</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Flush</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Latency" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Dsm</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RangesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Ranges" count="RangesCount">
+    <data name="StartingOffset" inType="win:UInt64" outType="win:HexInt64"/>
+    <data name="LengthInBytes" inType="win:UInt64" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Dsm</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Latency" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Io</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TopPacketIrp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TopPacket" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriveId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Offset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="HistoryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="History" count="HistoryCount">
+    <data name="Operation" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="State" inType="win:UInt8" outType="xs:unsignedByte"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Io</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TopPacketIrp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TopPacket" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriveId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Latency" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Flush</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TopPacketIrp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TopPacket" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriveId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HistoryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="History" count="HistoryCount">
+    <data name="Operation" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="State" inType="win:UInt8" outType="xs:unsignedByte"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Flush</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TopPacketIrp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TopPacket" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriveId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Latency" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Dsm</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TopPacketIrp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TopPacket" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriveId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RangesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Ranges" count="RangesCount">
+    <data name="StartingOffset" inType="win:UInt64" outType="win:HexInt64"/>
+    <data name="LengthInBytes" inType="win:UInt64" outType="win:HexInt64"/>
+  </struct>
+  <data name="HistoryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="History" count="HistoryCount">
+    <data name="Operation" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="State" inType="win:UInt8" outType="xs:unsignedByte"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Dsm</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TopPacketIrp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TopPacket" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriveId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Packet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Latency" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Log</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LogType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UsedBytes" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Log</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LogType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Lsn" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataType" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Log</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LogType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="StartLsn" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Lsn" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Log</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LogType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Lsn" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Log</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LogType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="StartLsn" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Lsn" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>Destage</Keyword>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Offset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="DataCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsOptimized" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageSpaces-Driver/Performance</Channel>
+                <Level>Information</Level>
+                <Keyword>ReadCache</Keyword>
+                <Message><![CDATA[
+Read cache operation completed.                  
+Id: %1                  
+Operation/Function: %2                  
+Length: %3                  
+Disk Offset: %4                  
+Relative Offset: %5                  
+Cache Offset: %6                  
+Status: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpaceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Operation" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Length" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DiskOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="RelativeOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="CacheOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
