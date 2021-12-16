@@ -1,0 +1,720 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Serial-ClassExtension-V2</Name>
+        <Metadata>
+            <Guid>{EEE173EF-7ED2-45DE-9877-01C70A852FBD}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\SerCx2.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\SerCx2.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10240.16384&amp;FileName=SerCx2.sys&amp;FileVer=10.0.10240.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Serial-ClassExtension-V2</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-Serial-ClassExtension-V2/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Rundown events.</Message>
+                    <Name>Rundown</Name>
+                    <Guid>{42B4EBCF-144E-4AB4-8159-9287E50FB667}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>IOCTL request.</Message>
+                    <Name>IOCTL</Name>
+                    <Guid>{87FFF104-E7DA-47D8-AFC5-2D4066D34F51}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>I/O request.</Message>
+                    <Name>IO</Name>
+                    <Guid>{C48FB460-799F-48E5-A948-C508977D0F1D}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Power state transitions.</Message>
+                    <Name>Power</Name>
+                    <Guid>{929CD881-AB61-4C4B-8CAF-C0A07042E993}</Guid>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>I/O StateMachine operation.</Message>
+                    <Name>StateMachine</Name>
+                    <Value>11</Value>
+                    <Task>3</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>I/O payload operation.</Message>
+                    <Name>Payload</Name>
+                    <Value>12</Value>
+                    <Task>3</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Rundown events that list all devices when the provider is enabled.</Message>
+                    <Name>Rundown</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Plug &amp; Play events.</Message>
+                    <Name>PNP</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>TransferStateMachine events.</Message>
+                    <Name>TransferStateMachine</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Transmit TransferStateMachine events.</Message>
+                    <Name>TransmitTransferStateMachine</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Receive TransferStateMachine events.</Message>
+                    <Name>ReceiveTransferStateMachine</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>I/O request events.</Message>
+                    <Name>IO</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Transmit I/O request events.</Message>
+                    <Name>TransmitIO</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Receive I/O request events.</Message>
+                    <Name>ReceiveIO</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>I/O request payloads.</Message>
+                    <Name>IOPayload</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Transmit I/O request payloads.</Message>
+                    <Name>TransmitIOPayload</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Receive I/O request payloads.</Message>
+                    <Name>ReceiveIOPayload</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IOCTL request events.</Message>
+                    <Name>IOCTL</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Power state transition events.</Message>
+                    <Name>PowerStateTransition</Name>
+                    <Value>4096</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Plug &amp; Play events.</Keyword>
+                <Message><![CDATA[
+SerCx2 loaded (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlDeviceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Keyword>Plug &amp; Play events.</Keyword>
+                <Message><![CDATA[
+SerCx2 failed to load (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlDeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Plug &amp; Play events.</Keyword>
+                <Message><![CDATA[
+SerCx2 unloading.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Rundown events.</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Rundown events that list all devices when the provider is enabled.</Keyword>
+                <Message><![CDATA[
+Starting rundown.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Rundown events.</Task>
+                <Keyword>Rundown events that list all devices when the provider is enabled.</Keyword>
+                <Message><![CDATA[
+Device rundown (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransmitTransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveTransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceInstanceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Rundown events.</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Rundown events that list all devices when the provider is enabled.</Keyword>
+                <Message><![CDATA[
+Rundown complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Plug &amp; Play events.</Keyword>
+                <Message><![CDATA[
+Device created (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransmitTransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveTransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceInstanceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Plug &amp; Play events.</Keyword>
+                <Message><![CDATA[
+Device destroyed (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O StateMachine operation.</Opcode>
+                <Keyword>TransferStateMachine events. Transmit TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+TransmitSM (%1) Event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O StateMachine operation.</Opcode>
+                <Keyword>TransferStateMachine events. Transmit TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+TransmitSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Error</Level>
+                <Task>I/O request.</Task>
+                <Keyword>TransferStateMachine events. Transmit TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+Invalid Transition TransmitSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O StateMachine operation.</Opcode>
+                <Keyword>TransferStateMachine events. Receive TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+ReceiveSM (%1) Event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O StateMachine operation.</Opcode>
+                <Keyword>TransferStateMachine events. Receive TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+ReceiveSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Error</Level>
+                <Task>I/O request.</Task>
+                <Keyword>TransferStateMachine events. Receive TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+Invalid Transition ReceiveSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>IOCTL request.</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>IOCTL request events.</Keyword>
+                <Message><![CDATA[
+Processing %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IOCTL" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IOCTLInputBufferLength" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IOCTLInputBuffer" inType="win:Binary" outType="xs:hexBinary" length="IOCTLInputBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>IOCTL request.</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>IOCTL request events.</Keyword>
+                <Message><![CDATA[
+Completed %2 with %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IOCTL" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="IOCTLOutputBufferLength" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IOCTLOutputBuffer" inType="win:Binary" outType="xs:hexBinary" length="IOCTLOutputBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>I/O request events. Transmit I/O request events.</Keyword>
+                <Message><![CDATA[
+Transmit I/O request for %2 bytes started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>I/O request events. Transmit I/O request events.</Keyword>
+                <Message><![CDATA[
+Transmit I/O request completed (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="Information" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O payload operation.</Opcode>
+                <Keyword>I/O request payloads. Transmit I/O request payloads.</Keyword>
+                <Message><![CDATA[
+Transmit I/O chunk of %3 bytes using %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransferModeEvent" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Payload" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>I/O request events. Receive I/O request events.</Keyword>
+                <Message><![CDATA[
+Receive I/O request for %2 bytes started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>I/O request events. Receive I/O request events.</Keyword>
+                <Message><![CDATA[
+Receive I/O request completed (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="Information" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O payload operation.</Opcode>
+                <Keyword>I/O request payloads. Receive I/O request payloads.</Keyword>
+                <Message><![CDATA[
+Receive I/O chunk of %3 bytes using %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransferModeEvent" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Payload" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Keyword>I/O request events. Receive I/O request events.</Keyword>
+                <Message><![CDATA[
+Saved %2 bytes before exiting D0. Total %3 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BytesSaved" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Power state transitions.</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Power state transition events.</Keyword>
+                <Message><![CDATA[
+Transitioning to system power state %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Power state transitions.</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Power state transition events.</Keyword>
+                <Message><![CDATA[
+Transitioning to device power state %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Power state transitions.</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Power state transition events.</Keyword>
+                <Message><![CDATA[
+System power state transition %2 complete (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Power state transitions.</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Power state transition events.</Keyword>
+                <Message><![CDATA[
+Device power state transition %2 complete (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Keyword>I/O request events.</Keyword>
+                <Message><![CDATA[
+Event %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O StateMachine operation.</Opcode>
+                <Keyword>TransferStateMachine events. Transmit TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+TransmitSM (%1) Event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O StateMachine operation.</Opcode>
+                <Keyword>TransferStateMachine events. Transmit TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+TransmitSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O StateMachine operation.</Opcode>
+                <Keyword>TransferStateMachine events. Receive TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+ReceiveSM (%1) Event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>1</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>I/O request.</Task>
+                <Opcode>I/O StateMachine operation.</Opcode>
+                <Keyword>TransferStateMachine events. Receive TransferStateMachine events.</Keyword>
+                <Message><![CDATA[
+ReceiveSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

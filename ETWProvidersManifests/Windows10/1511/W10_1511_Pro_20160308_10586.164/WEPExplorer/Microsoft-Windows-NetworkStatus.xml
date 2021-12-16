@@ -1,0 +1,62 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkStatus</Name>
+        <Metadata>
+            <Guid>{7868B0D4-1423-4681-AFDF-27913575441E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\networkstatus.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\networkstatus.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=networkstatus.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft Windows Network Status</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-NetworkStatus/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Status</Name>
+                    <Value>101</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Aoac</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkStatus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Keyword>Aoac</Keyword>
+                <Message><![CDATA[
+Network Status Changed (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

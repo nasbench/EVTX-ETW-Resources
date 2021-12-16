@@ -1,0 +1,673 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DirectShow-Core</Name>
+        <Metadata>
+            <Guid>{968F313B-097F-4E09-9CDD-BC62692D138B}</Guid>
+            <ResourceFilePath>C:\Windows\system32\quartz.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\quartz.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=quartz.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DirectShow</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>DirectShowPluginControl</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>DirectShow FilterGraph</Message>
+                    <Path>DirectShowFilterGraph</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Plugin Manager</Message>
+                    <Name>PluginTask</Name>
+                    <Value>42</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph RenderFile</Message>
+                    <Name>RenderFileTask</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Connect</Message>
+                    <Name>ConnectTask</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph RenderPin</Message>
+                    <Name>RenderPinTask</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph AddFilter</Message>
+                    <Name>AddFilterTask</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph AddSourceFilter</Message>
+                    <Name>AddSourceFilterTask</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph NotifyEvent</Message>
+                    <Name>NotifyEventTask</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Pause</Message>
+                    <Name>PauseTask</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Stop</Message>
+                    <Name>StopTask</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Run</Message>
+                    <Name>RunTask</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph ConnectDirect</Message>
+                    <Name>ConnectDirectTask</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Disconnect</Message>
+                    <Name>DisconnectTask</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph GetState</Message>
+                    <Name>GetStateTask</Name>
+                    <Value>111</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph RemoveFilter</Message>
+                    <Name>RemoveFilterTask</Name>
+                    <Value>112</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The file %2 could not be processed by the application %1 because it requires Indeo® Decoders of type %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Initialize:  Found %1 Preferred Filter clsids, %2 Do Not Use Filter clsids.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreferredCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DontUseCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Warning</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Attempt to use Filter clsid %1 marked as do not use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Mark Filter clsid %1 do not use = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Disabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Choosing preferred Filter clsid %1 for subtype %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Subtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Registering preferred Filter clsid %1 for subtype %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Subtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Warning</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Attempt to use Do Not Use VCM codec fourcc %1 DLL name %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FourCC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dllName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Verbose</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Query for preferred subtype %2 found clsid %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Subtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Verbose</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Query for preferred subtype %1 found no clsid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>DirectShowPluginControl</Channel>
+                <Level>Verbose</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Query Do Not Use for clsid %1: do not use = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Disabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph RenderFile</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+RenderFile Enter CFilterGraph(%1) url(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph RenderFile</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+RenderFile Leave CFilterGraph(%1) hr(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Connect</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Connect Enter CFilterGraph(%1) OutputPin(%2,%3) InputPin(%4,%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinOutput" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinOutputName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="pinInput" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinInputName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Connect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Connect Leave CFilterGraph(%1) hr(%2) Major Type(%3) Subtype(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="type" inType="win:GUID" outType="xs:GUID"/>
+  <data name="subtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph RenderPin</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Render Pin Enter CFilterGraph(%1) Pin(%2,%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinOutput" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinOutputName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph RenderPin</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Render Pin Leave CFilterGraph(%1) hr(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph AddFilter</Task>
+                <Message><![CDATA[
+AddFilter CFilterGraph(%1) Filter(%2,%3) Name(%4) hr(%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="filter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="filterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph AddSourceFilter</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+AddSourceFilter Enter CFilterGraph(%1) url(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph AddSourceFilter</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+AddSourceFilter Leave CFilterGraph(%1) Filter(%2,%3) hr(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="filter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="filterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph NotifyEvent</Task>
+                <Message><![CDATA[
+NotifyEvent CFilterGraph(%1) EventCode(%2) Param1(%3) Param2(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="eventCode" inType="win:Int32" outType="xs:int"/>
+  <data name="param1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="param2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Pause</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Pause Enter CFilterGraph(%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Pause</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Pause Leave CFilterGraph(%1) Failing Filter (%2,%3) hr(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="failingFilter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="failingFilterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Stop</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Stop Enter CFilterGraph(%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Stop</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop Leave CFilterGraph(%1) Failing Filter (%2,%3) hr(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="failingFilter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="failingFilterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Run</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Run Enter CFilterGraph(%1) tStart(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="tStart" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Run</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Run Leave CFilterGraph(%1) Failing Filter (%2,%3) hr(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="failingFilter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="failingFilterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph ConnectDirect</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ConnectDirect Enter CFilterGraph(%1) OutputPin(%2,%3) InputPin(%4,%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinOutput" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinOutputName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="pinInput" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinInputName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph ConnectDirect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ConnectDirect Leave CFilterGraph(%1) hr(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph Disconnect</Task>
+                <Message><![CDATA[
+Disconnect CFilterGraph(%1) Pin(%2,%3) hr(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pin" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pinName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph GetState</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+GetState Enter CFilterGraph(%1) Timeout(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph GetState</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+GetState Leave CFilterGraph(%1) State(%2) Failing Filter(%3,%4) hr(%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="state" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="failingFilter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="failingFilterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>DirectShow FilterGraph</Channel>
+                <Level>Information</Level>
+                <Task>DirectShow FilterGraph RemoveFilter</Task>
+                <Message><![CDATA[
+RemoveFIlter CFilterGraph(%1) Filter(%2,%3) hr(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="filter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="filterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

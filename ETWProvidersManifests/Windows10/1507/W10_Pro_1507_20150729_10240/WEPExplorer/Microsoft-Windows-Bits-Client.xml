@@ -1,0 +1,1900 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Bits-Client</Name>
+        <Metadata>
+            <Guid>{EF1CC15B-46C1-414E-BB95-E76B077BD51E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\qmgr.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\qmgr.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\qmgr.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=7.8.10240.16384&amp;FileName=qmgr.dll&amp;FileVer=7.8.10240.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Bits-Client</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Bits-Client/Operational</Message>
+                    <Path>Microsoft-Windows-Bits-Client/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Bits-Client/Analytic</Message>
+                    <Path>Microsoft-Windows-Bits-Client/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>peer neighbor list (server) - listening for clients</Message>
+                    <Name>DiscoveryServerListen</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>listen via WS-Discovery for server announcements</Message>
+                    <Name>DiscoveryClientListen</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>a peer search for a particular URL</Message>
+                    <Name>ContentSearch</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>a particular request within a peer search</Message>
+                    <Name>ContentSearchRequest</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>a particular auth-exchange request</Message>
+                    <Name>AuthExchangeRequest</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ServerContentSearchRequest</Name>
+                    <Value>15</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Resume</Message>
+                    <Name>win:Resume</Name>
+                    <Value>7</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Suspend</Message>
+                    <Name>win:Suspend</Name>
+                    <Value>8</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Send</Message>
+                    <Name>win:Send</Name>
+                    <Value>9</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>replying to an incoming request</Message>
+                    <Name>AcceptPacket</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>denying or ignoring an incoming packet</Message>
+                    <Name>RejectPacket</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Resume</Opcode>
+                <Message><![CDATA[
+BITS job "%2" with ID %1 has been resumed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Suspend</Opcode>
+                <Message><![CDATA[
+BITS job "%2" with ID %1 has been suspended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BITS service created a new job: %1, with owner %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="string2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="string3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The transfer job is complete.
+User: %1
+Transfer job: %2
+Job ID: %3
+Owner: %4
+File count: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobTitle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="jobOwner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="fileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The transfer job is complete.
+User: %1
+Transfer job: %2
+Job ID: %3
+Owner: %4
+File count: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobTitle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="jobOwner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="fileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferred" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferredFromPeer" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job cancelled. User: %1, job: %2, jobID: %3, owner: %4, filecount: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobTitle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="jobOwner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="fileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>peer neighbor list (server) - listening for clients</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS started listening for peer-client requests.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>peer neighbor list (server) - listening for clients</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS was not able to listen for peer-client requests.  The error code was %1.  BITS jobs from other machines will not be able to use this machine as a peer server.  To fix this problem, try stopping the BITS service and restarting it.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>peer neighbor list (server) - listening for clients</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS stopped listening for peer-client requests.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS started listening for peer-server announcements.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS was not able to listen for peer-server announcements.  The error code was %1.  BITS jobs on this machine will not be able to use peer-caching.  To fix this problem, try stopping the BITS service and restarting it.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS stopped listening for peer-server announcements.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Message><![CDATA[
+BITS has sent an inquiry for peer servers.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BITS has read the policy parameters for peer-caching.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="peerCacheEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="peerClientEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="peerServerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="maxPeers" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="maxClients" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="maxContentAge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="maxCacheSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="minCacheDiskSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cacheDenyUrls" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="denyUrlCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="denyUrls" inType="win:UnicodeString" outType="xs:string" count="denyUrlCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Opcode>denying or ignoring an incoming packet</Opcode>
+                <Message><![CDATA[
+The peer list rejected an incoming server announcement. This event is generated if the request is not valid, not if the server is merely in a different Windows domain.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="packet" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fqdn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="sourceAddress" inType="win:Binary" outType="win:SocketAddress" length="80"/>
+  <data name="addressCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="addresses" inType="win:UnicodeString" outType="xs:string" count="addressCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Opcode>replying to an incoming request</Opcode>
+                <Message><![CDATA[
+A new peer was added.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fqdn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="authenticated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="online" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="addressCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="addressLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Opcode>replying to an incoming request</Opcode>
+                <Message><![CDATA[
+A peer was updated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fqdn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="authenticated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="online" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="addressCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="addressLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Message><![CDATA[
+A peer was removed from the peer list.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fqdn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="authenticated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="online" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="addressCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="addressLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Message><![CDATA[
+A cached peer was restored from disk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fqdn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="authenticated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="online" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="addressCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="addressLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Task>listen via WS-Discovery for server announcements</Task>
+                <Message><![CDATA[
+An application cleared the peer list.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="user" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>peer neighbor list (server) - listening for clients</Task>
+                <Opcode>replying to an incoming request</Opcode>
+                <Message><![CDATA[
+BITS has replied to a client's inquiry for peer servers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="sourceAddress" inType="win:Binary" outType="win:SocketAddress" length="80"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>peer neighbor list (server) - listening for clients</Task>
+                <Opcode>denying or ignoring an incoming packet</Opcode>
+                <Message><![CDATA[
+The server received a peer inquiry but rejected it.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="sourceAddress" inType="win:Binary" outType="win:SocketAddress" length="80"/>
+  <data name="packet" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>a peer search for a particular URL</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A peer search for an URL has begun.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="searchId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>a peer search for a particular URL</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A peer search ended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="searchId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>a particular request within a peer search</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A search request is being sent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="searchId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="peer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>a particular request within a peer search</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A search request has completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SearchId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>a particular request within a peer search</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+A search request has completed unsuccessfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SearchId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>a particular request within a peer search</Task>
+                <Message><![CDATA[
+The peer's record %2 matched the request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rangecount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <struct name="Range" count="rangecount">
+    <data name="offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="length" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>peer neighbor list (server) - listening for clients</Task>
+                <Message><![CDATA[
+BITS updated the set of IP addresses used for peer-caching.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="count" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="addresses" inType="win:UnicodeString" outType="xs:string" count="count"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Job cannot be transferred because job transfer cost policy preventing it. job: %1, jobID: %2, filecount: %3, jobs transfer policy: %4, global transfer policy: %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="jobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="jobTransferPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="globalTransferPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The cost state has changed.  NLM reports the following: 
+Cost: %1
+ Usage: %2 MB
+ Cap: %3 MB
+ Throttled: %4
+ Overcap: %5
+ Roaming: %6
+
+The resultant BITS Cost state is : %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="nlmCost" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="usage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cap" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="isThrottled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="isOvercap" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="isRoaming" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="globalTransferPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS started the %2 transfer job that is associated with the %4 URL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="transferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="fileTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="fileLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferred" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS started the %2 transfer job that is associated with the %4 URL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="transferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="fileTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="fileLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferred" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferredFromPeer" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS stopped transferring the %2 transfer job that is associated with the %4 URL. The status code is %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="transferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fileTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="fileLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferred" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="proxy" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS stopped transferring the %2 transfer job that is associated with the %4 URL. The status code is %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="transferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fileTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="fileLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferred" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="proxy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="peerProtocolFlags" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferredFromPeer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AdditionalInfoHr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PeerContextInfo" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bandwidthLimit" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ignoreBandwidthLimitsOnLan" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS stopped transferring the %2 transfer job that is associated with the %4 URL. The status code is %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="transferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fileTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="fileLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferred" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="proxy" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS stopped transferring the %2 transfer job that is associated with the %4 URL. The status code is %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="transferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fileTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="fileLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTotal" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferred" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="proxy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="peerProtocolFlags" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bytesTransferredFromPeer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AdditionalInfoHr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PeerContextInfo" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bandwidthLimit" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ignoreBandwidthLimitsOnLan" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITS job named "%1" belonging to user %2 received inconsistent data while downloading. The URL was "%3". The transfer will continue using a different server.  If the problem occurs often, an administrator should scan the peer server for viruses or corruption in its hard drive.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Owner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITS job %1 is configured to launch %3 after transfer of %2. The notification program returned error %4, BITS will continue to launch the program periodically until it succeeds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Job" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Pgm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITS job %1 is configured to launch %3 after transfer of %2. The service failed to launch the program with error %4, BITS will continue trying to launch the program periodically until it succeeds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Job" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Pgm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS received a peer-cache request from a client at address %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clientAddress" inType="win:Binary" outType="win:SocketAddress" length="16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The client's search request is for "%1" with timestamp %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The cache found a matching cache record with ID %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rangecount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <struct name="Range" count="rangecount">
+    <data name="offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="length" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+While processing the client's request, BITS encountered error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BITS rejected the client's request with HTTP status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="status" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+BITS has finished processing the client request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Send</Opcode>
+                <Message><![CDATA[
+The request includes the client's event-log activity ID.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS search for peer-servers has started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>78</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BITS has encountered %1 error while reading the peer-cache information. BITS will now attempt to delete and re-create the peer-cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>79</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BITS has successfully deleted the peer-cache. All the files cached until this point have been removed. The peer-cache will be re-created again as needed for handling the future requests.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BITS has successfully enabled peer-client and/or peer-server related components.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BITS has encountered %1 error while starting one or more peer-client or peer-server components.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BITS accessed group policy value %1 : %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BITS defaulted group policy value %1 : %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>a particular request within a peer search</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The peer's response to a search was invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="responseXml" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The file ranges associated with a transfer attempt]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="xferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="count" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <struct name="ranges" count="count">
+    <data name="offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="length" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+While transferring %1, BITS encountered error %2 using %3 as the HTTP proxy server.  This may indicate a problem with the proxy server or with the client's network configuration.  If this error occurs frequently, then an administrator should investigate. Details: {Job: %4}, {owner: %5}, {jobid: %6}, {URL: %1}, {xferId: %7}, {proxyServerList: %8}, {hr: %2}.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="proxy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="job" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="owner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="xferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="proxyServerList" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITS job named "%1" was unable to contact any HTTP proxy server in its proxy list.  This may indicate a problem with the proxy servers or with the client's network configuration.  An administrator should verify whether the proxy list is correct.  BITS will periodically try to transfer the job.  The HTTP proxy list is "%6".  The proxy-bypass list is "%7".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="job" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="jobOwner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="transferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="proxyServerList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="proxyBypassList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+While transferring %1, BITS encountered error %7 using %6 as the HTTP proxy server.  The web server or proxy server does not support an HTTP feature required by BITS.  This problem can only be corrected by the administrator of the web server or proxy server.  Details: {job: %1}, {owner: %2}, {jobId: %3}, {url: %4}, {xferId: %5}, {proxyServer: %6}, {hr: %7}, {urlContentLength: %8}, {urlHttpVersion: %9}, {urlRange: %10}]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="jobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobOwner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="xferId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="proxy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fileLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HTTPVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="URLRange" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BITS service provided job credentials in response to an authentication challenge from the %1 server for the %2 transfer job that is associated with the following URL: %3.
+The credentials were accepted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="string2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="string3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BITS service provided job credentials in response to the %4 authentication challenge from the %1 server for the %2 transfer job that is associated with the following URL: %3.
+The credentials for the %5 user were accepted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="job" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="scheme" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="user" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BITS service provided job credentials in response to an authentication challenge from %1 for job %2, url %3. The credentials were rejected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="string2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="string3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BITS service provided job credentials in response to the %4 authentication challenge from the %1 server for the %2 transfer job that is associated with the following URL: %3.
+ The credentials for the %5 user were rejected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="job" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="scheme" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="user" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+A bandwidth slot transition occurred.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="profileType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="currSlotStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="currSlotBandwidthLimit" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="nextSlotStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="nextSlotBandwidthLimit" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The URL "%2" in BITS job "%1" does not support the HTTP HEAD verb, which is required for BITS bandwidth throttling. The URL will be downloaded without throttling.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="jobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The URL "%2" in BITS job "%1" does not support the HTTP Content-Length header, which is required for BITS bandwidth throttling. The URL will be downloaded without throttling.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="jobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A flash-Crowd situation is detected for the URL "%2" in BITS job "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="jobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+High performance property for BITS job "%1" with ID "%2" %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="jobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="isRoaming" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The URL "%2" in BITS job "%1" does not support the HTTP Content-Range header, which is required for BITS bandwidth throttling. The URL will be downloaded without throttling.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="jobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BITS job "%2" with ID "%1" encountered an error %3. %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+BITS service has detected a '%1' system event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SystemEvent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Job is not currently transferring because one of its transfer policies conflicts with current system state. job: %1, jobID: %2, filecount: %3, block reason: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="jobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="jobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BlockReasonErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>281</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is generating its common global data.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>282</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is reading its group policy settings.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>283</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is creating its performance counters.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>284</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is searching for gateway devices.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>285</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is starting the peer-caching client.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>286</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is starting the peer-caching server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>287</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is reading the job list from the disk.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>288</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is updating its list of active network connections.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>289</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is updating its list of logged-in users.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>290</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is creating the Volume Shadow Copy writer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>291</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is registering its COM objects.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The BITS service has started successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITS service has started successfully, but it was delayed long enough that there may be a problem. For more information on the delay, enable the analytic log for BITS, then stop and restart the BITS service.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The peer-cache client startup phase of startup has completed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service is shutting down.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The service shutdown is complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The BITS service loaded the job list from disk.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+It took %1 seconds to write a change file to the BITS job list. If this is excessive, the number of BITS jobs may be larger than this machine can handle quickly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="number" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITS service shut down successfully, but it was delayed for %1 seconds. This might cause delays when you turn off your computer. For more information on the delay, enable the analytic log for BITS, then stop and restart the BITS service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="number" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITS peer cache was unable to find any peers in the network.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The initialization of the peer helper modules failed with the following error:  %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITS peer transfer with the %1 ID for the %2 transfer job resulted in the following error: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JobId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="JobName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorContext" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bytesTransferredFromPeer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PeerProtocolFlags" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Network List Manager Cost Interface is not available on this system. (This is expected on Windows Server.)  BITS will not consider Transfer Policy when scheduling jobs.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16384</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The administrator %4 canceled job "%2" on behalf of %3.  The job ID was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Owner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16385</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+While canceling job "%2", BITS was unable to remove some temporary files. To recover disk space, delete the files listed below.  The job ID was %1.  %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileList" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16386</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+While canceling job "%2", BITS was unable to remove some temporary files. To recover disk space, delete the temporary files. Note: Due to space limitations, not all files are listed.  Check for additional files of the form BITxxx.TMP in the same directory.  The job ID was %1.  %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileList" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16387</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The administrator %3 modified the %4 property of job "%2".  The job ID was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Owner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropertyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16388</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The administrator %4 took ownership of job "%2" from %3.  The job ID was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Owner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16389</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Job "%2" owned by %3 was canceled after being inactive for more than %4 days.  The job ID was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Owner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DayCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16390</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Job "%2" owned by %3 failed to notify its associated application.  BITS will retry in %4 minutes.  The job ID was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Title" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Owner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryWaitTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16391</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BITS job list is not in a recognized format.  It may have been created by a different version of BITS.  The job list has been cleared.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16392</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BITS service failed to start.  Error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16393</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BITS has encountered an error communicating with an Internet Gateway Device.  Please check that the device is functioning properly. BITS will not attempt to use this device until the next system reboot. Error code: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16394</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BITS Peer-caching protocol]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16395</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-Client/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Web Services-Discovery protocol]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16396</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error %3 occurred when BITS tried to change the state of firewall rule "%1" to %2.  Restarting the BITS service may correct the problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="rule" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="enabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16397</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Per-user job limit (%2) specified through Group Policy must be less than or equal to Per-computer job Limit (%3).  To correct the problem, modify BITS Group Policy settings and restart the BITS service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="entityName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="currentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="currentLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16398</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A new BITS job could not be created. The current job count for the user %1 (%2) is equal to or greater than the job limit (%3) specified through group policy.  To correct the problem, complete or cancel the BITS jobs that haven't made progress by looking at the error, and restart the BITS service. If this error recurs, contact your system administrator and increate the per-user and per-computer Group Policy job limits.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="entityName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="currentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="currentLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16400</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A new BITS job could not be created. The current job count for this computer (%2) is equal to or greater than the per-computer job limit (%3) specified through Group Policy.  To correct the problem, complete or cancel the BITS jobs that haven't made progress by looking at the error and restarting the BITS service. If this error recurs, contact your system administrator and increase the per-computer Group Policy job limits.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="entityName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="currentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="currentLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16401</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BITS could not add file(s) to %1 job. The file count for %1 job (%2) has exceeded the per-job file limit (%3) specified through Group Policy.  To correct the problem, increase the Computer’s per-job file limit Group Policy settings and restart the BITS service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="entityName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="currentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="currentLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16402</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BITS could not add ranges to %1 file. The range count for %1 file (%2) has exceeded the per-file range limit (%3) specified through group policy.  To correct the problem, increase the per-file range limit Group Policy setting and restart the BITS service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="entityName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="currentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="currentLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16404</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BITS service has detected an exception, Function: %1, Line: %2 Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="function" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="line" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16405</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A bandwidth profile is not configured correctly. The value of a Group Policy setting is missing or is not within the allowed range. Make sure that you configure the Group Policy settings correctly, and then try again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubKeyOrValueName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17005</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BITS service is configured to run as %1. BITS works correctly only when configured to run as the system account.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="string2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="string3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

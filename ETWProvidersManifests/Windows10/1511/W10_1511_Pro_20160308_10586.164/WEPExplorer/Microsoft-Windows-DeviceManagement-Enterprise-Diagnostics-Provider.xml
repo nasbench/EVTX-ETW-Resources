@@ -1,0 +1,1445 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider</Name>
+        <Metadata>
+            <Guid>{3DA494E4-0FE2-415C-B895-FB5265C5C83B}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dmenterprisediagnostics.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dmenterprisediagnostics.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=dmenterprisediagnostics.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Admin</Message>
+                    <Path>Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>None</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Debug</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Trace</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Enroll: Certificate policy request sent successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Certificate policy request sending failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Enroll: Certificate policy response processed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Failed to receive or parse certificate response. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Enroll: Certificate enrollment request sent successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Certificate enrollment request sending failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Enroll: Certificate enrollment response parsed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Failed to receive or parse certificate enroll response. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Failed to install client certificate. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Enroll: OMA-DM client configuration succeeds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: OMA-DM client configuration failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: OMA-DM polling schedule set up failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: OMA-DM polling auxiliary schedule set up failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: OMA-DM polling second auxiliary schedule set up failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Client failed to set up the manual MDM client certificate renewal schedule. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Certificate renew failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+SCEP: Certificate enroll failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SCEP: Certificate request generated successfully. Enhanced Key Usage: (%1), NDES URL: (%2), Container Name: (%3), KSP Setting: (%4), Store Location: (%5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SCEP: Certificate request sent successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SCEP: Certificate response received successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SCEP: Certificate installed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Push: Push set up failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Push: Push succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Unenroll: Unenroll alert sent to server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Unenroll: Error sending unenroll alert to server. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Server Returned Fault/Code/Subcode/Value=(%1) Fault/Reason/Text=(%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Unenroll: Authentication failed. Failed to get token from STS. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Unenroll: Authentication successful: Got token from STS.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Enrollment via UX failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Failed to parse server provisioning XML. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Provisioning failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Enroll: Provisioning succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Enroll: Server context (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Unenroll: Unenrollment initiated by server (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Unenroll: Unenrollment initiated by user through UI. Enrolled server (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM message sent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM message failed to be sent. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM server message received and parsed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM server message parsing failed. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM client failed to connect to the server. Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM client started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM session started for user: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Session: Alert type (%1) and event type (%2) sent to server to indicate user login status.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM session started for EnrollmentID (%1) with server: (%2), Server version: (%3), Client Version: (%4), Origin: (%5), Initiator: (%6), Mode: (%7), SessionID: (%8), Authentication Type: (%9).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UInt2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM session ended with status: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Session: OMA-DM client stopped with status: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM ConfigurationManager: Command failure status. Configuration Source ID: (%1), Enrollment Name: (%2), Provider Name: (%3), Command Type: (%4), CSP URI: (%5), Result: (%6).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM ConfigurationManager: Command failure status. Configuration Source ID: (%1), Enrollment Name: (%2), Provider Name: (%3), Command Type: (%4), CSP URI: (%5), Result: (%6).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM ConfigurationManager: License check. URI: (%1), SKU: (%2), Result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM ConfigurationManager: CSP Allow check. URI: (%1), Allowed: (%2), Result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>600</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM ResourceManager: Resource URI: (%1), Result: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>700</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM Registration: Unregister device invoked by exe: (%1), Result: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>800</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Dedicated WNF: (%2, %3) published for Policy: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Dedicated WNF: (%2, %3) published for Policy: (%1), Result:(%4) %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Area WNF: (%2, %3) published for Area: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>803</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Area WNF: (%2, %3) published for Area: (%1), Result:(%4) %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>804</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Dedicated WNF WNF_ENTR_REQUIRE_DEVICE_ENCRYPTION_POLICY_VALUE_CHANGED published.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>805</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Dedicated WNF WNF_ENTR_REQUIRE_DEVICE_ENCRYPTION_POLICY_VALUE_CHANGED published. Result:(%1) %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>806</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Merge string, Area: (%1), Policy: (%2), EnrollmentID requesting merge: (%3), Result:(%4) %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>807</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Merge binary, Area: (%1), Policy: (%2), EnrollmentID requesting merge: (%3), Result:(%4) %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>808</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Merge int, Area: (%1), Policy: (%2), EnrollmentID requesting merge: (%3), Result:(%4) %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>809</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Set policy int, Policy: (%1), Area: (%2), EnrollmentID requesting set: (%3), Current User: (%4), Int: (%5), Enrollment Type: (%6), Scope: (%7), Result:(%8) %9.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt4" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt5" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>810</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Set policy string, Policy: (%1), Area: (%2), EnrollmentID requesting set: (%3), Current User: (%4), String: (%5), Enrollment Type: (%6), Scope: (%7), Result:(%8) %9.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt4" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>811</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Set policy binary, Policy: (%1), Area: (%2), EnrollmentID requesting set: (%3), Current User: (%4), Enrollment Type: (%5), Scope: (%6), Result:(%7) %8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt4" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>812</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Set policy, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Scope: (%5), Result:(%6) %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>813</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Set policy int, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Int: (%5), Enrollment Type: (%6), Scope: (%7).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>814</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Set policy string, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), String: (%5), Enrollment Type: (%6), Scope: (%7).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>815</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Set policy binary, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Enrollment Type: (%5), Scope: (%6).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>817</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Merge policy precheck apply call. Policy: (%1), Area: (%2), int value: (%3) Result:(%4) %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>818</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Delete policy, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Scope: (%5), Result:(%6) %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>819</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Delete policy, Policy: (%1), Area: (%2), EnrollmentID requesting merge: (%3), Current User: (%4), Scope: (%5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>820</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Set policy precheck precheck call. Policy: (%1), Area: (%2), int value: (%3) Result:(%4) %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HexInt2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>821</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Merge of policy did not complete successfully, Policy: (%1), Area: (%2), Result:(%3) %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>822</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Acquiring the merge lock, Policy: (%1), Area: (%2), Result:(%3) %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>823</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Create dynamic policy metadata, Policy: (%1), Area: (%2), Result:(%3) %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>824</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Per user policy has device wide scope specified, Policy: (%1), Area: (%2), Result:(%3) %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>825</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Device wide policy has user wide scope specified, Policy: (%1), Area: (%2), Result:(%3) %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>826</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: SLAPI data not found, Policy: (%1), Area: (%2), Result:(%3) %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>827</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Policy is rejected by licensing, Policy: (%1), Area: (%2), Result:(%3) %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>828</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MDM PolicyManager: Policy is rejected by licensing, Policy: (%1), Area: (%2), Result:(%3) %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HexInt3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Phone Reset: Phone reset initiated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: New node initialized, type: (%1), name: (%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Children queried, type: (%1), count: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UInt2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node added, type: (%1), uri: (%2), result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node delete child, type: (%1), uri: (%2), result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1504</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node clear, type: (%1), Result: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1505</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node get value, type: (%1), Result: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1506</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node set value, type: (%1), Result: (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1507</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Task>None</Task>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node set value failed to set the wlan profile, error: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1508</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>None</Task>
+                <Keyword>Trace</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node destructed, type: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Get Node, Result: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Task>None</Task>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node set value failed to set proxy, dwError: (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1511</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>None</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+WiFiConfigurationServiceProvider: Node initialize, segments: (%1), uri: (%2), Result: (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UInt1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

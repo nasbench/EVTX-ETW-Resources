@@ -1,0 +1,433 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-User Device Registration</Name>
+        <Metadata>
+            <Guid>{23B8D46B-67DD-40A3-B636-D43E50552C6D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dsreg.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dsreg.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=dsreg.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-User Device Registration/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-User Device Registration/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The discovery request send operation was successful.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The discovery operation callback was successful. 
+Server response was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The initialization of the join request was successful. Inputs:
+ JoinRequest: %1
+ Domain:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JoinRequestInput" inType="win:Int32" outType="xs:int"/>
+  <data name="DomainInput" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The get join response operation was successful. Inputs:
+ AuthToken: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AuthToken" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The get join response operation callback was successful. Server response was:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerResponse" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The complete join response operation was successful.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The post join tasks for the AAD Authentication Package completed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The discovery request send operation failed with exit code: %1. Inputs:
+ Domain: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The discovery operation callback failed with exit code: %1. The server returned HTTP status: %2. 
+Server response was:
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServerMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The initialization of the join request failed with exit code: %1. Inputs:
+ JoinRequest: %2 
+ Domain:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="JoinRequestInput" inType="win:Int32" outType="xs:int"/>
+  <data name="DomainInput" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The get join response operation failed with exit code: %1. Inputs:
+ AuthToken: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ActivityId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The get join response operation callback failed with exit code: %1. 
+Activity Id: %2 
+The server returned HTTP status: %3 
+Server response was: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ActivityId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServerResponse" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The complete join response operation failed with exit code: %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The post join tasks for the AAD Authentication Package failed with exit code: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Microsoft Passport key was successfully registered with Azure AD. Key ID: %1. UPN: %2. Attestation: %3. Client request ID: %4. Server request ID: %5.
+Server response: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="UPN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Attestation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientRequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerRequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerResponse" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NGC key registration failed. Exit code: %1. Client request ID: %2. Server request ID: %3. Error code: %4. Server error message: %5. Recommended client response: %6.
+Server response: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ClientRequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerRequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RecommendedClientResponse" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerResponse" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The NGC key registration request was successfully sent. User email: %1.
+Auth token: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Email" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthToken" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The NGC key registration initialization operation failed. Exit code: %1. User email: %2.
+Auth token: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Email" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthToken" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Automatic registration failed at join phase.  Exit code: %1. Server error: %2. Tenant Name %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ServerErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TenantName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Automatic registration failed at authentication phase.  Unable to acquire access token.  Exit code: %1. Server error: %2. Tenant Type: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ServerErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TenantType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Automatic registration Succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Automatic registration failed. Failed to lookup the registration service information from Active Directory. Exit code: %1. See http://go.microsoft.com/fwlink/?LinkId=623042]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+This Device is joined to Azure AD, however, the user did not sign-in with an Azure AD account. Microsoft Passport provisioning will not be enabled. User: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>502</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Device Registration/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
