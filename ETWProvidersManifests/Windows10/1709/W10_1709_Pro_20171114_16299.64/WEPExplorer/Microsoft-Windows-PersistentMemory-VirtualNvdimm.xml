@@ -1,0 +1,317 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PersistentMemory-VirtualNvdimm</Name>
+        <Metadata>
+            <Guid>{3244F41A-E7E6-5F92-8C62-6CA864CB8CEA}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\vnvdimm.sys</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\drivers\vnvdimm.sys</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\vnvdimm.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=vnvdimm.sys&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 failed to start. %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NVDIMM %1 started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered an error that may have caused data loss.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaselineUnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NVDIMM %1 notified the driver that its health state changed. See the Details tab for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+The driver could not confirm that the NVDIMM %1 is healthy. To protect your data, the NVDIMM is now in read-only mode. Consider backing up your data to another disk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NtStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered a serious problem. All data that was saved to this NVDIMM may be lost when the computer shuts down or restarts. Consider backing up your data to another disk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The problem with NVDIMM %1 was resolved. Data that was saved to this NVDIMM will not be lost when the computer shuts down or restarts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered a serious problem. Data that was recently saved to this NVDIMM may be lost when the computer shuts down or restarts. Consider backing up your data to another disk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The problem with NVDIMM %1 was resolved. Data that was saved to this NVDIMM will not be lost when the computer shuts down or restarts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+NVDIMM %1 encountered a critical problem. Windows may not be able to read or write to this NVDIMM.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The critical problem with NVDIMM %1 was resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NVDIMM %1 is in a degraded health state and may soon encounter serious problems. Consider backing up your data to another disk. Use the Get-PhysicalDisk command to see more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>900</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-VirtualNvdimm/Diagnostic</Channel>
+                <Message><![CDATA[
+NVDIMM %1 logged:             
+             
+ %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

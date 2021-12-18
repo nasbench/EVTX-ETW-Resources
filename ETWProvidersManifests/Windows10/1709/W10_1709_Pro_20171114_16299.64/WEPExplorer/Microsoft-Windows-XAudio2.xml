@@ -1,0 +1,411 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-XAudio2</Name>
+        <Metadata>
+            <Guid>{1EE3ABDB-C1FC-4B43-9E56-11064ABBA866}</Guid>
+            <ResourceFilePath>C:\Windows\System32\XAudio2_9.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\XAudio2_9.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=XAudio2_9.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft Windows XAudio2 debug logging</Message>
+                    <Path>Microsoft-Windows-XAudio2/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft Windows XAudio2 performance metrics</Message>
+                    <Path>Microsoft-Windows-XAudio2/Performance</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+                <Level>
+                    <Message>Performance measurements</Message>
+                    <Name>Performance</Name>
+                    <Value>16</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Initialize</Message>
+                    <Name>Initialize</Name>
+                    <Guid>{73811BCF-9CED-4CB6-9D4C-C65E4BA7572F}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Shutdown</Message>
+                    <Name>Shutdown</Name>
+                    <Guid>{3D1C4BCD-A473-460E-9922-3B707E70C42F}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Source Voice</Message>
+                    <Name>SourceVoice</Name>
+                    <Guid>{8A219642-408E-46B5-BE4C-EC303F83BB10}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Submix Voice</Message>
+                    <Name>SubmixVoice</Name>
+                    <Guid>{620390B3-16FE-4F0D-802B-1B0B01C79069}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Mastering Voice</Message>
+                    <Name>MasteringVoice</Name>
+                    <Guid>{86975019-1EC1-4A78-9006-FE0304C6A04A}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Processing</Message>
+                    <Name>Processing</Name>
+                    <Guid>{1A107403-FF22-4548-8A24-F85F95E258ED}</Guid>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Create</Message>
+                    <Name>Create</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Performance Warning</Message>
+                    <Name>PerformanceWarning</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Information</Level>
+                <Task>Initialize</Task>
+                <Message><![CDATA[
+XAudio2 initialized at %1 on processor(s) %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Processors" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Error</Level>
+                <Task>Initialize</Task>
+                <Message><![CDATA[
+CPU does not meet minimum requirement]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Information</Level>
+                <Task>Shutdown</Task>
+                <Message><![CDATA[
+XAudio2 at %1 destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Warning</Level>
+                <Task>Shutdown</Task>
+                <Message><![CDATA[
+Cleaned up %1 source voices, %2 submix voices and %3 mastering voices]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceVoiceCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SubmixVoiceCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MasteringVoiceCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Verbose</Level>
+                <Task>Submix Voice</Task>
+                <Opcode>Create</Opcode>
+                <Message><![CDATA[
+Submix voice created at %1: processing stage = %2, channels = %3, sample rate = %4Hz]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ProcessingStage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Channels" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SampleRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Warning</Level>
+                <Task>Submix Voice</Task>
+                <Opcode>Create</Opcode>
+                <Message><![CDATA[
+Sample rate %1Hz adjusted to %2Hz (submix rates must be multiples of %3 on this platform)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OriginalHz" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewHz" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Quantum" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Verbose</Level>
+                <Task>Mastering Voice</Task>
+                <Opcode>Create</Opcode>
+                <Message><![CDATA[
+Mastering voice created at %1: channels = %2, sample rate = %3Hz, output to %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Channels" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SampleRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RendererId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Warning</Level>
+                <Task>Mastering Voice</Task>
+                <Opcode>Create</Opcode>
+                <Message><![CDATA[
+Sample rate %1Hz adjusted to %2Hz (mastering rates must be multiples of %3 on this platform)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OriginalHz" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewHz" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Quantum" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Information</Level>
+                <Task>Mastering Voice</Task>
+                <Opcode>Create</Opcode>
+                <Message><![CDATA[
+Mastering voice at %1 connected to %4 device at %3Hz, %2 channels]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Channels" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SampleRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RendererId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Verbose</Level>
+                <Task>Mastering Voice</Task>
+                <Opcode>Create</Opcode>
+                <Message><![CDATA[
+Supplied device interface ID(%1) converted to endpoint ID (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+XAudio2 critical error: %1; the XAudio2 engine should be released and re-created]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>96</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Warning</Level>
+                <Task>Processing</Task>
+                <Opcode>Performance Warning</Opcode>
+                <Message><![CDATA[
+Spent %1ms in %2 callbacks]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Time" inType="win:Float" outType="xs:float"/>
+  <data name="Callback" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Warning</Level>
+                <Task>Processing</Task>
+                <Opcode>Performance Warning</Opcode>
+                <Message><![CDATA[
+Spent %1ms in audio thread; XAudio2 possibly overloaded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Warning</Level>
+                <Task>Processing</Task>
+                <Opcode>Performance Warning</Opcode>
+                <Message><![CDATA[
+Glitch at output sample %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Warning</Level>
+                <Task>Source Voice</Task>
+                <Opcode>Performance Warning</Opcode>
+                <Message><![CDATA[
+Voice at %1 starved: no more source buffers are available, but no end-of-stream marker was received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Information</Level>
+                <Task>Processing</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+XAudio2 engine started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>128</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 debug logging</Channel>
+                <Level>Information</Level>
+                <Task>Processing</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+XAudio2 engine stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>256</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows XAudio2 performance metrics</Channel>
+                <Level>Performance measurements</Level>
+                <Task>Processing</Task>
+                <Message><![CDATA[
+MinimumCyclesPerQuantum: %1 MaximumCyclesPerQuantum: %2 GlitchesSinceEngineStarted: %3 CpuUsage: %4 TotalMemoryUsage: %5 ActiveSourceVoices: %6 TotalSourceVoices: %7 ActiveSubmixVoices: %8 ActiveResamplers: %9 ActiveMatrixMixers: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MinimumCyclesPerQuantum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaximumCyclesPerQuantum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GlitchesSinceEngineStarted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CpuUsage" inType="win:Float" outType="xs:float"/>
+  <data name="LatencyInSamples" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalMemoryUsage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveSourceVoices" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalSourceVoices" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveSubmixVoices" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveResamplers" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveMatrixMixers" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

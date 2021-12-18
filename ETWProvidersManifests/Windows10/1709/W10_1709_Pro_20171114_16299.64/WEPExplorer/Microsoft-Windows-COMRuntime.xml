@@ -1,0 +1,494 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-COMRuntime</Name>
+        <Metadata>
+            <Guid>{BF406804-6AFA-46E7-8A48-6C357E1D6D61}</Guid>
+            <ResourceFilePath>C:\Windows\system32\combase.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\combase.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=combase.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-COMRuntime</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-COMRuntime/Tracing</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-COMRuntime/Activations</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-COMRuntime/MessageProcessing</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>CliModalLoopDelay</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ComCallDelay</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DropKeyboardMessage</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DropMouseMessage</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DropQueueSyncMessage</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DropPointerMessage</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PrematureStubRundown</Name>
+                    <Value>7</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CliModalLoop</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ComCallWaitAnalysis</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DropInputMessage</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PrematureStubRundown</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-COMRuntime/Tracing</Channel>
+                <Level>Information</Level>
+                <Task>CliModalLoopDelay</Task>
+                <Keyword>CliModalLoop</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BlockTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-COMRuntime/Tracing</Channel>
+                <Level>Information</Level>
+                <Task>ComCallDelay</Task>
+                <Keyword>ComCallWaitAnalysis</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CallTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CallResult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TargetThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetMethod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetInterface" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-COMRuntime/MessageProcessing</Channel>
+                <Level>Information</Level>
+                <Task>DropKeyboardMessage</Task>
+                <Keyword>DropInputMessage</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApartmentKind" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-COMRuntime/MessageProcessing</Channel>
+                <Level>Information</Level>
+                <Task>DropMouseMessage</Task>
+                <Keyword>DropInputMessage</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApartmentKind" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-COMRuntime/MessageProcessing</Channel>
+                <Level>Information</Level>
+                <Task>DropQueueSyncMessage</Task>
+                <Keyword>DropInputMessage</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApartmentKind" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-COMRuntime/MessageProcessing</Channel>
+                <Level>Information</Level>
+                <Task>DropPointerMessage</Task>
+                <Keyword>DropInputMessage</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApartmentKind" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Message" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-COMRuntime/Tracing</Channel>
+                <Level>Information</Level>
+                <Task>PrematureStubRundown</Task>
+                <Keyword>PrematureStubRundown</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Method" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IPID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CallType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18205</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+DCOM server attempted to listen on an invalid endpoint. Protocol Sequence:  %1 Endpoint: %2 Flags:    %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18207</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The machine wide limit settings do not grant %1 %2 permission for the COM Server application with CLSID 
+%3
+ and APPID 
+%4
+ to the user %5\%6 SID (%7) from address %8 running in the application container %9 SID (%10). This security permission can be modified using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param10" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18208</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %1 permission settings do not grant %2 %3 permission for the COM Server application with CLSID 
+%4
+ and APPID 
+%5
+ to the user %6\%7 SID (%8) from address %9 running in the application container %10 SID (%11). This security permission can be modified using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param10" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param11" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18209</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %1 permission settings do not grant %2 access permission to the COM Server application %3 with APPID 
+%4
+ to the user %5\%6 SID (%7) from address %8 running in the application container %9 SID (%10). This security permission can be modified using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param10" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18210</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The application-specific permission settings do not grant %1 access permission to the COM Server application %2 with APPID 
+%3
+ to the user %4\%5 SID (%6) from address %7 running in the application container %8 SID (%9). The application set this security permission programmatically; to modify this security permission contact the application vendor.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18211</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The machine wide limit settings do not grant %1 access permission to the COM Server application %2 with APPID 
+%3
+ to the user %4\%5 SID (%6) from address %7 running in the application container %8 SID (%9). This security permission can be modified using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18212</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The machine wide %1 %2 security descriptor is invalid. It contains Access Control Entries with permissions that are invalid. The requested action was therefore not performed. This security permission can be corrected using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18213</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The launch and activation security descriptor for the COM Server application with APPID 
+%1
+ is invalid. It contains Access Control Entries with permissions that are invalid. The requested action was therefore not performed. This security permission can be corrected using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18214</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The %1 access security descriptor for the COM Server application %2 with APPID 
+%3
+ is invalid. It contains Access Control Entries with permissions that are invalid. The requested action was therefore not performed. This security permission can be corrected using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18215</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The application-specific access security descriptor for the COM Server application %1 with APPID 
+%2
+ is invalid. It contains Access Control Entries with permissions that are invalid. The requested action was therefore not performed.  The application set this security permission programmatically; to modify this security permission contact the application vendor.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18216</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The machine wide group policy %1 Limits security descriptor is invalid. The security descriptor is defined as an invalid Security Descriptor Definitions Language (SDDL) string. The requested action was therefore not performed. Please contact your administrator to get the security descriptor corrected in the Group Policy settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18219</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The machine wide limit settings do not grant %1 %2 permission for COM Server applications to the user %3\%4 SID (%5) from address %6 running in the application container %7 SID (%8). This security permission can be modified using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221243692</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OLE (Object Linking and Embedding) in the application "%1" was trying to convert embedded content in a document; however, OLE no longer supports the presentation format for the embedded content.  Newer versions of this application may support this presentation format natively.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18221</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The attempt to connect to the RPCSS service was denied access for the COM Server application %1 to the user %2\%3 SID (%4) running in the application container %5 SID (%6). The most likely cause is that the machine wide Access Limits do not grant the user or application local access permissions. The Access Limits can be modified using the Component Services administrative tool.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32769</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-COMRuntime/Activations</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

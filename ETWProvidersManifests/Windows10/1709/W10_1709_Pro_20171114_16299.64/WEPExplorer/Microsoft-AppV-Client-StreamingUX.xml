@@ -1,0 +1,427 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-AppV-Client-StreamingUX</Name>
+        <Metadata>
+            <Guid>{28CB46C7-4003-4E50-8BD9-442086762D12}</Guid>
+            <ResourceFilePath>C:\Windows\system32\appvetwstreamingux.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\appvetwstreamingux.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=appvetwstreamingux.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-AppV-Client-Streamingux/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to create the streaming UX process failed. Path = %1 ErrorCode = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="astring" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="uint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The streaming ux process was created successfully. Path = %1 Pid = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="astring" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="uint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Stopping the streaming ux process. Pid = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to stop the streaming ux process failed. Pid = %1 ErrorCode = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="uint642" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The streaming ux process is being created with CreateProcess. Path = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="astring" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The streaming ux process is being created with CreateProcessAsUser. Path = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="astring" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>22</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to stop the data retrieval thread failed. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>23</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Polling performance counter data has stopped due to all packages primary feature block already being fully loaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>24</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Polling performance counter data has stopped due to data being unchanged in recent polls.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+An attempt to create the data retrieval stop event failed. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to create the thread for performance counter data retrieval failed. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The current performance counter query state is invalid. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to open a live performance counter query failed. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to add a performance counter to the query failed. CounterPath = %1 ErrorCode = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="astring" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="uint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to collect query data failed. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to get the raw counter value failed. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+An attempt to get the formatted counter values failed. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Package with ID %1 and versionId %2 is being loaded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="packageId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="versionId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Package with ID %1 and versionId %2 percentage of FB1 downloaded is now %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="packageId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="versionId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="percentageComplete" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to launch the process is the current user's sesssion failed. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+An instance of AppVStreamingUX.exe is already running for this user.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+AppVStreamingUX.exe was unable to register itself for application restart. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uint32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+An attempt to set the appropriate security on the AppVStreamingUX mutex failed. Exception: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="astring" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Deimpersonation for data retrieval failed. Streaming UX notifications are inactive. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Reimpersonation for data retrieval failed. Streaming UX notifications are inactive. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An attempt to start data retrieval failed. Streaming UX notifications are inactive. ErrorCode = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>22</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data retrieval for performance counter data was started successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>140</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AppVClientUX.exe failed to launch from the streaming ux.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-AppV-Client-Streamingux/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Publishing refresh status changed:
+ Server: %1
+ Global: %2
+ Packages: Total %3, Succeeded %4, Failed %5
+ Groups: Total %6, Succeeded %7, Failed %8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="global" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="packageTotal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="packageSucceeded" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="packageFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="groupTotal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="groupSucceeded" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="groupFailed" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,718 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Disk</Name>
+        <Metadata>
+            <Guid>{6B4DB0BC-9A3D-467D-81B9-A84C6F2F3D40}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\disk.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\disk.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Disk/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Storage-Disk/Diagnose</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Storage-Disk/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Storage-Disk/Analytic</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Storage-Disk/Operational</Path>
+                    <Index>4</Index>
+                    <Id>20</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Storage-Disk/Admin</Path>
+                    <Index>5</Index>
+                    <Id>21</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Disk Cache Information</Message>
+                    <Name>TaskDiskCacheInfo</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Class</Message>
+                    <Name>Class</Name>
+                    <Value>200</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>OpCodeDiskCacheInfo</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dispatching of request.</Message>
+                    <Name>Dispatch</Name>
+                    <Value>100</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Completion of request.</Message>
+                    <Name>Completion</Name>
+                    <Value>101</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Request timeout handling.</Message>
+                    <Name>Timeout</Name>
+                    <Value>102</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Request error handling.</Message>
+                    <Name>Error</Name>
+                    <Value>103</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Retry handling.</Message>
+                    <Name>Retry</Name>
+                    <Value>104</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Miniport handling of request.</Message>
+                    <Name>Miniport</Name>
+                    <Value>105</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Queue-related operation.</Message>
+                    <Name>Queue</Name>
+                    <Value>106</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>State transition.</Message>
+                    <Name>StateTransition</Name>
+                    <Value>107</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DiskCache</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IO Performance measurement</Message>
+                    <Name>IO_Performance</Name>
+                    <Value>1048576</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Read request</Message>
+                    <Name>Read</Name>
+                    <Value>2097152</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Write request</Message>
+                    <Name>Write</Name>
+                    <Value>4194304</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Paging Read request</Message>
+                    <Name>PagingRead</Name>
+                    <Value>8388608</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Paging Write request</Message>
+                    <Name>PagingWrite</Name>
+                    <Value>16777216</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Low memory Read request</Message>
+                    <Name>LowMemoryRead</Name>
+                    <Value>33554432</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Low memory write request</Message>
+                    <Name>LowMemoryWrite</Name>
+                    <Value>67108864</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Non-Read/Write request</Message>
+                    <Name>NonReadWrite</Name>
+                    <Value>134217728</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Pass-Through request</Message>
+                    <Name>PassThrough</Name>
+                    <Value>268435456</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Flush request</Message>
+                    <Name>Flush</Name>
+                    <Value>536870912</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Device I/O control request</Message>
+                    <Name>IOCTL</Name>
+                    <Value>1073741824</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>WMI request</Message>
+                    <Name>WMI</Name>
+                    <Value>2147483648</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Power request</Message>
+                    <Name>Power</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>PnP request</Message>
+                    <Name>PnP</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Device enumeration handling</Message>
+                    <Name>Enum</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Queue-related operation</Message>
+                    <Name>Queue</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Interrupt Service Routine processing</Message>
+                    <Name>ISR</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Deferred Procedure Call handling</Message>
+                    <Name>DPC</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Timer-related operation</Message>
+                    <Name>Timer</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Bus protocol specific operation</Message>
+                    <Name>Protocol</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Target-related operation</Message>
+                    <Name>Target</Name>
+                    <Value>1099511627776</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Controller or Host Bus Adapter related operation</Message>
+                    <Name>Adapter</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Retry handling</Message>
+                    <Name>Retry</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Timeout handling</Message>
+                    <Name>Timeout</Name>
+                    <Value>8796093022208</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Reset handling</Message>
+                    <Name>ReSet</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Activity between port and miniport</Message>
+                    <Name>MiniportInterface</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Testing-specific processing</Message>
+                    <Name>Test</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Disk/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Disk Cache Information</Task>
+                <Opcode>OpCodeDiskCacheInfo</Opcode>
+                <Keyword>DiskCache</Keyword>
+                <Message><![CDATA[
+Disk Cache Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReadCacheEnabled" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="WriteCacheEnabled" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ReadRetentionPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="WriteRetentionPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PrefetchScalar" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DisablePrefetchTransferLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Minimum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Maximum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MaximumBlocks" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Keyword>IO Performance measurement</Keyword>
+                <Message><![CDATA[
+Request servicing time taken by lower driver stack(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>Read request</Keyword>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>Write request</Keyword>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>Read request Paging Read request</Keyword>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>Write request Paging Write request</Keyword>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>Read request Low memory Read request</Keyword>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>Write request Low memory write request</Keyword>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Completion of request.</Opcode>
+                <Keyword>Read request Write request Paging Read request Paging Write request Low memory Read request Low memory write request</Keyword>
+                <Message><![CDATA[
+Completing an IO (read/write) request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ScsiStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="SenseKey" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSense" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSenseQ" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Retry handling.</Opcode>
+                <Keyword>Read request Write request Paging Read request Paging Write request Low memory Read request Low memory write request</Keyword>
+                <Message><![CDATA[
+Retrying an IO (read/write) request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CurrentRetryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Keyword>Flush request</Keyword>
+                <Message><![CDATA[
+Flush request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Bus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Target" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LUN" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Completion of request.</Opcode>
+                <Keyword>Flush request</Keyword>
+                <Message><![CDATA[
+Flush request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ScsiStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="SenseKey" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSense" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSenseQ" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>Device I/O control request</Keyword>
+                <Message><![CDATA[
+Dispatching an IOCTL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Parameter" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>WMI request</Keyword>
+                <Message><![CDATA[
+Dispatching a WMI request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Parameter" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Completion of request.</Opcode>
+                <Keyword>Device I/O control request WMI request</Keyword>
+                <Message><![CDATA[
+Completing a non-read/write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Message><![CDATA[
+Dispatching a power request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="OldState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NewState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Action" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PowerStateContext" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Completion of request.</Opcode>
+                <Message><![CDATA[
+Completing a power request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Message><![CDATA[
+Dispatching a PnP request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Completion of request.</Opcode>
+                <Message><![CDATA[
+Completing a PnP request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Completion of request.</Opcode>
+                <Message><![CDATA[
+Completing a PnP enumeration request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NumberOfChildren" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Queue-related operation.</Opcode>
+                <Message><![CDATA[
+Performing a queue-related operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueTag" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Operation" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Storage-Disk/Diagnose</Channel>
+                <Level>Information</Level>
+                <Task>Class</Task>
+                <Opcode>Dispatching of request.</Opcode>
+                <Keyword>Pass-Through request Device I/O control request</Keyword>
+                <Message><![CDATA[
+Dispatching a PassThrough request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Parameter" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

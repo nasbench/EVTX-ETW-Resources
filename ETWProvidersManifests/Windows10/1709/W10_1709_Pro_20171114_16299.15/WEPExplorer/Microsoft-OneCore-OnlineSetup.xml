@@ -1,0 +1,180 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-OneCore-OnlineSetup</Name>
+        <Metadata>
+            <Guid>{41862974-DA3B-4F0B-97D5-BB29FBB9B71E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\setupetw.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\setupetw.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=setupetw.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-OneCore-OnlineSetup</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-OneCore-Setup/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Setup</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Run Setup Specialization</Message>
+                    <Name>tskRunOneCoreSetup</Name>
+                    <Guid>{49616AEE-29A5-4D6B-806E-CEC2629F31BC}</Guid>
+                    <Value>1000</Value>
+                </Task>
+                <Task>
+                    <Message>Setup Process Unattend</Message>
+                    <Name>tskOneCoreSetupProcessUnattend</Name>
+                    <Guid>{635BA866-36A3-464C-B06D-FEB76AF08F26}</Guid>
+                    <Value>2000</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>keyPerformance</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Diagnostic</Message>
+                    <Name>keyDiagnostic</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-OneCore-Setup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Run Setup Specialization</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Setup.exe is running with command line "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-OneCore-Setup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Run Setup Specialization</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Setup.exe exiting with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-OneCore-Setup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Setup Process Unattend</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Executing unattend settings pass "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pass" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-OneCore-Setup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Setup Process Unattend</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Finished executing unattend pass with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-OneCore-Setup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Setup Process Unattend</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Failed to execute unattend pass with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-OneCore-Setup/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Setup Process Unattend</Task>
+                <Keyword>Diagnostic</Keyword>
+                <Message><![CDATA[
+Using unattend file "%2" for pass "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pass" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

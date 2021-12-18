@@ -1,0 +1,480 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DXP</Name>
+        <Metadata>
+            <Guid>{728B8C72-0F0F-4071-9BCC-27CB3B6DACBE}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dxpserver.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dxpserver.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=dxpserver.exe&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DXP</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DXP/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>WorkingSetComposition</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MetadataAcquisition</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SignatureVerification</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DestinationListCreation</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AutoPlayLaunch</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Launcher</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Tasks</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Status</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DeviceAccess</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SSO</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DeviceConnect</Name>
+                    <Value>111</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LayoutInitialized</Name>
+                    <Value>112</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WorkingSetComposition</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WorkingSetComposition</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MetadataAcquisition</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MetadataAcquisition</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SignatureVerification</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SignatureVerification</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DestinationListCreation</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DestinationListCreation</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AutoPlayLaunch</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AutoPlayLaunch</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Launcher</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Launcher</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Launcher</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Launcher</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LayoutInitialized</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Tasks</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DeviceAccess</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DeviceAccess</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Tasks</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Tasks</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SSO</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SSO</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DeviceConnect</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DeviceConnect</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LayoutInitialized</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LayoutInitialized</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LayoutInitialized</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DXP/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LayoutInitialized</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

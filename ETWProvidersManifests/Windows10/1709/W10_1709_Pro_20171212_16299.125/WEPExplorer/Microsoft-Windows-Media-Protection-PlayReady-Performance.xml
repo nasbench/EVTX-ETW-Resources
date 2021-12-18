@@ -1,0 +1,74 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Media-Protection-PlayReady-Performance</Name>
+        <Metadata>
+            <Guid>{D2402FDE-7526-5A7B-501A-25DC7C9C282E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Windows.Media.Protection.PlayReady.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Windows.Media.Protection.PlayReady.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.125&amp;FileName=Windows.Media.Protection.PlayReady.dll&amp;FileVer=10.0.16299.125</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Media-Protection-PlayReady-Performance</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>PlayReady-Performance</Message>
+                    <Path>PlayReadyPerformanceChannel</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>UpdateOutputDataBufferQueue</Message>
+                    <Name>UpdateOutputDataBufferQueue</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Telemetry</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DiagTrack</Name>
+                    <Value>512</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>PlayReady-Performance</Channel>
+                <Level>Verbose</Level>
+                <Task>UpdateOutputDataBufferQueue</Task>
+                <Message><![CDATA[
+%1 CMFTAsyncSimpleBase_ptr=%2 NewCount=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="CMFTAsyncSimpleBase_ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NewCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

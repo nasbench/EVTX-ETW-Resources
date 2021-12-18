@@ -1,0 +1,1188 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-User Profiles Service</Name>
+        <Metadata>
+            <Guid>{89B1E9F0-5AFF-44A6-9B44-0A07A7CE5845}</Guid>
+            <ResourceFilePath>C:\Windows\System32\profsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\profsvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=profsvc.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-User Profile Service</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-User Profile Service/Operational</Message>
+                    <Path>Microsoft-Windows-User Profile Service/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-User Profile Service/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ProfSvc_CreateNewProfile</Name>
+                    <Value>1001</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Recieved user logon notification on session %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished processing user logon notification on session %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Recieved user logoff notification on session %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished processing user logoff notification on session %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Registry file %1 is loaded at HKU\%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Starting synchronize profile from %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished synchronize profile from %1 to %2. 
+
+Result: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Background hive upload for user %1 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Background hive upload for user %1 succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Background hive upload for user %1 failed.
+
+ Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Cannot delete file %1.
+
+ Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Open user regisry root key for %1 failed.
+
+ Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Save user hive to file %1 failed.
+
+ Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Save user hive to file %1 succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Enable background user hive upload task succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to enable background user hive upload task.
+
+ Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Disable background user hive upload task succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to disable background user hive upload task.
+
+ Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Slow network connection detected, abort background user hive upload task.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows was unable to successfully evaluate whether this computer is a primary computer for this user. This may be due to failing to access the Active Directory server at this time. The user's roaming profile will be applied as configured. Contact the Administrator for more assistance. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This computer %1 a primary computer for this user.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The primary computer relationship for this computer and this user was not evaluated due to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnvIssue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The attempt to create or open the profile key for the user failed with error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Creating the local profile for the user failed with error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Logon type: %1 
+Local profile location: %2 
+Profile type: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogonType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProfileType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LastDownloadTime: %1 
+LastUploadTime: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DownloadTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UploadTime" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Waiting on network arrivals. Max wait time %1 ms.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+After waiting %1 ms, a network with the necessary capabilities was not ready for use. Allowing profile load to proceed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Terminating wait due to unexpected failure %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Wait complete due to connectivity event but network not ready.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Wait completed due to network connectivity or determination that no viable network connection is likely to become available. Allowing profile load to proceed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Roaming Profiles configuration is being controlled by Group Policy.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Roaming Profiles configuration is being controlled by WMI configuration classes Win32_RoamingProfileUserConfiguration and Win32_RoamingProfileMachineConfiguration.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ProfSvc_CreateNewProfile</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Begin new user profile creation.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ProfSvc_CreateNewProfile</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+New user profile creation complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A network latency of %1 milliseconds has been detected.  Maximum latency to synchronize a roaming profile is set at %2 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeasuredLatency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LatencyThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A network bandwidth of %1 kilobits per second has been detected.  Minimum bandwidth to synchronize a roaming profile is set at %2 kilobits per second.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeasuredBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BandwidthThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User Profile Service/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete cached profile %1 since it is older than %2 days.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProfilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AgeLimitInDays" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot log you on because your profile cannot be loaded. Check that you are connected to the network, and that your network is functioning correctly. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot create a temporary profile directory. This problem may be caused by insufficient security rights. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot load the locally stored profile. Possible causes of this error include insufficient security rights or a corrupt local profile. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot set security on your registry. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1504</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot update your roaming profile completely. Check previous events for more details. 
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1505</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot load the user's profile but has logged you on with the default profile for the system. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1506</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Your roaming profile is not available. You are logged on with the locally stored profile. Changes to the profile will not be copied to the server. Possible causes of this error include network problems or insufficient security rights.  
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1508</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows was unable to load the registry. This problem is often caused by insufficient memory or insufficient security rights. 
+
+ DETAIL - %1 for %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows was unable to load %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MachineKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserKeys" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot load your profile because it appears to be corrupted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1511</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot find the local profile and is logging you on with a temporary profile. Changes you make to this profile will be lost when you log off.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1512</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot unload your registry file. The memory used by the registry has not been freed. This problem is often caused by services running as a user account. Try configuring services to run in either the LocalService or NetworkService account. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1513</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot copy your profile because it contains encrypted files or directories. The keys to decrypt the files or directories are also stored in the profile and are not available now. Decrypt the files and try again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1514</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The roaming profile path %1 is too long. Windows is logging you on with a default profile.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1515</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows has backed up this user profile. Windows will automatically try to use the backup profile the next time this user logs on.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1517</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows saved user %1 registry while an application or service was still using the registry when the user logged off. The memory used by the user registry has not been freed. The registry will be unloaded when it is no longer in use. 
+
+ This error may be caused by services running as a user account. Try configuring services to run in either the LocalService or NetworkService account.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1518</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot create a local profile and is logging you on with a temporary profile. This profile will be deleted when you log off. This problem may be caused by incorrect file system permissions or network problems.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1519</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot locate your roaming mandatory profile and is attempting to log you on with your local profile. This error may be caused by incorrect file system permissions or network problems. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1520</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot log you on because your roaming mandatory profile is not available. This error may be caused by incorrect file system permissions or network problems. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1521</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot locate the server copy of your roaming profile and is attempting to log you on with your local profile. Changes to the profile will not be copied to the server when you log off. This error may be caused by network problems or insufficient security rights. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1522</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot locate your roaming profile (read only) and is attempting to log you on with your local profile. This error may be caused by network problems or insufficient security rights. 
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1523</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Your roaming profile (read only) is not available. You are logged on with the locally stored profile. This error may be caused by incorrect file system permissions or network problems.  
+
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1524</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows cannot unload your classes registry file - it is still in use by other applications or services. The file will be unloaded when it is no longer in use.  
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1525</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows has detected that Automatic Offline Caching is enabled on the Roaming Profile share - to avoid potential profile corruption, Offline Caching must be set to manual or disabled on shares where roaming user profiles are stored. 
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1526</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows could not load your roaming profile and is attempting to log you on with your local profile. Changes to the profile will not be copied to the server when you log off. Windows could not load your profile because a server copy of the profile folder already exists that does not have the correct security. Either the current user or the Administrators group must be the owner of the folder. 
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1527</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows failed to initialize user profiles. Non-console users will be unable to log on.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1529</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Roaming user profiles across forests are disabled. Windows did not load your roaming profile and is logging you on with a local profile. Changes to the profile will not be copied to the server when you log off.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1530</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows detected your registry file is still in use by other applications or services. The file will be unloaded now. The applications or services that hold your registry file may not function properly afterwards. No user action is required.  
+
+ DETAIL - 
+ %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Detail" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1531</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The User Profile Service has started successfully.  
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1532</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The User Profile Service has stopped.  
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1533</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot delete the profile directory %1. This error may be caused by files in this directory being used by another program. 
+
+ DETAIL - %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1534</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Profile notification of event %1 for component %2 failed, error code is %3. 
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Event" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1535</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully suspended folder "%1"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1536</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully unsuspended folder "%1"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1537</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to suspend folder "%1"
+ DETAIL - %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1538</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to unsuspend folder "%1"
+ DETAIL - %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1539</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to sync folder "%1"
+ DETAIL - %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1540</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Your roaming profile is not synchronized correctly with the server. Windows will load your previously-saved local profile instead. See the previous events for details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1541</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to apply CSC suspend policy. Cannot connect to CSC service.
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1542</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot load classes registry file.
+ DETAIL - %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1543</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A slow network connection is detected for the roaming profile %1. It will not be synchronized with the profile on this computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1544</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows cannot back up a ProfileList entry because one already exists for this user. Only the existing backup entry will be kept in the ProfileList. Future logons will restore the ProfileList entry from the existing backup entry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

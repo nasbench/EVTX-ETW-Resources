@@ -1,0 +1,594 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Sdbus</Name>
+        <Metadata>
+            <Guid>{FE28004E-B08F-4407-92B3-BAD3A2C51708}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\sdbus.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\sdbus.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=sdbus.sys&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Sdbus/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Sdbus/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Interrupt</Message>
+                    <Name>Task.Interrupt</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Callback Routine</Message>
+                    <Name>Task.CallbackRoutine</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Retune</Message>
+                    <Name>Task.Retune</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message> Error</Message>
+                    <Name>Task.Error</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>HPI IO</Message>
+                    <Name>Task.HpiIo</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>P-State Request</Message>
+                    <Name>Task.PStateRequest</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>P-State Completion</Message>
+                    <Name>Task.PStateCompletion</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Command Issued</Message>
+                    <Name>Task.CommandIssued</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Command Completed</Message>
+                    <Name>Task.CommandCompleted</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>HPI CMD Issued</Message>
+                    <Name>Task.HpiCmdIssue</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>HPI CMD Accepted</Message>
+                    <Name>Task.HpiCmdAccepted</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>HPI Worker Process</Message>
+                    <Name>Task.HpiCmdWorker</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>P-State Utilization</Message>
+                    <Name>Task.PStateUtilization</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>SdbusWorkerDpc</Message>
+                    <Name>Task.SdbusWorkerDpc</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>SdbusRequest</Message>
+                    <Name>Task.SdbusRequest</Name>
+                    <Value>15</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Interrupt handling</Message>
+                    <Name>Interrupt</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>eMMC specific processing</Message>
+                    <Name>Emmc</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SDIO specific processing</Message>
+                    <Name>Sdio</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SD specific processing</Message>
+                    <Name>Sd</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Sdbus P-state frequency scaling</Message>
+                    <Name>Perf</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SD bus errors</Message>
+                    <Name>Error</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SD bus DPC</Message>
+                    <Name>Dpc</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SD bus request</Message>
+                    <Name>Request</Name>
+                    <Value>128</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Interrupt</Task>
+                <Keyword>Interrupt handling</Keyword>
+                <Message><![CDATA[
+Interrupt detected in ISR.
+SD Host Physical Address: %1
+Events (masked): %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="EventMask" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Callback Routine</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>SDIO specific processing</Keyword>
+                <Message><![CDATA[
+Entering callback routine.
+SD Host Physical Address: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Callback Routine</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>SDIO specific processing</Keyword>
+                <Message><![CDATA[
+Exiting callback routine.
+SD Host Physical Address: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Retune</Task>
+                <Keyword>eMMC specific processing</Keyword>
+                <Message><![CDATA[
+Retuning Sequence detected.
+SD Host Physical Address: %1
+Retuning Count: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RetuneCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Debug</Channel>
+                <Level>Information</Level>
+                <Task> Error</Task>
+                <Keyword>eMMC specific processing</Keyword>
+                <Message><![CDATA[
+Error in bus transfer.
+SD Host Physical Address: %1
+Error Code: %2
+Error Count: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>HPI IO</Task>
+                <Keyword>eMMC specific processing</Keyword>
+                <Message><![CDATA[
+Hpi IO detected.
+SD Host Physical Address: %1
+Hpi Count: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="HpiIoCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>P-State Request</Task>
+                <Keyword>Sdbus P-state frequency scaling</Keyword>
+                <Message><![CDATA[
+P-State change requested.
+PoFx Device Handle: %1
+P-State Requested: %2
+P-State Request Count: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoFx Device Handle" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PStateRequested" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PStateRequestCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>P-State Completion</Task>
+                <Keyword>Sdbus P-state frequency scaling</Keyword>
+                <Message><![CDATA[
+P-State change requested.
+PoFx Device Handle: %1
+P-State Completed: %2
+P-State Completion Count: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoFx Device Handle" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PStateCompleted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PStateCompletionCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Command Issued</Task>
+                <Keyword>Sdbus P-state frequency scaling</Keyword>
+                <Message><![CDATA[
+Command issued.
+SD Host Physical Address: %1
+Command: %2
+Argument: %3
+Size: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Command Completed</Task>
+                <Keyword>Sdbus P-state frequency scaling</Keyword>
+                <Message><![CDATA[
+Command completed.
+SD Host Physical Address: %1
+Command: %2
+Argument: %3
+Size: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>HPI CMD Issued</Task>
+                <Keyword>eMMC specific processing</Keyword>
+                <Message><![CDATA[
+Hpi CMD sent to the hardware. IRP %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>HPI CMD Issued</Task>
+                <Keyword>eMMC specific processing</Keyword>
+                <Message><![CDATA[
+Hpi CMD was accepted by the hardware. IRP %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>HPI Worker Process</Task>
+                <Keyword>eMMC specific processing</Keyword>
+                <Message><![CDATA[
+Hpi CMD worker started. IRP %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>HPI Worker Process</Task>
+                <Keyword>eMMC specific processing</Keyword>
+                <Message><![CDATA[
+Hpi CMD worker exited. IRP %1 Reason: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="HpiExitReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>P-State Utilization</Task>
+                <Keyword>Sdbus P-state frequency scaling</Keyword>
+                <Message><![CDATA[
+P-State change requested.
+PoFx Device Handle: %1
+P-State Active Percentage: %2
+P-State Active Duration: %3
+P-State Sample Duration: %4
+P-State Current Frequency: %5
+P-State Requested Frequency: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoFx Device Handle" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PStateActivePercent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PStateActiveDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PStateSampleDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PStateCurrentFrequency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PStateRequestedFrequency" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SdbusWorkerDpc</Task>
+                <Keyword>SD bus DPC</Keyword>
+                <Message><![CDATA[
+SdbusWorkerDpcEnter: SD Host Physical Address: %1 Irp: %2 Workpacket Function: %3 CurrentState: %4 FunctionPhase: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkPacket.WorkerProcFunction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WorkEngine.CurrentState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="WorkEngine.FunctionPhase" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SdbusWorkerDpc</Task>
+                <Keyword>SD bus DPC</Keyword>
+                <Message><![CDATA[
+SdbusWorkerDpcExit: SD Host Physical Address: %1 Irp: %2 Workpacket Function: %3 CurrentState: %4 FunctionPhase: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkPacket.WorkerProcFunction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WorkEngine.CurrentState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="WorkEngine.FunctionPhase" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SdbusRequest</Task>
+                <Keyword>SD bus request</Keyword>
+                <Message><![CDATA[
+SdbusRequestStart: SD Host Physical Address: %1 Irp: %2 Cmd: %3 Arg: %4 Status: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkEngine.Command" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="WorkEngine.Argument" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SdbusRequest</Task>
+                <Keyword>SD bus request</Keyword>
+                <Message><![CDATA[
+SdbusRequestComplete: SD Host Physical Address: %1 Irp: %2 Cmd: %3 Arg %4 Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkEngine.Command" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="WorkEngine.Argument" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Callback Routine</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>SDIO specific processing</Keyword>
+                <Message><![CDATA[
+Scheduled callback routine.
+SD Host Physical Address: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SDHostPhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Interrupt</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>SDIO specific processing</Keyword>
+                <Message><![CDATA[
+Interrupt DPC scheduled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Interrupt</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>SDIO specific processing</Keyword>
+                <Message><![CDATA[
+Interrupt DPC entered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Sdbus/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Interrupt</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>SDIO specific processing</Keyword>
+                <Message><![CDATA[
+Interrupt DPC exited.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

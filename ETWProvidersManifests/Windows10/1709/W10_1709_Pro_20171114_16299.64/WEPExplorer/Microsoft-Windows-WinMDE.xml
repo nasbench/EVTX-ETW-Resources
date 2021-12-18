@@ -1,0 +1,200 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WinMDE</Name>
+        <Metadata>
+            <Guid>{77549803-7BB1-418B-A98E-F2E22F35A873}</Guid>
+            <ResourceFilePath>C:\Windows\system32\winmde.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\winmde.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=winmde.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Windows Media Delivery Engine</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WinMDE/MDE</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>HTTP Listener</Message>
+                    <Name>HttpListener</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>NetStreamSink_SampleRequests</Message>
+                    <Name>NetStreamSink_SampleRequests</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>RtspSink_SetWorkQueueTask</Message>
+                    <Name>RtspSink_SetWorkQueue</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>RtspSink_ProcessSampleTask</Message>
+                    <Name>RtspSink_ProcessSample</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinMDE/MDE</Channel>
+                <Level>Information</Level>
+                <Task>HTTP Listener</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+HttpListener@%1 object created]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinMDE/MDE</Channel>
+                <Level>Information</Level>
+                <Task>HTTP Listener</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+HttpListener@%1 object destroyed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinMDE/MDE</Channel>
+                <Level>Information</Level>
+                <Task>HTTP Listener</Task>
+                <Message><![CDATA[
+HttpListener@%1 HTTP request received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinMDE/MDE</Channel>
+                <Level>Information</Level>
+                <Task>HTTP Listener</Task>
+                <Message><![CDATA[
+HttpListener@%1 sending HTTP response entity body (%2 chunks)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinMDE/MDE</Channel>
+                <Level>Verbose</Level>
+                <Task>NetStreamSink_SampleRequests</Task>
+                <Message><![CDATA[
+NetStreamSink_SampleRequests @%1 %2 requests]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinMDE/MDE</Channel>
+                <Level>Verbose</Level>
+                <Task>RtspSink_SetWorkQueueTask</Task>
+                <Message><![CDATA[
+RtspSink_SetWorkQueue @%1 %2 requests]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinMDE/MDE</Channel>
+                <Level>Verbose</Level>
+                <Task>RtspSink_ProcessSampleTask</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+RtspSink_ProcessSample_Start @%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinMDE/MDE</Channel>
+                <Level>Verbose</Level>
+                <Task>RtspSink_ProcessSampleTask</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+RtspSink_ProcessSample_Stop @%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

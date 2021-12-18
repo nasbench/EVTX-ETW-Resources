@@ -1,0 +1,140 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DiskDiagnostic</Name>
+        <Metadata>
+            <Guid>{E670A5A2-CE74-4AB4-9347-61B815319F4C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dfdts.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dfdts.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=dfdts.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DiskDiagnostic</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-DiskDiagnostic/Operational</Message>
+                    <Path>Microsoft-Windows-DiskDiagnostic/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic detected a S.M.A.R.T. fault on disk %1 (volumes %2).  This disk might fail; back up your computer now. All data on the hard disk, including files, documents, pictures, programs, and settings might be lost if your hard disk fails.  To determine if the hard disk needs to be repaired or replaced, contact the manufacturer of your computer.  If you can't back up (for example, you have no CDs or other backup media), you should shut down your computer and restart when you have backup media available.  In the meantime, do not save any critical files to this disk.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnostic/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic was invoked for a S.M.A.R.T. fault, but no new faults were detected.  The diagnostic will exit without performing any corrective action.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnostic/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic successfully scheduled interactive resolution for a S.M.A.R.T. fault.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnostic/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic attempted to schedule interactive recovery for a S.M.A.R.T. fault but encountered an error.  The error code was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnostic/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic detected a S.M.A.R.T. fault on disk %1 (volumes %2; hardware id %3). However, as this disk is known to report false errors, Windows Disk Diagnostic ignored this event and exited silently.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnostic/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver was disabled successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnostic/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver could not be disabled.  The error code was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

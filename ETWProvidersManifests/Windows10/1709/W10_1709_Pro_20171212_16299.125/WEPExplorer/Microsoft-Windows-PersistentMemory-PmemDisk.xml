@@ -1,0 +1,562 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PersistentMemory-PmemDisk</Name>
+        <Metadata>
+            <Guid>{0FA2EE03-1FEB-5057-3BB3-EB25521B8482}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\pmem.sys</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\drivers\pmem.sys</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\pmem.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=pmem.sys&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-PmemDisk/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Hardware events</Message>
+                    <Name>Hardware_Events</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Read request</Message>
+                    <Name>Read</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Write request</Message>
+                    <Name>Write</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Paging Read request</Message>
+                    <Name>PagingRead</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Paging Write request</Message>
+                    <Name>PagingWrite</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Non-Read/Write request</Message>
+                    <Name>NonReadWrite</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Device I/O control request</Message>
+                    <Name>IOCTL</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>PnP request</Message>
+                    <Name>PnP</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IO Performance measurement</Message>
+                    <Name>IO_Performance</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reported memory resource.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Size" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Memory operation duration, in hundreds of nanoseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsWrite" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NtStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Request servicing time taken by lower driver stack(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsWrite" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NtStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IRP MJ" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IRP MJ" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IRP MJ" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IRP MJ" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Completing an IO (read/write) request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Dispatching an IOCTL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Parameter" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Completing a non-read/write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Dispatching a PnP request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Completing a PnP request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+Persistent memory disk %1 failed to start.                    
+Reason: %5                    
+NTSTATUS code: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Persistent memory disk %1 started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+One of the NVDIMMs that make up persistent memory disk %1 encountered an error while transferring your data to or from persistent media (see the Details tab for more information). Some of your data may have been lost. As a precaution, this persistent memory disk is now in read-only mode. If you want to keep using it, run the Reset-PhysicalDisk command to make it writeable again.                    
+                    
+Look at the events logged by the physical NVDIMM driver for more details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+During a previous boot session, one of the NVDIMMs that make up persistent memory disk %1 encountered an error while transferring your data to or from persistent media. Some of your data may have been lost then. As a precaution, Windows made this persistent memory disk temporarily read-only. If you want to keep using this persistent memory disk, use the Reset-PhysicalDisk command to make it writeable again.                    
+                    
+Look at the events logged by the physical NVDIMM driver for more details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NVDIMM %5 notified persistent memory disk %1 of a change in its health state. The NVDIMM now has the following health status: %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogicalPersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PhysicalNvdimmGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NfitHandle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NvdimmHealthStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+One of the NVDIMMs that make up the persistent memory disk %1 encountered a serious problem and the disk is now in read-only mode. Data that was saved to this disk may be lost when the computer shuts down or restarts. Consider backing up your data to another disk.                    
+                    
+Use the Get-PhysicalDisk command to get more information about the disk's health status.                    
+Look at the events logged by the physical NVDIMM driver for more details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+The computer didn't assign any memory resources to persistent memory disk %1. You won't be able to access the data on the device, but you can still query its health status by using the Get-PhysicalDisk command.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Some physical memory locations on persistent memory disk %1 are corrupt. In order to protect your computer, Windows will not access those locations and you may see failures trying to read or write to your data. Contact your hardware vendor to learn what recovery steps are available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OldBadMemoryRangesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewBadMemoryRangesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The problem with the persistent memory disk %1 was resolved and it is now back in read-write mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+One of the NVDIMMs that make up the persistent memory disk %1 is in a degraded health state and may soon encounter serious problems. Consider backing up your data to another disk.                    
+                    
+Look at the events logged by the physical NVDIMM driver for more details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProductId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Persistent memory disk %1 is now in read-only mode.  Use the Get-PhysicalDisk command to get the device’s health status.  The Microsoft-Windows-PersistentMemory-PmemDisk/Operational event log may also contain more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Persistent memory disk %1 is no longer in read-only mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows does not support this configuration: two or more NVDIMMs on this system are part of an interleaved set. Back up the data on the interleaved set to a different drive and then break up the interleaved set. Consider using Storage Spaces if NVDIMM capacity needs to be aggregated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>900</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PersistentMemory-PmemDisk/Diagnostic</Channel>
+                <Message><![CDATA[
+Persistent memory disk %1 logged:             
+             
+ %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PersistentMemoryDiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
