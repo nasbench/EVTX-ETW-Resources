@@ -1,0 +1,468 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-InputSwitch</Name>
+        <Metadata>
+            <Guid>{BB8E7234-BBF4-48A7-8741-339206ED1DFB}</Guid>
+            <ResourceFilePath>C:\Windows\system32\InputSwitch.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\InputSwitch.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=InputSwitch.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-InputSwitch/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>InitializeBackend</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ShutdownBackend</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ShowInputSwitch</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>HideInputSwitch</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SelectInputMethod</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SelectInputModality</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ClickOrTouchOrEnterReceived</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModalitySelectedStandard</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModalitySelectedSplit</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModalitySelectedHandwriting</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModalitySelectedClassic</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModalitySelectedOneHanded</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModeIconUpdate</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModeIconClear</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModeIconLeftClick</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ModeIconRightClick</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>IMEConsentUXFlyoutShow</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>IMEConsentUXFlyoutDismiss</Name>
+                    <Value>19</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Status</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Perf</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>InputSwitch_Keyword</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>InitializeBackend</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>InitializeBackend</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownBackend</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownBackend</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShowInputSwitch</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShowInputSwitch</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>HideInputSwitch</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>HideInputSwitch</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SelectInputMethod</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SelectInputMethod</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SelectInputModality</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SelectInputModality</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SelectInputModality</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ClickOrTouchOrEnterReceived</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModalitySelectedStandard</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModalitySelectedSplit</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModalitySelectedHandwriting</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModalitySelectedClassic</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModalitySelectedOneHanded</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModeIconUpdate</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModeIconClear</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModeIconLeftClick</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ModeIconRightClick</Task>
+                <Keyword>Perf InputSwitch_Keyword</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>IMEConsentUXFlyoutShow</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>IMEConsentUXFlyoutShow</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>IMEConsentUXFlyoutDismiss</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-InputSwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>IMEConsentUXFlyoutDismiss</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

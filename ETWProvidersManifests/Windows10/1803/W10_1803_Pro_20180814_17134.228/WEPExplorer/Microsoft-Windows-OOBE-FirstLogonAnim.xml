@@ -1,0 +1,220 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OOBE-FirstLogonAnim</Name>
+        <Metadata>
+            <Guid>{2D4C0C5E-6704-493A-A44B-F5ADD4FC9283}</Guid>
+            <ResourceFilePath>C:\Windows\system32\oobe\msoobeFirstLogonAnim.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\oobe\msoobeFirstLogonAnim.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=msoobeFirstLogonAnim.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-OOBE-FirstLogonAnim</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>StartResult</Name>
+                    <Value>6004</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>EndAnimationRequest</Name>
+                    <Value>6005</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Animation</Name>
+                    <Value>6041</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Navigation</Name>
+                    <Value>6042</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WebPlatformCreate</Name>
+                    <Value>6043</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>IntroAnimationRequest</Name>
+                    <Value>6044</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ShowAnimationRequest</Name>
+                    <Value>6045</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>FirstLogonAnim</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>StartResult</Task>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>EndAnimationRequest</Task>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fZDP" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Animation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fOOBE" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fExistingUser" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fZDP" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fExplorer" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Animation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Navigation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Navigation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>WebPlatformCreate</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5046</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>WebPlatformCreate</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5047</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>IntroAnimationRequest</Task>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fExistingUser" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fPostZDP" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShowAnimationRequest</Task>
+                <Keyword>FirstLogonAnim</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fExistingUserOrPostZDP" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fZDP" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fTouchDevice" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fMouseDevice" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,1358 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Time-Service</Name>
+        <Metadata>
+            <Guid>{06EDCFEB-0FD0-4E53-ACCA-A6F8BBF81BCB}</Guid>
+            <ResourceFilePath>C:\Windows\system32\w32time.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\w32time.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=w32time.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Time-Service</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Time-Service/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time provider '%1' logged the following error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider '%1' logged the following warning: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The time provider '%1' logged the following message: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time provider '%1' failed to start due to the following error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time provider '%1' returned the following error during shutdown: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service encountered an error while reading its configuration from the registry, and will continue running with its previous configuration. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider '%1' returned an error while updating its configuration. The error will be ignored. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider '%1' returned an error when notified of a polling interval change. The error will be ignored. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider '%1' returned an error when notified of a time jump. The error will be ignored. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider '%1' returned an error when asked for time samples. The error will be ignored. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: This machine is configured to use the domain hierarchy to determine its time source, but it is not a member of a domain. NtpClient will attempt to use an alternate configured external time source if available. If an external time source is not configured or used for this computer, you may choose to disable the NtpClient.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: This machine is configured to use the domain hierarchy to determine its time source, but it is the AD PDC emulator for the domain at the root of the forest, so there is no machine above it in the domain hierarchy to use as a time source. It is recommended that you either configure a reliable time service in the root domain, or manually configure the AD PDC to synchronize with an external time source. Otherwise, this machine will function as the authoritative time source in the domain hierarchy. If an external time source is not configured or used for this computer, you may choose to disable the NtpClient.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: This machine is configured to use the domain hierarchy to determine its time source, but the computer is joined to a Windows NT 4.0 domain. Windows NT 4.0 domain controllers do not have a time service and do not support domain hierarchy as a time source. NtpClient will attempt to use an alternate configured external time source if available. If an external time source is not configured or used for this computer, you may choose to disable the NtpClient.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient was unable to find a domain controller to use as a time source. NtpClient will try again in %1 minutes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RetryMinutes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient was unable to find a domain controller to use as a time source.  NtpClient will fall back to the remaining configured time sources, if any are available. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: An unexpected error occurred during DNS lookup of the manually configured peer '%1'. This peer will not be used as a time source. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ManualPeer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: An error occurred during DNS lookup of the manually configured peer '%1'. NtpClient will try the DNS lookup again in %3 minutes. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ManualPeer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient failed to establish a trust relationship between this computer and the %1 domain in order to securely synchronize time. NtpClient will try again in %3 minutes. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Logging was requested, but the time service encountered an error while trying to set up the log file: %1. The error was: %2. Please make sure that 'Local Service' has permission to write to the file or directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Logging was requested, but the time service encountered an error while trying to write to the log file: %1. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time service is configured to use one or more input providers, however, none of the input providers are available. The time service has no source of accurate time.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpServer encountered an error while digitally signing the NTP response for peer %1. NtpServer cannot provide secure (signed) time to the client and will ignore the request. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpServer encountered an error while digitally signing the NTP response for symmetric peer %1. NtpServer cannot provide secure (signed) time to the peer and will not send a packet. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: No valid response has been received from domain controller %1 after 8 attempts to contact it. This domain controller will be discarded as a time source and NtpClient will attempt to discover a new domain controller from which to synchronize. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient cannot determine whether the response received from %1 has  a valid signature. The response will be ignored. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: The response received from domain controller %1 has a bad signature. The response may have been tampered with and will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: The response received from domain controller %1 is missing the signature. The response may have been tampered with and will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient is configured to acquire time from one or more time sources, however none of the sources are accessible. NtpClient has no source of accurate time.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient is configured to acquire time from one or more time sources, however none of the sources are currently accessible. No attempt to contact a source will be made for %1 minutes. NtpClient has no source of accurate time.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RetryMinutes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service encountered an error while reading its configuration from the registry and cannot start. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service discovered that the system time zone information was corrupted. Because many system components require valid time zone information, the time service has reset the system time zone to GMT. Use the Date/Time control panel to set the correct time zone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service discovered that the system time zone information was corrupted. The time service tried to reset the system time zone to GMT, but failed. The time service cannot start. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has jumped the local system clock by %1 seconds. This occurs when the time source and local system time are far enough apart that clock rate adjustments cannot be made to reach the time specified by the time source.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SystemTimeChangeSeconds" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time service has detected that the system time needs to be  changed by %1 seconds. The time service will not change the system time by more than %2 seconds. Verify that your time and time zone are correct, and that the time source %3 is working properly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SystemTimeChangeSeconds" inType="win:Int64" outType="xs:long"/>
+  <data name="MaxSystemTimeChangeSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeSource" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The time service is now synchronizing the system time with the time source %1 with reference id %2. Current local stratum number is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeSource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeSourceRefId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentStratumNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has not synchronized the system time for the last %1 seconds because none of the time service providers provided a usable time stamp. The time service will not update the local system time until it is able to synchronize with a time source. If the local system is configured to act as a time server for clients, it will stop advertising as a time source to clients after %2 seconds. The time service will continue to retry and sync time with its time sources. Check system event log for other W32time events for more details. Run 'w32tm /resync' to force an instant time synchronization. You can control the frequency of the time source rediscovery using ClockHoldoverPeriod W32time config setting. Modify the EventLogFlags W32time config setting if you wish to disable this message.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UnsynchronizedTimeSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeRemainingToSetLocalClockFreeRunningSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The time provider NtpClient is currently receiving valid time data from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeSource" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient has not received response from server %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeSource" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service is unable to register for network configuration change events. This may occur when TCP/IP is not correctly configured. The time service will be unable to sync time from network providers, but will still use locally installed hardware provdiers, if any are available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider '%1' was stopped with error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has been configured to use one or more input providers, however, none of the input providers are still running. The time service has no source of accurate time.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time service attempted to create a named event which was already opened. This could be the result of an attempt to compromise your system's security.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider '%1' returned an error when notified of a network configuration change. The error will be ignored. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time provider NtpClient encountered an error and was forced to shut down. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time provider NtpServer encountered an error and was forced to shut down. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time service encountered an error and was forced to shut down. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: No valid response has been received from manually configured peer %1 after 8 attempts to contact it. This peer will be discarded as a time source and NtpClient will attempt to discover a new peer with this DNS name. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ManualPeer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: An error occurred during DNS lookup of the manually configured peer '%1'. NtpClient will continue to try the DNS lookup every %3 minutes. This message will not be logged again until a successful lookup of this manually configured peer occurs. The error was: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ManualPeer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient was unable to find a domain controller to use as a time source. NtpClient will continue trying to locate an AD DC every %1 minutes. This message will not be logged again until after a domain controller is found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service detected a time difference of greater than %1 milliseconds for %2 seconds. The time difference might be caused by synchronization with low-accuracy time sources or by suboptimal network conditions. The time service is no longer synchronized and cannot provide the time to other clients or update the system clock. When a valid time stamp is received from a time service provider, the time service will correct itself.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeDifferenceMilliseconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeSampleSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Time Provider NtpClient: The time sample received from peer %1 differs from the local time by %2 seconds. The observed transmission delay from the server was %3 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Peer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeDifferenceSeconds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TransmissionDelayMilliseconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has set the time with offset %1 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeOffsetSeconds" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpClient fails sending request to server %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Peer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The time service encountered an error while refreshing its configuration in the registry and cannot start. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>129</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NtpClient was unable to set a domain peer to use as a time source because of discovery error. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NtpClient was unable to set a domain peer to use as a time source because of failure in establishing  a trust relationship between this computer and the '%3' domain in order to securely synchronize time. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NtpClient was unable to set a domain peer to use as a time source because of DNS resolution error on '%3'. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NtpClient was unable to set a domain peer to use as a time source because of duplicate error on '%3'.  The same time source '%4' has been specified as manual peer in NtpServer. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeSource" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NtpClient was unable to set a domain peer to use a time source because of an unexpected error.  NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>134</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on '%3'. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>135</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NtpClient was unable to set a manual peer to use as a time source because of duplicate error on '%3'. The same time source '%4' has been either specified as manual peer in NtpServer or selected as domain peer.  NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeSource" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>136</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NtpClient was unable to set a manual peer to use as a time source because of an unexpected error. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>137</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NtpClient succeeds in resolving manual peer %1 after a previous failure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ManualPeer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>138</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NtpClient succeeds in resolving domain peer %1 after a previous failure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>139</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The time service has started advertising as a time source.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has stopped advertising as a time source because the local machine is not an Active Directory Domain Controller.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has stopped advertising as a time source because there are no providers running.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>142</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has stopped advertising as a time source because the local clock is not synchronized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>143</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The time service has started advertising as a good time source.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>144</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has stopped advertising as a good time source.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>145</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time service has stopped advertising as a time source.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>146</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The RODC has received %1 requests in the previous %2 minutes. %3 have resulted in success, and %4 have resulted in failure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChainingCountRequests" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ChainLoggingRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ChainingCountSuccess" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ChainingCountFailure" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>147</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The time sample was rejected because: Duplicate timestamps were received from this peer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>148</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The time sample was rejected because: Message was received out-of-order.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>149</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The time sample was rejected because: The peer is not synchronized, or reachability has been lost in one, or both, directions. This may also indicate that the peer has incorrectly sent an NTP request instead of an NTP response.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The time sample was rejected because: Round-trip delay too large.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The time sample was rejected because: Packet not authenticated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The time sample was rejected because: The peer is not synchronized, or it has been too long since the peer's last synchronization.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The time sample was rejected because: The peer's stratum is less than the host's stratum.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The time sample was rejected because: Packet contains unreasonable root delay or root dispersion values. This may be caused by poor network conditions.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>156</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The RODC was unable to forward a time sync request from client RID %1 because the client's RID value is too large and the domain peer (%2) does not support the uplevel timesync authentication format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientRID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainPeer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>157</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The time provider NtpServer received a request from a client (%1) using a legacy protocol format. The request has been ignored per the RequireSecureTimeSyncRequests policy setting. By default, this message will be logged only once per day per unique client address.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>158</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The time provider '%1' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeProvider" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>159</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+W32time is unable to communicate with Netlogon Service. This failure prevents NTPClient from discovering and using domain peers, besides causing problems with correct W32time service state being advertised by Netlogon. This could be a temporary condition that resolves itself shortly. If this warning repeats over a considerable period of time, ensure the Netlogon service is running and is responsive and restart W32time service to reintiaize the overall state. The error was %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>257</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+W32time service has started at %1 (UTC), System Tick Count %2.
+Configuration:
+%3
+Time Providers:
+%4Clock Rate:%5
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentTime(UTC)" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeProviders" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClockRate" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>258</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+W32time service is stopping at %1 (UTC), System Tick Count %2 with return code: %3
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentTime(UTC)" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>259</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NTP Client provider periodic status:
+Ntp Client is receiving time data from the following NTP Servers: %1  and the chosen reference time server is %2. System Tick Count %3
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AllNtpServers" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChosenReferenceNtpServer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>260</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+W32time Service periodic configuration and status message
+Configuration:
+%1
+Time Providers:
+%2
+Current Status:
+Leap Indicator: %3
+Stratum: %4
+Precision: %5
+RootDelay: %6
+RootDispersion: %7
+ReferenceId: %8
+Last Successful Sync Time: %9 (UTC)
+Source: %10
+Poll Interval: %11
+Phase Offset: %12
+Clock Rate: %13
+State Machine: %14
+Time Source Flags: %15
+Server Role: %16
+Last Sync Error: %17
+Time Since Last Good Sync: %18
+System Tick Count: %19
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeProviders" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LeapIndicator" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Stratum" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Precision" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootDelay" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootDispersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReferenceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastSuccessfulSyncTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PollInterval" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PhaseOffset" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClockRate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StateMachine" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TimeSourceFlags" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ServerRole" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastSyncError" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TimeSinceLastGoodSync" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>261</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+W32time service has set the system time to %1(UTC). Previous system time was %2(UTC). System Tick Count: %3
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>262</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+W32time service has adjusted the system clock rate by %1 PPM and the new nominal clock rate is %2. Previous nominal clock rate was %3. System Tick Count: %4.
+Clock adjustments below %5 PPM are not logged. Performance counters are recommended to efficiently track small adjustment values.
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdjustmentPPM" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewClockRate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OldClockRate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MinReportedAdjustmentPPM" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>263</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+W32time Service configuration parameters have been updated. This may impact the fine-grained time synchronization accuracy.
+Updated Configuration:
+%1
+Updated Time Providers:
+%2System Tick Count: %3
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeProviders" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>264</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NTP Client observed a change peer reachability. Ntp Client is now receiving time data from the following NTP Servers: %1. System Tick Count: %2.
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AllNtpServers" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>265</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The time service is now synchronizing the system time with the reference time source %1 with reference id %2. Current local stratum number is %3, System Tick Count: %4.
+For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeSource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeSourceRefId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalStratumNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>266</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+W32time Service received notification to rediscover its time sources and/or resynchronize time. Reason Code:%1 System Tick Count: %2
+Reason code description:
+0 : An explicit time resynchronization request from an administrator
+1 : Power state changes on this machine
+2 : Changes to the network interface or to the network topology
+3 : State changes within W32time that require time synchronization
+The actions that follow this notifcation may impact fine-grained time synchronization accuracy.For more information, see https://go.microsoft.com/fwlink/?linkid=845961.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReasonCode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

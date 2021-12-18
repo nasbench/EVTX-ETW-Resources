@@ -1,0 +1,1556 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TerminalServices-ClientActiveXCore</Name>
+        <Metadata>
+            <Guid>{28AA95BB-D444-4719-A36F-40462168127E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\mstscax.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\mstscax.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\mstscax.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=mstscax.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-TerminalServices-ClientActiveXCore</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-RDPClient/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-RDPClient/Debug</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>General</Message>
+                    <Name>General</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Connection Sequence</Message>
+                    <Name>Connection</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Automatic Reconnection Sequence</Message>
+                    <Name>Autoreconnection</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>Gateway Connection Sequence</Message>
+                    <Name>GatewayConnection</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>RDP State Transition</Message>
+                    <Name>TransitionStates</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>RdClient RADC workspace</Message>
+                    <Name>RdClientRadc</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>RdClient Pipeline workspace</Message>
+                    <Name>RdpClientPipeline</Name>
+                    <Value>106</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during the connection process</Message>
+                    <Name>Connect</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during the disconnection process</Message>
+                    <Name>Disconnect</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during the authentication process</Message>
+                    <Name>Authenticate</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised while trying to automatically reconnect to the server</Message>
+                    <Name>Autoreconnect</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during resolving the server name</Message>
+                    <Name>ResolveName</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised while trying to get a valid license</Message>
+                    <Name>License</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised in the gateway transport</Message>
+                    <Name>Gateway</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when data is received from the server</Message>
+                    <Name>RecvServerData</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when data is sent to the server</Message>
+                    <Name>SendClientData</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during a state transition.</Message>
+                    <Name>StateTransition</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the client has not been shutdown cleanly.</Message>
+                    <Name>RadcCancelDuringExit</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user tries to sign out from the OOB client.</Message>
+                    <Name>RadcUserSignOut</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user manually tries to do feed refresh.</Message>
+                    <Name>RadcWorkspaceRefresh</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user tries to login in ADAL page using different user name.</Message>
+                    <Name>RadcAdalDifferentUserError</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when a workspace event like subscribe/update succeeded.</Message>
+                    <Name>RadcWorkspaceEventSuccess</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when a workspace event like subscribe/update failed!</Message>
+                    <Name>RadcWorkspaceEventFailure</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when feed discovery succeeds</Message>
+                    <Name>RadcDiscoverySuccess</Name>
+                    <Value>26</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when feed discovery failed!</Message>
+                    <Name>RadcDiscoveryFailure</Name>
+                    <Value>27</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the feed cache on the client local machine is missing icons or Rdp files due to cache corruption!</Message>
+                    <Name>RadcCacheCorruption</Name>
+                    <Value>28</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when user has successfully updated the consent status on server side</Message>
+                    <Name>RadcConsentStatusUpdateSuccess</Name>
+                    <Value>29</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when user is unable to update the consent status on server!</Message>
+                    <Name>RadcConsentStatusUpdateFailure</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the client first launches.</Message>
+                    <Name>RadcClientVersion</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user manually clicks the view invitations button.</Message>
+                    <Name>RadcViewInvites</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user starts a new cycle of feed discovery. We log the hashed UPN and timezone information here</Message>
+                    <Name>RadcUserTimeZone</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when all the feeds of the user have been subscribed or updated completely. We log the overall time it took to download all feeds in parallel.</Message>
+                    <Name>RadcRefreshTime</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when there is a close operation which will tear down the connection.</Message>
+                    <Name>CloseEvent</Name>
+                    <Value>35</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when protocol caps are received from the server. We log the version selected, and the client mode and AVC capability.</Message>
+                    <Name>ClientPipelineProtocolRevision</Name>
+                    <Value>36</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when protocol caps are received from the server. We log that hardware resources are being used.</Message>
+                    <Name>ClientPipelineFrameHWMemory</Name>
+                    <Value>37</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when protocol caps are received from the server. We log that hardware resources are not being used.</Message>
+                    <Name>ClientPipelineFrameSWMemory</Name>
+                    <Value>38</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when there is error in acquiring ADAL token.</Message>
+                    <Name>RadcDetailedAdalError</Name>
+                    <Value>39</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when ADAL authentication token is successfully created.</Message>
+                    <Name>RadcAdalTokenCollected</Name>
+                    <Value>40</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when ADAL authentication is cancelled.</Message>
+                    <Name>RadcAdalCancelled</Name>
+                    <Value>41</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised if a pipeline error is encountered during execution. We log the faulting component, function, and error code.</Message>
+                    <Name>ClientPipelineError</Name>
+                    <Value>44</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This is a generic event that may be raised by the client.</Message>
+                    <Name>GenericClientEvent</Name>
+                    <Value>47</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This is a generic error that may be signaled by the client.</Message>
+                    <Name>GenericClientError</Name>
+                    <Value>48</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Access Denied</Message>
+                    <Name>AccessDenied</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Client has disconnected</Message>
+                    <Name>Disconnected</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Authentication Failure</Message>
+                    <Name>AuthFailed</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Failed to get a license</Message>
+                    <Name>LicenseError</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Operation has timed out</Message>
+                    <Name>TimedOut</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Invalid State</Message>
+                    <Name>InvalidState</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Connection to gateway server failed</Message>
+                    <Name>GatewayConnectFailed</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Network Unavailable</Message>
+                    <Name>NetworkUnAvailable</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>DNS resolution failure</Message>
+                    <Name>DnsResolutionFailure</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Sign verification failed</Message>
+                    <Name>SignVerifFailed</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Resource check failed</Message>
+                    <Name>ResourceFailure</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Logon failed</Message>
+                    <Name>LogonFailed</Name>
+                    <Value>524288</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Debug</Channel>
+                <Level>Information</Level>
+                <Task>RDP State Transition</Task>
+                <Opcode>This event is raised during a state transition.</Opcode>
+                <Message><![CDATA[
+%1: Transitioned successfully from %3 to %5 in response to %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StateTransitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousStateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewStateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>RDP State Transition</Task>
+                <Opcode>This event is raised during a state transition.</Opcode>
+                <Message><![CDATA[
+%1: An error was encountered when transitioning from %3 to %5 in response to %7 (error code %8).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StateTransitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousStateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewStateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>227</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Debug</Channel>
+                <Level>Information</Level>
+                <Task>RDP State Transition</Task>
+                <Opcode>This event is raised during a state transition.</Opcode>
+                <Message><![CDATA[
+%1: MCS Channel Join Confirmation received: ChannelID = %2, ChannelName = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StateTransitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChannelID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ChannelName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Debug</Channel>
+                <Level>Verbose</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Line" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX is trying to connect to the server (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX has connected to the server]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the disconnection process</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX has been disconnected (Reason= %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+Client has logged on to the server (SessionId = %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+Client failed to logon on to the server (Error = %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised while trying to automatically reconnect to the server</Opcode>
+                <Message><![CDATA[
+Client machine has lost network connectivity (Reason= %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during resolving the server name</Opcode>
+                <Message><![CDATA[
+DNS failed to resolve the server name (Error= %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the authentication process</Opcode>
+                <Message><![CDATA[
+The credentials provided are authenticated by the server]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the authentication process</Opcode>
+                <Message><![CDATA[
+The credentials provided were failed to be authenticated by the server]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gateway Connection Sequence</Task>
+                <Opcode>This event is raised in the gateway transport</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX is connecting to a gateway server (%1=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gateway Connection Sequence</Task>
+                <Opcode>This event is raised in the gateway transport</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX succeeded in connecting to the gateway server]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Gateway Connection Sequence</Task>
+                <Opcode>This event is raised in the gateway transport</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX failed to connect to the gateway server(Error= %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Automatic Reconnection Sequence</Task>
+                <Opcode>This event is raised while trying to automatically reconnect to the server</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX is trying to automatically reconnect to the server (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Automatic Reconnection Sequence</Task>
+                <Opcode>This event is raised while trying to automatically reconnect to the server</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX succeeded in automatically connecting to the server]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Automatic Reconnection Sequence</Task>
+                <Opcode>This event is raised while trying to automatically reconnect to the server</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX failed to automatically connect to the server (Reason= %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised while trying to get a valid license</Opcode>
+                <Message><![CDATA[
+Client has a license to connect to the server]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised while trying to get a valid license</Opcode>
+                <Message><![CDATA[
+Client does not have a license to connect to the server (Error= %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX failed to connect to the server (Error = %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>General</Task>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>General</Task>
+                <Message><![CDATA[
+RDP ClientActiveX has recorded the following error - %2. Check Details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>Gateway Connection Sequence</Task>
+                <Opcode>This event is raised in the gateway transport</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX's gateway transport has recorded the following error - %2. Check Details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gateway Connection Sequence</Task>
+                <Opcode>This event is raised in the gateway transport</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Message><![CDATA[
+RDP Client ActiveX has started using RemoteFX for graphics decoding (decoder type = %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX is trying to connect to the server (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX has connected to the server]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the disconnection process</Opcode>
+                <Message><![CDATA[
+RDP ClientActiveX has been disconnected (Reason= %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+Connected to domain (%1) with session %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+Server supports SSL = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+Base64(SHA256(UserName)) is = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Message><![CDATA[
+RDP Client build %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BuildBranch" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BuildDate" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BuildTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BuildVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ArchAndFlavour" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the disconnection process</Opcode>
+                <Message><![CDATA[
+Invalid format error occured when decoding packet of type %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Debug</Channel>
+                <Level>Information</Level>
+                <Task>General</Task>
+                <Opcode>This is a generic event that may be raised by the client.</Opcode>
+                <Message><![CDATA[
+Component name:%1, :: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>General</Task>
+                <Opcode>This is a generic error that may be signaled by the client.</Opcode>
+                <Message><![CDATA[
+Component name:%1, :: %2, Error code:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>General</Task>
+                <Opcode>This is a generic event that may be raised by the client.</Opcode>
+                <Message><![CDATA[
+Component name:%1, :: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+The client detected the link latency is %2 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+The client detected the bandwidth is %2 kbps/second.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+The client has initiated a multi-transport connection to the server %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+The client has established a multi-transport connection to the server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+The client failed to establish the multi-transport connection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomLevel" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised during the connection process</Opcode>
+                <Message><![CDATA[
+The multi-transport connection has been disconnected.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Connection Sequence</Task>
+                <Opcode>This event is raised when there is a close operation which will tear down the connection.</Opcode>
+                <Message><![CDATA[
+Close event, code = %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>General</Task>
+                <Opcode>This event is raised during the disconnection process</Opcode>
+                <Message><![CDATA[
+Disconnect trace:%1 "%2", Error code:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when the client has not been shutdown cleanly.</Opcode>
+                <Message><![CDATA[
+The RdClient has been forced exit since cancelling existing workspace job took too long.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when the user tries to sign out from the OOB client.</Opcode>
+                <Message><![CDATA[
+The user has clicked sign out on the OOB Client ribbon.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when the user manually tries to do feed refresh.</Opcode>
+                <Message><![CDATA[
+The user has clicked Refresh on the OOB client ribbon.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when the user tries to login in ADAL page using different user name.</Opcode>
+                <Message><![CDATA[
+The user tried to login into ADAL with a different user name than the one he/she subscribed to initially.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when a workspace event like subscribe/update succeeded.</Opcode>
+                <Message><![CDATA[
+%1: Workspace Event succeeded for Tenant = %2 , TotalTimeWithoutAdal = %3 ms, AdalTime = %4 ms. NumberOfResources = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Event" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TenantId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TotalTimeWithoutAdal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdalTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when a workspace event like subscribe/update failed!</Opcode>
+                <Message><![CDATA[
+%1: Workspace Event failed for Tenant = %2. , TotalTimeWithoutAdal = %3 ms, AdalTime = %4 ms. (Error code %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Event" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TenantId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TotalTimeWithoutAdal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdalTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Message><![CDATA[
+RDP Client build %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BuildBranch" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BuildDate" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BuildTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BuildVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ArchAndFlavour" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when feed discovery succeeds</Opcode>
+                <Message><![CDATA[
+Feed discovery succeeded. TotalTimeWithoutAdal = %1 ms, AdalTime = %2 ms, NumberOfFeeds = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalTimeWithoutAdal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdalTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumberOfFeeds" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when feed discovery failed!</Opcode>
+                <Message><![CDATA[
+Feed discovery failed. TotalTimeWithoutAdal = %1 ms, AdalTime = %2 ms. (Error code = %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalTimeWithoutAdal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdalTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when the feed cache on the client local machine is missing icons or Rdp files due to cache corruption!</Opcode>
+                <Message><![CDATA[
+Feed cache corruption encountered. Tenant = %1, ResourceId = %2, ResourceType = %3, (Error code %4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TenantId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResourceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResourceType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when user has successfully updated the consent status on server side</Opcode>
+                <Message><![CDATA[
+Consent status updated successfully. TotalTimeWithoutAdal =  %1, AdalTime = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalTimeWithoutAdal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdalTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when user is unable to update the consent status on server!</Opcode>
+                <Message><![CDATA[
+Consent status update failed. TotalTimeWithoutAdal =  %1, AdalTime = %2. (Error code %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalTimeWithoutAdal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdalTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1213</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when the user manually clicks the view invitations button.</Opcode>
+                <Message><![CDATA[
+The user has clicked view invitations on the OOB client ribbon.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1214</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when the user starts a new cycle of feed discovery. We log the hashed UPN and timezone information here</Opcode>
+                <Message><![CDATA[
+Base64(SHA256(UserName)) = %1, TimeZone Bias = %2, TimeZone Name = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserNameHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeZoneBias" inType="win:Int32" outType="xs:int"/>
+  <data name="TimeZoneName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1215</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when all the feeds of the user have been subscribed or updated completely. We log the overall time it took to download all feeds in parallel.</Opcode>
+                <Message><![CDATA[
+Refresh Time = %1, Number of feeds = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="refreshTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="numberOfFeeds" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1216</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when there is error in acquiring ADAL token.</Opcode>
+                <Message><![CDATA[
+ADAL error code = %1, description = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1217</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when ADAL authentication token is successfully created.</Opcode>
+                <Message><![CDATA[
+ADAL token collected successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1218</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised when ADAL authentication is cancelled.</Opcode>
+                <Message><![CDATA[
+ADAL cancelled]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1227</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised during a state transition.</Opcode>
+                <Message><![CDATA[
+%1 entering stage %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RadcClientType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RadcClientStage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1228</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised during a state transition.</Opcode>
+                <Message><![CDATA[
+%1 with http event type %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RadcClientStage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RadcHttpEvent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1229</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised during a state transition.</Opcode>
+                <Message><![CDATA[
+%1 with http event type %2 and http status code %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RadcClientStage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RadcHttpEvent" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Code" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1230</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient RADC workspace</Task>
+                <Opcode>This event is raised during a state transition.</Opcode>
+                <Message><![CDATA[
+%1 with http event type %2 failed with xresult %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RadcClientStage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RadcHttpEvent" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Code" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1401</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient Pipeline workspace</Task>
+                <Opcode>This event is raised when protocol caps are received from the server. We log the version selected, and the client mode and AVC capability.</Opcode>
+                <Message><![CDATA[
+The server is using version %1 of the RDP graphics protocol (client mode: %2, AVC available: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClientMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AvcEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1402</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient Pipeline workspace</Task>
+                <Opcode>This event is raised when protocol caps are received from the server. We log that hardware resources are being used.</Opcode>
+                <Message><![CDATA[
+The client is using hardware memory for the frame buffer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1403</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RdClient Pipeline workspace</Task>
+                <Opcode>This event is raised when protocol caps are received from the server. We log that hardware resources are not being used.</Opcode>
+                <Message><![CDATA[
+The client is using software memory for the frame buffer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1404</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Operational</Channel>
+                <Level>Error</Level>
+                <Task>RdClient Pipeline workspace</Task>
+                <Opcode>This event is raised if a pipeline error is encountered during execution. We log the faulting component, function, and error code.</Opcode>
+                <Message><![CDATA[
+The client encountered an issue while decoding and displaying RDP graphics (component: %1, function: %2, error code: %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Component" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>General</Task>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>General</Task>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>General</Task>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

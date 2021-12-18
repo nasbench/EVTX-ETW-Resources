@@ -1,0 +1,1747 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-HelloForBusiness</Name>
+        <Metadata>
+            <Guid>{906B8A99-63CE-58D7-86AB-10989BBD5567}</Guid>
+            <ResourceFilePath>C:\Windows\System32\cryptngc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\cryptngc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=cryptngc.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-HelloForBusiness</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-HelloForBusiness/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Success</Message>
+                    <Name>Success</Name>
+                    <Value>16</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Service Start</Message>
+                    <Name>ServiceStart</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Container Load</Message>
+                    <Name>ContainerLoad</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Container Creation</Message>
+                    <Name>ContainerCreation</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Key Creation</Message>
+                    <Name>KeyCreation</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Key Deletion</Message>
+                    <Name>KeyDeletion</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Certificate Enrollment</Message>
+                    <Name>CertEnrollment</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Prerequisites Check</Message>
+                    <Name>PreRequisiteCheck</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Key Registration</Message>
+                    <Name>KeyRegistration</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>PIN Recovery</Message>
+                    <Name>PinRecovery</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>Device Unlock</Message>
+                    <Name>DeviceUnlock</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Hello Provisioning</Message>
+                    <Name>HelloProvisioning</Name>
+                    <Value>16</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>Start</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>Stop</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Informational</Message>
+                    <Name>Informational</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Internal</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Component</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello processing started.
+Scenario type: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelloScenarioType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The key pre-generation pool received a request for a new key.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The key pre-generation pool needs to pre-generate a key.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business prerequisites check started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Container Creation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello container provisioning started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello is creating a PIN recovery key for user %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The cloud experience host started.
+Scenario type: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelloScenarioType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Certificate Enrollment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello sign-in certificate enrollment started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello PIN Recovery is attempting to change user's PIN. PIN recovery type: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinRecoveryEntryType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello key creation started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Key Registration</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Component</Keyword>
+                <Message><![CDATA[
+Windows Hello key registration started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Unlock</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Attempting device unlock using provider %1. The list of acceptable providers are:
+Group A: %2
+Group B: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceUnlockProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceUnlockGroupA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceUnlockGroupB" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3525</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+AD/Azure AD plugin request started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3555</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Container Creation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello container creation started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+TPM Manufacturer: %1
+Version: %2
+Status: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Manufacturer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The current user signed in to the computer using %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CredentialType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The key pre-generation pool received a request.
+Result: %1
+Number of available keys: %2
+%Elapsed time: %3 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NumberOfAvailableKeys" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ElapsedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello is checking the PIN recovery policy. The policy is %1 for user %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinRecoveryPolicyState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5061</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello is downloading the public encryption key from the PIN recovery service.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5062</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello found a PIN recovery key for user %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5063</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello is updating the PIN recovery key for user %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5064</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello is uploading the encrypted PIN recovery key to the PIN recovery service.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business certificate enrollment configurations: 
+
+Certificate Enrollment Method: %1
+Certificate Required for On-Premise Auth: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertificateEnrollmentMethod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CertificateRequired" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Creating a %1 Windows Hello key with result %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyProvider" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Unlock</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Device unlock policy is not configured on this device.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5555</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Container Creation</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello is validating that the device can satisfy all applicable policies.
+
+TPM Supported: %1
+Hardware Policy: %2
+Exclude TPM 1.2: %3
+TPM Version: %4
+TPM FIPS: %5
+TPM Locked Out: %6
+Satisfactory Key Pregeneration Pool: %7
+Key Storage Provider: %8
+Result: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TpmSupport" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HardwarePolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsTpm12Excluded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TpmVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsTpmFIPS" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsTpmLockedOut" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsKeyPregenPoolSatisfactory" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="KeyProvider" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello processing stopped with warning %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Container Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello container provisioning stopped with warning %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The cloud experience host scenario stopped with warning %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Certificate Enrollment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello sign-in certificate enrollment was unable to enroll for a logon certificate. Automatic certificate enrollment will retry at regular intervals.
+Error: %1
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business was unable to evaluate the presence of a certificate payload for the sign-in certificate.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business was unable to detect whether the user is running in a remote desktop session.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Device Unlock</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Provider is not in the acceptable provider list.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6525</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Component</Keyword>
+                <Message><![CDATA[
+AD/Azure AD plugin request stopped with warning %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Container Load</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Failed to load an existing Windows Hello container.
+
+ID: %1
+Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContainerId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Service Start</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The %1 service failed to start.
+Error: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello failed to create the sign-in certificate request.
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello failed to install the sign-in certificate.
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello failed to roll back from an unsuccessful sign-in certificate enrollment.
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello processing failed with %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The new key request from the key pre-generation pool failed.
+Error: %1
+Processing time: %2 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The key pre-generation pool failed to pre-generate a key.
+Error: %1
+Processing time: %2 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business prerequisites check failed.
+
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Container Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello container provisioning failed with %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello failed to create a PIN recovery key for user %1.
+Error: %2 (%3)
+Correlation vector: %4
+Processing time: %5 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="ErrorText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The cloud experience host scenario failed with %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello sign-in certificate enrollment failed.
+Error: %1
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7067</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Certificate Enrollment</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello failed to set a certificate property on a Windows Hello key.
+
+Error: %1
+Key name: %2
+Certificate type: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertificateType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello PIN Recovery failed to change the user's PIN.
+Error: %1 (%2)
+Correlation vector: %3
+Processing time: %4 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The device registration prerequisite check failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The Primary Account Primary Refresh Token prerequisite check failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The device failed to meet the Windows Hello for Business hardware requirements.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business is not enabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business post-logon provisioning is not enabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business failed to locate a usable sign-in certificate template.
+
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business failed to locate a certificate registration authority.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business failed to locate an enterprise management client.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business failed to locate a sign-in certificate profile.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business failed to locate a certificate payload for the sign-in certificate. The SCEP Request is not available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business detected the user running in a remote desktop session.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The Secondary Account Primary Refresh Token prerequisite check failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello key creation failed with %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7226</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Key Deletion</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello failed to delete the %1 key.
+
+Key Name: %2
+Error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Key Registration</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Component</Keyword>
+                <Message><![CDATA[
+Windows Hello key registration failed.
+
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Device Unlock</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Failed to authenticate the user's credential.
+Error: %1 (%2)
+Correlation vector: %3
+Processing time: %4 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7525</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Component</Keyword>
+                <Message><![CDATA[
+AD/Azure AD plugin request failed with %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7555</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Container Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello container creation failed.
+Error: %1
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Container Load</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Successfully loaded an existing %3 Windows Hello container.
+
+ID: %1
+Version: %2
+Has Cached Logon Key: %4
+State: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContainerId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ContainerVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyProvider" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HasCachedLogonKey" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ContainerStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Service Start</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The %1 service started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello created the sign-in certificate request successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello installed the sign-in certificate successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello successfully rolled back from an unsuccessful sign-in certificate enrollment.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello processing completed successfully.
+Processing time: %1 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The new key request from the key pre-generation pool completed successfully.
+Processing time: %1 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The key pre-generation pool successfully pre-generated a key. 
+Processing time: %1 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business prerequisites check completed successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Container Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello container provisioning completed successfully.
+Processing time: %1 seconds
+Existing container: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UsedExistingContainer" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello successfully created a PIN recovery key for user %1.
+Processing time: %2 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The cloud experience host completed successfully.
+Processing time: %1 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Certificate Enrollment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello sign-in certificate enrollment completed successfully.
+Processing time: %1 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8067</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Certificate Enrollment</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello set a certificate property on a Windows Hello key.
+
+Key name: %1
+Certificate type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertificateType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>PIN Recovery</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello PIN Recovery successfully changed the user's PIN.
+Processing time: %1 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The device registration prerequisite check completed successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The Primary Account Primary Refresh Token prerequisite check completed successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The device meets Windows Hello for Business hardware requirements.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business is enabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business post-logon provisioning is enabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business successfully located a usable sign-on certificate template.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business successfully located a certificate registration authority.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business successfully located an enterprise management client.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business successfully located a sign-in certificate profile.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business successfully located a certificate payload for the sign-in certificate. The SCEP Request is available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello for Business successfully completed the remote desktop prerequisite check.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Prerequisites Check</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The Secondary Account Primary Refresh Token prerequisite check completed successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Key Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello key creation completed successfully.
+Processing time: %1 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8226</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Key Deletion</Task>
+                <Opcode>Informational</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Windows Hello successfully deleted a %1 %2 key from the Windows Hello container.
+
+Key Name: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyProvider" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Key Registration</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Component</Keyword>
+                <Message><![CDATA[
+Windows Hello key registration completed successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Device Unlock</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+Successfully authenticated the user's credential.
+Processing time: %1 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8525</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Hello Provisioning</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Component</Keyword>
+                <Message><![CDATA[
+AD/Azure AD plugin request completed successfully.
+Processing time: %1 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8555</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-HelloForBusiness/Operational</Channel>
+                <Level>Success</Level>
+                <Task>Container Creation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Internal</Keyword>
+                <Message><![CDATA[
+The Windows Hello container creation completed successfully.
+Processing time: %1 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessingTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,189 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Power-Meter-Polling</Name>
+        <Metadata>
+            <Guid>{306C4E0B-E148-543D-315B-C618EB93157C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\umpoext.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\umpoext.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=umpoext.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Power-Meter-Polling/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>PowerMeterRundown</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>EnergyMeterRundown</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PowerMeterData</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>EnergyMeterData</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SamplingPeriodRundown</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SamplingPeriodChange</Name>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Default</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>OneSecond</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>FiveSecond</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ThirtySecond</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>FiveMinute</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ThirtyMinute</Name>
+                    <Value>32</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Power-Meter-Polling/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PowerMeterRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DefaultSamplingPeriodInMs" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MeterNameLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MeterName" inType="win:UnicodeString" outType="xs:string" length="MeterNameLength"/>
+  <data name="MeteredHardwareCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MeteredHardwareName" inType="win:UnicodeString" outType="xs:string" count="MeteredHardwareCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Power-Meter-Polling/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>EnergyMeterRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DefaultSamplingPeriodInMs" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelNameLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ChannelName" inType="win:UnicodeString" outType="xs:string" length="ChannelNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Power-Meter-Polling/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PowerMeterData</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Power-Meter-Polling/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>EnergyMeterData</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AbsoluteEnergy" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AbsoluteTime" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Power-Meter-Polling/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SamplingPeriodRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeriodInMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Power-Meter-Polling/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SamplingPeriodChange</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeriodInMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
