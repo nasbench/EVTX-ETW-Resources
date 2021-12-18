@@ -1,0 +1,431 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Proximity-Common</Name>
+        <Metadata>
+            <Guid>{28058203-D394-4AFC-B2A6-2F9155A3BB95}</Guid>
+            <ResourceFilePath>C:\Windows\system32\ProximityCommon.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\ProximityCommon.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=ProximityCommon.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Proximity-Common</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Proximity-Common/Informational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Proximity-Common/Performance</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Proximity-Common/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_DeviceArrivalTrigger</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_OOBMessageProcessing</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_OOBMessagePublishing</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_DeviceAssociation</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_SessionAppLaunch</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_ReceiveSharedContent</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_SessionProtocol</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_SessionConnect</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Proximity_SocketConnect</Name>
+                    <Value>18</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ProximityAssociation</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_DeviceArrivalTrigger</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A Proximity device arrival event has occurred with provider: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Informational</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_OOBMessageProcessing</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>ProximityAssociation</Keyword>
+                <Message><![CDATA[
+Proximity OOB message is received for incoming message pointer %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Informational</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_OOBMessagePublishing</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>ProximityAssociation</Keyword>
+                <Message><![CDATA[
+Outbound OOB message publishing begins for incoming message pointer %1, AEP ID %2, device %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Informational</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_OOBMessagePublishing</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Outbound OOB message publishing ends for incoming message pointer %1, AEP ID %2, device %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Informational</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_OOBMessageProcessing</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Consent UI is to be displayed for incoming message pointer %1, AEP ID %2, device %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_DeviceAssociation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Proximity association begins. User response is %1. Device category %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HrResult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DeviceCategory" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_DeviceAssociation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Proximity association is completed, result %1. Device category %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HrResult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DeviceCategory" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_SessionAppLaunch</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Proximity session launch event received for app: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_SessionAppLaunch</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Proximity session launch notification displayed for app: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_ReceiveSharedContent</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Proximity receive shared content event triggered for provider: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_ReceiveSharedContent</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Proximity receive shared content prompt displayed for provider: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_SessionProtocol</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Proximity protocol exchange started for app: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_SessionProtocol</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Proximity protocol exchange completed app: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_SessionConnect</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Proximity socket connection started for app: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_SessionConnect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Proximity connected proximity socket of type: %1, and handed to app: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Integer4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Browse PeerId %1 already registered for app: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_ReceiveSharedContent</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Proximity receive shared content start showing receive progress UI event triggered for provider: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_ReceiveSharedContent</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Proximity receive shared content finished showing receive progress UI for provider: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_SocketConnect</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A socket connection is starting.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Proximity-Common/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Proximity_SocketConnect</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The socket connection completed with transport = %1, and hresult = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransportType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HrConnectResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,717 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-PLA</Name>
+        <Metadata>
+            <Guid>{E4D53F84-7DE3-11D8-9435-505054503030}</Guid>
+            <ResourceFilePath>C:\Windows\System32\pla.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\pla.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=pla.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Diagnosis-PLA</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnosis-PLA/Operational</Message>
+                    <Path>Microsoft-Windows-Diagnosis-PLA/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnosis-PLA/Debug</Message>
+                    <Path>Microsoft-Windows-Diagnosis-PLA/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Transactions</Message>
+                    <Name>transaction</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Memory</Message>
+                    <Name>memory</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Object</Message>
+                    <Name>object</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Errors</Message>
+                    <Name>errors</Name>
+                    <Value>2048</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data collector set %1 was created by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data collector set %1 was changed by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data collector set %1 was deleted by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data collector set %1 started as %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Data collector set %1 failed to start as %3 with error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data collector set %1 stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Data collector set %1 stopped because of error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data collector set %1 launched task %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Data collector set %1 failed to launch task %2 with error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PLA upgrade failed with error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Counter %2 could not be added to collector %1, error code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CounterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Configuration data collector %1\%2 completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataCollecotrSet" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data collector set %1 is compiling.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Data collector set %1 segmented.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Alert Data Collector %2 in Data Collector Set %1 failed to start task, error code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataCollecotrSet" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Alert Data Collector %2 in Data Collector Set %1 failed to start Data Collector Set, error code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataCollecotrSet" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Alert Data Collector %2 in Data Collector Set %1 failed to write event log event, error code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataCollecotrSet" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PLA failed to send cabinet file %2 to server %1, error code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CabName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operator" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threshold" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReportFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReportFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReportFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BuildNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuildType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BuildNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuildType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Transactions</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OrigAddress" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-PLA/Debug</Channel>
+                <Keyword>Errors</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

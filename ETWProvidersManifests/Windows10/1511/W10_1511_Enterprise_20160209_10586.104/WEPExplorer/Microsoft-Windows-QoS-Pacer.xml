@@ -1,0 +1,539 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-QoS-Pacer</Name>
+        <Metadata>
+            <Guid>{914ED502-B70D-4ADD-B758-95692854F8A3}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\pacer.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\pacer.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=pacer.sys&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-QoS-Pacer/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:SendPath</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ReceivePath</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L3ConnectPath</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L2ConnectPath</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ClosePath</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Global</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Dropped</Name>
+                    <Value>1099511627776</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:PiiPresent</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Packet</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Address</Name>
+                    <Value>8796093022208</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StdTemplateHint</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StateTransition</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Create %2 at %3 bytes/sec with status %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="QoSObjectBufferLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PACER: Flow created with status %1 (type=%2, rate=%3Bps, service=%8, dscp=%11, 802.1p=%12, system=%15)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DsClass" inType="win:Int16" outType="xs:short"/>
+  <data name="TrafficClass" inType="win:Int16" outType="xs:short"/>
+  <data name="QoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="QoSObjectBufferLen"/>
+  <data name="DefaultSystemFlow" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Update %2 from %3 to %11 with status %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OldSendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NewSendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewQoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewQoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="NewQoSObjectBufferLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PACER: Flow updated with status %1 (rate=%3Bps, service=%8, dscp=%11, 802.1p=%12)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DsClass" inType="win:Int16" outType="xs:short"/>
+  <data name="TrafficClass" inType="win:Int16" outType="xs:short"/>
+  <data name="NewQoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewQoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="NewQoSObjectBufferLen"/>
+  <data name="AffectedPackets" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Start Pacer on NetLuid=%1 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetLuid" inType="win:Binary" outType="xs:hexBinary" length="8"/>
+  <data name="NdisMediumType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PACER: Starting adapter %4 (luid=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="NdisMediumType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FriendlyNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string" length="FriendlyNameLen"/>
+  <data name="DeviceNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLen"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Stop Pacer on NetLuid=%1 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetLuid" inType="win:Binary" outType="xs:hexBinary" length="8"/>
+  <data name="NdisMediumType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PACER: Stopping adapter %4 (luid=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="NdisMediumType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FriendlyNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string" length="FriendlyNameLen"/>
+  <data name="DeviceNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLen"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Update %1 from %2 to %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OldSendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NewSendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewQoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewQoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="NewQoSObjectBufferLen"/>
+  <data name="AffectedPackets" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PACER: Flow deleted (dropped=%1, scheduled=%2/%4, transmitted=%3/%5, nbl=%7/%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DroppedPackets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketsScheduled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketsTransmitted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesScheduled" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesTransmitted" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NblSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NblComplete" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PACER: Packet dropped, reason=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+PACER: Non-conformance marking, dscp=%1, 802.1p=%2, WMM=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DsClass" inType="win:Int16" outType="xs:short"/>
+  <data name="TrafficClass" inType="win:Int16" outType="xs:short"/>
+  <data name="Wmm" inType="win:Int16" outType="xs:short"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PACER: Application-based DSCP marking policy state=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Allow" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PACER: CurrentTime= %1 BytesSent= %2 BytesDropped= %3 NewSendWindow= %4 MinSendWindow= %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesDropped" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendWindow" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinSendWindow" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Weight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SBytesRequested" inType="win:Int64" outType="xs:long"/>
+  <data name="DropRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IdleIntervals" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RcSendWindow" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RcEpisodeLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RcStatMuxFactor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RcExitThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AverageMaxBytesRequested" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PACER: NetLuid= %1 CurrentTime= %2 ActiveFlows= %3 ActiveWeight= %4 NewSendWindow= %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetLuid" inType="win:Binary" outType="xs:hexBinary" length="8"/>
+  <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ActiveFlows" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveWeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSendWindow" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+PACER: FlowConformanceEventId= %1 CurrentTime= %2 LastConformanceTime= %3 PeakConformanceTime= %4 Tokens= %5 MaxTokens= %6 Rate= %7 LastConformanceCredits= %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowConformanceEvent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastConformanceTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PeakConformanceTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Tokens" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MaxTokens" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Rate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastConformanceCredits" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+PACER: FlowSendQueueEventId= %1 CurrentTime= %2 IdleTime= %3 DelayTime= %4 BytesRequested= %5 BytesSent= %6 BytesQueued= %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowSendQueueEvent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DelayTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesRequested" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesQueued" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+PACER: TimerId= %1 EventId= %2 CurrentTime= %3 SetTime= %4 RunTime= %5 FlowsProcessed= %6 NblsSent= %7 NblsDropped= %8 Flags= %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimerEvent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimerId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SetTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RunTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FlowsProcessed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NblsSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NblsDropped" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-Pacer/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PACER: NetLuid= %1 CurrentTime= %2 BytesRequested= %3 BytesCompleted= %4 BytesInQueue= %5 BufferAvailable= %6 AlphaTerm= %8 BetaTerm= %7 DeltaSendWindow= %9 NewSendWindow= %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetLuid" inType="win:Binary" outType="xs:hexBinary" length="8"/>
+  <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesRequested" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesCompleted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesInQueue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferAvailable" inType="win:Int64" outType="xs:long"/>
+  <data name="BetaTerm" inType="win:Int64" outType="xs:long"/>
+  <data name="AlphaTerm" inType="win:Int64" outType="xs:long"/>
+  <data name="DeltaSendWindow" inType="win:Int64" outType="xs:long"/>
+  <data name="NewSendWindow" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
