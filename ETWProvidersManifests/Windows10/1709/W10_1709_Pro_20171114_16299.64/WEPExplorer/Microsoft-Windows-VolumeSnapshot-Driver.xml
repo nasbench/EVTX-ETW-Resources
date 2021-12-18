@@ -1,0 +1,2034 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-VolumeSnapshot-Driver</Name>
+        <Metadata>
+            <Guid>{67FE2216-727A-40CB-94B2-C02211EDB34A}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\volsnap.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\volsnap.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=volsnap.sys&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-VolumeSnapshot-Driver</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Prepare</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:PreExposure</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:AdjustBitmap</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:EndCommit</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Activate</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:SetIgnorable</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:IgnorableProduct</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Dismount</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Remount</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:DeleteProcess</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Revert</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:ProtectedBitmap</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:FlushHoldFs</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:ActivateLoop</Name>
+                    <Value>26</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:ValidateFiles</Name>
+                    <Value>28</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:VolumeSafe</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:DiscoverSnapshots</Name>
+                    <Value>32</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Prepare</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Prepare</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:PreExposure</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:PreExposure</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:AdjustBitmap</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:AdjustBitmap</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:EndCommit</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:EndCommit</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Activate</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Activate</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:SetIgnorable</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:SetIgnorable</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:IgnorableProduct</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:IgnorableProduct</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Dismount</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Dismount</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Remount</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Remount</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:DeleteProcess</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:DeleteProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Revert</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Revert</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ProtectedBitmap</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ProtectedBitmap</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:FlushHoldFs</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:FlushHoldFs</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ActivateLoop</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ActivateLoop</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ValidateFiles</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ValidateFiles</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:VolumeSafe</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:VolumeSafe</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:DiscoverSnapshots</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:DiscoverSnapshots</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver has begun processing for volume online.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online the volume snapshot driver scans for any persistent snapshots that may be on the volume.
+
+You should expect this event when a volume is brought online.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver has completed processing for volume online.
+
+Volume GUID: %1
+
+Guidance:
+The volume snapshot driver was able to scan for any persistent snapshots on this volume.
+
+You should expect this event when a volume is brought online.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver encountered an error while performing processing for volume online.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online the volume snapshot driver scans for any persistent snapshots that may be on the volume.  In case of an error this scan is not performed.  The error may have originated in storage drivers beneath the volume snapshot driver; check their logs.
+
+If the error is STATUS_DEVICE_NOT_CONNECTED this means the volume is in snapshot protection mode and has been taken offline to prevent loss of snapshots.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Error" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Activation of discovered snapshots began.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.
+
+You should expect this event when a volume is brought online or reverted to a snapshot.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Activation of discovered snapshots completed.
+
+Volume GUID: %1
+Total Number of Snapshots Found: %2
+Number of Snapshots Marked for Delete: %3
+Number of Visible Snapshots Found: %4
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  Some snapshots may be marked 'visible', meaning they were exposed as a local volume or file share.  Some detected snapshots may be marked 'deleted', meaning they are no longer available for use and their diff area space will be reclaimed when all older snapshots are deleted.  Look for instances of event 106 to see each snapshot that was discovered and whether it was 'visible' or 'deleted'.
+
+You should expect this event when a volume is brought online or reverted to a snapshot.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CountDeleted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CountVisible" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Activation of discovered snapshots encountered an error.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  Unless the volume is in snapshot protection mode or the error code indicates the volume is offline, a failure during this process results in loss of all snapshots on the volume.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Error" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A persistent snapshot was activated.
+
+Volume GUID: %1
+Snapshot GUID: %2
+Snapshot Marked Deleted: %3
+Snapshot Visible: %4
+Snapshot Commit Timestamp: %5
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  If the snapshot is 'visible', it was exposed as a local volume or file share.  If the snapshot is 'deleted', it is no longer available for use and its diff area space will be reclaimed when all older snapshots are deleted.
+
+You should expect this event when a volume containing persistent snapshots is brought online or reverted to a snapshot.  If all discovered snapshots are successfully activated you should expect event 104, otherwise you will see event 105.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Deleted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Visible" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CommitTime" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Reading of a snapshot diff area's metadata began.
+
+Volume GUID: %1
+Snapshot GUID: %2
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver reads the diff area for the most-recent persistent snapshot (if any).  The diff area for earlier persistent snapshots is typically read the first time the snapshot is read from.
+
+You should expect this event when a volume is brought online, reverted to a snapshot, or when reading from a persistent snapshot for the first time after bringing a volume online.  This event may also occur if a volume is dismounted that contains snapshots that have not been read since the volume was brought online.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Reading of a snapshot diff area's metadata completed.
+
+Volume GUID: %1
+Snapshot GUID: %2
+Count of 1MB Reads: %3
+Count of 16KB Reads: %4
+Diff Area Metadata Size: %5 Bytes
+Total Data Read: %6 Bytes
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver reads the diff area for the most-recent persistent snapshot (if any).  The diff area for earlier persistent snapshots is typically read the first time the snapshot is read from.  The size of the diff area metadata may be less than the total number of bytes read if the diff area is discontiguous on disk.
+
+You should expect this event when a volume is brought online, reverted to a snapshot, or when reading from a persistent snapshot for the first time after bringing a volume online.  This event may also occur if a volume is dismounted that contains snapshots that have not been read since the volume was brought online.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LargeReadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SmallReadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TableDataBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRead" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Reading of a snapshot diff area's metadata encountered an error.
+
+Error: %3
+
+Volume GUID: %1
+Snapshot GUID: %2
+Count of 1MB Reads: %4
+Count of 16KB Reads: %5
+Amount of Diff Area Metadata Read: %6 Bytes
+Total Data Read: %7 Bytes
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver reads the diff area for the most-recent persistent snapshot (if any).  The diff area for earlier persistent snapshots is typically read the first time the snapshot is read from.  Unless the volume is in snapshot protection mode, a failure during this process results in loss of all snapshots on the volume.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Error" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="LargeReadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SmallReadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TableDataBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRead" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Validation of diff area files began.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is mounted, the volume snapshot driver reads and validates all the diff area files located on the volume.  These diff area files may be for persistent snapshots of the volume being mounted, or for persistent snapshots of other volumes.
+
+You should expect this event when mounting a volume.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Validation of diff area files completed.
+
+Number of Diff Areas: %2
+
+Guidance:
+When a volume is mounted, the volume snapshot driver reads and validates all the diff area files located on the volume.  These diff area files may be for persistent snapshots of the volume being mounted, or for persistent snapshots of other volumes.
+
+You should expect this event when mounting a volume.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiffAreaCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Validation of diff area files encountered an error.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is mounted, the volume snapshot driver reads and validates all the diff area files located on the volume.  These diff area files may be for persistent snapshots of the volume being mounted, or for persistent snapshots of other volumes.  A failure during this process results in loss of all snapshots whose diff area files are located on the volume, unless those snapshots are of volumes that are in snapshot protection mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Error" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The volume is preparing to be taken offline.
+
+Volume GUID: %1
+
+Guidance:
+Some system services, such as the cluster service, inform the volume snapshot driver when they are about to take the volume offline.
+
+You should expect this event when an entity such as the cluster service prepares to take a volume offline.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver has begun processing for dismount.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is dismounted, the volume snapshot driver closes any handles it may have open on the dismounting volume, such as handles to diff areas.  All auto-release snapshots that have diff areas on the dismounting volume are deleted at this time. The volume snapshot driver may also perform some work to detect whether any future direct writes to the volume are to diff area space for persistent snapshots.  If such writes occur this detection work allows the volume snapshot driver to destroy the snapshots, since the direct volume writes may corrupt them.
+
+You should expect this event when a volume dismounts.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver has completed processing for dismount.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is dismounted, the volume snapshot driver closes any handles it may have open on the dismounting volume, such as handles to diff areas.  All auto-release snapshots that have diff areas on the dismounting volume are deleted at this time. The volume snapshot driver may also perform some work to detect whether any future direct writes to the volume are to diff area space for persistent snapshots.  If such writes occur this detection work allows the volume snapshot driver to destroy the snapshots, since the direct volume writes may corrupt them.
+
+You should expect this event when a volume dismounts.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver has begun processing for volume offline.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is taken offline, the volume snapshot driver disables any persistent snapshots that still exist for the volume (autorelease snapshots were deleted when the volume was dismounted).  Snapshots of other volumes whose diff areas are on the offlining volume are destroyed, unless those volumes are in snapshot protection mode.  In that case those volumes are taken offline.
+
+You should expect this event when a volume is taken offline.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver has completed processing for volume offline.
+
+Volume GUID: %1
+
+Guidance:
+When a volume is taken offline, the volume snapshot driver disables any persistent snapshots that still exist for the volume (autorelease snapshots were deleted when the volume was dismounted).  Snapshots of other volumes whose diff areas are on the offlining volume are destroyed, unless those volumes are in snapshot protection mode.  In that case those volumes are taken offline.
+
+You should expect this event when a volume is taken offline.  No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver encountered an error while performing processing for volume offline.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is taken offline, the volume snapshot driver disables any persistent snapshots that still exist for the volume (autorelease snapshots were deleted when the volume was dismounted).  Snapshots of other volumes whose diff areas are on the offlining volume are destroyed, unless those volumes are in snapshot protection mode.  In that case those volumes are taken offline.
+
+If the error is STATUS_INSUFFICIENT_RESOURCES (0xc000009a), the volume snapshot driver may have been unable to allocate memory.  Other error codes originate from lower drivers.  Please check their log(s) for further information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Error" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The volume snapshot driver encountered an error while performing processing for dismount.
+
+Error: %3
+Error Details: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is dismounted, the volume snapshot driver closes any handles it may have open on the dismounting volume, such as handles to diff areas.  All auto-release snapshots that have diff areas on the dismounting volume are deleted at this time. The volume snapshot driver may also perform some work to detect whether any future direct writes to the volume are to diff area space for persistent snapshots.  If such writes occur this detection work allows the volume snapshot driver to destroy the snapshots, since the direct volume writes may corrupt them.
+
+A failure during this process results in loss of all snapshots whose diff area files are located on the volume, unless those snapshots are of volumes that are in snapshot protection mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PersistentDeleteReason" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PersistentDeleteStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Activation of discovered snapshots took too long and was aborted.
+
+Volume GUID: %1
+Timeout Value (in seconds): %2
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  This process took longer than the amount of time allowed on this system, so activation has been aborted.  Unless the volume is in snapshot protection mode, all snapshots on this volume have been deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TimeoutInSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The volume snapshot driver was unable to log an event to the legacy System event log.
+
+Volume Name: %2
+Diff Volume Name (if applicable): %4
+Original Error Event Code: %5
+Original Error Status: %6
+Cause of Logging Failure:%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="DiffVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiffVolumeName" inType="win:UnicodeString" outType="xs:string" length="DiffVolumeNameLength"/>
+  <data name="OriginalErrorLogCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalErrorStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="OriginalSourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="OriginalSourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="OriginalSourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The volume snapshot driver encountered an error when attempting to determine whether the volume is clustered.
+
+Error: %2
+
+Volume GUID: %1
+
+Guidance:
+When a volume is brought online or reverted to a snapshot, the volume snapshot driver scans for and activates any persistent snapshots that may be on the volume.  This process attempts to determine whether the volume is part of a cluster shared resource, but the query to determine this failed.
+
+This error does not indicate that any snapshots have been deleted.  You should expect this event if the volume is on a dynamic disk or is managed by a third-party volume manager.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Error" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Prepare</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PrepareForSnapshot (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Prepare</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PrepareForSnapshot (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:PreExposure</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PreExposure (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:PreExposure</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PreExposure (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:AdjustBitmap</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+AdjustBitmap (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:AdjustBitmap</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+AdjustBitmap (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:EndCommit</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+EndCommit (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:EndCommit</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+EndCommit (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Activate</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Activate (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Activate</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Activate (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:SetIgnorable</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SetIgnorable (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:SetIgnorable</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SetIgnorable (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:IgnorableProduct</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ComputeIgnorableProduct (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:IgnorableProduct</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ComputeIgnorableProduct (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Dismount</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Dismount (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Dismount</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Dismount (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Remount</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Remount (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Remount</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Remount (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:DeleteProcess</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DeleteProcess (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:DeleteProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DeleteProcess (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Revert</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Revert (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:Revert</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Revert (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ProtectedBitmap</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ComputeProtectedBitmap (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ProtectedBitmap</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ComputeProtectedBitmap (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:FlushHoldFs</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+FlushHoldFs (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:FlushHoldFs</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+FlushHoldFs (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ActivateLoop</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ActivateLoop (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ActivateLoop</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ActivateLoop (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ValidateFiles</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ValidateDiffAreaFiles (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:ValidateFiles</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ValidateDiffAreaFiles (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:VolumeSafe</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+VolumesSafeForWrite (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:VolumeSafe</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+VolumesSafeForWrite (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:DiscoverSnapshots</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DiscoverSnapshots (Enter)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>vs:DiscoverSnapshots</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DiscoverSnapshots (Leave)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagPrefixLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiagPrefix" inType="win:UnicodeString" outType="xs:string" length="DiagPrefixLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="TargetVolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

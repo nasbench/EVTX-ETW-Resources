@@ -1,0 +1,318 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-WDC</Name>
+        <Metadata>
+            <Guid>{05921578-2261-42C7-A0D3-26DDBCE6C50D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wdc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wdc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=wdc.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Diagnosis-WDC</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Diagnosis-WDC/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ListUpdate</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_Launch</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_TabSwitch</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_HandleSearch</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_ColumnSort</Name>
+                    <Value>104</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Update</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Insert</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Delete</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>memory</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>list</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>error</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Keyword>memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Keyword>memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5018</Id>
+                <Version>0</Version>
+                <Keyword>memory</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OrigAddress" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>ListUpdate</Task>
+                <Opcode>Update</Opcode>
+                <Keyword>list</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TableId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemPos" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ItemContent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>ListUpdate</Task>
+                <Opcode>Insert</Opcode>
+                <Keyword>list</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TableId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemPos" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ItemContent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5102</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>ListUpdate</Task>
+                <Opcode>Delete</Opcode>
+                <Keyword>list</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TableId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemPos" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ItemContent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5103</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>error</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDC/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_Launch</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDC/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_Launch</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDC/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_TabSwitch</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TabId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDC/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_TabSwitch</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TabId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDC/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_HandleSearch</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestCookie" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDC/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_HandleSearch</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestCookie" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDC/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_ColumnSort</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TableId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ColumnId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-WDC/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_ColumnSort</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TableId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ColumnId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

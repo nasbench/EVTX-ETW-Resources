@@ -1,0 +1,172 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagtrack</Name>
+        <Metadata>
+            <Guid>{56DC463B-97E8-4B59-E836-AB7C9BB96301}</Guid>
+            <ResourceFilePath>C:\Windows\system32\diagtrack.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\diagtrack.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=diagtrack.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DiagTrack</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MatchEngine_ScenarioCompleted</Name>
+                    <Value>203</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AsimovUploader_PersistEvent</Name>
+                    <Value>755</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AsimovUploader_UploadEventBuffer</Name>
+                    <Value>756</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SnapTrace_SnappingScenarioInformation</Name>
+                    <Value>4100</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>DiagTrack Status</Message>
+                    <Name>DiagTrackStatus</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>DiagTrack Windows Perf</Message>
+                    <Name>DiagTrackPerf</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>203</Id>
+                <Version>4</Version>
+                <Level>Verbose</Level>
+                <Task>MatchEngine_ScenarioCompleted</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ScenarioInstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ScenarioName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentCompletionReports" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCompletionReports" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentCancelReports" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCancelReports" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentFailureReports" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFailureReports" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentCompletionEscalations" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCompletionEscalations" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentFailureEscalations" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFailureEscalations" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SinkStateOrdinal" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PerfTrackScenarioName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PerfTrackDurationField" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_TimeSinceOsInstall" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastBootTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_IsAcOn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_IsEscalationInProgress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_IsKernelDebuggerPresent" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastPowerSourceChangeTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastAbnormalShutdownTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastSuccessfulRefreshTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastApplicationInstallTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastUnlockTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastLogonTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastDeviceArrivalTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastResumeFromHibernateTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_LastResumeFromStandbyTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Metadata_IsContinuumSessionActive" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TriggersCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="TriggerInfo" count="TriggersCount">
+    <data name="Producer" inType="win:UnicodeString" outType="xs:string" length="64"/>
+    <data name="identifyingInfo" inType="win:UnicodeString" outType="xs:string" length="192"/>
+    <data name="TimeStamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TID" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="AID" inType="win:GUID" outType="xs:GUID"/>
+    <data name="EventKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>755</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Task>AsimovUploader_PersistEvent</Task>
+                <Keyword>DiagTrack Status</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventPayload" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventLatency" inType="win:Int16" outType="xs:short"/>
+  <data name="EventPersistence" inType="win:Int16" outType="xs:short"/>
+  <data name="GroupId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProviderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Categories" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsCore" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>756</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AsimovUploader_UploadEventBuffer</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Task>SnapTrace_SnappingScenarioInformation</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TriggersCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="TriggerInfo" count="TriggersCount">
+    <data name="Producer" inType="win:UnicodeString" outType="xs:string" length="64"/>
+    <data name="identifyingInfo" inType="win:UnicodeString" outType="xs:string" length="192"/>
+    <data name="TimeStamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="Pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Tid" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Aid" inType="win:GUID" outType="xs:GUID"/>
+    <data name="EventKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  </struct>
+  <data name="ScenarioInstanceId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

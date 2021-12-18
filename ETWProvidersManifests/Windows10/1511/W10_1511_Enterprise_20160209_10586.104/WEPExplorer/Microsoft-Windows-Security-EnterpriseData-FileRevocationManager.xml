@@ -1,0 +1,154 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager</Name>
+        <Metadata>
+            <Guid>{2CD58181-0BB6-463E-828A-056FF837F966}</Guid>
+            <ResourceFilePath>C:\Windows\system32\efswrt.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\efswrt.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=efswrt.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>1</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Protect Identity operation.</Message>
+                    <Name>CreateIdentity</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Revoke Identity operation.</Message>
+                    <Name>RevokeIdentity</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Delegation operation.</Message>
+                    <Name>Delegation</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Protect Identity operation.</Opcode>
+                <Message><![CDATA[
+Application %2 created an enterprise protection key for %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EntIDString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppIDString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Protect Identity operation.</Opcode>
+                <Message><![CDATA[
+Application %2 failed to create an enterprise protection key for %1. Error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EntIDString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppIDString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Revoke Identity operation.</Opcode>
+                <Message><![CDATA[
+Application %2 successfully deleted all %1 enterprise protection keys.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EntIDString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppIDString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Revoke Identity operation.</Opcode>
+                <Message><![CDATA[
+Application %2 successfully deleted its %1 enterprise protection key.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EntIDString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppIDString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Revoke Identity operation.</Opcode>
+                <Message><![CDATA[
+Application %2 failed to delete %1 enterprise protection key(s). Error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EntIDString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppIDString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Delegation operation.</Opcode>
+                <Message><![CDATA[
+The following entry in the Group Policy "Allow Windows Runtime apps to revoke enterprise data" is formatted incorrectly and was ignored:
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

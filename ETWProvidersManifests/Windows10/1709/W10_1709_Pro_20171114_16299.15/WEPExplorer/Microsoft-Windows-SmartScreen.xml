@@ -1,0 +1,100 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SmartScreen</Name>
+        <Metadata>
+            <Guid>{3CB2A168-FE34-4A4E-BDAD-DCF422F34473}</Guid>
+            <ResourceFilePath>C:\Windows\system32\smartscreen.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\smartscreen.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=smartscreen.exe&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SmartScreen/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SmartScreen/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Application SmartScreen Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FullFileHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthenticodeHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthenticodeAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MarkOfTheWeb" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CallingProcessCreationTime" inType="win:UInt64" outType="win:ETWTIME"/>
+  <data name="Sid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Enforcement" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Experience" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SmartScreen/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Uri SmartScreen Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReferrerUri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReferrerIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Recommendation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HitType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NavigationType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProductType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CallingProcessCreationTime" inType="win:UInt64" outType="win:ETWTIME"/>
+  <data name="Sid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Enforcement" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Experience" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SmartScreen/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+User Decision SmartScreen Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivitiyId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

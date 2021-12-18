@@ -1,0 +1,184 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CoreSystem-SmsRouter</Name>
+        <Metadata>
+            <Guid>{A9C11050-9E93-4FA4-8FE0-7C4750A345B2}</Guid>
+            <ResourceFilePath>C:\Windows\System32\SmsRouterSvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\SmsRouterSvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=SmsRouterSvc.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-CoreSystem-SmsRouter</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>SmsRouter Operational Channel</Message>
+                    <Path>Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>SmsRouter Debug Channel</Message>
+                    <Path>Microsoft-Windows-CoreSystem-SmsRouter-Events/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>SmsRouter</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SmsBroker</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Error</Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Information</Message>
+                    <Name>Information</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Trace</Message>
+                    <Name>Trace</Name>
+                    <Value>8</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>SmsRouter Operational Channel</Channel>
+                <Level>Information</Level>
+                <Task>SmsRouter</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+[SmsRouter] SmsRouter is started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>SmsRouter Operational Channel</Channel>
+                <Level>Information</Level>
+                <Task>SmsRouter</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+[SmsRouter] SmsRouter is stoped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>SmsRouter Debug Channel</Channel>
+                <Level>Error</Level>
+                <Task>SmsRouter</Task>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+[SmsRouter::%1:%2] Error %3: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AnsiStringName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HResultName" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>SmsRouter Debug Channel</Channel>
+                <Level>Information</Level>
+                <Task>SmsRouter</Task>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+[SmsRouter::%1:%2] %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AnsiStringName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>SmsRouter Operational Channel</Channel>
+                <Level>Information</Level>
+                <Task>SmsBroker</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+[SmsRouter] SmsBroker is started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>SmsRouter Operational Channel</Channel>
+                <Level>Information</Level>
+                <Task>SmsBroker</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+[SmsRouter] SmsBroker is stoped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

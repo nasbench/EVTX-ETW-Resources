@@ -1,0 +1,431 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DVD</Name>
+        <Metadata>
+            <Guid>{E18D0FCA-9515-4232-98E4-89E456D8551B}</Guid>
+            <ResourceFilePath>C:\Windows\system32\qdvd.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\qdvd.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=qdvd.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DVD-Navigator</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>DVD Navigator</Message>
+                    <Path>Navigator</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Nav SendSample</Message>
+                    <Name>Nav_SendSample</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Nav Flush</Message>
+                    <Name>Nav_Flush</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Nav StillTimer</Message>
+                    <Name>Nav_StillTimer</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Nav ParsePCI</Message>
+                    <Name>Nav_ParsePCI</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Nav Throttle</Message>
+                    <Name>Nav_Throttle</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Nav PumpWait</Message>
+                    <Name>Nav_PumpWait</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Nav SendEventNotification</Message>
+                    <Name>Nav_SendEventNotification</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Nav DomainChange</Message>
+                    <Name>Nav_DomainChange</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Nav SendErrorNotification</Message>
+                    <Name>Nav_SendErrorNotification</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Nav StartStreaming</Message>
+                    <Name>Nav_StartStreaming</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Nav CreateFile</Message>
+                    <Name>Nav_CreateFile</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Nav MutexLock</Message>
+                    <Name>Nav_MutexLock</Name>
+                    <Value>13</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav SendSample</Task>
+                <Message><![CDATA[
+Nav SendSample Object=%1 treamID=%1 StreamType=%2 IsRunning=%3 rtTimestamp=%4 rtNow=%5 rtAhead=%6 SyncPoint=%8 TimeDisc=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:Int32" outType="xs:int"/>
+  <data name="StreamType" inType="win:Int32" outType="xs:int"/>
+  <data name="IsRunning" inType="win:Int32" outType="xs:int"/>
+  <data name="rtTimestamp" inType="win:Int64" outType="xs:long"/>
+  <data name="rtNow" inType="win:Int64" outType="xs:long"/>
+  <data name="rtAhead" inType="win:Int64" outType="xs:long"/>
+  <data name="SyncPoint" inType="win:Int32" outType="xs:int"/>
+  <data name="TimeDisc" inType="win:Int32" outType="xs:int"/>
+  <data name="Length" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav Flush</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Nav BeginFlush object=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav Flush</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Nav EndFlush object=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav StillTimer</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Nav StillTimerOn object=%1 time=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Duration" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav StillTimer</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Nav StillTimerOff object=%1 time=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Duration" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav ParsePCI</Task>
+                <Message><![CDATA[
+Nav ParsePCI object=%1 wStreamID=%2 type=%3 fIsRunning=%4 rtStart=%5 rtNow=%6 rtDistAheadOfClock=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HaveRun" inType="win:Int32" outType="xs:int"/>
+  <data name="IsRunning" inType="win:Int32" outType="xs:int"/>
+  <data name="UsedGetTime" inType="win:Int32" outType="xs:int"/>
+  <data name="SetTimeToNow" inType="win:Int32" outType="xs:int"/>
+  <data name="CellTimeDisc" inType="win:Int32" outType="xs:int"/>
+  <data name="rtNow" inType="win:Int64" outType="xs:long"/>
+  <data name="rtTime0" inType="win:Int64" outType="xs:long"/>
+  <data name="rtNow_Time0" inType="win:Int64" outType="xs:long"/>
+  <data name="VOBU Len" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav Throttle</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Nav Throttle start object=%1 dur=%2 max_lat=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Duration" inType="win:Int32" outType="xs:int"/>
+  <data name="Max Latency" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav Throttle</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Nav Throttle end object=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav PumpWait</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Nav PumpWait start object=%1 handleMask=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HandleMask" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav PumpWait</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Nav PumpWait end object=%1 WakeIndex=%2 Error=%3 IOIndex=%4 ExtraInfo=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WakeIndex" inType="win:Int32" outType="xs:int"/>
+  <data name="LastError" inType="win:Int32" outType="xs:int"/>
+  <data name="IOIndex" inType="win:Int32" outType="xs:int"/>
+  <data name="ExtraEventInfo" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav SendEventNotification</Task>
+                <Message><![CDATA[
+Nav SendEventNotification object=%1 type=%2 param1=%3 param2=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:Int32" outType="xs:int"/>
+  <data name="Param1" inType="win:Int32" outType="xs:int"/>
+  <data name="Param2" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav DomainChange</Task>
+                <Message><![CDATA[
+Nav DomainChange object=%1 domain=%2 VTSN=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Domain" inType="win:Int32" outType="xs:int"/>
+  <data name="VTSN" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav SendErrorNotification</Task>
+                <Message><![CDATA[
+Nav SendErrorNotification object=%1 param1=%2 param2=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Param1" inType="win:Int32" outType="xs:int"/>
+  <data name="Param2" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav StartStreaming</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Nav StartStreamingStart object=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav StartStreaming</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Nav StartStreamingStop object=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav CreateFile</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Nav CreateFileStart filename=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Filename" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav CreateFile</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Nav CreateFileStop hr=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav MutexLock</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Nav MutexLockStart lock=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>DVD Navigator</Channel>
+                <Level>Verbose</Level>
+                <Task>Nav MutexLock</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Nav MutexLockStop lock=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

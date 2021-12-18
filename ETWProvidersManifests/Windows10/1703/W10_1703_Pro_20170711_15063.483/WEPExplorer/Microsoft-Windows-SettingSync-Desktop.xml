@@ -1,0 +1,545 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SettingSync-Desktop</Name>
+        <Metadata>
+            <Guid>{579402A2-883C-45D8-B70A-9BC856407751}</Guid>
+            <ResourceFilePath>C:\Windows\system32\SettingSync.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\SettingSync.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=SettingSync.dll&amp;FileVer=10.0.15063.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SettingSync</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SettingSync/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SettingSync/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SettingSync/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_SettingProfileHandler_OnLoad</Name>
+                    <Value>7001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_MouseSettingHandler_GetUnit</Name>
+                    <Value>7003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_MouseSettingHandler_ApplyUnit</Name>
+                    <Value>7005</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_SyncRequestedByLocalSystem</Name>
+                    <Value>7031</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_MicroImageCompression</Name>
+                    <Value>7089</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_MicroImageScale</Name>
+                    <Value>7091</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_BackupRequestedByLocalSystem</Name>
+                    <Value>7103</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RoamingSettings</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The system failed to request a sync for collection %1 (operation: %2, Result: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The setting unit %1 for collection %2 is invalid. (operation: %3, Result: %4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SettingUnitId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Starting or stopping setting change publisher for %1 failed. (Result: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create process "%1" (Result: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Starting the setting monitor SSO failed.  (Message: %1, Result: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Starting the WNF listener failed.  (Message: %1, Result: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The sync provider requested that %1 not upload now.  It will retry the upload later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Starting or stopping setting change publisher for %1 failed. (Result: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6501</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Wnf event callback failure. State Name: %1. HRESULT: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6502</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+StartLayoutSync - Load layout data from stream. (HRESULT: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6503</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PicturePasswordPicture image validation failed (HRESULT: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6504</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+StartLayoutSync - GetUnit() is returning pending remote payload because system is in cloud priority mode.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6505</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+StartLayoutSync - No download happened during sync session. Switching back to normal mode from cloud priority mode.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6506</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Monitor SSO Started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6507</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Monitor SSO Status Changed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6508</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Monitor SSO Collection Status Changed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6509</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6511</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_SettingProfileHandler_OnLoad</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_SettingProfileHandler_OnLoad</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_MouseSettingHandler_GetUnit</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_MouseSettingHandler_GetUnit</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_MouseSettingHandler_ApplyUnit</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_MouseSettingHandler_ApplyUnit</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_SyncRequestedByLocalSystem</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_MicroImageCompression</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Quality" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_MicroImageCompression</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_MicroImageScale</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OrigSizeX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OrigSizeY" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_MicroImageCompression</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SettingSync/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_BackupRequestedByLocalSystem</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>RoamingSettings</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

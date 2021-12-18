@@ -1,0 +1,264 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Telephony-TelephonyInteractiveUser</Name>
+        <Metadata>
+            <Guid>{088A803B-578D-41B1-9402-92B7CEB380C8}</Guid>
+            <ResourceFilePath>TelephonyInteractiveUser.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>TelephonyInteractiveUser.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=TelephonyInteractiveUser.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>MISC</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Warning</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>StateTransition</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+[ERROR] originated HRESULT=%1 [%2 @ %3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+[ERROR] propagated HRESULT=%1 [%2 @ %3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="P1_HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="P2_String" inType="win:AnsiString" outType="xs:string"/>
+  <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Incoming Call Toast] Show, callId: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_HexInt32_1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Incoming Call Toast] Hide, callId: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_HexInt32_1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Incoming Call Toast] Activated, arguments: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Incoming Call Toast] Post, aumId: %1, tag: %2, group: %3, xml: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[Incoming Call Toast] Remove, aumId: %1, tag: %2, group: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] Handle Launch Async, aumId: %1, arguments: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] Activate Application]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] Activate Application above lock]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] Unlock device]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] Device unlocked]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] Launch app for call, callId: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_HexInt32_1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] Call Not Found]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] Call is in Idle state]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MISC</Keyword>
+                <Message><![CDATA[
+[App Launcher] User unlocked device within time period: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Bool1" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

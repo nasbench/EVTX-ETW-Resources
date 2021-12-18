@@ -1,0 +1,124 @@
+<Providers>
+    <Provider>
+        <Name>User32</Name>
+        <Metadata>
+            <Guid>{B0AA8734-56F7-41CC-B2F4-DE228E98B946}</Guid>
+            <ResourceFilePath>C:\Windows\system32\user32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\user32.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=user32.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>User32</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2147484721</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The attempt by user %2 to restart/shutdown computer %1 failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484722</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The process %1 has initiated the %5 of computer %2 on behalf of user %7 for the following reason: %3
+ Reason Code: %4
+ Shutdown Type: %5
+ Comment: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484723</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The last restart/shutdown request of computer %1 was aborted by user %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484724</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The reason supplied by user %6 for the last unexpected shutdown of this computer is: %1
+ Reason Code: %2
+ Problem ID: %3
+ Bugcheck String: %4
+ Comment: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484725</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The attempt by user %2 to logoff computer %1 failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

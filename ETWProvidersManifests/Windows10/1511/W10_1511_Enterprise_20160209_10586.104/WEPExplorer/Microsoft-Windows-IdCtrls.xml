@@ -1,0 +1,520 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IdCtrls</Name>
+        <Metadata>
+            <Guid>{6D7662A9-034E-4B1F-A167-67819C401632}</Guid>
+            <ResourceFilePath>C:\Windows\system32\IdCtrls.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\IdCtrls.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=IdCtrls.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IdCtrls</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-IdCtrls/Operational</Message>
+                    <Path>Microsoft-Windows-IdCtrls/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-IdCtrls/Analytic</Message>
+                    <Path>Microsoft-Windows-IdCtrls/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_IdControl_CreateControl</Name>
+                    <Value>7001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_IdControl_GetInitialURL</Name>
+                    <Value>7003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Perf_IdControl_Navigate</Name>
+                    <Value>7004</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IdentityWizard</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Cannot navigate to a non-SSL URL - %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Invalid web page on document complete from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to navigate on %1 for TargetFrameName %2. (StatusCode %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetFrameName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Blocked a pop-up window from %1 for ReferrerUrl %2. (Flags %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReferrerUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to navigate on wizard ID %1 through URL - %2. (Result %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WizardID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to execute [%1]. (Result %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to execute [%1] for [%2]. (Result %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to invoke command in host for DISPID %1 on parameter %2. (Result %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DISPID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ArgErr" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to navigate due to security problem %1. (Result %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SecurityProblem" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to Get alternative URL for Wizard ID %1. (Result %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WizardID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Security manager handle URL %1 action %2 as policy %3. (Result %4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Policy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Security manager allow ActiveX control for CLSID %1. (URL %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Security manager disallow ActiveX control for CLSID %1. (URL %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+QueryCustomPolicy(ObjectSafety) default action for CLSID %1. (URL %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+QueryCustomPolicy(ObjectSafety) disallowed for CLSID %1. (URL %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+QueryCustomPolicy(ObjectSafety) default action for GUID %1. (URL %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Before navigate to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Navigate completed on %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Document completed on %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Navigate Redirected to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Window resized to cx: %1, cy: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cy" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Succeeded on executing [%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Succeeded on executing [%1] for [%2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Executed [%1] for [%2]. (Result %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Showing browser window]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Showing progress window]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to execute [%1] for [%2]. Extended error text: %3. (Result %4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Extended String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_IdControl_CreateControl</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>IdentityWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_IdControl_CreateControl</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>IdentityWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_IdControl_GetInitialURL</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>IdentityWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_IdControl_GetInitialURL</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>IdentityWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_IdControl_Navigate</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>IdentityWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IdCtrls/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Perf_IdControl_Navigate</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>IdentityWizard</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

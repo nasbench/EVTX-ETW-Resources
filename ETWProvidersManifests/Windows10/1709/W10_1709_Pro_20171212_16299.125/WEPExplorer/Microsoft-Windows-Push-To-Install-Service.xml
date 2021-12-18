@@ -1,0 +1,257 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Push-To-Install-Service</Name>
+        <Metadata>
+            <Guid>{3A718A68-6974-4075-ABD3-E8243CAEF398}</Guid>
+            <ResourceFilePath>C:\Windows\System32\PushToInstall.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\PushToInstall.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.16299.15&amp;FileName=PushToInstall.dll&amp;FileVer=10.0.16299.15</HelpLink>
+            <PublisherMessage>Push-To-Install</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Store/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Push To Install Service</Message>
+                    <Name>ErrorTask</Name>
+                    <Value>6001</Value>
+                </Task>
+                <Task>
+                    <Message>Push To Install Service</Message>
+                    <Name>ExceptionTask</Name>
+                    <Value>6002</Value>
+                </Task>
+                <Task>
+                    <Message>Push To Install Service</Message>
+                    <Name>WarningTask</Name>
+                    <Value>6003</Value>
+                </Task>
+                <Task>
+                    <Message>Push To Install Service</Message>
+                    <Name>InformationTask</Name>
+                    <Value>6004</Value>
+                </Task>
+                <Task>
+                    <Message>Push To Install Service</Message>
+                    <Name>VerboseTask</Name>
+                    <Value>6005</Value>
+                </Task>
+                <Task>
+                    <Message>PTI Module Loaded</Message>
+                    <Name>ModuleLoaded</Name>
+                    <Value>6006</Value>
+                </Task>
+                <Task>
+                    <Message>PTI</Message>
+                    <Name>LogMessage</Name>
+                    <Value>6007</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Error</Message>
+                    <Name>Error</Name>
+                    <Value>12</Value>
+                    <Task>6007</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Warning</Message>
+                    <Name>Warning</Name>
+                    <Value>13</Value>
+                    <Task>6007</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>Info</Name>
+                    <Value>14</Value>
+                    <Task>6007</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Verbose</Message>
+                    <Name>Verbose</Name>
+                    <Value>15</Value>
+                    <Task>6007</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PushToInstallService</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Messages</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Push To Install Service</Task>
+                <Keyword>PushToInstallService</Keyword>
+                <Message><![CDATA[
+%1
+Error Code: %3
+Function: %2
+Source: %4 (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Code" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Push To Install Service</Task>
+                <Keyword>PushToInstallService</Keyword>
+                <Message><![CDATA[
+%1
+Exception Details: %5
+Function: %4
+Source: %3 (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Exception Details" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Push To Install Service</Task>
+                <Keyword>PushToInstallService</Keyword>
+                <Message><![CDATA[
+%1
+Error Code: %3
+Function: %2
+Source: %4 (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Code" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Push To Install Service</Task>
+                <Keyword>PushToInstallService</Keyword>
+                <Message><![CDATA[
+%1
+Error Code: %3
+Function: %2
+Source: %4 (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Code" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Push To Install Service</Task>
+                <Keyword>PushToInstallService</Keyword>
+                <Message><![CDATA[
+%1
+Error Code: %3
+Function: %2
+Source: %4 (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Code" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Store/Operational</Channel>
+                <Level>Information</Level>
+                <Task>PTI Module Loaded</Task>
+                <Keyword>Messages</Keyword>
+                <Message><![CDATA[
+Process Name: %1
+Module Name: %2
+Build: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Module Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Build Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

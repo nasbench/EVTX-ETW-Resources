@@ -1,0 +1,390 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MP4SDECD</Name>
+        <Metadata>
+            <Guid>{7F2BD991-AE93-454A-B219-0BC23F02262A}</Guid>
+            <ResourceFilePath>C:\Windows\system32\mp4sdecd.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\mp4sdecd.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.10586.0&amp;FileName=mp4sdecd.dll&amp;FileVer=10.0.10586.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MP4SDECD</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>WINDOWS_MP4SDECD_CHANNEL</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_Decoder</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_Init</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_setExtendedFormat</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_ProcessInput</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_ProcessOutput</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_MFSetRate</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_Discontinuity</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_Flush</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_NullOutput</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MP4SDECD_QM</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_Decoder</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_Decoder</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_Init</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FourCC" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FrameRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WidthSource" inType="win:Int32" outType="xs:int"/>
+  <data name="WidthHeight" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_Init</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_setExtendedFormat</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FormatSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Format" inType="win:Binary" outType="xs:hexBinary" length="FormatSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_setExtendedFormat</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessInput</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SampleSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SampleTime" inType="win:Int64" outType="xs:long"/>
+  <data name="SampleDuration" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessInput</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Frame" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessInput</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Frame" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SampleTime" inType="win:Int64" outType="xs:long"/>
+  <data name="SampleDuration" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SampleTime" inType="win:Int64" outType="xs:long"/>
+  <data name="SampleDuration" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_ProcessOutput</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Verbose</Level>
+                <Task>MP4SDECD_MFSetRate</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThinningMode" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Rate" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Verbose</Level>
+                <Task>MP4SDECD_Discontinuity</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Verbose</Level>
+                <Task>MP4SDECD_Flush</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Verbose</Level>
+                <Task>MP4SDECD_NullOutput</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_QM</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DropMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MP4SDECD_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MP4SDECD_QM</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PostProcessingLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
